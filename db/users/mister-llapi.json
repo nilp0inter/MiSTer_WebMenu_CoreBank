@@ -1,0 +1,938 @@
+{
+  "name": "mister-llapi",
+  "image": "https://avatars1.githubusercontent.com/u/55325226?v=4",
+  "url": "https://github.com/MiSTer-LLAPI",
+  "type": "Organization",
+  "repos": [
+    {
+      "name": "Arcade-Pacman_MiSTer",
+      "description": "Arcade: Pacman for MiSTer",
+      "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: Pacman port to MiSTer by Sorgelig\n-- 09 November 2017\n-- \n---------------------------------------------------------------------------------\n-- A simulation model of Pacman hardware\n-- Copyright (c) MikeJ - January 2006\n---------------------------------------------------------------------------------\n-- \n-- Support screen and controls rotation on HDMI output.\n-- Only controls are rotated on VGA output.\n-- \n-- \n-- Keyboard inputs :\n--\n--   F1          : Start Player 1\n--   F2          : Start Player 2\n--   F3\t\t : Coin Player 1\n--   F5          : Skip to next level\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   R,F,D,G     : Player 2 Movements\n--\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--\n-- Joystick support.\n-- \n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROM is not included. In order to use this arcade, you need to provide a correct ROM file.\n\nFind this zip file somewhere. You need to find the file exactly as required.\nDo not rename other zip files even if they also represent the same game - they are not compatible!\nThe name of zip is taken from M.A.M.E. project, so you can get more info about\nhashes and contained files there.\n\nTo generate the ROM using Windows:\n1) Copy the zip into \"releases\" directory\n2) Execute bat file - it will show the name of zip file containing required files.\n3) Put required zip into the same directory and execute the bat again.\n4) If everything will go without errors or warnings, then you will get the a.*.rom file.\n5) Copy generated a.*.rom into root of SD card along with the Arcade-*.rbf file\n\nTo generate the ROM using Linux/MacOS:\n1) Copy the zip into \"releases\" directory\n2) Execute build_rom.sh\n3) Copy generated a.*.rom into root of SD card along with the Arcade-*.rbf file\n\nTo generate the ROM using MiSTer:\n1) scp \"releases\" directory along with the zip file onto MiSTer:/media/fat/\n2) Using OSD execute build_rom.sh\n3) Copy generated a.*.rom into root of SD card along with the Arcade-*.rbf file\n",
+      "archived": false,
+      "url": "https://github.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer",
+      "releases": [
+        {
+          "name": "7za.exe",
+          "sha": "7f6bf86bc43ed71decf8b03f54dcb9b2be143a24",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer/master/releases/7za.exe",
+          "type": "OTHER"
+        },
+        {
+          "name": "Arcade-Pacman_20171125.rbf",
+          "sha": "cce6c9ed51f6b10cb7d0a99ecacc0f1eb14fe742",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer/master/releases/Arcade-Pacman_20171125.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Pacman_20180313.rbf",
+          "sha": "f3175ff98a13cabd7266d3a8008ca130e5f849c4",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer/master/releases/Arcade-Pacman_20180313.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Pacman_20190323.rbf",
+          "sha": "363030d21540333ec0e4fa06e1468f44cefb15e6",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer/master/releases/Arcade-Pacman_20190323.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Pacman_LLAPI_20191125.rbf",
+          "sha": "af220fc0153301546680552761c8e321ef7ecb97",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer/master/releases/Arcade-Pacman_LLAPI_20191125.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "build_rom.ini",
+          "sha": "ea5adf91f0b9023a272d9272901796cb0ca77b57",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer/master/releases/build_rom.ini",
+          "type": "OTHER"
+        },
+        {
+          "name": "build_rom.sh",
+          "sha": "2b1f85f7c258b5e9407b9bcc73f97c1092b82d5f",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer/master/releases/build_rom.sh",
+          "type": "OTHER"
+        },
+        {
+          "name": "build_rom_Pacman.bat",
+          "sha": "832a1ddbd6582e6549cda9ca689bd62544b7cad1",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer/master/releases/build_rom_Pacman.bat",
+          "type": "OTHER"
+        }
+      ]
+    },
+    {
+      "name": "Gameboy_MiSTer",
+      "description": "Gameboy for MiSTer",
+      "readme": "# Gameboy for MiSTer\r\n\r\nThis is port of [Gameboy for MiST](https://github.com/mist-devel/mist-board/tree/master/cores/gameboy)\r\n\r\n* Place RBF file into root of SD card.\r\n* Place *.gb files into Gameboy folder.\r\n\r\n## Open Source Bootstrap roms\r\nThis now includes the open source boot ROMs from [https://github.com/LIJI32/SameBoy/](https://github.com/LIJI32/SameBoy/) (for maximum GBC compatibility/authenticity you can still place the Gameboy color bios/bootrom into the Gameboy folder and rename it to boot1.rom)\r\n\r\n## Palettes\r\nCore supports custom palettes (*.gbp) which should be placed into Gameboy folder. Some examples are available in palettes folder.\r\n\r\n## Autoload\r\nTo autoload custom palette at startup rename it to boot0.rom\r\nTo autoload favorite game at startup rename it to boot2.rom\r\n\r\n## Video output\r\nThe Gameboy can disable video output at any time which causes problems with vsync_adjust=2 or analog video during screen transitions. Enable the Stabilize video option to fix this at the cost of some latency.\r\n\r\n\r\n",
+      "archived": false,
+      "url": "https://github.com/MiSTer-LLAPI/Gameboy_MiSTer",
+      "releases": [
+        {
+          "name": "Gameboy_20191218.rbf",
+          "sha": "2250c157d007d53d834b37b82d6478c91153d83c",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Gameboy_MiSTer/master/releases/Gameboy_20191218.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20200331.rbf",
+          "sha": "27eed51101492f3d3fe08160c5ea23a164a60315",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Gameboy_MiSTer/master/releases/Gameboy_20200331.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_LLAPI_20190927.rbf",
+          "sha": "d5ba7ee489ea767d7fd4a0672b758afca3a35d92",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Gameboy_MiSTer/master/releases/Gameboy_LLAPI_20190927.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_LLAPI_20191218.rbf",
+          "sha": "0275d87433fe7f03c73db1a094244938af51b887",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Gameboy_MiSTer/master/releases/Gameboy_LLAPI_20191218.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_LLAPI_20200330.rbf",
+          "sha": "46d54d9b00934217316fe3e0f355441b41a853bc",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Gameboy_MiSTer/master/releases/Gameboy_LLAPI_20200330.rbf",
+          "type": "RBF"
+        }
+      ]
+    },
+    {
+      "name": "GBA_MiSTer",
+      "description": "GBA for MiSTer",
+      "readme": "# GBA_MiSTer\nGBA for MiSTer\n\n# HW Requirements/Features\nThe games can run from a naked DE10-Nano with the build-in DDR-RAM.\nHowever, using SDRAM is highly recommended, as some games may slowdown or loose sync when using DDR-RAM.\n\nWhen using SDRAM, it requires 32MB SDRAM for games less than 32MB. 32MB games require either 64MB or 128MB module.\nSDRAM will be automatically used when available.\n\n# Bios\nOpensource Bios from Normmatt is included, however it has issues with some games.\nOriginal GBA BIOS can be placed to GBA folder with name boot.rom\n\nPLEASE do not report errors without testing with the original BIOS\n\nHomebrew games are sometimes not supported by the official BIOS, \nbecause the BIOS checks for Nintendo Logo included in the ROM, which is protected by copyright.\nTo use these ROMs without renaming or removing the the boot.rom, \nyou can activate the \"Homebrew BIOS\" settings in OSD.\nAs the BIOS is already replaced at boot time, you must save this settings and hard reset/reload the GBA core.\n\n# Status\n~1600 games tested until ingame:\n- 99% without major issues (no crash, playable)\n\n# Features\n- all videomodes including affine and special effects\n- all soundchannels\n- saving as in GBA\n- Savestates\n- FastForward - speed up game by factor 2-4\n- CPU Turbomode - give games additional CPU power\n- Flickerblend - turn on for games like F-Zero, Mario Kart or NES Classics to prevent flickering effects\n- Spritelimit - turn on to prevent wrong sprites for games that rely on the limit (opt-in)\n- Cheats\n- Color optimizations: shader colors and desaturate\n- Rewind: go back up to 60 seconds in time\n- Tilt: use analog stick (map stick in Mister Main before)\n- Solar Sensor: Set brightness in OSD\n- Gyro: use analog stick (map stick in Mister Main before)\n- RTC: automatically used, works with RTC board or internet connection\n\n# Savestates\nCore provides 4 slots to save the state. The first slot gets saved to disk and automatically loaded (but not applied)\nupon next load of game. Rest 3 slots are residing only in memory for temporary use.\nFirst slot save/restore is available from OSD as well. \n\n\nHot keys for save states:\n- Alt-F1..F4 - save the state\n- F1...F4 - restore\n\n# Rewind\nTo use rewind, turn on the OSD Option \"Rewind Capture\" and map the rewind button.\nYou may have to restart the game for the function to work properly.\nAttention: Rewind capture will slow down your game by about 0.5% and may lead to light audio stutter.\nRewind capture is not compatible to \"Pause when OSD is open\", so pause is disabled when Rewind capture is on.\n\n# Spritelimit\nCurrently there are only few games known that produce glitches without sprite pixel limit:\n- Gunstar Super Heroes\n- Famicon Mini Series Vol21 - Vol30\n\n# Cartridge Hardware supported games\n- RTC: Pokemon Sapphire+Ruby+Emerald, Boktai 1+2+3, Sennen Kazoku, Rockman EXE 4.5\n- Solar Sensor: Boktai 1+2+3\n- Gyro: Wario Ware Twisted\n- Tilt: Yoshi Topsy Turvy/Universal Gravitation, Koro Koro Puzzle - Happy Panechu!\n\nIf there is a game you want to play that also uses one of these features, but is not listed, please open a bug request.\n\n# Not included\n- Multiplayer features like Serials\n- E-Reader support\n- other cartridge hardware\n\n# Accuracy\n\n(Status 03.02.2020)\n\n>> Attention: the following comparisons are NOT intended for proving any solution is better than the other.\n>> This is solely here for the purpose of showing the status compared to other great emulators available.\n>> It is not unusual that an emulator can play games fine and still fail tests. \n>> Furthermore some of these tests are new and not yet addressed by most emulators.\n\nThere is great testsuite you can get from here: https://github.com/mgba-emu/suite\nIt tests out correct Memory, Timer, DMA, CPU, BIOS behavior and also instruction timing. It works 100% on the real GBA.\nThe suite itself has several thousand single tests.\n\nTestname      | TestCount | Mister GBA| mGBA | VBA-M | Higan\n--------------|-----------|-----------|------|-------|-------\nMemory        |      1552 |  1552     | 1552 |  1338 | 1552\nIOREAD        |       123 |   123     |  116 |   100 |  123\nTiming        |      1660 |  1554     | 1540 |   692 | 1424\nTimer         |       936 |   445     |  610 |   440 |  457\nTimer IRQ     |        90 |    65     |   70 |     8 |   36\nShifter       |       140 |   140     |  140 |   132 |  132\nCarry         |        93 |    93     |   93 |    93 |   93\nBIOSMath      |       625 |   625     |  625 |   625 |  625\nDMATests      |      1256 |  1248     | 1232 |  1032 | 1136\nEdgeCase      |        10 |     3     |    7 |     3 |    1\nLayer Toggle  |         1 |  pass     | pass |  pass | fail \nOAM Update    |         1 |  fail     | fail |  fail | fail\n\n\nA complex CPU only testuite can be found here: https://github.com/jsmolka/gba-suite\n\nTestname | Mister GBA| mGBA | VBA-M | Higan\n---------|-----------|------|-------|-------\nARM      |  Pass     | Fail |  Fail |  Fail\nTHUMB    |  Pass     | Fail |  Fail |  Fail\n\n# Information for developers\n\nHow to simulate:\nhttps://github.com/MiSTer-devel/GBA_MiSTer/tree/master/sim\n\nHow to implement a GPIO module:\nhttps://github.com/MiSTer-devel/GBA_MiSTer/blob/master/gpio_readme.md\n",
+      "archived": false,
+      "url": "https://github.com/MiSTer-LLAPI/GBA_MiSTer",
+      "releases": [
+        {
+          "name": "GBA_20191124.rbf",
+          "sha": "aec287a7c5a919bda33ea0c2ec9e906ea964f867",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/GBA_MiSTer/master/releases/GBA_20191124.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "GBA_20191125.rbf",
+          "sha": "ed8102dde301d2935d06725547e3129b5ac1a03e",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/GBA_MiSTer/master/releases/GBA_20191125.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "GBA_20191204.rbf",
+          "sha": "f2e1612d2738135be095b8f27e91873f35f205db",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/GBA_MiSTer/master/releases/GBA_20191204.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "GBA_20191218.rbf",
+          "sha": "a935fd8c56e1ef5ff84987a8f5825609ddfb0d75",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/GBA_MiSTer/master/releases/GBA_20191218.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "GBA_20200101.rbf",
+          "sha": "a6fb4a8586de83bb170bf00a6de0351f2a4f3ce2",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/GBA_MiSTer/master/releases/GBA_20200101.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "GBA_20200119.rbf",
+          "sha": "9cbe0c4d36b30e2d8996580d6cd4750ec4f50464",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/GBA_MiSTer/master/releases/GBA_20200119.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "GBA_20200129.rbf",
+          "sha": "bd2b5b9c904e3d19d5aed39c6e2c2f18429b0994",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/GBA_MiSTer/master/releases/GBA_20200129.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "GBA_20200222.rbf",
+          "sha": "065d91e85ec4e8c487060fe42af29235211b57bf",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/GBA_MiSTer/master/releases/GBA_20200222.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "GBA_20200323.rbf",
+          "sha": "dc8a403fc37cbf1522ef8378372f8a9823f204ce",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/GBA_MiSTer/master/releases/GBA_20200323.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "GBA_20200409.rbf",
+          "sha": "c23043022874be3b3034acda14f1a3357736a015",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/GBA_MiSTer/master/releases/GBA_20200409.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "GBA_20200513.rbf",
+          "sha": "0700db5ec2d0bb17158c3361ad6fae65893db9a9",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/GBA_MiSTer/master/releases/GBA_20200513.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "GBA_LLAPI_20191124.rbf",
+          "sha": "98569a37c897641588b01b35f502d8953bf08925",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/GBA_MiSTer/master/releases/GBA_LLAPI_20191124.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "GBA_LLAPI_20191204.rbf",
+          "sha": "37efd7c8e800cebf8787ad43742a22077f9313da",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/GBA_MiSTer/master/releases/GBA_LLAPI_20191204.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "GBA_LLAPI_20191218.rbf",
+          "sha": "8c721248527d7e44a5b28f1726ae45c39fa64bc4",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/GBA_MiSTer/master/releases/GBA_LLAPI_20191218.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "GBA_LLAPI_20200101.rbf",
+          "sha": "43a9d5157eb5007997b026daf44064eedcc44a5c",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/GBA_MiSTer/master/releases/GBA_LLAPI_20200101.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "GBA_LLAPI_20200119.rbf",
+          "sha": "f9d7f7177c79636c160037b7637a861c0925b9d4",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/GBA_MiSTer/master/releases/GBA_LLAPI_20200119.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "GBA_LLAPI_20200129.rbf",
+          "sha": "733872181edf2464f0a70e41d2fb4428045b9d86",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/GBA_MiSTer/master/releases/GBA_LLAPI_20200129.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "GBA_LLAPI_20200222.rbf",
+          "sha": "7d2308445372bee6609456a7ec4cad6c87a12139",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/GBA_MiSTer/master/releases/GBA_LLAPI_20200222.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "GBA_LLAPI_20200326.rbf",
+          "sha": "ca5be046c6d89970d2984e31db1f78c77e45d3e1",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/GBA_MiSTer/master/releases/GBA_LLAPI_20200326.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "GBA_LLAPI_20200409.rbf",
+          "sha": "5721dbe9d88d4f4bb18fb09dedd27ed926441603",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/GBA_MiSTer/master/releases/GBA_LLAPI_20200409.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "GBA_LLAPI_20200513.rbf",
+          "sha": "b50117f26f5193285e2d6a73882f72b593df230e",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/GBA_MiSTer/master/releases/GBA_LLAPI_20200513.rbf",
+          "type": "RBF"
+        }
+      ]
+    },
+    {
+      "name": "Genesis_MiSTer",
+      "description": "Sega Genesis for MiSTer",
+      "readme": "# SEGA Megadrive/Genesis for MiSTer.\n\nThis is the port of fpgagen core.\n\nfpgagen - a SEGA Megadrive/Genesis clone in a FPGA.\nCopyright (c) 2010-2013 Gregory Estrade (greg@torlus.com)\nAll rights reserved\n\n\n## Installing\ncopy *.rbf to root of SD card. Put some ROMs (*.BIN/*.GEN/*.MD) into Genesis folder\n\n\n## Hot Keys\n* F1 - reset to JP(NTSC) region\n* F2 - reset to US(NTSC) region\n* F3 - reset to EU(PAL)  region\n\n\n## Auto Region option\nThere are 2 versions of region detection:\n\n1) File name extension:\n\n* BIN -> JP\n* GEN -> US\n* MD  -> EU\n\n2) Header. It may not always work as not all ROMs follow the rule, especially in European region.\nThe header may include several regions - the correct one will be selected depending on priority option.\n\n\n## Additional features\n\n* Multitaps: 4-way, Team player, J-Cart\n* SVP chip (Virtua Racing)\n* Audio Filters for Model 1, Model 2, Minimal, No Filter.\n* Option to choose between YM2612 and YM3438 (changes Ladder Effect behavior).\n* Composite Blending, smooth dithering patterns in games.\n* Sprite Limit, enables more sprites.\n* CPU Turbo, mitigates slowdowns.\n",
+      "archived": false,
+      "url": "https://github.com/MiSTer-LLAPI/Genesis_MiSTer",
+      "releases": [
+        {
+          "name": "Genesis_20191117.rbf",
+          "sha": "97c2d22de78d2dfa07fed326a123b69673e5b291",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Genesis_MiSTer/master/releases/Genesis_20191117.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20200105.rbf",
+          "sha": "ba816f3d7c52ff128c0d01beb8dd12ee885c44ed",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Genesis_MiSTer/master/releases/Genesis_20200105.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20200126.rbf",
+          "sha": "e8ca869ab4f439e208054448e66844eca0dbb62e",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Genesis_MiSTer/master/releases/Genesis_20200126.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20200325.rbf",
+          "sha": "c50706b9f63e4e1c5f0008b971ee532fabaaa019",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Genesis_MiSTer/master/releases/Genesis_20200325.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20200406.rbf",
+          "sha": "8b6d5f606b6f4aa0f4ad2f745099282bce43f601",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Genesis_MiSTer/master/releases/Genesis_20200406.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20200502.rbf",
+          "sha": "1d3ec1fb3ee2868f9fe9989443acf768dfe53665",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Genesis_MiSTer/master/releases/Genesis_20200502.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_LLAPI_20191019.rbf",
+          "sha": "2576c4c1912dff88101e21b80a875296aa8406fb",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Genesis_MiSTer/master/releases/Genesis_LLAPI_20191019.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_LLAPI_20191113.rbf",
+          "sha": "5f83bc343b29e01fa16f4fd604de489dc9e5602a",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Genesis_MiSTer/master/releases/Genesis_LLAPI_20191113.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_LLAPI_20200105.rbf",
+          "sha": "0891ebd653ebfe400c1ec14336a6ca1822adacbf",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Genesis_MiSTer/master/releases/Genesis_LLAPI_20200105.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_LLAPI_20200126.rbf",
+          "sha": "9fe13d5d644236965b2dffb60b585196f8883cb0",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Genesis_MiSTer/master/releases/Genesis_LLAPI_20200126.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_LLAPI_20200325.rbf",
+          "sha": "9015911f904842e9dc15bfc88edb4cedec9e8114",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Genesis_MiSTer/master/releases/Genesis_LLAPI_20200325.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_LLAPI_20200410.rbf",
+          "sha": "ce60f3d252b1b962384fc58566d871c24c4e540e",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Genesis_MiSTer/master/releases/Genesis_LLAPI_20200410.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_LLAPI_20200503.rbf",
+          "sha": "e5238ab33242df1763a18f09ef5fad2673b95756",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Genesis_MiSTer/master/releases/Genesis_LLAPI_20200503.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_LLAPI_20200523.rbf",
+          "sha": "78fc22ca0d5b0754851898f20f063467a8da11d7",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Genesis_MiSTer/master/releases/Genesis_LLAPI_20200523.rbf",
+          "type": "RBF"
+        }
+      ]
+    },
+    {
+      "name": "MegaCD_MiSTer",
+      "description": "Mega CD for MiSTer",
+      "readme": "# MegaCD for MiSTer by srg320\n\n# Installation\nPlace BIOS to MegaCD folder with name boot.rom\n\n# Features\nAbout 150 games tested without long playing, US/EU regions only.\n\n### Known issues:\n- Microcosm & Ultraverse Prime (US) - graphic glitch in game\n- Supreme Warrior - Ying Heung (US) - can't select 2 disk\n\n### Supported image formats:\n- CUE + single image\n- CUE + multiple images (image per track)\n\n### ZIP\nZIP is supported but doesn't work due to long positioning time.\nSo DON'T zip the images!\n\n### CD BIOS\nsupport BIOS per game. Place cd_bios.rom in game's folder.\n\n### Pier Solar\nPlace cartridge dump named cart.rom into game's folder\n",
+      "archived": false,
+      "url": "https://github.com/MiSTer-LLAPI/MegaCD_MiSTer",
+      "releases": [
+        {
+          "name": "MegaCD_20191205.rbf",
+          "sha": "189b3ad26fc6004effdd4c1f857fe5378edf70c1",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/MegaCD_MiSTer/master/releases/MegaCD_20191205.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "MegaCD_20191218.rbf",
+          "sha": "f0690fdd91477590d0e312725327678e2bc3019d",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/MegaCD_MiSTer/master/releases/MegaCD_20191218.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "MegaCD_20200101.rbf",
+          "sha": "420bcbb174b6be17a8354293f8697e49ca5eb80b",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/MegaCD_MiSTer/master/releases/MegaCD_20200101.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "MegaCD_20200325.rbf",
+          "sha": "f7d250101ffb70f1f7af97fa1ae2323b326d713b",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/MegaCD_MiSTer/master/releases/MegaCD_20200325.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "MegaCD_20200408.rbf",
+          "sha": "0d2b7399db45c328d138354ed4e33f3aa162c633",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/MegaCD_MiSTer/master/releases/MegaCD_20200408.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "MegaCD_20200502.rbf",
+          "sha": "80d5a28cd0962ea862661efd9d95b8d0bac9ec62",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/MegaCD_MiSTer/master/releases/MegaCD_20200502.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "MegaCD_20200601.rbf",
+          "sha": "ee69183550dbdf24bafd9666f0ae0458f5d1fc4c",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/MegaCD_MiSTer/master/releases/MegaCD_20200601.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "MegaCD_20200602.rbf",
+          "sha": "6a399bfe9ae3d6320007473319864e02af69e8e9",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/MegaCD_MiSTer/master/releases/MegaCD_20200602.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "MegaCD_20200608.rbf",
+          "sha": "2e885841a80d6654464db1c2f4404e504e068c44",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/MegaCD_MiSTer/master/releases/MegaCD_20200608.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "MegaCD_LLAPI_20191205.rbf",
+          "sha": "531169db09fe9b7f8e447776a892d48c4a540973",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/MegaCD_MiSTer/master/releases/MegaCD_LLAPI_20191205.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "MegaCD_LLAPI_20191218.rbf",
+          "sha": "687a7cafc913e1caa0abdf0a05bfc60aeb4035f3",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/MegaCD_MiSTer/master/releases/MegaCD_LLAPI_20191218.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "MegaCD_LLAPI_20200101.rbf",
+          "sha": "d2f8930bfd543ee8d06706d8b2031028d5cfa68d",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/MegaCD_MiSTer/master/releases/MegaCD_LLAPI_20200101.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "MegaCD_LLAPI_20200325.rbf",
+          "sha": "784a567b12e0b90f04f313922cdb5f6eea233fd8",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/MegaCD_MiSTer/master/releases/MegaCD_LLAPI_20200325.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "MegaCD_LLAPI_20200409.rbf",
+          "sha": "2c9a006d86d7fd815ec554f2db6aa0b3000a284c",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/MegaCD_MiSTer/master/releases/MegaCD_LLAPI_20200409.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "MegaCD_LLAPI_20200503.rbf",
+          "sha": "d7ce7e79ef173f4a64ddef28cea762fd43f0a471",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/MegaCD_MiSTer/master/releases/MegaCD_LLAPI_20200503.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "MegaCD_LLAPI_20200523.rbf",
+          "sha": "952623984e349e363dc1c9a28a4f931a1798f855",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/MegaCD_MiSTer/master/releases/MegaCD_LLAPI_20200523.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "MegaCD_LLAPI_20200601.rbf",
+          "sha": "8a283e1172edf2f15694414fd7f81f25e711e213",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/MegaCD_MiSTer/master/releases/MegaCD_LLAPI_20200601.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "MegaCD_LLAPI_20200609.rbf",
+          "sha": "eb7ab39e474108effa4410fc4afba2faa6b2e0a8",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/MegaCD_MiSTer/master/releases/MegaCD_LLAPI_20200609.rbf",
+          "type": "RBF"
+        }
+      ]
+    },
+    {
+      "name": "NeoGeo_MiSTer",
+      "description": "NeoGeo for MiSTer",
+      "readme": "\r\n# NEO GEO for [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki) \r\n\r\nThis is an FPGA implementation of the NEO GEO/MVS system by [Furrtek](https://www.patreon.com/furrtek/posts)\r\n\r\n## Features\r\n* Supports memory card saving\r\n* MVS and AES system support\r\n* Compatible with Darksoft ROM sets using provided XML\r\n* Compatible with decrypted MAME ROM sets using your own XML\r\n* Support for Universe BIOS\r\n\r\nNote: Core doesn't support encrypted ROMs. Make sure the ROM has no encrypted parts before use it. MAME ROM pack includes many encrypted ROMs so it's not recommended for inexperienced users.\r\n\r\n## Installation\r\nCopy the NeoGeo_\\*.rbf file to the folder of your choice on the SD card. Create a **NEOGEO** folder on the root of the card, and place the unzipped ROM sets inside this folder. For ease of setup of use, it is strongly suggested that people use the Darksoft ROM pack. Several things must be observed:\r\n* Each set of ROMs must be in its own folder\r\n* The folders containing the ROM sets must be named to match the XML (MAME standard names)\r\n* The ROMs must not be zipped\r\n* ROM set folders can be placed inside sub-folders for organization\r\n\r\nIn addition, several bios files must be placed in the **NEOGEO** folder for the core to function properly:\r\n* 000-lo.lo\r\n* sfix.sfix\r\n* sp-s2.sp1 (MVS)\r\n* neo-epo.sp1 (AES)\r\n* uni-bios.rom\r\n\r\nSometimes these files may be named slightly differently depending on where they are obtained, but they must be renamed to match the filenames above to work with MiSTer. You may choose between using original system BIOS (sp-s2.sp1/neo-epo.sp1) and uni-bios.rom. Using uni-bios is recommended, and can be obtained [here](http://unibios.free.fr/).\r\n\r\nLastly, **romsets.xml** from the release folder must also be placed in the directory. The provided XML is for Darksoft ROMs only, you must make your own for MAME ROMs. This file describes to the core where the ROM sets are located and how to load them. **gog-romsets.xml** can be used (renamed to **romsets.xml**) for games purchased from gog.com (which also include all the needed bios files), see comments in gog-romsets.xml .\r\n\r\n## Saving and Loading\r\nIn AES mode, all saves are to the memory card only. In MVS mode, some games and uni-bios save their settings to a special area of battery backed ram built into the system, while game data can be still be saved to a memory card. To simplify things, it is suggested to stick to one system type on the OSD and use uni-bios to change the system type, so that game information is saved consistently.\r\n\r\n## RAM and Game Sizes\r\nNeo Geo uses very large ROMs. About 84% of the library will fit onto a 32 megabyte SDRAM module. Another 12% will fit onto a 64 megabyte SDRAM module. The remaining 8 games require a 128 megabyte module. For more information about which games can be loaded with which sized RAM, open romsets.xml in your favorite text editor or github. The games are organized by size.\r\n",
+      "archived": false,
+      "url": "https://github.com/MiSTer-LLAPI/NeoGeo_MiSTer",
+      "releases": [
+        {
+          "name": "NeoGeo_20191125.rbf",
+          "sha": "26c45cba86d876830a1839cd6b650acbfd19f4ce",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/NeoGeo_MiSTer/master/releases/NeoGeo_20191125.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NeoGeo_20191205.rbf",
+          "sha": "470732c6168902f9a45542f41ea9e2903046a5ee",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/NeoGeo_MiSTer/master/releases/NeoGeo_20191205.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NeoGeo_20200123.rbf",
+          "sha": "258efec967bc4775831b1bae66dbf5b435b2b6ca",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/NeoGeo_MiSTer/master/releases/NeoGeo_20200123.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NeoGeo_20200325.rbf",
+          "sha": "0bdc000d8d875da8c6c62769f74857f51efa7667",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/NeoGeo_MiSTer/master/releases/NeoGeo_20200325.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NeoGeo_LLAPI_20191117.rbf",
+          "sha": "801c9b9e1a53edc480d376b67b92ad7e42b80824",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/NeoGeo_MiSTer/master/releases/NeoGeo_LLAPI_20191117.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NeoGeo_LLAPI_20191126.rbf",
+          "sha": "c64e3bd5cc4f2a4ca2381343694292c8785d1e99",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/NeoGeo_MiSTer/master/releases/NeoGeo_LLAPI_20191126.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NeoGeo_LLAPI_20191204.rbf",
+          "sha": "7b7f4e17bc6d6f1671e6c1fb741249628404d61c",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/NeoGeo_MiSTer/master/releases/NeoGeo_LLAPI_20191204.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NeoGeo_LLAPI_20200123.rbf",
+          "sha": "9bc82a3bf9879cb6b8b87f9b77d61cbc6533f15c",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/NeoGeo_MiSTer/master/releases/NeoGeo_LLAPI_20200123.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NeoGeo_LLAPI_20200325.rbf",
+          "sha": "c5dbc089eb203ef19bd76a008e83d7ce026a59f8",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/NeoGeo_MiSTer/master/releases/NeoGeo_LLAPI_20200325.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "README.md",
+          "sha": "abdb8c23e66088a7b2bcc5d69f49951bbf6ca0ea",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/NeoGeo_MiSTer/master/releases/README.md",
+          "type": "OTHER"
+        },
+        {
+          "name": "gog-broken-romsets.xml",
+          "sha": "65e00cadfaa3230b71e0d2c50464b7154f6aa1f7",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/NeoGeo_MiSTer/master/releases/gog-broken-romsets.xml",
+          "type": "OTHER"
+        },
+        {
+          "name": "gog-romsets.xml",
+          "sha": "699a7588769f4d602b87a23c501d9ac753fe6c1f",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/NeoGeo_MiSTer/master/releases/gog-romsets.xml",
+          "type": "OTHER"
+        },
+        {
+          "name": "romsets.xml",
+          "sha": "15f075748bc641ecaa10b09de04f2d5de91cea39",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/NeoGeo_MiSTer/master/releases/romsets.xml",
+          "type": "OTHER"
+        }
+      ]
+    },
+    {
+      "name": "NES_MiSTer",
+      "description": null,
+      "readme": "# NES for [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki) \n\nThis is an FPGA implementation of the NES/Famicom based on [FPGANES](https://github.com/strigeus/fpganes) by Ludvig Strigeus and ported to MiSTer.\n\n## Features\n * Supports saves for most games\n * Supports NTSC, PAL, and Dendy system types\n * FDS Support with expansion audio\n * Multiple Palette options\n * Zapper, Powerpad, Microphone, and Miracle Piano support\n * Supports four players\n * Setting for increasing sprite per line by 8\n * Supports up to 32 cheat codes\n * Supports NSF Player\n * Supports expansion audio from mappers including VRC6 & 7, MMC5, Namco 163 and Sunsoft 5b\n * Supports many popular mappers including VRC1-7, MMC0-5, and many more (see below)\n * Supports large games such as Legend of Link and Rockman Minus Infinity\n\n## Installation\nCopy the NES_\\*.rbf file to the root of the SD card. Create a **NES** folder on the root of the card, and place NES roms (\\*.NES) inside this folder. The ROMs must have an iNES or NES2.0 header, which most already do. NES2.0 headers are prefered for the best accuracy. To have a game ROM load automatically upon starting the core and place it in the **NES** folder.\n- boot0.rom = FDS BIOS file.  Will be used for any FDS images loaded\n- boot1.rom = NES Cart file.  Can be used with boot0.rom (BIOS) in place\n- boot2.rom = FDS image file.  Requires boot0.rom (BIOS).  Use a blank FDS (header only) to boot the FDS BIOS without a disk image.\n- boot3.rom = NFS image file.  Can be used with boot0.rom (BIOS) in place\n\n## Famicom Disk System Usage\nBefore loading \\*.FDS files, you must first load the official, unpatched FDS BIOS. The BIOS file should be renamed to boot0.rom and placed in the same folder as the ROMs (NES).  Alternatively, it can be loaded from the OSD if boot0.rom doesn't exist. After loading the core and the bios you may select an FDS image. By default, the NES core will swap disk sides for you automatically. To suppress this behavior, hold the FDS button on the player 1 controller. The \"Disk Swap\" OSD option manually controls the disk side.  Each button press increments the disk side.  Press and hold the fds button to eject and increment the disk side in this mode.  Some games only work correctly in manual disk swap mode, and require holding the FDS button for up to a few seconds (Gall Force,...).\n\n## Extra Sprites\nThis feature will double the number of sprites drawn per scanlines, decreasing the flickering sprites that NES is known for. Some games relied on the 8 sprite behavior to work correctly, such as Simon's Quest swamps. Other mappers may be impacted by using extra sprites. While it works well in most games, glitches may occur with this enabled.\n\n## Saving and Loading\nThe battery backed RAM (Save RAM) for the NES does not write to disk automatically. When loading a game, you must select **Load Backup RAM** from the OSD menu. After saving in your game, you must then write the RAM to the SD card by selecting **Save Backup RAM** from the menu. If you do not save your RAM to disk, the contents will be lost next time you restart the core or switch games. Alternatively you can enable to Autosave option from the OSD menu, and if you do your games will be recorded to disk every time you open the OSD menu. FDS saving uses the same method as for cartridge RAM saves.\n\n## Zapper Support\nThe \"Zapper\" (aka Light Gun) can be used via two methods. You can select Peripheral: Zapper(Mouse) to use your mouse to aim and shoot with the left button. This mode uses relative mouse motion, so devices that rely on absolute coordinates will not work via this method. Alternatively, you can choose Zapper(Joy) to use the Analog stick to aim, and the defined Trigger button to fire. Guns such as Aimtrak have joystick modes which may be compatible with this method.\n\n## Miracle Piano Support\nThe Miracle Piano is a MIDI keyboard compatible with the Miracle Piano Education System cart.  To use it with SNAC, no further settings are needed.  To use it with midilink, in the System Settings, set the UART connection to use MIDI.  The piano will then be connected on controller port 1 as expected.  The primary controller will automatically be assigned to port 2 as the cart expects.  The header for the ROM file should be set to NES 2.0 with controller type (0xF) set to the Miracle Piano (0x19).\n\n## Supported Mappers\n\n|#||||||||||||||||\n|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|\n|**0**|**1**|**2**|**3**|**4**|**5**||**7**||**9**|**10**|**11**|~~12~~|**13**||**15**|\n|**16**||**18**|**19**|**FDS**|**21**|**22**|**23**|**24**|**25**|**26**|**27**|**28**||**30**|**31**|\n|**32**|**33**|**34**|**35**|**36**|**37**|**38**||~~40~~|**41**|**42**|~~43~~|~~44~~|~~45~~|**46**|**47**|\n|**48**|~~49~~|~~50~~|~~51~~|~~52~~|~~53~~|~~54~~|~~55~~|~~56~~|~~57~~|~~58~~|~~59~~|~~60~~|~~61~~|~~62~~|~~63~~|\n|**64**|**65**|**66**|**67**|**68**|**69**|**70**|**71**|**72**|**73**|**74**|**75**|**76**|**77**|**78**|**79**|\n|**80**|~~81~~|**82**|**83**|~~84~~|**85**|**86**|**87**|**88**|**89**|**90**|~~91~~|**92**|**93**|**94**|**95**|\n|~~96~~|**97**||~~99~~|~~100~~|**101**|||~~104~~|**105**||**107**|~~108~~|~~109~~|~~110~~|**111**|\n|**112**|**113**|~~114~~|~~115~~|~~116~~|~~117~~|**118**|**119**|~~120~~||~~122~~|~~123~~||~~125~~|~~126~~|~~127~~|\n|~~128~~|~~129~~|~~130~~|~~131~~|**132**|**133**|~~134~~|~~135~~|**136**|**137**|**138**|**139**|**140**|**141**|~~142~~|**143**|\n|~~144~~|**145**|**146**|**147**|**148**|**149**|**150**|~~151~~|**152**|**153**|**154**|**155**|~~156~~|~~157~~|**158**|**159**|\n|~~160~~|~~161~~|**162**|**163**|**164**|**165**|~~166~~|~~167~~|~~168~~|~~169~~||**171**|**172**|**173**|||\n|||||**180**|~~181~~|~~182~~|~~183~~|**184**|**185**|~~186~~|~~187~~|~~188~~|~~189~~|**190**|**191**|\n|**192**|~~193~~|**194**|**195**|~~196~~||~~198~~|~~199~~|~~200~~|~~201~~|~~202~~|~~203~~|~~204~~|~~205~~|**206**|**207**|\n|~~208~~|**209**|**210**|**211**|~~212~~|~~213~~|~~214~~|~~215~~|~~216~~|~~217~~|**218**||||~~222~~||\n|~~224~~|**225**|~~226~~|~~227~~|**228**|~~229~~|~~230~~|~~231~~|**232**|~~233~~|**234**|~~235~~|~~236~~|~~237~~|||\n|~~240~~|~~241~~|~~242~~|**243**|~~244~~|~~245~~|~~246~~||~~248~~|~~249~~|~~250~~|~~251~~|~~252~~||~~254~~|**255**|\n\nKey: **Supported**, ~~Not Supported~~. Mappers that are not existent or not useful are blank.\n\n",
+      "archived": false,
+      "url": "https://github.com/MiSTer-LLAPI/NES_MiSTer",
+      "releases": [
+        {
+          "name": "NES_20200212.rbf",
+          "sha": "d82407ba6772b96d0233564973bb92de2012f2c7",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/NES_MiSTer/master/releases/NES_20200212.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NES_20200213.rbf",
+          "sha": "06d3f5cc818349918f483d05eaebd33299bec266",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/NES_MiSTer/master/releases/NES_20200213.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NES_20200307.rbf",
+          "sha": "bebfdc4354fabc2fcf5ae791ead527ef037a6c71",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/NES_MiSTer/master/releases/NES_20200307.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NES_20200308.rbf",
+          "sha": "89ba090266f78123e3163f146a35a57fab82364a",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/NES_MiSTer/master/releases/NES_20200308.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NES_20200519.rbf",
+          "sha": "018a10d88ab545999240f6863313cd603aea076c",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/NES_MiSTer/master/releases/NES_20200519.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NES_20200522.rbf",
+          "sha": "945dd04790379812810c638099bd57c9cb47c48d",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/NES_MiSTer/master/releases/NES_20200522.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NES_LLAPI_20191014.rbf",
+          "sha": "e8eaf552dcbcd865364919faa7d8ff44eca21181",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/NES_MiSTer/master/releases/NES_LLAPI_20191014.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NES_LLAPI_20191113.rbf",
+          "sha": "6e1fda20e45bdb360537ed6abd6f5ef62898c650",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/NES_MiSTer/master/releases/NES_LLAPI_20191113.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NES_LLAPI_20191117.rbf",
+          "sha": "9e7ba5c39bbf0c49244ac1f462228461f00753cd",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/NES_MiSTer/master/releases/NES_LLAPI_20191117.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NES_LLAPI_20200212.rbf",
+          "sha": "d69e1c734db8ed41a76728d66580397a8b1c3eca",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/NES_MiSTer/master/releases/NES_LLAPI_20200212.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NES_LLAPI_20200307.rbf",
+          "sha": "77dee3104ebfeb8a9eb9317d37321e1f8783584b",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/NES_MiSTer/master/releases/NES_LLAPI_20200307.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NES_LLAPI_20200308.rbf",
+          "sha": "22bad9c031994cfc51885e5c374b9e7563af2e71",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/NES_MiSTer/master/releases/NES_LLAPI_20200308.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NES_LLAPI_20200519.rbf",
+          "sha": "d5529494c29e0c2bc2728f7c20cf8f6f7a12e78e",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/NES_MiSTer/master/releases/NES_LLAPI_20200519.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NES_LLAPI_20200523.rbf",
+          "sha": "ad7478621a6e64f113254a28460561a6c61d6b9d",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/NES_MiSTer/master/releases/NES_LLAPI_20200523.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "blank.sav",
+          "sha": "e2c8fe92d8237d3c9169891e23a1b7d6ae8e0dcb",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/NES_MiSTer/master/releases/blank.sav",
+          "type": "OTHER"
+        }
+      ]
+    },
+    {
+      "name": "SMS_MiSTer",
+      "description": "Sega Master System for MiSTer",
+      "readme": "# Sega Master System and Game Gear for the [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki) and [MiST](https://github.com/mist-devel/mist-board/wiki) boards\n\n### Installation:\n* Copy the *.rbf file at the root of the SD card.\n* Copy *.SMS ROMs into SMS folder.\n\n### Download precompiled binaries at:\n* For MiSTer, go to [releases](https://github.com/MiSTer-devel/SMS_MISTer/tree/master/releases) folder.\n* For MiST, go to [mist-binaries](https://github.com/mist-devel/mist-binaries/tree/master/cores/sms).\n\n### Notes:\n* Some games come in .gg format but are in fact SMS games. Rename the .gg extention to .sms or .bin to fix them.\n  These games are mostly listed in this page [SMSpower-SMS-GG list](http://www.smspower.org/Tags/SMS-GG).\n* The \"Aspect ratio\" doesn't do much in PAL mode, that's normal\n* The \"Region\" parameter toggle some hardware features that are specific to the different console models.\n  Some localized games need these modifications to work properly\n* Each game cartridge comes with a specific mapper, which description is not included in the .gg ou .sms file.\n  The core has a special logic to automatically determine which mapper needs to be used, but some games make\n  a good effort to make this logic fail. The \"Disable mappers\" parameter permits to force the usage \n  of the most used sega mapper. \n",
+      "archived": false,
+      "url": "https://github.com/MiSTer-LLAPI/SMS_MiSTer",
+      "releases": [
+        {
+          "name": "SMS_20200309.rbf",
+          "sha": "bce610d20a1548f33cbf61b6eea19a2f695bc841",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SMS_MiSTer/master/releases/SMS_20200309.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SMS_20200511.rbf",
+          "sha": "fa0ec9ce66f89076edc1eee50297d4160246c631",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SMS_MiSTer/master/releases/SMS_20200511.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SMS_20200602.rbf",
+          "sha": "83bd83e676148258adb422058a6d814454ec815b",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SMS_MiSTer/master/releases/SMS_20200602.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SMS_LLAPI_20191002.rbf",
+          "sha": "0c2fe55cd9624d7336b3eb1267f5f67a544abfb8",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SMS_MiSTer/master/releases/SMS_LLAPI_20191002.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SMS_LLAPI_20191113.rbf",
+          "sha": "150d1798851b6e4e566e6a75957fc45a843f349b",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SMS_MiSTer/master/releases/SMS_LLAPI_20191113.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SMS_LLAPI_20200308.rbf",
+          "sha": "ca317202f58b2fa372287d743f062f8face327c0",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SMS_MiSTer/master/releases/SMS_LLAPI_20200308.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SMS_LLAPI_20200511.rbf",
+          "sha": "0b962d5b9dde3730b6edf30d4d77551e8cb56c8f",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SMS_MiSTer/master/releases/SMS_LLAPI_20200511.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SMS_LLAPI_20200602.rbf",
+          "sha": "8a2f5facf76d96e5963d1e651de9938c46fbc16c",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SMS_MiSTer/master/releases/SMS_LLAPI_20200602.rbf",
+          "type": "RBF"
+        }
+      ]
+    },
+    {
+      "name": "SNES_MiSTer",
+      "description": "SNES for MiSTer",
+      "readme": "# SNES for MiSTer (LLAPI Edition) by [srg320](https://github.com/srg320)\n\n## Installing\ncopy *.rbf to root of SD card. Put some ROMs (*.SCF, *.SMC, *.BIN) into SNES folder\n\n## Features\n* Cycle accurate SNES replica.\n* Supports LoROM, HiROM, ExHiROM.\n* Supports additional chips: DSP-1/2/3/4, ST010, CX4, SDD1, SuperFX(GSU-1/2), SA1, OBC1, SPC7110, S-RTC.\n* Cheat engine.\n* Save/Load Backup RAM.\n* Supports mouse.\n* Light gun support via Wiimote, mouse or analog stick.\n* [SuperFX Turbo and CPU Turbo.](https://github.com/MiSTer-devel/SNES_MiSTer/blob/master/SNES_Turbo.md)\n* LLAPI support, for use with BlisSTer\n",
+      "archived": false,
+      "url": "https://github.com/MiSTer-LLAPI/SNES_MiSTer",
+      "releases": [
+        {
+          "name": "SNES_20191117.rbf",
+          "sha": "97302902ffaa5f42b69945ddf5eefb6be9bfdf1b",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SNES_MiSTer/master/releases/SNES_20191117.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_20200106.rbf",
+          "sha": "2d1ee63308d34a3c81ed9a10322295bee9a2ee35",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SNES_MiSTer/master/releases/SNES_20200106.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_20200108.rbf",
+          "sha": "c9c8411ba403d517ea0dcbe4c353eff3e9ee2f71",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SNES_MiSTer/master/releases/SNES_20200108.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_20200212.rbf",
+          "sha": "5acce5dc2d6113c4436514da648b5eea62476511",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SNES_MiSTer/master/releases/SNES_20200212.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_20200326.rbf",
+          "sha": "4f6c7e3d6b5ba61ee239d2e896417d331ad231d5",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SNES_MiSTer/master/releases/SNES_20200326.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_20200511.rbf",
+          "sha": "968008af03b8020c8139abb8536be5b2d1914091",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SNES_MiSTer/master/releases/SNES_20200511.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_20200530.rbf",
+          "sha": "a332a794be83948c25f47cadf804caa73531b709",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SNES_MiSTer/master/releases/SNES_20200530.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_LLAPI_20191019.rbf",
+          "sha": "7c3759eb5d11edabbc51473d02a5952f77d54807",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SNES_MiSTer/master/releases/SNES_LLAPI_20191019.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_LLAPI_20191113.rbf",
+          "sha": "340be63409c7f71ff612541ed8b392ece36f0fdc",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SNES_MiSTer/master/releases/SNES_LLAPI_20191113.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_LLAPI_20200106.rbf",
+          "sha": "ff1a2eec697f9dcbae72864907a281570b1fdf5e",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SNES_MiSTer/master/releases/SNES_LLAPI_20200106.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_LLAPI_20200108.rbf",
+          "sha": "3bdf866d67f674f1c350be10fe6059d77f420f1b",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SNES_MiSTer/master/releases/SNES_LLAPI_20200108.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_LLAPI_20200212.rbf",
+          "sha": "6772c526b6cda8dbe5961c229b57409b65a2031b",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SNES_MiSTer/master/releases/SNES_LLAPI_20200212.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_LLAPI_20200326.rbf",
+          "sha": "78a9e799d1a0cb1d6b43460882a71bac4c7d3a7b",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SNES_MiSTer/master/releases/SNES_LLAPI_20200326.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_LLAPI_20200511.rbf",
+          "sha": "b4aed147ca9b9e21c431feed8f50feaf7d385942",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SNES_MiSTer/master/releases/SNES_LLAPI_20200511.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_LLAPI_20200529.rbf",
+          "sha": "56516749ec48e92a9596c064b7c4248e281b659a",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SNES_MiSTer/master/releases/SNES_LLAPI_20200529.rbf",
+          "type": "RBF"
+        }
+      ]
+    },
+    {
+      "name": "TurboGrafx16_MiSTer",
+      "description": "TurboGrafx 16 / PC Engine for MiSTer",
+      "readme": "# TurboGrafx 16 / PC Engine for [MiSTer Board](https://github.com/MiSTer-devel/Main_MiSTer/wiki) \r\n\r\n### This is the port of Gregory Estrade's [FPGAPCE](https://github.com/Torlus/FPGAPCE)\r\n\r\n## Features\r\n * SuperGrafx mode\r\n * saves\r\n * Completely rewritten CPU and VDC for cycle accuracy\r\n * Uses DDR3 and SDRAM for cartridge's ROM (SDRAM is recommended for accuracy)\r\n * 6(8)-buttons joystick\r\n * Turbotap(multiple joysticks)\r\n * Mouse\r\n * Pachinko controller\r\n * Street Fighter II and Populous mappers\r\n * CD-ROM\r\n * Arcade Card\r\n * Cheat engine\r\n\r\n## Installation:\r\nCopy the *.rbf file at the root of the SD card. Copy roms (*PCE,*BIN) to **TGFX16** folder. You may rename ROM of your favorite game to **boot.rom** - it will be automatically loaded upon core loading.\r\nUse SGX file extension for SuperGrafx games.\r\n\r\n## CD-ROM games\r\nCD-ROM images must be in BIN/CUE format, and must be located in the **TGFX16-CD** folder. Each CD-ROM image must have its own folder.\r\n**cd_bios.rom** must be placed in the same TGFX16-CD folder as the images mentioned above. **Japanese Super CD-ROM v3.00 is recomended for maximum compatibility**. \r\nAdditionally you can use a different bios for specific games (for example from Games Express) by placing cd_bios.rom inside the game image's folder.\r\n\r\n**Do not zip CD-ROM images! It won't work correctly.**\r\n\r\n**Attention about US BIOS:** MiSTer requires original dump of US BIOS to work properly. It needs to be of 262144 bytes.\r\nIf you can read copyright string at the end of US BIOS file, then it's not correct dump! It's already pre-swapped for emulators.\r\nWhile it will work on MiSTer, some CD games will refuse to start. **Correct US BIOS file is when copyright string is not readable.**\r\n\r\n## Cheat engine\r\nStandard cheats location is supported for HuCard games. For CD-ROM game all cheats must be zipped into a single zip file and placed inside game's CD-ROM folder.\r\n\r\n## Joystick\r\nBoth Turbotap and 6-button joysticks are supported.\r\nDo not enable these features for games not supporting it, otherwise game will work incorrectly.\r\n\r\n## Pachinko\r\nPachinko controller is supported through either paddle or analog joystick Y axis.\r\n\r\n## Reset\r\nHold down Run button then press Select. Some games require to keep both buttons pressed longer to reset. The PC Engine/Turbografx-16 did not have a hardware reset button, and instead relies on this button combination. With this method, in-game options will remain if you have changed them, whereas the MiSTer OSD reset will revert them.\r\n\r\n## SDRAM\r\nThis core may work without SDRAM (using on-board DDR3), but it may have different kinds of issues/glitches due to high latency of DDR3 memory. Thus SDRAM module is highly recommended for maximum accuracy.\r\n\r\n### Notes:\r\n* Both headerless ROMs and ROMs with header (512b) are supported and automatically distinguished by file size.\r\n\r\n## Download precompiled binaries\r\nGo to [releases](https://github.com/MiSTer-devel/TurboGrafx16_MiSTer/tree/master/releases) folder. \r\n",
+      "archived": false,
+      "url": "https://github.com/MiSTer-LLAPI/TurboGrafx16_MiSTer",
+      "releases": [
+        {
+          "name": "TurboGrafx16_20200212.rbf",
+          "sha": "52faea36b7a9945be797649a6193ed6dd30abcbe",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/TurboGrafx16_MiSTer/master/releases/TurboGrafx16_20200212.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "TurboGrafx16_20200220.rbf",
+          "sha": "d520c4e8e13fb75eabc9055245f8f0553d61d612",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/TurboGrafx16_MiSTer/master/releases/TurboGrafx16_20200220.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "TurboGrafx16_20200326.rbf",
+          "sha": "de059b61c32d0361f43affb6af34d89616af5fda",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/TurboGrafx16_MiSTer/master/releases/TurboGrafx16_20200326.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "TurboGrafx16_20200517.rbf",
+          "sha": "539be052d390bc303bfb82535a12c5a9c29d22fb",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/TurboGrafx16_MiSTer/master/releases/TurboGrafx16_20200517.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "TurboGrafx16_20200519.rbf",
+          "sha": "c57a8fdc4593bd6e60a84a807884d8d6fb7c8808",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/TurboGrafx16_MiSTer/master/releases/TurboGrafx16_20200519.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "TurboGrafx16_20200526.rbf",
+          "sha": "01ccd8f8a03d07e2726bd60738e3dadb9da3536a",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/TurboGrafx16_MiSTer/master/releases/TurboGrafx16_20200526.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "TurboGrafx16_20200529.rbf",
+          "sha": "0b5b81b2027155446f72d9e5114172e9874f01ff",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/TurboGrafx16_MiSTer/master/releases/TurboGrafx16_20200529.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "TurboGrafx16_20200602.rbf",
+          "sha": "04241c7ecda94e90ffb7d0f92ac62ec036ba722e",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/TurboGrafx16_MiSTer/master/releases/TurboGrafx16_20200602.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "TurboGrafx16_20200605.rbf",
+          "sha": "378474ce693b11125cd27a232072a5f2c00d8ec9",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/TurboGrafx16_MiSTer/master/releases/TurboGrafx16_20200605.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "TurboGrafx16_20200608.rbf",
+          "sha": "f80b3f45f86a6f3809ff76e8620393b102e16e79",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/TurboGrafx16_MiSTer/master/releases/TurboGrafx16_20200608.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "TurboGrafx16_LLAPI_20190930.rbf",
+          "sha": "cfe10c8956d88a91ac7450cdd6802f45d01cef17",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/TurboGrafx16_MiSTer/master/releases/TurboGrafx16_LLAPI_20190930.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "TurboGrafx16_LLAPI_20191113.rbf",
+          "sha": "c0104932d67d57a08bbf9d5382c30dc270f62567",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/TurboGrafx16_MiSTer/master/releases/TurboGrafx16_LLAPI_20191113.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "TurboGrafx16_LLAPI_20200212.rbf",
+          "sha": "cc0fb5a29bc66cfcf9c53966b83cd699ef5caaa2",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/TurboGrafx16_MiSTer/master/releases/TurboGrafx16_LLAPI_20200212.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "TurboGrafx16_LLAPI_20200220.rbf",
+          "sha": "5d8a4e6a0054a7e50bd01fc8d9606f7861e3f808",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/TurboGrafx16_MiSTer/master/releases/TurboGrafx16_LLAPI_20200220.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "TurboGrafx16_LLAPI_20200326.rbf",
+          "sha": "315af0b973ca42fc482a7e3478ab0f27a07205be",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/TurboGrafx16_MiSTer/master/releases/TurboGrafx16_LLAPI_20200326.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "TurboGrafx16_LLAPI_20200517.rbf",
+          "sha": "792974a319570ba9b2ef5b7023a8655b3a3e3591",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/TurboGrafx16_MiSTer/master/releases/TurboGrafx16_LLAPI_20200517.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "TurboGrafx16_LLAPI_20200518.rbf",
+          "sha": "69e7f531ef81ec77d7ce112a681008217e9818e9",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/TurboGrafx16_MiSTer/master/releases/TurboGrafx16_LLAPI_20200518.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "TurboGrafx16_LLAPI_20200519.rbf",
+          "sha": "490e49c815213eb08faa8b0f77c14a79c389433b",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/TurboGrafx16_MiSTer/master/releases/TurboGrafx16_LLAPI_20200519.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "TurboGrafx16_LLAPI_20200526.rbf",
+          "sha": "d0af4c3e328dfb6c12b0140012fcb0b5c9e2b28c",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/TurboGrafx16_MiSTer/master/releases/TurboGrafx16_LLAPI_20200526.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "TurboGrafx16_LLAPI_20200529.rbf",
+          "sha": "ef8448a3a98131e1019dd34ce444a2f9d8921009",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/TurboGrafx16_MiSTer/master/releases/TurboGrafx16_LLAPI_20200529.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "TurboGrafx16_LLAPI_20200602.rbf",
+          "sha": "f3865b06d454595ee3e48977ac6251e1655d8c70",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/TurboGrafx16_MiSTer/master/releases/TurboGrafx16_LLAPI_20200602.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "TurboGrafx16_LLAPI_20200605.rbf",
+          "sha": "ddb04be8044127eeefe6b4521f6d1f7b459573dd",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/TurboGrafx16_MiSTer/master/releases/TurboGrafx16_LLAPI_20200605.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "TurboGrafx16_LLAPI_20200609.rbf",
+          "sha": "1021e31a333b60f89d94e2c0362a660078916cfe",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/TurboGrafx16_MiSTer/master/releases/TurboGrafx16_LLAPI_20200609.rbf",
+          "type": "RBF"
+        }
+      ]
+    }
+  ]
+}
