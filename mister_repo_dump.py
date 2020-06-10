@@ -37,8 +37,7 @@ def get_repo_releases(repo, path):
             common = {
                 'name': release.name,
                 'sha': release.sha,
-                'url': release.download_url,
-                'last_modified': release.last_modified
+                'url': release.download_url
             }
             if ext == '.rbf':
                 yield {**common,
