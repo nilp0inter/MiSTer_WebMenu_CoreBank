@@ -32,3 +32,9 @@ jobs:
       run: |
         pipenv run make -j 4
 
+    - name: Commit and push
+      run: |
+        git config user.name 'Release Bot'
+        git config user.email 'release-bot@databank'
+        git add db
+        git commit -m "$(date)" && (git push origin master || exit 1) || exit 0
