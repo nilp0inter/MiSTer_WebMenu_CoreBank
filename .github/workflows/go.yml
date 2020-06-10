@@ -8,7 +8,7 @@ on:
       - 'Makefile'
       - '.github/workflows/go.yml'
   schedule:
-    - cron:  '42 * * * *'
+    - cron:  '7/15 * * * *'
 
 jobs:
   build:
