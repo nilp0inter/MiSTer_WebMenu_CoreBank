@@ -8,9 +8,9 @@ import xml.etree.ElementTree as ET
 from github import Github, UnknownObjectException
 
 try:
-    token = os.environ['GITHUBAPI_TOKEN']
+    token = os.environ['GITHUB_TOKEN']
 except KeyError:
-    print(('GITHUBAPI_TOKEN environment variable must be '
+    print(('GITHUB_TOKEN environment variable must be '
            'defined with a valid Github Personal Access Token'),
           file=sys.stderr)
     sys.exit(1)
