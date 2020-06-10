@@ -29,3 +29,4 @@ jobs:
     - name: Make database
       run: |
         pipenv run make -j 4
+
