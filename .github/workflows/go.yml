@@ -27,6 +27,8 @@ jobs:
         pip install pipenv
         pipenv sync
     - name: Make database
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         pipenv run make -j 4
 
