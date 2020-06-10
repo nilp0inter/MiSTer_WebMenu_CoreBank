@@ -100,5 +100,6 @@ if __name__ == '__main__':
             'url': user.html_url,
             'type': user.type,
             'repos': list(get_repos_data(user))
-        })
+        },
+        indent=2)
     )
