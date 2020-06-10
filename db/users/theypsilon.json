@@ -1,0 +1,960 @@
+{
+  "name": "theypsilon",
+  "image": "https://avatars2.githubusercontent.com/u/852246?v=4",
+  "url": "https://github.com/theypsilon",
+  "type": "User",
+  "repos": [
+    {
+      "name": "Arcade-DonkeyKongJunior_MiSTer",
+      "description": "Donkey Kong Junior arcade clone for MiSTer.",
+      "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: Donkey Kong Junior port to MiSTer by gaz68 (https://github.com/gaz68)\n-- 12 October 2019\n-- \n-- Original Donkey Kong port to MiSTer by Sorgelig\n-- 18 April 2018\n-- \n---------------------------------------------------------------------------------\n-- \n-- dkong Copyright (c) 2003 - 2004 Katsumi Degawa\n-- T80   Copyright (c) 2001-2002 Daniel Wallner (jesus@opencores.org) All rights reserved\n-- T48   Copyright (c) 2004, Arnim Laeuger (arniml@opencores.org) All rights reserved\n-- \n---------------------------------------------------------------------------------\n-- \n-- Support screen and controls rotation on HDMI output.\n-- Only controls are rotated on VGA output.\n-- \n--\n-- Keyboard inputs :\n--\n--   F2          : Coin + Start 2 players\n--   F1          : Coin + Start 1 player\n--   SPACE       : Jump\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   R,F,D,G     : Player 2 Movements (Cocktail mode only)\n--   A           : Player 2 Fire (Cocktail mode only)\n--\n--\n-- Joystick support.\n--  \n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROM is not included. In order to use this arcade, you need to provide a correct ROM file.\n\n---------------------------------------------------------------------------------\nNOTE: 3 versions of this game are supported - USA, Japan and Japan Set F-1.\n      Build your favourite version. The screens for the USA version play in \n      a different order to the Japanese versions.\n      Build all 3 versions, name them differently and they can be loaded\n      manually using the Load *.ROM option (press F12).\n---------------------------------------------------------------------------------\n\nFind this zip file somewhere. You need to find the file exactly as required.\nDo not rename other zip files even if they also represent the same game - they are not compatible!\nThe name of zip is taken from M.A.M.E. project, so you can get more info about\nhashes and contained files there.\n\nTo generate the ROM using Windows:\n1) Copy the zip into \"releases\" directory\n2) Execute bat file - it will show the name of zip file containing required files.\n3) Put required zip into the same directory and execute the bat again.\n4) If everything will go without errors or warnings, then you will get the a.*.rom file.\n5) Copy generated a.*.rom into root of SD card along with the Arcade-*.rbf file\n\nTo generate the ROM using Linux/MacOS:\n1) Copy the zip into \"releases\" directory\n2) Execute build_rom.sh\n3) Copy generated a.*.rom into root of SD card along with the Arcade-*.rbf file\n\nTo generate the ROM using MiSTer:\n1) scp \"releases\" directory along with the zip file onto MiSTer:/media/fat/\n2) Using OSD execute build_rom.sh\n3) Copy generated a.*.rom into root of SD card along with the Arcade-*.rbf file\n",
+      "archived": false,
+      "url": "https://github.com/theypsilon/Arcade-DonkeyKongJunior_MiSTer",
+      "releases": [
+        {
+          "name": "7za.exe",
+          "sha": "7f6bf86bc43ed71decf8b03f54dcb9b2be143a24",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-DonkeyKongJunior_MiSTer/master/releases/7za.exe",
+          "type": "OTHER"
+        },
+        {
+          "name": "Arcade-DonkeyKongJunior_20191013.rbf",
+          "sha": "e2c69de2b5558116d4b8e469baef2efc18a5bd1c",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-DonkeyKongJunior_MiSTer/master/releases/Arcade-DonkeyKongJunior_20191013.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Donkey Kong Junior (US set F-2).mra",
+          "sha": "7c4d6f69c94ec48c81b96fdca13fe6dda236854d",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-DonkeyKongJunior_MiSTer/master/releases/Donkey%20Kong%20Junior%20(US%20set%20F-2).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Donkey Kong Junior (US set F-2)",
+            "rbf": "DonkeyKongJunior",
+            "zips": [
+              "dkongjr.zip"
+            ]
+          }
+        },
+        {
+          "name": "build_rom.ini",
+          "sha": "b38b4b1c2372f7d6524fa42ece791e883c943078",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-DonkeyKongJunior_MiSTer/master/releases/build_rom.ini",
+          "type": "OTHER"
+        },
+        {
+          "name": "build_rom.sh",
+          "sha": "2b1f85f7c258b5e9407b9bcc73f97c1092b82d5f",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-DonkeyKongJunior_MiSTer/master/releases/build_rom.sh",
+          "type": "OTHER"
+        },
+        {
+          "name": "build_rom_DonkeyKongJunior.bat",
+          "sha": "b6f72fe30f9fb690388a23677c3c3ece100d7a8d",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-DonkeyKongJunior_MiSTer/master/releases/build_rom_DonkeyKongJunior.bat",
+          "type": "OTHER"
+        },
+        {
+          "name": "build_rom_DonkeyKongJunior_Japan.bat",
+          "sha": "1f48311e1d8203940432ce4103e19743ccf7f872",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-DonkeyKongJunior_MiSTer/master/releases/build_rom_DonkeyKongJunior_Japan.bat",
+          "type": "OTHER"
+        },
+        {
+          "name": "build_rom_DonkeyKongJunior_JapanF1.bat",
+          "sha": "b8421cd994c634711cbc7718fa49675c697ae9a7",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-DonkeyKongJunior_MiSTer/master/releases/build_rom_DonkeyKongJunior_JapanF1.bat",
+          "type": "OTHER"
+        },
+        {
+          "name": "build_rom_japan.ini",
+          "sha": "dc4abba33bc05d347e32b65d1be7a2a34195a687",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-DonkeyKongJunior_MiSTer/master/releases/build_rom_japan.ini",
+          "type": "OTHER"
+        },
+        {
+          "name": "build_rom_japan.sh",
+          "sha": "f03493930788fd07f2abb604ad7db6f1f2bca990",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-DonkeyKongJunior_MiSTer/master/releases/build_rom_japan.sh",
+          "type": "OTHER"
+        },
+        {
+          "name": "build_rom_japanf1.ini",
+          "sha": "45beb20749f4e0b58b56787a70098858ceb6bdf2",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-DonkeyKongJunior_MiSTer/master/releases/build_rom_japanf1.ini",
+          "type": "OTHER"
+        },
+        {
+          "name": "build_rom_japanf1.sh",
+          "sha": "9958f292f2dba3f3cb57682a72798d0e52a5983a",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-DonkeyKongJunior_MiSTer/master/releases/build_rom_japanf1.sh",
+          "type": "OTHER"
+        },
+        {
+          "name": "dkj_wave.bin",
+          "sha": "df502ec95e3d4a589e3117a53dc0937a6bdca527",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-DonkeyKongJunior_MiSTer/master/releases/dkj_wave.bin",
+          "type": "OTHER"
+        },
+        {
+          "name": "empty.bin",
+          "sha": "d84f989297b8e6ddb0d5aa211e9a9386f785c3f0",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-DonkeyKongJunior_MiSTer/master/releases/empty.bin",
+          "type": "OTHER"
+        }
+      ]
+    },
+    {
+      "name": "Archie_MiSTer",
+      "description": "Acorn Archimedes for MiSTer",
+      "readme": "# Acorn Archimedes for [MiSTer Board](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\r\n\r\n### This is the port of [Archie](https://github.com/mist-devel/mist-board/tree/master/cores/archie) core from MiST by Stephen Leary\r\n\r\n**CURRENTLY THIS CORE IS IN BETA STATUS**\r\n\r\n1. Basic internals are implemented.\r\n1. Basic Floppy disk support\r\n1. Sound support added but may not work in all situations.\r\n1. The core emulates a 4Mb A3000 type machine with an ARM2a with caches disabled for now (has an A3010 style joystick interface).\r\n1. Core runs at ~91% of an ARM2 @ 8Mhz when using VGA Modes.\r\n1. Some games now run. Expect issues.\r\n\r\n## Installation\r\n\r\nCopy the [*.rbf](https://github.com/MiSTer-devel/Archie_MiSTer/tree/master/releases) into a root folder of the SD card.\r\nCopy a version of a RiscOS ROM into the \"Archie\" folder, renaming it to `riscos.rom`.\r\n\r\n### Floppy disk images\r\n\r\nThe current version supports two floppy drives. Floppy disk images ADF format and of exactly 819200 bytes in size are currently required. This is the most common format for the Acorn Archimedes.\r\n\r\nImages named `floppy0.adf` and `floppy1.adf` (from Archie folder) are auto-inserted into the floppy disk drives on startup. Other images can be selected via the on-screen-display (OSD) which can be opened using the **WIN+F12** key combo.\r\n\r\n\r\n## OSD Menu\r\n\r\nIf the ROM is recognized the core should boot into Risc OS.\r\nPress **Win+F12** to open the OSD menu.\r\n\r\n* Floppy 0: Choose the floppy disk images to use for floppy 0\r\n* Floppy 1: Choose the floppy disk images to use for floppy 1\r\n* OS ROM: Choose the RISCOS rom to use\r\n* Save config: Save current config for next boot\r\n\r\nYou can move to other pages of settings by pressing the right arrow key.\r\n\r\n## Notes\r\n\r\n* CPU module (amber23) has no reset signal, so the only way to reset the core is to reload it. MiSTer will help to reload the core if **USER** button is pressed (or reset combo pressed on keyboard) and core file is named as **\"Archie.rbf\"**. Otherwise you can reload the core manually from menu (**Win+Alt+F12**).\r\n\r\n\r\n# License\r\n\r\nThis core uses the Amber CPU core from OpenCores which is LGPL.\r\nThe core itself is dual licensed LGPL/BSD.\r\n",
+      "archived": false,
+      "url": "https://github.com/theypsilon/Archie_MiSTer",
+      "releases": [
+        {
+          "name": "Archie_20171016.rbf",
+          "sha": "a93f19dd550312dfdbdef6d7070ded09af36773e",
+          "url": "https://raw.githubusercontent.com/theypsilon/Archie_MiSTer/master/releases/Archie_20171016.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Archie_20180310.rbf",
+          "sha": "8a4dd802381b519b91af8ff6837187aaef1001c8",
+          "url": "https://raw.githubusercontent.com/theypsilon/Archie_MiSTer/master/releases/Archie_20180310.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Archie_20180519.rbf",
+          "sha": "c40828ddd7ab50af4f0f3a3bb204a371f9610ce2",
+          "url": "https://raw.githubusercontent.com/theypsilon/Archie_MiSTer/master/releases/Archie_20180519.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Archie_20190206.rbf",
+          "sha": "63500e9d4a03f4fa97da2a9f722334538076db9c",
+          "url": "https://raw.githubusercontent.com/theypsilon/Archie_MiSTer/master/releases/Archie_20190206.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Archie_20190304.rbf",
+          "sha": "e21292492a3be115bb136c10e54f3388936a9c45",
+          "url": "https://raw.githubusercontent.com/theypsilon/Archie_MiSTer/master/releases/Archie_20190304.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Archie_20190427.rbf",
+          "sha": "c3bc7d295b30a9e40adc2e6c406ffc61d4044073",
+          "url": "https://raw.githubusercontent.com/theypsilon/Archie_MiSTer/master/releases/Archie_20190427.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Archie_20190711.rbf",
+          "sha": "7196067da31fb9ae7e9883291c13619ca0c24199",
+          "url": "https://raw.githubusercontent.com/theypsilon/Archie_MiSTer/master/releases/Archie_20190711.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Archie_20190912.rbf",
+          "sha": "13ea666edaf74b8d5c88aec8437db4023254e371",
+          "url": "https://raw.githubusercontent.com/theypsilon/Archie_MiSTer/master/releases/Archie_20190912.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Archie_20190927.rbf",
+          "sha": "23ed9d77ade8f4fcf130723c3b695ec39cb615a2",
+          "url": "https://raw.githubusercontent.com/theypsilon/Archie_MiSTer/master/releases/Archie_20190927.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Archie_20191116.rbf",
+          "sha": "783437120dd8191f50268cf581f760d7884e5d29",
+          "url": "https://raw.githubusercontent.com/theypsilon/Archie_MiSTer/master/releases/Archie_20191116.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Archie_20191204.rbf",
+          "sha": "1f851c60ec86955664b661a1a2f044aeda589fe5",
+          "url": "https://raw.githubusercontent.com/theypsilon/Archie_MiSTer/master/releases/Archie_20191204.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "riscos.rom",
+          "sha": "c5ea8aef8fa323131d1684ad5b822a8323b9d26e",
+          "url": "https://raw.githubusercontent.com/theypsilon/Archie_MiSTer/master/releases/riscos.rom",
+          "type": "OTHER"
+        }
+      ]
+    },
+    {
+      "name": "Genesis_MiSTer",
+      "description": "Sega Genesis for MiSTer",
+      "readme": "# SEGA Megadrive/Genesis for MiSTer.\n\nThis is the port of fpgagen core.\n\nfpgagen - a SEGA Megadrive/Genesis clone in a FPGA.\nCopyright (c) 2010-2013 Gregory Estrade (greg@torlus.com)\nAll rights reserved\n\n\n## Installing\ncopy *.rbf to root of SD card. Put some ROMs (*.BIN/*.GEN/*.MD) into Genesis folder\n\n\n## Hot Keys\n* F1 - reset to JP(NTSC) region\n* F2 - reset to US(NTSC) region\n* F3 - reset to EU(PAL)  region\n\n\n## Auto Region option\nThere are 2 versions of region detection:\n\n1) File name extension:\n\n* BIN -> JP\n* GEN -> US\n* MD  -> EU\n\n2) Header. It may not always work as not all ROMs follow the rule, especially in European region.\nThe header may include several regions - the correct one will be selected depending on priority option.\n\n\n## Additional features\n\n* Multitaps: 4-way, Team player, J-Cart\n* SVP chip (Virtua Racing)\n* Audio Filters for Model 1, Model 2, Minimal, No Filter.\n* Option to choose between YM2612 and YM3438 (changes Ladder Effect behavior).\n* Composite Blending, smooth dithering patterns in games.\n* Sprite Limit, enables more sprites.\n* CPU Turbo, mitigates slowdowns.\n",
+      "archived": false,
+      "url": "https://github.com/theypsilon/Genesis_MiSTer",
+      "releases": [
+        {
+          "name": "Genesis_20180602.rbf",
+          "sha": "4a177709963d84e78504dec09e37b9fffb26990e",
+          "url": "https://raw.githubusercontent.com/theypsilon/Genesis_MiSTer/master/releases/Genesis_20180602.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20180609.rbf",
+          "sha": "41992e2f0f373f80aca4b61e1f200d4fe330a037",
+          "url": "https://raw.githubusercontent.com/theypsilon/Genesis_MiSTer/master/releases/Genesis_20180609.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20180926.rbf",
+          "sha": "099c4da4c1496389852c4ac1c594e7ce0b81b721",
+          "url": "https://raw.githubusercontent.com/theypsilon/Genesis_MiSTer/master/releases/Genesis_20180926.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20181003.rbf",
+          "sha": "adf5dc1031e4dd652be4e6bb504359020ef81551",
+          "url": "https://raw.githubusercontent.com/theypsilon/Genesis_MiSTer/master/releases/Genesis_20181003.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20181010.rbf",
+          "sha": "8215d3978007f69d098ac78bce0a87c41ff5d2cc",
+          "url": "https://raw.githubusercontent.com/theypsilon/Genesis_MiSTer/master/releases/Genesis_20181010.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20181015.rbf",
+          "sha": "6a52c0306ef44c0d8a4c9400dfec1869f7ad6444",
+          "url": "https://raw.githubusercontent.com/theypsilon/Genesis_MiSTer/master/releases/Genesis_20181015.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20181016.rbf",
+          "sha": "531b2bf44359b794fad5d164322aa62b5c2fb6f7",
+          "url": "https://raw.githubusercontent.com/theypsilon/Genesis_MiSTer/master/releases/Genesis_20181016.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20181019.rbf",
+          "sha": "6d138c26920bbe0ad5e713619cf94d0668d050ff",
+          "url": "https://raw.githubusercontent.com/theypsilon/Genesis_MiSTer/master/releases/Genesis_20181019.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20181029.rbf",
+          "sha": "3fb87664f2525a424af63e556f290ed755f5c2fe",
+          "url": "https://raw.githubusercontent.com/theypsilon/Genesis_MiSTer/master/releases/Genesis_20181029.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20181031.rbf",
+          "sha": "514ae792bbf7a5eef9f82fd7bdfcb6bc7b0e1307",
+          "url": "https://raw.githubusercontent.com/theypsilon/Genesis_MiSTer/master/releases/Genesis_20181031.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20181105.rbf",
+          "sha": "3ba1f44e67cbf4be7a4f341e10d1e9f794c2187d",
+          "url": "https://raw.githubusercontent.com/theypsilon/Genesis_MiSTer/master/releases/Genesis_20181105.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20181111.rbf",
+          "sha": "de67e18d5a545696a6e8e3ee4c33952209dd4300",
+          "url": "https://raw.githubusercontent.com/theypsilon/Genesis_MiSTer/master/releases/Genesis_20181111.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20181116.rbf",
+          "sha": "861a16015c824a1e1d50802a15b528f893859e85",
+          "url": "https://raw.githubusercontent.com/theypsilon/Genesis_MiSTer/master/releases/Genesis_20181116.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20181118.rbf",
+          "sha": "a9ff315ff97929b7133be2eb970f21f1411790b3",
+          "url": "https://raw.githubusercontent.com/theypsilon/Genesis_MiSTer/master/releases/Genesis_20181118.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20181125.rbf",
+          "sha": "1c8651ffa0716a46e7505fc45176ea721d63011f",
+          "url": "https://raw.githubusercontent.com/theypsilon/Genesis_MiSTer/master/releases/Genesis_20181125.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20181126.rbf",
+          "sha": "5929d435c4eb8dfcc039e09218f9121e397d877f",
+          "url": "https://raw.githubusercontent.com/theypsilon/Genesis_MiSTer/master/releases/Genesis_20181126.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20181205.rbf",
+          "sha": "7f9d9c34b77977dfc022196d3c64aeb7aa695b16",
+          "url": "https://raw.githubusercontent.com/theypsilon/Genesis_MiSTer/master/releases/Genesis_20181205.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20181206.rbf",
+          "sha": "4dc2da98e0364387f069d8aeba527c8aefe812b8",
+          "url": "https://raw.githubusercontent.com/theypsilon/Genesis_MiSTer/master/releases/Genesis_20181206.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20181207.rbf",
+          "sha": "661d2a45160f9048e5831e68db5ec51ae490870e",
+          "url": "https://raw.githubusercontent.com/theypsilon/Genesis_MiSTer/master/releases/Genesis_20181207.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20181210.rbf",
+          "sha": "fad7ca2417a9ce3fb3631b85824ce0ec6ded732f",
+          "url": "https://raw.githubusercontent.com/theypsilon/Genesis_MiSTer/master/releases/Genesis_20181210.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20181224.rbf",
+          "sha": "090907fd7f0c0b18d7d5080726bf5fda3ee7a624",
+          "url": "https://raw.githubusercontent.com/theypsilon/Genesis_MiSTer/master/releases/Genesis_20181224.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20181231.rbf",
+          "sha": "3403b9b3a63ca4bb1353055d4550f2f3db9c45e5",
+          "url": "https://raw.githubusercontent.com/theypsilon/Genesis_MiSTer/master/releases/Genesis_20181231.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20190110.rbf",
+          "sha": "0dd351fb934480f1fc163da39248f8ce3b2e1aa9",
+          "url": "https://raw.githubusercontent.com/theypsilon/Genesis_MiSTer/master/releases/Genesis_20190110.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20190218.rbf",
+          "sha": "55b38f29138b2f5e90e07decef07dc30cedf9b9d",
+          "url": "https://raw.githubusercontent.com/theypsilon/Genesis_MiSTer/master/releases/Genesis_20190218.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20190225.rbf",
+          "sha": "79214614b71c52a6017cc82439ecbd969f70f78c",
+          "url": "https://raw.githubusercontent.com/theypsilon/Genesis_MiSTer/master/releases/Genesis_20190225.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20190307.rbf",
+          "sha": "aa98f2257c59f426fda680ec3b07c086606cfcd3",
+          "url": "https://raw.githubusercontent.com/theypsilon/Genesis_MiSTer/master/releases/Genesis_20190307.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20190406.rbf",
+          "sha": "4fa23d404b11ecd42e52fc0367c60a685efa1f6b",
+          "url": "https://raw.githubusercontent.com/theypsilon/Genesis_MiSTer/master/releases/Genesis_20190406.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20190407.rbf",
+          "sha": "c00163edf5bcd3733871b67e16e2840b9810f7e1",
+          "url": "https://raw.githubusercontent.com/theypsilon/Genesis_MiSTer/master/releases/Genesis_20190407.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20190415.rbf",
+          "sha": "26e9034db73e89cf377d7eaa3685a61e0b89bac2",
+          "url": "https://raw.githubusercontent.com/theypsilon/Genesis_MiSTer/master/releases/Genesis_20190415.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20190503.rbf",
+          "sha": "8a74435b333133d84edb0cab53c3cae4e3655a9f",
+          "url": "https://raw.githubusercontent.com/theypsilon/Genesis_MiSTer/master/releases/Genesis_20190503.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20190510.rbf",
+          "sha": "ddbd3eab0d43e69b9c9cc414c0a648a0af1face5",
+          "url": "https://raw.githubusercontent.com/theypsilon/Genesis_MiSTer/master/releases/Genesis_20190510.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20190517.rbf",
+          "sha": "1c5561896dd5b743af00a8a26a5d69c7e002cd78",
+          "url": "https://raw.githubusercontent.com/theypsilon/Genesis_MiSTer/master/releases/Genesis_20190517.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20190604.rbf",
+          "sha": "3b66f7c73f3eb5e63eaf38d697dec22a03691e74",
+          "url": "https://raw.githubusercontent.com/theypsilon/Genesis_MiSTer/master/releases/Genesis_20190604.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20190617.rbf",
+          "sha": "5662792363309c88aea3478155191e8463684a2e",
+          "url": "https://raw.githubusercontent.com/theypsilon/Genesis_MiSTer/master/releases/Genesis_20190617.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20190627.rbf",
+          "sha": "04a5d67e995312bcaae421f2cebe9943ee37bc6d",
+          "url": "https://raw.githubusercontent.com/theypsilon/Genesis_MiSTer/master/releases/Genesis_20190627.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20190712.rbf",
+          "sha": "a23ed6ea2f8b8310e59ec06bc16c9c5c3172f3bc",
+          "url": "https://raw.githubusercontent.com/theypsilon/Genesis_MiSTer/master/releases/Genesis_20190712.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20190820.rbf",
+          "sha": "102392a63f80f898acc1164c9332f7c0671c3cac",
+          "url": "https://raw.githubusercontent.com/theypsilon/Genesis_MiSTer/master/releases/Genesis_20190820.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20190821.rbf",
+          "sha": "6d9c927f6a6deaafc9bb881a039e1e494dc3cf95",
+          "url": "https://raw.githubusercontent.com/theypsilon/Genesis_MiSTer/master/releases/Genesis_20190821.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20190823.rbf",
+          "sha": "b3871ad9c3acc53519b86554aba066da8d7db78b",
+          "url": "https://raw.githubusercontent.com/theypsilon/Genesis_MiSTer/master/releases/Genesis_20190823.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20190824.rbf",
+          "sha": "438db132323b3d60bf83847b47bdf86542aa054a",
+          "url": "https://raw.githubusercontent.com/theypsilon/Genesis_MiSTer/master/releases/Genesis_20190824.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20190911.rbf",
+          "sha": "1e3ae2a8356579766a8c499483809cea4aeeaf24",
+          "url": "https://raw.githubusercontent.com/theypsilon/Genesis_MiSTer/master/releases/Genesis_20190911.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20190925.rbf",
+          "sha": "9a5559f320b3222d5388c39d1b3deeee9983c98e",
+          "url": "https://raw.githubusercontent.com/theypsilon/Genesis_MiSTer/master/releases/Genesis_20190925.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20190929.rbf",
+          "sha": "55464cb8a89c71c08466e4b1b0c3f2f6c672d1c4",
+          "url": "https://raw.githubusercontent.com/theypsilon/Genesis_MiSTer/master/releases/Genesis_20190929.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20191014.rbf",
+          "sha": "de11e1e27c4cf7533189bfe19c66e8f88edaca36",
+          "url": "https://raw.githubusercontent.com/theypsilon/Genesis_MiSTer/master/releases/Genesis_20191014.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20191019.rbf",
+          "sha": "1185314a7fd8a7ced166ae817064827d754297d4",
+          "url": "https://raw.githubusercontent.com/theypsilon/Genesis_MiSTer/master/releases/Genesis_20191019.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20191117.rbf",
+          "sha": "97c2d22de78d2dfa07fed326a123b69673e5b291",
+          "url": "https://raw.githubusercontent.com/theypsilon/Genesis_MiSTer/master/releases/Genesis_20191117.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20200105.rbf",
+          "sha": "ba816f3d7c52ff128c0d01beb8dd12ee885c44ed",
+          "url": "https://raw.githubusercontent.com/theypsilon/Genesis_MiSTer/master/releases/Genesis_20200105.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20200126.rbf",
+          "sha": "e8ca869ab4f439e208054448e66844eca0dbb62e",
+          "url": "https://raw.githubusercontent.com/theypsilon/Genesis_MiSTer/master/releases/Genesis_20200126.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20200325.rbf",
+          "sha": "c50706b9f63e4e1c5f0008b971ee532fabaaa019",
+          "url": "https://raw.githubusercontent.com/theypsilon/Genesis_MiSTer/master/releases/Genesis_20200325.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20200406.rbf",
+          "sha": "8b6d5f606b6f4aa0f4ad2f745099282bce43f601",
+          "url": "https://raw.githubusercontent.com/theypsilon/Genesis_MiSTer/master/releases/Genesis_20200406.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20200502.rbf",
+          "sha": "1d3ec1fb3ee2868f9fe9989443acf768dfe53665",
+          "url": "https://raw.githubusercontent.com/theypsilon/Genesis_MiSTer/master/releases/Genesis_20200502.rbf",
+          "type": "RBF"
+        }
+      ]
+    },
+    {
+      "name": "Main_MiSTer",
+      "description": "Main MiSTer binary and Wiki",
+      "readme": null,
+      "archived": false,
+      "url": "https://github.com/theypsilon/Main_MiSTer",
+      "releases": [
+        {
+          "name": "MiSTer_20180502",
+          "sha": "7cf4a5393c96c3ca5d1012adee6fd5a517184a75",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20180502",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20180624",
+          "sha": "894bcf5350e5085264a58a3430f589cfd9c569e4",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20180624",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20180708",
+          "sha": "2febbfe58943738cbb818201f168d6955d286f78",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20180708",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20180808",
+          "sha": "63fd3216c3bef924c80d8c644273e86e438cb93a",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20180808",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20180903",
+          "sha": "9e919e34eb837818279584212f37dee0f5241475",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20180903",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20181019",
+          "sha": "ef00aea10da6f99d2407e040c428061a55016d6d",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20181019",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20181116",
+          "sha": "c2f3ae6334d59ee52287c90f87319c43458c8318",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20181116",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20181208",
+          "sha": "8b8e8ec73de30192912f3b0560ef85dbd6506427",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20181208",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20190108",
+          "sha": "21961e794f646f3228a23a5dc698abfedf2eb0f8",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20190108",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20190112",
+          "sha": "2403c4dc8555c7b64a7da853b64028e00074c4a7",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20190112",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20190119",
+          "sha": "6abe1732d8462363ce95c09046377005ee10559d",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20190119",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20190126",
+          "sha": "49c155054ee0b39905920a7557b784f72862277e",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20190126",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20190205",
+          "sha": "4df0d5842014934bacc8ec3a811e29ff4233c95b",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20190205",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20190218",
+          "sha": "1bfa5efda4e1f66da1cd2f90b68f6b2b588630a9",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20190218",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20190302",
+          "sha": "9918d4ad6b424c654e5ee342659c4b81494d351d",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20190302",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20190304",
+          "sha": "d93affdbde6e293c9923c98ef2914a0baf8bbddd",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20190304",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20190318",
+          "sha": "20955ce52d7b532cd8fbbbaed4c8579b66624b80",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20190318",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20190319",
+          "sha": "114cb7c4e4c2867f278daac77dd67c9bba436c4a",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20190319",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20190320",
+          "sha": "27e19c2ace92fa9c76506f172c13ccb95038379b",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20190320",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20190321",
+          "sha": "d54534fbc126c720f06efd15bf2114239cead03a",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20190321",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20190325",
+          "sha": "52d47517953af9729ea242faa70852890215c6ab",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20190325",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20190404",
+          "sha": "f9056d0d4ad82fe1b995b3679343cce6af7c23b3",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20190404",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20190406",
+          "sha": "188bea6925ae1127ab044474006eb98cb12bbb29",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20190406",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20190408",
+          "sha": "5111ca170fe0ab299892eb48d1100022d023711b",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20190408",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20190421",
+          "sha": "a6097f6d3e0f85665504de337dbae1bfa57b7d17",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20190421",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20190422",
+          "sha": "c8d658a6db4502f1ec259424b9894cb3cc492a12",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20190422",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20190427",
+          "sha": "83918c3f18d416856c3b85d147458c863d5c28b6",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20190427",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20190501",
+          "sha": "11a3feb5629d1729333ecebfaa430c5e1586769d",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20190501",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20190510",
+          "sha": "da009310fcc1828bac9efb6e5c08b25b3bde6ba3",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20190510",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20190513",
+          "sha": "dcad7108eee2c607d4e3f1b78cdd95b7acb57c12",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20190513",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20190515",
+          "sha": "c0df0edd64bb9f39f0c2ee9f2547001777e78fce",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20190515",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20190525",
+          "sha": "4f86fc86e45137c173804b034499cbd6bbc09e06",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20190525",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20190527",
+          "sha": "f0b367897a37f72e5cd807c6ab199fdfad833c1d",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20190527",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20190603",
+          "sha": "cd6b2ea373ab3354aa9a6b7fc5dfc7f215f06d83",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20190603",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20190609",
+          "sha": "83620bb6d375f10a12eed5fbca93c8b142680a01",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20190609",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20190611",
+          "sha": "c0eeb23f233033a055cccba7040a4c79ebdf1b50",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20190611",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20190627",
+          "sha": "b1eda8c5ee3c1c4a752981a6606ba098cb18fcb8",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20190627",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20190711",
+          "sha": "fddbaf7cda9d565fc38772e559ece64091ad0b9c",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20190711",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20190717",
+          "sha": "3a5d4f522f5e96b6a4a2a3630db46b1f27efd9d6",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20190717",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20190820",
+          "sha": "f0054cb896753cbeca1c6b23defdd57e92d3cfaf",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20190820",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20190907",
+          "sha": "67b099fb9963f3d7a31153cfb5c77f1bf6cf5b2e",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20190907",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20190908",
+          "sha": "c9c5e1b43c050e9bdf945a82c7710511a24e2c64",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20190908",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20190911",
+          "sha": "ac73b7413d7a9086e99c395120188db614a3ae3c",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20190911",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20190913",
+          "sha": "3fd79ca1c30afba08c7dbe76d99c90550d8c7288",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20190913",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20190922",
+          "sha": "3a499546dd8d161df343d2c9d6755815753ff0e6",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20190922",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20191004",
+          "sha": "f7cafd8a03a373e7966edce240dfa1c057e123a4",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20191004",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20191014",
+          "sha": "bc0cb75152688957d1bd8e0204c4e74f71783614",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20191014",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20191019",
+          "sha": "455443646012e134e55baf808a897eeb22583ed0",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20191019",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20191103",
+          "sha": "1c79161938974ed276e2a5fbf823e6f9a17248a3",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20191103",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20191111",
+          "sha": "afc5bfb799966bb1f59e3558908910b93e14f638",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20191111",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20191117",
+          "sha": "5343344051f51418feb5bc5fb497ec1a785d0d02",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20191117",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20191204",
+          "sha": "7ab77ac4c302cae1effd9812fa476d3b15537a6f",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20191204",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20191205",
+          "sha": "c59a64da8941662c863c805d41571844f97b8869",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20191205",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20191218",
+          "sha": "825eadfa902e2b64cf6a0bbcafe14f54f6cba6cb",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20191218",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20191228",
+          "sha": "1a064d3c08bd086d76dff2f7187760c79eb28041",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20191228",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20191230",
+          "sha": "4d9200c1ae38229918707eadfc84e2eb3d7a289d",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20191230",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20200101",
+          "sha": "44c3517cf8f55ffc8e53a6975485f35df81d29fa",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20200101",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20200106",
+          "sha": "01fd73ea5db19c19462c6da1daa8a160dd208fc7",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20200106",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20200109",
+          "sha": "cfb50112c6fadc1c623c90582cf353f87bd1b564",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20200109",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20200113",
+          "sha": "a61cfc4b91f1ff3382034a45a03e1d8830af647a",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20200113",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20200122",
+          "sha": "a8d5a8fccf33d565ad7415f913dc0dbe41ab559d",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20200122",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20200202",
+          "sha": "5ac17b26b15b1be0b5f68b059a2d03be6ffacaff",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20200202",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20200210",
+          "sha": "554cc78fcf9464a07a0b49371eac24aaa9a8c540",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20200210",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20200216",
+          "sha": "fcf3a150a9f2303735f7c567a7790e0f027f0f3f",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20200216",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20200225",
+          "sha": "e5203b5890dfb6e2d2e91df9c9f14fbd27a37973",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20200225",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20200302",
+          "sha": "e5258fe94c8ed904c6c2ef167a9487f3adef400f",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20200302",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20200307",
+          "sha": "f50371ba7f6f85adf59cb45fe6b2046eacf8fae0",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20200307",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20200308",
+          "sha": "ecc256e4b8b7c421a8ea58523546feb1b9cca708",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20200308",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20200311",
+          "sha": "11ce105631bebeaf8714c8af76c06fcedce6cdd1",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20200311",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20200325",
+          "sha": "d14dc79000f1cc82378cff6932c41916a0ef06ee",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20200325",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20200419",
+          "sha": "4cfe1d378c9ed26a0f23324db08d4f3b67199bcc",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20200419",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20200420",
+          "sha": "4cfe1d378c9ed26a0f23324db08d4f3b67199bcc",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20200420",
+          "type": "OTHER"
+        }
+      ]
+    },
+    {
+      "name": "Retro-Display-Simulator",
+      "description": "Experiment about bringing low-res images to a virtual display, and playing around it",
+      "readme": "# Retro Display Simulator\n\n## On Windows\n\nDownload latest release from here:\n\n[rds-0.1.0.exe](https://github.com/theypsilon/Retro-Display-Simulator/raw/master/releases/rds-0.1.0.exe)\n\n## On Linux (Tested on Ubuntu 18.04 LTS)\n\nInstall GCC, CMake, OpenGL and ./run.sh it.\n",
+      "archived": false,
+      "url": "https://github.com/theypsilon/Retro-Display-Simulator",
+      "releases": [
+        {
+          "name": "rds-0.1.0.exe",
+          "sha": "20b8d34473d28571d768414b240afbd38a816f2f",
+          "url": "https://raw.githubusercontent.com/theypsilon/Retro-Display-Simulator/master/releases/rds-0.1.0.exe",
+          "type": "OTHER"
+        }
+      ]
+    }
+  ]
+}
