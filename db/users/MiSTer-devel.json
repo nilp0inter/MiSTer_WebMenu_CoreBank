@@ -4274,34 +4274,6 @@
       ]
     },
     {
-      "name": "Arcade-Rygar_MiSTer",
-      "description": "Rygar (1986) core for MiSTer",
-      "readme": "# Rygar (1986)\n\n<img alt=\"Rygar\" src=\"https://github.com/nullobject/rygar-fpga/raw/master/doc/rygar-banner.jpg\" />\n\nRygar was originally built in 1986 by Tecmo, a Japanese video game company, and saw later releases on consoles like Nintendo Entertainment System, Sega Master System, Commodore 64, Atari Lynx, etc.\n\nI began this project by writing an [emulator](https://github.com/nullobject/rygar-emu), so I could focus on learning how the arcade game works, without having to worry about the FPGA side of things. I kept detailed project notes while working on both the emulator and FPGA core, which will be turned into a series of [blog posts](https://joshbassett.info).\n\n## Getting Started\n\nIn order to run this arcade core, you will need to provide the correct ROMs (they are not included for legal reasons).\n\nTo simplify the process, you only need to provide the `rygar.zip` file from the MAME ROMs.\n\n1. Download the [latest Rygar release](https://github.com/MiSTer-devel/Arcade-Rygar_MiSTer/releases/latest).\n2. Extract the MRA and RBF files from the archive.\n3. Place the extracted files and the ZIP file containing the MAME ROM files in the following locations:\n\n```\n_Arcade/rygar.mra\n_Arcade/cores/rygar.rbf\n_Arcade/mame/rygar.zip\n```\n\nFor more information on using MRA files with MiSTer, please refer to the [wiki](https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms).\n\n## Controls\n\nKeyboard inputs:\n\n| name     | key                   |\n| ---      | ---                   |\n| Coin     | 5                     |\n| Start    | 1                     |\n| Attack   | CTRL                  |\n| Jump     | ALT                   |\n| Movement | UP, DOWN, LEFT, RIGHT |\n\nJoystick inputs:\n\n| name     | button                |\n| ---      | ---                   |\n| Coin     | L                     |\n| Start    | R                     |\n| Attack   | A                     |\n| Jump     | B                     |\n| Movement | UP, DOWN, LEFT, RIGHT |\n\n## Development\n\nCompile the core:\n\n    $ make build\n\nProgram the DE10-Nano:\n\n    $ make program\n\n## Credits\n\nMade with :heart: by [Josh Bassett](https://twitter.com/nullobject), 2020.\n\nSpecial thanks to:\n\n* [Jose Tejada](https://twitter.com/topapate)\n* [ElectronAsh](https://twitter.com/AshEvans81)\n\n## Licence\n\nRygar is licensed under the MIT licence. See the LICENCE file for more details.\n",
-      "archived": false,
-      "url": "https://github.com/MiSTer-devel/Arcade-Rygar_MiSTer",
-      "releases": [
-        {
-          "name": "Arcade-Rygar_20200513.rbf",
-          "sha": "f3afdfc9f05f3c9d2a3de8d568779287708ee9c9",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Rygar_MiSTer/master/releases/Arcade-Rygar_20200513.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Rygar.mra",
-          "sha": "b722cab2b3ad1e72b5f622b6ca692896ceb607bf",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Rygar_MiSTer/master/releases/Rygar.mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Rygar",
-            "rbf": "rygar",
-            "zips": [
-              "rygar.zip"
-            ]
-          }
-        }
-      ]
-    },
-    {
       "name": "Arcade-Scramble_MiSTer",
       "description": "Arcade: Scramble for MiSTer",
       "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: Scramble port to MiSTer by Sorgelig\n-- 29 September 2018\n-- \n---------------------------------------------------------------------------------\n-- A simulation model of Scramble hardware\n-- Copyright (c) MikeJ - Feb 2007\n---------------------------------------------------------------------------------\n-- \n-- Support screen and controls rotation on HDMI output.\n-- Only controls are rotated on VGA output.\n-- \n-- \n-- Keyboard inputs :\n--\n--   F2          : Coin + Start 2 players\n--   F1          : Coin + Start 1 player\n--   CTRL        : Fire\n--   SPACE       : Bomb\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   R,F,D,G     : Player 2 Movements\n--   A           : Player 2 Fire\n--\n--\n-- Joystick support.\n-- \n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
