@@ -1413,22 +1413,22 @@
       ]
     },
     {
-      "name": "Arcade-CrazyBalloon-MiSTer",
+      "name": "Arcade-CrazyBalloon_MiSTer",
       "description": "Taito Crazy Balloon ",
       "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade version of Astrocade for MiSTer - Mike Coates\n--\n-- V 1.0 15/06/2020 - Mike Coates\n---------------------------------------------------------------------------------\n-- Support screen and controls rotation on HDMI output.\n-- Only controls are rotated on VGA output.\n-- \n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   R,F,D,G     : Player 2 Movements\n--\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--\n-- Joystick support.\n-- \n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
       "archived": false,
-      "url": "https://github.com/MiSTer-devel/Arcade-CrazyBalloon-MiSTer",
+      "url": "https://github.com/MiSTer-devel/Arcade-CrazyBalloon_MiSTer",
       "releases": [
         {
           "name": "Arcade-CrazyBalloon_20200615.rbf",
           "sha": "65a7045a71f445caea29e6b04ec9bde7fb451d43",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-CrazyBalloon-MiSTer/master/releases/Arcade-CrazyBalloon_20200615.rbf",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-CrazyBalloon_MiSTer/master/releases/Arcade-CrazyBalloon_20200615.rbf",
           "type": "RBF"
         },
         {
           "name": "Crazy Balloon.mra",
           "sha": "4d43ee8cd66c60d87c7ed81fc502d2b619df5b68",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-CrazyBalloon-MiSTer/master/releases/Crazy%20Balloon.mra",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-CrazyBalloon_MiSTer/master/releases/Crazy%20Balloon.mra",
           "type": "MRA",
           "extra": {
             "name": "Crazy Balloon",
