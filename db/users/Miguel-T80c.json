@@ -849,6 +849,34 @@
       ]
     },
     {
+      "name": "Arcade-CrazyBalloon_MiSTer",
+      "description": "Taito Crazy Balloon ",
+      "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade version of Astrocade for MiSTer - Mike Coates\n--\n-- V 1.0 15/06/2020 - Mike Coates\n---------------------------------------------------------------------------------\n-- Support screen and controls rotation on HDMI output.\n-- Only controls are rotated on VGA output.\n-- \n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   R,F,D,G     : Player 2 Movements\n--\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--\n-- Joystick support.\n-- \n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
+      "archived": false,
+      "url": "https://github.com/Miguel-T80c/Arcade-CrazyBalloon_MiSTer",
+      "releases": [
+        {
+          "name": "Arcade-CrazyBalloon_20200615.rbf",
+          "sha": "65a7045a71f445caea29e6b04ec9bde7fb451d43",
+          "url": "https://raw.githubusercontent.com/Miguel-T80c/Arcade-CrazyBalloon_MiSTer/master/releases/Arcade-CrazyBalloon_20200615.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Crazy Balloon.mra",
+          "sha": "4d43ee8cd66c60d87c7ed81fc502d2b619df5b68",
+          "url": "https://raw.githubusercontent.com/Miguel-T80c/Arcade-CrazyBalloon_MiSTer/master/releases/Crazy%20Balloon.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Crazy Balloon",
+            "rbf": "CrazyBalloon",
+            "zips": [
+              "crbaloon.zip"
+            ]
+          }
+        }
+      ]
+    },
+    {
       "name": "Arcade-CrazyClimber_MiSTer",
       "description": "Arcade: Crazy Climber for MiSTer",
       "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: Crazy Climber port to MiSTer by Sorgelig\n-- 7 June 2018\n-- \n---------------------------------------------------------------------------------\n-- Crazy climber FPGA by Dar - (darfpga@aol.fr)\n-- http://darfpga.blogspot.fr\n---------------------------------------------------------------------------------\n-- gen_ram.vhd\n-------------------------------- \n-- Copyright 2005-2008 by Peter Wendrich (pwsoft@syntiac.com)\n-- http://www.syntiac.com/fpga64.html\n---------------------------------------------------------------------------------\n-- T80/T80se - Version : 0247\n-----------------------------\n-- Z80 compatible microprocessor core\n-- Copyright (c) 2001-2002 Daniel Wallner (jesus@opencores.org)\n---------------------------------------------------------------------------------\n-- \n-- \n-- Keyboard inputs :\n--\n--   F1          : Add coin + Start 1 player\n--   F2          : Add coin + Start 2 players\n--   W,A,S,D     : Left hand movements\n--   UP,DOWN,LEFT,RIGHT arrows : Right hand movements\n--\n--   5,6 : Add coin\n--   1,2 : Start Player 1, Player 2\n--\n-- Joystick/Gamepad support.\n-- \n-- \n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
