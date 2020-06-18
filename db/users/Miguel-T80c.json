@@ -5358,7 +5358,7 @@
     {
       "name": "Menu_MiSTer",
       "description": null,
-      "readme": "# Startup core for MiSTer\r\n\r\n* **ESC** - switch to options\r\n* **F1** - switch the backgound\r\n* **F9** - Go to Linux terminal (F12 - back)\r\n\r\n## Notes:\r\n* Core supports sub-folders started with _ character.\r\n* Regardless the place of RBF file, boot rom/vhd should be placed into either root of SD card or core's dedicated folder (should be created in root of SD card).\r\n* Joystick (including emulation by keyboard) buttons defined in this core is default map for all cores unless defined in particalar core.\r\n\r\n## Artwork\r\n* Place menu.png or menu.jpg to the root of SD card to have it as background on HDMI (you can use vga_scaler=1 if you want it on VGA).\r\n",
+      "readme": "# Startup core for MiSTer\r\n\r\n* **ESC** - switch to options\r\n* **F1** - switch the background\r\n* **F9** - Go to Linux terminal (F12 - back)\r\n\r\n## Notes:\r\n* Core supports sub-folders started with _ character.\r\n* Regardless the place of RBF file, boot rom/vhd should be placed into either root of SD card or core's dedicated folder (should be created in root of SD card).\r\n* Joystick (including emulation by keyboard) buttons defined in this core is default map for all cores unless defined in particalar core.\r\n\r\n## Artwork\r\n* Place menu.png or menu.jpg to the root of SD card to have it as background on HDMI (you can use vga_scaler=1 if you want it on VGA).\r\n",
       "archived": false,
       "url": "https://github.com/Miguel-T80c/Menu_MiSTer",
       "releases": [
@@ -5390,6 +5390,12 @@
           "name": "menu_20200429.rbf",
           "sha": "f7162a1eccbe467d2018da13357924e0528488e3",
           "url": "https://raw.githubusercontent.com/Miguel-T80c/Menu_MiSTer/master/releases/menu_20200429.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "menu_20200618.rbf",
+          "sha": "4f4a5af9920cf7fc64dc2c91f3d3495e0c844ffc",
+          "url": "https://raw.githubusercontent.com/Miguel-T80c/Menu_MiSTer/master/releases/menu_20200618.rbf",
           "type": "RBF"
         }
       ]
