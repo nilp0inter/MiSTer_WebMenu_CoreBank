@@ -103,7 +103,7 @@
     {
       "name": "GBA_MiSTer",
       "description": "GBA for MiSTer",
-      "readme": "# GBA_MiSTer\nGBA for MiSTer\n\n# HW Requirements/Features\nThe games can run from a naked DE10-Nano with the build-in DDR-RAM.\nHowever, using SDRAM is highly recommended, as some games may slowdown or loose sync when using DDR-RAM.\n\nWhen using SDRAM, it requires 32MB SDRAM for games less than 32MB. 32MB games require either 64MB or 128MB module.\nSDRAM will be automatically used when available.\n\n# Bios\nOpensource Bios from Normmatt is included, however it has issues with some games.\nOriginal GBA BIOS can be placed to GBA folder with name boot.rom\n\nPLEASE do not report errors without testing with the original BIOS\n\nHomebrew games are sometimes not supported by the official BIOS, \nbecause the BIOS checks for Nintendo Logo included in the ROM, which is protected by copyright.\nTo use these ROMs without renaming or removing the the boot.rom, \nyou can activate the \"Homebrew BIOS\" settings in OSD.\nAs the BIOS is already replaced at boot time, you must save this settings and hard reset/reload the GBA core.\n\n# Status\n~1600 games tested until ingame:\n- 99% without major issues (no crash, playable)\n\n# Features\n- all videomodes including affine and special effects\n- all soundchannels\n- saving as in GBA\n- Savestates\n- FastForward - speed up game by factor 2-4\n- CPU Turbomode - give games additional CPU power\n- Flickerblend - turn on for games like F-Zero, Mario Kart or NES Classics to prevent flickering effects\n- Spritelimit - turn on to prevent wrong sprites for games that rely on the limit (opt-in)\n- Cheats\n- Color optimizations: shader colors and desaturate\n- Rewind: go back up to 60 seconds in time\n- Tilt: use analog stick (map stick in Mister Main before)\n- Solar Sensor: Set brightness in OSD\n- Gyro: use analog stick (map stick in Mister Main before)\n- RTC: automatically used, works with RTC board or internet connection\n\n# Savestates\nCore provides 4 slots to save the state. The first slot gets saved to disk and automatically loaded (but not applied)\nupon next load of game. Rest 3 slots are residing only in memory for temporary use.\nFirst slot save/restore is available from OSD as well. \n\n\nHot keys for save states:\n- Alt-F1..F4 - save the state\n- F1...F4 - restore\n\n# Rewind\nTo use rewind, turn on the OSD Option \"Rewind Capture\" and map the rewind button.\nYou may have to restart the game for the function to work properly.\nAttention: Rewind capture will slow down your game by about 0.5% and may lead to light audio stutter.\nRewind capture is not compatible to \"Pause when OSD is open\", so pause is disabled when Rewind capture is on.\n\n# Spritelimit\nCurrently there are only few games known that produce glitches without sprite pixel limit:\n- Gunstar Super Heroes\n- Famicon Mini Series Vol21 - Vol30\n\n# Cartridge Hardware supported games\n- RTC: Pokemon Sapphire+Ruby+Emerald, Boktai 1+2+3, Sennen Kazoku, Rockman EXE 4.5\n- Solar Sensor: Boktai 1+2+3\n- Gyro: Wario Ware Twisted\n- Tilt: Yoshi Topsy Turvy/Universal Gravitation, Koro Koro Puzzle - Happy Panechu!\n\nIf there is a game you want to play that also uses one of these features, but is not listed, please open a bug request.\n\n# Not included\n- Multiplayer features like Serials\n- E-Reader support\n- other cartridge hardware\n\n# Accuracy\n\n(Status 03.02.2020)\n\n>> Attention: the following comparisons are NOT intended for proving any solution is better than the other.\n>> This is solely here for the purpose of showing the status compared to other great emulators available.\n>> It is not unusual that an emulator can play games fine and still fail tests. \n>> Furthermore some of these tests are new and not yet addressed by most emulators.\n\nThere is great testsuite you can get from here: https://github.com/mgba-emu/suite\nIt tests out correct Memory, Timer, DMA, CPU, BIOS behavior and also instruction timing. It works 100% on the real GBA.\nThe suite itself has several thousand single tests.\n\nTestname      | TestCount | Mister GBA| mGBA | VBA-M | Higan\n--------------|-----------|-----------|------|-------|-------\nMemory        |      1552 |  1552     | 1552 |  1338 | 1552\nIOREAD        |       123 |   123     |  116 |   100 |  123\nTiming        |      1660 |  1554     | 1540 |   692 | 1424\nTimer         |       936 |   445     |  610 |   440 |  457\nTimer IRQ     |        90 |    65     |   70 |     8 |   36\nShifter       |       140 |   140     |  140 |   132 |  132\nCarry         |        93 |    93     |   93 |    93 |   93\nBIOSMath      |       625 |   625     |  625 |   625 |  625\nDMATests      |      1256 |  1248     | 1232 |  1032 | 1136\nEdgeCase      |        10 |     3     |    7 |     3 |    1\nLayer Toggle  |         1 |  pass     | pass |  pass | fail \nOAM Update    |         1 |  fail     | fail |  fail | fail\n\n\nA complex CPU only testuite can be found here: https://github.com/jsmolka/gba-suite\n\nTestname | Mister GBA| mGBA | VBA-M | Higan\n---------|-----------|------|-------|-------\nARM      |  Pass     | Fail |  Fail |  Fail\nTHUMB    |  Pass     | Fail |  Fail |  Fail\n\n# Information for developers\n\nHow to simulate:\nhttps://github.com/MiSTer-devel/GBA_MiSTer/tree/master/sim\n\nHow to implement a GPIO module:\nhttps://github.com/MiSTer-devel/GBA_MiSTer/blob/master/gpio_readme.md\n",
+      "readme": "# GBA_MiSTer\nGBA for MiSTer\n\n# HW Requirements/Features\nThe games can run from a naked DE10-Nano with the build-in DDR-RAM.\nHowever, using SDRAM is highly recommended, as some games may slowdown or loose sync when using DDR-RAM.\n\nWhen using SDRAM, it requires 32MB SDRAM for games less than 32MB. 32MB games require either 64MB or 128MB module.\nSDRAM will be automatically used when available.\n\n# Bios\nOpensource Bios from Normmatt is included, however it has issues with some games.\nOriginal GBA BIOS can be placed to GBA folder with name boot.rom\n\nPLEASE do not report errors without testing with the original BIOS\n\nHomebrew games are sometimes not supported by the official BIOS, \nbecause the BIOS checks for Nintendo Logo included in the ROM, which is protected by copyright.\nTo use these ROMs without renaming or removing the the boot.rom, \nyou can activate the \"Homebrew BIOS\" settings in OSD.\nAs the BIOS is already replaced at boot time, you must save this settings and hard reset/reload the GBA core.\n\n# Status\n~1600 games tested until ingame:\n- 99% without major issues (no crash, playable)\n\n# Features\n- all videomodes including affine and special effects\n- all soundchannels\n- saving as in GBA\n- Savestates\n- FastForward - speed up game by factor 2-4\n- CPU Turbomode - give games additional CPU power\n- Flickerblend - set to blend or 30Hz mode for games like F-Zero, Mario Kart or NES Classics to prevent flickering effects\n- Spritelimit - turn on to prevent wrong sprites for games that rely on the limit (opt-in)\n- Cheats\n- Color optimizations: shader colors and desaturate\n- Rewind: go back up to 60 seconds in time\n- Tilt: use analog stick (map stick in Mister Main before)\n- Solar Sensor: Set brightness in OSD\n- Gyro: use analog stick (map stick in Mister Main before)\n- RTC: automatically used, works with RTC board or internet connection\n- 2x Resolution: game is rendered at 480x320 instead of 240x160 pixels\n\n# Savestates\nCore provides 4 slots to save the state. The first slot gets saved to disk and automatically loaded (but not applied)\nupon next load of game. Rest 3 slots are residing only in memory for temporary use.\nFirst slot save/restore is available from OSD as well. \n\n\nHot keys for save states:\n- Alt-F1..F4 - save the state\n- F1...F4 - restore\n\n# Rewind\nTo use rewind, turn on the OSD Option \"Rewind Capture\" and map the rewind button.\nYou may have to restart the game for the function to work properly.\nAttention: Rewind capture will slow down your game by about 0.5% and may lead to light audio stutter.\nRewind capture is not compatible to \"Pause when OSD is open\", so pause is disabled when Rewind capture is on.\n\n# Spritelimit\nCurrently there are only few games known that produce glitches without sprite pixel limit:\n- Gunstar Super Heroes\n- Famicon Mini Series Vol21 - Vol30\n\n# 2x Resolution\nImproved rendering resolution for:\n- Affine background: \"Mode7\" games, typically racing games like Mario Kart\n- Affine sprites: games that scale or rotate sprites\nThis rendering is experimental and can cause glitches, as not all game behavior can be supported.\nThose glitches can not be fixed without gamespecific hacks and therefore will not be fixed. \nPlease don't add bugs in such cases.\n\n# Cartridge Hardware supported games\n- RTC: Pokemon Sapphire+Ruby+Emerald, Boktai 1+2+3, Sennen Kazoku, Rockman EXE 4.5\n- Solar Sensor: Boktai 1+2+3\n- Gyro: Wario Ware Twisted\n- Tilt: Yoshi Topsy Turvy/Universal Gravitation, Koro Koro Puzzle - Happy Panechu!\n\nIf there is a game you want to play that also uses one of these features, but is not listed, please open a bug request.\n\n# Not included\n- Multiplayer features like Serials\n- E-Reader support\n- other cartridge hardware\n\n# Accuracy\n\n(Status 03.02.2020)\n\n>> Attention: the following comparisons are NOT intended for proving any solution is better than the other.\n>> This is solely here for the purpose of showing the status compared to other great emulators available.\n>> It is not unusual that an emulator can play games fine and still fail tests. \n>> Furthermore some of these tests are new and not yet addressed by most emulators.\n\nThere is great testsuite you can get from here: https://github.com/mgba-emu/suite\nIt tests out correct Memory, Timer, DMA, CPU, BIOS behavior and also instruction timing. It works 100% on the real GBA.\nThe suite itself has several thousand single tests.\n\nTestname      | TestCount | Mister GBA| mGBA | VBA-M | Higan\n--------------|-----------|-----------|------|-------|-------\nMemory        |      1552 |  1552     | 1552 |  1338 | 1552\nIOREAD        |       123 |   123     |  116 |   100 |  123\nTiming        |      1660 |  1554     | 1540 |   692 | 1424\nTimer         |       936 |   445     |  610 |   440 |  457\nTimer IRQ     |        90 |    65     |   70 |     8 |   36\nShifter       |       140 |   140     |  140 |   132 |  132\nCarry         |        93 |    93     |   93 |    93 |   93\nBIOSMath      |       625 |   625     |  625 |   625 |  625\nDMATests      |      1256 |  1248     | 1232 |  1032 | 1136\nEdgeCase      |        10 |     3     |    7 |     3 |    1\nLayer Toggle  |         1 |  pass     | pass |  pass | fail \nOAM Update    |         1 |  fail     | fail |  fail | fail\n\n\nA complex CPU only testuite can be found here: https://github.com/jsmolka/gba-suite\n\nTestname | Mister GBA| mGBA | VBA-M | Higan\n---------|-----------|------|-------|-------\nARM      |  Pass     | Fail |  Fail |  Fail\nTHUMB    |  Pass     | Fail |  Fail |  Fail\n\n# Information for developers\n\nHow to simulate:\nhttps://github.com/MiSTer-devel/GBA_MiSTer/tree/master/sim\n\nHow to implement a GPIO module:\nhttps://github.com/MiSTer-devel/GBA_MiSTer/blob/master/gpio_readme.md\n",
       "archived": false,
       "url": "https://github.com/MiSTer-LLAPI/GBA_MiSTer",
       "releases": [
@@ -174,6 +174,12 @@
           "type": "RBF"
         },
         {
+          "name": "GBA_20200617.rbf",
+          "sha": "9d8f92b4b3510e77b627a82964966d5b3f3879de",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/GBA_MiSTer/master/releases/GBA_20200617.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "GBA_LLAPI_20191124.rbf",
           "sha": "98569a37c897641588b01b35f502d8953bf08925",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/GBA_MiSTer/master/releases/GBA_LLAPI_20191124.rbf",
@@ -231,6 +237,12 @@
           "name": "GBA_LLAPI_20200513.rbf",
           "sha": "b50117f26f5193285e2d6a73882f72b593df230e",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/GBA_MiSTer/master/releases/GBA_LLAPI_20200513.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "GBA_LLAPI_20200619.rbf",
+          "sha": "6254a2b2b3b7945aeb5cc3bdd3a4b626e912e58d",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/GBA_MiSTer/master/releases/GBA_LLAPI_20200619.rbf",
           "type": "RBF"
         }
       ]
@@ -738,6 +750,12 @@
           "type": "RBF"
         },
         {
+          "name": "SNES_20200618.rbf",
+          "sha": "77ef9aba32701d6582c8b039c55db23c9a51b8c3",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SNES_MiSTer/master/releases/SNES_20200618.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "SNES_LLAPI_20191019.rbf",
           "sha": "7c3759eb5d11edabbc51473d02a5952f77d54807",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SNES_MiSTer/master/releases/SNES_LLAPI_20191019.rbf",
@@ -783,6 +801,12 @@
           "name": "SNES_LLAPI_20200529.rbf",
           "sha": "56516749ec48e92a9596c064b7c4248e281b659a",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SNES_MiSTer/master/releases/SNES_LLAPI_20200529.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_LLAPI_20200619.rbf",
+          "sha": "a6cc09909e5515f8ab1693c77bf9027d514331d3",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SNES_MiSTer/master/releases/SNES_LLAPI_20200619.rbf",
           "type": "RBF"
         }
       ]
@@ -852,6 +876,12 @@
           "name": "TurboGrafx16_20200608.rbf",
           "sha": "f80b3f45f86a6f3809ff76e8620393b102e16e79",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/TurboGrafx16_MiSTer/master/releases/TurboGrafx16_20200608.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "TurboGrafx16_20200618.rbf",
+          "sha": "3b01c7b920eaddbe919e3523984e765834d3f8ae",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/TurboGrafx16_MiSTer/master/releases/TurboGrafx16_20200618.rbf",
           "type": "RBF"
         },
         {
@@ -930,6 +960,12 @@
           "name": "TurboGrafx16_LLAPI_20200609.rbf",
           "sha": "1021e31a333b60f89d94e2c0362a660078916cfe",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/TurboGrafx16_MiSTer/master/releases/TurboGrafx16_LLAPI_20200609.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "TurboGrafx16_LLAPI_20200619.rbf",
+          "sha": "e25e43e9a27d33a378c2b22d6ad9042f9dd99f7c",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/TurboGrafx16_MiSTer/master/releases/TurboGrafx16_LLAPI_20200619.rbf",
           "type": "RBF"
         }
       ]
