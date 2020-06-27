@@ -1,46 +1,186 @@
-Repository(full_name="jotego/jtbin") ['/releases', '/mister']
-Repository(full_name="jotego/jtbin") ['/mister/1942']
-Repository(full_name="jotego/jtbin") ['/mister/1942/releases']
-Repository(full_name="jotego/jtbin") ['/mister/1943']
-Repository(full_name="jotego/jtbin") ['/mister/1943/releases']
-Repository(full_name="jotego/jtbin") ['/mister/MRA-Alternatives_MiSTer']
-Repository(full_name="jotego/jtbin") ['/mister/MRA-Alternatives_MiSTer/releases']
-Repository(full_name="jotego/jtbin") ['/mister/biocom']
-Repository(full_name="jotego/jtbin") ['/mister/biocom/releases']
-Repository(full_name="jotego/jtbin") ['/mister/btiger']
-Repository(full_name="jotego/jtbin") ['/mister/btiger/releases']
-Repository(full_name="jotego/jtbin") ['/mister/commando']
-Repository(full_name="jotego/jtbin") ['/mister/commando/releases']
-Repository(full_name="jotego/jtbin") ['/mister/cps1']
-Repository(full_name="jotego/jtbin") ['/mister/cps1/releases']
-Repository(full_name="jotego/jtbin") ['/mister/cps1/releases/_alt']
-Repository(full_name="jotego/jtbin") ['/mister/dd']
-Repository(full_name="jotego/jtbin") ['/mister/dd/releases']
-Repository(full_name="jotego/jtbin") ['/mister/dd/releases/alt']
-Repository(full_name="jotego/jtbin") ['/mister/dd2']
-Repository(full_name="jotego/jtbin") ['/mister/dd2/releases']
-Repository(full_name="jotego/jtbin") ['/mister/dd2/releases/alt']
-Repository(full_name="jotego/jtbin") ['/mister/f1dream']
-Repository(full_name="jotego/jtbin") ['/mister/f1dream/releases']
-Repository(full_name="jotego/jtbin") ['/mister/gng']
-Repository(full_name="jotego/jtbin") ['/mister/gng/releases']
-Repository(full_name="jotego/jtbin") ['/mister/gunsmoke']
-Repository(full_name="jotego/jtbin") ['/mister/gunsmoke/releases']
-Repository(full_name="jotego/jtbin") ['/mister/popeye']
-Repository(full_name="jotego/jtbin") ['/mister/popeye/releases']
-Repository(full_name="jotego/jtbin") ['/mister/sectionz']
-Repository(full_name="jotego/jtbin") ['/mister/sectionz/releases']
-Repository(full_name="jotego/jtbin") ['/mister/tora']
-Repository(full_name="jotego/jtbin") ['/mister/tora/releases']
-Repository(full_name="jotego/jtbin") ['/mister/update']
-Repository(full_name="jotego/jtbin") ['/mister/vulgus']
-Repository(full_name="jotego/jtbin") ['/mister/vulgus/releases']
 {
   "name": "jotego",
   "image": "https://avatars0.githubusercontent.com/u/1863036?v=4",
   "url": "https://github.com/jotego",
   "type": "User",
   "repos": [
+    {
+      "name": "Genesis_MiSTer",
+      "description": "Sega Genesis for MiSTer",
+      "readme": "# SEGA Megadrive/Genesis for MiSTer.\n\nThis is the port of fpgagen core.\n\nfpgagen - a SEGA Megadrive/Genesis clone in a FPGA.\nCopyright (c) 2010-2013 Gregory Estrade (greg@torlus.com)\nAll rights reserved\n\n## Installing\ncopy *.rbf to root of SD card. Put some ROMs (*.BIN/*.GEN/*.MD) into Genesis folder\n\n## Hot Keys\n* F1 - reset to JP(NTSC) region\n* F2 - reset to US(NTSC) region\n* F3 - reset to EU(PAL)  region\n\n## Auto Region option\nIf this option is enabled then region will be automatically switched upon loading according to file name extensions:\n\n* BIN -> JP\n* GEN -> US\n* MD -> EU\n",
+      "archived": false,
+      "url": "https://github.com/jotego/Genesis_MiSTer",
+      "releases": [
+        {
+          "name": "Genesis_20180602.rbf",
+          "sha": "4a177709963d84e78504dec09e37b9fffb26990e",
+          "url": "https://raw.githubusercontent.com/jotego/Genesis_MiSTer/master/releases/Genesis_20180602.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20180609.rbf",
+          "sha": "41992e2f0f373f80aca4b61e1f200d4fe330a037",
+          "url": "https://raw.githubusercontent.com/jotego/Genesis_MiSTer/master/releases/Genesis_20180609.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20180926.rbf",
+          "sha": "099c4da4c1496389852c4ac1c594e7ce0b81b721",
+          "url": "https://raw.githubusercontent.com/jotego/Genesis_MiSTer/master/releases/Genesis_20180926.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20181003.rbf",
+          "sha": "adf5dc1031e4dd652be4e6bb504359020ef81551",
+          "url": "https://raw.githubusercontent.com/jotego/Genesis_MiSTer/master/releases/Genesis_20181003.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20181010.rbf",
+          "sha": "8215d3978007f69d098ac78bce0a87c41ff5d2cc",
+          "url": "https://raw.githubusercontent.com/jotego/Genesis_MiSTer/master/releases/Genesis_20181010.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20181015.rbf",
+          "sha": "6a52c0306ef44c0d8a4c9400dfec1869f7ad6444",
+          "url": "https://raw.githubusercontent.com/jotego/Genesis_MiSTer/master/releases/Genesis_20181015.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20181016.rbf",
+          "sha": "531b2bf44359b794fad5d164322aa62b5c2fb6f7",
+          "url": "https://raw.githubusercontent.com/jotego/Genesis_MiSTer/master/releases/Genesis_20181016.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20181019.rbf",
+          "sha": "6d138c26920bbe0ad5e713619cf94d0668d050ff",
+          "url": "https://raw.githubusercontent.com/jotego/Genesis_MiSTer/master/releases/Genesis_20181019.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20181029.rbf",
+          "sha": "3fb87664f2525a424af63e556f290ed755f5c2fe",
+          "url": "https://raw.githubusercontent.com/jotego/Genesis_MiSTer/master/releases/Genesis_20181029.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20181031.rbf",
+          "sha": "514ae792bbf7a5eef9f82fd7bdfcb6bc7b0e1307",
+          "url": "https://raw.githubusercontent.com/jotego/Genesis_MiSTer/master/releases/Genesis_20181031.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20181105.rbf",
+          "sha": "3ba1f44e67cbf4be7a4f341e10d1e9f794c2187d",
+          "url": "https://raw.githubusercontent.com/jotego/Genesis_MiSTer/master/releases/Genesis_20181105.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20181111.rbf",
+          "sha": "de67e18d5a545696a6e8e3ee4c33952209dd4300",
+          "url": "https://raw.githubusercontent.com/jotego/Genesis_MiSTer/master/releases/Genesis_20181111.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20181116.rbf",
+          "sha": "861a16015c824a1e1d50802a15b528f893859e85",
+          "url": "https://raw.githubusercontent.com/jotego/Genesis_MiSTer/master/releases/Genesis_20181116.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20181118.rbf",
+          "sha": "a9ff315ff97929b7133be2eb970f21f1411790b3",
+          "url": "https://raw.githubusercontent.com/jotego/Genesis_MiSTer/master/releases/Genesis_20181118.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20181125.rbf",
+          "sha": "1c8651ffa0716a46e7505fc45176ea721d63011f",
+          "url": "https://raw.githubusercontent.com/jotego/Genesis_MiSTer/master/releases/Genesis_20181125.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20181126.rbf",
+          "sha": "5929d435c4eb8dfcc039e09218f9121e397d877f",
+          "url": "https://raw.githubusercontent.com/jotego/Genesis_MiSTer/master/releases/Genesis_20181126.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20181205.rbf",
+          "sha": "7f9d9c34b77977dfc022196d3c64aeb7aa695b16",
+          "url": "https://raw.githubusercontent.com/jotego/Genesis_MiSTer/master/releases/Genesis_20181205.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20181206.rbf",
+          "sha": "4dc2da98e0364387f069d8aeba527c8aefe812b8",
+          "url": "https://raw.githubusercontent.com/jotego/Genesis_MiSTer/master/releases/Genesis_20181206.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20181207.rbf",
+          "sha": "661d2a45160f9048e5831e68db5ec51ae490870e",
+          "url": "https://raw.githubusercontent.com/jotego/Genesis_MiSTer/master/releases/Genesis_20181207.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20181210.rbf",
+          "sha": "fad7ca2417a9ce3fb3631b85824ce0ec6ded732f",
+          "url": "https://raw.githubusercontent.com/jotego/Genesis_MiSTer/master/releases/Genesis_20181210.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20181224.rbf",
+          "sha": "090907fd7f0c0b18d7d5080726bf5fda3ee7a624",
+          "url": "https://raw.githubusercontent.com/jotego/Genesis_MiSTer/master/releases/Genesis_20181224.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20181231.rbf",
+          "sha": "3403b9b3a63ca4bb1353055d4550f2f3db9c45e5",
+          "url": "https://raw.githubusercontent.com/jotego/Genesis_MiSTer/master/releases/Genesis_20181231.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20190110.rbf",
+          "sha": "0dd351fb934480f1fc163da39248f8ce3b2e1aa9",
+          "url": "https://raw.githubusercontent.com/jotego/Genesis_MiSTer/master/releases/Genesis_20190110.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20190218.rbf",
+          "sha": "55b38f29138b2f5e90e07decef07dc30cedf9b9d",
+          "url": "https://raw.githubusercontent.com/jotego/Genesis_MiSTer/master/releases/Genesis_20190218.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20190225.rbf",
+          "sha": "79214614b71c52a6017cc82439ecbd969f70f78c",
+          "url": "https://raw.githubusercontent.com/jotego/Genesis_MiSTer/master/releases/Genesis_20190225.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20190307.rbf",
+          "sha": "aa98f2257c59f426fda680ec3b07c086606cfcd3",
+          "url": "https://raw.githubusercontent.com/jotego/Genesis_MiSTer/master/releases/Genesis_20190307.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20190406.rbf",
+          "sha": "4fa23d404b11ecd42e52fc0367c60a685efa1f6b",
+          "url": "https://raw.githubusercontent.com/jotego/Genesis_MiSTer/master/releases/Genesis_20190406.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20190407.rbf",
+          "sha": "c00163edf5bcd3733871b67e16e2840b9810f7e1",
+          "url": "https://raw.githubusercontent.com/jotego/Genesis_MiSTer/master/releases/Genesis_20190407.rbf",
+          "type": "RBF"
+        }
+      ]
+    },
     {
       "name": "jtbin",
       "description": "Binary RBF files for MiST(er) FPGA cores",
@@ -4102,6 +4242,140 @@ Repository(full_name="jotego/jtbin") ['/mister/vulgus/releases']
           "type": "RBF"
         }
       ]
+    },
+    {
+      "name": "NeoGeo_MiSTer",
+      "description": "NeoGeo for MiSTer",
+      "readme": "\r\n# NEO GEO for [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki) \r\n\r\nThis is an FPGA implementation of the NEO GEO/MVS system by [Furrtek](https://www.patreon.com/furrtek/posts)\r\n\r\n## Features\r\n* Supports memory card saving\r\n* MVS and AES system support\r\n* Compatible with Darksoft ROM sets using provided XML\r\n* Compatible with decrypted MAME ROM sets using your own XML\r\n* Support for Universe BIOS\r\n\r\nNote: Core doesn't support encrypted ROMs. Make sure the ROM has no encrypted parts before use it. MAME ROM pack includes many encrypted ROMs so it's not recommended for inexperienced users.\r\n\r\n## Installation\r\nCopy the NeoGeo_\\*.rbf file to the folder of your choice on the SD card. Create a **NEOGEO** folder on the root of the card, and place the unzipped ROM sets inside this folder. For ease of setup of use, it is strongly suggested that people use the Darksoft ROM pack. Several things must be observed:\r\n* Each set of ROMs must be in its own folder\r\n* The folders containing the ROM sets must be named to match the XML (MAME standard names)\r\n* The ROMs must not be zipped\r\n* ROM set folders can be placed inside sub-folders for organization\r\n\r\nIn addition, several bios files must be placed in the **NEOGEO** folder for the core to function properly:\r\n* 000-lo.lo\r\n* sfix.sfix\r\n* sp-s2.sp1 (MVS)\r\n* neo-epo.sp1 (AES)\r\n* uni-bios.rom\r\n\r\nSometimes these files may be named slightly differently depending on where they are obtained, but they must be renamed to match the filenames above to work with MiSTer. You may choose between using original system BIOS (sp-s2.sp1/neo-epo.sp1) and uni-bios.rom. Using uni-bios is recommended, and can be obtained [here](http://unibios.free.fr/).\r\n\r\nLastly, **romsets.xml** from the release folder must also be placed in the directory. The provided XML is for Darksoft ROMs only, you must make your own for MAME ROMs. This file describes to the core where the ROM sets are located and how to load them. **gog-romsets.xml** can be used (renamed to **romsets.xml**) for games purchased from gog.com (which also include all the needed bios files), see comments in gog-romsets.xml .\r\n\r\n## Saving and Loading\r\nIn AES mode, all saves are to the memory card only. In MVS mode, some games and uni-bios save their settings to a special area of battery backed ram built into the system, while game data can be still be saved to a memory card. To simplify things, it is suggested to stick to one system type on the OSD and use uni-bios to change the system type, so that game information is saved consistently.\r\n\r\n## RAM and Game Sizes\r\nNeo Geo uses very large ROMs. About 84% of the library will fit onto a 32 megabyte SDRAM module. Another 12% will fit onto a 64 megabyte SDRAM module. The remaining 8 games require a 128 megabyte module. For more information about which games can be loaded with which sized RAM, open romsets.xml in your favorite text editor or github. The games are organized by size.\r\n",
+      "archived": false,
+      "url": "https://github.com/jotego/NeoGeo_MiSTer",
+      "releases": [
+        {
+          "name": "NeoGeo_20190907.rbf",
+          "sha": "7540e4b0204a8a8eb68fbd22298ce60f756854e5",
+          "url": "https://raw.githubusercontent.com/jotego/NeoGeo_MiSTer/master/releases/NeoGeo_20190907.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NeoGeo_20190908.rbf",
+          "sha": "ab32ab1d79a1c27a717930cca2a2a23f676d9f98",
+          "url": "https://raw.githubusercontent.com/jotego/NeoGeo_MiSTer/master/releases/NeoGeo_20190908.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NeoGeo_20190911.rbf",
+          "sha": "1464230abb288802a2ab051b8460e20457ee57e0",
+          "url": "https://raw.githubusercontent.com/jotego/NeoGeo_MiSTer/master/releases/NeoGeo_20190911.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NeoGeo_20190913.rbf",
+          "sha": "a2f030aa7316f23f95a55cdea300fed31f058a4b",
+          "url": "https://raw.githubusercontent.com/jotego/NeoGeo_MiSTer/master/releases/NeoGeo_20190913.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NeoGeo_20190915.rbf",
+          "sha": "4cf76d347dc4d4293dae52e3fb822fa1c0f8cba1",
+          "url": "https://raw.githubusercontent.com/jotego/NeoGeo_MiSTer/master/releases/NeoGeo_20190915.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NeoGeo_20191014.rbf",
+          "sha": "7436925c1adc2af5e6200afb96a47d99ba966e45",
+          "url": "https://raw.githubusercontent.com/jotego/NeoGeo_MiSTer/master/releases/NeoGeo_20191014.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NeoGeo_20191113.rbf",
+          "sha": "f1602964a8085f5105427154f96018f7edd1b848",
+          "url": "https://raw.githubusercontent.com/jotego/NeoGeo_MiSTer/master/releases/NeoGeo_20191113.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NeoGeo_20191116.rbf",
+          "sha": "636f293ea8e754dde5328bc844c02f2bb51bde24",
+          "url": "https://raw.githubusercontent.com/jotego/NeoGeo_MiSTer/master/releases/NeoGeo_20191116.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NeoGeo_20191125.rbf",
+          "sha": "26c45cba86d876830a1839cd6b650acbfd19f4ce",
+          "url": "https://raw.githubusercontent.com/jotego/NeoGeo_MiSTer/master/releases/NeoGeo_20191125.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NeoGeo_20191205.rbf",
+          "sha": "470732c6168902f9a45542f41ea9e2903046a5ee",
+          "url": "https://raw.githubusercontent.com/jotego/NeoGeo_MiSTer/master/releases/NeoGeo_20191205.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NeoGeo_20200123.rbf",
+          "sha": "258efec967bc4775831b1bae66dbf5b435b2b6ca",
+          "url": "https://raw.githubusercontent.com/jotego/NeoGeo_MiSTer/master/releases/NeoGeo_20200123.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NeoGeo_20200325.rbf",
+          "sha": "0bdc000d8d875da8c6c62769f74857f51efa7667",
+          "url": "https://raw.githubusercontent.com/jotego/NeoGeo_MiSTer/master/releases/NeoGeo_20200325.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NeoGeo_20200510.rbf",
+          "sha": "629f14b87c6f9ec063f69277d2210bef679f913e",
+          "url": "https://raw.githubusercontent.com/jotego/NeoGeo_MiSTer/master/releases/NeoGeo_20200510.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "README.md",
+          "sha": "abdb8c23e66088a7b2bcc5d69f49951bbf6ca0ea",
+          "url": "https://raw.githubusercontent.com/jotego/NeoGeo_MiSTer/master/releases/README.md",
+          "type": "OTHER"
+        },
+        {
+          "name": "gog-broken-romsets.xml",
+          "sha": "65e00cadfaa3230b71e0d2c50464b7154f6aa1f7",
+          "url": "https://raw.githubusercontent.com/jotego/NeoGeo_MiSTer/master/releases/gog-broken-romsets.xml",
+          "type": "OTHER"
+        },
+        {
+          "name": "gog-romsets.xml",
+          "sha": "699a7588769f4d602b87a23c501d9ac753fe6c1f",
+          "url": "https://raw.githubusercontent.com/jotego/NeoGeo_MiSTer/master/releases/gog-romsets.xml",
+          "type": "OTHER"
+        },
+        {
+          "name": "romsets.xml",
+          "sha": "7f03dc4fc9eeb2d1ce87d26a4b1d387299e11894",
+          "url": "https://raw.githubusercontent.com/jotego/NeoGeo_MiSTer/master/releases/romsets.xml",
+          "type": "OTHER"
+        }
+      ]
+    },
+    {
+      "name": "Template_MiSTer",
+      "description": "Template with latest framework for MiSTer",
+      "readme": "# Template core for MiSTer\r\n\r\n## General description\r\nThis core contains the latest version of framework and will be updated when framework is updated. There will be no releases. This core is only for developers. Besides the framework, core demonstrates the basic usage. New or ported cores should use it as a template.\r\n\r\nIt's highly recommended to follow the notes to keep it standartized for easier maintanance and collaboration with other developers.\r\n\r\n## Source structure\r\n\r\n### Legend:\r\n* `<core_name>` - you have to use the same name where you see this in this manual. Basically it's your core name.\r\n\r\n### Standard MiSTer core should have following folders:\r\n* `sys` - the framework. Basically it's prohibited to change any files in this folder. Framework updates may erase any customization in this folder. All MiSTer cores have to include sys folder as is from this core.\r\n* `rtl` - the actual source of core. It's up to developer how to organize the inner structure of this folder. Exception is pll folder/files (see below).\r\n* `releases` - the folder where rbf files should be placed. format of each rbf is: <core_name>_YYMMDD.rbf YYMMDD is date code of release.\r\n\r\n### Other standard files:\r\n* `<core_name>.qpf`- quartus project file. Copy it as is and then modify the line `PROJECT_REVISION = \"<core_name>\"` according to your core name.\r\n* `<core_name>.qsf` - quartus settings file. In most cases you don't need to modify anything inside (although you may wont to adjust some settings in quartus - this is fine, but keep changes minimal). You also need to watch this file before you make a commit. Quartus in some conditions may \"spit\" all settings from different files into this file so it will become large. If you see this, then simply revert it to original file.\r\n* `<core_name>.srf` - optional file to disable some warnings which are safe to disable and make message list more clean, so you will have less chance to miss some improtant warnings. You are free to modify it.\r\n* `<core_name>.sdc` - optional file for constraints in case if core require some special constraints. You are free to modify it.\r\n* `<core_name>.sv` - glue logic between framework and core. This is where you adapt core specific signals to framework.\r\n* `files.qip` - list of all core files. You need to edit it manually to add/remove files. Quartus will use this file but can't edit it. If you add files in Quartus IDE, then they will be added to `<core_name>.qsf` which is recommended manually move them to `files.qip`.\r\n* `clean.bat` - windows batch file to clean the whole project from temporary files. In most cases you don't need to modify it.\r\n* `.gitignore` - list of files should be ignored by git, so temprorary files wont be included in commits.\r\n* `jtag.cdf` - it will be produced when you compile the core. By clicking it in Quartus IDE, you will launch programmer where you can send the core to MiSTer over USB blaster cable (see manual for DE10-nano how to connect it). This file normally is not presend on cleaned project and not includede in commits.\r\n\r\n### PLL:\r\nFramework implies use of at least one PLL in the core. Framework doesn't comtain this PLL but requires it to be placed in `rtl` folder, so `pll` folder and `pll.v`, `pll.qip` files must be present, however PLL settings are up to the core.\r\n\r\n# Quartus version\r\nCores must be developed in **Quartus v17.0.x**. It's recommended to have updates, so it will be **v17.0.2**. Newer versions won't give any benefits to FPGA used in MiSTer, howver they will introduce incompatibilities in project settings and it will make harder to maintain the core and collaborate with others. **So please stick to good old 17.0.x version.** You may use either Lite or Standard license.\r\n\r\n",
+      "archived": false,
+      "url": "https://github.com/jotego/Template_MiSTer",
+      "releases": [
+        {
+          "name": "_put_rbf_here_",
+          "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+          "url": "https://raw.githubusercontent.com/jotego/Template_MiSTer/master/releases/_put_rbf_here_",
+          "type": "OTHER"
+        }
+      ]
+    },
+    {
+      "name": "Updater_script_MiSTer",
+      "description": "Bash script for updating MiSTer",
+      "readme": "# jtupdate\n\nThis repository is dedicated to the update script(s) that download cores for MiSTer from any external sources. The primary intent is to use it with the [JT binary repositoty](https://github.com/jotego/jtbin/) but it is open to link to more sources of content.\n\nThe update scripts could be made to work with other upcoming FPGA platforms too. There is no specific limit to the target FPGA or the content source.\n\n## Mission\n\nIdeally the scripts should make user life nice:\n\n-download required RBF files\n-download required MRA files\n-do not break user's system\n-be open to independent content providers\n-be open to configuration files\n-be open to user-customized folder schemes\n-listen to user requests\n\nAlthough the repository starts far from these targets, hopefully we'll get there.\n\n## Branching\n\nAs this is a critical script for users, it is vital to prevent file corruption. To that purpose there will be two branches\n\n* *master*, the currently stable and recommended one\n* *test*, the one where new features are tested.\n\nPull requests should go to the *test* branch.\n\n## Final Statement\n\nContributions are more than welcome as I am more involved now in pure core development and am not the best suited person for this task.\n\nThank you\nJotego\n",
+      "archived": false,
+      "url": "https://github.com/jotego/Updater_script_MiSTer",
+      "releases": []
     }
   ]
 }
