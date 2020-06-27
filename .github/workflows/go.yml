@@ -32,7 +32,9 @@ jobs:
       run: |
         make clean
         pipenv run make -j 4 ALL
-
+    - name: Test database
+      run: |
+        make test
     - name: Commit and push
       run: |
         git config user.name 'Release Bot'

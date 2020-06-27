@@ -14,3 +14,5 @@ db/users/jotego.json:
 db/users/%.json:
 	python mister_repo_dump.py $(basename $(notdir $@)) > $@
 
+test:
+	find db -type f -name '*.json' -exec jq . {} \+
