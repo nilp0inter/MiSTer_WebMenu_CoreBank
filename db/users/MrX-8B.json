@@ -1,3 +1,18 @@
+Repository(full_name="MrX-8B/MiSTer-Arcade-AtariTetris") ['/releases']
+Repository(full_name="MrX-8B/MiSTer-Arcade-DigDug") ['/releases']
+Repository(full_name="MrX-8B/MiSTer-Arcade-Druaga") ['/releases']
+Repository(full_name="MrX-8B/MiSTer-Arcade-Flicky") ['/releases']
+Repository(full_name="MrX-8B/MiSTer-Arcade-FoodFight") ['/releases']
+Repository(full_name="MrX-8B/MiSTer-Arcade-Gaplus") ['/releases']
+Repository(full_name="MrX-8B/MiSTer-Arcade-GreenBeret") ['/releases']
+Repository(full_name="MrX-8B/MiSTer-Arcade-Gyruss") ['/releases']
+Repository(full_name="MrX-8B/MiSTer-Arcade-NinjaKun") ['/releases']
+Repository(full_name="MrX-8B/MiSTer-Arcade-PenguinKunWars") ['/releases']
+Repository(full_name="MrX-8B/MiSTer-Arcade-RallyX") ['/releases']
+Repository(full_name="MrX-8B/MiSTer-Arcade-SEGASYS1") ['/releases']
+Repository(full_name="MrX-8B/MiSTer-Arcade-SEGASYS1") ['/releases/_alternatives']
+Repository(full_name="MrX-8B/MiSTer-Arcade-SolomonsKey") ['/releases']
+Repository(full_name="MrX-8B/MiSTer-Lightweight-Framework") ['/releases']
 {
   "name": "MrX-8B",
   "image": "https://avatars3.githubusercontent.com/u/55477918?v=4",
@@ -930,6 +945,14 @@
           "type": "OTHER"
         }
       ]
+    },
+    {
+      "name": "MiSTer-Lightweight-Framework",
+      "description": "Lightweight framework using MiSTer IO board for core developers",
+      "readme": "# MiSTer-Lightweight-Framework\nLightweight framework using MiSTer IO board for core developers\n\nNo HPS, no HDMI, no OSD, no USB.\nBut compilation is fast.\n\nAvailable are PS/2 devices connected to UserPort, VGA video output, and analog or S/PDIF audio output.\n\nIt may be useful when porting from other platforms to MiSTer.\n\nUse only during development.\n",
+      "archived": false,
+      "url": "https://github.com/MrX-8B/MiSTer-Lightweight-Framework",
+      "releases": []
     }
   ]
 }

@@ -1,3 +1,15 @@
+Repository(full_name="MiSTer-LLAPI/Arcade-Pacman_MiSTer") ['/releases']
+Repository(full_name="MiSTer-LLAPI/blisSTer_flash") ['/releases']
+Repository(full_name="MiSTer-LLAPI/Gameboy_MiSTer") ['/releases']
+Repository(full_name="MiSTer-LLAPI/GBA_MiSTer") ['/releases']
+Repository(full_name="MiSTer-LLAPI/Genesis_MiSTer") ['/releases']
+Repository(full_name="MiSTer-LLAPI/MegaCD_MiSTer") ['/releases']
+Repository(full_name="MiSTer-LLAPI/NeoGeo_MiSTer") ['/releases']
+Repository(full_name="MiSTer-LLAPI/NES_MiSTer") ['/releases']
+Repository(full_name="MiSTer-LLAPI/SMS_MiSTer") ['/releases']
+Repository(full_name="MiSTer-LLAPI/SNES_MiSTer") ['/releases']
+Repository(full_name="MiSTer-LLAPI/TurboGrafx16_MiSTer") ['/releases']
+Repository(full_name="MiSTer-LLAPI/Updater_script_MiSTer") ['/releases']
 {
   "name": "mister-llapi",
   "image": "https://avatars1.githubusercontent.com/u/55325226?v=4",
@@ -60,6 +72,14 @@
           "type": "OTHER"
         }
       ]
+    },
+    {
+      "name": "blisSTer_flash",
+      "description": "firmware tool for upgrading blisSTer boards via MiSTer",
+      "readme": "# blisSTer firmware tool\n\n## Installing\nCopy blisSTer_flash to your Scripts folder on the root of the MiSTer SD card, script to make upgrading blisSTer firmware easy coming soon\n\n## Building\n- get the [Linaro Linux Target Binary Toolchain](https://linaro.org/downloads) for your platform, targeting arm-linux-gnueabihf, and make sure it is in your path. Make sure you have MSYS2 on Windows.\n- Build [libusb](https://github.com/libusb/libusb/releases) with linaro toolchain, v1.0.23 is a known good release\n- Build [libusb-compat](https://github.com/libusb/libusb-compat-0.1/releases) with linaro toolchain, v0.1.7 is a known good release\n- Edit the Makefile in commandline/ and make sure the include and lib parameters are adjusted to where your linaro toolchain is\n- build via: make CC=arm-linux-gnueabihf-gcc CXX=arm-linux-gnueabihf-g++ LD=arm-linux-gnueabihf-ld\n",
+      "archived": false,
+      "url": "https://github.com/MiSTer-LLAPI/blisSTer_flash",
+      "releases": []
     },
     {
       "name": "Gameboy_MiSTer",
@@ -1047,6 +1067,14 @@
           "type": "RBF"
         }
       ]
+    },
+    {
+      "name": "Updater_script_MiSTer",
+      "description": "Bash script for updating MiSTer",
+      "readme": "# Updater script for MiSTer\nThis is a collection of scripts, [update_llapi.sh](https://github.com/MiSTer-LLAPI/Updater_script_MiSTer/blob/master/update_llapi.sh?raw=true) updates all [MiSTer LLAPI](https://github.com/Updater_script_MiSTer/Main_MiSTer/wiki) cores. It places all of them in _LLAPI on your sd card and will update them if they exist<br>\nSimply put [update_llapi.sh](https://github.com/MiSTer-LLAPI/Updater_script_MiSTer/blob/master/update_llapi.sh?raw=true) in your SD and launch it through MiSTer main menu OSD (press F12 and then Scripts). Please right click on the links in this README or on the RAW button in GitHub script pages in order to actually download the raw Bash script, otherwise you could download an HTML page which isn\u2019t a script and won\u2019t be executed by MiSTer (you will see no output, but just an OK button in MiSTer Script menu interface).<br>\n[blisSTer_updater.sh](https://github.com/MiSTer-LLAPI/Updater_script_MiSTer/blob/master/blisSTer_updater.sh?raw=true) is another useful script that will update your bliss box or blisster as long as it is plugged up to the MiSTer via USB. Simply run the script and it will download the latest firmware and give you instructions on how to flash it\n\nno other scripts in this repository are necessary to download manually\n",
+      "archived": false,
+      "url": "https://github.com/MiSTer-LLAPI/Updater_script_MiSTer",
+      "releases": []
     }
   ]
 }
