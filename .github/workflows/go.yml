@@ -30,8 +30,8 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUBAPI_TOKEN }}
       run: |
-        find db -type f -not -name .keep -delete
-        pipenv run make -j 4
+        make clean
+        pipenv run make -j 4 ALL
 
     - name: Commit and push
       run: |
