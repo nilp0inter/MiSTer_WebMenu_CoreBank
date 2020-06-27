@@ -2,6 +2,7 @@ from os.path import splitext
 import argparse
 import json
 import os
+import requests
 import sys
 import traceback
 import xml.etree.ElementTree as ET
@@ -44,7 +45,7 @@ def get_repo_releases(repo, paths):
                     elif ext == '.mra':
                         extra = None
                         try:
-                            extra = get_mra_data(release.decoded_content)
+                            extra = get_mra_data(requests.get(release.download_url).content)
                         except:
                             print(f'Error processing MRA {repo.html_url}|{path}|{release.name}',
                                   file=sys.stderr)
