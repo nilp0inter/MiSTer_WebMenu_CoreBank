@@ -1,3 +1,4 @@
+from fnmatch import fnmatch
 from os.path import splitext
 import argparse
 import json
@@ -70,7 +71,7 @@ def get_repo_releases(repo, paths):
 
 def get_repos_data(user, repos, folders):
     for repo in user.get_repos():
-        if repos is not None and repo.name not in repos:
+        if not any(fnmatch(repo.name, pattern) for pattern in repos):
             continue
         try:
             readme = repo.get_readme().decoded_content.decode('utf-8')
@@ -96,8 +97,16 @@ def get_repos_data(user, repos, folders):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('user', nargs=1, help='Github user')
-    parser.add_argument('-r', '--repo', type=str, action='append', default=None)
-    parser.add_argument('-f', '--folder', type=str, action='append', default=['/releases', ])
+    parser.add_argument('-r', '--repo',
+                        type=str,
+                        action='append',
+                        default=['*MiSTer*'],
+                        help='Repository pattern')
+    parser.add_argument('-f', '--folder',
+                        type=str,
+                        action='append',
+                        default=['/releases'],
+                        help='Folders to search for releases')
 
     args = parser.parse_args()
     username = args.user[0]
