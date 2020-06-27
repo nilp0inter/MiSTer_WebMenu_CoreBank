@@ -26,12 +26,25 @@ jobs:
         python -m pip install --upgrade pip
         pip install pipenv
         pipenv sync
+
+    - name: Check API quota (pre-script)
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUBAPI_TOKEN }}
+      run: |
+        curl -s -H "Authorization: token $GITHUB_TOKEN" https://api.github.com/rate_limit | jq .rate
     - name: Make database
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUBAPI_TOKEN }}
       run: |
         make clean
         pipenv run make -j 4 ALL
+    - name: Check API quota (post-script)
+      if: ${{ always() }}
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUBAPI_TOKEN }}
+      run: |
+        curl -s -H "Authorization: token $GITHUB_TOKEN" https://api.github.com/rate_limit | jq .rate
+
     - name: Test database
       run: |
         make test
