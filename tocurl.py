@@ -90,7 +90,7 @@ def decide_location(data):
     elif data["extra"]["name"] in computers:
         return f"_Computer/{data['name']}"
     elif data["extra"]["name"] in consoles:
-        return f"_Consoles/{data['name']}"
+        return f"_Console/{data['name']}"
     elif data["extra"]["name"] in utils:
         return f"_Utils/{data['name']}"
     else:
