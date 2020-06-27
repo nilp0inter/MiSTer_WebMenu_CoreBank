@@ -69,6 +69,21 @@ consoles = set([
 
 arcades = set([
     'SkySkipper',
+    'jt1942',
+    'jt1943',
+    'jtbiocom',
+    'jtbtiger',
+    'jtcommando',
+    'jtcps1',
+    'jtdd',
+    'jtdd2',
+    'jtf1dream',
+    'jtgng',
+    'jtgunsmoke',
+    'jtpopeye',
+    'jtsectionz',
+    'jttora',
+    'jtvulgus',
 ])
 
 others = set([
