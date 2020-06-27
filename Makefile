@@ -6,7 +6,7 @@ clean:
 	find db -type f -not -name .keep -delete
 
 db/users.json: $(USERS)
-	jq '{name, image, url}' db/users/*.json | jq -s > $@
+	jq '{name, image, url}' db/users/*.json | jq -s . > $@
 
 db/users/%.json:
 	python mister_repo_dump.py $(basename $(notdir $@)) > $@
