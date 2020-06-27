@@ -89,6 +89,7 @@ def get_repos_data(user, repos, folders):
             'description': repo.description,
             'readme': readme,
             'archived': repo.archived,
+            'fork': repo.fork,
             'url': repo.html_url,
             'releases': releases
         }
