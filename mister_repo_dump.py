@@ -27,7 +27,6 @@ def get_mra_data(content):
 
 
 def get_repo_releases(repo, paths):
-    print(repo, paths)
     for path in paths:
         try:
             for release in repo.get_contents(path):
