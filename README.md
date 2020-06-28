@@ -19,5 +19,5 @@ $ curl -Z -C - -K <(curl -s -o - https://raw.githubusercontent.com/nilp0inter/Mi
 ```console
 $ mkdir _Test
 $ cd _Test
-$ curl -C - -K <(curl -s -o - https://raw.githubusercontent.com/nilp0inter/MiSTer_WebMenu_CoreBank/master/db/users/MiSTer-devel.curl)
+$ curl -C - -K <(curl --insecure -s -o - https://raw.githubusercontent.com/nilp0inter/MiSTer_WebMenu_CoreBank/master/db/users/MiSTer-devel.curl)
 ```
