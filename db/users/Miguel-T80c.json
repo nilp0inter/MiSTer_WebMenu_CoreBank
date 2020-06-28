@@ -1853,6 +1853,35 @@
       ]
     },
     {
+      "name": "Arcade-MarioBros_MiSTer",
+      "description": "Mario Bros arcade core for MiSTer",
+      "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: Mario Bros port to MiSTer by gaz68 (https://github.com/gaz68)\n-- June 2020\n-- \n-- Original Donkey Kong port to MiSTer by Sorgelig\n-- 18 April 2018\n-- \n---------------------------------------------------------------------------------\n-- \n-- dkong Copyright (c) 2003 - 2004 Katsumi Degawa\n-- T80   Copyright (c) 2001-2002 Daniel Wallner (jesus@opencores.org) All rights reserved\n-- T48   Copyright (c) 2004, Arnim Laeuger (arniml@opencores.org) All rights reserved\n-- \n---------------------------------------------------------------------------------\n-- \n-- Keyboard inputs :\n--\n--   F2          : Start 2 players\n--   F1          : Start 1 player\n--   SPACE       : Jump\n--   LEFT,RIGHT arrows : Movements\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   D,G         : Player 2 Movements\n--   A           : Player 2 Jump\n--\n--\n-- Joystick support.\n--  \n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROM is not included. In order to use this arcade, you need to provide a correct ROM file.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n\n\n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/Miguel-T80c/Arcade-MarioBros_MiSTer",
+      "releases": [
+        {
+          "name": "Arcade-MarioBros_20200627.rbf",
+          "sha": "65b688047690564dc7e0169343babfacbaf49307",
+          "url": "https://raw.githubusercontent.com/Miguel-T80c/Arcade-MarioBros_MiSTer/master/releases/Arcade-MarioBros_20200627.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Mario Bros.mra",
+          "sha": "bef497e093890e4ac0a7eefc3613e4ee0e04dfe8",
+          "url": "https://raw.githubusercontent.com/Miguel-T80c/Arcade-MarioBros_MiSTer/master/releases/Mario%20Bros.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Mario Bros. (US, Revision G)",
+            "rbf": "MarioBros",
+            "zips": [
+              "mario.zip"
+            ]
+          }
+        }
+      ]
+    },
+    {
       "name": "Arcade-MCR1_MiSTer",
       "description": "Arcade: MCR2 for MiSTer for MiSTer FPGA",
       "readme": "# Midway MCR1 port for MiSTer\n\n[Original readme](readme_orig.txt) (mostly irrelevant to MiSTer)\n\n# Keyboard inputs :\n```\n   ESC         : Coin 1\n   F1          : Start 1P\n   F2          : Start 2P \n   UP,DOWN,LEFT,RIGHT arrows : Player 1\n   LCtrl : Fire A\n   LAlt  : Fire B\n\n\n   MAME/IPAC/JPAC Style Keyboard inputs:\n     5           : Coin 1\n     6           : Coin 2\n     1           : Start 1 Player\n     2           : Start 2 Player\n     R,F,D,G     : Player 2\n     A           : Fire2 A\n     S           : Fire2 B \n\t\n Joystick support. \n```\n# Games\n\n### Kick\nUp to 2 players.\nSupported 2 control modes: Joystick/Spinner\n1. Left/Right - movement, A - Kick, B - Speed\n2. Spinner    - movement, A - Kick, B - Speed\n\n### Solar Fox\nUp to 2 players.\nUp/Down/Left/Right - movements, A - Fire, B - Speed\n \n# Unsupported Games\nDraw Poker (gambling machine for casino)\n \n \n# ROMs\n```\n                                *** Attention ***\n\nROM is not included. In order to use this arcade, you need to provide a correct ROM file.\n\nFind this zip file somewhere. You need to find the file exactly as required.\nDo not rename other zip files even if they also represent the same game - they are not compatible!\nThe name of zip is taken from M.A.M.E. project, so you can get more info about\nhashes and contained files there.\nPut rom on your SD card. Example directory : _Arcade/mame/\n\n```\n\nLaunch game using the appropriate .MRA\n",
