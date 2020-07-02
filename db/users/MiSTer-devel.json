@@ -7514,7 +7514,14 @@
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/Laser310_MiSTer",
-      "releases": []
+      "releases": [
+        {
+          "name": "Laser310_20200701.rbf",
+          "sha": "3c661d5dd80d2fa552464d67fca30f8b4ebef078",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Laser310_MiSTer/master/releases/Laser310_20200701.rbf",
+          "type": "RBF"
+        }
+      ]
     },
     {
       "name": "Life_MiSTer",
