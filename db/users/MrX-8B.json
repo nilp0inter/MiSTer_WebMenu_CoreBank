@@ -693,10 +693,16 @@
         },
         {
           "name": "Flicky.mra",
-          "sha": "a43930aeda08cbc956152e3b660d304f127767e7",
+          "sha": "d167170c9275fbcc2207808356c026298d571628",
           "url": "https://raw.githubusercontent.com/MrX-8B/MiSTer-Arcade-SEGASYS1/master/releases/Flicky.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Flicky (128k Version, 315-5051)",
+            "rbf": "segasys1",
+            "zips": [
+              "flicky.zip"
+            ]
+          }
         },
         {
           "name": "I'm Sorry.mra",
