@@ -1186,7 +1186,13 @@
           "sha": "cd879d72739c01fd27df1864e84cdfe25a524f43",
           "url": "https://raw.githubusercontent.com/Miguel-T80c/Arcade-Druaga_MiSTer/master/releases/Motos.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": null,
+            "rbf": "Druaga",
+            "zips": [
+              "motos.zip"
+            ]
+          }
         },
         {
           "name": "rommap.txt",
