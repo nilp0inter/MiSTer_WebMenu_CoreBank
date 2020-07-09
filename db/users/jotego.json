@@ -4036,7 +4036,13 @@
           "sha": "d29f97f1aa28b2910405f3b139d97f318304388b",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/tora/releases/Tiger%20Road.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Tiger Road (US)",
+            "rbf": "jttora",
+            "zips": [
+              "tigeroad.zip"
+            ]
+          }
         },
         {
           "name": "jttora_20191114.rbf",
