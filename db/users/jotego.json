@@ -219,13 +219,7 @@
           "sha": "8a0ffe5132a182fa1b4e192d932cd45d4a1177aa",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/1942/releases/1942.mra",
           "type": "MRA",
-          "extra": {
-            "name": "1942 (Revision B)",
-            "rbf": "jt1942",
-            "zips": [
-              "1942.zip"
-            ]
-          }
+          "extra": null
         },
         {
           "name": "jt1942_20190921.rbf",
@@ -346,52 +340,28 @@
           "sha": "3d60d82357b5d21988a7fafba245636ffdd0cd4b",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/1943/releases/1943%20Kai%20Midway%20Kaisen.mra",
           "type": "MRA",
-          "extra": {
-            "name": "1943 Kai Midway Kaisen (Japan)",
-            "rbf": "jt1943",
-            "zips": [
-              "1943kai.zip"
-            ]
-          }
+          "extra": null
         },
         {
           "name": "1943 Midway Kaisen.mra",
           "sha": "348d851a9de505f49d521cd552792e9ba703422d",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/1943/releases/1943%20Midway%20Kaisen.mra",
           "type": "MRA",
-          "extra": {
-            "name": "1943 Midway Kaisen (Japan, Rev B)",
-            "rbf": "jt1943",
-            "zips": [
-              "1943.zip|1943j.zip"
-            ]
-          }
+          "extra": null
         },
         {
           "name": "1943 The Battle of Midway Mark II.mra",
           "sha": "d833b8d1dc38ebc3906d7074e88d613959329df5",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/1943/releases/1943%20The%20Battle%20of%20Midway%20Mark%20II.mra",
           "type": "MRA",
-          "extra": {
-            "name": "1943 The Battle of Midway Mark II (US)",
-            "rbf": "jt1943",
-            "zips": [
-              "1943mii.zip"
-            ]
-          }
+          "extra": null
         },
         {
           "name": "1943 The Battle of Midway.mra",
           "sha": "92163226c47a587ff6d98bd431afae7f93d1f10d",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/1943/releases/1943%20The%20Battle%20of%20Midway.mra",
           "type": "MRA",
-          "extra": {
-            "name": "1943 The Battle of Midway (US, Rev C)",
-            "rbf": "jt1943",
-            "zips": [
-              "1943.zip|1943u.zip"
-            ]
-          }
+          "extra": null
         },
         {
           "name": "jt1943_20191007.rbf",
@@ -524,13 +494,7 @@
           "sha": "231b624db7c8e052b4c1fe5650068613fda714d2",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/biocom/releases/Bionic%20Commando.mra",
           "type": "MRA",
-          "extra": {
-            "name": "Bionic Commando (Euro)",
-            "rbf": "jtbiocom",
-            "zips": [
-              "bionicc.zip"
-            ]
-          }
+          "extra": null
         },
         {
           "name": "jtbiocom_20191129.rbf",
@@ -573,13 +537,7 @@
           "sha": "ec09465afc7d76e7d6d10a5d9f438a12ffac3717",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/btiger/releases/Black%20Tiger.mra",
           "type": "MRA",
-          "extra": {
-            "name": "Black Tiger",
-            "rbf": "jtbtiger",
-            "zips": [
-              "blktiger.zip"
-            ]
-          }
+          "extra": null
         },
         {
           "name": "jtbtiger_20200106.rbf",
@@ -676,13 +634,7 @@
           "sha": "ae49f1de0572e804d2f60e41f3212f728c043fb0",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/commando/releases/Commando.mra",
           "type": "MRA",
-          "extra": {
-            "name": "Commando (World)",
-            "rbf": "jtcommando",
-            "zips": [
-              "commando.zip"
-            ]
-          }
+          "extra": null
         },
         {
           "name": "jtcommando_20190906.rbf",
@@ -767,143 +719,77 @@
           "sha": "54c6aab8a3462d409f1527c5c7e94d749075a88d",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps1/releases/1941%20%20Counter%20Attack%20-World%20900227-.mra",
           "type": "MRA",
-          "extra": {
-            "name": "1941: Counter Attack (World 900227)",
-            "rbf": "jtcps1",
-            "zips": [
-              "1941.zip"
-            ]
-          }
+          "extra": null
         },
         {
           "name": "Adventure Quiz Capcom World 2 -Japan 920611-.mra",
           "sha": "17c327ace7353434772c3f29b95667f50a9500d9",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps1/releases/Adventure%20Quiz%20Capcom%20World%202%20-Japan%20920611-.mra",
           "type": "MRA",
-          "extra": {
-            "name": "Adventure Quiz Capcom World 2 (Japan 920611)",
-            "rbf": "jtcps1",
-            "zips": [
-              "cworld2j.zip"
-            ]
-          }
+          "extra": null
         },
         {
           "name": "Captain Commando -World 911202-.mra",
           "sha": "dcff7bcc6ca5c0987bdcd3b4a70e366c3cb2c92d",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps1/releases/Captain%20Commando%20-World%20911202-.mra",
           "type": "MRA",
-          "extra": {
-            "name": "Captain Commando (World 911202)",
-            "rbf": "jtcps1",
-            "zips": [
-              "captcomm.zip"
-            ]
-          }
+          "extra": null
         },
         {
           "name": "Carrier Air Wing -World 901012-.mra",
           "sha": "bb580c9af41a59193898f3c3423b42522537d33f",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps1/releases/Carrier%20Air%20Wing%20-World%20901012-.mra",
           "type": "MRA",
-          "extra": {
-            "name": "Carrier Air Wing (World 901012)",
-            "rbf": "jtcps1",
-            "zips": [
-              "cawing.zip"
-            ]
-          }
+          "extra": null
         },
         {
           "name": "Daimakaimura -Japan Resale Ver.-.mra",
           "sha": "f2a821697abb8cdb4bd2623b259464ea6fc409ef",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps1/releases/Daimakaimura%20-Japan%20Resale%20Ver.-.mra",
           "type": "MRA",
-          "extra": {
-            "name": "Daimakaimura (Japan Resale Ver.)",
-            "rbf": "jtcps1",
-            "zips": [
-              "ghouls.zip|daimakair.zip"
-            ]
-          }
+          "extra": null
         },
         {
           "name": "Daimakaimura -Japan-.mra",
           "sha": "1a99e47b31b7a3f13df6f13d6cd0cfe402b9c79d",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps1/releases/Daimakaimura%20-Japan-.mra",
           "type": "MRA",
-          "extra": {
-            "name": "Daimakaimura (Japan)",
-            "rbf": "jtcps1",
-            "zips": [
-              "ghouls.zip|daimakai.zip"
-            ]
-          }
+          "extra": null
         },
         {
           "name": "Dynasty Wars -USA, B-Board 89624B- -.mra",
           "sha": "f139d86a5337e78f8b608df57dc4d984a09a3be3",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps1/releases/Dynasty%20Wars%20-USA%2C%20B-Board%2089624B-%20-.mra",
           "type": "MRA",
-          "extra": {
-            "name": "Dynasty Wars (USA, B-Board 89624B-?)",
-            "rbf": "jtcps1",
-            "zips": [
-              "dynwar.zip"
-            ]
-          }
+          "extra": null
         },
         {
           "name": "Final Fight -World, set 1-.mra",
           "sha": "18b0c396e2396a8a64e8f3ffea4e83be995bb8e2",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps1/releases/Final%20Fight%20-World%2C%20set%201-.mra",
           "type": "MRA",
-          "extra": {
-            "name": "Final Fight (World, set 1)",
-            "rbf": "jtcps1",
-            "zips": [
-              "ffight.zip"
-            ]
-          }
+          "extra": null
         },
         {
           "name": "Forgotten Worlds -World, newer-.mra",
           "sha": "926b48d1abf9b0c9b86ba872022194dace2f7e11",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps1/releases/Forgotten%20Worlds%20-World%2C%20newer-.mra",
           "type": "MRA",
-          "extra": {
-            "name": "Forgotten Worlds (World, newer)",
-            "rbf": "jtcps1",
-            "zips": [
-              "forgottn.zip"
-            ]
-          }
+          "extra": null
         },
         {
           "name": "Ganbare! Marine Kun -Japan 2K0411-.mra",
           "sha": "1f2e3df22d6ef8d9bf35092be56477bdb8fac673",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps1/releases/Ganbare!%20Marine%20Kun%20-Japan%202K0411-.mra",
           "type": "MRA",
-          "extra": {
-            "name": "Ganbare! Marine Kun (Japan 2K0411)",
-            "rbf": "jtcps1",
-            "zips": [
-              "ganbare.zip"
-            ]
-          }
+          "extra": null
         },
         {
           "name": "Ghouls'n Ghosts -World-.mra",
           "sha": "6f945256c5c132608c4640e34c971228b5e1ff18",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps1/releases/Ghouls'n%20Ghosts%20-World-.mra",
           "type": "MRA",
-          "extra": {
-            "name": "Ghouls'n Ghosts (World)",
-            "rbf": "jtcps1",
-            "zips": [
-              "ghouls.zip"
-            ]
-          }
+          "extra": null
         },
         {
           "name": "Ghouls'n Ghosts -patched-.mra",
@@ -923,39 +809,21 @@
           "sha": "c06907fd8906e2206a72ef96875e7aa4879533b4",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps1/releases/Gulun.Pa_-_Prototype_1993_-_Japan_931220_L-.mra",
           "type": "MRA",
-          "extra": {
-            "name": "gulunpa (World 901130)",
-            "rbf": "jtcps1",
-            "zips": [
-              "gulunpa.zip"
-            ]
-          }
+          "extra": null
         },
         {
           "name": "Knights of the Round -World 911127-.mra",
           "sha": "076e9470cfd79a94bed54f5d04c07aa39201e950",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps1/releases/Knights%20of%20the%20Round%20-World%20911127-.mra",
           "type": "MRA",
-          "extra": {
-            "name": "Knights of the Round (World 911127)",
-            "rbf": "jtcps1",
-            "zips": [
-              "knights.zip"
-            ]
-          }
+          "extra": null
         },
         {
           "name": "Magic Sword  Heroic Fantasy -World 900725-.mra",
           "sha": "f586709607dc2e5c4910244f4cdafebe217abe07",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps1/releases/Magic%20Sword%20%20Heroic%20Fantasy%20-World%20900725-.mra",
           "type": "MRA",
-          "extra": {
-            "name": "Magic Sword: Heroic Fantasy (World 900725)",
-            "rbf": "jtcps1",
-            "zips": [
-              "msword.zip"
-            ]
-          }
+          "extra": null
         },
         {
           "name": "Mega Man  The Power Battle -CPS1, USA 951006-.mra",
@@ -988,182 +856,98 @@
           "sha": "37fa0198737a7005a82f89264638101d78245c2a",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps1/releases/Mercs%20-World%20900302-.mra",
           "type": "MRA",
-          "extra": {
-            "name": "Mercs (World 900302)",
-            "rbf": "jtcps1",
-            "zips": [
-              "mercs.zip"
-            ]
-          }
+          "extra": null
         },
         {
           "name": "Nemo -World 901130-.mra",
           "sha": "caaa513bc7a4bad678eb9b9e8956ab7effeeb2b6",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps1/releases/Nemo%20-World%20901130-.mra",
           "type": "MRA",
-          "extra": {
-            "name": "Nemo (World 901130)",
-            "rbf": "jtcps1",
-            "zips": [
-              "nemo.zip"
-            ]
-          }
+          "extra": null
         },
         {
           "name": "Pang! 3 -Euro 950601-.mra",
           "sha": "d66766e5d7088fcf8131f131b8851c2a72af19c0",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps1/releases/Pang!%203%20-Euro%20950601-.mra",
           "type": "MRA",
-          "extra": {
-            "name": "Pang! 3 (Euro 950601)",
-            "rbf": "jtcps1",
-            "zips": [
-              "pang3.zip"
-            ]
-          }
+          "extra": null
         },
         {
           "name": "Pnickies -Japan 940608-.mra",
           "sha": "6ccdc9e175d7c048490f093064dfcc5835808629",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps1/releases/Pnickies%20-Japan%20940608-.mra",
           "type": "MRA",
-          "extra": {
-            "name": "Pnickies (Japan 940608)",
-            "rbf": "jtcps1",
-            "zips": [
-              "pnickj.zip"
-            ]
-          }
+          "extra": null
         },
         {
           "name": "Pokonyan! Balloon -Japan 940322-.mra",
           "sha": "96a9b4fb453be7e5ad069ca3b03380af2d13abc8",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps1/releases/Pokonyan!%20Balloon%20-Japan%20940322-.mra",
           "type": "MRA",
-          "extra": {
-            "name": "Pokonyan! Balloon (Japan 940322)",
-            "rbf": "jtcps1",
-            "zips": [
-              "pokonyan.zip"
-            ]
-          }
+          "extra": null
         },
         {
           "name": "Quiz & Dragons  Capcom Quiz Game -USA 920701-.mra",
           "sha": "23bfdd00600a0992a10dab256eff1bcf2f8e6575",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps1/releases/Quiz%20%26%20Dragons%20%20Capcom%20Quiz%20Game%20-USA%20920701-.mra",
           "type": "MRA",
-          "extra": {
-            "name": "Quiz & Dragons: Capcom Quiz Game (USA 920701)",
-            "rbf": "jtcps1",
-            "zips": [
-              "qad.zip"
-            ]
-          }
+          "extra": null
         },
         {
           "name": "Quiz Tonosama no Yabou 2  Zenkoku-ban -Japan 950123-.mra",
           "sha": "841325432eb37043aac50041e60ef0f4329e5d1c",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps1/releases/Quiz%20Tonosama%20no%20Yabou%202%20%20Zenkoku-ban%20-Japan%20950123-.mra",
           "type": "MRA",
-          "extra": {
-            "name": "Quiz Tonosama no Yabou 2: Zenkoku-ban (Japan 950123)",
-            "rbf": "jtcps1",
-            "zips": [
-              "qtono2j.zip"
-            ]
-          }
+          "extra": null
         },
         {
           "name": "Street Fighter II  The World Warrior -World 910522-.mra",
           "sha": "191edd75c2db2652ce70930850dfb6f80f573ecb",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps1/releases/Street%20Fighter%20II%20%20The%20World%20Warrior%20-World%20910522-.mra",
           "type": "MRA",
-          "extra": {
-            "name": "Street Fighter II: The World Warrior (World 910522)",
-            "rbf": "jtcps1",
-            "zips": [
-              "sf2.zip"
-            ]
-          }
+          "extra": null
         },
         {
           "name": "Street Fighter II'  Champion Edition -World 920513-.mra",
           "sha": "b6237eb660b2aacf5707842a66c76b76e6942282",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps1/releases/Street%20Fighter%20II'%20%20Champion%20Edition%20-World%20920513-.mra",
           "type": "MRA",
-          "extra": {
-            "name": "Street Fighter II': Champion Edition (World 920513)",
-            "rbf": "jtcps1",
-            "zips": [
-              "sf2.zip|sf2ce.zip"
-            ]
-          }
+          "extra": null
         },
         {
           "name": "Street Fighter II'  Hyper Fighting -World 921209-.mra",
           "sha": "8c37ca579c350800ab7d2a1a48b65d695a495541",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps1/releases/Street%20Fighter%20II'%20%20Hyper%20Fighting%20-World%20921209-.mra",
           "type": "MRA",
-          "extra": {
-            "name": "Street Fighter II': Hyper Fighting (World 921209)",
-            "rbf": "jtcps1",
-            "zips": [
-              "sf2.zip|sf2hf.zip"
-            ]
-          }
+          "extra": null
         },
         {
           "name": "Street Fighter Zero -CPS Changer, Japan 951020-.mra",
           "sha": "376958a7469a794bb2770f0736d88e35ef4e411a",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps1/releases/Street%20Fighter%20Zero%20-CPS%20Changer%2C%20Japan%20951020-.mra",
           "type": "MRA",
-          "extra": {
-            "name": "Street Fighter Zero (CPS Changer, Japan 951020)",
-            "rbf": "jtcps1",
-            "zips": [
-              "sfzch.zip"
-            ]
-          }
+          "extra": null
         },
         {
           "name": "Strider -USA, B-Board 89624B-2-.mra",
           "sha": "6a16f37add704ea9c86dee3c6ba360b88e171484",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps1/releases/Strider%20-USA%2C%20B-Board%2089624B-2-.mra",
           "type": "MRA",
-          "extra": {
-            "name": "Strider (USA, B-Board 89624B-2)",
-            "rbf": "jtcps1",
-            "zips": [
-              "strider.zip"
-            ]
-          }
+          "extra": null
         },
         {
           "name": "The King of Dragons -World 910805-.mra",
           "sha": "d418f7f6f18eeac67f0fae8e86b3fcc7d2ac7b9e",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps1/releases/The%20King%20of%20Dragons%20-World%20910805-.mra",
           "type": "MRA",
-          "extra": {
-            "name": "The King of Dragons (World 910805)",
-            "rbf": "jtcps1",
-            "zips": [
-              "kod.zip"
-            ]
-          }
+          "extra": null
         },
         {
           "name": "Three Wonders -World 910520-.mra",
           "sha": "b7c094d00e3d2fc539ed3bc468d0e2eb8bc2b672",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps1/releases/Three%20Wonders%20-World%20910520-.mra",
           "type": "MRA",
-          "extra": {
-            "name": "Three Wonders (World 910520)",
-            "rbf": "jtcps1",
-            "zips": [
-              "3wonders.zip"
-            ]
-          }
+          "extra": null
         },
         {
           "name": "U.N. Squadron -USA-.mra",
@@ -1898,7 +1682,13 @@
           "sha": "f557f94a4bb9986f50594ade90cdeccca9ed5768",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps1/releases/_alt/Lost%20Worlds%20-Japan-.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Lost Worlds (Japan)",
+            "rbf": "jtcps1",
+            "zips": [
+              "forgottn.zip|lostwrld.zip"
+            ]
+          }
         },
         {
           "name": "Magic Sword  Heroic Fantasy -Japan 900623-.mra",
