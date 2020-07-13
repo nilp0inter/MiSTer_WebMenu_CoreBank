@@ -35,21 +35,39 @@
           "sha": "56c7d16590c62497d380c67866bff669d6410803",
           "url": "https://raw.githubusercontent.com/MrX-8B/MiSTer-Arcade-AtariTetris/master/releases/Atari%20Tetris%20(cocktail%20set%201).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": null,
+            "rbf": "AtariTetris",
+            "zips": [
+              "atetris.zip"
+            ]
+          }
         },
         {
           "name": "Atari Tetris (cocktail set 2).mra",
           "sha": "9375a4bc02071cacb14ae7f1d6bf268fd9ec621a",
           "url": "https://raw.githubusercontent.com/MrX-8B/MiSTer-Arcade-AtariTetris/master/releases/Atari%20Tetris%20(cocktail%20set%202).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": null,
+            "rbf": "AtariTetris",
+            "zips": [
+              "atetris.zip"
+            ]
+          }
         },
         {
           "name": "Atari Tetris.mra",
           "sha": "2e635a29eb62440900ee91b140fa79c7847cf5b8",
           "url": "https://raw.githubusercontent.com/MrX-8B/MiSTer-Arcade-AtariTetris/master/releases/Atari%20Tetris.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": null,
+            "rbf": "AtariTetris",
+            "zips": [
+              "atetris.zip"
+            ]
+          }
         },
         {
           "name": "build_rom.bat",
@@ -102,7 +120,13 @@
           "sha": "e2aee2387aefbb567f2f52f181b9e4eac2b8a90d",
           "url": "https://raw.githubusercontent.com/MrX-8B/MiSTer-Arcade-DigDug/master/releases/Dig%20Dug.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Dig Dug (rev 2)",
+            "rbf": "digdug",
+            "zips": [
+              "digdug.zip"
+            ]
+          }
         },
         {
           "name": "rommap.txt",
@@ -382,14 +406,26 @@
           "sha": "a54080e10a557cd77f1d2710078dfe242ca8e83c",
           "url": "https://raw.githubusercontent.com/MrX-8B/MiSTer-Arcade-GreenBeret/master/releases/Green%20Beret.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Green Beret",
+            "rbf": "rshnatk",
+            "zips": [
+              "gberet.zip"
+            ]
+          }
         },
         {
           "name": "Rush'n Attack (US).mra",
           "sha": "bda5e279daa2043f35c98771a59605200d2144ca",
           "url": "https://raw.githubusercontent.com/MrX-8B/MiSTer-Arcade-GreenBeret/master/releases/Rush'n%20Attack%20(US).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Rush'n Attack (US)",
+            "rbf": "rshnatk",
+            "zips": [
+              "gberet.zip|rushatck.zip"
+            ]
+          }
         },
         {
           "name": "rommap.txt",
@@ -430,28 +466,52 @@
           "sha": "e35d39e5700601e7f6afafa8a257147f24442a1f",
           "url": "https://raw.githubusercontent.com/MrX-8B/MiSTer-Arcade-Gyruss/master/releases/Gyruss%20(Centuri).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Gyruss (Centuri)",
+            "rbf": "Gyruss",
+            "zips": [
+              "gyruss.zip|gyrussce.zip"
+            ]
+          }
         },
         {
           "name": "Gyruss (bootleg).mra",
           "sha": "d6eb5eed336177f01b90143da56a34288278bda1",
           "url": "https://raw.githubusercontent.com/MrX-8B/MiSTer-Arcade-Gyruss/master/releases/Gyruss%20(bootleg).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Gyruss (bootleg)",
+            "rbf": "gyruss",
+            "zips": [
+              "gyruss.zip|gyrussb.zip"
+            ]
+          }
         },
         {
           "name": "Gyruss.mra",
           "sha": "bb7e6bab2b1e750429d73146203047da639ebf28",
           "url": "https://raw.githubusercontent.com/MrX-8B/MiSTer-Arcade-Gyruss/master/releases/Gyruss.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Gyruss",
+            "rbf": "Gyruss",
+            "zips": [
+              "gyruss.zip"
+            ]
+          }
         },
         {
           "name": "Venus (bootleg of Gyruss).mra",
           "sha": "406ce74cd738a6116a56a5f60ce89176e878197c",
           "url": "https://raw.githubusercontent.com/MrX-8B/MiSTer-Arcade-Gyruss/master/releases/Venus%20(bootleg%20of%20Gyruss).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Venus (bootleg of Gyruss)",
+            "rbf": "gyruss",
+            "zips": [
+              "gyruss.zip|venus.zip"
+            ]
+          }
         }
       ]
     },
@@ -480,7 +540,13 @@
           "sha": "8457346352bc4a3367376efad1d07444da6ad1a7",
           "url": "https://raw.githubusercontent.com/MrX-8B/MiSTer-Arcade-NinjaKun/master/releases/Ninjakun.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Ninjakun Majou no Bouken",
+            "rbf": "ninjakun",
+            "zips": [
+              "ninjakun.zip"
+            ]
+          }
         },
         {
           "name": "rommap.txt",
@@ -509,14 +575,26 @@
           "sha": "79347528a74518837d0972620860b0eeb1c28757",
           "url": "https://raw.githubusercontent.com/MrX-8B/MiSTer-Arcade-PenguinKunWars/master/releases/Penguin-Kun_Wars.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Penguin-Kun Wars (US)",
+            "rbf": "PenguinKunWars",
+            "zips": [
+              "pkunwar.zip"
+            ]
+          }
         },
         {
           "name": "Penguin-Kun_Wars_Japan.mra",
           "sha": "87e85e8ccfa4f21ef0aaea05697bbb99eb042386",
           "url": "https://raw.githubusercontent.com/MrX-8B/MiSTer-Arcade-PenguinKunWars/master/releases/Penguin-Kun_Wars_Japan.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Penguin-Kun Wars (Japan)",
+            "rbf": "PenguinKunWars",
+            "zips": [
+              "pkunwar.zip|pkunwarj.zip"
+            ]
+          }
         }
       ]
     },
@@ -545,14 +623,26 @@
           "sha": "2a553ff8580c549bbe5c8d3c568b3e29cf137efb",
           "url": "https://raw.githubusercontent.com/MrX-8B/MiSTer-Arcade-RallyX/master/releases/New%20Rally-X.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "New Rally X",
+            "rbf": "rallyx",
+            "zips": [
+              "nrallyx.zip"
+            ]
+          }
         },
         {
           "name": "Rally-X.mra",
           "sha": "942d59fbde419460401def96f2f50d0cf50b1789",
           "url": "https://raw.githubusercontent.com/MrX-8B/MiSTer-Arcade-RallyX/master/releases/Rally-X.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Rally X (32k Ver.)",
+            "rbf": "rallyx",
+            "zips": [
+              "rallyx.zip"
+            ]
+          }
         },
         {
           "name": "rommap.txt",
@@ -575,7 +665,13 @@
           "sha": "cb2b94ed542407662b3e057a9446548567d8333e",
           "url": "https://raw.githubusercontent.com/MrX-8B/MiSTer-Arcade-SEGASYS1/master/releases/4-D%20Warriors.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "4D Warriors",
+            "rbf": "segasys1",
+            "zips": [
+              "4dwarrio.zip"
+            ]
+          }
         },
         {
           "name": "Arcade-SEGASYS1_20200107.rbf",
@@ -600,105 +696,203 @@
           "sha": "d167170c9275fbcc2207808356c026298d571628",
           "url": "https://raw.githubusercontent.com/MrX-8B/MiSTer-Arcade-SEGASYS1/master/releases/Flicky.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Flicky (128k Version, 315-5051)",
+            "rbf": "segasys1",
+            "zips": [
+              "flicky.zip"
+            ]
+          }
         },
         {
           "name": "I'm Sorry.mra",
           "sha": "39f584f1c25f4d2ba0112c4b30df106fb8d3197a",
           "url": "https://raw.githubusercontent.com/MrX-8B/MiSTer-Arcade-SEGASYS1/master/releases/I'm%20Sorry.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "I'm Sorry (315-5110, US)",
+            "rbf": "segasys1",
+            "zips": [
+              "imsorry.zip"
+            ]
+          }
         },
         {
           "name": "Mister Viking.mra",
           "sha": "e0599647bdeda45b043955da04650d34b014819a",
           "url": "https://raw.githubusercontent.com/MrX-8B/MiSTer-Arcade-SEGASYS1/master/releases/Mister%20Viking.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Mister Viking (315-5041)",
+            "rbf": "segasys1",
+            "zips": [
+              "mrviking.zip"
+            ]
+          }
         },
         {
           "name": "My Hero.mra",
           "sha": "e5bc715a9603d74698ec87e284394c1b2262b0a1",
           "url": "https://raw.githubusercontent.com/MrX-8B/MiSTer-Arcade-SEGASYS1/master/releases/My%20Hero.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "My Hero (US, not encrypted)",
+            "rbf": "segasys1",
+            "zips": [
+              "myhero.zip"
+            ]
+          }
         },
         {
           "name": "Rafflesia.mra",
           "sha": "d1c977a9f42ba1d8607649f31ebeaea758200cc2",
           "url": "https://raw.githubusercontent.com/MrX-8B/MiSTer-Arcade-SEGASYS1/master/releases/Rafflesia.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Rafflesia",
+            "rbf": "segasys1",
+            "zips": [
+              "raflesia.zip"
+            ]
+          }
         },
         {
           "name": "Regulus.mra",
           "sha": "86d45861eb460900225caff99ad89d7b801ebe3d",
           "url": "https://raw.githubusercontent.com/MrX-8B/MiSTer-Arcade-SEGASYS1/master/releases/Regulus.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Regulus",
+            "rbf": "segasys1",
+            "zips": [
+              "regulus.zip"
+            ]
+          }
         },
         {
           "name": "Sega Ninja.mra",
           "sha": "5b213943ee2118b7209db412936dcd9370766a54",
           "url": "https://raw.githubusercontent.com/MrX-8B/MiSTer-Arcade-SEGASYS1/master/releases/Sega%20Ninja.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Sega Ninja (315-5102)",
+            "rbf": "segasys1",
+            "zips": [
+              "seganinj.zip"
+            ]
+          }
         },
         {
           "name": "Spatter.mra",
           "sha": "d819854d260a19f3dc095702c6a7520597df24f6",
           "url": "https://raw.githubusercontent.com/MrX-8B/MiSTer-Arcade-SEGASYS1/master/releases/Spatter.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Spatter (315-5xxx)",
+            "rbf": "segasys1",
+            "zips": [
+              "spatter.zip"
+            ]
+          }
         },
         {
           "name": "TeddyBoy Blues.mra",
           "sha": "b6c957ddbc25ead5a20d23363ad010fa72cd7ed7",
           "url": "https://raw.githubusercontent.com/MrX-8B/MiSTer-Arcade-SEGASYS1/master/releases/TeddyBoy%20Blues.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "TeddyBoy Blues (315-5115, New Ver.)",
+            "rbf": "segasys1",
+            "zips": [
+              "teddybb.zip"
+            ]
+          }
         },
         {
           "name": "Up'n Down.mra",
           "sha": "eed16e9569c80ad87ea07caff13730c6ebbd7f57",
           "url": "https://raw.githubusercontent.com/MrX-8B/MiSTer-Arcade-SEGASYS1/master/releases/Up'n%20Down.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Up'n Down",
+            "rbf": "segasys1",
+            "zips": [
+              "upndown.zip"
+            ]
+          }
         },
         {
           "name": "Wonder Boy.mra",
           "sha": "5c1766a42923de312ffb407559c63975f38290f7",
           "url": "https://raw.githubusercontent.com/MrX-8B/MiSTer-Arcade-SEGASYS1/master/releases/Wonder%20Boy.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Wonder Boy (set 1, 315-5177)",
+            "rbf": "segasys1",
+            "zips": [
+              "wboy.zip"
+            ]
+          }
         },
         {
           "name": "Gonbee no I'm Sorry (315-5110, Japan).mra",
           "sha": "a6584ea30fc265c49a8edaf43c0896c67a612b15",
           "url": "https://raw.githubusercontent.com/MrX-8B/MiSTer-Arcade-SEGASYS1/master/releases/_alternatives/Gonbee%20no%20I'm%20Sorry%20(315-5110%2C%20Japan).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Gonbee no I'm Sorry (315-5110, Japan)",
+            "rbf": "segasys1",
+            "zips": [
+              "imsorry.zip",
+              "imsorryj.zip",
+              "imsorryj.zip"
+            ]
+          }
         },
         {
           "name": "Ninja Princess (315-5098, 128k Ver.).mra",
           "sha": "1bb133d27bcd9d0b9277289d641a1f8e85a90275",
           "url": "https://raw.githubusercontent.com/MrX-8B/MiSTer-Arcade-SEGASYS1/master/releases/_alternatives/Ninja%20Princess%20(315-5098%2C%20128k%20Ver.).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Ninja Princess (315-5098, 128k Ver.)",
+            "rbf": "segasys1",
+            "zips": [
+              "seganinj.zip",
+              "nprinceso.zip",
+              "nprinceso.zip"
+            ]
+          }
         },
         {
           "name": "Sanrin San Chan (Japan, 315-5xxx).mra",
           "sha": "deaf1c13ecc5a828c851c62c9456c06af9f70299",
           "url": "https://raw.githubusercontent.com/MrX-8B/MiSTer-Arcade-SEGASYS1/master/releases/_alternatives/Sanrin%20San%20Chan%20(Japan%2C%20315-5xxx).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Sanrin San Chan (Japan, 315-5xxx)",
+            "rbf": "segasys1",
+            "zips": [
+              "spatter.zip",
+              "ssanchan.zip",
+              "ssanchan.zip"
+            ]
+          }
         },
         {
           "name": "Seishun Scandal (315-5132, Japan).mra",
           "sha": "a92f9b5405fc728d04f574d85c5fa3b130197857",
           "url": "https://raw.githubusercontent.com/MrX-8B/MiSTer-Arcade-SEGASYS1/master/releases/_alternatives/Seishun%20Scandal%20(315-5132%2C%20Japan).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Seishun Scandal (315-5132, Japan)",
+            "rbf": "segasys1",
+            "zips": [
+              "myhero.zip",
+              "sscandal.zip",
+              "sscandal.zip"
+            ]
+          }
         }
       ]
     },
@@ -727,14 +921,26 @@
           "sha": "ba27ac22b62e933467cf12da9873907b0e44ed1e",
           "url": "https://raw.githubusercontent.com/MrX-8B/MiSTer-Arcade-SolomonsKey/master/releases/Solomon%20no%20Kagi%20(Japan).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Solomon no Kagi (Japan)",
+            "rbf": "solomonskey",
+            "zips": [
+              "solomon.zip|solomonj.zip"
+            ]
+          }
         },
         {
           "name": "Solomon's Key.mra",
           "sha": "545e2b78ceb57dadc54513cd3315dbf8b82f16c1",
           "url": "https://raw.githubusercontent.com/MrX-8B/MiSTer-Arcade-SolomonsKey/master/releases/Solomon's%20Key.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Solomon's Key (US)",
+            "rbf": "solomonskey",
+            "zips": [
+              "solomon.zip"
+            ]
+          }
         },
         {
           "name": "rommap.txt",
