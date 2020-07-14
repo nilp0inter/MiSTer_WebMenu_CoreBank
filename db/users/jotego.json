@@ -3359,49 +3359,97 @@
           "sha": "b22d1ec570fb42205d7441addb0302a9ca28af1b",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/dd/releases/Double%20Dragon.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Double Dragon (Japan)",
+            "rbf": "jtdd",
+            "zips": [
+              "ddragon.zip"
+            ]
+          }
         },
         {
           "name": "Double Dragon (US set 1).mra",
           "sha": "7865634cb52bb6e605ca96d67d1332b4aff1755e",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/dd/releases/alt/Double%20Dragon%20(US%20set%201).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Double Dragon (US set 1)",
+            "rbf": "jtdd",
+            "zips": [
+              "ddragonu.zip",
+              "ddragon.zip"
+            ]
+          }
         },
         {
           "name": "Double Dragon (US set 2).mra",
           "sha": "1ec22174fca329fb6451fe50245e9a4dc5009dcf",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/dd/releases/alt/Double%20Dragon%20(US%20set%202).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Double Dragon (US set 2)",
+            "rbf": "jtdd",
+            "zips": [
+              "ddragonua.zip",
+              "ddragon.zip"
+            ]
+          }
         },
         {
           "name": "Double Dragon (US set 3).mra",
           "sha": "dfad70882fc438c6517463268c9b7e21cea861c1",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/dd/releases/alt/Double%20Dragon%20(US%20set%203).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Double Dragon (US set 3)",
+            "rbf": "jtdd",
+            "zips": [
+              "ddragonub.zip",
+              "ddragon.zip"
+            ]
+          }
         },
         {
           "name": "Double Dragon (World set 1).mra",
           "sha": "1ce3691fdb9968f4d39c43dbc92b0a5b8f9fd064",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/dd/releases/alt/Double%20Dragon%20(World%20set%201).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Double Dragon (World set 1)",
+            "rbf": "jtdd",
+            "zips": [
+              "ddragonw.zip",
+              "ddragon.zip"
+            ]
+          }
         },
         {
           "name": "Double Dragon (World set 2).mra",
           "sha": "51d24ff7bf2726b108ec1c6585dea7bced6502fa",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/dd/releases/alt/Double%20Dragon%20(World%20set%202).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Double Dragon (World set 2)",
+            "rbf": "jtdd",
+            "zips": [
+              "ddragonw1.zip",
+              "ddragon.zip"
+            ]
+          }
         },
         {
           "name": "Double Dragon (bootleg).mra",
           "sha": "1ffda49bf27a2f8b75bbad72bac16a70968c65d6",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/dd/releases/alt/Double%20Dragon%20(bootleg).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Double Dragon (bootleg)",
+            "rbf": "jtdd",
+            "zips": [
+              "ddragonb2.zip",
+              "ddragon.zip"
+            ]
+          }
         },
         {
           "name": "jtdd_20200317.rbf",
@@ -3456,21 +3504,39 @@
           "sha": "c2ddbac756d4fb826632d7b44d90d3e1a65a88ed",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/dd2/releases/Double%20Dragon%20II%20-%20The%20Revenge.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Double Dragon II - The Revenge (World)",
+            "rbf": "jtdd2",
+            "zips": [
+              "ddragon.zip|ddragon2.zip"
+            ]
+          }
         },
         {
           "name": "Double Dragon II - The Revenge (Japan).mra",
           "sha": "118f5a5124ed0e28ec05e8984f68bbaf44b13f57",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/dd2/releases/alt/Double%20Dragon%20II%20-%20The%20Revenge%20(Japan).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Double Dragon II - The Revenge (Japan)",
+            "rbf": "jtdd2",
+            "zips": [
+              "ddragon.zip|ddragon2.zip|ddragon2j.zip"
+            ]
+          }
         },
         {
           "name": "Double Dragon II - The Revenge (US).mra",
           "sha": "f278ac9c55e580377e40ee34dd7789ff1898eb9e",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/dd2/releases/alt/Double%20Dragon%20II%20-%20The%20Revenge%20(US).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Double Dragon II - The Revenge (US)",
+            "rbf": "jtdd2",
+            "zips": [
+              "ddragon.zip|ddragon2.zip|ddragon2u.zip"
+            ]
+          }
         },
         {
           "name": "jtdd2_20200320.rbf",
@@ -3525,7 +3591,13 @@
           "sha": "9102e071eae21abe7f041ad96da87225d031d907",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/f1dream/releases/F-1%20Dream.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "F-1 Dream",
+            "rbf": "jtf1dream",
+            "zips": [
+              "f1dream.zip"
+            ]
+          }
         },
         {
           "name": "jtf1dream_20191224.rbf",
@@ -3622,7 +3694,13 @@
           "sha": "1aabe15cd98c85e7e4eb90dc7477bd54d97b5cc8",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/gng/releases/Ghosts'n%20Goblins%20(JT).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Ghosts'n Goblins (World set 1)",
+            "rbf": "jtgng",
+            "zips": [
+              "gng.zip"
+            ]
+          }
         },
         {
           "name": "jtgng_20190914.rbf",
@@ -3749,7 +3827,13 @@
           "sha": "cb601c99da3c5d1a1f90bcdcc183ccd9753028ac",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/gunsmoke/releases/Gun%20Smoke.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Gun Smoke (World, 851115)",
+            "rbf": "jtgunsmoke",
+            "zips": [
+              "gunsmoke.zip"
+            ]
+          }
         },
         {
           "name": "jtgunsmoke_20191007.rbf",
@@ -3840,7 +3924,14 @@
           "sha": "aec805ba20b3b4264e6abeed350d652a16a23935",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/popeye/releases/Popeye.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Popeye (revision D not protected)",
+            "rbf": "jtpopeye",
+            "zips": [
+              "popeyeu.zip",
+              "popeye.zip"
+            ]
+          }
         },
         {
           "name": "jtpopeye_20191227.rbf",
@@ -3859,14 +3950,26 @@
           "sha": "1e481e3453e74240468f296c62e2dc67f6eaf959",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/sectionz/releases/Legendary%20Wings.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Legendary Wings",
+            "rbf": "jtsectionz",
+            "zips": [
+              "lwings.zip"
+            ]
+          }
         },
         {
           "name": "SectionZ.mra",
           "sha": "7197326500b30f1204331c370f4c43de1d9feb4c",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/sectionz/releases/SectionZ.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Section Z",
+            "rbf": "jtsectionz",
+            "zips": [
+              "sectionz.zip"
+            ]
+          }
         },
         {
           "name": "jtsectionz_20200421.rbf",
@@ -3933,7 +4036,13 @@
           "sha": "d29f97f1aa28b2910405f3b139d97f318304388b",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/tora/releases/Tiger%20Road.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Tiger Road (US)",
+            "rbf": "jttora",
+            "zips": [
+              "tigeroad.zip"
+            ]
+          }
         },
         {
           "name": "jttora_20191114.rbf",
@@ -4048,7 +4157,13 @@
           "sha": "bbbcc3502a490336dced7f86e03af5256c97e0ac",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/vulgus/releases/Vulgus.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Vulgus (set 1)",
+            "rbf": "jtvulgus",
+            "zips": [
+              "vulgus.zip"
+            ]
+          }
         },
         {
           "name": "jtvulgus_20191007.rbf",
