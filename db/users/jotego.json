@@ -3365,7 +3365,13 @@
           "sha": "b22d1ec570fb42205d7441addb0302a9ca28af1b",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/dd/releases/Double%20Dragon.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Double Dragon (Japan)",
+            "rbf": "jtdd",
+            "zips": [
+              "ddragon.zip"
+            ]
+          }
         },
         {
           "name": "Double Dragon (US set 1).mra",
