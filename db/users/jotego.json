@@ -1018,21 +1018,39 @@
           "sha": "5813b6f4bb69f1cb7ad19d162a0879ea2ed7dc11",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps1/releases/Mercs%20-World%20900302-.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Mercs (World 900302)",
+            "rbf": "jtcps1",
+            "zips": [
+              "mercs.zip"
+            ]
+          }
         },
         {
           "name": "Nemo -World 901130-.mra",
           "sha": "684f1c5685311372bfb25f46bca279c38b206f68",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps1/releases/Nemo%20-World%20901130-.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Nemo (World 901130)",
+            "rbf": "jtcps1",
+            "zips": [
+              "nemo.zip"
+            ]
+          }
         },
         {
           "name": "Pang! 3 -Euro 950601-.mra",
           "sha": "a3e89ea3801b1efcc7dc3b3d62b5e05ae55bda2d",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps1/releases/Pang!%203%20-Euro%20950601-.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Pang! 3 (Euro 950601)",
+            "rbf": "jtcps1",
+            "zips": [
+              "pang3.zip"
+            ]
+          }
         },
         {
           "name": "Pnickies -Japan 940608-.mra",
@@ -1078,7 +1096,13 @@
           "sha": "a293aaa727026f03c314852b0aa8115b1217380e",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps1/releases/Quiz%20Tonosama%20no%20Yabou%202%20%20Zenkoku-ban%20-Japan%20950123-.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Quiz Tonosama no Yabou 2: Zenkoku-ban (Japan 950123)",
+            "rbf": "jtcps1",
+            "zips": [
+              "qtono2j.zip"
+            ]
+          }
         },
         {
           "name": "Street Fighter II  The World Warrior -World 910522-.mra",

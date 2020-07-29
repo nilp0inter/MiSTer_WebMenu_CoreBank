@@ -5619,7 +5619,13 @@
           "sha": "b6c957ddbc25ead5a20d23363ad010fa72cd7ed7",
           "url": "https://raw.githubusercontent.com/Miguel-T80c/MiSTer-Arcade-SEGASYS1/master/releases/TeddyBoy%20Blues.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "TeddyBoy Blues (315-5115, New Ver.)",
+            "rbf": "segasys1",
+            "zips": [
+              "teddybb.zip"
+            ]
+          }
         },
         {
           "name": "Up'n Down.mra",
@@ -5667,7 +5673,15 @@
           "sha": "1bb133d27bcd9d0b9277289d641a1f8e85a90275",
           "url": "https://raw.githubusercontent.com/Miguel-T80c/MiSTer-Arcade-SEGASYS1/master/releases/_alternatives/Ninja%20Princess%20(315-5098%2C%20128k%20Ver.).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Ninja Princess (315-5098, 128k Ver.)",
+            "rbf": "segasys1",
+            "zips": [
+              "seganinj.zip",
+              "nprinceso.zip",
+              "nprinceso.zip"
+            ]
+          }
         },
         {
           "name": "Sanrin San Chan (Japan, 315-5xxx).mra",
