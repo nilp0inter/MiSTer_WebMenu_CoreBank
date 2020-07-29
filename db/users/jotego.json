@@ -185,7 +185,7 @@
     {
       "name": "jtbin",
       "description": "Binary RBF files for MiST(er) FPGA cores",
-      "readme": "# FPGA Clones of Arcade Games by Jose Tejada (@topapate)\n\nThis repository contains only binary files of my FPGA cores. Although I have\nhad some cores released through the MiSTer repository or the source code repository;\nnowadays I only add new releases to this repository in binary form.\n\n# Supported FPGA Systems\n\nCurrently there are three systems that I maintain: MiST, MiSTer and SiDi.\n\n## MiST & SiDi\nFor these systems you can generate ROMs using batch files or the MRA-to-rom file converter.\n\n## MiSTer\n\nYou can download the binaries files from the mister folder. But you can also adapt\nyour update script to grab files from this repository. The folder mister/update contains\nthe update script\n\n# Source Code Repositories\n\ncore                | Source code\n--------------------|--------------------------\nCAPCOM CPS0         | https://www.github.com/jotego/jt_gng\nDouble Dragon       | https://www.github.com/jotego/jtdd\nPopeye              | https://www.github.com/jotego/jtdd\nContra              | https://www.github.com/jotego/jtcontra\nCPS                 | still undisclosed\n\nIf you are a developer, don't miss these cores too:\n\nChip                 | Source code\n---------------------|-----------------------------------\nYM2612,YM2610,YM2203 | https://www.github.com/jotego/jt12\nYM2151:              | https://www.github.com/jotego/jt51\nYM2149:              | https://www.github.com/jotego/jt49\n\n# Final Words\n\nYou can show your appreciation through\n* Patreon: https://patreon.com/topapate\n* Paypal:  https://paypal.me/topapate\n\n```\n+--------------------------------------------------------------------------------+\n|oooooooooooooooooooooooooooooooooo+++++++++++ooooooooooooooooooooooooooooooooooo|\n|ooooooooooooooooooooooooooooooooo+. .    . .+ooooooooooooooooooooooooooooooooooo|\n|ooooooooooooooooooooooooooooooooo~         :o++ooooooooooooooooooooooooooooooooo|\n|oooooooooooooooooooooooooooo+ooo+.        .++.:oo+oo+oooooo+o+oo+oooooo++ooooooo|\n|ooooooooooooooooooooooooo+.......          .. .............................:oooo|\n|oooooooooooooooooooooooo+.                                                .+o+oo|\n|oooooooooooooooooooooooo:                                                 :o:.+o|\n|ooooooooooooooooooooooo+.                                                .++.:oo|\n|ooooooooooooooooooooooo:.....           ...........          ....... ....:o~.+oo|\n|oooooooooooooooooooooooo+++++~         ~+++:++:++++.         ++++++++++++++.+ooo|\n|oooooooooooooooooooooooooo+:~         .++.~:::::::.         .o+.~:::::::::::+ooo|\n|oooooooooooooooooooooooooooo:         :o~.+oooooo+.         ++.~oooooooooooooooo|\n|ooo~........~oooooooooooooo+.        .++.:ooooooo+         ~o:.+oooooooooooooooo|\n|oo:         ~o++ooooooooooo.         +o~.ooooooo+.        .++.~ooooooooooooooooo|\n|oo.         :+.:ooooooooo+.         ~o+.+ooooooo:         ~o:.+ooooooooooooooooo|\n|oo.         ...~:::::::..          .++.~ooooooo+.        .o+.:oooooooooooooooooo|\n|oo~                               ~o+..+ooooooo~         +o~.+oooooooooooooooooo|\n|oo+.                           .~+o+..+ooooooo+.        .o+.+ooooooooooooooooooo|\n|oooo~.                       .:+o+..:+oooooooo.         +o..oooooooooooooooooooo|\n|ooooo+:...              ..~:+++:..:+ooooooooo+         .o+.+oooooooooooooooooooo|\n|ooooooo+++::::::::::++++++++~~.~++ooooooooooo+:+:::::+:++.~ooooooooooooooooooooo|\n|ooooooooo+++:::::::::~:~~~~:++oooooooooooooooooo+::::~::~.+ooooooooooooooooooooo|\n|oooooooooooooo+o+oo++++o+ooooooooooooooooooooooo+o+++o++o+oooooooooooooooooooooo|\n+--------------------------------------------------------------------------------+\n```\n",
+      "readme": "# FPGA Clones of Arcade Games by Jose Tejada (@topapate)\n\nThis repository contains only binary files of my FPGA cores. Although I have\nhad some cores released through the MiSTer repository or the source code repository;\nnowadays I only add new releases to this repository in binary form.\n\n# Supported FPGA Systems\n\nCurrently there are three systems that I maintain: MiST, MiSTer and SiDi.\n\n## MiST & SiDi\nFor these systems you can generate ROMs using batch files or the MRA-to-rom file converter. Note that you have to rename the RBF files in order to remove the timestamp. For instance:\n\njt1942_20200728.rbf --> jt1942.rbf\n\n20200728 is the timestamp and stands for 28th of July 2020.\n\n## MiSTer\n\nYou can download the binaries files from the mister folder. But you can also adapt\nyour update script to grab files from this repository. The folder mister/update contains\nthe update script\n\n# Source Code Repositories\n\nNormally each repository covers for many arcade games that share identical or similar hardware.\n\nFPGA Core           | Source code\n--------------------|--------------------------\nCAPCOM CPS0         | https://www.github.com/jotego/jt_gng\nDouble Dragon       | https://www.github.com/jotego/jtdd\nPopeye              | https://www.github.com/jotego/jtpopeye\nContra              | https://www.github.com/jotego/jtcontra\nCPS                 | https://www.github.com/jotego/jtcps\nBubble Bobble       | https://www.github.com/jotego/jtbubl (still not public)\n\nIf you are a developer, don't miss these cores too:\n\nChip                   | Source code\n-----------------------|-----------------------------------\nYM2203, YM2612, YM2610 | [JT12](https://github.com/jotego/jt12)\nYM2151                 | [JT51](https://github.com/jotego/jt51)\nYM3526                 | [JTOPL](https://github.com/jotego/jtopl)\nYM2149                 | [JT49](https://github.com/jotego/jt49)\nsn76489an              | [JT89](https://github.com/jotego/jt89)\nOKI 6295               | [JT6295](https://github.com/jotego/jt6295)\nOKI MSM5205            | [JT5205](https://github.com/jotego/jt5205)\n\n# Final Words\n\nYou can show your appreciation through\n* Patreon: https://patreon.com/topapate\n* Paypal:  https://paypal.me/topapate\n\n```\n+--------------------------------------------------------------------------------+\n|oooooooooooooooooooooooooooooooooo+++++++++++ooooooooooooooooooooooooooooooooooo|\n|ooooooooooooooooooooooooooooooooo+. .    . .+ooooooooooooooooooooooooooooooooooo|\n|ooooooooooooooooooooooooooooooooo~         :o++ooooooooooooooooooooooooooooooooo|\n|oooooooooooooooooooooooooooo+ooo+.        .++.:oo+oo+oooooo+o+oo+oooooo++ooooooo|\n|ooooooooooooooooooooooooo+.......          .. .............................:oooo|\n|oooooooooooooooooooooooo+.                                                .+o+oo|\n|oooooooooooooooooooooooo:                                                 :o:.+o|\n|ooooooooooooooooooooooo+.                                                .++.:oo|\n|ooooooooooooooooooooooo:.....           ...........          ....... ....:o~.+oo|\n|oooooooooooooooooooooooo+++++~         ~+++:++:++++.         ++++++++++++++.+ooo|\n|oooooooooooooooooooooooooo+:~         .++.~:::::::.         .o+.~:::::::::::+ooo|\n|oooooooooooooooooooooooooooo:         :o~.+oooooo+.         ++.~oooooooooooooooo|\n|ooo~........~oooooooooooooo+.        .++.:ooooooo+         ~o:.+oooooooooooooooo|\n|oo:         ~o++ooooooooooo.         +o~.ooooooo+.        .++.~ooooooooooooooooo|\n|oo.         :+.:ooooooooo+.         ~o+.+ooooooo:         ~o:.+ooooooooooooooooo|\n|oo.         ...~:::::::..          .++.~ooooooo+.        .o+.:oooooooooooooooooo|\n|oo~                               ~o+..+ooooooo~         +o~.+oooooooooooooooooo|\n|oo+.                           .~+o+..+ooooooo+.        .o+.+ooooooooooooooooooo|\n|oooo~.                       .:+o+..:+oooooooo.         +o..oooooooooooooooooooo|\n|ooooo+:...              ..~:+++:..:+ooooooooo+         .o+.+oooooooooooooooooooo|\n|ooooooo+++::::::::::++++++++~~.~++ooooooooooo+:+:::::+:++.~ooooooooooooooooooooo|\n|ooooooooo+++:::::::::~:~~~~:++oooooooooooooooooo+::::~::~.+ooooooooooooooooooooo|\n|oooooooooooooo+o+oo++++o+ooooooooooooooooooooooo+o+++o++o+oooooooooooooooooooooo|\n+--------------------------------------------------------------------------------+\n```\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/jotego/jtbin",
@@ -327,6 +327,12 @@
           "name": "jt1942_20200508.rbf",
           "sha": "fad6e017e672fa340e4700d143dcf76d966eccec",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/1942/releases/jt1942_20200508.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "jt1942_20200728.rbf",
+          "sha": "4abc2199dc86347805202a5bd6e714a0cdd218b6",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/1942/releases/jt1942_20200728.rbf",
           "type": "RBF"
         },
         {
@@ -475,6 +481,12 @@
           "name": "jt1943_20200508.rbf",
           "sha": "2c8f4631208571a5d8e3a3bee5a33ad319f98db6",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/1943/releases/jt1943_20200508.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "jt1943_20200728.rbf",
+          "sha": "1bff336438276b97a29df96916308e97e2e203fb",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/1943/releases/jt1943_20200728.rbf",
           "type": "RBF"
         },
         {
@@ -642,6 +654,12 @@
           "type": "RBF"
         },
         {
+          "name": "jtbtiger_20200728.rbf",
+          "sha": "463d64caa338fe978e3a3b08f538cfa6d08b65ee",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/btiger/releases/jtbtiger_20200728.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "jtcommando.txt",
           "sha": "27624e53466b2099e509c0854259c9d1d8928fed",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/commando/jtcommando.txt",
@@ -766,6 +784,12 @@
           "name": "jtcommando_20200508.rbf",
           "sha": "0e271847174319f7ca98658cc892d47ede218bba",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/commando/releases/jtcommando_20200508.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "jtcommando_20200728.rbf",
+          "sha": "ab15134e8a44700b01d975562f9a2731d0ced65e",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/commando/releases/jtcommando_20200728.rbf",
           "type": "RBF"
         },
         {
@@ -1424,6 +1448,12 @@
           "type": "RBF"
         },
         {
+          "name": "jtf1dream_20200728.rbf",
+          "sha": "3a8118564132224e619f2e15fc526551ad273205",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/f1dream/releases/jtf1dream_20200728.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "README.txt",
           "sha": "558ed93e181ba0fed228cf05d9708dae288b7e65",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/gng/README.txt",
@@ -1563,6 +1593,12 @@
           "type": "RBF"
         },
         {
+          "name": "jtgng_20200729.rbf",
+          "sha": "0d2dabb24e9af5717b2418b4894b62c0a78bc93b",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/gng/releases/jtgng_20200729.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "README.txt",
           "sha": "558ed93e181ba0fed228cf05d9708dae288b7e65",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/gunsmoke/README.txt",
@@ -1678,6 +1714,12 @@
           "type": "RBF"
         },
         {
+          "name": "jtgunsmoke_20200728.rbf",
+          "sha": "5a3a6671eafa931795d568fb7224792160460902",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/gunsmoke/releases/jtgunsmoke_20200728.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "jtpopeye_20191227.zip",
           "sha": "1f1530c16cba594f4a5f9e1ab991bb9bd1e34898",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/popeye/jtpopeye_20191227.zip",
@@ -1769,6 +1811,12 @@
           "name": "jtsectionz_20200508.rbf",
           "sha": "f745bc5c4d001bd7b20d6a272d23bca986d1f11f",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/sectionz/releases/jtsectionz_20200508.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "jtsectionz_20200728.rbf",
+          "sha": "ffbc0f34e74894c2cdb37f5421354564a4c6e4b8",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/sectionz/releases/jtsectionz_20200728.rbf",
           "type": "RBF"
         },
         {
@@ -1878,6 +1926,12 @@
           "name": "jttora_20200508.rbf",
           "sha": "8492d85c6a5ef6cb4d0345db6e4ade127839c047",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/tora/releases/jttora_20200508.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "jttora_20200729.rbf",
+          "sha": "968c5a22147c245b36405a1f8cbd6db75ea5f2bf",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/tora/releases/jttora_20200729.rbf",
           "type": "RBF"
         },
         {
@@ -2005,6 +2059,12 @@
           "name": "jtvulgus_20200508.rbf",
           "sha": "6662e440fcd697bcb9db78171ba4b7d7c0da65e4",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/vulgus/releases/jtvulgus_20200508.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "jtvulgus_20200728.rbf",
+          "sha": "237939003555257cd393235e47321acf08fd7a64",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/vulgus/releases/jtvulgus_20200728.rbf",
           "type": "RBF"
         }
       ]
