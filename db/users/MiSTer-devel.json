@@ -3372,7 +3372,13 @@
           "sha": "f2452a7cdc6c08065e80a9fe7c193c04a142430c",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pacman_MiSTer/master/releases/Birdiy.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Birdiy",
+            "rbf": "pacman",
+            "zips": [
+              "birdiy.zip"
+            ]
+          }
         },
         {
           "name": "Crush Roller.mra",
