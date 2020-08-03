@@ -3168,7 +3168,13 @@
           "sha": "88488fd4990ffd3460bb901733e90db3139f15c7",
           "url": "https://raw.githubusercontent.com/Miguel-T80c/Arcade-RallyX_MiSTer/master/releases/Rally-X.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": null,
+            "rbf": "RallyX",
+            "zips": [
+              "rallyx.zip"
+            ]
+          }
         },
         {
           "name": "rommap.txt",
@@ -3710,7 +3716,13 @@
           "sha": "6280af20ae576147f4d7c33fe8cc8e0747b58995",
           "url": "https://raw.githubusercontent.com/Miguel-T80c/Arcade-Scramble_MiSTer/master/releases/Strategy%20X.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Strategy X",
+            "rbf": "scramble",
+            "zips": [
+              "stratgyx.zip"
+            ]
+          }
         },
         {
           "name": "Super Cobra.mra",
