@@ -3630,7 +3630,13 @@
           "sha": "48de89ff9a6bbf353aa000f25d9b5e6b6b6f422d",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pacman_MiSTer/master/releases/Woodpecker.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Woodpecker (set 1)",
+            "rbf": "pacman",
+            "zips": [
+              "woodpeck.zip"
+            ]
+          }
         }
       ]
     },
