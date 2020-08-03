@@ -3630,13 +3630,7 @@
           "sha": "48de89ff9a6bbf353aa000f25d9b5e6b6b6f422d",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pacman_MiSTer/master/releases/Woodpecker.mra",
           "type": "MRA",
-          "extra": {
-            "name": "Woodpecker (set 1)",
-            "rbf": "pacman",
-            "zips": [
-              "woodpeck.zip"
-            ]
-          }
+          "extra": null
         }
       ]
     },
@@ -5390,7 +5384,13 @@
           "sha": "4239ed2641641acdf584887db958a66a507969f4",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-ZigZag_MiSTer/master/releases/Zig%20Zag.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Zig Zag (Dig Dug conversion on Galaxian hardware, bootleg set 1)",
+            "rbf": "zigzag",
+            "zips": [
+              "zigzagb.zip"
+            ]
+          }
         }
       ]
     },
