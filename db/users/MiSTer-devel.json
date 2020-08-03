@@ -943,7 +943,13 @@
           "sha": "5ff7ddfdce7828314748f9a999ca69fc3f4e8867",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-BlackWidow_MiSTer/master/releases/Black%20Widow.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Black Widow",
+            "rbf": "BlackWidow",
+            "zips": [
+              "bwidow.zip"
+            ]
+          }
         },
         {
           "name": "Gravitar.mra",
