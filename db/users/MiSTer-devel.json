@@ -4022,7 +4022,13 @@
           "sha": "942d59fbde419460401def96f2f50d0cf50b1789",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-RallyX_MiSTer/master/releases/Rally-X.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Rally X (32k Ver.)",
+            "rbf": "rallyx",
+            "zips": [
+              "rallyx.zip"
+            ]
+          }
         },
         {
           "name": "rommap.txt",
@@ -4318,7 +4324,13 @@
           "sha": "88a0d7b3d5133a46e7558c3a282f1f8b4c04a6dd",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Scramble_MiSTer/master/releases/Anteater.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Anteater",
+            "rbf": "scramble",
+            "zips": [
+              "anteater.zip"
+            ]
+          }
         },
         {
           "name": "Arcade-Scramble_20171125.rbf",
