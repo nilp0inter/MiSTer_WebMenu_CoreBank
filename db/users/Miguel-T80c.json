@@ -54,14 +54,20 @@
         },
         {
           "name": "boot0.rom",
-          "sha": "15ae2275ace8f40a082df753f645bcfb1f05fc30",
+          "sha": "f7573ed6c5420a4bda524baf27eb95a19b2a1736",
           "url": "https://raw.githubusercontent.com/Miguel-T80c/ao486_MiSTer/master/releases/bios/boot0.rom",
           "type": "OTHER"
         },
         {
           "name": "boot1.rom",
-          "sha": "d8bae66b292295db60d1b48c31607d58cd124aee",
+          "sha": "29cecda09ec76a2e45c28db66d3d29739751fd7e",
           "url": "https://raw.githubusercontent.com/Miguel-T80c/ao486_MiSTer/master/releases/bios/boot1.rom",
+          "type": "OTHER"
+        },
+        {
+          "name": "misterfs.exe",
+          "sha": "b1790c191750ac7c7494173e7a8d48477f7a0c25",
+          "url": "https://raw.githubusercontent.com/Miguel-T80c/ao486_MiSTer/master/releases/misterfs.exe",
           "type": "OTHER"
         }
       ]
