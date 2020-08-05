@@ -47,6 +47,12 @@
       "url": "https://github.com/Miguel-T80c/ao486_MiSTer",
       "releases": [
         {
+          "name": "MiSTerFB.zip",
+          "sha": "6256d0b4d0a3b22ac992501fd5fee9111182c70f",
+          "url": "https://raw.githubusercontent.com/Miguel-T80c/ao486_MiSTer/master/releases/MiSTerFB.zip",
+          "type": "OTHER"
+        },
+        {
           "name": "ao486_20200510.rbf",
           "sha": "f2c371f1b66dccde450f7949c1ce183c3afd2c1b",
           "url": "https://raw.githubusercontent.com/Miguel-T80c/ao486_MiSTer/master/releases/ao486_20200510.rbf",
@@ -68,6 +74,12 @@
           "name": "boot1.rom",
           "sha": "29cecda09ec76a2e45c28db66d3d29739751fd7e",
           "url": "https://raw.githubusercontent.com/Miguel-T80c/ao486_MiSTer/master/releases/bios/boot1.rom",
+          "type": "OTHER"
+        },
+        {
+          "name": "boot1_et4k.rom",
+          "sha": "b341bef301f8e4abf5d12486b978f9595c693551",
+          "url": "https://raw.githubusercontent.com/Miguel-T80c/ao486_MiSTer/master/releases/bios/boot1_et4k.rom",
           "type": "OTHER"
         },
         {
