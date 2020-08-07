@@ -2079,6 +2079,19 @@
           "type": "RBF"
         },
         {
+          "name": "Trojan (Romstar).mra",
+          "sha": "2dcc9a3c3f3d70f59fd798d0917f2d33913eaf4e",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/trojan/releases/Trojan%20(Romstar).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Trojan (Romstar)",
+            "rbf": "jttrojan",
+            "zips": [
+              "trojanr.zip|trojan.zip"
+            ]
+          }
+        },
+        {
           "name": "jttrojan_20200806.rbf",
           "sha": "b28f66dbda00797dff0c08cf9fe98e379e5042eb",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/trojan/releases/jttrojan_20200806.rbf",
