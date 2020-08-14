@@ -708,6 +708,318 @@
           "type": "RBF"
         },
         {
+          "name": "Bubble Bobble (US, Ver 5.1).mra",
+          "sha": "e0acc2d46cd3eb6a6a7044ca39d8b041e41d45f3",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/bubl/releases/Bubble%20Bobble%20(US%2C%20Ver%205.1).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Bubble Bobble (US, Ver 5.1)",
+            "rbf": "jtbubl",
+            "zips": [
+              "bublboblr.zip|bublbobl.zip"
+            ]
+          }
+        },
+        {
+          "name": "Tokio - Scramble Formation (bootleg).mra",
+          "sha": "01bbfd5435ae1b74ce92a418464ecadf107b6ac1",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/bubl/releases/Tokio%20-%20Scramble%20Formation%20(bootleg).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Tokio / Scramble Formation (bootleg)\n        ",
+            "rbf": "jtbubl",
+            "zips": [
+              "tokiob.zip|tokio.zip"
+            ]
+          }
+        },
+        {
+          "name": "Bobble Bobble (bootleg of Bubble Bobble).mra",
+          "sha": "4fefd7426a4d0c82c700a450d83e61d2ba84b563",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/bubl/releases/_alternatives/_Bubble%20Bobble/Bobble%20Bobble%20(bootleg%20of%20Bubble%20Bobble).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Bobble Bobble (bootleg of Bubble Bobble)",
+            "rbf": "jtbubl",
+            "zips": [
+              "boblbobl.zip|bublbobl.zip"
+            ]
+          }
+        },
+        {
+          "name": "Bubble Bobble (Japan, Ver 0.0).mra",
+          "sha": "53a007bdda25b5f37a07086131136a5a86ca75bd",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/bubl/releases/_alternatives/_Bubble%20Bobble/Bubble%20Bobble%20(Japan%2C%20Ver%200.0).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Bubble Bobble (Japan, Ver 0.0)",
+            "rbf": "jtbubl",
+            "zips": [
+              "bublbobl1.zip|bublbobl.zip"
+            ]
+          }
+        },
+        {
+          "name": "Bubble Bobble (Japan, Ver 0.1).mra",
+          "sha": "97ef999d648fa1b07f8e97d043f12a07eb40c64b",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/bubl/releases/_alternatives/_Bubble%20Bobble/Bubble%20Bobble%20(Japan%2C%20Ver%200.1).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Bubble Bobble (Japan, Ver 0.1)",
+            "rbf": "jtbubl",
+            "zips": [
+              "bublbobl.zip"
+            ]
+          }
+        },
+        {
+          "name": "Bubble Bobble (US, Ver 1.0).mra",
+          "sha": "1cbb00d70a589a5e881ee5aa49d8d89ea6c66084",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/bubl/releases/_alternatives/_Bubble%20Bobble/Bubble%20Bobble%20(US%2C%20Ver%201.0).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Bubble Bobble (US, Ver 1.0)",
+            "rbf": "jtbubl",
+            "zips": [
+              "bublboblr1.zip|bublbobl.zip"
+            ]
+          }
+        },
+        {
+          "name": "Bubble Bobble (US, Ver 5.1).mra",
+          "sha": "e0acc2d46cd3eb6a6a7044ca39d8b041e41d45f3",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/bubl/releases/_alternatives/_Bubble%20Bobble/Bubble%20Bobble%20(US%2C%20Ver%205.1).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Bubble Bobble (US, Ver 5.1)",
+            "rbf": "jtbubl",
+            "zips": [
+              "bublboblr.zip|bublbobl.zip"
+            ]
+          }
+        },
+        {
+          "name": "Bubble Bobble (bootleg redux hack for Bobble Bobble PCB).mra",
+          "sha": "b0f5936d3e6368cf7ace11c87ed39383160a4a06",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/bubl/releases/_alternatives/_Bubble%20Bobble/Bubble%20Bobble%20(bootleg%20redux%20hack%20for%20Bobble%20Bobble%20PCB).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Bubble Bobble ('bootleg redux' hack for Bobble Bobble PCB)",
+            "rbf": "jtbubl",
+            "zips": [
+              "bbredux.zip|bublbobl.zip"
+            ]
+          }
+        },
+        {
+          "name": "Bubble Bobble (bootleg with 68705).mra",
+          "sha": "df1e3acfeada06c6025356b0df38eb30d2aa0c07",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/bubl/releases/_alternatives/_Bubble%20Bobble/Bubble%20Bobble%20(bootleg%20with%2068705).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Bubble Bobble (bootleg with 68705)",
+            "rbf": "jtbubl",
+            "zips": [
+              "bub68705.zip|bublbobl.zip"
+            ]
+          }
+        },
+        {
+          "name": "Bubble Bobble (for Bobble Bobble PCB).mra",
+          "sha": "309b18bc3597390d18038ca35cb684a17c85c89c",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/bubl/releases/_alternatives/_Bubble%20Bobble/Bubble%20Bobble%20(for%20Bobble%20Bobble%20PCB).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Bubble Bobble (for Bobble Bobble PCB)",
+            "rbf": "jtbubl",
+            "zips": [
+              "bublboblb.zip|bublbobl.zip"
+            ]
+          }
+        },
+        {
+          "name": "Bubble Bobble (prototype on Tokio hardware).mra",
+          "sha": "72a0328b9ca25230c3872d94099942aba2679190",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/bubl/releases/_alternatives/_Bubble%20Bobble/Bubble%20Bobble%20(prototype%20on%20Tokio%20hardware).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Bubble Bobble (prototype on Tokio hardware)",
+            "rbf": "jtbubl",
+            "zips": [
+              "bublboblp.zip|bublbobl.zip"
+            ]
+          }
+        },
+        {
+          "name": "Bubble Bobble Lost Cave V1.0.mra",
+          "sha": "13b27adbed5e9f6e3340acc05a3536e2dc6631f1",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/bubl/releases/_alternatives/_Bubble%20Bobble/Bubble%20Bobble%20Lost%20Cave%20V1.0.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Bubble Bobble: Lost Cave V1.0",
+            "rbf": "jtbubl",
+            "zips": [
+              "bublcave10.zip|bublbobl.zip"
+            ]
+          }
+        },
+        {
+          "name": "Bubble Bobble Lost Cave V1.1.mra",
+          "sha": "0fd128a7ba7c31778fddd44e3956d26ebce27cef",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/bubl/releases/_alternatives/_Bubble%20Bobble/Bubble%20Bobble%20Lost%20Cave%20V1.1.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Bubble Bobble: Lost Cave V1.1",
+            "rbf": "jtbubl",
+            "zips": [
+              "bublcave11.zip|bublbobl.zip"
+            ]
+          }
+        },
+        {
+          "name": "Bubble Bobble Lost Cave V1.2 (for Bobble Bobble PCB).mra",
+          "sha": "c43594dd1a02e82de7f0dbe8821dee091a1fc84c",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/bubl/releases/_alternatives/_Bubble%20Bobble/Bubble%20Bobble%20Lost%20Cave%20V1.2%20(for%20Bobble%20Bobble%20PCB).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Bubble Bobble: Lost Cave V1.2 (for Bobble Bobble PCB)",
+            "rbf": "jtbubl",
+            "zips": [
+              "boblcave.zip|bublbobl.zip"
+            ]
+          }
+        },
+        {
+          "name": "Bubble Bobble Lost Cave V1.2.mra",
+          "sha": "0a365b5c49572a676188a4e988c0e79a81411b50",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/bubl/releases/_alternatives/_Bubble%20Bobble/Bubble%20Bobble%20Lost%20Cave%20V1.2.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Bubble Bobble: Lost Cave V1.2",
+            "rbf": "jtbubl",
+            "zips": [
+              "bublcave.zip|bublbobl.zip"
+            ]
+          }
+        },
+        {
+          "name": "Dream Land - Super Dream Land (bootleg of Bubble Bobble).mra",
+          "sha": "18822d28141b2560f83f6e3fe20a02d6b6a77a9e",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/bubl/releases/_alternatives/_Bubble%20Bobble/Dream%20Land%20-%20Super%20Dream%20Land%20(bootleg%20of%20Bubble%20Bobble).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Dream Land / Super Dream Land (bootleg of Bubble Bobble)",
+            "rbf": "jtbubl",
+            "zips": [
+              "dland.zip|bublbobl.zip"
+            ]
+          }
+        },
+        {
+          "name": "Super Bobble Bobble (bootleg, set 1).mra",
+          "sha": "26d8f3f346e6c099834148adba44e716f13f0c15",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/bubl/releases/_alternatives/_Bubble%20Bobble/Super%20Bobble%20Bobble%20(bootleg%2C%20set%201).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Super Bobble Bobble (bootleg, set 1)",
+            "rbf": "jtbubl",
+            "zips": [
+              "sboblbobl.zip|bublbobl.zip"
+            ]
+          }
+        },
+        {
+          "name": "Super Bobble Bobble (bootleg, set 2).mra",
+          "sha": "b3406ef7ef8b0260e1a285f61f0d6173ef0500d9",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/bubl/releases/_alternatives/_Bubble%20Bobble/Super%20Bobble%20Bobble%20(bootleg%2C%20set%202).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Super Bobble Bobble (bootleg, set 2)",
+            "rbf": "jtbubl",
+            "zips": [
+              "sboblbobla.zip|bublbobl.zip"
+            ]
+          }
+        },
+        {
+          "name": "Super Bobble Bobble (bootleg, set 3).mra",
+          "sha": "1b1bab57e3103d02c2bdaaa2aa9aa75f0319a9f1",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/bubl/releases/_alternatives/_Bubble%20Bobble/Super%20Bobble%20Bobble%20(bootleg%2C%20set%203).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Super Bobble Bobble (bootleg, set 3)",
+            "rbf": "jtbubl",
+            "zips": [
+              "sboblboblb.zip|bublbobl.zip"
+            ]
+          }
+        },
+        {
+          "name": "Super Bobble Bobble (bootleg, set 4).mra",
+          "sha": "d35407d16ffbf5ff70af52d606a17234d9c796ed",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/bubl/releases/_alternatives/_Bubble%20Bobble/Super%20Bobble%20Bobble%20(bootleg%2C%20set%204).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Super Bobble Bobble (bootleg, set 4)",
+            "rbf": "jtbubl",
+            "zips": [
+              "sboblbobld.zip|bublbobl.zip"
+            ]
+          }
+        },
+        {
+          "name": "Super Bubble Bobble (bootleg).mra",
+          "sha": "e2a3edb6946ca5f99881e42d968a58dd9b4d791b",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/bubl/releases/_alternatives/_Bubble%20Bobble/Super%20Bubble%20Bobble%20(bootleg).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Super Bubble Bobble (bootleg)",
+            "rbf": "jtbubl",
+            "zips": [
+              "sboblboblc.zip|bublbobl.zip"
+            ]
+          }
+        },
+        {
+          "name": "Tokio - Scramble Formation (US).mra",
+          "sha": "e077dedbec6d3c9473f8456987354bcbc8ed9ecd",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/bubl/releases/_alternatives/_Tokio/Tokio%20-%20Scramble%20Formation%20(US).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Tokio / Scramble Formation (US)\n        ",
+            "rbf": "jtbubl",
+            "zips": [
+              "tokiou.zip|tokio.zip"
+            ]
+          }
+        },
+        {
+          "name": "Tokio - Scramble Formation (newer).mra",
+          "sha": "da8b3b37c51a2091c98a5f2e3694a5f32ab35c12",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/bubl/releases/_alternatives/_Tokio/Tokio%20-%20Scramble%20Formation%20(newer).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Tokio / Scramble Formation (newer)\n        ",
+            "rbf": "jtbubl",
+            "zips": [
+              "tokio.zip"
+            ]
+          }
+        },
+        {
+          "name": "Tokio - Scramble Formation (older).mra",
+          "sha": "ebd26a78b9ff2789677276f554b71d80b94f3d63",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/bubl/releases/_alternatives/_Tokio/Tokio%20-%20Scramble%20Formation%20(older).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Tokio / Scramble Formation (older)\n        ",
+            "rbf": "jtbubl",
+            "zips": [
+              "tokioo.zip|tokio.zip"
+            ]
+          }
+        },
+        {
           "name": "jtbubl_20200730.rbf",
           "sha": "8420b087f3184dcbaef130c38ccce076e4d389cc",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/bubl/releases/jtbubl_20200730.rbf",
