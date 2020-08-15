@@ -1,6 +1,11 @@
 insecure
 create-dirs
 
+# Amstrad-PCW
+url = "https://raw.githubusercontent.com/MiSTer-devel/Amstrad-PCW_MiSTer/master/releases/Amstrad-PCW_20200815.rbf"
+output = "_Others/Amstrad-PCW_20200815.rbf"
+
+
 # Amstrad
 url = "https://raw.githubusercontent.com/MiSTer-devel/Amstrad_MiSTer/master/releases/Amstrad_20200729.rbf"
 output = "_Computer/Amstrad_20200729.rbf"
@@ -1309,11 +1314,6 @@ output = "_Arcade/New Rally-X.mra"
 # Rally-X.mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-RallyX_MiSTer/master/releases/Rally-X.mra"
 output = "_Arcade/Rally-X.mra"
-
-
-# River Patrol.mra
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-RiverPatrol_MiSTer/master/releases/River%20Patrol.mra"
-output = "_Arcade/River Patrol.mra"
 
 
 # River Patrol.mra

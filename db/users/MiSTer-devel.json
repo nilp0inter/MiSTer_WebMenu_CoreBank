@@ -5,6 +5,22 @@
   "type": "Organization",
   "repos": [
     {
+      "name": "Amstrad-PCW_MiSTer",
+      "description": "Amstrad PCW MiSTer core",
+      "readme": "# Amstrad PCW MiSTer Core\n<img src=\"./docs/images/gnome.jpg\" alt=\"Gnome Ranger\" width=\"400\" height=\"300\">\n\nGnome Ranger running on the Amstrad PCW core by Stephen Eddy\n## Overview\nThe Amstrad PCW was a line of computers released by Amstrad UK in the mid 1980's to provide a cheaper alternative to owning an IBM PC for word processing and simple office type applications.  It was supplied with a detachable keyboard, printer, a disk drive and a high resolution monitor.  This monitor allowed the PCW to display sharp monochrome graphics at a resolution of 720 x 256.\n\nDespite the intended market being business applications and home office users, the computer sold over 8 million units and quite a number of games were also developed for the machine as well as  third party addons such as sound cards, joystick adapters and mice.  The Amstrad PCW was also sold as the Schneider Joyce in Europe.\n\nThe PCW came with 256k or 512k and was expandable upto 2MB of memory.  The high resolution display and large amount of memory for the time, makes the PCW the perfect CP/M machine and an ideal system for playing early text and graphic adventures.\n\n## Features\n* Amstrad PCW 8256 with Z80 CPU operating at 4Mhz and 256k memory\n* Turbo support to 8Mhz (2x), 16 Mhz(4x) or 32 Mhz\n* 3\" Disk Drives with read and write support\n* Compatible with standard emulator DSK format\n* PAL (720x256) or NTSC (720x200) resolution support\n* Full PC Keyboard mapping\n* Joystick support for the following types of joystick:\n  * Kempston Joystick\n  * Spectravideo Joystick\n  * Cascade Joystick\n  * DKTronics Joystick\n* Mouse support for the following types of mice:\n  * AMX Mouse\n  * Kempston Mouse\n  * Keymouse\n* Regular PCW Beeper sound and DKTronics Sound Generator (AY-3-8912) support\n* No additional SDRAM or other expansions needed\n \n\n## Using the core\n\nUnlike many home comptuters of the mid 80's, the Amstrad PCW always included a disk drive and monitor and all PCW software is supplied in disk format only.  The emulator supports the standard DSK format images used by the two main PCW emulators, Joyce by John Elliot and CPM/Box by Habisoft.\n\nThe PCW also doesn't have a BOOT ROM but instead streams a small boot routine from the keyboard controller at power-up time.  The PCW core recreates this boot sequence and does not require any external ROM files to boot.  Just place your DSK images in the **/Games/Amstrad PCW/** directory in the root of the SD card.\n\nGames are usually supplied on two disks, normally the first disk is a CP/M boot disk.  Insert this boot disk into the A: drive using the Menu, then select the **RESET** option to restart and load the disk. Once the boot disk has finished booting, you will be prompted by the PCW change the disk to the second disk and press return.\n\n![](./docs/images/change_disk.jpg)\n\nThe main operating system the PCW used was called CP/M which was developed by Digital Research and was one of the worlds first cross platform operating systems.   More infomation about CP/M and some common commands available are documented on [The CP/M Wiki article](https://en.wikipedia.org/wiki/CP/M)\n\n## Current issue\n* Head over Heels boot screen corrupt - The game itself works fine\n* La Abadia del Crimen - Corrupt graphics\n* CP/M disk images can infrequently become corrupt - Back them up\n* CPC Paging mode not supported - I am not aware of any PCW games using it\n\n## Upcoming features\nThe following features are coming shortly\n* 2MB memory support using SDRAM\n* 2 Disk Drives\n\n## Thanks\nSpecial thanks to the following people:\n* John Elliott for the fantastic [PCW Hardware guide](https://www.seasip.info/Unix/Joyce/hardware.pdf), the [Joyce emulator](https://www.seasip.info/Unix/Joyce/) and for answering my emails\n* Javier Chocano from Habisoft for the [CP/M Box emulator](http://www.habisoft.com/pcw/) and early guidance\n* [@zigazou](https://twitter.com/zigazou) for his detailed [wiki article](https://github.com/Zigazou/amstrad-pcw-technical-info/tree/master/video-memory) on the PCW screen memory structure\n* [@asicguy](https://github.com/asicguy), [@alanswx](https://github.com/alanswx) and [@dshadoff](https://github.com/dshadoff) for the help, eoncouragment and support developing the core\n* [@sorgelig](https://github.com/sorgelig) for the fantastic MiSTer project and work\n\n",
+      "archived": false,
+      "fork": false,
+      "url": "https://github.com/MiSTer-devel/Amstrad-PCW_MiSTer",
+      "releases": [
+        {
+          "name": "Amstrad-PCW_20200815.rbf",
+          "sha": "6f9cf4a9ac283a3c50472b5899704715c6dd8073",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Amstrad-PCW_MiSTer/master/releases/Amstrad-PCW_20200815.rbf",
+          "type": "RBF"
+        }
+      ]
+    },
+    {
       "name": "Amstrad_MiSTer",
       "description": "Amstrad CPC 6128 for MiSTer",
       "readme": "\n# Amstrad CPC 6128 for MiST and MiSTer\nThis core has been started as a port of [CoreAmstrad by Renaud H\u00e9lias](https://github.com/renaudhelias/CoreAmstrad) but every module has been either rewritten or replaced so, now it can be treated as a completely new core.\n\n## Features\n* Precise CPU timings including proper contention model.\n* Precise CRTC model supporting many tricks of Types 1 and 0.\n* 2 disk drives\n* Disk write support.\n* Close to real disk drive emulation with support of some protections.\n* Selectable CPC 6128/664 mode with separate ROM sets.\n* Multiface 2.\n* Several monochrome modes and 2 types of palette (GA/ASIC).\n* Selectable expansion ROM loading.\n* Joystick support with up to 3 buttons (2 on MiST)\n* Kempston, SYMBiFACE II and Multiplay mice.\n* HQ2x and Scanlines FX for scandoubler.\n* Tape input through UART header (MiST) / ADC board (MiSTer)\n* Support *.CDT tape files.\n* Tape output through speaker.\n\n\n## Installation\nplace RBF and **amstrad.rom** into root of SD card. Or on **MiSTer** you can rename ROM to boot.rom and put it into Amstrad folder.\n\n## Disk support\nPut some *.DSK files into Amstrad folder and mount it from OSD menu.\nimportant Basic commands:\n* cat - list the files on mounted disk.\n* run\" - load and start the program. ex: run\"disc\n* |a, |b - switch between drives\n\n## Boot ROM\nBoot ROM has following structure:\n\nOS6128 + BASIC1.1 + AMSDOS + MF2 + OS664 + BASIC664 + AMSDOS + MF2\n\nEvery part is 16KB. You can create your own ROM if you have a special preference.\n\n## Expansion ROM\nExpansion ROM should have file extension .eXX, where XX is hex number 00-FF of ROM page to load.\nEvery page is 16KB. It's possible to load larger ROM. In this case every 16KB block will be loaded in subsequent pages.\n\n### Special extensions:\n* eZZ - LowROM(OS)\n* eZ0 - LowROM(OS) + Page 0(Basic) + subsequent pages depending on size.\n\n### Notes\nYou can load several expansions. With every load the system will reboot. System ROM also can be replaced the same way.\nTo restore original ROM you have to reload the core (Alt-F12).\n\n### MiSTer specific\nYou can define boot extensions to automatically load at start of core. Use following name rules:\n* boot.eXX  - load to both 664 and 6128 configs\n* boot0.eXX - load to 6128 config\n* boot1.eXX - load to 664 config\n\nwhehe XX is 00-FF, ZZ, Z0.\n\n## CDT tape files (MiSTer)\nCDT supported in very basic form for retro feeling and for some very specific apps. There is no way to rewind or fast forward the file. \nUSER LED will lit if there is a tape in the memory and still have data to play and blink while playback.\n\nControl keys:\n* Alt+F1 - mute/unmute the tape sound\n* Alt+F2 - unload the tape (turn off the LED)\n\nCDT playback respects the tape motor ON/OFF state.\n\n## RAM\nCPC664 model has only 64KB RAM - use this model for programs not compatible with 128KB RAM.\n\nCPC6128 model has 64KB+512KB RAM. Upper 448KB are visible in special OS ROM or application aware of 512KB expansion.\n\n## Multiface 2\n* Multiface 2 can be activated with F11.\n* USER LED shows if the MF2 ROM/RAM is active.\n* Returning from the MF2 menu via (r)eturn makes the device invisible.\n* Visibility can be restored via machine reset (original MF 2+).\n* For loading a saved game, MF2 must be visible.\n* ROM version is 8D.\n",
@@ -4071,53 +4087,6 @@
           "sha": "2f46969c3c43bd2a17c7ee0156897558404f6b02",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-RallyX_MiSTer/master/releases/rommap.txt",
           "type": "OTHER"
-        }
-      ]
-    },
-    {
-      "name": "Arcade-RiverPatrol_MiSTer",
-      "description": "River Patrol for MiSTer",
-      "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: River Patrol port to MiSTer \n-- based on Arcade: Crazy Climber port to MiSTer by Sorgelig\n-- 7 June 2018\n-- \n---------------------------------------------------------------------------------\n-- Crazy climber FPGA by Dar - (darfpga@aol.fr)\n-- http://darfpga.blogspot.fr\n---------------------------------------------------------------------------------\n-- gen_ram.vhd\n-------------------------------- \n-- Copyright 2005-2008 by Peter Wendrich (pwsoft@syntiac.com)\n-- http://www.syntiac.com/fpga64.html\n---------------------------------------------------------------------------------\n-- T80/T80se - Version : 0247\n-----------------------------\n-- Z80 compatible microprocessor core\n-- Copyright (c) 2001-2002 Daniel Wallner (jesus@opencores.org)\n---------------------------------------------------------------------------------\n-- \n-- \n-- Keyboard inputs :\n--\n--   F1          : Add coin + Start 1 player\n--   F2          : Add coin + Start 2 players\n--   LEFT,RIGHT  : move boat\n--   CTRL        : gas\n--\n--   5,6 : Add coin\n--   1,2 : Start Player 1, Player 2\n--\n-- Joystick/Gamepad support.\n-- \n-- \n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
-      "archived": false,
-      "fork": false,
-      "url": "https://github.com/MiSTer-devel/Arcade-RiverPatrol_MiSTer",
-      "releases": [
-        {
-          "name": "Arcade-RiverPatrol_20190831.rbf",
-          "sha": "2a0378dcac83dee6e154142f6faf06b91d9cd61b",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-RiverPatrol_MiSTer/master/releases/Arcade-RiverPatrol_20190831.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Arcade-RiverPatrol_20190901.rbf",
-          "sha": "600fed7027d5ae8071f4416d6bc59b483086bae2",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-RiverPatrol_MiSTer/master/releases/Arcade-RiverPatrol_20190901.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Arcade-RiverPatrol_20191218.rbf",
-          "sha": "b696d1760f39b517f7cdb9b9d4868a6b40b30397",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-RiverPatrol_MiSTer/master/releases/Arcade-RiverPatrol_20191218.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Arcade-RiverPatrol_20200123.rbf",
-          "sha": "bb4086198d14f6e63fb69f22ea5dcc5bbb6e33a0",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-RiverPatrol_MiSTer/master/releases/Arcade-RiverPatrol_20200123.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "River Patrol.mra",
-          "sha": "92439852e0c77ca46a82740ebf0ca3cffb0f5b57",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-RiverPatrol_MiSTer/master/releases/River%20Patrol.mra",
-          "type": "MRA",
-          "extra": {
-            "name": "River Patrol (Japan, unprotected)",
-            "rbf": "riverpatrol",
-            "zips": [
-              "rpatrol.zip|rpatroln.zip"
-            ]
-          }
         }
       ]
     },
