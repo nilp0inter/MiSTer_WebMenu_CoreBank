@@ -4122,6 +4122,53 @@
       ]
     },
     {
+      "name": "Arcade-RiverPatrol_MiSTer",
+      "description": "River Patrol for MiSTer",
+      "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: River Patrol port to MiSTer \n-- based on Arcade: Crazy Climber port to MiSTer by Sorgelig\n-- 7 June 2018\n-- \n---------------------------------------------------------------------------------\n-- Crazy climber FPGA by Dar - (darfpga@aol.fr)\n-- http://darfpga.blogspot.fr\n---------------------------------------------------------------------------------\n-- gen_ram.vhd\n-------------------------------- \n-- Copyright 2005-2008 by Peter Wendrich (pwsoft@syntiac.com)\n-- http://www.syntiac.com/fpga64.html\n---------------------------------------------------------------------------------\n-- T80/T80se - Version : 0247\n-----------------------------\n-- Z80 compatible microprocessor core\n-- Copyright (c) 2001-2002 Daniel Wallner (jesus@opencores.org)\n---------------------------------------------------------------------------------\n-- \n-- \n-- Keyboard inputs :\n--\n--   F1          : Add coin + Start 1 player\n--   F2          : Add coin + Start 2 players\n--   LEFT,RIGHT  : move boat\n--   CTRL        : gas\n--\n--   5,6 : Add coin\n--   1,2 : Start Player 1, Player 2\n--\n-- Joystick/Gamepad support.\n-- \n-- \n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
+      "archived": false,
+      "fork": false,
+      "url": "https://github.com/MiSTer-devel/Arcade-RiverPatrol_MiSTer",
+      "releases": [
+        {
+          "name": "Arcade-RiverPatrol_20190831.rbf",
+          "sha": "2a0378dcac83dee6e154142f6faf06b91d9cd61b",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-RiverPatrol_MiSTer/master/releases/Arcade-RiverPatrol_20190831.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-RiverPatrol_20190901.rbf",
+          "sha": "600fed7027d5ae8071f4416d6bc59b483086bae2",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-RiverPatrol_MiSTer/master/releases/Arcade-RiverPatrol_20190901.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-RiverPatrol_20191218.rbf",
+          "sha": "b696d1760f39b517f7cdb9b9d4868a6b40b30397",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-RiverPatrol_MiSTer/master/releases/Arcade-RiverPatrol_20191218.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-RiverPatrol_20200123.rbf",
+          "sha": "bb4086198d14f6e63fb69f22ea5dcc5bbb6e33a0",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-RiverPatrol_MiSTer/master/releases/Arcade-RiverPatrol_20200123.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "River Patrol.mra",
+          "sha": "92439852e0c77ca46a82740ebf0ca3cffb0f5b57",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-RiverPatrol_MiSTer/master/releases/River%20Patrol.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "River Patrol (Japan, unprotected)",
+            "rbf": "riverpatrol",
+            "zips": [
+              "rpatrol.zip|rpatroln.zip"
+            ]
+          }
+        }
+      ]
+    },
+    {
       "name": "Arcade-Robotron_MiSTer",
       "description": "Arcade Robotron for MiSTer",
       "readme": "---------------------------------------------------------------------------------\n-- Arcade: Robotron port to MiSTer by oldgit, Sorgelig\n-- 12 December 2018\n-- \n---------------------------------------------------------------------------------\n-- gen_ram.vhd\n-------------------------------- \n-- Copyright 2005-2008 by Peter Wendrich (pwsoft@syntiac.com)\n-- http://www.syntiac.com/fpga64.html\n---------------------------------------------------------------------------------\n-- cpu09l - Version : 0128\n-- Synthesizable 6809 instruction compatible VHDL CPU core\n-- Copyright (C) 2003 - 2010 John Kent\n---------------------------------------------------------------------------------\n-- cpu68 - Version 9th Jan 2004 0.8\n-- 6800/01 compatible CPU core \n-- GNU public license - December 2002 : John E. Kent\n---------------------------------------------------------------------------------\n--\n-- This port is only possible because of previous work by many many others - Thank You\n-- to find out more search \"Williams robotron\" on a search engine.  \n-- \n-- \n-- Keyboard players inputs :\n--\n--   F10 : Advance\n--   F9  : Auto up\n--   F7  : High score reset\n--   F5  : Add coin right\n--   F4  : Add coin centre\n--   F3  : Add coin left\n--   F2  : Start 2 players\n--   F1  : Start 1 player\n--   ESC : Slam  \n--   W move up\n--   S move down\n--   A move left\n--   D move right\n--   UP arrow Fire up\n--   Down arrow Fire Down\n--\t Left arrow Fir Left\n-- \t Right arrow Fire right\n--\n--\n-- Joystick support.\n-- \n-- \n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
