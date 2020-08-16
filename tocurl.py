@@ -13,6 +13,7 @@ mras = list()
 
 computers = set([
     'Amstrad',
+    'Amstrad-PCW',
     'ao486',
     'Apogee',
     'Apple-II',
