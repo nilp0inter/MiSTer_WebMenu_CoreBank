@@ -5473,7 +5473,7 @@
     {
       "name": "Archie_MiSTer",
       "description": "Acorn Archimedes for MiSTer",
-      "readme": "# [Acorn Archimedes](https://en.wikipedia.org/wiki/Acorn_Archimedes) for [MiSTer Board](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\r\n\r\n### This is the port of [Archie](https://github.com/mist-devel/mist-board/tree/master/cores/archie) core from MiST by Stephen Leary\r\n\r\n**CURRENTLY THIS CORE IS IN BETA STATUS**\r\n\r\n1. Basic internals are implemented.\r\n1. Basic Floppy disk support\r\n1. Sound support added but may not work in all situations.\r\n1. The core emulates a 4Mb A3000 type machine with an ARM2a with caches disabled for now (has an A3010 style joystick interface).\r\n1. Core runs at ~91% of an ARM2 @ 8Mhz when using VGA Modes.\r\n1. Some games now run. Expect issues.\r\n\r\n## Installation\r\n\r\nCopy the [*.rbf](https://github.com/MiSTer-devel/Archie_MiSTer/tree/master/releases) into a root folder of the SD card.\r\nCopy a version of a RiscOS ROM into the \"Archie\" folder, renaming it to `riscos.rom`.\r\n\r\n### Floppy disk images\r\n\r\nThe current version supports two floppy drives. Floppy disk images ADF format and of exactly 819200 bytes in size are currently required. This is the most common format for the Acorn Archimedes.\r\n\r\nImages named `floppy0.adf` and `floppy1.adf` (from Archie folder) are auto-inserted into the floppy disk drives on startup. Other images can be selected via the on-screen-display (OSD) which can be opened using the **WIN+F12** key combo.\r\n\r\n\r\n## OSD Menu\r\n\r\nIf the ROM is recognized the core should boot into Risc OS.\r\nPress **Win+F12** to open the OSD menu.\r\n\r\n* Floppy 0: Choose the floppy disk images to use for floppy 0\r\n* Floppy 1: Choose the floppy disk images to use for floppy 1\r\n* OS ROM: Choose the RISCOS rom to use\r\n* Save config: Save current config for next boot\r\n\r\nYou can move to other pages of settings by pressing the right arrow key.\r\n\r\n## Notes\r\n\r\n* CPU module (amber23) has no reset signal, so the only way to reset the core is to reload it. MiSTer will help to reload the core if **USER** button is pressed (or reset combo pressed on keyboard) and core file is named as **\"Archie.rbf\"**. Otherwise you can reload the core manually from menu (**Win+Alt+F12**).\r\n\r\n\r\n# License\r\n\r\nThis core uses the Amber CPU core from OpenCores which is LGPL.\r\nThe core itself is dual licensed LGPL/BSD.\r\n",
+      "readme": "# [Acorn Archimedes](https://en.wikipedia.org/wiki/Acorn_Archimedes) for [MiSTer Board](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\r\n\r\n### This is the port of [Archie](https://github.com/mist-devel/mist-board/tree/master/cores/archie) core from MiST by Stephen Leary\r\n\r\n## Installation\r\n\r\nCopy the [*.rbf](https://github.com/MiSTer-devel/Archie_MiSTer/tree/master/releases) into a root folder of the SD card.\r\nCopy a version of a RiscOS ROM into the \"Archie\" folder, renaming it to `riscos.rom`.\r\n\r\n### Reset\r\n* **warm reset:** short press ctrl-alt-alt or USER button.\r\n* **cold reset:** long press of above. RISCOS ROM will be reloaded and memory will be cleared.\r\n\r\n### CMOS\r\nCMOS is automatically saved to cmos.dat if any modification (configure utility or others) is detected. To revert settings to default remove cmos.dat and **reload the core**.\r\n\r\n### RTC\r\nCore gets current clock setting from Linux subsystem.\r\n\r\n### Floppy disk images\r\nThe current version supports two floppy drives. Floppy disk images ADF format and of exactly 819200 bytes in size are currently required. This is the most common format for the Acorn Archimedes.\r\n\r\n### Hard disk images\r\nUp to 2 hard disks images with extension HDF can be mounted. System has to be additionnaly configured.\r\n1) delete any existing cmos.dat file from Archie folder.\r\n2) Reload the core.\r\n3) Open command line (F12 or ctrl+F12) and type: configure idefsdiscs 1 (or 2 if you use two hard disks)\r\n4) Mount required image(s)\r\n5) Make a cold reset.\r\n\r\nTo save currently selected images, use OSD option \"Save Settings\"\r\n\r\n## OSD Menu\r\nIf the ROM is recognized the core should boot into Risc OS.\r\nPress **Win+F12** to open the OSD menu.\r\nYou can move to other pages of settings by pressing the right arrow key.\r\n\r\n# License\r\nThis core uses the Amber CPU core from OpenCores which is LGPL.\r\nThe core itself is dual licensed LGPL/BSD.\r\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/Archie_MiSTer",
@@ -5548,6 +5548,12 @@
           "name": "Archie_20200509.rbf",
           "sha": "5f9d97ee9368f6a42721e6821b6374d741d9b997",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Archie_MiSTer/master/releases/Archie_20200509.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Archie_20200821.rbf",
+          "sha": "310f0326b148d255c415cbfb0db1a9bd05fb1169",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Archie_MiSTer/master/releases/Archie_20200821.rbf",
           "type": "RBF"
         },
         {
@@ -8300,6 +8306,12 @@
           "name": "MiSTer_20200814",
           "sha": "6ad6bd442dd8f22dc4307af7a0aca0523a06da15",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Main_MiSTer/master/releases/MiSTer_20200814",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20200821",
+          "sha": "db341f1742e53f09ce146a0061a08d179f8c2c30",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Main_MiSTer/master/releases/MiSTer_20200821",
           "type": "OTHER"
         }
       ]
