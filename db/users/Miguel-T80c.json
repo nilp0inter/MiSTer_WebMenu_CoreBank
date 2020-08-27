@@ -2314,7 +2314,13 @@
           "sha": "f56819347b885bc10b543c1bd9769d43230d9226",
           "url": "https://raw.githubusercontent.com/Miguel-T80c/Arcade-MCR3Mono_MiSTer/master/releases/Power%20Drive.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Power Drive",
+            "rbf": "MCR3Mono",
+            "zips": [
+              "powerdrv.zip"
+            ]
+          }
         },
         {
           "name": "Rampage.mra",
@@ -2619,7 +2625,13 @@
           "sha": "548c6455c4cdb6de13ded7b8465dcfbf0cf878fc",
           "url": "https://raw.githubusercontent.com/Miguel-T80c/Arcade-NinjaKun_MiSTer/master/releases/Ninjakun.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Ninjakun Majou no Bouken",
+            "rbf": "ninjakun",
+            "zips": [
+              "ninjakun.zip"
+            ]
+          }
         },
         {
           "name": "rommap.txt",
@@ -3623,7 +3635,13 @@
           "sha": "1299aceac0bb64fe80ebeabd91fce6fe885ae2e9",
           "url": "https://raw.githubusercontent.com/Miguel-T80c/Arcade-Scramble_MiSTer/master/releases/Battle%20of%20Atlantis.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Battle of Atlantis (set 2)",
+            "rbf": "scramble",
+            "zips": [
+              "atlantis.zip|atlantis2.zip"
+            ]
+          }
         },
         {
           "name": "Calipso.mra",
@@ -3643,7 +3661,13 @@
           "sha": "8ca5024980379a2560186da34213810cbcbb0681",
           "url": "https://raw.githubusercontent.com/Miguel-T80c/Arcade-Scramble_MiSTer/master/releases/Dark%20Planet%20(no%20bkg).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Dark Planet",
+            "rbf": "scramble",
+            "zips": [
+              "darkplnt.zip"
+            ]
+          }
         },
         {
           "name": "Dark Planet.mra",
@@ -3874,7 +3898,13 @@
           "sha": "d6f5b704ee8a5ab98acd9793e736548c04eac7b9",
           "url": "https://raw.githubusercontent.com/Miguel-T80c/Arcade-SilverLand_MiSTer/master/releases/Silver%20Land.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Silver Land",
+            "rbf": "silverland",
+            "zips": [
+              "rpatrol.zip|silvland.zip"
+            ]
+          }
         }
       ]
     },
