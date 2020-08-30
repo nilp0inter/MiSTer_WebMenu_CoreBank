@@ -1,6 +1,6 @@
 USERS := db/users/MiSTer-devel.json db/users/MrX-8B.json db/users/mister-llapi.json db/users/Miguel-T80c.json db/users/theypsilon.json db/users/jotego.json db/users/Ace9921.json db/users/pcornier.json
 
-ALL: db/users.json db/users/MiSTer-devel.curl db/users/jotego.curl db/users/MrX-8B.curl
+ALL: db/users.json db/users/MiSTer-devel.curl db/users/jotego.curl db/users/MrX-8B.curl db/users/pcornier.curl
 
 clean:
 	find db -type f -not -name .keep -delete
