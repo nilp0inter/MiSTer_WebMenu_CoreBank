@@ -74,6 +74,7 @@ arcades = set([
     'jt1943',
     'jtbiocom',
     'jtbtiger',
+    'jtbubl',
     'jtcommando',
     'jtcps1',
     'jtdd',
@@ -84,6 +85,7 @@ arcades = set([
     'jtpopeye',
     'jtsectionz',
     'jttora',
+    'jttrojan',
     'jtvulgus',
 ])
 
