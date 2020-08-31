@@ -57,7 +57,7 @@
     {
       "name": "ao486_MiSTer",
       "description": "ao486 port for MiSTer",
-      "readme": "# ao486 port for MiSTer by Sorgelig.\n\nCore was greatly reworked with many new features and performance added.\n\n## Features:\n* 486DX33 performance (no-FPU).\n* 256MB RAM\n* SVGA with up to 1280x1024@256, 1024x768@64K, 640x480@16M resolutions\n* SoundBlaster 2.0 with OPL3\n* High speed UART (3Mbps) internet connection\n* MIDI port (dumb and fake-smart modes)\n* Dual HDD with up to 8GB each\n* Shared folder support\n\n## How to install\n\n* Copy ao486.rbf to root of SD card\n* Create /ao486 directory on SD card and copy [boot0.rom](https://github.com/MiSTer-devel/ao486_MiSTer/blob/master/releases/bios/boot0.rom?raw=true), [boot1.rom](https://github.com/MiSTer-devel/ao486_MiSTer/blob/master/releases/bios/boot1.rom?raw=true) there.\n* For floppy: copy desired floppy raw image with extension **img** to ao486 directory.\n* For HDD: create an empty file of desired size with extension **vhd** in ao486 directory (or prepare .vhd file separately with any tool supporting .vhd or hard disk .img files and copy to /ao486 folder)\n* Boot ao486 and in OSD choose desired floppy, hdd and boot order\n* Save settings and press \"Reset and apply HDD\"\n\nHDD image is a raw image with MBR. It can be opened in Windows/Linux by many applications,\nso it's possible to prepare a HDD in windows/linux (in most cases you need to work with .img files, then just rename it to .vhd extension)\n\n### SoundBlaster settings:\n* address: 220h\n* IRQ: 5\n* DMA: 1\n* type SoundBlaster 2.0\n\n### MIDI settings:\n* address: 330h\n* IRQ: 9\n\n### Drivers\nWindows 9x drivers for video and modem are [here](https://github.com/MiSTer-devel/ao486_MiSTer/blob/master/releases/drv)\n\n### Note:\n* Press **WIN+F12** to access **OSD on ao486 core**. F12 alone acts as generic F12 PC key.\n\n### Known issues\n* FDD doesn't work under Win9x. To fix it simply delete floppy device from device manager and reboot.\nWindows will still provide flopy access through BIOS in compatibility mode.\n\nOriginal core [repository](https://github.com/alfikpl/ao486)\n",
+      "readme": "# ao486 port for MiSTer by Sorgelig.\n\nCore was greatly reworked with many new features and performance added.\n\n## Features:\n* 486DX33 performance (no-FPU).\n* 256MB RAM\n* SVGA with up to 1280x1024@256, 1024x768@64K, 640x480@16M resolutions\n* Sound Blaster 16 (DSP v4.05) and Sound Blaster Pro (DSP v3.02) with OPL3 and C/MS\n* High speed UART (3Mbps) internet connection\n* MIDI port (dumb and fake-smart modes)\n* Dual HDD with up to 8GB each\n* Shared folder support\n\n## How to install\n\n* Copy ao486.rbf to root of SD card\n* Create /ao486 directory on SD card and copy [boot0.rom](https://github.com/MiSTer-devel/ao486_MiSTer/blob/master/releases/bios/boot0.rom?raw=true), [boot1.rom](https://github.com/MiSTer-devel/ao486_MiSTer/blob/master/releases/bios/boot1.rom?raw=true) there.\n* For floppy: copy desired floppy raw image with extension **img** to ao486 directory.\n* For HDD: create an empty file of desired size with extension **vhd** in ao486 directory (or prepare .vhd file separately with any tool supporting .vhd or hard disk .img files and copy to /ao486 folder)\n* Boot ao486 and in OSD choose desired floppy, hdd and boot order\n* Save settings and press \"Reset and apply HDD\"\n\nHDD image is a raw image with MBR. It can be opened in Windows/Linux by many applications,\nso it's possible to prepare a HDD in windows/linux (in most cases you need to work with .img files, then just rename it to .vhd extension)\n\n### Sound Blaster\nDefault config: A220 I5 D1 H5 T6\nSupported alternative configs with IRQ 7 or 10 and/or no-HDMA (16bit DMA through 8bit DMA).\nStandard SB16 config (diagnose) can be used to set alternative settings, or included sbctl util. Windows driver manages alternative settings by itself when manually configured.\n\nCurrent implementation supports SoundBlaster Pro specific commands (not available in SB16 originally) as well. Compatible config for SBPro is \"A220 I5 D1 T4\" in case if some game will require it.\n\nASP/CSP is not implemented, but some specific commands with dummy replies are added to let Windows driver work.\n\nSimple volume (only master volume) is implemented in mixer so windows volume can be used in additional to standard MiSTer volume control.\n\n### C/MS Audio\nC/MS (dual SAA1099) can be enabled in OSD. When enabled it prevents OPL2/3 access on ports 220-223. OPL2/3 still can be accessed on ports 388-38B (AdLib).\n\n### OPL2/3 (Adlib)\nOPL2/3 can be accessed as a part of Sound Blaster board at ports 220-223 (if C/MS is not enabled) and 228-229(OPL2 only). However it's recommended to use AdLib ports 388-38B instead.\n\n### MIDI settings:\n* address: 330h\n* IRQ: 9\n\n### Drivers\nWindows 9x drivers for video and modem are [here](https://github.com/MiSTer-devel/ao486_MiSTer/blob/master/releases/drv)\n\n### Note:\n* Press **WIN+F12** to access **OSD on ao486 core**. F12 alone acts as generic F12 PC key.\n\n### Known issues\n* FDD doesn't work under Win9x. To fix it simply delete floppy device from device manager and reboot.\nWindows will still provide flopy access through BIOS in compatibility mode.\n\nOriginal core [repository](https://github.com/alfikpl/ao486)\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/Miguel-T80c/ao486_MiSTer",
@@ -105,6 +105,12 @@
           "type": "RBF"
         },
         {
+          "name": "ao486_20200831.rbf",
+          "sha": "c764a6a4f9810d6cb2f6d275e33cb860e7fdf3b9",
+          "url": "https://raw.githubusercontent.com/Miguel-T80c/ao486_MiSTer/master/releases/ao486_20200831.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "boot0.rom",
           "sha": "f7573ed6c5420a4bda524baf27eb95a19b2a1736",
           "url": "https://raw.githubusercontent.com/Miguel-T80c/ao486_MiSTer/master/releases/bios/boot0.rom",
@@ -144,6 +150,12 @@
           "name": "modem9x.inf",
           "sha": "32013f357b176144e6373a173124d931e8fc89e7",
           "url": "https://raw.githubusercontent.com/Miguel-T80c/ao486_MiSTer/master/releases/drv/modem9x.inf",
+          "type": "OTHER"
+        },
+        {
+          "name": "sbctl.exe",
+          "sha": "4d80d62c8f24afd63787acc820ca774b6bf402e0",
+          "url": "https://raw.githubusercontent.com/Miguel-T80c/ao486_MiSTer/master/releases/drv/sbctl.exe",
           "type": "OTHER"
         },
         {
