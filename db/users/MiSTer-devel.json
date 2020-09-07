@@ -369,8 +369,14 @@
           "type": "RBF"
         },
         {
+          "name": "ao486_20200907.rbf",
+          "sha": "5c56a1a54f3ab9d1d180d8492102fce176cb703a",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/ao486_MiSTer/master/releases/ao486_20200907.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "boot0.rom",
-          "sha": "f7573ed6c5420a4bda524baf27eb95a19b2a1736",
+          "sha": "6af70b5945679d47afdedbe83ff012ada4413848",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/ao486_MiSTer/master/releases/bios/boot0.rom",
           "type": "OTHER"
         },
@@ -8358,6 +8364,12 @@
           "name": "MiSTer_20200821",
           "sha": "db341f1742e53f09ce146a0061a08d179f8c2c30",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Main_MiSTer/master/releases/MiSTer_20200821",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20200907",
+          "sha": "815c3162da14b24a669c99e4765025b46201811e",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Main_MiSTer/master/releases/MiSTer_20200907",
           "type": "OTHER"
         }
       ]
