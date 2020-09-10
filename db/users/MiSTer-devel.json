@@ -2668,7 +2668,13 @@
           "sha": "03f49db4df4df84910adcdabb1774e17be9843bd",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-LunarLander_MiSTer/master/releases/Lunar%20Lander.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Lunar Lander (rev 2)",
+            "rbf": "lunarlander",
+            "zips": [
+              "llander.zip"
+            ]
+          }
         }
       ]
     },
@@ -4814,13 +4820,7 @@
           "sha": "62ef07ec13989098e045c85a051cee823c7d9870",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SkySkipper_MiSTer/master/releases/Sky%20Skipper.mra",
           "type": "MRA",
-          "extra": {
-            "name": "Sky Skipper",
-            "rbf": "skyskipper",
-            "zips": [
-              "skyskipr.zip"
-            ]
-          }
+          "extra": null
         },
         {
           "name": "SkySkipper_20200304.rbf",
@@ -5104,13 +5104,7 @@
           "sha": "5cd6a7f539377536d8f5aa113a0d6a095db9c3d2",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SuperBreakout_MiSTer/master/releases/Super%20Breakout.mra",
           "type": "MRA",
-          "extra": {
-            "name": "Super Breakout (rev 04)",
-            "rbf": "superbreakout",
-            "zips": [
-              "sbrkout.zip"
-            ]
-          }
+          "extra": null
         }
       ]
     },

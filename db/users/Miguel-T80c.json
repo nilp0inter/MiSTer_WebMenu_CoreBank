@@ -397,14 +397,7 @@
           "sha": "2f447b1d4643073bd656a0fae6843e7e7ba0df60",
           "url": "https://raw.githubusercontent.com/Miguel-T80c/Arcade-ATetris_MiSTer/master/releases/Tetris%20(cocktail%20set%201).mra",
           "type": "MRA",
-          "extra": {
-            "name": "Tetris (cocktail set 1)",
-            "rbf": "ataritetris",
-            "zips": [
-              "atetrisc.zip",
-              "atetris.zip"
-            ]
-          }
+          "extra": null
         },
         {
           "name": "Tetris.mra",
@@ -2927,7 +2920,11 @@
           "sha": "cd38ca9850966026e693dae055a9c906fb23a73e",
           "url": "https://raw.githubusercontent.com/Miguel-T80c/Arcade-Pacman_MiSTer/master/releases/Pacmanic%20Miner.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Pacmanic Miner",
+            "rbf": "pacman",
+            "zips": []
+          }
         },
         {
           "name": "Ponpoko.mra",
