@@ -3035,14 +3035,26 @@
           "sha": "b4faccf67120f6b93236cb990505f6d276174782",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MCR3Mono_MiSTer/master/releases/Rampage.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Rampage (Rev 3, 8/27/86)",
+            "rbf": "MCR3Mono",
+            "zips": [
+              "rampage.zip"
+            ]
+          }
         },
         {
           "name": "Sarge.mra",
           "sha": "12218c81f21d18534f7fb9f38d9f3ebbe277f9ad",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MCR3Mono_MiSTer/master/releases/Sarge.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Sarge",
+            "rbf": "MCR3Mono",
+            "zips": [
+              "sarge.zip"
+            ]
+          }
         },
         {
           "name": "Star Guards.mra",
@@ -3879,7 +3891,13 @@
           "sha": "4e81207a991480f2136da43fe9f61a9d37e00f52",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pleiads_MiSTer/master/releases/Pleiads%20(Centuri).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Pleiads (Centuri)",
+            "rbf": "Arcade-Pleiads",
+            "zips": [
+              "pleiads.zip|pleiadce.zip"
+            ]
+          }
         },
         {
           "name": "Pleiads.mra",
@@ -4275,7 +4293,13 @@
           "sha": "6910b8f255db13ba7f08617cb121954eefe451fa",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Robotron_MiSTer/master/releases/Sinistar.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Sinistar (revision 3)",
+            "rbf": "robotron",
+            "zips": [
+              "sinistar.zip"
+            ]
+          }
         },
         {
           "name": "Splat.mra",
@@ -5466,7 +5490,13 @@
           "sha": "4239ed2641641acdf584887db958a66a507969f4",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-ZigZag_MiSTer/master/releases/Zig%20Zag.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Zig Zag (Dig Dug conversion on Galaxian hardware, bootleg set 1)",
+            "rbf": "zigzag",
+            "zips": [
+              "zigzagb.zip"
+            ]
+          }
         }
       ]
     },
