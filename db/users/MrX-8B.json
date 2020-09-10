@@ -295,7 +295,13 @@
           "sha": "321ba4a6dd1346d8c8fd1e2d94d6d2f2ac844245",
           "url": "https://raw.githubusercontent.com/MrX-8B/MiSTer-Arcade-FoodFight/master/releases/Food%20Fight.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Food Fight (rev 3)",
+            "rbf": "foodfight",
+            "zips": [
+              "foodf.zip"
+            ]
+          }
         },
         {
           "name": "rommap.txt",
@@ -617,7 +623,13 @@
           "sha": "2a553ff8580c549bbe5c8d3c568b3e29cf137efb",
           "url": "https://raw.githubusercontent.com/MrX-8B/MiSTer-Arcade-RallyX/master/releases/New%20Rally-X.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "New Rally X",
+            "rbf": "rallyx",
+            "zips": [
+              "nrallyx.zip"
+            ]
+          }
         },
         {
           "name": "Rally-X.mra",

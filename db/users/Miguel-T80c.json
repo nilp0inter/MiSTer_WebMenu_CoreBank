@@ -397,7 +397,14 @@
           "sha": "2f447b1d4643073bd656a0fae6843e7e7ba0df60",
           "url": "https://raw.githubusercontent.com/Miguel-T80c/Arcade-ATetris_MiSTer/master/releases/Tetris%20(cocktail%20set%201).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Tetris (cocktail set 1)",
+            "rbf": "ataritetris",
+            "zips": [
+              "atetrisc.zip",
+              "atetris.zip"
+            ]
+          }
         },
         {
           "name": "Tetris.mra",
@@ -1842,13 +1849,7 @@
           "sha": "750f1043caba36789c97e562f491960800f3c7d2",
           "url": "https://raw.githubusercontent.com/Miguel-T80c/Arcade-IremM62_MiSTer/master/releases/Lode%20Runner%20III%20-%20The%20Golden%20Labyrinth.mra",
           "type": "MRA",
-          "extra": {
-            "name": "Lode Runner III - The Golden Labyrinth",
-            "rbf": "iremm62",
-            "zips": [
-              "ldrun3.zip"
-            ]
-          }
+          "extra": null
         },
         {
           "name": "Lode Runner IV - Teikoku Karano Dasshutsu.mra",
@@ -2800,27 +2801,14 @@
           "sha": "f26053af388d4a30d48a108ba8db351f78d80173",
           "url": "https://raw.githubusercontent.com/Miguel-T80c/Arcade-Pacman_MiSTer/master/releases/Eyes.mra",
           "type": "MRA",
-          "extra": {
-            "name": "Eyes (US set 1)",
-            "rbf": "pacman",
-            "zips": [
-              "eyes.zip"
-            ]
-          }
+          "extra": null
         },
         {
           "name": "Gorkans.mra",
           "sha": "0caef4b169fe04e0d48c360becbbac43918315f5",
           "url": "https://raw.githubusercontent.com/Miguel-T80c/Arcade-Pacman_MiSTer/master/releases/Gorkans.mra",
           "type": "MRA",
-          "extra": {
-            "name": "Gorkans",
-            "rbf": "pacman",
-            "zips": [
-              "gorkans.zip",
-              "mrtnt.zip"
-            ]
-          }
+          "extra": null
         },
         {
           "name": "Jump Shot.mra",
@@ -2894,13 +2882,7 @@
           "sha": "2239faddabbea90e66fbc15ea297afcfbe0d7f45",
           "url": "https://raw.githubusercontent.com/Miguel-T80c/Arcade-Pacman_MiSTer/master/releases/Pacman%20Club.mra",
           "type": "MRA",
-          "extra": {
-            "name": "Pacman Club - Club Lambada (Argentina)",
-            "rbf": "pacman",
-            "zips": [
-              "clubpacm.zip"
-            ]
-          }
+          "extra": null
         },
         {
           "name": "Pacman Plus.mra",
@@ -3387,13 +3369,7 @@
           "sha": "ce30e62cc76b0ef64e80350cd8fb7effe776ae31",
           "url": "https://raw.githubusercontent.com/Miguel-T80c/Arcade-Robotron_MiSTer/master/releases/Joust.mra",
           "type": "MRA",
-          "extra": {
-            "name": "Joust (White-Green label)",
-            "rbf": "robotron",
-            "zips": [
-              "joust.zip"
-            ]
-          }
+          "extra": null
         },
         {
           "name": "Playball.mra",
