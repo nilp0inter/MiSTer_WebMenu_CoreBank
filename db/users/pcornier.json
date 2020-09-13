@@ -5,22 +5,6 @@
   "type": "User",
   "repos": [
     {
-      "name": "EpochGalaxy2_MiSTer",
-      "description": null,
-      "readme": "# Port of Epoch Galaxy II for MiSTer FPGA\r\n\r\nRemap game buttons and use the skill level select for game mode.\r\n\r\nFrom original user guide:\r\n\r\n- Skill Level \"1\" - Alien fighters attack one at a time.\r\n- Skill Level \"2\" - Alien fighters attack one at a time but combat speed is faster.\r\n- Skill Level \"3\" - Alien fighters attack two at a time.\r\n- Skill Level \"4\" - Alien fighters attack two at a time but combat speed is faster.\r\n\r\nWhen game is switched on, skill level is automatically set to Level \"1\" and \"1\" is displayed at top of Game Display.",
-      "archived": false,
-      "fork": false,
-      "url": "https://github.com/pcornier/EpochGalaxy2_MiSTer",
-      "releases": [
-        {
-          "name": "EpochGalaxyII_20200818.rbf",
-          "sha": "b9c61e3e2bb2ec832ecd4e244ff9c978f873a23a",
-          "url": "https://raw.githubusercontent.com/pcornier/EpochGalaxy2_MiSTer/master/releases/EpochGalaxyII_20200818.rbf",
-          "type": "RBF"
-        }
-      ]
-    },
-    {
       "name": "GnW_MiSTer",
       "description": "MiSTer Port of Game and Watch Games",
       "readme": "# MiSTer Port of Game and Watch Games\r\n\r\nwip\r\n",
@@ -49,22 +33,6 @@
           "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
           "url": "https://raw.githubusercontent.com/pcornier/Supervision_MiSTer/master/releases/_put_rbf_here_",
           "type": "OTHER"
-        }
-      ]
-    },
-    {
-      "name": "TomyScramble_MiSTer",
-      "description": "MiSTer Port of Tomy Scramble Game",
-      "readme": "# MiSTer Port of TomyTronic Scramble game\r\n\r\nThis is the port of Tomy Scramble for MiSTer.\r\n\r\n## Installation\r\n\r\nCopy the *.rbf and *.rom files to the root of the SD card.",
-      "archived": false,
-      "fork": false,
-      "url": "https://github.com/pcornier/TomyScramble_MiSTer",
-      "releases": [
-        {
-          "name": "TomyScramble_20200724.rbf",
-          "sha": "81037c4ecafcea2064824e79a490a32b307ba829",
-          "url": "https://raw.githubusercontent.com/pcornier/TomyScramble_MiSTer/master/releases/TomyScramble_20200724.rbf",
-          "type": "RBF"
         }
       ]
     }
