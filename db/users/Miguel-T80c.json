@@ -286,6 +286,12 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Astrocade_20200916.rbf",
+          "sha": "fdd9ea8fb24d1f4d5a626e70e4da1bd41310e475",
+          "url": "https://raw.githubusercontent.com/Miguel-T80c/Arcade-Astrocade_MiSTer/master/releases/Arcade-Astrocade_20200916.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Extra Bases.mra",
           "sha": "fce778878b58c37fccb7817deead87185963df2b",
           "url": "https://raw.githubusercontent.com/Miguel-T80c/Arcade-Astrocade_MiSTer/master/releases/Extra%20Bases.mra",
@@ -4895,6 +4901,22 @@
           "name": "ColecoVision_20200510.rbf",
           "sha": "b48da7990024ec1efc162c1276577d7396687ca6",
           "url": "https://raw.githubusercontent.com/Miguel-T80c/ColecoVision_MiSTer/master/releases/ColecoVision_20200510.rbf",
+          "type": "RBF"
+        }
+      ]
+    },
+    {
+      "name": "EpochGalaxy2_MiSTer",
+      "description": null,
+      "readme": "# Port of Epoch Galaxy II for MiSTer FPGA\r\n\r\nRemap game buttons and use the skill level select for game mode.\r\n\r\nFrom original user guide:\r\n\r\n- Skill Level \"1\" - Alien fighters attack one at a time.\r\n- Skill Level \"2\" - Alien fighters attack one at a time but combat speed is faster.\r\n- Skill Level \"3\" - Alien fighters attack two at a time.\r\n- Skill Level \"4\" - Alien fighters attack two at a time but combat speed is faster.\r\n\r\nWhen game is switched on, skill level is automatically set to Level \"1\" and \"1\" is displayed at top of Game Display.",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/Miguel-T80c/EpochGalaxy2_MiSTer",
+      "releases": [
+        {
+          "name": "EpochGalaxyII_20200818.rbf",
+          "sha": "b9c61e3e2bb2ec832ecd4e244ff9c978f873a23a",
+          "url": "https://raw.githubusercontent.com/Miguel-T80c/EpochGalaxy2_MiSTer/master/releases/EpochGalaxyII_20200818.rbf",
           "type": "RBF"
         }
       ]
