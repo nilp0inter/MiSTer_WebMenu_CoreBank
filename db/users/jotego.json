@@ -580,6 +580,12 @@
           "type": "OTHER"
         },
         {
+          "name": "MRA-Alternatives_20200918.zip",
+          "sha": "4bee5d43a980e052b64327aa6de9abe339853284",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/MRA-Alternatives_MiSTer/releases/MRA-Alternatives_20200918.zip",
+          "type": "OTHER"
+        },
+        {
           "name": "README.txt",
           "sha": "558ed93e181ba0fed228cf05d9708dae288b7e65",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/biocom/README.txt",
@@ -2259,6 +2265,25 @@
           "name": "jtpopeye_20191227.rbf",
           "sha": "ab22c4a429834bdd8b40e88f4a2b7d2d2624fac7",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/popeye/releases/jtpopeye_20191227.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Side Arms - Hyper Dyne (World, 861129).mra",
+          "sha": "ae1508cded9b4a90ba726cd2c172dc4f77d91193",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/sarms/releases/Side%20Arms%20-%20Hyper%20Dyne%20(World%2C%20861129).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Side Arms - Hyper Dyne (World, 861129)",
+            "rbf": "jtsarms",
+            "zips": [
+              "sidearms.zip"
+            ]
+          }
+        },
+        {
+          "name": "jtsarms_20200814.rbf",
+          "sha": "53220bff775160d7dbf83d15123d87e371a55940",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/sarms/releases/jtsarms_20200814.rbf",
           "type": "RBF"
         },
         {
