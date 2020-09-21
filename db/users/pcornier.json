@@ -51,6 +51,22 @@
           "type": "OTHER"
         }
       ]
+    },
+    {
+      "name": "TomyScramble_MiSTer",
+      "description": "MiSTer Port of Tomy Scramble Game",
+      "readme": "# MiSTer Port of TomyTronic Scramble game\r\n\r\nThis is the port of Tomy Scramble for MiSTer.\r\n\r\n## Installation\r\n\r\nCopy the *.rbf and *.rom files to the root of the SD card.",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/pcornier/TomyScramble_MiSTer",
+      "releases": [
+        {
+          "name": "TomyScramble_20200724.rbf",
+          "sha": "81037c4ecafcea2064824e79a490a32b307ba829",
+          "url": "https://raw.githubusercontent.com/pcornier/TomyScramble_MiSTer/master/releases/TomyScramble_20200724.rbf",
+          "type": "RBF"
+        }
+      ]
     }
   ]
 }
