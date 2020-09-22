@@ -1519,7 +1519,13 @@
           "sha": "76864d7d5f78621879c59de3bc1d6879ef9ff30d",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-CrazyKong_MiSTer/master/releases/Big%20Kong.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Big Kong",
+            "rbf": "CrazyKong",
+            "zips": [
+              "ckong.zip|bigkong.zip|ckongo.zip"
+            ]
+          }
         },
         {
           "name": "Crazy Kong (Orca bootleg).mra",
