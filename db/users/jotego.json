@@ -2242,6 +2242,31 @@
           "type": "RBF"
         },
         {
+          "name": "jthige.txt",
+          "sha": "794bf9f7d9d2c0f9554630dc80dbf7daa1fb6291",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/hige/jthige.txt",
+          "type": "OTHER"
+        },
+        {
+          "name": "Pirate Ship Higemaru.mra",
+          "sha": "e0b7d0313b45457cebae37d323bb392f874b51e5",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/hige/releases/Pirate%20Ship%20Higemaru.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Pirate Ship Higemaru",
+            "rbf": "jthige",
+            "zips": [
+              "higemaru.zip"
+            ]
+          }
+        },
+        {
+          "name": "jthige_20200925.rbf",
+          "sha": "a2162e5bff8e7d7cd64d721b3b163b687e290198",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/hige/releases/jthige_20200925.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "jtpopeye_20191227.zip",
           "sha": "1f1530c16cba594f4a5f9e1ab991bb9bd1e34898",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/popeye/jtpopeye_20191227.zip",
