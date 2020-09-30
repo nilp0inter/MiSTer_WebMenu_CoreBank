@@ -5,6 +5,15 @@
   "type": "User",
   "repos": [
     {
+      "name": "CoCo2_MiSTer",
+      "description": "CoCo2",
+      "readme": "\n# MiSTer Port of Tandy Color Computer 2 (CoCo2)\n\n\nhttps://github.com/pcornier/coco2\n\n\n### Tandy Color 2\n\nI tried to recreate the Tandy Color 2 on a Spartan-6 dev board (AX309). There's still a lot to be done (sound, joystick, cassette...) but I don't want to put more efforts into it as it was just a learning project.\n\npo8.v is the top file. Yes I know :grin:, what a strange name...\n\n\n![Coco2 running on the AX309](photo.jpg)\n\n*Coco 2 running on a AX309 board*",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/pcornier/CoCo2_MiSTer",
+      "releases": []
+    },
+    {
       "name": "EpochGalaxy2_MiSTer",
       "description": null,
       "readme": "# Port of Epoch Galaxy II for MiSTer FPGA\r\n\r\nRemap game buttons and use the skill level select for game mode.\r\n\r\nFrom original user guide:\r\n\r\n- Skill Level \"1\" - Alien fighters attack one at a time.\r\n- Skill Level \"2\" - Alien fighters attack one at a time but combat speed is faster.\r\n- Skill Level \"3\" - Alien fighters attack two at a time.\r\n- Skill Level \"4\" - Alien fighters attack two at a time but combat speed is faster.\r\n\r\nWhen game is switched on, skill level is automatically set to Level \"1\" and \"1\" is displayed at top of Game Display.",
