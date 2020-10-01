@@ -2552,7 +2552,13 @@
           "sha": "b7fca63e9ea3f6d450def9f701022b6dbc4f5be2",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM62_MiSTer/master/releases/Lode%20Runner%20IV%20-%20Teikoku%20Karano%20Dasshutsu.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Lode Runner IV - Teikoku Karano Dasshutsu (Japan)",
+            "rbf": "iremm62",
+            "zips": [
+              "ldrun4.zip"
+            ]
+          }
         },
         {
           "name": "Lode Runner.mra",
