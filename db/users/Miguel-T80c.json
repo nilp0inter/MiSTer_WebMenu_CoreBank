@@ -3626,7 +3626,13 @@
           "sha": "4c2561793bc7e3f3eae01cc982aa19e897a1090b",
           "url": "https://raw.githubusercontent.com/Miguel-T80c/Arcade-Scramble_MiSTer/master/releases/Amidar.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Amidar (Scramble hardware)",
+            "rbf": "scramble",
+            "zips": [
+              "amidar.zip|amidars.zip"
+            ]
+          }
         },
         {
           "name": "Anteater.mra",
