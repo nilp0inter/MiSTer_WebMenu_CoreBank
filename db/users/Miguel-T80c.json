@@ -6459,7 +6459,7 @@
     {
       "name": "SNES_MiSTer",
       "description": "SNES for MiSTer",
-      "readme": "# SNES for MiSTer by [srg320](https://github.com/srg320)\n\n## Installing\ncopy *.rbf to root of SD card. Put some ROMs (*.SCF, *.SMC, *.BIN) into SNES folder\n\n## Features\n* Cycle accurate SNES replica.\n* Supports LoROM, HiROM, ExHiROM.\n* Supports additional chips: DSP-1/2/3/4, ST010, CX4, SDD1, SuperFX(GSU-1/2), SA1, OBC1, SPC7110, S-RTC.\n* Cheat engine.\n* Save/Load Backup RAM.\n* Supports mouse.\n* Light gun support via Wiimote, mouse or analog stick.\n* [SuperFX Turbo and CPU Turbo.](https://github.com/MiSTer-devel/SNES_MiSTer/blob/master/SNES_Turbo.md)\n",
+      "readme": "# SNES for MiSTer by [srg320](https://github.com/srg320)\n\n## Installing\ncopy *.rbf to root of SD card. Put some ROMs (*.SCF, *.SMC, *.BIN) into SNES folder\n\n## Features\n* Cycle accurate SNES replica.\n* Supports LoROM, HiROM, ExHiROM.\n* Supports additional chips: DSP-1/2/3/4, ST010, CX4, SDD1, SuperFX(GSU-1/2), SA1, OBC1, SPC7110, S-RTC.\n* Cheat engine.\n* Save/Load Backup RAM.\n* Supports mouse.\n* Light gun support via Wiimote, mouse or analog stick.\n* [SuperFX Turbo and CPU Turbo.](https://github.com/MiSTer-devel/SNES_MiSTer/blob/master/SNES_Turbo.md)\n\n### BSX BIOS\nPlace bsx_bios.rom in game's folder.",
       "archived": false,
       "fork": true,
       "url": "https://github.com/Miguel-T80c/SNES_MiSTer",
@@ -6552,6 +6552,12 @@
           "name": "SNES_20200929.rbf",
           "sha": "2b4d06480dd38134834531bf56a3a20733fe413e",
           "url": "https://raw.githubusercontent.com/Miguel-T80c/SNES_MiSTer/master/releases/SNES_20200929.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_20201014.rbf",
+          "sha": "3d7f073f8b5f6d6a7c4c9e0a35f65b131392fd88",
+          "url": "https://raw.githubusercontent.com/Miguel-T80c/SNES_MiSTer/master/releases/SNES_20201014.rbf",
           "type": "RBF"
         }
       ]
