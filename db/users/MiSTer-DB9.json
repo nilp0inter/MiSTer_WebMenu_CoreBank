@@ -1730,7 +1730,14 @@
           "sha": "79c45f6b1797df7b3980e6c2d065b4f6af5b90c4",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Gaplus_MiSTer/master/releases/Galaga%203%20(GP3%20rev.%20D).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Galaga 3 (GP3 rev. D)",
+            "rbf": "gaplus",
+            "zips": [
+              "galaga3.zip",
+              "gaplus.zip"
+            ]
+          }
         },
         {
           "name": "Gaplus (GP2 rev. B).mra",
@@ -3063,7 +3070,13 @@
           "sha": "d1f88a30567628c9e6f1cf431cf6d41642a4e226",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pengo_MiSTer/master/releases/Pengo.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Pengo (set 1 rev c)",
+            "rbf": "pengo",
+            "zips": [
+              "pengo.zip"
+            ]
+          }
         }
       ]
     },
@@ -3169,7 +3182,11 @@
           "sha": "4fa87e5c5efaf32e238ca6bd7ea6468e38be5494",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pong_MiSTer/master/releases/Pong.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Pong",
+            "rbf": "Pong",
+            "zips": []
+          }
         }
       ]
     },
