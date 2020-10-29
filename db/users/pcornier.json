@@ -7,16 +7,16 @@
     {
       "name": "AliceMC10_MiSTer",
       "description": "Matra-Hachette Alice MC-10 for MiSTer FPGA",
-      "readme": "Matra-Hachette Alice MC-10 for MiSTer FPGA\r\n==========================================\r\n\r\nWork in progress...\r\n",
+      "readme": "Matra-Hachette Alice MC-10 for MiSTer FPGA\r\n==========================================\r\n\r\nWork in progress...\r\n\r\nTODO:\r\n\r\n1. ~~Make it start.~~\r\n2. ~~It is unstable, clock may be too low for the PLL.~~\r\n3. ~~VDG register: U4 (1Y2) and CPU r/w lines are used to generate the U8 clock, which allows writing to the VDG register.~~\r\n4. Sound is not implemented.\r\n5. Joystick is not implemented.\r\n6. Fix keyboard mapping.\r\n7. RS-232 interface.\r\n8. Cassette interface.\r\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/pcornier/AliceMC10_MiSTer",
       "releases": [
         {
-          "name": "_put_rbf_here_",
-          "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
-          "url": "https://raw.githubusercontent.com/pcornier/AliceMC10_MiSTer/master/releases/_put_rbf_here_",
-          "type": "OTHER"
+          "name": "Alice_20201029.rbf",
+          "sha": "69b0fa764275c2e1fd5f97654555affe4f762cfd",
+          "url": "https://raw.githubusercontent.com/pcornier/AliceMC10_MiSTer/master/releases/Alice_20201029.rbf",
+          "type": "RBF"
         }
       ]
     },
