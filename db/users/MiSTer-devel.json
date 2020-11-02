@@ -10631,7 +10631,7 @@
     {
       "name": "Specialist_MiSTer",
       "description": null,
-      "readme": "Work in progress...",
+      "readme": "Work in progress...\r\n\r\n### RKS load\r\nswitch to non-disk mode (Original or MX), reset the core and load RKS file.\r\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/Specialist_MiSTer",
@@ -10682,6 +10682,12 @@
           "name": "Specialist_20200511.rbf",
           "sha": "8e9b758c053def20775697602dafce53c3613b07",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Specialist_MiSTer/master/releases/Specialist_20200511.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Specialist_20201102.rbf",
+          "sha": "9b30613104d1e0d72fbccb6852f2852b7bfb5e43",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Specialist_MiSTer/master/releases/Specialist_20201102.rbf",
           "type": "RBF"
         }
       ]
