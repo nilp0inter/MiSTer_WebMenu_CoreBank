@@ -7,7 +7,7 @@
     {
       "name": "AliceMC10_MiSTer",
       "description": "Matra-Hachette Alice MC-10 for MiSTer FPGA",
-      "readme": "Matra-Hachette Alice MC-10 for MiSTer FPGA\r\n==========================================\r\n\r\nWork in progress...\r\n\r\nTODO:\r\n\r\n1. ~~Make it start.~~\r\n2. ~~It is unstable, clock may be too low for the PLL.~~\r\n3. ~~VDG register: U4 (1Y2) and CPU r/w lines are used to generate the U8 clock, which allows writing to the VDG register.\r\n3.1 VDG register: The sound() command modifies the VDG register!~~\r\n4. ~~Sound is not implemented.~~\r\n5. Joystick is not implemented.\r\n6. Fix keyboard mapping.\r\n7. RS-232 interface.\r\n8. Cassette interface.\r\n",
+      "readme": "Matra-Hachette Alice MC-10 for MiSTer FPGA\r\n==========================================\r\n\r\nWork in progress...\r\n\r\nTODO:\r\n\r\n1. ~~Make it start.~~\r\n2. ~~It is unstable, clock may be too low for the PLL.~~\r\n3. ~~VDG register: U4 (1Y2) and CPU r/w lines are used to generate the U8 clock, which allows writing to the VDG register.\r\n3.1 VDG register: The sound() command modifies the VDG register!~~\r\n4. ~~Sound is not implemented.~~\r\n5. Joystick is not implemented.\r\n6. Fix keyboard mapping.\r\n7. RS-232 interface.\r\n8. ~~Cassette interface.~~\r\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/pcornier/AliceMC10_MiSTer",
