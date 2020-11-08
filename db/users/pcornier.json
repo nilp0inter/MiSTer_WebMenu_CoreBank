@@ -5,22 +5,6 @@
   "type": "User",
   "repos": [
     {
-      "name": "AliceMC10_MiSTer",
-      "description": "Matra-Hachette Alice MC-10 for MiSTer FPGA",
-      "readme": "Matra-Hachette Alice MC-10 for MiSTer FPGA\r\n==========================================\r\n\r\nThis is the port of the Alice 4K / Tandy MC-10 to MiSTer FPGA.\r\n\r\nCassettes\r\n---------\r\n\r\nTo facilitate the use of the cassette player, an option to display the data stream on the screen is available form the OSD.\r\n\r\nThe core is compatible with .c10 tape files. A small script `k72c10.py` is available for converting .k7 files from Alice into .c10 files. The script adds the two leader sections before and after the name block.\r\n\r\nUsage: `python k72c10.py <path to k7 file>`.\r\n\r\nYou will end up with a new file named k7.c10, which should be compatible with the core.\r\n\r\nJoystick\r\n--------\r\n\r\nWhile the Alice 4k was sold with a DB9 adapter cartridge, the MC10 has no official support for joysticks. A article published in SoftGold magazine shows how to build a simple two directional joystick connected on the RS-232 connector. The two joystick interfaces have been implemented in the core.\r\n\r\nTo do\r\n-----\r\n\r\nMany games/programs already work, however, there's currently a bug in the video module that prevents some games from changing the display mode. Other MiSTer contributors and I are working on the problem right now.\r\n",
-      "archived": false,
-      "fork": false,
-      "url": "https://github.com/pcornier/AliceMC10_MiSTer",
-      "releases": [
-        {
-          "name": "Alice_20201108.rbf",
-          "sha": "ede06df40e0dc54b9aa1f7e9508d1ea956c8dfec",
-          "url": "https://raw.githubusercontent.com/pcornier/AliceMC10_MiSTer/master/releases/Alice_20201108.rbf",
-          "type": "RBF"
-        }
-      ]
-    },
-    {
       "name": "CoCo2_MiSTer",
       "description": "CoCo2",
       "readme": "\n# MiSTer Port of Tandy Color Computer 2 (CoCo2)\n\n\nhttps://github.com/pcornier/coco2\n\n\n### Tandy Color 2\n\nI tried to recreate the Tandy Color 2 on a Spartan-6 dev board (AX309). There's still a lot to be done (sound, joystick, cassette...) but I don't want to put more efforts into it as it was just a learning project.\n\npo8.v is the top file. Yes I know :grin:, what a strange name...\n\n\n![Coco2 running on the AX309](photo.jpg)\n\n*Coco 2 running on a AX309 board*",
