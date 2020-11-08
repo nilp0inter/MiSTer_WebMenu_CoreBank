@@ -4007,6 +4007,35 @@
       ]
     },
     {
+      "name": "Arcade-SilverLand_MiSTer",
+      "description": "Silver Land Arcade for MiSTer",
+      "readme": "---------------------------------------------------------------------------------\n-- \n-- NOTE: THERE ARE KNOWN TRANSPARENCY PROBLEMS -- please fix it!\n--\n-- Arcade: Silver Land port to MiSTer \n-- based on Arcade: Crazy Climber port to MiSTer by Sorgelig\n-- 7 June 2018\n-- \n---------------------------------------------------------------------------------\n-- Crazy climber FPGA by Dar - (darfpga@aol.fr)\n-- http://darfpga.blogspot.fr\n---------------------------------------------------------------------------------\n-- gen_ram.vhd\n-------------------------------- \n-- Copyright 2005-2008 by Peter Wendrich (pwsoft@syntiac.com)\n-- http://www.syntiac.com/fpga64.html\n---------------------------------------------------------------------------------\n-- T80/T80se - Version : 0247\n-----------------------------\n-- Z80 compatible microprocessor core\n-- Copyright (c) 2001-2002 Daniel Wallner (jesus@opencores.org)\n---------------------------------------------------------------------------------\n-- \n-- \n-- Keyboard inputs :\n--\n--   F1          : Add coin + Start 1 player\n--   F2          : Add coin + Start 2 players\n--   LEFT,RIGHT  : move boat\n--   CTRL        : ski\n--\n--   5,6 : Add coin\n--   1,2 : Start Player 1, Player 2\n--\n-- Joystick/Gamepad support.\n-- \n-- \n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/MiSTer-DB9/Arcade-SilverLand_MiSTer",
+      "releases": [
+        {
+          "name": "Arcade-SilverLand_20200509.rbf",
+          "sha": "06d374ce832b18b67428a248f7fbe50be5789554",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SilverLand_MiSTer/master/releases/Arcade-SilverLand_20200509.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Silver Land.mra",
+          "sha": "d6f5b704ee8a5ab98acd9793e736548c04eac7b9",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SilverLand_MiSTer/master/releases/Silver%20Land.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Silver Land",
+            "rbf": "silverland",
+            "zips": [
+              "rpatrol.zip|silvland.zip"
+            ]
+          }
+        }
+      ]
+    },
+    {
       "name": "Arcade-SnapJack_MiSTer",
       "description": "Arcade: Snap Jack for MiSTer",
       "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: Snap Jack port to MiSTer by Sorgelig\n-- 14 November 2017\n-- \n---------------------------------------------------------------------------------\n-- A simulation model of Lady Bug hardware\n-- Unknown Author on Papilio Plus board.\n---------------------------------------------------------------------------------\n-- \n-- Support screen and controls rotation on HDMI output.\n-- Only controls are rotated on VGA output.\n-- \n-- \n-- Keyboard inputs :\n--\n--   F2    : Coin + Start 2 players\n--   F1    : Coin + Start 1 player\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   R,F,D,G     : Player 2 Movements\n--\n-- Joystick support.\n-- \n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
