@@ -9333,6 +9333,316 @@
       ]
     },
     {
+      "name": "Minimig-AGA_MiSTer",
+      "description": null,
+      "readme": "\n# Minimig-AGA_MiSTer\n\nThis is a port of the minimig core to the [MiSTer board](https://github.com/MiSTer-devel).\n\n[minimig](http://en.wikipedia.org/wiki/Minimig) (short for Mini Amiga) is an open source re-implementation of an Amiga using a field-programmable gate array (FPGA). Original minimig author is Dennis van Weeren.\n\n[Amiga](http://en.wikipedia.org/wiki/Amiga_500) was - in my opinion - an amazing personal computer, announced around 1984, which - at the time - far surpassed any other personal computer on the market, with advanced graphic & sound capabilities, not to mention its great OS with preemptive multitasking capabilities.\n\nThe minimig-MiSTer variant in this repository has been upgraded with [AGA chipset](http://en.wikipedia.org/wiki/Amiga_Advanced_Graphics_Architecture) capabilites, which allows it to emulate the latest Amiga models ([Amiga 1200](http://en.wikipedia.org/wiki/Amiga_1200), [Amiga 4000](http://en.wikipedia.org/wiki/Amiga_4000) and (partially) [Amiga CD32](http://en.wikipedia.org/wiki/Amiga_CD32)). Ofcourse it also supports previous OCS/ECS Amigas like [Amiga 500](http://en.wikipedia.org/wiki/Amiga_500), [Amiga 600](http://en.wikipedia.org/wiki/Amiga_600) etc.\n\n\n## Core features supported\n\n* chipset variants : OCS, ECS, AGA\n* chipRAM : 0.5MB - 2.0MB\n* slowRAM : 0.0MB - 1.5MB\n* fastRAM : 0.0MB - 384MB\n* CPU core : 68000, 68020\n* kickstart : 1.2 - 3.1 (256kB, 512kB & 1MB kickstart ROMs currently supported)\n* HRTmon with custom registers mirror\n* floppy disks : 1-4 floppies (supports ADF floppy image format), with normal & turbo speeds\n* hard disks : 1-2 hard disk images (supports whole disk images, partition images, using whole SD card and using SD card partition)\n* video standard : PAL / NTSC\n* supports almost all OCS/ECS/AGA custom resolutions\n* RTG with up to 1920x1080 and 1600x1200 resolutions\n* peripherals : USB keyboards, USB mice, USB gamepads\n* serial connection to Linux with ability to connect to internet.\n* shared folder for rapid file exchange between Linux and Amiga.\n\n\n## Usage\n\n### Screen adjustment\nAdjustment is initiated from OSD menu. Keyboard control:\n* Cursor keys - top/left corner.\n* ALT+Cursor keys - bottom/right corner.\n* Enter - finish and store position.\n* Backspace - reset do default.\n* Esc - cancel and finish.\n\nPositions are saved in the configuration file. Up to 64 different resolutions can be adjusted.\n\n### Shared folder\n\nAll required files (and sources) are in extra/MiSTer_share.lha\n\nAmiga driver is based on Niklas Ekstr\u00f6m [a314](https://github.com/niklasekstrom/a314) driver.\n\nOn Amiga:\n- copy dummy.device to DEVS:\n- copy MountList to DEVS: (or add content from MountList to existing file)\n- copy MiSTerFileSystem to L:\n- open CLI and type there: mount share:\n- MiSTer drive will appear on main WB screen. If it will work, then you can add this command into user-startup file, and it will be mounted at every boot.\n\nOn Linux side the folder is \"shared\" inside Amiga folder.\n\n### RTG\n\n* install [Picasso96.lha](http://aminet.net/package/driver/video/Picasso96) Choose uaegfx while installing.\n* remove uaegfx (or whatever driver you choose in install) from SYS:Devs/Monitors\n* extract [MiSTer_RTG.lha](https://github.com/MiSTer-devel/Minimig-AGA_MiSTer/raw/MiSTer/extra/rtg_driver/MiSTer_RTG.lha) and copy content to SYS:\n* reboot\n\nNew video modes will appear in ScreenMode preference. For more screen modes use Picasso96Mode preference (attn: it has awkward interface!)\n\n**Note: RTG outputs to HDMI primarily as it uses scaler.**\nIf you want to see RTG video on VGA output, then set vga_scaler=1 in MiSTer.ini.\nRTG is available only for 68020 CPU.\n\n### Software\nTo use the core, you will need a Kickstart ROM image file, which you can obtain by copying Kickstart ROM IC from your actual Amiga, or by buying an [Amiga Forever](http://www.amigaforever.com/) software pack. The Kickstart image should be placed on the root of the SD card with the name KICK.ROM. Minimig also supports the [AROS](http://aros.sourceforge.net/) kickstart ROM replacement.\n\nThe minimig can read any ADF floppy images you place on the SD card. I recommend at least Workbench 1.3 or 3.1 (AmigaOS), some of the Amigas great games (I recommend Ruff'n'Tumble) or some of the amazing demos from the vast Amiga demoscene (like State of the Art from Spaceballs).\n\nThe minimig can also use HDF harddisk images, which can be created with [WinUAE](http://www.winuae.net/).\n\n### Recommended minimig config\n\n* for ECS games / demos : CPU = 68000, Turbo=NONE, Chipset=ECS, chipRAM=0.5MB, slowRAM=0.5MB, Kickstart 1.3\n* for AGA games / demos : CPU = 68020, Turbo=NONE, Chipset=AGA, chipRAM=2MB, slowRAM=0MB, fastRAM=24MB, Kickstart 3.1\n\n### Controlling minimig\n\nKeyboard special keys:\n\n* F12         - OSD menu\n* F11         - start monitor (HRTmon) if HRTmon is enabled in OSD menu (otherwise F11 is the Amiga HELP key)\n* ScrollLock  - toggle keyoard only / mouse / joystick 1 / joystick 2 emulation on the keyboard (direction keys + LCTRL)\n\n\n## Sources\n\nThis sourcecode is based on Rok Krajnc project ([minimig-de1](https://github.com/rkrajnc/minimig-de1)).\n\nOriginal minimig sources from Dennis van Weeren with updates by Jakub Bednarski are published on [Google Code](http://code.google.com/p/minimig/).\n\nSome minimig updates are published on the [Minimig Discussion Forum](http://www.minimig.net/), done by Sascha Boing.\n\nARM firmware updates and minimig-tc64 port changes by Christian Vogelsang ([minimig_tc64](https://github.com/cnvogelg/minimig_tc64)) and A.M. Robinson ([minimig_tc64](https://github.com/robinsonb5/minimig_tc64)).\n\nMiSTer project by Sorgelig ([MiSTer](https://github.com/MiSTer-devel)).\n\nTG68K.C core by Tobias Gubener.\n\n\n## Links & more info\n\nMy page [somuch.guru](http://somuch.guru/).\n\nFurther info about minimig can be found on the [Minimig Discussion Forum](http://www.minimig.net/).\n\nMiSTer board support & other cores on the [MiSTer Project Page](https://github.com/MiSTer-devel).\n\n\n## License\n\nCopyright \u00a9 2011 - 2016 Rok Krajnc (rok.krajnc@gmail.com)\n\nCopyright \u00a9 2005 - 2015 Dennis van Weeren, Jakub Bednarski, Sascha Boing, A.M. Robinson, Tobias Gubener, Till Harbaum\n\nCopyright \u00a9 2017 - 2020 Sorgelig (mister.devel@gmail.com)\n\nThis program is free software: you can redistribute it and/or modify\nit under the terms of the GNU General Public License as published by\nthe Free Software Foundation, either version 3 of the License, or\n(at your option) any later version.\n\nThis program is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License\nalong with this program.  If not, see <http://www.gnu.org/licenses/>.\n",
+      "archived": false,
+      "fork": false,
+      "url": "https://github.com/MiSTer-devel/Minimig-AGA_MiSTer",
+      "releases": [
+        {
+          "name": "Minimig_20170702.rbf",
+          "sha": "2863996d87b481acde0c140a5ca2b382865351e1",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Minimig-AGA_MiSTer/MiSTer/releases/Minimig_20170702.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Minimig_20170712.rbf",
+          "sha": "bcf568b6c17f8a15fddd14db474c5d2d7aa11905",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Minimig-AGA_MiSTer/MiSTer/releases/Minimig_20170712.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Minimig_20170716.rbf",
+          "sha": "94b50e550968c69451a8543c33dffcc29b80376a",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Minimig-AGA_MiSTer/MiSTer/releases/Minimig_20170716.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Minimig_20170922.rbf",
+          "sha": "892746ff7c5bbac26bf573958c57597527ddb1b6",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Minimig-AGA_MiSTer/MiSTer/releases/Minimig_20170922.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Minimig_20171229.rbf",
+          "sha": "ef16982ce39df340f441b315e3f7e820b8c01ac0",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Minimig-AGA_MiSTer/MiSTer/releases/Minimig_20171229.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Minimig_20180106.rbf",
+          "sha": "37c38598348426077185738f5a8e6765484dab7b",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Minimig-AGA_MiSTer/MiSTer/releases/Minimig_20180106.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Minimig_20180108.rbf",
+          "sha": "634c608c2f0aa6fa54f09133459e721f7a378f7d",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Minimig-AGA_MiSTer/MiSTer/releases/Minimig_20180108.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Minimig_20180304.rbf",
+          "sha": "fddcb5b34c9f52e0e0140da490ef787d74a44125",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Minimig-AGA_MiSTer/MiSTer/releases/Minimig_20180304.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Minimig_20180407.rbf",
+          "sha": "e447f3851fb270a0e82db2c158ce761fb0004633",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Minimig-AGA_MiSTer/MiSTer/releases/Minimig_20180407.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Minimig_20180508.rbf",
+          "sha": "86e7ec767752d196491d293433b2420dc0e84adc",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Minimig-AGA_MiSTer/MiSTer/releases/Minimig_20180508.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Minimig_20180509.rbf",
+          "sha": "6db4d7d108e24373771b37c1192229d6590adfd3",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Minimig-AGA_MiSTer/MiSTer/releases/Minimig_20180509.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Minimig_20180513.rbf",
+          "sha": "11c02ba3ffa332e000e1f5ff8e6d932cf2da8c67",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Minimig-AGA_MiSTer/MiSTer/releases/Minimig_20180513.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Minimig_20180519.rbf",
+          "sha": "2fc46797ff1badfa4725f376f5f49fc05856f0cc",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Minimig-AGA_MiSTer/MiSTer/releases/Minimig_20180519.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Minimig_20181208.rbf",
+          "sha": "ce99d42e824e94e671b01751bba4c6f9da63421d",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Minimig-AGA_MiSTer/MiSTer/releases/Minimig_20181208.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Minimig_20181215.rbf",
+          "sha": "5b738fd7d8478d00fb8cce0eb400915b3047571d",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Minimig-AGA_MiSTer/MiSTer/releases/Minimig_20181215.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Minimig_20181216.rbf",
+          "sha": "d0298f05e5b289fcd264c6ddcd5b410cba9952db",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Minimig-AGA_MiSTer/MiSTer/releases/Minimig_20181216.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Minimig_20190112.rbf",
+          "sha": "3b1440b11c47be9ceb8cd5e6d28f5a74fe6a0b1d",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Minimig-AGA_MiSTer/MiSTer/releases/Minimig_20190112.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Minimig_20190120.rbf",
+          "sha": "fa8248a89d8227183f8330ab227361107c1d7db4",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Minimig-AGA_MiSTer/MiSTer/releases/Minimig_20190120.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Minimig_20190309.rbf",
+          "sha": "34177153c906079895799b4d07a671c749b4c538",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Minimig-AGA_MiSTer/MiSTer/releases/Minimig_20190309.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Minimig_20190501.rbf",
+          "sha": "e1ad33245722beba22ed32bc63bd132a9c2ad166",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Minimig-AGA_MiSTer/MiSTer/releases/Minimig_20190501.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Minimig_20190502.rbf",
+          "sha": "333280eac47cb67eb4987cbdccdeecaca1d69f33",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Minimig-AGA_MiSTer/MiSTer/releases/Minimig_20190502.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Minimig_20190711.rbf",
+          "sha": "4e572557c5922495da94ff816adf29f70210a8f4",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Minimig-AGA_MiSTer/MiSTer/releases/Minimig_20190711.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Minimig_20190717.rbf",
+          "sha": "6dfcac898a0f64621c318278588625c05479a5d4",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Minimig-AGA_MiSTer/MiSTer/releases/Minimig_20190717.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Minimig_20190912.rbf",
+          "sha": "4e4f94e88882feff334e63f0c41c4418082b817d",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Minimig-AGA_MiSTer/MiSTer/releases/Minimig_20190912.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Minimig_20190915.rbf",
+          "sha": "d67667ea997da7a6a4bdbf44cfc966f257bfe476",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Minimig-AGA_MiSTer/MiSTer/releases/Minimig_20190915.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Minimig_20190920.rbf",
+          "sha": "9e049796c5ea5a0e3943a1d6edb30ed474deed45",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Minimig-AGA_MiSTer/MiSTer/releases/Minimig_20190920.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Minimig_20190922.rbf",
+          "sha": "15d973a8cdac32b555475b866216b71340ac62b0",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Minimig-AGA_MiSTer/MiSTer/releases/Minimig_20190922.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Minimig_20190923.rbf",
+          "sha": "69e316b36f9cbee55ef274e592ecbabb0d7f3661",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Minimig-AGA_MiSTer/MiSTer/releases/Minimig_20190923.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Minimig_20191007.rbf",
+          "sha": "833e1d5787b099f6b824354ffac0c2a8a663f9c4",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Minimig-AGA_MiSTer/MiSTer/releases/Minimig_20191007.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Minimig_20191013.rbf",
+          "sha": "6e3a705d2a3275c8dbcdba8313e28ed10d539a52",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Minimig-AGA_MiSTer/MiSTer/releases/Minimig_20191013.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Minimig_20191103.rbf",
+          "sha": "f082bf9d1357670cff95edf1e8b9c4b45e52ebad",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Minimig-AGA_MiSTer/MiSTer/releases/Minimig_20191103.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Minimig_20191111.rbf",
+          "sha": "6dbad030bb77f517dc8dcb3509cda3ff6c3bfb73",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Minimig-AGA_MiSTer/MiSTer/releases/Minimig_20191111.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Minimig_20191117.rbf",
+          "sha": "ea291eb4f206196105e443f46e709a053fb3440f",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Minimig-AGA_MiSTer/MiSTer/releases/Minimig_20191117.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Minimig_20191118.rbf",
+          "sha": "8e7ad24d7b9699d67c23f96f5606e9027e9a09d5",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Minimig-AGA_MiSTer/MiSTer/releases/Minimig_20191118.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Minimig_20191124.rbf",
+          "sha": "a3899d3b212695c04e0c5b11513905ab7af61cf1",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Minimig-AGA_MiSTer/MiSTer/releases/Minimig_20191124.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Minimig_20191204.rbf",
+          "sha": "e0b76f7071d691616e484c9e1febfc651fbe43cb",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Minimig-AGA_MiSTer/MiSTer/releases/Minimig_20191204.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Minimig_20191228.rbf",
+          "sha": "49acf504c8e08d52a865febe7858fb3f93f21a42",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Minimig-AGA_MiSTer/MiSTer/releases/Minimig_20191228.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Minimig_20200205.rbf",
+          "sha": "ce430e0300ba30ff6617bd353b41ee80130c5d74",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Minimig-AGA_MiSTer/MiSTer/releases/Minimig_20200205.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Minimig_20200327.rbf",
+          "sha": "21f1d420302bbd8328e3c5408cd8293a511cbb78",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Minimig-AGA_MiSTer/MiSTer/releases/Minimig_20200327.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Minimig_20200407.rbf",
+          "sha": "5479ebcb46284c99cded7c6dfee550b64f8f1f79",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Minimig-AGA_MiSTer/MiSTer/releases/Minimig_20200407.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Minimig_20200421.rbf",
+          "sha": "930a043ea05e737f45b0d9fc4e900ae63967db52",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Minimig-AGA_MiSTer/MiSTer/releases/Minimig_20200421.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Minimig_20200423.rbf",
+          "sha": "809e106f6b91f77030a68ef98dcd3e389d326caa",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Minimig-AGA_MiSTer/MiSTer/releases/Minimig_20200423.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Minimig_20200504.rbf",
+          "sha": "ee30bb2fefd22b9dd057456b991795795b0a9cc7",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Minimig-AGA_MiSTer/MiSTer/releases/Minimig_20200504.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Minimig_20200505.rbf",
+          "sha": "4d45b4ea79c408a1899cb0d0f3cd66366a0324d5",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Minimig-AGA_MiSTer/MiSTer/releases/Minimig_20200505.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Minimig_20200529.rbf",
+          "sha": "782418bf1857456a433fe69fb98cd64b794fc2a2",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Minimig-AGA_MiSTer/MiSTer/releases/Minimig_20200529.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Minimig_20200629.rbf",
+          "sha": "906780d95bd8aa3b115e1a624f78714f205905a0",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Minimig-AGA_MiSTer/MiSTer/releases/Minimig_20200629.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Minimig_20200701.rbf",
+          "sha": "66e7f4ee01ef1e091cadf8326db8bb14d83d6180",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Minimig-AGA_MiSTer/MiSTer/releases/Minimig_20200701.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Minimig_20201022.rbf",
+          "sha": "816413e022e66e3167ca68e6bd1b4d7f2681f10c",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Minimig-AGA_MiSTer/MiSTer/releases/Minimig_20201022.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Minimig_20201101.rbf",
+          "sha": "775944183edd4176d6b35c6b4578ff6d78c80655",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Minimig-AGA_MiSTer/MiSTer/releases/Minimig_20201101.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Minimig_20201105.rbf",
+          "sha": "768aa10ad34130af68b1b15fbdfae55686ce9020",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Minimig-AGA_MiSTer/MiSTer/releases/Minimig_20201105.rbf",
+          "type": "RBF"
+        }
+      ]
+    },
+    {
       "name": "MiSTer-bootstrap",
       "description": null,
       "readme": "# MiSTer-bootstrap\n\nMiSTer bootstrap is a tool that updates all cores for the MiSTer platform. Can be compiled to a binary for multiple platforms, and also a shared library to be directly invoked from C-code.\n\n# Requirements\n\n* Go\n* Godep\n\n# Usage\n\n`./bootstrap`\n* `-r <Repo URL>`\n\t* Optional Repo URL, defaults to OpenVGS/MiSTer-repository which is updated hourly.\n* `-o <Output Directory>`\n\t* Optional Output Directory, defaults to current directory.\n",
