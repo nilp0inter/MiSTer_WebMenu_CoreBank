@@ -499,7 +499,14 @@
           "sha": "2f447b1d4643073bd656a0fae6843e7e7ba0df60",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-ATetris_MiSTer/master/releases/Tetris%20(cocktail%20set%201).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Tetris (cocktail set 1)",
+            "rbf": "ataritetris",
+            "zips": [
+              "atetrisc.zip",
+              "atetris.zip"
+            ]
+          }
         },
         {
           "name": "Tetris.mra",
