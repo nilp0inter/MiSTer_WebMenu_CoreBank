@@ -6564,6 +6564,64 @@
       ]
     },
     {
+      "name": "BBCMicro_MiSTer",
+      "description": "BBC Micro B and Master 128K for MiSTer",
+      "readme": "# BBC Micro B/Master 128K for [MiSTer Board](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\nThis is the port of [BeebFpga](https://github.com/hoglet67/BeebFpga) by David Banks, Mike Sterling.\n\n\n### Features and enhancements:\n- Models B and Master 128K.\n- Respective CPU per model for best compatibility: 6502 for B, 65C02 for Master 128K.\n- Co-Processor module with 65C02.\n- Support Secondary SD card as well as images on Primary SD card.\n- Scandoubler with HQ2x for all modes.\n- Support analog joysticks.\n- Emulate joystick with mouse.\n- Real Time Clock support with actual time.\n\n### Installation:\nCopy the *.rbf file to the root of the SD card. Copy *.vhd to BBCMicro folder.\n\n### Supported formats:\nCurrently only **BEEB.MMB** format is supported. This is a container of multiple disks/apps with integrated Menu system.\n\nCore supports secondary SD card which should be formatted in FAT16/FAT32. BEEB.MMB file should be placed first on the card.\n\nAlternatively core supports *.VHD images on primary SD card - in this case secondary SD card is not required.\n\n**VHD** image is just renamed BEEB.MMB file.\n\n### Notes:\n* BREAK key combo is **CTRL+F11**\n* If autostart is disabled, then **SHIFT+CTRL+F11** performs reset+autostart. \n* If autostart is enabled, then **SHIFT+CTRL+F11** performs reset without autostart.\n* Perform reset to apply the Model.\n* You can place **boot.vhd** into BBCMicro folder to autoload it at start.\n\n---\nSorgelig\n",
+      "archived": false,
+      "fork": false,
+      "url": "https://github.com/MiSTer-devel/BBCMicro_MiSTer",
+      "releases": [
+        {
+          "name": "BBCMicro_20180517.rbf",
+          "sha": "c1735ca78f21bd999fdf2c5cb6364b1adbaaff4f",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/BBCMicro_MiSTer/master/releases/BBCMicro_20180517.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "BBCMicro_20180521.rbf",
+          "sha": "b63ad2398f310885098f21ed252de377e6fbe1f2",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/BBCMicro_MiSTer/master/releases/BBCMicro_20180521.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "BBCMicro_20190309.rbf",
+          "sha": "1447a47657888e2500c33f7b278126605ebdd228",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/BBCMicro_MiSTer/master/releases/BBCMicro_20190309.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "BBCMicro_20190719.rbf",
+          "sha": "9c5fada50e3896e6b2f66d55c3a8aaf5b8531510",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/BBCMicro_MiSTer/master/releases/BBCMicro_20190719.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "BBCMicro_20190927.rbf",
+          "sha": "e21b16dcefe1832e6e6e595dea677d96f70fb778",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/BBCMicro_MiSTer/master/releases/BBCMicro_20190927.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "BBCMicro_20200510.rbf",
+          "sha": "31f0028bf79360ff4758519d9428c5eeafe966a7",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/BBCMicro_MiSTer/master/releases/BBCMicro_20200510.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "BBCMicro_20200517.rbf",
+          "sha": "70d18d826f6b84a940c4bb11d170db8864ffe198",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/BBCMicro_MiSTer/master/releases/BBCMicro_20200517.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "BBCMicro_20201002.rbf",
+          "sha": "e67f794c790a5b629aca44cae707882a4485df17",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/BBCMicro_MiSTer/master/releases/BBCMicro_20201002.rbf",
+          "type": "RBF"
+        }
+      ]
+    },
+    {
       "name": "BK0011M_MiSTer",
       "description": null,
       "readme": "\ufeff# BK0011M for [MiSTer Board](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\r\n\r\nThis project of [popular USSR home computer](https://en.wikipedia.org/wiki/Electronika_BK) is based on precise [KR1801VM1](http://zx-pk.ru/showthread.php?t=23978) Verilog model by Vslav\r\n\r\n### Features:\r\n- Fully functional BK0011M and BK0010 with close to real CPU and Video timings (need furter corrections)\r\n- Turbo mode (6MHz for BK0010, 8MHz for BK0011M)\r\n- Raw DSK image support (read-only, Disk A)\r\n- Multipatitioned VHD image (read-write, Disk C+)\r\n- BIN file support for BK0010 mode (only single file apps are supported)\r\n- A16M extension for BK0010 (support for short and long resets)\r\n- SMK512 extension for BK0011M\r\n- YM2149 with 1.71MHz clock\r\n- Joystick\r\n- Mouse\r\n\r\nNo contention model is used in turbo mode, thus speed is higher more than twice.\r\n\r\n### Installation:\r\nCopy the *.rbf file at the root of the SD card.\r\n\r\nThere are couple disk images in [extra](https://github.com/MiSTer-devel/BK0011M_MiSTer/tree/master/extra) folder with CSIDOS OS with complete ecosystem (viewer,text editor, music editor, debugger, etc.) written by me more than 20 years ago. Image also incudes some music and utils written by different people.\r\n\r\n*Most documents are in Russian languange.*\r\n\r\n### HDD Utility\r\nSupplied [HDD Utility](https://github.com/MiSTer-devel/BK0011M_MiSTer/tree/master/SW/bkhdutil.exe) can be used to concatenate separate DSK image into one VHD image. You can put it to root of SD card. If you will name it as bk0011m.vhd then it will autoload at start.\r\n\r\nPress F12 to access OSD menu.\r\n\r\n##### Keyboard map:\r\n\r\n| PC key      |  BK Key       |\r\n|:-----------:|:-------------:|\r\n| ESC         | KT            |\r\n| F1          | \u041f\u041e\u0412\u0422          |\r\n| F2          | \u0412\u0421            |\r\n| F3          | \u0413\u0420\u0410\u0424          |\r\n| F4          | Color/Mono    |\r\n| F5          | -!->          |\r\n| F6          | \u0418\u041d\u0414\u0421\u0423         |\r\n| F7          | \u0411\u041b\u041e\u041a \u0420\u0415\u0414      |\r\n| F8          | \u0428\u0410\u0413           |\r\n| F9          | \u0421\u0411\u0420           |\r\n| F10         | \u0421\u0422\u041e\u041f          |\r\n| RCtrl+F11   | RESET         |\r\n| F11         | Change colors |\r\n| F12         | OSD Menu      |\r\n| Insert      | !-->          |\r\n| Delete      | !<--          |\r\n| Shift+Enter | \u0423\u0421\u0422 \u0422\u0410\u0411       |\r\n| Shift+Tab   | \u0421\u0411\u0420 \u0422\u0410\u0411       |\r\n| Alt+Tab     | \u0428\u0410\u0413 \u041f\u041e \u0422\u0410\u0411    |\r\n| Left Win    | \u041b\u0410\u0422           |\r\n| Left Ctrl   | \u0420\u0423\u0421           |\r\n| Right Ctrl  | \u0423\u0421 (Ctrl)     |\r\n| Alt         | \u0410\u04202 (Alt)     |\r\n\r\n### Additional info:\r\nROM contains debugger which can be launched by following commands from Monitor:\r\n- **13;1C**\r\n- **100000G**\r\n\r\nif disk support in OSD is turned off, then diagnostic utility can be launched by following command from Monitor:\r\n- **160000G**\r\n\r\n### Download precompiled binaries:\r\nGo to [releases](https://github.com/MiSTer-devel/BK0011M_MiSTer/tree/master/releases) folder.\r\n",
