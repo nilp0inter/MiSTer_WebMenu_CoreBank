@@ -5904,8 +5904,21 @@
           "type": "RBF"
         },
         {
+          "name": "Gauntlet (2 Players).mra",
+          "sha": "bc2e3837cb5e8e99246212c95ba65f7db310f649",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade_Gauntlet_MiSTer/main/releases/Gauntlet%20(2%20Players).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Gauntlet (2 Players, rev 3)",
+            "rbf": "gauntlet",
+            "zips": [
+              "gauntlet.zip|gauntlet2pr3.zip"
+            ]
+          }
+        },
+        {
           "name": "Gauntlet (rev 14).mra",
-          "sha": "e42cf452469f0a6f29965187d2dc16f1abfee66e",
+          "sha": "4b5e7070d007cfc62b6a4742eca049ddab96827e",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade_Gauntlet_MiSTer/main/releases/Gauntlet%20(rev%2014).mra",
           "type": "MRA",
           "extra": {
@@ -5918,7 +5931,7 @@
         },
         {
           "name": "Gauntlet II.mra",
-          "sha": "75394522a052f0a657f1371c2b7b2653500952fa",
+          "sha": "f5d3fb78730f0b40f9675132073a2857cd6f55f8",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade_Gauntlet_MiSTer/main/releases/Gauntlet%20II.mra",
           "type": "MRA",
           "extra": {
@@ -5931,7 +5944,7 @@
         },
         {
           "name": "Vindicators Part II (rev 3).mra",
-          "sha": "7d05fa43c9560b15bf5c7083b0d355f7d821cf3b",
+          "sha": "4f7bef2f1c358f3ac17802b3922491731764eb31",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade_Gauntlet_MiSTer/main/releases/Vindicators%20Part%20II%20(rev%203).mra",
           "type": "MRA",
           "extra": {
