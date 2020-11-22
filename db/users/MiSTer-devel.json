@@ -5890,6 +5890,61 @@
       ]
     },
     {
+      "name": "Arcade_Gauntlet_MiSTer",
+      "description": null,
+      "readme": "# Atari Gauntlet FPGA Arcade\n\n## About\nThis is an FPGA implementation of Atari's arcade game \"Gauntlet\" from 1985, based on the SP-284 schematic circuit diagram.  \n\nOn a [Pipistrello](http://pipistrello.saanlima.com/index.php?title=Welcome_to_Pipistrello) FPGA board with a [SRAM expansion](https://oshpark.com/profiles/d18c7db) daughterboard it successfully runs all three games Gauntlet, Gauntlet II and Vindicators II that run on the original arcade. All sounds are implemeted, Pokey, YM2151 and TMS5220 Voice Synthesis Processor (see my [TMS5220 repository](https://github.com/d18c7db/TMS5220_FPGA) for more details on the VSP).  \n\n[![Gauntlet Tile](doc/images/MAME_G1.png)](doc/images/MAME_G1.png)\n[![Gauntlet 2 Title](doc/images/MAME_G2.png)](doc/images/MAME_G2.png)\n[![Vindicators II Tile](doc/images/MAME_V2.png)](doc/images/MAME_V2.png)  \n\nThe videos below show some of the problems encountered earlier in the development.  \n\nYoutube video of Gauntlet:  \n[![Gauntlet running on FPGA](https://img.youtube.com/vi/7A2k7wLUSUU/0.jpg)](https://www.youtube.com/watch?v=7A2k7wLUSUU)\n\nAdditional video of FPGA running Gauntlet II ROMs  \n[![Gauntlet II running on FPGA](https://img.youtube.com/vi/HNHAjOb2i3s/0.jpg)](https://www.youtube.com/watch?v=HNHAjOb2i3s)\n\nThe implementation is functional right now, can coin up and start game, known problems are as follows:\n\n* Game EPROM is implemented as RAM so game settings are lost on power off.\n\n## MiSTer Install\nThis repository follows the standard folder structure for distributing MiSTer files.\n\nROMs are not included so in order to use this arcade, you need to provide the correct game ROM.\n\nTo simplify the process .mra files are provided in the releases folder, that specify the required ROMs with checksums. The .zip filename refers to the corresponding ROM file of the MAME project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for information on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra  \n/_Arcade/cores/<game name>.rbf  \n/_Arcade/mame/<mame rom>.zip  \n\nGauntlet currently supports up to 4 joysticks for 4 players. (up, down, left, right, fire, start/magic, coin) MAME keys layout is available for player 1 (up, down left, right, ctrl, alt, 5) and player 2 (R, F, D, G, A, S, 6) for player 3 and 4, only coins keys (7, 8) are mapped.  \n\nDue to the tank controls used in Vindicators one would need perhaps two joysticks per player. For Vindicators keyboard is supported, 5,6 are coin, 1,2 start game, QWERASDF and YUIOHJKL controls for player 1 and 2 respectively. Joysticks are connected but may need remapping.  \n\n## Building\n\n### Pipistrello\nThe project files are under `rtl/boards/pipistrello` and are setup for Xilinx ISE 14.7  \nNOTE: Pipistrello needs an additional custom SRAM board for this project since the FPGA doesn't have enough internal memory. See https://oshpark.com/profiles/d18c7db  \n\n### MiSTer\n\nThe project files are under `rtl/boards/miSTer` and are setup for Quartus 17  \n*WARNING:* some MiSTer files in `sys` have been customized slightly (ramstyle attributes) to allow the project to fully synthesize without errors due to the fitter being unable to fully place all memories.\n",
+      "archived": false,
+      "fork": false,
+      "url": "https://github.com/MiSTer-devel/Arcade_Gauntlet_MiSTer",
+      "releases": [
+        {
+          "name": "Arcade-Gauntlet_20201121.rbf",
+          "sha": "27ff7c0553a954fcb51bebf8731ad79e9475d713",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade_Gauntlet_MiSTer/main/releases/Arcade-Gauntlet_20201121.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gauntlet (rev 14).mra",
+          "sha": "e42cf452469f0a6f29965187d2dc16f1abfee66e",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade_Gauntlet_MiSTer/main/releases/Gauntlet%20(rev%2014).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Gauntlet (rev 14)",
+            "rbf": "gauntlet",
+            "zips": [
+              "gauntlet.zip"
+            ]
+          }
+        },
+        {
+          "name": "Gauntlet II.mra",
+          "sha": "75394522a052f0a657f1371c2b7b2653500952fa",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade_Gauntlet_MiSTer/main/releases/Gauntlet%20II.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Gauntlet II",
+            "rbf": "gauntlet",
+            "zips": [
+              "gaunt2.zip"
+            ]
+          }
+        },
+        {
+          "name": "Vindicators Part II (rev 3).mra",
+          "sha": "7d05fa43c9560b15bf5c7083b0d355f7d821cf3b",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade_Gauntlet_MiSTer/main/releases/Vindicators%20Part%20II%20(rev%203).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Vindicators Part II (rev 3)",
+            "rbf": "gauntlet",
+            "zips": [
+              "vindctr2.zip"
+            ]
+          }
+        }
+      ]
+    },
+    {
       "name": "Archie_MiSTer",
       "description": "Acorn Archimedes for MiSTer",
       "readme": "# [Acorn Archimedes](https://en.wikipedia.org/wiki/Acorn_Archimedes) for [MiSTer Board](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\r\n\r\n### This is the port of [Archie](https://github.com/mist-devel/mist-board/tree/master/cores/archie) core from MiST by Stephen Leary\r\n\r\n## Installation\r\n\r\nCopy the [*.rbf](https://github.com/MiSTer-devel/Archie_MiSTer/tree/master/releases) into a root folder of the SD card.\r\nCopy a version of a RiscOS ROM into the \"Archie\" folder, renaming it to `riscos.rom`.\r\n\r\n### Reset\r\n* **warm reset:** short press ctrl-alt-alt or USER button.\r\n* **cold reset:** long press of above. RISCOS ROM will be reloaded and memory will be cleared.\r\n\r\n### CMOS\r\nCMOS is automatically saved to cmos.dat if any modification (configure utility or others) is detected. To revert settings to default remove cmos.dat and **reload the core**.\r\n\r\n### RTC\r\nCore gets current clock setting from Linux subsystem.\r\n\r\n### Floppy disk images\r\nThe current version supports two floppy drives. Floppy disk images ADF format and of exactly 819200 bytes in size are currently required. This is the most common format for the Acorn Archimedes.\r\n\r\n### Hard disk images\r\nUp to 2 hard disks images with extension HDF can be mounted. System has to be additionnaly configured.\r\n1) delete any existing cmos.dat file from Archie folder.\r\n2) Reload the core.\r\n3) Open command line (F12 or ctrl+F12) and type: configure idefsdiscs 1 (or 2 if you use two hard disks)\r\n4) Mount required image(s)\r\n5) Make a cold reset.\r\n\r\nTo save currently selected images, use OSD option \"Save Settings\"\r\n\r\n## OSD Menu\r\nIf the ROM is recognized the core should boot into Risc OS.\r\nPress **Win+F12** to open the OSD menu.\r\nYou can move to other pages of settings by pressing the right arrow key.\r\n\r\n# License\r\nThis core uses the Amber CPU core from OpenCores which is LGPL.\r\nThe core itself is dual licensed LGPL/BSD.\r\n",
@@ -6501,64 +6556,6 @@
           "name": "AY-3-8500_20200513.rbf",
           "sha": "5664cdefb6501e93f756825dcaf2b6e8f71a4959",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/AY-3-8500-MiSTer/master/releases/AY-3-8500_20200513.rbf",
-          "type": "RBF"
-        }
-      ]
-    },
-    {
-      "name": "BBCMicro_MiSTer",
-      "description": "BBC Micro B and Master 128K for MiSTer",
-      "readme": "# BBC Micro B/Master 128K for [MiSTer Board](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\nThis is the port of [BeebFpga](https://github.com/hoglet67/BeebFpga) by David Banks, Mike Sterling.\n\n\n### Features and enhancements:\n- Models B and Master 128K.\n- Respective CPU per model for best compatibility: 6502 for B, 65C02 for Master 128K.\n- Co-Processor module with 65C02.\n- Support Secondary SD card as well as images on Primary SD card.\n- Scandoubler with HQ2x for all modes.\n- Support analog joysticks.\n- Emulate joystick with mouse.\n- Real Time Clock support with actual time.\n\n### Installation:\nCopy the *.rbf file to the root of the SD card. Copy *.vhd to BBCMicro folder.\n\n### Supported formats:\nCurrently only **BEEB.MMB** format is supported. This is a container of multiple disks/apps with integrated Menu system.\n\nCore supports secondary SD card which should be formatted in FAT16/FAT32. BEEB.MMB file should be placed first on the card.\n\nAlternatively core supports *.VHD images on primary SD card - in this case secondary SD card is not required.\n\n**VHD** image is just renamed BEEB.MMB file.\n\n### Notes:\n* BREAK key combo is **CTRL+F11**\n* If autostart is disabled, then **SHIFT+CTRL+F11** performs reset+autostart. \n* If autostart is enabled, then **SHIFT+CTRL+F11** performs reset without autostart.\n* Perform reset to apply the Model.\n* You can place **boot.vhd** into BBCMicro folder to autoload it at start.\n\n---\nSorgelig\n",
-      "archived": false,
-      "fork": false,
-      "url": "https://github.com/MiSTer-devel/BBCMicro_MiSTer",
-      "releases": [
-        {
-          "name": "BBCMicro_20180517.rbf",
-          "sha": "c1735ca78f21bd999fdf2c5cb6364b1adbaaff4f",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/BBCMicro_MiSTer/master/releases/BBCMicro_20180517.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "BBCMicro_20180521.rbf",
-          "sha": "b63ad2398f310885098f21ed252de377e6fbe1f2",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/BBCMicro_MiSTer/master/releases/BBCMicro_20180521.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "BBCMicro_20190309.rbf",
-          "sha": "1447a47657888e2500c33f7b278126605ebdd228",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/BBCMicro_MiSTer/master/releases/BBCMicro_20190309.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "BBCMicro_20190719.rbf",
-          "sha": "9c5fada50e3896e6b2f66d55c3a8aaf5b8531510",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/BBCMicro_MiSTer/master/releases/BBCMicro_20190719.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "BBCMicro_20190927.rbf",
-          "sha": "e21b16dcefe1832e6e6e595dea677d96f70fb778",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/BBCMicro_MiSTer/master/releases/BBCMicro_20190927.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "BBCMicro_20200510.rbf",
-          "sha": "31f0028bf79360ff4758519d9428c5eeafe966a7",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/BBCMicro_MiSTer/master/releases/BBCMicro_20200510.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "BBCMicro_20200517.rbf",
-          "sha": "70d18d826f6b84a940c4bb11d170db8864ffe198",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/BBCMicro_MiSTer/master/releases/BBCMicro_20200517.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "BBCMicro_20201002.rbf",
-          "sha": "e67f794c790a5b629aca44cae707882a4485df17",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/BBCMicro_MiSTer/master/releases/BBCMicro_20201002.rbf",
           "type": "RBF"
         }
       ]
