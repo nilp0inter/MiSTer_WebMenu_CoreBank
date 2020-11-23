@@ -4033,6 +4033,25 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-SEGASYS1_20201123.rbf",
+          "sha": "f34c97623a22d435daebf69bdbed204462f8ec6a",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SEGASYS1_MiSTer/main/releases/Arcade-SEGASYS1_20201123.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Block Gal.mra",
+          "sha": "06eae8925a8579fb6bc88cdc731b6f4e8d77dbc7",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SEGASYS1_MiSTer/main/releases/Block%20Gal.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Block Gal",
+            "rbf": "segasys1",
+            "zips": [
+              "blockgal.zip"
+            ]
+          }
+        },
+        {
           "name": "Bullfight.mra",
           "sha": "2888acc2ecdbffd9bdccf580102a4552c192bf70",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SEGASYS1_MiSTer/main/releases/Bullfight.mra",
