@@ -7102,6 +7102,15 @@
       ]
     },
     {
+      "name": "CoCo2_MiSTer",
+      "description": "CoCo2 / Dragon Core for MiSTer",
+      "readme": "\n# MiSTer Tandy Color Computer 2 (CoCo2)  and Dragon 32\n\nOriginally started by:\n\nhttps://github.com/pcornier/coco2\n\nFinished by dshadoff and alanswx and pcornier.\n\n### Tandy Color 2\n\nThis core implements a Tandy Color Computer 2 (CoCo2) including:\n * 64k Memory\n * 2 Analog Joysticks (with a swap feature)\n * Cassette Loading\n * Sound\n * Cartridge Support\n\n### Dragon 32 / 64\n\n * only the dragon 32 seems to work \n * 2 Analog Joysticks (with a swap feature)\n * Cassette Loading\n * Sound\n * Cartridge Support\n\n\n![Coco2 running on the AX309](photo.jpg)\n\n*Coco 2 running on a AX309 board*",
+      "archived": false,
+      "fork": false,
+      "url": "https://github.com/MiSTer-devel/CoCo2_MiSTer",
+      "releases": []
+    },
+    {
       "name": "ColecoVision_MiSTer",
       "description": "ColecoVision for MiSTer",
       "readme": "---------------------------------------------------------------------------------\r\n--\r\n-- ColecoVision port to MiSTer by Sorgelig\r\n-- 05 November 2017\r\n--\r\n---------------------------------------------------------------------------------\r\n--\r\n-- Original core https://github.com/wsoltys/mist-cores/tree/master/fpga_colecovision\r\n--\r\n---------------------------------------------------------------------------------\r\n--\r\n--   Put *.col/*.bin files into Coleco folder\r\n--\r\n--   Joystick support.\r\n--\r\n---------------------------------------------------------------------------------\r\n ",
