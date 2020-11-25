@@ -7108,7 +7108,14 @@
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/CoCo2_MiSTer",
-      "releases": []
+      "releases": [
+        {
+          "name": "CoCo2_20201124.rbf",
+          "sha": "38a2de19384a853dbd91490e63d0e0503dba79b0",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/CoCo2_MiSTer/master/releases/CoCo2_20201124.rbf",
+          "type": "RBF"
+        }
+      ]
     },
     {
       "name": "ColecoVision_MiSTer",
