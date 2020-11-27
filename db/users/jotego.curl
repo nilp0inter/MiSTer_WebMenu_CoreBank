@@ -31,6 +31,11 @@ url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/commando/rel
 output = "_Arcade/cores/jtcommando_20200731.rbf"
 
 
+# jtcontra
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/contra/releases/jtcontra_20201127.rbf"
+output = "_Others/jtcontra_20201127.rbf"
+
+
 # jtcps1
 url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps1/releases/jtcps1_20201010.rbf"
 output = "_Arcade/cores/jtcps1_20201010.rbf"
@@ -79,6 +84,11 @@ output = "_Others/jtsarms_20200814.rbf"
 # jtsectionz
 url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/sectionz/releases/jtsectionz_20200914.rbf"
 output = "_Arcade/cores/jtsectionz_20200914.rbf"
+
+
+# jtsf
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/sf/releases/jtsf_20201127.rbf"
+output = "_Others/jtsf_20201127.rbf"
 
 
 # jttora
@@ -254,6 +264,11 @@ output = "_Arcade/Tokio - Scramble Formation (older).mra"
 # Commando.mra
 url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/commando/releases/Commando.mra"
 output = "_Arcade/Commando.mra"
+
+
+# Contra (US 3).mra
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/contra/releases/Contra%20(US%203).mra"
+output = "_Arcade/Contra (US 3).mra"
 
 
 # 1941  Counter Attack -World 900227-.mra
