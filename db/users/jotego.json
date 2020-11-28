@@ -2477,6 +2477,19 @@
           "type": "RBF"
         },
         {
+          "name": "Street Fighter (US, set 1).mra",
+          "sha": "7d6b29a6422d1bc797c39d6b2d5e420dd954a360",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/sf/releases/Street%20Fighter%20(US%2C%20set%201).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Street Fighter (US, set 1)",
+            "rbf": "jtsf",
+            "zips": [
+              "sf.zip"
+            ]
+          }
+        },
+        {
           "name": "jtsf_20201127.rbf",
           "sha": "bbdae27a303d84bd46970e63526298118823be1f",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/sf/releases/jtsf_20201127.rbf",
