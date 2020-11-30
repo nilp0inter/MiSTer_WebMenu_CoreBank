@@ -786,15 +786,15 @@
           "type": "RBF"
         },
         {
-          "name": "Bubble Bobble (US, Ver 5.1).mra",
-          "sha": "e0acc2d46cd3eb6a6a7044ca39d8b041e41d45f3",
-          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/bubl/releases/Bubble%20Bobble%20(US%2C%20Ver%205.1).mra",
+          "name": "Bubble Bobble (Japan, Ver 0.1).mra",
+          "sha": "8ac82c2d0ee5d961980216503f617fa1551670f2",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/bubl/releases/Bubble%20Bobble%20(Japan%2C%20Ver%200.1).mra",
           "type": "MRA",
           "extra": {
-            "name": "Bubble Bobble (US, Ver 5.1)",
+            "name": "Bubble Bobble (Japan, Ver 0.1)",
             "rbf": "jtbubl",
             "zips": [
-              "bublboblr.zip|bublbobl.zip"
+              "bublbobl.zip"
             ]
           }
         },
