@@ -4514,7 +4514,13 @@
           "sha": "5cd6a7f539377536d8f5aa113a0d6a095db9c3d2",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SuperBreakout_MiSTer/master/releases/Super%20Breakout.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Super Breakout (rev 04)",
+            "rbf": "superbreakout",
+            "zips": [
+              "sbrkout.zip"
+            ]
+          }
         }
       ]
     },
