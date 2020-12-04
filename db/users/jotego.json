@@ -408,7 +408,13 @@
           "sha": "1cff0b10a1c33b545db9012a7dc13a6760c316b3",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/1943/releases/1943%20The%20Battle%20of%20Midway%20Mark%20II.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "1943 The Battle of Midway Mark II (US)",
+            "rbf": "jt1943",
+            "zips": [
+              "1943mii.zip"
+            ]
+          }
         },
         {
           "name": "1943 The Battle of Midway.mra",
