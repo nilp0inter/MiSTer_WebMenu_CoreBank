@@ -3845,7 +3845,13 @@
           "sha": "89ca9e98a7893c2b443b79a53556676bd22e1990",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Scramble_MiSTer/master/releases/Mars.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Mars",
+            "rbf": "scramble",
+            "zips": [
+              "mars.zip"
+            ]
+          }
         },
         {
           "name": "Mighty Monkey.mra",
