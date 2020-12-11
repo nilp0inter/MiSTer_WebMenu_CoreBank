@@ -610,6 +610,12 @@
           "type": "OTHER"
         },
         {
+          "name": "MRA-Alternatives_20201211.zip",
+          "sha": "c404ad29f2871efc101c12e4681baebc7987b4a1",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/MRA-Alternatives_MiSTer/releases/MRA-Alternatives_20201211.zip",
+          "type": "OTHER"
+        },
+        {
           "name": "README.txt",
           "sha": "558ed93e181ba0fed228cf05d9708dae288b7e65",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/biocom/README.txt",
@@ -1743,6 +1749,83 @@
           "name": "jtcps1_20201010.rbf",
           "sha": "04944ede757b8f270113bb80fc9520678181faef",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps1/releases/jtcps1_20201010.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "README.md",
+          "sha": "23771a08a614a7c367ca6c38c0f7af8365548920",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps15/README.md",
+          "type": "OTHER"
+        },
+        {
+          "name": "Cadillacs and Dinosaurs (World 930201).mra",
+          "sha": "96f530fcb574e731e05dafd4a2e770160db0e0fc",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps15/releases/Cadillacs%20and%20Dinosaurs%20(World%20930201).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Cadillacs and Dinosaurs (World 930201)",
+            "rbf": "jtcps15",
+            "zips": [
+              "dino.zip|qsound.zip"
+            ]
+          }
+        },
+        {
+          "name": "Muscle Bomber Duo Ultimate Team Battle (World 931206).mra",
+          "sha": "bbf3a0a2362685f2ca12a01ccdc3cc8d9cf9301f",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps15/releases/Muscle%20Bomber%20Duo%20Ultimate%20Team%20Battle%20(World%20931206).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Muscle Bomber Duo: Ultimate Team Battle (World 931206)",
+            "rbf": "jtcps15",
+            "zips": [
+              "mbombrd.zip|qsound.zip"
+            ]
+          }
+        },
+        {
+          "name": "Saturday Night Slam Masters (World 930713).mra",
+          "sha": "7aede1fb2742cd5f0353f3f65c01829ff8a1db0e",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps15/releases/Saturday%20Night%20Slam%20Masters%20(World%20930713).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Saturday Night Slam Masters (World 930713)",
+            "rbf": "jtcps15",
+            "zips": [
+              "slammast.zip|qsound.zip"
+            ]
+          }
+        },
+        {
+          "name": "The Punisher (World 930422).mra",
+          "sha": "31c0b8aab95bc18d99d7f6b67ce718978bd633a3",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps15/releases/The%20Punisher%20(World%20930422).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "The Punisher (World 930422)",
+            "rbf": "jtcps15",
+            "zips": [
+              "punisher.zip|qsound.zip"
+            ]
+          }
+        },
+        {
+          "name": "Warriors of Fate (World 921031).mra",
+          "sha": "aa3adc433716e11955daf62da6a589e75ccc5d1f",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps15/releases/Warriors%20of%20Fate%20(World%20921031).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Warriors of Fate (World 921031)",
+            "rbf": "jtcps15",
+            "zips": [
+              "wof.zip|qsound.zip"
+            ]
+          }
+        },
+        {
+          "name": "jtcps15_20201211.rbf",
+          "sha": "bc67922fd5e336c2aeb913d452b04ba1895979ce",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps15/releases/jtcps15_20201211.rbf",
           "type": "RBF"
         },
         {
