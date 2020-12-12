@@ -622,18 +622,6 @@
           "type": "OTHER"
         },
         {
-          "name": "build_rom.sh",
-          "sha": "e8302d0ce837e4f3300d0bf680a4f9b3d885b66f",
-          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/biocom/build_rom.sh",
-          "type": "OTHER"
-        },
-        {
-          "name": "build_rom_biocom.bat",
-          "sha": "22a6fd5419d3d1486aac92e82765317e636ddcbb",
-          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/biocom/build_rom_biocom.bat",
-          "type": "OTHER"
-        },
-        {
           "name": "jtbiocom.txt",
           "sha": "1c5de9eaa19b04b424c0ff5a71b5458d184059bf",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/biocom/jtbiocom.txt",
@@ -681,18 +669,6 @@
           "sha": "9c86b5ce91ae58dd2d20a03300b398e8d371e457",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/biocom/releases/jtbiocom_20200914.rbf",
           "type": "RBF"
-        },
-        {
-          "name": "build_rom.sh",
-          "sha": "1c0ad04fbf228c424e3d4182236e77d570fb73fc",
-          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/btiger/build_rom.sh",
-          "type": "OTHER"
-        },
-        {
-          "name": "build_rom_btiger.bat",
-          "sha": "c16dbd78372d2389ce3aa29dd168b07e742af0bc",
-          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/btiger/build_rom_btiger.bat",
-          "type": "OTHER"
         },
         {
           "name": "jtbtiger.txt",
@@ -1830,7 +1806,7 @@
         },
         {
           "name": "jtcps15_20201212.rbf",
-          "sha": "143f671ca6cd680139957a92fe25be94a98b8ee1",
+          "sha": "4880f9b68ae45fc169b2ba515d5e37aeb977eac8",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps15/releases/jtcps15_20201212.rbf",
           "type": "RBF"
         },
@@ -1838,12 +1814,6 @@
           "name": "README.txt",
           "sha": "5ab1b7cb46f13347fdfce24317acdc1b67839e19",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/dd/README.txt",
-          "type": "OTHER"
-        },
-        {
-          "name": "build_rom_dd.bat",
-          "sha": "a538da09251183b600bc30f5e64b5afa4598c7f1",
-          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/dd/build_rom_dd.bat",
           "type": "OTHER"
         },
         {
@@ -1926,12 +1896,6 @@
           "type": "OTHER"
         },
         {
-          "name": "build_rom_dd2.bat",
-          "sha": "d58ed2e2f5bd158aa02839654d65a91f800a8d65",
-          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/dd2/build_rom_dd2.bat",
-          "type": "OTHER"
-        },
-        {
           "name": "Double Dragon II - The Revenge.mra",
           "sha": "abd4f808b59633ac34c9cd62c1dd5e0a314ed80d",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/dd2/releases/Double%20Dragon%20II%20-%20The%20Revenge.mra",
@@ -1984,18 +1948,6 @@
           "name": "README.txt",
           "sha": "558ed93e181ba0fed228cf05d9708dae288b7e65",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/f1dream/README.txt",
-          "type": "OTHER"
-        },
-        {
-          "name": "build_rom.sh",
-          "sha": "0b29b94093a5c3f8210a7ce27b34240688100e23",
-          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/f1dream/build_rom.sh",
-          "type": "OTHER"
-        },
-        {
-          "name": "build_rom_f1dream.bat",
-          "sha": "3f82bfeb1d8b3cb7aa6aa0242880482196cfc51a",
-          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/f1dream/build_rom_f1dream.bat",
           "type": "OTHER"
         },
         {
@@ -2099,24 +2051,6 @@
           "name": "README.txt",
           "sha": "558ed93e181ba0fed228cf05d9708dae288b7e65",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/gng/README.txt",
-          "type": "OTHER"
-        },
-        {
-          "name": "build_rom.ini",
-          "sha": "54aca999251fe13bafab61cca8511c8444514352",
-          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/gng/build_rom.ini",
-          "type": "OTHER"
-        },
-        {
-          "name": "build_rom.sh",
-          "sha": "0bada537e7e347fe1d71f413719be04681d9f348",
-          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/gng/build_rom.sh",
-          "type": "OTHER"
-        },
-        {
-          "name": "build_rom_gng.bat",
-          "sha": "bd8b946306a435d9e056307b4cae2e0ee0f7bd42",
-          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/gng/build_rom_gng.bat",
           "type": "OTHER"
         },
         {
@@ -2262,18 +2196,6 @@
           "name": "README.txt",
           "sha": "558ed93e181ba0fed228cf05d9708dae288b7e65",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/gunsmoke/README.txt",
-          "type": "OTHER"
-        },
-        {
-          "name": "build_rom.sh",
-          "sha": "cd51edb31e33364b88a8e6f5c0d887651f249513",
-          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/gunsmoke/build_rom.sh",
-          "type": "OTHER"
-        },
-        {
-          "name": "build_rom_gunsmoke.bat",
-          "sha": "23c143c0d50a25c7b51200ee2ca0b3194147804f",
-          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/gunsmoke/build_rom_gunsmoke.bat",
           "type": "OTHER"
         },
         {
@@ -2615,18 +2537,6 @@
           "type": "OTHER"
         },
         {
-          "name": "build_rom.sh",
-          "sha": "091d3e7bf8d81917fcb61cdaf89069451db3de2b",
-          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/tora/build_rom.sh",
-          "type": "OTHER"
-        },
-        {
-          "name": "build_rom_tora.bat",
-          "sha": "c8f17ce2367826220866421cbc698ac84e167b06",
-          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/tora/build_rom_tora.bat",
-          "type": "OTHER"
-        },
-        {
           "name": "jttora.txt",
           "sha": "227f4b13709efd9f0277d21ae7f4e01fccae2c5f",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/tora/jttora.txt",
@@ -2782,18 +2692,6 @@
           "name": "README.txt",
           "sha": "558ed93e181ba0fed228cf05d9708dae288b7e65",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/vulgus/README.txt",
-          "type": "OTHER"
-        },
-        {
-          "name": "build_rom.sh",
-          "sha": "7ecb930c6a4863e20688802a4cb876887c3309f6",
-          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/vulgus/build_rom.sh",
-          "type": "OTHER"
-        },
-        {
-          "name": "build_rom_vulgus.bat",
-          "sha": "e60665182103267e8d583d000e0770ff02320ec1",
-          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/vulgus/build_rom_vulgus.bat",
           "type": "OTHER"
         },
         {
