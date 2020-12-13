@@ -5746,8 +5746,21 @@
           "type": "RBF"
         },
         {
+          "name": "Shot Rider.mra",
+          "sha": "4882c42f30b91936939afc0501d7299abfd41026",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TraverseUSA_MiSTer/master/releases/Shot%20Rider.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Shotrider",
+            "rbf": "traverseusa",
+            "zips": [
+              "shtrider.zip"
+            ]
+          }
+        },
+        {
           "name": "Traverse USA - Zippy Race.mra",
-          "sha": "a9ed60a0137702c4ef8dfd853eb7052087a143d1",
+          "sha": "d801b09bc6e52946d3a88590385936ab21d4c77d",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TraverseUSA_MiSTer/master/releases/Traverse%20USA%20-%20Zippy%20Race.mra",
           "type": "MRA",
           "extra": {
