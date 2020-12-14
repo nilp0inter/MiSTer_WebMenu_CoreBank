@@ -661,6 +661,12 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Berzerk_20201214.rbf",
+          "sha": "b287cbc90675ccc4faaf90c60e26e8e08dc8f976",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Berzerk_MiSTer/master/releases/Arcade-Berzerk_20201214.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Berzerk.mra",
           "sha": "48cd17c794e472aff314a0b6be826863c81d1258",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Berzerk_MiSTer/master/releases/Berzerk.mra",
@@ -699,6 +705,12 @@
           "name": "Arcade-BlackWidow_20200419.rbf",
           "sha": "bf8cda411b575c761e8d6d72ba47714662772f90",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-BlackWidow_MiSTer/master/releases/Arcade-BlackWidow_20200419.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-BlackWidow_20201214.rbf",
+          "sha": "5ac1bc3cca9877d6ad185669157e55ddddc187d4",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-BlackWidow_MiSTer/master/releases/Arcade-BlackWidow_20201214.rbf",
           "type": "RBF"
         },
         {
@@ -2601,7 +2613,7 @@
     {
       "name": "Arcade-MCR3_MiSTer",
       "description": "Arcade: MCR3 Scroll for MiSTer FPGA",
-      "readme": "# Midway MCR3 port for MiSTer\n\n[Original readme](README_orig.txt) (mostly irrelevant to MiSTer)\n\n# Keyboard inputs :\n```\n   ESC    : Coin 1\n   UP,DOWN,LEFT,RIGHT arrows : Player 1\n   LCtrl  : Fire A\n   LAlt   : Fire B\n   Space  : Fire C   \n   LShift : Fire D\n   Z      : Fire E\n   X      : Fire F \n\n   MAME/IPAC/JPAC Style Keyboard inputs:\n     1           : Start 1 Player\n     2           : Start 2 Player\n     5           : Coin 1\n     6           : Coin 2\n     R,F,D,G     : Player 2\n     A           : Fire2 A\n     S           : Fire2 B \n     Q           : Fire2 C\n     W           : Fire2 D\n     I           : Fire2 E\n     K           : Fire2 F\n\t\n Joystick support. \n```\n# Games\n\n### Timber\nUp to 2 players. \n* Up/Down/Left/Right - movements \n* A - Chop Right \n* B - Chop Left\n\n### Tapper\nUp to 2 players.\n* Up/Down/Left/Right - movements\n* A - Fill\n \n### Discs of Tron\nUp to 2 players.\n* Up/Down/Left/Right - movements\n* A - Toss\n* B - Deflect\n* C - Aim Up\n* D - Aim Down\nSupports 2 control modes: Joystick/Spinner\nSpinner - Rotate Right,Rotate Left\n\n### Journey\nUp to 2 players.\n* Up/Down/Left/Right - movements\n* A - Blast\n\nDownload a sound file from mame sounds ( https://samples.mameworld.info/ click current samples ) , and put journey.zip in:\n_Arcade/sound/\n \n \n# ROMs\n```\n                                *** Attention ***\n\nROM is not included. In order to use this arcade, you need to provide a correct ROM file.\n\nFind this zip file somewhere. You need to find the file exactly as required.\nDo not rename other zip files even if they also represent the same game - they are not compatible!\nThe name of zip is taken from M.A.M.E. project, so you can get more info about\nhashes and contained files there.\nPut rom on your SD card. Example directory : _Arcade/mame/\n\n```\n\nLaunch game using the appropriate .MRA\n",
+      "readme": "# Midway MCR3 port for MiSTer\n\n[Original readme](README_orig.txt) (mostly irrelevant to MiSTer)\n\n```\n# Games\n\n### Timber\nUp to 2 players. \n* Up/Down/Left/Right - movements \n* A - Chop Right \n* B - Chop Left\n\n### Tapper\nUp to 2 players.\n* Up/Down/Left/Right - movements\n* A - Fill\n \n### Discs of Tron\nUp to 2 players.\n* Up/Down/Left/Right - movements\n* A - Toss\n* B - Deflect\n* C - Aim Up\n* D - Aim Down\nSupports 2 control modes: Joystick/Spinner\nSpinner - Rotate Right,Rotate Left\n\n### Journey\nUp to 2 players.\n* Up/Down/Left/Right - movements\n* A - Blast\n\nDownload a sound file from mame sounds ( https://samples.mameworld.info/ click current samples ) , and put journey.zip in:\n_Arcade/sound/\n \n \n# ROMs\n```\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n\n```\n\nLaunch game using the appropriate .MRA\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-DB9/Arcade-MCR3_MiSTer",
@@ -4421,7 +4433,7 @@
     {
       "name": "Arcade-Sprint1_MiSTer",
       "description": "FPGA MiSTer implementation of Sprint One arcade game released by Kee Games in 1978",
-      "readme": "# Sprint1\n\nFPGA implementation by james10952001 of [Sprint One](https://github.com/james10952001/Sprint1 \"Sprint One\") arcade game released by Kee Games in 1978\nPort to MiSTer by Alan Steremberg\n\nThe original Sprint game had a steering wheel with a quadrature encoder. This version implements a converter from the digital joystick inputs.\n\nIn this version the gear number is displayed below the track. This is because on MiSTer there is no physical gearshifter control.\n\n\n# Keyboard inputs :\n```\n   F1          : Coin + Start 1P\n   F2          : Coin + Start 2P\n   LEFT,RIGHT arrows : Steering\n\n   MAME/IPAC/JPAC Style Keyboard inputs:\n     5           : Coin 1\n     6           : Coin 2\n     1           : Start 1 Player\n     2           : Start 2 Players\n     D,G         : Player 2 Movements\n   \n\n Joystick support. (Converts the digital joystick to a simulated quadrature encoding)\n```\n \n# ROMs\n```\n                                *** Attention ***\n\nROM is not included. In order to use this arcade, you need to provide a correct ROM file.\n\nFind this zip file somewhere. You need to find the file exactly as required.\nDo not rename other zip files even if they also represent the same game - they are not compatible!\nThe name of zip is taken from M.A.M.E. project, so you can get more info about\nhashes and contained files there.\n\nTo generate the ROM using Windows:\n1) Copy the zip into \"releases\" directory\n2) Execute bat file - it will show the name of zip file containing required files.\n3) Put required zip into the same directory and execute the bat again.\n4) If everything will go without errors or warnings, then you will get the a.*.rom file.\n5) Copy generated a.*.rom into root of SD card along with the Arcade-*.rbf file\n\nTo generate the ROM using Linux/MacOS:\n1) Copy the zip into \"releases\" directory\n2) Execute build_rom.sh\n3) Copy generated a.*.rom into root of SD card along with the Arcade-*.rbf file\n\nTo generate the ROM using MiSTer:\n1) scp \"releases\" directory along with the zip file onto MiSTer:/media/fat/\n2) Using OSD execute build_rom.sh\n3) Copy generated a.*.rom into root of SD card along with the Arcade-*.rbf file\n```\n",
+      "readme": "# Sprint1\n\nFPGA implementation by james10952001 of [Sprint One](https://github.com/james10952001/Sprint1 \"Sprint One\") arcade game released by Kee Games in 1978\nPort to MiSTer by Alan Steremberg\n\nThe original Sprint game had a steering wheel with a quadrature encoder. This version implements a converter from the digital joystick inputs.\n\nIn this version the gear number is displayed below the track. This is because on MiSTer there is no physical gearshifter control.\n\n\n# Keyboard inputs :\n```\n   F1          : Coin + Start 1P\n   F2          : Coin + Start 2P\n   LEFT,RIGHT arrows : Steering\n\n   MAME/IPAC/JPAC Style Keyboard inputs:\n     5           : Coin 1\n     6           : Coin 2\n     1           : Start 1 Player\n     2           : Start 2 Players\n     D,G         : Player 2 Movements\n   \n\n Joystick support. (Converts the digital joystick to a simulated quadrature encoding)\n```\n \n# ROMs\n```\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n\n```\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-DB9/Arcade-Sprint1_MiSTer",
@@ -4468,7 +4480,7 @@
     {
       "name": "Arcade-Sprint2_MiSTer",
       "description": "FPGA implementation of Sprint 2 arcade game, released by Kee Games in 1976",
-      "readme": "# Sprint2\n\nFPGA implementation by james10952001 of [Sprint Two](https://github.com/james10952001/Sprint2 \"Sprint Two\") arcade game released by Kee Games in 1976\n\n\nPort to MiSTer by Alan Steremberg\n\nThe original Sprint game had a steering wheel with a quadrature encoder. This version implements a converter from the digital joystick inputs.\n\nIn this version the gear number is displayed below the track. This is because on MiSTer there is no physical gearshifter control.\n\n# Keyboard inputs :\n```\n   F1          : Coin + Start 1P\n   F2          : Coin + Start 2P\n   LEFT,RIGHT arrows : Steering\n   \n\n Joystick support. (Converts the digital joystick to a simulated quadrature encoding)\n```\n \n# ROMs\n```\n                                *** Attention ***\n\nROM is not included. In order to use this arcade, you need to provide a correct ROM file.\n\nFind this zip file somewhere. You need to find the file exactly as required.\nDo not rename other zip files even if they also represent the same game - they are not compatible!\nThe name of zip is taken from M.A.M.E. project, so you can get more info about\nhashes and contained files there.\n\nTo generate the ROM using Windows:\n1) Copy the zip into \"releases\" directory\n2) Execute bat file - it will show the name of zip file containing required files.\n3) Put required zip into the same directory and execute the bat again.\n4) If everything will go without errors or warnings, then you will get the a.*.rom file.\n5) Copy generated a.*.rom into root of SD card along with the Arcade-*.rbf file\n\nTo generate the ROM using Linux/MacOS:\n1) Copy the zip into \"releases\" directory\n2) Execute build_rom.sh\n3) Copy generated a.*.rom into root of SD card along with the Arcade-*.rbf file\n\nTo generate the ROM using MiSTer:\n1) scp \"releases\" directory along with the zip file onto MiSTer:/media/fat/\n2) Using OSD execute build_rom.sh\n3) Copy generated a.*.rom into root of SD card along with the Arcade-*.rbf file\n```\n",
+      "readme": "# Sprint2\n\nFPGA implementation by james10952001 of [Sprint Two](https://github.com/james10952001/Sprint2 \"Sprint Two\") arcade game released by Kee Games in 1976\n\n\nPort to MiSTer by Alan Steremberg\n\nThe original Sprint game had a steering wheel with a quadrature encoder. This version implements a converter from the digital joystick inputs.\n\nIn this version the gear number is displayed below the track. This is because on MiSTer there is no physical gearshifter control.\n\n# Keyboard inputs :\n```\n   F1          : Coin + Start 1P\n   F2          : Coin + Start 2P\n   LEFT,RIGHT arrows : Steering\n   \n\n Joystick support. (Converts the digital joystick to a simulated quadrature encoding)\n```\n \n# ROMs\n```\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n\n```\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-DB9/Arcade-Sprint2_MiSTer",
@@ -4493,15 +4505,14 @@
         },
         {
           "name": "Sprint 2.mra",
-          "sha": "d3fec46350a4ac7374fcc75ce6cdc86bb4af2761",
+          "sha": "d46960774e4796dcf7af7e2a64caaebc8b03558b",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Sprint2_MiSTer/master/releases/Sprint%202.mra",
           "type": "MRA",
           "extra": {
             "name": "Sprint 2 (set 1)",
             "rbf": "sprint2",
             "zips": [
-              "sprint2.zip",
-              "sprint1.zip"
+              "sprint1.zip|sprint2.zip"
             ]
           }
         }
