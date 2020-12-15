@@ -2866,14 +2866,14 @@
     {
       "name": "Arcade-Pacman_MiSTer",
       "description": "Arcade: Pacman for MiSTer FPGA",
-      "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: Pacman port to MiSTer by Sorgelig\n-- 09 November 2017\n-- \n---------------------------------------------------------------------------------\n-- A simulation model of Pacman hardware\n-- Copyright (c) MikeJ - January 2006\n---------------------------------------------------------------------------------\n-- \n-- Support screen and controls rotation on HDMI output.\n-- Only controls are rotated on VGA output.\n-- \n-- \n-- Keyboard inputs :\n--\n--   F1          : Start Player 1\n--   F2          : Start Player 2\n--   F3\t\t : Coin Player 1\n--   F5          : Skip to next level\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   R,F,D,G     : Player 2 Movements\n--\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--\n-- Joystick support.\n-- \n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROM is not included. In order to use this arcade, you need to provide a correct ROM file.\n\nFind this zip file somewhere. You need to find the file exactly as required.\nDo not rename other zip files even if they also represent the same game - they are not compatible!\nThe name of zip is taken from M.A.M.E. project, so you can get more info about\nhashes and contained files there.\n\nTo generate the ROM using Windows:\n1) Copy the zip into \"releases\" directory\n2) Execute bat file - it will show the name of zip file containing required files.\n3) Put required zip into the same directory and execute the bat again.\n4) If everything will go without errors or warnings, then you will get the a.*.rom file.\n5) Copy generated a.*.rom into root of SD card along with the Arcade-*.rbf file\n\nTo generate the ROM using Linux/MacOS:\n1) Copy the zip into \"releases\" directory\n2) Execute build_rom.sh\n3) Copy generated a.*.rom into root of SD card along with the Arcade-*.rbf file\n\nTo generate the ROM using MiSTer:\n1) scp \"releases\" directory along with the zip file onto MiSTer:/media/fat/\n2) Using OSD execute build_rom.sh\n3) Copy generated a.*.rom into root of SD card along with the Arcade-*.rbf file\n",
+      "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: Pacman port to MiSTer by Sorgelig\n-- 09 November 2017\n-- \n---------------------------------------------------------------------------------\n-- A simulation model of Pacman hardware\n-- Copyright (c) MikeJ - January 2006\n---------------------------------------------------------------------------------\n-- \n-- Support screen and controls rotation on HDMI output.\n-- Only controls are rotated on VGA output.\n-- \n-- \n-- Keyboard inputs :\n--\n--   F1          : Start Player 1\n--   F2          : Start Player 2\n--   F3\t\t : Coin Player 1\n--   F5          : Skip to next level\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   R,F,D,G     : Player 2 Movements\n--\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--\n-- Joystick support.\n-- \n---------------------------------------------------------------------------------\n\n                                 *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-DB9/Arcade-Pacman_MiSTer",
       "releases": [
         {
           "name": "Alibaba 40 Thieves.mra",
-          "sha": "01d16b9a52c76753c3a3af02f1ea629aef842b01",
+          "sha": "9932b02abf224795cba5d36af34c873f7b119e1e",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Alibaba%2040%20Thieves.mra",
           "type": "MRA",
           "extra": {
@@ -2921,21 +2921,27 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Pacman_20201215.rbf",
+          "sha": "533774ee8c42ecc15cf1a8e5026e47ef00ebe6cd",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Arcade-Pacman_20201215.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Beastie Feastie.mra",
-          "sha": "705adcc52e0ffb0381c1af6f44451a8d475dc0a5",
+          "sha": "2196f6bc19fd3294890d63218369389456765ea7",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Beastie%20Feastie.mra",
           "type": "MRA",
           "extra": {
             "name": "Beastie Feastie (Pac-Man conversion)",
             "rbf": "pacman",
             "zips": [
-              "suprglob.zip"
+              "suprglob.zip|beastfp.zip"
             ]
           }
         },
         {
           "name": "Birdiy.mra",
-          "sha": "94122de4672e7a037f14188e28f6df181d7b10b0",
+          "sha": "f2452a7cdc6c08065e80a9fe7c193c04a142430c",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Birdiy.mra",
           "type": "MRA",
           "extra": {
@@ -2948,21 +2954,20 @@
         },
         {
           "name": "Crush Roller.mra",
-          "sha": "1906726789e07c00236a542cc7897f5200ce3247",
+          "sha": "65fbb978374475349e0e3937aa518aa4bcbe5ce0",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Crush%20Roller.mra",
           "type": "MRA",
           "extra": {
             "name": "Crush Roller (set 2)",
             "rbf": "pacman",
             "zips": [
-              "crush2.zip",
-              "crush.zip"
+              "crush.zip|crush2.zip"
             ]
           }
         },
         {
           "name": "Dream Shopper.mra",
-          "sha": "5eb274f9101abb07b6cf256023f74486187fc45b",
+          "sha": "42ecd1eecad03fb7e3584055189beea5a1b76917",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Dream%20Shopper.mra",
           "type": "MRA",
           "extra": {
@@ -2975,21 +2980,20 @@
         },
         {
           "name": "Eeekk!.mra",
-          "sha": "bc8ec1d88a37410275c9962edfbf4cb53ba669ea",
+          "sha": "d46dc21320dfb0246e902c54d87f8da3b612acc7",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Eeekk!.mra",
           "type": "MRA",
           "extra": {
             "name": "Eeekk! (Pac-Man conversion)",
             "rbf": "pacman",
             "zips": [
-              "eeekkp.zip",
-              "eeekk.zip"
+              "eeekk.zip|eeekkp.zip"
             ]
           }
         },
         {
           "name": "Eggor.mra",
-          "sha": "8914acb5e1c92a747ce6aee561d06db0ebec8df8",
+          "sha": "208703dc5a8d2c4d47b9c0f02ae9fed5fb578ee2",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Eggor.mra",
           "type": "MRA",
           "extra": {
@@ -3002,7 +3006,7 @@
         },
         {
           "name": "Eyes.mra",
-          "sha": "f26053af388d4a30d48a108ba8db351f78d80173",
+          "sha": "491395797639d5eeecb0d3cfae51fcd80e656584",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Eyes.mra",
           "type": "MRA",
           "extra": {
@@ -3015,21 +3019,20 @@
         },
         {
           "name": "Gorkans.mra",
-          "sha": "0caef4b169fe04e0d48c360becbbac43918315f5",
+          "sha": "f2e8b9f633bb10448e26bbfb69213ba4927f4cc1",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Gorkans.mra",
           "type": "MRA",
           "extra": {
             "name": "Gorkans",
             "rbf": "pacman",
             "zips": [
-              "gorkans.zip",
-              "mrtnt.zip"
+              "mrtnt.zip|gorkans.zip"
             ]
           }
         },
         {
           "name": "Jump Shot.mra",
-          "sha": "41b0570756d0f6cbc4e0bdcf33a74b9c02b267e0",
+          "sha": "d1ce1f543f8ff4b06b4de641b361dcd8c11978a5",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Jump%20Shot.mra",
           "type": "MRA",
           "extra": {
@@ -3042,7 +3045,7 @@
         },
         {
           "name": "Lizard Wizard.mra",
-          "sha": "93d819abb182636d206e445d9a2e32b7f26eae4a",
+          "sha": "029030dbadf1e0520c3e68401fc7a884ac69fe6e",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Lizard%20Wizard.mra",
           "type": "MRA",
           "extra": {
@@ -3055,7 +3058,7 @@
         },
         {
           "name": "Mr. TNT.mra",
-          "sha": "8c19c04a572651c328587f9603ae155fd540b26b",
+          "sha": "66b76d4f35ee7992195e8d1b359d7189ee79f5fc",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Mr.%20TNT.mra",
           "type": "MRA",
           "extra": {
@@ -3068,11 +3071,11 @@
         },
         {
           "name": "Ms. Pacman.mra",
-          "sha": "051ea9ba33f9fc418c48e598f13cf175b1f8d390",
+          "sha": "6e8f176ff8fad87cb9b59c7b784c3d21749ade49",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Ms.%20Pacman.mra",
           "type": "MRA",
           "extra": {
-            "name": null,
+            "name": "Ms. Pac-Man",
             "rbf": "pacman",
             "zips": [
               "mspacman.zip"
@@ -3081,22 +3084,20 @@
         },
         {
           "name": "Pac-Man (Midway).mra",
-          "sha": "1098ab615bea40b1cd5eb5bb652fb2dc8f9ea485",
+          "sha": "503af2043756c74fb3db1144b559316b5e50ec45",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Pac-Man%20(Midway).mra",
           "type": "MRA",
           "extra": {
             "name": "Pac-Man (Midway)",
             "rbf": "pacman",
             "zips": [
-              "pacman.zip",
-              "puckman.zip",
-              "pacman.zip"
+              "puckman.zip|pacman.zip"
             ]
           }
         },
         {
           "name": "Pacman Club.mra",
-          "sha": "2239faddabbea90e66fbc15ea297afcfbe0d7f45",
+          "sha": "4b2cd8d411d9c4cc56c767c04a0b106576a1d64c",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Pacman%20Club.mra",
           "type": "MRA",
           "extra": {
@@ -3109,7 +3110,7 @@
         },
         {
           "name": "Pacman Plus.mra",
-          "sha": "222bd7b480908f7c09e889aea868cdb369273440",
+          "sha": "70f5c7eac08d90ed2e89f78d2c9d33e1fe814d57",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Pacman%20Plus.mra",
           "type": "MRA",
           "extra": {
@@ -3133,7 +3134,7 @@
         },
         {
           "name": "Ponpoko.mra",
-          "sha": "750066e0cf89b0487685f33eab0a05bf2b80a99e",
+          "sha": "832bf86af4c5220362a82c6fb4f365fcc5db71d7",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Ponpoko.mra",
           "type": "MRA",
           "extra": {
@@ -3146,7 +3147,7 @@
         },
         {
           "name": "Puck Man (Japan set 1).mra",
-          "sha": "2ff4d39b6db8729ecb47248199e2af12dc5a068e",
+          "sha": "b30c5898715e560684d088bf6db0ed67e33e9987",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Puck%20Man%20(Japan%20set%201).mra",
           "type": "MRA",
           "extra": {
@@ -3159,34 +3160,33 @@
         },
         {
           "name": "Super Glob.mra",
-          "sha": "cde6d590c791066d102b3c7adfdaa6936ca41be6",
+          "sha": "5e745b31927cb2002c2e54faf1e913d4304e9833",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Super%20Glob.mra",
           "type": "MRA",
           "extra": {
             "name": "Super Glob (Pac-Man hardware) (German bootleg)",
             "rbf": "pacman",
             "zips": [
-              "sprglbpg.zip",
-              "suprglob.zip"
+              "suprglob.zip|sprglbpg.zip"
             ]
           }
         },
         {
           "name": "The Glob.mra",
-          "sha": "95bc7817947b89f640b99d4ea81033a5150cd998",
+          "sha": "5d559306b56fc0596083ca67ec5ff451e5b022ba",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/The%20Glob.mra",
           "type": "MRA",
           "extra": {
             "name": "The Glob (Pac-Man hardware)",
             "rbf": "pacman",
             "zips": [
-              "suprglob.zip"
+              "suprglob.zip|theglobp.zip"
             ]
           }
         },
         {
           "name": "Van-Van Car.mra",
-          "sha": "f708dd6695656bcf6e220115560124354ffbf485",
+          "sha": "e9c9742eade652bf7b2f762e35afd50a5935f2fd",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Van-Van%20Car.mra",
           "type": "MRA",
           "extra": {
@@ -3199,10 +3199,16 @@
         },
         {
           "name": "Woodpecker.mra",
-          "sha": "28d0e48a1034da9713a8cae692a5bddb4c173c59",
+          "sha": "48de89ff9a6bbf353aa000f25d9b5e6b6b6f422d",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Woodpecker.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Woodpecker (set 1)",
+            "rbf": "pacman",
+            "zips": [
+              "woodpeck.zip"
+            ]
+          }
         }
       ]
     },
