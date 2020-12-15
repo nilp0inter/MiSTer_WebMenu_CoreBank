@@ -2453,7 +2453,7 @@
         },
         {
           "name": "Arcade-MCR3Mono_20201215.rbf",
-          "sha": "de122770653bd2be640b05506fec7e28c49ba6f4",
+          "sha": "7807f6a12a02b6cc6ea0a8a25f803617469ce3c5",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MCR3Mono_MiSTer/master/releases/Arcade-MCR3Mono_20201215.rbf",
           "type": "RBF"
         },
@@ -2540,7 +2540,7 @@
     {
       "name": "Arcade-MCR3Scroll_MiSTer",
       "description": "Arcade: MCR3 Scroll for MiSTer FPGA",
-      "readme": "# Midway MCR3scroll port for MiSTer\n\n[Original readme](README_orig.txt) (mostly irrelevant to MiSTer)\n\n# Keyboard inputs :\n```\n   ESC         : Coin 1\n   UP,DOWN,LEFT,RIGHT arrows : Player 1\n   LCtrl  : Fire A\n   LAlt   : Fire B\n   Space  : Fire C   \n   LShift : Fire D\n   Z      : Fire E\n   X      : Fire F \n\n   MAME/IPAC/JPAC Style Keyboard inputs:\n     1           : Start 1 Player\n     2           : Start 2 Player\n     R,F,D,G     : Player 2\n     A           : Fire2 A\n     S           : Fire2 B \n     Q           : Fire2 C\n     W           : Fire2 D\n     I           : Fire2 E\n     K           : Fire2 F\n\t\n Joystick support. \n```\n# Games\n\n### Spyhunter\nSupports digital and analog Steering, Gas.\n* Left/Right - Steering  \n* A - Machine Guns \n* B - Smoke Screen\n* C - Weapons Van\n* D - Missiles\n* E - Oil Slick\n* F - Shift\n\n### Crater Raider\nUp to 2 players. Supports 2 control modes: Joystick/Spinner\n1. Joystick\n* Up/Down/Left/Right - movements\n* A - Fire\n* B - Shield\n* E - START2\n* F - START1\n2. Spinner\n* Left/Right - Spinner\n* Up - Forward\n* Down - Reverse\n* A - Fire\n* B - Shield\n* E - START2\n* F - START1 \n \n### Turbo Tag \n Up to 2 players. Supports digital and analog Steering, Gas.\n* Left/Right - Steering\n* A - LButton/1Player\n* B - LTrigger\n* C - Center Button\n* D- RButton/2Player\n* E - RTrigger\n \n# ROMs\n```\n                                *** Attention ***\n\nROM is not included. In order to use this arcade, you need to provide a correct ROM file.\n\nFind this zip file somewhere. You need to find the file exactly as required.\nDo not rename other zip files even if they also represent the same game - they are not compatible!\nThe name of zip is taken from M.A.M.E. project, so you can get more info about\nhashes and contained files there.\nPut rom on your SD card. Example directory : _Arcade/Mame/\n\n```\n\nLaunch game using the appropriate .MRA\n",
+      "readme": "# Midway MCR3scroll port for MiSTer\n\n[Original readme](README_orig.txt) (mostly irrelevant to MiSTer)\n\n# Keyboard inputs :\n```\n   ESC         : Coin 1\n   UP,DOWN,LEFT,RIGHT arrows : Player 1\n   LCtrl  : Fire A\n   LAlt   : Fire B\n   Space  : Fire C   \n   LShift : Fire D\n   Z      : Fire E\n   X      : Fire F \n\n   MAME/IPAC/JPAC Style Keyboard inputs:\n     1           : Start 1 Player\n     2           : Start 2 Player\n     R,F,D,G     : Player 2\n     A           : Fire2 A\n     S           : Fire2 B \n     Q           : Fire2 C\n     W           : Fire2 D\n     I           : Fire2 E\n     K           : Fire2 F\n\t\n Joystick support. \n```\n# Games\n\n### Spyhunter\nSupports digital and analog Steering, Gas.\n* Left/Right - Steering  \n* A - Machine Guns \n* B - Smoke Screen\n* C - Weapons Van\n* D - Missiles\n* E - Oil Slick\n* F - Shift\n\n### Crater Raider\nUp to 2 players. Supports 2 control modes: Joystick/Spinner\n1. Joystick\n* Up/Down/Left/Right - movements\n* A - Fire\n* B - Shield\n* E - START2\n* F - START1\n2. Spinner\n* Left/Right - Spinner\n* Up - Forward\n* Down - Reverse\n* A - Fire\n* B - Shield\n* E - START2\n* F - START1 \n \n### Turbo Tag \n Up to 2 players. Supports digital and analog Steering, Gas.\n* Left/Right - Steering\n* A - LButton/1Player\n* B - LTrigger\n* C - Center Button\n* D- RButton/2Player\n* E - RTrigger\n \n# ROMs\n```\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n\n```\n\nLaunch game using the appropriate .MRA\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-DB9/Arcade-MCR3Scroll_MiSTer",
@@ -2594,6 +2594,18 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-MCR3Scroll_20201213.rbf",
+          "sha": "eac4f476081ec19bd760e0d4490fdbc389bce5e3",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MCR3Scroll_MiSTer/master/releases/Arcade-MCR3Scroll_20201213.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-MCR3Scroll_20201215.rbf",
+          "sha": "debc9be434d0f6c58ab6e51405a2a9298b4b1284",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MCR3Scroll_MiSTer/master/releases/Arcade-MCR3Scroll_20201215.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Crater Raider.mra",
           "sha": "94bbd3a93ddf94618111dddb9c78f9b2baa9fa99",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MCR3Scroll_MiSTer/master/releases/Crater%20Raider.mra",
@@ -2608,7 +2620,7 @@
         },
         {
           "name": "Spy Hunter.mra",
-          "sha": "c71352892fd2d3f5c0cdc5b2fe6684c8fca1e16b",
+          "sha": "2ae983f2a0dea38d04b005d0d6d40e15c48c9735",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MCR3Scroll_MiSTer/master/releases/Spy%20Hunter.mra",
           "type": "MRA",
           "extra": {
@@ -2621,11 +2633,11 @@
         },
         {
           "name": "Turbo Tag.mra",
-          "sha": "486746b645b544388a4b405d698cb909d199cd47",
+          "sha": "f3b9a406448ebdef8178a13fb94362fdb6b69ac7",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MCR3Scroll_MiSTer/master/releases/Turbo%20Tag.mra",
           "type": "MRA",
           "extra": {
-            "name": "Turbo Tag",
+            "name": "Turbo Tag (prototype)",
             "rbf": "mcr3scroll",
             "zips": [
               "turbotag.zip"
@@ -2700,6 +2712,12 @@
           "name": "Arcade-MCR3_20201214.rbf",
           "sha": "911231dca539ba5803422f13ffa47e241feaef05",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MCR3_MiSTer/master/releases/Arcade-MCR3_20201214.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-MCR3_20201215.rbf",
+          "sha": "7e456a9ae24c9fef4ac70a36ffb2311213b6282e",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MCR3_MiSTer/master/releases/Arcade-MCR3_20201215.rbf",
           "type": "RBF"
         },
         {
