@@ -1259,6 +1259,33 @@
       ]
     },
     {
+      "name": "Arcade-Breakout_MiSTer",
+      "description": "Arcade: Atari Breakout (1976) for MiSTer",
+      "readme": "# Arcade Breakout for MiSTer\n\n+ FPGA implementation of arcade Atari Breakout(1976) for MiSTer.\n\n## Inputs\n+ Keyboard\n```\n   Coin 1        : 5\n   Coin 2        : 6\n   Start 1P      : 1, F1\n   Start 2P      : 2, F2\n   1P Left/Right : Left/Right\n   2P Left/Right : A/D\n   1P Serve      : LCtrl\n   2P Serve      : G\n```\n+ Joypad (Default)\n```\n   Coin          : R\n   Start 1P      : Start\n   Start 2P      : Select\n   Serve         : A\n```\n+ Joystick, Paddle supported\n\n## ROMs\n+ No ROMs needed.\n+ Arcade Breakout is made up of discrete logic circuits, that is, there is no CPU and ROM.\n\n## Placement\n+ Please put release files (mra + rbf) as follows.\n+ Otherwise DIP-switch settings on OSD will not work.\n```\n   /_Arcade/<game name>.mra\n   /_Arcade/cores/<game rbf>.rbf\n```\n\n## Important notice\n+ **The video signal is far from standard.**\n+ It is adjusted for stable image output over HDMI.\n+ VGA (on IO board) and DirectVideo are **not guaranteed**.\n\n## Note\n### DIP-switch\n+ DIP-switch settings applied immediately after a change made unlike CPU-based cores.\n+ No need to reset even OSD saying *Reset to apply*.\n+ Rather, it doesn't support resetting.\n\n### Remaining coins\n+ Breakout has coin accumulator up to 15.\n+ But there is no indicator on screen, so we don't know how much is remaining.\n+ Original cabinet has a light bulb in start button which indicates whether it is enabled.\n+ 1P start button lights up when there is at least one coin left, 2P start button lights up when there are at least two coins left.\n+ This feature is not included.\n\n### Serve indicator\n+ Original cabinet has a LED in serve button to show whether player can serve.\n+ This feature is not included.",
+      "archived": false,
+      "fork": false,
+      "url": "https://github.com/MiSTer-devel/Arcade-Breakout_MiSTer",
+      "releases": [
+        {
+          "name": "Arcade-Breakout_20201214.rbf",
+          "sha": "cbae7d1b0ee1398f1861e8172beaf3535beeacdc",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Breakout_MiSTer/master/releases/Arcade-Breakout_20201214.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Breakout.mra",
+          "sha": "4067a9fb57bc171fd69e6def97f2f2327e74b716",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Breakout_MiSTer/master/releases/Breakout.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Breakout [TTL]",
+            "rbf": "breakout",
+            "zips": []
+          }
+        }
+      ]
+    },
+    {
       "name": "Arcade-BurgerTime_MiSTer",
       "description": "Arcade: Burger Time for MiSTer",
       "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: Burger Time port to MiSTer by Sorgelig\n-- 30 December 2017\n-- \n---------------------------------------------------------------------------------\n---------------------------------------------------------------------------------\n-- Burger Time by Dar (darfpga@aol.fr) (27/12/2017)\n-- http://darfpga.blogspot.fr\n---------------------------------------------------------------------------------\n-- gen_ram.vhd & io_ps2_keyboard\n-------------------------------- \n-- Copyright 2005-2008 by Peter Wendrich (pwsoft@syntiac.com)\n-- http://www.syntiac.com/fpga64.html\n---------------------------------------------------------------------------------\n-- T65(b) core.Ver 301 by MikeJ March 2005\n-- Latest version from www.fpgaarcade.com (original www.opencores.org)\n---------------------------------------------------------------------------------\n-- YM2149 (AY-3-8910)\n-- Copyright (c) MikeJ - Jan 2005\n---------------------------------------------------------------------------------\n-- \n-- Support screen and controls rotation on HDMI output.\n-- Only controls are rotated on VGA output.\n-- \n-- \n-- Keyboard inputs :\n--\n--   F2          : Start 2 players\n--   F1          : Start 1 player\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--   SPACE,CTRL  : Pepper\n--\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   R,F,D,G     : Player 2 Movements\n--   A           : Player 2 Pepper\n--\n-- Joystick support.\n-- \n-- \n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n\n",
