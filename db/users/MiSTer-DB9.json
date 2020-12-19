@@ -291,6 +291,12 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Asteroids_20201219.rbf",
+          "sha": "500249c33ff58a55c15c774be5276b8d2910bb14",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Asteroids_MiSTer/master/releases/Arcade-Asteroids_20201219.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Asteroids.mra",
           "sha": "92c0e95d482e1ba21b92aaca5b2ed66b0e86aea6",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Asteroids_MiSTer/master/releases/Asteroids.mra",
@@ -924,6 +930,18 @@
           "name": "Arcade-Centipede_20200418.rbf",
           "sha": "e36ba2aaddcc93cf605bf7c7f09ae855b66667e5",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Centipede_MiSTer/master/releases/Arcade-Centipede_20200418.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Centipede_20201218.rbf",
+          "sha": "edcbda094e76b183ce1dfcfddf4bd6ab461deaed",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Centipede_MiSTer/master/releases/Arcade-Centipede_20201218.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Centipede_20201219.rbf",
+          "sha": "1967ecb6abea3ffed797796f4bad7928d133a0f2",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Centipede_MiSTer/master/releases/Arcade-Centipede_20201219.rbf",
           "type": "RBF"
         },
         {
@@ -3461,7 +3479,7 @@
     {
       "name": "Arcade-RallyX_MiSTer",
       "description": "RallyX and NRallyX core",
-      "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: New Rally-X  port to MiSTer by MiSTer-X\n-- 18 September 2019\n-- From: https://github.com/MrX-8B/MiSTer-Arcade-RallyX\n-- \n---------------------------------------------------------------------------------\n-- FPGA New Rally-X for Spartan-3 Starter Board\n------------------------------------------------\n-- Copyright (c) 2005 MiSTer-X\n---------------------------------------------------------------------------------\n-- T80/T80s - Version : 0242\n-----------------------------\n-- Z80 compatible microprocessor core\n-- Copyright (c) 2001-2002 Daniel Wallner (jesus@opencores.org)\n---------------------------------------------------------------------------------\n-- \n-- \n-- Keyboard inputs :\n--\n--   F2          : Coin + Start 2 players\n--   F1          : Coin + Start 1 player\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--   SPACE/CTRL  : Smoke\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   R,F,D,G     : Player 2 Movements\n--   A/S         : Player 2 Smoke\n--\n-- Joystick support.\n-- \n-- \n---------------------------------------------------------------------------------\n-- 22 October 2019\n---------------------------------------------------------------------------------\n--  FIXED: CRT video problems\n-- CHANGE: Keyboard inputs\n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROM is not included. In order to use this arcade, you need to provide a correct ROM file.\n\nFind this zip file somewhere. You need to find the file exactly as required.\nDo not rename other zip files even if they also represent the same game - they are not compatible!\nThe name of zip is taken from M.A.M.E. project, so you can get more info about\nhashes and contained files there.\n\nTo generate the ROM using Windows:\n1) Copy the zip into \"releases\" directory\n2) Execute bat file - it will show the name of zip file containing required files.\n3) Put required zip into the same directory and execute the bat again.\n4) If everything will go without errors or warnings, then you will get the a.*.rom file.\n5) Copy generated a.*.rom into root of SD card along with the Arcade-*.rbf file\n\nTo generate the ROM using Linux/MacOS:\n1) Copy the zip into \"releases\" directory\n2) Execute build_rom.sh\n3) Copy generated a.*.rom into root of SD card along with the Arcade-*.rbf file\n\nTo generate the ROM using MiSTer:\n1) scp \"releases\" directory along with the zip file onto MiSTer:/media/fat/\n2) Using OSD execute build_rom.sh\n3) Copy generated a.*.rom into root of SD card along with the Arcade-*.rbf file\n\n",
+      "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: New Rally-X  port to MiSTer by MiSTer-X\n-- 18 September 2019\n-- From: https://github.com/MrX-8B/MiSTer-Arcade-RallyX\n-- \n---------------------------------------------------------------------------------\n-- FPGA New Rally-X for Spartan-3 Starter Board\n------------------------------------------------\n-- Copyright (c) 2005 MiSTer-X\n---------------------------------------------------------------------------------\n-- T80/T80s - Version : 0242\n-----------------------------\n-- Z80 compatible microprocessor core\n-- Copyright (c) 2001-2002 Daniel Wallner (jesus@opencores.org)\n---------------------------------------------------------------------------------\n-- \n-- \n-- Keyboard inputs :\n--\n--   F2          : Coin + Start 2 players\n--   F1          : Coin + Start 1 player\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--   SPACE/CTRL  : Smoke\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   R,F,D,G     : Player 2 Movements\n--   A/S         : Player 2 Smoke\n--\n-- Joystick support.\n-- \n-- \n---------------------------------------------------------------------------------\n-- 22 October 2019\n---------------------------------------------------------------------------------\n--  FIXED: CRT video problems\n-- CHANGE: Keyboard inputs\n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-DB9/Arcade-RallyX_MiSTer",
@@ -3479,13 +3497,19 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-RallyX_20201219.rbf",
+          "sha": "bb5bb53258d033442cca92ec24f455a33dc5fdc6",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-RallyX_MiSTer/master/releases/Arcade-RallyX_20201219.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "New Rally-X.mra",
-          "sha": "cae2ca9bc7de2d67ae1fc0a4bb3cccc8766596b9",
+          "sha": "2a553ff8580c549bbe5c8d3c568b3e29cf137efb",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-RallyX_MiSTer/master/releases/New%20Rally-X.mra",
           "type": "MRA",
           "extra": {
-            "name": null,
-            "rbf": "RallyX",
+            "name": "New Rally X",
+            "rbf": "rallyx",
             "zips": [
               "nrallyx.zip"
             ]
@@ -3493,12 +3517,12 @@
         },
         {
           "name": "Rally-X.mra",
-          "sha": "88488fd4990ffd3460bb901733e90db3139f15c7",
+          "sha": "942d59fbde419460401def96f2f50d0cf50b1789",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-RallyX_MiSTer/master/releases/Rally-X.mra",
           "type": "MRA",
           "extra": {
-            "name": null,
-            "rbf": "RallyX",
+            "name": "Rally X (32k Ver.)",
+            "rbf": "rallyx",
             "zips": [
               "rallyx.zip"
             ]
