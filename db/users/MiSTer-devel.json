@@ -5,13 +5,20 @@
   "type": "Organization",
   "repos": [
     {
-      "name": "Acorn_Atom_MiSTer",
+      "name": "AcornAtom_MiSTer",
       "description": null,
       "readme": "This is a cut down version of the fabulous AtomFPGA by David Banks (Hoglet) and my \r\nthanks to him for his help.\r\n\r\nThe Acorn Atom was the predecessor of the BBC micro based on Acorn's System computers.\r\nIt was available as a kit or ready made. 2k ram expandable to 12k and 8k rom expandable to 16k.\r\nIt was monochrome 256x192 pixels, later a colour board was made.\r\n\r\nThis version of the Acorn Atom features \r\n32k ram\r\nSystem Roms with mmc (to access the SD card)\r\nSeven additional Roms and 1 slot of ram to download additional Rom.\r\nTwo character sets.\r\nTape in/out (not tested)\r\nSelectable sound, Atom,SID,Tape,off\r\nBlack or Dark background\r\nAtom or BBC Basic mode\r\nColour palette\r\nSID sound\r\nTurbo mode (f1,f2,f3,f4)\r\nFour keyboards - UK(default),USA,original,game\r\n\r\nUK + US - Shift lock is Caps, Repeat is right Alt, copy is tab - Left Alt is xtra shift key\r\nThe original keyboard had @ and up-arrow as separate keys these have moved to a PS2 config. \r\nUp-Arrow is shift 6 so to 'shift' this press left Alt, shift and 6.\r\n\r\nThe original keyboard is as originally written ie shift 8 is ( and shift 9 is )\r\n\r\nThe game keyboard just reverses the ctrl and shift as on the original keyboard, for games like Asteroids.\r\n\r\nYou need a boot.vhd file around a 100MB FAT formatted \r\nAttach the boot.vhd and copy software onto it. Detach the VHD and place the file in the AcornAtom folder on your SD card.\r\nTo auto boot the software menu Shift-Break(f10), Ctrl-Break disables the MMC Rom\r\nThe best software source is the AtomSoftwareArchive V11 zip 11.9MB\r\nThere are several sites dedicated to the atom.\r\n\r\n",
       "archived": false,
       "fork": false,
-      "url": "https://github.com/MiSTer-devel/Acorn_Atom_MiSTer",
-      "releases": []
+      "url": "https://github.com/MiSTer-devel/AcornAtom_MiSTer",
+      "releases": [
+        {
+          "name": "AcornAtom_20201222.rbf",
+          "sha": "6c6e401af723031e099fe8d6a5f35c4fc977aef7",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/AcornAtom_MiSTer/main/releases/AcornAtom_20201222.rbf",
+          "type": "RBF"
+        }
+      ]
     },
     {
       "name": "AliceMC10_MiSTer",
