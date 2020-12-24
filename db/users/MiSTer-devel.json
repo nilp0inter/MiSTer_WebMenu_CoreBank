@@ -5568,6 +5568,266 @@
       ]
     },
     {
+      "name": "Arcade-SpaceInvaders_MiSTer",
+      "description": "MiSTer FPGA version of the midway and taito board most known for Space Invaders ",
+      "readme": "# Space Invaders Board\n\nSpace Invaders is a classic arcade game. However, the same hardware with different sound boards, and slight modifications was used on many many games. \n\n## Credits\n\nOriginal Authors:\n* Daniel Wallner\n* Mike J\n* Paul Walsh\nMiST and MiSTer Port:\n* Gehstock\n* Gyurco\n* David Woods\n* Mike Coates\n* Shane Lynch (Gun support)\n* Alan Steremberg\n\n## Scripts and Such\n\n### Color Overlay\n\nThe Midway games often shipped with a plastic color overlay to add color to the games. The Taito boards had color overlay hardware. This included two roms (one for each direction of cocktail games) that added color in a fixed position on the screen. The Taito rom was a digital version of the plastic overlay. Included is a python script that converts the MAME .lay files into Taito color overlay rom format. All games that had plastic overlays now have color roms included.\n\n### Graphic Overlays\n\nMany games were enhanced with 1/2 silvered mirrors and fancy graphics. Some games like 280Z ZZap even had a toy car in view. There is a script that will convert a PNG into raw hex codes to include in the MRA file. ",
+      "archived": false,
+      "fork": false,
+      "url": "https://github.com/MiSTer-devel/Arcade-SpaceInvaders_MiSTer",
+      "releases": [
+        {
+          "name": "280Z-ZZAP.mra",
+          "sha": "4a2eb70c613c00a4e435acb52e2b9b8d29223948",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SpaceInvaders_MiSTer/master/releases/280Z-ZZAP.mra",
+          "type": "MRA",
+          "extra": null
+        },
+        {
+          "name": "Amazing Maze.mra",
+          "sha": "24962852a8fa9619859b1a5d2a43351d3983619e",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SpaceInvaders_MiSTer/master/releases/Amazing%20Maze.mra",
+          "type": "MRA",
+          "extra": null
+        },
+        {
+          "name": "Attack Force.mra",
+          "sha": "8f78f0bbc814827e89f16a6ac86fbc0ee6d8d460",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SpaceInvaders_MiSTer/master/releases/Attack%20Force.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Attack Force",
+            "rbf": "spaceinvaders",
+            "zips": [
+              "attackfc.zip"
+            ]
+          }
+        },
+        {
+          "name": "Balloon Bomber.mra",
+          "sha": "e17a14d3196c2f15a61a87e7baaffed0f7735a8f",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SpaceInvaders_MiSTer/master/releases/Balloon%20Bomber.mra",
+          "type": "MRA",
+          "extra": null
+        },
+        {
+          "name": "Blue Shark.mra",
+          "sha": "ee0c58ad54dacf6c5c07adf8004d84ef5ae395a6",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SpaceInvaders_MiSTer/master/releases/Blue%20Shark.mra",
+          "type": "MRA",
+          "extra": null
+        },
+        {
+          "name": "Boot Hill.mra",
+          "sha": "1eb3d6bca91b3fc0ad8a111d12d90c3ba1fc9628",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SpaceInvaders_MiSTer/master/releases/Boot%20Hill.mra",
+          "type": "MRA",
+          "extra": null
+        },
+        {
+          "name": "Clowns.mra",
+          "sha": "0f0ba112c3f81118cb04dcb725b9e7460ffbda59",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SpaceInvaders_MiSTer/master/releases/Clowns.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Clowns (rev. 2)",
+            "rbf": "spaceinvaders",
+            "zips": [
+              "clowns.zip"
+            ]
+          }
+        },
+        {
+          "name": "Cosmo.mra",
+          "sha": "601ae9889078b130f947880a9d30ea5a74a94d95",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SpaceInvaders_MiSTer/master/releases/Cosmo.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Cosmo",
+            "rbf": "spaceinvaders",
+            "zips": [
+              "cosmo.zip"
+            ]
+          }
+        },
+        {
+          "name": "Galaxy Wars.mra",
+          "sha": "4df147b7a718dfb60d61bf5cea90e3b55fc30376",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SpaceInvaders_MiSTer/master/releases/Galaxy%20Wars.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Galaxy Wars (Universal set 1)",
+            "rbf": "spaceinvaders",
+            "zips": [
+              "galxwars.zip"
+            ]
+          }
+        },
+        {
+          "name": "Gun Fight.mra",
+          "sha": "c2597a3773b539484674ea258aa778ce40ed65c9",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SpaceInvaders_MiSTer/master/releases/Gun%20Fight.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Gun Fight (set 1)",
+            "rbf": "spaceinvaders",
+            "zips": [
+              "gunfight.zip"
+            ]
+          }
+        },
+        {
+          "name": "Laguna Racer.mra",
+          "sha": "b24790ec49a953168212964e663de6a47fe35fef",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SpaceInvaders_MiSTer/master/releases/Laguna%20Racer.mra",
+          "type": "MRA",
+          "extra": null
+        },
+        {
+          "name": "Lunar Rescue.mra",
+          "sha": "2c2025712847c74b64c3f844416d2f93eee274dc",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SpaceInvaders_MiSTer/master/releases/Lunar%20Rescue.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Lunar Rescue",
+            "rbf": "spaceinvaders",
+            "zips": [
+              "lrescue.zip"
+            ]
+          }
+        },
+        {
+          "name": "Lupin III.mra",
+          "sha": "f076650a1faa0a7373e5a37e54e8d18d03f85db9",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SpaceInvaders_MiSTer/master/releases/Lupin%20III.mra",
+          "type": "MRA",
+          "extra": null
+        },
+        {
+          "name": "Sea Wolf.mra",
+          "sha": "a5af259b0b78ccb2643d31276d7cae5469f2463f",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SpaceInvaders_MiSTer/master/releases/Sea%20Wolf.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Sea Wolf (set 1)",
+            "rbf": "spaceinvaders",
+            "zips": [
+              "seawolf.zip"
+            ]
+          }
+        },
+        {
+          "name": "Shuffleboard.mra",
+          "sha": "e6491432e90e67f4941843cce2577f1c275c8e86",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SpaceInvaders_MiSTer/master/releases/Shuffleboard.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Shuffleboard",
+            "rbf": "spaceinvaders",
+            "zips": [
+              "shuffle.zip"
+            ]
+          }
+        },
+        {
+          "name": "Shuttle Invader.mra",
+          "sha": "4e3486c0a7074a1e853cc32db230b30408080431",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SpaceInvaders_MiSTer/master/releases/Shuttle%20Invader.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Shuttle Invader",
+            "rbf": "spaceinvaders",
+            "zips": [
+              "shuttlei.zip"
+            ]
+          }
+        },
+        {
+          "name": "Space Chaser.mra",
+          "sha": "91e7d0114472dacc7f01e4cfba182e7268589dd5",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SpaceInvaders_MiSTer/master/releases/Space%20Chaser.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Space Chaser (set 1)",
+            "rbf": "spaceinvaders",
+            "zips": [
+              "schaser.zip"
+            ]
+          }
+        },
+        {
+          "name": "Space Encounters.mra",
+          "sha": "f3c7c56f54a17c0bf59a2e29aa37108463c1f31e",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SpaceInvaders_MiSTer/master/releases/Space%20Encounters.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Space Encounters",
+            "rbf": "spaceinvaders",
+            "zips": [
+              "spcenctr.zip"
+            ]
+          }
+        },
+        {
+          "name": "Space Invaders II (Midway, cocktail).mra",
+          "sha": "859087b0194145d3d06d11683289fc236038ff8b",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SpaceInvaders_MiSTer/master/releases/Space%20Invaders%20II%20(Midway%2C%20cocktail).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Space Invaders II (Midway, cocktail)",
+            "rbf": "spaceinvaders",
+            "zips": [
+              "invad2ct.zip"
+            ]
+          }
+        },
+        {
+          "name": "Space Invaders Part II.mra",
+          "sha": "8801e2682170d93a7affc3012439a62da154163c",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SpaceInvaders_MiSTer/master/releases/Space%20Invaders%20Part%20II.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Space Invaders Part II (Taito, bigger ROMs)",
+            "rbf": "spaceinvaders",
+            "zips": [
+              "invadpt2.zip"
+            ]
+          }
+        },
+        {
+          "name": "Space Invaders.mra",
+          "sha": "76cc0a48203b5e11863acdad95ec4692f0bf11b3",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SpaceInvaders_MiSTer/master/releases/Space%20Invaders.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Space Invaders - Space Invaders M",
+            "rbf": "spaceinvaders",
+            "zips": [
+              "invaders.zip"
+            ]
+          }
+        },
+        {
+          "name": "Vortex.mra",
+          "sha": "edb6f7d4cc7c73fefa0a34cde99e685560d5a7ac",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SpaceInvaders_MiSTer/master/releases/Vortex.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Vortex",
+            "rbf": "spaceinvaders",
+            "zips": [
+              "vortex.zip"
+            ]
+          }
+        },
+        {
+          "name": "convert_image.py",
+          "sha": "8c0bbe061b0550e6649b07db36641e61d61c9dc0",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SpaceInvaders_MiSTer/master/releases/convert_image.py",
+          "type": "OTHER"
+        }
+      ]
+    },
+    {
       "name": "Arcade-Sprint1_MiSTer",
       "description": "FPGA MiSTer implementation of Sprint One arcade game released by Kee Games in 1978",
       "readme": "# Sprint1\n\nFPGA implementation by james10952001 of [Sprint One](https://github.com/james10952001/Sprint1 \"Sprint One\") arcade game released by Kee Games in 1978\nPort to MiSTer by Alan Steremberg\n\nThe original Sprint game had a steering wheel with a quadrature encoder. This version implements a converter from the digital joystick inputs.\n\nIn this version the gear number is displayed below the track. This is because on MiSTer there is no physical gearshifter control.\n\n\n# Keyboard inputs :\n```\n   F1          : Coin + Start 1P\n   F2          : Coin + Start 2P\n   LEFT,RIGHT arrows : Steering\n\n   MAME/IPAC/JPAC Style Keyboard inputs:\n     5           : Coin 1\n     6           : Coin 2\n     1           : Start 1 Player\n     2           : Start 2 Players\n     D,G         : Player 2 Movements\n   \n\n Joystick support. (Converts the digital joystick to a simulated quadrature encoding)\n```\n \n# ROMs\n```\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n\n```\n",
