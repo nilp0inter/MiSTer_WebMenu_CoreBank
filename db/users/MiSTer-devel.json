@@ -5641,17 +5641,29 @@
         },
         {
           "name": "Blue Shark.mra",
-          "sha": "2106766422dbc73f8b535b8b16ccb6a018800f33",
+          "sha": "ac8c10f77cbfeb0271eb40315d75fc0c536cabee",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SpaceInvaders_MiSTer/master/releases/Blue%20Shark.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Blue Shark",
+            "rbf": "spaceinvaders",
+            "zips": [
+              "blueshrk.zip"
+            ]
+          }
         },
         {
           "name": "Boot Hill.mra",
-          "sha": "1eb3d6bca91b3fc0ad8a111d12d90c3ba1fc9628",
+          "sha": "258bb896e8fcbca4034528ce8d352753e3548e45",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SpaceInvaders_MiSTer/master/releases/Boot%20Hill.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Boot Hill",
+            "rbf": "spaceinvaders",
+            "zips": [
+              "boothill.zip"
+            ]
+          }
         },
         {
           "name": "Clowns.mra",
