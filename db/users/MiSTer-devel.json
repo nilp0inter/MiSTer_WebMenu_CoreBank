@@ -5583,17 +5583,29 @@
       "releases": [
         {
           "name": "280Z-ZZAP.mra",
-          "sha": "4a2eb70c613c00a4e435acb52e2b9b8d29223948",
+          "sha": "07a82c1f089709995bfae687422a94a01afeb63a",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SpaceInvaders_MiSTer/master/releases/280Z-ZZAP.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "280Z-ZZAP",
+            "rbf": "spaceinvaders",
+            "zips": [
+              "280zzzap.zip"
+            ]
+          }
         },
         {
           "name": "Amazing Maze.mra",
-          "sha": "24962852a8fa9619859b1a5d2a43351d3983619e",
+          "sha": "4f6ad3717b5f5644a4dc591e4dfe65ef8e1100a2",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SpaceInvaders_MiSTer/master/releases/Amazing%20Maze.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Amazing Maze",
+            "rbf": "spaceinvaders",
+            "zips": [
+              "maze.zip"
+            ]
+          }
         },
         {
           "name": "Arcade-SpaceInvaders_20201223.rbf",
@@ -5616,14 +5628,20 @@
         },
         {
           "name": "Balloon Bomber.mra",
-          "sha": "e17a14d3196c2f15a61a87e7baaffed0f7735a8f",
+          "sha": "098be1acba541a995fbc18f85910bf80a90c39ab",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SpaceInvaders_MiSTer/master/releases/Balloon%20Bomber.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Balloon Bomber",
+            "rbf": "spaceinvaders",
+            "zips": [
+              "ballbomb.zip"
+            ]
+          }
         },
         {
           "name": "Blue Shark.mra",
-          "sha": "ee0c58ad54dacf6c5c07adf8004d84ef5ae395a6",
+          "sha": "2106766422dbc73f8b535b8b16ccb6a018800f33",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SpaceInvaders_MiSTer/master/releases/Blue%20Shark.mra",
           "type": "MRA",
           "extra": null
@@ -5689,10 +5707,16 @@
         },
         {
           "name": "Laguna Racer.mra",
-          "sha": "b24790ec49a953168212964e663de6a47fe35fef",
+          "sha": "0259bf4a2e7afb15a2a89e115b7a97f7c6d1ed9d",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SpaceInvaders_MiSTer/master/releases/Laguna%20Racer.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Laguna Racer",
+            "rbf": "spaceinvaders",
+            "zips": [
+              "lagunar.zip"
+            ]
+          }
         },
         {
           "name": "Lunar Rescue.mra",
@@ -5709,10 +5733,16 @@
         },
         {
           "name": "Lupin III.mra",
-          "sha": "f076650a1faa0a7373e5a37e54e8d18d03f85db9",
+          "sha": "e8a0064ed569d46f344a991bf378972e99ccdcf9",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SpaceInvaders_MiSTer/master/releases/Lupin%20III.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Lupin III (set 2)",
+            "rbf": "spaceinvaders",
+            "zips": [
+              "lupin3.zip|lupin3a.zip"
+            ]
+          }
         },
         {
           "name": "Sea Wolf.mra",
