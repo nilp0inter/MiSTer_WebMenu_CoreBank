@@ -2373,10 +2373,16 @@
         },
         {
           "name": "Black Hole.mra",
-          "sha": "601d5c7d77eed21a8fc004d8b1d49c4c1eea729d",
+          "sha": "3049770cdb8c7f9d3ae6f4fcfae0bf132be133a8",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Galaxian_MiSTer/master/releases/Black%20Hole.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Black Hole",
+            "rbf": "galaxian",
+            "zips": [
+              "blkhole.zip"
+            ]
+          }
         },
         {
           "name": "Catacomb.mra",
@@ -2393,7 +2399,7 @@
         },
         {
           "name": "Clean Sweep.mra",
-          "sha": "ad80fbb980366c1e10fd37d9ee113b6d423471cc",
+          "sha": "635f5badec1f5fc2ff17b520e78e02335d827884",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Galaxian_MiSTer/master/releases/Clean%20Sweep.mra",
           "type": "MRA",
           "extra": {
