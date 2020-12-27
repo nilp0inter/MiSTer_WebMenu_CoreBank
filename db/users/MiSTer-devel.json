@@ -904,10 +904,16 @@
         },
         {
           "name": "Wizard of Wor - Speech.mra",
-          "sha": "d84eee2a0e3bc8aabaa95498ae8e604b30a6f791",
+          "sha": "3b33dc62b5c65bb82c28b7f51692e67d5f7516e7",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Astrocade_MiSTer/master/releases/Wizard%20of%20Wor%20-%20Speech.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Wizard of Wor",
+            "rbf": "astrocade",
+            "zips": [
+              "wow.zip"
+            ]
+          }
         },
         {
           "name": "Wizard of Wor.mra",
