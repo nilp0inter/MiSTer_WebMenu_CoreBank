@@ -838,10 +838,16 @@
         },
         {
           "name": "Gorf - Program 1.mra",
-          "sha": "d1e73c02ba5a256ed255cd9786fc0c9795f84181",
+          "sha": "3b84b80aff759b52d13e90d8eac8d46d66ff6638",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Astrocade_MiSTer/master/releases/Gorf%20-%20Program%201.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Gorf1",
+            "rbf": "astrocade",
+            "zips": [
+              "gorf.zip"
+            ]
+          }
         },
         {
           "name": "Gorf - Speech.mra",
