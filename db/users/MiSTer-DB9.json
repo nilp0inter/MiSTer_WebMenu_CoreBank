@@ -472,10 +472,16 @@
         },
         {
           "name": "Wizard of Wor - Speech.mra",
-          "sha": "d84eee2a0e3bc8aabaa95498ae8e604b30a6f791",
+          "sha": "3b33dc62b5c65bb82c28b7f51692e67d5f7516e7",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Astrocade_MiSTer/master/releases/Wizard%20of%20Wor%20-%20Speech.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Wizard of Wor",
+            "rbf": "astrocade",
+            "zips": [
+              "wow.zip"
+            ]
+          }
         },
         {
           "name": "Wizard of Wor.mra",
@@ -520,21 +526,20 @@
         },
         {
           "name": "Tetris (cocktail set 1).mra",
-          "sha": "2f447b1d4643073bd656a0fae6843e7e7ba0df60",
+          "sha": "4ccfd5c0256fa73cb877095887346d75d9be03b7",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-ATetris_MiSTer/master/releases/Tetris%20(cocktail%20set%201).mra",
           "type": "MRA",
           "extra": {
             "name": "Tetris (cocktail set 1)",
             "rbf": "ataritetris",
             "zips": [
-              "atetrisc.zip",
-              "atetris.zip"
+              "atetris.zip|atetrisc.zip"
             ]
           }
         },
         {
           "name": "Tetris.mra",
-          "sha": "853063dfc97abdbe5582db167fd133ebb96be9da",
+          "sha": "82ef4cfbcb1dd31bfd8ea0567aff0e4357860cdc",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-ATetris_MiSTer/master/releases/Tetris.mra",
           "type": "MRA",
           "extra": {
@@ -627,14 +632,14 @@
         },
         {
           "name": "Super Bagman.mra",
-          "sha": "bb767a8e97dbf795a83ce0f5e58e044cbd01ae49",
+          "sha": "90ac6524050753f65f70ff4b04ee255112f3962c",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Bagman_MiSTer/master/releases/Super%20Bagman.mra",
           "type": "MRA",
           "extra": {
             "name": "SuperBagman",
             "rbf": "bagman",
             "zips": [
-              "sbagman.zip"
+              "sbagman.zip|sbagman2.zip"
             ]
           }
         }
@@ -812,7 +817,7 @@
         },
         {
           "name": "Bomb Jack.mra",
-          "sha": "209e6aa5a37c577eeec513d300401dd435b33965",
+          "sha": "c7a2dc4e47f7f2c7d0f2f579345ec0d06c31209b",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-BombJack_MiSTer/master/releases/Bomb%20Jack.mra",
           "type": "MRA",
           "extra": {
@@ -1108,7 +1113,7 @@
         },
         {
           "name": "Crazy Climber.mra",
-          "sha": "e59db005db100d32677cb838614b61e090bf8c33",
+          "sha": "537dcc7917434a986ac40405d43e206cca537e90",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-CrazyClimber_MiSTer/master/releases/Crazy%20Climber.mra",
           "type": "MRA",
           "extra": {
@@ -1143,38 +1148,38 @@
         },
         {
           "name": "Big Kong.mra",
-          "sha": "30c70a5bc444f417e825a24c8d74563da2e377c2",
+          "sha": "76864d7d5f78621879c59de3bc1d6879ef9ff30d",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-CrazyKong_MiSTer/master/releases/Big%20Kong.mra",
           "type": "MRA",
           "extra": {
             "name": "Big Kong",
             "rbf": "CrazyKong",
             "zips": [
-              "ckong.zip"
+              "ckong.zip|bigkong.zip|ckongo.zip"
             ]
           }
         },
         {
           "name": "Crazy Kong (Orca bootleg).mra",
-          "sha": "e6d11d5f6227d048a9799e0ddcedaf208b0d0d66",
+          "sha": "8ebd9485c896b68e567800706449659f950e8035",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-CrazyKong_MiSTer/master/releases/Crazy%20Kong%20(Orca%20bootleg).mra",
           "type": "MRA",
           "extra": {
             "name": "Crazy Kong (Orca bootleg)",
             "rbf": "CrazyKong",
             "zips": [
-              "ckong.zip"
+              "ckong.zip|ckongo.zip|bigkong.zip"
             ]
           }
         },
         {
           "name": "Crazy Kong Part II.mra",
-          "sha": "2175257782aec7acd9798f5bc306f1f8883beffd",
+          "sha": "2c6d019a8bd93208cc2f6ea8f63d40fcbefbd686",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-CrazyKong_MiSTer/master/releases/Crazy%20Kong%20Part%20II.mra",
           "type": "MRA",
           "extra": {
             "name": "Crazy Kong Part II (set 1)",
-            "rbf": "crazykong",
+            "rbf": "CrazyKong",
             "zips": [
               "ckongpt2.zip"
             ]
@@ -1222,7 +1227,7 @@
         },
         {
           "name": "Colony 7.mra",
-          "sha": "dcd2324f7a67655d83401871d81767033d2866e2",
+          "sha": "9595596adb6223ab910e6fa37cef93a1f64a8d97",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Defender_MiSTer/master/releases/Colony%207.mra",
           "type": "MRA",
           "extra": {
@@ -1235,7 +1240,7 @@
         },
         {
           "name": "Defender.mra",
-          "sha": "1996320d5e31c5ceb7657ba7c4d3baf42d7ae723",
+          "sha": "f9d8d05244f25a3365a9792d5b43708b1c32ac4e",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Defender_MiSTer/master/releases/Defender.mra",
           "type": "MRA",
           "extra": {
@@ -1248,14 +1253,20 @@
         },
         {
           "name": "Jin.mra",
-          "sha": "00d2a338d080374e5129cf8717a02e9f86dadd81",
+          "sha": "22bd53fb23e65b0c0b568b4629bfd470e93f71ad",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Defender_MiSTer/master/releases/Jin.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Jin",
+            "rbf": "defender",
+            "zips": [
+              "jin.zip"
+            ]
+          }
         },
         {
           "name": "Mayday.mra",
-          "sha": "cb7f68f17289772dcc6759f67e022b067b091a31",
+          "sha": "1e373718587d8f7437049c023c2777c7ba2241a7",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Defender_MiSTer/master/releases/Mayday.mra",
           "type": "MRA",
           "extra": {
@@ -1396,12 +1407,12 @@
         },
         {
           "name": "Donkey Kong.mra",
-          "sha": "aa42b33b1482603133017bc641885834e22e5d9c",
+          "sha": "cc41fd2250e0f4cd7acb12782b877f762f064d38",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-DonkeyKong_MiSTer/master/releases/Donkey%20Kong.mra",
           "type": "MRA",
           "extra": {
-            "name": null,
-            "rbf": "DonkeyKong",
+            "name": "Donkey Kong (US set 1)",
+            "rbf": "donkeykong",
             "zips": [
               "dkong.zip"
             ]
@@ -1441,7 +1452,7 @@
     {
       "name": "Arcade-Druaga_MiSTer",
       "description": "The Tower of Druaga for MiSTer",
-      "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: The Tower of Druaga  port to MiSTer by MiSTer-X\n-- 24 October 2019\n-- From: https://github.com/MrX-8B/MiSTer-Arcade-Druaga\n-- \n---------------------------------------------------------------------------------\n-- FPGA Druaga for XILINX Spartan-3\n--------------------------------------\n-- Copyright (c) 2007 MiSTer-X\n---------------------------------------------------------------------------------\n-- Cycle-Accurate 6809 Core\n-- Revision 1.0 - 13th August 2016\n---------------------------------------------------\n-- Copyright (c) 2016, Greg Miller\n---------------------------------------------------------------------------------\n-- \n-- \n-- Keyboard inputs :\n--\n--   F2          : Coin + Start 2 players\n--   F1          : Coin + Start 1 player\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--   SPACE       : Trig1\n--   CTRL        : Trig2\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   R,F,D,G     : Player 2 Movements\n--   A           : Player 2 Trig1\n--   S           : Player 2 Trig2\n--\n-- Joystick support.\n-- \n-- \n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROM is not included. In order to use this arcade, you need to provide a correct ROM file.\n\nFind this zip file somewhere. You need to find the file exactly as required.\nDo not rename other zip files even if they also represent the same game - they are not compatible!\nThe name of zip is taken from M.A.M.E. project, so you can get more info about\nhashes and contained files there.\n\nTo generate the ROM using Windows:\n1) Copy the zip into \"releases\" directory\n2) Execute bat file - it will show the name of zip file containing required files.\n3) Put required zip into the same directory and execute the bat again.\n4) If everything will go without errors or warnings, then you will get the a.*.rom file.\n5) Copy generated a.*.rom into root of SD card along with the Arcade-*.rbf file\n\nTo generate the ROM using Linux/MacOS:\n1) Copy the zip into \"releases\" directory\n2) Execute build_rom.sh\n3) Copy generated a.*.rom into root of SD card along with the Arcade-*.rbf file\n\nTo generate the ROM using MiSTer:\n1) scp \"releases\" directory along with the zip file onto MiSTer:/media/fat/\n2) Using OSD execute build_rom.sh\n3) Copy generated a.*.rom into root of SD card along with the Arcade-*.rbf file\n\n",
+      "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: The Tower of Druaga  port to MiSTer by MiSTer-X\n-- 24 October 2019\n-- From: https://github.com/MrX-8B/MiSTer-Arcade-Druaga\n-- \n---------------------------------------------------------------------------------\n-- FPGA Druaga for XILINX Spartan-3\n--------------------------------------\n-- Copyright (c) 2007 MiSTer-X\n---------------------------------------------------------------------------------\n-- Cycle-Accurate 6809 Core\n-- Revision 1.0 - 13th August 2016\n---------------------------------------------------\n-- Copyright (c) 2016, Greg Miller\n---------------------------------------------------------------------------------\n-- \n-- \n-- Keyboard inputs :\n--\n--   F2          : Coin + Start 2 players\n--   F1          : Coin + Start 1 player\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--   SPACE       : Trig1\n--   CTRL        : Trig2\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   R,F,D,G     : Player 2 Movements\n--   A           : Player 2 Trig1\n--   S           : Player 2 Trig2\n--\n-- Joystick support.\n-- \n-- \n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-DB9/Arcade-Druaga_MiSTer",
@@ -1490,12 +1501,12 @@
         },
         {
           "name": "DigDug2.mra",
-          "sha": "f3bc51873457fc18c5ce4f1e121ff3c671cffb15",
+          "sha": "b892a800abcf5fe1356cb76d4797294e2fccf6cc",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Druaga_MiSTer/master/releases/DigDug2.mra",
           "type": "MRA",
           "extra": {
-            "name": null,
-            "rbf": "Druaga",
+            "name": "Dig Dug II (New Ver.)",
+            "rbf": "druaga",
             "zips": [
               "digdug2.zip"
             ]
@@ -1503,12 +1514,12 @@
         },
         {
           "name": "Druaga.mra",
-          "sha": "f7167764f3d1f78552a4f0b773ea46897fb1fd05",
+          "sha": "95354a70ee10be33d59093039638a19ba38d8c6a",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Druaga_MiSTer/master/releases/Druaga.mra",
           "type": "MRA",
           "extra": {
-            "name": null,
-            "rbf": "Druaga",
+            "name": "The Tower of Druaga (New Ver.)",
+            "rbf": "druaga",
             "zips": [
               "todruaga.zip"
             ]
@@ -1516,12 +1527,12 @@
         },
         {
           "name": "Mappy.mra",
-          "sha": "c03697972ea0d89a687c986a2b4ab996fe82d8d3",
+          "sha": "0a3a9ce7d490701d5581d6ea90e05cdba531018c",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Druaga_MiSTer/master/releases/Mappy.mra",
           "type": "MRA",
           "extra": {
-            "name": null,
-            "rbf": "Druaga",
+            "name": "Mappy (US)",
+            "rbf": "druaga",
             "zips": [
               "mappy.zip"
             ]
@@ -1529,12 +1540,12 @@
         },
         {
           "name": "Motos.mra",
-          "sha": "cd879d72739c01fd27df1864e84cdfe25a524f43",
+          "sha": "4e00bf03800856db796989f22233b0f5fdc3bdf7",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Druaga_MiSTer/master/releases/Motos.mra",
           "type": "MRA",
           "extra": {
-            "name": null,
-            "rbf": "Druaga",
+            "name": "Motos",
+            "rbf": "druaga",
             "zips": [
               "motos.zip"
             ]
@@ -1664,14 +1675,14 @@
         },
         {
           "name": "Galaga.mra",
-          "sha": "dc7debcd6d201f7ed9382564015271bc11118357",
+          "sha": "4ef19d9ee1280d3c3f670a3fffb9680825ffb1f2",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaga_MiSTer/master/releases/Galaga.mra",
           "type": "MRA",
           "extra": {
-            "name": null,
-            "rbf": "Galaga",
+            "name": "Galaga (Midway set 1)",
+            "rbf": "galaga",
             "zips": [
-              "galagamw.zip"
+              "galaga.zip|galagamw.zip|namco54.zip"
             ]
           }
         }
@@ -1680,7 +1691,7 @@
     {
       "name": "Arcade-Galaxian_MiSTer",
       "description": "Arcade: Galaxian for MiSTer",
-      "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: Galaxian port to MiSTer by Sorgelig\n-- 15 November 2017\n-- \n---------------------------------------------------------------------------------\n-- A simulation model of Galaxian hardware\n-- Copyright(c) 2004 Katsumi Degawa\n---------------------------------------------------------------------------------\n-- \n-- Support screen and controls rotation on HDMI output.\n-- Only controls are rotated on VGA output.\n-- \n-- \n-- Keyboard inputs :\n--\n--   F2         : Coin + Start 2 players\n--   F1         : Coin + Start 1 player\n--   SPACE,CTRL : Fire\n--   LEFT,RIGHT : Movements\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   D,G         : Player 2 Movements\n--   A           : Player 2 Fire\n--\n--\n-- Joystick support.\n-- \n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROM is not included. In order to use this arcade, you need to provide a correct ROM file.\n\nFind this zip file somewhere. You need to find the file exactly as required.\nDo not rename other zip files even if they also represent the same game - they are not compatible!\nThe name of zip is taken from M.A.M.E. project, so you can get more info about\nhashes and contained files there.\n\nTo generate the ROM using Windows:\n1) Copy the zip into \"releases\" directory\n2) Execute bat file - it will show the name of zip file containing required files.\n3) Put required zip into the same directory and execute the bat again.\n4) If everything will go without errors or warnings, then you will get the a.*.rom file.\n5) Copy generated a.*.rom into root of SD card along with the Arcade-*.rbf file\n\nTo generate the ROM using Linux/MacOS:\n1) Copy the zip into \"releases\" directory\n2) Execute build_rom.sh\n3) Copy generated a.*.rom into root of SD card along with the Arcade-*.rbf file\n\nTo generate the ROM using MiSTer:\n1) scp \"releases\" directory along with the zip file onto MiSTer:/media/fat/\n2) Using OSD execute build_rom.sh\n3) Copy generated a.*.rom into root of SD card along with the Arcade-*.rbf file\n",
+      "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: Galaxian port to MiSTer by Sorgelig\n-- 15 November 2017\n-- \n---------------------------------------------------------------------------------\n-- A simulation model of Galaxian hardware\n-- Copyright(c) 2004 Katsumi Degawa\n---------------------------------------------------------------------------------\n-- \n-- Support screen and controls rotation on HDMI output.\n-- Only controls are rotated on VGA output.\n-- \n-- \n-- Keyboard inputs :\n--\n--   F2         : Coin + Start 2 players\n--   F1         : Coin + Start 1 player\n--   SPACE,CTRL : Fire\n--   LEFT,RIGHT : Movements\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   D,G         : Player 2 Movements\n--   A           : Player 2 Fire\n--\n--\n-- Joystick support.\n-- \n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-DB9/Arcade-Galaxian_MiSTer",
@@ -1723,7 +1734,7 @@
         },
         {
           "name": "Azurian Attack.mra",
-          "sha": "dfa32bf3cf2c5729f35c5662a39b5014eb17ef9c",
+          "sha": "7bf2960f9d236d401132e60e7382074f7caa84e0",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaxian_MiSTer/master/releases/Azurian%20Attack.mra",
           "type": "MRA",
           "extra": {
@@ -1736,14 +1747,20 @@
         },
         {
           "name": "Black Hole.mra",
-          "sha": "b09dd4b60bb83cd41e4a1443b1bb1c089a3d8958",
+          "sha": "3049770cdb8c7f9d3ae6f4fcfae0bf132be133a8",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaxian_MiSTer/master/releases/Black%20Hole.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Black Hole",
+            "rbf": "galaxian",
+            "zips": [
+              "blkhole.zip"
+            ]
+          }
         },
         {
           "name": "Catacomb.mra",
-          "sha": "772d3e9c78694b565ddc1f213a803260698620e4",
+          "sha": "cd28ddb012e5ec46093938762dfd9001c20535e9",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaxian_MiSTer/master/releases/Catacomb.mra",
           "type": "MRA",
           "extra": {
@@ -1755,23 +1772,32 @@
           }
         },
         {
+          "name": "Clean Sweep.mra",
+          "sha": "635f5badec1f5fc2ff17b520e78e02335d827884",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaxian_MiSTer/master/releases/Clean%20Sweep.mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "galaxian",
+            "zips": []
+          }
+        },
+        {
           "name": "Devil Fish.mra",
-          "sha": "68aa6ae135717efcbd898d6611fccb052f92070f",
+          "sha": "0436d1e78295143be72b5ba2a9fd024542d6293a",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaxian_MiSTer/master/releases/Devil%20Fish.mra",
           "type": "MRA",
           "extra": {
             "name": "Devil Fish (Galaxian hardware, bootleg)",
             "rbf": "galaxian",
             "zips": [
-              "devilfsh.zip",
-              "devilfsg.zip",
-              "devilfsg.zip"
+              "devilfsh.zip|devilfsg.zip"
             ]
           }
         },
         {
           "name": "Galaxian.mra",
-          "sha": "c93ff3b973457cc4f9e2aff96f59c919375ca89e",
+          "sha": "d2d611a2d46b170f1b791b81062de63b83125f89",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaxian_MiSTer/master/releases/Galaxian.mra",
           "type": "MRA",
           "extra": {
@@ -1784,11 +1810,11 @@
         },
         {
           "name": "Lucky Today.mra",
-          "sha": "f87ff5ea58ac621976273b51b193dbb97ed1ece2",
+          "sha": "0dd0d2d51cb0ec8b8c27f6ca31ad1debdaf50c31",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaxian_MiSTer/master/releases/Lucky%20Today.mra",
           "type": "MRA",
           "extra": {
-            "name": "Luck Today",
+            "name": "Lucky Today",
             "rbf": "galaxian",
             "zips": [
               "luctoday.zip"
@@ -1797,21 +1823,20 @@
         },
         {
           "name": "Moon Cresta.mra",
-          "sha": "49d29d733d2d966240172b95b413d9a82a9b5e85",
+          "sha": "5a328c076729f9956b21753bed215bd2aa6321bb",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaxian_MiSTer/master/releases/Moon%20Cresta.mra",
           "type": "MRA",
           "extra": {
             "name": "Moon Cresta (Galaxian hardware)",
             "rbf": "galaxian",
             "zips": [
-              "mooncrgx.zip",
-              "mooncrst.zip"
+              "mooncrst.zip|mooncrgx.zip"
             ]
           }
         },
         {
           "name": "Mr. Do Nightmare.mra",
-          "sha": "1509393161fe9531c60eb4f191a0421be39e7bdf",
+          "sha": "23fd22d4219e7b97bbd03656ee13cfbe947ecb59",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaxian_MiSTer/master/releases/Mr.%20Do%20Nightmare.mra",
           "type": "MRA",
           "extra": {
@@ -1822,21 +1847,20 @@
         },
         {
           "name": "Omega.mra",
-          "sha": "b19a00d618c5515d679afa225a9bacd16d7f60c0",
+          "sha": "330117640be93694566f2c1066130d7eec5a3c4c",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaxian_MiSTer/master/releases/Omega.mra",
           "type": "MRA",
           "extra": {
             "name": "Omega (bootleg)",
             "rbf": "galaxian",
             "zips": [
-              "omegab.zip",
-              "theend.zip"
+              "theend.zip|omegab.zip"
             ]
           }
         },
         {
           "name": "Orbitron.mra",
-          "sha": "5d27141751034b23874fa3499d140f0ebec8ff2a",
+          "sha": "fb6cc7e3015a8bb544a9caa2b7643526575db6ba",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaxian_MiSTer/master/releases/Orbitron.mra",
           "type": "MRA",
           "extra": {
@@ -1849,11 +1873,11 @@
         },
         {
           "name": "Pisces.mra",
-          "sha": "c394cf9b846bb76064f0216e206f7ec80129eaca",
+          "sha": "9ce834a0309ffda3e0235c1dec94e95fd93d2fce",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaxian_MiSTer/master/releases/Pisces.mra",
           "type": "MRA",
           "extra": {
-            "name": null,
+            "name": "Pisces",
             "rbf": "galaxian",
             "zips": [
               "pisces.zip"
@@ -1862,7 +1886,7 @@
         },
         {
           "name": "UniWar S.mra",
-          "sha": "3a5c874903c587a955829a141fef28f9bf1fd977",
+          "sha": "a7a598091879172c8af6911ec88dd29ef49cbe96",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaxian_MiSTer/master/releases/UniWar%20S.mra",
           "type": "MRA",
           "extra": {
@@ -1875,21 +1899,20 @@
         },
         {
           "name": "Victory.mra",
-          "sha": "9a8d1b29e7e1caec8ca9a06b720ede77f7fd5b28",
+          "sha": "ae4a010c8ffa2d92054f95f8530bf3abc93b5a6b",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaxian_MiSTer/master/releases/Victory.mra",
           "type": "MRA",
           "extra": {
             "name": "Victory (Comsoft) (bootleg)",
             "rbf": "galaxian",
             "zips": [
-              "victorycb.zip",
-              "victoryc.zip"
+              "victoryc.zip|victorycb.zip"
             ]
           }
         },
         {
           "name": "War of the Bugs.mra",
-          "sha": "885b3586be3ac951ad74205230ffdd6ee5869766",
+          "sha": "df2e0eb64f77b137e51bcb6a21eb40c4b0ad6afe",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaxian_MiSTer/master/releases/War%20of%20the%20Bugs.mra",
           "type": "MRA",
           "extra": {
@@ -1930,21 +1953,20 @@
         },
         {
           "name": "Galaga 3 (GP3 rev. D).mra",
-          "sha": "79c45f6b1797df7b3980e6c2d065b4f6af5b90c4",
+          "sha": "eeb13163e3a93a14877ad4498a5d2f4918e56832",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Gaplus_MiSTer/master/releases/Galaga%203%20(GP3%20rev.%20D).mra",
           "type": "MRA",
           "extra": {
             "name": "Galaga 3 (GP3 rev. D)",
             "rbf": "gaplus",
             "zips": [
-              "galaga3.zip",
-              "gaplus.zip"
+              "gaplus.zip|galaga3.zip"
             ]
           }
         },
         {
           "name": "Gaplus (GP2 rev. B).mra",
-          "sha": "7389e681c178a52f1ac129d487b86f77c326be75",
+          "sha": "26a357eb81c0b8e1c5c2162e00309df990b75b90",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Gaplus_MiSTer/master/releases/Gaplus%20(GP2%20rev.%20B).mra",
           "type": "MRA",
           "extra": {
@@ -3006,7 +3028,7 @@
         },
         {
           "name": "Ninjakun.mra",
-          "sha": "548c6455c4cdb6de13ded7b8465dcfbf0cf878fc",
+          "sha": "8457346352bc4a3367376efad1d07444da6ad1a7",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-NinjaKun_MiSTer/master/releases/Ninjakun.mra",
           "type": "MRA",
           "extra": {
@@ -3435,13 +3457,39 @@
               "phoenix.zip"
             ]
           }
+        },
+        {
+          "name": "Pleiads (Centuri).mra",
+          "sha": "a3c5781cb2537ae7277a9e205ff6d81403ebf4e2",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Phoenix_MiSTer/master/releases/Pleiads%20(Centuri).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Pleiads (Centuri)",
+            "rbf": "Phoenix",
+            "zips": [
+              "pleiadce.zip"
+            ]
+          }
+        },
+        {
+          "name": "Pleiads (Tehkan).mra",
+          "sha": "a008ce14ea5903bc11addd26ad6aa874fbf1ce65",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Phoenix_MiSTer/master/releases/Pleiads%20(Tehkan).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Pleiads (Tehkan)",
+            "rbf": "Phoenix",
+            "zips": [
+              "pleiads.zip"
+            ]
+          }
         }
       ]
     },
     {
       "name": "Arcade-Pleiads_MiSTer",
       "description": null,
-      "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: Pleiads port to MiSTer by Sorgelig\n-- 22 October 2017\n-- 14 June  2019 - renamed and load Capitol ROM for Capitol version (From Phoenix)\n---------------------------------------------------------------------------------\n-- Phoenix (Amstar) FPGA - DAR - 2016\n-- http://darfpga.blogspot.fr\n---------------------------------------------------------------------------------\n-- \n-- Support screen and controls rotation on HDMI output.\n-- Only controls are rotated on VGA output.\n-- \n-- \n-- Keyboard inputs :\n--\n--   F3          : Add coin\n--   F2          : Start 2 players\n--   F1          : Start 1 player\n--   SPACE       : Fire  \n--   UP/RIGHT    : Move up \n--   DOWN/LEFT   : Move down\n--   CTRL        : Barrier(Shield)\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   D,G     : Player 2 Movements\n--   A           : Player 2 Fire\n--   S           : Player 2 Barrier(Shield)\n--\n-- Joystick support.\n-- \n-- \n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROM is not included. In order to use this arcade, you need to provide a correct ROM file.\n\nFind this zip file somewhere. You need to find the file exactly as required.\nDo not rename other zip files even if they also represent the same game - they are not compatible!\nThe name of zip is taken from M.A.M.E. project, so you can get more info about\nhashes and contained files there.\n\nTo generate the ROM using Windows:\n1) Copy the zip into \"releases\" directory\n2) Execute bat file - it will show the name of zip file containing required files.\n3) Put required zip into the same directory and execute the bat again.\n4) If everything will go without errors or warnings, then you will get the a.*.rom file.\n5) Copy generated a.*.rom into root of SD card along with the Arcade-*.rbf file\n\nTo generate the ROM using Linux/MacOS:\n1) Copy the zip into \"releases\" directory\n2) Execute build_rom.sh\n3) Copy generated a.*.rom into root of SD card along with the Arcade-*.rbf file\n\nTo generate the ROM using MiSTer:\n1) scp \"releases\" directory along with the zip file onto MiSTer:/media/fat/\n2) Using OSD execute build_rom.sh\n3) Copy generated a.*.rom into root of SD card along with the Arcade-*.rbf file\n",
+      "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: Pleiads port to MiSTer by Sorgelig\n-- 22 October 2017\n-- 14 June  2019 - renamed and load Capitol ROM for Capitol version (From Phoenix)\n---------------------------------------------------------------------------------\n-- Phoenix (Amstar) FPGA - DAR - 2016\n-- http://darfpga.blogspot.fr\n---------------------------------------------------------------------------------\n-- \n-- Support screen and controls rotation on HDMI output.\n-- Only controls are rotated on VGA output.\n-- \n-- \n-- Keyboard inputs :\n--\n--   F3          : Add coin\n--   F2          : Start 2 players\n--   F1          : Start 1 player\n--   SPACE       : Fire  \n--   UP/RIGHT    : Move up \n--   DOWN/LEFT   : Move down\n--   CTRL        : Barrier(Shield)\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   D,G     : Player 2 Movements\n--   A           : Player 2 Fire\n--   S           : Player 2 Barrier(Shield)\n--\n-- Joystick support.\n-- \n-- \n---------------------------------------------------------------------------------\n\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-DB9/Arcade-Pleiads_MiSTer",
@@ -3466,14 +3514,14 @@
         },
         {
           "name": "Pleiads (Centuri).mra",
-          "sha": "d21e90de5c89f0a6dc42c4be2d4f97fed878a48e",
+          "sha": "4e81207a991480f2136da43fe9f61a9d37e00f52",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pleiads_MiSTer/master/releases/Pleiads%20(Centuri).mra",
           "type": "MRA",
           "extra": {
             "name": "Pleiads (Centuri)",
             "rbf": "Arcade-Pleiads",
             "zips": [
-              "pleiadce.zip"
+              "pleiads.zip|pleiadce.zip"
             ]
           }
         },
@@ -3514,11 +3562,11 @@
         },
         {
           "name": "Pong.mra",
-          "sha": "4fa87e5c5efaf32e238ca6bd7ea6468e38be5494",
+          "sha": "c57ea2a54ddef6c92160f35128991f59c5fecd7c",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pong_MiSTer/master/releases/Pong.mra",
           "type": "MRA",
           "extra": {
-            "name": "Pong",
+            "name": "Pong (Rev E) external [TTL]",
             "rbf": "Pong",
             "zips": []
           }
@@ -3911,7 +3959,7 @@
         },
         {
           "name": "Green Beret.mra",
-          "sha": "dfa7693eb5815a75726cbb7a2fc2ddfee08fab91",
+          "sha": "a54080e10a557cd77f1d2710078dfe242ca8e83c",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-RushnAttack_MiSTer/master/releases/Green%20Beret.mra",
           "type": "MRA",
           "extra": {
@@ -3924,15 +3972,14 @@
         },
         {
           "name": "Rush'n Attack (US).mra",
-          "sha": "f813870b80f5524b1b4a16a3e12db830a063e72f",
+          "sha": "bda5e279daa2043f35c98771a59605200d2144ca",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-RushnAttack_MiSTer/master/releases/Rush'n%20Attack%20(US).mra",
           "type": "MRA",
           "extra": {
             "name": "Rush'n Attack (US)",
             "rbf": "rshnatk",
             "zips": [
-              "rushatck.zip",
-              "gberet.zip"
+              "gberet.zip|rushatck.zip"
             ]
           }
         },
@@ -4260,7 +4307,7 @@
         },
         {
           "name": "The End (bkg).mra",
-          "sha": "3deed4374e488582f15bb268113b47b9e9531eee",
+          "sha": "63266f87978c3b0dc08643c6b6f60e8ba13cc31f",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Scramble_MiSTer/master/releases/The%20End%20(bkg).mra",
           "type": "MRA",
           "extra": {
@@ -4273,7 +4320,7 @@
         },
         {
           "name": "The End.mra",
-          "sha": "3946303eb76736d8a0c161b3dcd17d4cadd7b555",
+          "sha": "0e80d34764061656f24b0b088c100f9a7fc15ed3",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Scramble_MiSTer/master/releases/The%20End.mra",
           "type": "MRA",
           "extra": {
@@ -4679,21 +4726,20 @@
         },
         {
           "name": "Solomon no Kagi (Japan).mra",
-          "sha": "152c17abd1fc13ddb8f7243b455ede8e572d6716",
+          "sha": "ba27ac22b62e933467cf12da9873907b0e44ed1e",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SolomonsKey_MiSTer/master/releases/Solomon%20no%20Kagi%20(Japan).mra",
           "type": "MRA",
           "extra": {
             "name": "Solomon no Kagi (Japan)",
             "rbf": "solomonskey",
             "zips": [
-              "solomonj.zip",
-              "solomon.zip"
+              "solomon.zip|solomonj.zip"
             ]
           }
         },
         {
           "name": "Solomon's Key.mra",
-          "sha": "ccd9a89b285619254891f5c0024726eb659a655b",
+          "sha": "545e2b78ceb57dadc54513cd3315dbf8b82f16c1",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SolomonsKey_MiSTer/master/releases/Solomon's%20Key.mra",
           "type": "MRA",
           "extra": {
@@ -5297,7 +5343,7 @@
         },
         {
           "name": "Shot Rider.mra",
-          "sha": "e17777839313ba4df509fb509d1e0b1cad447869",
+          "sha": "f4be3b875cd181a7c2cf930cdc41f8d3dff77950",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-TraverseUSA_MiSTer/master/releases/Shot%20Rider.mra",
           "type": "MRA",
           "extra": {
@@ -5416,14 +5462,14 @@
         },
         {
           "name": "Xevious.mra",
-          "sha": "668943efea992aa06615a83cc55bbde3a1d40b00",
+          "sha": "00dbfa85e53cdf27dba89d3cd9d74546b3fb4cec",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Xevious_MiSTer/master/releases/Xevious.mra",
           "type": "MRA",
           "extra": {
-            "name": null,
-            "rbf": "Xevious",
+            "name": "Xevious (Namco)",
+            "rbf": "xevious",
             "zips": [
-              "xevious.zip"
+              "xevious.zip|namco50.zip|namco51.zip|namco54.zip"
             ]
           }
         }
