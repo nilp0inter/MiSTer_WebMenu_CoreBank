@@ -715,6 +715,59 @@
       "releases": []
     },
     {
+      "name": "Arcade-AsteroidsDeluxe_MiSTer",
+      "description": "Asteroids Deluxe",
+      "readme": "This is a Model of Asteroids Deluxe hardware.\r\n\r\nThe original source code was downloaded from:\r\nhttp://fpgaarcade.com/games.htm\r\n\r\n-- Keyboard players inputs :\r\n--\r\n--   F3 : Add coin\r\n--   F2 : Start 2 players\r\n--   F1 : Start 1 player\r\n\r\n--   Space bar   : Fire  \r\n\r\n--   A           : Move Left\r\n--   D           : Move Right\r\n--   Fire\t\t : M\r\n--\t Shield\t\t : K\r\n--\t Thrust\t\t : L\r\n   Space: Hyperspace\r\n   Ctrl,M  : Fire\r\n   LAlt: Thrust\r\n\r\n   MAME/IPAC/JPAC Style Keyboard inputs:\r\n     5           : Coin 1\r\n     6           : Coin 2\r\n     1           : Start 1 Player\r\n     2           : Start 1 Player\r\n\r\n\r\n--\r\n-- Joystick support.\r\n\r\n-- OSD language selection\r\n\r\nThe rbf file is in releases\r\n\r\n---------------------------------------------------------------------------------\r\n\r\n                                *** Attention ***\r\n\r\nROMs are not included. In order to use this arcade, you need to provide the\r\ncorrect ROMs.\r\n\r\nTo simplify the process .mra files are provided in the releases folder, that\r\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\r\ncorresponding file of the M.A.M.E. project.\r\n\r\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\r\ninformation on how to setup and use the environment.\r\n\r\nQuickreference for folders and file placement:\r\n\r\n/_Arcade/<game name>.mra\r\n/_Arcade/cores/<game rbf>.rbf\r\n/_Arcade/mame/<mame rom>.zip\r\n/_Arcade/hbmame/<hbmame rom>.zip\r\n",
+      "archived": false,
+      "fork": false,
+      "url": "https://github.com/MiSTer-devel/Arcade-AsteroidsDeluxe_MiSTer",
+      "releases": [
+        {
+          "name": "Arcade-AsteroidsDeluxe_20190614.rbf",
+          "sha": "7df340e2d9b86af05c58c5c8572aea659f012465",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-AsteroidsDeluxe_MiSTer/master/releases/Arcade-AsteroidsDeluxe_20190614.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-AsteroidsDeluxe_20191218.rbf",
+          "sha": "fd713476e8655870f5fa100ad3c73370a91c46dc",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-AsteroidsDeluxe_MiSTer/master/releases/Arcade-AsteroidsDeluxe_20191218.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-AsteroidsDeluxe_20200114.rbf",
+          "sha": "9c74e75ad18d5a5b9f91ec13c7fcbeeb2fab2232",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-AsteroidsDeluxe_MiSTer/master/releases/Arcade-AsteroidsDeluxe_20200114.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-AsteroidsDeluxe_20200520.rbf",
+          "sha": "7ec58272d04d84ca71afe2b936766271ed9c50f0",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-AsteroidsDeluxe_MiSTer/master/releases/Arcade-AsteroidsDeluxe_20200520.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-AsteroidsDeluxe_20201217.rbf",
+          "sha": "ed95d65c298e64e72e7c24efd0ef492a3e9090db",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-AsteroidsDeluxe_MiSTer/master/releases/Arcade-AsteroidsDeluxe_20201217.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Asteroids Deluxe.mra",
+          "sha": "c86b8f7cca80656bb3f9d6057326e23c5243ca10",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-AsteroidsDeluxe_MiSTer/master/releases/Asteroids%20Deluxe.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Asteroids Deluxe (rev 3)",
+            "rbf": "asteroidsdeluxe",
+            "zips": [
+              "astdelux.zip"
+            ]
+          }
+        }
+      ]
+    },
+    {
       "name": "Arcade-Asteroids_MiSTer",
       "description": "Atari Asteroids for MiSTer",
       "readme": "This is a Model of Asteroids hardware adapted from Asteroids Deluxe by James Sweet.\r\n\r\n-- Keyboard players inputs :\r\n--\r\n   F1          : Coin + Start 1P\r\n   F2          : Coin + Start 2P\r\n   LEFT,RIGHT  arrows : Steering\r\n   Space: Hyperspace\r\n   Ctrl,M  : Fire\r\n   LAlt: Thrust\r\n\r\n   MAME/IPAC/JPAC Style Keyboard inputs:\r\n     5           : Coin 1\r\n     6           : Coin 2\r\n     1           : Start 1 Player\r\n     2           : Start 1 Player\r\n\r\n-- Joystick support.\r\n\r\n-- OSD language selection\r\n\r\nThe rbf and mra file is in releases\r\n\r\n---------------------------------------------------------------------------------\r\n\r\n                                *** Attention ***\r\n\r\nROMs are not included. In order to use this arcade, you need to provide the\r\ncorrect ROMs.\r\n\r\nTo simplify the process .mra files are provided in the releases folder, that\r\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\r\ncorresponding file of the M.A.M.E. project.\r\n\r\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\r\ninformation on how to setup and use the environment.\r\n\r\nQuickreference for folders and file placement:\r\n\r\n/_Arcade/<game name>.mra\r\n/_Arcade/cores/<game rbf>.rbf\r\n/_Arcade/mame/<mame rom>.zip\r\n/_Arcade/hbmame/<hbmame rom>.zip\r\n",

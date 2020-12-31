@@ -41,6 +41,11 @@ url = "https://raw.githubusercontent.com/MiSTer-devel/Apple-I_MiSTer/master/rele
 output = "_Computer/Apple-I_20190812.rbf"
 
 
+# AsteroidsDeluxe
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-AsteroidsDeluxe_MiSTer/master/releases/Arcade-AsteroidsDeluxe_20201217.rbf"
+output = "_Arcade/cores/AsteroidsDeluxe_20201217.rbf"
+
+
 # Asteroids
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Asteroids_MiSTer/master/releases/Arcade-Asteroids_20201217.rbf"
 output = "_Arcade/cores/Asteroids_20201217.rbf"
@@ -674,6 +679,11 @@ output = "_Computer/X68000_20171103.rbf"
 # ZX81
 url = "https://raw.githubusercontent.com/MiSTer-devel/ZX81_MiSTer/master/releases/ZX81_20200513.rbf"
 output = "_Computer/ZX81_20200513.rbf"
+
+
+# Asteroids Deluxe.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-AsteroidsDeluxe_MiSTer/master/releases/Asteroids%20Deluxe.mra"
+output = "_Arcade/Asteroids Deluxe.mra"
 
 
 # Asteroids.mra
