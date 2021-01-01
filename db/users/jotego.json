@@ -617,7 +617,7 @@
         },
         {
           "name": "MRA-Alternatives_20210101.zip",
-          "sha": "ca3d2ddfdae541b517991a1f351b0f15e3792374",
+          "sha": "893afec29536ed9bfcc81a47977ef9829dd502c7",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/MRA-Alternatives_MiSTer/releases/MRA-Alternatives_20210101.zip",
           "type": "OTHER"
         },
@@ -1740,8 +1740,14 @@
           "type": "RBF"
         },
         {
+          "name": "jtcps1_20210101.rbf",
+          "sha": "f60f173d13233a1a1328e5b1c84d07de31f9e770",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps1/releases/jtcps1_20210101.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "README.md",
-          "sha": "23771a08a614a7c367ca6c38c0f7af8365548920",
+          "sha": "efa12f0261c7d4a02fb229caa3aa49a331d5a5ad",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps15/README.md",
           "type": "OTHER"
         },
@@ -1832,6 +1838,12 @@
           "name": "jtcps15_20201219.rbf",
           "sha": "9b24b639e2a92bf7548b289506179087e5c4e4f3",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps15/releases/jtcps15_20201219.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "jtcps15_20210101.rbf",
+          "sha": "ca770d6153905f3e96bf130420e7091501bf7b8f",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps15/releases/jtcps15_20210101.rbf",
           "type": "RBF"
         },
         {
