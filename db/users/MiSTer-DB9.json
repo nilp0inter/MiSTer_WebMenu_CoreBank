@@ -3772,14 +3772,14 @@
     {
       "name": "Arcade-Robotron_MiSTer",
       "description": "Arcade Robotron for MiSTer",
-      "readme": "---------------------------------------------------------------------------------\n-- Arcade: Robotron port to MiSTer by oldgit, Sorgelig\n-- 12 December 2018\n-- \n---------------------------------------------------------------------------------\n-- gen_ram.vhd\n-------------------------------- \n-- Copyright 2005-2008 by Peter Wendrich (pwsoft@syntiac.com)\n-- http://www.syntiac.com/fpga64.html\n---------------------------------------------------------------------------------\n-- cpu09l - Version : 0128\n-- Synthesizable 6809 instruction compatible VHDL CPU core\n-- Copyright (C) 2003 - 2010 John Kent\n---------------------------------------------------------------------------------\n-- cpu68 - Version 9th Jan 2004 0.8\n-- 6800/01 compatible CPU core \n-- GNU public license - December 2002 : John E. Kent\n---------------------------------------------------------------------------------\n--\n-- This port is only possible because of previous work by many many others - Thank You\n-- to find out more search \"Williams robotron\" on a search engine.  \n-- \n-- \n-- Keyboard players inputs :\n--\n--   F10 : Advance\n--   F9  : Auto up\n--   F7  : High score reset\n--   F5  : Add coin right\n--   F4  : Add coin centre\n--   F3  : Add coin left\n--   F2  : Start 2 players\n--   F1  : Start 1 player\n--   ESC : Slam  \n--   W move up\n--   S move down\n--   A move left\n--   D move right\n--   UP arrow Fire up\n--   Down arrow Fire Down\n--\t Left arrow Fir Left\n-- \t Right arrow Fire right\n--\n--\n-- Joystick support.\n-- \n-- \n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROM is not included. In order to use this arcade, you need to provide a correct ROM file.\n\nFind this zip file somewhere. You need to find the file exactly as required.\nDo not rename other zip files even if they also represent the same game - they are not compatible!\nThe name of zip is taken from M.A.M.E. project, so you can get more info about\nhashes and contained files there.\n\nTo generate the ROM using Windows:\n1) Copy the zip into \"releases\" directory\n2) Execute bat file - it will show the name of zip file containing required files.\n3) Put required zip into the same directory and execute the bat again.\n4) If everything will go without errors or warnings, then you will get the a.*.rom file.\n5) Copy generated a.*.rom into root of SD card along with the Arcade-*.rbf file\n\nTo generate the ROM using Linux/MacOS:\n1) Copy the zip into \"releases\" directory\n2) Execute build_rom.sh\n3) Copy generated a.*.rom into root of SD card along with the Arcade-*.rbf file\n\nTo generate the ROM using MiSTer:\n1) scp \"releases\" directory along with the zip file onto MiSTer:/media/fat/\n2) Using OSD execute build_rom.sh\n3) Copy generated a.*.rom into root of SD card along with the Arcade-*.rbf file\n",
+      "readme": "---------------------------------------------------------------------------------\n-- Arcade: Robotron port to MiSTer by oldgit, Sorgelig\n-- 12 December 2018\n-- \n---------------------------------------------------------------------------------\n-- gen_ram.vhd\n-------------------------------- \n-- Copyright 2005-2008 by Peter Wendrich (pwsoft@syntiac.com)\n-- http://www.syntiac.com/fpga64.html\n---------------------------------------------------------------------------------\n-- cpu09l - Version : 0128\n-- Synthesizable 6809 instruction compatible VHDL CPU core\n-- Copyright (C) 2003 - 2010 John Kent\n---------------------------------------------------------------------------------\n-- cpu68 - Version 9th Jan 2004 0.8\n-- 6800/01 compatible CPU core \n-- GNU public license - December 2002 : John E. Kent\n---------------------------------------------------------------------------------\n--\n-- This port is only possible because of previous work by many many others - Thank You\n-- to find out more search \"Williams robotron\" on a search engine.  \n-- \n-- \n-- Keyboard players inputs :\n--\n--   F10 : Advance\n--   F9  : Auto up\n--   F7  : High score reset\n--   F5  : Add coin right\n--   F4  : Add coin centre\n--   F3  : Add coin left\n--   F2  : Start 2 players\n--   F1  : Start 1 player\n--   ESC : Slam  \n--   W move up\n--   S move down\n--   A move left\n--   D move right\n--   UP arrow Fire up\n--   Down arrow Fire Down\n--\t Left arrow Fir Left\n-- \t Right arrow Fire right\n--\n--\n-- Joystick support.\n-- \n-- \n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-DB9/Arcade-Robotron_MiSTer",
       "releases": [
         {
           "name": "Alien Arena.mra",
-          "sha": "d68a48880a7a84f2c35c45f8f28d515708171ff9",
+          "sha": "c5b76161475ebb5e62137f1c50577b11df0caaab",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Robotron_MiSTer/master/releases/Alien%20Arena.mra",
           "type": "MRA",
           "extra": {
@@ -3821,8 +3821,14 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Robotron_20210105.rbf",
+          "sha": "58dbf8ab7f58a103675acfcb60de8d55021402c2",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Robotron_MiSTer/master/releases/Arcade-Robotron_20210105.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Bubbles.mra",
-          "sha": "00a16e311e819b3c9780ee0960576cdd998bc126",
+          "sha": "ac183ed7881ea48ceb7f01f97402737f0c9dee2d",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Robotron_MiSTer/master/releases/Bubbles.mra",
           "type": "MRA",
           "extra": {
@@ -3835,7 +3841,7 @@
         },
         {
           "name": "Joust.mra",
-          "sha": "ce30e62cc76b0ef64e80350cd8fb7effe776ae31",
+          "sha": "632891da12e5b4c8047ad52491756f3946354ca2",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Robotron_MiSTer/master/releases/Joust.mra",
           "type": "MRA",
           "extra": {
@@ -3848,7 +3854,7 @@
         },
         {
           "name": "Playball.mra",
-          "sha": "31770ae90e8b9baeebb5dce00a5d5cca5f720ef2",
+          "sha": "75dfc1679dc3b310f136c6eabb631ec68e2e9af9",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Robotron_MiSTer/master/releases/Playball.mra",
           "type": "MRA",
           "extra": {
@@ -3861,7 +3867,7 @@
         },
         {
           "name": "Robotron 2084.mra",
-          "sha": "ea7b0c231c3253a20986f47a28f0f8f192348a28",
+          "sha": "fd1fb5578659f13da266ecbc537e38db7c4a1ef5",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Robotron_MiSTer/master/releases/Robotron%202084.mra",
           "type": "MRA",
           "extra": {
@@ -3874,7 +3880,7 @@
         },
         {
           "name": "Sinistar.mra",
-          "sha": "6910b8f255db13ba7f08617cb121954eefe451fa",
+          "sha": "5f4931e2352827315a26fa21b25c5d23d565dedf",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Robotron_MiSTer/master/releases/Sinistar.mra",
           "type": "MRA",
           "extra": {
@@ -3887,7 +3893,7 @@
         },
         {
           "name": "Splat.mra",
-          "sha": "e076780546f0522cf76edb634caf51ed83d665d6",
+          "sha": "0fda40c400b586dbbd3e89c3b7166344cff9a2a2",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Robotron_MiSTer/master/releases/Splat.mra",
           "type": "MRA",
           "extra": {
@@ -3900,7 +3906,7 @@
         },
         {
           "name": "Stargate.mra",
-          "sha": "cc55e3baa6a0ada0cbc30a980b3724f744d74363",
+          "sha": "73ccc10dadbf049d5a791c29970af037cf491673",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Robotron_MiSTer/master/releases/Stargate.mra",
           "type": "MRA",
           "extra": {
@@ -6314,7 +6320,7 @@
     {
       "name": "Genesis_MiSTer",
       "description": "Sega Genesis for MiSTer",
-      "readme": "# SEGA Megadrive/Genesis for MiSTer.\n\nThis is the port of fpgagen core.\n\nfpgagen - a SEGA Megadrive/Genesis clone in a FPGA.\nCopyright (c) 2010-2013 Gregory Estrade (greg@torlus.com)\nAll rights reserved\n\n\n## Installing\ncopy *.rbf to root of SD card. Put some ROMs (*.BIN/*.GEN/*.MD) into Genesis folder\n\n\n## Hot Keys\n* F1 - reset to JP(NTSC) region\n* F2 - reset to US(NTSC) region\n* F3 - reset to EU(PAL)  region\n\n\n## Auto Region option\nThere are 2 versions of region detection:\n\n1) File name extension:\n\n* BIN -> JP\n* GEN -> US\n* MD  -> EU\n\n2) Header. It may not always work as not all ROMs follow the rule, especially in European region.\nThe header may include several regions - the correct one will be selected depending on priority option.\n\n\n## Additional features\n\n* Multitaps: 4-way, Team player, J-Cart\n* SVP chip (Virtua Racing)\n* Audio Filters for Model 1, Model 2, Minimal, No Filter.\n* Option to choose between YM2612 and YM3438 (changes Ladder Effect behavior).\n* Composite Blending, smooth dithering patterns in games.\n* Sprite Limit, enables more sprites.\n* CPU Turbo, mitigates slowdowns.\n",
+      "readme": "# [SEGA Megadrive/Genesis](https://en.wikipedia.org/wiki/Sega_Genesis) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\nThis is the port of the [fpgagen](https://github.com/Torlus/fpgagen) core.\n\nfpgagen - a SEGA Megadrive/Genesis clone in a FPGA.\nCopyright (c) 2010-2013 Gregory Estrade (greg@torlus.com)\nAll rights reserved\n\n\n## Installing\ncopy *.rbf to root of SD card. Put some ROMs (*.BIN/*.GEN/*.MD) into Genesis folder\n\n\n## Hot Keys\n* F1 - reset to JP(NTSC) region\n* F2 - reset to US(NTSC) region\n* F3 - reset to EU(PAL)  region\n\n\n## Auto Region option\nThere are 2 versions of region detection:\n\n1) File name extension:\n\n* BIN -> JP\n* GEN -> US\n* MD  -> EU\n\n2) Header. It may not always work as not all ROMs follow the rule, especially in European region.\nThe header may include several regions - the correct one will be selected depending on priority option.\n\n\n## Additional features\n\n* Multitaps: 4-way, Team player, J-Cart\n* SVP chip (Virtua Racing)\n* Audio Filters for Model 1, Model 2, Minimal, No Filter.\n* Option to choose between YM2612 and YM3438 (changes Ladder Effect behavior).\n* Composite Blending, smooth dithering patterns in games.\n* Sprite Limit, enables more sprites.\n* CPU Turbo, mitigates slowdowns.\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-DB9/Genesis_MiSTer",

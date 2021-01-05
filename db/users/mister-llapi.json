@@ -337,7 +337,7 @@
     {
       "name": "Genesis_MiSTer",
       "description": "Sega Genesis for MiSTer",
-      "readme": "# SEGA Megadrive/Genesis for MiSTer.\n\nThis is the port of fpgagen core.\n\nfpgagen - a SEGA Megadrive/Genesis clone in a FPGA.\nCopyright (c) 2010-2013 Gregory Estrade (greg@torlus.com)\nAll rights reserved\n\n\n## Installing\ncopy *.rbf to root of SD card. Put some ROMs (*.BIN/*.GEN/*.MD) into Genesis folder\n\n\n## Hot Keys\n* F1 - reset to JP(NTSC) region\n* F2 - reset to US(NTSC) region\n* F3 - reset to EU(PAL)  region\n\n\n## Auto Region option\nThere are 2 versions of region detection:\n\n1) File name extension:\n\n* BIN -> JP\n* GEN -> US\n* MD  -> EU\n\n2) Header. It may not always work as not all ROMs follow the rule, especially in European region.\nThe header may include several regions - the correct one will be selected depending on priority option.\n\n\n## Additional features\n\n* Multitaps: 4-way, Team player, J-Cart\n* SVP chip (Virtua Racing)\n* Audio Filters for Model 1, Model 2, Minimal, No Filter.\n* Option to choose between YM2612 and YM3438 (changes Ladder Effect behavior).\n* Composite Blending, smooth dithering patterns in games.\n* Sprite Limit, enables more sprites.\n* CPU Turbo, mitigates slowdowns.\n",
+      "readme": "# [SEGA Megadrive/Genesis](https://en.wikipedia.org/wiki/Sega_Genesis) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\nThis is the port of the [fpgagen](https://github.com/Torlus/fpgagen) core.\n\nfpgagen - a SEGA Megadrive/Genesis clone in a FPGA.\nCopyright (c) 2010-2013 Gregory Estrade (greg@torlus.com)\nAll rights reserved\n\n\n## Installing\ncopy *.rbf to root of SD card. Put some ROMs (*.BIN/*.GEN/*.MD) into Genesis folder\n\n\n## Hot Keys\n* F1 - reset to JP(NTSC) region\n* F2 - reset to US(NTSC) region\n* F3 - reset to EU(PAL)  region\n\n\n## Auto Region option\nThere are 2 versions of region detection:\n\n1) File name extension:\n\n* BIN -> JP\n* GEN -> US\n* MD  -> EU\n\n2) Header. It may not always work as not all ROMs follow the rule, especially in European region.\nThe header may include several regions - the correct one will be selected depending on priority option.\n\n\n## Additional features\n\n* Multitaps: 4-way, Team player, J-Cart\n* SVP chip (Virtua Racing)\n* Audio Filters for Model 1, Model 2, Minimal, No Filter.\n* Option to choose between YM2612 and YM3438 (changes Ladder Effect behavior).\n* Composite Blending, smooth dithering patterns in games.\n* Sprite Limit, enables more sprites.\n* CPU Turbo, mitigates slowdowns.\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-LLAPI/Genesis_MiSTer",
@@ -388,6 +388,12 @@
           "name": "Genesis_20201105.rbf",
           "sha": "94d0d87021a65379f5388dc2b1bb04af42201430",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Genesis_MiSTer/master/releases/Genesis_20201105.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20210105.rbf",
+          "sha": "cd5e21580fc00a8b239518927313c152b2206a93",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Genesis_MiSTer/master/releases/Genesis_20210105.rbf",
           "type": "RBF"
         },
         {
@@ -460,6 +466,12 @@
           "name": "Genesis_LLAPI_20201105.rbf",
           "sha": "57a280de487b3f9559751ae92978235e01ef1f0d",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Genesis_MiSTer/master/releases/Genesis_LLAPI_20201105.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_LLAPI_20210105.rbf",
+          "sha": "dc3cd39ed6409452564a4e22a3831c612e5243f9",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Genesis_MiSTer/master/releases/Genesis_LLAPI_20210105.rbf",
           "type": "RBF"
         }
       ]
