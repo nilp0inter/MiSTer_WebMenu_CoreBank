@@ -495,6 +495,12 @@
           "type": "RBF"
         },
         {
+          "name": "ao486_20210109.rbf",
+          "sha": "b0d39081a400a460c84743adef211b4cb88d4b7b",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/ao486_MiSTer/master/releases/ao486_20210109.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "boot0.rom",
           "sha": "deee5bf28d13f680f4c2b3754ab1035d1ee9081a",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/ao486_MiSTer/master/releases/bios/boot0.rom",
@@ -5304,7 +5310,7 @@
         },
         {
           "name": "Bullfight.mra",
-          "sha": "5000620c66301124eb8077b3cb85822c57f17e27",
+          "sha": "cc93a0c5f2e40b33367c756b1d7b08e042bb6ab9",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SEGASYS1_MiSTer/main/releases/Bullfight.mra",
           "type": "MRA",
           "extra": {
@@ -7606,6 +7612,12 @@
           "sha": "ef011ee3b119b9abb3b131a677510e2b389d5155",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/AtariST_MiSTer/master/releases/AtariST_20201128.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "AtariST_20210109.rbf",
+          "sha": "7418af6ab4c2ba2c6bd514832aa70e35bce70d07",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/AtariST_MiSTer/master/releases/AtariST_20210109.rbf",
+          "type": "RBF"
         }
       ]
     },
@@ -9852,6 +9864,12 @@
           "sha": "328254218186c846fb2ac33a4aacac3ef12dfa16",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Main_MiSTer/master/releases/MiSTer_20210103",
           "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20210109",
+          "sha": "dd85eac593679401145497e1e2012979bfba1654",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Main_MiSTer/master/releases/MiSTer_20210109",
+          "type": "OTHER"
         }
       ]
     },
@@ -10542,6 +10560,12 @@
           "name": "Minimig_20201105.rbf",
           "sha": "768aa10ad34130af68b1b15fbdfae55686ce9020",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Minimig-AGA_MiSTer/MiSTer/releases/Minimig_20201105.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Minimig_20210109.rbf",
+          "sha": "a140793bb1700b28ffe137ffd6c384f58c62db03",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Minimig-AGA_MiSTer/MiSTer/releases/Minimig_20210109.rbf",
           "type": "RBF"
         }
       ]
