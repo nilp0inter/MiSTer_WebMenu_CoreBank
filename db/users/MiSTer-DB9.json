@@ -1003,7 +1003,7 @@
     {
       "name": "Arcade-ComputerSpace_MiSTer",
       "description": "Arcade: Computer Space for MiSTer",
-      "readme": "---------------------------------------------------------------------------------\r\n-- \r\n-- Arcade: Computer Space - World first commercial arcade!\r\n-- Port to MiSTer by Sorgelig\r\n-- 07 November 2017\r\n-- \r\n---------------------------------------------------------------------------------\r\n-- \r\n-- Computer Space by Mattias G (2015)\r\n-- \r\n---------------------------------------------------------------------------------\r\n-- \r\n-- \r\n-- Keyboard inputs :\r\n--\r\n--   F1          : Start\r\n--   SPACE       : Thrust\r\n--   RIGHT/LEFT  : Turn\r\n--   CTRL        : Fire\r\n--\r\n-- Joystick support.\r\n-- \r\n-- \r\n---------------------------------------------------------------------------------\r\n\r\n                                *** Attention ***\r\n\r\nROMs are not included. In order to use this arcade, you need to provide the\r\ncorrect ROMs.\r\n\r\nTo simplify the process .mra files are provided in the releases folder, that\r\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\r\ncorresponding file of the M.A.M.E. project.\r\n\r\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\r\ninformation on how to setup and use the environment.\r\n\r\nQuickreference for folders and file placement:\r\n\r\n/_Arcade/<game name>.mra\r\n/_Arcade/cores/<game rbf>.rbf\r\n/_Arcade/mame/<mame rom>.zip\r\n/_Arcade/hbmame/<hbmame rom>.zip\r\n",
+      "readme": "---------------------------------------------------------------------------------\r\n-- \r\n-- Arcade: Computer Space - World first commercial arcade!\r\n-- Port to MiSTer by Sorgelig\r\n-- 07 November 2017\r\n-- \r\n---------------------------------------------------------------------------------\r\n-- \r\n-- Computer Space by Mattias G (2015)\r\n-- \r\n---------------------------------------------------------------------------------\r\n\r\n                                *** Attention ***\r\n\r\nROMs are not included. In order to use this arcade, you need to provide the\r\ncorrect ROMs.\r\n\r\nTo simplify the process .mra files are provided in the releases folder, that\r\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\r\ncorresponding file of the M.A.M.E. project.\r\n\r\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\r\ninformation on how to setup and use the environment.\r\n\r\nQuickreference for folders and file placement:\r\n\r\n/_Arcade/<game name>.mra\r\n/_Arcade/cores/<game rbf>.rbf\r\n/_Arcade/mame/<mame rom>.zip\r\n/_Arcade/hbmame/<hbmame rom>.zip\r\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-DB9/Arcade-ComputerSpace_MiSTer",
@@ -1027,8 +1027,14 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-ComputerSpace_20210113.rbf",
+          "sha": "ee68d442c821e618782a10173819db24c953cd33",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-ComputerSpace_MiSTer/master/releases/Arcade-ComputerSpace_20210113.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Computer Space.mra",
-          "sha": "27f641de33849ac39bc90142a89d2da40da54232",
+          "sha": "a297b35848a602dbc172c7cdb79436f1743eb147",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-ComputerSpace_MiSTer/master/releases/Computer%20Space.mra",
           "type": "MRA",
           "extra": {
@@ -2254,7 +2260,7 @@
     {
       "name": "Arcade-LunarLander_MiSTer",
       "description": null,
-      "readme": "This is a Model of LunarLander hardware adapted from Asteroids by James Sweet.\r\n\r\n-- Keyboard players inputs :\r\n--\r\n   F1          : Start 1P\r\n   F2          : Start 2P\r\n   F3          : Coin \r\n   LEFT,RIGHT arrows : Steering\r\n   A,D : Steering\r\n   UP,DOWN arrows : Thrust\r\n   Ctrl  : Abort\r\n   LAlt: Select\r\n   Space: game select\r\n\r\n   MAME/IPAC/JPAC Style Keyboard inputs:\r\n     5           : Coin 1\r\n     6           : Coin 2\r\n     1           : Start 1 Player\r\n     2           : Start 1 Player\r\n\r\n\r\n-- Joystick support.  Analog or Digital - select in OSD\r\n\r\n-- OSD language selection\r\n\r\nThe rbf file is in releases\r\n\r\n---------------------------------------------------------------------------------\r\n\r\n                                *** Attention ***\r\n\r\nROM is not included. In order to use this arcade, you need to provide a correct ROM file.\r\n\r\nFind this zip file somewhere. You need to find the file exactly as required.\r\nDo not rename other zip files even if they also represent the same game - they are not compatible!\r\nThe name of zip is taken from M.A.M.E. project, so you can get more info about\r\nhashes and contained files there.\r\n\r\nTo generate the ROM using Windows:\r\n1) Copy the zip into \"releases\" directory\r\n2) Execute bat file - it will show the name of zip file containing required files.\r\n3) Put required zip into the same directory and execute the bat again.\r\n4) If everything will go without errors or warnings, then you will get the a.*.rom file.\r\n5) Copy generated a.*.rom into root of SD card along with the Arcade-*.rbf file\r\n\r\n",
+      "readme": "This is a Model of LunarLander hardware adapted from Asteroids by James Sweet.\r\n\r\n-- Keyboard players inputs :\r\n--\r\n   F1          : Start 1P\r\n   F2          : Start 2P\r\n   F3          : Coin \r\n   LEFT,RIGHT arrows : Steering\r\n   A,D : Steering\r\n   UP,DOWN arrows : Thrust\r\n   Ctrl  : Abort\r\n   LAlt: Select\r\n   Space: game select\r\n\r\n   MAME/IPAC/JPAC Style Keyboard inputs:\r\n     5           : Coin 1\r\n     6           : Coin 2\r\n     1           : Start 1 Player\r\n     2           : Start 1 Player\r\n\r\n\r\n-- Joystick support.  Analog or Digital - select in OSD\r\n\r\n-- OSD language selection\r\n\r\nThe rbf file is in releases\r\n\r\n---------------------------------------------------------------------------------\r\n\r\n                                *** Attention ***\r\n\r\nROMs are not included. In order to use this arcade, you need to provide the\r\ncorrect ROMs.\r\n\r\nTo simplify the process .mra files are provided in the releases folder, that\r\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\r\ncorresponding file of the M.A.M.E. project.\r\n\r\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\r\ninformation on how to setup and use the environment.\r\n\r\nQuickreference for folders and file placement:\r\n\r\n/_Arcade/<game name>.mra\r\n/_Arcade/cores/<game rbf>.rbf\r\n/_Arcade/mame/<mame rom>.zip\r\n/_Arcade/hbmame/<hbmame rom>.zip\r\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-DB9/Arcade-LunarLander_MiSTer",
@@ -3779,6 +3785,12 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-RiverPatrol_20210113.rbf",
+          "sha": "6b62d851de12042a7a3e083e47ebf43a8f0d043f",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-RiverPatrol_MiSTer/master/releases/Arcade-RiverPatrol_20210113.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "River Patrol.mra",
           "sha": "92439852e0c77ca46a82740ebf0ca3cffb0f5b57",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-RiverPatrol_MiSTer/master/releases/River%20Patrol.mra",
@@ -4695,6 +4707,12 @@
           "name": "Arcade-SilverLand_20200509.rbf",
           "sha": "06d374ce832b18b67428a248f7fbe50be5789554",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SilverLand_MiSTer/master/releases/Arcade-SilverLand_20200509.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-SilverLand_20210111.rbf",
+          "sha": "75caaf581a0f2da66ec1f55fed27d64581e64653",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SilverLand_MiSTer/master/releases/Arcade-SilverLand_20210111.rbf",
           "type": "RBF"
         },
         {
