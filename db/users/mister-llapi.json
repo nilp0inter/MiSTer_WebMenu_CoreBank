@@ -65,7 +65,7 @@
     {
       "name": "Gameboy_MiSTer",
       "description": "Gameboy for MiSTer",
-      "readme": "# Gameboy for MiSTer\r\n\r\nThis is port of [Gameboy for MiST](https://github.com/mist-devel/mist-board/tree/master/cores/gameboy)\r\n\r\n* Place RBF file into root of SD card.\r\n* Place *.gb files into Gameboy folder.\r\n\r\n## Open Source Bootstrap roms\r\nThis now includes the open source boot ROMs from [https://github.com/LIJI32/SameBoy/](https://github.com/LIJI32/SameBoy/) (for maximum GBC compatibility/authenticity you can still place the Gameboy color bios/bootrom into the Gameboy folder and rename it to boot1.rom)\r\n\r\n## Palettes\r\nCore supports custom palettes (*.gbp) which should be placed into Gameboy folder. Some examples are available in palettes folder.\r\n\r\n## Autoload\r\nTo autoload custom palette at startup rename it to boot0.rom\r\nTo autoload favorite game at startup rename it to boot2.rom\r\n\r\n## Video output\r\nThe Gameboy can disable video output at any time which causes problems with vsync_adjust=2 or analog video during screen transitions. Enable the Stabilize video option to fix this at the cost of some latency.\r\n\r\n\r\n",
+      "readme": "# [Gameboy](https://en.wikipedia.org/wiki/Game_Boy)  / [Gameboy Color](https://en.wikipedia.org/wiki/Game_Boy_Color) for MiSTer Platform\r\n\r\nThis is port of [Gameboy for MiST](https://github.com/mist-devel/mist-board/tree/master/cores/gameboy)\r\n\r\n* Place RBF file into root of SD card.\r\n* Place *.gb files into Gameboy folder.\r\n\r\n## Features\r\n* Original Gameboy & Gameboy Color Support\r\n* Super Gameboy Support - Borders, Palettes and Multiplayer\r\n* SaveStates\r\n* Fastforward \r\n* Rewind - Allows you to rewind up to 40 seconds of gameplay\r\n* Frameblending - Prevents flicker in some games (e.g. \"Chikyuu Kaihou Gun Zas\") \r\n* Custom Palette Loading\r\n* Gameboy Link Port Support - Requires USERIO adapter\r\n* Cheats\r\n\r\n## Open Source Bootstrap roms\r\nThis now includes the open source boot ROMs from [https://github.com/LIJI32/SameBoy/](https://github.com/LIJI32/SameBoy/) (for maximum GBC compatibility/authenticity you can still place the Gameboy color bios/bootrom into the Gameboy folder and rename it to boot1.rom)\r\n\r\n## Palettes\r\nCore supports custom palettes (*.gbp) which should be placed into Gameboy folder. Some examples are available in palettes folder.\r\n\r\n## Autoload\r\nTo autoload custom palette at startup rename it to boot0.rom\r\nTo autoload favorite game at startup rename it to boot2.rom\r\n\r\n## Video output\r\nThe Gameboy can disable video output at any time which causes problems with vsync_adjust=2 or analog video during screen transitions. Enable the Stabilize video option to fix this at the cost of some latency.\r\n\r\n\r\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-LLAPI/Gameboy_MiSTer",
@@ -104,6 +104,30 @@
           "name": "Gameboy_20200819.rbf",
           "sha": "0333b9dc58ae21de6cfb750fa21d0378852f726e",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Gameboy_MiSTer/master/releases/Gameboy_20200819.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20201204.rbf",
+          "sha": "f8fd55bcb7e799ce85c67bab7cf0be8090ce0c55",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Gameboy_MiSTer/master/releases/Gameboy_20201204.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20210103.rbf",
+          "sha": "948083aa4c0d2ee858445035e2d9ec57c9c445db",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Gameboy_MiSTer/master/releases/Gameboy_20210103.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20210108.rbf",
+          "sha": "f4816456604650a82e9db2299928f239c7adcd06",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Gameboy_MiSTer/master/releases/Gameboy_20210108.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20210109.rbf",
+          "sha": "0055fae4f0f323bac8ae7483725864577d4ad2c8",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Gameboy_MiSTer/master/releases/Gameboy_20210109.rbf",
           "type": "RBF"
         },
         {
@@ -146,6 +170,12 @@
           "name": "Gameboy_LLAPI_20200828.rbf",
           "sha": "07eff1420ff954dabe99ba2479cf014b0373a617",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Gameboy_MiSTer/master/releases/Gameboy_LLAPI_20200828.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_LLAPI_20210115.rbf",
+          "sha": "ec39d06472e64309854218fcb2753fa35ba6f3cc",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Gameboy_MiSTer/master/releases/Gameboy_LLAPI_20210115.rbf",
           "type": "RBF"
         }
       ]
@@ -621,7 +651,7 @@
     {
       "name": "NeoGeo_MiSTer",
       "description": "NeoGeo for MiSTer",
-      "readme": "\r\n# NEO GEO for [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki) \r\n\r\nThis is an FPGA implementation of the NEO GEO/MVS system by [Furrtek](https://www.patreon.com/furrtek/posts)\r\n\r\n## Features\r\n* Supports memory card saving\r\n* MVS and AES system support\r\n* Compatible with Darksoft ROM sets using provided XML\r\n* Compatible with decrypted MAME ROM sets using your own XML\r\n* Support for Universe BIOS\r\n\r\nNote: Core doesn't support encrypted ROMs. Make sure the ROM has no encrypted parts before use it. MAME ROM pack includes many encrypted ROMs so it's not recommended for inexperienced users.\r\n\r\n## Installation\r\nCopy the NeoGeo_\\*.rbf file to the folder of your choice on the SD card. Create a **NEOGEO** folder on the root of the card, and place the unzipped ROM sets inside this folder. For ease of setup of use, it is strongly suggested that people use the Darksoft ROM pack. Several things must be observed:\r\n* Each set of ROMs must be in its own folder\r\n* The folders containing the ROM sets must be named to match the XML (MAME standard names)\r\n* The ROMs must not be zipped\r\n* ROM set folders can be placed inside sub-folders for organization\r\n\r\nIn addition, several bios files must be placed in the **NEOGEO** folder for the core to function properly:\r\n* 000-lo.lo\r\n* sfix.sfix\r\n* sp-s2.sp1 (MVS)\r\n* neo-epo.sp1 (AES)\r\n* uni-bios.rom\r\n\r\nSometimes these files may be named slightly differently depending on where they are obtained, but they must be renamed to match the filenames above to work with MiSTer. You may choose between using original system BIOS (sp-s2.sp1/neo-epo.sp1) and uni-bios.rom. Using uni-bios is recommended, and can be obtained [here](http://unibios.free.fr/).\r\n\r\nLastly, **romsets.xml** from the release folder must also be placed in the directory. The provided XML is for Darksoft ROMs only, you must make your own for MAME ROMs. This file describes to the core where the ROM sets are located and how to load them. **gog-romsets.xml** can be used (renamed to **romsets.xml**) for games purchased from gog.com (which also include all the needed bios files), see comments in gog-romsets.xml .\r\n\r\n## Saving and Loading\r\nIn AES mode, all saves are to the memory card only. In MVS mode, some games and uni-bios save their settings to a special area of battery backed ram built into the system, while game data can be still be saved to a memory card. To simplify things, it is suggested to stick to one system type on the OSD and use uni-bios to change the system type, so that game information is saved consistently.\r\n\r\n## RAM and Game Sizes\r\nNeo Geo uses very large ROMs. About 84% of the library will fit onto a 32 megabyte SDRAM module. Another 12% will fit onto a 64 megabyte SDRAM module. The remaining 8 games require a 128 megabyte module. For more information about which games can be loaded with which sized RAM, open romsets.xml in your favorite text editor or github. The games are organized by size.\r\n",
+      "readme": "\r\n# [SNK Neo Geo](https://en.wikipedia.org/wiki/Neo_Geo_(system)) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki) \r\n\r\nThis is an FPGA implementation of the NEO GEO/MVS system by [Furrtek](https://www.patreon.com/furrtek/posts)\r\n\r\n## Features\r\n* Supports memory card saving\r\n* MVS and AES system support\r\n* Compatible with Darksoft ROM sets using provided XML\r\n* Compatible with decrypted MAME ROM sets using your own XML\r\n* Support for Universe BIOS\r\n\r\nNote: Core doesn't support encrypted ROMs. Make sure the ROM has no encrypted parts before use it. MAME ROM pack includes many encrypted ROMs so it's not recommended for inexperienced users.\r\n\r\n## Installation\r\nCopy the NeoGeo_\\*.rbf file to the folder of your choice on the SD card. Create a **NEOGEO** folder on the root of the card, and place the unzipped ROM sets inside this folder. For ease of setup of use, it is strongly suggested that people use the Darksoft ROM pack. Several things must be observed:\r\n* Each set of ROMs must be in its own folder\r\n* The folders containing the ROM sets must be named to match the XML (MAME standard names)\r\n* The ROMs must not be zipped\r\n* ROM set folders can be placed inside sub-folders for organization\r\n\r\nIn addition, several bios files must be placed in the **NEOGEO** folder for the core to function properly:\r\n* 000-lo.lo\r\n* sfix.sfix\r\n* sp-s2.sp1 (MVS)\r\n* neo-epo.sp1 (AES)\r\n* uni-bios.rom\r\n\r\nSometimes these files may be named slightly differently depending on where they are obtained, but they must be renamed to match the filenames above to work with MiSTer. You may choose between using original system BIOS (sp-s2.sp1/neo-epo.sp1) and uni-bios.rom. Using uni-bios is recommended, and can be obtained [here](http://unibios.free.fr/).\r\n\r\nLastly, **romsets.xml** from the release folder must also be placed in the directory. The provided XML is for Darksoft ROMs only, you must make your own for MAME ROMs. This file describes to the core where the ROM sets are located and how to load them. **gog-romsets.xml** can be used (renamed to **romsets.xml**) for games purchased from gog.com (which also include all the needed bios files), see comments in gog-romsets.xml .\r\n\r\n## Saving and Loading\r\nIn AES mode, all saves are to the memory card only. In MVS mode, some games and uni-bios save their settings to a special area of battery backed ram built into the system, while game data can be still be saved to a memory card. To simplify things, it is suggested to stick to one system type on the OSD and use uni-bios to change the system type, so that game information is saved consistently.\r\n\r\n## RAM and Game Sizes\r\nNeo Geo uses very large ROMs. About 84% of the library will fit onto a 32 megabyte SDRAM module. Another 12% will fit onto a 64 megabyte SDRAM module. The remaining 8 games require a 128 megabyte module. For more information about which games can be loaded with which sized RAM, open romsets.xml in your favorite text editor or github. The games are organized by size.\r\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-LLAPI/NeoGeo_MiSTer",
@@ -672,6 +702,12 @@
           "name": "NeoGeo_20200928.rbf",
           "sha": "17a1295818854f0b4730b6b4a25c71970faac22b",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/NeoGeo_MiSTer/master/releases/NeoGeo_20200928.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NeoGeo_20210114.rbf",
+          "sha": "47882b73640a4326d28491774e6422b9d461d702",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/NeoGeo_MiSTer/master/releases/NeoGeo_20210114.rbf",
           "type": "RBF"
         },
         {
@@ -741,6 +777,12 @@
           "type": "RBF"
         },
         {
+          "name": "NeoGeo_LLAPI_20210115.rbf",
+          "sha": "6af8149ee76edd1e8a551612c53eaebabe2044c8",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/NeoGeo_MiSTer/master/releases/NeoGeo_LLAPI_20210115.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "README.md",
           "sha": "abdb8c23e66088a7b2bcc5d69f49951bbf6ca0ea",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/NeoGeo_MiSTer/master/releases/README.md",
@@ -769,7 +811,7 @@
     {
       "name": "NES_MiSTer",
       "description": null,
-      "readme": "# NES for [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\nThis is an FPGA implementation of the NES/Famicom based on [FPGANES](https://github.com/strigeus/fpganes) by Ludvig Strigeus and ported to MiSTer.\n\n## Features\n * Supports saves for most games\n * Supports NTSC, PAL, and Dendy system types\n * FDS Support with expansion audio\n * Multiple Palette options\n * Zapper, Powerpad, Microphone, and Miracle Piano support\n * Supports four players\n * Setting for increasing sprite per line by 8\n * Supports up to 32 cheat codes\n * Supports NSF Player\n * Supports expansion audio from mappers including VRC6 & 7, MMC5, Namco 163 and Sunsoft 5b\n * Supports many popular mappers including VRC1-7, MMC0-5, and many more (see below)\n * Supports large games such as Legend of Link and Rockman Minus Infinity\n\n## Installation\nCopy the NES_\\*.rbf file to the root of the SD card. Create a **NES** folder on the root of the card, and place NES roms (\\*.NES) inside this folder. The ROMs must have an iNES or NES2.0 header, which most already do. NES2.0 headers are prefered for the best accuracy. To have a game ROM load automatically upon starting the core and place it in the **NES** folder.\n- boot0.rom = FDS BIOS file.  Will be used for any FDS images loaded\n- boot1.rom = NES Cart file.  Can be used with boot0.rom (BIOS) in place\n- boot2.rom = FDS image file.  Requires boot0.rom (BIOS).  Use a blank FDS (header only) to boot the FDS BIOS without a disk image.\n- boot3.rom = PAL file. It can be used to set your default custom palette. Save the menu option on \"Custom\" to apply immediately.\n\n## Famicom Disk System Usage\nBefore loading \\*.FDS files, you must first load the official, unpatched FDS BIOS. The BIOS file should be renamed to boot0.rom and placed in the same folder as the ROMs (NES).  Alternatively, it can be loaded from the OSD if boot0.rom doesn't exist. After loading the core and the bios you may select an FDS image. By default, the NES core will swap disk sides for you automatically. To suppress this behavior, hold the FDS button on the player 1 controller. The \"Disk Swap\" OSD option manually controls the disk side.  Each button press increments the disk side.  Press and hold the fds button to eject and increment the disk side in this mode.  Some games only work correctly in manual disk swap mode, and require holding the FDS button for up to a few seconds (Gall Force,...).\n\n## Extra Sprites\nThis feature will double the number of sprites drawn per scanlines, decreasing the flickering sprites that NES is known for. Some games relied on the 8 sprite behavior to work correctly, such as Simon's Quest swamps. Other mappers may be impacted by using extra sprites. While it works well in most games, glitches may occur with this enabled.\n\n## Saving and Loading\nThe battery backed RAM (Save RAM) for the NES does not write to disk automatically. When loading a game, you must select **Load Backup RAM** from the OSD menu. After saving in your game, you must then write the RAM to the SD card by selecting **Save Backup RAM** from the menu. If you do not save your RAM to disk, the contents will be lost next time you restart the core or switch games. Alternatively you can enable to Autosave option from the OSD menu, and if you do your games will be recorded to disk every time you open the OSD menu. FDS saving uses the same method as for cartridge RAM saves.\n\n## Zapper Support\nThe \"Zapper\" (aka Light Gun) can be used via two methods. You can select Peripheral: Zapper(Mouse) to use your mouse to aim and shoot with the left button. This mode uses relative mouse motion, so devices that rely on absolute coordinates will not work via this method. Alternatively, you can choose Zapper(Joy) to use the Analog stick to aim, and the defined Trigger button to fire. Guns such as Aimtrak have joystick modes which may be compatible with this method.\n\n## Miracle Piano Support\nThe Miracle Piano is a MIDI keyboard compatible with the Miracle Piano Education System cart.  To use it with SNAC, no further settings are needed.  To use it with midilink, in the System Settings, set the UART connection to use MIDI.  The piano will then be connected on controller port 1 as expected.  The primary controller will automatically be assigned to port 2 as the cart expects.  The header for the ROM file should be set to NES 2.0 with controller type (0xF) set to the Miracle Piano (0x19).\n\n## Supported Mappers\n\n|#||||||||||||||||\n|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|\n|**0**|**1**|**2**|**3**|**4**|**5**||**7**||**9**|**10**|**11**|~~12~~|**13**||**15**|\n|**16**||**18**|**19**|**FDS**|**21**|**22**|**23**|**24**|**25**|**26**|**27**|**28**||**30**|**31**|\n|**32**|**33**|**34**|**35**|**36**|**37**|**38**||~~40~~|**41**|**42**|~~43~~|~~44~~|~~45~~|**46**|**47**|\n|**48**|~~49~~|~~50~~|~~51~~|~~52~~|~~53~~|~~54~~|~~55~~|~~56~~|~~57~~|~~58~~|~~59~~|~~60~~|~~61~~|~~62~~|~~63~~|\n|**64**|**65**|**66**|**67**|**68**|**69**|**70**|**71**|**72**|**73**|**74**|**75**|**76**|**77**|**78**|**79**|\n|**80**|~~81~~|**82**|**83**|~~84~~|**85**|**86**|**87**|**88**|**89**|**90**|**91**|**92**|**93**|**94**|**95**|\n|~~96~~|**97**||~~99~~|~~100~~|**101**|||~~104~~|**105**||**107**|~~108~~|~~109~~|~~110~~|**111**|\n|**112**|**113**|~~114~~|~~115~~|~~116~~|~~117~~|**118**|**119**|~~120~~||~~122~~|~~123~~||~~125~~|~~126~~|~~127~~|\n|~~128~~|~~129~~|~~130~~|~~131~~|**132**|**133**|~~134~~|~~135~~|**136**|**137**|**138**|**139**|**140**|**141**|~~142~~|**143**|\n|~~144~~|**145**|**146**|**147**|**148**|**149**|**150**|~~151~~|**152**|**153**|**154**|**155**|~~156~~|~~157~~|**158**|**159**|\n|~~160~~|~~161~~|**162**|**163**|**164**|**165**|~~166~~|~~167~~|~~168~~|~~169~~||**171**|**172**|**173**|||\n|||||**180**|~~181~~|~~182~~|~~183~~|**184**|**185**|~~186~~|~~187~~|~~188~~|**189**|**190**|**191**|\n|**192**|~~193~~|**194**|**195**|~~196~~||~~198~~|~~199~~|~~200~~|~~201~~|~~202~~|~~203~~|~~204~~|~~205~~|**206**|**207**|\n|~~208~~|**209**|**210**|**211**|~~212~~|~~213~~|~~214~~|~~215~~|~~216~~|~~217~~|**218**||||~~222~~||\n|~~224~~|**225**|~~226~~|~~227~~|**228**|~~229~~|~~230~~|~~231~~|**232**|~~233~~|**234**|~~235~~|~~236~~|~~237~~|||\n|~~240~~|~~241~~|~~242~~|**243**|~~244~~|~~245~~|~~246~~||~~248~~|~~249~~|~~250~~|~~251~~|~~252~~||~~254~~|**255**|\n\nKey: **Supported**, ~~Not Supported~~. Mappers that are not existent or not useful are blank.\n\n",
+      "readme": "# [Nintendo Entertainment System](https://en.wikipedia.org/wiki/Nintendo_Entertainment_System) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\nThis is an FPGA implementation of the NES/Famicom based on [FPGANES](https://github.com/strigeus/fpganes) by Ludvig Strigeus and ported to MiSTer.\n\n## Features\n * Supports saves for most games\n * Supports NTSC, PAL, and Dendy system types\n * FDS Support with expansion audio\n * Multiple Palette options\n * Zapper, Powerpad, Microphone, and Miracle Piano support\n * Supports four players\n * Setting for increasing sprite per line by 8\n * Supports up to 32 cheat codes\n * Supports NSF Player\n * Supports expansion audio from mappers including VRC6 & 7, MMC5, Namco 163 and Sunsoft 5b\n * Supports many popular mappers including VRC1-7, MMC0-5, and many more (see below)\n * Supports large games such as Legend of Link and Rockman Minus Infinity\n\n## Installation\nCopy the NES_\\*.rbf file to the root of the SD card. Create a **NES** folder on the root of the card, and place NES roms (\\*.NES) inside this folder. The ROMs must have an iNES or NES2.0 header, which most already do. NES2.0 headers are prefered for the best accuracy. To have a game ROM load automatically upon starting the core and place it in the **NES** folder.\n- boot0.rom = FDS BIOS file.  Will be used for any FDS images loaded\n- boot1.rom = NES Cart file.  Can be used with boot0.rom (BIOS) in place\n- boot2.rom = FDS image file.  Requires boot0.rom (BIOS).  Use a blank FDS (header only) to boot the FDS BIOS without a disk image.\n- boot3.rom = PAL file. It can be used to set your default custom palette. Save the menu option on \"Custom\" to apply immediately.\n\n## Famicom Disk System Usage\nBefore loading \\*.FDS files, you must first load the official, unpatched FDS BIOS. The BIOS file should be renamed to boot0.rom and placed in the same folder as the ROMs (NES).  Alternatively, it can be loaded from the OSD if boot0.rom doesn't exist. After loading the core and the bios you may select an FDS image. By default, the NES core will swap disk sides for you automatically. To suppress this behavior, hold the FDS button on the player 1 controller. The \"Disk Swap\" OSD option manually controls the disk side.  Each button press increments the disk side.  Press and hold the fds button to eject and increment the disk side in this mode.  Some games only work correctly in manual disk swap mode, and require holding the FDS button for up to a few seconds (Gall Force,...).\n\n## Extra Sprites\nThis feature will double the number of sprites drawn per scanlines, decreasing the flickering sprites that NES is known for. Some games relied on the 8 sprite behavior to work correctly, such as Simon's Quest swamps. Other mappers may be impacted by using extra sprites. While it works well in most games, glitches may occur with this enabled.\n\n## Saving and Loading\nThe battery backed RAM (Save RAM) for the NES does not write to disk automatically. When loading a game, you must select **Load Backup RAM** from the OSD menu. After saving in your game, you must then write the RAM to the SD card by selecting **Save Backup RAM** from the menu. If you do not save your RAM to disk, the contents will be lost next time you restart the core or switch games. Alternatively you can enable to Autosave option from the OSD menu, and if you do your games will be recorded to disk every time you open the OSD menu. FDS saving uses the same method as for cartridge RAM saves.\n\n## Zapper Support\nThe \"Zapper\" (aka Light Gun) can be used via two methods. You can select Peripheral: Zapper(Mouse) to use your mouse to aim and shoot with the left button. This mode uses relative mouse motion, so devices that rely on absolute coordinates will not work via this method. Alternatively, you can choose Zapper(Joy) to use the Analog stick to aim, and the defined Trigger button to fire. Guns such as Aimtrak have joystick modes which may be compatible with this method.\n\n## Miracle Piano Support\nThe Miracle Piano is a MIDI keyboard compatible with the Miracle Piano Education System cart.  To use it with SNAC, no further settings are needed.  To use it with midilink, in the System Settings, set the UART connection to use MIDI.  The piano will then be connected on controller port 1 as expected.  The primary controller will automatically be assigned to port 2 as the cart expects.  The header for the ROM file should be set to NES 2.0 with controller type (0xF) set to the Miracle Piano (0x19).\n\n## Supported Mappers\n\n|#||||||||||||||||\n|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|\n|**0**|**1**|**2**|**3**|**4**|**5**||**7**||**9**|**10**|**11**|~~12~~|**13**||**15**|\n|**16**||**18**|**19**|**FDS**|**21**|**22**|**23**|**24**|**25**|**26**|**27**|**28**||**30**|**31**|\n|**32**|**33**|**34**|**35**|**36**|**37**|**38**||~~40~~|**41**|**42**|~~43~~|~~44~~|~~45~~|**46**|**47**|\n|**48**|~~49~~|~~50~~|~~51~~|~~52~~|~~53~~|~~54~~|~~55~~|~~56~~|~~57~~|~~58~~|~~59~~|~~60~~|~~61~~|~~62~~|~~63~~|\n|**64**|**65**|**66**|**67**|**68**|**69**|**70**|**71**|**72**|**73**|**74**|**75**|**76**|**77**|**78**|**79**|\n|**80**|~~81~~|**82**|**83**|~~84~~|**85**|**86**|**87**|**88**|**89**|**90**|**91**|**92**|**93**|**94**|**95**|\n|~~96~~|**97**||~~99~~|~~100~~|**101**|||~~104~~|**105**||**107**|~~108~~|~~109~~|~~110~~|**111**|\n|**112**|**113**|~~114~~|~~115~~|~~116~~|~~117~~|**118**|**119**|~~120~~||~~122~~|~~123~~||~~125~~|~~126~~|~~127~~|\n|~~128~~|~~129~~|~~130~~|~~131~~|**132**|**133**|~~134~~|~~135~~|**136**|**137**|**138**|**139**|**140**|**141**|~~142~~|**143**|\n|~~144~~|**145**|**146**|**147**|**148**|**149**|**150**|~~151~~|**152**|**153**|**154**|**155**|~~156~~|~~157~~|**158**|**159**|\n|~~160~~|~~161~~|**162**|**163**|**164**|**165**|~~166~~|~~167~~|~~168~~|~~169~~||**171**|**172**|**173**|||\n|||||**180**|~~181~~|~~182~~|~~183~~|**184**|**185**|~~186~~|~~187~~|~~188~~|**189**|**190**|**191**|\n|**192**|~~193~~|**194**|**195**|~~196~~||~~198~~|~~199~~|~~200~~|~~201~~|~~202~~|~~203~~|~~204~~|~~205~~|**206**|**207**|\n|~~208~~|**209**|**210**|**211**|~~212~~|~~213~~|~~214~~|~~215~~|~~216~~|~~217~~|**218**||||~~222~~||\n|~~224~~|**225**|~~226~~|~~227~~|**228**|~~229~~|~~230~~|~~231~~|**232**|~~233~~|**234**|~~235~~|~~236~~|~~237~~|||\n|~~240~~|~~241~~|~~242~~|**243**|~~244~~|~~245~~|~~246~~||~~248~~|~~249~~|~~250~~|~~251~~|~~252~~||~~254~~|**255**|\n\nKey: **Supported**, ~~Not Supported~~. Mappers that are not existent or not useful are blank.\n\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-LLAPI/NES_MiSTer",
@@ -826,6 +868,12 @@
           "name": "NES_20201102.rbf",
           "sha": "e5d9b03cb498a0f322eae6024b7290f4e0bb4a5b",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/NES_MiSTer/master/releases/NES_20201102.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NES_20210114.rbf",
+          "sha": "8c7cc63a6a6357281f4060a984c97b7d1b51bed7",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/NES_MiSTer/master/releases/NES_20210114.rbf",
           "type": "RBF"
         },
         {
@@ -895,6 +943,12 @@
           "type": "RBF"
         },
         {
+          "name": "NES_LLAPI_20210115.rbf",
+          "sha": "7fb2f30cac197209eedd6f48a788865704a66d98",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/NES_MiSTer/master/releases/NES_LLAPI_20210115.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "blank.sav",
           "sha": "e2c8fe92d8237d3c9169891e23a1b7d6ae8e0dcb",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/NES_MiSTer/master/releases/blank.sav",
@@ -905,7 +959,7 @@
     {
       "name": "SMS_MiSTer",
       "description": "Sega Master System for MiSTer",
-      "readme": "# Sega Master System and Game Gear for the [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki) and [MiST](https://github.com/mist-devel/mist-board/wiki) boards\n\n### Installation:\n* Copy the *.rbf file at the root of the SD card.\n* Copy *.SMS ROMs into SMS folder.\n\n### Download precompiled binaries at:\n* For MiSTer, go to [releases](https://github.com/MiSTer-devel/SMS_MISTer/tree/master/releases) folder.\n* For MiST, go to [mist-binaries](https://github.com/mist-devel/mist-binaries/tree/master/cores/sms).\n\n### Notes:\n* Some games come in .gg format but are in fact SMS games. Rename the .gg extention to .sms or .bin to fix them.\n  These games are mostly listed in this page [SMSpower-SMS-GG list](http://www.smspower.org/Tags/SMS-GG).\n* The \"Aspect ratio\" doesn't do much in PAL mode, that's normal\n* The \"Region\" parameter toggle some hardware features that are specific to the different console models.\n  Some localized games need these modifications to work properly\n* Each game cartridge comes with a specific mapper, which description is not included in the .gg ou .sms file.\n  The core has a special logic to automatically determine which mapper needs to be used, but some games make\n  a good effort to make this logic fail. The \"Disable mappers\" parameter permits to force the usage \n  of the most used sega mapper. \n",
+      "readme": "# Sega Master System and Game Gear for the [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki) and [MiST](https://github.com/mist-devel/mist-board/wiki) boards\n\n### Installation:\n* Copy the *.rbf file at the root of the SD card.\n* Copy *.SMS ROMs into SMS folder.\n\n### Features: \n* Master System, Game Gear and SG-1000 Support\n* NTSC & PAL Support\n* Hide Borders Option - Allows you to fill the screen vertically without black borders.\n* FM Audio Support\n* Extra Sprites Option\n* Cheats\n\n### Download precompiled binaries at:\n* For MiSTer, go to [releases](https://github.com/MiSTer-devel/SMS_MISTer/tree/master/releases) folder.\n* For MiST, go to [mist-binaries](https://github.com/mist-devel/mist-binaries/tree/master/cores/sms).\n\n### Notes:\n* Some games come in .gg format but are in fact SMS games. Rename the .gg extention to .sms or .bin to fix them.\n  These games are mostly listed in this page [SMSpower-SMS-GG list](http://www.smspower.org/Tags/SMS-GG).\n* The \"Aspect ratio\" doesn't do much in PAL mode, that's normal\n* The \"Region\" parameter toggle some hardware features that are specific to the different console models.\n  Some localized games need these modifications to work properly\n* Each game cartridge comes with a specific mapper, which description is not included in the .gg ou .sms file.\n  The core has a special logic to automatically determine which mapper needs to be used, but some games make\n  a good effort to make this logic fail. The \"Disable mappers\" parameter permits to force the usage \n  of the most used sega mapper. \n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-LLAPI/SMS_MiSTer",
@@ -932,6 +986,12 @@
           "name": "SMS_20200819.rbf",
           "sha": "c6300486dc78afe3eaffe8a8a2f32e5f8756b041",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SMS_MiSTer/master/releases/SMS_20200819.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SMS_20210106.rbf",
+          "sha": "3a7a907eecef4a31e0b5292946962e9d0e569c88",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SMS_MiSTer/master/releases/SMS_20210106.rbf",
           "type": "RBF"
         },
         {
@@ -974,6 +1034,12 @@
           "name": "SMS_LLAPI_20200828.rbf",
           "sha": "747f19a9ca41341a43e4166a57aa0c6363742157",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SMS_MiSTer/master/releases/SMS_LLAPI_20200828.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SMS_LLAPI_20210115.rbf",
+          "sha": "c66c6598aeca1af1a790710c1e96eef5ed9a5b12",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SMS_MiSTer/master/releases/SMS_LLAPI_20210115.rbf",
           "type": "RBF"
         }
       ]
