@@ -10173,7 +10173,7 @@
     {
       "name": "MemTest_MiSTer",
       "description": null,
-      "readme": "# MemTest - Utility to test SDRAM daughter board.\n\n## Memtest screen:\n\n![MemTest screen](img/memtest.png)\n\n 1. Auto mode indicator (animated),\n 2. Test time passed in minutes,\n 3. Current memory module frequency in MHz,\n 4. Memory module size:\n    * 0 - no memory board detected\n    * 1 - 32 MB\n    * 2 - 64 MB\n    * 3 - 128 MB\n 5. Number of of passed test cycles (each cycle is 32 MB),\n 6. Number of failed tests.\n\n## Controls (keyboard)\n* Up - increase frequency\n* Down - decrease frequency\n* Enter - reset the test\n* A - auto mode, detecting the maximum frequency for module being tested. Test starts from maximum frequency.\nWith every error frequency will be decreased.\n\nTest is passed if amount of errors is 0. For quick test let it run for 10 minutes in auto mode. If you want to be sure, let it run for 1-2 hours.\nBoard should pass at least 130 MHz clock test. Any higher clock will assure the higher quality of the board.\n",
+      "readme": "# MemTest - Utility to test SDRAM daughter board.\n\n## Memtest screen:\n\n![MemTest screen](img/memtest.png)\n\n 1. Auto mode indicator (animated),\n 2. Test time passed in minutes,\n 3. Current memory module frequency in MHz,\n 4. Memory module size:\n    * 0 - no memory board detected\n    * 1 - 32 MB\n    * 2 - 64 MB\n    * 3 - 128 MB\n 5. Number of of passed test cycles (each cycle is 32 MB),\n 6. Number of failed tests.\n\n## Controls (keyboard)\n* Up - increase frequency\n* Down - decrease frequency\n* Enter - reset the test\n* C - on 128MB module switches between chips.\n* A - auto mode, detecting the maximum frequency for module being tested. Test starts from maximum frequency.\nWith every error frequency will be decreased.\n\nTest is passed if amount of errors is 0. For quick test let it run for 10 minutes in auto mode. If you want to be sure, let it run for 1-2 hours.\nBoard should pass at least 130 MHz clock test. Any higher clock will assure the higher quality of the board.\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/MemTest_MiSTer",
@@ -10212,6 +10212,12 @@
           "name": "memtest_20200511.rbf",
           "sha": "6d5217e48ff5010a12481f061dd3d51099ad573d",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/MemTest_MiSTer/master/releases/memtest_20200511.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "memtest_20210115.rbf",
+          "sha": "2d703b0dd7791c79c59c47f003a0f5d105c98be7",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/MemTest_MiSTer/master/releases/memtest_20210115.rbf",
           "type": "RBF"
         },
         {
