@@ -1492,6 +1492,12 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-DonkeyKong_20210112.rbf",
+          "sha": "a8d0771dbd051adf4fc1d5459c082cb51af43fa6",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-DonkeyKong_MiSTer/master/releases/Arcade-DonkeyKong_20210112.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Arcade-DonkeyKong_20210114.rbf",
           "sha": "f813b1a6615f7b419a76c2e15870d77ff2f91029",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-DonkeyKong_MiSTer/master/releases/Arcade-DonkeyKong_20210114.rbf",
@@ -1499,14 +1505,14 @@
         },
         {
           "name": "Donkey Kong 3 (bootleg).mra",
-          "sha": "b18d50fe63bf2c2ca9cf05b5f26ccf2bbe732d31",
+          "sha": "20948984eb600aa2207b75bebec392ad35f3a2d0",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-DonkeyKong_MiSTer/master/releases/Donkey%20Kong%203%20(bootleg).mra",
           "type": "MRA",
           "extra": {
             "name": "Donkey Kong 3 (bootleg on DKJr HW)",
             "rbf": "DonkeyKong",
             "zips": [
-              "dkong3.zip"
+              "dkong3.zip|dkong3b.zip"
             ]
           }
         },
@@ -1525,25 +1531,25 @@
         },
         {
           "name": "Pest Place.mra",
-          "sha": "4940e93f50ab4a3613f43218cc0b385ae733b733",
+          "sha": "e149a9ed85635fe13b6db2aa59d8c90873da01f1",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-DonkeyKong_MiSTer/master/releases/Pest%20Place.mra",
           "type": "MRA",
           "extra": {
             "name": "Pest Place",
             "rbf": "DonkeyKong",
             "zips": [
-              "pestplce.zip"
+              "mario.zip|pestplce.zip"
             ]
           }
         },
         {
           "name": "Radar Scope.mra",
-          "sha": "225f8eecc8d863df28f3d168cb9159605799b52d",
+          "sha": "1b5b358a2ea75c07adfb53877988fed9b605409d",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-DonkeyKong_MiSTer/master/releases/Radar%20Scope.mra",
           "type": "MRA",
           "extra": {
             "name": "Radar Scope",
-            "rbf": "donkeykong",
+            "rbf": "DonkeyKong",
             "zips": [
               "radarscp.zip"
             ]
