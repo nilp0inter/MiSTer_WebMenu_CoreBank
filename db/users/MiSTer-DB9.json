@@ -400,14 +400,14 @@
         },
         {
           "name": "Gorf - Program 1.mra",
-          "sha": "3b84b80aff759b52d13e90d8eac8d46d66ff6638",
+          "sha": "d88f4aef9ffc3f96d8de454cebe39b84652a8bc0",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Astrocade_MiSTer/master/releases/Gorf%20-%20Program%201.mra",
           "type": "MRA",
           "extra": {
             "name": "Gorf1",
             "rbf": "astrocade",
             "zips": [
-              "gorf.zip"
+              "gorf.zip|gorfpgm1.zip "
             ]
           }
         },
@@ -439,7 +439,7 @@
         },
         {
           "name": "Robby Roto.mra",
-          "sha": "b0b371526fc903f03c3c0f833b95dbc8b446d829",
+          "sha": "eef7fc20058f3271918ade1d59a028084c5ce221",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Astrocade_MiSTer/master/releases/Robby%20Roto.mra",
           "type": "MRA",
           "extra": {
@@ -507,7 +507,7 @@
     {
       "name": "Arcade-ATetris_MiSTer",
       "description": "Arcade: Atari Tetris for MiSTer",
-      "readme": "-------------------------------------------------------------------------------------------\n-- \n-- Arcade: Atari Tetris  for MiSTer by MiSTer-X\n-- 11 December 2019\n-- From: https://github.com/MrX-8B/MiSTer-Arcade-AtariTetris\n-- \n-------------------------------------------------------------------------------------------\n-- 65xx compatible microprocessor core\n----------------------------------------------\n-- FPGAARCADE SVN: $Id: T65.vhd 1347 2015-05-27 20:07:34Z wolfgang.scherr $\n--\n-- Copyright (c) 2002...2015\n--               Daniel Wallner (jesus <at> opencores <dot> org)\n--               Mike Johnson   (mikej <at> fpgaarcade <dot> com)\n--               Wolfgang Scherr (WoS <at> pin4 <dot> at>\n--               Morten Leikvoll ()\n-------------------------------------------------------------------------------------------\n-- Pokey\n----------------------------------------------\n-- (c) 2013 mark watson\n-------------------------------------------------------------------------------------------\n-- Diagonal Input\n----------------------------------------------\n-- (c) 2019 Eniva  https://github.com/eniva/fpga-controls\n-------------------------------------------------------------------------------------------\n-- Tetris (and cocktail version) MRA files\n----------------------------------------------\n-- written by Bruno Silva (@eubrunosilvapt)\n-------------------------------------------------------------------------------------------\n--\n-- \n-- Keyboard inputs :\n--\n--   F2          : Coin + Start 2 players\n--   F1          : Coin + Start 1 player\n--   DOWN,LEFT,RIGHT arrows : Movements\n--   SPACE       : Rotate\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   F,D,G       : Player 2 Movements\n--   A           : Player 2 Rotate\n--\n-- Joystick support.\n--\n--\n-------------------------------------------------------------------------------------------\n\n\n                                *** Attention ***\n\nROM is not included. In order to use this arcade, you need to provide a correct ROM file.\n\nFind this zip file somewhere. You need to find the file exactly as required.\nDo not rename other zip files even if they also represent the same game - they are not compatible!\nThe name of zip is taken from M.A.M.E. project, so you can get more info about\nhashes and contained files there.\n\nTo generate the ROM using Windows:\n1) Copy the zip into \"releases\" directory\n2) Execute bat file - it will show the name of zip file containing required files.\n3) Put required zip into the same directory and execute the bat again.\n4) If everything will go without errors or warnings, then you will get the a.*.rom file.\n5) Copy generated a.*.rom into root of SD card along with the Arcade-*.rbf file\n\nTo generate the ROM using Linux/MacOS:\n1) Copy the zip into \"releases\" directory\n2) Execute build_rom.sh\n3) Copy generated a.*.rom into root of SD card along with the Arcade-*.rbf file\n\nTo generate the ROM using MiSTer:\n1) scp \"releases\" directory along with the zip file onto MiSTer:/media/fat/\n2) Using OSD execute build_rom.sh\n3) Copy generated a.*.rom into root of SD card along with the Arcade-*.rbf file\n\n",
+      "readme": "-------------------------------------------------------------------------------------------\n-- \n-- Arcade: Atari Tetris  for MiSTer by MiSTer-X\n-- 11 December 2019\n-- From: https://github.com/MrX-8B/MiSTer-Arcade-AtariTetris\n-- \n-------------------------------------------------------------------------------------------\n-- 65xx compatible microprocessor core\n----------------------------------------------\n-- FPGAARCADE SVN: $Id: T65.vhd 1347 2015-05-27 20:07:34Z wolfgang.scherr $\n--\n-- Copyright (c) 2002...2015\n--               Daniel Wallner (jesus <at> opencores <dot> org)\n--               Mike Johnson   (mikej <at> fpgaarcade <dot> com)\n--               Wolfgang Scherr (WoS <at> pin4 <dot> at>\n--               Morten Leikvoll ()\n-------------------------------------------------------------------------------------------\n-- Pokey\n----------------------------------------------\n-- (c) 2013 mark watson\n-------------------------------------------------------------------------------------------\n-- Diagonal Input\n----------------------------------------------\n-- (c) 2019 Eniva  https://github.com/eniva/fpga-controls\n-------------------------------------------------------------------------------------------\n-- Tetris (and cocktail version) MRA files\n----------------------------------------------\n-- written by Bruno Silva (@eubrunosilvapt)\n-------------------------------------------------------------------------------------------\n--\n-- \n-- Keyboard inputs :\n--\n--   F2          : Coin + Start 2 players\n--   F1          : Coin + Start 1 player\n--   DOWN,LEFT,RIGHT arrows : Movements\n--   SPACE       : Rotate\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   F,D,G       : Player 2 Movements\n--   A           : Player 2 Rotate\n--\n-- Joystick support.\n--\n--\n-------------------------------------------------------------------------------------------\n\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-DB9/Arcade-ATetris_MiSTer",
@@ -531,8 +531,14 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-AtariTetris_20210117.rbf",
+          "sha": "d25f52e974ceb3c9627e5c907b0f41d5868f8ddd",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-ATetris_MiSTer/master/releases/Arcade-AtariTetris_20210117.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Tetris (cocktail set 1).mra",
-          "sha": "4ccfd5c0256fa73cb877095887346d75d9be03b7",
+          "sha": "a01b3f34adf3648c71696f40e396287a4d516cf0",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-ATetris_MiSTer/master/releases/Tetris%20(cocktail%20set%201).mra",
           "type": "MRA",
           "extra": {
@@ -545,7 +551,7 @@
         },
         {
           "name": "Tetris.mra",
-          "sha": "82ef4cfbcb1dd31bfd8ea0567aff0e4357860cdc",
+          "sha": "829a0dbf7b9f0e52aac366b73d77b04846aa3b57",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-ATetris_MiSTer/master/releases/Tetris.mra",
           "type": "MRA",
           "extra": {
