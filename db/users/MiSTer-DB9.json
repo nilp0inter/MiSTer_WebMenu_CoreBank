@@ -1877,7 +1877,7 @@
     {
       "name": "Arcade-Galaga_MiSTer",
       "description": "Arcade: Galaga for MiSTer",
-      "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: Galaga port to MiSTer by Sorgelig\n-- 23 October 2017\n-- \n---------------------------------------------------------------------------------\n-- Galaga Midway by Dar (darfpga@aol.fr) (29 December 2016)\n-- http://darfpga.blogspot.fr\n---------------------------------------------------------------------------------\n-- gen_ram.vhd\n-------------------------------- \n-- Copyright 2005-2008 by Peter Wendrich (pwsoft@syntiac.com)\n-- http://www.syntiac.com/fpga64.html\n---------------------------------------------------------------------------------\n-- T80/T80se - Version : 0247\n-----------------------------\n-- Z80 compatible microprocessor core\n-- Copyright (c) 2001-2002 Daniel Wallner (jesus@opencores.org)\n---------------------------------------------------------------------------------\n-- \n-- Support screen and controls rotation on HDMI output.\n-- Only controls are rotated on VGA output.\n-- \n-- \n-- Keyboard inputs :\n--\n--   F2          : Coin + Start 2 players\n--   F1          : Coin + Start 1 player\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--   SPACE       : Fire  \n--\n-- Joystick support.\n-- \n-- \n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROM is not included. In order to use this arcade, you need to provide a correct ROM file.\n\nFind this zip file somewhere. You need to find the file exactly as required.\nDo not rename other zip files even if they also represent the same game - they are not compatible!\nThe name of zip is taken from M.A.M.E. project, so you can get more info about\nhashes and contained files there.\n\nTo generate the ROM using Windows:\n1) Copy the zip into \"releases\" directory\n2) Execute bat file - it will show the name of zip file containing required files.\n3) Put required zip into the same directory and execute the bat again.\n4) If everything will go without errors or warnings, then you will get the a.*.rom file.\n5) Copy generated a.*.rom into root of SD card along with the Arcade-*.rbf file\n\nTo generate the ROM using Linux/MacOS:\n1) Copy the zip into \"releases\" directory\n2) Execute build_rom.sh\n3) Copy generated a.*.rom into root of SD card along with the Arcade-*.rbf file\n\nTo generate the ROM using MiSTer:\n1) scp \"releases\" directory along with the zip file onto MiSTer:/media/fat/\n2) Using OSD execute build_rom.sh\n3) Copy generated a.*.rom into root of SD card along with the Arcade-*.rbf file\n",
+      "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: Galaga port to MiSTer by Sorgelig\n-- 23 October 2017\n-- \n---------------------------------------------------------------------------------\n-- Galaga Midway by Dar (darfpga@aol.fr) (29 December 2016)\n-- http://darfpga.blogspot.fr\n---------------------------------------------------------------------------------\n-- gen_ram.vhd\n-------------------------------- \n-- Copyright 2005-2008 by Peter Wendrich (pwsoft@syntiac.com)\n-- http://www.syntiac.com/fpga64.html\n---------------------------------------------------------------------------------\n-- T80/T80se - Version : 0247\n-----------------------------\n-- Z80 compatible microprocessor core\n-- Copyright (c) 2001-2002 Daniel Wallner (jesus@opencores.org)\n---------------------------------------------------------------------------------\n-- \n-- Support screen and controls rotation on HDMI output.\n-- Only controls are rotated on VGA output.\n-- \n-- \n-- Keyboard inputs :\n--\n--   F2          : Coin + Start 2 players\n--   F1          : Coin + Start 1 player\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--   SPACE       : Fire  \n--\n-- Joystick support.\n-- \n-- \n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-DB9/Arcade-Galaga_MiSTer",
@@ -1916,6 +1916,12 @@
           "name": "Arcade-Galaga_20200418.rbf",
           "sha": "388f7875260056a58a47a9ae9e3dac0886116fec",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaga_MiSTer/master/releases/Arcade-Galaga_20200418.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Galaga_20210117.rbf",
+          "sha": "20f74a06b41bed29144d6e9cc2f764aee23edbb3",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaga_MiSTer/master/releases/Arcade-Galaga_20210117.rbf",
           "type": "RBF"
         },
         {
@@ -2260,6 +2266,12 @@
           "name": "Arcade-GnG_20200509.rbf",
           "sha": "5667cbd6b27b203a7551fea8e5f247557b61c5f4",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-GnG_MiSTer/master/releases/Arcade-GnG_20200509.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-GnG_20210117.rbf",
+          "sha": "82789c879bbc3cb698309e94df0d321b94cd0ab3",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-GnG_MiSTer/master/releases/Arcade-GnG_20210117.rbf",
           "type": "RBF"
         },
         {
@@ -3757,6 +3769,12 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Phoenix_20210117.rbf",
+          "sha": "389704c449dd99e7a5cf9e5adfb87a4c97a6ccb6",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Phoenix_MiSTer/master/releases/Arcade-Phoenix_20210117.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Phoenix.mra",
           "sha": "d14a175ad5b4a49792d105df967b62d5a1ec39af",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Phoenix_MiSTer/master/releases/Phoenix.mra",
@@ -4411,6 +4429,12 @@
           "name": "Arcade-Scramble_20200417.rbf",
           "sha": "7df37ca3c0d60a3ef3e814843fde1b0e0e372909",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Scramble_MiSTer/master/releases/Arcade-Scramble_20200417.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Scramble_20210117.rbf",
+          "sha": "179074ab1f67b1d8fa7c8b8017e8b37bc7ce8b15",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Scramble_MiSTer/master/releases/Arcade-Scramble_20210117.rbf",
           "type": "RBF"
         },
         {
