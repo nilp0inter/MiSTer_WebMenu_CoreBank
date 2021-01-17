@@ -1264,6 +1264,12 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-CrazyClimber_20210117.rbf",
+          "sha": "bf809ccab7b82cba4e6d7bd8f484f3d62715e1e0",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-CrazyClimber_MiSTer/master/releases/Arcade-CrazyClimber_20210117.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Crazy Climber.mra",
           "sha": "537dcc7917434a986ac40405d43e206cca537e90",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-CrazyClimber_MiSTer/master/releases/Crazy%20Climber.mra",
@@ -1650,8 +1656,14 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Dorodon_20210117.rbf",
+          "sha": "19ec13d4b9411a938a5be7150efe23c788dd2de4",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Dorodon_MiSTer/master/releases/Arcade-Dorodon_20210117.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Dorodon.mra",
-          "sha": "c4592cfdeb36ef96027023fc0547e39c005d1479",
+          "sha": "1bbcff95c0e2e68831d88d04fcf97e2ca3634bbb",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Dorodon_MiSTer/master/releases/Dorodon.mra",
           "type": "MRA",
           "extra": {
@@ -2191,6 +2203,12 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Gaplus_20210117.rbf",
+          "sha": "b7159cd97da7fbca7ed87f6b9336d4493a2a4cc2",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Gaplus_MiSTer/master/releases/Arcade-Gaplus_20210117.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Galaga 3 (GP3 rev. D).mra",
           "sha": "eeb13163e3a93a14877ad4498a5d2f4918e56832",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Gaplus_MiSTer/master/releases/Galaga%203%20(GP3%20rev.%20D).mra",
@@ -2455,6 +2473,12 @@
           "name": "Arcade-LadyBug_20200509.rbf",
           "sha": "12ffd4b4fe6b38fa6a4aa4e080b7c8ef8f537f96",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-LadyBug_MiSTer/master/releases/Arcade-LadyBug_20200509.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-LadyBug_20210117.rbf",
+          "sha": "d4c10466c802c6ef3dc991cce75e0ea4bc133a79",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-LadyBug_MiSTer/master/releases/Arcade-LadyBug_20210117.rbf",
           "type": "RBF"
         },
         {
@@ -3302,6 +3326,12 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-NinjaKun_20210117.rbf",
+          "sha": "5616846f7cb1994f55f590139e81bc32c4729010",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-NinjaKun_MiSTer/master/releases/Arcade-NinjaKun_20210117.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Ninjakun.mra",
           "sha": "8457346352bc4a3367376efad1d07444da6ad1a7",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-NinjaKun_MiSTer/master/releases/Ninjakun.mra",
@@ -3686,6 +3716,12 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Pengo_20210117.rbf",
+          "sha": "a6cfb4219b7524b4a1128651da9daff4fff8e673",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pengo_MiSTer/master/releases/Arcade-Pengo_20210117.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Pengo.mra",
           "sha": "d1f88a30567628c9e6f1cf431cf6d41642a4e226",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pengo_MiSTer/master/releases/Pengo.mra",
@@ -3788,13 +3824,19 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Pleiads_20210117.rbf",
+          "sha": "9294e85f48d4b7bbef1ee5cf1c8aca328cb0f1cc",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pleiads_MiSTer/master/releases/Arcade-Pleiads_20210117.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Pleiads (Centuri).mra",
-          "sha": "4e81207a991480f2136da43fe9f61a9d37e00f52",
+          "sha": "d190417fb82474ecd05ee472437dd6370ff6155e",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pleiads_MiSTer/master/releases/Pleiads%20(Centuri).mra",
           "type": "MRA",
           "extra": {
             "name": "Pleiads (Centuri)",
-            "rbf": "Arcade-Pleiads",
+            "rbf": "pleiads",
             "zips": [
               "pleiads.zip|pleiadce.zip"
             ]
@@ -6391,6 +6433,12 @@
           "name": "C64_20201111.rbf",
           "sha": "d13716cfa9b8a29b7149a8fb622d5794cb8bd2ad",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/C64_MiSTer/master/releases/C64_20201111.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "C64_20210117.rbf",
+          "sha": "c2df96f026db326613621b70f555f575b693583a",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/C64_MiSTer/master/releases/C64_20210117.rbf",
           "type": "RBF"
         }
       ]
