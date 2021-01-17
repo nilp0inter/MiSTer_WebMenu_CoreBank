@@ -2650,6 +2650,12 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Galaga_20210118.rbf",
+          "sha": "291c5456ee23c38c2949d61f934f15d237b6730e",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Galaga_MiSTer/master/releases/Arcade-Galaga_20210118.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Galaga.mra",
           "sha": "4ef19d9ee1280d3c3f670a3fffb9680825ffb1f2",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Galaga_MiSTer/master/releases/Galaga.mra",
@@ -3015,6 +3021,12 @@
           "name": "Arcade-GnG_20191228.rbf",
           "sha": "548c0b72f42ae3f3f7c8839af79a5b6e12aee229",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-GnG_MiSTer/master/releases/Arcade-GnG_20191228.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-GnG_20210116.rbf",
+          "sha": "8996a68a9b1bb155d118dd789975fc4bec7c51a8",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-GnG_MiSTer/master/releases/Arcade-GnG_20210116.rbf",
           "type": "RBF"
         },
         {
@@ -4537,6 +4549,12 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Pengo_20210116.rbf",
+          "sha": "0e71bc5d9490d49c3cab21d337f0563e5ebaa0cf",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pengo_MiSTer/master/releases/Arcade-Pengo_20210116.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Pengo.mra",
           "sha": "d1f88a30567628c9e6f1cf431cf6d41642a4e226",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pengo_MiSTer/master/releases/Pengo.mra",
@@ -4657,13 +4675,19 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Pleiads_20210116.rbf",
+          "sha": "7175e97455b08ab75de113c2c81c4b8e656c13ff",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pleiads_MiSTer/master/releases/Arcade-Pleiads_20210116.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Pleiads (Centuri).mra",
-          "sha": "4e81207a991480f2136da43fe9f61a9d37e00f52",
+          "sha": "d190417fb82474ecd05ee472437dd6370ff6155e",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pleiads_MiSTer/master/releases/Pleiads%20(Centuri).mra",
           "type": "MRA",
           "extra": {
             "name": "Pleiads (Centuri)",
-            "rbf": "Arcade-Pleiads",
+            "rbf": "pleiads",
             "zips": [
               "pleiads.zip|pleiadce.zip"
             ]
