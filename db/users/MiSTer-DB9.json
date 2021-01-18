@@ -3291,6 +3291,12 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-MoonPatrol_20210118.rbf",
+          "sha": "deba8735bf53525fa9ac0c1025a3b4cc642ede91",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MoonPatrol_MiSTer/master/releases/Arcade-MoonPatrol_20210118.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Moon Patrol.mra",
           "sha": "0bd0b6cf4426fb5a48e0532292b6c4df094d9b08",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MoonPatrol_MiSTer/master/releases/Moon%20Patrol.mra",
@@ -3917,6 +3923,12 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Pooyan_20210118.rbf",
+          "sha": "1a96709b2997f19d4dddb589718f543e00e20075",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pooyan_MiSTer/master/releases/Arcade-Pooyan_20210118.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Pooyan.mra",
           "sha": "c1b8e6d25878ec693df71833b01df7c40234ebcc",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pooyan_MiSTer/master/releases/Pooyan.mra",
@@ -4251,7 +4263,7 @@
     {
       "name": "Arcade-RushnAttack_MiSTer",
       "description": "Arcade: Rush'n Attack for MiSTer",
-      "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: Rush'n Attack (Green Beret)  port to MiSTer by MiSTer-X\n-- 14 December 2019\n-- https://github.com/MrX-8B/MiSTer-Arcade-GreenBeret\n--\n---------------------------------------------------------------------------------\n-- FPGA Mr.GOEMON for XILINX Spartan-6\n------------------------------------------------\n-- Copyright (c) 2013 MiSTer-X\n---------------------------------------------------------------------------------\n-- T80/T80s - Version : 0247\n------------------------------\n-- Z80 compatible microprocessor core\n--\n-- Copyright (c) 2001-2002 Daniel Wallner (jesus@opencores.org)\n---------------------------------------------------------------------------------\n-- MRA files\n----------------------------------------------\n-- written by Bruno Silva (@eubrunosilvapt)\n-------------------------------------------------------------------------------------------\n-- \n-- \n-- Keyboard inputs :\n--\n--   F2          : Coin + Start 2 players\n--   F1          : Coin + Start 1 player\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--   SPACE       : Trig1\n--   Ctrl        : Trig2\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   R,F,D,G     : Player 2 Movements\n--   A           : Trig1\n--   S           : Trig2\n--\n-- Joystick support.\n-- \n--\n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROM is not included. In order to use this arcade, you need to provide a correct ROM file.\n\nFind this zip file somewhere. You need to find the file exactly as required.\nDo not rename other zip files even if they also represent the same game - they are not compatible!\nThe name of zip is taken from M.A.M.E. project, so you can get more info about\nhashes and contained files there.\n\nTo generate the ROM using Windows:\n1) Copy the zip into \"releases\" directory\n2) Execute bat file - it will show the name of zip file containing required files.\n3) Put required zip into the same directory and execute the bat again.\n4) If everything will go without errors or warnings, then you will get the a.*.rom file.\n5) Copy generated a.*.rom into root of SD card along with the Arcade-*.rbf file\n\nTo generate the ROM using Linux/MacOS:\n1) Copy the zip into \"releases\" directory\n2) Execute build_rom.sh\n3) Copy generated a.*.rom into root of SD card along with the Arcade-*.rbf file\n\nTo generate the ROM using MiSTer:\n1) scp \"releases\" directory along with the zip file onto MiSTer:/media/fat/\n2) Using OSD execute build_rom.sh\n3) Copy generated a.*.rom into root of SD card along with the Arcade-*.rbf file\n\n",
+      "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: Rush'n Attack (Green Beret)  port to MiSTer by MiSTer-X\n-- 14 December 2019\n-- https://github.com/MrX-8B/MiSTer-Arcade-GreenBeret\n--\n---------------------------------------------------------------------------------\n-- FPGA Mr.GOEMON for XILINX Spartan-6\n------------------------------------------------\n-- Copyright (c) 2013 MiSTer-X\n---------------------------------------------------------------------------------\n-- T80/T80s - Version : 0247\n------------------------------\n-- Z80 compatible microprocessor core\n--\n-- Copyright (c) 2001-2002 Daniel Wallner (jesus@opencores.org)\n---------------------------------------------------------------------------------\n-- MRA files\n----------------------------------------------\n-- written by Bruno Silva (@eubrunosilvapt)\n-------------------------------------------------------------------------------------------\n-- \n-- \n-- Keyboard inputs :\n--\n--   F2          : Coin + Start 2 players\n--   F1          : Coin + Start 1 player\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--   SPACE       : Trig1\n--   Ctrl        : Trig2\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   R,F,D,G     : Player 2 Movements\n--   A           : Trig1\n--   S           : Trig2\n--\n-- Joystick support.\n-- \n--\n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-DB9/Arcade-RushnAttack_MiSTer",
@@ -4299,8 +4311,14 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-RshnAtk_20210118.rbf",
+          "sha": "16dd2618af21609812837d3c5bc803feee00114b",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-RushnAttack_MiSTer/master/releases/Arcade-RshnAtk_20210118.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Green Beret.mra",
-          "sha": "a54080e10a557cd77f1d2710078dfe242ca8e83c",
+          "sha": "62044dc8890f8b75aedff6dd7629b58d887f63df",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-RushnAttack_MiSTer/master/releases/Green%20Beret.mra",
           "type": "MRA",
           "extra": {
@@ -4313,7 +4331,7 @@
         },
         {
           "name": "Rush'n Attack (US).mra",
-          "sha": "bda5e279daa2043f35c98771a59605200d2144ca",
+          "sha": "5bdd0d7b03dd87288e615ea59a85f1c1d2d79a7c",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-RushnAttack_MiSTer/master/releases/Rush'n%20Attack%20(US).mra",
           "type": "MRA",
           "extra": {
@@ -5073,7 +5091,7 @@
     {
       "name": "Arcade-SolomonsKey_MiSTer",
       "description": "Arcade: Solomon's Key for MiSTer",
-      "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: Solomon's Key  port to MiSTer by MiSTer-X\n-- 17 November 2019\n--\n-- https://github.com/MrX-8B/MiSTer-Arcade-SolomonsKey\n-- \n---------------------------------------------------------------------------------\n-- FPGA Solomon's Key for Spartan-6\n------------------------------------------------\n-- Copyright (c) 2014 MiSTer-X\n---------------------------------------------------------------------------------\n-- T80/T80s - Version : 0242\n-----------------------------\n-- Z80 compatible microprocessor core\n-- Copyright (c) 2001-2002 Daniel Wallner (jesus@opencores.org)\n---------------------------------------------------------------------------------\n-- YM2149 (AY-3-8910)\n-- Copyright (c) MikeJ - Jan 2005\n---------------------------------------------------------------------------------\n-- MRA files\n----------------------------------------------\n-- written by Bruno Silva (@eubrunosilvapt)\n-------------------------------------------------------------------------------------------\n-- \n-- \n-- Keyboard inputs :\n--\n--   F2          : Coin + Start 2 players\n--   F1          : Coin + Start 1 player\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--   SPACE       : Stone\n--   CTRL        : Fire\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   R,F,D,G     : Player 2 Movements\n--   A           : Player 2 Stone\n--   S           : Player 2 Fire\n--\n-- Joystick support.\n--\n--\n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROM is not included. In order to use this arcade, you need to provide a correct ROM file.\n\nFind this zip file somewhere. You need to find the file exactly as required.\nDo not rename other zip files even if they also represent the same game - they are not compatible!\nThe name of zip is taken from M.A.M.E. project, so you can get more info about\nhashes and contained files there.\n\nTo generate the ROM using Windows:\n1) Copy the zip into \"releases\" directory\n2) Execute bat file - it will show the name of zip file containing required files.\n3) Put required zip into the same directory and execute the bat again.\n4) If everything will go without errors or warnings, then you will get the a.*.rom file.\n5) Copy generated a.*.rom into root of SD card along with the Arcade-*.rbf file\n\nTo generate the ROM using Linux/MacOS:\n1) Copy the zip into \"releases\" directory\n2) Execute build_rom.sh\n3) Copy generated a.*.rom into root of SD card along with the Arcade-*.rbf file\n\nTo generate the ROM using MiSTer:\n1) scp \"releases\" directory along with the zip file onto MiSTer:/media/fat/\n2) Using OSD execute build_rom.sh\n3) Copy generated a.*.rom into root of SD card along with the Arcade-*.rbf file\n\n",
+      "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: Solomon's Key  port to MiSTer by MiSTer-X\n-- 17 November 2019\n--\n-- https://github.com/MrX-8B/MiSTer-Arcade-SolomonsKey\n-- \n---------------------------------------------------------------------------------\n-- FPGA Solomon's Key for Spartan-6\n------------------------------------------------\n-- Copyright (c) 2014 MiSTer-X\n---------------------------------------------------------------------------------\n-- T80/T80s - Version : 0242\n-----------------------------\n-- Z80 compatible microprocessor core\n-- Copyright (c) 2001-2002 Daniel Wallner (jesus@opencores.org)\n---------------------------------------------------------------------------------\n-- YM2149 (AY-3-8910)\n-- Copyright (c) MikeJ - Jan 2005\n---------------------------------------------------------------------------------\n-- MRA files\n----------------------------------------------\n-- written by Bruno Silva (@eubrunosilvapt)\n-------------------------------------------------------------------------------------------\n-- \n-- \n-- Keyboard inputs :\n--\n--   F2          : Coin + Start 2 players\n--   F1          : Coin + Start 1 player\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--   SPACE       : Stone\n--   CTRL        : Fire\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   R,F,D,G     : Player 2 Movements\n--   A           : Player 2 Stone\n--   S           : Player 2 Fire\n--\n-- Joystick support.\n--\n--\n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-DB9/Arcade-SolomonsKey_MiSTer",
@@ -5097,8 +5115,14 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-SolomonsKey_20210118.rbf",
+          "sha": "8ae1574936e0fd5e7cf49b234afd7af811a247a4",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SolomonsKey_MiSTer/master/releases/Arcade-SolomonsKey_20210118.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Solomon no Kagi (Japan).mra",
-          "sha": "ba27ac22b62e933467cf12da9873907b0e44ed1e",
+          "sha": "5f0badda2a35c8d1aa8ac30a86f146bd8cd37b9f",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SolomonsKey_MiSTer/master/releases/Solomon%20no%20Kagi%20(Japan).mra",
           "type": "MRA",
           "extra": {
@@ -5111,7 +5135,7 @@
         },
         {
           "name": "Solomon's Key.mra",
-          "sha": "545e2b78ceb57dadc54513cd3315dbf8b82f16c1",
+          "sha": "d0577a4123d1491fd12fd0d1188ffbea08adcbe5",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SolomonsKey_MiSTer/master/releases/Solomon's%20Key.mra",
           "type": "MRA",
           "extra": {
