@@ -3902,6 +3902,12 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Pong_20210118.rbf",
+          "sha": "4239205f7cff07a7c9a1f55a93048c3d32b6126b",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pong_MiSTer/master/releases/Arcade-Pong_20210118.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Pong.mra",
           "sha": "c57ea2a54ddef6c92160f35128991f59c5fecd7c",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pong_MiSTer/master/releases/Pong.mra",
@@ -3952,7 +3958,7 @@
     {
       "name": "Arcade-Popeye_MiSTer",
       "description": "Arcade: Popeye for MiSTer",
-      "readme": "# Nintendo Popeye port for MiSTer\r\n\r\n# Keyboard inputs :\r\n```\r\n   ESC         : Coin 1\r\n   F1          : Start 1P\r\n   F2          : Start 2P \r\n   UP,DOWN,LEFT,RIGHT arrows : Player 1\r\n   LCtrl : Fire A\r\n\r\n\r\n   MAME/IPAC/JPAC Style Keyboard inputs:\r\n     5           : Coin 1\r\n     6           : Coin 2\r\n     1           : Start 1 Player\r\n     2           : Start 2 Player\r\n     R,F,D,G     : Player 2\r\n     A           : Fire2 A\r\n\t\r\n Joystick support. \r\n```\r\n# Games\r\n \r\n# ROMs\r\n```\r\n                                *** Attention ***\r\n\r\nROM is not included. In order to use this arcade, you need to provide a correct ROM file.\r\n\r\nFind this zip file somewhere. You need to find the file exactly as required.\r\nDo not rename other zip files even if they also represent the same game - they are not compatible!\r\nThe name of zip is taken from M.A.M.E. project, so you can get more info about\r\nhashes and contained files there.\r\nPut rom on your SD card. Example directory : _Arcade/mame/\r\n\r\n```\r\n\r\nLaunch game using the appropriate .MRA\r\n",
+      "readme": "# Nintendo Popeye port for MiSTer\r\n\r\n# Keyboard inputs :\r\n```\r\n   ESC         : Coin 1\r\n   F1          : Start 1P\r\n   F2          : Start 2P \r\n   UP,DOWN,LEFT,RIGHT arrows : Player 1\r\n   LCtrl : Fire A\r\n\r\n\r\n   MAME/IPAC/JPAC Style Keyboard inputs:\r\n     5           : Coin 1\r\n     6           : Coin 2\r\n     1           : Start 1 Player\r\n     2           : Start 2 Player\r\n     R,F,D,G     : Player 2\r\n     A           : Fire2 A\r\n\t\r\n Joystick support. \r\n```\r\n# Games\r\n \r\n# ROMs\r\n```\r\n                                *** Attention ***\r\n\r\nROMs are not included. In order to use this arcade, you need to provide the\r\ncorrect ROMs.\r\n\r\nTo simplify the process .mra files are provided in the releases folder, that\r\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\r\ncorresponding file of the M.A.M.E. project.\r\n\r\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\r\ninformation on how to setup and use the environment.\r\n\r\nQuickreference for folders and file placement:\r\n\r\n/_Arcade/<game name>.mra\r\n/_Arcade/cores/<game rbf>.rbf\r\n/_Arcade/mame/<mame rom>.zip\r\n/_Arcade/hbmame/<hbmame rom>.zip\r\n\r\n```\r\n\r\nLaunch game using the appropriate .MRA\r\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-DB9/Arcade-Popeye_MiSTer",
@@ -3985,6 +3991,12 @@
           "name": "Arcade-Popeye_20200419.rbf",
           "sha": "d28e8f87a5077aa3b0e376acb7055b28733782c9",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Popeye_MiSTer/master/releases/Arcade-Popeye_20200419.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Popeye_20210118.rbf",
+          "sha": "2050340f44aee0580ba09a3ed276f474153f26a5",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Popeye_MiSTer/master/releases/Arcade-Popeye_20210118.rbf",
           "type": "RBF"
         },
         {
@@ -5780,7 +5792,7 @@
     {
       "name": "Arcade-Ultratank_MiSTer",
       "description": "Ultratank core for MiSTer ",
-      "readme": "# Ultratnk\n\nFPGA implementation by james10952001 of [Ultratank](https://github.com/james10952001/UltraTank) arcade game released by Kee Games in 1976\n\nPort to MiSTer by Aitor Pelaez (NeuroRulez)\nUses the Top level .sv of sprint2 created by Alan Steremberg, i'm learning the MiSTer framework.\n\nThe original Ultratank has 2 levers and one button for player to control. This version implemente one Joystick for player.\nThe original Ultratank was B&W, but has three signal of colors form the image generation (rgb?) who never used.\nI generate the colors from that tree signals mixing it in rgb form. You can select it in OSD.\n\nThere are 3 modes to change the gameplay in the OSD:\n\nVisible or invisible tanks (Only make visible when fire)\n\nRebouncing fire or Remote control Fire\n\nBarriers or open field.\n\n# Keyboard inputs :\n```\n\t5  Insert Coin\n\t1  Start Player 1\n\t2  Start Player 2\n\t\n Joystick support. \n```\n \n# ROMs\n```\n                                *** Attention ***\n\nROM is not included. In order to use this arcade, you need to provide a correct ROM file.\n\nFind this zip file somewhere. You need to find the file exactly as required.\nDo not rename other zip files even if they also represent the same game - they are not compatible!\nThe name of zip is taken from M.A.M.E. project, so you can get more info about\nhashes and contained files there.\n\nTo generate the ROM using Windows:\n1) Copy the zip into \"releases\" directory\n2) Execute bat file - it will show the name of zip file containing required files.\n3) Put required zip into the same directory and execute the bat again.\n4) If everything will go without errors or warnings, then you will get the a.*.rom file.\n5) Copy generated a.*.rom into root of SD card along with the Arcade-*.rbf file\n\nTo generate the ROM using Linux/MacOS:\n1) Copy the zip into \"releases\" directory\n2) Execute build_rom.sh\n3) Copy generated a.*.rom into root of SD card along with the Arcade-*.rbf file\n\nTo generate the ROM using MiSTer:\n1) scp \"releases\" directory along with the zip file onto MiSTer:/media/fat/\n2) Using OSD execute build_rom.sh\n3) Copy generated a.*.rom into root of SD card along with the Arcade-*.rbf file\n```\n",
+      "readme": "# Ultratnk\n\nFPGA implementation by james10952001 of [Ultratank](https://github.com/james10952001/UltraTank) arcade game released by Kee Games in 1976\n\nPort to MiSTer by Aitor Pelaez (NeuroRulez)\nUses the Top level .sv of sprint2 created by Alan Steremberg, i'm learning the MiSTer framework.\n\nThe original Ultratank has 2 levers and one button for player to control. This version implemente one Joystick for player.\nThe original Ultratank was B&W, but has three signal of colors form the image generation (rgb?) who never used.\nI generate the colors from that tree signals mixing it in rgb form. You can select it in OSD.\n\nThere are 3 modes to change the gameplay in the OSD:\n\nVisible or invisible tanks (Only make visible when fire)\n\nRebouncing fire or Remote control Fire\n\nBarriers or open field.\n\n# Keyboard inputs :\n```\n\t5  Insert Coin\n\t1  Start Player 1\n\t2  Start Player 2\n\t\n Joystick support. \n```\n \n# ROMs\n```\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n\n```\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-DB9/Arcade-Ultratank_MiSTer",
@@ -5810,6 +5822,12 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Ultratank_20210118.rbf",
+          "sha": "23aef9b62a8abcfb3bc5b56e29031c1b063506cc",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Ultratank_MiSTer/master/releases/Arcade-Ultratank_20210118.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Ultra Tank.mra",
           "sha": "ac540b0147a762efd6da3494cc1bdc51f18bb242",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Ultratank_MiSTer/master/releases/Ultra%20Tank.mra",
@@ -5827,7 +5845,7 @@
     {
       "name": "Arcade-Xevious_MiSTer",
       "description": "Arcade: Xevious for MiSTer",
-      "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: Xevious port to MiSTer by Sorgelig\n-- 23 October 2017\n-- \n---------------------------------------------------------------------------------\n-- Xevious by Dar (darfpga@aol.fr) (01 May 2017)\n-- http://darfpga.blogspot.fr\n---------------------------------------------------------------------------------\n-- gen_ram.vhd\n-------------------------------- \n-- Copyright 2005-2008 by Peter Wendrich (pwsoft@syntiac.com)\n-- http://www.syntiac.com/fpga64.html\n---------------------------------------------------------------------------------\n-- T80/T80se - Version : 0247\n-----------------------------\n-- Z80 compatible microprocessor core\n-- Copyright (c) 2001-2002 Daniel Wallner (jesus@opencores.org)\n---------------------------------------------------------------------------------\n-- \n-- Support screen and controls rotation on HDMI output.\n-- Only controls are rotated on VGA output.\n-- \n-- \n-- Keyboard inputs :\n--\n--   F3          : Add coin\n--   F2          : Start 2 players\n--   F1          : Start 1 player\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--   SPACE       : Fire  \n--   CTRL        : Bomb\n--\n-- Joystick support.\n-- \n-- \n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROM is not included. In order to use this arcade, you need to provide a correct ROM file.\n\nFind this zip file somewhere. You need to find the file exactly as required.\nDo not rename other zip files even if they also represent the same game - they are not compatible!\nThe name of zip is taken from M.A.M.E. project, so you can get more info about\nhashes and contained files there.\n\nTo generate the ROM using Windows:\n1) Copy the zip into \"releases\" directory\n2) Execute bat file - it will show the name of zip file containing required files.\n3) Put required zip into the same directory and execute the bat again.\n4) If everything will go without errors or warnings, then you will get the a.*.rom file.\n5) Copy generated a.*.rom into root of SD card along with the Arcade-*.rbf file\n\nTo generate the ROM using Linux/MacOS:\n1) Copy the zip into \"releases\" directory\n2) Execute build_rom.sh\n3) Copy generated a.*.rom into root of SD card along with the Arcade-*.rbf file\n\nTo generate the ROM using MiSTer:\n1) scp \"releases\" directory along with the zip file onto MiSTer:/media/fat/\n2) Using OSD execute build_rom.sh\n3) Copy generated a.*.rom into root of SD card along with the Arcade-*.rbf file\n",
+      "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: Xevious port to MiSTer by Sorgelig\n-- 23 October 2017\n-- \n---------------------------------------------------------------------------------\n-- Xevious by Dar (darfpga@aol.fr) (01 May 2017)\n-- http://darfpga.blogspot.fr\n---------------------------------------------------------------------------------\n-- gen_ram.vhd\n-------------------------------- \n-- Copyright 2005-2008 by Peter Wendrich (pwsoft@syntiac.com)\n-- http://www.syntiac.com/fpga64.html\n---------------------------------------------------------------------------------\n-- T80/T80se - Version : 0247\n-----------------------------\n-- Z80 compatible microprocessor core\n-- Copyright (c) 2001-2002 Daniel Wallner (jesus@opencores.org)\n---------------------------------------------------------------------------------\n-- \n-- Support screen and controls rotation on HDMI output.\n-- Only controls are rotated on VGA output.\n-- \n-- \n-- Keyboard inputs :\n--\n--   F3          : Add coin\n--   F2          : Start 2 players\n--   F1          : Start 1 player\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--   SPACE       : Fire  \n--   CTRL        : Bomb\n--\n-- Joystick support.\n-- \n-- \n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-DB9/Arcade-Xevious_MiSTer",
@@ -5866,6 +5884,12 @@
           "name": "Arcade-Xevious_20200419.rbf",
           "sha": "f7d877fe0cd3ad5bd88816e91d44349bfb5d55f3",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Xevious_MiSTer/master/releases/Arcade-Xevious_20200419.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Xevious_20210118.rbf",
+          "sha": "38f3d9a60cae3d5c7b2053a855b2f1b700a72775",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Xevious_MiSTer/master/releases/Arcade-Xevious_20210118.rbf",
           "type": "RBF"
         },
         {
@@ -6048,7 +6072,7 @@
     {
       "name": "Astrocade_MiSTer",
       "description": "Bally Astrocade for MiSTer",
-      "readme": "# Bally Astrocade for [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\n### This is an FPGA implementation of the Bally Astrocade based on a project by MikeJ.\n\n## Features\n * Supports full keypad.\n * Supports paddle control as analog stick.\n\n## Installation\nCopy the Astrocade_\\*.rbf file to the root of the SD card. Create an **Astrocade** folder on the root of the card, and place Astrocade roms (\\*.BIN) inside this folder. Search the web for a copy of the Bally Astrocade BIOS and rename it **boot.rom** and then place it in the **Astrocade** folder. Use the keyboard to select the game if prompted.\n\n## Astrocade Controls\nThe Astrocade had a very unusual controller. It was a gun-grip style handle with a joystick on the top, which had an integrated pot switch serving as a paddle control. This translates poorly to modern controllers. MiSTer only offers analog data for the first two axes of the controller, which is most often the left analog stick. For games which require paddle controls, directional movement, and the trigger button used together, I suggest mapping the controller such that the right analog stick is dpad motion, one of the shoulder buttons is the trigger button, and the left analog stick is the paddle.\n\n## Cart Expansions\nNo cart expansions are implemented at this time.\n\n## Known Issues\nThe video timings of the Astrocade seem to create problems with the first and last lines of each field. This seems to work okay on actual CRTs, but scandoublers like OSSC may be confused by it.\n",
+      "readme": "# [Bally Astrocade](https://en.wikipedia.org/wiki/Bally_Astrocade) for MiSTer Platform\n\n### This is an FPGA implementation of the Bally Astrocade based on a project by MikeJ.\n\n## Features\n * Supports full keypad.\n * Supports paddle control as analog stick.\n\n## Installation\nCopy the Astrocade_\\*.rbf file to the root of the SD card. Create an **Astrocade** folder on the root of the card, and place Astrocade roms (\\*.BIN) inside this folder. Search the web for a copy of the Bally Astrocade BIOS and rename it **boot.rom** and then place it in the **Astrocade** folder. Use the keyboard to select the game if prompted.\n\n## Astrocade Controls\nThe Astrocade had a very unusual controller. It was a gun-grip style handle with a joystick on the top, which had an integrated pot switch serving as a paddle control. This translates poorly to modern controllers. MiSTer only offers analog data for the first two axes of the controller, which is most often the left analog stick. For games which require paddle controls, directional movement, and the trigger button used together, I suggest mapping the controller such that the right analog stick is dpad motion, one of the shoulder buttons is the trigger button, and the left analog stick is the paddle.\n\n## Cart Expansions\nNo cart expansions are implemented at this time.\n\n## Known Issues\nThe video timings of the Astrocade seem to create problems with the first and last lines of each field. This seems to work okay on actual CRTs, but scandoublers like OSSC may be confused by it.\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-DB9/Astrocade_MiSTer",
@@ -6069,6 +6093,12 @@
           "name": "Astrocade_20200920.rbf",
           "sha": "776167bf8f51f9c02c03df3285718e49fab4c5fd",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Astrocade_MiSTer/master/releases/Astrocade_20200920.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Astrocade_20210118.rbf",
+          "sha": "5b139e4c411a179bc071f80b14e38a73291bfc0e",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Astrocade_MiSTer/master/releases/Astrocade_20210118.rbf",
           "type": "RBF"
         }
       ]
