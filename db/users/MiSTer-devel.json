@@ -1676,6 +1676,19 @@
           "type": "RBF"
         },
         {
+          "name": "Dangun Feveron.mra",
+          "sha": "a4f8a74e0508145eca0f680d59c62199d5eed22f",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cave_MiSTer/master/releases/Dangun%20Feveron.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Dangun Feveron",
+            "rbf": "cave",
+            "zips": [
+              "dfeveron.zip"
+            ]
+          }
+        },
+        {
           "name": "DoDonPachi (Arrange).mra",
           "sha": "f7ce9fe31183501ed983becec703aa412fad8c4d",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cave_MiSTer/master/releases/DoDonPachi%20(Arrange).mra",
@@ -1724,6 +1737,19 @@
             "rbf": "cave",
             "zips": [
               "ddonpach.zip"
+            ]
+          }
+        },
+        {
+          "name": "ESP Ra.De..mra",
+          "sha": "be344408c1376a70ffc316d1f74c7f4585d0879a",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cave_MiSTer/master/releases/ESP%20Ra.De..mra",
+          "type": "MRA",
+          "extra": {
+            "name": "ESP Ra. De.",
+            "rbf": "cave",
+            "zips": [
+              "esprade.zip"
             ]
           }
         }
