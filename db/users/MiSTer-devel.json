@@ -1677,10 +1677,16 @@
         },
         {
           "name": "DoDonPachi (Arrange).mra",
-          "sha": "bcab3f51a0b38c58cbfaddc37e1c548f65b2cb2d",
+          "sha": "4b2355fc1446a6dc188da660b06070f18b25fee3",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cave_MiSTer/master/releases/DoDonPachi%20(Arrange).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "DoDonPachi (20120212 Arrange Ver. 1.1)",
+            "rbf": "cave",
+            "zips": [
+              "ddonpach.zip|ddonpacha.zip"
+            ]
+          }
         },
         {
           "name": "DoDonPachi (Japan).mra",
@@ -1697,7 +1703,7 @@
         },
         {
           "name": "DoDonPachi (no warn).mra",
-          "sha": "4f521863d6c1158955024a36b8645d3f0089f7ae",
+          "sha": "3b5d299f423f38d66fb5865aedd4929a67f521b3",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cave_MiSTer/master/releases/DoDonPachi%20(no%20warn).mra",
           "type": "MRA",
           "extra": {
