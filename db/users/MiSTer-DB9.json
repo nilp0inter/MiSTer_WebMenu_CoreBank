@@ -6741,6 +6741,12 @@
           "sha": "007c79472ca0ed0e9577cc97e4c7e52b59b9067d",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Gameboy_MiSTer/master/releases/Gameboy_20210109.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20210124.rbf",
+          "sha": "358e7a27a4838f2f5cde509a03e9b6bede89678a",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Gameboy_MiSTer/master/releases/Gameboy_20210124.rbf",
+          "type": "RBF"
         }
       ]
     },
@@ -7229,7 +7235,7 @@
     {
       "name": "MegaCD_MiSTer",
       "description": "Mega CD for MiSTer",
-      "readme": "# MegaCD for MiSTer by srg320\n\n# Installation\nPlace BIOS to MegaCD folder with name boot.rom\n\n# Features\nAbout 150 games tested without long playing, US/EU regions only.\n\n### Known issues:\n- Microcosm & Ultraverse Prime (US) - graphic glitch in game\n- Supreme Warrior - Ying Heung (US) - can't select 2 disk\n\n### Supported image formats:\n- CUE + single image\n- CUE + multiple images (image per track)\n\n### ZIP\nZIP is supported but doesn't work due to long positioning time.\nSo DON'T zip the images!\n\n### CD BIOS\nsupport BIOS per game. Place cd_bios.rom in game's folder.\n\n### Pier Solar\nPlace cartridge dump named cart.rom into game's folder\n",
+      "readme": "# [Sega MegaCD](https://en.wikipedia.org/wiki/Sega_CD) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\n# Installation\nPlace BIOS to MegaCD folder with name boot.rom\n\n# Features\nAbout 150 games tested without long playing, US/EU regions only.\n\n### Known issues:\n- Microcosm & Ultraverse Prime (US) - graphic glitch in game\n- Supreme Warrior - Ying Heung (US) - can't select 2 disk\n\n### Supported image formats:\n- CUE + single image\n- CUE + multiple images (image per track)\n\n### ZIP\nZIP is supported but doesn't work due to long positioning time.\nSo DON'T zip the images!\n\n### CD BIOS\nsupport BIOS per game. Place cd_bios.rom in game's folder.\n\n### Pier Solar\nPlace cartridge dump named cart.rom into game's folder\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-DB9/MegaCD_MiSTer",
@@ -7298,6 +7304,12 @@
           "name": "MegaCD_20200620.rbf",
           "sha": "5b19fd8e0067abae361ddbeb8ab597ceca76e2c0",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/MegaCD_MiSTer/master/releases/MegaCD_20200620.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "MegaCD_20210124.rbf",
+          "sha": "454ec700cce9c483ac5162e8531efdc4bc32ae96",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/MegaCD_MiSTer/master/releases/MegaCD_20210124.rbf",
           "type": "RBF"
         }
       ]
