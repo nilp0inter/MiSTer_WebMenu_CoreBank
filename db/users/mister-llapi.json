@@ -65,7 +65,7 @@
     {
       "name": "Gameboy_MiSTer",
       "description": "Gameboy for MiSTer",
-      "readme": "# [Gameboy](https://en.wikipedia.org/wiki/Game_Boy)  / [Gameboy Color](https://en.wikipedia.org/wiki/Game_Boy_Color) for MiSTer Platform\r\n\r\nThis is port of [Gameboy for MiST](https://github.com/mist-devel/mist-board/tree/master/cores/gameboy)\r\n\r\n* Place RBF file into root of SD card.\r\n* Place *.gb files into Gameboy folder.\r\n\r\n## Features\r\n* Original Gameboy & Gameboy Color Support\r\n* Super Gameboy Support - Borders, Palettes and Multiplayer\r\n* SaveStates\r\n* Fastforward \r\n* Rewind - Allows you to rewind up to 40 seconds of gameplay\r\n* Frameblending - Prevents flicker in some games (e.g. \"Chikyuu Kaihou Gun Zas\") \r\n* Custom Palette Loading\r\n* Gameboy Link Port Support - Requires USERIO adapter\r\n* Cheats\r\n\r\n## Open Source Bootstrap roms\r\nThis now includes the open source boot ROMs from [https://github.com/LIJI32/SameBoy/](https://github.com/LIJI32/SameBoy/) (for maximum GBC compatibility/authenticity you can still place the Gameboy color bios/bootrom into the Gameboy folder and rename it to boot1.rom)\r\n\r\n## Palettes\r\nCore supports custom palettes (*.gbp) which should be placed into Gameboy folder. Some examples are available in palettes folder.\r\n\r\n## Autoload\r\nTo autoload custom palette at startup rename it to boot0.rom\r\nTo autoload favorite game at startup rename it to boot2.rom\r\n\r\n## Video output\r\nThe Gameboy can disable video output at any time which causes problems with vsync_adjust=2 or analog video during screen transitions. Enable the Stabilize video option to fix this at the cost of some latency.\r\n\r\n\r\n",
+      "readme": "# [Gameboy](https://en.wikipedia.org/wiki/Game_Boy)  / [Gameboy Color](https://en.wikipedia.org/wiki/Game_Boy_Color) for MiSTer Platform\r\n\r\nThis is port of [Gameboy for MiST](https://github.com/mist-devel/mist-board/tree/master/cores/gameboy)\r\n\r\n* Place RBF file into root of SD card.\r\n* Place *.gb files into Gameboy folder.\r\n\r\n## Features\r\n* Original Gameboy & Gameboy Color Support\r\n* Super Gameboy Support - Borders, Palettes and Multiplayer\r\n* SaveStates\r\n* Fastforward \r\n* Rewind - Allows you to rewind up to 40 seconds of gameplay\r\n* Frameblending - Prevents flicker in some games (e.g. \"Chikyuu Kaihou Gun Zas\") \r\n* Custom Palette Loading\r\n* Real-Time Clock Support\r\n* Gameboy Link Port Support - Requires USERIO adapter\r\n* Cheats\r\n\r\n## Open Source Bootstrap roms\r\nThis now includes the open source boot ROMs from [https://github.com/LIJI32/SameBoy/](https://github.com/LIJI32/SameBoy/) (for maximum GBC compatibility/authenticity you can still place the Gameboy color bios/bootrom into the Gameboy folder and rename it to boot1.rom)\r\n\r\n## Palettes\r\nCore supports custom palettes (*.gbp) which should be placed into Gameboy folder. Some examples are available in palettes folder.\r\n\r\n## Autoload\r\nTo autoload custom palette at startup rename it to boot0.rom\r\nTo autoload favorite game at startup rename it to boot2.rom\r\n\r\n## Video output\r\nThe Gameboy can disable video output at any time which causes problems with vsync_adjust=2 or analog video during screen transitions. Enable the Stabilize video option to fix this at the cost of some latency.\r\n\r\n\r\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-LLAPI/Gameboy_MiSTer",
@@ -131,6 +131,12 @@
           "type": "RBF"
         },
         {
+          "name": "Gameboy_20210124.rbf",
+          "sha": "128b38297072d575abfa04b661858da10f1fe4f1",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Gameboy_MiSTer/master/releases/Gameboy_20210124.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Gameboy_LLAPI_20190927.rbf",
           "sha": "d5ba7ee489ea767d7fd4a0672b758afca3a35d92",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Gameboy_MiSTer/master/releases/Gameboy_LLAPI_20190927.rbf",
@@ -176,6 +182,12 @@
           "name": "Gameboy_LLAPI_20210115.rbf",
           "sha": "ec39d06472e64309854218fcb2753fa35ba6f3cc",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Gameboy_MiSTer/master/releases/Gameboy_LLAPI_20210115.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_LLAPI_20210124.rbf",
+          "sha": "9127ebd5fb5a69c8834ccb784fd6dfc1b84a2893",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Gameboy_MiSTer/master/releases/Gameboy_LLAPI_20210124.rbf",
           "type": "RBF"
         }
       ]
@@ -515,7 +527,7 @@
     {
       "name": "MegaCD_MiSTer",
       "description": "Mega CD for MiSTer",
-      "readme": "# MegaCD for MiSTer by srg320\n\n# Installation\nPlace BIOS to MegaCD folder with name boot.rom\n\n# Features\nAbout 150 games tested without long playing, US/EU regions only.\n\n### Known issues:\n- Microcosm & Ultraverse Prime (US) - graphic glitch in game\n- Supreme Warrior - Ying Heung (US) - can't select 2 disk\n\n### Supported image formats:\n- CUE + single image\n- CUE + multiple images (image per track)\n\n### ZIP\nZIP is supported but doesn't work due to long positioning time.\nSo DON'T zip the images!\n\n### CD BIOS\nsupport BIOS per game. Place cd_bios.rom in game's folder.\n\n### Pier Solar\nPlace cartridge dump named cart.rom into game's folder\n",
+      "readme": "# [Sega MegaCD](https://en.wikipedia.org/wiki/Sega_CD) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\n# Installation\nPlace BIOS to MegaCD folder with name boot.rom\n\n# Features\nAbout 150 games tested without long playing, US/EU regions only.\n\n### Known issues:\n- Microcosm & Ultraverse Prime (US) - graphic glitch in game\n- Supreme Warrior - Ying Heung (US) - can't select 2 disk\n\n### Supported image formats:\n- CUE + single image\n- CUE + multiple images (image per track)\n\n### ZIP\nZIP is supported but doesn't work due to long positioning time.\nSo DON'T zip the images!\n\n### CD BIOS\nsupport BIOS per game. Place cd_bios.rom in game's folder.\n\n### Pier Solar\nPlace cartridge dump named cart.rom into game's folder\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-LLAPI/MegaCD_MiSTer",
@@ -578,6 +590,18 @@
           "name": "MegaCD_20200620.rbf",
           "sha": "5ed503153bcabd853a17c6b6cd519b4282ebee4d",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/MegaCD_MiSTer/master/releases/MegaCD_20200620.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "MegaCD_20210123.rbf",
+          "sha": "ceaa43e457cf69841b5fef28ba063b519dae6896",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/MegaCD_MiSTer/master/releases/MegaCD_20210123.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "MegaCD_20210124.rbf",
+          "sha": "a57ecc79590160419f7800c675b2f53e55edfdf1",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/MegaCD_MiSTer/master/releases/MegaCD_20210124.rbf",
           "type": "RBF"
         },
         {
@@ -644,6 +668,12 @@
           "name": "MegaCD_LLAPI_20200828.rbf",
           "sha": "25b27ea2664a761c409048d328024a422933a3db",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/MegaCD_MiSTer/master/releases/MegaCD_LLAPI_20200828.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "MegaCD_LLAPI_20210124.rbf",
+          "sha": "c4662a8c05b2af3bcd47b22708f0459b1a21b0e0",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/MegaCD_MiSTer/master/releases/MegaCD_LLAPI_20210124.rbf",
           "type": "RBF"
         }
       ]
