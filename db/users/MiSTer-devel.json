@@ -2245,6 +2245,35 @@
       ]
     },
     {
+      "name": "Arcade-DonkeyKong3_MiSTer",
+      "description": null,
+      "readme": "---------------------------------------------------------------------------------\n-- \n-- *** WORK IN PROGRESS VERSION ***\n--\n-- Arcade: Donkey Kong 3 for MiSTer by gaz68 (https://github.com/gaz68)\n-- July 2020 \n-- \n-- Original Donkey Kong port to MiSTer by Sorgelig\n-- 18 April 2018\n-- \n---------------------------------------------------------------------------------\n-- \n-- dkong Copyright (c) 2003 - 2004 Katsumi Degawa\n-- T80   Copyright (c) 2001-2002 Daniel Wallner (jesus@opencores.org) All rights reserved\n-- T65   Copyright (c) 2002-2015 Daniel Wallner, Mike Johnson, Wolfgang Scherr, Morten Leikvoll\n-- NES APU taken from the NES for MiSTer project\n--\n---------------------------------------------------------------------------------\n-- \n-- Keyboard inputs :\n--\n--   F2          : Start 2 players\n--   F1          : Start 1 player\n--   SPACE       : Fire\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   R,F,D,G     : Player 2 Movements (Cocktail mode only)\n--   A           : Player 2 Fire\n--   T           : Test mode (hold down for several seconds).\n--\n--\n-- Joystick support.\n--  \n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROM is not included. In order to use this arcade, you need to provide a correct ROM file.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n\n\n",
+      "archived": false,
+      "fork": false,
+      "url": "https://github.com/MiSTer-devel/Arcade-DonkeyKong3_MiSTer",
+      "releases": [
+        {
+          "name": "Arcade-DonkeyKong3_20210127.rbf",
+          "sha": "025eedf77e98591fd2111292eb909d6f049bc4f5",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-DonkeyKong3_MiSTer/master/releases/Arcade-DonkeyKong3_20210127.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Donkey Kong 3.mra",
+          "sha": "b159b5dabce858adbaf795d9a66589edc3f2fc5e",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-DonkeyKong3_MiSTer/master/releases/Donkey%20Kong%203.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Donkey Kong 3 (US)",
+            "rbf": "DonkeyKong3",
+            "zips": [
+              "dkong3.zip"
+            ]
+          }
+        }
+      ]
+    },
+    {
       "name": "Arcade-DonkeyKongJunior_MiSTer",
       "description": "Donkey Kong Junior",
       "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: Donkey Kong Junior port to MiSTer by gaz68 (https://github.com/gaz68)\n-- 12 October 2019\n-- \n-- Original Donkey Kong port to MiSTer by Sorgelig\n-- 18 April 2018\n-- \n---------------------------------------------------------------------------------\n-- \n-- dkong Copyright (c) 2003 - 2004 Katsumi Degawa\n-- T80   Copyright (c) 2001-2002 Daniel Wallner (jesus@opencores.org) All rights reserved\n-- T48   Copyright (c) 2004, Arnim Laeuger (arniml@opencores.org) All rights reserved\n-- \n---------------------------------------------------------------------------------\n-- \n-- Support screen and controls rotation on HDMI output.\n-- Only controls are rotated on VGA output.\n-- \n--\n-- Keyboard inputs :\n--\n--   F2          : Coin + Start 2 players\n--   F1          : Coin + Start 1 player\n--   SPACE       : Jump\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   R,F,D,G     : Player 2 Movements (Cocktail mode only)\n--   A           : Player 2 Fire (Cocktail mode only)\n--\n--\n-- Joystick support.\n--  \n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROM is not included. In order to use this arcade, you need to provide a correct ROM file.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
