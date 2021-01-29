@@ -6988,6 +6988,12 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Zaxxon_20210128.rbf",
+          "sha": "4510b74f9e6ea7f41871d1d78d12e2d1b130a860",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Zaxxon_MiSTer/master/releases/Arcade-Zaxxon_20210128.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Arcade-zaxxon_20200329.rbf",
           "sha": "252f8cdddad6fe09c9d260159c9822aa32a3b657",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Zaxxon_MiSTer/master/releases/Arcade-zaxxon_20200329.rbf",
@@ -7000,8 +7006,21 @@
           "type": "RBF"
         },
         {
+          "name": "Future Spy.mra",
+          "sha": "28cd8ea089a3e820204940dc8301ae19915d7006",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Zaxxon_MiSTer/master/releases/Future%20Spy.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Future Spy",
+            "rbf": "zaxxon",
+            "zips": [
+              "futspy.zip"
+            ]
+          }
+        },
+        {
           "name": "Super Zaxxon.mra",
-          "sha": "140241726408a000a809a75add6e07a379cddac5",
+          "sha": "3325f0e8f6006e146608bb7d111ff94865858662",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Zaxxon_MiSTer/master/releases/Super%20Zaxxon.mra",
           "type": "MRA",
           "extra": {
@@ -7014,7 +7033,7 @@
         },
         {
           "name": "zaxxon.mra",
-          "sha": "4db2ed42320edabe60680871a3aa3a99647848e1",
+          "sha": "de6fa5ee51d5f21a0acc5b7c67fd99eb3d51299c",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Zaxxon_MiSTer/master/releases/zaxxon.mra",
           "type": "MRA",
           "extra": {
