@@ -1994,8 +1994,14 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-CrazyKong_20210127.rbf",
+          "sha": "fda7e3c38f6c5fcd43144dc50ef8585e16b0eac4",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-CrazyKong_MiSTer/master/releases/Arcade-CrazyKong_20210127.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Big Kong.mra",
-          "sha": "bfc6f4426c99828327465f5ca43b3a4aa900489d",
+          "sha": "92ced40e9e46dbb42a1886f8a07c9413a080ac2b",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-CrazyKong_MiSTer/master/releases/Big%20Kong.mra",
           "type": "MRA",
           "extra": {
@@ -2008,7 +2014,7 @@
         },
         {
           "name": "Crazy Kong (Orca bootleg).mra",
-          "sha": "83533ceaf867bb73d26a14a5fcd466cd870cc690",
+          "sha": "4bdc1775a6ae3294645b53cdfdd6496bd20dc48e",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-CrazyKong_MiSTer/master/releases/Crazy%20Kong%20(Orca%20bootleg).mra",
           "type": "MRA",
           "extra": {
@@ -2021,7 +2027,7 @@
         },
         {
           "name": "Crazy Kong Part II.mra",
-          "sha": "f2442121c1f1e5b935a53c31cb91221e5a635973",
+          "sha": "a61d9c271de75ee1cc578d2fe589978b2864fd7b",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-CrazyKong_MiSTer/master/releases/Crazy%20Kong%20Part%20II.mra",
           "type": "MRA",
           "extra": {
@@ -10487,7 +10493,7 @@
     {
       "name": "MemTest_MiSTer",
       "description": null,
-      "readme": "# MemTest - Utility to test SDRAM daughter board.\n\n## Memtest screen:\n\n![MemTest screen](img/memtest.png)\n\n 1. Auto mode indicator (animated),\n 2. Test time passed in minutes,\n 3. Current memory module frequency in MHz,\n 4. Memory module size:\n    * 0 - no memory board detected\n    * 1 - 32 MB\n    * 2 - 64 MB\n    * 3 - 128 MB\n 5. Number of of passed test cycles (each cycle is 32 MB),\n 6. Number of failed tests.\n\n## Controls (keyboard)\n* Up - increase frequency\n* Down - decrease frequency\n* Enter - reset the test\n* C - on 128MB module switches between chips.\n* A - auto mode, detecting the maximum frequency for module being tested. Test starts from maximum frequency.\nWith every error frequency will be decreased.\n\nTest is passed if amount of errors is 0. For quick test let it run for 10 minutes in auto mode. If you want to be sure, let it run for 1-2 hours.\nBoard should pass at least 130 MHz clock test. Any higher clock will assure the higher quality of the board.\n",
+      "readme": "# MemTest - Utility to test SDRAM daughter board.\n\n## Memtest screen:\n\n![MemTest screen](img/memtest.png)\n\n 1. Auto mode indicator (animated),\n 2. Test time passed in minutes,\n 3. Current memory module frequency in MHz,\n 4. Memory module size:\n    * 0 - no memory board detected\n    * 1 - 32 MB\n    * 2 - 64 MB\n    * 3 - 128 MB\n 5. Number of of passed test cycles (each cycle is 32 MB),\n 6. Number of failed tests.\n\n## Controls (keyboard)\n* Up - increase frequency\n* Down - decrease frequency\n* Enter - reset the test\n* C - on 128MB module switches between chips.\n* A - auto mode, detecting the maximum frequency for module being tested. Test starts from maximum frequency.\nWith every error frequency will be decreased.\n\n## Controls (gamepad)\n* Up - increase frequency\n* Down - decrease frequency\n* Start - reset the test\n* B - on 128MB module switches between chips.\n* A - auto mode, detecting the maximum frequency for module being tested. Test starts from maximum frequency.\nWith every error frequency will be decreased.\n\nTest is passed if amount of errors is 0. For quick test let it run for 10 minutes in auto mode. If you want to be sure, let it run for 1-2 hours.\nBoard should pass at least 130 MHz clock test. Any higher clock will assure the higher quality of the board.\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/MemTest_MiSTer",
