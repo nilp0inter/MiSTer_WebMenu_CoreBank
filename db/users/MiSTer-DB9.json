@@ -1366,6 +1366,32 @@
               "ckongpt2.zip"
             ]
           }
+        },
+        {
+          "name": "Crazy Kong.mra",
+          "sha": "3fbb9a85e9c43ea53df5236c668bfafd4e2cd390",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-CrazyKong_MiSTer/master/releases/Crazy%20Kong.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Crazy Kong",
+            "rbf": "CrazyKong",
+            "zips": [
+              "ckong.zip"
+            ]
+          }
+        },
+        {
+          "name": "Donkey Kong (Spanish Crazy Kong bootleg).mra",
+          "sha": "50a4e584df080489ed21ff176eff5dc126e4706a",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-CrazyKong_MiSTer/master/releases/Donkey%20Kong%20(Spanish%20Crazy%20Kong%20bootleg).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Donkey Kong (Spanish Crazy Kong bootleg)",
+            "rbf": "CrazyKong",
+            "zips": [
+              "ckong.zip|ckongdks.zip"
+            ]
+          }
         }
       ]
     },
