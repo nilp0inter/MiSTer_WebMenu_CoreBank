@@ -6709,7 +6709,7 @@
     {
       "name": "Gameboy_MiSTer",
       "description": "Gameboy for MiSTer",
-      "readme": "# [Gameboy](https://en.wikipedia.org/wiki/Game_Boy)  / [Gameboy Color](https://en.wikipedia.org/wiki/Game_Boy_Color) for MiSTer Platform\r\n\r\nThis is port of [Gameboy for MiST](https://github.com/mist-devel/mist-board/tree/master/cores/gameboy)\r\n\r\n* Place RBF file into root of SD card.\r\n* Place *.gb files into Gameboy folder.\r\n\r\n## Features\r\n* Original Gameboy & Gameboy Color Support\r\n* Super Gameboy Support - Borders, Palettes and Multiplayer\r\n* SaveStates\r\n* Fastforward \r\n* Rewind - Allows you to rewind up to 40 seconds of gameplay\r\n* Frameblending - Prevents flicker in some games (e.g. \"Chikyuu Kaihou Gun Zas\") \r\n* Custom Palette Loading\r\n* Gameboy Link Port Support - Requires USERIO adapter\r\n* Cheats\r\n\r\n## Open Source Bootstrap roms\r\nThis now includes the open source boot ROMs from [https://github.com/LIJI32/SameBoy/](https://github.com/LIJI32/SameBoy/) (for maximum GBC compatibility/authenticity you can still place the Gameboy color bios/bootrom into the Gameboy folder and rename it to boot1.rom)\r\n\r\n## Palettes\r\nCore supports custom palettes (*.gbp) which should be placed into Gameboy folder. Some examples are available in palettes folder.\r\n\r\n## Autoload\r\nTo autoload custom palette at startup rename it to boot0.rom\r\nTo autoload favorite game at startup rename it to boot2.rom\r\n\r\n## Video output\r\nThe Gameboy can disable video output at any time which causes problems with vsync_adjust=2 or analog video during screen transitions. Enable the Stabilize video option to fix this at the cost of some latency.\r\n\r\n\r\n",
+      "readme": "# [Gameboy](https://en.wikipedia.org/wiki/Game_Boy)  / [Gameboy Color](https://en.wikipedia.org/wiki/Game_Boy_Color) for MiSTer Platform\r\n\r\nThis is port of [Gameboy for MiST](https://github.com/mist-devel/mist-board/tree/master/cores/gameboy)\r\n\r\n* Place RBF file into root of SD card.\r\n* Place *.gb files into Gameboy folder.\r\n\r\n## Features\r\n* Original Gameboy & Gameboy Color Support\r\n* Super Gameboy Support - Borders, Palettes and Multiplayer\r\n* SaveStates\r\n* Fastforward \r\n* Rewind - Allows you to rewind up to 40 seconds of gameplay\r\n* Frameblending - Prevents flicker in some games (e.g. \"Chikyuu Kaihou Gun Zas\") \r\n* Custom Palette Loading\r\n* Real-Time Clock Support\r\n* Gameboy Link Port Support - Requires USERIO adapter\r\n* Cheats\r\n\r\n## Open Source Bootstrap roms\r\nThis now includes the open source boot ROMs from [https://github.com/LIJI32/SameBoy/](https://github.com/LIJI32/SameBoy/) (for maximum GBC compatibility/authenticity you can still place the Gameboy color bios/bootrom into the Gameboy folder and rename it to boot1.rom)\r\n\r\n## Palettes\r\nCore supports custom palettes (*.gbp) which should be placed into Gameboy folder. Some examples are available in palettes folder.\r\n\r\n## Autoload\r\nTo autoload custom palette at startup rename it to boot0.rom\r\nTo autoload favorite game at startup rename it to boot2.rom\r\n\r\n## Video output\r\nThe Gameboy can disable video output at any time which causes problems with vsync_adjust=2 or analog video during screen transitions. Enable the Stabilize video option to fix this at the cost of some latency.\r\n\r\n\r\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-DB9/Gameboy_MiSTer",
@@ -6790,6 +6790,12 @@
           "name": "Gameboy_20210124.rbf",
           "sha": "358e7a27a4838f2f5cde509a03e9b6bede89678a",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Gameboy_MiSTer/master/releases/Gameboy_20210124.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20210130.rbf",
+          "sha": "229014be30fffe7b69f455650a71c4eb2fc2624f",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Gameboy_MiSTer/master/releases/Gameboy_20210130.rbf",
           "type": "RBF"
         }
       ]
@@ -7360,6 +7366,12 @@
           "name": "MegaCD_20210125.rbf",
           "sha": "f12c35442f9e806fb2179e7100358816ce502f7c",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/MegaCD_MiSTer/master/releases/MegaCD_20210125.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "MegaCD_20210130.rbf",
+          "sha": "53a45d339432640e463f32321ea62e35c720b942",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/MegaCD_MiSTer/master/releases/MegaCD_20210130.rbf",
           "type": "RBF"
         }
       ]
