@@ -2799,8 +2799,14 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Galaxian_20210131.rbf",
+          "sha": "ac0b98f52eef5f9322ca9e128c07660771fce675",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Galaxian_MiSTer/master/releases/Arcade-Galaxian_20210131.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Azurian Attack.mra",
-          "sha": "7bf2960f9d236d401132e60e7382074f7caa84e0",
+          "sha": "ed4d919284a2d439c4be856272c7b9474720eb72",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Galaxian_MiSTer/master/releases/Azurian%20Attack.mra",
           "type": "MRA",
           "extra": {
@@ -2813,7 +2819,7 @@
         },
         {
           "name": "Black Hole.mra",
-          "sha": "3049770cdb8c7f9d3ae6f4fcfae0bf132be133a8",
+          "sha": "81319435011b6cec506bd76d831cbe9972381f84",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Galaxian_MiSTer/master/releases/Black%20Hole.mra",
           "type": "MRA",
           "extra": {
@@ -2850,7 +2856,7 @@
         },
         {
           "name": "Devil Fish.mra",
-          "sha": "0436d1e78295143be72b5ba2a9fd024542d6293a",
+          "sha": "bda3871fac507ea84167c25aa717974b15a87d48",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Galaxian_MiSTer/master/releases/Devil%20Fish.mra",
           "type": "MRA",
           "extra": {
@@ -2863,7 +2869,7 @@
         },
         {
           "name": "Galaxian.mra",
-          "sha": "d2d611a2d46b170f1b791b81062de63b83125f89",
+          "sha": "5ab21e2a8dc96095249d688abafd8c6301d0829c",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Galaxian_MiSTer/master/releases/Galaxian.mra",
           "type": "MRA",
           "extra": {
@@ -2871,6 +2877,19 @@
             "rbf": "galaxian",
             "zips": [
               "galaxian.zip"
+            ]
+          }
+        },
+        {
+          "name": "King And Balloon.mra",
+          "sha": "5a27541de84f5b4b243cfa4c01d1190f5de725ab",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Galaxian_MiSTer/master/releases/King%20And%20Balloon.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "King and Balloon",
+            "rbf": "galaxian",
+            "zips": [
+              "kingball.zip"
             ]
           }
         },
@@ -2889,7 +2908,7 @@
         },
         {
           "name": "Moon Cresta.mra",
-          "sha": "5a328c076729f9956b21753bed215bd2aa6321bb",
+          "sha": "f4b24b0bdad42a7ae3ad421a178164e13b7834a4",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Galaxian_MiSTer/master/releases/Moon%20Cresta.mra",
           "type": "MRA",
           "extra": {
@@ -2913,7 +2932,7 @@
         },
         {
           "name": "Omega.mra",
-          "sha": "330117640be93694566f2c1066130d7eec5a3c4c",
+          "sha": "3626f089c4c33706800d9521e8b80d7ee399c026",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Galaxian_MiSTer/master/releases/Omega.mra",
           "type": "MRA",
           "extra": {
@@ -2926,7 +2945,7 @@
         },
         {
           "name": "Orbitron.mra",
-          "sha": "fb6cc7e3015a8bb544a9caa2b7643526575db6ba",
+          "sha": "f920c2ecdd07c89c1485b0365aabc2b0c7d04b9e",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Galaxian_MiSTer/master/releases/Orbitron.mra",
           "type": "MRA",
           "extra": {
@@ -2939,20 +2958,14 @@
         },
         {
           "name": "Pisces.mra",
-          "sha": "9ce834a0309ffda3e0235c1dec94e95fd93d2fce",
+          "sha": "37801d2d828630d18429426c7cb378033c7b978c",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Galaxian_MiSTer/master/releases/Pisces.mra",
           "type": "MRA",
-          "extra": {
-            "name": "Pisces",
-            "rbf": "galaxian",
-            "zips": [
-              "pisces.zip"
-            ]
-          }
+          "extra": null
         },
         {
           "name": "UniWar S.mra",
-          "sha": "a7a598091879172c8af6911ec88dd29ef49cbe96",
+          "sha": "f3b3c7d60ff5783c14bd3ec01652af402204a887",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Galaxian_MiSTer/master/releases/UniWar%20S.mra",
           "type": "MRA",
           "extra": {
@@ -2978,7 +2991,7 @@
         },
         {
           "name": "War of the Bugs.mra",
-          "sha": "df2e0eb64f77b137e51bcb6a21eb40c4b0ad6afe",
+          "sha": "e5fe04192b4291ce5ff41d0d84c6f9de1cbd05ec",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Galaxian_MiSTer/master/releases/War%20of%20the%20Bugs.mra",
           "type": "MRA",
           "extra": {
