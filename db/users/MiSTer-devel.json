@@ -2053,7 +2053,7 @@
         },
         {
           "name": "Donkey Kong (Spanish Crazy Kong bootleg).mra",
-          "sha": "50a4e584df080489ed21ff176eff5dc126e4706a",
+          "sha": "115b0681470f036f5007711509ff739de291a3fc",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-CrazyKong_MiSTer/master/releases/Donkey%20Kong%20(Spanish%20Crazy%20Kong%20bootleg).mra",
           "type": "MRA",
           "extra": {
@@ -5844,7 +5844,7 @@
         },
         {
           "name": "Rafflesia.mra",
-          "sha": "f3a3975683e1f70cb9f394b1f3318394bf378270",
+          "sha": "298892ce92d7aaee8783a1cb7c9f01035d26edf8",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SEGASYS1_MiSTer/main/releases/Rafflesia.mra",
           "type": "MRA",
           "extra": {
@@ -8144,7 +8144,7 @@
     {
       "name": "AY-3-8500-MiSTer",
       "description": "Port of AY-3-8500 to MiSTer",
-      "readme": "# [AY-3-8500](https://en.wikipedia.org/wiki/AY-3-8500) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\n---------------------------------------------------------------------------------\n-- \n-- Dedicated Console: AY-3-8500 \"Pong-on-a-chip\"\n-- Creation and port to MiSTer by Cole Johnson\n-- 24 December 2019\n-- \n---------------------------------------------------------------------------------\n-- \n-- \n-- Keyboard inputs:\n--\n--   R       : Reset\n--   W/S     : Player 1 up/down\n--   UP/DOWN : Player 1 up/down\n--   SPACE   : Serve Ball\n--   V       : Toggle Manual Serve\n--   C       : Toggle Paddle Size\n--   X       : Toggle Ball Speed\n--   Z       : Toggle Ball Angle\n--\n-- Game Select Buttons:\n--\n--   1 : Tennis\n--   2 : Soccer\n--   3 : Handicap\n--   4 : Squash\n--   5 : Practice\n--   6 : Rifle 1\n--   7 : Rifle 2\n--\n-- Joystick support not yet implemented.\n-- \n-- \n---------------------------------------------------------------------------------\n--\n--\n-- Color Palletes:\n--\n--   Mono: Solid black/white, most systems did this\n--   Greyscale: Achieved using external resistors in real systems\n--   RGB1: Arbitrary pallete used during development\n--   RGB2: Based on video of an actual console (forgot which one)\n--   Field: Approximation of a grass-colored field\n--   Ice: Approximation of an ice rink\n--   Christmas: Mono with red/green paddles\n--   Marksman: Based on footage of the Coleco Telstar Marksman\n--   Las Vegas: Based on footage of Tele-spiel Las Vegas\n--\n--\n---------------------------------------------------------------------------------\n--\n--\n-- Changelog:\n-- 2019/12/24 Initial release\n--\n--\n---------------------------------------------------------------------------------\n--\n--\n-- Developed by Cole Johnson\n--   Blog: https://nerdstuffbycole.blogspot.com/\n--   Twitter: https://twitter.com/ColeJ71909899\n--   Github: https://github.com/TheProgrammerIncarnate\n--   Gitlab: https://gitlab.com/TheProgrammerIncarnate\n--\n-- Thanks to:\n-- Sean Riddle for die photos\n-- Alan S. and @MisterAddons for donating some MiSTer hardware\n--\n-- Patreon supporters: Suverman, Erika, Ewen McNeill, Dylan Lipsitz, Ewen McNeill,\n-- Alan Steremberg, and JM Blandin\n--                       ^Two letters to live by\n---------------------------------------------------------------------------------\n",
+      "readme": "# [AY-3-8500 \"Pong-on-a-chip\"](https://en.wikipedia.org/wiki/AY-3-8500) for [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\nCreation and port to MiSTer by Cole Johnson  \n\n## Controls\n\n### Keyboard inputs:\n\nR       : Reset  \nW/S     : Player 1 up/down  \nUP/DOWN : Player 1 up/down  \nSPACE   : Serve Ball  \nV       : Toggle Manual Serve  \nC       : Toggle Paddle Size  \nX       : Toggle Ball Speed  \nZ       : Toggle Ball Angle  \n\n### Game Select Buttons:\n\n1 : Tennis  \n2 : Soccer  \n3 : Handicap  \n4 : Squash  \n5 : Practice  \n6 : Rifle 1  \n7 : Rifle 2  \n\nJoystick support not yet implemented.\n\n## Color Palletes:\n\nMono: Solid black/white, most systems did this  \nGreyscale: Achieved using external resistors in real systems  \nRGB1: Arbitrary pallete used during development  \nRGB2: Based on video of an actual console (forgot which one)  \nField: Approximation of a grass-colored field  \nIce: Approximation of an ice rink  \nChristmas: Mono with red/green paddles  \nMarksman: Based on footage of the Coleco Telstar Marksman  \nLas Vegas: Based on footage of Tele-spiel Las Vegas  \n\nDeveloped by Cole Johnson  \nBlog: https://nerdstuffbycole.blogspot.com/  \nTwitter: https://twitter.com/ColeJ71909899  \nGithub: https://github.com/TheProgrammerIncarnate  \nGitlab: https://gitlab.com/TheProgrammerIncarnate  \n\n**Thanks to:** Sean Riddle for die photos, Alan S. and @MisterAddons for donating some MiSTer hardware\n\n**Patreon supporters:** Suverman, Erika, Ewen McNeill, Dylan Lipsitz, Ewen McNeill, Alan Steremberg, and JM Blandin\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/AY-3-8500-MiSTer",
