@@ -11604,6 +11604,35 @@
       ]
     },
     {
+      "name": "QBert_MiSTer",
+      "description": "Q*Bert core for MiSTer",
+      "readme": "![QBert Character](./qbert.png) MiSTer Q*Bert\r\n=============================================\r\n\r\nQ*Bert arcade core for MiSTer FPGA. It's a reproduction of the original PCBs with the following exceptions:\r\n\r\n- I removed D2 to D4 multiplexers because FG POS/ID registers E1-2, E2-3 & E4 are now dual port RAM.\r\n- I removed D5 to D7 multiplexers because BG character RAM E7 is dual port.\r\n- I removed D8 to D10 multiplexers because E10-11 buffer RAM is dual port.\r\n- I removed E8/E9-10 bus isolation because of dual port E7 & E10-11.\r\n- I removed H13 mux because color RAM G13 to G14 is dual port.\r\n\r\nAdditional details\r\n------------------\r\n\r\n**Audio board MA216:**\r\n\r\n- SC01 is not implemented. Waiting for brave people to do it.\r\n\r\n**NVRAM:**\r\n\r\n- Not implemented - NVRAM should be C5/C6 on schematics.\r\n\r\n**Ports:**\r\n\r\n- IP17-10: input port for test buttons, coins and player 1/2.\r\n- IP47-40: input port for joystick.\r\n- OP27-20: output port for sound interface\r\n- OP33-37: output port for knocker and coin meter.\r\n\r\nGame Compatibility List\r\n-----------------------\r\n\r\n- QBert: 100% compatible.\r\n- QBert Qubes: 100% compatible, bug on rolling cube screen and dip switches inverted.\r\n- Curve Ball: dip switch order is weird, no sound.\r\n- Insector: 100% compatible, dip switch problems, controller inverted & no test mode(?).\r\n- Mad Planets: 100% compatible but blinking letters.\r\n- Tyls: 100% compatible - dip switches inverted.\r\n\r\n...so to summarize, with the exception of QBert, don't expect another game to work properly.\r\n\r\nKnown Bugs\r\n----------\r\n\r\n- Problem with vertical position register E1-2. When a new object is falling from the top of the screen (ball), it appears briefly at the bottom of the screen.\r\n- High Scores screen: the big three letters of player's name are not displayed correctly. It works well after a few resets (is it a problem with bus sharing logic which sends zeros to simulate high impedance for ORing outputs?). I don't have the PCB so it's difficult to know the original behavior.\r\n- Votrax chip is cruelly missing, QBert needs his @!#?@! voice!!!\r\n",
+      "archived": false,
+      "fork": false,
+      "url": "https://github.com/MiSTer-devel/QBert_MiSTer",
+      "releases": [
+        {
+          "name": "Arcade-QBert_20210206.rbf",
+          "sha": "f799abb30c1d748e4064aa69475aefcc207e36ce",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/QBert_MiSTer/master/releases/Arcade-QBert_20210206.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "QBert.mra",
+          "sha": "1a2b39d5eda20b52501917674232340a3e968315",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/QBert_MiSTer/master/releases/QBert.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Q*bert (US set 1)",
+            "rbf": "qbert",
+            "zips": [
+              "qbert.zip"
+            ]
+          }
+        }
+      ]
+    },
+    {
       "name": "QL_MiSTer",
       "description": "Sinclair QL for MiSTer",
       "readme": "# Sinclair QL for [MiSTer Board](https://github.com/MiSTer-devel/Main_MiSTer/wiki) \n\nThis is port from [MiST](https://github.com/mist-devel/mist-board/tree/master/cores/ql)\n\n### Additional features implemented:\n* Turbo modes (x2,x4)\n* 896K of RAM\n* RTC\n\n### Note:\nThis core should support secondary SD card, but i couldn't find a working combination of SD card format and ROM. Need further testing.\n\n### Installation:\n* Copy the *.rbf file at the root of the SD card. \n* Copy boot.rom into QL folder.\n* Copy some *.mdv files to QL folder.\n\n\n## Original ReadMe\n\nSinclair QL core for the MIST board\n\nThis core needs a QL rom image on SD card named ql.rom in the SD cards\nroot directory. It's known to work with Minerva ROM 1.98 as well as the\noriginal js.rom. Other ROMs may work as well. The ROM size must be exaclty\n49152 bytes. Minerva and other roms are available as a free download from \nhttp://www.dilwyn.me.uk/qlrom/.\n\nIt is possible to add another 16k of extension ROM. The resulting size\nof the ROM image should then be 65536 bytes. E.g. the Toolkit-2 ROM is\navailable for download at http://www.dilwyn.me.uk/pe. The necessary\ncombination of both ready-to-use is available \n[here](https://github.com/MiSTer-devel/QL_MiSTer/tree/master/releases).\n\nThe core implements the complete 8049 IPC controller and thus fully\nsupports all keybaord monitoring modes as well as joysticks and audio.\n\nFiles can be loaded from microdrive images stored in MDV files in QLAY\nformat. Thee files must be exactly 174930 bytes in size. Examples can\nbe found in http://web.inter.nl.net/hcc/A.Jaw.Venema/psion.zip as well as\nin the [releases](https://github.com/MiSTer-devel/QL_MiSTer/tree/master/releases) directory.\n\nIf a matching ql.rom is being used the built-in [QL-SD](http://www.dilwyn.me.uk/qlsd/index.html) allows to directly access a huge image file stored\non SD card.\n",

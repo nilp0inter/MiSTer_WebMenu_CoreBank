@@ -385,6 +385,15 @@
       ]
     },
     {
+      "name": "Build-Automation_MiSTer",
+      "description": null,
+      "readme": null,
+      "archived": false,
+      "fork": false,
+      "url": "https://github.com/theypsilon/Build-Automation_MiSTer",
+      "releases": []
+    },
+    {
       "name": "Gameboy_MiSTer",
       "description": "Gameboy for MiSTer",
       "readme": "# [Gameboy](https://en.wikipedia.org/wiki/Game_Boy)  / [Gameboy Color](https://en.wikipedia.org/wiki/Game_Boy_Color) for MiSTer Platform\r\n\r\nThis is port of [Gameboy for MiST](https://github.com/mist-devel/mist-board/tree/master/cores/gameboy)\r\n\r\n* Place RBF file into root of SD card.\r\n* Place *.gb files into Gameboy folder.\r\n\r\n## Features\r\n* Original Gameboy & Gameboy Color Support\r\n* Super Gameboy Support - Borders, Palettes and Multiplayer\r\n* SaveStates\r\n* Fastforward \r\n* Rewind - Allows you to rewind up to 40 seconds of gameplay\r\n* Frameblending - Prevents flicker in some games (e.g. \"Chikyuu Kaihou Gun Zas\") \r\n* Custom Palette Loading\r\n* Real-Time Clock Support\r\n* Gameboy Link Port Support - Requires USERIO adapter\r\n* Cheats\r\n\r\n## Open Source Bootstrap roms\r\nThis now includes the open source boot ROMs from [https://github.com/LIJI32/SameBoy/](https://github.com/LIJI32/SameBoy/) (for maximum GBC compatibility/authenticity you can still place the Gameboy color bios/bootrom into the Gameboy folder and rename it to boot1.rom)\r\n\r\n## Palettes\r\nCore supports custom palettes (*.gbp) which should be placed into Gameboy folder. Some examples are available in palettes folder.\r\n\r\n## Autoload\r\nTo autoload custom palette at startup rename it to boot0.rom\r\nTo autoload favorite game at startup rename it to boot2.rom\r\n\r\n## Video output\r\nThe Gameboy can disable video output at any time which causes problems with vsync_adjust=2 or analog video during screen transitions. Enable the Stabilize video option to fix this at the cost of some latency.\r\n\r\n\r\n",
@@ -946,6 +955,316 @@
       "fork": false,
       "url": "https://github.com/theypsilon/Names_TXT_Updater_MiSTer",
       "releases": []
+    },
+    {
+      "name": "SNES_MiSTer",
+      "description": "SNES for MiSTer",
+      "readme": "# [Super Nintendo Entertainment System](https://en.wikipedia.org/wiki/Super_Nintendo_Entertainment_System) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\nWritten by [srg320](https://github.com/srg320)\n\n## Installing\ncopy *.rbf to root of SD card. Put some ROMs (*.SCF, *.SMC, *.BIN) into SNES folder\n\n## Features\n* Cycle accurate SNES replica.\n* Supports LoROM, HiROM, ExHiROM.\n* Supports additional chips: DSP-1/2/3/4, ST010, CX4, SDD1, SuperFX(GSU-1/2), SA1, OBC1, SPC7110, S-RTC.\n* Cheat engine.\n* Save/Load Backup RAM.\n* Supports mouse.\n* Light gun support via Wiimote, mouse or analog stick.\n* [SuperFX Turbo and CPU Turbo.](https://github.com/MiSTer-devel/SNES_MiSTer/blob/master/SNES_Turbo.md)\n\n### BSX BIOS\nPlace bsx_bios.rom in game's folder.\n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/theypsilon/SNES_MiSTer",
+      "releases": [
+        {
+          "name": "SNES_20181129.rbf",
+          "sha": "accd13daf66e0fa9c3c85ff485aaeac54cfc967c",
+          "url": "https://raw.githubusercontent.com/theypsilon/SNES_MiSTer/master/releases/SNES_20181129.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_20181201.rbf",
+          "sha": "32a3dc0f88a7b6c4584023c674864a82150ead22",
+          "url": "https://raw.githubusercontent.com/theypsilon/SNES_MiSTer/master/releases/SNES_20181201.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_20181206.rbf",
+          "sha": "10f85b86606f2d8f227bc863769925c5e1be20d9",
+          "url": "https://raw.githubusercontent.com/theypsilon/SNES_MiSTer/master/releases/SNES_20181206.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_20181207.rbf",
+          "sha": "47107296cee873676a9d1ec81c8d74c593d040c4",
+          "url": "https://raw.githubusercontent.com/theypsilon/SNES_MiSTer/master/releases/SNES_20181207.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_20181213.rbf",
+          "sha": "13a5664118e01136c63facca6be78223d41149a8",
+          "url": "https://raw.githubusercontent.com/theypsilon/SNES_MiSTer/master/releases/SNES_20181213.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_20181219.rbf",
+          "sha": "7d41aa704c28132c0830b27ca0f1e132fcfb6975",
+          "url": "https://raw.githubusercontent.com/theypsilon/SNES_MiSTer/master/releases/SNES_20181219.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_20181223.rbf",
+          "sha": "e82516be8e5f28bd9c61d700714c0c00464a8186",
+          "url": "https://raw.githubusercontent.com/theypsilon/SNES_MiSTer/master/releases/SNES_20181223.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_20181225.rbf",
+          "sha": "3b4c5459868040f5e04f53594d21990dc7131bcc",
+          "url": "https://raw.githubusercontent.com/theypsilon/SNES_MiSTer/master/releases/SNES_20181225.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_20181227.rbf",
+          "sha": "5cafb60f3c73e92641c3eaa0986cbd64deae7428",
+          "url": "https://raw.githubusercontent.com/theypsilon/SNES_MiSTer/master/releases/SNES_20181227.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_20181231.rbf",
+          "sha": "14f3fedc06d5ed31fb1817a354d7856280ff8758",
+          "url": "https://raw.githubusercontent.com/theypsilon/SNES_MiSTer/master/releases/SNES_20181231.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_20190108.rbf",
+          "sha": "cb1bc5c04e36de7f6f53bb0e1656627822d828bb",
+          "url": "https://raw.githubusercontent.com/theypsilon/SNES_MiSTer/master/releases/SNES_20190108.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_20190124.rbf",
+          "sha": "fe3a8f33605b540141ce07b826d324403f4cdd2e",
+          "url": "https://raw.githubusercontent.com/theypsilon/SNES_MiSTer/master/releases/SNES_20190124.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_20190204.rbf",
+          "sha": "5dd7e12b8f10b4e6c05ec8ab93cda4a0983fdd4f",
+          "url": "https://raw.githubusercontent.com/theypsilon/SNES_MiSTer/master/releases/SNES_20190204.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_20190225.rbf",
+          "sha": "63e3b260f6162273e256cb1048a86bb5923ac39b",
+          "url": "https://raw.githubusercontent.com/theypsilon/SNES_MiSTer/master/releases/SNES_20190225.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_20190303.rbf",
+          "sha": "7720da9850a7a6b785c53ee6b3c46a821256a060",
+          "url": "https://raw.githubusercontent.com/theypsilon/SNES_MiSTer/master/releases/SNES_20190303.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_20190308.rbf",
+          "sha": "c3670c7cc8ca72f384094d3e056bbf9d53f56475",
+          "url": "https://raw.githubusercontent.com/theypsilon/SNES_MiSTer/master/releases/SNES_20190308.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_20190309.rbf",
+          "sha": "f968403fa425ebcde69a4f3f74f98036c2267b98",
+          "url": "https://raw.githubusercontent.com/theypsilon/SNES_MiSTer/master/releases/SNES_20190309.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_20190412.rbf",
+          "sha": "b029e8376d0e00cbb38ca102c298417a72a00bc0",
+          "url": "https://raw.githubusercontent.com/theypsilon/SNES_MiSTer/master/releases/SNES_20190412.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_20190510.rbf",
+          "sha": "b8d28b55a183145f6c747f87876c2b11420ddcd9",
+          "url": "https://raw.githubusercontent.com/theypsilon/SNES_MiSTer/master/releases/SNES_20190510.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_20190513.rbf",
+          "sha": "012234a432a6e19b48edbece3373a0251d54f21b",
+          "url": "https://raw.githubusercontent.com/theypsilon/SNES_MiSTer/master/releases/SNES_20190513.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_20190515.rbf",
+          "sha": "393d2bd5d6e640211440f3d11df34433526ac4c5",
+          "url": "https://raw.githubusercontent.com/theypsilon/SNES_MiSTer/master/releases/SNES_20190515.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_20190517.rbf",
+          "sha": "0966117fdd579065779e3ce835c3bf1e3ec1b85c",
+          "url": "https://raw.githubusercontent.com/theypsilon/SNES_MiSTer/master/releases/SNES_20190517.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_20190609.rbf",
+          "sha": "70ffe3f964c62bc4486ff41e0d42f078280dd82c",
+          "url": "https://raw.githubusercontent.com/theypsilon/SNES_MiSTer/master/releases/SNES_20190609.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_20190627.rbf",
+          "sha": "9bc823643ce10c1901e14b32ab99e7a8bec30570",
+          "url": "https://raw.githubusercontent.com/theypsilon/SNES_MiSTer/master/releases/SNES_20190627.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_20190703.rbf",
+          "sha": "4a3682b7200629c62902c87112ac10064d12c318",
+          "url": "https://raw.githubusercontent.com/theypsilon/SNES_MiSTer/master/releases/SNES_20190703.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_20190719.rbf",
+          "sha": "791c6b368b15e90042d4b5afbc1ce9b8f38ee8a9",
+          "url": "https://raw.githubusercontent.com/theypsilon/SNES_MiSTer/master/releases/SNES_20190719.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_20190820.rbf",
+          "sha": "285bce1c8f741649be264c20d931d06421d571e6",
+          "url": "https://raw.githubusercontent.com/theypsilon/SNES_MiSTer/master/releases/SNES_20190820.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_20190823.rbf",
+          "sha": "b650c01d7f160daf8b6c39ab204e6c15e736570b",
+          "url": "https://raw.githubusercontent.com/theypsilon/SNES_MiSTer/master/releases/SNES_20190823.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_20190824.rbf",
+          "sha": "72983e697e53b81e1158bbedbc40f82f6aeedd05",
+          "url": "https://raw.githubusercontent.com/theypsilon/SNES_MiSTer/master/releases/SNES_20190824.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_20190911.rbf",
+          "sha": "0e6e691032d8f26150729fda6796d84319bd6048",
+          "url": "https://raw.githubusercontent.com/theypsilon/SNES_MiSTer/master/releases/SNES_20190911.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_20190912.rbf",
+          "sha": "9a8b3eba5cc094a740813e373885ac239228b3c1",
+          "url": "https://raw.githubusercontent.com/theypsilon/SNES_MiSTer/master/releases/SNES_20190912.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_20190921.rbf",
+          "sha": "d902de5331337cb306519bbd3c699b9d5ebbf16e",
+          "url": "https://raw.githubusercontent.com/theypsilon/SNES_MiSTer/master/releases/SNES_20190921.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_20190927.rbf",
+          "sha": "acc826211b7a2b4cc37157b2a89966024b4f182a",
+          "url": "https://raw.githubusercontent.com/theypsilon/SNES_MiSTer/master/releases/SNES_20190927.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_20191014.rbf",
+          "sha": "bd40f2a54f760dd40c4849b8eff095ae9bcc0558",
+          "url": "https://raw.githubusercontent.com/theypsilon/SNES_MiSTer/master/releases/SNES_20191014.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_20191019.rbf",
+          "sha": "8a161a44d08d924fcb5d4fbfc3543669cf6ff050",
+          "url": "https://raw.githubusercontent.com/theypsilon/SNES_MiSTer/master/releases/SNES_20191019.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_20191117.rbf",
+          "sha": "97302902ffaa5f42b69945ddf5eefb6be9bfdf1b",
+          "url": "https://raw.githubusercontent.com/theypsilon/SNES_MiSTer/master/releases/SNES_20191117.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_20200106.rbf",
+          "sha": "2d1ee63308d34a3c81ed9a10322295bee9a2ee35",
+          "url": "https://raw.githubusercontent.com/theypsilon/SNES_MiSTer/master/releases/SNES_20200106.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_20200108.rbf",
+          "sha": "c9c8411ba403d517ea0dcbe4c353eff3e9ee2f71",
+          "url": "https://raw.githubusercontent.com/theypsilon/SNES_MiSTer/master/releases/SNES_20200108.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_20200212.rbf",
+          "sha": "5acce5dc2d6113c4436514da648b5eea62476511",
+          "url": "https://raw.githubusercontent.com/theypsilon/SNES_MiSTer/master/releases/SNES_20200212.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_20200326.rbf",
+          "sha": "4f6c7e3d6b5ba61ee239d2e896417d331ad231d5",
+          "url": "https://raw.githubusercontent.com/theypsilon/SNES_MiSTer/master/releases/SNES_20200326.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_20200511.rbf",
+          "sha": "968008af03b8020c8139abb8536be5b2d1914091",
+          "url": "https://raw.githubusercontent.com/theypsilon/SNES_MiSTer/master/releases/SNES_20200511.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_20200530.rbf",
+          "sha": "a332a794be83948c25f47cadf804caa73531b709",
+          "url": "https://raw.githubusercontent.com/theypsilon/SNES_MiSTer/master/releases/SNES_20200530.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_20200618.rbf",
+          "sha": "77ef9aba32701d6582c8b039c55db23c9a51b8c3",
+          "url": "https://raw.githubusercontent.com/theypsilon/SNES_MiSTer/master/releases/SNES_20200618.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_20200701.rbf",
+          "sha": "c0be3c2df29287d3856e10ccbefcd1e6f6c774dd",
+          "url": "https://raw.githubusercontent.com/theypsilon/SNES_MiSTer/master/releases/SNES_20200701.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_20200908.rbf",
+          "sha": "0be230e1a35b381d37863b5481613ccdd62ed83d",
+          "url": "https://raw.githubusercontent.com/theypsilon/SNES_MiSTer/master/releases/SNES_20200908.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_20200929.rbf",
+          "sha": "b03fe0912c0910f15ecd17594b84c1869c1e85c6",
+          "url": "https://raw.githubusercontent.com/theypsilon/SNES_MiSTer/master/releases/SNES_20200929.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_20201014.rbf",
+          "sha": "9f0c256aad194a3092791ffb5fa94cc9f04c0f99",
+          "url": "https://raw.githubusercontent.com/theypsilon/SNES_MiSTer/master/releases/SNES_20201014.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_20201027.rbf",
+          "sha": "69a377ec1d185d9211b350e79ab855b22e15c9a2",
+          "url": "https://raw.githubusercontent.com/theypsilon/SNES_MiSTer/master/releases/SNES_20201027.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_20201106.rbf",
+          "sha": "f5b26c93de785588e609e8cbd20616bf40ead43d",
+          "url": "https://raw.githubusercontent.com/theypsilon/SNES_MiSTer/master/releases/SNES_20201106.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_20210121.rbf",
+          "sha": "a79dec18347ec2e246d6f01e30b1aee24572efbe",
+          "url": "https://raw.githubusercontent.com/theypsilon/SNES_MiSTer/master/releases/SNES_20210121.rbf",
+          "type": "RBF"
+        }
+      ]
     },
     {
       "name": "Updater_script_MiSTer_DB9",

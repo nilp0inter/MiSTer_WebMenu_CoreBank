@@ -606,6 +606,11 @@ url = "https://raw.githubusercontent.com/MiSTer-devel/PET2001_MiSTer/master/rele
 output = "_Computer/PET2001_20210205.rbf"
 
 
+# QBert
+url = "https://raw.githubusercontent.com/MiSTer-devel/QBert_MiSTer/master/releases/Arcade-QBert_20210206.rbf"
+output = "_Arcade/cores/QBert_20210206.rbf"
+
+
 # QL
 url = "https://raw.githubusercontent.com/MiSTer-devel/QL_MiSTer/master/releases/QL_20210206.rbf"
 output = "_Computer/QL_20210206.rbf"
@@ -1924,4 +1929,9 @@ output = "_Arcade/zaxxon.mra"
 # Zig Zag.mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-ZigZag_MiSTer/master/releases/Zig%20Zag.mra"
 output = "_Arcade/Zig Zag.mra"
+
+
+# QBert.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/QBert_MiSTer/master/releases/QBert.mra"
+output = "_Arcade/QBert.mra"
 
