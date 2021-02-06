@@ -930,6 +930,100 @@
       ]
     },
     {
+      "name": "MegaCD_MiSTer",
+      "description": "Mega CD for MiSTer",
+      "readme": "# [Sega MegaCD](https://en.wikipedia.org/wiki/Sega_CD) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\n# Installation\nPlace BIOS to MegaCD folder with name boot.rom\n\n# Features\nAbout 150 games tested without long playing, US/EU regions only.\n\n### Known issues:\n- Microcosm & Ultraverse Prime (US) - graphic glitch in game\n- Supreme Warrior - Ying Heung (US) - can't select 2 disk\n\n### Supported image formats:\n- CUE + single image\n- CUE + multiple images (image per track)\n\n### ZIP\nZIP is supported but doesn't work due to long positioning time.\nSo DON'T zip the images!\n\n### CD BIOS\nsupport BIOS per game. Place cd_bios.rom in game's folder.\n\n### Pier Solar\nPlace cartridge dump named cart.rom into game's folder\n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/theypsilon/MegaCD_MiSTer",
+      "releases": [
+        {
+          "name": "MegaCD_20191205.rbf",
+          "sha": "189b3ad26fc6004effdd4c1f857fe5378edf70c1",
+          "url": "https://raw.githubusercontent.com/theypsilon/MegaCD_MiSTer/master/releases/MegaCD_20191205.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "MegaCD_20191218.rbf",
+          "sha": "f0690fdd91477590d0e312725327678e2bc3019d",
+          "url": "https://raw.githubusercontent.com/theypsilon/MegaCD_MiSTer/master/releases/MegaCD_20191218.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "MegaCD_20200101.rbf",
+          "sha": "420bcbb174b6be17a8354293f8697e49ca5eb80b",
+          "url": "https://raw.githubusercontent.com/theypsilon/MegaCD_MiSTer/master/releases/MegaCD_20200101.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "MegaCD_20200325.rbf",
+          "sha": "f7d250101ffb70f1f7af97fa1ae2323b326d713b",
+          "url": "https://raw.githubusercontent.com/theypsilon/MegaCD_MiSTer/master/releases/MegaCD_20200325.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "MegaCD_20200408.rbf",
+          "sha": "0d2b7399db45c328d138354ed4e33f3aa162c633",
+          "url": "https://raw.githubusercontent.com/theypsilon/MegaCD_MiSTer/master/releases/MegaCD_20200408.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "MegaCD_20200502.rbf",
+          "sha": "80d5a28cd0962ea862661efd9d95b8d0bac9ec62",
+          "url": "https://raw.githubusercontent.com/theypsilon/MegaCD_MiSTer/master/releases/MegaCD_20200502.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "MegaCD_20200601.rbf",
+          "sha": "ee69183550dbdf24bafd9666f0ae0458f5d1fc4c",
+          "url": "https://raw.githubusercontent.com/theypsilon/MegaCD_MiSTer/master/releases/MegaCD_20200601.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "MegaCD_20200602.rbf",
+          "sha": "6a399bfe9ae3d6320007473319864e02af69e8e9",
+          "url": "https://raw.githubusercontent.com/theypsilon/MegaCD_MiSTer/master/releases/MegaCD_20200602.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "MegaCD_20200608.rbf",
+          "sha": "2e885841a80d6654464db1c2f4404e504e068c44",
+          "url": "https://raw.githubusercontent.com/theypsilon/MegaCD_MiSTer/master/releases/MegaCD_20200608.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "MegaCD_20200620.rbf",
+          "sha": "5ed503153bcabd853a17c6b6cd519b4282ebee4d",
+          "url": "https://raw.githubusercontent.com/theypsilon/MegaCD_MiSTer/master/releases/MegaCD_20200620.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "MegaCD_20210123.rbf",
+          "sha": "ceaa43e457cf69841b5fef28ba063b519dae6896",
+          "url": "https://raw.githubusercontent.com/theypsilon/MegaCD_MiSTer/master/releases/MegaCD_20210123.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "MegaCD_20210124.rbf",
+          "sha": "a57ecc79590160419f7800c675b2f53e55edfdf1",
+          "url": "https://raw.githubusercontent.com/theypsilon/MegaCD_MiSTer/master/releases/MegaCD_20210124.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "MegaCD_20210130.rbf",
+          "sha": "f623d8b362df5933036240dc021cba05a98ca6d5",
+          "url": "https://raw.githubusercontent.com/theypsilon/MegaCD_MiSTer/master/releases/MegaCD_20210130.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "MegaCD_20210203.rbf",
+          "sha": "ce637d674335c8d2720ff6ebf6734397c32e8394",
+          "url": "https://raw.githubusercontent.com/theypsilon/MegaCD_MiSTer/master/releases/MegaCD_20210203.rbf",
+          "type": "RBF"
+        }
+      ]
+    },
+    {
       "name": "MiSTer_BIOS_SCRIPTS",
       "description": "Simple scripts to automate downloading BIOS files for MiSTer console cores based on your rbf files.",
       "readme": "# MiSTer_BIOS_Scripts \nSimple scripts to automate downloading BIOS files for MiSTer console cores.\n\n## Instructions\n\nDownload the <a id=\"raw-url\" href=\"https://raw.githubusercontent.com/MAME-GETTER/MiSTer_BIOS_SCRIPTS/master/update_bios-getter.sh\" download target=\"_blank\">update_bios-getter.sh</a> to the Scripts directory and run:\n\n    update_bios-getter.sh\n\nThese scripts look at what RBFconsole core files you have and downloads the bios needed for them.\n\nThis script DOES NOT download any cores. \n\n### FAQ\n\n**Q:** Will this script overwrite any files I already have?\n\n**A:** NO. This script will not clobber any files you already have. You need to manually remove any BIOS files you have if you want to download new BIOS files for the core.\n\n**Q:** Where are the Downloaded BIOS files located?\n\n**A:** This script downloads all bios files to /media/fat/BIOS.\n\n**Q:** Can I set a custom BIOS directory location?\n\n**A:** Yes, in the update_bios-getter.ini: BIOSDIR=/path/to/your/location\n\n**Q:** Can I set this to work with usb drives?\n\n**A:** Yes, this script will automatically recognize all the directories the same way the MiSTer binary would do\n\nThe bios-getter will download many bios files to /media/fat/BIOS. However, we have chosen some sane defaults to be copied to the /games/<console> directory. These defaults are:\n  \n  Ao486\n  ```\n  https://github.com/MiSTer-devel/ao486_MiSTer/blob/master/releases/bios/boot0.rom\n  https://github.com/MiSTer-devel/ao486_MiSTer/blob/master/releases/bios/boot1.rom\n  ```\n  \n  Astrocade\n  ```\n  Bally Professional Arcade, Astrocade '3159' BIOS (1978)(Bally Mfg. Corp.).bin\n  ```\n  \n  Gameboy\n  ```\n  GB_boot_ROM.gb\n  ```\n\n  GBA\n  ```\n  gba_bios.bin\n  ```\n\n  MegaCD    \n  ```\n  [BIOS] Mega-CD 2 (Japan) (v2.00C).md\" \"Japan\"\n  [BIOS] Sega CD 2 (USA) (v2.00).md\" \"USA\"\n  [BIOS] Mega-CD 2 (Europe) (v2.00).md\" \"Europe\"\n ```\n \n NeoGeo     \n ```\n 000-lo.lo\n sfix.sfix\n uni-bios-40\n ```\n \n NES\n ```\n fds-bios.rom\n ```\n \n SNES\n ```\n BS-X BIOS (English) [No DRM] [2016 v1.3].sfc\n ```\n \n TGFX16-CD\n ```\n Super CD 3.0.pce\n ```\n\n**You should back up your bios files before running this script.**\n\nUSE AT YOUR OWN RISK - THIS COMES WITHOUT WARRANTY AND MAY KILL BABY SEALS.\n",
