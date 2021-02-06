@@ -11648,6 +11648,12 @@
           "type": "RBF"
         },
         {
+          "name": "QL_20210206.rbf",
+          "sha": "b52f7c51e8c12088d1be87356a417264da7e64cd",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/QL_MiSTer/master/releases/QL_20210206.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "boot.rom",
           "sha": "7cae62c00c5c5eae3c6dd69c4d9c2024e4266e67",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/QL_MiSTer/master/releases/boot.rom",
@@ -11766,6 +11772,12 @@
           "name": "SAMCoupe_20200531.rbf",
           "sha": "3b44911819d9d78248961a67be729933ed646b38",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/SAM-Coupe_MiSTer/master/releases/SAMCoupe_20200531.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SAMCoupe_20210206.rbf",
+          "sha": "c21ce48e26349efb64087d7ba4e4a908990ff5db",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/SAM-Coupe_MiSTer/master/releases/SAMCoupe_20210206.rbf",
           "type": "RBF"
         }
       ]
@@ -12583,6 +12595,12 @@
           "type": "RBF"
         },
         {
+          "name": "TSConf_20210206.rbf",
+          "sha": "b1039e5834c552bc637cb8c2408f7f18678e9479",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/TSConf_MiSTer/master/releases/TSConf_20210206.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "alt_roms.zip",
           "sha": "f4387be49e1c6d87cd6f206d5e28b516848c1456",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/TSConf_MiSTer/master/releases/alt_roms.zip",
@@ -12883,13 +12901,19 @@
           "sha": "522721494688d46a61f5b39d4afeee7de01a152c",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Vector-06C_MiSTer/master/releases/Vector-06C_20200606.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "Vector-06C_20210206.rbf",
+          "sha": "50652ae5836fa997d38af9cdd33376de8427aa0a",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Vector-06C_MiSTer/master/releases/Vector-06C_20210206.rbf",
+          "type": "RBF"
         }
       ]
     },
     {
       "name": "Vectrex_MiSTer",
       "description": "Vectrex for MiSTer",
-      "readme": "# [Vectrex](https://en.wikipedia.org/wiki/Vectrex) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\nPort of Vectrex by Dar (darfpga@aol.fr) http://darfpga.blogspot.fr\n\nSupports both digital and analog joystick/gamepad\n\n### Installation:\nCopy the *.rbf file at the root of the SD card. Copy *.vec/*.bin files to Vectrex folder.\n",
+      "readme": "# [Vectrex](https://en.wikipedia.org/wiki/Vectrex) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\nPort of Vectrex by Dar (darfpga@aol.fr) http://darfpga.blogspot.fr\n\nSupports both digital and analog joystick/gamepad\n\n### Installation:\nCopy the *.rbf file at the root of the SD card. Copy *.vec/*.bin files to Vectrex folder.\n\n### Overlays\nPlace overlay to the same folder with the same name as ROM with extension OVR. It will be loaded automatically.",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/Vectrex_MiSTer",
@@ -12952,6 +12976,12 @@
           "name": "Vectrex_20200822.rbf",
           "sha": "9efd425374a2568cef5e2d6497abaa92b87581d7",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Vectrex_MiSTer/master/releases/Vectrex_20200822.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Vectrex_20210206.rbf",
+          "sha": "cfb236a44b25f5fa40264b5f173b707904e5b5cd",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Vectrex_MiSTer/master/releases/Vectrex_20210206.rbf",
           "type": "RBF"
         }
       ]
@@ -13129,6 +13159,12 @@
           "name": "ZX81_20200513.rbf",
           "sha": "b1e40baead5cc05ec407b5a1bc8f7d32718241e9",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/ZX81_MiSTer/master/releases/ZX81_20200513.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "ZX81_20210206.rbf",
+          "sha": "eaa1780d9db531c0d31f122bbc2666ab8be36c55",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/ZX81_MiSTer/master/releases/ZX81_20210206.rbf",
           "type": "RBF"
         }
       ]
