@@ -385,6 +385,202 @@
       ]
     },
     {
+      "name": "Gameboy_MiSTer",
+      "description": "Gameboy for MiSTer",
+      "readme": "# [Gameboy](https://en.wikipedia.org/wiki/Game_Boy)  / [Gameboy Color](https://en.wikipedia.org/wiki/Game_Boy_Color) for MiSTer Platform\r\n\r\nThis is port of [Gameboy for MiST](https://github.com/mist-devel/mist-board/tree/master/cores/gameboy)\r\n\r\n* Place RBF file into root of SD card.\r\n* Place *.gb files into Gameboy folder.\r\n\r\n## Features\r\n* Original Gameboy & Gameboy Color Support\r\n* Super Gameboy Support - Borders, Palettes and Multiplayer\r\n* SaveStates\r\n* Fastforward \r\n* Rewind - Allows you to rewind up to 40 seconds of gameplay\r\n* Frameblending - Prevents flicker in some games (e.g. \"Chikyuu Kaihou Gun Zas\") \r\n* Custom Palette Loading\r\n* Real-Time Clock Support\r\n* Gameboy Link Port Support - Requires USERIO adapter\r\n* Cheats\r\n\r\n## Open Source Bootstrap roms\r\nThis now includes the open source boot ROMs from [https://github.com/LIJI32/SameBoy/](https://github.com/LIJI32/SameBoy/) (for maximum GBC compatibility/authenticity you can still place the Gameboy color bios/bootrom into the Gameboy folder and rename it to boot1.rom)\r\n\r\n## Palettes\r\nCore supports custom palettes (*.gbp) which should be placed into Gameboy folder. Some examples are available in palettes folder.\r\n\r\n## Autoload\r\nTo autoload custom palette at startup rename it to boot0.rom\r\nTo autoload favorite game at startup rename it to boot2.rom\r\n\r\n## Video output\r\nThe Gameboy can disable video output at any time which causes problems with vsync_adjust=2 or analog video during screen transitions. Enable the Stabilize video option to fix this at the cost of some latency.\r\n\r\n\r\n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/theypsilon/Gameboy_MiSTer",
+      "releases": [
+        {
+          "name": "Gameboy_20171203.rbf",
+          "sha": "0782a9fe8ad4b42710cae6cf5a669e329f46269b",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20171203.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20180306.rbf",
+          "sha": "0f656f68960b940ef08b8deab08eb3bf4bc8f0bd",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20180306.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20181118.rbf",
+          "sha": "7036ecdb9e073bd08f9b99f7e5ae68b405c02d0b",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20181118.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20181130.rbf",
+          "sha": "aa8bb256802e093054576c763f2409d14241225b",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20181130.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20181202.rbf",
+          "sha": "7d7cab2fd0400b2e43a2277cedaf08885694e53a",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20181202.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20181208.rbf",
+          "sha": "5b64dfd56398b2c887764e9bdd24d5c4553b256c",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20181208.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20181211.rbf",
+          "sha": "9fd85ebed0960bfd99ed8dc07366cdcae2c0c38e",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20181211.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20181229.rbf",
+          "sha": "0c4bf832ab0381d38678dc157eba4409211fd14b",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20181229.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20181231.rbf",
+          "sha": "dacdd9ab4862f4db3fd7c972cea72e8186e22134",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20181231.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20190110.rbf",
+          "sha": "a7c5f5c7032e9e23c8afa57a37dc0f30a19f3a5b",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20190110.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20190121.rbf",
+          "sha": "9833fb37e8135d49ba2af0fadb1944dcd7e9c3aa",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20190121.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20190213.rbf",
+          "sha": "23632e7a572061978b359d0d11fba05382d5d406",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20190213.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20190307.rbf",
+          "sha": "8463c1e82a5402aee2162f633c8b5ce51bf29d96",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20190307.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20190425.rbf",
+          "sha": "15b3f8a03ce5f4cfa29500def229433adf586ce6",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20190425.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20190511.rbf",
+          "sha": "152ebb0e4aa248979e36e1ff22c899a7de109897",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20190511.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20190627.rbf",
+          "sha": "2d1e4c211f3dc245a4badff1baddc90d8fd64a1b",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20190627.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20190711.rbf",
+          "sha": "c4feacef29ec18d7e91b3a09b31223fd9ced725c",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20190711.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20190928.rbf",
+          "sha": "9f54c097a2601f0ce9fb547e1006bdb0041dedd3",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20190928.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20190929.rbf",
+          "sha": "ebe304d8398af44e0500669c207e18b6cdb3f59f",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20190929.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20191218.rbf",
+          "sha": "2250c157d007d53d834b37b82d6478c91153d83c",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20191218.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20200331.rbf",
+          "sha": "27eed51101492f3d3fe08160c5ea23a164a60315",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20200331.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20200510.rbf",
+          "sha": "e6b9c8b9604f84510836a7bc3b5459f58180c6fe",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20200510.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20200622.rbf",
+          "sha": "f498ddb1c5f2dd219bffaecdb8b1381bcf5b597a",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20200622.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20200701.rbf",
+          "sha": "0eefadeb3a79f138ae15e27f22cd969102c4e51d",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20200701.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20200819.rbf",
+          "sha": "0333b9dc58ae21de6cfb750fa21d0378852f726e",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20200819.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20201204.rbf",
+          "sha": "f8fd55bcb7e799ce85c67bab7cf0be8090ce0c55",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20201204.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20210103.rbf",
+          "sha": "948083aa4c0d2ee858445035e2d9ec57c9c445db",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20210103.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20210108.rbf",
+          "sha": "f4816456604650a82e9db2299928f239c7adcd06",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20210108.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20210109.rbf",
+          "sha": "0055fae4f0f323bac8ae7483725864577d4ad2c8",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20210109.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20210124.rbf",
+          "sha": "128b38297072d575abfa04b661858da10f1fe4f1",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20210124.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20210130.rbf",
+          "sha": "5ef2d030fbf908a61ee09ace5293590eb7dbfae8",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20210130.rbf",
+          "type": "RBF"
+        }
+      ]
+    },
+    {
       "name": "MiSTer_BIOS_SCRIPTS",
       "description": "Simple scripts to automate downloading BIOS files for MiSTer console cores based on your rbf files.",
       "readme": "# MiSTer_BIOS_Scripts \nSimple scripts to automate downloading BIOS files for MiSTer console cores.\n\n## Instructions\n\nDownload the <a id=\"raw-url\" href=\"https://raw.githubusercontent.com/MAME-GETTER/MiSTer_BIOS_SCRIPTS/master/update_bios-getter.sh\" download target=\"_blank\">update_bios-getter.sh</a> to the Scripts directory and run:\n\n    update_bios-getter.sh\n\nThese scripts look at what RBFconsole core files you have and downloads the bios needed for them.\n\nThis script DOES NOT download any cores. \n\n### FAQ\n\n**Q:** Will this script overwrite any files I already have?\n\n**A:** NO. This script will not clobber any files you already have. You need to manually remove any BIOS files you have if you want to download new BIOS files for the core.\n\n**Q:** Where are the Downloaded BIOS files located?\n\n**A:** This script downloads all bios files to /media/fat/BIOS.\n\n**Q:** Can I set a custom BIOS directory location?\n\n**A:** Yes, in the update_bios-getter.ini: BIOSDIR=/path/to/your/location\n\n**Q:** Can I set this to work with usb drives?\n\n**A:** Yes, this script will automatically recognize all the directories the same way the MiSTer binary would do\n\nThe bios-getter will download many bios files to /media/fat/BIOS. However, we have chosen some sane defaults to be copied to the /games/<console> directory. These defaults are:\n  \n  Ao486\n  ```\n  https://github.com/MiSTer-devel/ao486_MiSTer/blob/master/releases/bios/boot0.rom\n  https://github.com/MiSTer-devel/ao486_MiSTer/blob/master/releases/bios/boot1.rom\n  ```\n  \n  Astrocade\n  ```\n  Bally Professional Arcade, Astrocade '3159' BIOS (1978)(Bally Mfg. Corp.).bin\n  ```\n  \n  Gameboy\n  ```\n  GB_boot_ROM.gb\n  ```\n\n  GBA\n  ```\n  gba_bios.bin\n  ```\n\n  MegaCD    \n  ```\n  [BIOS] Mega-CD 2 (Japan) (v2.00C).md\" \"Japan\"\n  [BIOS] Sega CD 2 (USA) (v2.00).md\" \"USA\"\n  [BIOS] Mega-CD 2 (Europe) (v2.00).md\" \"Europe\"\n ```\n \n NeoGeo     \n ```\n 000-lo.lo\n sfix.sfix\n uni-bios-40\n ```\n \n NES\n ```\n fds-bios.rom\n ```\n \n SNES\n ```\n BS-X BIOS (English) [No DRM] [2016 v1.3].sfc\n ```\n \n TGFX16-CD\n ```\n Super CD 3.0.pce\n ```\n\n**You should back up your bios files before running this script.**\n\nUSE AT YOUR OWN RISK - THIS COMES WITHOUT WARRANTY AND MAY KILL BABY SEALS.\n",
