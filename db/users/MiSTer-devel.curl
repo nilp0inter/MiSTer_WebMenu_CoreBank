@@ -306,6 +306,11 @@ url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Popeye_MiSTer/maste
 output = "_Arcade/cores/Popeye_20210117.rbf"
 
 
+# QBert
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-QBert_MiSTer/master/releases/Arcade-QBert_20210206.rbf"
+output = "_Arcade/cores/QBert_20210206.rbf"
+
+
 # RallyX
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-RallyX_MiSTer/master/releases/Arcade-RallyX_20201217.rbf"
 output = "_Arcade/cores/RallyX_20201217.rbf"
@@ -604,11 +609,6 @@ output = "_Computer/PDP1_20190101.rbf"
 # PET2001
 url = "https://raw.githubusercontent.com/MiSTer-devel/PET2001_MiSTer/master/releases/PET2001_20210205.rbf"
 output = "_Computer/PET2001_20210205.rbf"
-
-
-# QBert
-url = "https://raw.githubusercontent.com/MiSTer-devel/QBert_MiSTer/master/releases/Arcade-QBert_20210206.rbf"
-output = "_Arcade/cores/QBert_20210206.rbf"
 
 
 # QL
@@ -1446,6 +1446,11 @@ url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Popeye_MiSTer/maste
 output = "_Arcade/Sky Skipper.mra"
 
 
+# QBert.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-QBert_MiSTer/master/releases/QBert.mra"
+output = "_Arcade/QBert.mra"
+
+
 # New Rally-X.mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-RallyX_MiSTer/master/releases/New%20Rally-X.mra"
 output = "_Arcade/New Rally-X.mra"
@@ -1929,9 +1934,4 @@ output = "_Arcade/zaxxon.mra"
 # Zig Zag.mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-ZigZag_MiSTer/master/releases/Zig%20Zag.mra"
 output = "_Arcade/Zig Zag.mra"
-
-
-# QBert.mra
-url = "https://raw.githubusercontent.com/MiSTer-devel/QBert_MiSTer/master/releases/QBert.mra"
-output = "_Arcade/QBert.mra"
 

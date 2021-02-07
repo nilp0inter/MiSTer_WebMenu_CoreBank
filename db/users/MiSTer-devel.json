@@ -5003,6 +5003,35 @@
       ]
     },
     {
+      "name": "Arcade-QBert_MiSTer",
+      "description": "Q*Bert core for MiSTer",
+      "readme": "![QBert Character](./qbert.png) MiSTer Q*Bert\r\n=============================================\r\n\r\nQ*Bert arcade core for MiSTer FPGA. It's a reproduction of the original PCBs with the following exceptions:\r\n\r\n- I removed D2 to D4 multiplexers because FG POS/ID registers E1-2, E2-3 & E4 are now dual port RAM.\r\n- I removed D5 to D7 multiplexers because BG character RAM E7 is dual port.\r\n- I removed D8 to D10 multiplexers because E10-11 buffer RAM is dual port.\r\n- I removed E8/E9-10 bus isolation because of dual port E7 & E10-11.\r\n- I removed H13 mux because color RAM G13 to G14 is dual port.\r\n\r\nAdditional details\r\n------------------\r\n\r\n**Audio board MA216:**\r\n\r\n- SC01 is not implemented. Waiting for brave people to do it.\r\n\r\n**NVRAM:**\r\n\r\n- Not implemented - NVRAM should be C5/C6 on schematics.\r\n\r\n**Ports:**\r\n\r\n- IP17-10: input port for test buttons, coins and player 1/2.\r\n- IP47-40: input port for joystick.\r\n- OP27-20: output port for sound interface\r\n- OP33-37: output port for knocker and coin meter.\r\n\r\nGame Compatibility List\r\n-----------------------\r\n\r\n- QBert: 100% compatible.\r\n- QBert Qubes: 100% compatible, bug on rolling cube screen and dip switches inverted.\r\n- Curve Ball: dip switch order is weird, no sound.\r\n- Insector: 100% compatible, dip switch problems, controller inverted & no test mode(?).\r\n- Mad Planets: 100% compatible but blinking letters.\r\n- Tyls: 100% compatible - dip switches inverted.\r\n\r\n...so to summarize, with the exception of QBert, don't expect another game to work properly.\r\n\r\nKnown Bugs\r\n----------\r\n\r\n- Problem with vertical position register E1-2. When a new object is falling from the top of the screen (ball), it appears briefly at the bottom of the screen.\r\n- High Scores screen: the big three letters of player's name are not displayed correctly. It works well after a few resets (is it a problem with bus sharing logic which sends zeros to simulate high impedance for ORing outputs?). I don't have the PCB so it's difficult to know the original behavior.\r\n- Votrax chip is cruelly missing, QBert needs his @!#?@! voice!!!\r\n",
+      "archived": false,
+      "fork": false,
+      "url": "https://github.com/MiSTer-devel/Arcade-QBert_MiSTer",
+      "releases": [
+        {
+          "name": "Arcade-QBert_20210206.rbf",
+          "sha": "f799abb30c1d748e4064aa69475aefcc207e36ce",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-QBert_MiSTer/master/releases/Arcade-QBert_20210206.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "QBert.mra",
+          "sha": "1a2b39d5eda20b52501917674232340a3e968315",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-QBert_MiSTer/master/releases/QBert.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Q*bert (US set 1)",
+            "rbf": "qbert",
+            "zips": [
+              "qbert.zip"
+            ]
+          }
+        }
+      ]
+    },
+    {
       "name": "Arcade-RallyX_MiSTer",
       "description": "RallyX and NRallyX core",
       "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: New Rally-X  port to MiSTer by MiSTer-X\n-- 18 September 2019\n-- From: https://github.com/MrX-8B/MiSTer-Arcade-RallyX\n-- \n---------------------------------------------------------------------------------\n-- FPGA New Rally-X for Spartan-3 Starter Board\n------------------------------------------------\n-- Copyright (c) 2005 MiSTer-X\n---------------------------------------------------------------------------------\n-- T80/T80s - Version : 0242\n-----------------------------\n-- Z80 compatible microprocessor core\n-- Copyright (c) 2001-2002 Daniel Wallner (jesus@opencores.org)\n---------------------------------------------------------------------------------\n-- \n-- \n-- Keyboard inputs :\n--\n--   F2          : Coin + Start 2 players\n--   F1          : Coin + Start 1 player\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--   SPACE/CTRL  : Smoke\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   R,F,D,G     : Player 2 Movements\n--   A/S         : Player 2 Smoke\n--\n-- Joystick support.\n-- \n-- \n---------------------------------------------------------------------------------\n-- 22 October 2019\n---------------------------------------------------------------------------------\n--  FIXED: CRT video problems\n-- CHANGE: Keyboard inputs\n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
@@ -11600,35 +11629,6 @@
           "sha": "447eb70a282ba9dd5445a51a42ade9d693b7971d",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/PET2001_MiSTer/master/releases/PET2001_20210205.rbf",
           "type": "RBF"
-        }
-      ]
-    },
-    {
-      "name": "QBert_MiSTer",
-      "description": "Q*Bert core for MiSTer",
-      "readme": "![QBert Character](./qbert.png) MiSTer Q*Bert\r\n=============================================\r\n\r\nQ*Bert arcade core for MiSTer FPGA. It's a reproduction of the original PCBs with the following exceptions:\r\n\r\n- I removed D2 to D4 multiplexers because FG POS/ID registers E1-2, E2-3 & E4 are now dual port RAM.\r\n- I removed D5 to D7 multiplexers because BG character RAM E7 is dual port.\r\n- I removed D8 to D10 multiplexers because E10-11 buffer RAM is dual port.\r\n- I removed E8/E9-10 bus isolation because of dual port E7 & E10-11.\r\n- I removed H13 mux because color RAM G13 to G14 is dual port.\r\n\r\nAdditional details\r\n------------------\r\n\r\n**Audio board MA216:**\r\n\r\n- SC01 is not implemented. Waiting for brave people to do it.\r\n\r\n**NVRAM:**\r\n\r\n- Not implemented - NVRAM should be C5/C6 on schematics.\r\n\r\n**Ports:**\r\n\r\n- IP17-10: input port for test buttons, coins and player 1/2.\r\n- IP47-40: input port for joystick.\r\n- OP27-20: output port for sound interface\r\n- OP33-37: output port for knocker and coin meter.\r\n\r\nGame Compatibility List\r\n-----------------------\r\n\r\n- QBert: 100% compatible.\r\n- QBert Qubes: 100% compatible, bug on rolling cube screen and dip switches inverted.\r\n- Curve Ball: dip switch order is weird, no sound.\r\n- Insector: 100% compatible, dip switch problems, controller inverted & no test mode(?).\r\n- Mad Planets: 100% compatible but blinking letters.\r\n- Tyls: 100% compatible - dip switches inverted.\r\n\r\n...so to summarize, with the exception of QBert, don't expect another game to work properly.\r\n\r\nKnown Bugs\r\n----------\r\n\r\n- Problem with vertical position register E1-2. When a new object is falling from the top of the screen (ball), it appears briefly at the bottom of the screen.\r\n- High Scores screen: the big three letters of player's name are not displayed correctly. It works well after a few resets (is it a problem with bus sharing logic which sends zeros to simulate high impedance for ORing outputs?). I don't have the PCB so it's difficult to know the original behavior.\r\n- Votrax chip is cruelly missing, QBert needs his @!#?@! voice!!!\r\n",
-      "archived": false,
-      "fork": false,
-      "url": "https://github.com/MiSTer-devel/QBert_MiSTer",
-      "releases": [
-        {
-          "name": "Arcade-QBert_20210206.rbf",
-          "sha": "f799abb30c1d748e4064aa69475aefcc207e36ce",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/QBert_MiSTer/master/releases/Arcade-QBert_20210206.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "QBert.mra",
-          "sha": "1a2b39d5eda20b52501917674232340a3e968315",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/QBert_MiSTer/master/releases/QBert.mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Q*bert (US set 1)",
-            "rbf": "qbert",
-            "zips": [
-              "qbert.zip"
-            ]
-          }
         }
       ]
     },
