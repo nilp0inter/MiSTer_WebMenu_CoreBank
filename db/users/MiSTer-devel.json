@@ -7448,7 +7448,7 @@
     {
       "name": "Arcade-Zaxxon_MiSTer",
       "description": "VHDL Zaxxon",
-      "readme": "# Sega/Gremlin Zaxxon port for MiSTer\n\n# Keyboard inputs :\n```\n   ESC         : Coin 1\n   F1          : Start 1P\n   F2          : Start 2P \n   UP,DOWN,LEFT,RIGHT arrows : Player 1\n   LCtrl : Fire A\n\n\n   MAME/IPAC/JPAC Style Keyboard inputs:\n     5           : Coin 1\n     6           : Coin 2\n     1           : Start 1 Player\n     2           : Start 2 Player\n     R,F,D,G     : Player 2\n     A           : Fire2 A\n\t\n Joystick support. \n```\n# Games\n \n# ROMs\n```\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n\n```\n\nLaunch game using the appropriate .MRA\n",
+      "readme": "# [Arcade: Zaxxon](https://www.system16.com/hardware.php?id=689) port to [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\nMiSTer port by Dar (darfpga@aol.fr - sourceforge/darfpga)\n\n## Description\n\nA simulation model of Sega's Zaxxon hardware.\n\n## Games\n\nCurrently implemented:\n\n* Zaxxon\n* Super Zaxxon\n* Future Spy\n\n## High score save/load\n\nHigh score save/load is set to 'Manual' by default for this core.\n * To save your scores use the 'Save Settings' option in the OSD\n * To restore original scores, set the 'High Score Save' option to 'Off' and reset the core\n\n## ROM Files Instructions\n\n**ROMs are not included!** In order to use this arcade core, you will need to provide the correct ROM file yourself.\n\nTo simplify the process .mra files are provided in the releases folder, that specify the required ROMs with their checksums. The ROMs .zip filename refers to the\ncorresponding file from the MAME project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for information on how to setup and use the environment.\n\nQuick reference for folders and file placement:\n\n```\n/_Arcade/<game name>.mra  \n/_Arcade/cores/<game rbf>.rbf  \n/_Arcade/mame/<mame rom>.zip  \n/_Arcade/hbmame/<hbmame rom>.zip  \n```\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/Arcade-Zaxxon_MiSTer",
@@ -7491,7 +7491,7 @@
         },
         {
           "name": "Future Spy.mra",
-          "sha": "28cd8ea089a3e820204940dc8301ae19915d7006",
+          "sha": "feaac53972587deb5659dbfa2e6182c559a9ce5a",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Zaxxon_MiSTer/master/releases/Future%20Spy.mra",
           "type": "MRA",
           "extra": {
@@ -7504,7 +7504,7 @@
         },
         {
           "name": "Super Zaxxon.mra",
-          "sha": "3325f0e8f6006e146608bb7d111ff94865858662",
+          "sha": "5068b72d8181faac999f637902ef8d7ab9f60c67",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Zaxxon_MiSTer/master/releases/Super%20Zaxxon.mra",
           "type": "MRA",
           "extra": {
@@ -7517,7 +7517,7 @@
         },
         {
           "name": "zaxxon.mra",
-          "sha": "de6fa5ee51d5f21a0acc5b7c67fd99eb3d51299c",
+          "sha": "eab5fd406f45830a7dc5d673d15d94aea83fe7b9",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Zaxxon_MiSTer/master/releases/zaxxon.mra",
           "type": "MRA",
           "extra": {
