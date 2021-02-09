@@ -47,13 +47,13 @@ output = "_Others/jtcps15_20210204.rbf"
 
 
 # jtdd
-url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/dd/releases/jtdd_20210208.rbf"
-output = "_Arcade/cores/jtdd_20210208.rbf"
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/dd/releases/jtdd_20210117.rbf"
+output = "_Arcade/cores/jtdd_20210117.rbf"
 
 
 # jtdd2
-url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/dd2/releases/jtdd2_20210208.rbf"
-output = "_Arcade/cores/jtdd2_20210208.rbf"
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/dd2/releases/jtdd2_20210117.rbf"
+output = "_Arcade/cores/jtdd2_20210117.rbf"
 
 
 # jtf1dream
@@ -509,6 +509,11 @@ output = "_Arcade/Pirate Ship Higemaru.mra"
 # Side Arms - Hyper Dyne (World, 861129).mra
 url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/sarms/releases/Side%20Arms%20-%20Hyper%20Dyne%20(World%2C%20861129).mra"
 output = "_Arcade/Side Arms - Hyper Dyne (World, 861129).mra"
+
+
+# sdram parallel read 48.mra
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/sdram48/sdram%20parallel%20read%2048.mra"
+output = "_Arcade/sdram parallel read 48.mra"
 
 
 # Legendary Wings.mra
