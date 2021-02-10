@@ -6998,6 +6998,12 @@
           "sha": "6a78e82b12e006fa0d25d813c7820df2a1e11958",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Genesis_MiSTer/master/releases/Genesis_20210105.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "Genesis_20210210.rbf",
+          "sha": "041cc5e691be4e38d4106dde7d5161244e02f3fb",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Genesis_MiSTer/master/releases/Genesis_20210210.rbf",
+          "type": "RBF"
         }
       ]
     },
@@ -7427,6 +7433,12 @@
           "name": "MegaCD_20210203.rbf",
           "sha": "8ae7634ddab311f630900d5559662030cc0fe1d3",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/MegaCD_MiSTer/master/releases/MegaCD_20210203.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "MegaCD_20210210.rbf",
+          "sha": "824752fa16ebc8d18af686a7e6ca335cd3b1bedd",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/MegaCD_MiSTer/master/releases/MegaCD_20210210.rbf",
           "type": "RBF"
         }
       ]
@@ -8100,6 +8112,12 @@
           "type": "RBF"
         },
         {
+          "name": "NeoGeo_20210210.rbf",
+          "sha": "ec185ecd9e884c214c3a144aedfc5b1ee1a0ed53",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/NeoGeo_MiSTer/master/releases/NeoGeo_20210210.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "README.md",
           "sha": "91abd5fd1fe831e59d750a409d3f9b19393d5849",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/NeoGeo_MiSTer/master/releases/README.md",
@@ -8387,7 +8405,7 @@
     {
       "name": "SMS_MiSTer",
       "description": "Sega Master System for MiSTer",
-      "readme": "# Sega Master System and Game Gear for the [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki) and [MiST](https://github.com/mist-devel/mist-board/wiki) boards\n\n### Installation:\n* Copy the *.rbf file at the root of the SD card.\n* Copy *.SMS ROMs into SMS folder.\n\n### Download precompiled binaries at:\n* For MiSTer, go to [releases](https://github.com/MiSTer-devel/SMS_MISTer/tree/master/releases) folder.\n* For MiST, go to [mist-binaries](https://github.com/mist-devel/mist-binaries/tree/master/cores/sms).\n\n### Notes:\n* Some games come in .gg format but are in fact SMS games. Rename the .gg extention to .sms or .bin to fix them.\n  These games are mostly listed in this page [SMSpower-SMS-GG list](http://www.smspower.org/Tags/SMS-GG).\n* The \"Aspect ratio\" doesn't do much in PAL mode, that's normal\n* The \"Region\" parameter toggle some hardware features that are specific to the different console models.\n  Some localized games need these modifications to work properly\n* Each game cartridge comes with a specific mapper, which description is not included in the .gg ou .sms file.\n  The core has a special logic to automatically determine which mapper needs to be used, but some games make\n  a good effort to make this logic fail. The \"Disable mappers\" parameter permits to force the usage \n  of the most used sega mapper. \n",
+      "readme": "# Sega Master System and Game Gear for the [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki) and [MiST](https://github.com/mist-devel/mist-board/wiki) boards\n\n### Installation:\n* Copy the *.rbf file at the root of the SD card.\n* Copy *.SMS ROMs into SMS folder.\n\n### Features: \n* Master System, Game Gear and SG-1000 Support\n* NTSC & PAL Support\n* Hide Borders Option - Allows you to fill the screen vertically without black borders.\n* FM Audio Support\n* Extra Sprites Option\n* Cheats\n\n### Download precompiled binaries at:\n* For MiSTer, go to [releases](https://github.com/MiSTer-devel/SMS_MISTer/tree/master/releases) folder.\n* For MiST, go to [mist-binaries](https://github.com/mist-devel/mist-binaries/tree/master/cores/sms).\n\n### Notes:\n* Some games come in .gg format but are in fact SMS games. Rename the .gg extention to .sms or .bin to fix them.\n  These games are mostly listed in this page [SMSpower-SMS-GG list](http://www.smspower.org/Tags/SMS-GG).\n* The \"Aspect ratio\" doesn't do much in PAL mode, that's normal\n* The \"Region\" parameter toggle some hardware features that are specific to the different console models.\n  Some localized games need these modifications to work properly\n* The \"Masked left column\" option controls behaviour of left column when hidden by system (usually during horizontal \n  scrolling). \"BG\" sets it to the background/overscan colour, as on original hardware. \"Black\" makes it black,\n  which may look better on non full-screen settings as the column will blend in with surrounding black area.\n  \"Cut\" will remove the column from the active image, so the horizontal resolution becomes 248 instead of 256. This\n  will distort the image when scaled, particularly on integer scaling settings, but will use more of the screen.\n  When \"Border\" is set to \"Yes\" the left column is always shown as part of the border, so \"Masked left column\" is \n  disabled.\n* Each game cartridge comes with a specific mapper, which description is not included in the .gg ou .sms file.\n  The core has a special logic to automatically determine which mapper needs to be used, but some games make\n  a good effort to make this logic fail. The \"Disable mappers\" parameter permits to force the usage \n  of the most used sega mapper. \n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-DB9/SMS_MiSTer",
@@ -8468,6 +8486,12 @@
           "name": "SMS_20210106.rbf",
           "sha": "60d975bb9b02cce79b43ca83fc96b3ca382e7864",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/SMS_MiSTer/master/releases/SMS_20210106.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SMS_20210210.rbf",
+          "sha": "53d23d3e53b8abdf9a7e05b61b31cc27e4325823",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/SMS_MiSTer/master/releases/SMS_20210210.rbf",
           "type": "RBF"
         }
       ]
