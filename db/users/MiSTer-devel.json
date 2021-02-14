@@ -3469,70 +3469,7 @@
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/Arcade-GnG_MiSTer",
-      "releases": [
-        {
-          "name": "Arcade-GnG_20190120.rbf",
-          "sha": "ea8dd1baca05a8774896d65aa7d00e1dba7335cb",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-GnG_MiSTer/master/releases/Arcade-GnG_20190120.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Arcade-GnG_20190121.rbf",
-          "sha": "14b74635cf91d6b943e0950952c7b46a5fd26b5f",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-GnG_MiSTer/master/releases/Arcade-GnG_20190121.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Arcade-GnG_20190210.rbf",
-          "sha": "68656a24ca1f84605f277e2df89814679192b072",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-GnG_MiSTer/master/releases/Arcade-GnG_20190210.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Arcade-GnG_20190310.rbf",
-          "sha": "c14db037578b7a4d664c477dbcc3bf18083f1a62",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-GnG_MiSTer/master/releases/Arcade-GnG_20190310.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Arcade-GnG_20191228.rbf",
-          "sha": "548c0b72f42ae3f3f7c8839af79a5b6e12aee229",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-GnG_MiSTer/master/releases/Arcade-GnG_20191228.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Arcade-GnG_20210116.rbf",
-          "sha": "8996a68a9b1bb155d118dd789975fc4bec7c51a8",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-GnG_MiSTer/master/releases/Arcade-GnG_20210116.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Ghosts'n Goblins.mra",
-          "sha": "a88eefa4d008f5e8687f9f53ad1deae99757f85c",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-GnG_MiSTer/master/releases/Ghosts'n%20Goblins.mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Ghosts'n Goblins (World set 1)",
-            "rbf": "gng",
-            "zips": [
-              "gng.zip"
-            ]
-          }
-        },
-        {
-          "name": "Makai-Mura (Japan).mra",
-          "sha": "effcb3510b21edc4c5e7ba0b09f9d055f19c0938",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-GnG_MiSTer/master/releases/Makai-Mura%20(Japan).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Makai-Mura (Japan)",
-            "rbf": "gng",
-            "zips": [
-              "gng.zip|makaimur.zip"
-            ]
-          }
-        }
-      ]
+      "releases": []
     },
     {
       "name": "Arcade-IremM62_MiSTer",
@@ -3666,10 +3603,16 @@
         },
         {
           "name": "Spelunker II - 23 no Kagi.mra",
-          "sha": "20a365ab4933096dbef5c6ccebcb71392f65bc42",
+          "sha": "c3c02dbbb2d7423ee25a8aa10da3b258a3f1b7c6",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM62_MiSTer/master/releases/Spelunker%20II%20-%2023%20no%20Kagi.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Spelunker II - 23 no Kagi (Japan)",
+            "rbf": "iremm62",
+            "zips": [
+              "spelunk2.zip"
+            ]
+          }
         },
         {
           "name": "Spelunker.mra",
@@ -4612,7 +4555,7 @@
       "releases": [
         {
           "name": "Alibaba 40 Thieves.mra",
-          "sha": "7bc60c2744ab0b3bc048456501c0069bbb0dc9c1",
+          "sha": "e4488443b5932dfb5d4e9b26d7825ae6c76caf60",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pacman_MiSTer/master/releases/Alibaba%2040%20Thieves.mra",
           "type": "MRA",
           "extra": {
@@ -4870,7 +4813,7 @@
         },
         {
           "name": "Ms. Pacman.mra",
-          "sha": "8234df29d5f16372a5d8fe35bffcef8228a30e2e",
+          "sha": "3a189128497b6275de4ed89ca8ff23149eb54ade",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pacman_MiSTer/master/releases/Ms.%20Pacman.mra",
           "type": "MRA",
           "extra": {
@@ -4883,7 +4826,7 @@
         },
         {
           "name": "Pac-Man (Midway).mra",
-          "sha": "4fa7039f6c8d609e86c4452a0cfd12f15afae50c",
+          "sha": "a4899b51181c714e114ed1d47f0efa406e645101",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pacman_MiSTer/master/releases/Pac-Man%20(Midway).mra",
           "type": "MRA",
           "extra": {
@@ -4896,7 +4839,7 @@
         },
         {
           "name": "Pacman Club.mra",
-          "sha": "d42ae51f5eb8d9256d3457a3e1accfcf1ae19753",
+          "sha": "b6bfb9cc347b51e65dca9200ec4df15920051ef9",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pacman_MiSTer/master/releases/Pacman%20Club.mra",
           "type": "MRA",
           "extra": {
@@ -4909,7 +4852,7 @@
         },
         {
           "name": "Pacman Plus.mra",
-          "sha": "efdce3dd57105452a27d953412f06ddbba46ef7a",
+          "sha": "f0e952873504d2893601e7f11f93eff8852f0cb2",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pacman_MiSTer/master/releases/Pacman%20Plus.mra",
           "type": "MRA",
           "extra": {
@@ -4946,7 +4889,7 @@
         },
         {
           "name": "Puck Man (Japan set 1).mra",
-          "sha": "7e06ddb4cb83f8870de4bfa432072c4719b3f681",
+          "sha": "593e4c1afc62bf9b215769659ecedec12e9fdfd3",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pacman_MiSTer/master/releases/Puck%20Man%20(Japan%20set%201).mra",
           "type": "MRA",
           "extra": {
