@@ -2882,7 +2882,7 @@
         },
         {
           "name": "King And Balloon.mra",
-          "sha": "5a27541de84f5b4b243cfa4c01d1190f5de725ab",
+          "sha": "58a27dff59d08375fd44b03125fd4d443219437a",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Galaxian_MiSTer/master/releases/King%20And%20Balloon.mra",
           "type": "MRA",
           "extra": {
@@ -2958,10 +2958,16 @@
         },
         {
           "name": "Pisces.mra",
-          "sha": "37801d2d828630d18429426c7cb378033c7b978c",
+          "sha": "2c735fe4dd1422e08a223620dbc2c98ea9f23958",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Galaxian_MiSTer/master/releases/Pisces.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Pisces",
+            "rbf": "galaxian",
+            "zips": [
+              "pisces.zip"
+            ]
+          }
         },
         {
           "name": "UniWar S.mra",
