@@ -2404,6 +2404,12 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-IremM62_20210210.rbf",
+          "sha": "ac290b7d50060467df712d93cd736d2acb5ae091",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IremM62_MiSTer/master/releases/Arcade-IremM62_20210210.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Arcade-IremM62_20210213.rbf",
           "sha": "d21a3f983478cc9307411fabb63d79352c8ad135",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IremM62_MiSTer/master/releases/Arcade-IremM62_20210213.rbf",
@@ -2515,10 +2521,16 @@
         },
         {
           "name": "Spelunker II - 23 no Kagi.mra",
-          "sha": "20a365ab4933096dbef5c6ccebcb71392f65bc42",
+          "sha": "c3c02dbbb2d7423ee25a8aa10da3b258a3f1b7c6",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IremM62_MiSTer/master/releases/Spelunker%20II%20-%2023%20no%20Kagi.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Spelunker II - 23 no Kagi (Japan)",
+            "rbf": "iremm62",
+            "zips": [
+              "spelunk2.zip"
+            ]
+          }
         },
         {
           "name": "Spelunker.mra",
