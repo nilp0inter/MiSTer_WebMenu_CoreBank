@@ -4511,7 +4511,7 @@
     {
       "name": "Arcade-Scramble_MiSTer",
       "description": "Arcade: Scramble for MiSTer",
-      "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: Scramble port to MiSTer by Sorgelig\n-- 29 September 2018\n-- \n---------------------------------------------------------------------------------\n-- A simulation model of Scramble hardware\n-- Copyright (c) MikeJ - Feb 2007\n---------------------------------------------------------------------------------\n-- \n-- Support screen and controls rotation on HDMI output.\n-- Only controls are rotated on VGA output.\n-- \n-- \n-- Keyboard inputs :\n--\n--   F2          : Coin + Start 2 players\n--   F1          : Coin + Start 1 player\n--   CTRL        : Fire\n--   SPACE       : Bomb\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   R,F,D,G     : Player 2 Movements\n--   A           : Player 2 Fire\n--\n--\n-- Joystick support.\n-- \n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
+      "readme": "# [Arcade: Scramble](https://www.system16.com/hardware.php?id=554) port to [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\nMiSTer port by Sorgelig\nCopyright (c) MikeJ - Feb 2007\n\n## Description\n\nA simulation model of Konami's Scramble hardware.\n\n## Games\n\nCurrently implemented:\n\n* Amidar\n* Anteater\n* Armored Car\n* Battle of Atlantis\n* Calipso\n* Dark Planet\n* Frogger\n* Lost Tomb\n* Mars\n* Mighty Monkey\n* Minefield\n* Moonwar\n* Rescue\n* Scramble\n* Speed Coin\n* Strategy X\n* Super Cobra\n* Tazz-Mania\n* The End\n* Turtles\n\n## ROM Files Instructions\n\n**ROMs are not included!** In order to use this arcade core, you will need to provide the correct ROM file yourself.\n\nTo simplify the process .mra files are provided in the releases folder, that specify the required ROMs with their checksums. The ROMs .zip filename refers to the\ncorresponding file from the MAME project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for information on how to setup and use the environment.\n\nQuick reference for folders and file placement:\n\n```\n/_Arcade/<game name>.mra  \n/_Arcade/cores/<game rbf>.rbf  \n/_Arcade/mame/<mame rom>.zip  \n/_Arcade/hbmame/<hbmame rom>.zip  \n```\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-DB9/Arcade-Scramble_MiSTer",
@@ -4684,7 +4684,7 @@
         },
         {
           "name": "Mars.mra",
-          "sha": "89ca9e98a7893c2b443b79a53556676bd22e1990",
+          "sha": "d5318dd6d12e90c9c90743640a9cb5cbfe240227",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Scramble_MiSTer/master/releases/Mars.mra",
           "type": "MRA",
           "extra": {
@@ -4775,7 +4775,7 @@
         },
         {
           "name": "Strategy X.mra",
-          "sha": "6280af20ae576147f4d7c33fe8cc8e0747b58995",
+          "sha": "55df8e6b417870758f39face9445c906d095d9bf",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Scramble_MiSTer/master/releases/Strategy%20X.mra",
           "type": "MRA",
           "extra": {
@@ -4856,7 +4856,7 @@
     {
       "name": "Arcade-SEGASYS1_MiSTer",
       "description": "Sega System 1 for MiSTer",
-      "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: SEGA System 1  for MiSTer by MiSTer-X\n-- 07 January 2020\n-- \n---------------------------------------------------------------------------------\n-- T80/T80s - Version : 0242\n--------------------------------\n-- Z80 compatible microprocessor core\n-- Copyright (c) 2001-2002 Daniel Wallner (jesus@opencores.org)\n---------------------------------------------------------------------------------\n-- 2020/01/08  Impl. Trigger 3  (for SEGA Ninja)\n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROM is not included. In order to use this arcade, you need to provide a correct ROM file.\n\nFind this zip file somewhere. You need to find the file exactly as required.\nDo not rename other zip files even if they also represent the same game - they are not compatible!\nThe name of zip is taken from M.A.M.E. project, so you can get more info about\nhashes and contained files there.\n\n\nHow to install:\n  0. Update MiSTer binary to v200106 or later\n  1. copy releases/*.mra to /media/fat/_Arcade\n  2. copy releases/*.rbf to /media/fat/_Arcade/cores\n  3. copy ROM zip files  to /media/fat/_Arcade/mame\n\n\nBe sure to use the MRA file in \"releases\" of this repository.\nIt does not guarantee the operation when using other MRA files.\n\n",
+      "readme": "# [Arcade: SEGA System 1](https://www.system16.com/hardware.php?id=693) for [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki) \n\nby [MiSTer-X](https://twitter.com/mrx_8b)\n\n## Specifications\n\n* T80/T80s - Version : 0242\n* Z80 compatible microprocessor core - Copyright (c) 2001-2002 Daniel Wallner (jesus@opencores.org)\n* 2020/01/08  Impl. Trigger 3  (for SEGA Ninja)\n\n## Supported Games\n\nCurrently implemented:\n\n* 4-D Warriors\n* Block Gal\n* Bullfight\n* Flicky\n* I'm Sorry\n* Mister Viking\n* My Hero\n* Pitfall II\n* Rafflesia\n* Regulus\n* Sega Ninja\n* Spatter\n* Star Jacker\n* Swat\n* TeddyBoy Blues\n* Up'n Down\n* Water Match\n* Wonder Boy\n\nSega System 1 games currently **not yet** implemented:\n\n* Choplifter\n* Gardia\n* Noboranka / Zippy Bug\n\n## ROM Files Instructions\n\n**ROMs are not included!** In order to use this arcade core, you will need to provide the correct ROM file yourself.\n\nFind this zip file somewhere. You need to find the file exactly as required. Check the .mra file in a text editor for more information.  \nDo not rename other zip files even if they also represent the same game - they are not compatible!  \nThe name of zip is taken from M.A.M.E. project, so you can get more info about hashes and contained files there.\n\nHow to install:\n1. Update MiSTer binary to v200106 or later\n2. copy releases/*.mra to /media/fat/_Arcade\n3. copy releases/*.rbf to /media/fat/_Arcade/cores\n4. copy ROM zip files  to /media/fat/_Arcade/mame\n\nBe sure to use the MRA file in \"releases\" of this repository.  \nIt does not guarantee the operation when using other MRA files.\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-DB9/Arcade-SEGASYS1_MiSTer",
@@ -4894,7 +4894,7 @@
         },
         {
           "name": "Block Gal.mra",
-          "sha": "06eae8925a8579fb6bc88cdc731b6f4e8d77dbc7",
+          "sha": "a1e70db53dcd04f96f16db57985967bbbfaa1237",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SEGASYS1_MiSTer/main/releases/Block%20Gal.mra",
           "type": "MRA",
           "extra": {
