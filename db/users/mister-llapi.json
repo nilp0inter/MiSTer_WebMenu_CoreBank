@@ -207,7 +207,7 @@
     {
       "name": "GBA_MiSTer",
       "description": "GBA for MiSTer",
-      "readme": "# GBA_MiSTer\nGBA for MiSTer\n\n# HW Requirements/Features\nThe games can run from a naked DE10-Nano with the build-in DDR-RAM.\nHowever, using SDRAM is highly recommended, as some games may slowdown or loose sync when using DDR-RAM.\n\nWhen using SDRAM, it requires 32MB SDRAM for games less than 32MB. 32MB games require either 64MB or 128MB module.\nSDRAM will be automatically used when available.\n\n# Bios\nOpensource Bios from Normmatt is included, however it has issues with some games.\nOriginal GBA BIOS can be placed to GBA folder with name boot.rom\n\nPLEASE do not report errors without testing with the original BIOS\n\nHomebrew games are sometimes not supported by the official BIOS, \nbecause the BIOS checks for Nintendo Logo included in the ROM, which is protected by copyright.\nTo use these ROMs without renaming or removing the the boot.rom, \nyou can activate the \"Homebrew BIOS\" settings in OSD.\nAs the BIOS is already replaced at boot time, you must save this settings and hard reset/reload the GBA core.\n\n# Status\n~1600 games tested until ingame:\n- 99% without major issues (no crash, playable)\n\n# Features\n- all videomodes including affine and special effects\n- all soundchannels\n- saving as in GBA\n- Savestates\n- FastForward - speed up game by factor 2-4\n- CPU Turbomode - give games additional CPU power\n- Flickerblend - set to blend or 30Hz mode for games like F-Zero, Mario Kart or NES Classics to prevent flickering effects\n- Spritelimit - turn on to prevent wrong sprites for games that rely on the limit (opt-in)\n- Cheats\n- Color optimizations: shader colors and desaturate\n- Rewind: go back up to 60 seconds in time\n- Tilt: use analog stick (map stick in Mister Main before)\n- Solar Sensor: Set brightness in OSD\n- Gyro: use analog stick (map stick in Mister Main before)\n- RTC: automatically used, works with RTC board or internet connection\n- 2x Resolution: game is rendered at 480x320 instead of 240x160 pixels\n\n# Savestates\nCore provides 4 slots to save the state. The first slot gets saved to disk and automatically loaded (but not applied)\nupon next load of game. Rest 3 slots are residing only in memory for temporary use.\nFirst slot save/restore is available from OSD as well. \n\n\nHot keys for save states:\n- Alt-F1..F4 - save the state\n- F1...F4 - restore\n\n# Rewind\nTo use rewind, turn on the OSD Option \"Rewind Capture\" and map the rewind button.\nYou may have to restart the game for the function to work properly.\nAttention: Rewind capture will slow down your game by about 0.5% and may lead to light audio stutter.\nRewind capture is not compatible to \"Pause when OSD is open\", so pause is disabled when Rewind capture is on.\n\n# Spritelimit\nCurrently there are only few games known that produce glitches without sprite pixel limit:\n- Gunstar Super Heroes\n- Famicon Mini Series Vol21 - Vol30\n\n# 2x Resolution\nOnly works over HDMI, Analog output is not changed in 2x Resolution mode. \n\nImproved rendering resolution for:\n- Affine background: \"Mode7\" games, typically racing games like Mario Kart\n- Affine sprites: games that scale or rotate sprites\n\nThis rendering is experimental and can cause glitches, as not all game behavior can be supported.\nThose glitches can not be fixed without gamespecific hacks and therefore will not be fixed. \nPlease don't add bugs in such cases.\n\n\n# Cartridge Hardware supported games\n- RTC: Pokemon Sapphire+Ruby+Emerald, Boktai 1+2+3, Sennen Kazoku, Rockman EXE 4.5\n- Solar Sensor: Boktai 1+2+3\n- Gyro: Wario Ware Twisted\n- Tilt: Yoshi Topsy Turvy/Universal Gravitation, Koro Koro Puzzle - Happy Panechu!\n\nIf there is a game you want to play that also uses one of these features, but is not listed, please open a bug request.\n\n# Not included\n- Multiplayer features like Serials\n- E-Reader support\n- other cartridge hardware\n\n# Accuracy\n\n(Status 03.02.2020)\n\n>> Attention: the following comparisons are NOT intended for proving any solution is better than the other.\n>> This is solely here for the purpose of showing the status compared to other great emulators available.\n>> It is not unusual that an emulator can play games fine and still fail tests. \n>> Furthermore some of these tests are new and not yet addressed by most emulators.\n\nThere is great testsuite you can get from here: https://github.com/mgba-emu/suite\nIt tests out correct Memory, Timer, DMA, CPU, BIOS behavior and also instruction timing. It works 100% on the real GBA.\nThe suite itself has several thousand single tests.\n\nTestname      | TestCount | Mister GBA| mGBA | VBA-M | Higan\n--------------|-----------|-----------|------|-------|-------\nMemory        |      1552 |  1552     | 1552 |  1338 | 1552\nIOREAD        |       123 |   123     |  116 |   100 |  123\nTiming        |      1660 |  1554     | 1540 |   692 | 1424\nTimer         |       936 |   445     |  610 |   440 |  457\nTimer IRQ     |        90 |    65     |   70 |     8 |   36\nShifter       |       140 |   140     |  140 |   132 |  132\nCarry         |        93 |    93     |   93 |    93 |   93\nBIOSMath      |       625 |   625     |  625 |   625 |  625\nDMATests      |      1256 |  1248     | 1232 |  1032 | 1136\nEdgeCase      |        10 |     3     |    7 |     3 |    1\nLayer Toggle  |         1 |  pass     | pass |  pass | fail \nOAM Update    |         1 |  fail     | fail |  fail | fail\n\n\nA complex CPU only testuite can be found here: https://github.com/jsmolka/gba-suite\n\nTestname | Mister GBA| mGBA | VBA-M | Higan\n---------|-----------|------|-------|-------\nARM      |  Pass     | Fail |  Fail |  Fail\nTHUMB    |  Pass     | Fail |  Fail |  Fail\n\n# Information for developers\n\nHow to simulate:\nhttps://github.com/MiSTer-devel/GBA_MiSTer/tree/master/sim\n\nHow to implement a GPIO module:\nhttps://github.com/MiSTer-devel/GBA_MiSTer/blob/master/gpio_readme.md\n",
+      "readme": "# [Gameboy Advance](https://en.wikipedia.org/wiki/Game_Boy_Advance) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\n\n# HW Requirements/Features\nThe games can run from a naked DE10-Nano with the build-in DDR-RAM.\nHowever, using SDRAM is highly recommended, as some games may slowdown or loose sync when using DDR-RAM.\n\nWhen using SDRAM, it requires 32MB SDRAM for games less than 32MB. 32MB games require either 64MB or 128MB module.\nSDRAM will be automatically used when available.\n\n# Bios\nOpensource Bios from Normmatt is included, however it has issues with some games.\nOriginal GBA BIOS can be placed to GBA folder with name boot.rom\n\nPLEASE do not report errors without testing with the original BIOS\n\nHomebrew games are sometimes not supported by the official BIOS, \nbecause the BIOS checks for Nintendo Logo included in the ROM, which is protected by copyright.\nTo use these ROMs without renaming or removing the the boot.rom, \nyou can activate the \"Homebrew BIOS\" settings in OSD.\nAs the BIOS is already replaced at boot time, you must save this settings and hard reset/reload the GBA core.\n\n# Status\n~1600 games tested until ingame:\n- 99% without major issues (no crash, playable)\n\n# Features\n- all videomodes including affine and special effects\n- all soundchannels\n- saving as in GBA\n- Savestates\n- FastForward - speed up game by factor 2-4\n- CPU Turbomode - give games additional CPU power\n- Flickerblend - set to blend or 30Hz mode for games like F-Zero, Mario Kart or NES Classics to prevent flickering effects\n- Spritelimit - turn on to prevent wrong sprites for games that rely on the limit (opt-in)\n- Cheats\n- Color optimizations: shader colors and desaturate\n- Rewind: go back up to 60 seconds in time\n- Tilt: use analog stick (map stick in Mister Main before)\n- Solar Sensor: Set brightness in OSD\n- Gyro: use analog stick (map stick in Mister Main before)\n- RTC: automatically used, works with RTC board or internet connection\n- 2x Resolution: game is rendered at 480x320 instead of 240x160 pixels\n\n# Savestates\nCore provides 4 slots to save the state. The first slot gets saved to disk and automatically loaded (but not applied)\nupon next load of game. Rest 3 slots are residing only in memory for temporary use.\nFirst slot save/restore is available from OSD as well. \n\n\nHot keys for save states:\n- Alt-F1..F4 - save the state\n- F1...F4 - restore\n\n# Rewind\nTo use rewind, turn on the OSD Option \"Rewind Capture\" and map the rewind button.\nYou may have to restart the game for the function to work properly.\nAttention: Rewind capture will slow down your game by about 0.5% and may lead to light audio stutter.\nRewind capture is not compatible to \"Pause when OSD is open\", so pause is disabled when Rewind capture is on.\n\n# Spritelimit\nCurrently there are only few games known that produce glitches without sprite pixel limit:\n- Gunstar Super Heroes\n- Famicon Mini Series Vol21 - Vol30\n\n# 2x Resolution\nOnly works over HDMI, Analog output is not changed in 2x Resolution mode. \n\nImproved rendering resolution for:\n- Affine background: \"Mode7\" games, typically racing games like Mario Kart\n- Affine sprites: games that scale or rotate sprites\n\nThis rendering is experimental and can cause glitches, as not all game behavior can be supported.\nThose glitches can not be fixed without gamespecific hacks and therefore will not be fixed. \nPlease don't add bugs in such cases.\n\n\n# Cartridge Hardware supported games\n- RTC: Pokemon Sapphire+Ruby+Emerald, Boktai 1+2+3, Sennen Kazoku, Rockman EXE 4.5\n- Solar Sensor: Boktai 1+2+3\n- Gyro: Wario Ware Twisted\n- Tilt: Yoshi Topsy Turvy/Universal Gravitation, Koro Koro Puzzle - Happy Panechu!\n\nIf there is a game you want to play that also uses one of these features, but is not listed, please open a bug request.\n\n# Not included\n- Multiplayer features like Serials\n- E-Reader support\n- other cartridge hardware\n\n# Accuracy\n\n(Status 03.02.2020)\n\n>> Attention: the following comparisons are NOT intended for proving any solution is better than the other.\n>> This is solely here for the purpose of showing the status compared to other great emulators available.\n>> It is not unusual that an emulator can play games fine and still fail tests. \n>> Furthermore some of these tests are new and not yet addressed by most emulators.\n\nThere is great testsuite you can get from here: https://github.com/mgba-emu/suite\nIt tests out correct Memory, Timer, DMA, CPU, BIOS behavior and also instruction timing. It works 100% on the real GBA.\nThe suite itself has several thousand single tests.\n\nTestname      | TestCount | Mister GBA| mGBA | VBA-M | Higan\n--------------|-----------|-----------|------|-------|-------\nMemory        |      1552 |  1552     | 1552 |  1338 | 1552\nIOREAD        |       123 |   123     |  116 |   100 |  123\nTiming        |      1660 |  1554     | 1540 |   692 | 1424\nTimer         |       936 |   445     |  610 |   440 |  457\nTimer IRQ     |        90 |    65     |   70 |     8 |   36\nShifter       |       140 |   140     |  140 |   132 |  132\nCarry         |        93 |    93     |   93 |    93 |   93\nBIOSMath      |       625 |   625     |  625 |   625 |  625\nDMATests      |      1256 |  1248     | 1232 |  1032 | 1136\nEdgeCase      |        10 |     3     |    7 |     3 |    1\nLayer Toggle  |         1 |  pass     | pass |  pass | fail \nOAM Update    |         1 |  fail     | fail |  fail | fail\n\n\nA complex CPU only testuite can be found here: https://github.com/jsmolka/gba-suite\n\nTestname | Mister GBA| mGBA | VBA-M | Higan\n---------|-----------|------|-------|-------\nARM      |  Pass     | Fail |  Fail |  Fail\nTHUMB    |  Pass     | Fail |  Fail |  Fail\n\n# Information for developers\n\nHow to simulate:\nhttps://github.com/MiSTer-devel/GBA_MiSTer/tree/master/sim\n\nHow to implement a GPIO module:\nhttps://github.com/MiSTer-devel/GBA_MiSTer/blob/master/gpio_readme.md\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-LLAPI/GBA_MiSTer",
@@ -385,6 +385,12 @@
           "sha": "2b5a9de110c279f27c98d720a156d09d2f0606d0",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/GBA_MiSTer/master/releases/GBA_LLAPI_20201119.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "GBA_LLAPI_20210222.rbf",
+          "sha": "95ba5019e2ccedc928924172819dc4647095ea77",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/GBA_MiSTer/master/releases/GBA_LLAPI_20210222.rbf",
+          "type": "RBF"
         }
       ]
     },
@@ -448,6 +454,18 @@
           "name": "Genesis_20210105.rbf",
           "sha": "cd5e21580fc00a8b239518927313c152b2206a93",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Genesis_MiSTer/master/releases/Genesis_20210105.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20210210.rbf",
+          "sha": "85eb35f67774fe69eaa67e4ace136afae31f1c14",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Genesis_MiSTer/master/releases/Genesis_20210210.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20210222.rbf",
+          "sha": "70316e7775d9b00a40532c5a7b2ab7fe682c49a3",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Genesis_MiSTer/master/releases/Genesis_20210222.rbf",
           "type": "RBF"
         },
         {
@@ -533,6 +551,12 @@
           "sha": "b4b66a1a3677a6b68494bca79e5539fa51d5b7a2",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Genesis_MiSTer/master/releases/Genesis_LLAPI_20210106.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "Genesis_LLAPI_20210222.rbf",
+          "sha": "d75db648bc0b76fbfc445fbc9381f6304ca13615",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Genesis_MiSTer/master/releases/Genesis_LLAPI_20210222.rbf",
+          "type": "RBF"
         }
       ]
     },
@@ -617,6 +641,30 @@
           "type": "RBF"
         },
         {
+          "name": "MegaCD_20210130.rbf",
+          "sha": "f623d8b362df5933036240dc021cba05a98ca6d5",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/MegaCD_MiSTer/master/releases/MegaCD_20210130.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "MegaCD_20210203.rbf",
+          "sha": "ce637d674335c8d2720ff6ebf6734397c32e8394",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/MegaCD_MiSTer/master/releases/MegaCD_20210203.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "MegaCD_20210210.rbf",
+          "sha": "69c8f80474cb4db24ed1d60de1923d0af27d69f9",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/MegaCD_MiSTer/master/releases/MegaCD_20210210.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "MegaCD_20210222.rbf",
+          "sha": "52237c6d6961ba7980946562e29cd795170364af",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/MegaCD_MiSTer/master/releases/MegaCD_20210222.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "MegaCD_LLAPI_20191205.rbf",
           "sha": "531169db09fe9b7f8e447776a892d48c4a540973",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/MegaCD_MiSTer/master/releases/MegaCD_LLAPI_20191205.rbf",
@@ -687,13 +735,19 @@
           "sha": "c4662a8c05b2af3bcd47b22708f0459b1a21b0e0",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/MegaCD_MiSTer/master/releases/MegaCD_LLAPI_20210124.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "MegaCD_LLAPI_20210222.rbf",
+          "sha": "04a9616f008edca98e42d6ddce9e77a2ebd41e16",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/MegaCD_MiSTer/master/releases/MegaCD_LLAPI_20210222.rbf",
+          "type": "RBF"
         }
       ]
     },
     {
       "name": "NeoGeo_MiSTer",
       "description": "NeoGeo for MiSTer",
-      "readme": "\r\n# [SNK Neo Geo](https://en.wikipedia.org/wiki/Neo_Geo_(system)) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki) \r\n\r\nThis is an FPGA implementation of the NEO GEO/MVS system by [Furrtek](https://www.patreon.com/furrtek/posts)\r\n\r\n## Features\r\n* Supports memory card saving\r\n* MVS and AES system support\r\n* Compatible with Darksoft ROM sets using provided XML\r\n* Compatible with decrypted MAME ROM sets using your own XML\r\n* Support for Universe BIOS\r\n\r\nNote: Core doesn't support encrypted ROMs. Make sure the ROM has no encrypted parts before use it. MAME ROM pack includes many encrypted ROMs so it's not recommended for inexperienced users.\r\n\r\n## Installation\r\nCopy the NeoGeo_\\*.rbf file to the folder of your choice on the SD card. Create a **NEOGEO** folder on the root of the card, and place the unzipped ROM sets inside this folder. For ease of setup of use, it is strongly suggested that people use the Darksoft ROM pack. Several things must be observed:\r\n* Each set of ROMs must be in its own folder\r\n* The folders containing the ROM sets must be named to match the XML (MAME standard names)\r\n* The ROMs must not be zipped\r\n* ROM set folders can be placed inside sub-folders for organization\r\n\r\nIn addition, several bios files must be placed in the **NEOGEO** folder for the core to function properly:\r\n* 000-lo.lo\r\n* sfix.sfix\r\n* sp-s2.sp1 (MVS)\r\n* neo-epo.sp1 (AES)\r\n* uni-bios.rom\r\n\r\nSometimes these files may be named slightly differently depending on where they are obtained, but they must be renamed to match the filenames above to work with MiSTer. You may choose between using original system BIOS (sp-s2.sp1/neo-epo.sp1) and uni-bios.rom. Using uni-bios is recommended, and can be obtained [here](http://unibios.free.fr/).\r\n\r\nLastly, **romsets.xml** from the release folder must also be placed in the directory. The provided XML is for Darksoft ROMs only, you must make your own for MAME ROMs. This file describes to the core where the ROM sets are located and how to load them. **gog-romsets.xml** can be used (renamed to **romsets.xml**) for games purchased from gog.com (which also include all the needed bios files), see comments in gog-romsets.xml .\r\n\r\n## Saving and Loading\r\nIn AES mode, all saves are to the memory card only. In MVS mode, some games and uni-bios save their settings to a special area of battery backed ram built into the system, while game data can be still be saved to a memory card. To simplify things, it is suggested to stick to one system type on the OSD and use uni-bios to change the system type, so that game information is saved consistently.\r\n\r\n## RAM and Game Sizes\r\nNeo Geo uses very large ROMs. About 84% of the library will fit onto a 32 megabyte SDRAM module. Another 12% will fit onto a 64 megabyte SDRAM module. The remaining 8 games require a 128 megabyte module. For more information about which games can be loaded with which sized RAM, open romsets.xml in your favorite text editor or github. The games are organized by size.\r\n",
+      "readme": "\r\n# [SNK Neo Geo](https://en.wikipedia.org/wiki/Neo_Geo_(system)) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki) \r\n\r\nThis is an FPGA implementation of the NEO GEO/MVS system by [Furrtek](https://www.patreon.com/furrtek/posts)\r\n\r\n## Features\r\n* Supports memory card saving\r\n* MVS and AES system support\r\n* Compatible with Darksoft ROM sets using provided XML\r\n* Compatible with decrypted MAME ROM sets using your own XML\r\n* Compatible with decrypted .neo ROM sets\r\n* Compatible with gog.com ROMs using provided XML\r\n* Support for Universe BIOS\r\n\r\nNote: Core doesn't support encrypted ROMs. Make sure the ROM has no encrypted parts before use. MAME ROM pack includes many encrypted ROMs so it's not recommended for inexperienced users. Using the .neo conversion tool with a MAME ROM set will result in some ROMs still being encrypted. There is an alternate .neo conversion tool for the Darksoft ROM set that will give you a fully decrypted set.\r\n\r\n[MAME to .neo conversion tool](https://github.com/city41/neosdconv)\r\n\r\n[Darksoft to .neo conversion tool](https://gitlab.com/loic.petit/darksoft-to-neosd/)\r\n\r\n## Installation\r\nCopy the NeoGeo_\\*.rbf file to the 'Console' or 'Arcade' folder (your choice) on the SD card. ROMS should go in the 'games\\NeoGeo' folder. For ease of use, it is strongly suggested that people use the Darksoft ROM pack. These can be either zipped or unzipped with minimal loading speed difference. Several things must be observed:\r\n* When using an unzipped Darksoft ROM set, each game's ROM files must be in their own folder and the folders containing the ROM sets must be named to match the XML (MAME standard names)\r\n* ROMs can be placed inside sub-folders for organization\r\n* Zipped ROMs must **not** contain folders.\r\n\r\nIn addition, several bios files must be placed in the 'games\\NeoGeo' folder for the core to function properly:\r\n* 000-lo.lo\r\n* sfix.sfix\r\n* sp-s2.sp1 (MVS)\r\n* neo-epo.sp1 (AES)\r\n* uni-bios.rom\r\n\r\nSometimes these files may be named slightly different depending on where they are obtained, but they must be renamed to match the filenames above to work with MiSTer. You may choose between using original system BIOS (sp-s2.sp1/neo-epo.sp1) and uni-bios.rom. Using uni-bios is recommended, and can be obtained [here](http://unibios.free.fr/).\r\n\r\nLastly, **romsets.xml** from the release folder must also be placed in the directory. The provided XML is for Darksoft ROMs only, you must make your own for MAME ROMs. This file describes to the core where the ROM sets are located and how to load them. **gog-romsets.xml** can be used (renamed to **romsets.xml**) for games purchased from gog.com (which also include all the needed bios files), see comments in gog-romsets.xml .\r\n\r\n## Saving and Loading\r\nIn AES mode, all saves are to the memory card only. In MVS mode, some games and uni-bios save their settings to a special area of battery backed ram built into the system, while game data can be still be saved to a memory card. To simplify things, it is suggested to stick to one system type on the OSD and use uni-bios to change the system type, so that game information is saved consistently.\r\n\r\n## RAM and Game Sizes\r\nNeo Geo uses very large ROMs. About 84% of the library will fit onto a 32 megabyte SDRAM module. Another 12% will fit onto a 64 megabyte SDRAM module. The remaining 8 games require a 128 megabyte module. For more information about which games can be loaded with which sized RAM, open romsets.xml in your favorite text editor or github. The games are organized by size.\r\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-LLAPI/NeoGeo_MiSTer",
@@ -750,6 +804,18 @@
           "name": "NeoGeo_20210114.rbf",
           "sha": "47882b73640a4326d28491774e6422b9d461d702",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/NeoGeo_MiSTer/master/releases/NeoGeo_20210114.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NeoGeo_20210210.rbf",
+          "sha": "9e3ad4ce26fa60d2e937c0ed371518ac52ff202e",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/NeoGeo_MiSTer/master/releases/NeoGeo_20210210.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NeoGeo_20210222.rbf",
+          "sha": "a826aacd059aa604bb87cdfd8da4ce993f556f81",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/NeoGeo_MiSTer/master/releases/NeoGeo_20210222.rbf",
           "type": "RBF"
         },
         {
@@ -825,8 +891,14 @@
           "type": "RBF"
         },
         {
+          "name": "NeoGeo_LLAPI_20210222.rbf",
+          "sha": "14fb8b385bc01107783c54f0b14884470ee03370",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/NeoGeo_MiSTer/master/releases/NeoGeo_LLAPI_20210222.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "README.md",
-          "sha": "abdb8c23e66088a7b2bcc5d69f49951bbf6ca0ea",
+          "sha": "91abd5fd1fe831e59d750a409d3f9b19393d5849",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/NeoGeo_MiSTer/master/releases/README.md",
           "type": "OTHER"
         },
@@ -844,7 +916,7 @@
         },
         {
           "name": "romsets.xml",
-          "sha": "7f03dc4fc9eeb2d1ce87d26a4b1d387299e11894",
+          "sha": "2e564b4eab16e9786a641b5811255fe72147b6b0",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/NeoGeo_MiSTer/master/releases/romsets.xml",
           "type": "OTHER"
         }
@@ -1019,7 +1091,7 @@
     {
       "name": "SMS_MiSTer",
       "description": "Sega Master System for MiSTer",
-      "readme": "# Sega Master System and Game Gear for the [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki) and [MiST](https://github.com/mist-devel/mist-board/wiki) boards\n\n### Installation:\n* Copy the *.rbf file at the root of the SD card.\n* Copy *.SMS ROMs into SMS folder.\n\n### Features: \n* Master System, Game Gear and SG-1000 Support\n* NTSC & PAL Support\n* Hide Borders Option - Allows you to fill the screen vertically without black borders.\n* FM Audio Support\n* Extra Sprites Option\n* Cheats\n\n### Download precompiled binaries at:\n* For MiSTer, go to [releases](https://github.com/MiSTer-devel/SMS_MISTer/tree/master/releases) folder.\n* For MiST, go to [mist-binaries](https://github.com/mist-devel/mist-binaries/tree/master/cores/sms).\n\n### Notes:\n* Some games come in .gg format but are in fact SMS games. Rename the .gg extention to .sms or .bin to fix them.\n  These games are mostly listed in this page [SMSpower-SMS-GG list](http://www.smspower.org/Tags/SMS-GG).\n* The \"Aspect ratio\" doesn't do much in PAL mode, that's normal\n* The \"Region\" parameter toggle some hardware features that are specific to the different console models.\n  Some localized games need these modifications to work properly\n* Each game cartridge comes with a specific mapper, which description is not included in the .gg ou .sms file.\n  The core has a special logic to automatically determine which mapper needs to be used, but some games make\n  a good effort to make this logic fail. The \"Disable mappers\" parameter permits to force the usage \n  of the most used sega mapper. \n",
+      "readme": "# Sega Master System and Game Gear for the [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki) and [MiST](https://github.com/mist-devel/mist-board/wiki) boards\n\n### Installation:\n* Copy the *.rbf file at the root of the SD card.\n* Copy *.SMS ROMs into SMS folder.\n\n### Features: \n* Master System, Game Gear and SG-1000 Support\n* NTSC & PAL Support\n* Hide Borders Option - Allows you to fill the screen vertically without black borders.\n* FM Audio Support\n* Extra Sprites Option\n* Cheats\n\n### Download precompiled binaries at:\n* For MiSTer, go to [releases](https://github.com/MiSTer-devel/SMS_MISTer/tree/master/releases) folder.\n* For MiST, go to [mist-binaries](https://github.com/mist-devel/mist-binaries/tree/master/cores/sms).\n\n### Notes:\n* Some games come in .gg format but are in fact SMS games. Rename the .gg extention to .sms or .bin to fix them.\n  These games are mostly listed in this page [SMSpower-SMS-GG list](http://www.smspower.org/Tags/SMS-GG).\n* The \"Aspect ratio\" doesn't do much in PAL mode, that's normal\n* The \"Region\" parameter toggle some hardware features that are specific to the different console models.\n  Some localized games need these modifications to work properly\n* The \"Masked left column\" option controls behaviour of left column when hidden by system (usually during horizontal \n  scrolling). \"BG\" sets it to the background/overscan colour, as on original hardware. \"Black\" makes it black,\n  which may look better on non full-screen settings as the column will blend in with surrounding black area.\n  \"Cut\" will remove the column from the active image, so the horizontal resolution becomes 248 instead of 256. This\n  will distort the image when scaled, particularly on integer scaling settings, but will use more of the screen.\n  When \"Border\" is set to \"Yes\" the left column is always shown as part of the border, so \"Masked left column\" is \n  disabled.\n* Each game cartridge comes with a specific mapper, which description is not included in the .gg ou .sms file.\n  The core has a special logic to automatically determine which mapper needs to be used, but some games make\n  a good effort to make this logic fail. The \"Disable mappers\" parameter permits to force the usage \n  of the most used sega mapper. \n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-LLAPI/SMS_MiSTer",
@@ -1052,6 +1124,24 @@
           "name": "SMS_20210106.rbf",
           "sha": "3a7a907eecef4a31e0b5292946962e9d0e569c88",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SMS_MiSTer/master/releases/SMS_20210106.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SMS_20210210.rbf",
+          "sha": "2b35184f7b580a929421983e799bb99b036ae701",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SMS_MiSTer/master/releases/SMS_20210210.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SMS_20210211.rbf",
+          "sha": "300ea301af997508bde425da74d195ddbd2445bc",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SMS_MiSTer/master/releases/SMS_20210211.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SMS_20210222.rbf",
+          "sha": "ee13e00386c84517585049c50b1c1c752c66ccfd",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SMS_MiSTer/master/releases/SMS_20210222.rbf",
           "type": "RBF"
         },
         {
@@ -1100,6 +1190,12 @@
           "name": "SMS_LLAPI_20210115.rbf",
           "sha": "c66c6598aeca1af1a790710c1e96eef5ed9a5b12",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SMS_MiSTer/master/releases/SMS_LLAPI_20210115.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SMS_LLAPI_20210222.rbf",
+          "sha": "652f6c6e3b1499eb16b8adec8aa8dbcdb0f81d8f",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SMS_MiSTer/master/releases/SMS_LLAPI_20210222.rbf",
           "type": "RBF"
         }
       ]
@@ -1200,6 +1296,18 @@
           "name": "SNES_20210121.rbf",
           "sha": "a79dec18347ec2e246d6f01e30b1aee24572efbe",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SNES_MiSTer/master/releases/SNES_20210121.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_20210210.rbf",
+          "sha": "3bfa8c0bc48d5402fe1712a4ffa2be5c5cd99039",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SNES_MiSTer/master/releases/SNES_20210210.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_20210222.rbf",
+          "sha": "5072ced3f2914a88d5edc045643631adbcc8dd38",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SNES_MiSTer/master/releases/SNES_20210222.rbf",
           "type": "RBF"
         },
         {
@@ -1309,13 +1417,19 @@
           "sha": "5ef12bea1aea475ee67b998da0cda1be23054173",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SNES_MiSTer/master/releases/SNES_LLAPI_20210121.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "SNES_LLAPI_20210222.rbf",
+          "sha": "d85f5e229147e318504378b9f2b9a1c9f6e31dd7",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SNES_MiSTer/master/releases/SNES_LLAPI_20210222.rbf",
+          "type": "RBF"
         }
       ]
     },
     {
       "name": "TurboGrafx16_MiSTer",
       "description": "TurboGrafx 16 / PC Engine for MiSTer",
-      "readme": "# TurboGrafx 16 / PC Engine for [MiSTer Board](https://github.com/MiSTer-devel/Main_MiSTer/wiki) \r\n\r\n### This is the port of Gregory Estrade's [FPGAPCE](https://github.com/Torlus/FPGAPCE)\r\n\r\n## Features\r\n * SuperGrafx mode\r\n * saves\r\n * Completely rewritten CPU and VDC for cycle accuracy\r\n * Uses DDR3 and SDRAM for cartridge's ROM (SDRAM is recommended for accuracy)\r\n * 6(8)-buttons joystick\r\n * Turbotap(multiple joysticks)\r\n * Mouse\r\n * Pachinko controller\r\n * Street Fighter II and Populous mappers\r\n * CD-ROM\r\n * Arcade Card\r\n * Cheat engine\r\n\r\n## Installation:\r\nCopy the *.rbf file at the root of the SD card. Copy roms (*PCE,*BIN) to **TGFX16** folder. You may rename ROM of your favorite game to **boot.rom** - it will be automatically loaded upon core loading.\r\nUse SGX file extension for SuperGrafx games.\r\n\r\n## CD-ROM games\r\nCD-ROM images must be in BIN/CUE format, and must be located in the **TGFX16-CD** folder. Each CD-ROM image must have its own folder.\r\n**cd_bios.rom** must be placed in the same TGFX16-CD folder as the images mentioned above. **Japanese Super CD-ROM v3.00 is recomended for maximum compatibility**. \r\nAdditionally you can use a different bios for specific games (for example from Games Express) by placing cd_bios.rom inside the game image's folder.\r\n\r\n**Do not zip CD-ROM images! It won't work correctly.**\r\n\r\n**Attention about US BIOS:** MiSTer requires original dump of US BIOS to work properly. It needs to be of 262144 bytes.\r\nIf you can read copyright string at the end of US BIOS file, then it's not correct dump! It's already pre-swapped for emulators.\r\nWhile it will work on MiSTer, some CD games will refuse to start. **Correct US BIOS file is when copyright string is not readable.**\r\n\r\n## Cheat engine\r\nStandard cheats location is supported for HuCard games. For CD-ROM game all cheats must be zipped into a single zip file and placed inside game's CD-ROM folder.\r\n\r\n## Joystick\r\nBoth Turbotap and 6-button joysticks are supported.\r\nDo not enable these features for games not supporting it, otherwise game will work incorrectly.\r\n\r\n## Pachinko\r\nPachinko controller is supported through either paddle or analog joystick Y axis.\r\n\r\n## Reset\r\nHold down Run button then press Select. Some games require to keep both buttons pressed longer to reset. The PC Engine/Turbografx-16 did not have a hardware reset button, and instead relies on this button combination. With this method, in-game options will remain if you have changed them, whereas the MiSTer OSD reset will revert them.\r\n\r\n## SDRAM\r\nThis core may work without SDRAM (using on-board DDR3), but it may have different kinds of issues/glitches due to high latency of DDR3 memory. Thus SDRAM module is highly recommended for maximum accuracy.\r\n\r\n### Notes:\r\n* Both headerless ROMs and ROMs with header (512b) are supported and automatically distinguished by file size.\r\n\r\n## Download precompiled binaries\r\nGo to [releases](https://github.com/MiSTer-devel/TurboGrafx16_MiSTer/tree/master/releases) folder. \r\n",
+      "readme": "# [TurboGrafx 16 / PC Engine](https://en.wikipedia.org/wiki/TurboGrafx-16) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki) \r\n\r\n### This is the port of Gregory Estrade's [FPGAPCE](https://github.com/Torlus/FPGAPCE)\r\n\r\n## Features\r\n * SuperGrafx mode\r\n * saves\r\n * Completely rewritten CPU and VDC for cycle accuracy\r\n * Uses DDR3 and SDRAM for cartridge's ROM (SDRAM is recommended for accuracy)\r\n * 6(8)-buttons joystick\r\n * Turbotap(multiple joysticks)\r\n * Mouse\r\n * Pachinko controller\r\n * Street Fighter II and Populous mappers\r\n * CD-ROM\r\n * Arcade Card\r\n * Cheat engine\r\n\r\n## Installation:\r\nCopy the *.rbf file at the root of the SD card. Copy roms (*PCE,*BIN) to **TGFX16** folder. You may rename ROM of your favorite game to **boot.rom** - it will be automatically loaded upon core loading.\r\nUse SGX file extension for SuperGrafx games.\r\n\r\n## CD-ROM games\r\nCD-ROM images must be in BIN/CUE format, and must be located in the **TGFX16-CD** folder. Each CD-ROM image must have its own folder.\r\n**cd_bios.rom** must be placed in the same TGFX16-CD folder as the images mentioned above. **Japanese Super CD-ROM v3.00 is recomended for maximum compatibility**. \r\nAdditionally you can use a different bios for specific games (for example from Games Express) by placing cd_bios.rom inside the game image's folder.\r\n\r\n**Do not zip CD-ROM images! It won't work correctly.**\r\n\r\n**Attention about US BIOS:** MiSTer requires original dump of US BIOS to work properly. It needs to be of 262144 bytes.\r\nIf you can read copyright string at the end of US BIOS file, then it's not correct dump! It's already pre-swapped for emulators.\r\nWhile it will work on MiSTer, some CD games will refuse to start. **Correct US BIOS file is when copyright string is not readable.**\r\n\r\n## Cheat engine\r\nStandard cheats location is supported for HuCard games. For CD-ROM game all cheats must be zipped into a single zip file and placed inside game's CD-ROM folder.\r\n\r\n## Joystick\r\nBoth Turbotap and 6-button joysticks are supported.\r\nDo not enable these features for games not supporting it, otherwise game will work incorrectly.\r\n\r\n## Pachinko\r\nPachinko controller is supported through either paddle or analog joystick Y axis.\r\n\r\n## Reset\r\nHold down Run button then press Select. Some games require to keep both buttons pressed longer to reset. The PC Engine/Turbografx-16 did not have a hardware reset button, and instead relies on this button combination. With this method, in-game options will remain if you have changed them, whereas the MiSTer OSD reset will revert them.\r\n\r\n## SDRAM\r\nThis core may work without SDRAM (using on-board DDR3), but it may have different kinds of issues/glitches due to high latency of DDR3 memory. Thus SDRAM module is highly recommended for maximum accuracy.\r\n\r\n### Notes:\r\n* Both headerless ROMs and ROMs with header (512b) are supported and automatically distinguished by file size.\r\n\r\n## Download precompiled binaries\r\nGo to [releases](https://github.com/MiSTer-devel/TurboGrafx16_MiSTer/tree/master/releases) folder. \r\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-LLAPI/TurboGrafx16_MiSTer",
@@ -1420,6 +1534,18 @@
           "name": "TurboGrafx16_20201220.rbf",
           "sha": "0774e6fc6690927c12911ba8760416d890342445",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/TurboGrafx16_MiSTer/master/releases/TurboGrafx16_20201220.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "TurboGrafx16_20210210.rbf",
+          "sha": "e7de1c4f69c6a720239afc435298d0b669bc857e",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/TurboGrafx16_MiSTer/master/releases/TurboGrafx16_20210210.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "TurboGrafx16_20210222.rbf",
+          "sha": "575cfcdfede5cf34cc0b91344453f1aa0f11a94f",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/TurboGrafx16_MiSTer/master/releases/TurboGrafx16_20210222.rbf",
           "type": "RBF"
         },
         {
@@ -1540,6 +1666,12 @@
           "name": "TurboGrafx16_LLAPI_20201220.rbf",
           "sha": "8652814ddf5c146401aecff8f58a578d2725e258",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/TurboGrafx16_MiSTer/master/releases/TurboGrafx16_LLAPI_20201220.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "TurboGrafx16_LLAPI_20210222.rbf",
+          "sha": "935e8d9f65c4fb239a8f565277dbb5cbaa9396dc",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/TurboGrafx16_MiSTer/master/releases/TurboGrafx16_LLAPI_20210222.rbf",
           "type": "RBF"
         }
       ]
