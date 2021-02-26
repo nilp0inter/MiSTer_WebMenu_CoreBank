@@ -706,6 +706,12 @@
           "type": "OTHER"
         },
         {
+          "name": "MRA-Alternatives_20210226.zip",
+          "sha": "468a5a7a8c01f90f7e0e589e619364795a79965b",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/MRA-Alternatives_MiSTer/releases/MRA-Alternatives_20210226.zip",
+          "type": "OTHER"
+        },
+        {
           "name": "README.md",
           "sha": "86730550b7464c583da85384ffb18272cbc965b5",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/biocom/README.md",
@@ -1145,6 +1151,31 @@
         {
           "name": "README.md",
           "sha": "3f95679ba6fbffdbeca181c3deecf943fb5b6999",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/comsc/README.md",
+          "type": "OTHER"
+        },
+        {
+          "name": "Combat School (Japan trackball).mra",
+          "sha": "6aa885855dab629d197dbf55b46fdd6a830c8a4f",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/comsc/releases/Combat%20School%20(Japan%20trackball).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Combat School (Japan trackball)",
+            "rbf": "jtcomsc",
+            "zips": [
+              "combatscj.zip|combatsc.zip"
+            ]
+          }
+        },
+        {
+          "name": "jtcomsc_20210226.rbf",
+          "sha": "d60ab47e1ae7e8f306ed0519bf024d52e696d409",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/comsc/releases/jtcomsc_20210226.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "README.md",
+          "sha": "3f95679ba6fbffdbeca181c3deecf943fb5b6999",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/contra/README.md",
           "type": "OTHER"
         },
@@ -1187,7 +1218,7 @@
         },
         {
           "name": "README.md",
-          "sha": "144a906065ec149cc9100e3d0ba07316533fb25f",
+          "sha": "925b5551447bdf55be7d54d6fed2fa71235071ba",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps1/README.md",
           "type": "OTHER"
         },
