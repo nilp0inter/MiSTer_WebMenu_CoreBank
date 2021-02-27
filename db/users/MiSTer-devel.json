@@ -1791,15 +1791,34 @@
           "type": "RBF"
         },
         {
-          "name": "Centipede.mra",
-          "sha": "e3f8b2452f9b328d7d8c589cd4f8fab1d89291f0",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Centipede_MiSTer/master/releases/Centipede.mra",
+          "name": "Arcade-Centipede_20210227.rbf",
+          "sha": "f839528c76224729cfe69bbc05f2defd9fc60da2",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Centipede_MiSTer/master/releases/Arcade-Centipede_20210227.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Centipede (revision 4).mra",
+          "sha": "eafffd561bc2c890ca4eb2409b2b6c52d022a9b6",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Centipede_MiSTer/master/releases/Centipede%20(revision%204).mra",
           "type": "MRA",
           "extra": {
             "name": "Centipede (revision 4)",
             "rbf": "centipede",
             "zips": [
               "centiped.zip"
+            ]
+          }
+        },
+        {
+          "name": "Centipede.mra",
+          "sha": "cb21958fc5a0cb4edeb5779505151a166cdd8cee",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Centipede_MiSTer/master/releases/Centipede.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Centipede (revision 3)",
+            "rbf": "centipede",
+            "zips": [
+              "centiped.zip|centiped3.zip"
             ]
           }
         }
