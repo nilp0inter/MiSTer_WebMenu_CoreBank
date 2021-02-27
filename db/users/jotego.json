@@ -1155,15 +1155,15 @@
           "type": "OTHER"
         },
         {
-          "name": "Combat School (Japan trackball).mra",
-          "sha": "5366842f4366f80619f33fbc7f5170927a7713ca",
-          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/comsc/releases/Combat%20School%20(Japan%20trackball).mra",
+          "name": "Combat School Joystick.mra",
+          "sha": "54884e0e6f293ad450c9b5ba79fcef0e482f14b8",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/comsc/releases/Combat%20School%20Joystick.mra",
           "type": "MRA",
           "extra": {
-            "name": "Combat School (Japan trackball)",
+            "name": "Combat School (joystick)",
             "rbf": "jtcomsc",
             "zips": [
-              "combatscj.zip|combatsc.zip"
+              "combatsc.zip"
             ]
           }
         },
