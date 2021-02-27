@@ -3905,7 +3905,7 @@
         },
         {
           "name": "Phoenix.mra",
-          "sha": "d14a175ad5b4a49792d105df967b62d5a1ec39af",
+          "sha": "fc58a699b3b80ad9b1c6cb539ef3011e7f795a78",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Phoenix_MiSTer/master/releases/Phoenix.mra",
           "type": "MRA",
           "extra": {
@@ -3917,26 +3917,13 @@
           }
         },
         {
-          "name": "Pleiads (Centuri).mra",
-          "sha": "a3c5781cb2537ae7277a9e205ff6d81403ebf4e2",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Phoenix_MiSTer/master/releases/Pleiads%20(Centuri).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Pleiads (Centuri)",
-            "rbf": "Phoenix",
-            "zips": [
-              "pleiadce.zip"
-            ]
-          }
-        },
-        {
           "name": "Pleiads (Tehkan).mra",
-          "sha": "a008ce14ea5903bc11addd26ad6aa874fbf1ce65",
+          "sha": "38a8ffa5bdca3d57fb1e6450e5a6b81f5da67a61",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Phoenix_MiSTer/master/releases/Pleiads%20(Tehkan).mra",
           "type": "MRA",
           "extra": {
             "name": "Pleiads (Tehkan)",
-            "rbf": "Phoenix",
+            "rbf": "phoenix",
             "zips": [
               "pleiads.zip"
             ]
@@ -8565,12 +8552,6 @@
       "fork": true,
       "url": "https://github.com/MiSTer-DB9/SAM-Coupe_MiSTer",
       "releases": [
-        {
-          "name": "SAMCoupe20200512.rbf",
-          "sha": "f05ea4bda8527fd09f7acaf98aefb332625103d8",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/SAM-Coupe_MiSTer/master/releases/SAMCoupe20200512.rbf",
-          "type": "RBF"
-        },
         {
           "name": "SAMCoupe_20200512.rbf",
           "sha": "d9c23c26d5730c6ad1594b12da7f5b41f1050f0e",
