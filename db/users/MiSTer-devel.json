@@ -6005,7 +6005,13 @@
           "sha": "92e79dca6ffb8220f16a440a0cdfb21a104e5a51",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Scramble_MiSTer/master/releases/Lost%20Tomb.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Lost Tomb",
+            "rbf": "scramble",
+            "zips": [
+              "losttomb.zip"
+            ]
+          }
         },
         {
           "name": "Mars.mra",
