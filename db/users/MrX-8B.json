@@ -505,7 +505,13 @@
           "sha": "bda5e279daa2043f35c98771a59605200d2144ca",
           "url": "https://raw.githubusercontent.com/MrX-8B/MiSTer-Arcade-GreenBeret/master/releases/Rush'n%20Attack%20(US).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Rush'n Attack (US)",
+            "rbf": "rshnatk",
+            "zips": [
+              "gberet.zip|rushatck.zip"
+            ]
+          }
         },
         {
           "name": "rommap.txt",
