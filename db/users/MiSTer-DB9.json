@@ -4563,13 +4563,7 @@
           "sha": "12db951f08672b5edc15986fec110275b0ba9c56",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Scramble_MiSTer/master/releases/Amidar.mra",
           "type": "MRA",
-          "extra": {
-            "name": "Amidar (Scramble hardware)",
-            "rbf": "scramble",
-            "zips": [
-              "amidar.zip|amidars.zip"
-            ]
-          }
+          "extra": null
         },
         {
           "name": "Anteater.mra",
@@ -4638,7 +4632,13 @@
           "sha": "67e513ef56bac2c5882e4f4c0e07eca5e150e835",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Scramble_MiSTer/master/releases/Battle%20of%20Atlantis.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Battle of Atlantis (set 2)",
+            "rbf": "scramble",
+            "zips": [
+              "atlantis.zip|atlantis2.zip"
+            ]
+          }
         },
         {
           "name": "Calipso.mra",
@@ -5570,13 +5570,7 @@
           "sha": "91e7d0114472dacc7f01e4cfba182e7268589dd5",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SpaceInvaders_MiSTer/master/releases/Space%20Chaser.mra",
           "type": "MRA",
-          "extra": {
-            "name": "Space Chaser (set 1)",
-            "rbf": "spaceinvaders",
-            "zips": [
-              "schaser.zip"
-            ]
-          }
+          "extra": null
         },
         {
           "name": "Space Encounters.mra",
