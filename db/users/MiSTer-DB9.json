@@ -4908,7 +4908,13 @@
           "sha": "d74313df34dd9e43dc578952b878ddc983b8ea08",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SEGASYS1_MiSTer/main/releases/4-D%20Warriors.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "4D Warriors",
+            "rbf": "segasys1",
+            "zips": [
+              "4dwarrio.zip"
+            ]
+          }
         },
         {
           "name": "Arcade-SEGASYS1_20201116.rbf",

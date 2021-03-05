@@ -6690,7 +6690,13 @@
           "sha": "07a82c1f089709995bfae687422a94a01afeb63a",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SpaceInvaders_MiSTer/master/releases/280Z-ZZAP.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "280Z-ZZAP",
+            "rbf": "spaceinvaders",
+            "zips": [
+              "280zzzap.zip"
+            ]
+          }
         },
         {
           "name": "Amazing Maze.mra",
