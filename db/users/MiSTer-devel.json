@@ -1217,7 +1217,13 @@
           "sha": "0a3e6ef13b85e83ae7f85cde6369671d07056922",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Bagman_MiSTer/master/releases/Botanic.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Botanic (English - Spanish, set 1)",
+            "rbf": "bagman",
+            "zips": [
+              "botanic.zip"
+            ]
+          }
         },
         {
           "name": "Pickin'.mra",
@@ -1530,11 +1536,7 @@
           "sha": "42cf224a87708e165e70b438404dbaec6a182713",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Breakout_MiSTer/master/releases/Breakout.mra",
           "type": "MRA",
-          "extra": {
-            "name": "Breakout [TTL]",
-            "rbf": "breakout",
-            "zips": []
-          }
+          "extra": null
         }
       ]
     },
@@ -4335,7 +4337,13 @@
           "sha": "f150a4ebfbd1fa48c43318e8659156e1505ed5c0",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MCR3Scroll_MiSTer/master/releases/Crater%20Raider.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Crater Raider",
+            "rbf": "mcr3scroll",
+            "zips": [
+              "crater.zip"
+            ]
+          }
         },
         {
           "name": "Spy Hunter.mra",

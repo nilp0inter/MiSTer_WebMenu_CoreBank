@@ -147,13 +147,7 @@
           "sha": "2e635a29eb62440900ee91b140fa79c7847cf5b8",
           "url": "https://raw.githubusercontent.com/MrX-8B/MiSTer-Arcade-AtariTetris/master/releases/Atari%20Tetris.mra",
           "type": "MRA",
-          "extra": {
-            "name": null,
-            "rbf": "AtariTetris",
-            "zips": [
-              "atetris.zip"
-            ]
-          }
+          "extra": null
         },
         {
           "name": "build_rom.bat",
@@ -1007,7 +1001,13 @@
           "sha": "ba27ac22b62e933467cf12da9873907b0e44ed1e",
           "url": "https://raw.githubusercontent.com/MrX-8B/MiSTer-Arcade-SolomonsKey/master/releases/Solomon%20no%20Kagi%20(Japan).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Solomon no Kagi (Japan)",
+            "rbf": "solomonskey",
+            "zips": [
+              "solomon.zip|solomonj.zip"
+            ]
+          }
         },
         {
           "name": "Solomon's Key.mra",

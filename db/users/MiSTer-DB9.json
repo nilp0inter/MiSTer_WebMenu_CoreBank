@@ -3443,13 +3443,7 @@
           "sha": "0bd0b6cf4426fb5a48e0532292b6c4df094d9b08",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MoonPatrol_MiSTer/master/releases/Moon%20Patrol.mra",
           "type": "MRA",
-          "extra": {
-            "name": "Moon Patrol",
-            "rbf": "moonpatrol",
-            "zips": [
-              "mpatrol.zip"
-            ]
-          }
+          "extra": null
         }
       ]
     },
@@ -5232,7 +5226,13 @@
           "sha": "d6f5b704ee8a5ab98acd9793e736548c04eac7b9",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SilverLand_MiSTer/master/releases/Silver%20Land.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Silver Land",
+            "rbf": "silverland",
+            "zips": [
+              "rpatrol.zip|silvland.zip"
+            ]
+          }
         }
       ]
     },
