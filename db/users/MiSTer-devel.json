@@ -5920,7 +5920,13 @@
           "sha": "99ae40b5dcef7fd5aca07496f19683de064e0529",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Scramble_MiSTer/master/releases/Armored%20Car.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Armored Car",
+            "rbf": "scramble",
+            "zips": [
+              "armorcar.zip"
+            ]
+          }
         },
         {
           "name": "Battle of Atlantis.mra",
@@ -6684,13 +6690,7 @@
           "sha": "07a82c1f089709995bfae687422a94a01afeb63a",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SpaceInvaders_MiSTer/master/releases/280Z-ZZAP.mra",
           "type": "MRA",
-          "extra": {
-            "name": "280Z-ZZAP",
-            "rbf": "spaceinvaders",
-            "zips": [
-              "280zzzap.zip"
-            ]
-          }
+          "extra": null
         },
         {
           "name": "Amazing Maze.mra",
