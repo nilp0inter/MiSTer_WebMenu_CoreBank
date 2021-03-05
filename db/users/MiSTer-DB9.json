@@ -8312,7 +8312,15 @@
           "sha": "a6584ea30fc265c49a8edaf43c0896c67a612b15",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/MiSTer-Arcade-SEGASYS1/master/releases/_alternatives/Gonbee%20no%20I'm%20Sorry%20(315-5110%2C%20Japan).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Gonbee no I'm Sorry (315-5110, Japan)",
+            "rbf": "segasys1",
+            "zips": [
+              "imsorry.zip",
+              "imsorryj.zip",
+              "imsorryj.zip"
+            ]
+          }
         },
         {
           "name": "Ninja Princess (315-5098, 128k Ver.).mra",
