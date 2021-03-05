@@ -2634,7 +2634,13 @@
           "sha": "c6bb2b0c22c3a1421b921ffca84e81b4fca021fd",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-LadyBug_MiSTer/master/releases/Lady%20Bug.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Lady Bug",
+            "rbf": "ladybug",
+            "zips": [
+              "ladybug.zip"
+            ]
+          }
         }
       ]
     },
