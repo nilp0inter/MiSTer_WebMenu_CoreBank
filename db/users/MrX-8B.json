@@ -147,7 +147,13 @@
           "sha": "2e635a29eb62440900ee91b140fa79c7847cf5b8",
           "url": "https://raw.githubusercontent.com/MrX-8B/MiSTer-Arcade-AtariTetris/master/releases/Atari%20Tetris.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": null,
+            "rbf": "AtariTetris",
+            "zips": [
+              "atetris.zip"
+            ]
+          }
         },
         {
           "name": "build_rom.bat",
@@ -499,13 +505,7 @@
           "sha": "bda5e279daa2043f35c98771a59605200d2144ca",
           "url": "https://raw.githubusercontent.com/MrX-8B/MiSTer-Arcade-GreenBeret/master/releases/Rush'n%20Attack%20(US).mra",
           "type": "MRA",
-          "extra": {
-            "name": "Rush'n Attack (US)",
-            "rbf": "rshnatk",
-            "zips": [
-              "gberet.zip|rushatck.zip"
-            ]
-          }
+          "extra": null
         },
         {
           "name": "rommap.txt",

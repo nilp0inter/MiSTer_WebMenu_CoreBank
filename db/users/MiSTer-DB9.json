@@ -3443,7 +3443,13 @@
           "sha": "0bd0b6cf4426fb5a48e0532292b6c4df094d9b08",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MoonPatrol_MiSTer/master/releases/Moon%20Patrol.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Moon Patrol",
+            "rbf": "moonpatrol",
+            "zips": [
+              "mpatrol.zip"
+            ]
+          }
         }
       ]
     },
