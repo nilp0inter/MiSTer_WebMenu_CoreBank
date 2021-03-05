@@ -4742,7 +4742,13 @@
           "sha": "70c03c2dd1ae05a2aba98a7bc506c8ccee511989",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Scramble_MiSTer/master/releases/Mighty%20Monkey.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Mighty Monkey",
+            "rbf": "scramble",
+            "zips": [
+              "mimonkey.zip"
+            ]
+          }
         },
         {
           "name": "Minefield.mra",

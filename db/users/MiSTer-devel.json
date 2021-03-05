@@ -6246,7 +6246,13 @@
           "sha": "cc5229da8f1098edc2bc26bb4eff301d87805784",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SEGASYS1_MiSTer/main/releases/Block%20Gal.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Block Gal",
+            "rbf": "segasys1",
+            "zips": [
+              "blockgal.zip"
+            ]
+          }
         },
         {
           "name": "Bullfight.mra",
