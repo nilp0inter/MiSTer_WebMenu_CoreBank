@@ -2787,13 +2787,7 @@
           "sha": "4ef19d9ee1280d3c3f670a3fffb9680825ffb1f2",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Galaga_MiSTer/master/releases/Galaga.mra",
           "type": "MRA",
-          "extra": {
-            "name": "Galaga (Midway set 1)",
-            "rbf": "galaga",
-            "zips": [
-              "galaga.zip|galagamw.zip|namco54.zip"
-            ]
-          }
+          "extra": null
         }
       ]
     },
@@ -2909,7 +2903,11 @@
           "sha": "635f5badec1f5fc2ff17b520e78e02335d827884",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Galaxian_MiSTer/master/releases/Clean%20Sweep.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": null,
+            "rbf": "galaxian",
+            "zips": []
+          }
         },
         {
           "name": "Devil Fish.mra",
