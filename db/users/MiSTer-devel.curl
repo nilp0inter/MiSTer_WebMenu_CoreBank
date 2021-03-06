@@ -291,6 +291,11 @@ url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pleiads_MiSTer/mast
 output = "_Arcade/cores/Capitol_20190615.rbf"
 
 
+# PolyPlay
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-PolyPlay_MiSTer/main/releases/PolyPlay_20210304.rbf"
+output = "_Others/PolyPlay_20210304.rbf"
+
+
 # Pong
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pong_MiSTer/master/releases/Arcade-Pong_20210117.rbf"
 output = "_Arcade/cores/Pong_20210117.rbf"
@@ -1559,6 +1564,21 @@ output = "_Arcade/Pleiads (Centuri).mra"
 # Pleiads.mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pleiads_MiSTer/master/releases/Pleiads.mra"
 output = "_Arcade/Pleiads.mra"
+
+
+# PolyPlay 2.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-PolyPlay_MiSTer/main/releases/PolyPlay%202.mra"
+output = "_Arcade/PolyPlay 2.mra"
+
+
+# PolyPlay 2c.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-PolyPlay_MiSTer/main/releases/PolyPlay%202c.mra"
+output = "_Arcade/PolyPlay 2c.mra"
+
+
+# PolyPlay.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-PolyPlay_MiSTer/main/releases/PolyPlay.mra"
+output = "_Arcade/PolyPlay.mra"
 
 
 # Pong.mra
