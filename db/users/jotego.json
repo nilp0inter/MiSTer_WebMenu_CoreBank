@@ -5,6 +5,92 @@
   "type": "User",
   "repos": [
     {
+      "name": "Arcade-Druaga_MiSTer",
+      "description": "The Tower of Druaga for MiSTer",
+      "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: The Tower of Druaga  port to MiSTer by MiSTer-X\n-- 24 October 2019\n-- From: https://github.com/MrX-8B/MiSTer-Arcade-Druaga\n-- \n---------------------------------------------------------------------------------\n-- FPGA Druaga for XILINX Spartan-3\n--------------------------------------\n-- Copyright (c) 2007 MiSTer-X\n---------------------------------------------------------------------------------\n-- Cycle-Accurate 6809 Core\n-- Revision 1.0 - 13th August 2016\n---------------------------------------------------\n-- Copyright (c) 2016, Greg Miller\n---------------------------------------------------------------------------------\n-- \n-- \n-- Keyboard inputs :\n--\n--   F2          : Coin + Start 2 players\n--   F1          : Coin + Start 1 player\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--   SPACE       : Trig1\n--   CTRL        : Trig2\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   R,F,D,G     : Player 2 Movements\n--   A           : Player 2 Trig1\n--   S           : Player 2 Trig2\n--\n-- Joystick support.\n-- \n-- \n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/jotego/Arcade-Druaga_MiSTer",
+      "releases": [
+        {
+          "name": "Arcade-Druaga_20191024.rbf",
+          "sha": "9c1b56be01c9c9499bde52a147724a0a4961f5fd",
+          "url": "https://raw.githubusercontent.com/jotego/Arcade-Druaga_MiSTer/master/releases/Arcade-Druaga_20191024.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Druaga_20191219.rbf",
+          "sha": "b7e7f12c471c8a803750b91a4eea5306188884c0",
+          "url": "https://raw.githubusercontent.com/jotego/Arcade-Druaga_MiSTer/master/releases/Arcade-Druaga_20191219.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Druaga_20191223.rbf",
+          "sha": "e969a6d9d3d208adc4df0cc1915101030e0518f6",
+          "url": "https://raw.githubusercontent.com/jotego/Arcade-Druaga_MiSTer/master/releases/Arcade-Druaga_20191223.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "DigDug2.mra",
+          "sha": "b892a800abcf5fe1356cb76d4797294e2fccf6cc",
+          "url": "https://raw.githubusercontent.com/jotego/Arcade-Druaga_MiSTer/master/releases/DigDug2.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Dig Dug II (New Ver.)",
+            "rbf": "druaga",
+            "zips": [
+              "digdug2.zip"
+            ]
+          }
+        },
+        {
+          "name": "Druaga.mra",
+          "sha": "95354a70ee10be33d59093039638a19ba38d8c6a",
+          "url": "https://raw.githubusercontent.com/jotego/Arcade-Druaga_MiSTer/master/releases/Druaga.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "The Tower of Druaga (New Ver.)",
+            "rbf": "druaga",
+            "zips": [
+              "todruaga.zip"
+            ]
+          }
+        },
+        {
+          "name": "Mappy.mra",
+          "sha": "0a3a9ce7d490701d5581d6ea90e05cdba531018c",
+          "url": "https://raw.githubusercontent.com/jotego/Arcade-Druaga_MiSTer/master/releases/Mappy.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Mappy (US)",
+            "rbf": "druaga",
+            "zips": [
+              "mappy.zip"
+            ]
+          }
+        },
+        {
+          "name": "Motos.mra",
+          "sha": "4e00bf03800856db796989f22233b0f5fdc3bdf7",
+          "url": "https://raw.githubusercontent.com/jotego/Arcade-Druaga_MiSTer/master/releases/Motos.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Motos",
+            "rbf": "druaga",
+            "zips": [
+              "motos.zip"
+            ]
+          }
+        },
+        {
+          "name": "rommap.txt",
+          "sha": "c2f4717aabc9503ad759dbfb438c9a2d4a89c730",
+          "url": "https://raw.githubusercontent.com/jotego/Arcade-Druaga_MiSTer/master/releases/rommap.txt",
+          "type": "OTHER"
+        }
+      ]
+    },
+    {
       "name": "Genesis_MiSTer",
       "description": "Sega Genesis for MiSTer",
       "readme": "# SEGA Megadrive/Genesis for MiSTer.\n\nThis is the port of fpgagen core.\n\nfpgagen - a SEGA Megadrive/Genesis clone in a FPGA.\nCopyright (c) 2010-2013 Gregory Estrade (greg@torlus.com)\nAll rights reserved\n\n## Installing\ncopy *.rbf to root of SD card. Put some ROMs (*.BIN/*.GEN/*.MD) into Genesis folder\n\n## Hot Keys\n* F1 - reset to JP(NTSC) region\n* F2 - reset to US(NTSC) region\n* F3 - reset to EU(PAL)  region\n\n## Auto Region option\nIf this option is enabled then region will be automatically switched upon loading according to file name extensions:\n\n* BIN -> JP\n* GEN -> US\n* MD -> EU\n",
