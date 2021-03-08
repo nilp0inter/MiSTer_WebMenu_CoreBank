@@ -2207,7 +2207,13 @@
           "sha": "f4b24b0bdad42a7ae3ad421a178164e13b7834a4",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaxian_MiSTer/master/releases/Moon%20Cresta.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Moon Cresta (Galaxian hardware)",
+            "rbf": "galaxian",
+            "zips": [
+              "mooncrst.zip|mooncrgx.zip"
+            ]
+          }
         },
         {
           "name": "Mr. Do Nightmare.mra",
