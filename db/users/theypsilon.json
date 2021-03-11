@@ -78,6 +78,141 @@
       ]
     },
     {
+      "name": "Arcade-MCR3_MiSTer",
+      "description": "Arcade: Midway MCR3 based games",
+      "readme": "# Midway MCR3 port for MiSTer\n\n[Original readme](README_orig.txt) (mostly irrelevant to MiSTer)\n\n```\n# Games\n\n### Timber\nUp to 2 players. \n* Up/Down/Left/Right - movements \n* A - Chop Right \n* B - Chop Left\n\n### Tapper\nUp to 2 players.\n* Up/Down/Left/Right - movements\n* A - Fill\n \n### Discs of Tron\nUp to 2 players.\n* Up/Down/Left/Right - movements\n* A - Toss\n* B - Deflect\n* C - Aim Up\n* D - Aim Down\nSupports 2 control modes: Joystick/Spinner\nSpinner - Rotate Right,Rotate Left\n\n### Journey\nUp to 2 players.\n* Up/Down/Left/Right - movements\n* A - Blast\n\nDownload a sound file from mame sounds ( https://samples.mameworld.info/ click current samples ) , and put journey.zip in:\n_Arcade/sound/\n \n \n# ROMs\n```\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n\n```\n\nLaunch game using the appropriate .MRA\n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/theypsilon/Arcade-MCR3_MiSTer",
+      "releases": [
+        {
+          "name": "Arcade-MCR3_20200123.rbf",
+          "sha": "c65169f8db132429c2e14ec0d93b6bec1b45c32f",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-MCR3_MiSTer/master/releases/Arcade-MCR3_20200123.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-MCR3_20200128.rbf",
+          "sha": "979cd672075a9afe30fe88ec84ee3f16bec7c4bc",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-MCR3_MiSTer/master/releases/Arcade-MCR3_20200128.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-MCR3_20200129.rbf",
+          "sha": "035af89d65b1ee52361a73995450808f31dd6e25",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-MCR3_MiSTer/master/releases/Arcade-MCR3_20200129.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-MCR3_20200204.rbf",
+          "sha": "b287a28ea82600162d81ce3ba1168b440506682a",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-MCR3_MiSTer/master/releases/Arcade-MCR3_20200204.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-MCR3_20200210.rbf",
+          "sha": "55cb2e5de7fd58024a42964a97c3e1a0dec67b2b",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-MCR3_MiSTer/master/releases/Arcade-MCR3_20200210.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-MCR3_20200216.rbf",
+          "sha": "a680dc948702b41001345baa18f972983f914a1c",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-MCR3_MiSTer/master/releases/Arcade-MCR3_20200216.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-MCR3_20200302.rbf",
+          "sha": "7fd64289ed67b6ea0eaca467535650fad125060e",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-MCR3_MiSTer/master/releases/Arcade-MCR3_20200302.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-MCR3_20201212.rbf",
+          "sha": "01e6391b12790c324b8a54c1e230ab4d3b9aa2ac",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-MCR3_MiSTer/master/releases/Arcade-MCR3_20201212.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-MCR3_20201213.rbf",
+          "sha": "8c50474fd464af922d4f975284183808bbd678ec",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-MCR3_MiSTer/master/releases/Arcade-MCR3_20201213.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-MCR3_20201215.rbf",
+          "sha": "0b772a1dd7b2f7b88cb4bbddf72d95da7153e2ed",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-MCR3_MiSTer/master/releases/Arcade-MCR3_20201215.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-MCR3_20201216.rbf",
+          "sha": "57454d4fad6a3f47571af861855675b9b4d34f3d",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-MCR3_MiSTer/master/releases/Arcade-MCR3_20201216.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-MCR3_20210112.rbf",
+          "sha": "23d6b3d48e358bbb17c0259452147d3210b79964",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-MCR3_MiSTer/master/releases/Arcade-MCR3_20210112.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Discs of Tron.mra",
+          "sha": "98013678379c1b9b1c1c6e88c9bbcfae3ba079f4",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-MCR3_MiSTer/master/releases/Discs%20of%20Tron.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Discs of Tron (Upright)",
+            "rbf": "mcr3",
+            "zips": [
+              "dotron.zip"
+            ]
+          }
+        },
+        {
+          "name": "Journey.mra",
+          "sha": "c92416c8a571d7c1ce717e89bb61b34222d75a0e",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-MCR3_MiSTer/master/releases/Journey.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Journey",
+            "rbf": "MCR3",
+            "zips": [
+              "journey.zip",
+              "/sound/journey.zip"
+            ]
+          }
+        },
+        {
+          "name": "Tapper.mra",
+          "sha": "3a143586837ad16980438292b3de59e3756ab7bd",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-MCR3_MiSTer/master/releases/Tapper.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Tapper (Budweiser, 1-27-84)",
+            "rbf": "mcr3",
+            "zips": [
+              "tapper.zip"
+            ]
+          }
+        },
+        {
+          "name": "Timber.mra",
+          "sha": "4eb7293f6051bcd9c7e0eb2bc7e3a01740393a08",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-MCR3_MiSTer/master/releases/Timber.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Timber",
+            "rbf": "mcr3",
+            "zips": [
+              "timber.zip"
+            ]
+          }
+        }
+      ]
+    },
+    {
       "name": "Archie_MiSTer",
       "description": "Acorn Archimedes for MiSTer",
       "readme": "# Acorn Archimedes for [MiSTer Board](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\r\n\r\n### This is the port of [Archie](https://github.com/mist-devel/mist-board/tree/master/cores/archie) core from MiST by Stephen Leary\r\n\r\n**CURRENTLY THIS CORE IS IN BETA STATUS**\r\n\r\n1. Basic internals are implemented.\r\n1. Basic Floppy disk support\r\n1. Sound support added but may not work in all situations.\r\n1. The core emulates a 4Mb A3000 type machine with an ARM2a with caches disabled for now (has an A3010 style joystick interface).\r\n1. Core runs at ~91% of an ARM2 @ 8Mhz when using VGA Modes.\r\n1. Some games now run. Expect issues.\r\n\r\n## Installation\r\n\r\nCopy the [*.rbf](https://github.com/MiSTer-devel/Archie_MiSTer/tree/master/releases) into a root folder of the SD card.\r\nCopy a version of a RiscOS ROM into the \"Archie\" folder, renaming it to `riscos.rom`.\r\n\r\n### Floppy disk images\r\n\r\nThe current version supports two floppy drives. Floppy disk images ADF format and of exactly 819200 bytes in size are currently required. This is the most common format for the Acorn Archimedes.\r\n\r\nImages named `floppy0.adf` and `floppy1.adf` (from Archie folder) are auto-inserted into the floppy disk drives on startup. Other images can be selected via the on-screen-display (OSD) which can be opened using the **WIN+F12** key combo.\r\n\r\n\r\n## OSD Menu\r\n\r\nIf the ROM is recognized the core should boot into Risc OS.\r\nPress **Win+F12** to open the OSD menu.\r\n\r\n* Floppy 0: Choose the floppy disk images to use for floppy 0\r\n* Floppy 1: Choose the floppy disk images to use for floppy 1\r\n* OS ROM: Choose the RISCOS rom to use\r\n* Save config: Save current config for next boot\r\n\r\nYou can move to other pages of settings by pressing the right arrow key.\r\n\r\n## Notes\r\n\r\n* CPU module (amber23) has no reset signal, so the only way to reset the core is to reload it. MiSTer will help to reload the core if **USER** button is pressed (or reset combo pressed on keyboard) and core file is named as **\"Archie.rbf\"**. Otherwise you can reload the core manually from menu (**Win+Alt+F12**).\r\n\r\n\r\n# License\r\n\r\nThis core uses the Amber CPU core from OpenCores which is LGPL.\r\nThe core itself is dual licensed LGPL/BSD.\r\n",
