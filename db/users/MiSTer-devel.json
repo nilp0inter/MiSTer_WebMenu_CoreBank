@@ -7425,17 +7425,17 @@
       ]
     },
     {
-      "name": "Arcade-TIA-MC1_MiSTer",
+      "name": "Arcade-TIAMC1_MiSTer",
       "description": "Soviet/Ukrainian Arcade TIA-MC1.",
       "readme": "## Introduction\n\nThis is the TIA-MC1 arcade from USSR for the [MiSTer board](https://github.com/MiSTer-devel).\n\nAll information taken from [mame/tiamc1.cpp](https://github.com/mamedev/mame/blob/master/src/mame/drivers/tiamc1.cpp). Many thanks to Shiru, Eugene Sandulenko and all the other contributors.\n\nSee https://en.wikipedia.org/wiki/TIA-MC-1\n\nA short [video of the arcade in action](https://www.youtube.com/watch?v=bwcVSt5q1GA)\n\n## The MiSTer Core\n\nThere may still be a few things off.\n\nThe first 2 buttons are for game inputs, the 3rd is used for coin.\n\nGorodki uses a single axis for analog input, the core supports joystick x axis, paddle or spinner. See OSD for config.",
       "archived": false,
       "fork": false,
-      "url": "https://github.com/MiSTer-devel/Arcade-TIA-MC1_MiSTer",
+      "url": "https://github.com/MiSTer-devel/Arcade-TIAMC1_MiSTer",
       "releases": [
         {
           "name": "Billiard.mra",
           "sha": "c3f5e71259bdbf1609fbd871b99b7885c016812e",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TIA-MC1_MiSTer/main/releases/Billiard.mra",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TIAMC1_MiSTer/main/releases/Billiard.mra",
           "type": "MRA",
           "extra": {
             "name": "Billiard",
@@ -7448,7 +7448,7 @@
         {
           "name": "Gorodki.mra",
           "sha": "dd15e8311510fe39f516a03accc4041780389f0a",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TIA-MC1_MiSTer/main/releases/Gorodki.mra",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TIAMC1_MiSTer/main/releases/Gorodki.mra",
           "type": "MRA",
           "extra": {
             "name": "Gorodki",
@@ -7461,7 +7461,7 @@
         {
           "name": "Konek Gorbunok.mra",
           "sha": "037b739a55f0d8289ff60147602d831024654780",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TIA-MC1_MiSTer/main/releases/Konek%20Gorbunok.mra",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TIAMC1_MiSTer/main/releases/Konek%20Gorbunok.mra",
           "type": "MRA",
           "extra": {
             "name": "Konek Gorbunok",
@@ -7474,7 +7474,7 @@
         {
           "name": "Kot-Rybolov.mra",
           "sha": "94bdabebab10595b20a09142613c57d30f1c7eac",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TIA-MC1_MiSTer/main/releases/Kot-Rybolov.mra",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TIAMC1_MiSTer/main/releases/Kot-Rybolov.mra",
           "type": "MRA",
           "extra": {
             "name": "Kot-Rybolov",
@@ -7487,7 +7487,7 @@
         {
           "name": "SOS.mra",
           "sha": "ec362400a318dc5dd61c35908b6fc5d8bb9ea26d",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TIA-MC1_MiSTer/main/releases/SOS.mra",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TIAMC1_MiSTer/main/releases/SOS.mra",
           "type": "MRA",
           "extra": {
             "name": "S.O.S.",
@@ -7500,7 +7500,7 @@
         {
           "name": "Snezhnaja Koroleva.mra",
           "sha": "e1b749f6707c26ff9d0821c2219e10a0013bd717",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TIA-MC1_MiSTer/main/releases/Snezhnaja%20Koroleva.mra",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TIAMC1_MiSTer/main/releases/Snezhnaja%20Koroleva.mra",
           "type": "MRA",
           "extra": {
             "name": "Snezhnaja Koroleva",
@@ -7513,7 +7513,7 @@
         {
           "name": "TIA-MC1_20210320.rbf",
           "sha": "3dd8b65549c979f4d60b2187ea0426ea722a8084",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TIA-MC1_MiSTer/main/releases/TIA-MC1_20210320.rbf",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TIAMC1_MiSTer/main/releases/TIA-MC1_20210320.rbf",
           "type": "RBF"
         }
       ]
