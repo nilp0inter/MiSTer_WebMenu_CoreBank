@@ -4601,6 +4601,35 @@
       ]
     },
     {
+      "name": "Arcade-MrDo_MiSTer",
+      "description": "Mr. Do! Universal 1982",
+      "readme": "# [Arcade: Mr Do!]\n\nCopyright (c) Darren Olafson - Mar 2021\n\n## Description\n\nA simulation model of Universal's Mr. Do! hardware.\n\n## ROM Files Instructions\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for information on how to setup and use the environment.\n\nQuick reference for folders and file placement:\n\n```\n/_Arcade/<game name>.mra  \n/_Arcade/cores/<game rbf>.rbf  \n/_Arcade/mame/<mame rom>.zip  \n/_Arcade/hbmame/<hbmame rom>.zip  \n```\n",
+      "archived": false,
+      "fork": false,
+      "url": "https://github.com/MiSTer-devel/Arcade-MrDo_MiSTer",
+      "releases": [
+        {
+          "name": "Mr. Do.mra",
+          "sha": "cef1892f9caab2d4f29983208770352257f2c4fe",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MrDo_MiSTer/main/releases/Mr.%20Do.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Mr Do!",
+            "rbf": "MrDo",
+            "zips": [
+              "mrdo.zip"
+            ]
+          }
+        },
+        {
+          "name": "MrDo_20210323.rbf",
+          "sha": "8a8acb5fd7c5d951e4270c0da68f6b6ec9ae3d19",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MrDo_MiSTer/main/releases/MrDo_20210323.rbf",
+          "type": "RBF"
+        }
+      ]
+    },
+    {
       "name": "Arcade-NinjaKun_MiSTer",
       "description": "Ninja-Kun for MiSter",
       "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: Ninja-Kun  port to MiSTer by MiSTer-X\n-- 23 October 2019\n-- https://github.com/MrX-8B/MiSTer-Arcade-NinjaKun\n-- \n---------------------------------------------------------------------------------\n-- FPGA Ninja-Kun for Spartan-6\n------------------------------------------------\n-- Copyright (c) 2011 MiSTer-X\n---------------------------------------------------------------------------------\n-- T80/T80s - Version : 0242\n-----------------------------\n-- Z80 compatible microprocessor core\n-- Copyright (c) 2001-2002 Daniel Wallner (jesus@opencores.org)\n---------------------------------------------------------------------------------\n-- YM2149 (AY-3-8910)\n-- Copyright (c) MikeJ - Jan 2005\n---------------------------------------------------------------------------------\n-- \n-- \n-- Keyboard inputs :\n--\n--   F2          : Coin + Start 2 players\n--   F1          : Coin + Start 1 player\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--   SPACE       : Shot\n--   CTRL        : Jump\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   R,F,D,G     : Player 2 Movements\n--   A           : Player 2 Shot\n--   S           : Player 2 Jump\n--\n-- Joystick support.\n--\n--\n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
