@@ -4615,6 +4615,19 @@
       "url": "https://github.com/MiSTer-devel/Arcade-MrDo_MiSTer",
       "releases": [
         {
+          "name": "Mr. Do Fixed.mra",
+          "sha": "cc0b0465e0dfa805d18c16d67180d5b4200b58cc",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MrDo_MiSTer/main/releases/Mr.%20Do%20Fixed.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Mr Do! Fixed",
+            "rbf": "MrDo",
+            "zips": [
+              "mrdofix.zip"
+            ]
+          }
+        },
+        {
           "name": "Mr. Do.mra",
           "sha": "cef1892f9caab2d4f29983208770352257f2c4fe",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MrDo_MiSTer/main/releases/Mr.%20Do.mra",
@@ -4631,6 +4644,12 @@
           "name": "MrDo_20210323.rbf",
           "sha": "8a8acb5fd7c5d951e4270c0da68f6b6ec9ae3d19",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MrDo_MiSTer/main/releases/MrDo_20210323.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "MrDo_20210326.rbf",
+          "sha": "187c7ce697946b3677ab12323a7b3502cdbcb1b0",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MrDo_MiSTer/main/releases/MrDo_20210326.rbf",
           "type": "RBF"
         }
       ]
