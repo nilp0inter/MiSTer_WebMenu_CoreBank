@@ -4615,8 +4615,26 @@
       "url": "https://github.com/MiSTer-devel/Arcade-MrDo_MiSTer",
       "releases": [
         {
+          "name": "Arcade-MrDo_20210323.rbf",
+          "sha": "8a8acb5fd7c5d951e4270c0da68f6b6ec9ae3d19",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MrDo_MiSTer/main/releases/Arcade-MrDo_20210323.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-MrDo_20210326.rbf",
+          "sha": "187c7ce697946b3677ab12323a7b3502cdbcb1b0",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MrDo_MiSTer/main/releases/Arcade-MrDo_20210326.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-MrDo_20210328.rbf",
+          "sha": "ebdaf5f3a9f9765b73c09623a78745a9d0d8af09",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MrDo_MiSTer/main/releases/Arcade-MrDo_20210328.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Mr. Do Fixed.mra",
-          "sha": "819b7950d2afd97271fad56bff4562d2dd1f5a5a",
+          "sha": "f78baca9b47526242162d91d94450dd83311b6bf",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MrDo_MiSTer/main/releases/Mr.%20Do%20Fixed.mra",
           "type": "MRA",
           "extra": {
@@ -4629,7 +4647,7 @@
         },
         {
           "name": "Mr. Do.mra",
-          "sha": "cef1892f9caab2d4f29983208770352257f2c4fe",
+          "sha": "6ec8da644968751aa322f01e8815696f10d786d1",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MrDo_MiSTer/main/releases/Mr.%20Do.mra",
           "type": "MRA",
           "extra": {
@@ -4639,18 +4657,6 @@
               "mrdo.zip"
             ]
           }
-        },
-        {
-          "name": "MrDo_20210323.rbf",
-          "sha": "8a8acb5fd7c5d951e4270c0da68f6b6ec9ae3d19",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MrDo_MiSTer/main/releases/MrDo_20210323.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "MrDo_20210326.rbf",
-          "sha": "187c7ce697946b3677ab12323a7b3502cdbcb1b0",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MrDo_MiSTer/main/releases/MrDo_20210326.rbf",
-          "type": "RBF"
         }
       ]
     },
