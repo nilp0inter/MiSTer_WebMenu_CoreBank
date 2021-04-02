@@ -4532,10 +4532,17 @@
         },
         {
           "name": "Journey.mra",
-          "sha": "4f331325ebc624759d9d4d418e177fe78207145e",
+          "sha": "4b0849acbf4d2d04df43ff094b571071cd8714b6",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MCR3_MiSTer/master/releases/Journey.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Journey",
+            "rbf": "MCR3",
+            "zips": [
+              "journey.zip",
+              "/sound/journey.zip"
+            ]
+          }
         },
         {
           "name": "Tapper.mra",
