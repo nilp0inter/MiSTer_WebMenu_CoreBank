@@ -315,7 +315,7 @@
     {
       "name": "MRA-Checker_MiSTer",
       "description": null,
-      "readme": "# MRA-Checker for MiSTer\n\nThis repository contains an updated [mra_checker.py](mra_checker.py) tool, that accepts arguments and provides useful error feedback for CI tasks.\n\n```bash\nusage: mra_checker.py [-h] [-m MRA_FOLDER] [-f FILE] [-ir] [-ic] [-im] [-r]\n\noptional arguments:\n  -h, --help            show this help message and exit\n  -m MRA_FOLDER, --mra-folder MRA_FOLDER\n  -f FILE, --file FILE\n  -ir, --ignore-roms\n  -ic, --ignore-crc\n  -im, --ignore-mameversion\n  -r, --recursive\n```\n\nThis repository also runs a CI workflow that checks MRAs from MiSTer-devel arcades.\nCheck this link to see the latest activity: https://github.com/theypsilon/MRA-Checker_MiSTer/actions/",
+      "readme": "# MRA-Checker for MiSTer\n\nThis repository runs a CI workflow that checks MRAs from MiSTer-devel arcades.\nCheck this link to see the latest activity: https://github.com/theypsilon/MRA-Checker_MiSTer/actions/\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/theypsilon/MRA-Checker_MiSTer",
