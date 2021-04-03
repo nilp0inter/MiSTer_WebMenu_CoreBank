@@ -2476,7 +2476,13 @@
           "sha": "c1f16defd6e1fcd681f0a727475253d6398ed86e",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IremM62_MiSTer/master/releases/Horizon.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Horizon (Irem)",
+            "rbf": "iremm62",
+            "zips": [
+              "horizon.zip"
+            ]
+          }
         },
         {
           "name": "Kid Niki - Radical Ninja.mra",
