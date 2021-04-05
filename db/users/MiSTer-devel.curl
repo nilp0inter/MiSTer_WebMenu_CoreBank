@@ -62,8 +62,8 @@ output = "_Console/Astrocade_20210303.rbf"
 
 
 # AtariTetris
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-ATetris_MiSTer/master/releases/Arcade-AtariTetris_20210115.rbf"
-output = "_Arcade/cores/AtariTetris_20210115.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-ATetris_MiSTer/master/releases/Arcade-AtariTetris_20210405.rbf"
+output = "_Arcade/cores/AtariTetris_20210405.rbf"
 
 
 # Bagman
@@ -177,8 +177,8 @@ output = "_Arcade/cores/Dorodon_20210115.rbf"
 
 
 # Druaga
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Druaga_MiSTer/master/releases/Arcade-Druaga_20191223.rbf"
-output = "_Arcade/cores/Druaga_20191223.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Druaga_MiSTer/master/releases/Arcade-Druaga_20210405.rbf"
+output = "_Arcade/cores/Druaga_20210405.rbf"
 
 
 # FoodFight
@@ -347,8 +347,8 @@ output = "_Arcade/cores/Scramble_20210404.rbf"
 
 
 # SEGASYS1
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SEGASYS1_MiSTer/main/releases/Arcade-SEGASYS1_20210225.rbf"
-output = "_Arcade/cores/SEGASYS1_20210225.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SEGASYS1_MiSTer/main/releases/Arcade-SEGASYS1_20210405.rbf"
+output = "_Arcade/cores/SEGASYS1_20210405.rbf"
 
 
 # SilverLand
@@ -1004,6 +1004,21 @@ output = "_Arcade/Mappy.mra"
 # Motos.mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Druaga_MiSTer/master/releases/Motos.mra"
 output = "_Arcade/Motos.mra"
+
+
+# Pac & Pal.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Druaga_MiSTer/master/releases/Pac%20%26%20Pal.mra"
+output = "_Arcade/Pac & Pal.mra"
+
+
+# Pac-Man & Chomp Chomp.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Druaga_MiSTer/master/releases/Pac-Man%20%26%20Chomp%20Chomp.mra"
+output = "_Arcade/Pac-Man & Chomp Chomp.mra"
+
+
+# Super Pacman.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Druaga_MiSTer/master/releases/Super%20Pacman.mra"
+output = "_Arcade/Super Pacman.mra"
 
 
 # Food Fight.mra
