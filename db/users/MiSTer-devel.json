@@ -5687,7 +5687,13 @@
           "sha": "7587a76614d8fe4328f297dce2e45cb43ffd3de6",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Popeye_MiSTer/master/releases/Popeye.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Popeye (revision D)",
+            "rbf": "popeye",
+            "zips": [
+              "popeye.zip"
+            ]
+          }
         },
         {
           "name": "Sky Skipper.mra",
