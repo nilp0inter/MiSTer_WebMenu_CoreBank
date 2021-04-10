@@ -2651,8 +2651,14 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Druaga_20210409.rbf",
+          "sha": "d1ab7ee751fb9660cb5afa8ab26a5a590f720b8e",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Druaga_MiSTer/master/releases/Arcade-Druaga_20210409.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "DigDug2.mra",
-          "sha": "b892a800abcf5fe1356cb76d4797294e2fccf6cc",
+          "sha": "30e567d8b6d5b7200c2af2d27610c0074551fbb6",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Druaga_MiSTer/master/releases/DigDug2.mra",
           "type": "MRA",
           "extra": {
@@ -2665,7 +2671,7 @@
         },
         {
           "name": "Druaga.mra",
-          "sha": "95354a70ee10be33d59093039638a19ba38d8c6a",
+          "sha": "ae09000d2db3736b19e4a79c909cc77cf677dd62",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Druaga_MiSTer/master/releases/Druaga.mra",
           "type": "MRA",
           "extra": {
@@ -2678,7 +2684,7 @@
         },
         {
           "name": "Mappy.mra",
-          "sha": "ab23681f1c56eee2ff6ef683159c30629281a483",
+          "sha": "d80ec3ee955e2e4fe0f7263f687c3c60204cfa5f",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Druaga_MiSTer/master/releases/Mappy.mra",
           "type": "MRA",
           "extra": {
@@ -2691,7 +2697,7 @@
         },
         {
           "name": "Motos.mra",
-          "sha": "4e00bf03800856db796989f22233b0f5fdc3bdf7",
+          "sha": "9d032a04e509c03cdc94d6ba7b43dc9c37f56424",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Druaga_MiSTer/master/releases/Motos.mra",
           "type": "MRA",
           "extra": {
@@ -2704,17 +2710,29 @@
         },
         {
           "name": "Pac & Pal.mra",
-          "sha": "50bd98181775f845e5087d8392338c06bd38963c",
+          "sha": "24c847c5f931f88b965c4bdfe36f723a8b067797",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Druaga_MiSTer/master/releases/Pac%20%26%20Pal.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Pac & Pal",
+            "rbf": "druaga",
+            "zips": [
+              "pacnpal.zip"
+            ]
+          }
         },
         {
           "name": "Pac-Man & Chomp Chomp.mra",
-          "sha": "a10122a627ac7d3f89b243542e8e5a0a4a40b085",
+          "sha": "4d2dc4712852943cde1f9d2da18a833701b1aa93",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Druaga_MiSTer/master/releases/Pac-Man%20%26%20Chomp%20Chomp.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Pac-Man & Chomp Chomp",
+            "rbf": "druaga",
+            "zips": [
+              "pacnpal.zip"
+            ]
+          }
         },
         {
           "name": "Super Pacman.mra",
