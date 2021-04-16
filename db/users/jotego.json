@@ -852,6 +852,12 @@
           "type": "OTHER"
         },
         {
+          "name": "MRA-Alternatives_20210416.zip",
+          "sha": "941722eff7c0e5aa5f8821acf3ad5ead2923f01f",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/MRA-Alternatives_MiSTer/releases/MRA-Alternatives_20210416.zip",
+          "type": "OTHER"
+        },
+        {
           "name": "README.md",
           "sha": "86730550b7464c583da85384ffb18272cbc965b5",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/biocom/README.md",
@@ -2761,6 +2767,37 @@
           "name": "jthige_20210212.rbf",
           "sha": "fc4cec631011a6a1a0399cfa45a056b7004f8793",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/hige/releases/jthige_20210212.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "README.md",
+          "sha": "9e417780212b88a07bbf3d58d882fce3dcb380db",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/rumble/README.md",
+          "type": "OTHER"
+        },
+        {
+          "name": "The Speed Rumbler (set 1).mra",
+          "sha": "2436a383cef2f2f78ac56f7187829ba59c575893",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/rumble/The%20Speed%20Rumbler%20(set%201).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "The Speed Rumbler (set 1)",
+            "rbf": "jtrumble",
+            "zips": [
+              "srumbler.zip"
+            ]
+          }
+        },
+        {
+          "name": "jtrumble.txt",
+          "sha": "523c78d1289231a90c34714d2f5c73941482d56a",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/rumble/jtrumble.txt",
+          "type": "OTHER"
+        },
+        {
+          "name": "jtrumble_20210416.rbf",
+          "sha": "d45447065078ecee6d9e0369896f3b7bd20e9d4b",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/rumble/releases/jtrumble_20210416.rbf",
           "type": "RBF"
         },
         {
