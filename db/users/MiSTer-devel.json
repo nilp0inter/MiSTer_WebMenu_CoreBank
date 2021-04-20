@@ -1936,53 +1936,6 @@
       ]
     },
     {
-      "name": "Arcade-CosmicAvenger_MiSTer",
-      "description": "Arcade: Cosmic Avenger for MiSTer",
-      "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: Cosmic Avenger port to MiSTer by Sorgelig\n-- 14 November 2017\n-- \n---------------------------------------------------------------------------------\n-- A simulation model of Lady Bug hardware\n-- Unknown Author on Papilio Plus board.\n---------------------------------------------------------------------------------\n-- \n-- Support screen and controls rotation on HDMI output.\n-- Only controls are rotated on VGA output.\n-- \n-- \n-- Keyboard inputs :\n--\n--   F2    : Coin + Start 2 players\n--   F1    : Coin + Start 1 player\n--   CTRL  : Fire\n--   SPACE : Bomb\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   R,F,D,G     : Player 2 Movements\n--   A           : Player 2 Fire\n--   S           : Player 2 Bomb\n--\n-- Joystick support.\n-- \n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
-      "archived": false,
-      "fork": false,
-      "url": "https://github.com/MiSTer-devel/Arcade-CosmicAvenger_MiSTer",
-      "releases": [
-        {
-          "name": "Arcade-CosmicAvenger_20171125.rbf",
-          "sha": "9817dea785d25dfd60fc730d2f458115ef36cd06",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-CosmicAvenger_MiSTer/master/releases/Arcade-CosmicAvenger_20171125.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Arcade-CosmicAvenger_20180313.rbf",
-          "sha": "da88b5fcbb4143c7c1c1f85aac223093ff1e3177",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-CosmicAvenger_MiSTer/master/releases/Arcade-CosmicAvenger_20180313.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Arcade-CosmicAvenger_20191218.rbf",
-          "sha": "398c90084a5a6243e99337f2cdd8d54c54eb72b3",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-CosmicAvenger_MiSTer/master/releases/Arcade-CosmicAvenger_20191218.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Arcade-CosmicAvenger_20210113.rbf",
-          "sha": "13d057610543ac526a701be4c5940299e8ab3a2d",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-CosmicAvenger_MiSTer/master/releases/Arcade-CosmicAvenger_20210113.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Cosmic Avenger.mra",
-          "sha": "5de23d6de3e7c4bb6cbfa7148fdc5eac42255e76",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-CosmicAvenger_MiSTer/master/releases/Cosmic%20Avenger.mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Cosmic Avenger",
-            "rbf": "cosmicavenger",
-            "zips": [
-              "cavenger.zip"
-            ]
-          }
-        }
-      ]
-    },
-    {
       "name": "Arcade-CrazyBalloon_MiSTer",
       "description": "Taito Crazy Balloon ",
       "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade version of Crazy Balloon for MiSTer - Mike Coates\n--\n-- V 1.0 15/06/2020 - Mike Coates\n---------------------------------------------------------------------------------\n-- Support screen and controls rotation on HDMI output.\n-- Only controls are rotated on VGA output.\n-- \n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   R,F,D,G     : Player 2 Movements\n--\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--\n-- Joystick support.\n-- \n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
@@ -2566,59 +2519,6 @@
             "rbf": "DonkeyKong",
             "zips": [
               "radarscp.zip"
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "name": "Arcade-Dorodon_MiSTer",
-      "description": "Arcade: Dorodon for MiSTer",
-      "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: Dorodon port to MiSTer by Sorgelig\n-- 14 November 2017\n-- \n---------------------------------------------------------------------------------\n-- A simulation model of Lady Bug hardware\n-- Unknown Author on Papilio Plus board.\n---------------------------------------------------------------------------------\n-- \n-- Support screen and controls rotation on HDMI output.\n-- Only controls are rotated on VGA output.\n-- \n-- \n-- Keyboard inputs :\n--\n--   F2  : Coin + Start 2 players\n--   F1  : Coin + Start 1 player\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   R,F,D,G     : Player 2 Movements\n--\n-- Joystick support.\n-- \n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
-      "archived": false,
-      "fork": false,
-      "url": "https://github.com/MiSTer-devel/Arcade-Dorodon_MiSTer",
-      "releases": [
-        {
-          "name": "Arcade-Dorodon_20171125.rbf",
-          "sha": "2e23a5c5ef0b8e6fcf2ba42ddbaf62bd4a2f595a",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Dorodon_MiSTer/master/releases/Arcade-Dorodon_20171125.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Arcade-Dorodon_20180313.rbf",
-          "sha": "65292dcfd35edab7ab67e225f40049836d49be77",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Dorodon_MiSTer/master/releases/Arcade-Dorodon_20180313.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Arcade-Dorodon_20191218.rbf",
-          "sha": "93a14279a9daaadb19a50efcb2e56ee5fb08f4e3",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Dorodon_MiSTer/master/releases/Arcade-Dorodon_20191218.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Arcade-Dorodon_20200109.rbf",
-          "sha": "d075fa6b316b79a0f07e8d6da9951c853894e1f7",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Dorodon_MiSTer/master/releases/Arcade-Dorodon_20200109.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Arcade-Dorodon_20210115.rbf",
-          "sha": "9ba6d83f3189508df63161b5265f830cf62f7fe8",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Dorodon_MiSTer/master/releases/Arcade-Dorodon_20210115.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Dorodon.mra",
-          "sha": "1bbcff95c0e2e68831d88d04fcf97e2ca3634bbb",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Dorodon_MiSTer/master/releases/Dorodon.mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Dorodon (set 1)",
-            "rbf": "dorodon",
-            "zips": [
-              "dorodon.zip"
             ]
           }
         }
@@ -3907,15 +3807,64 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-LadyBug_20210419.rbf",
+          "sha": "079d353ff7a3cba3c4ff64ddf6bd93b787a71935",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-LadyBug_MiSTer/master/releases/Arcade-LadyBug_20210419.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Cosmic Avenger.mra",
+          "sha": "b6da3de3eda9e04045eb92f4e43b82677d331611",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-LadyBug_MiSTer/master/releases/Cosmic%20Avenger.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Cosmic Avenger",
+            "rbf": "ladybug",
+            "zips": [
+              "cavenger.zip",
+              "cavenger.zip"
+            ]
+          }
+        },
+        {
+          "name": "Dorodon.mra",
+          "sha": "911911f83642bcdfa58869e45ae7bfda0c510baa",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-LadyBug_MiSTer/master/releases/Dorodon.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Dorodon (set 1)",
+            "rbf": "ladybug",
+            "zips": [
+              "dorodon.zip",
+              "dorodon.zip"
+            ]
+          }
+        },
+        {
           "name": "Lady Bug.mra",
-          "sha": "e6ad85e9f3b0b0a5885a31358da23d575f86829a",
+          "sha": "91c7f64b4ff0d2aaae403988f3f9cb74c43f49f8",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-LadyBug_MiSTer/master/releases/Lady%20Bug.mra",
           "type": "MRA",
           "extra": {
             "name": "Lady Bug",
             "rbf": "ladybug",
             "zips": [
+              "ladybug.zip",
               "ladybug.zip"
+            ]
+          }
+        },
+        {
+          "name": "Snap Jack.mra",
+          "sha": "a5541c85dd5c9620a27f0aa49aecd9852707c78a",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-LadyBug_MiSTer/master/releases/Snap%20Jack.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Snap Jack",
+            "rbf": "ladybug",
+            "zips": [
+              "snapjack.zip",
+              "snapjack.zip"
             ]
           }
         }
@@ -6957,65 +6906,6 @@
       "fork": false,
       "url": "https://github.com/MiSTer-devel/Arcade-SkySkipper_MiSTer",
       "releases": []
-    },
-    {
-      "name": "Arcade-SnapJack_MiSTer",
-      "description": "Arcade: Snap Jack for MiSTer",
-      "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: Snap Jack port to MiSTer by Sorgelig\n-- 14 November 2017\n-- \n---------------------------------------------------------------------------------\n-- A simulation model of Lady Bug hardware\n-- Unknown Author on Papilio Plus board.\n---------------------------------------------------------------------------------\n-- \n-- Support screen and controls rotation on HDMI output.\n-- Only controls are rotated on VGA output.\n-- \n-- \n-- Keyboard inputs :\n--\n--   F2    : Coin + Start 2 players\n--   F1    : Coin + Start 1 player\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   R,F,D,G     : Player 2 Movements\n--\n-- Joystick support.\n-- \n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
-      "archived": false,
-      "fork": false,
-      "url": "https://github.com/MiSTer-devel/Arcade-SnapJack_MiSTer",
-      "releases": [
-        {
-          "name": "Arcade-SnapJack_20171125.rbf",
-          "sha": "574748a7fdd4f6a0bb91d7a96d94eece3cfade64",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SnapJack_MiSTer/master/releases/Arcade-SnapJack_20171125.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Arcade-SnapJack_20180313.rbf",
-          "sha": "ce0fccc203062c48beac6c64415b739a38956768",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SnapJack_MiSTer/master/releases/Arcade-SnapJack_20180313.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Arcade-SnapJack_20180315.rbf",
-          "sha": "949b91eee0d170437d8dc7a9b26e358bc452bb08",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SnapJack_MiSTer/master/releases/Arcade-SnapJack_20180315.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Arcade-SnapJack_20191218.rbf",
-          "sha": "da4a350d2c02dcd89439962ff5b78dcd137f4fc0",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SnapJack_MiSTer/master/releases/Arcade-SnapJack_20191218.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Arcade-SnapJack_20200109.rbf",
-          "sha": "bbfb8a2f7b758891f52ad4ec06dd3bf5b76de56b",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SnapJack_MiSTer/master/releases/Arcade-SnapJack_20200109.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Arcade-SnapJack_20210116.rbf",
-          "sha": "e40d30da9d8e895bea4b3b4945298fc6c9e02811",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SnapJack_MiSTer/master/releases/Arcade-SnapJack_20210116.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Snap Jack.mra",
-          "sha": "c13834afc753590077a7a5f1b6e8da03e25afdf9",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SnapJack_MiSTer/master/releases/Snap%20Jack.mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Snap Jack",
-            "rbf": "snapjack",
-            "zips": [
-              "snapjack.zip"
-            ]
-          }
-        }
-      ]
     },
     {
       "name": "Arcade-SolomonsKey_MiSTer",
@@ -11437,6 +11327,12 @@
           "name": "MiSTer_20210404",
           "sha": "c7698b9596223d4caa6085a907e365821c261770",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Main_MiSTer/master/releases/MiSTer_20210404",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20210419",
+          "sha": "82c0735b202aaa295151c3ad9137ea4e9b71b02d",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Main_MiSTer/master/releases/MiSTer_20210419",
           "type": "OTHER"
         }
       ]

@@ -121,11 +121,6 @@ url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-ComputerSpace_MiSTe
 output = "_Arcade/cores/ComputerSpace_20210113.rbf"
 
 
-# CosmicAvenger
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-CosmicAvenger_MiSTer/master/releases/Arcade-CosmicAvenger_20210113.rbf"
-output = "_Arcade/cores/CosmicAvenger_20210113.rbf"
-
-
 # CrazyBalloon
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-CrazyBalloon_MiSTer/master/releases/Arcade-CrazyBalloon_20210115.rbf"
 output = "_Arcade/cores/CrazyBalloon_20210115.rbf"
@@ -171,11 +166,6 @@ url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-DonkeyKong_MiSTer/m
 output = "_Arcade/cores/DonkeyKong_20210404.rbf"
 
 
-# Dorodon
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Dorodon_MiSTer/master/releases/Arcade-Dorodon_20210115.rbf"
-output = "_Arcade/cores/Dorodon_20210115.rbf"
-
-
 # Druaga
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Druaga_MiSTer/master/releases/Arcade-Druaga_20210409.rbf"
 output = "_Arcade/cores/Druaga_20210409.rbf"
@@ -217,8 +207,8 @@ output = "_Arcade/cores/IremM62_20210409.rbf"
 
 
 # LadyBug
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-LadyBug_MiSTer/master/releases/Arcade-LadyBug_20210413.rbf"
-output = "_Arcade/cores/LadyBug_20210413.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-LadyBug_MiSTer/master/releases/Arcade-LadyBug_20210419.rbf"
+output = "_Arcade/cores/LadyBug_20210419.rbf"
 
 
 # LunarLander
@@ -354,11 +344,6 @@ output = "_Arcade/cores/SEGASYS1_20210405.rbf"
 # SilverLand
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SilverLand_MiSTer/master/releases/Arcade-SilverLand_20210111.rbf"
 output = "_Arcade/cores/SilverLand_20210111.rbf"
-
-
-# SnapJack
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SnapJack_MiSTer/master/releases/Arcade-SnapJack_20210116.rbf"
-output = "_Arcade/cores/SnapJack_20210116.rbf"
 
 
 # SolomonsKey
@@ -881,11 +866,6 @@ url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-ComputerSpace_MiSTe
 output = "_Arcade/Computer Space.mra"
 
 
-# Cosmic Avenger.mra
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-CosmicAvenger_MiSTer/master/releases/Cosmic%20Avenger.mra"
-output = "_Arcade/Cosmic Avenger.mra"
-
-
 # Crazy Balloon.mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-CrazyBalloon_MiSTer/master/releases/Crazy%20Balloon.mra"
 output = "_Arcade/Crazy Balloon.mra"
@@ -979,11 +959,6 @@ output = "_Arcade/Pest Place.mra"
 # Radar Scope.mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-DonkeyKong_MiSTer/master/releases/Radar%20Scope.mra"
 output = "_Arcade/Radar Scope.mra"
-
-
-# Dorodon.mra
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Dorodon_MiSTer/master/releases/Dorodon.mra"
-output = "_Arcade/Dorodon.mra"
 
 
 # DigDug2.mra
@@ -1321,9 +1296,24 @@ url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM62_MiSTer/mast
 output = "_Arcade/Youjyuden.mra"
 
 
+# Cosmic Avenger.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-LadyBug_MiSTer/master/releases/Cosmic%20Avenger.mra"
+output = "_Arcade/Cosmic Avenger.mra"
+
+
+# Dorodon.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-LadyBug_MiSTer/master/releases/Dorodon.mra"
+output = "_Arcade/Dorodon.mra"
+
+
 # Lady Bug.mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-LadyBug_MiSTer/master/releases/Lady%20Bug.mra"
 output = "_Arcade/Lady Bug.mra"
+
+
+# Snap Jack.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-LadyBug_MiSTer/master/releases/Snap%20Jack.mra"
+output = "_Arcade/Snap Jack.mra"
 
 
 # Lunar Lander.mra
@@ -1929,11 +1919,6 @@ output = "_Arcade/Wonder Boy.mra"
 # Silver Land.mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SilverLand_MiSTer/master/releases/Silver%20Land.mra"
 output = "_Arcade/Silver Land.mra"
-
-
-# Snap Jack.mra
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SnapJack_MiSTer/master/releases/Snap%20Jack.mra"
-output = "_Arcade/Snap Jack.mra"
 
 
 # Solomon no Kagi (Japan).mra
