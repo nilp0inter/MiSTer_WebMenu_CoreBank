@@ -1773,7 +1773,7 @@
         },
         {
           "name": "DoDonPachi (Arrange).mra",
-          "sha": "f30c94f4ee89e72125011ca86d0c63605af521f7",
+          "sha": "f972bdd9ab4f32d2f617a33b1d93f166f5223355",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cave_MiSTer/master/releases/DoDonPachi%20(Arrange).mra",
           "type": "MRA",
           "extra": {
@@ -1786,7 +1786,7 @@
         },
         {
           "name": "DoDonPachi (Japan).mra",
-          "sha": "55287968c47bbef24b05cb8a4ff124d72899185b",
+          "sha": "b6094ca349d26424d6f8d0559e9b50909e979b0e",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cave_MiSTer/master/releases/DoDonPachi%20(Japan).mra",
           "type": "MRA",
           "extra": {
@@ -1799,7 +1799,7 @@
         },
         {
           "name": "DoDonPachi.mra",
-          "sha": "e47a2176f40d5640dce0cd52c1eeb53b99cd94c9",
+          "sha": "ab41ad81e40e2a57844b8f3931731431d855200e",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cave_MiSTer/master/releases/DoDonPachi.mra",
           "type": "MRA",
           "extra": {
@@ -2563,6 +2563,12 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Druaga_20210425.rbf",
+          "sha": "293e976ab7e741039ebc3576d841da377939e966",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Druaga_MiSTer/master/releases/Arcade-Druaga_20210425.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "DigDug2.mra",
           "sha": "30e567d8b6d5b7200c2af2d27610c0074551fbb6",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Druaga_MiSTer/master/releases/DigDug2.mra",
@@ -2585,6 +2591,19 @@
             "rbf": "druaga",
             "zips": [
               "todruaga.zip"
+            ]
+          }
+        },
+        {
+          "name": "Grobda (New Ver.).mra",
+          "sha": "bc8d902953c37db5331ecbe75d77968068d68a37",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Druaga_MiSTer/master/releases/Grobda%20(New%20Ver.).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Grobda (New Ver.)",
+            "rbf": "druaga",
+            "zips": [
+              "grobda.zip"
             ]
           }
         },
