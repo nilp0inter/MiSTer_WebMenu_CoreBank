@@ -2231,7 +2231,13 @@
           "sha": "589322e62d52beda5dc8bf358adda5f75f2ed3eb",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaxian_MiSTer/master/releases/Omega.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Omega (bootleg)",
+            "rbf": "galaxian",
+            "zips": [
+              "theend.zip|omegab.zip"
+            ]
+          }
         },
         {
           "name": "Orbitron.mra",
@@ -2483,7 +2489,13 @@
           "sha": "e3970bcbad9ef1543d9214066fd3cbbe0433b15c",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IremM62_MiSTer/master/releases/Kid%20Niki%20-%20Radical%20Ninja.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Kid Niki - Radical Ninja (World)",
+            "rbf": "iremm62",
+            "zips": [
+              "kidniki.zip"
+            ]
+          }
         },
         {
           "name": "Kung-Fu Master.mra",
