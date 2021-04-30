@@ -1625,12 +1625,18 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-BurgerTime_20210429.rbf",
+          "sha": "a88b3ce787b0d5a8b46b1f0ac5e457d06149d34b",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-BurgerTime_MiSTer/master/releases/Arcade-BurgerTime_20210429.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Burger Time.mra",
-          "sha": "dbb4ba7289a64f85028e120d48105056027795d2",
+          "sha": "0ab4d7f3dfabd11aba639c280cbcaabe4a25f4f1",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-BurgerTime_MiSTer/master/releases/Burger%20Time.mra",
           "type": "MRA",
           "extra": {
-            "name": "Burger Time (Data East set 1)",
+            "name": "Burger Time",
             "rbf": "burgertime",
             "zips": [
               "btime.zip"
