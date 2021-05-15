@@ -2938,6 +2938,12 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Galaxian_20210514.rbf",
+          "sha": "739578245f58d1c6e50168169837fdc264680391",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Galaxian_MiSTer/master/releases/Arcade-Galaxian_20210514.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Azurian Attack.mra",
           "sha": "ed4d919284a2d439c4be856272c7b9474720eb72",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Galaxian_MiSTer/master/releases/Azurian%20Attack.mra",
@@ -3014,8 +3020,21 @@
           }
         },
         {
+          "name": "King And Balloon (Japan).mra",
+          "sha": "64534e80efcab88395adf92d2f56912a998ea6f4",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Galaxian_MiSTer/master/releases/King%20And%20Balloon%20(Japan).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "King and Balloon (Japan)",
+            "rbf": "galaxian",
+            "zips": [
+              "kingball.zip|kingballj.zip"
+            ]
+          }
+        },
+        {
           "name": "King And Balloon.mra",
-          "sha": "fc406867d84c34ec0dfb81b5a5efc9dbab4cb7c9",
+          "sha": "44e4b422834521d00dd26f2b30dfe100a86c0198",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Galaxian_MiSTer/master/releases/King%20And%20Balloon.mra",
           "type": "MRA",
           "extra": {
