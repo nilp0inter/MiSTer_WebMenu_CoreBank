@@ -278,7 +278,7 @@
       "releases": [
         {
           "name": "README.md",
-          "sha": "9e417780212b88a07bbf3d58d882fce3dcb380db",
+          "sha": "507c6fceee513ee3a5810f2d84d2b7b7821ab1e7",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/1942/README.md",
           "type": "OTHER"
         },
@@ -471,7 +471,7 @@
         },
         {
           "name": "README.md",
-          "sha": "86730550b7464c583da85384ffb18272cbc965b5",
+          "sha": "507c6fceee513ee3a5810f2d84d2b7b7821ab1e7",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/1943/README.md",
           "type": "OTHER"
         },
@@ -663,6 +663,12 @@
           "name": "jt1943_20210212.rbf",
           "sha": "9796248b56ea5bdde0ac35d8f3eb72653635d1c8",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/1943/releases/jt1943_20210212.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "jt1943_20210519.rbf",
+          "sha": "f56100089fc59925508f518b74c4c86f79924559",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/1943/releases/jt1943_20210519.rbf",
           "type": "RBF"
         },
         {
@@ -1320,7 +1326,7 @@
         },
         {
           "name": "README.md",
-          "sha": "3f95679ba6fbffdbeca181c3deecf943fb5b6999",
+          "sha": "42c865f3165f7b09c3c085d36ae3a1d7a90728ac",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/comsc/README.md",
           "type": "OTHER"
         },
@@ -1345,7 +1351,7 @@
         },
         {
           "name": "README.md",
-          "sha": "3f95679ba6fbffdbeca181c3deecf943fb5b6999",
+          "sha": "42c865f3165f7b09c3c085d36ae3a1d7a90728ac",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/contra/README.md",
           "type": "OTHER"
         },
@@ -2571,7 +2577,7 @@
         },
         {
           "name": "README.md",
-          "sha": "86730550b7464c583da85384ffb18272cbc965b5",
+          "sha": "507c6fceee513ee3a5810f2d84d2b7b7821ab1e7",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/gunsmoke/README.md",
           "type": "OTHER"
         },
@@ -2782,6 +2788,19 @@
           "type": "RBF"
         },
         {
+          "name": "Trick Trap (World).mra",
+          "sha": "e732633f76ec466ed1ef5fd56f71f9811f732bea",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/labrun/releases/Trick%20Trap%20(World).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Trick Trap (World?)",
+            "rbf": "jtlabrun",
+            "zips": [
+              "tricktrp.zip"
+            ]
+          }
+        },
+        {
           "name": "README.md",
           "sha": "9e417780212b88a07bbf3d58d882fce3dcb380db",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/rumble/README.md",
@@ -2814,7 +2833,7 @@
         },
         {
           "name": "README.md",
-          "sha": "86730550b7464c583da85384ffb18272cbc965b5",
+          "sha": "507c6fceee513ee3a5810f2d84d2b7b7821ab1e7",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/sarms/README.md",
           "type": "OTHER"
         },
@@ -3250,7 +3269,7 @@
         },
         {
           "name": "README.md",
-          "sha": "86730550b7464c583da85384ffb18272cbc965b5",
+          "sha": "507c6fceee513ee3a5810f2d84d2b7b7821ab1e7",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/trojan/README.md",
           "type": "OTHER"
         },
