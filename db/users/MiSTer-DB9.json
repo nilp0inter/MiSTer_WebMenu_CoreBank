@@ -1173,7 +1173,13 @@
           "sha": "cb21958fc5a0cb4edeb5779505151a166cdd8cee",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Centipede_MiSTer/master/releases/Centipede.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Centipede (revision 3)",
+            "rbf": "centipede",
+            "zips": [
+              "centiped.zip|centiped3.zip"
+            ]
+          }
         }
       ]
     },
