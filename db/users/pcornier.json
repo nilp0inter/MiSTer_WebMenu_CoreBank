@@ -82,6 +82,15 @@
       ]
     },
     {
+      "name": "RX-78_MiSTer",
+      "description": "RX-78 core for MiSTer FPGA",
+      "readme": "\nWIP!\n\nEmulators & machine information:\n\n- https://github.com/tautologico/common-src-project\n- http://takeda-toshiya.my.coocan.jp/\n- https://25yg7xnxvowpxahhot33jvnbmq-ac5fdsxevxq4s5y-my-coocan.translate.goog/rx78/tech.html\n- https://www.gamingalexandria.com/wp/2021/02/bandai-rx-78-gundam-computer-games-preserved/\n- http://takeda-toshiya.my.coocan.jp/rx78/index.html\n\n\nROM disassembly: https://onlinedisassembler.com/odaweb/BKu6rvkL\n\n\nManual:\nhttps://archive.org/details/bandai-rx-78-gundam-manual-scans/Bandai%20RX-78%20Gundam%20-%20Manual%20%28Compressed%29\n\n\n\nGames\n\n## Burger Shop\n  Z and X to start and move; Space to pick up and put down\n\n\n\n## Challenge Golf\n\n  Q1 = Home or Backspace; Q2 = \\ or End; ZXCV to rotate player; Arrows to rotate view; Middle row or Ctrl to choose a club; Alt or Space to shoot; Enter to abandon hole.\n  \n## Championship Racer\n  PgUp = 1 or \\ = 2. Space to start; Ctrl to accelerate; Left-Right to move\n  \n## Excite Baseball\n\n## Mobile Suit Gundam\n  Use either Z,X,Space; or Left,Right,Alt or Joystick\n  \n## Perfect Mah-jongg\n  Home = Yes; Backspace = No;Q4 = - or 9; Q5 = \\ or pgDn or PgUp; Space to start\n  \n## Sekigahara\n   Wait for small beep. Press Space(keyboard) or S(joystick). Press G.\n\t\n\t\n## Super Motocross\n   Press Enter. Answer questions. Press Space to begin. Arrows to drive\n\t\n## Space Enemy\n   Press Space to begin and fire. QWEADZXC to steer. S toggle guidance system.\n\t\n## The Prowrestling\n    Ctrl to attack; Arrows to move\n\n## Ultraman\n    1 player: Use P[];./ticPGDN to move, Space to fire. 2 players: P1 use Arrows,Ctrl,Alt; P2 use RDFGAS\n    \n",
+      "archived": false,
+      "fork": false,
+      "url": "https://github.com/pcornier/RX-78_MiSTer",
+      "releases": []
+    },
+    {
       "name": "Supervision_MiSTer",
       "description": "Port of Watara Supervision for MiSTer",
       "readme": "# Watara Supervision for MiSTer\r\n\r\nwip",
