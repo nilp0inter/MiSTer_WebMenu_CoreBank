@@ -6188,18 +6188,24 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-ZigZag_20210117.rbf",
+          "sha": "4d7e92fc74c931de65560fe1cd0d51195d7883ff",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-ZigZag_MiSTer/master/releases/Arcade-ZigZag_20210117.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Arcade-ZigZag_20210118.rbf",
           "sha": "594a78fbfcd850c6ea09108eef9e399b7e4c3547",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-ZigZag_MiSTer/master/releases/Arcade-ZigZag_20210118.rbf",
           "type": "RBF"
         },
         {
-          "name": "Zig Zag.mra",
-          "sha": "4239ed2641641acdf584887db958a66a507969f4",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-ZigZag_MiSTer/master/releases/Zig%20Zag.mra",
+          "name": "Zig Zag (Dig Dug Conversion) [bl].mra",
+          "sha": "999a27d53747f0139be7f579d4a386501d2e2507",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-ZigZag_MiSTer/master/releases/Zig%20Zag%20(Dig%20Dug%20Conversion)%20%5Bbl%5D.mra",
           "type": "MRA",
           "extra": {
-            "name": "Zig Zag (Dig Dug conversion on Galaxian hardware, bootleg set 1)",
+            "name": "Zig Zag",
             "rbf": "zigzag",
             "zips": [
               "zigzagb.zip"
