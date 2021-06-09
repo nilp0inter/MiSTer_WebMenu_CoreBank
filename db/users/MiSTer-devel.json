@@ -2587,6 +2587,32 @@
           "type": "RBF"
         },
         {
+          "name": "Dig Dug (Rev 2).mra",
+          "sha": "2a6ee0954add5ddd325b2188fe5e2bd620afecc1",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Druaga_MiSTer/master/releases/Dig%20Dug%20(Rev%202).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Dig Dug",
+            "rbf": "digdug",
+            "zips": [
+              "digdug.zip"
+            ]
+          }
+        },
+        {
+          "name": "Dig Dug II (New Ver).mra",
+          "sha": "07650bf46b4900bdfc80a5b1f0c2dada69db196e",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Druaga_MiSTer/master/releases/Dig%20Dug%20II%20(New%20Ver).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Dig Dug II",
+            "rbf": "druaga",
+            "zips": [
+              "digdug2.zip"
+            ]
+          }
+        },
+        {
           "name": "DigDug2.mra",
           "sha": "30e567d8b6d5b7200c2af2d27610c0074551fbb6",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Druaga_MiSTer/master/releases/DigDug2.mra",
@@ -2626,6 +2652,19 @@
           }
         },
         {
+          "name": "Mappy (US).mra",
+          "sha": "920e616dbac7284e931180c09a43cada4e50f6ba",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Druaga_MiSTer/master/releases/Mappy%20(US).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Mappy",
+            "rbf": "druaga",
+            "zips": [
+              "mappy.zip"
+            ]
+          }
+        },
+        {
           "name": "Mappy.mra",
           "sha": "d80ec3ee955e2e4fe0f7263f687c3c60204cfa5f",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Druaga_MiSTer/master/releases/Mappy.mra",
@@ -2640,7 +2679,7 @@
         },
         {
           "name": "Motos.mra",
-          "sha": "9d032a04e509c03cdc94d6ba7b43dc9c37f56424",
+          "sha": "1f2c22c2869c39592b5f4428cd062d885f24ea6e",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Druaga_MiSTer/master/releases/Motos.mra",
           "type": "MRA",
           "extra": {
@@ -2653,7 +2692,7 @@
         },
         {
           "name": "Pac & Pal.mra",
-          "sha": "499da54837008f60b0160b339673c7487e23d1bb",
+          "sha": "a88d8f2bc788d338e3e1b5a9a89d052362d3043a",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Druaga_MiSTer/master/releases/Pac%20%26%20Pal.mra",
           "type": "MRA",
           "extra": {
@@ -2666,7 +2705,7 @@
         },
         {
           "name": "Pac-Man & Chomp Chomp.mra",
-          "sha": "75aff9abad58647dd4b9b464e07c26e723160670",
+          "sha": "147c2e8e2d1a6021adcda6ca47175c419c3ad2ae",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Druaga_MiSTer/master/releases/Pac-Man%20%26%20Chomp%20Chomp.mra",
           "type": "MRA",
           "extra": {
@@ -2674,6 +2713,19 @@
             "rbf": "druaga",
             "zips": [
               "pacnpal.zip"
+            ]
+          }
+        },
+        {
+          "name": "Super Pac-Man.mra",
+          "sha": "27165ed2f04e47f7370928195ef45d7e2541ef66",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Druaga_MiSTer/master/releases/Super%20Pac-Man.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Super Pac-Man",
+            "rbf": "druaga",
+            "zips": [
+              "superpac.zip"
             ]
           }
         },
