@@ -5259,7 +5259,7 @@
         },
         {
           "name": "Silver Land.mra",
-          "sha": "1bf97c0d5824bb372e68d546bdc8ab40706157e6",
+          "sha": "31db2c0374f578fa6f70154c11a3b225bce17ee6",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SilverLand_MiSTer/master/releases/Silver%20Land.mra",
           "type": "MRA",
           "extra": {
@@ -5340,31 +5340,24 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-SolomonsKey_20210116.rbf",
+          "sha": "27909f7ec93421af803c71e08e295b1996f076d6",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SolomonsKey_MiSTer/master/releases/Arcade-SolomonsKey_20210116.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Arcade-SolomonsKey_20210118.rbf",
           "sha": "8ae1574936e0fd5e7cf49b234afd7af811a247a4",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SolomonsKey_MiSTer/master/releases/Arcade-SolomonsKey_20210118.rbf",
           "type": "RBF"
         },
         {
-          "name": "Solomon no Kagi (Japan).mra",
-          "sha": "5f0badda2a35c8d1aa8ac30a86f146bd8cd37b9f",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SolomonsKey_MiSTer/master/releases/Solomon%20no%20Kagi%20(Japan).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Solomon no Kagi (Japan)",
-            "rbf": "solomonskey",
-            "zips": [
-              "solomon.zip|solomonj.zip"
-            ]
-          }
-        },
-        {
           "name": "Solomon's Key.mra",
-          "sha": "d0577a4123d1491fd12fd0d1188ffbea08adcbe5",
+          "sha": "90cd600dbe5d8aed37ed131882587abd488acae8",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SolomonsKey_MiSTer/master/releases/Solomon's%20Key.mra",
           "type": "MRA",
           "extra": {
-            "name": "Solomon's Key (US)",
+            "name": "Solomon's Key ",
             "rbf": "solomonskey",
             "zips": [
               "solomon.zip"
@@ -5720,6 +5713,12 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Sprint1_20201210.rbf",
+          "sha": "637d262ba0bb0adbc9ad64a637211c7236a2c2f9",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Sprint1_MiSTer/master/releases/Arcade-Sprint1_20201210.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Arcade-Sprint1_20201214.rbf",
           "sha": "68630344d6b51ca3846ed727405a18192e2212e3",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Sprint1_MiSTer/master/releases/Arcade-Sprint1_20201214.rbf",
@@ -5727,7 +5726,7 @@
         },
         {
           "name": "Sprint 1.mra",
-          "sha": "f8eabe6402971cd98d4c5e173f6ccb75ef143a32",
+          "sha": "40551aad877973f9150798503697ff368300e39c",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Sprint1_MiSTer/master/releases/Sprint%201.mra",
           "type": "MRA",
           "extra": {
@@ -5780,7 +5779,7 @@
         },
         {
           "name": "Sprint 2.mra",
-          "sha": "5e9c9c2316cd5c46ad6dff6280efb58057277f9a",
+          "sha": "88b59534c196fa212ee9a41d0db4e8b8f173e503",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Sprint2_MiSTer/master/releases/Sprint%202.mra",
           "type": "MRA",
           "extra": {
@@ -5821,7 +5820,7 @@
         },
         {
           "name": "Super Breakout (Rev 04).mra",
-          "sha": "07cc8af91c39026415a345411e120a65e08c0157",
+          "sha": "ec4ea54f39c2064dc2ada534382f823bc8a29839",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SuperBreakout_MiSTer/master/releases/Super%20Breakout%20(Rev%2004).mra",
           "type": "MRA",
           "extra": {
@@ -5874,7 +5873,7 @@
         },
         {
           "name": "Gemini Wing.mra",
-          "sha": "fd7d63532da99e8e0f496311c79ae90860da5d3b",
+          "sha": "646b7857c9c75e254fa1090e07e3e48c4841b9af",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Tecmo_MiSTer/master/releases/Gemini%20Wing.mra",
           "type": "MRA",
           "extra": {
@@ -5887,7 +5886,7 @@
         },
         {
           "name": "Rygar.mra",
-          "sha": "124f16a656afc4e137761054a8fef2e034abbc80",
+          "sha": "9b58bce8bc8de209071ade60acc9bf2585c2b904",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Tecmo_MiSTer/master/releases/Rygar.mra",
           "type": "MRA",
           "extra": {
@@ -5900,7 +5899,7 @@
         },
         {
           "name": "Silkworm.mra",
-          "sha": "fc29310b08c6ac0f9a56606d7a4ed429989e5b27",
+          "sha": "7eb0534207b477709583cba953414e10fd1abd00",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Tecmo_MiSTer/master/releases/Silkworm.mra",
           "type": "MRA",
           "extra": {
@@ -6041,6 +6040,12 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Ultratank_20210117.rbf",
+          "sha": "7d9149d7d172f3d10e94fc211df054e5bf5d7b1c",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Ultratank_MiSTer/master/releases/Arcade-Ultratank_20210117.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Arcade-Ultratank_20210118.rbf",
           "sha": "23aef9b62a8abcfb3bc5b56e29031c1b063506cc",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Ultratank_MiSTer/master/releases/Arcade-Ultratank_20210118.rbf",
@@ -6048,7 +6053,7 @@
         },
         {
           "name": "Ultra Tank.mra",
-          "sha": "ac540b0147a762efd6da3494cc1bdc51f18bb242",
+          "sha": "3cb658cde1fd57eaace2bfaa61e729f44577d851",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Ultratank_MiSTer/master/releases/Ultra%20Tank.mra",
           "type": "MRA",
           "extra": {
@@ -6119,11 +6124,11 @@
         },
         {
           "name": "Xevious.mra",
-          "sha": "9ec492981bb72fd0689661339b80aa6505afee2f",
+          "sha": "126a31d2ca6489dca0159a8fcbbe0d7bde4caff8",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Xevious_MiSTer/master/releases/Xevious.mra",
           "type": "MRA",
           "extra": {
-            "name": "Xevious (Namco)",
+            "name": "Xevious",
             "rbf": "xevious",
             "zips": [
               "xevious.zip|namco50.zip|namco51.zip|namco54.zip"
