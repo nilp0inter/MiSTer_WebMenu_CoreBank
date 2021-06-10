@@ -1018,7 +1018,7 @@
         },
         {
           "name": "Canyon Bomber.mra",
-          "sha": "01e54b18512fb35804c9db8fb561c04e38091f6f",
+          "sha": "53dc57a0bed4a614cd473dbdb76f6433173e5df4",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-CanyonBomber_MiSTer/master/releases/Canyon%20Bomber.mra",
           "type": "MRA",
           "extra": {
@@ -1217,7 +1217,7 @@
         },
         {
           "name": "Computer Space.mra",
-          "sha": "a297b35848a602dbc172c7cdb79436f1743eb147",
+          "sha": "fbd4ccbe073c28918a702ac3f9866b920eb40036",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-ComputerSpace_MiSTer/master/releases/Computer%20Space.mra",
           "type": "MRA",
           "extra": {
@@ -1379,14 +1379,27 @@
         },
         {
           "name": "Big Kong.mra",
-          "sha": "cf5a8c5d24f15d98c743c1d08f18a4715d018d40",
+          "sha": "8902cdca926bb534cddd026a1cca4b1d3647edc3",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-CrazyKong_MiSTer/master/releases/Big%20Kong.mra",
           "type": "MRA",
           "extra": {
             "name": "Big Kong",
-            "rbf": "CrazyKong",
+            "rbf": "crazykong",
             "zips": [
               "ckong.zip|bigkong.zip|ckongo.zip"
+            ]
+          }
+        },
+        {
+          "name": "Crazy Kong (Kyoei).mra",
+          "sha": "58805cba69173ee679d0d5b3be44ad942cde75fd",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-CrazyKong_MiSTer/master/releases/Crazy%20Kong%20(Kyoei).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Crazy Kong",
+            "rbf": "crazykong",
+            "zips": [
+              "ckong.zip"
             ]
           }
         },
@@ -1404,28 +1417,15 @@
           }
         },
         {
-          "name": "Crazy Kong Part II.mra",
-          "sha": "f4f41fcbd7fe552fd60f9c3c39109a9317a38975",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-CrazyKong_MiSTer/master/releases/Crazy%20Kong%20Part%20II.mra",
+          "name": "Crazy Kong Part II (Set 1).mra",
+          "sha": "d3ee1491ebcf3286df391855745885e48430b983",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-CrazyKong_MiSTer/master/releases/Crazy%20Kong%20Part%20II%20(Set%201).mra",
           "type": "MRA",
           "extra": {
-            "name": "Crazy Kong Part II (set 1)",
-            "rbf": "CrazyKong",
+            "name": "Crazy Kong Part II",
+            "rbf": "crazykong",
             "zips": [
               "ckongpt2.zip"
-            ]
-          }
-        },
-        {
-          "name": "Crazy Kong.mra",
-          "sha": "3fbb9a85e9c43ea53df5236c668bfafd4e2cd390",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-CrazyKong_MiSTer/master/releases/Crazy%20Kong.mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Crazy Kong",
-            "rbf": "CrazyKong",
-            "zips": [
-              "ckong.zip"
             ]
           }
         },
@@ -1617,7 +1617,7 @@
         },
         {
           "name": "Dominos.mra",
-          "sha": "983e0e826a2db7a07639335254ef1808c2f35368",
+          "sha": "62cf21c6c6150b4015698021741f401a60a2a7b7",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Dominos_MiSTer/master/releases/Dominos.mra",
           "type": "MRA",
           "extra": {
@@ -1971,12 +1971,12 @@
           "type": "RBF"
         },
         {
-          "name": "Frenzy.mra",
-          "sha": "fe6c53f86c910c7c8a614f52fff312ad1d1e6ffd",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Frenzy_MiSTer/master/releases/Frenzy.mra",
+          "name": "Frenzy (Rev RA1).mra",
+          "sha": "090daa4c32a9b718cc128fa8006931acad27d9f1",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Frenzy_MiSTer/master/releases/Frenzy%20(Rev%20RA1).mra",
           "type": "MRA",
           "extra": {
-            "name": "Frenzy (revision RA1)",
+            "name": "Frenzy",
             "rbf": "frenzy",
             "zips": [
               "frenzy.zip"
@@ -2929,38 +2929,38 @@
         },
         {
           "name": "Domino Man.mra",
-          "sha": "6ac35991ba347e460740cc31bc0cac6a62e81771",
+          "sha": "425022a45b4c47af937513b67a226dec199b7380",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MCR2_MiSTer/master/releases/Domino%20Man.mra",
           "type": "MRA",
           "extra": {
             "name": "Domino Man",
-            "rbf": "MCR2",
+            "rbf": "mcr2",
             "zips": [
               "domino.zip"
             ]
           }
         },
         {
-          "name": "Kozmik Kroozr.mra",
-          "sha": "420cd925053db1315c17029b33d8cef55b20202b",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MCR2_MiSTer/master/releases/Kozmik%20Kroozr.mra",
+          "name": "Kozmik Krooz'r.mra",
+          "sha": "19dcb4a0a43de93dbfe0673433bfc2acf213121d",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MCR2_MiSTer/master/releases/Kozmik%20Krooz'r.mra",
           "type": "MRA",
           "extra": {
             "name": "Kozmik Krooz'r",
-            "rbf": "MCR2",
+            "rbf": "mcr2",
             "zips": [
               "kroozr.zip"
             ]
           }
         },
         {
-          "name": "Satans Hollow.mra",
-          "sha": "16075b990498223f4ff3253d138c038442fe8360",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MCR2_MiSTer/master/releases/Satans%20Hollow.mra",
+          "name": "Satan's Hollow (Set 1).mra",
+          "sha": "1cf86b6e16eb5320b3d5dd04992aee4ffeed77b4",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MCR2_MiSTer/master/releases/Satan's%20Hollow%20(Set%201).mra",
           "type": "MRA",
           "extra": {
             "name": "Satan's Hollow",
-            "rbf": "MCR2",
+            "rbf": "mcr2",
             "zips": [
               "shollow.zip"
             ]
@@ -2968,25 +2968,25 @@
         },
         {
           "name": "Tron.mra",
-          "sha": "195d27cabc2bfe3a240742ac707795098f4df2dc",
+          "sha": "1d86164bfee3c51e9609e5606b9d4c0f273c81da",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MCR2_MiSTer/master/releases/Tron.mra",
           "type": "MRA",
           "extra": {
             "name": "Tron",
-            "rbf": "MCR2",
+            "rbf": "mcr2",
             "zips": [
               "tron.zip"
             ]
           }
         },
         {
-          "name": "Two Tigers.mra",
-          "sha": "41198165ca360e0b0f1c06f01280809c9144d565",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MCR2_MiSTer/master/releases/Two%20Tigers.mra",
+          "name": "Two Tigers (Tron Conversion).mra",
+          "sha": "e0fa4036d8bd0c9f5d032fbe445e932c0365682b",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MCR2_MiSTer/master/releases/Two%20Tigers%20(Tron%20Conversion).mra",
           "type": "MRA",
           "extra": {
-            "name": "Two Tigers (Tron conversion)",
-            "rbf": "MCR2",
+            "name": "Two Tigers",
+            "rbf": "mcr2",
             "zips": [
               "twotiger.zip",
               "twotigerc.zip"
@@ -2995,12 +2995,12 @@
         },
         {
           "name": "Wacko.mra",
-          "sha": "6969f831fc312b1cc6caf417966069b91a4c81ad",
+          "sha": "4964309f8d9e843b3d7824ee6ecd5b13369b1058",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MCR2_MiSTer/master/releases/Wacko.mra",
           "type": "MRA",
           "extra": {
             "name": "Wacko",
-            "rbf": "MCR2",
+            "rbf": "mcr2",
             "zips": [
               "wacko.zip"
             ]
@@ -3083,26 +3083,26 @@
           "type": "RBF"
         },
         {
-          "name": "Demolition Derby.mra",
-          "sha": "a15afc8ab065413f0f3e846d73f21a5ad099dd0c",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MCR3Mono_MiSTer/master/releases/Demolition%20Derby.mra",
+          "name": "Demolition Derby (MCR-3 Mono Board Version).mra",
+          "sha": "9169c6481925b55dc55af15119cb968d65c16b9b",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MCR3Mono_MiSTer/master/releases/Demolition%20Derby%20(MCR-3%20Mono%20Board%20Version).mra",
           "type": "MRA",
           "extra": {
             "name": "Demolition Derby",
-            "rbf": "MCR3Mono",
+            "rbf": "mcr3mono",
             "zips": [
               "demoderb.zip|demoderm.zip"
             ]
           }
         },
         {
-          "name": "Max RPM.mra",
-          "sha": "a12138332000cea4d06252e3b263f7dcc87460e2",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MCR3Mono_MiSTer/master/releases/Max%20RPM.mra",
+          "name": "Max RPM (v2).mra",
+          "sha": "abe3ecd55d766b4cf23b0d4575421ad972f98aa5",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MCR3Mono_MiSTer/master/releases/Max%20RPM%20(v2).mra",
           "type": "MRA",
           "extra": {
-            "name": "Max RPM (ver 2)",
-            "rbf": "MCR3Mono",
+            "name": "Max RPM",
+            "rbf": "mcr3mono",
             "zips": [
               "maxrpm.zip"
             ]
@@ -3110,25 +3110,25 @@
         },
         {
           "name": "Power Drive.mra",
-          "sha": "054fddc136897e65997bdcf84e2d3017871da884",
+          "sha": "3bc59f1378ec406efd6323e5b245c894cbd62793",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MCR3Mono_MiSTer/master/releases/Power%20Drive.mra",
           "type": "MRA",
           "extra": {
             "name": "Power Drive",
-            "rbf": "MCR3Mono",
+            "rbf": "mcr3mono",
             "zips": [
               "powerdrv.zip"
             ]
           }
         },
         {
-          "name": "Rampage.mra",
-          "sha": "472031405f0a53e4f0c5885f6b3a0cf41dfd8bf3",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MCR3Mono_MiSTer/master/releases/Rampage.mra",
+          "name": "Rampage (Rev 3, 860827).mra",
+          "sha": "7db664021b5fbb8d4c674c36964061d7f364ee4e",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MCR3Mono_MiSTer/master/releases/Rampage%20(Rev%203%2C%20860827).mra",
           "type": "MRA",
           "extra": {
-            "name": "Rampage (Rev 3, 8/27/86)",
-            "rbf": "MCR3Mono",
+            "name": "Rampage",
+            "rbf": "mcr3mono",
             "zips": [
               "rampage.zip"
             ]
@@ -3136,12 +3136,12 @@
         },
         {
           "name": "Sarge.mra",
-          "sha": "f6708bc1ffa3fb01ff9cbd1ccbf79185bc4fde07",
+          "sha": "b802d29eeffb219793bb6da2acc72479f6f93af9",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MCR3Mono_MiSTer/master/releases/Sarge.mra",
           "type": "MRA",
           "extra": {
             "name": "Sarge",
-            "rbf": "MCR3Mono",
+            "rbf": "mcr3mono",
             "zips": [
               "sarge.zip"
             ]
@@ -3149,12 +3149,12 @@
         },
         {
           "name": "Star Guards.mra",
-          "sha": "0d282ca664eb7c600389af1206b3aa3570e1c585",
+          "sha": "36244a265bc7aade52a0a3fb3da09771c914b060",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MCR3Mono_MiSTer/master/releases/Star%20Guards.mra",
           "type": "MRA",
           "extra": {
             "name": "Star Guards",
-            "rbf": "MCR3Mono",
+            "rbf": "mcr3mono",
             "zips": [
               "stargrds.zip"
             ]
@@ -3244,7 +3244,7 @@
         },
         {
           "name": "Crater Raider.mra",
-          "sha": "f150a4ebfbd1fa48c43318e8659156e1505ed5c0",
+          "sha": "fa04750d711d75ab68f956e52565f6708208e191",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MCR3Scroll_MiSTer/master/releases/Crater%20Raider.mra",
           "type": "MRA",
           "extra": {
@@ -3257,7 +3257,7 @@
         },
         {
           "name": "Spy Hunter.mra",
-          "sha": "b7135cbd4cb77a474c21415911a82b140b8f26d9",
+          "sha": "a1e03f46b9f681821217501bb222e9ee04c1085f",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MCR3Scroll_MiSTer/master/releases/Spy%20Hunter.mra",
           "type": "MRA",
           "extra": {
@@ -3269,12 +3269,12 @@
           }
         },
         {
-          "name": "Turbo Tag.mra",
-          "sha": "9594fbe2b190cb75897724e3ecd85f600cf3b70b",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MCR3Scroll_MiSTer/master/releases/Turbo%20Tag.mra",
+          "name": "Turbo Tag (Prototype).mra",
+          "sha": "562fe075fb45a6105427c87945513744e3b2f92e",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MCR3Scroll_MiSTer/master/releases/Turbo%20Tag%20(Prototype).mra",
           "type": "MRA",
           "extra": {
-            "name": "Turbo Tag (prototype)",
+            "name": "Turbo Tag",
             "rbf": "mcr3scroll",
             "zips": [
               "turbotag.zip"
@@ -3371,11 +3371,11 @@
         },
         {
           "name": "Discs of Tron.mra",
-          "sha": "98013678379c1b9b1c1c6e88c9bbcfae3ba079f4",
+          "sha": "f5e5eabda2ae39a841c2d8cc06fa117d3bec5a06",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MCR3_MiSTer/master/releases/Discs%20of%20Tron.mra",
           "type": "MRA",
           "extra": {
-            "name": "Discs of Tron (Upright)",
+            "name": "Discs of Tron",
             "rbf": "mcr3",
             "zips": [
               "dotron.zip"
@@ -3384,12 +3384,12 @@
         },
         {
           "name": "Journey.mra",
-          "sha": "4b0849acbf4d2d04df43ff094b571071cd8714b6",
+          "sha": "39bb64e35fef33d12638e480fe654702223c96f3",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MCR3_MiSTer/master/releases/Journey.mra",
           "type": "MRA",
           "extra": {
             "name": "Journey",
-            "rbf": "MCR3",
+            "rbf": "mcr3",
             "zips": [
               "journey.zip",
               "/sound/journey.zip"
@@ -3397,12 +3397,12 @@
           }
         },
         {
-          "name": "Tapper.mra",
-          "sha": "3a143586837ad16980438292b3de59e3756ab7bd",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MCR3_MiSTer/master/releases/Tapper.mra",
+          "name": "Tapper (Budweiser, 840127).mra",
+          "sha": "851007484603bdcfe079875d2bde36160d9b803e",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MCR3_MiSTer/master/releases/Tapper%20(Budweiser%2C%20840127).mra",
           "type": "MRA",
           "extra": {
-            "name": "Tapper (Budweiser, 1-27-84)",
+            "name": "Tapper",
             "rbf": "mcr3",
             "zips": [
               "tapper.zip"
@@ -3411,7 +3411,7 @@
         },
         {
           "name": "Timber.mra",
-          "sha": "4eb7293f6051bcd9c7e0eb2bc7e3a01740393a08",
+          "sha": "1bdb9f86702a24e2594dc7d23fe456d15ac2ac02",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MCR3_MiSTer/master/releases/Timber.mra",
           "type": "MRA",
           "extra": {
@@ -3953,12 +3953,12 @@
           "type": "RBF"
         },
         {
-          "name": "Phoenix.mra",
-          "sha": "fc58a699b3b80ad9b1c6cb539ef3011e7f795a78",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Phoenix_MiSTer/master/releases/Phoenix.mra",
+          "name": "Phoenix (Amstar, Set 1).mra",
+          "sha": "39f58a01a2fbe5f3ddd55560afb22df251f21762",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Phoenix_MiSTer/master/releases/Phoenix%20(Amstar%2C%20Set%201).mra",
           "type": "MRA",
           "extra": {
-            "name": "Phoenix (Amstar, set 1)",
+            "name": "Phoenix",
             "rbf": "phoenix",
             "zips": [
               "phoenix.zip"
@@ -4079,13 +4079,13 @@
           "type": "RBF"
         },
         {
-          "name": "Pong.mra",
-          "sha": "313a0122f5b63796e7118da6c025ee1d462b4b43",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pong_MiSTer/master/releases/Pong.mra",
+          "name": "Pong (Rev E).mra",
+          "sha": "f67ed69c449eaeb16046fdaeebeeb09930d76145",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pong_MiSTer/master/releases/Pong%20(Rev%20E).mra",
           "type": "MRA",
           "extra": {
-            "name": "Pong (Rev E) external [TTL]",
-            "rbf": "Pong",
+            "name": "Pong",
+            "rbf": "pong",
             "zips": []
           }
         }
@@ -4291,12 +4291,12 @@
           "type": "RBF"
         },
         {
-          "name": "River Patrol.mra",
-          "sha": "8baed39fe9ac2c66de2271054038119e966d0063",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-RiverPatrol_MiSTer/master/releases/River%20Patrol.mra",
+          "name": "River Patrol (JP, Unprotected).mra",
+          "sha": "93ad35f065d07828f1778ec3e39ccbc10c2a5806",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-RiverPatrol_MiSTer/master/releases/River%20Patrol%20(JP%2C%20Unprotected).mra",
           "type": "MRA",
           "extra": {
-            "name": "River Patrol (Japan, unprotected)",
+            "name": "River Patrol",
             "rbf": "riverpatrol",
             "zips": [
               "rpatrol.zip|rpatroln.zip"
@@ -5352,6 +5352,19 @@
           "type": "RBF"
         },
         {
+          "name": "Solomon no Kagi (JP).mra",
+          "sha": "fb5257238dd3b023ca029bb037ae3f6c867fc872",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SolomonsKey_MiSTer/master/releases/Solomon%20no%20Kagi%20(JP).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Solomon no Kagi",
+            "rbf": "solomonskey",
+            "zips": [
+              "solomon.zip|solomonj.zip"
+            ]
+          }
+        },
+        {
           "name": "Solomon's Key.mra",
           "sha": "90cd600dbe5d8aed37ed131882587abd488acae8",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SolomonsKey_MiSTer/master/releases/Solomon's%20Key.mra",
@@ -5980,12 +5993,12 @@
           "type": "RBF"
         },
         {
-          "name": "Shot Rider.mra",
-          "sha": "f4be3b875cd181a7c2cf930cdc41f8d3dff77950",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-TraverseUSA_MiSTer/master/releases/Shot%20Rider.mra",
+          "name": "Shot Rider (B-Board 89624B-1).mra",
+          "sha": "5042f121c57dc8b8fde665b01922bc5a7f35d8e3",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-TraverseUSA_MiSTer/master/releases/Shot%20Rider%20(B-Board%2089624B-1).mra",
           "type": "MRA",
           "extra": {
-            "name": "Shotrider",
+            "name": "Shot Rider",
             "rbf": "traverseusa",
             "zips": [
               "shtrider.zip"
@@ -5993,12 +6006,12 @@
           }
         },
         {
-          "name": "Traverse USA - Zippy Race.mra",
-          "sha": "17b0c98d61400db3835c2f7061d2782506cc5d4a",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-TraverseUSA_MiSTer/master/releases/Traverse%20USA%20-%20Zippy%20Race.mra",
+          "name": "Traverse USA- Zippy Race (US).mra",
+          "sha": "926ffffa58ea13bcef91f0b46d4f61f38e3860f3",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-TraverseUSA_MiSTer/master/releases/Traverse%20USA-%20Zippy%20Race%20(US).mra",
           "type": "MRA",
           "extra": {
-            "name": "Traverse USA - Zippy Race",
+            "name": "Traverse USA- Zippy Race",
             "rbf": "traverseusa",
             "zips": [
               "travrusa.zip"
