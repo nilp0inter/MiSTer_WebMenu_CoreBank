@@ -5641,12 +5641,12 @@
           "type": "RBF"
         },
         {
-          "name": "River Patrol.mra",
-          "sha": "8baed39fe9ac2c66de2271054038119e966d0063",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-RiverPatrol_MiSTer/master/releases/River%20Patrol.mra",
+          "name": "River Patrol (JP, Unprotected).mra",
+          "sha": "93ad35f065d07828f1778ec3e39ccbc10c2a5806",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-RiverPatrol_MiSTer/master/releases/River%20Patrol%20(JP%2C%20Unprotected).mra",
           "type": "MRA",
           "extra": {
-            "name": "River Patrol (Japan, unprotected)",
+            "name": "River Patrol",
             "rbf": "riverpatrol",
             "zips": [
               "rpatrol.zip|rpatroln.zip"
@@ -5664,12 +5664,12 @@
       "url": "https://github.com/MiSTer-devel/Arcade-Robotron_MiSTer",
       "releases": [
         {
-          "name": "Alien Arena.mra",
-          "sha": "807bde938f51af0e5b7d41a2fc3bdfb56174bede",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Robotron_MiSTer/master/releases/Alien%20Arena.mra",
+          "name": "Alien Arena (Stargate upgrade).mra",
+          "sha": "c38fcece9cecdb14dd598a618bd76e52835f2326",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Robotron_MiSTer/master/releases/Alien%20Arena%20(Stargate%20upgrade).mra",
           "type": "MRA",
           "extra": {
-            "name": "Alien Arena (Stargate upgrade)",
+            "name": "Alien Arena",
             "rbf": "robotron",
             "zips": [
               "alienar.zip|alienaru.zip"
@@ -5738,7 +5738,7 @@
         },
         {
           "name": "Bubbles.mra",
-          "sha": "3c93219cf550d04ebbe72fb888dd45132844b683",
+          "sha": "855282bc2c6bb92431a63a45f09deaf4f8fe0c61",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Robotron_MiSTer/master/releases/Bubbles.mra",
           "type": "MRA",
           "extra": {
@@ -5751,11 +5751,11 @@
         },
         {
           "name": "Joust.mra",
-          "sha": "14593afa01bf65809630cb876e2a00d3b027d54a",
+          "sha": "2e0ff939eb6e48b585f57e6dce8fe063d73e4a5e",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Robotron_MiSTer/master/releases/Joust.mra",
           "type": "MRA",
           "extra": {
-            "name": "Joust (White-Green label)",
+            "name": "Joust",
             "rbf": "robotron",
             "zips": [
               "joust.zip"
@@ -5763,12 +5763,12 @@
           }
         },
         {
-          "name": "Playball.mra",
-          "sha": "aa7a7530b3663d21d1ca01a44c6ccfd53f3e71d9",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Robotron_MiSTer/master/releases/Playball.mra",
+          "name": "Playball (Prototype).mra",
+          "sha": "850f7a42d071d60d2c31df718b8d7b1b64375022",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Robotron_MiSTer/master/releases/Playball%20(Prototype).mra",
           "type": "MRA",
           "extra": {
-            "name": "playball",
+            "name": "Playball",
             "rbf": "robotron",
             "zips": [
               "playball.zip"
@@ -5777,11 +5777,11 @@
         },
         {
           "name": "Robotron 2084.mra",
-          "sha": "0089bed56a236ecdbb2e63de4130c5443566a286",
+          "sha": "18682182ade388f76a7c728761697b07ca8b9093",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Robotron_MiSTer/master/releases/Robotron%202084.mra",
           "type": "MRA",
           "extra": {
-            "name": "Robotron 2084 (Solid Blue label)",
+            "name": "Robotron 2084",
             "rbf": "robotron",
             "zips": [
               "robotron.zip"
@@ -5790,11 +5790,11 @@
         },
         {
           "name": "Sinistar.mra",
-          "sha": "0df9e3ae2aa0308a63d1cf4b56589d12ceface77",
+          "sha": "9eb5ad68de054b5265e800ea62bbd0bb5510689a",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Robotron_MiSTer/master/releases/Sinistar.mra",
           "type": "MRA",
           "extra": {
-            "name": "Sinistar (revision 3)",
+            "name": "Sinistar",
             "rbf": "robotron",
             "zips": [
               "sinistar.zip"
@@ -5802,9 +5802,9 @@
           }
         },
         {
-          "name": "Splat.mra",
-          "sha": "4fe46fccef17e800947716bf078e767ed55b2c03",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Robotron_MiSTer/master/releases/Splat.mra",
+          "name": "Splat!.mra",
+          "sha": "015c886544d71e4d583ebf1b699d24673d6e2d9e",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Robotron_MiSTer/master/releases/Splat!.mra",
           "type": "MRA",
           "extra": {
             "name": "Splat!",
@@ -5816,7 +5816,7 @@
         },
         {
           "name": "Stargate.mra",
-          "sha": "751178295d80b7bde8e1fd1b544985aedb5a8a31",
+          "sha": "44b9cda40633fef8c053acfacbdd3ffeb339ecd6",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Robotron_MiSTer/master/releases/Stargate.mra",
           "type": "MRA",
           "extra": {
