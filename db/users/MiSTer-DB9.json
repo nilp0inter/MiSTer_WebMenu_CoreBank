@@ -410,6 +410,12 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Astrocade_20210116.rbf",
+          "sha": "e4b378323263b57d9bdd807ee3d6e3027803acf7",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Astrocade_MiSTer/master/releases/Arcade-Astrocade_20210116.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Arcade-Astrocade_20210117.rbf",
           "sha": "5f3e248ddceb304e89413678718a856efa45186c",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Astrocade_MiSTer/master/releases/Arcade-Astrocade_20210117.rbf",
@@ -417,7 +423,7 @@
         },
         {
           "name": "Extra Bases.mra",
-          "sha": "fce778878b58c37fccb7817deead87185963df2b",
+          "sha": "db11a8c31bece64fc7a78a3b622652533f11c919",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Astrocade_MiSTer/master/releases/Extra%20Bases.mra",
           "type": "MRA",
           "extra": {
@@ -429,12 +435,12 @@
           }
         },
         {
-          "name": "Gorf - Program 1.mra",
-          "sha": "d88f4aef9ffc3f96d8de454cebe39b84652a8bc0",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Astrocade_MiSTer/master/releases/Gorf%20-%20Program%201.mra",
+          "name": "Gorf (Program 1).mra",
+          "sha": "122d028d98b920716935ba7b462bbb1750a19f91",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Astrocade_MiSTer/master/releases/Gorf%20(Program%201).mra",
           "type": "MRA",
           "extra": {
-            "name": "Gorf1",
+            "name": "Gorf",
             "rbf": "astrocade",
             "zips": [
               "gorf.zip|gorfpgm1.zip "
@@ -442,9 +448,9 @@
           }
         },
         {
-          "name": "Gorf - Speech.mra",
-          "sha": "fea285f708f489d5a2a2cccb28936ec8a33d9175",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Astrocade_MiSTer/master/releases/Gorf%20-%20Speech.mra",
+          "name": "Gorf (Speech).mra",
+          "sha": "215a2e1f23c81d87623d89887270a4ab215f71e8",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Astrocade_MiSTer/master/releases/Gorf%20(Speech).mra",
           "type": "MRA",
           "extra": {
             "name": "Gorf",
@@ -456,7 +462,7 @@
         },
         {
           "name": "Gorf.mra",
-          "sha": "aa774fb43185eca43dc4312af4eff7303cee5d6e",
+          "sha": "83e29f31a0891408d336f3f6a7b0c7e216342c22",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Astrocade_MiSTer/master/releases/Gorf.mra",
           "type": "MRA",
           "extra": {
@@ -468,22 +474,9 @@
           }
         },
         {
-          "name": "Robby Roto.mra",
-          "sha": "eef7fc20058f3271918ade1d59a028084c5ce221",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Astrocade_MiSTer/master/releases/Robby%20Roto.mra",
-          "type": "MRA",
-          "extra": {
-            "name": "The Adventures of Robby Roto!",
-            "rbf": "astrocade",
-            "zips": [
-              "robby.zip"
-            ]
-          }
-        },
-        {
-          "name": "Seawolf II.mra",
-          "sha": "36afb8ef0de4b02ec74894cff7999469a4c4857f",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Astrocade_MiSTer/master/releases/Seawolf%20II.mra",
+          "name": "Sea Wolf II.mra",
+          "sha": "5c5476112ee20051f9ed64e1053d62e645267c2d",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Astrocade_MiSTer/master/releases/Sea%20Wolf%20II.mra",
           "type": "MRA",
           "extra": {
             "name": "Sea Wolf II",
@@ -495,7 +488,7 @@
         },
         {
           "name": "Space Zap.mra",
-          "sha": "7a1a78d11c42c18144adb657ae2226d4f1c2bc37",
+          "sha": "21106d1967ccd1da58dcfac81d146e35945b2cfa",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Astrocade_MiSTer/master/releases/Space%20Zap.mra",
           "type": "MRA",
           "extra": {
@@ -507,9 +500,22 @@
           }
         },
         {
-          "name": "Wizard of Wor - Speech.mra",
-          "sha": "3b33dc62b5c65bb82c28b7f51692e67d5f7516e7",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Astrocade_MiSTer/master/releases/Wizard%20of%20Wor%20-%20Speech.mra",
+          "name": "The Adventures of Robby Roto!.mra",
+          "sha": "17e0da7731d3c74eff3007a959012e6968f8f508",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Astrocade_MiSTer/master/releases/The%20Adventures%20of%20Robby%20Roto!.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "The Adventures of Robby Roto!",
+            "rbf": "astrocade",
+            "zips": [
+              "robby.zip"
+            ]
+          }
+        },
+        {
+          "name": "Wizard of Wor (Speech).mra",
+          "sha": "09d42fb386eae63ea937fb8964c4d84be04e2503",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Astrocade_MiSTer/master/releases/Wizard%20of%20Wor%20(Speech).mra",
           "type": "MRA",
           "extra": {
             "name": "Wizard of Wor",
@@ -521,7 +527,7 @@
         },
         {
           "name": "Wizard of Wor.mra",
-          "sha": "3500b23fa9b80da66d6665587999e4bcec48be4a",
+          "sha": "69b29696c0bf7a8585b40a8a01baca9c6994e212",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Astrocade_MiSTer/master/releases/Wizard%20of%20Wor.mra",
           "type": "MRA",
           "extra": {
@@ -621,6 +627,12 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Bagman_20210113.rbf",
+          "sha": "44bf76ed6a820206b032936d00a2f85d0034bf49",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Bagman_MiSTer/master/releases/Arcade-Bagman_20210113.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Arcade-Bagman_20210115.rbf",
           "sha": "2c8165e3e958b0f2880d5201e27e515de155aab5",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Bagman_MiSTer/master/releases/Arcade-Bagman_20210115.rbf",
@@ -628,7 +640,7 @@
         },
         {
           "name": "Bagman.mra",
-          "sha": "4be2804cd9539b2a53a056a7c1e8b57906d1438b",
+          "sha": "25d769687ff92db1e47b5a8fe32a79a4912c4b6b",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Bagman_MiSTer/master/releases/Bagman.mra",
           "type": "MRA",
           "extra": {
@@ -640,12 +652,12 @@
           }
         },
         {
-          "name": "Botanic.mra",
-          "sha": "0a3e6ef13b85e83ae7f85cde6369671d07056922",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Bagman_MiSTer/master/releases/Botanic.mra",
+          "name": "Botanic (English, Spanish, Set 1).mra",
+          "sha": "d50ec8b379adcaae6aea7494172b606cdb454aba",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Bagman_MiSTer/master/releases/Botanic%20(English%2C%20Spanish%2C%20Set%201).mra",
           "type": "MRA",
           "extra": {
-            "name": "Botanic (English - Spanish, set 1)",
+            "name": "Botanic",
             "rbf": "bagman",
             "zips": [
               "botanic.zip"
@@ -654,7 +666,7 @@
         },
         {
           "name": "Pickin'.mra",
-          "sha": "05d3e1cc6cc88281ef9b4e048df47ca721430de6",
+          "sha": "25e5fc2c9f463a8fafe4ad061bd3912120770583",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Bagman_MiSTer/master/releases/Pickin'.mra",
           "type": "MRA",
           "extra": {
@@ -667,11 +679,11 @@
         },
         {
           "name": "Squash.mra",
-          "sha": "a49d44cd1681b15f4f1d3e78df5b35a376f031ae",
+          "sha": "779c3750ea61dccfad4ec077d8cc42170d4dd056",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Bagman_MiSTer/master/releases/Squash.mra",
           "type": "MRA",
           "extra": {
-            "name": "Squash (Itisa)",
+            "name": "Squash",
             "rbf": "bagman",
             "zips": [
               "squaitsa.zip"
@@ -680,11 +692,11 @@
         },
         {
           "name": "Super Bagman.mra",
-          "sha": "90ac6524050753f65f70ff4b04ee255112f3962c",
+          "sha": "5df731c68db8b9b5b47483df30cf728f93814191",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Bagman_MiSTer/master/releases/Super%20Bagman.mra",
           "type": "MRA",
           "extra": {
-            "name": "SuperBagman",
+            "name": "Super Bagman",
             "rbf": "bagman",
             "zips": [
               "sbagman.zip|sbagman2.zip"
@@ -738,6 +750,12 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Berzerk_20210115.rbf",
+          "sha": "e91132ab56fb5113696151def6bf2b0ee334d042",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Berzerk_MiSTer/master/releases/Arcade-Berzerk_20210115.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Arcade-Berzerk_20210116.rbf",
           "sha": "cd2be4c4b3e9c8d3feb1d5c313602398cace3546",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Berzerk_MiSTer/master/releases/Arcade-Berzerk_20210116.rbf",
@@ -745,11 +763,11 @@
         },
         {
           "name": "Berzerk.mra",
-          "sha": "75af6d41c9a80414a5439170ec07ca71de9f9799",
+          "sha": "86bc466926d2aef10b471228e19daba8e04c48fb",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Berzerk_MiSTer/master/releases/Berzerk.mra",
           "type": "MRA",
           "extra": {
-            "name": "Berzerk (revision RC31A)",
+            "name": "Berzerk",
             "rbf": "berzerk",
             "zips": [
               "berzerk.zip"
@@ -791,6 +809,12 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-BlackWidow_20210223.rbf",
+          "sha": "8d417a8d159a42835474308d1c5dfa76dfa702c5",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-BlackWidow_MiSTer/master/releases/Arcade-BlackWidow_20210223.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Arcade-BlackWidow_20210224.rbf",
           "sha": "40cc47c7e23ce78c5d6502a83321840576358782",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-BlackWidow_MiSTer/master/releases/Arcade-BlackWidow_20210224.rbf",
@@ -798,38 +822,38 @@
         },
         {
           "name": "Black Widow.mra",
-          "sha": "af53057ab22150740cb9eba1f5fdc5ddd18f3975",
+          "sha": "10543a6599e40f1c0e269a2f087a42e13fdd2322",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-BlackWidow_MiSTer/master/releases/Black%20Widow.mra",
           "type": "MRA",
           "extra": {
             "name": "Black Widow",
-            "rbf": "BlackWidow",
+            "rbf": "blackwidow",
             "zips": [
               "bwidow.zip"
             ]
           }
         },
         {
-          "name": "Gravitar.mra",
-          "sha": "0cd74f611733d9920b2413998fd8b3970ae5b03e",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-BlackWidow_MiSTer/master/releases/Gravitar.mra",
+          "name": "Gravitar (Ver 3).mra",
+          "sha": "44ab6204617be70fc5c24247fd36bcf04a4c814d",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-BlackWidow_MiSTer/master/releases/Gravitar%20(Ver%203).mra",
           "type": "MRA",
           "extra": {
-            "name": "Gravitar (version 3)",
-            "rbf": "BlackWidow",
+            "name": "Gravitar",
+            "rbf": "blackwidow",
             "zips": [
               "gravitar.zip"
             ]
           }
         },
         {
-          "name": "Lunar Battle.mra",
-          "sha": "46e24c3ba5a292b8a3b61742265aa07584318043",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-BlackWidow_MiSTer/master/releases/Lunar%20Battle.mra",
+          "name": "Lunar Battle (Prototype).mra",
+          "sha": "1e210aeb8bd568007c4470b5be060675b12004cb",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-BlackWidow_MiSTer/master/releases/Lunar%20Battle%20(Prototype).mra",
           "type": "MRA",
           "extra": {
-            "name": "Lunar Battle (prototype, later)",
-            "rbf": "BlackWidow",
+            "name": "Lunar Battle",
+            "rbf": "blackwidow",
             "zips": [
               "lunarbat.zip|gravitar.zip"
             ]
@@ -970,15 +994,21 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-BurningRubber_20210113.rbf",
+          "sha": "8ec6d65f74e17e437a7ef4d658a2e9ee60641c51",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-BurningRubber_MiSTer/master/releases/Arcade-BurningRubber_20210113.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Arcade-BurningRubber_20210115.rbf",
           "sha": "38352ee64407e407c9eb037601dde0ccd3643bfa",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-BurningRubber_MiSTer/master/releases/Arcade-BurningRubber_20210115.rbf",
           "type": "RBF"
         },
         {
-          "name": "BurningRubber.mra",
-          "sha": "14014a4ff32693e901ff3b1ae56e532b93455681",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-BurningRubber_MiSTer/master/releases/BurningRubber.mra",
+          "name": "Burnin' Rubber.mra",
+          "sha": "18008bbdf7e0c34922a783214a8ba9a089099ee3",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-BurningRubber_MiSTer/master/releases/Burnin'%20Rubber.mra",
           "type": "MRA",
           "extra": {
             "name": "Burnin' Rubber",
@@ -1150,34 +1180,40 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Centipede_20210227.rbf",
+          "sha": "063b6a2cb7447946a905ba6c1ec44a761711f54c",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Centipede_MiSTer/master/releases/Arcade-Centipede_20210227.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Arcade-Centipede_20210228.rbf",
           "sha": "96c0e865eae33d03e818451bcf4e8dfdb13b4c66",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Centipede_MiSTer/master/releases/Arcade-Centipede_20210228.rbf",
           "type": "RBF"
         },
         {
-          "name": "Centipede (revision 4).mra",
-          "sha": "eafffd561bc2c890ca4eb2409b2b6c52d022a9b6",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Centipede_MiSTer/master/releases/Centipede%20(revision%204).mra",
+          "name": "Centipede (Rev 3).mra",
+          "sha": "a6d9a423a5b94eb70740bc066b0e103d3682e246",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Centipede_MiSTer/master/releases/Centipede%20(Rev%203).mra",
           "type": "MRA",
           "extra": {
-            "name": "Centipede (revision 4)",
+            "name": "Centipede",
             "rbf": "centipede",
             "zips": [
-              "centiped.zip"
+              "centiped.zip|centiped3.zip"
             ]
           }
         },
         {
-          "name": "Centipede.mra",
-          "sha": "cb21958fc5a0cb4edeb5779505151a166cdd8cee",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Centipede_MiSTer/master/releases/Centipede.mra",
+          "name": "Centipede (Rev 4).mra",
+          "sha": "ed0940f9aaaa98603c3e17ed519d13e4c7df5975",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Centipede_MiSTer/master/releases/Centipede%20(Rev%204).mra",
           "type": "MRA",
           "extra": {
-            "name": "Centipede (revision 3)",
+            "name": "Centipede",
             "rbf": "centipede",
             "zips": [
-              "centiped.zip|centiped3.zip"
+              "centiped.zip"
             ]
           }
         }
@@ -1284,6 +1320,12 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-CrazyBalloon_20210115.rbf",
+          "sha": "95036dffa9b8f382ac94e8b06323aee16a3647d6",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-CrazyBalloon_MiSTer/master/releases/Arcade-CrazyBalloon_20210115.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Arcade-CrazyBalloon_20210118.rbf",
           "sha": "8f3cefd8d923c3714a935a7bfffe27bbf91300eb",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-CrazyBalloon_MiSTer/master/releases/Arcade-CrazyBalloon_20210118.rbf",
@@ -1291,12 +1333,12 @@
         },
         {
           "name": "Crazy Balloon.mra",
-          "sha": "4d43ee8cd66c60d87c7ed81fc502d2b619df5b68",
+          "sha": "74de1be31364c10ca2862994adeab1e44ed134c5",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-CrazyBalloon_MiSTer/master/releases/Crazy%20Balloon.mra",
           "type": "MRA",
           "extra": {
             "name": "Crazy Balloon",
-            "rbf": "CrazyBalloon",
+            "rbf": "crazyballoon",
             "zips": [
               "crbaloon.zip"
             ]
@@ -1325,6 +1367,12 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-CrazyClimber_20210115.rbf",
+          "sha": "150aed6474ac4f04230be9edaafeb8a73226e010",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-CrazyClimber_MiSTer/master/releases/Arcade-CrazyClimber_20210115.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Arcade-CrazyClimber_20210117.rbf",
           "sha": "bf809ccab7b82cba4e6d7bd8f484f3d62715e1e0",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-CrazyClimber_MiSTer/master/releases/Arcade-CrazyClimber_20210117.rbf",
@@ -1332,11 +1380,11 @@
         },
         {
           "name": "Crazy Climber.mra",
-          "sha": "537dcc7917434a986ac40405d43e206cca537e90",
+          "sha": "9b9539bc1b2004534a9891d4aa5bdadad80ee023",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-CrazyClimber_MiSTer/master/releases/Crazy%20Climber.mra",
           "type": "MRA",
           "extra": {
-            "name": "Crazy Climber (US set 1)",
+            "name": "Crazy Climber",
             "rbf": "crazyclimber",
             "zips": [
               "cclimber.zip"
@@ -2345,18 +2393,24 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Gaplus_20210116.rbf",
+          "sha": "c25c402b761a21c552bda15fe2383b3205f7dc3b",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Gaplus_MiSTer/master/releases/Arcade-Gaplus_20210116.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Arcade-Gaplus_20210117.rbf",
           "sha": "b7159cd97da7fbca7ed87f6b9336d4493a2a4cc2",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Gaplus_MiSTer/master/releases/Arcade-Gaplus_20210117.rbf",
           "type": "RBF"
         },
         {
-          "name": "Galaga 3 (GP3 rev. D).mra",
-          "sha": "eeb13163e3a93a14877ad4498a5d2f4918e56832",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Gaplus_MiSTer/master/releases/Galaga%203%20(GP3%20rev.%20D).mra",
+          "name": "Galaga 3 (GP3 Rev D).mra",
+          "sha": "d1451748c3428df5b0b69ff3eb40cc01b02b9aaa",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Gaplus_MiSTer/master/releases/Galaga%203%20(GP3%20Rev%20D).mra",
           "type": "MRA",
           "extra": {
-            "name": "Galaga 3 (GP3 rev. D)",
+            "name": "Galaga 3",
             "rbf": "gaplus",
             "zips": [
               "gaplus.zip|galaga3.zip"
@@ -2364,12 +2418,12 @@
           }
         },
         {
-          "name": "Gaplus (GP2 rev. B).mra",
-          "sha": "26a357eb81c0b8e1c5c2162e00309df990b75b90",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Gaplus_MiSTer/master/releases/Gaplus%20(GP2%20rev.%20B).mra",
+          "name": "Gaplus (GP2 Rev B).mra",
+          "sha": "d0e6e6ef863e0e4af4f7fc5808445fe175934db3",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Gaplus_MiSTer/master/releases/Gaplus%20(GP2%20Rev%20B).mra",
           "type": "MRA",
           "extra": {
-            "name": "Gaplus (GP2 rev. B)",
+            "name": "Gaplus",
             "rbf": "gaplus",
             "zips": [
               "gaplus.zip"
