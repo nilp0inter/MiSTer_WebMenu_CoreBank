@@ -978,7 +978,7 @@
         },
         {
           "name": "Extra Bases.mra",
-          "sha": "fce778878b58c37fccb7817deead87185963df2b",
+          "sha": "db11a8c31bece64fc7a78a3b622652533f11c919",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Astrocade_MiSTer/master/releases/Extra%20Bases.mra",
           "type": "MRA",
           "extra": {
@@ -990,12 +990,12 @@
           }
         },
         {
-          "name": "Gorf - Program 1.mra",
-          "sha": "d88f4aef9ffc3f96d8de454cebe39b84652a8bc0",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Astrocade_MiSTer/master/releases/Gorf%20-%20Program%201.mra",
+          "name": "Gorf (Program 1).mra",
+          "sha": "122d028d98b920716935ba7b462bbb1750a19f91",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Astrocade_MiSTer/master/releases/Gorf%20(Program%201).mra",
           "type": "MRA",
           "extra": {
-            "name": "Gorf1",
+            "name": "Gorf",
             "rbf": "astrocade",
             "zips": [
               "gorf.zip|gorfpgm1.zip "
@@ -1003,9 +1003,9 @@
           }
         },
         {
-          "name": "Gorf - Speech.mra",
-          "sha": "fea285f708f489d5a2a2cccb28936ec8a33d9175",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Astrocade_MiSTer/master/releases/Gorf%20-%20Speech.mra",
+          "name": "Gorf (Speech).mra",
+          "sha": "215a2e1f23c81d87623d89887270a4ab215f71e8",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Astrocade_MiSTer/master/releases/Gorf%20(Speech).mra",
           "type": "MRA",
           "extra": {
             "name": "Gorf",
@@ -1017,7 +1017,7 @@
         },
         {
           "name": "Gorf.mra",
-          "sha": "aa774fb43185eca43dc4312af4eff7303cee5d6e",
+          "sha": "83e29f31a0891408d336f3f6a7b0c7e216342c22",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Astrocade_MiSTer/master/releases/Gorf.mra",
           "type": "MRA",
           "extra": {
@@ -1029,22 +1029,9 @@
           }
         },
         {
-          "name": "Robby Roto.mra",
-          "sha": "eef7fc20058f3271918ade1d59a028084c5ce221",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Astrocade_MiSTer/master/releases/Robby%20Roto.mra",
-          "type": "MRA",
-          "extra": {
-            "name": "The Adventures of Robby Roto!",
-            "rbf": "astrocade",
-            "zips": [
-              "robby.zip"
-            ]
-          }
-        },
-        {
-          "name": "Seawolf II.mra",
-          "sha": "36afb8ef0de4b02ec74894cff7999469a4c4857f",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Astrocade_MiSTer/master/releases/Seawolf%20II.mra",
+          "name": "Sea Wolf II.mra",
+          "sha": "5c5476112ee20051f9ed64e1053d62e645267c2d",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Astrocade_MiSTer/master/releases/Sea%20Wolf%20II.mra",
           "type": "MRA",
           "extra": {
             "name": "Sea Wolf II",
@@ -1056,7 +1043,7 @@
         },
         {
           "name": "Space Zap.mra",
-          "sha": "7a1a78d11c42c18144adb657ae2226d4f1c2bc37",
+          "sha": "21106d1967ccd1da58dcfac81d146e35945b2cfa",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Astrocade_MiSTer/master/releases/Space%20Zap.mra",
           "type": "MRA",
           "extra": {
@@ -1068,9 +1055,22 @@
           }
         },
         {
-          "name": "Wizard of Wor - Speech.mra",
-          "sha": "3b33dc62b5c65bb82c28b7f51692e67d5f7516e7",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Astrocade_MiSTer/master/releases/Wizard%20of%20Wor%20-%20Speech.mra",
+          "name": "The Adventures of Robby Roto!.mra",
+          "sha": "17e0da7731d3c74eff3007a959012e6968f8f508",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Astrocade_MiSTer/master/releases/The%20Adventures%20of%20Robby%20Roto!.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "The Adventures of Robby Roto!",
+            "rbf": "astrocade",
+            "zips": [
+              "robby.zip"
+            ]
+          }
+        },
+        {
+          "name": "Wizard of Wor (Speech).mra",
+          "sha": "09d42fb386eae63ea937fb8964c4d84be04e2503",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Astrocade_MiSTer/master/releases/Wizard%20of%20Wor%20(Speech).mra",
           "type": "MRA",
           "extra": {
             "name": "Wizard of Wor",
@@ -1082,7 +1082,7 @@
         },
         {
           "name": "Wizard of Wor.mra",
-          "sha": "3500b23fa9b80da66d6665587999e4bcec48be4a",
+          "sha": "69b29696c0bf7a8585b40a8a01baca9c6994e212",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Astrocade_MiSTer/master/releases/Wizard%20of%20Wor.mra",
           "type": "MRA",
           "extra": {
@@ -1134,12 +1134,12 @@
           "type": "RBF"
         },
         {
-          "name": "Tetris (cocktail set 1).mra",
-          "sha": "67bfd54f6b8ba157377d46f12080b9d8b43f1ef8",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-ATetris_MiSTer/master/releases/Tetris%20(cocktail%20set%201).mra",
+          "name": "Tetris (Cocktail, Set 1).mra",
+          "sha": "dd653bf1533c67688fdc5401445309dcf3c25721",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-ATetris_MiSTer/master/releases/Tetris%20(Cocktail%2C%20Set%201).mra",
           "type": "MRA",
           "extra": {
-            "name": "Tetris (cocktail set 1)",
+            "name": "Tetris",
             "rbf": "ataritetris",
             "zips": [
               "atetris.zip|atetrisc.zip"
@@ -1148,11 +1148,11 @@
         },
         {
           "name": "Tetris.mra",
-          "sha": "d32611ddbf6c6cb0215304e35ed3b4358f5edb0a",
+          "sha": "99c673488de2a9ec460f6e350f7f83f4312419cb",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-ATetris_MiSTer/master/releases/Tetris.mra",
           "type": "MRA",
           "extra": {
-            "name": "Tetris (set 1)",
+            "name": "Tetris",
             "rbf": "ataritetris",
             "zips": [
               "atetris.zip"
@@ -1219,7 +1219,7 @@
         },
         {
           "name": "Bagman.mra",
-          "sha": "4be2804cd9539b2a53a056a7c1e8b57906d1438b",
+          "sha": "25d769687ff92db1e47b5a8fe32a79a4912c4b6b",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Bagman_MiSTer/master/releases/Bagman.mra",
           "type": "MRA",
           "extra": {
@@ -1231,12 +1231,12 @@
           }
         },
         {
-          "name": "Botanic.mra",
-          "sha": "0a3e6ef13b85e83ae7f85cde6369671d07056922",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Bagman_MiSTer/master/releases/Botanic.mra",
+          "name": "Botanic (English, Spanish, Set 1).mra",
+          "sha": "d50ec8b379adcaae6aea7494172b606cdb454aba",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Bagman_MiSTer/master/releases/Botanic%20(English%2C%20Spanish%2C%20Set%201).mra",
           "type": "MRA",
           "extra": {
-            "name": "Botanic (English - Spanish, set 1)",
+            "name": "Botanic",
             "rbf": "bagman",
             "zips": [
               "botanic.zip"
@@ -1245,7 +1245,7 @@
         },
         {
           "name": "Pickin'.mra",
-          "sha": "05d3e1cc6cc88281ef9b4e048df47ca721430de6",
+          "sha": "25e5fc2c9f463a8fafe4ad061bd3912120770583",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Bagman_MiSTer/master/releases/Pickin'.mra",
           "type": "MRA",
           "extra": {
@@ -1258,11 +1258,11 @@
         },
         {
           "name": "Squash.mra",
-          "sha": "a49d44cd1681b15f4f1d3e78df5b35a376f031ae",
+          "sha": "779c3750ea61dccfad4ec077d8cc42170d4dd056",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Bagman_MiSTer/master/releases/Squash.mra",
           "type": "MRA",
           "extra": {
-            "name": "Squash (Itisa)",
+            "name": "Squash",
             "rbf": "bagman",
             "zips": [
               "squaitsa.zip"
@@ -1271,11 +1271,11 @@
         },
         {
           "name": "Super Bagman.mra",
-          "sha": "90ac6524050753f65f70ff4b04ee255112f3962c",
+          "sha": "5df731c68db8b9b5b47483df30cf728f93814191",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Bagman_MiSTer/master/releases/Super%20Bagman.mra",
           "type": "MRA",
           "extra": {
-            "name": "SuperBagman",
+            "name": "Super Bagman",
             "rbf": "bagman",
             "zips": [
               "sbagman.zip|sbagman2.zip"
@@ -1348,11 +1348,11 @@
         },
         {
           "name": "Berzerk.mra",
-          "sha": "75af6d41c9a80414a5439170ec07ca71de9f9799",
+          "sha": "86bc466926d2aef10b471228e19daba8e04c48fb",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Berzerk_MiSTer/master/releases/Berzerk.mra",
           "type": "MRA",
           "extra": {
-            "name": "Berzerk (revision RC31A)",
+            "name": "Berzerk",
             "rbf": "berzerk",
             "zips": [
               "berzerk.zip"
@@ -1401,38 +1401,38 @@
         },
         {
           "name": "Black Widow.mra",
-          "sha": "af53057ab22150740cb9eba1f5fdc5ddd18f3975",
+          "sha": "10543a6599e40f1c0e269a2f087a42e13fdd2322",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-BlackWidow_MiSTer/master/releases/Black%20Widow.mra",
           "type": "MRA",
           "extra": {
             "name": "Black Widow",
-            "rbf": "BlackWidow",
+            "rbf": "blackwidow",
             "zips": [
               "bwidow.zip"
             ]
           }
         },
         {
-          "name": "Gravitar.mra",
-          "sha": "0cd74f611733d9920b2413998fd8b3970ae5b03e",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-BlackWidow_MiSTer/master/releases/Gravitar.mra",
+          "name": "Gravitar (Ver 3).mra",
+          "sha": "44ab6204617be70fc5c24247fd36bcf04a4c814d",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-BlackWidow_MiSTer/master/releases/Gravitar%20(Ver%203).mra",
           "type": "MRA",
           "extra": {
-            "name": "Gravitar (version 3)",
-            "rbf": "BlackWidow",
+            "name": "Gravitar",
+            "rbf": "blackwidow",
             "zips": [
               "gravitar.zip"
             ]
           }
         },
         {
-          "name": "Lunar Battle.mra",
-          "sha": "46e24c3ba5a292b8a3b61742265aa07584318043",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-BlackWidow_MiSTer/master/releases/Lunar%20Battle.mra",
+          "name": "Lunar Battle (Prototype).mra",
+          "sha": "1e210aeb8bd568007c4470b5be060675b12004cb",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-BlackWidow_MiSTer/master/releases/Lunar%20Battle%20(Prototype).mra",
           "type": "MRA",
           "extra": {
-            "name": "Lunar Battle (prototype, later)",
-            "rbf": "BlackWidow",
+            "name": "Lunar Battle",
+            "rbf": "blackwidow",
             "zips": [
               "lunarbat.zip|gravitar.zip"
             ]
@@ -1504,11 +1504,11 @@
         },
         {
           "name": "Bomb Jack.mra",
-          "sha": "aae5e2f77bb5d0f862d81a161bf37b0ada7aeb02",
+          "sha": "5c73be5a2e5e5e1637fbfb7f510eb2753bd4266c",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-BombJack_MiSTer/master/releases/Bomb%20Jack.mra",
           "type": "MRA",
           "extra": {
-            "name": "Bomb Jack (set 1)",
+            "name": "Bomb Jack ",
             "rbf": "bombjack",
             "zips": [
               "bombjack.zip"
@@ -1631,9 +1631,9 @@
           "type": "RBF"
         },
         {
-          "name": "Burger Time.mra",
-          "sha": "0ab4d7f3dfabd11aba639c280cbcaabe4a25f4f1",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-BurgerTime_MiSTer/master/releases/Burger%20Time.mra",
+          "name": "Burger Time (Set 1).mra",
+          "sha": "81a4b2f56a61607efaa9936ceea8d4d33dbe94f5",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-BurgerTime_MiSTer/master/releases/Burger%20Time%20(Set%201).mra",
           "type": "MRA",
           "extra": {
             "name": "Burger Time",
@@ -1690,9 +1690,9 @@
           "type": "RBF"
         },
         {
-          "name": "BurningRubber.mra",
-          "sha": "14014a4ff32693e901ff3b1ae56e532b93455681",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-BurningRubber_MiSTer/master/releases/BurningRubber.mra",
+          "name": "Burnin' Rubber.mra",
+          "sha": "18008bbdf7e0c34922a783214a8ba9a089099ee3",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-BurningRubber_MiSTer/master/releases/Burnin'%20Rubber.mra",
           "type": "MRA",
           "extra": {
             "name": "Burnin' Rubber",
@@ -1738,7 +1738,7 @@
         },
         {
           "name": "Canyon Bomber.mra",
-          "sha": "01e54b18512fb35804c9db8fb561c04e38091f6f",
+          "sha": "53dc57a0bed4a614cd473dbdb76f6433173e5df4",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-CanyonBomber_MiSTer/master/releases/Canyon%20Bomber.mra",
           "type": "MRA",
           "extra": {
@@ -1863,28 +1863,28 @@
           "type": "RBF"
         },
         {
-          "name": "Centipede (revision 4).mra",
-          "sha": "eafffd561bc2c890ca4eb2409b2b6c52d022a9b6",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Centipede_MiSTer/master/releases/Centipede%20(revision%204).mra",
+          "name": "Centipede (Rev 3).mra",
+          "sha": "a6d9a423a5b94eb70740bc066b0e103d3682e246",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Centipede_MiSTer/master/releases/Centipede%20(Rev%203).mra",
           "type": "MRA",
           "extra": {
-            "name": "Centipede (revision 4)",
+            "name": "Centipede",
             "rbf": "centipede",
             "zips": [
-              "centiped.zip"
+              "centiped.zip|centiped3.zip"
             ]
           }
         },
         {
-          "name": "Centipede.mra",
-          "sha": "cb21958fc5a0cb4edeb5779505151a166cdd8cee",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Centipede_MiSTer/master/releases/Centipede.mra",
+          "name": "Centipede (Rev 4).mra",
+          "sha": "ed0940f9aaaa98603c3e17ed519d13e4c7df5975",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Centipede_MiSTer/master/releases/Centipede%20(Rev%204).mra",
           "type": "MRA",
           "extra": {
-            "name": "Centipede (revision 3)",
+            "name": "Centipede",
             "rbf": "centipede",
             "zips": [
-              "centiped.zip|centiped3.zip"
+              "centiped.zip"
             ]
           }
         }
@@ -1930,7 +1930,7 @@
         },
         {
           "name": "Computer Space.mra",
-          "sha": "a297b35848a602dbc172c7cdb79436f1743eb147",
+          "sha": "fbd4ccbe073c28918a702ac3f9866b920eb40036",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-ComputerSpace_MiSTer/master/releases/Computer%20Space.mra",
           "type": "MRA",
           "extra": {
@@ -1963,12 +1963,12 @@
         },
         {
           "name": "Crazy Balloon.mra",
-          "sha": "4d43ee8cd66c60d87c7ed81fc502d2b619df5b68",
+          "sha": "74de1be31364c10ca2862994adeab1e44ed134c5",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-CrazyBalloon_MiSTer/master/releases/Crazy%20Balloon.mra",
           "type": "MRA",
           "extra": {
             "name": "Crazy Balloon",
-            "rbf": "CrazyBalloon",
+            "rbf": "crazyballoon",
             "zips": [
               "crbaloon.zip"
             ]
@@ -2010,11 +2010,11 @@
         },
         {
           "name": "Crazy Climber.mra",
-          "sha": "537dcc7917434a986ac40405d43e206cca537e90",
+          "sha": "9b9539bc1b2004534a9891d4aa5bdadad80ee023",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-CrazyClimber_MiSTer/master/releases/Crazy%20Climber.mra",
           "type": "MRA",
           "extra": {
-            "name": "Crazy Climber (US set 1)",
+            "name": "Crazy Climber",
             "rbf": "crazyclimber",
             "zips": [
               "cclimber.zip"
@@ -2069,14 +2069,27 @@
         },
         {
           "name": "Big Kong.mra",
-          "sha": "cf5a8c5d24f15d98c743c1d08f18a4715d018d40",
+          "sha": "8902cdca926bb534cddd026a1cca4b1d3647edc3",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-CrazyKong_MiSTer/master/releases/Big%20Kong.mra",
           "type": "MRA",
           "extra": {
             "name": "Big Kong",
-            "rbf": "CrazyKong",
+            "rbf": "crazykong",
             "zips": [
               "ckong.zip|bigkong.zip|ckongo.zip"
+            ]
+          }
+        },
+        {
+          "name": "Crazy Kong (Kyoei).mra",
+          "sha": "58805cba69173ee679d0d5b3be44ad942cde75fd",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-CrazyKong_MiSTer/master/releases/Crazy%20Kong%20(Kyoei).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Crazy Kong",
+            "rbf": "crazykong",
+            "zips": [
+              "ckong.zip"
             ]
           }
         },
@@ -2094,28 +2107,15 @@
           }
         },
         {
-          "name": "Crazy Kong Part II.mra",
-          "sha": "f4f41fcbd7fe552fd60f9c3c39109a9317a38975",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-CrazyKong_MiSTer/master/releases/Crazy%20Kong%20Part%20II.mra",
+          "name": "Crazy Kong Part II (Set 1).mra",
+          "sha": "d3ee1491ebcf3286df391855745885e48430b983",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-CrazyKong_MiSTer/master/releases/Crazy%20Kong%20Part%20II%20(Set%201).mra",
           "type": "MRA",
           "extra": {
-            "name": "Crazy Kong Part II (set 1)",
-            "rbf": "CrazyKong",
+            "name": "Crazy Kong Part II",
+            "rbf": "crazykong",
             "zips": [
               "ckongpt2.zip"
-            ]
-          }
-        },
-        {
-          "name": "Crazy Kong.mra",
-          "sha": "3fbb9a85e9c43ea53df5236c668bfafd4e2cd390",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-CrazyKong_MiSTer/master/releases/Crazy%20Kong.mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Crazy Kong",
-            "rbf": "CrazyKong",
-            "zips": [
-              "ckong.zip"
             ]
           }
         },
@@ -2185,12 +2185,12 @@
           "type": "RBF"
         },
         {
-          "name": "Colony 7.mra",
-          "sha": "91fea62036f4a37c1da4ace8d53b0f07dcb5d2fa",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Defender_MiSTer/master/releases/Colony%207.mra",
+          "name": "Colony 7 (Set 1).mra",
+          "sha": "acfaad232de00c662842dab351fbe3d3a4cd1981",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Defender_MiSTer/master/releases/Colony%207%20(Set%201).mra",
           "type": "MRA",
           "extra": {
-            "name": "Colony 7 (set 1)",
+            "name": "Colony 7",
             "rbf": "defender",
             "zips": [
               "colony7.zip"
@@ -2198,12 +2198,12 @@
           }
         },
         {
-          "name": "Defender.mra",
-          "sha": "4289a58b1a9a004242fc1ec82ac4b6ca8ee5e3dd",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Defender_MiSTer/master/releases/Defender.mra",
+          "name": "Defender (Red Label).mra",
+          "sha": "45d39b99807cc3770e9e130bfabb01c2e6af93ca",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Defender_MiSTer/master/releases/Defender%20(Red%20Label).mra",
           "type": "MRA",
           "extra": {
-            "name": "Defender (Red label)",
+            "name": "Defender",
             "rbf": "defender",
             "zips": [
               "defender.zip"
@@ -2212,7 +2212,7 @@
         },
         {
           "name": "Jin.mra",
-          "sha": "ee5060b01f53a29d7cf2f913b4929e88a55ec654",
+          "sha": "aaf14a466b52a3a48fcaf76e98b865d3573e1d1e",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Defender_MiSTer/master/releases/Jin.mra",
           "type": "MRA",
           "extra": {
@@ -2224,12 +2224,12 @@
           }
         },
         {
-          "name": "Mayday.mra",
-          "sha": "2ca42e2e0e57dc8871ea3d49abef97f7a1936fb9",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Defender_MiSTer/master/releases/Mayday.mra",
+          "name": "Mayday (Set 1).mra",
+          "sha": "4f2af71618d0eafddcad81391ffcc2d65e3305e0",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Defender_MiSTer/master/releases/Mayday%20(Set%201).mra",
           "type": "MRA",
           "extra": {
-            "name": "Mayday (set 1)",
+            "name": "Mayday",
             "rbf": "defender",
             "zips": [
               "mayday.zip"
@@ -2289,12 +2289,12 @@
           "type": "RBF"
         },
         {
-          "name": "Dig Dug.mra",
-          "sha": "a1908c62699b5f4be9bcc5851999d997d7bf3db2",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-DigDug_MiSTer/master/releases/Dig%20Dug.mra",
+          "name": "Dig Dug (Rev 2).mra",
+          "sha": "b6aea102d1e917821ab996a0ee3a218bf5dc3168",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-DigDug_MiSTer/master/releases/Dig%20Dug%20(Rev%202).mra",
           "type": "MRA",
           "extra": {
-            "name": "Dig Dug (rev 2)",
+            "name": "Dig Dug",
             "rbf": "digdug",
             "zips": [
               "digdug.zip"
@@ -2343,7 +2343,7 @@
         },
         {
           "name": "Dominos.mra",
-          "sha": "983e0e826a2db7a07639335254ef1808c2f35368",
+          "sha": "62cf21c6c6150b4015698021741f401a60a2a7b7",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Dominos_MiSTer/master/releases/Dominos.mra",
           "type": "MRA",
           "extra": {
@@ -2377,13 +2377,13 @@
           "type": "RBF"
         },
         {
-          "name": "Donkey Kong 3.mra",
-          "sha": "b159b5dabce858adbaf795d9a66589edc3f2fc5e",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-DonkeyKong3_MiSTer/master/releases/Donkey%20Kong%203.mra",
+          "name": "Donkey Kong 3 (US).mra",
+          "sha": "27a19a12c2b7e89e923e03b83fcd3c8f8f823937",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-DonkeyKong3_MiSTer/master/releases/Donkey%20Kong%203%20(US).mra",
           "type": "MRA",
           "extra": {
-            "name": "Donkey Kong 3 (US)",
-            "rbf": "DonkeyKong3",
+            "name": "Donkey Kong 3",
+            "rbf": "donkeykong3",
             "zips": [
               "dkong3.zip"
             ]
@@ -2424,12 +2424,12 @@
           "type": "RBF"
         },
         {
-          "name": "Donkey Kong Junior.mra",
-          "sha": "8b38d99e1d8c1023e908baa2ee1030b07c0af20c",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-DonkeyKongJunior_MiSTer/master/releases/Donkey%20Kong%20Junior.mra",
+          "name": "Donkey Kong Junior (US, Set F-2).mra",
+          "sha": "7549b9ab0ef6c7ca7cfa62408e43c7d68f37bd79",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-DonkeyKongJunior_MiSTer/master/releases/Donkey%20Kong%20Junior%20(US%2C%20Set%20F-2).mra",
           "type": "MRA",
           "extra": {
-            "name": "Donkey Kong Junior (US set F-2)",
+            "name": "Donkey Kong Junior",
             "rbf": "donkeykongjunior",
             "zips": [
               "dkongjr.zip"
@@ -2483,26 +2483,13 @@
           "type": "RBF"
         },
         {
-          "name": "Donkey Kong 3 (bootleg).mra",
-          "sha": "c9d6f9bffd3db5f0be242eb1e7f09ea9d4907174",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-DonkeyKong_MiSTer/master/releases/Donkey%20Kong%203%20(bootleg).mra",
+          "name": "Donkey Kong (US, Set 1).mra",
+          "sha": "546b65e1e3fb73a495b08bac16cdabb6ae7f2b66",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-DonkeyKong_MiSTer/master/releases/Donkey%20Kong%20(US%2C%20Set%201).mra",
           "type": "MRA",
           "extra": {
-            "name": "Donkey Kong 3 (bootleg on DKJr HW)",
-            "rbf": "DonkeyKong",
-            "zips": [
-              "dkong3.zip|dkong3b.zip"
-            ]
-          }
-        },
-        {
-          "name": "Donkey Kong.mra",
-          "sha": "cda6d9969393c15492bb9b36aff3f83201ada15e",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-DonkeyKong_MiSTer/master/releases/Donkey%20Kong.mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Donkey Kong (US set 1)",
-            "rbf": "DonkeyKong",
+            "name": "Donkey Kong",
+            "rbf": "donkeykong",
             "zips": [
               "dkong.zip"
             ]
@@ -2510,7 +2497,7 @@
         },
         {
           "name": "Pest Place.mra",
-          "sha": "b0b3d75216cb09b24bf8ad1ec7e0834bf9d3709f",
+          "sha": "df1c7ab570733d9c35ab4b1f84486b8df7173a6d",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-DonkeyKong_MiSTer/master/releases/Pest%20Place.mra",
           "type": "MRA",
           "extra": {
@@ -2523,12 +2510,12 @@
         },
         {
           "name": "Radar Scope.mra",
-          "sha": "0ff62efc45a23a15caa6bddaf8bbd65a2166e426",
+          "sha": "17017e08526b0d5b9a58cbe392fe91aa2aa14c94",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-DonkeyKong_MiSTer/master/releases/Radar%20Scope.mra",
           "type": "MRA",
           "extra": {
             "name": "Radar Scope",
-            "rbf": "DonkeyKong",
+            "rbf": "donkeykong",
             "zips": [
               "radarscp.zip"
             ]
@@ -2797,12 +2784,12 @@
           "type": "RBF"
         },
         {
-          "name": "Frenzy.mra",
-          "sha": "fe6c53f86c910c7c8a614f52fff312ad1d1e6ffd",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Frenzy_MiSTer/master/releases/Frenzy.mra",
+          "name": "Frenzy (Rev RA1).mra",
+          "sha": "090daa4c32a9b718cc128fa8006931acad27d9f1",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Frenzy_MiSTer/master/releases/Frenzy%20(Rev%20RA1).mra",
           "type": "MRA",
           "extra": {
-            "name": "Frenzy (revision RA1)",
+            "name": "Frenzy",
             "rbf": "frenzy",
             "zips": [
               "frenzy.zip"
@@ -2874,12 +2861,12 @@
           "type": "RBF"
         },
         {
-          "name": "Galaga.mra",
-          "sha": "40f93309d6ba27a1fc956879a8ec154cf100d51a",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Galaga_MiSTer/master/releases/Galaga.mra",
+          "name": "Galaga (Midway, Set 1).mra",
+          "sha": "9d22fdc01e396e12cf655258441f61412a828638",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Galaga_MiSTer/master/releases/Galaga%20(Midway%2C%20Set%201).mra",
           "type": "MRA",
           "extra": {
-            "name": "Galaga (Midway set 1)",
+            "name": "Galaga",
             "rbf": "galaga",
             "zips": [
               "galaga.zip|galagamw.zip|namco54.zip"
@@ -2970,7 +2957,7 @@
         },
         {
           "name": "Azurian Attack.mra",
-          "sha": "ed4d919284a2d439c4be856272c7b9474720eb72",
+          "sha": "66d8769f2e4cfccb96130f225838c31b686ea905",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Galaxian_MiSTer/master/releases/Azurian%20Attack.mra",
           "type": "MRA",
           "extra": {
@@ -2983,7 +2970,7 @@
         },
         {
           "name": "Black Hole.mra",
-          "sha": "81319435011b6cec506bd76d831cbe9972381f84",
+          "sha": "a8e4901e27f5165b8fbefd4098a0f64ed4e40742",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Galaxian_MiSTer/master/releases/Black%20Hole.mra",
           "type": "MRA",
           "extra": {
@@ -2996,7 +2983,7 @@
         },
         {
           "name": "Catacomb.mra",
-          "sha": "cd28ddb012e5ec46093938762dfd9001c20535e9",
+          "sha": "fda955e806fc7d3b5737feeb660daf3c3cf3772a",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Galaxian_MiSTer/master/releases/Catacomb.mra",
           "type": "MRA",
           "extra": {
@@ -3008,23 +2995,23 @@
           }
         },
         {
-          "name": "Clean Sweep.mra",
-          "sha": "de93ec5bbabf700e21cf7dd4c93eb2d292e30eed",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Galaxian_MiSTer/master/releases/Clean%20Sweep.mra",
+          "name": "Clean Sweep (TTL).mra",
+          "sha": "0d04510ba6ef94924e0d74619f180d04b32ad752",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Galaxian_MiSTer/master/releases/Clean%20Sweep%20(TTL).mra",
           "type": "MRA",
           "extra": {
-            "name": null,
+            "name": "Clean Sweep",
             "rbf": "galaxian",
             "zips": []
           }
         },
         {
-          "name": "Devil Fish.mra",
-          "sha": "bda3871fac507ea84167c25aa717974b15a87d48",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Galaxian_MiSTer/master/releases/Devil%20Fish.mra",
+          "name": "Devil Fish (Galaxian Hardware).mra",
+          "sha": "659711bd9d7f6e390f4572d997937ec5dd1209b5",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Galaxian_MiSTer/master/releases/Devil%20Fish%20(Galaxian%20Hardware).mra",
           "type": "MRA",
           "extra": {
-            "name": "Devil Fish (Galaxian hardware, bootleg)",
+            "name": "Devil Fish",
             "rbf": "galaxian",
             "zips": [
               "devilfsh.zip|devilfsg.zip"
@@ -3032,12 +3019,12 @@
           }
         },
         {
-          "name": "Galaxian.mra",
-          "sha": "5ab21e2a8dc96095249d688abafd8c6301d0829c",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Galaxian_MiSTer/master/releases/Galaxian.mra",
+          "name": "Galaxian (Namco, Set 1).mra",
+          "sha": "e4943777138e065b00456e42a6289eee27456a80",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Galaxian_MiSTer/master/releases/Galaxian%20(Namco%2C%20Set%201).mra",
           "type": "MRA",
           "extra": {
-            "name": "Galaxian (Namco set 1)",
+            "name": "Galaxian",
             "rbf": "galaxian",
             "zips": [
               "galaxian.zip"
@@ -3058,9 +3045,9 @@
           }
         },
         {
-          "name": "King And Balloon.mra",
-          "sha": "44e4b422834521d00dd26f2b30dfe100a86c0198",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Galaxian_MiSTer/master/releases/King%20And%20Balloon.mra",
+          "name": "King and Balloon (US).mra",
+          "sha": "0e6466677585d754a9c660faaa0dc08402c9a993",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Galaxian_MiSTer/master/releases/King%20and%20Balloon%20(US).mra",
           "type": "MRA",
           "extra": {
             "name": "King and Balloon",
@@ -3072,7 +3059,7 @@
         },
         {
           "name": "Lucky Today.mra",
-          "sha": "0dd0d2d51cb0ec8b8c27f6ca31ad1debdaf50c31",
+          "sha": "ed4eeb53262d447a8027c61e8921bf534b5828b8",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Galaxian_MiSTer/master/releases/Lucky%20Today.mra",
           "type": "MRA",
           "extra": {
@@ -3084,12 +3071,12 @@
           }
         },
         {
-          "name": "Moon Cresta.mra",
-          "sha": "f4b24b0bdad42a7ae3ad421a178164e13b7834a4",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Galaxian_MiSTer/master/releases/Moon%20Cresta.mra",
+          "name": "Moon Cresta (Galaxian Hardware) [bl].mra",
+          "sha": "e0ec4fab6cc50dd3a58c35ff86f0351d771a04ba",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Galaxian_MiSTer/master/releases/Moon%20Cresta%20(Galaxian%20Hardware)%20%5Bbl%5D.mra",
           "type": "MRA",
           "extra": {
-            "name": "Moon Cresta (Galaxian hardware)",
+            "name": "Moon Cresta",
             "rbf": "galaxian",
             "zips": [
               "mooncrst.zip|mooncrgx.zip"
@@ -3098,7 +3085,7 @@
         },
         {
           "name": "Mr. Do Nightmare.mra",
-          "sha": "b5371e9f928d5db586ef80bd464696f448a0497e",
+          "sha": "9811f407aa3aa8a16edfa30e6346c3f4d7e3939c",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Galaxian_MiSTer/master/releases/Mr.%20Do%20Nightmare.mra",
           "type": "MRA",
           "extra": {
@@ -3108,12 +3095,12 @@
           }
         },
         {
-          "name": "Omega.mra",
-          "sha": "589322e62d52beda5dc8bf358adda5f75f2ed3eb",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Galaxian_MiSTer/master/releases/Omega.mra",
+          "name": "Omega [bl].mra",
+          "sha": "fd7e57bbf26a2c822f8b4ce5bfe447134bb0112f",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Galaxian_MiSTer/master/releases/Omega%20%5Bbl%5D.mra",
           "type": "MRA",
           "extra": {
-            "name": "Omega (bootleg)",
+            "name": "Omega",
             "rbf": "galaxian",
             "zips": [
               "theend.zip|omegab.zip"
@@ -3122,7 +3109,7 @@
         },
         {
           "name": "Orbitron.mra",
-          "sha": "f920c2ecdd07c89c1485b0365aabc2b0c7d04b9e",
+          "sha": "aa780342da8f5ab21b603b4cc3bb88a223e6fb21",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Galaxian_MiSTer/master/releases/Orbitron.mra",
           "type": "MRA",
           "extra": {
@@ -3135,7 +3122,7 @@
         },
         {
           "name": "Pisces.mra",
-          "sha": "f3fd7cc3f2ed7d655da9c64b755de4b57032588c",
+          "sha": "94c4454591f682320991f9a6e14679cc29ecbb70",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Galaxian_MiSTer/master/releases/Pisces.mra",
           "type": "MRA",
           "extra": {
@@ -3148,7 +3135,7 @@
         },
         {
           "name": "UniWar S.mra",
-          "sha": "f3b3c7d60ff5783c14bd3ec01652af402204a887",
+          "sha": "8d078f7e1e286d79cd8e609a043261d4a0817e0c",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Galaxian_MiSTer/master/releases/UniWar%20S.mra",
           "type": "MRA",
           "extra": {
@@ -3161,11 +3148,11 @@
         },
         {
           "name": "Victory.mra",
-          "sha": "09edd93447d646dd18649867360aac8f1dd6b494",
+          "sha": "195f9311c542159531b3e068395f64640d1a1db5",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Galaxian_MiSTer/master/releases/Victory.mra",
           "type": "MRA",
           "extra": {
-            "name": "Victory (Comsoft) (bootleg)",
+            "name": "Victory",
             "rbf": "galaxian",
             "zips": [
               "victoryc.zip|victorycb.zip"
@@ -3174,11 +3161,11 @@
         },
         {
           "name": "War of the Bugs.mra",
-          "sha": "e5fe04192b4291ce5ff41d0d84c6f9de1cbd05ec",
+          "sha": "2d941dfa28260303f081c6a31e8865b1bf93d3b1",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Galaxian_MiSTer/master/releases/War%20of%20the%20Bugs.mra",
           "type": "MRA",
           "extra": {
-            "name": "War of the Bugs or Monsterous Manouvers in a Mushroom Maze",
+            "name": "War of the Bugs",
             "rbf": "galaxian",
             "zips": [
               "warofbug.zip"
@@ -3214,12 +3201,12 @@
           "type": "RBF"
         },
         {
-          "name": "Galaga 3 (GP3 rev. D).mra",
-          "sha": "eeb13163e3a93a14877ad4498a5d2f4918e56832",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Gaplus_MiSTer/master/releases/Galaga%203%20(GP3%20rev.%20D).mra",
+          "name": "Galaga 3 (GP3 Rev D).mra",
+          "sha": "d1451748c3428df5b0b69ff3eb40cc01b02b9aaa",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Gaplus_MiSTer/master/releases/Galaga%203%20(GP3%20Rev%20D).mra",
           "type": "MRA",
           "extra": {
-            "name": "Galaga 3 (GP3 rev. D)",
+            "name": "Galaga 3",
             "rbf": "gaplus",
             "zips": [
               "gaplus.zip|galaga3.zip"
@@ -3227,12 +3214,12 @@
           }
         },
         {
-          "name": "Gaplus (GP2 rev. B).mra",
-          "sha": "26a357eb81c0b8e1c5c2162e00309df990b75b90",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Gaplus_MiSTer/master/releases/Gaplus%20(GP2%20rev.%20B).mra",
+          "name": "Gaplus (GP2 Rev B).mra",
+          "sha": "d0e6e6ef863e0e4af4f7fc5808445fe175934db3",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Gaplus_MiSTer/master/releases/Gaplus%20(GP2%20Rev%20B).mra",
           "type": "MRA",
           "extra": {
-            "name": "Gaplus (GP2 rev. B)",
+            "name": "Gaplus",
             "rbf": "gaplus",
             "zips": [
               "gaplus.zip"
@@ -3380,22 +3367,9 @@
           "type": "RBF"
         },
         {
-          "name": "Battle Road.mra",
-          "sha": "1b2fec6ff6963768c1b7f96657cb049c763617d4",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM62_MiSTer/master/releases/Battle%20Road.mra",
-          "type": "MRA",
-          "extra": {
-            "name": "The Battle-Road",
-            "rbf": "iremm62",
-            "zips": [
-              "battroad.zip"
-            ]
-          }
-        },
-        {
-          "name": "Horizon.mra",
-          "sha": "22c4ee65443ad10700379a7b02f4437f107f59c4",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM62_MiSTer/master/releases/Horizon.mra",
+          "name": "Horizon (Irem).mra",
+          "sha": "676228c6186d0d8bc76e4e3a32414d8b8d32c9ba",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM62_MiSTer/master/releases/Horizon%20(Irem).mra",
           "type": "MRA",
           "extra": {
             "name": "Horizon (Irem)",
@@ -3406,12 +3380,12 @@
           }
         },
         {
-          "name": "Kid Niki - Radical Ninja.mra",
-          "sha": "9d10dfcdf2913ca70aa3e8f6cd42050c66039d86",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM62_MiSTer/master/releases/Kid%20Niki%20-%20Radical%20Ninja.mra",
+          "name": "Kid Niki - Radical Ninja (W).mra",
+          "sha": "52abfe79709ecd1c90288e2a7d3441a0ced1d2a7",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM62_MiSTer/master/releases/Kid%20Niki%20-%20Radical%20Ninja%20(W).mra",
           "type": "MRA",
           "extra": {
-            "name": "Kid Niki - Radical Ninja (World)",
+            "name": "Kid Niki- Radical Ninja",
             "rbf": "iremm62",
             "zips": [
               "kidniki.zip"
@@ -3419,12 +3393,12 @@
           }
         },
         {
-          "name": "Kung-Fu Master.mra",
-          "sha": "4e71d01592a58e4feb5e8e7f3a02659bdf3496fc",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM62_MiSTer/master/releases/Kung-Fu%20Master.mra",
+          "name": "Kung-Fu Master (W).mra",
+          "sha": "a751d40e4a130cee76ff8639d097e7ea07bbb339",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM62_MiSTer/master/releases/Kung-Fu%20Master%20(W).mra",
           "type": "MRA",
           "extra": {
-            "name": "Kung-Fu Master (World)",
+            "name": "Kung-Fu Master",
             "rbf": "iremm62",
             "zips": [
               "kungfum.zip"
@@ -3432,12 +3406,25 @@
           }
         },
         {
+          "name": "Lode Runner (Set 1).mra",
+          "sha": "6b61095b4897decf099bc3a0e1fa0bcae2da184b",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM62_MiSTer/master/releases/Lode%20Runner%20(Set%201).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Lode Runner",
+            "rbf": "iremm62",
+            "zips": [
+              "ldrun.zip"
+            ]
+          }
+        },
+        {
           "name": "Lode Runner II - The Bungeling Strikes Back.mra",
-          "sha": "61bbcea20399f7386c6de5e9a12e595357a85776",
+          "sha": "7bca29dfc86b908904ed0e8beca158683060641d",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM62_MiSTer/master/releases/Lode%20Runner%20II%20-%20The%20Bungeling%20Strikes%20Back.mra",
           "type": "MRA",
           "extra": {
-            "name": "Lode Runner II - The Bungeling Strikes Back",
+            "name": "Lode Runner II- The Bungeling Strikes Back",
             "rbf": "iremm62",
             "zips": [
               "ldrun2.zip"
@@ -3446,11 +3433,11 @@
         },
         {
           "name": "Lode Runner III - The Golden Labyrinth.mra",
-          "sha": "f126bfc2314e54dbe3218623674501f56d975819",
+          "sha": "61d7a6bcaa4419f96d972efed6f46c626bd3f6bc",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM62_MiSTer/master/releases/Lode%20Runner%20III%20-%20The%20Golden%20Labyrinth.mra",
           "type": "MRA",
           "extra": {
-            "name": "Lode Runner III - The Golden Labyrinth",
+            "name": "Lode Runner III- The Golden Labyrinth",
             "rbf": "iremm62",
             "zips": [
               "ldrun3.zip"
@@ -3458,28 +3445,15 @@
           }
         },
         {
-          "name": "Lode Runner IV - Teikoku Karano Dasshutsu.mra",
-          "sha": "321a37b98401c9c39b37e59d5f0d3ea028a16552",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM62_MiSTer/master/releases/Lode%20Runner%20IV%20-%20Teikoku%20Karano%20Dasshutsu.mra",
+          "name": "Lode Runner IV - Teikoku Karano Dasshutsu (JP).mra",
+          "sha": "35be1402e1ea48666e84b13e6c1f7ae982349694",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM62_MiSTer/master/releases/Lode%20Runner%20IV%20-%20Teikoku%20Karano%20Dasshutsu%20(JP).mra",
           "type": "MRA",
           "extra": {
-            "name": "Lode Runner IV - Teikoku Karano Dasshutsu (Japan)",
+            "name": "Lode Runner IV- Teikoku Karano Dasshutsu",
             "rbf": "iremm62",
             "zips": [
               "ldrun4.zip"
-            ]
-          }
-        },
-        {
-          "name": "Lode Runner.mra",
-          "sha": "97e076d85a5e77337b7c75fea820006fc6343578",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM62_MiSTer/master/releases/Lode%20Runner.mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Lode Runner (set 1)",
-            "rbf": "iremm62",
-            "zips": [
-              "ldrun.zip"
             ]
           }
         },
@@ -3498,7 +3472,7 @@
         },
         {
           "name": "Spelunker.mra",
-          "sha": "1357bed285d3b77ca7076adab75f0dd725ab80bc",
+          "sha": "26d5dbd6aba2b671a04b343828bd4349b56b6c2e",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM62_MiSTer/master/releases/Spelunker.mra",
           "type": "MRA",
           "extra": {
@@ -3510,12 +3484,25 @@
           }
         },
         {
-          "name": "Youjyuden.mra",
-          "sha": "acd668163b5088de564e782fa740d5ed7d6e2620",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM62_MiSTer/master/releases/Youjyuden.mra",
+          "name": "The Battle-Road.mra",
+          "sha": "04539a4ebb4d3da1632f7cb85e4459e5ef74aa50",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM62_MiSTer/master/releases/The%20Battle-Road.mra",
           "type": "MRA",
           "extra": {
-            "name": "Youjyuden (Japan)",
+            "name": "The Battle-Road",
+            "rbf": "iremm62",
+            "zips": [
+              "battroad.zip"
+            ]
+          }
+        },
+        {
+          "name": "Youjyuden (JP).mra",
+          "sha": "3ca4fda288bb25c93ba87fbd278f678366d73620",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM62_MiSTer/master/releases/Youjyuden%20(JP).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Youjyuden",
             "rbf": "iremm62",
             "zips": [
               "youjyudn.zip"
@@ -3576,35 +3563,33 @@
         },
         {
           "name": "Cosmic Avenger.mra",
-          "sha": "b6da3de3eda9e04045eb92f4e43b82677d331611",
+          "sha": "f26be9f9e8bed9871d7ad1a32afe5eef2cdfc70c",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-LadyBug_MiSTer/master/releases/Cosmic%20Avenger.mra",
           "type": "MRA",
           "extra": {
             "name": "Cosmic Avenger",
-            "rbf": "ladybug",
+            "rbf": "cosmicavenger",
             "zips": [
-              "cavenger.zip",
               "cavenger.zip"
             ]
           }
         },
         {
-          "name": "Dorodon.mra",
-          "sha": "c8280f2ea9a187425e28e2ee72dd66d4bbb42db9",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-LadyBug_MiSTer/master/releases/Dorodon.mra",
+          "name": "Dorodon (Set 1).mra",
+          "sha": "8275e69101cffc63e1eb782ebf71ee040c523e78",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-LadyBug_MiSTer/master/releases/Dorodon%20(Set%201).mra",
           "type": "MRA",
           "extra": {
-            "name": "Dorodon (set 1)",
-            "rbf": "ladybug",
+            "name": "Dorodon",
+            "rbf": "dorodon",
             "zips": [
-              "dorodon.zip",
               "dorodon.zip"
             ]
           }
         },
         {
           "name": "Lady Bug.mra",
-          "sha": "91c7f64b4ff0d2aaae403988f3f9cb74c43f49f8",
+          "sha": "ae6b3f079b07f50d72294a71a4c03d0ce5cce6e2",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-LadyBug_MiSTer/master/releases/Lady%20Bug.mra",
           "type": "MRA",
           "extra": {
@@ -3618,14 +3603,13 @@
         },
         {
           "name": "Snap Jack.mra",
-          "sha": "a5541c85dd5c9620a27f0aa49aecd9852707c78a",
+          "sha": "a610d00a65f1ee7eb11814c2228acaa9801e857d",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-LadyBug_MiSTer/master/releases/Snap%20Jack.mra",
           "type": "MRA",
           "extra": {
             "name": "Snap Jack",
-            "rbf": "ladybug",
+            "rbf": "snapjack",
             "zips": [
-              "snapjack.zip",
               "snapjack.zip"
             ]
           }
@@ -3706,13 +3690,13 @@
           "type": "RBF"
         },
         {
-          "name": "Mario Bros.mra",
-          "sha": "fa1222ac4df702fb984066ab5e87a73e9f2fb4b3",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MarioBros_MiSTer/master/releases/Mario%20Bros.mra",
+          "name": "Mario Bros. (US, Rev G).mra",
+          "sha": "4a8f41098fed3c24e5be3d5ab2e784087d82d898",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MarioBros_MiSTer/master/releases/Mario%20Bros.%20(US%2C%20Rev%20G).mra",
           "type": "MRA",
           "extra": {
-            "name": "Mario Bros. (US, Revision G)",
-            "rbf": "MarioBros",
+            "name": "Mario Bros.",
+            "rbf": "mariobros",
             "zips": [
               "mario.zip"
             ]
@@ -3784,12 +3768,12 @@
         },
         {
           "name": "Kick-Man.mra",
-          "sha": "016a32fa6532ffbf135fccd43e7d4df65151cd9a",
+          "sha": "09389e40e84710b8c5eedd5503778ac13b12b603",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MCR1_MiSTer/master/releases/Kick-Man.mra",
           "type": "MRA",
           "extra": {
             "name": "Kick-Man",
-            "rbf": "MCR1",
+            "rbf": "mcr1",
             "zips": [
               "kick.zip|kickman.zip"
             ]
@@ -3797,12 +3781,12 @@
         },
         {
           "name": "Kick.mra",
-          "sha": "eb7ad037bffb4148a1f4a6d3569ad92c9ebffa86",
+          "sha": "5e9e3260859e76e2dd00278e81781a6265847e49",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MCR1_MiSTer/master/releases/Kick.mra",
           "type": "MRA",
           "extra": {
             "name": "Kick",
-            "rbf": "MCR1",
+            "rbf": "mcr1",
             "zips": [
               "kick.zip"
             ]
@@ -3810,12 +3794,12 @@
         },
         {
           "name": "Solar Fox.mra",
-          "sha": "2bb0fa4bad9d9c1d09207d8532e2fdcbf45fba36",
+          "sha": "0adf1fe4dde2caf76a136ef13ed130b288ba09f3",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MCR1_MiSTer/master/releases/Solar%20Fox.mra",
           "type": "MRA",
           "extra": {
             "name": "Solar Fox",
-            "rbf": "MCR1",
+            "rbf": "mcr1",
             "zips": [
               "solarfox.zip"
             ]
@@ -3911,38 +3895,38 @@
         },
         {
           "name": "Domino Man.mra",
-          "sha": "6ac35991ba347e460740cc31bc0cac6a62e81771",
+          "sha": "425022a45b4c47af937513b67a226dec199b7380",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MCR2_MiSTer/master/releases/Domino%20Man.mra",
           "type": "MRA",
           "extra": {
             "name": "Domino Man",
-            "rbf": "MCR2",
+            "rbf": "mcr2",
             "zips": [
               "domino.zip"
             ]
           }
         },
         {
-          "name": "Kozmik Kroozr.mra",
-          "sha": "420cd925053db1315c17029b33d8cef55b20202b",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MCR2_MiSTer/master/releases/Kozmik%20Kroozr.mra",
+          "name": "Kozmik Krooz'r.mra",
+          "sha": "19dcb4a0a43de93dbfe0673433bfc2acf213121d",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MCR2_MiSTer/master/releases/Kozmik%20Krooz'r.mra",
           "type": "MRA",
           "extra": {
             "name": "Kozmik Krooz'r",
-            "rbf": "MCR2",
+            "rbf": "mcr2",
             "zips": [
               "kroozr.zip"
             ]
           }
         },
         {
-          "name": "Satans Hollow.mra",
-          "sha": "16075b990498223f4ff3253d138c038442fe8360",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MCR2_MiSTer/master/releases/Satans%20Hollow.mra",
+          "name": "Satan's Hollow (Set 1).mra",
+          "sha": "1cf86b6e16eb5320b3d5dd04992aee4ffeed77b4",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MCR2_MiSTer/master/releases/Satan's%20Hollow%20(Set%201).mra",
           "type": "MRA",
           "extra": {
             "name": "Satan's Hollow",
-            "rbf": "MCR2",
+            "rbf": "mcr2",
             "zips": [
               "shollow.zip"
             ]
@@ -3950,25 +3934,25 @@
         },
         {
           "name": "Tron.mra",
-          "sha": "195d27cabc2bfe3a240742ac707795098f4df2dc",
+          "sha": "1d86164bfee3c51e9609e5606b9d4c0f273c81da",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MCR2_MiSTer/master/releases/Tron.mra",
           "type": "MRA",
           "extra": {
             "name": "Tron",
-            "rbf": "MCR2",
+            "rbf": "mcr2",
             "zips": [
               "tron.zip"
             ]
           }
         },
         {
-          "name": "Two Tigers.mra",
-          "sha": "41198165ca360e0b0f1c06f01280809c9144d565",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MCR2_MiSTer/master/releases/Two%20Tigers.mra",
+          "name": "Two Tigers (Tron Conversion).mra",
+          "sha": "e0fa4036d8bd0c9f5d032fbe445e932c0365682b",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MCR2_MiSTer/master/releases/Two%20Tigers%20(Tron%20Conversion).mra",
           "type": "MRA",
           "extra": {
-            "name": "Two Tigers (Tron conversion)",
-            "rbf": "MCR2",
+            "name": "Two Tigers",
+            "rbf": "mcr2",
             "zips": [
               "twotiger.zip",
               "twotigerc.zip"
@@ -3977,12 +3961,12 @@
         },
         {
           "name": "Wacko.mra",
-          "sha": "6969f831fc312b1cc6caf417966069b91a4c81ad",
+          "sha": "4964309f8d9e843b3d7824ee6ecd5b13369b1058",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MCR2_MiSTer/master/releases/Wacko.mra",
           "type": "MRA",
           "extra": {
             "name": "Wacko",
-            "rbf": "MCR2",
+            "rbf": "mcr2",
             "zips": [
               "wacko.zip"
             ]
@@ -4083,26 +4067,26 @@
           "type": "RBF"
         },
         {
-          "name": "Demolition Derby.mra",
-          "sha": "a15afc8ab065413f0f3e846d73f21a5ad099dd0c",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MCR3Mono_MiSTer/master/releases/Demolition%20Derby.mra",
+          "name": "Demolition Derby (MCR-3 Mono Board Version).mra",
+          "sha": "9169c6481925b55dc55af15119cb968d65c16b9b",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MCR3Mono_MiSTer/master/releases/Demolition%20Derby%20(MCR-3%20Mono%20Board%20Version).mra",
           "type": "MRA",
           "extra": {
             "name": "Demolition Derby",
-            "rbf": "MCR3Mono",
+            "rbf": "mcr3mono",
             "zips": [
               "demoderb.zip|demoderm.zip"
             ]
           }
         },
         {
-          "name": "Max RPM.mra",
-          "sha": "a12138332000cea4d06252e3b263f7dcc87460e2",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MCR3Mono_MiSTer/master/releases/Max%20RPM.mra",
+          "name": "Max RPM (v2).mra",
+          "sha": "abe3ecd55d766b4cf23b0d4575421ad972f98aa5",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MCR3Mono_MiSTer/master/releases/Max%20RPM%20(v2).mra",
           "type": "MRA",
           "extra": {
-            "name": "Max RPM (ver 2)",
-            "rbf": "MCR3Mono",
+            "name": "Max RPM",
+            "rbf": "mcr3mono",
             "zips": [
               "maxrpm.zip"
             ]
@@ -4110,25 +4094,25 @@
         },
         {
           "name": "Power Drive.mra",
-          "sha": "054fddc136897e65997bdcf84e2d3017871da884",
+          "sha": "3bc59f1378ec406efd6323e5b245c894cbd62793",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MCR3Mono_MiSTer/master/releases/Power%20Drive.mra",
           "type": "MRA",
           "extra": {
             "name": "Power Drive",
-            "rbf": "MCR3Mono",
+            "rbf": "mcr3mono",
             "zips": [
               "powerdrv.zip"
             ]
           }
         },
         {
-          "name": "Rampage.mra",
-          "sha": "472031405f0a53e4f0c5885f6b3a0cf41dfd8bf3",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MCR3Mono_MiSTer/master/releases/Rampage.mra",
+          "name": "Rampage (Rev 3, 860827).mra",
+          "sha": "7db664021b5fbb8d4c674c36964061d7f364ee4e",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MCR3Mono_MiSTer/master/releases/Rampage%20(Rev%203%2C%20860827).mra",
           "type": "MRA",
           "extra": {
-            "name": "Rampage (Rev 3, 8/27/86)",
-            "rbf": "MCR3Mono",
+            "name": "Rampage",
+            "rbf": "mcr3mono",
             "zips": [
               "rampage.zip"
             ]
@@ -4136,12 +4120,12 @@
         },
         {
           "name": "Sarge.mra",
-          "sha": "f6708bc1ffa3fb01ff9cbd1ccbf79185bc4fde07",
+          "sha": "b802d29eeffb219793bb6da2acc72479f6f93af9",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MCR3Mono_MiSTer/master/releases/Sarge.mra",
           "type": "MRA",
           "extra": {
             "name": "Sarge",
-            "rbf": "MCR3Mono",
+            "rbf": "mcr3mono",
             "zips": [
               "sarge.zip"
             ]
@@ -4149,12 +4133,12 @@
         },
         {
           "name": "Star Guards.mra",
-          "sha": "0d282ca664eb7c600389af1206b3aa3570e1c585",
+          "sha": "36244a265bc7aade52a0a3fb3da09771c914b060",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MCR3Mono_MiSTer/master/releases/Star%20Guards.mra",
           "type": "MRA",
           "extra": {
             "name": "Star Guards",
-            "rbf": "MCR3Mono",
+            "rbf": "mcr3mono",
             "zips": [
               "stargrds.zip"
             ]
@@ -4220,7 +4204,7 @@
         },
         {
           "name": "Crater Raider.mra",
-          "sha": "f150a4ebfbd1fa48c43318e8659156e1505ed5c0",
+          "sha": "fa04750d711d75ab68f956e52565f6708208e191",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MCR3Scroll_MiSTer/master/releases/Crater%20Raider.mra",
           "type": "MRA",
           "extra": {
@@ -4233,7 +4217,7 @@
         },
         {
           "name": "Spy Hunter.mra",
-          "sha": "b7135cbd4cb77a474c21415911a82b140b8f26d9",
+          "sha": "a1e03f46b9f681821217501bb222e9ee04c1085f",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MCR3Scroll_MiSTer/master/releases/Spy%20Hunter.mra",
           "type": "MRA",
           "extra": {
@@ -4245,12 +4229,12 @@
           }
         },
         {
-          "name": "Turbo Tag.mra",
-          "sha": "9594fbe2b190cb75897724e3ecd85f600cf3b70b",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MCR3Scroll_MiSTer/master/releases/Turbo%20Tag.mra",
+          "name": "Turbo Tag (Prototype).mra",
+          "sha": "562fe075fb45a6105427c87945513744e3b2f92e",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MCR3Scroll_MiSTer/master/releases/Turbo%20Tag%20(Prototype).mra",
           "type": "MRA",
           "extra": {
-            "name": "Turbo Tag (prototype)",
+            "name": "Turbo Tag",
             "rbf": "mcr3scroll",
             "zips": [
               "turbotag.zip"
@@ -4341,11 +4325,11 @@
         },
         {
           "name": "Discs of Tron.mra",
-          "sha": "98013678379c1b9b1c1c6e88c9bbcfae3ba079f4",
+          "sha": "f5e5eabda2ae39a841c2d8cc06fa117d3bec5a06",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MCR3_MiSTer/master/releases/Discs%20of%20Tron.mra",
           "type": "MRA",
           "extra": {
-            "name": "Discs of Tron (Upright)",
+            "name": "Discs of Tron",
             "rbf": "mcr3",
             "zips": [
               "dotron.zip"
@@ -4354,12 +4338,12 @@
         },
         {
           "name": "Journey.mra",
-          "sha": "4b0849acbf4d2d04df43ff094b571071cd8714b6",
+          "sha": "39bb64e35fef33d12638e480fe654702223c96f3",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MCR3_MiSTer/master/releases/Journey.mra",
           "type": "MRA",
           "extra": {
             "name": "Journey",
-            "rbf": "MCR3",
+            "rbf": "mcr3",
             "zips": [
               "journey.zip",
               "/sound/journey.zip"
@@ -4367,12 +4351,12 @@
           }
         },
         {
-          "name": "Tapper.mra",
-          "sha": "3a143586837ad16980438292b3de59e3756ab7bd",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MCR3_MiSTer/master/releases/Tapper.mra",
+          "name": "Tapper (Budweiser, 840127).mra",
+          "sha": "851007484603bdcfe079875d2bde36160d9b803e",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MCR3_MiSTer/master/releases/Tapper%20(Budweiser%2C%20840127).mra",
           "type": "MRA",
           "extra": {
-            "name": "Tapper (Budweiser, 1-27-84)",
+            "name": "Tapper",
             "rbf": "mcr3",
             "zips": [
               "tapper.zip"
@@ -4381,7 +4365,7 @@
         },
         {
           "name": "Timber.mra",
-          "sha": "4eb7293f6051bcd9c7e0eb2bc7e3a01740393a08",
+          "sha": "1bdb9f86702a24e2594dc7d23fe456d15ac2ac02",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MCR3_MiSTer/master/releases/Timber.mra",
           "type": "MRA",
           "extra": {
@@ -4452,7 +4436,7 @@
         },
         {
           "name": "Moon Patrol.mra",
-          "sha": "8e4f5da4de7f955c2b710f307d0d0fb9631a1a04",
+          "sha": "45e7d83837542734b970245be085017a18802e67",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MoonPatrol_MiSTer/master/releases/Moon%20Patrol.mra",
           "type": "MRA",
           "extra": {
@@ -4599,9 +4583,9 @@
       "url": "https://github.com/MiSTer-devel/Arcade-Pacman_MiSTer",
       "releases": [
         {
-          "name": "Alibaba 40 Thieves.mra",
-          "sha": "37efa30eacda1c45e50f6fb248795281902b378f",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pacman_MiSTer/master/releases/Alibaba%2040%20Thieves.mra",
+          "name": "Ali Baba and 40 Thieves.mra",
+          "sha": "ad1febb664e40a5c16fc7ecc598c375a264b85c1",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pacman_MiSTer/master/releases/Ali%20Baba%20and%2040%20Thieves.mra",
           "type": "MRA",
           "extra": {
             "name": "Ali Baba and 40 Thieves",
@@ -4726,12 +4710,12 @@
           "type": "RBF"
         },
         {
-          "name": "Beastie Feastie.mra",
-          "sha": "2196f6bc19fd3294890d63218369389456765ea7",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pacman_MiSTer/master/releases/Beastie%20Feastie.mra",
+          "name": "Beastie Feastie (Pac-Man Conversion).mra",
+          "sha": "5d527e8bac5d5957d99da490460dfb5ce4171ce3",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pacman_MiSTer/master/releases/Beastie%20Feastie%20(Pac-Man%20Conversion).mra",
           "type": "MRA",
           "extra": {
-            "name": "Beastie Feastie (Pac-Man conversion)",
+            "name": "Beastie Feastie",
             "rbf": "pacman",
             "zips": [
               "suprglob.zip|beastfp.zip"
@@ -4740,7 +4724,7 @@
         },
         {
           "name": "Birdiy.mra",
-          "sha": "f2452a7cdc6c08065e80a9fe7c193c04a142430c",
+          "sha": "bd6c219395309796a18efc29fb851a30b0c1c6c2",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pacman_MiSTer/master/releases/Birdiy.mra",
           "type": "MRA",
           "extra": {
@@ -4752,12 +4736,12 @@
           }
         },
         {
-          "name": "Crush Roller.mra",
-          "sha": "26ae7e8a18e1549adbf3f051909c05a2e5b18764",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pacman_MiSTer/master/releases/Crush%20Roller.mra",
+          "name": "Crush Roller (Set 2).mra",
+          "sha": "8ac42dec86df69640f51beae55a7baf5d31bd6f5",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pacman_MiSTer/master/releases/Crush%20Roller%20(Set%202).mra",
           "type": "MRA",
           "extra": {
-            "name": "Crush Roller (set 2)",
+            "name": "Crush Roller",
             "rbf": "pacman",
             "zips": [
               "crush.zip|crush2.zip"
@@ -4766,7 +4750,7 @@
         },
         {
           "name": "Dream Shopper.mra",
-          "sha": "7a2203bc805a28288d8fac22362ba928bd144fd8",
+          "sha": "b5770a5016c957785198be37563a59f18647d82b",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pacman_MiSTer/master/releases/Dream%20Shopper.mra",
           "type": "MRA",
           "extra": {
@@ -4778,12 +4762,12 @@
           }
         },
         {
-          "name": "Eeekk!.mra",
-          "sha": "d46dc21320dfb0246e902c54d87f8da3b612acc7",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pacman_MiSTer/master/releases/Eeekk!.mra",
+          "name": "Eeek! (Pac-Man Conversion).mra",
+          "sha": "2d4262dc5827fdcdc63453deb10a48f3dee79828",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pacman_MiSTer/master/releases/Eeek!%20(Pac-Man%20Conversion).mra",
           "type": "MRA",
           "extra": {
-            "name": "Eeekk! (Pac-Man conversion)",
+            "name": "Eeek!",
             "rbf": "pacman",
             "zips": [
               "eeekk.zip|eeekkp.zip"
@@ -4792,7 +4776,7 @@
         },
         {
           "name": "Eggor.mra",
-          "sha": "a08304a34d503e9a249ccf2a2a20e7b36cd65646",
+          "sha": "5e9f5071ee092675a40cbb0027c079680bacb35a",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pacman_MiSTer/master/releases/Eggor.mra",
           "type": "MRA",
           "extra": {
@@ -4804,12 +4788,12 @@
           }
         },
         {
-          "name": "Eyes.mra",
-          "sha": "524c825ac241dbaf20597913aa534fa4be177c6e",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pacman_MiSTer/master/releases/Eyes.mra",
+          "name": "Eyes (US, Set 1).mra",
+          "sha": "d1108b48f95a3d183c4c312a744d5ecb8cc7c40e",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pacman_MiSTer/master/releases/Eyes%20(US%2C%20Set%201).mra",
           "type": "MRA",
           "extra": {
-            "name": "Eyes (US set 1)",
+            "name": "Eyes",
             "rbf": "pacman",
             "zips": [
               "eyes.zip"
@@ -4818,7 +4802,7 @@
         },
         {
           "name": "Gorkans.mra",
-          "sha": "7a615322170948164078fdb2d819b021f47b2400",
+          "sha": "318c71b087c1494c9d3c5ac7c24257a545339014",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pacman_MiSTer/master/releases/Gorkans.mra",
           "type": "MRA",
           "extra": {
@@ -4831,7 +4815,7 @@
         },
         {
           "name": "Jump Shot.mra",
-          "sha": "d1ce1f543f8ff4b06b4de641b361dcd8c11978a5",
+          "sha": "98aa8b86edea67a4175b6ac8d12740c822190aea",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pacman_MiSTer/master/releases/Jump%20Shot.mra",
           "type": "MRA",
           "extra": {
@@ -4844,7 +4828,7 @@
         },
         {
           "name": "Lizard Wizard.mra",
-          "sha": "638e259278a965a5b219cd49840e16838cbe9d1d",
+          "sha": "4c5f831bd0a24675e1fb35c513ba9853d33fbebe",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pacman_MiSTer/master/releases/Lizard%20Wizard.mra",
           "type": "MRA",
           "extra": {
@@ -4857,7 +4841,7 @@
         },
         {
           "name": "Mr. TNT.mra",
-          "sha": "413aa08fa5687d6741b819f783e85487f2a25894",
+          "sha": "0c93e73708508673149e03ef267b247cfcc4cee8",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pacman_MiSTer/master/releases/Mr.%20TNT.mra",
           "type": "MRA",
           "extra": {
@@ -4869,9 +4853,9 @@
           }
         },
         {
-          "name": "Ms. Pacman.mra",
-          "sha": "cbc54118a11304361e82269bf7ea1b1218c90904",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pacman_MiSTer/master/releases/Ms.%20Pacman.mra",
+          "name": "Ms. Pac-Man.mra",
+          "sha": "6c80f87247328cfb040a8855b874b2498aee3d12",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pacman_MiSTer/master/releases/Ms.%20Pac-Man.mra",
           "type": "MRA",
           "extra": {
             "name": "Ms. Pac-Man",
@@ -4883,11 +4867,11 @@
         },
         {
           "name": "Pac-Man (Midway).mra",
-          "sha": "8f2d49a171b1b3663e816554ecf8dd07c6adfccf",
+          "sha": "f06d50ba1cf81254394b9cab17200a44a164f623",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pacman_MiSTer/master/releases/Pac-Man%20(Midway).mra",
           "type": "MRA",
           "extra": {
-            "name": "Pac-Man (Midway)",
+            "name": "Pac-Man",
             "rbf": "pacman",
             "zips": [
               "puckman.zip|pacman.zip"
@@ -4895,12 +4879,12 @@
           }
         },
         {
-          "name": "Pacman Club.mra",
-          "sha": "cfe6ef4bcd444b580859d3b6194c357a4f3f66d5",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pacman_MiSTer/master/releases/Pacman%20Club.mra",
+          "name": "Pac-Man Club- Club Lambada (AR).mra",
+          "sha": "b33a2ca86ccba5a8d66a70763e0499c3be33e5d3",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pacman_MiSTer/master/releases/Pac-Man%20Club-%20Club%20Lambada%20(AR).mra",
           "type": "MRA",
           "extra": {
-            "name": "Pacman Club - Club Lambada (Argentina)",
+            "name": "Pac-Man Club- Club Lambada",
             "rbf": "pacman",
             "zips": [
               "clubpacm.zip"
@@ -4908,32 +4892,32 @@
           }
         },
         {
-          "name": "Pacman Plus.mra",
-          "sha": "145fdecae11d7f42bcddc95b6185f55de11087b8",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pacman_MiSTer/master/releases/Pacman%20Plus.mra",
+          "name": "Pac-Man Plus.mra",
+          "sha": "27e67f8262f8ffae04d1fbe1cf7f0b6dc81c8940",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pacman_MiSTer/master/releases/Pac-Man%20Plus.mra",
           "type": "MRA",
           "extra": {
             "name": "Pac-Man Plus",
             "rbf": "pacman",
             "zips": [
-              "pacplus.zip"
+              "/hbmame/puckman.zip"
             ]
           }
         },
         {
-          "name": "Pacmanic Miner.mra",
-          "sha": "5ec0035d185dbec671cbe4288ba0fe1f160ca43f",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pacman_MiSTer/master/releases/Pacmanic%20Miner.mra",
+          "name": "Pac-Manic Miner.mra",
+          "sha": "ab786a42e9b24899a6a00b0dfbca21d6d81908e2",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pacman_MiSTer/master/releases/Pac-Manic%20Miner.mra",
           "type": "MRA",
           "extra": {
-            "name": "Pacmanic Miner",
+            "name": "Pac-Manic Miner",
             "rbf": "pacman",
             "zips": []
           }
         },
         {
           "name": "Ponpoko.mra",
-          "sha": "d996e26fbb6ab46c20a3ecdf666694e7e368ac5a",
+          "sha": "fffae3de943413a85f255dcdee288ec97cd3445b",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pacman_MiSTer/master/releases/Ponpoko.mra",
           "type": "MRA",
           "extra": {
@@ -4945,12 +4929,12 @@
           }
         },
         {
-          "name": "Puck Man (Japan set 1).mra",
-          "sha": "de9ebc9fb91886b31dbdcb5390e84a56d35d355b",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pacman_MiSTer/master/releases/Puck%20Man%20(Japan%20set%201).mra",
+          "name": "Puck Man (JP, Set 1).mra",
+          "sha": "2486328afa8c0400ab1d2dfa52c3ec6092173ff3",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pacman_MiSTer/master/releases/Puck%20Man%20(JP%2C%20Set%201).mra",
           "type": "MRA",
           "extra": {
-            "name": "Puck Man (Japan set 1)",
+            "name": "Puck Man",
             "rbf": "pacman",
             "zips": [
               "puckman.zip"
@@ -4958,12 +4942,12 @@
           }
         },
         {
-          "name": "Super Glob.mra",
-          "sha": "5e745b31927cb2002c2e54faf1e913d4304e9833",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pacman_MiSTer/master/releases/Super%20Glob.mra",
+          "name": "Super Glob (Pac-Man, German) [bl].mra",
+          "sha": "58582e7794168df2fde51b3ddb78432e058665bc",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pacman_MiSTer/master/releases/Super%20Glob%20(Pac-Man%2C%20German)%20%5Bbl%5D.mra",
           "type": "MRA",
           "extra": {
-            "name": "Super Glob (Pac-Man hardware) (German bootleg)",
+            "name": "Super Glob",
             "rbf": "pacman",
             "zips": [
               "suprglob.zip|sprglbpg.zip"
@@ -4971,12 +4955,12 @@
           }
         },
         {
-          "name": "The Glob.mra",
-          "sha": "cbf379b96cf6478459bb26c994baa195186e5425",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pacman_MiSTer/master/releases/The%20Glob.mra",
+          "name": "The Glob (Pac-Man Hardware).mra",
+          "sha": "9ccb363f9be38a22d5a43d0f321b00725d3795e7",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pacman_MiSTer/master/releases/The%20Glob%20(Pac-Man%20Hardware).mra",
           "type": "MRA",
           "extra": {
-            "name": "The Glob (Pac-Man hardware)",
+            "name": "The Glob",
             "rbf": "pacman",
             "zips": [
               "suprglob.zip|theglobp.zip"
@@ -4985,7 +4969,7 @@
         },
         {
           "name": "Van-Van Car.mra",
-          "sha": "912f4c25feaa99a9864fa4f7db99098e459666c9",
+          "sha": "ef690dc328a82721e3530236e532ec8bbfcb1a26",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pacman_MiSTer/master/releases/Van-Van%20Car.mra",
           "type": "MRA",
           "extra": {
@@ -4997,12 +4981,12 @@
           }
         },
         {
-          "name": "Woodpecker.mra",
-          "sha": "1aa91da25733e4a0b1d9cdaabbfd501d618b6d8a",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pacman_MiSTer/master/releases/Woodpecker.mra",
+          "name": "Woodpecker  (Set 1).mra",
+          "sha": "516bd631113260981cbe934b10caeb1c4001879a",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pacman_MiSTer/master/releases/Woodpecker%20%20(Set%201).mra",
           "type": "MRA",
           "extra": {
-            "name": "Woodpecker (set 1)",
+            "name": "Woodpecker ",
             "rbf": "pacman",
             "zips": [
               "woodpeck.zip"
@@ -5062,12 +5046,12 @@
           "type": "RBF"
         },
         {
-          "name": "Pengo.mra",
-          "sha": "08e7b3c80a7b82a14b9d8e52b159c09377026308",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pengo_MiSTer/master/releases/Pengo.mra",
+          "name": "Pengo (Set 1, Rev C).mra",
+          "sha": "072c71899619fb00d526f7b45cb670a546264486",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pengo_MiSTer/master/releases/Pengo%20(Set%201%2C%20Rev%20C).mra",
           "type": "MRA",
           "extra": {
-            "name": "Pengo (set 1 rev c)",
+            "name": "Pengo",
             "rbf": "pengo",
             "zips": [
               "pengo.zip"
@@ -5127,12 +5111,12 @@
           "type": "RBF"
         },
         {
-          "name": "Phoenix.mra",
-          "sha": "fc58a699b3b80ad9b1c6cb539ef3011e7f795a78",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Phoenix_MiSTer/master/releases/Phoenix.mra",
+          "name": "Phoenix (Amstar, Set 1).mra",
+          "sha": "39f58a01a2fbe5f3ddd55560afb22df251f21762",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Phoenix_MiSTer/master/releases/Phoenix%20(Amstar%2C%20Set%201).mra",
           "type": "MRA",
           "extra": {
-            "name": "Phoenix (Amstar, set 1)",
+            "name": "Phoenix",
             "rbf": "phoenix",
             "zips": [
               "phoenix.zip"
@@ -5247,39 +5231,39 @@
           "type": "OTHER"
         },
         {
-          "name": "PolyPlay 2.mra",
-          "sha": "3cf1fd97084ce5a70d10ca306161ba5c58469ac2",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-PolyPlay_MiSTer/main/releases/PolyPlay%202.mra",
+          "name": "Poly Play 2.mra",
+          "sha": "183c8c0ac5ad3c612b30e4205d5b6321df6a99fe",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-PolyPlay_MiSTer/main/releases/Poly%20Play%202.mra",
           "type": "MRA",
           "extra": {
             "name": "Poly Play 2",
-            "rbf": "PolyPlay",
+            "rbf": "polyplay",
             "zips": [
               "polyplay2.zip"
             ]
           }
         },
         {
-          "name": "PolyPlay 2c.mra",
-          "sha": "15c1c9f6232320bab5722fa7ea9a6b71be1fff7b",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-PolyPlay_MiSTer/main/releases/PolyPlay%202c.mra",
+          "name": "Poly Play 2c.mra",
+          "sha": "f4650f37516a7122ec5e4f4ed495ca1df7213ce7",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-PolyPlay_MiSTer/main/releases/Poly%20Play%202c.mra",
           "type": "MRA",
           "extra": {
             "name": "Poly Play 2c",
-            "rbf": "PolyPlay",
+            "rbf": "polyplay",
             "zips": [
               "polyplay2.zip"
             ]
           }
         },
         {
-          "name": "PolyPlay.mra",
-          "sha": "06c9553bdebaeafbdf06d6b0aec2859f6f9db1d1",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-PolyPlay_MiSTer/main/releases/PolyPlay.mra",
+          "name": "Poly Play.mra",
+          "sha": "967a991733cc75812391b00cf3f99ccd38ff7d1b",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-PolyPlay_MiSTer/main/releases/Poly%20Play.mra",
           "type": "MRA",
           "extra": {
             "name": "Poly Play",
-            "rbf": "PolyPlay",
+            "rbf": "polyplay",
             "zips": [
               "polyplay.zip"
             ]
@@ -5356,13 +5340,13 @@
           "type": "RBF"
         },
         {
-          "name": "Pong.mra",
-          "sha": "313a0122f5b63796e7118da6c025ee1d462b4b43",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pong_MiSTer/master/releases/Pong.mra",
+          "name": "Pong (Rev E).mra",
+          "sha": "f67ed69c449eaeb16046fdaeebeeb09930d76145",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pong_MiSTer/master/releases/Pong%20(Rev%20E).mra",
           "type": "MRA",
           "extra": {
-            "name": "Pong (Rev E) external [TTL]",
-            "rbf": "Pong",
+            "name": "Pong",
+            "rbf": "pong",
             "zips": []
           }
         }
@@ -5420,7 +5404,7 @@
         },
         {
           "name": "Pooyan.mra",
-          "sha": "ffbb00aa0ec442970ae4d3f7ab4374a04a2085cc",
+          "sha": "554edbf1f55608c53922c3c8ea0f88b64d45e750",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pooyan_MiSTer/master/releases/Pooyan.mra",
           "type": "MRA",
           "extra": {
@@ -5586,11 +5570,11 @@
         },
         {
           "name": "New Rally-X.mra",
-          "sha": "ff525295bab3e69128b343406eeb20621a1eb018",
+          "sha": "51d41bac17e0e9d8ecf8d695c4ab3611b8bd0115",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-RallyX_MiSTer/master/releases/New%20Rally-X.mra",
           "type": "MRA",
           "extra": {
-            "name": "New Rally X",
+            "name": "New Rally-X",
             "rbf": "rallyx",
             "zips": [
               "nrallyx.zip"
@@ -5598,12 +5582,12 @@
           }
         },
         {
-          "name": "Rally-X.mra",
-          "sha": "9680c4e330b2435cdc2ced0786edb9e0550e6bd6",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-RallyX_MiSTer/master/releases/Rally-X.mra",
+          "name": "Rally-X (32k Ver).mra",
+          "sha": "5c58af3ccb980d95993cf2c1068a2c08846aa66f",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-RallyX_MiSTer/master/releases/Rally-X%20(32k%20Ver).mra",
           "type": "MRA",
           "extra": {
-            "name": "Rally X (32k Ver.)",
+            "name": "Rally-X",
             "rbf": "rallyx",
             "zips": [
               "rallyx.zip"
@@ -5879,7 +5863,7 @@
         },
         {
           "name": "Green Beret.mra",
-          "sha": "59b3132261fe90f1b78889f94016957b06ca523a",
+          "sha": "f60bbf28f479e2c6589e99d961b8ef3362e742e8",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-RushnAttack_MiSTer/master/releases/Green%20Beret.mra",
           "type": "MRA",
           "extra": {
@@ -5892,11 +5876,11 @@
         },
         {
           "name": "Rush'n Attack (US).mra",
-          "sha": "4ac307291b51602be857f8788343e45619f37656",
+          "sha": "20200e8c81298a7ea946edc125c53e3d0755edd8",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-RushnAttack_MiSTer/master/releases/Rush'n%20Attack%20(US).mra",
           "type": "MRA",
           "extra": {
-            "name": "Rush'n Attack (US)",
+            "name": "Rush'n Attack",
             "rbf": "rshnatk",
             "zips": [
               "gberet.zip|rushatck.zip"
@@ -6527,8 +6511,21 @@
         },
         {
           "name": "Star Jacker (alt).mra",
-          "sha": "3041c57dc3c75156437730f5b7b64c5e54cb3240",
+          "sha": "f6038742a948798759ce93edc5a353174f7d70ef",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SEGASYS1_MiSTer/main/releases/Star%20Jacker%20(alt).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Star Jacker",
+            "rbf": "segasys1",
+            "zips": [
+              "starjack.zip"
+            ]
+          }
+        },
+        {
+          "name": "Star Jacker.mra",
+          "sha": "58f41cfc9477edf9ed6d1c1543f444f8db74f282",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SEGASYS1_MiSTer/main/releases/Star%20Jacker.mra",
           "type": "MRA",
           "extra": {
             "name": "Star Jacker",
@@ -6698,6 +6695,19 @@
           "sha": "f23ef1d838f4c5b7fa449a068bc905f510eb25fc",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SolomonsKey_MiSTer/master/releases/Arcade-SolomonsKey_20210116.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "Solomon no Kagi (JP).mra",
+          "sha": "fb5257238dd3b023ca029bb037ae3f6c867fc872",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SolomonsKey_MiSTer/master/releases/Solomon%20no%20Kagi%20(JP).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Solomon no Kagi",
+            "rbf": "solomonskey",
+            "zips": [
+              "solomon.zip|solomonj.zip"
+            ]
+          }
         },
         {
           "name": "Solomon's Key.mra",
@@ -7532,12 +7542,12 @@
           "type": "RBF"
         },
         {
-          "name": "Shot Rider.mra",
-          "sha": "f4be3b875cd181a7c2cf930cdc41f8d3dff77950",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TraverseUSA_MiSTer/master/releases/Shot%20Rider.mra",
+          "name": "Shot Rider (B-Board 89624B-1).mra",
+          "sha": "5042f121c57dc8b8fde665b01922bc5a7f35d8e3",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TraverseUSA_MiSTer/master/releases/Shot%20Rider%20(B-Board%2089624B-1).mra",
           "type": "MRA",
           "extra": {
-            "name": "Shotrider",
+            "name": "Shot Rider",
             "rbf": "traverseusa",
             "zips": [
               "shtrider.zip"
@@ -7545,12 +7555,12 @@
           }
         },
         {
-          "name": "Traverse USA - Zippy Race.mra",
-          "sha": "17b0c98d61400db3835c2f7061d2782506cc5d4a",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TraverseUSA_MiSTer/master/releases/Traverse%20USA%20-%20Zippy%20Race.mra",
+          "name": "Traverse USA- Zippy Race (US).mra",
+          "sha": "926ffffa58ea13bcef91f0b46d4f61f38e3860f3",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TraverseUSA_MiSTer/master/releases/Traverse%20USA-%20Zippy%20Race%20(US).mra",
           "type": "MRA",
           "extra": {
-            "name": "Traverse USA - Zippy Race",
+            "name": "Traverse USA- Zippy Race",
             "rbf": "traverseusa",
             "zips": [
               "travrusa.zip"
