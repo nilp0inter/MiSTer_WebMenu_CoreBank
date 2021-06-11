@@ -4219,18 +4219,24 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Popeye_20210117.rbf",
+          "sha": "315bc634ad98d2af3ee6fb4af36d07d16b4716a8",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Popeye_MiSTer/master/releases/Arcade-Popeye_20210117.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Arcade-Popeye_20210118.rbf",
           "sha": "2050340f44aee0580ba09a3ed276f474153f26a5",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Popeye_MiSTer/master/releases/Arcade-Popeye_20210118.rbf",
           "type": "RBF"
         },
         {
-          "name": "Popeye.mra",
-          "sha": "7587a76614d8fe4328f297dce2e45cb43ffd3de6",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Popeye_MiSTer/master/releases/Popeye.mra",
+          "name": "Popeye (Rev D).mra",
+          "sha": "64049f63b368c170fafea98775392ed402764a23",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Popeye_MiSTer/master/releases/Popeye%20(Rev%20D).mra",
           "type": "MRA",
           "extra": {
-            "name": "Popeye (revision D)",
+            "name": "Popeye",
             "rbf": "popeye",
             "zips": [
               "popeye.zip"
@@ -4239,7 +4245,7 @@
         },
         {
           "name": "Sky Skipper.mra",
-          "sha": "42243e1ea7636ec6b21a0783d60130afb12a50b2",
+          "sha": "d681b1770c0bb073eda921d97b177b389aa53150",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Popeye_MiSTer/master/releases/Sky%20Skipper.mra",
           "type": "MRA",
           "extra": {
