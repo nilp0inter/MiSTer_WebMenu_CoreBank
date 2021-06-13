@@ -7646,30 +7646,30 @@
           "type": "RBF"
         },
         {
-          "name": "vball.mra",
-          "sha": "fd1db15c2d4d2ce2d6cda9a57a7b5e61ec6cd05d",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-VBall_MiSTer/master/releases/vball.mra",
+          "name": "V'Ball (US) [bl].mra",
+          "sha": "51fa2a103c20b7fa7c7d6e97d6eeaec27eb95a1f",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-VBall_MiSTer/master/releases/V'Ball%20(US)%20%5Bbl%5D.mra",
           "type": "MRA",
           "extra": {
-            "name": "U.S. Championship V'ball (US)",
-            "rbf": "vball",
-            "zips": [
-              "vball.zip",
-              "vball.zip"
-            ]
-          }
-        },
-        {
-          "name": "vballb.mra",
-          "sha": "b1410833cc4a48a1148476b355702c0596ec2337",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-VBall_MiSTer/master/releases/vballb.mra",
-          "type": "MRA",
-          "extra": {
-            "name": "U.S. Championship V'ball (bootleg of US set)",
+            "name": "U.S. Championship V'ball",
             "rbf": "vball",
             "zips": [
               "vball.zip|vballb.zip",
               "vballb.zip"
+            ]
+          }
+        },
+        {
+          "name": "V'Ball (US).mra",
+          "sha": "f79e196fcfb928eb51669d2b7f2bbe9c5635c568",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-VBall_MiSTer/master/releases/V'Ball%20(US).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "U.S. Championship V'ball",
+            "rbf": "vball",
+            "zips": [
+              "vball.zip",
+              "vball.zip"
             ]
           }
         }
