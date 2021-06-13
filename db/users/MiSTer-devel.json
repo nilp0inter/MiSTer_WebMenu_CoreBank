@@ -7632,6 +7632,48 @@
       ]
     },
     {
+      "name": "Arcade-VBall_MiSTer",
+      "description": "This is a port of V'Ball for MiSTer FPGA",
+      "readme": "# U.S. Championship V'ball (beta version)\r\n\r\n\r\nThis is the emulation of V'Ball from Technos Japan ported to MiSTerFPGA by Pierre Cornier (Pierco).\r\n\r\n## Games provided\r\n\r\n- U.S. Championship V'ball (US)\r\n- U.S. Championship V'ball (Bootleg of US set)\r\n\r\n\r\nTODO:\r\n- vga output, does it work?\r\n- horiz/vert sprite bug when half visible\r\n- flip screen option\r\n- bug: releasing coin button increase counter\r\n- music won't start on reboot or country screens\r\n",
+      "archived": false,
+      "fork": false,
+      "url": "https://github.com/MiSTer-devel/Arcade-VBall_MiSTer",
+      "releases": [
+        {
+          "name": "Arcade-VBall_20210613.rbf",
+          "sha": "50fe1cc055cd495bdbf1692380722b31234c49c3",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-VBall_MiSTer/master/releases/Arcade-VBall_20210613.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "vball.mra",
+          "sha": "6ea013c5917fe7f1b6ba0207ad3861d584b345c9",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-VBall_MiSTer/master/releases/vball.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "U.S. Championship V'ball (US)",
+            "rbf": "vball",
+            "zips": [
+              "vball.zip"
+            ]
+          }
+        },
+        {
+          "name": "vballb.mra",
+          "sha": "030e810562fc535daa7c90471a1d065bd26fb22f",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-VBall_MiSTer/master/releases/vballb.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "U.S. Championship V'ball (bootleg of US set)",
+            "rbf": "vball",
+            "zips": [
+              "vball.zip|vballb.zip"
+            ]
+          }
+        }
+      ]
+    },
+    {
       "name": "Arcade-Xevious_MiSTer",
       "description": "Arcade: Xevious for MiSTer",
       "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: Xevious port to MiSTer by Sorgelig\n-- 23 October 2017\n-- \n---------------------------------------------------------------------------------\n-- Xevious by Dar (darfpga@aol.fr) (01 May 2017)\n-- http://darfpga.blogspot.fr\n---------------------------------------------------------------------------------\n-- gen_ram.vhd\n-------------------------------- \n-- Copyright 2005-2008 by Peter Wendrich (pwsoft@syntiac.com)\n-- http://www.syntiac.com/fpga64.html\n---------------------------------------------------------------------------------\n-- T80/T80se - Version : 0247\n-----------------------------\n-- Z80 compatible microprocessor core\n-- Copyright (c) 2001-2002 Daniel Wallner (jesus@opencores.org)\n---------------------------------------------------------------------------------\n-- \n-- Support screen and controls rotation on HDMI output.\n-- Only controls are rotated on VGA output.\n-- \n-- \n-- Keyboard inputs :\n--\n--   F3          : Add coin\n--   F2          : Start 2 players\n--   F1          : Start 1 player\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--   SPACE       : Fire  \n--   CTRL        : Bomb\n--\n-- Joystick support.\n-- \n-- High score save/load - To save your scores use the 'Save Settings' option in the OSD.  \n\n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",

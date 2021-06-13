@@ -5,42 +5,6 @@
   "type": "User",
   "repos": [
     {
-      "name": "Arcade-VBall_MiSTer",
-      "description": "This is a port of V'Ball for MiSTer FPGA",
-      "readme": "# U.S. Championship V'ball\r\n\r\nThis is the emulation of V'Ball from Technos Japan ported to MiSTerFPGA by Pierre Cornier (Pierco).\r\n\r\n\r\n## Games provided\r\n\r\n- U.S. Championship V'ball (US)\r\n- U.S. Championship V'ball (Bootleg of US set)\r\n\r\n--\r\n\r\nTODO:\r\n- vga output, does it work?\r\n- horizontal sprite bug when half visible\r\n- flip screen option\r\n\r\n",
-      "archived": false,
-      "fork": false,
-      "url": "https://github.com/pcornier/Arcade-VBall_MiSTer",
-      "releases": [
-        {
-          "name": "vball.mra",
-          "sha": "6ea013c5917fe7f1b6ba0207ad3861d584b345c9",
-          "url": "https://raw.githubusercontent.com/pcornier/Arcade-VBall_MiSTer/master/releases/vball.mra",
-          "type": "MRA",
-          "extra": {
-            "name": "U.S. Championship V'ball (US)",
-            "rbf": "vball",
-            "zips": [
-              "vball.zip"
-            ]
-          }
-        },
-        {
-          "name": "vballb.mra",
-          "sha": "030e810562fc535daa7c90471a1d065bd26fb22f",
-          "url": "https://raw.githubusercontent.com/pcornier/Arcade-VBall_MiSTer/master/releases/vballb.mra",
-          "type": "MRA",
-          "extra": {
-            "name": "U.S. Championship V'ball (bootleg of US set)",
-            "rbf": "vball",
-            "zips": [
-              "vball.zip|vballb.zip"
-            ]
-          }
-        }
-      ]
-    },
-    {
       "name": "CoCo2_MiSTer",
       "description": "CoCo2",
       "readme": "\n# MiSTer Port of Tandy Color Computer 2 (CoCo2)\n\n\nhttps://github.com/pcornier/coco2\n\n\n### Tandy Color 2\n\nI tried to recreate the Tandy Color 2 on a Spartan-6 dev board (AX309). There's still a lot to be done (sound, joystick, cassette...) but I don't want to put more efforts into it as it was just a learning project.\n\npo8.v is the top file. Yes I know :grin:, what a strange name...\n\n\n![Coco2 running on the AX309](photo.jpg)\n\n*Coco 2 running on a AX309 board*",
