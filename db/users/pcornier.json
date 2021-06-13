@@ -7,7 +7,7 @@
     {
       "name": "Arcade-VBall_MiSTer",
       "description": "This is a port of V'Ball for MiSTer FPGA",
-      "readme": "# U.S. Championship V'ball\r\n\r\nThis is the emulation of V'Ball from Technos Japan ported to MiSTerFPGA by Pierre Cornier (Pierco).\r\n\r\n--\r\n\r\nTODO:\r\n- vga output\r\n- horizontal sprite bug when half visible\r\n- flip screen option\r\n- audio\r\n- DIPS in mra file are killing the core!\r\n\r\n",
+      "readme": "# U.S. Championship V'ball\r\n\r\nThis is the emulation of V'Ball from Technos Japan ported to MiSTerFPGA by Pierre Cornier (Pierco).\r\n\r\n\r\n## Games provided\r\n\r\n- U.S. Championship V'ball (US)\r\n- U.S. Championship V'ball (Bootleg of US set)\r\n\r\n--\r\n\r\nTODO:\r\n- vga output, does it work?\r\n- horizontal sprite bug when half visible\r\n- flip screen option\r\n\r\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/pcornier/Arcade-VBall_MiSTer",
