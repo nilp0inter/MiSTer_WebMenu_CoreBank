@@ -7634,7 +7634,7 @@
     {
       "name": "Arcade-VBall_MiSTer",
       "description": "This is a port of V'Ball for MiSTer FPGA",
-      "readme": "# U.S. Championship V'ball (beta version)\r\n\r\n\r\nThis is the emulation of V'Ball from Technos Japan ported to MiSTerFPGA by Pierre Cornier (Pierco).\r\n\r\n## Games provided\r\n\r\n- U.S. Championship V'ball (US)\r\n- U.S. Championship V'ball (Bootleg of US set)\r\n\r\n\r\nTODO:\r\n- vga output, does it work?\r\n- horiz/vert sprite bug when half visible\r\n- flip screen option\r\n- bug: releasing coin button increase counter\r\n- music won't start on reboot or country screens\r\n",
+      "readme": "# U.S. Championship V'ball (beta version)\r\n\r\n\r\nThis is the emulation of V'Ball from Technos Japan ported to MiSTerFPGA by Pierre Cornier (Pierco).\r\n\r\nDefault mapping is Coin A (R2), Coin B (L2), Jump (A), Action (B) & Start.\r\n\r\n## Games provided\r\n\r\n- U.S. Championship V'ball (US)\r\n- U.S. Championship V'ball (Bootleg of US set)\r\n\r\n## DIP-Switches\r\n\r\n- Difficulty\r\n- Single Player Game Time\r\n- Start Buttons (4-player)\r\n- Rotate Players 1 & 4\r\n- Player Mode (2/4)\r\n- Coin A (coins/credits)\r\n- Coin B (coins/credits)\r\n- Flip Screen\r\n- Demo Sounds\r\n\r\n\r\nTODO:\r\n- vga output, does it work?\r\n- horiz/vert sprite bug when half visible, I will not fix horizontal because the same problem is visible on the original game (smaller visible area)\r\n- music won't start on reboot or country screens\r\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/Arcade-VBall_MiSTer",
@@ -7643,6 +7643,12 @@
           "name": "Arcade-VBall_20210613.rbf",
           "sha": "50fe1cc055cd495bdbf1692380722b31234c49c3",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-VBall_MiSTer/master/releases/Arcade-VBall_20210613.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-VBall_20210614.rbf",
+          "sha": "dac8273ac3ed84ea7c296f2092a6933da9625cfa",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-VBall_MiSTer/master/releases/Arcade-VBall_20210614.rbf",
           "type": "RBF"
         },
         {
