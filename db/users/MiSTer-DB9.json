@@ -5012,9 +5012,9 @@
       "url": "https://github.com/MiSTer-DB9/Arcade-SEGASYS1_MiSTer",
       "releases": [
         {
-          "name": "4-D Warriors.mra",
-          "sha": "d74313df34dd9e43dc578952b878ddc983b8ea08",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SEGASYS1_MiSTer/main/releases/4-D%20Warriors.mra",
+          "name": "4D Warriors (315-5162).mra",
+          "sha": "a45459c85faf9ce5d4126ef77002ae97f7c7a0bf",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SEGASYS1_MiSTer/main/releases/4D%20Warriors%20(315-5162).mra",
           "type": "MRA",
           "extra": {
             "name": "4D Warriors",
@@ -5055,8 +5055,26 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-SEGASYS1_20210405.rbf",
+          "sha": "9935b8863fb2949b52717d2a6b1c6e298093e436",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SEGASYS1_MiSTer/main/releases/Arcade-SEGASYS1_20210405.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-SEGASYS1_20210614.rbf",
+          "sha": "5c2a9e40cd5a2330a04391f10fce10303a15cbd1",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SEGASYS1_MiSTer/main/releases/Arcade-SEGASYS1_20210614.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-SEGASYS1_20210618.rbf",
+          "sha": "3344399083393116d8359b27dd4dea8451272c4a",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SEGASYS1_MiSTer/main/releases/Arcade-SEGASYS1_20210618.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Block Gal.mra",
-          "sha": "fccc8292944c0d9ff0f78a407388764d243aeee8",
+          "sha": "ca0738e96b6829c60ccdd0110dae7635a4675621",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SEGASYS1_MiSTer/main/releases/Block%20Gal.mra",
           "type": "MRA",
           "extra": {
@@ -5068,12 +5086,12 @@
           }
         },
         {
-          "name": "Bullfight.mra",
-          "sha": "20f3cbf1e3d6f42f128045dc6f4e16082cf80baf",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SEGASYS1_MiSTer/main/releases/Bullfight.mra",
+          "name": "Bull Fight (315-5056).mra",
+          "sha": "08b2ddded377a5951c9f5ec4cce5e89e8fdd4794",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SEGASYS1_MiSTer/main/releases/Bull%20Fight%20(315-5056).mra",
           "type": "MRA",
           "extra": {
-            "name": "Bull Fight (315-5065)",
+            "name": "Bull Fight",
             "rbf": "segasys1",
             "zips": [
               "bullfgt.zip"
@@ -5081,12 +5099,12 @@
           }
         },
         {
-          "name": "Flicky.mra",
-          "sha": "0085faf23f937ba9f21c83a9f7181a5f41cb473f",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SEGASYS1_MiSTer/main/releases/Flicky.mra",
+          "name": "Flicky (128k Version, 315-5051).mra",
+          "sha": "a5c2999dc44f66a57ddf9a624cab4539a0f950a3",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SEGASYS1_MiSTer/main/releases/Flicky%20(128k%20Version%2C%20315-5051).mra",
           "type": "MRA",
           "extra": {
-            "name": "Flicky (128k Version, 315-5051)",
+            "name": "Flicky",
             "rbf": "segasys1",
             "zips": [
               "flicky.zip"
@@ -5094,12 +5112,12 @@
           }
         },
         {
-          "name": "I'm Sorry.mra",
-          "sha": "0f47eaea118c99315997aefdb14926ac01be4610",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SEGASYS1_MiSTer/main/releases/I'm%20Sorry.mra",
+          "name": "I'm Sorry (US, 315-5110).mra",
+          "sha": "a39df38d67554d0ac5f7de01916adc7c1a80d508",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SEGASYS1_MiSTer/main/releases/I'm%20Sorry%20(US%2C%20315-5110).mra",
           "type": "MRA",
           "extra": {
-            "name": "I'm Sorry (315-5110, US)",
+            "name": "I'm Sorry",
             "rbf": "segasys1",
             "zips": [
               "imsorry.zip"
@@ -5107,12 +5125,12 @@
           }
         },
         {
-          "name": "Mister Viking.mra",
-          "sha": "20d67f175add46d02cda40ce245ede4c3c462eed",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SEGASYS1_MiSTer/main/releases/Mister%20Viking.mra",
+          "name": "Mister Viking (315-5041).mra",
+          "sha": "385cbb89a3ee9a048979967c184c5950eb6a5824",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SEGASYS1_MiSTer/main/releases/Mister%20Viking%20(315-5041).mra",
           "type": "MRA",
           "extra": {
-            "name": "Mister Viking (315-5041)",
+            "name": "Mister Viking",
             "rbf": "segasys1",
             "zips": [
               "mrviking.zip"
@@ -5120,12 +5138,12 @@
           }
         },
         {
-          "name": "My Hero.mra",
-          "sha": "b3375bda319bd2a85222bc4fc0a86bf2c618c123",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SEGASYS1_MiSTer/main/releases/My%20Hero.mra",
+          "name": "My Hero (US, not Encrypted).mra",
+          "sha": "45fa034265982375f8602038090c3e8f9f7adaee",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SEGASYS1_MiSTer/main/releases/My%20Hero%20(US%2C%20not%20Encrypted).mra",
           "type": "MRA",
           "extra": {
-            "name": "My Hero (US, not encrypted)",
+            "name": "My Hero",
             "rbf": "segasys1",
             "zips": [
               "myhero.zip"
@@ -5133,21 +5151,8 @@
           }
         },
         {
-          "name": "Pitfall II (unencypted, cheat).mra",
-          "sha": "7aa3cc878e0ef4ad7a8d6005e753c179e452c9fa",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SEGASYS1_MiSTer/main/releases/Pitfall%20II%20(unencypted%2C%20cheat).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Pitfall II",
-            "rbf": "segasys1",
-            "zips": [
-              "pitfall2.zip"
-            ]
-          }
-        },
-        {
           "name": "Pitfall II.mra",
-          "sha": "713ce759cccc8d79e19bdc85af2f7a31b612f869",
+          "sha": "5846249ab832021462a2dfdaf7e5737804dd93bb",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SEGASYS1_MiSTer/main/releases/Pitfall%20II.mra",
           "type": "MRA",
           "extra": {
@@ -5159,9 +5164,9 @@
           }
         },
         {
-          "name": "Rafflesia.mra",
-          "sha": "2ec432d47a54d49c7370b076bbdb0d531ec00247",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SEGASYS1_MiSTer/main/releases/Rafflesia.mra",
+          "name": "Rafflesia (315-5162).mra",
+          "sha": "e4cb990a3704eb3dcfc97fca6b0a71abd01cebe5",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SEGASYS1_MiSTer/main/releases/Rafflesia%20(315-5162).mra",
           "type": "MRA",
           "extra": {
             "name": "Rafflesia",
@@ -5172,9 +5177,9 @@
           }
         },
         {
-          "name": "Regulus.mra",
-          "sha": "85dac261406638f8439a398bd342a4e50f0bcaab",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SEGASYS1_MiSTer/main/releases/Regulus.mra",
+          "name": "Regulus (315-5033, Rev A).mra",
+          "sha": "2d7cb43f7b808557bfa528c4e7d3cb3751b7fa03",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SEGASYS1_MiSTer/main/releases/Regulus%20(315-5033%2C%20Rev%20A).mra",
           "type": "MRA",
           "extra": {
             "name": "Regulus",
@@ -5185,12 +5190,12 @@
           }
         },
         {
-          "name": "Sega Ninja.mra",
-          "sha": "b64f82eea4f6fab05b6e0bfe726c2580496c8d64",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SEGASYS1_MiSTer/main/releases/Sega%20Ninja.mra",
+          "name": "Sega Ninja (315-5102).mra",
+          "sha": "3ed5539bd6cec0d5f9ff1a424fa85ed8f8237303",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SEGASYS1_MiSTer/main/releases/Sega%20Ninja%20(315-5102).mra",
           "type": "MRA",
           "extra": {
-            "name": "Sega Ninja (315-5102)",
+            "name": "Sega Ninja",
             "rbf": "segasys1",
             "zips": [
               "seganinj.zip"
@@ -5198,12 +5203,12 @@
           }
         },
         {
-          "name": "Spatter.mra",
-          "sha": "1e14724b90afeb5a06e7115fe293a66a21947cd3",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SEGASYS1_MiSTer/main/releases/Spatter.mra",
+          "name": "Spatter (315-5xxx).mra",
+          "sha": "db64588075c4d329d8773d5b6c72e8968a4deb80",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SEGASYS1_MiSTer/main/releases/Spatter%20(315-5xxx).mra",
           "type": "MRA",
           "extra": {
-            "name": "Spatter (315-5xxx)",
+            "name": "Spatter",
             "rbf": "segasys1",
             "zips": [
               "spatter.zip"
@@ -5212,7 +5217,7 @@
         },
         {
           "name": "Star Jacker (alt).mra",
-          "sha": "0049f29b21076164bdeac5475e61756a48fa615b",
+          "sha": "95888fcdc5590097e9690afd7acfe693913d7f33",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SEGASYS1_MiSTer/main/releases/Star%20Jacker%20(alt).mra",
           "type": "MRA",
           "extra": {
@@ -5225,7 +5230,7 @@
         },
         {
           "name": "Star Jacker.mra",
-          "sha": "0487ec03e0e88c7feefcc620fc65e16d604411d5",
+          "sha": "58f41cfc9477edf9ed6d1c1543f444f8db74f282",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SEGASYS1_MiSTer/main/releases/Star%20Jacker.mra",
           "type": "MRA",
           "extra": {
@@ -5237,12 +5242,12 @@
           }
         },
         {
-          "name": "Swat.mra",
-          "sha": "1d90be01070ade07a63b9ad1062166d3c0225d80",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SEGASYS1_MiSTer/main/releases/Swat.mra",
+          "name": "Swat (315-5048).mra",
+          "sha": "c4508e35776c62508da03e7d9ced36735ac394bb",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SEGASYS1_MiSTer/main/releases/Swat%20(315-5048).mra",
           "type": "MRA",
           "extra": {
-            "name": "Swat (315-5048)",
+            "name": "Swat",
             "rbf": "segasys1",
             "zips": [
               "swat.zip"
@@ -5250,12 +5255,12 @@
           }
         },
         {
-          "name": "TeddyBoy Blues.mra",
-          "sha": "2810a2daba9f1a190f85c6e2c69f1be6719f3a65",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SEGASYS1_MiSTer/main/releases/TeddyBoy%20Blues.mra",
+          "name": "TeddyBoy Blues (315-5115, New Ver).mra",
+          "sha": "5ff5adab24a59d3d76998c136ee8473a1c5f0abd",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SEGASYS1_MiSTer/main/releases/TeddyBoy%20Blues%20(315-5115%2C%20New%20Ver).mra",
           "type": "MRA",
           "extra": {
-            "name": "TeddyBoy Blues (315-5115, New Ver.)",
+            "name": "TeddyBoy Blues",
             "rbf": "segasys1",
             "zips": [
               "teddybb.zip"
@@ -5264,7 +5269,7 @@
         },
         {
           "name": "Up'n Down.mra",
-          "sha": "7fcfd83f758cb54a133b83fcc6fc195272045e63",
+          "sha": "d30acc10d610b86cfd2960ae97cbd52f09753d0d",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SEGASYS1_MiSTer/main/releases/Up'n%20Down.mra",
           "type": "MRA",
           "extra": {
@@ -5276,12 +5281,12 @@
           }
         },
         {
-          "name": "Water Match.mra",
-          "sha": "1d4d9fe3d4f6cf735bb036e344d9caa23f0f501c",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SEGASYS1_MiSTer/main/releases/Water%20Match.mra",
+          "name": "Water Match (315-5064).mra",
+          "sha": "3b96c9ed7eef9d5b328e512ed24fbefb4f564253",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SEGASYS1_MiSTer/main/releases/Water%20Match%20(315-5064).mra",
           "type": "MRA",
           "extra": {
-            "name": "Water Match (315-5064)",
+            "name": "Water Match",
             "rbf": "segasys1",
             "zips": [
               "wmatch.zip"
@@ -5289,12 +5294,12 @@
           }
         },
         {
-          "name": "Wonder Boy.mra",
-          "sha": "0dcf260c3015cd3fb69eee154a626fdd61655167",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SEGASYS1_MiSTer/main/releases/Wonder%20Boy.mra",
+          "name": "Wonder Boy (Set 1, 315-5177).mra",
+          "sha": "a639ed3a6f87bb4e1310cbbb065c7d272c46c475",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SEGASYS1_MiSTer/main/releases/Wonder%20Boy%20(Set%201%2C%20315-5177).mra",
           "type": "MRA",
           "extra": {
-            "name": "Wonder Boy (set 1, 315-5177)",
+            "name": "Wonder Boy",
             "rbf": "segasys1",
             "zips": [
               "wboy.zip"
