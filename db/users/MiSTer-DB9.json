@@ -2185,6 +2185,12 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Galaxian_20210620.rbf",
+          "sha": "cd9bf8bfea9afb36774130a12bdb0ac53a5092c3",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaxian_MiSTer/master/releases/Arcade-Galaxian_20210620.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Azurian Attack.mra",
           "sha": "66d8769f2e4cfccb96130f225838c31b686ea905",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaxian_MiSTer/master/releases/Azurian%20Attack.mra",
@@ -2815,13 +2821,25 @@
           "type": "RBF"
         },
         {
-          "name": "Mario Bros.mra",
-          "sha": "bef497e093890e4ac0a7eefc3613e4ee0e04dfe8",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MarioBros_MiSTer/master/releases/Mario%20Bros.mra",
+          "name": "Arcade-MarioBros_20210411.rbf",
+          "sha": "82e31b7c33ad945edb5af13cae4af00a2548e4a6",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MarioBros_MiSTer/master/releases/Arcade-MarioBros_20210411.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-MarioBros_20210413.rbf",
+          "sha": "1e20a75abc946d4770b5b0d2e3cdf87810f098f1",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MarioBros_MiSTer/master/releases/Arcade-MarioBros_20210413.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Mario Bros. (US, Rev G).mra",
+          "sha": "4a8f41098fed3c24e5be3d5ab2e784087d82d898",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MarioBros_MiSTer/master/releases/Mario%20Bros.%20(US%2C%20Rev%20G).mra",
           "type": "MRA",
           "extra": {
-            "name": "Mario Bros. (US, Revision G)",
-            "rbf": "MarioBros",
+            "name": "Mario Bros.",
+            "rbf": "mariobros",
             "zips": [
               "mario.zip"
             ]
@@ -3022,6 +3040,12 @@
           "name": "Arcade-MCR2_20210114.rbf",
           "sha": "d74a0a6f4fe81b8b71b3a046229c975f51c60b65",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MCR2_MiSTer/master/releases/Arcade-MCR2_20210114.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-MCR2_20210620.rbf",
+          "sha": "1ef225d3a51185132372e65162da17ecc61b7634",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MCR2_MiSTer/master/releases/Arcade-MCR2_20210620.rbf",
           "type": "RBF"
         },
         {
@@ -4113,6 +4137,18 @@
           "name": "Arcade-Pleiads_20210310.rbf",
           "sha": "d6ccee1538c4a98651b9a8bce66ebce8cb70c7a9",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pleiads_MiSTer/master/releases/Arcade-Pleiads_20210310.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Pleiads_20210524.rbf",
+          "sha": "3a5564260802cb2291b1d1a1a95c588747dccec0",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pleiads_MiSTer/master/releases/Arcade-Pleiads_20210524.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Pleiads_20210620.rbf",
+          "sha": "5ebb7557fbd21f124df18ec3c5e573dc4550abfe",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pleiads_MiSTer/master/releases/Arcade-Pleiads_20210620.rbf",
           "type": "RBF"
         },
         {
@@ -5508,9 +5544,9 @@
       "url": "https://github.com/MiSTer-DB9/Arcade-SpaceInvaders_MiSTer",
       "releases": [
         {
-          "name": "280Z-ZZAP.mra",
-          "sha": "07a82c1f089709995bfae687422a94a01afeb63a",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SpaceInvaders_MiSTer/master/releases/280Z-ZZAP.mra",
+          "name": "280Z-ZZAP (US).mra",
+          "sha": "797e47fafbbcb73e60cb3dc6de3a03b8e5539d7b",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SpaceInvaders_MiSTer/master/releases/280Z-ZZAP%20(US).mra",
           "type": "MRA",
           "extra": {
             "name": "280Z-ZZAP",
@@ -5522,7 +5558,7 @@
         },
         {
           "name": "Amazing Maze.mra",
-          "sha": "4f6ad3717b5f5644a4dc591e4dfe65ef8e1100a2",
+          "sha": "6fd1ef07d2f5523e3b73f2317bba0e47449478c2",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SpaceInvaders_MiSTer/master/releases/Amazing%20Maze.mra",
           "type": "MRA",
           "extra": {
@@ -5540,8 +5576,14 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-SpaceInvaders_20210307.rbf",
+          "sha": "fae57f48ce54a10dc80f8fa963a97e609d40e1c8",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SpaceInvaders_MiSTer/master/releases/Arcade-SpaceInvaders_20210307.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Attack Force.mra",
-          "sha": "8f78f0bbc814827e89f16a6ac86fbc0ee6d8d460",
+          "sha": "77c86d683a1ea5eba6a546355f31817e1a889475",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SpaceInvaders_MiSTer/master/releases/Attack%20Force.mra",
           "type": "MRA",
           "extra": {
@@ -5554,7 +5596,7 @@
         },
         {
           "name": "Balloon Bomber.mra",
-          "sha": "098be1acba541a995fbc18f85910bf80a90c39ab",
+          "sha": "755333a3edea6d18ac217db82273db2f9ca84ab3",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SpaceInvaders_MiSTer/master/releases/Balloon%20Bomber.mra",
           "type": "MRA",
           "extra": {
@@ -5567,7 +5609,7 @@
         },
         {
           "name": "Blue Shark.mra",
-          "sha": "ac8c10f77cbfeb0271eb40315d75fc0c536cabee",
+          "sha": "ff9d239b3bfe79c279369ce1ff053bc131e1a617",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SpaceInvaders_MiSTer/master/releases/Blue%20Shark.mra",
           "type": "MRA",
           "extra": {
@@ -5580,7 +5622,7 @@
         },
         {
           "name": "Boot Hill.mra",
-          "sha": "258bb896e8fcbca4034528ce8d352753e3548e45",
+          "sha": "452f9826bb31d1bdce500822ff6b0c60b50f6301",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SpaceInvaders_MiSTer/master/releases/Boot%20Hill.mra",
           "type": "MRA",
           "extra": {
@@ -5593,11 +5635,11 @@
         },
         {
           "name": "Clowns.mra",
-          "sha": "0f0ba112c3f81118cb04dcb725b9e7460ffbda59",
+          "sha": "9559b0afcfa63ef1e98ff743548ad4dfb8d13a0f",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SpaceInvaders_MiSTer/master/releases/Clowns.mra",
           "type": "MRA",
           "extra": {
-            "name": "Clowns (rev. 2)",
+            "name": "Clowns",
             "rbf": "spaceinvaders",
             "zips": [
               "clowns.zip"
@@ -5606,7 +5648,7 @@
         },
         {
           "name": "Cosmo.mra",
-          "sha": "601ae9889078b130f947880a9d30ea5a74a94d95",
+          "sha": "819b4b47a71331433e581173c4947025d02b6f9b",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SpaceInvaders_MiSTer/master/releases/Cosmo.mra",
           "type": "MRA",
           "extra": {
@@ -5618,12 +5660,12 @@
           }
         },
         {
-          "name": "Galaxy Wars.mra",
-          "sha": "4df147b7a718dfb60d61bf5cea90e3b55fc30376",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SpaceInvaders_MiSTer/master/releases/Galaxy%20Wars.mra",
+          "name": "Galaxy Wars (Universal, Set 1).mra",
+          "sha": "d31f137d5402eed5efb85d7cbbcc5c9d427774fe",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SpaceInvaders_MiSTer/master/releases/Galaxy%20Wars%20(Universal%2C%20Set%201).mra",
           "type": "MRA",
           "extra": {
-            "name": "Galaxy Wars (Universal set 1)",
+            "name": "Galaxy Wars",
             "rbf": "spaceinvaders",
             "zips": [
               "galxwars.zip"
@@ -5632,11 +5674,11 @@
         },
         {
           "name": "Gun Fight.mra",
-          "sha": "c2597a3773b539484674ea258aa778ce40ed65c9",
+          "sha": "ad6907a10b52f7fe47c24607b667a2f570e4b7ff",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SpaceInvaders_MiSTer/master/releases/Gun%20Fight.mra",
           "type": "MRA",
           "extra": {
-            "name": "Gun Fight (set 1)",
+            "name": "Gun Fight",
             "rbf": "spaceinvaders",
             "zips": [
               "gunfight.zip"
@@ -5645,7 +5687,7 @@
         },
         {
           "name": "Laguna Racer.mra",
-          "sha": "0259bf4a2e7afb15a2a89e115b7a97f7c6d1ed9d",
+          "sha": "cf4d9ecff9b755f0740013a27a6e14944b664c14",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SpaceInvaders_MiSTer/master/releases/Laguna%20Racer.mra",
           "type": "MRA",
           "extra": {
@@ -5658,7 +5700,7 @@
         },
         {
           "name": "Lunar Rescue.mra",
-          "sha": "2c2025712847c74b64c3f844416d2f93eee274dc",
+          "sha": "0bfab2621ee0d58f9da634a236ebfb0249e86430",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SpaceInvaders_MiSTer/master/releases/Lunar%20Rescue.mra",
           "type": "MRA",
           "extra": {
@@ -5670,12 +5712,12 @@
           }
         },
         {
-          "name": "Lupin III.mra",
-          "sha": "e8a0064ed569d46f344a991bf378972e99ccdcf9",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SpaceInvaders_MiSTer/master/releases/Lupin%20III.mra",
+          "name": "Lupin III (Set 2).mra",
+          "sha": "06a0e8b4510feef69718b666ad7eb7f60713c5d4",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SpaceInvaders_MiSTer/master/releases/Lupin%20III%20(Set%202).mra",
           "type": "MRA",
           "extra": {
-            "name": "Lupin III (set 2)",
+            "name": "Lupin III",
             "rbf": "spaceinvaders",
             "zips": [
               "lupin3.zip|lupin3a.zip"
@@ -5683,12 +5725,12 @@
           }
         },
         {
-          "name": "Sea Wolf.mra",
-          "sha": "a5af259b0b78ccb2643d31276d7cae5469f2463f",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SpaceInvaders_MiSTer/master/releases/Sea%20Wolf.mra",
+          "name": "Sea Wolf (Set 1).mra",
+          "sha": "60787e7ea18930f6f0c619c82e84e7c2cbedaad0",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SpaceInvaders_MiSTer/master/releases/Sea%20Wolf%20(Set%201).mra",
           "type": "MRA",
           "extra": {
-            "name": "Sea Wolf (set 1)",
+            "name": "Sea Wolf",
             "rbf": "spaceinvaders",
             "zips": [
               "seawolf.zip"
@@ -5697,7 +5739,7 @@
         },
         {
           "name": "Shuffleboard.mra",
-          "sha": "e6491432e90e67f4941843cce2577f1c275c8e86",
+          "sha": "4767b6ebd63c8e4ae8eb3ae1faeb4e9e545b4f88",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SpaceInvaders_MiSTer/master/releases/Shuffleboard.mra",
           "type": "MRA",
           "extra": {
@@ -5710,7 +5752,7 @@
         },
         {
           "name": "Shuttle Invader.mra",
-          "sha": "4e3486c0a7074a1e853cc32db230b30408080431",
+          "sha": "c85f3e6068cd1f6edb5cc3c166da9fc756734f30",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SpaceInvaders_MiSTer/master/releases/Shuttle%20Invader.mra",
           "type": "MRA",
           "extra": {
@@ -5723,11 +5765,11 @@
         },
         {
           "name": "Space Chaser.mra",
-          "sha": "91e7d0114472dacc7f01e4cfba182e7268589dd5",
+          "sha": "942d2802f08cc2b9ccc0153cdc6a8012fe631701",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SpaceInvaders_MiSTer/master/releases/Space%20Chaser.mra",
           "type": "MRA",
           "extra": {
-            "name": "Space Chaser (set 1)",
+            "name": "Space Chaser ",
             "rbf": "spaceinvaders",
             "zips": [
               "schaser.zip"
@@ -5736,7 +5778,7 @@
         },
         {
           "name": "Space Encounters.mra",
-          "sha": "f3c7c56f54a17c0bf59a2e29aa37108463c1f31e",
+          "sha": "733342d0221dc81240333f9e75856f8c89fd3a6c",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SpaceInvaders_MiSTer/master/releases/Space%20Encounters.mra",
           "type": "MRA",
           "extra": {
@@ -5748,25 +5790,12 @@
           }
         },
         {
-          "name": "Space Invaders II (Midway, cocktail).mra",
-          "sha": "859087b0194145d3d06d11683289fc236038ff8b",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SpaceInvaders_MiSTer/master/releases/Space%20Invaders%20II%20(Midway%2C%20cocktail).mra",
+          "name": "Space Invaders Part II (Taito, Bigger ROMs).mra",
+          "sha": "8c313402f6116e356f87820c18b16262320139bc",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SpaceInvaders_MiSTer/master/releases/Space%20Invaders%20Part%20II%20(Taito%2C%20Bigger%20ROMs).mra",
           "type": "MRA",
           "extra": {
-            "name": "Space Invaders II (Midway, cocktail)",
-            "rbf": "spaceinvaders",
-            "zips": [
-              "invad2ct.zip"
-            ]
-          }
-        },
-        {
-          "name": "Space Invaders Part II.mra",
-          "sha": "8801e2682170d93a7affc3012439a62da154163c",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SpaceInvaders_MiSTer/master/releases/Space%20Invaders%20Part%20II.mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Space Invaders Part II (Taito, bigger ROMs)",
+            "name": "Space Invaders Part II",
             "rbf": "spaceinvaders",
             "zips": [
               "invadpt2.zip"
@@ -5775,11 +5804,11 @@
         },
         {
           "name": "Space Invaders.mra",
-          "sha": "76cc0a48203b5e11863acdad95ec4692f0bf11b3",
+          "sha": "b73182c288e45bf57f26623f1bede30749054c36",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SpaceInvaders_MiSTer/master/releases/Space%20Invaders.mra",
           "type": "MRA",
           "extra": {
-            "name": "Space Invaders - Space Invaders M",
+            "name": "Space Invaders",
             "rbf": "spaceinvaders",
             "zips": [
               "invaders.zip"
@@ -5788,7 +5817,7 @@
         },
         {
           "name": "Vortex.mra",
-          "sha": "edb6f7d4cc7c73fefa0a34cde99e685560d5a7ac",
+          "sha": "917aceab4d80bedf3c5935884e32ba3e80fc541f",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SpaceInvaders_MiSTer/master/releases/Vortex.mra",
           "type": "MRA",
           "extra": {
