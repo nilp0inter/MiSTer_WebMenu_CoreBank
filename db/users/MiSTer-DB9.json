@@ -2173,8 +2173,20 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Galaxian_20210514.rbf",
+          "sha": "739578245f58d1c6e50168169837fdc264680391",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaxian_MiSTer/master/releases/Arcade-Galaxian_20210514.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Galaxian_20210525.rbf",
+          "sha": "862bbbbe7755a0cd92bd987334c21f9ed1350251",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaxian_MiSTer/master/releases/Arcade-Galaxian_20210525.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Azurian Attack.mra",
-          "sha": "ed4d919284a2d439c4be856272c7b9474720eb72",
+          "sha": "66d8769f2e4cfccb96130f225838c31b686ea905",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaxian_MiSTer/master/releases/Azurian%20Attack.mra",
           "type": "MRA",
           "extra": {
@@ -2187,7 +2199,7 @@
         },
         {
           "name": "Black Hole.mra",
-          "sha": "81319435011b6cec506bd76d831cbe9972381f84",
+          "sha": "a8e4901e27f5165b8fbefd4098a0f64ed4e40742",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaxian_MiSTer/master/releases/Black%20Hole.mra",
           "type": "MRA",
           "extra": {
@@ -2200,7 +2212,7 @@
         },
         {
           "name": "Catacomb.mra",
-          "sha": "cd28ddb012e5ec46093938762dfd9001c20535e9",
+          "sha": "fda955e806fc7d3b5737feeb660daf3c3cf3772a",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaxian_MiSTer/master/releases/Catacomb.mra",
           "type": "MRA",
           "extra": {
@@ -2212,23 +2224,23 @@
           }
         },
         {
-          "name": "Clean Sweep.mra",
-          "sha": "de93ec5bbabf700e21cf7dd4c93eb2d292e30eed",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaxian_MiSTer/master/releases/Clean%20Sweep.mra",
+          "name": "Clean Sweep (TTL).mra",
+          "sha": "0d04510ba6ef94924e0d74619f180d04b32ad752",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaxian_MiSTer/master/releases/Clean%20Sweep%20(TTL).mra",
           "type": "MRA",
           "extra": {
-            "name": null,
+            "name": "Clean Sweep",
             "rbf": "galaxian",
             "zips": []
           }
         },
         {
-          "name": "Devil Fish.mra",
-          "sha": "bda3871fac507ea84167c25aa717974b15a87d48",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaxian_MiSTer/master/releases/Devil%20Fish.mra",
+          "name": "Devil Fish (Galaxian Hardware).mra",
+          "sha": "659711bd9d7f6e390f4572d997937ec5dd1209b5",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaxian_MiSTer/master/releases/Devil%20Fish%20(Galaxian%20Hardware).mra",
           "type": "MRA",
           "extra": {
-            "name": "Devil Fish (Galaxian hardware, bootleg)",
+            "name": "Devil Fish",
             "rbf": "galaxian",
             "zips": [
               "devilfsh.zip|devilfsg.zip"
@@ -2236,12 +2248,12 @@
           }
         },
         {
-          "name": "Galaxian.mra",
-          "sha": "5ab21e2a8dc96095249d688abafd8c6301d0829c",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaxian_MiSTer/master/releases/Galaxian.mra",
+          "name": "Galaxian (Namco, Set 1).mra",
+          "sha": "e4943777138e065b00456e42a6289eee27456a80",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaxian_MiSTer/master/releases/Galaxian%20(Namco%2C%20Set%201).mra",
           "type": "MRA",
           "extra": {
-            "name": "Galaxian (Namco set 1)",
+            "name": "Galaxian",
             "rbf": "galaxian",
             "zips": [
               "galaxian.zip"
@@ -2249,9 +2261,22 @@
           }
         },
         {
-          "name": "King And Balloon.mra",
-          "sha": "fc406867d84c34ec0dfb81b5a5efc9dbab4cb7c9",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaxian_MiSTer/master/releases/King%20And%20Balloon.mra",
+          "name": "King And Balloon (Japan).mra",
+          "sha": "06f0cbc36952c60214aed5fc7734a9e9e5ef6974",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaxian_MiSTer/master/releases/King%20And%20Balloon%20(Japan).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "King and Balloon",
+            "rbf": "galaxian",
+            "zips": [
+              "kingball.zip|kingballj.zip"
+            ]
+          }
+        },
+        {
+          "name": "King and Balloon (US).mra",
+          "sha": "0e6466677585d754a9c660faaa0dc08402c9a993",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaxian_MiSTer/master/releases/King%20and%20Balloon%20(US).mra",
           "type": "MRA",
           "extra": {
             "name": "King and Balloon",
@@ -2263,7 +2288,7 @@
         },
         {
           "name": "Lucky Today.mra",
-          "sha": "0dd0d2d51cb0ec8b8c27f6ca31ad1debdaf50c31",
+          "sha": "ed4eeb53262d447a8027c61e8921bf534b5828b8",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaxian_MiSTer/master/releases/Lucky%20Today.mra",
           "type": "MRA",
           "extra": {
@@ -2275,12 +2300,12 @@
           }
         },
         {
-          "name": "Moon Cresta.mra",
-          "sha": "f4b24b0bdad42a7ae3ad421a178164e13b7834a4",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaxian_MiSTer/master/releases/Moon%20Cresta.mra",
+          "name": "Moon Cresta (Galaxian Hardware) [bl].mra",
+          "sha": "e0ec4fab6cc50dd3a58c35ff86f0351d771a04ba",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaxian_MiSTer/master/releases/Moon%20Cresta%20(Galaxian%20Hardware)%20%5Bbl%5D.mra",
           "type": "MRA",
           "extra": {
-            "name": "Moon Cresta (Galaxian hardware)",
+            "name": "Moon Cresta",
             "rbf": "galaxian",
             "zips": [
               "mooncrst.zip|mooncrgx.zip"
@@ -2289,7 +2314,7 @@
         },
         {
           "name": "Mr. Do Nightmare.mra",
-          "sha": "b5371e9f928d5db586ef80bd464696f448a0497e",
+          "sha": "9811f407aa3aa8a16edfa30e6346c3f4d7e3939c",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaxian_MiSTer/master/releases/Mr.%20Do%20Nightmare.mra",
           "type": "MRA",
           "extra": {
@@ -2299,12 +2324,12 @@
           }
         },
         {
-          "name": "Omega.mra",
-          "sha": "589322e62d52beda5dc8bf358adda5f75f2ed3eb",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaxian_MiSTer/master/releases/Omega.mra",
+          "name": "Omega [bl].mra",
+          "sha": "fd7e57bbf26a2c822f8b4ce5bfe447134bb0112f",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaxian_MiSTer/master/releases/Omega%20%5Bbl%5D.mra",
           "type": "MRA",
           "extra": {
-            "name": "Omega (bootleg)",
+            "name": "Omega",
             "rbf": "galaxian",
             "zips": [
               "theend.zip|omegab.zip"
@@ -2313,7 +2338,7 @@
         },
         {
           "name": "Orbitron.mra",
-          "sha": "f920c2ecdd07c89c1485b0365aabc2b0c7d04b9e",
+          "sha": "aa780342da8f5ab21b603b4cc3bb88a223e6fb21",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaxian_MiSTer/master/releases/Orbitron.mra",
           "type": "MRA",
           "extra": {
@@ -2326,7 +2351,7 @@
         },
         {
           "name": "Pisces.mra",
-          "sha": "f3fd7cc3f2ed7d655da9c64b755de4b57032588c",
+          "sha": "94c4454591f682320991f9a6e14679cc29ecbb70",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaxian_MiSTer/master/releases/Pisces.mra",
           "type": "MRA",
           "extra": {
@@ -2339,7 +2364,7 @@
         },
         {
           "name": "UniWar S.mra",
-          "sha": "f3b3c7d60ff5783c14bd3ec01652af402204a887",
+          "sha": "8d078f7e1e286d79cd8e609a043261d4a0817e0c",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaxian_MiSTer/master/releases/UniWar%20S.mra",
           "type": "MRA",
           "extra": {
@@ -2352,11 +2377,11 @@
         },
         {
           "name": "Victory.mra",
-          "sha": "09edd93447d646dd18649867360aac8f1dd6b494",
+          "sha": "195f9311c542159531b3e068395f64640d1a1db5",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaxian_MiSTer/master/releases/Victory.mra",
           "type": "MRA",
           "extra": {
-            "name": "Victory (Comsoft) (bootleg)",
+            "name": "Victory",
             "rbf": "galaxian",
             "zips": [
               "victoryc.zip|victorycb.zip"
@@ -2365,11 +2390,11 @@
         },
         {
           "name": "War of the Bugs.mra",
-          "sha": "e5fe04192b4291ce5ff41d0d84c6f9de1cbd05ec",
+          "sha": "2d941dfa28260303f081c6a31e8865b1bf93d3b1",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaxian_MiSTer/master/releases/War%20of%20the%20Bugs.mra",
           "type": "MRA",
           "extra": {
-            "name": "War of the Bugs or Monsterous Manouvers in a Mushroom Maze",
+            "name": "War of the Bugs",
             "rbf": "galaxian",
             "zips": [
               "warofbug.zip"
@@ -3001,7 +3026,7 @@
         },
         {
           "name": "Domino Man.mra",
-          "sha": "425022a45b4c47af937513b67a226dec199b7380",
+          "sha": "198513c8a30eaf5f149bbe39a68d0e1737558cda",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MCR2_MiSTer/master/releases/Domino%20Man.mra",
           "type": "MRA",
           "extra": {
@@ -3014,7 +3039,7 @@
         },
         {
           "name": "Kozmik Krooz'r.mra",
-          "sha": "19dcb4a0a43de93dbfe0673433bfc2acf213121d",
+          "sha": "6101e35dc87c33157ae85b0c9a8bf4752078ce05",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MCR2_MiSTer/master/releases/Kozmik%20Krooz'r.mra",
           "type": "MRA",
           "extra": {
@@ -3040,7 +3065,7 @@
         },
         {
           "name": "Tron.mra",
-          "sha": "1d86164bfee3c51e9609e5606b9d4c0f273c81da",
+          "sha": "1340b58fffa95b8edda36293198e84c70437d493",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MCR2_MiSTer/master/releases/Tron.mra",
           "type": "MRA",
           "extra": {
@@ -3053,7 +3078,7 @@
         },
         {
           "name": "Two Tigers (Tron Conversion).mra",
-          "sha": "e0fa4036d8bd0c9f5d032fbe445e932c0365682b",
+          "sha": "c5d0e0e391a3032a3720bd2f76594f7f0e1ff51c",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MCR2_MiSTer/master/releases/Two%20Tigers%20(Tron%20Conversion).mra",
           "type": "MRA",
           "extra": {
@@ -3067,7 +3092,7 @@
         },
         {
           "name": "Wacko.mra",
-          "sha": "4964309f8d9e843b3d7824ee6ecd5b13369b1058",
+          "sha": "715bc7408ba5fab978d891ab7a101bae300480d9",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MCR2_MiSTer/master/releases/Wacko.mra",
           "type": "MRA",
           "extra": {
