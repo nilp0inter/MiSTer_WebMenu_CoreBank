@@ -3137,13 +3137,19 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-MCR1_20210510.rbf",
+          "sha": "aac714259dd0d899ec4ec743c60b069925d41290",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MCR1_MiSTer/master/releases/Arcade-MCR1_20210510.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Kick-Man.mra",
-          "sha": "d4fb9ff76df574c5123cea18b3bfc5b61b0ded47",
+          "sha": "ad2f879821e68606ae23a5c1c0622d636f99614b",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MCR1_MiSTer/master/releases/Kick-Man.mra",
           "type": "MRA",
           "extra": {
             "name": "Kick-Man",
-            "rbf": "MCR1",
+            "rbf": "mcr1",
             "zips": [
               "kick.zip|kickman.zip"
             ]
@@ -3151,12 +3157,12 @@
         },
         {
           "name": "Kick.mra",
-          "sha": "d8f05dda93f5b98534c16f3efd2f4aff556496f5",
+          "sha": "364a9d3f8a86951f88736ed009be8559a9109b4b",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MCR1_MiSTer/master/releases/Kick.mra",
           "type": "MRA",
           "extra": {
             "name": "Kick",
-            "rbf": "MCR1",
+            "rbf": "mcr1",
             "zips": [
               "kick.zip"
             ]
@@ -3164,12 +3170,12 @@
         },
         {
           "name": "Solar Fox.mra",
-          "sha": "24769b040bb264fdc04340a67f21f3091bf57267",
+          "sha": "f2f3e192fb435a8a78994b5a16742e7a2ad36025",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MCR1_MiSTer/master/releases/Solar%20Fox.mra",
           "type": "MRA",
           "extra": {
             "name": "Solar Fox",
-            "rbf": "MCR1",
+            "rbf": "mcr1",
             "zips": [
               "solarfox.zip"
             ]
@@ -3852,8 +3858,14 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-NinjaKun_20210606.rbf",
+          "sha": "7846d4edeed7308cebb1bcf743a3004b7f67f4ff",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-NinjaKun_MiSTer/master/releases/Arcade-NinjaKun_20210606.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Ninjakun.mra",
-          "sha": "8457346352bc4a3367376efad1d07444da6ad1a7",
+          "sha": "9d3ec5088605c6f01d9369900aacc40fa5cb4267",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-NinjaKun_MiSTer/master/releases/Ninjakun.mra",
           "type": "MRA",
           "extra": {
@@ -3881,9 +3893,9 @@
       "url": "https://github.com/MiSTer-DB9/Arcade-Pacman_MiSTer",
       "releases": [
         {
-          "name": "Alibaba 40 Thieves.mra",
-          "sha": "e4488443b5932dfb5d4e9b26d7825ae6c76caf60",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Alibaba%2040%20Thieves.mra",
+          "name": "Ali Baba and 40 Thieves.mra",
+          "sha": "e751b9c8fd9a45c8f635aedc6a7a59528651d654",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Ali%20Baba%20and%2040%20Thieves.mra",
           "type": "MRA",
           "extra": {
             "name": "Ali Baba and 40 Thieves",
@@ -3948,12 +3960,30 @@
           "type": "RBF"
         },
         {
-          "name": "Beastie Feastie.mra",
-          "sha": "2196f6bc19fd3294890d63218369389456765ea7",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Beastie%20Feastie.mra",
+          "name": "Arcade-Pacman_20210317.rbf",
+          "sha": "4a17ce32aebdb9a4a129c86c3eeebb18394d428b",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Arcade-Pacman_20210317.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Pacman_20210420.rbf",
+          "sha": "63f7f638ab32820a16e66c263a5ba70515864575",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Arcade-Pacman_20210420.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Pacman_20210621.rbf",
+          "sha": "f0f413175b8e4d0b49ccc0acea68fff22d050488",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Arcade-Pacman_20210621.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Beastie Feastie (Pac-Man Conversion).mra",
+          "sha": "5d527e8bac5d5957d99da490460dfb5ce4171ce3",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Beastie%20Feastie%20(Pac-Man%20Conversion).mra",
           "type": "MRA",
           "extra": {
-            "name": "Beastie Feastie (Pac-Man conversion)",
+            "name": "Beastie Feastie",
             "rbf": "pacman",
             "zips": [
               "suprglob.zip|beastfp.zip"
@@ -3962,7 +3992,7 @@
         },
         {
           "name": "Birdiy.mra",
-          "sha": "b5d4e7591d8ca5f027cd53ff14ba3dc712ca276f",
+          "sha": "bd6c219395309796a18efc29fb851a30b0c1c6c2",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Birdiy.mra",
           "type": "MRA",
           "extra": {
@@ -3974,12 +4004,12 @@
           }
         },
         {
-          "name": "Crush Roller.mra",
-          "sha": "e452d92fe5275c608d6a7160590157e84c416c61",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Crush%20Roller.mra",
+          "name": "Crush Roller (Set 2).mra",
+          "sha": "1d63d270218a783203cc3377433fa98bfa4b652e",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Crush%20Roller%20(Set%202).mra",
           "type": "MRA",
           "extra": {
-            "name": "Crush Roller (set 2)",
+            "name": "Crush Roller",
             "rbf": "pacman",
             "zips": [
               "crush.zip|crush2.zip"
@@ -3988,7 +4018,7 @@
         },
         {
           "name": "Dream Shopper.mra",
-          "sha": "355e4a8af6a930a9e11d68daaf4cba72f90b50b3",
+          "sha": "b0a197372d914ec866af3653efdda67fcd403833",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Dream%20Shopper.mra",
           "type": "MRA",
           "extra": {
@@ -4000,12 +4030,12 @@
           }
         },
         {
-          "name": "Eeekk!.mra",
-          "sha": "d46dc21320dfb0246e902c54d87f8da3b612acc7",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Eeekk!.mra",
+          "name": "Eeek! (Pac-Man Conversion).mra",
+          "sha": "2d4262dc5827fdcdc63453deb10a48f3dee79828",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Eeek!%20(Pac-Man%20Conversion).mra",
           "type": "MRA",
           "extra": {
-            "name": "Eeekk! (Pac-Man conversion)",
+            "name": "Eeek!",
             "rbf": "pacman",
             "zips": [
               "eeekk.zip|eeekkp.zip"
@@ -4014,7 +4044,7 @@
         },
         {
           "name": "Eggor.mra",
-          "sha": "0d5c663d193514e190b40cc729579724eb8ab62d",
+          "sha": "11ece169dd5d2ae7af186dfd435d1199341bb88c",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Eggor.mra",
           "type": "MRA",
           "extra": {
@@ -4026,12 +4056,12 @@
           }
         },
         {
-          "name": "Eyes.mra",
-          "sha": "c7f901ec9cf341d73967be1e273edd52a2be1893",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Eyes.mra",
+          "name": "Eyes (US, Set 1).mra",
+          "sha": "b393bd70245e49ce92697007e94b1e93864b601b",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Eyes%20(US%2C%20Set%201).mra",
           "type": "MRA",
           "extra": {
-            "name": "Eyes (US set 1)",
+            "name": "Eyes",
             "rbf": "pacman",
             "zips": [
               "eyes.zip"
@@ -4040,7 +4070,7 @@
         },
         {
           "name": "Gorkans.mra",
-          "sha": "5966f777aca503d0bbf79b7088f4aabdcbcf395d",
+          "sha": "55c0cb85edce714009989e31110af2653d8c1bfd",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Gorkans.mra",
           "type": "MRA",
           "extra": {
@@ -4053,7 +4083,7 @@
         },
         {
           "name": "Jump Shot.mra",
-          "sha": "d1ce1f543f8ff4b06b4de641b361dcd8c11978a5",
+          "sha": "98aa8b86edea67a4175b6ac8d12740c822190aea",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Jump%20Shot.mra",
           "type": "MRA",
           "extra": {
@@ -4066,7 +4096,7 @@
         },
         {
           "name": "Lizard Wizard.mra",
-          "sha": "472982be68d0d89c9db1fd11e94002b0c16a2657",
+          "sha": "eba7d061a303153499a9c2eb43ea519df6e46a5f",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Lizard%20Wizard.mra",
           "type": "MRA",
           "extra": {
@@ -4079,7 +4109,7 @@
         },
         {
           "name": "Mr. TNT.mra",
-          "sha": "00aefaa340c7a952962839e5a01366206050f09c",
+          "sha": "a290e27a5c668965b418bc0c92952317e91030f3",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Mr.%20TNT.mra",
           "type": "MRA",
           "extra": {
@@ -4091,9 +4121,9 @@
           }
         },
         {
-          "name": "Ms. Pacman.mra",
-          "sha": "3a189128497b6275de4ed89ca8ff23149eb54ade",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Ms.%20Pacman.mra",
+          "name": "Ms. Pac-Man.mra",
+          "sha": "a95540033fea31ff95793a6a429191ede4ad494e",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Ms.%20Pac-Man.mra",
           "type": "MRA",
           "extra": {
             "name": "Ms. Pac-Man",
@@ -4105,11 +4135,11 @@
         },
         {
           "name": "Pac-Man (Midway).mra",
-          "sha": "a4899b51181c714e114ed1d47f0efa406e645101",
+          "sha": "7fcb2d01b6bf3b42cc52a1f4d800aea66010cacc",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Pac-Man%20(Midway).mra",
           "type": "MRA",
           "extra": {
-            "name": "Pac-Man (Midway)",
+            "name": "Pac-Man",
             "rbf": "pacman",
             "zips": [
               "puckman.zip|pacman.zip"
@@ -4117,12 +4147,12 @@
           }
         },
         {
-          "name": "Pacman Club.mra",
-          "sha": "b6bfb9cc347b51e65dca9200ec4df15920051ef9",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Pacman%20Club.mra",
+          "name": "Pac-Man Club- Club Lambada (AR).mra",
+          "sha": "b13d866a78d1d721ea98d9bc2d2ae33913f10c42",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Pac-Man%20Club-%20Club%20Lambada%20(AR).mra",
           "type": "MRA",
           "extra": {
-            "name": "Pacman Club - Club Lambada (Argentina)",
+            "name": "Pac-Man Club- Club Lambada",
             "rbf": "pacman",
             "zips": [
               "clubpacm.zip"
@@ -4130,32 +4160,32 @@
           }
         },
         {
-          "name": "Pacman Plus.mra",
-          "sha": "f0e952873504d2893601e7f11f93eff8852f0cb2",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Pacman%20Plus.mra",
+          "name": "Pac-Man Plus.mra",
+          "sha": "5f7e9645b2c89518fa8fe3b91c8dc1c75db43a3b",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Pac-Man%20Plus.mra",
           "type": "MRA",
           "extra": {
             "name": "Pac-Man Plus",
             "rbf": "pacman",
             "zips": [
-              "pacplus.zip"
+              "/hbmame/puckman.zip"
             ]
           }
         },
         {
-          "name": "Pacmanic Miner.mra",
-          "sha": "5ec0035d185dbec671cbe4288ba0fe1f160ca43f",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Pacmanic%20Miner.mra",
+          "name": "Pac-Manic Miner.mra",
+          "sha": "ab786a42e9b24899a6a00b0dfbca21d6d81908e2",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Pac-Manic%20Miner.mra",
           "type": "MRA",
           "extra": {
-            "name": "Pacmanic Miner",
+            "name": "Pac-Manic Miner",
             "rbf": "pacman",
             "zips": []
           }
         },
         {
           "name": "Ponpoko.mra",
-          "sha": "67cb6a376d04cac1052ded83c18d801389740970",
+          "sha": "281b5149b8d0eef52694a3b383e449b11c98218e",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Ponpoko.mra",
           "type": "MRA",
           "extra": {
@@ -4167,12 +4197,12 @@
           }
         },
         {
-          "name": "Puck Man (Japan set 1).mra",
-          "sha": "593e4c1afc62bf9b215769659ecedec12e9fdfd3",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Puck%20Man%20(Japan%20set%201).mra",
+          "name": "Puck Man (JP, Set 1).mra",
+          "sha": "f7566b06a9ecef83636205a2fd4060956ca7ac9e",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Puck%20Man%20(JP%2C%20Set%201).mra",
           "type": "MRA",
           "extra": {
-            "name": "Puck Man (Japan set 1)",
+            "name": "Puck Man",
             "rbf": "pacman",
             "zips": [
               "puckman.zip"
@@ -4180,12 +4210,12 @@
           }
         },
         {
-          "name": "Super Glob.mra",
-          "sha": "7bc276f8494596a27015d94c1bd1b9ab666eeeb3",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Super%20Glob.mra",
+          "name": "Super Glob (Pac-Man, German) [bl].mra",
+          "sha": "58582e7794168df2fde51b3ddb78432e058665bc",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Super%20Glob%20(Pac-Man%2C%20German)%20%5Bbl%5D.mra",
           "type": "MRA",
           "extra": {
-            "name": "Super Glob (Pac-Man hardware) (German bootleg)",
+            "name": "Super Glob",
             "rbf": "pacman",
             "zips": [
               "suprglob.zip|sprglbpg.zip"
@@ -4193,12 +4223,12 @@
           }
         },
         {
-          "name": "The Glob.mra",
-          "sha": "3e1211107ac1453b56d86a64987c6441b139b776",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/The%20Glob.mra",
+          "name": "The Glob (Pac-Man Hardware).mra",
+          "sha": "445bc2e1d4fca404f0248d064a444eb9762237c4",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/The%20Glob%20(Pac-Man%20Hardware).mra",
           "type": "MRA",
           "extra": {
-            "name": "The Glob (Pac-Man hardware)",
+            "name": "The Glob",
             "rbf": "pacman",
             "zips": [
               "suprglob.zip|theglobp.zip"
@@ -4207,7 +4237,7 @@
         },
         {
           "name": "Van-Van Car.mra",
-          "sha": "be782b2fd8853bbbaa06311d46aa6f869238f965",
+          "sha": "dd5f1f0a423e8ea63dfdbc3ede9df7abfdc2a39e",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Van-Van%20Car.mra",
           "type": "MRA",
           "extra": {
@@ -4219,12 +4249,12 @@
           }
         },
         {
-          "name": "Woodpecker.mra",
-          "sha": "990837aa5e39fd1f239bb0ee535090389df5b181",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Woodpecker.mra",
+          "name": "Woodpecker (Set 1).mra",
+          "sha": "d4e4f28c2c70c3f69c620526739a7cd11c96d411",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Woodpecker%20(Set%201).mra",
           "type": "MRA",
           "extra": {
-            "name": "Woodpecker (set 1)",
+            "name": "Woodpecker",
             "rbf": "pacman",
             "zips": [
               "woodpeck.zip"
@@ -4633,6 +4663,12 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-RallyX_20210621.rbf",
+          "sha": "70b0f5a824a00a5f1f3d036efd6d9caefd469fb5",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-RallyX_MiSTer/master/releases/Arcade-RallyX_20210621.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "New Rally-X.mra",
           "sha": "51d41bac17e0e9d8ecf8d695c4ab3611b8bd0115",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-RallyX_MiSTer/master/releases/New%20Rally-X.mra",
@@ -4786,6 +4822,12 @@
           "name": "Arcade-Robotron_20210420.rbf",
           "sha": "c081d081f132fcc56b5cd9a9f02accd26241ea66",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Robotron_MiSTer/master/releases/Arcade-Robotron_20210420.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Robotron_20210621.rbf",
+          "sha": "ae2293c88914cdf1f450a3af2dcae9d1e63135f7",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Robotron_MiSTer/master/releases/Arcade-Robotron_20210621.rbf",
           "type": "RBF"
         },
         {
@@ -4947,6 +4989,12 @@
           "name": "Arcade-RshnAtk_20210611.rbf",
           "sha": "61933b752855a7fabbd8cbc7040c2a0f248d1b97",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-RushnAttack_MiSTer/master/releases/Arcade-RshnAtk_20210611.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-RshnAtk_20210621.rbf",
+          "sha": "493b31689d5a4c79d19884fb45224c7534ceef1c",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-RushnAttack_MiSTer/master/releases/Arcade-RshnAtk_20210621.rbf",
           "type": "RBF"
         },
         {
