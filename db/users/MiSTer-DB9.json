@@ -983,6 +983,12 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-BurgerTime_20210621.rbf",
+          "sha": "b6a54b8cd8fee77d817761f1934f5b442206ad6a",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-BurgerTime_MiSTer/master/releases/Arcade-BurgerTime_20210621.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Burger Time (Set 1).mra",
           "sha": "51114b7138918104f115c9ca661bae3ac6101812",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-BurgerTime_MiSTer/master/releases/Burger%20Time%20(Set%201).mra",
@@ -1641,12 +1647,18 @@
           "type": "RBF"
         },
         {
-          "name": "Dig Dug.mra",
-          "sha": "e2aee2387aefbb567f2f52f181b9e4eac2b8a90d",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-DigDug_MiSTer/master/releases/Dig%20Dug.mra",
+          "name": "Arcade-DigDug_20210331.rbf",
+          "sha": "73f8a856295bb18e013529a306b7bfd2e4f9f7b2",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-DigDug_MiSTer/master/releases/Arcade-DigDug_20210331.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Dig Dug (Rev 2).mra",
+          "sha": "b6aea102d1e917821ab996a0ee3a218bf5dc3168",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-DigDug_MiSTer/master/releases/Dig%20Dug%20(Rev%202).mra",
           "type": "MRA",
           "extra": {
-            "name": "Dig Dug (rev 2)",
+            "name": "Dig Dug",
             "rbf": "digdug",
             "zips": [
               "digdug.zip"
@@ -1910,12 +1922,42 @@
           "type": "RBF"
         },
         {
-          "name": "DigDug2.mra",
-          "sha": "b892a800abcf5fe1356cb76d4797294e2fccf6cc",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Druaga_MiSTer/master/releases/DigDug2.mra",
+          "name": "Arcade-Druaga_20210405.rbf",
+          "sha": "2029119524d233f2ff52b964897a7b2387bb8eff",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Druaga_MiSTer/master/releases/Arcade-Druaga_20210405.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Druaga_20210409.rbf",
+          "sha": "d1ab7ee751fb9660cb5afa8ab26a5a590f720b8e",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Druaga_MiSTer/master/releases/Arcade-Druaga_20210409.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Druaga_20210425.rbf",
+          "sha": "293e976ab7e741039ebc3576d841da377939e966",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Druaga_MiSTer/master/releases/Arcade-Druaga_20210425.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Druaga_20210519.rbf",
+          "sha": "b96c212da7da55ed2d97796c5a48160891863eee",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Druaga_MiSTer/master/releases/Arcade-Druaga_20210519.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Druaga_20210610.rbf",
+          "sha": "d05d96cbbec06e45f08ce8eb78a68bd45892dc62",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Druaga_MiSTer/master/releases/Arcade-Druaga_20210610.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Dig Dug II (New Ver).mra",
+          "sha": "c57162b816a0f8dcd0488e02d063a3b1f9b266a8",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Druaga_MiSTer/master/releases/Dig%20Dug%20II%20(New%20Ver).mra",
           "type": "MRA",
           "extra": {
-            "name": "Dig Dug II (New Ver.)",
+            "name": "Dig Dug II",
             "rbf": "druaga",
             "zips": [
               "digdug2.zip"
@@ -1923,25 +1965,25 @@
           }
         },
         {
-          "name": "Druaga.mra",
-          "sha": "95354a70ee10be33d59093039638a19ba38d8c6a",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Druaga_MiSTer/master/releases/Druaga.mra",
+          "name": "Grobda (W, New Ver.).mra",
+          "sha": "62d0503df090fafd04948698ea8cf4c0cc5090d5",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Druaga_MiSTer/master/releases/Grobda%20(W%2C%20New%20Ver.).mra",
           "type": "MRA",
           "extra": {
-            "name": "The Tower of Druaga (New Ver.)",
+            "name": "Grobda",
             "rbf": "druaga",
             "zips": [
-              "todruaga.zip"
+              "grobda.zip"
             ]
           }
         },
         {
-          "name": "Mappy.mra",
-          "sha": "0a3a9ce7d490701d5581d6ea90e05cdba531018c",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Druaga_MiSTer/master/releases/Mappy.mra",
+          "name": "Mappy (US).mra",
+          "sha": "920e616dbac7284e931180c09a43cada4e50f6ba",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Druaga_MiSTer/master/releases/Mappy%20(US).mra",
           "type": "MRA",
           "extra": {
-            "name": "Mappy (US)",
+            "name": "Mappy",
             "rbf": "druaga",
             "zips": [
               "mappy.zip"
@@ -1950,7 +1992,7 @@
         },
         {
           "name": "Motos.mra",
-          "sha": "4e00bf03800856db796989f22233b0f5fdc3bdf7",
+          "sha": "1f2c22c2869c39592b5f4428cd062d885f24ea6e",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Druaga_MiSTer/master/releases/Motos.mra",
           "type": "MRA",
           "extra": {
@@ -1958,6 +2000,58 @@
             "rbf": "druaga",
             "zips": [
               "motos.zip"
+            ]
+          }
+        },
+        {
+          "name": "Pac & Pal.mra",
+          "sha": "a88d8f2bc788d338e3e1b5a9a89d052362d3043a",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Druaga_MiSTer/master/releases/Pac%20%26%20Pal.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Pac & Pal",
+            "rbf": "druaga",
+            "zips": [
+              "pacnpal.zip"
+            ]
+          }
+        },
+        {
+          "name": "Pac-Man & Chomp Chomp.mra",
+          "sha": "1d1006f44ad3cb603ad039183221682d58ae80ac",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Druaga_MiSTer/master/releases/Pac-Man%20%26%20Chomp%20Chomp.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Pac-Man & Chomp Chomp",
+            "rbf": "druaga",
+            "zips": [
+              "pacnpal.zip"
+            ]
+          }
+        },
+        {
+          "name": "Super Pac-Man.mra",
+          "sha": "27165ed2f04e47f7370928195ef45d7e2541ef66",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Druaga_MiSTer/master/releases/Super%20Pac-Man.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Super Pac-Man",
+            "rbf": "druaga",
+            "zips": [
+              "superpac.zip"
+            ]
+          }
+        },
+        {
+          "name": "The Tower of Druaga.mra",
+          "sha": "9555502e9f5fe64903d4957cd6330929df9c7869",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Druaga_MiSTer/master/releases/The%20Tower%20of%20Druaga.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "The Tower of Druaga",
+            "rbf": "druaga",
+            "zips": [
+              "todruaga.zip"
             ]
           }
         },
@@ -2796,6 +2890,12 @@
           "name": "Arcade-LadyBug_20210419.rbf",
           "sha": "079d353ff7a3cba3c4ff64ddf6bd93b787a71935",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-LadyBug_MiSTer/master/releases/Arcade-LadyBug_20210419.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-LadyBug_20210621.rbf",
+          "sha": "6bd09931aa2049b5dcb66412a5a36a7153173735",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-LadyBug_MiSTer/master/releases/Arcade-LadyBug_20210621.rbf",
           "type": "RBF"
         },
         {
