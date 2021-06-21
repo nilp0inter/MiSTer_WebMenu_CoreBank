@@ -1653,6 +1653,12 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-DigDug_20210621.rbf",
+          "sha": "32e1bb9157042829d36dbddc405ea8c53d2f651c",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-DigDug_MiSTer/master/releases/Arcade-DigDug_20210621.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Dig Dug (Rev 2).mra",
           "sha": "b6aea102d1e917821ab996a0ee3a218bf5dc3168",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-DigDug_MiSTer/master/releases/Dig%20Dug%20(Rev%202).mra",
@@ -1949,6 +1955,12 @@
           "name": "Arcade-Druaga_20210610.rbf",
           "sha": "d05d96cbbec06e45f08ce8eb78a68bd45892dc62",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Druaga_MiSTer/master/releases/Arcade-Druaga_20210610.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Druaga_20210621.rbf",
+          "sha": "c695042477bdd3b6ebf9279bc1e28cb1c3d80238",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Druaga_MiSTer/master/releases/Arcade-Druaga_20210621.rbf",
           "type": "RBF"
         },
         {
@@ -4902,8 +4914,20 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-RshnAtk_20210407.rbf",
+          "sha": "678343e9cb58647fee86138c9028fa854a724e92",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-RushnAttack_MiSTer/master/releases/Arcade-RshnAtk_20210407.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-RshnAtk_20210611.rbf",
+          "sha": "61933b752855a7fabbd8cbc7040c2a0f248d1b97",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-RushnAttack_MiSTer/master/releases/Arcade-RshnAtk_20210611.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Green Beret.mra",
-          "sha": "62044dc8890f8b75aedff6dd7629b58d887f63df",
+          "sha": "764db43948eccbf2cd8cb5ff9a06d1f421929167",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-RushnAttack_MiSTer/master/releases/Green%20Beret.mra",
           "type": "MRA",
           "extra": {
@@ -4915,12 +4939,25 @@
           }
         },
         {
+          "name": "Mr. Goemon.mra",
+          "sha": "0b066072a54567ee1db1233a7a706de98bf584f5",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-RushnAttack_MiSTer/master/releases/Mr.%20Goemon.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Mr. Goemon",
+            "rbf": "rshnatk",
+            "zips": [
+              "mrgoemon.zip"
+            ]
+          }
+        },
+        {
           "name": "Rush'n Attack (US).mra",
-          "sha": "5bdd0d7b03dd87288e615ea59a85f1c1d2d79a7c",
+          "sha": "2d6ea446462df3f2a3fdda5662a1cd1f159af469",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-RushnAttack_MiSTer/master/releases/Rush'n%20Attack%20(US).mra",
           "type": "MRA",
           "extra": {
-            "name": "Rush'n Attack (US)",
+            "name": "Rush'n Attack",
             "rbf": "rshnatk",
             "zips": [
               "gberet.zip|rushatck.zip"
@@ -4979,12 +5016,12 @@
       "url": "https://github.com/MiSTer-DB9/Arcade-Scramble_MiSTer",
       "releases": [
         {
-          "name": "Amidar.mra",
-          "sha": "12db951f08672b5edc15986fec110275b0ba9c56",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Scramble_MiSTer/master/releases/Amidar.mra",
+          "name": "Amidar (Scramble).mra",
+          "sha": "a95c05a535a41ac93ac3720915983ac625042bc9",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Scramble_MiSTer/master/releases/Amidar%20(Scramble).mra",
           "type": "MRA",
           "extra": {
-            "name": "Amidar (Scramble hardware)",
+            "name": "Amidar",
             "rbf": "scramble",
             "zips": [
               "amidar.zip|amidars.zip"
@@ -4993,7 +5030,7 @@
         },
         {
           "name": "Anteater.mra",
-          "sha": "4cd714e7cdd7357b17b88c91357661544c9b4fe2",
+          "sha": "d2fa9276db109f17e293743596c1dee648a1be4d",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Scramble_MiSTer/master/releases/Anteater.mra",
           "type": "MRA",
           "extra": {
@@ -5041,8 +5078,32 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Scramble_20210228.rbf",
+          "sha": "2ae49d5fdf2e5a8d9d2921948928376b2b9f3209",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Scramble_MiSTer/master/releases/Arcade-Scramble_20210228.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Scramble_20210306.rbf",
+          "sha": "12c70cd011042258fed34292d0f0537340580bf1",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Scramble_MiSTer/master/releases/Arcade-Scramble_20210306.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Scramble_20210404.rbf",
+          "sha": "87f382dc6bb178520f2b5bd03376272b3df81060",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Scramble_MiSTer/master/releases/Arcade-Scramble_20210404.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Scramble_20210621.rbf",
+          "sha": "76545b55a5892bd455110125982a882641d1dfa0",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Scramble_MiSTer/master/releases/Arcade-Scramble_20210621.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Armored Car.mra",
-          "sha": "d075bbb834a28c6672651fb0f393d6583ec8330d",
+          "sha": "80bc662ff4f063a3d531ba4ea3492509eac6a562",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Scramble_MiSTer/master/releases/Armored%20Car.mra",
           "type": "MRA",
           "extra": {
@@ -5055,11 +5116,11 @@
         },
         {
           "name": "Battle of Atlantis.mra",
-          "sha": "67e513ef56bac2c5882e4f4c0e07eca5e150e835",
+          "sha": "e9699001c6f054fe1b0e1cb8c2f8da0f95fd4944",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Scramble_MiSTer/master/releases/Battle%20of%20Atlantis.mra",
           "type": "MRA",
           "extra": {
-            "name": "Battle of Atlantis (set 2)",
+            "name": "Battle of Atlantis",
             "rbf": "scramble",
             "zips": [
               "atlantis.zip|atlantis2.zip"
@@ -5068,7 +5129,7 @@
         },
         {
           "name": "Calipso.mra",
-          "sha": "41f7c46ef1cbf49e2f98ac545c1a6695cd9af123",
+          "sha": "effdd9388c1df06607246af271b9ccbc968c5316",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Scramble_MiSTer/master/releases/Calipso.mra",
           "type": "MRA",
           "extra": {
@@ -5081,7 +5142,7 @@
         },
         {
           "name": "Dark Planet (no bkg).mra",
-          "sha": "fa10958a640acfa7a283bcc63d547f50ef1bb553",
+          "sha": "b44db840422c3650c1445c31376e33188879adfa",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Scramble_MiSTer/master/releases/Dark%20Planet%20(no%20bkg).mra",
           "type": "MRA",
           "extra": {
@@ -5094,7 +5155,7 @@
         },
         {
           "name": "Dark Planet.mra",
-          "sha": "78e0e5dcdac274b561190f30a7f0aabda9d9867c",
+          "sha": "bed421d9ce286e6612dacbe3c1434611a3238b5f",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Scramble_MiSTer/master/releases/Dark%20Planet.mra",
           "type": "MRA",
           "extra": {
@@ -5107,11 +5168,11 @@
         },
         {
           "name": "Frogger (Konami Bugfixed).mra",
-          "sha": "c2f58fd43e5e317f5795d139f35456577aef1a23",
+          "sha": "826f83c6e14bc3902c531d479c3687c5e4fd309e",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Scramble_MiSTer/master/releases/Frogger%20(Konami%20Bugfixed).mra",
           "type": "MRA",
           "extra": {
-            "name": "Frogger Konami Bugfixed",
+            "name": "Frogger",
             "rbf": "scramble",
             "zips": [
               "frogger.zip|froggers2.zip"
@@ -5119,12 +5180,12 @@
           }
         },
         {
-          "name": "Frogger.mra",
-          "sha": "1833bfa2011889aa382963e620ff65e034f28aa0",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Scramble_MiSTer/master/releases/Frogger.mra",
+          "name": "Frogger (Sega, Set 2).mra",
+          "sha": "acc2f228d0326841ff87058d92fc109197b6d544",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Scramble_MiSTer/master/releases/Frogger%20(Sega%2C%20Set%202).mra",
           "type": "MRA",
           "extra": {
-            "name": "Frogger (Sega set 2)",
+            "name": "Frogger",
             "rbf": "scramble",
             "zips": [
               "frogger.zip|froggers2.zip"
@@ -5133,7 +5194,7 @@
         },
         {
           "name": "Lost Tomb.mra",
-          "sha": "4f91fb8596165633edd700f41a5f0e38df5a892d",
+          "sha": "30180609a25026f7a5b40b51a8ed7fa2fbd5700c",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Scramble_MiSTer/master/releases/Lost%20Tomb.mra",
           "type": "MRA",
           "extra": {
@@ -5146,7 +5207,7 @@
         },
         {
           "name": "Mars.mra",
-          "sha": "d5318dd6d12e90c9c90743640a9cb5cbfe240227",
+          "sha": "ea7fc446171d192037e4e95ceecf364ada6eadab",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Scramble_MiSTer/master/releases/Mars.mra",
           "type": "MRA",
           "extra": {
@@ -5158,9 +5219,9 @@
           }
         },
         {
-          "name": "Mighty Monkey.mra",
-          "sha": "70c03c2dd1ae05a2aba98a7bc506c8ccee511989",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Scramble_MiSTer/master/releases/Mighty%20Monkey.mra",
+          "name": "Mighty Monkey (Scramble Hardware) [bl].mra",
+          "sha": "54becdc20f3c62d1437db072974326b9744e5356",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Scramble_MiSTer/master/releases/Mighty%20Monkey%20(Scramble%20Hardware)%20%5Bbl%5D.mra",
           "type": "MRA",
           "extra": {
             "name": "Mighty Monkey",
@@ -5172,7 +5233,7 @@
         },
         {
           "name": "Minefield.mra",
-          "sha": "c7863c9dfcb31bc2adbd0cb1cd3174e36af76cad",
+          "sha": "69fed6c7519e597ef42e32d32fd32f7a6c3d30ef",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Scramble_MiSTer/master/releases/Minefield.mra",
           "type": "MRA",
           "extra": {
@@ -5184,12 +5245,12 @@
           }
         },
         {
-          "name": "Moonwar.mra",
-          "sha": "48f1cd32b7c6191f7a5fd9cd903b3d7fa6b0c4d3",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Scramble_MiSTer/master/releases/Moonwar.mra",
+          "name": "Moon War.mra",
+          "sha": "8be8ffaf285a8aff10bff687c2aec739f31e38e5",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Scramble_MiSTer/master/releases/Moon%20War.mra",
           "type": "MRA",
           "extra": {
-            "name": "Moonwar",
+            "name": "Moon War",
             "rbf": "scramble",
             "zips": [
               "moonwar.zip"
@@ -5198,7 +5259,7 @@
         },
         {
           "name": "Rescue.mra",
-          "sha": "da06dfe44aefdb19baf89b334a499d6917924a0f",
+          "sha": "5eca650d6a646d20900cba435741301bc70aac40",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Scramble_MiSTer/master/releases/Rescue.mra",
           "type": "MRA",
           "extra": {
@@ -5210,12 +5271,12 @@
           }
         },
         {
-          "name": "Scramble.mra",
-          "sha": "4de7d516eaa3c21ae67bc45e79d3542d4e22e68e",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Scramble_MiSTer/master/releases/Scramble.mra",
+          "name": "Scramble (Stern, Set 1).mra",
+          "sha": "dd0571da73b7aee16168e0cca1336ba3c591be48",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Scramble_MiSTer/master/releases/Scramble%20(Stern%2C%20Set%201).mra",
           "type": "MRA",
           "extra": {
-            "name": "Scramble (Stern Electronics set 1)",
+            "name": "Scramble",
             "rbf": "scramble",
             "zips": [
               "scramble.zip|scrambles.zip"
@@ -5224,7 +5285,7 @@
         },
         {
           "name": "Speed Coin.mra",
-          "sha": "56632ece3688d71ca5c6d9b6890d9045dbe8790b",
+          "sha": "b5696ea276a78fb80ddfa3f0dc33f04c2d8063ef",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Scramble_MiSTer/master/releases/Speed%20Coin.mra",
           "type": "MRA",
           "extra": {
@@ -5237,7 +5298,7 @@
         },
         {
           "name": "Strategy X.mra",
-          "sha": "55df8e6b417870758f39face9445c906d095d9bf",
+          "sha": "4def31fa0712d9e337e8727d4a1de0848087abfa",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Scramble_MiSTer/master/releases/Strategy%20X.mra",
           "type": "MRA",
           "extra": {
@@ -5250,7 +5311,7 @@
         },
         {
           "name": "Super Cobra.mra",
-          "sha": "b9e3792e0f1518463a9409e05e3079d43157ea25",
+          "sha": "a455f80fa25377a4f5aef68bdc4edd2c81c33cf4",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Scramble_MiSTer/master/releases/Super%20Cobra.mra",
           "type": "MRA",
           "extra": {
@@ -5262,9 +5323,9 @@
           }
         },
         {
-          "name": "Tazz-Mania.mra",
-          "sha": "54f26864d04c7e4c399518beed0e762ed84e22a0",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Scramble_MiSTer/master/releases/Tazz-Mania.mra",
+          "name": "Tazz-Mania (Set 1).mra",
+          "sha": "5ff2b4c8812543b02d79aa27aa64a8d0451ca980",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Scramble_MiSTer/master/releases/Tazz-Mania%20(Set%201).mra",
           "type": "MRA",
           "extra": {
             "name": "Tazz-Mania",
@@ -5276,7 +5337,7 @@
         },
         {
           "name": "The End (bkg).mra",
-          "sha": "79d621d776135118cc1b4699a454d63ad373935a",
+          "sha": "c753f8d7315b143436258386156e4cf40da98cfe",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Scramble_MiSTer/master/releases/The%20End%20(bkg).mra",
           "type": "MRA",
           "extra": {
@@ -5289,7 +5350,7 @@
         },
         {
           "name": "The End.mra",
-          "sha": "a7aa6ddcc6c7b673bdc8a58312b3f900b08b48f3",
+          "sha": "1d6058c3dc00d3af38feca3b0d0897b98570aa3d",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Scramble_MiSTer/master/releases/The%20End.mra",
           "type": "MRA",
           "extra": {
@@ -5302,7 +5363,7 @@
         },
         {
           "name": "Turtles.mra",
-          "sha": "dd50c8e6245c17833c9cbb61404445b0b5b119eb",
+          "sha": "459b48f2f0c955d5381caaba993168b7469858cc",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Scramble_MiSTer/master/releases/Turtles.mra",
           "type": "MRA",
           "extra": {
