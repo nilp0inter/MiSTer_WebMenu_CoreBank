@@ -579,6 +579,12 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-AtariTetris_20210621.rbf",
+          "sha": "4d55304d9a1658c8eb434b3eec335e76e652c0ba",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-ATetris_MiSTer/master/releases/Arcade-AtariTetris_20210621.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Tetris (Cocktail, Set 1).mra",
           "sha": "105952e2c8f1ab1f6c1a647be3e4e5beea80178c",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-ATetris_MiSTer/master/releases/Tetris%20(Cocktail%2C%20Set%201).mra",
@@ -1112,12 +1118,24 @@
       "url": "https://github.com/MiSTer-DB9/Arcade-Cave_MiSTer",
       "releases": [
         {
+          "name": "Arcade-Cave_20210406.rbf",
+          "sha": "ff5887188d6683fcb2c84ef4087b25e168427cb2",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Cave_MiSTer/master/releases/Arcade-Cave_20210406.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Cave_20210420.rbf",
+          "sha": "6139e9d5aae962cc3d3c18a18a0556fb1d58f833",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Cave_MiSTer/master/releases/Arcade-Cave_20210420.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "DoDonPachi (Arrange).mra",
-          "sha": "f7ce9fe31183501ed983becec703aa412fad8c4d",
+          "sha": "f972bdd9ab4f32d2f617a33b1d93f166f5223355",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Cave_MiSTer/master/releases/DoDonPachi%20(Arrange).mra",
           "type": "MRA",
           "extra": {
-            "name": "DoDonPachi (Arrange)",
+            "name": "DoDonPachi (20120212 Arrange Ver. 1.1)",
             "rbf": "cave",
             "zips": [
               "ddonpach.zip|ddonpacha.zip"
@@ -1126,7 +1144,7 @@
         },
         {
           "name": "DoDonPachi (Japan).mra",
-          "sha": "1a5bcf7213f7936edaab8004e7525b5bc3c8a4ea",
+          "sha": "b6094ca349d26424d6f8d0559e9b50909e979b0e",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Cave_MiSTer/master/releases/DoDonPachi%20(Japan).mra",
           "type": "MRA",
           "extra": {
@@ -1138,21 +1156,8 @@
           }
         },
         {
-          "name": "DoDonPachi (no warn).mra",
-          "sha": "83045192889a19ddd42f6cbf734728439ae38fd3",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Cave_MiSTer/master/releases/DoDonPachi%20(no%20warn).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "DoDonPachi (no warn)",
-            "rbf": "cave",
-            "zips": [
-              "ddonpach.zip"
-            ]
-          }
-        },
-        {
           "name": "DoDonPachi.mra",
-          "sha": "5b4a4f7c59882320d674df4171b3ae4235c269c7",
+          "sha": "ab41ad81e40e2a57844b8f3931731431d855200e",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Cave_MiSTer/master/releases/DoDonPachi.mra",
           "type": "MRA",
           "extra": {
@@ -2655,60 +2660,6 @@
           "sha": "e2d6bde9de0be17852c630ca681f168a683e4e1d",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Gaplus_MiSTer/master/releases/rommap.txt",
           "type": "OTHER"
-        }
-      ]
-    },
-    {
-      "name": "Arcade-GnG_MiSTer",
-      "description": "Arcade Ghosts'n Goblins for MiSTer",
-      "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: Ghosts'n Goblins for MiSTer ported by Sorgelig\n-- 20 January 2019\n-- \n---------------------------------------------------------------------------------\n-- JT_GNG FPGA Clone of Ghosts'n Goblins by Jose Tejada (@topapate)\n---------------------------------------------------------------------------------\n-- \n-- \n-- Keyboard inputs :\n--\n--   F1         : Start 1 player\n--   F2         : Start 2 players\n--   F3         : Add Coin\n--   SPACE      : Jump\n--   CTRL,ALT   : Fire\n--   UP,DOWN,LEFT,RIGHT : Movements\n--   \n-- Joystick inputs:\n--   Joypad Button 1    : Jump\n--   Joypad Button 2,3  : Fire\n--   UP,DOWN,LEFT,RIGHT : Movements\n--\n-- Note: in continue screen use combo Fire + 1P/2P to continue\n--\n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n\n\n\n***** ORIGINAl README (many things are irrelevant for MiSTer port): *****\n\n\nJT_GNG FPGA Clone of Ghosts'n Goblins by Jose Tejada (@topapate)\n================================================================\n\nYou can show your appreciation through\n    * Patreon: https://patreon.com/topapate\n    * Paypal: https://paypal.me/topapate\n\nYes, you always wanted to have a Ghosts'n Goblins arcade board at home. First you couldn't get it because your parents somehow did not understand you. Then you grow up and your wife doesn't understand you either. Don't worry, MiST is here to the rescue.\n\nWhat you get with this is an extremely accurate (allegedly 100% accurate) clone of the original hardware. You will notice differences from MAME if you compare. Try resetting it and compare those screens for a start! Original hardware handled sound and graphics in a different way from the emulator. There were delays in CPU bus access and other details that will make the experience different from an emulator. Of course, no pause. Just like the real thing!\n\nI hope you will have as much fun with it as I had it while making it!\n\nProject Structure\n=================\n\nThis work has two separate parts:\n\n1. A verilog model of the original hardware, replicated from original schematics. This is found in the hdl folder. Some test benches are available in the \"ver\" (for verification) folder. Data sheets of parts used in the original design are located in the \"doc\" folder. This is interesting to understand how it worked. It can be used to repair broken boards too.\n\n2. A modern clone written in Verilog. It has been made with the MiST board in mind but the game itself (jtgng_game module) is highly portable. All components used aim to be cycle exact -some even sub-cycle exact- so the recreation is the most similar thing to having the original PCB you can get.\n\nModules\n=======\n\nThe FPGA clone uses the following modules:\n\nJT12: For YM2203 sound synthesis. From the same author.\nMC6809 from Greg Miller\nT80: originally from Daniel Wallner, with edits from Alexey Melnikov (Mister)\nhybrid_pwm_sd.v copied from FPGAgen source code. Unknown author\n\nDirectory Structure\n===================\nhdl/        replica of original PCB schematics\nver/        simulation files for original PCB\nmodules     external files used\ndoc         documents related to original PCB\nrom         script to convert from MAME rom files to the required format\n            simulation files expect the rom files here\nmist/       MiST board version of Ghosts'n Goblins.\n            Latest core version is located in this folder and called core.rbf\nmist/hdl    Verilog files of the clone for MiST\nmist/doc    documents related to MiST clone or MiST hardware\nmist/quartus project to synthesize the clone\nmist/ver    simulation files of MiST clone\n\nClone Structure\n===============\n\nThe top level module is called jtgng_mist. This is the module that is really dependent on the board. If you want to port jtgng to a different FPGA board you will need to modify this file. Most other files will likely stay the same\n\nThe game itself in module jtgng_game. It is written using an arbitrary clock (active on positive edge) and a clock enable signal (switching on the negative edge). From jtgng_game down the hierarchy, everything should be highly portable.\n\nThe video output is a 256x256 screen. That is what you get from jtgng_game in a signal format that replicates the original hardware. jtgng_mist instantiates a module called jtgng_vga that converts the image to a standard VGA resolution without losing frame speed.\n\nROM Generation\n==============\n\nCopy your .zip files to the rom folder and use Python to execute the file jtgng.py from a command line. Then copy the .rom file to the SD card with the name JTGNG.rom\n\nSD Card\n=======\n\nFor MiST copy the file core.rbf to the SD card at the root directory. Copy also the rom you have generated with the name JTGNG.rom. It will get loaded at start.\n\nExtras\n======\n\nYou can press F12 to bring the OSD menu up. You can turn off music, or sound effects with it. By default, a screen filter makes the screen look closer to an old tube monitor. If you turn it off you will get sharp pixels. Note that if you switch from sharp to soft pixels you will need a couple of seconds to get your eyes used as the brain initially perceives this as an out of focus image compared to the old one.\n\nSound\n=======\nOriginal filter for sound:\n    -high pass filter with cut-off freq. at 1.6Hz\n    -low pass filter with cut-off freq. at 32.3kHz\n\nCredits\n=======\n\nJose Tejada Gomez. Twitter @topapate\nProject is hosted in http://www.github.com/jotego/jt_gng\nLicense: GPL3, you are obligued to publish your code if you use mine\n\nSpecial thanks to Greg Miller and Alexey Melnikov\n\n",
-      "archived": true,
-      "fork": true,
-      "url": "https://github.com/MiSTer-DB9/Arcade-GnG_MiSTer",
-      "releases": [
-        {
-          "name": "Arcade-GnG_20191228.rbf",
-          "sha": "0c666055db4e3d5740932e199a18fd4b0c966fdb",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-GnG_MiSTer/master/releases/Arcade-GnG_20191228.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Arcade-GnG_20200509.rbf",
-          "sha": "5667cbd6b27b203a7551fea8e5f247557b61c5f4",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-GnG_MiSTer/master/releases/Arcade-GnG_20200509.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Arcade-GnG_20210117.rbf",
-          "sha": "82789c879bbc3cb698309e94df0d321b94cd0ab3",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-GnG_MiSTer/master/releases/Arcade-GnG_20210117.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Ghosts'n Goblins.mra",
-          "sha": "a88eefa4d008f5e8687f9f53ad1deae99757f85c",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-GnG_MiSTer/master/releases/Ghosts'n%20Goblins.mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Ghosts'n Goblins (World set 1)",
-            "rbf": "gng",
-            "zips": [
-              "gng.zip"
-            ]
-          }
-        },
-        {
-          "name": "Makai-Mura (Japan).mra",
-          "sha": "effcb3510b21edc4c5e7ba0b09f9d055f19c0938",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-GnG_MiSTer/master/releases/Makai-Mura%20(Japan).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Makai-Mura (Japan)",
-            "rbf": "gng",
-            "zips": [
-              "gng.zip|makaimur.zip"
-            ]
-          }
         }
       ]
     },
@@ -5100,41 +5051,6 @@
           "sha": "c50969b011b6581dcfefd5d6fb3b69df0d8586fa",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-RushnAttack_MiSTer/master/releases/rommap.txt",
           "type": "OTHER"
-        }
-      ]
-    },
-    {
-      "name": "Arcade-Rygar_MiSTer",
-      "description": "Rygar (1986) core for MiSTer",
-      "readme": "# Rygar (1986)\n\n<img alt=\"Rygar\" src=\"https://github.com/nullobject/rygar-fpga/raw/master/doc/rygar-banner.jpg\" />\n\nRygar was originally built in 1986 by Tecmo, a Japanese video game company, and saw later releases on consoles like Nintendo Entertainment System, Sega Master System, Commodore 64, Atari Lynx, etc.\n\nI began this project by writing an [emulator](https://github.com/nullobject/rygar-emu), so I could focus on learning how the arcade game works, without having to worry about the FPGA side of things. I kept detailed project notes while working on both the emulator and FPGA core, which will be turned into a series of [blog posts](https://joshbassett.info).\n\n## Getting Started\n\nIn order to run this arcade core, you will need to provide the correct ROMs (they are not included for legal reasons).\n\nTo simplify the process, you only need to provide the `rygar.zip` file from the MAME ROMs.\n\n1. Download the [latest Rygar release](https://github.com/MiSTer-devel/Arcade-Rygar_MiSTer/releases/latest).\n2. Extract the MRA and RBF files from the archive.\n3. Place the extracted files and the ZIP file containing the MAME ROM files in the following locations:\n\n```\n_Arcade/rygar.mra\n_Arcade/cores/rygar.rbf\n_Arcade/mame/rygar.zip\n```\n\nFor more information on using MRA files with MiSTer, please refer to the [wiki](https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms).\n\n## Controls\n\nKeyboard inputs:\n\n| name     | key                   |\n| ---      | ---                   |\n| Coin     | 5                     |\n| Start    | 1                     |\n| Attack   | CTRL                  |\n| Jump     | ALT                   |\n| Movement | UP, DOWN, LEFT, RIGHT |\n\nJoystick inputs:\n\n| name     | button                |\n| ---      | ---                   |\n| Coin     | L                     |\n| Start    | R                     |\n| Attack   | A                     |\n| Jump     | B                     |\n| Movement | UP, DOWN, LEFT, RIGHT |\n\n## Development\n\nCompile the core:\n\n    $ make build\n\nProgram the DE10-Nano:\n\n    $ make program\n\n## Credits\n\nMade with :heart: by [Josh Bassett](https://twitter.com/nullobject), 2020.\n\nSpecial thanks to:\n\n* [Jose Tejada](https://twitter.com/topapate)\n* [ElectronAsh](https://twitter.com/AshEvans81)\n\n## Licence\n\nRygar is licensed under the MIT licence. See the LICENCE file for more details.\n",
-      "archived": true,
-      "fork": true,
-      "url": "https://github.com/MiSTer-DB9/Arcade-Rygar_MiSTer",
-      "releases": [
-        {
-          "name": "Arcade-Rygar_20200513.rbf",
-          "sha": "98e4018b34a73c584b64c9aa7af7f65aff6ba0e8",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Rygar_MiSTer/master/releases/Arcade-Rygar_20200513.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Arcade-Rygar_20200514.rbf",
-          "sha": "8ba1954f4011887c16259691d0ad05a3e8c0b35a",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Rygar_MiSTer/master/releases/Arcade-Rygar_20200514.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Rygar.mra",
-          "sha": "b722cab2b3ad1e72b5f622b6ca692896ceb607bf",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Rygar_MiSTer/master/releases/Rygar.mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Rygar",
-            "rbf": "rygar",
-            "zips": [
-              "rygar.zip"
-            ]
-          }
         }
       ]
     },
@@ -8856,256 +8772,6 @@
             "rbf": "gyruss",
             "zips": [
               "gyruss.zip|venus.zip"
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "name": "MiSTer-Arcade-SEGASYS1",
-      "description": "FPGA implementation of SEGA SYSTEM 1 arcade board",
-      "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: SEGA System 1  for MiSTer by MiSTer-X\n-- 07 January 2020\n-- \n---------------------------------------------------------------------------------\n-- T80/T80s - Version : 0242\n--------------------------------\n-- Z80 compatible microprocessor core\n-- Copyright (c) 2001-2002 Daniel Wallner (jesus@opencores.org)\n---------------------------------------------------------------------------------\n--\n-- Keyboard inputs :\n--\n--   F2          : Coin + Start 2 players\n--   F1          : Coin + Start 1 player\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--   SPACE       : Trig1\n--   CTRL        : Trig2\n--   ALT         : Trig3\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   R,F,D,G     : Player 2 Movements\n--   A           : Player 2 Trig1\n--   S           : Player 2 Trig2\n--   Q           : Player 2 Trig3\n--\n-- Joystick support.\n--\n---------------------------------------------------------------------------------\n-- 2020/01/08  Impl. Trigger 3  (for SEGA Ninja)\n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROM is not included. In order to use this arcade, you need to provide a correct ROM file.\n\nFind this zip file somewhere. You need to find the file exactly as required.\nDo not rename other zip files even if they also represent the same game - they are not compatible!\nThe name of zip is taken from M.A.M.E. project, so you can get more info about\nhashes and contained files there.\n\n\nHow to install:\n  0. Update MiSTer binary to v200106 or later\n  1. copy releases/*.mra to /media/fat/_Arcade\n  2. copy releases/*.rbf to /media/fat/_Arcade/cores\n  3. copy ROM zip files  to /media/fat/_Arcade/mame\n\n\nBe sure to use the MRA file in \"releases\" of this repository.\nIt does not guarantee the operation when using other MRA files.\n\n",
-      "archived": true,
-      "fork": true,
-      "url": "https://github.com/MiSTer-DB9/MiSTer-Arcade-SEGASYS1",
-      "releases": [
-        {
-          "name": "4-D Warriors.mra",
-          "sha": "cb2b94ed542407662b3e057a9446548567d8333e",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/MiSTer-Arcade-SEGASYS1/master/releases/4-D%20Warriors.mra",
-          "type": "MRA",
-          "extra": {
-            "name": "4D Warriors",
-            "rbf": "segasys1",
-            "zips": [
-              "4dwarrio.zip"
-            ]
-          }
-        },
-        {
-          "name": "Arcade-SEGASYS1_20200223.rbf",
-          "sha": "22c76ea152302329d4383a1d88c519ecf0739596",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/MiSTer-Arcade-SEGASYS1/master/releases/Arcade-SEGASYS1_20200223.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Arcade-SEGASYS1_20200225.rbf",
-          "sha": "953d04b130b0f267be070e0d6b21e7affb4d8b85",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/MiSTer-Arcade-SEGASYS1/master/releases/Arcade-SEGASYS1_20200225.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Arcade-SEGASYS1_20200408.rbf",
-          "sha": "7f49f2753e875a5b75abebc57047bde59379e889",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/MiSTer-Arcade-SEGASYS1/master/releases/Arcade-SEGASYS1_20200408.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Arcade-SEGASYS1_20200419.rbf",
-          "sha": "427c4afe63a17b2c35a8e50f9563f446e2e6647a",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/MiSTer-Arcade-SEGASYS1/master/releases/Arcade-SEGASYS1_20200419.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Arcade-SEGASYS1_20200531.rbf",
-          "sha": "3d0ce57b284ccb499a4de1c170e890b22fc2c559",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/MiSTer-Arcade-SEGASYS1/master/releases/Arcade-SEGASYS1_20200531.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Flicky.mra",
-          "sha": "a43930aeda08cbc956152e3b660d304f127767e7",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/MiSTer-Arcade-SEGASYS1/master/releases/Flicky.mra",
-          "type": "MRA",
-          "extra": null
-        },
-        {
-          "name": "I'm Sorry.mra",
-          "sha": "39f584f1c25f4d2ba0112c4b30df106fb8d3197a",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/MiSTer-Arcade-SEGASYS1/master/releases/I'm%20Sorry.mra",
-          "type": "MRA",
-          "extra": {
-            "name": "I'm Sorry (315-5110, US)",
-            "rbf": "segasys1",
-            "zips": [
-              "imsorry.zip"
-            ]
-          }
-        },
-        {
-          "name": "Mister Viking.mra",
-          "sha": "e0599647bdeda45b043955da04650d34b014819a",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/MiSTer-Arcade-SEGASYS1/master/releases/Mister%20Viking.mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Mister Viking (315-5041)",
-            "rbf": "segasys1",
-            "zips": [
-              "mrviking.zip"
-            ]
-          }
-        },
-        {
-          "name": "My Hero.mra",
-          "sha": "e5bc715a9603d74698ec87e284394c1b2262b0a1",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/MiSTer-Arcade-SEGASYS1/master/releases/My%20Hero.mra",
-          "type": "MRA",
-          "extra": {
-            "name": "My Hero (US, not encrypted)",
-            "rbf": "segasys1",
-            "zips": [
-              "myhero.zip"
-            ]
-          }
-        },
-        {
-          "name": "Rafflesia.mra",
-          "sha": "d1c977a9f42ba1d8607649f31ebeaea758200cc2",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/MiSTer-Arcade-SEGASYS1/master/releases/Rafflesia.mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Rafflesia",
-            "rbf": "segasys1",
-            "zips": [
-              "raflesia.zip"
-            ]
-          }
-        },
-        {
-          "name": "Regulus.mra",
-          "sha": "86d45861eb460900225caff99ad89d7b801ebe3d",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/MiSTer-Arcade-SEGASYS1/master/releases/Regulus.mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Regulus",
-            "rbf": "segasys1",
-            "zips": [
-              "regulus.zip"
-            ]
-          }
-        },
-        {
-          "name": "Sega Ninja.mra",
-          "sha": "5b213943ee2118b7209db412936dcd9370766a54",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/MiSTer-Arcade-SEGASYS1/master/releases/Sega%20Ninja.mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Sega Ninja (315-5102)",
-            "rbf": "segasys1",
-            "zips": [
-              "seganinj.zip"
-            ]
-          }
-        },
-        {
-          "name": "Spatter.mra",
-          "sha": "d819854d260a19f3dc095702c6a7520597df24f6",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/MiSTer-Arcade-SEGASYS1/master/releases/Spatter.mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Spatter (315-5xxx)",
-            "rbf": "segasys1",
-            "zips": [
-              "spatter.zip"
-            ]
-          }
-        },
-        {
-          "name": "TeddyBoy Blues.mra",
-          "sha": "b6c957ddbc25ead5a20d23363ad010fa72cd7ed7",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/MiSTer-Arcade-SEGASYS1/master/releases/TeddyBoy%20Blues.mra",
-          "type": "MRA",
-          "extra": {
-            "name": "TeddyBoy Blues (315-5115, New Ver.)",
-            "rbf": "segasys1",
-            "zips": [
-              "teddybb.zip"
-            ]
-          }
-        },
-        {
-          "name": "Up'n Down.mra",
-          "sha": "eed16e9569c80ad87ea07caff13730c6ebbd7f57",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/MiSTer-Arcade-SEGASYS1/master/releases/Up'n%20Down.mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Up'n Down",
-            "rbf": "segasys1",
-            "zips": [
-              "upndown.zip"
-            ]
-          }
-        },
-        {
-          "name": "Wonder Boy.mra",
-          "sha": "5c1766a42923de312ffb407559c63975f38290f7",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/MiSTer-Arcade-SEGASYS1/master/releases/Wonder%20Boy.mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Wonder Boy (set 1, 315-5177)",
-            "rbf": "segasys1",
-            "zips": [
-              "wboy.zip"
-            ]
-          }
-        },
-        {
-          "name": "Gonbee no I'm Sorry (315-5110, Japan).mra",
-          "sha": "a6584ea30fc265c49a8edaf43c0896c67a612b15",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/MiSTer-Arcade-SEGASYS1/master/releases/_alternatives/Gonbee%20no%20I'm%20Sorry%20(315-5110%2C%20Japan).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Gonbee no I'm Sorry (315-5110, Japan)",
-            "rbf": "segasys1",
-            "zips": [
-              "imsorry.zip",
-              "imsorryj.zip",
-              "imsorryj.zip"
-            ]
-          }
-        },
-        {
-          "name": "Ninja Princess (315-5098, 128k Ver.).mra",
-          "sha": "1bb133d27bcd9d0b9277289d641a1f8e85a90275",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/MiSTer-Arcade-SEGASYS1/master/releases/_alternatives/Ninja%20Princess%20(315-5098%2C%20128k%20Ver.).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Ninja Princess (315-5098, 128k Ver.)",
-            "rbf": "segasys1",
-            "zips": [
-              "seganinj.zip",
-              "nprinceso.zip",
-              "nprinceso.zip"
-            ]
-          }
-        },
-        {
-          "name": "Sanrin San Chan (Japan, 315-5xxx).mra",
-          "sha": "deaf1c13ecc5a828c851c62c9456c06af9f70299",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/MiSTer-Arcade-SEGASYS1/master/releases/_alternatives/Sanrin%20San%20Chan%20(Japan%2C%20315-5xxx).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Sanrin San Chan (Japan, 315-5xxx)",
-            "rbf": "segasys1",
-            "zips": [
-              "spatter.zip",
-              "ssanchan.zip",
-              "ssanchan.zip"
-            ]
-          }
-        },
-        {
-          "name": "Seishun Scandal (315-5132, Japan).mra",
-          "sha": "a92f9b5405fc728d04f574d85c5fa3b130197857",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/MiSTer-Arcade-SEGASYS1/master/releases/_alternatives/Seishun%20Scandal%20(315-5132%2C%20Japan).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Seishun Scandal (315-5132, Japan)",
-            "rbf": "segasys1",
-            "zips": [
-              "myhero.zip",
-              "sscandal.zip",
-              "sscandal.zip"
             ]
           }
         }
