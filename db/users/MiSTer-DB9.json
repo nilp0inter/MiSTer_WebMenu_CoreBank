@@ -935,7 +935,7 @@
     {
       "name": "Arcade-BurgerTime_MiSTer",
       "description": "Arcade: Burger Time for MiSTer",
-      "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: Burger Time port to MiSTer by Sorgelig\n-- 30 December 2017\n-- \n---------------------------------------------------------------------------------\n---------------------------------------------------------------------------------\n-- Burger Time by Dar (darfpga@aol.fr) (27/12/2017)\n-- http://darfpga.blogspot.fr\n---------------------------------------------------------------------------------\n-- gen_ram.vhd & io_ps2_keyboard\n-------------------------------- \n-- Copyright 2005-2008 by Peter Wendrich (pwsoft@syntiac.com)\n-- http://www.syntiac.com/fpga64.html\n---------------------------------------------------------------------------------\n-- T65(b) core.Ver 301 by MikeJ March 2005\n-- Latest version from www.fpgaarcade.com (original www.opencores.org)\n---------------------------------------------------------------------------------\n-- YM2149 (AY-3-8910)\n-- Copyright (c) MikeJ - Jan 2005\n---------------------------------------------------------------------------------\n-- \n-- Support screen and controls rotation on HDMI output.\n-- Only controls are rotated on VGA output.\n-- \n-- \n-- Keyboard inputs :\n--\n--   F2          : Start 2 players\n--   F1          : Start 1 player\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--   SPACE,CTRL  : Pepper\n--\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   R,F,D,G     : Player 2 Movements\n--   A           : Player 2 Pepper\n--\n-- Joystick support.\n-- \n-- \n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n\n",
+      "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: Burger Time port to MiSTer by Sorgelig\n-- 30 December 2017\n-- \n---------------------------------------------------------------------------------\n---------------------------------------------------------------------------------\n-- Burger Time by Dar (darfpga@aol.fr) (27/12/2017)\n-- http://darfpga.blogspot.fr\n---------------------------------------------------------------------------------\n-- gen_ram.vhd & io_ps2_keyboard\n-------------------------------- \n-- Copyright 2005-2008 by Peter Wendrich (pwsoft@syntiac.com)\n-- http://www.syntiac.com/fpga64.html\n---------------------------------------------------------------------------------\n-- T65(b) core.Ver 301 by MikeJ March 2005\n-- Latest version from www.fpgaarcade.com (original www.opencores.org)\n---------------------------------------------------------------------------------\n-- YM2149 (AY-3-8910)\n-- Copyright (c) MikeJ - Jan 2005\n---------------------------------------------------------------------------------\n-- \n-- Support screen and controls rotation on HDMI output.\n-- Only controls are rotated on VGA output.\n-- \n-- \n-- Keyboard inputs :\n--\n--   F2          : Start 2 players\n--   F1          : Start 1 player\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--   SPACE,CTRL  : Pepper\n--\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   R,F,D,G     : Player 2 Movements\n--   A           : Player 2 Pepper\n--\n-- Joystick support.\n-- \n\n-- High score save/load - To save your scores use the 'Save Settings' option in the OSD.  \n-- * Warning: Scores are only loaded when core starts, using reset will return scores to factory settings *\n-- \n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-DB9/Arcade-BurgerTime_MiSTer",
@@ -965,12 +965,30 @@
           "type": "RBF"
         },
         {
-          "name": "Burger Time.mra",
-          "sha": "ce2e0bcaba95ef9e0bb5b1abc4e6aa1f3cd7c774",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-BurgerTime_MiSTer/master/releases/Burger%20Time.mra",
+          "name": "Arcade-BurgerTime_20210312.rbf",
+          "sha": "334e8d44a75ad6cf3ec1e128bc9d772b9b4c1fbf",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-BurgerTime_MiSTer/master/releases/Arcade-BurgerTime_20210312.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-BurgerTime_20210331.rbf",
+          "sha": "1dca3f578e70c373c3bad315a9f2938d461f6eaf",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-BurgerTime_MiSTer/master/releases/Arcade-BurgerTime_20210331.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-BurgerTime_20210429.rbf",
+          "sha": "a88b3ce787b0d5a8b46b1f0ac5e457d06149d34b",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-BurgerTime_MiSTer/master/releases/Arcade-BurgerTime_20210429.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Burger Time (Set 1).mra",
+          "sha": "51114b7138918104f115c9ca661bae3ac6101812",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-BurgerTime_MiSTer/master/releases/Burger%20Time%20(Set%201).mra",
           "type": "MRA",
           "extra": {
-            "name": "Burger Time (Data East set 1)",
+            "name": "Burger Time",
             "rbf": "burgertime",
             "zips": [
               "btime.zip"
@@ -2769,15 +2787,70 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-LadyBug_20210413.rbf",
+          "sha": "bcfbb10c90cd1542cbb6bc6d34154ad755561e78",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-LadyBug_MiSTer/master/releases/Arcade-LadyBug_20210413.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-LadyBug_20210419.rbf",
+          "sha": "079d353ff7a3cba3c4ff64ddf6bd93b787a71935",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-LadyBug_MiSTer/master/releases/Arcade-LadyBug_20210419.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Cosmic Avenger.mra",
+          "sha": "befe4e886b78d302cba48afde9741f8e013e03f0",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-LadyBug_MiSTer/master/releases/Cosmic%20Avenger.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Cosmic Avenger",
+            "rbf": "ladybug",
+            "zips": [
+              "cavenger.zip",
+              "cavenger.zip"
+            ]
+          }
+        },
+        {
+          "name": "Dorodon (Set 1).mra",
+          "sha": "97da8d299ce634263b80072ac60c03bfb2a668e6",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-LadyBug_MiSTer/master/releases/Dorodon%20(Set%201).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Dorodon",
+            "rbf": "ladybug",
+            "zips": [
+              "dorodon.zip",
+              "dorodon.zip"
+            ]
+          }
+        },
+        {
           "name": "Lady Bug.mra",
-          "sha": "c6bb2b0c22c3a1421b921ffca84e81b4fca021fd",
+          "sha": "ae6b3f079b07f50d72294a71a4c03d0ce5cce6e2",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-LadyBug_MiSTer/master/releases/Lady%20Bug.mra",
           "type": "MRA",
           "extra": {
             "name": "Lady Bug",
             "rbf": "ladybug",
             "zips": [
+              "ladybug.zip",
               "ladybug.zip"
+            ]
+          }
+        },
+        {
+          "name": "Snap Jack.mra",
+          "sha": "d02ce372a930dc1afdb605fbf62a2f2021925ac9",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-LadyBug_MiSTer/master/releases/Snap%20Jack.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Snap Jack",
+            "rbf": "ladybug",
+            "zips": [
+              "snapjack.zip",
+              "snapjack.zip"
             ]
           }
         }
@@ -3602,8 +3675,26 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-MoonPatrol_20210320.rbf",
+          "sha": "9cd2f4d7b6e96c757d87180dbc6017edfec0f984",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MoonPatrol_MiSTer/master/releases/Arcade-MoonPatrol_20210320.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-MoonPatrol_20210330.rbf",
+          "sha": "a0afef96daa72f99b1a80fa0bdb7e47eb6bec753",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MoonPatrol_MiSTer/master/releases/Arcade-MoonPatrol_20210330.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-MoonPatrol_20210621.rbf",
+          "sha": "2474327b43a616ec36409333fe041ed8b0c08d3c",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MoonPatrol_MiSTer/master/releases/Arcade-MoonPatrol_20210621.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Moon Patrol.mra",
-          "sha": "0bd0b6cf4426fb5a48e0532292b6c4df094d9b08",
+          "sha": "6b2be29c9e6dbe0d4a6c3a084f12b3d486486e9a",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MoonPatrol_MiSTer/master/releases/Moon%20Patrol.mra",
           "type": "MRA",
           "extra": {
@@ -4293,8 +4384,20 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Pooyan_20210504.rbf",
+          "sha": "56b7528811d153ae518996388f00137cc7e9cf96",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pooyan_MiSTer/master/releases/Arcade-Pooyan_20210504.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Pooyan_20210621.rbf",
+          "sha": "81d2fbb38772cb889b73771b610ac2efcbbb93e0",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pooyan_MiSTer/master/releases/Arcade-Pooyan_20210621.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Pooyan.mra",
-          "sha": "c1b8e6d25878ec693df71833b01df7c40234ebcc",
+          "sha": "b909311e5ad5fa0ba6d30dc59aa711cf098158aa",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pooyan_MiSTer/master/releases/Pooyan.mra",
           "type": "MRA",
           "extra": {
@@ -6152,6 +6255,12 @@
           "name": "Arcade-TimePilot_20210317.rbf",
           "sha": "199f92fb496401954b7f4ea7411a9311c5cc851d",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-TimePilot_MiSTer/master/releases/Arcade-TimePilot_20210317.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-TimePilot_20210621.rbf",
+          "sha": "aa66bb249c38d51611aafe79fb5279eac65a2bdd",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-TimePilot_MiSTer/master/releases/Arcade-TimePilot_20210621.rbf",
           "type": "RBF"
         },
         {
