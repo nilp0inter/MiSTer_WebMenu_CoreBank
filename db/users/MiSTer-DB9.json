@@ -573,12 +573,18 @@
           "type": "RBF"
         },
         {
-          "name": "Tetris (cocktail set 1).mra",
-          "sha": "a01b3f34adf3648c71696f40e396287a4d516cf0",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-ATetris_MiSTer/master/releases/Tetris%20(cocktail%20set%201).mra",
+          "name": "Arcade-AtariTetris_20210405.rbf",
+          "sha": "bcb1470dec2e36c37935c6a590f41a50dc38011f",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-ATetris_MiSTer/master/releases/Arcade-AtariTetris_20210405.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Tetris (Cocktail, Set 1).mra",
+          "sha": "105952e2c8f1ab1f6c1a647be3e4e5beea80178c",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-ATetris_MiSTer/master/releases/Tetris%20(Cocktail%2C%20Set%201).mra",
           "type": "MRA",
           "extra": {
-            "name": "Tetris (cocktail set 1)",
+            "name": "Tetris",
             "rbf": "ataritetris",
             "zips": [
               "atetris.zip|atetrisc.zip"
@@ -587,11 +593,11 @@
         },
         {
           "name": "Tetris.mra",
-          "sha": "829a0dbf7b9f0e52aac366b73d77b04846aa3b57",
+          "sha": "632c4165b512d59f11de818fcfe363a88d83e259",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-ATetris_MiSTer/master/releases/Tetris.mra",
           "type": "MRA",
           "extra": {
-            "name": "Tetris (set 1)",
+            "name": "Tetris",
             "rbf": "ataritetris",
             "zips": [
               "atetris.zip"
@@ -921,6 +927,12 @@
           "name": "Arcade-BombJack_20210307.rbf",
           "sha": "d2e33863fb62ddf159210ffe5020159d3404ce60",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-BombJack_MiSTer/master/releases/Arcade-BombJack_20210307.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-BombJack_20210621.rbf",
+          "sha": "b177034662f5de23a5c63fa541a41b9d44adbb4c",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-BombJack_MiSTer/master/releases/Arcade-BombJack_20210621.rbf",
           "type": "RBF"
         },
         {
@@ -1576,6 +1588,12 @@
           "name": "Arcade-Defender_20210427.rbf",
           "sha": "3bdff66345233ed57d0d428d28486105792e1cf0",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Defender_MiSTer/master/releases/Arcade-Defender_20210427.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Defender_20210621.rbf",
+          "sha": "93e2ec41a6ec751e0bddce745dfba2454c500315",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Defender_MiSTer/master/releases/Arcade-Defender_20210621.rbf",
           "type": "RBF"
         },
         {
@@ -3896,6 +3914,12 @@
           "name": "Arcade-NinjaKun_20210606.rbf",
           "sha": "7846d4edeed7308cebb1bcf743a3004b7f67f4ff",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-NinjaKun_MiSTer/master/releases/Arcade-NinjaKun_20210606.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-NinjaKun_20210621.rbf",
+          "sha": "5af8482a8835e0e96372d1aa502f50c0f1fa09c7",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-NinjaKun_MiSTer/master/releases/Arcade-NinjaKun_20210621.rbf",
           "type": "RBF"
         },
         {
