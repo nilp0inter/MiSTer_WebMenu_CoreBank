@@ -1723,7 +1723,7 @@
     {
       "name": "Arcade-DonkeyKong_MiSTer",
       "description": "Arcade: Donkey Kong for MiSTer",
-      "readme": "---------------------------------------------------------------------------------\r\n-- \r\n-- Arcade: Donkey Kong port to MiSTer by Sorgelig\r\n-- 18 April 2018\r\n-- \r\n---------------------------------------------------------------------------------\r\n-- \r\n-- dkong Copyright (c) 2003 - 2004 Katsumi Degawa\r\n-- T80   Copyright (c) 2001-2002 Daniel Wallner (jesus@opencores.org) All rights reserved\r\n-- T48   Copyright (c) 2004, Arnim Laeuger (arniml@opencores.org) All rights reserved\r\n-- \r\n---------------------------------------------------------------------------------\r\n-- \r\n-- Support screen and controls rotation on HDMI output.\r\n-- Only controls are rotated on VGA output.\r\n-- \r\n-- \r\n-- Keyboard inputs :\r\n--\r\n--   F1          : Coin + Start 1P\r\n--   F2          : Coin + Start 2P\r\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\r\n--   SPACE       : Jump\r\n--\r\n-- Joystick support.\r\n-- \r\n-- \r\n---------------------------------------------------------------------------------\r\n\r\n                                *** Attention ***\r\n\r\nROMs are not included. In order to use this arcade, you need to provide the\r\ncorrect ROMs.\r\n\r\nTo simplify the process .mra files are provided in the releases folder, that\r\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\r\ncorresponding file of the M.A.M.E. project.\r\n\r\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\r\ninformation on how to setup and use the environment.\r\n\r\nQuickreference for folders and file placement:\r\n\r\n/_Arcade/<game name>.mra\r\n/_Arcade/cores/<game rbf>.rbf\r\n/_Arcade/mame/<mame rom>.zip\r\n/_Arcade/hbmame/<hbmame rom>.zip\r\n",
+      "readme": "---------------------------------------------------------------------------------\r\n-- \r\n-- Arcade: Donkey Kong port to MiSTer by Sorgelig\r\n-- 18 April 2018\r\n-- \r\n---------------------------------------------------------------------------------\r\n-- \r\n-- dkong Copyright (c) 2003 - 2004 Katsumi Degawa\r\n-- T80   Copyright (c) 2001-2002 Daniel Wallner (jesus@opencores.org) All rights reserved\r\n-- T48   Copyright (c) 2004, Arnim Laeuger (arniml@opencores.org) All rights reserved\r\n-- \r\n---------------------------------------------------------------------------------\r\n-- \r\n-- Support screen and controls rotation on HDMI output.\r\n-- Only controls are rotated on VGA output.\r\n-- \r\n-- \r\n-- Keyboard inputs :\r\n--\r\n--   F1          : Coin + Start 1P\r\n--   F2          : Coin + Start 2P\r\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\r\n--   SPACE       : Jump\r\n--\r\n-- Joystick support.\r\n-- \r\n-- High score save/load - To save your scores use the 'Save Settings' option in the OSD.\r\n-- * Warning: For Donkey Kong 3 (bootleg) Scores are only loaded when core starts, using reset will return scores to factory settings *\r\n--\r\n---------------------------------------------------------------------------------\r\n\r\n                                *** Attention ***\r\n\r\nROMs are not included. In order to use this arcade, you need to provide the\r\ncorrect ROMs.\r\n\r\nTo simplify the process .mra files are provided in the releases folder, that\r\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\r\ncorresponding file of the M.A.M.E. project.\r\n\r\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\r\ninformation on how to setup and use the environment.\r\n\r\nQuickreference for folders and file placement:\r\n\r\n/_Arcade/<game name>.mra\r\n/_Arcade/cores/<game rbf>.rbf\r\n/_Arcade/mame/<mame rom>.zip\r\n/_Arcade/hbmame/<hbmame rom>.zip\r\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-DB9/Arcade-DonkeyKong_MiSTer",
@@ -1789,26 +1789,25 @@
           "type": "RBF"
         },
         {
-          "name": "Donkey Kong 3 (bootleg).mra",
-          "sha": "20948984eb600aa2207b75bebec392ad35f3a2d0",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-DonkeyKong_MiSTer/master/releases/Donkey%20Kong%203%20(bootleg).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Donkey Kong 3 (bootleg on DKJr HW)",
-            "rbf": "DonkeyKong",
-            "zips": [
-              "dkong3.zip|dkong3b.zip"
-            ]
-          }
+          "name": "Arcade-DonkeyKong_20210321.rbf",
+          "sha": "2b0a0bcc36db9dee0a6645d0ab08344fd28cd18d",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-DonkeyKong_MiSTer/master/releases/Arcade-DonkeyKong_20210321.rbf",
+          "type": "RBF"
         },
         {
-          "name": "Donkey Kong.mra",
-          "sha": "c33225fefc29b0d11191e90e494ad0994a54d9d4",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-DonkeyKong_MiSTer/master/releases/Donkey%20Kong.mra",
+          "name": "Arcade-DonkeyKong_20210404.rbf",
+          "sha": "e908a95877eebb8f4b65a7f33d8775541b10ddf6",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-DonkeyKong_MiSTer/master/releases/Arcade-DonkeyKong_20210404.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Donkey Kong (US, Set 1).mra",
+          "sha": "546b65e1e3fb73a495b08bac16cdabb6ae7f2b66",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-DonkeyKong_MiSTer/master/releases/Donkey%20Kong%20(US%2C%20Set%201).mra",
           "type": "MRA",
           "extra": {
-            "name": "Donkey Kong (US set 1)",
-            "rbf": "DonkeyKong",
+            "name": "Donkey Kong",
+            "rbf": "donkeykong",
             "zips": [
               "dkong.zip"
             ]
@@ -1816,7 +1815,7 @@
         },
         {
           "name": "Pest Place.mra",
-          "sha": "e149a9ed85635fe13b6db2aa59d8c90873da01f1",
+          "sha": "df1c7ab570733d9c35ab4b1f84486b8df7173a6d",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-DonkeyKong_MiSTer/master/releases/Pest%20Place.mra",
           "type": "MRA",
           "extra": {
@@ -1829,12 +1828,12 @@
         },
         {
           "name": "Radar Scope.mra",
-          "sha": "1b5b358a2ea75c07adfb53877988fed9b605409d",
+          "sha": "17017e08526b0d5b9a58cbe392fe91aa2aa14c94",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-DonkeyKong_MiSTer/master/releases/Radar%20Scope.mra",
           "type": "MRA",
           "extra": {
             "name": "Radar Scope",
-            "rbf": "DonkeyKong",
+            "rbf": "donkeykong",
             "zips": [
               "radarscp.zip"
             ]
@@ -2220,12 +2219,18 @@
           "type": "RBF"
         },
         {
-          "name": "Galaga.mra",
-          "sha": "4ef19d9ee1280d3c3f670a3fffb9680825ffb1f2",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaga_MiSTer/master/releases/Galaga.mra",
+          "name": "Arcade-Galaga_20210330.rbf",
+          "sha": "a56aae7921012027932257edf0231cdc40d2ced9",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaga_MiSTer/master/releases/Arcade-Galaga_20210330.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Galaga (Midway, Set 1).mra",
+          "sha": "ac7747ebd4394ff8da407e9ba664885c90297133",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaga_MiSTer/master/releases/Galaga%20(Midway%2C%20Set%201).mra",
           "type": "MRA",
           "extra": {
-            "name": "Galaga (Midway set 1)",
+            "name": "Galaga",
             "rbf": "galaga",
             "zips": [
               "galaga.zip|galagamw.zip|namco54.zip"
@@ -3140,6 +3145,12 @@
           "name": "Arcade-MCR1_20210510.rbf",
           "sha": "aac714259dd0d899ec4ec743c60b069925d41290",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MCR1_MiSTer/master/releases/Arcade-MCR1_20210510.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-MCR1_20210621.rbf",
+          "sha": "ff1426a512d1ad196520d2df6ff3d54724754838",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MCR1_MiSTer/master/releases/Arcade-MCR1_20210621.rbf",
           "type": "RBF"
         },
         {
