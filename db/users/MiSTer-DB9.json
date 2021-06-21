@@ -4603,7 +4603,7 @@
     {
       "name": "Arcade-RallyX_MiSTer",
       "description": "RallyX and NRallyX core",
-      "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: New Rally-X  port to MiSTer by MiSTer-X\n-- 18 September 2019\n-- From: https://github.com/MrX-8B/MiSTer-Arcade-RallyX\n-- \n---------------------------------------------------------------------------------\n-- FPGA New Rally-X for Spartan-3 Starter Board\n------------------------------------------------\n-- Copyright (c) 2005 MiSTer-X\n---------------------------------------------------------------------------------\n-- T80/T80s - Version : 0242\n-----------------------------\n-- Z80 compatible microprocessor core\n-- Copyright (c) 2001-2002 Daniel Wallner (jesus@opencores.org)\n---------------------------------------------------------------------------------\n-- \n-- \n-- Keyboard inputs :\n--\n--   F2          : Coin + Start 2 players\n--   F1          : Coin + Start 1 player\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--   SPACE/CTRL  : Smoke\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   R,F,D,G     : Player 2 Movements\n--   A/S         : Player 2 Smoke\n--\n-- Joystick support.\n-- \n-- \n---------------------------------------------------------------------------------\n-- 22 October 2019\n---------------------------------------------------------------------------------\n--  FIXED: CRT video problems\n-- CHANGE: Keyboard inputs\n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
+      "readme": "# [Arcade: New Rally-X](https://www.arcade-museum.com/game_detail.php?game_id=9259) for [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\nby [MiSTer-X](https://twitter.com/mrx_8b)  \nFrom: https://github.com/MrX-8B/MiSTer-Arcade-RallyX\n\n## Description\n\nA simulation model of the Midway Manufacturing Rally-X arcade hardware. Click the wikipedia link in the title for more information or search \"Rally-X Arcade\" in your favorite search engine to learn more.\n\n## Games\n\n* Rally-X (32k Version)\n* New Rally-X\n\n## ROM Files Instructions\n\n**ROMs are not included!** In order to use this arcade core, you will need to provide the correct ROM file yourself.\n\nFind this zip file somewhere. You need to find the file exactly as required. Check the .mra file in a text editor for more information.  \nDo not rename other zip files even if they also represent the same game - they are not compatible!  \nThe name of zip is taken from M.A.M.E. project, so you can get more info about hashes and contained files there.\n\nHow to install:\n1. Update MiSTer binary to v200106 or later\n2. copy releases/*.mra to /media/fat/_Arcade\n3. copy releases/*.rbf to /media/fat/_Arcade/cores\n4. copy ROM zip files  to /media/fat/_Arcade/mame\n\nBe sure to use the MRA file in \"releases\" of this repository.  \nIt does not guarantee the operation when using other MRA files.\n\n## Copyright and License\n\n```\n---------------------------------------------------------------------------------\n-- FPGA New Rally-X for Spartan-3 Starter Board\n------------------------------------------------\n-- Copyright (c) 2005 MiSTer-X\n---------------------------------------------------------------------------------\n-- T80/T80s - Version : 0242\n-----------------------------\n-- Z80 compatible microprocessor core\n-- Copyright (c) 2001-2002 Daniel Wallner (jesus@opencores.org)\n---------------------------------------------------------------------------------\n```\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-DB9/Arcade-RallyX_MiSTer",
@@ -4627,12 +4627,18 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-RallyX_20210416.rbf",
+          "sha": "ad1879d3ecc9c9a8fe245488ea561cdee3238941",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-RallyX_MiSTer/master/releases/Arcade-RallyX_20210416.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "New Rally-X.mra",
-          "sha": "2a553ff8580c549bbe5c8d3c568b3e29cf137efb",
+          "sha": "51d41bac17e0e9d8ecf8d695c4ab3611b8bd0115",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-RallyX_MiSTer/master/releases/New%20Rally-X.mra",
           "type": "MRA",
           "extra": {
-            "name": "New Rally X",
+            "name": "New Rally-X",
             "rbf": "rallyx",
             "zips": [
               "nrallyx.zip"
@@ -4640,12 +4646,12 @@
           }
         },
         {
-          "name": "Rally-X.mra",
-          "sha": "942d59fbde419460401def96f2f50d0cf50b1789",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-RallyX_MiSTer/master/releases/Rally-X.mra",
+          "name": "Rally-X (32k Ver).mra",
+          "sha": "d409aa507d52699516f00a9dbea742300d7c09bb",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-RallyX_MiSTer/master/releases/Rally-X%20(32k%20Ver).mra",
           "type": "MRA",
           "extra": {
-            "name": "Rally X (32k Ver.)",
+            "name": "Rally-X",
             "rbf": "rallyx",
             "zips": [
               "rallyx.zip"
@@ -4710,18 +4716,18 @@
     {
       "name": "Arcade-Robotron_MiSTer",
       "description": "Arcade Robotron for MiSTer",
-      "readme": "---------------------------------------------------------------------------------\n-- Arcade: Robotron port to MiSTer by oldgit, Sorgelig\n-- 12 December 2018\n-- \n---------------------------------------------------------------------------------\n-- gen_ram.vhd\n-------------------------------- \n-- Copyright 2005-2008 by Peter Wendrich (pwsoft@syntiac.com)\n-- http://www.syntiac.com/fpga64.html\n---------------------------------------------------------------------------------\n-- cpu09l - Version : 0128\n-- Synthesizable 6809 instruction compatible VHDL CPU core\n-- Copyright (C) 2003 - 2010 John Kent\n---------------------------------------------------------------------------------\n-- cpu68 - Version 9th Jan 2004 0.8\n-- 6800/01 compatible CPU core \n-- GNU public license - December 2002 : John E. Kent\n---------------------------------------------------------------------------------\n--\n-- This port is only possible because of previous work by many many others - Thank You\n-- to find out more search \"Williams robotron\" on a search engine.  \n-- \n-- \n-- Keyboard players inputs :\n--\n--   F10 : Advance\n--   F9  : Auto up\n--   F7  : High score reset\n--   F5  : Add coin right\n--   F4  : Add coin centre\n--   F3  : Add coin left\n--   F2  : Start 2 players\n--   F1  : Start 1 player\n--   ESC : Slam  \n--   W move up\n--   S move down\n--   A move left\n--   D move right\n--   UP arrow Fire up\n--   Down arrow Fire Down\n--\t Left arrow Fir Left\n-- \t Right arrow Fire right\n--\n--\n-- Joystick support.\n-- \n-- \n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
+      "readme": "# [Arcade: Robotron](https://en.wikipedia.org/wiki/Robotron:_2084) port to [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki) \n\nMiSTer port by oldgit(davewoo999) and Sorgelig  \n12 December 2018\n\nThis port is only possible because of previous work by many many others - Thank You\n\n## Description\n\nA simulation model of the Williams Electronics Robotron: 2084 arcade hardware. Click the wikipedia link in the title for more information or search \"williams robotron\" in your favorite search engine to learn more.\n\n## Games\n\n* Stargate\n* Robotron\n* Joust\n* Bubbles\n* Splat!\n* Sinistar\n* PlayBall!\n\n## ROM Files Instructions\n\n**ROMs are not included!** In order to use this arcade core, you will need to provide the correct ROM file yourself.\n\nTo simplify the process .mra files are provided in the releases folder, that specify the required ROMs with their checksums. The ROMs .zip filename refers to the\ncorresponding file from the MAME project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for information on how to setup and use the environment.\n\nQuick reference for folders and file placement:\n\n```\n/_Arcade/<game name>.mra  \n/_Arcade/cores/<game rbf>.rbf  \n/_Arcade/mame/<mame rom>.zip  \n/_Arcade/hbmame/<hbmame rom>.zip  \n```\n\n## Copyright and Licenses\n\n```\n---------------------------------------------------------------------------------\n-- gen_ram.vhd\n-------------------------------- \n-- Copyright 2005-2008 by Peter Wendrich (pwsoft@syntiac.com)\n-- http://www.syntiac.com/fpga64.html\n---------------------------------------------------------------------------------\n-- cpu09l - Version : 0128\n-- Synthesizable 6809 instruction compatible VHDL CPU core\n-- Copyright (C) 2003 - 2010 John Kent\n---------------------------------------------------------------------------------\n-- cpu68 - Version 9th Jan 2004 0.8\n-- 6800/01 compatible CPU core \n-- GNU public license - December 2002 : John E. Kent\n---------------------------------------------------------------------------------\n```",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-DB9/Arcade-Robotron_MiSTer",
       "releases": [
         {
-          "name": "Alien Arena.mra",
-          "sha": "c5b76161475ebb5e62137f1c50577b11df0caaab",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Robotron_MiSTer/master/releases/Alien%20Arena.mra",
+          "name": "Alien Arena (Stargate upgrade).mra",
+          "sha": "c38fcece9cecdb14dd598a618bd76e52835f2326",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Robotron_MiSTer/master/releases/Alien%20Arena%20(Stargate%20upgrade).mra",
           "type": "MRA",
           "extra": {
-            "name": "Alien Arena (Stargate upgrade)",
+            "name": "Alien Arena",
             "rbf": "robotron",
             "zips": [
               "alienar.zip|alienaru.zip"
@@ -4765,8 +4771,26 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Robotron_20210315.rbf",
+          "sha": "83d2f839e91b4def673064b1ef738a8d436a0b8b",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Robotron_MiSTer/master/releases/Arcade-Robotron_20210315.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Robotron_20210415.rbf",
+          "sha": "92b9de8e0ef58dedccb4c412da393dbcf660069d",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Robotron_MiSTer/master/releases/Arcade-Robotron_20210415.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Robotron_20210420.rbf",
+          "sha": "c081d081f132fcc56b5cd9a9f02accd26241ea66",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Robotron_MiSTer/master/releases/Arcade-Robotron_20210420.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Bubbles.mra",
-          "sha": "ac183ed7881ea48ceb7f01f97402737f0c9dee2d",
+          "sha": "855282bc2c6bb92431a63a45f09deaf4f8fe0c61",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Robotron_MiSTer/master/releases/Bubbles.mra",
           "type": "MRA",
           "extra": {
@@ -4779,11 +4803,11 @@
         },
         {
           "name": "Joust.mra",
-          "sha": "632891da12e5b4c8047ad52491756f3946354ca2",
+          "sha": "2e0ff939eb6e48b585f57e6dce8fe063d73e4a5e",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Robotron_MiSTer/master/releases/Joust.mra",
           "type": "MRA",
           "extra": {
-            "name": "Joust (White-Green label)",
+            "name": "Joust",
             "rbf": "robotron",
             "zips": [
               "joust.zip"
@@ -4791,12 +4815,12 @@
           }
         },
         {
-          "name": "Playball.mra",
-          "sha": "75dfc1679dc3b310f136c6eabb631ec68e2e9af9",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Robotron_MiSTer/master/releases/Playball.mra",
+          "name": "Playball (Prototype).mra",
+          "sha": "850f7a42d071d60d2c31df718b8d7b1b64375022",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Robotron_MiSTer/master/releases/Playball%20(Prototype).mra",
           "type": "MRA",
           "extra": {
-            "name": "playball",
+            "name": "Playball",
             "rbf": "robotron",
             "zips": [
               "playball.zip"
@@ -4805,11 +4829,11 @@
         },
         {
           "name": "Robotron 2084.mra",
-          "sha": "fd1fb5578659f13da266ecbc537e38db7c4a1ef5",
+          "sha": "18682182ade388f76a7c728761697b07ca8b9093",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Robotron_MiSTer/master/releases/Robotron%202084.mra",
           "type": "MRA",
           "extra": {
-            "name": "Robotron 2084 (Solid Blue label)",
+            "name": "Robotron 2084",
             "rbf": "robotron",
             "zips": [
               "robotron.zip"
@@ -4818,11 +4842,11 @@
         },
         {
           "name": "Sinistar.mra",
-          "sha": "5f4931e2352827315a26fa21b25c5d23d565dedf",
+          "sha": "9eb5ad68de054b5265e800ea62bbd0bb5510689a",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Robotron_MiSTer/master/releases/Sinistar.mra",
           "type": "MRA",
           "extra": {
-            "name": "Sinistar (revision 3)",
+            "name": "Sinistar",
             "rbf": "robotron",
             "zips": [
               "sinistar.zip"
@@ -4830,9 +4854,9 @@
           }
         },
         {
-          "name": "Splat.mra",
-          "sha": "0fda40c400b586dbbd3e89c3b7166344cff9a2a2",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Robotron_MiSTer/master/releases/Splat.mra",
+          "name": "Splat!.mra",
+          "sha": "015c886544d71e4d583ebf1b699d24673d6e2d9e",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Robotron_MiSTer/master/releases/Splat!.mra",
           "type": "MRA",
           "extra": {
             "name": "Splat!",
@@ -4844,7 +4868,7 @@
         },
         {
           "name": "Stargate.mra",
-          "sha": "73ccc10dadbf049d5a791c29970af037cf491673",
+          "sha": "44b9cda40633fef8c053acfacbdd3ffeb339ecd6",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Robotron_MiSTer/master/releases/Stargate.mra",
           "type": "MRA",
           "extra": {
