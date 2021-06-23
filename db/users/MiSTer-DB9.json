@@ -4395,51 +4395,6 @@
       ]
     },
     {
-      "name": "Arcade-Pong_MiSTer",
-      "description": "Arcade: Atari Pong (1972) for MiSTer",
-      "readme": "*****************************************************************\n**              Arcade: Atari Pong (1972)                      **\n** A Verilog implementation based on the original schematics.  **\n*****************************************************************\n\n                Written by: Richard Eng\n                email:      engric@gmail.com\n                twitter:    @richard_eng\n                www:        retrobits.no\n                git:        github.com/Eicar\n\n---------\nChangelog\n---------\n  2019-10-06 Initial release\n\n------\nInputs\n------\n\nMAME/IPAC/JPAC Style Keyboard inputs:\n    5   : Coin 1\n    6   : Coin 2\n\n+Analog joysticks for paddles (player 1+2)\n\n---------\nFile list\n---------\n\nsys/*     GPL-2, Copyright (C) 2019 Sorgelig\nrtl/*     MIT, Copyright (c) 2019 Richard Eng\n\n---\nQ&A\n---\n\n-Q: How accurate is this implementation?\n A: This implementation is based on the original Atari schematics. However, the\n    original hardware consists of both digital (sync+async logic) and analog circuits. The analog circuits\n    are simulated using digital logic. All signals should be accurate to the system clock edges (7.159MHz).\n\n-Q: Help! I'm unable to move the paddles using the keyboard!\n A: Currently only analog joystick controls are supported.\n\n-Q: Help! I'm unable to move the paddle to the top of the screen!\n A: This is not a bug. The original hardware design did not allow for this to happen.\n\n-Q: The core \"reset\" does not seem to work\n A: This is true. The original Pong hardware did not support a global \"reset\" signal.\n    I might add support for this in the future.\n\n-Q: Can you please add support for XXX!\n A: I will probably not add features not present in the original game.\n    This core is all about accuracy. \n\n-Q: Your HDL code looks like crap!\n A: You are probably right about that! I have a 20+ years software developer background but HDL is\n    pretty new to me. Hopefully I will get better at it :)\n    \n-Q: I've found a bug!\n A: Please let me know about it! I really want this core to be as accurate as possible.\n    I will make sure you will get credit for it!\n\n-Q: This core is awesome! How can I make a donation?\n A: All donations are welcome and extremely appreciated! Donations will make it possible\n    for me to spend more time on writing new cores.\n\n    Donations can be sent to: paypal.me/riceng\n\n\n-End of file\n",
-      "archived": false,
-      "fork": true,
-      "url": "https://github.com/MiSTer-DB9/Arcade-Pong_MiSTer",
-      "releases": [
-        {
-          "name": "Arcade-Pong_20200509.rbf",
-          "sha": "cb18c18ebf66bd2a3195ff321b9093d3d34de82e",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pong_MiSTer/master/releases/Arcade-Pong_20200509.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Arcade-Pong_20201123.rbf",
-          "sha": "b9e246542184356d5a2847ca350180031cfefa0c",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pong_MiSTer/master/releases/Arcade-Pong_20201123.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Arcade-Pong_20210117.rbf",
-          "sha": "f5e2edf02b805ffa46be56fa6f7fe94635f90b88",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pong_MiSTer/master/releases/Arcade-Pong_20210117.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Arcade-Pong_20210118.rbf",
-          "sha": "4239205f7cff07a7c9a1f55a93048c3d32b6126b",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pong_MiSTer/master/releases/Arcade-Pong_20210118.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Pong (Rev E).mra",
-          "sha": "f67ed69c449eaeb16046fdaeebeeb09930d76145",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pong_MiSTer/master/releases/Pong%20(Rev%20E).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Pong",
-            "rbf": "pong",
-            "zips": []
-          }
-        }
-      ]
-    },
-    {
       "name": "Arcade-Pooyan_MiSTer",
       "description": "Arcade: Pooyan for MiSTer",
       "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: Pooyan port to MiSTer by Sorgelig\n-- 09 November 2017\n-- \n---------------------------------------------------------------------------------\n-- Pooyan by Dar (darfpga@aol.fr) (08/11/2017)\n-- http://darfpga.blogspot.fr\n---------------------------------------------------------------------------------\n-- gen_ram.vhd & io_ps2_keyboard\n-------------------------------- \n-- Copyright 2005-2008 by Peter Wendrich (pwsoft@syntiac.com)\n-- http://www.syntiac.com/fpga64.html\n---------------------------------------------------------------------------------\n-- T80/T80se - Version : 0247\n-----------------------------\n-- Z80 compatible microprocessor core\n-- Copyright (c) 2001-2002 Daniel Wallner (jesus@opencores.org)\n---------------------------------------------------------------------------------\n-- YM2149 (AY-3-8910)\n-- Copyright (c) MikeJ - Jan 2005\n---------------------------------------------------------------------------------\n-- \n-- Support screen and controls rotation on HDMI output.\n-- Only controls are rotated on VGA output.\n-- \n-- \n-- Keyboard inputs :\n--\n--   F2          : Coin + Start 2 players\n--   F1          : Coin + Start 1 player\n--   SPACE,CTRL  : Fire\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   R,F,D,G     : Player 2 Movements\n--   A           : Fire\n--\n-- Joystick support.\n-- \n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
@@ -7007,6 +6962,12 @@
           "type": "RBF"
         },
         {
+          "name": "Atari5200_20210623.rbf",
+          "sha": "83c0850a2624202f1fed11c69ff2858ec47f8a18",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Atari800_MiSTer/master/releases/Atari5200_20210623.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Atari800_20200225.rbf",
           "sha": "9e8e80b551f70cb89d612aacc8aa4db08b131e60",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Atari800_MiSTer/master/releases/Atari800_20200225.rbf",
@@ -7058,6 +7019,12 @@
           "name": "Atari800_20210228.rbf",
           "sha": "b99a547fe7691d37273bfc836f9f730ac6c9e2b7",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Atari800_MiSTer/master/releases/Atari800_20210228.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Atari800_20210623.rbf",
+          "sha": "5c4750136447371e7d67f09ae59cd886053a47b9",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Atari800_MiSTer/master/releases/Atari800_20210623.rbf",
           "type": "RBF"
         }
       ]
