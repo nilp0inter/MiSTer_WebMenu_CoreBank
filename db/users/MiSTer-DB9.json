@@ -5102,7 +5102,13 @@
           "sha": "bed421d9ce286e6612dacbe3c1434611a3238b5f",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Scramble_MiSTer/master/releases/Dark%20Planet.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Dark Planet",
+            "rbf": "scramble",
+            "zips": [
+              "darkplnt.zip"
+            ]
+          }
         },
         {
           "name": "Frogger (Konami Bugfixed).mra",
