@@ -1960,6 +1960,43 @@
       ]
     },
     {
+      "name": "Arcade-Cosmic_MiSTer",
+      "description": "Universal Cosmic series games (Z80 based)",
+      "readme": "---------------------------------------------------------------------------------\n-- \n-- Universal Cosmic games (Z80 based) for MiSTer - Mike Coates\n--\n-- V 0.9 - 08/07/2021 - Mike Coates\n---------------------------------------------------------------------------------\n--\n-- Up, Down, Left, Right, Fire 1, Fire 2 (not all games use all buttons) \n-- \n---------------------------------------------------------------------------------\n\nThis is a recreation of the Universal games that run on similar hardware\n\nThe game timing should be very close to the original, but the code is not \nnecessarily identical to the real thing, but achieves the same end result.\n\n---------------------------------------------------------------------------------\n\nKnown differences / problems\n\nSound effects are all implemented using samples (other than the DAC)\n\nI have added a screen flip option which is not present on all parts of the \noriginal video hardware, sprites are instead flipped by software. \n\ncoinage dip on Magic Spot is wrong!\n\nThe CPU is running at the wrong frequency for a couple of the games, but this \ndoes not affect the game (other than the DAC sounds wil be higher frequency)\nThis will be fixed at some point. (by converting it to a CPU Enable signal and \nadding a second divider)\n\nNo mans land needs the background video lined up properly in all flip modes.\n\nDevil Zone and No Mans Land need sound samples sourcing and connecting up.\n\n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
+      "archived": false,
+      "fork": false,
+      "url": "https://github.com/MiSTer-devel/Arcade-Cosmic_MiSTer",
+      "releases": [
+        {
+          "name": "Arcade-Cosmic_20210708.rbf",
+          "sha": "d262fc9b120402cc8e2030762fb58745cff7aed7",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cosmic_MiSTer/main/releases/Arcade-Cosmic_20210708.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Cosmic Alien.mra",
+          "sha": "d367e943dcf1bba0ac29bb3f0d11d1fdea559de1",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cosmic_MiSTer/main/releases/Cosmic%20Alien.mra",
+          "type": "MRA",
+          "extra": null
+        },
+        {
+          "name": "Magical Spot.mra",
+          "sha": "65bd03db7fbabf0c53ba23e4e536d46ca0c2d719",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cosmic_MiSTer/main/releases/Magical%20Spot.mra",
+          "type": "MRA",
+          "extra": null
+        },
+        {
+          "name": "Space Panic.mra",
+          "sha": "a2f9ed0c62dc6ab95c85e7e4d7141beae0fe78f9",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cosmic_MiSTer/main/releases/Space%20Panic.mra",
+          "type": "MRA",
+          "extra": null
+        }
+      ]
+    },
+    {
       "name": "Arcade-CrazyBalloon_MiSTer",
       "description": "Taito Crazy Balloon ",
       "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade version of Crazy Balloon for MiSTer - Mike Coates\n--\n-- V 1.0 15/06/2020 - Mike Coates\n---------------------------------------------------------------------------------\n-- Support screen and controls rotation on HDMI output.\n-- Only controls are rotated on VGA output.\n-- \n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   R,F,D,G     : Player 2 Movements\n--\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--\n-- Joystick support.\n-- \n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
