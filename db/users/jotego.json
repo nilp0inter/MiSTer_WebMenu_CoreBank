@@ -296,7 +296,7 @@
         },
         {
           "name": "1942.mra",
-          "sha": "187e8b30863ddc5fd83d57769699c0c26610932d",
+          "sha": "47dfd7c2c224287c1a0639041cf50a618230426f",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/1942/releases/1942.mra",
           "type": "MRA",
           "extra": {
@@ -939,6 +939,12 @@
           "name": "MRA-Alternatives_20210709.zip",
           "sha": "dc3d0a9be3d38d7f73a680de0575d58a5216f16c",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/MRA-Alternatives_MiSTer/releases/MRA-Alternatives_20210709.zip",
+          "type": "OTHER"
+        },
+        {
+          "name": "MRA-Alternatives_20210715.zip",
+          "sha": "d9d75438995d9a3e02381b21edf7e8ef7fc44df7",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/MRA-Alternatives_MiSTer/releases/MRA-Alternatives_20210715.zip",
           "type": "OTHER"
         },
         {
@@ -1902,19 +1908,6 @@
             "rbf": "jtcps1",
             "zips": [
               "sf2.zip|sf2hf.zip"
-            ]
-          }
-        },
-        {
-          "name": "Street Fighter Zero -CPS Changer, Japan 951020-.mra",
-          "sha": "31f71e9f9cf93e7200336f19de90d8f64b57e760",
-          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps1/releases/Street%20Fighter%20Zero%20-CPS%20Changer%2C%20Japan%20951020-.mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Street Fighter Zero (CPS Changer, Japan 951020)",
-            "rbf": "jtcps1",
-            "zips": [
-              "sfzch.zip"
             ]
           }
         },
@@ -3573,7 +3566,7 @@
         },
         {
           "name": "Trick Trap (World).mra",
-          "sha": "ec190f15f998e43a4c20485dd9cc60c70ba221a1",
+          "sha": "40c94195286b0cb3ee91400ebaeba66edd899e81",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/labrun/releases/Trick%20Trap%20(World).mra",
           "type": "MRA",
           "extra": {
@@ -3622,7 +3615,7 @@
         },
         {
           "name": "The Speed Rumbler (set 1).mra",
-          "sha": "bc0e56ee53966772231337d06a715750fbd81832",
+          "sha": "22f6c5599b9608b2a06d25d57aee3808d2eed09d",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/rumble/releases/The%20Speed%20Rumbler%20(set%201).mra",
           "type": "MRA",
           "extra": {
@@ -3773,7 +3766,7 @@
         },
         {
           "name": "Side Arms - Hyper Dyne (World, 861129).mra",
-          "sha": "e0df8e9743d8972d35d1a623e924f4a2584568f9",
+          "sha": "33c110bda5fae3e096292982b638cd753f675cd0",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/sarms/releases/Side%20Arms%20-%20Hyper%20Dyne%20(World%2C%20861129).mra",
           "type": "MRA",
           "extra": {
@@ -3869,7 +3862,7 @@
         },
         {
           "name": "Legendary Wings.mra",
-          "sha": "e9996fba3e890173cd42c9729e329097e307a388",
+          "sha": "b435e174244bacebfb0d410f776c35b80df3478d",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/sectionz/releases/Legendary%20Wings.mra",
           "type": "MRA",
           "extra": {
@@ -3882,7 +3875,7 @@
         },
         {
           "name": "SectionZ.mra",
-          "sha": "1d9176124e740e6f63ee1affee0cfc4c9a33e17f",
+          "sha": "b738be4fbf539197deb108878566b42ef4278dd8",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/sectionz/releases/SectionZ.mra",
           "type": "MRA",
           "extra": {
@@ -4094,7 +4087,7 @@
         },
         {
           "name": "Tiger Road.mra",
-          "sha": "4b51467bdb35b77bae55a1c6d4f7ea64f2c92ad0",
+          "sha": "a77d9621577d1434577cf10eed4079f5432d650c",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/tora/releases/Tiger%20Road.mra",
           "type": "MRA",
           "extra": {
@@ -4245,7 +4238,7 @@
         },
         {
           "name": "Trojan (Romstar).mra",
-          "sha": "a18d169f61712f103e11207748af5e9e4482c21b",
+          "sha": "8cd31333a02c2f94901505dc59381d3fab2807ab",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/trojan/releases/Trojan%20(Romstar).mra",
           "type": "MRA",
           "extra": {
@@ -4324,7 +4317,7 @@
         },
         {
           "name": "Vulgus.mra",
-          "sha": "6554bbf3785d386aed6b231b23a580dd6c33ccaa",
+          "sha": "0530b9585b06120ff5138a561364d811063ca088",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/vulgus/releases/Vulgus.mra",
           "type": "MRA",
           "extra": {
