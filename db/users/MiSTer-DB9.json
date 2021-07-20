@@ -2582,6 +2582,85 @@
       ]
     },
     {
+      "name": "Arcade-Gauntlet_MiSTer",
+      "description": "FPGA implementation of Atari's Gauntlet arcade game",
+      "readme": "# Atari Gauntlet FPGA Arcade\nby Alex (https://github.com/d18c7db)..\n\n## About\nThis is an FPGA implementation of Atari's arcade game \"Gauntlet\" from 1985, based on the SP-284 schematic circuit diagram.  \n\nIt successfully runs all three games Gauntlet, Gauntlet II and Vindicators II that run on the original arcade. All sounds are implemeted, Pokey, YM2151 and TMS5220 Voice Synthesis Processor (see my [TMS5220 repository](https://github.com/d18c7db/TMS5220_FPGA) for more details on the VSP).  \n\n[![Gauntlet Tile](doc/images/MAME_G1.png)](doc/images/MAME_G1.png)\n[![Gauntlet 2 Title](doc/images/MAME_G2.png)](doc/images/MAME_G2.png)\n[![Vindicators II Tile](doc/images/MAME_V2.png)](doc/images/MAME_V2.png)  \n\nThe videos below show some of the problems encountered earlier in the development.  \n\nYoutube video of Gauntlet:  \n[![Gauntlet running on FPGA](https://img.youtube.com/vi/7A2k7wLUSUU/0.jpg)](https://www.youtube.com/watch?v=7A2k7wLUSUU)\n\nAdditional video of FPGA running Gauntlet II ROMs  \n[![Gauntlet II running on FPGA](https://img.youtube.com/vi/HNHAjOb2i3s/0.jpg)](https://www.youtube.com/watch?v=HNHAjOb2i3s)\n\nThe implementation is functional right now, can coin up and start game, known problems are as follows:\n\n* Game EPROM is implemented as RAM so game settings are lost on power off.\n\n## MiSTer Install\nThe core <b>must have</b> a [SDRAM expansion](https://github.com/MiSTer-devel/Main_MiSTer/wiki/SDRAM-Board) daughterboard in order to play correctly on a [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki) FPGA board. This applies to all three games namely Gauntlet, Gauntlet II and Vindicators part II. Without the SDRAM, the core will still run and display some text but will be missing the sprites and background textures (graphics).  \n\nThis repository follows the standard folder structure for distributing MiSTer files.  \n\nROMs are not included so in order to use this arcade, you need to provide the correct game ROM.  \n\n*WARNING:* In order to play Vindicators part 2, you must run the python script \"descramble_2J.py 136059-1184.2j 136059-1184.des.2j\" then copy the binary output file 136059-1184.des.2j into the zip file with the original ROMs.  \n\nTo simplify the process .mra files are provided in the releases folder, that specify the required ROMs with checksums. The .zip filename refers to the corresponding ROM file of the MAME project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for information on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra  \n/_Arcade/cores/<game name>.rbf  \n/_Arcade/mame/<mame rom>.zip  \n\nGauntlet currently supports up to 4 joysticks for 4 players. MAME keys layout is available for (up, down, left, right, fire, start/magic, coin) as follows: player 1 (up, down left, right, left ctrl, left alt, 5), player 2 (R, F, D, G, A, S, 6), player 3 (I, K, J, L, right ctrl, right shift) and player 4 on numeric pad (num 8, num 2, num 4, num 6, num 0, num .)  \n\nThe tank controls used in Vindicators are mapped to one joystick. For Vindicators keyboard is supported, 5,6 are coin, 1,2 start game, QWERASDF and YUIOHJKL controls for player 1 and 2 respectively. Joysticks are connected but may need remapping.  \n\n### Pipistrello\nsee original project: https://github.com/d18c7db/Gauntlet_FPGA\n\n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/MiSTer-DB9/Arcade-Gauntlet_MiSTer",
+      "releases": [
+        {
+          "name": "Arcade-Gauntlet_20201128.rbf",
+          "sha": "10c54dff831aaab0bfcdf35fcf63e68ed946852c",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Gauntlet_MiSTer/main/releases/Arcade-Gauntlet_20201128.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Gauntlet_20201217.rbf",
+          "sha": "75aadd3e3ce4f23d3ae7c5b28681009af747dc1a",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Gauntlet_MiSTer/main/releases/Arcade-Gauntlet_20201217.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Gauntlet_20210119.rbf",
+          "sha": "c9916f104d042bf70b8b3fbf4ecf3fbfaea2544f",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Gauntlet_MiSTer/main/releases/Arcade-Gauntlet_20210119.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Gauntlet_20210204.rbf",
+          "sha": "a0fb4d163c216a3cf4af4ea90e97a2c3d91ecf68",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Gauntlet_MiSTer/main/releases/Arcade-Gauntlet_20210204.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Gauntlet_20210426.rbf",
+          "sha": "359d74d4714f428550cc360953df915ec1efae2c",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Gauntlet_MiSTer/main/releases/Arcade-Gauntlet_20210426.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gauntlet (rev 14).mra",
+          "sha": "c5940cbfcbb4be0a1aa1877b9692922b0048a278",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Gauntlet_MiSTer/main/releases/Gauntlet%20(rev%2014).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Gauntlet",
+            "rbf": "gauntlet",
+            "zips": [
+              "gauntlet.zip"
+            ]
+          }
+        },
+        {
+          "name": "Gauntlet II.mra",
+          "sha": "208251c1fe0003f70cf2d5eb379d6bdbb7e38730",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Gauntlet_MiSTer/main/releases/Gauntlet%20II.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Gauntlet II",
+            "rbf": "gauntlet",
+            "zips": [
+              "gaunt2.zip"
+            ]
+          }
+        },
+        {
+          "name": "Vindicators Part II (rev 3).mra",
+          "sha": "522217119b6d53c9ae6481c37d279b4fc561bb2d",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Gauntlet_MiSTer/main/releases/Vindicators%20Part%20II%20(rev%203).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Vindicators Part II",
+            "rbf": "gauntlet",
+            "zips": [
+              "vindctr2.zip"
+            ]
+          }
+        }
+      ]
+    },
+    {
       "name": "Arcade-IremM62_MiSTer",
       "description": "Irem62 from pace, and mist including Lode Runner, etc",
       "readme": "Irem M62 Hardware\n=================\n\nBased on old PACE code by Mark McDougall(tcdev), enhanced by Gyorgy Szombathelyi in March 2020.\n\nGames supported:\n- Lode Runner 1-4\n- Kung Fu Master\n- Horizon\n- Battle Road\n- Spelunker 1-2\n- Kid Niki\n- Youjyudn\n\n# Keyboard inputs :\n```\n\n   MAME/IPAC/JPAC Style Keyboard inputs:\n     1           : Start 1 Player\n     2           : Start 2 Player\n     5           : Coin 1\n     6           : Coin 2\n     R,F,D,G     : Player 2\n     A           : Fire2 A\n     S           : Fire2 B \n\t\n Joystick support. \n```\n\n# Known Bugs\n\n- Kung-Fu Master has a sprite color problem\n- Lot Lot isn't fully implemented\n\n\n# ROMs\n```\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n\n```\n\nLaunch game using the appropriate .MRA\n\n",
@@ -5738,47 +5817,6 @@
       ]
     },
     {
-      "name": "Arcade-SnapJack_MiSTer",
-      "description": "Arcade: Snap Jack for MiSTer",
-      "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: Snap Jack port to MiSTer by Sorgelig\n-- 14 November 2017\n-- \n---------------------------------------------------------------------------------\n-- A simulation model of Lady Bug hardware\n-- Unknown Author on Papilio Plus board.\n---------------------------------------------------------------------------------\n-- \n-- Support screen and controls rotation on HDMI output.\n-- Only controls are rotated on VGA output.\n-- \n-- \n-- Keyboard inputs :\n--\n--   F2    : Coin + Start 2 players\n--   F1    : Coin + Start 1 player\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   R,F,D,G     : Player 2 Movements\n--\n-- Joystick support.\n-- \n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
-      "archived": false,
-      "fork": true,
-      "url": "https://github.com/MiSTer-DB9/Arcade-SnapJack_MiSTer",
-      "releases": [
-        {
-          "name": "Arcade-SnapJack_20200109.rbf",
-          "sha": "166497fb4a0cf09de2ddf81efe1b0bc846070131",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SnapJack_MiSTer/master/releases/Arcade-SnapJack_20200109.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Arcade-SnapJack_20200509.rbf",
-          "sha": "4adb73226a7022747ab9d09ad21c2adccc9da81c",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SnapJack_MiSTer/master/releases/Arcade-SnapJack_20200509.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Arcade-SnapJack_20210118.rbf",
-          "sha": "d177c2e8288c33a1a8d38c8aaa010dece54ed0c9",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SnapJack_MiSTer/master/releases/Arcade-SnapJack_20210118.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Snap Jack.mra",
-          "sha": "c13834afc753590077a7a5f1b6e8da03e25afdf9",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SnapJack_MiSTer/master/releases/Snap%20Jack.mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Snap Jack",
-            "rbf": "snapjack",
-            "zips": [
-              "snapjack.zip"
-            ]
-          }
-        }
-      ]
-    },
-    {
       "name": "Arcade-SolomonsKey_MiSTer",
       "description": "Arcade: Solomon's Key for MiSTer",
       "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: Solomon's Key  port to MiSTer by MiSTer-X\n-- 17 November 2019\n--\n-- https://github.com/MrX-8B/MiSTer-Arcade-SolomonsKey\n-- \n---------------------------------------------------------------------------------\n-- FPGA Solomon's Key for Spartan-6\n------------------------------------------------\n-- Copyright (c) 2014 MiSTer-X\n---------------------------------------------------------------------------------\n-- T80/T80s - Version : 0242\n-----------------------------\n-- Z80 compatible microprocessor core\n-- Copyright (c) 2001-2002 Daniel Wallner (jesus@opencores.org)\n---------------------------------------------------------------------------------\n-- YM2149 (AY-3-8910)\n-- Copyright (c) MikeJ - Jan 2005\n---------------------------------------------------------------------------------\n-- MRA files\n----------------------------------------------\n-- written by Bruno Silva (@eubrunosilvapt)\n-------------------------------------------------------------------------------------------\n-- \n-- \n-- Keyboard inputs :\n--\n--   F2          : Coin + Start 2 players\n--   F1          : Coin + Start 1 player\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--   SPACE       : Stone\n--   CTRL        : Fire\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   R,F,D,G     : Player 2 Movements\n--   A           : Player 2 Stone\n--   S           : Player 2 Fire\n--\n-- Joystick support.\n--\n--\n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
@@ -7260,6 +7298,12 @@
           "name": "C64_20210624.rbf",
           "sha": "abd0440923b3e8ecb5becbfa78c13051600fc090",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/C64_MiSTer/master/releases/C64_20210624.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "C64_20210720.rbf",
+          "sha": "284f76d2af42e3f34adb44c90f60f30b67bd3e38",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/C64_MiSTer/master/releases/C64_20210720.rbf",
           "type": "RBF"
         },
         {
