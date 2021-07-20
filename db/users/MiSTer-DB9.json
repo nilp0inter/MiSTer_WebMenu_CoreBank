@@ -5738,6 +5738,47 @@
       ]
     },
     {
+      "name": "Arcade-SnapJack_MiSTer",
+      "description": "Arcade: Snap Jack for MiSTer",
+      "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: Snap Jack port to MiSTer by Sorgelig\n-- 14 November 2017\n-- \n---------------------------------------------------------------------------------\n-- A simulation model of Lady Bug hardware\n-- Unknown Author on Papilio Plus board.\n---------------------------------------------------------------------------------\n-- \n-- Support screen and controls rotation on HDMI output.\n-- Only controls are rotated on VGA output.\n-- \n-- \n-- Keyboard inputs :\n--\n--   F2    : Coin + Start 2 players\n--   F1    : Coin + Start 1 player\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   R,F,D,G     : Player 2 Movements\n--\n-- Joystick support.\n-- \n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/MiSTer-DB9/Arcade-SnapJack_MiSTer",
+      "releases": [
+        {
+          "name": "Arcade-SnapJack_20200109.rbf",
+          "sha": "166497fb4a0cf09de2ddf81efe1b0bc846070131",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SnapJack_MiSTer/master/releases/Arcade-SnapJack_20200109.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-SnapJack_20200509.rbf",
+          "sha": "4adb73226a7022747ab9d09ad21c2adccc9da81c",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SnapJack_MiSTer/master/releases/Arcade-SnapJack_20200509.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-SnapJack_20210118.rbf",
+          "sha": "d177c2e8288c33a1a8d38c8aaa010dece54ed0c9",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SnapJack_MiSTer/master/releases/Arcade-SnapJack_20210118.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Snap Jack.mra",
+          "sha": "c13834afc753590077a7a5f1b6e8da03e25afdf9",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SnapJack_MiSTer/master/releases/Snap%20Jack.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Snap Jack",
+            "rbf": "snapjack",
+            "zips": [
+              "snapjack.zip"
+            ]
+          }
+        }
+      ]
+    },
+    {
       "name": "Arcade-SolomonsKey_MiSTer",
       "description": "Arcade: Solomon's Key for MiSTer",
       "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: Solomon's Key  port to MiSTer by MiSTer-X\n-- 17 November 2019\n--\n-- https://github.com/MrX-8B/MiSTer-Arcade-SolomonsKey\n-- \n---------------------------------------------------------------------------------\n-- FPGA Solomon's Key for Spartan-6\n------------------------------------------------\n-- Copyright (c) 2014 MiSTer-X\n---------------------------------------------------------------------------------\n-- T80/T80s - Version : 0242\n-----------------------------\n-- Z80 compatible microprocessor core\n-- Copyright (c) 2001-2002 Daniel Wallner (jesus@opencores.org)\n---------------------------------------------------------------------------------\n-- YM2149 (AY-3-8910)\n-- Copyright (c) MikeJ - Jan 2005\n---------------------------------------------------------------------------------\n-- MRA files\n----------------------------------------------\n-- written by Bruno Silva (@eubrunosilvapt)\n-------------------------------------------------------------------------------------------\n-- \n-- \n-- Keyboard inputs :\n--\n--   F2          : Coin + Start 2 players\n--   F1          : Coin + Start 1 player\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--   SPACE       : Stone\n--   CTRL        : Fire\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   R,F,D,G     : Player 2 Movements\n--   A           : Player 2 Stone\n--   S           : Player 2 Fire\n--\n-- Joystick support.\n--\n--\n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
