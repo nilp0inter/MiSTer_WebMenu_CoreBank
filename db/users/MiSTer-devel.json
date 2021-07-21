@@ -3462,6 +3462,35 @@
       "releases": []
     },
     {
+      "name": "Arcade-Gyruss_MiSTer",
+      "description": "Gyruss for MiSTer",
+      "readme": "# Gyruss for [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\nAn FPGA implementation of Gyruss for the MiSTer platform\n\n## Credits\n- Sorgelig - MiSTer project lead\n- MiSTer-X - Original Gyruss core design (https://github.com/MrX-8B/MiSTer-Arcade-Gyruss)\n- Ace - New Gyruss core design & Konami custom chip implementations\n- ElectronAsh - Assistance with Konami custom chip implementations\n- Artemio Urbina - Hardware references for video and audio output\n- JimmyStones - High score saving support & pause feature\n- Kitrinx - ROM loader\n- ThePulseRifle - Playtesting\n\n## Features\n- Timing-accurate logic model made to match the original as closely as possible\n- Keyboard and joystick controls\n- High score saving (To save your scores, use the 'Save Settings' option in the OSD)\n- T80s CPU by Daniel Wallner with fixes by MikeJ, Sorgelig, and others\n- Greg Miller's cycle-accurate MC6809E CPU core with modifications by Sorgelig and bugfixes by Arnim Laeuger and Jotego as the basis for the KONAMI-1 custom encrypted MC6809E\n- JT49 sound core by Jotego with modifications to the volume scale by Ace\n- T48 MCU by Arnim Laeuger configured as an i8039\n- Fully-tuned switchable low-pass filters\n\n## Installation\nPlace `*.rbf` into the \"_Arcade/cores\" folder on your SD card.  Then, place `*.mra` into the \"_Arcade\" folder and ROM files from MAME into \"games/mame\".\n\n### ****ATTENTION****\nROMs are not included. In order to use this arcade core, you must provide the correct ROMs.\n\nTo simplify the process, .mra files are provided in the releases folder that specify the required ROMs along with their checksums.  The ROM's .zip filename refers to the corresponding file in the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for information on how to setup and use the environment.\n\nQuick reference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/games/mame/<mame rom>.zip\n/games/hbmame/<hbmame rom>.zip\n\n## Controls\n### Keyboard\n| Key | Function |\n| --- | --- |\n| 1 | 1-Player Start |\n| 2 | 2-Player Start |\n| 5, 6 | Coin |\n| 9 | Service Credit |\n| Arrow keys | Movement |\n| CTRL | Shot |\n\n## Known Issues\n1) The volume scale for the AY-3-8910s requires further tuning for proper accuracy\n",
+      "archived": false,
+      "fork": false,
+      "url": "https://github.com/MiSTer-devel/Arcade-Gyruss_MiSTer",
+      "releases": [
+        {
+          "name": "Arcade-Gyruss_20210721.rbf",
+          "sha": "bf28b0d7493454127bdeef6230a08e4d1b78537c",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Gyruss_MiSTer/main/releases/Arcade-Gyruss_20210721.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gyruss.mra",
+          "sha": "5e52265d14b36d53c13fd1fa3d290030e5bcd5e7",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Gyruss_MiSTer/main/releases/Gyruss.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Gyruss",
+            "rbf": "Gyruss",
+            "zips": [
+              "gyruss.zip"
+            ]
+          }
+        }
+      ]
+    },
+    {
       "name": "Arcade-IremM62_MiSTer",
       "description": "Irem62 from pace, and mist including Lode Runner, etc",
       "readme": "Irem M62 Hardware\n=================\n\nBased on old PACE code by Mark McDougall(tcdev), enhanced by Gyorgy Szombathelyi in March 2020.\n\nGames supported:\n- Lode Runner 1-4\n- Kung Fu Master\n- Horizon\n- Battle Road\n- Spelunker 1-2\n- Kid Niki\n- Youjyudn\n\n# Keyboard inputs :\n```\n\n   MAME/IPAC/JPAC Style Keyboard inputs:\n     1           : Start 1 Player\n     2           : Start 2 Player\n     5           : Coin 1\n     6           : Coin 2\n     R,F,D,G     : Player 2\n     A           : Fire2 A\n     S           : Fire2 B \n\t\n Joystick support. \n```\n\n# Known Bugs\n\n- Kung-Fu Master has a sprite color problem\n- Lot Lot isn't fully implemented\n\n\n# ROMs\n```\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n\n```\n\nLaunch game using the appropriate .MRA\n\n",
