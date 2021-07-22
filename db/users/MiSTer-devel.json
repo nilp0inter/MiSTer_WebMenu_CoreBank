@@ -3140,7 +3140,7 @@
         },
         {
           "name": "Devil Fish (Galaxian Hardware).mra",
-          "sha": "659711bd9d7f6e390f4572d997937ec5dd1209b5",
+          "sha": "9f5d93e26acbbb2426d5007e504e9a7d2fd4255d",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Galaxian_MiSTer/master/releases/Devil%20Fish%20(Galaxian%20Hardware).mra",
           "type": "MRA",
           "extra": {
@@ -3166,7 +3166,7 @@
         },
         {
           "name": "King And Balloon (Japan).mra",
-          "sha": "06f0cbc36952c60214aed5fc7734a9e9e5ef6974",
+          "sha": "44d8fe6f1d38a53fff2c52aa888f2fb2a759a00a",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Galaxian_MiSTer/master/releases/King%20And%20Balloon%20(Japan).mra",
           "type": "MRA",
           "extra": {
@@ -3179,7 +3179,7 @@
         },
         {
           "name": "King and Balloon (US).mra",
-          "sha": "0e6466677585d754a9c660faaa0dc08402c9a993",
+          "sha": "467b913ed05a7090539ac45a5772e60b35fdb0e6",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Galaxian_MiSTer/master/releases/King%20and%20Balloon%20(US).mra",
           "type": "MRA",
           "extra": {
@@ -3294,7 +3294,7 @@
         },
         {
           "name": "War of the Bugs.mra",
-          "sha": "2d941dfa28260303f081c6a31e8865b1bf93d3b1",
+          "sha": "c2931f325551afd056131a95c40f1c85d90f9054",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Galaxian_MiSTer/master/releases/War%20of%20the%20Bugs.mra",
           "type": "MRA",
           "extra": {
@@ -7002,7 +7002,13 @@
           "sha": "755333a3edea6d18ac217db82273db2f9ca84ab3",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SpaceInvaders_MiSTer/master/releases/Balloon%20Bomber.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Balloon Bomber",
+            "rbf": "spaceinvaders",
+            "zips": [
+              "ballbomb.zip"
+            ]
+          }
         },
         {
           "name": "Blue Shark.mra",
