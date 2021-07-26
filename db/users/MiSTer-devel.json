@@ -3680,6 +3680,129 @@
       ]
     },
     {
+      "name": "Arcade-IronHorse_MiSTer",
+      "description": "Iron Horse for MiSTer",
+      "readme": "# Iron Horse for [MISTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\nAn FPGA implementation of Iron Horse for the MiSTer platform\n\n## Credits\n- Sorgelig: MiSTer project lead\n- Ace: Core design and Konami custom chip implementations\n- ElectronAsh: Assistance with Konami custom chip implementations\n- Steve C. - Shiffy: Sourcing a bootleg Iron Horse PCB for reverse-engineering\n- JimmyStones: High score saving support & pause feature\n- Kitrinx: ROM loader\n\n## Features\n- Logic modelled to match the original as closely as possible\n- Standard joystick and keyboard controls\n- High score saving (To save your scores, use the 'Save Settings' option in the OSD)\n- Greg Miller's cycle-accurate MC6809E CPU core with modifications by Sorgelig\n- T80s CPU by Daniel Wallner with fixes by MikeJ, Sorgelig, and others\n- YM2203 implementation using JT03 by Jotego\n- Modeling of bootleg PCBs' timing and graphical differences\n- Fully-tuned audio filters including the PCB's switchable low-pass filters\n\n## Installation\nPlace `*.rbf` into the \"_Arcade/cores\" folder on your SD card.  Then, place `*.mra` into the \"_Arcade\" folder and ROM files from MAME into \"games/mame\".\n\n### ****ATTENTION****\nROMs are not included. In order to use this arcade core, you must provide the correct ROMs.\n\nTo simplify the process, .mra files are provided in the releases folder that specify the required ROMs along with their checksums.  The ROM's .zip filename refers to the corresponding file in the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for information on how to setup and use the environment.\n\nQuick reference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/games/mame/<mame rom>.zip\n/games/hbmame/<hbmame rom>.zip\n\n## Controls\n### Keyboard\n| Key | Function |\n| --- | --- |\n| 1 | 1-Player Start |\n| 2 | 2-Player Start |\n| 5, 6 | Coin |\n| 9 | Service Credit |\n| Arrow keys | Movement |\n| CTRL | Power |\n| ALT | Shoot |\n| Space | Crouch |\n\n### Joystick\n| Joystick action | Function |\n| --- | --- |\n| D-Pad | Movement |\n| Y | Power |\n| B | Attack |\n| A | Crouch |\n\n## Known Issues\n1) Sprites render one frame earlier than normal - this is not correct behavior for Iron Horse's graphics rendering\n2) Although bootleg flaws are modeled, sprite flickering is not 100% accurate and the slower clock used by bootleg Iron Horse PCBs is missing - as such, the core behaves as if said bootleg used the same clock as the original PCB\n3) The high score system may cause lockups or unusual behavior when high scores are loaded - resetting the core usually fixes this\n4) The volume scale of the YM2203's SSG section needs further verification\n",
+      "archived": false,
+      "fork": false,
+      "url": "https://github.com/MiSTer-devel/Arcade-IronHorse_MiSTer",
+      "releases": [
+        {
+          "name": "Arcade-IronHorse_20210725.rbf",
+          "sha": "a7ef1b5b3e31656e5a1b6d50f08690d8d5753c07",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IronHorse_MiSTer/main/releases/Arcade-IronHorse_20210725.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Iron Horse (Ver. K).mra",
+          "sha": "13d0c38870e20f68eb0a139570cf96f7f1c4c5c1",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IronHorse_MiSTer/main/releases/Iron%20Horse%20(Ver.%20K).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Iron Horse",
+            "rbf": "IronHorse",
+            "zips": [
+              "ironhors.zip"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Arcade-Jackal_MiSTer",
+      "description": "Jackal (arcade version) for MiSTer",
+      "readme": "# Jackal for [MISTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\nAn FPGA implementation of Jackal/Top Gunner for the MiSTer platform\n\n## Credits\n- Sorgelig: MiSTer project lead\n- Ace: Core design and Konami custom chip implementations\n- ElectronAsh, Furrtek, SnakeGrunger: Assistance with Konami custom chip implementations\n- brknglass: Obtaining a bootleg Jackal PCB for reverse-engineering\n- Shane Lynch: SDRAM support\n- JimmyStones: High score saving support & pause feature\n- Kitrinx: ROM loader\n- Porkchop Express: Finishing touches\n\n## Features\n- Logic modelled to match the original PCB design as closely as possible\n- Standard joystick and keyboard controls\n- High score saving (To save your scores, use the 'Save Settings' option in the OSD)\n- Greg Miller's cycle-accurate MC6809E CPU core with modifications by Sorgelig and bugfixes by Arnim Laeuger and Jotego\n- YM2151 implementation using JT51 by Jotego\n- Modeling of bootleg PCBs' timing and graphical differences\n- Fully-tuned audio filters matching both bootleg and original PCBs\n\n## **NOTE**\nThis core requires SDRAM to function properly, which is used to hold tilemap data.  While the game will run without SDRAM, the tilemap layer will not be visible without it.\n\n## Installation\nPlace `*.rbf` into the \"_Arcade/cores\" folder on your SD card.  Then, place `*.mra` into the \"_Arcade\" folder and ROM files from MAME into \"games/mame\".\n\n### ****ATTENTION****\nROMs are not included. In order to use this arcade core, you must provide the correct ROMs.\n\nTo simplify the process, .mra files are provided in the releases folder that specify the required ROMs along with their checksums.  The ROM's .zip filename refers to the corresponding file in the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for information on how to setup and use the environment.\n\nQuick reference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/games/mame/<mame rom>.zip\n/games/hbmame/<hbmame rom>.zip\n\n## Controls\n### Keyboard\n| Key | Function |\n| --- | --- |\n| 1 | 1-Player Start |\n| 2 | 2-Player Start |\n| 5, 6 | Coin |\n| 9 | Service Credit |\n| Arrow keys | Movement |\n| CTRL | Fire machine gun |\n| ALT | Fire grenades/rockets |\n\n### Joystick (buttons follow Super NES layout)\n| Joystick action | Function |\n| --- | --- |\n| D-Pad | Movement |\n| B | Fire machine gun |\n| A | Fire grenades/rockets |\n| L | Rotary left |\n| R | Rotary right |\n\n## Notes on the different software revisions\n1) Each version of Jackal has different ways in which the machine gun fires:\n- Most versions of Jackal, including bootlegs, fire the machine gun upwards at all times\n- The Japanese version of Jackal fires the machine gun in the direction the player is facing\n- A specific version of Jackal supports rotary controls to allow aiming the machine gun in 8 directions (bootlegs support this as well, but lack the hardware to handle it on the PCB)\n2) Bootleg PCBs have faster VSync timings than original PCBs, resulting in the in-game music failing to start - this behavior is recreated for bootleg versions of Jackal.  To work around this, pause the game for a short while prior to being given control\n\n## Known Issues\n1) Sprites render one frame earlier than normal - this is not correct behavior and causes graphics rendered on both the sprite and tilemap layers partially split apart during scrolling\n2) Although bootleg flaws are modeled, the score display is not correctly rendered when the screen is flipped and the slower clocks used by bootleg Jackal PCBs are missing - as such, the core behaves as if said bootlegs used the same clocks as the original PCB\n",
+      "archived": false,
+      "fork": false,
+      "url": "https://github.com/MiSTer-devel/Arcade-Jackal_MiSTer",
+      "releases": [
+        {
+          "name": "Arcade-Jackal_20210725.rbf",
+          "sha": "cf6dec3b3c1bd1cc1dee7914eb210f790a97ad2f",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Jackal_MiSTer/main/releases/Arcade-Jackal_20210725.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Jackal (W) [bl].mra",
+          "sha": "83988e51a612251877430405aa4ba9a3ce70d2e2",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Jackal_MiSTer/main/releases/Jackal%20(W)%20%5Bbl%5D.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Jackal",
+            "rbf": "Jackal",
+            "zips": [
+              "jackal.zip|jackalbl.zip"
+            ]
+          }
+        },
+        {
+          "name": "Jackal (W).mra",
+          "sha": "6b8f076d14383076c1900c2bfc311db35bfd3a47",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Jackal_MiSTer/main/releases/Jackal%20(W).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Jackal",
+            "rbf": "Jackal",
+            "zips": [
+              "jackal.zip"
+            ]
+          }
+        },
+        {
+          "name": "Jackal (W, Rotary).mra",
+          "sha": "409b7a226940772b384571ed60dce4a9388ea78d",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Jackal_MiSTer/main/releases/Jackal%20(W%2C%20Rotary).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Jackal",
+            "rbf": "Jackal",
+            "zips": [
+              "jackal.zip|jackalr.zip"
+            ]
+          }
+        },
+        {
+          "name": "Tokushu Butai Jackal (JP).mra",
+          "sha": "8907afec67e367213f757108861ac4fdbca7d595",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Jackal_MiSTer/main/releases/Tokushu%20Butai%20Jackal%20(JP).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Tokushu Butai Jackal",
+            "rbf": "Jackal",
+            "zips": [
+              "jackal.zip|jackalj.zip"
+            ]
+          }
+        },
+        {
+          "name": "Top Gunner (US) [bl].mra",
+          "sha": "023d75886e9db8fa10fa0a7e5a552dadf4bdadd5",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Jackal_MiSTer/main/releases/Top%20Gunner%20(US)%20%5Bbl%5D.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Top Gunner",
+            "rbf": "Jackal",
+            "zips": [
+              "jackal.zip|topgunbl.zip"
+            ]
+          }
+        },
+        {
+          "name": "Top Gunner (US).mra",
+          "sha": "2a62d78dbf1377fd950dd8f1d33900a5bac9f0de",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Jackal_MiSTer/main/releases/Top%20Gunner%20(US).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Top Gunner",
+            "rbf": "Jackal",
+            "zips": [
+              "jackal.zip|topgunr.zip"
+            ]
+          }
+        }
+      ]
+    },
+    {
       "name": "Arcade-LadyBug_MiSTer",
       "description": "Arcade: Lady Bug for MiSTer",
       "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: Lady Bug port to MiSTer by Sorgelig\n-- 14 November 2017\n-- \n---------------------------------------------------------------------------------\n-- A simulation model of Lady Bug hardware\n-- Unknown Author on Papilio Plus board.\n---------------------------------------------------------------------------------\n-- \n-- Support screen and controls rotation on HDMI output.\n-- Only controls are rotated on VGA output.\n-- \n-- \n-- Keyboard inputs :\n--\n--   F2  : Coin + Start 2 players\n--   F1  : Coin + Start 1 player\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   R,F,D,G     : Player 2 Movements\n--\n--\n-- Joystick support.\n-- \n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
