@@ -2365,7 +2365,13 @@
           "sha": "44d8fe6f1d38a53fff2c52aa888f2fb2a759a00a",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaxian_MiSTer/master/releases/King%20And%20Balloon%20(Japan).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "King and Balloon",
+            "rbf": "galaxian",
+            "zips": [
+              "kingball.zip|kingballj.zip"
+            ]
+          }
         },
         {
           "name": "King and Balloon (US).mra",
