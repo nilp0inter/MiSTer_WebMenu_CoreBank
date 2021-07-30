@@ -3646,13 +3646,13 @@
         },
         {
           "name": "README.md",
-          "sha": "58e171acbda199372098ad800feeb0fad8f5eebe",
+          "sha": "eb47e25106b0ec5fd0b8a106a6b9bc0ab25447b0",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16/README.md",
           "type": "OTHER"
         },
         {
           "name": "Action Fighter (World, S16A) [FD1089A 317-0018].mra",
-          "sha": "2648feb8681e3b552fc021fdaec1a8feebcd66f8",
+          "sha": "96a23e104fddface0c71ec4cc158a0a00f1ceba6",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16/releases/Action%20Fighter%20(World%2C%20S16A)%20%5BFD1089A%20317-0018%5D.mra",
           "type": "MRA",
           "extra": {
@@ -3660,13 +3660,13 @@
             "rbf": "jts16",
             "zips": [
               "afighter.zip",
-              "beta.zip"
+              "jtbeta.zip|beta.zip"
             ]
           }
         },
         {
           "name": "Alex Kidd The Lost Stars (Set 2, World, S16A) [No Protection].mra",
-          "sha": "40e46e3ebbe5f5a77cece13c357e121558cb0f18",
+          "sha": "aa64526919c3e84916afa8729dccf11de67c72ea",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16/releases/Alex%20Kidd%20The%20Lost%20Stars%20(Set%202%2C%20World%2C%20S16A)%20%5BNo%20Protection%5D.mra",
           "type": "MRA",
           "extra": {
@@ -3674,27 +3674,13 @@
             "rbf": "jts16",
             "zips": [
               "alexkidd.zip",
-              "beta.zip"
-            ]
-          }
-        },
-        {
-          "name": "Body Slam (World, S16) [8751 317-0015].mra",
-          "sha": "d4bb6e81c6dce7e0235a0b97708352e160324349",
-          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16/releases/Body%20Slam%20(World%2C%20S16)%20%5B8751%20317-0015%5D.mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Body Slam (World, S16) [8751 317-0015]",
-            "rbf": "jts16",
-            "zips": [
-              "bodyslam.zip",
-              "beta.zip"
+              "jtbeta.zip|beta.zip"
             ]
           }
         },
         {
           "name": "Fantasy Zone (Rev A, World, S16A) [No Protection].mra",
-          "sha": "7a97834864c92d9f1899ba8ffadcc33988cc36db",
+          "sha": "83c392cac73e8a15d2dc39310545d6a0d95d76fa",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16/releases/Fantasy%20Zone%20(Rev%20A%2C%20World%2C%20S16A)%20%5BNo%20Protection%5D.mra",
           "type": "MRA",
           "extra": {
@@ -3702,13 +3688,13 @@
             "rbf": "jts16",
             "zips": [
               "fantzone.zip",
-              "beta.zip"
+              "jtbeta.zip|beta.zip"
             ]
           }
         },
         {
           "name": "Shinobi (Set 6, World, S16A) [No Protection].mra",
-          "sha": "3501a54dbf0b482b63648360ec922d5669ad8fa7",
+          "sha": "290d9ebb5a1e1a1bdcd14db670a63ac61544412a",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16/releases/Shinobi%20(Set%206%2C%20World%2C%20S16A)%20%5BNo%20Protection%5D.mra",
           "type": "MRA",
           "extra": {
@@ -3716,7 +3702,7 @@
             "rbf": "jts16",
             "zips": [
               "shinobi.zip",
-              "beta.zip"
+              "jtbeta.zip|beta.zip"
             ]
           }
         },
@@ -3733,22 +3719,28 @@
           "type": "RBF"
         },
         {
+          "name": "jts16_20210730.rbf",
+          "sha": "17cfe8e44041dbf01dbb94a1f3b9a43892dd1aa1",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16/releases/jts16_20210730.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "README.md",
-          "sha": "58e171acbda199372098ad800feeb0fad8f5eebe",
+          "sha": "eb47e25106b0ec5fd0b8a106a6b9bc0ab25447b0",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16a2/README.md",
           "type": "OTHER"
         },
         {
-          "name": "Shinobi (Set 6, World, S16A) [No Protection].mra",
-          "sha": "3501a54dbf0b482b63648360ec922d5669ad8fa7",
-          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16a2/releases/Shinobi%20(Set%206%2C%20World%2C%20S16A)%20%5BNo%20Protection%5D.mra",
+          "name": "Action Fighter (World, S16A) [FD1089A 317-0018].mra",
+          "sha": "96a23e104fddface0c71ec4cc158a0a00f1ceba6",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16a2/releases/Action%20Fighter%20(World%2C%20S16A)%20%5BFD1089A%20317-0018%5D.mra",
           "type": "MRA",
           "extra": {
-            "name": "Shinobi (Set 6, World, S16A) [No Protection]",
+            "name": "Action Fighter (World, S16A) [FD1089A 317-0018]",
             "rbf": "jts16",
             "zips": [
-              "shinobi.zip",
-              "beta.zip"
+              "afighter.zip",
+              "jtbeta.zip|beta.zip"
             ]
           }
         },
@@ -3756,6 +3748,12 @@
           "name": "jts16a2_20210702.rbf",
           "sha": "42148eb696ebf3e7778c34991c2d5bf1ad980679",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16a2/releases/jts16a2_20210702.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "jts16a2_20210730.rbf",
+          "sha": "f33f0336fe09b7592b41d4abf4c6adac8b7e45fa",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16a2/releases/jts16a2_20210730.rbf",
           "type": "RBF"
         },
         {
