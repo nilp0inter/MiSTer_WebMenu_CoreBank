@@ -954,6 +954,12 @@
           "type": "OTHER"
         },
         {
+          "name": "MRA-Alternatives_20210730.zip",
+          "sha": "b4a538a6e947b698ea32579db04440cccf1bf21b",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/MRA-Alternatives_MiSTer/releases/MRA-Alternatives_20210730.zip",
+          "type": "OTHER"
+        },
+        {
           "name": "README.md",
           "sha": "8b178fcbce4f716d489422eeed7294086ffaf284",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/biocom/README.md",
@@ -3754,6 +3760,86 @@
           "name": "jts16a2_20210730.rbf",
           "sha": "f33f0336fe09b7592b41d4abf4c6adac8b7e45fa",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16a2/releases/jts16a2_20210730.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "README.md",
+          "sha": "eb47e25106b0ec5fd0b8a106a6b9bc0ab25447b0",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/README.md",
+          "type": "OTHER"
+        },
+        {
+          "name": "Alien Syndrome (set 4, System 16B, unprotected).mra",
+          "sha": "fb85f3a62e07e7eebb49daadfa34ef998373c28d",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/Alien%20Syndrome%20(set%204%2C%20System%2016B%2C%20unprotected).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Alien Syndrome (set 4, System 16B, unprotected)",
+            "rbf": "jts16b",
+            "zips": [
+              "aliensyn.zip",
+              "jtbeta.zip|beta.zip"
+            ]
+          }
+        },
+        {
+          "name": "RyuKyu (Rev A, Japan) (FD1094 317-5023A).mra",
+          "sha": "e3086ebbbb71f7d6d86398af6c727caf3ef0d54d",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/RyuKyu%20(Rev%20A%2C%20Japan)%20(FD1094%20317-5023A).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "RyuKyu (Rev A, Japan) (FD1094 317-5023A)",
+            "rbf": "jts16b",
+            "zips": [
+              "ryukyu.zip",
+              "jtbeta.zip|beta.zip"
+            ]
+          }
+        },
+        {
+          "name": "Time Scanner (set 2, System 16B).mra",
+          "sha": "f3d1c35f1f79ba4f2e34d40deea59b015771e5cf",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/Time%20Scanner%20(set%202%2C%20System%2016B).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Time Scanner (set 2, System 16B)",
+            "rbf": "jts16b",
+            "zips": [
+              "timescan.zip",
+              "jtbeta.zip|beta.zip"
+            ]
+          }
+        },
+        {
+          "name": "jts16b_20210730.rbf",
+          "sha": "a4f5590cdaa25501710955fc102925481107bb6e",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/jts16b_20210730.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "README.md",
+          "sha": "eb47e25106b0ec5fd0b8a106a6b9bc0ab25447b0",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b1/README.md",
+          "type": "OTHER"
+        },
+        {
+          "name": "Passing Shot (World, 2 Players) (FD1094 317-0080).mra",
+          "sha": "1ba3c54323aee8df2ae0826120b34c078b10c4ee",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b1/releases/Passing%20Shot%20(World%2C%202%20Players)%20(FD1094%20317-0080).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Passing Shot (World, 2 Players) (FD1094 317-0080)",
+            "rbf": "jts16b",
+            "zips": [
+              "passsht.zip",
+              "jtbeta.zip|beta.zip"
+            ]
+          }
+        },
+        {
+          "name": "jts16b1_20210730.rbf",
+          "sha": "f009ce5792548036719e6648580a47aa63122950",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b1/releases/jts16b1_20210730.rbf",
           "type": "RBF"
         },
         {
