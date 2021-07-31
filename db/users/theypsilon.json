@@ -144,7 +144,7 @@
     {
       "name": "MAD_Database_MiSTer",
       "description": null,
-      "readme": null,
+      "readme": "# MAD Database for MiSTer\n\n## How to generate your own MAD Database:\n\n1. Create your own public repository on GitHub\n2. Place the contents of this zip (https://github.com/theypsilon/MAD_Database_MiSTer/archive/refs/heads/main.zip) on your new public repository as-is\n3. Make sure that there is a .github hidden folder there, if there isn't go back to Step 2, cause something was not copied correctly.\n4. Substitute the contents of the mad folder with files of your own. The folder structure inside mad does not matter, it will just look for files with the .mad extension.\n5. Commit and push the changes.\n6. After 5 mins, your new repository will generate a new branch named db by itself, this is an automatic task. It will contain the zipped json that we need in the [Arcade Organizer](https://github.com/theypsilon/_arcade-organizer/).\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/theypsilon/MAD_Database_MiSTer",
