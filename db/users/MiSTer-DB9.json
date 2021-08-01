@@ -1010,7 +1010,13 @@
           "sha": "f972bdd9ab4f32d2f617a33b1d93f166f5223355",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Cave_MiSTer/master/releases/DoDonPachi%20(Arrange).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "DoDonPachi (20120212 Arrange Ver. 1.1)",
+            "rbf": "cave",
+            "zips": [
+              "ddonpach.zip|ddonpacha.zip"
+            ]
+          }
         },
         {
           "name": "DoDonPachi (Japan).mra",
