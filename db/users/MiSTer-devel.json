@@ -1962,7 +1962,7 @@
     {
       "name": "Arcade-Cosmic_MiSTer",
       "description": "Universal Cosmic series games (Z80 based)",
-      "readme": "# [Arcade: Universal Cosmic](https://www.arcade-museum.com/game_detail.php?game_id=7398) games (Z80-based) for [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\nBy [Mike Coates](https://github.com/macrofpga)  \nCurrent Version - 0.9 - 08/07/2021\n\n## Description\n\nThis is a recreation of the [Universal](https://www.arcade-museum.com/manuf_detail.php?manuf_id=1703&orig_game_id=7398) games that run on similar hardware.\n\nThe game timing should be very close to the original, but the code is not necessarily identical to the real thing, but achieves the same end result.\n\n## Controls\n\nUp, Down, Left, Right, Fire 1, Fire 2 (not all games use all buttons)\n\n## Games currently supported\n\n* [Cosmic Alien](https://www.arcade-museum.com/game_detail.php?game_id=7398)\n* [Magical Spot](https://www.arcade-museum.com/game_detail.php?game_id=8505)\n* [Space Panic](https://www.arcade-museum.com/game_detail.php?game_id=9676)\n\n## Known differences/problems\n\nSound effects are all implemented using samples (other than the DAC).\n\nI have added a screen flip option which is not present on all parts of the original video hardware, sprites are instead flipped by software.\n\nThe coinage DIP switch on Magic Spot is wrong!\n\nThe CPU is running at the wrong frequency for a couple of the games, but this does not affect the game (other than the DAC sounds wil be higher frequency). This will be fixed at some point by converting it to a CPU Enable signal and adding a second divider.\n\nNo Man's Land needs the background video lined up properly in all flip modes.\n\nDevil Zone and No Man's Land need sound samples sourced and connected up.\n\n## ROM Files Instructions\n\n**ROMs are not included!** In order to use this arcade core, you will need to provide the correct ROM file yourself.\n\nTo simplify the process `.mra` files are provided in the releases folder, that specify the required ROMs with their checksums. The ROMs `.zip` filename refers to the corresponding file from the MAME project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for information on how to setup and use the environment.\n\nQuick reference for folders and file placement:\n\n```\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/games/mame/<mame rom>.zip\n/games/hbmame/<hbmame rom>.zip\n```",
+      "readme": "# [Arcade: Universal Cosmic](https://www.arcade-museum.com/game_detail.php?game_id=7398) games (Z80-based) for [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\nBy [Mike Coates](https://github.com/macrofpga)  \nCurrent Version - 0.9 - 08/07/2021\n\n## Description\n\nThis is a recreation of the [Universal](https://www.arcade-museum.com/manuf_detail.php?manuf_id=1703&orig_game_id=7398) games that run on similar hardware.\n\nThe game timing should be very close to the original, but the code is not necessarily identical to the real thing, but achieves the same end result.\n\n## Controls\n\nUp, Down, Left, Right, Fire 1, Fire 2 (not all games use all buttons)\n\n## Games currently supported\n\n* [Cosmic Alien](https://www.arcade-museum.com/game_detail.php?game_id=7398)\n* [Magical Spot](https://www.arcade-museum.com/game_detail.php?game_id=8505)\n* [Space Panic](https://www.arcade-museum.com/game_detail.php?game_id=9676)\n\n## Known differences/problems\n\nSound effects are all implemented using samples (other than the DAC).\n\nI have added a screen flip option to the sprite code, sprites are flipped by the software on the real hardware, but everything else does have a flip signal. It is implemented as a fake dip switch.\n\nNo Man's Land needs the background video lined up properly in all flip modes.\n\nDevil Zone and No Man's Land need sound samples sourced and connected up.\n\n## ROM Files Instructions\n\n**ROMs are not included!** In order to use this arcade core, you will need to provide the correct ROM file yourself.\n\nTo simplify the process `.mra` files are provided in the releases folder, that specify the required ROMs with their checksums. The ROMs `.zip` filename refers to the corresponding file from the MAME project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for information on how to setup and use the environment.\n\nQuick reference for folders and file placement:\n\n```\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/games/mame/<mame rom>.zip\n/games/hbmame/<hbmame rom>.zip\n```\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/Arcade-Cosmic_MiSTer",
@@ -1974,8 +1974,14 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Cosmic_20210801.rbf",
+          "sha": "3477880369fcdf24d3f65416d650d29143c70b0c",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cosmic_MiSTer/main/releases/Arcade-Cosmic_20210801.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Cosmic Alien.mra",
-          "sha": "420c5d380f979344823f93f6589965c3cd64a9e6",
+          "sha": "60657524ed6af40514eacbac9aaeb247a415cec4",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cosmic_MiSTer/main/releases/Cosmic%20Alien.mra",
           "type": "MRA",
           "extra": {
@@ -1988,7 +1994,7 @@
         },
         {
           "name": "Magical Spot.mra",
-          "sha": "aacc33d1e14977ce073f6e92e9c4850ab4f11c32",
+          "sha": "5ae1d124d544090d04c58c10ce2a48c987f55d17",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cosmic_MiSTer/main/releases/Magical%20Spot.mra",
           "type": "MRA",
           "extra": {
@@ -2001,7 +2007,7 @@
         },
         {
           "name": "Space Panic.mra",
-          "sha": "0d29c36b81338e8261800d8f9c597682487c4f21",
+          "sha": "1b659d53dbbc823ce52d98e0c34250017e6226e8",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cosmic_MiSTer/main/releases/Space%20Panic.mra",
           "type": "MRA",
           "extra": {
