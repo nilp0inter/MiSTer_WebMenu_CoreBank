@@ -2942,14 +2942,7 @@
           "sha": "97da8d299ce634263b80072ac60c03bfb2a668e6",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-LadyBug_MiSTer/master/releases/Dorodon%20(Set%201).mra",
           "type": "MRA",
-          "extra": {
-            "name": "Dorodon",
-            "rbf": "ladybug",
-            "zips": [
-              "dorodon.zip",
-              "dorodon.zip"
-            ]
-          }
+          "extra": null
         },
         {
           "name": "Lady Bug.mra",
@@ -4064,13 +4057,7 @@
           "sha": "b0a197372d914ec866af3653efdda67fcd403833",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Dream%20Shopper.mra",
           "type": "MRA",
-          "extra": {
-            "name": "Dream Shopper",
-            "rbf": "pacman",
-            "zips": [
-              "dremshpr.zip"
-            ]
-          }
+          "extra": null
         },
         {
           "name": "Eeek! (Pac-Man Conversion).mra",
@@ -7895,6 +7882,12 @@
           "name": "MiSTer_20210724",
           "sha": "79ce6d720c58cc8ff26e8f56752567a629f8eec7",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Main_MiSTer/master/releases/MiSTer_20210724",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20210803",
+          "sha": "1a27969b264a0da44091e5faf5f66e0fc7f42aa4",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Main_MiSTer/master/releases/MiSTer_20210803",
           "type": "OTHER"
         }
       ]
