@@ -5865,7 +5865,13 @@
           "sha": "fb5257238dd3b023ca029bb037ae3f6c867fc872",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SolomonsKey_MiSTer/master/releases/Solomon%20no%20Kagi%20(JP).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Solomon no Kagi",
+            "rbf": "solomonskey",
+            "zips": [
+              "solomon.zip|solomonj.zip"
+            ]
+          }
         },
         {
           "name": "Solomon's Key.mra",

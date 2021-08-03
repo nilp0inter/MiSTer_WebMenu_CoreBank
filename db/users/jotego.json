@@ -1746,7 +1746,13 @@
           "sha": "e3fd22526c7340ea1951260fe225d6db6cbe19be",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps1/releases/Knights%20of%20the%20Round%20-World%20911127-.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Knights of the Round (World 911127)",
+            "rbf": "jtcps1",
+            "zips": [
+              "knights.zip"
+            ]
+          }
         },
         {
           "name": "Magic Sword  Heroic Fantasy -World 900725-.mra",
@@ -1766,7 +1772,13 @@
           "sha": "2a9a0bff9d9c1a576b068c94afb81a1d30037b16",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps1/releases/Mega%20Man%20%20The%20Power%20Battle%20-CPS1%2C%20USA%20951006-.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Mega Man: The Power Battle (CPS1, USA 951006)",
+            "rbf": "jtcps1",
+            "zips": [
+              "megaman.zip"
+            ]
+          }
         },
         {
           "name": "Mega Twins -World 900619-.mra",
