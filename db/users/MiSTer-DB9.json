@@ -2928,14 +2928,7 @@
           "sha": "befe4e886b78d302cba48afde9741f8e013e03f0",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-LadyBug_MiSTer/master/releases/Cosmic%20Avenger.mra",
           "type": "MRA",
-          "extra": {
-            "name": "Cosmic Avenger",
-            "rbf": "ladybug",
-            "zips": [
-              "cavenger.zip",
-              "cavenger.zip"
-            ]
-          }
+          "extra": null
         },
         {
           "name": "Dorodon (Set 1).mra",
@@ -2949,14 +2942,7 @@
           "sha": "ae6b3f079b07f50d72294a71a4c03d0ce5cce6e2",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-LadyBug_MiSTer/master/releases/Lady%20Bug.mra",
           "type": "MRA",
-          "extra": {
-            "name": "Lady Bug",
-            "rbf": "ladybug",
-            "zips": [
-              "ladybug.zip",
-              "ladybug.zip"
-            ]
-          }
+          "extra": null
         },
         {
           "name": "Snap Jack.mra",
@@ -4057,7 +4043,13 @@
           "sha": "b0a197372d914ec866af3653efdda67fcd403833",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Dream%20Shopper.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Dream Shopper",
+            "rbf": "pacman",
+            "zips": [
+              "dremshpr.zip"
+            ]
+          }
         },
         {
           "name": "Eeek! (Pac-Man Conversion).mra",
