@@ -8071,7 +8071,13 @@
           "sha": "bbbb195e9041445cc4c32752afe36aeafe0a15ac",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TraverseUSA_MiSTer/master/releases/Traverse%20USA-%20Zippy%20Race%20(US).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Traverse USA- Zippy Race",
+            "rbf": "traverseusa",
+            "zips": [
+              "travrusa.zip"
+            ]
+          }
         }
       ]
     },
