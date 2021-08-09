@@ -4066,7 +4066,14 @@
           "sha": "ae6b3f079b07f50d72294a71a4c03d0ce5cce6e2",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-LadyBug_MiSTer/master/releases/Lady%20Bug.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Lady Bug",
+            "rbf": "ladybug",
+            "zips": [
+              "ladybug.zip",
+              "ladybug.zip"
+            ]
+          }
         },
         {
           "name": "Snap Jack.mra",
