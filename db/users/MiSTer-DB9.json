@@ -2130,7 +2130,7 @@
     {
       "name": "Arcade-Galaga_MiSTer",
       "description": "Arcade: Galaga for MiSTer",
-      "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: Galaga port to MiSTer by Sorgelig\n-- 23 October 2017\n-- \n---------------------------------------------------------------------------------\n-- Galaga Midway by Dar (darfpga@aol.fr) (29 December 2016)\n-- http://darfpga.blogspot.fr\n---------------------------------------------------------------------------------\n-- gen_ram.vhd\n-------------------------------- \n-- Copyright 2005-2008 by Peter Wendrich (pwsoft@syntiac.com)\n-- http://www.syntiac.com/fpga64.html\n---------------------------------------------------------------------------------\n-- T80/T80se - Version : 0247\n-----------------------------\n-- Z80 compatible microprocessor core\n-- Copyright (c) 2001-2002 Daniel Wallner (jesus@opencores.org)\n---------------------------------------------------------------------------------\n-- \n-- Support screen and controls rotation on HDMI output.\n-- Only controls are rotated on VGA output.\n-- \n-- \n-- Keyboard inputs :\n--\n--   F2          : Coin + Start 2 players\n--   F1          : Coin + Start 1 player\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--   SPACE       : Fire  \n--\n-- Joystick support.\n-- \n-- \n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
+      "readme": "Galaga\n======\n\nArcade Galaga implementation for the MiSTer FPGA\n\nCredits\n-------\n\n * Dar: original Galaga FPGA implementation\n * Daniel Wallner: T80/T80se - Z80 compatible CPU\n * Peter Wendrich: `gen_ram.vhd`\n * Sorgelig: MiSTer port\n * Alan Steremberg: DIP switches, maintenance\n * JimmyStones: Hi-score saving, pause\n * blackwine: Flip-screen, H/V-sync adjustments, full DIP switch mapping, support for nm51xx, low pass filters\n\nControls\n--------\n\nKeyboard inputs:\n\n```\n   F2          : Coin + Start 2 players\n   F1          : Coin + Start 1 player\n   UP,DOWN,LEFT,RIGHT arrows : Movements\n   SPACE       : Fire\n```\n\n Joystick support.\n\nRequired files\n--------------\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to\n[Arcade ROMS](https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms)\nfor information on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n * `/_Arcade/<game name>.mra`\n * `/_Arcade/cores/<game rbf>.rbf`\n * `/games/mame/<mame rom>.zip`\n * `/games/hbmame/<hbmame rom>.zip`\n\nKnown issues\n------------\n * /quote from [MAME sources](https://github.com/mamedev/mame/blob/a32810d97465ae077ece35984a98a92abbf3462f/src/mame/drivers/galaga.cpp#L584-L587)/:\n   There is a bug in the sound CPU program.\n   During initialization, it enables NMI before clearing RAM, but the NMI\n   handler doesn't save the registers, so it cannot interrupt program\n   execution. If the NMI happens before the LDIR that clears RAM has finished,\n   the program will crash.\n * optional rapid fire board is not implemented.\n\nEaster egg\n----------\n\nIn service mode with fire button pressed enter the following sequence:\n`5xR 6xL 3xR 7xLz`.\n[Source](https://github.com/mamedev/mame/blob/a32810d97465ae077ece35984a98a92abbf3462f/src/mame/drivers/galaga.cpp#L555-L559)\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-DB9/Arcade-Galaga_MiSTer",
@@ -2190,15 +2190,190 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Galaga_20210730.rbf",
+          "sha": "9696b43de41bc30f29dfddce8411d2b3a54ee000",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaga_MiSTer/master/releases/Arcade-Galaga_20210730.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Galaga (Midway, Set 1).mra",
-          "sha": "ac7747ebd4394ff8da407e9ba664885c90297133",
+          "sha": "780eb029a5aeaf71b5288ab81444b6e8139a1faa",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaga_MiSTer/master/releases/Galaga%20(Midway%2C%20Set%201).mra",
           "type": "MRA",
           "extra": {
             "name": "Galaga",
             "rbf": "galaga",
             "zips": [
-              "galaga.zip|galagamw.zip|namco54.zip"
+              "galaga.zip|galagamw.zip|namco51.zip|namco54.zip"
+            ]
+          }
+        },
+        {
+          "name": "Galaga (Enduring Freedom) - HBMame.mra",
+          "sha": "601ae8862d71987c7c9f134e78e742f7a0e420db",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaga_MiSTer/master/releases/_alternatives/_Galaga/Galaga%20(Enduring%20Freedom)%20-%20HBMame.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Galaga - Enduring Freedom",
+            "rbf": "galaga",
+            "zips": [
+              "/hbmame/galaga.zip|namco51.zip|namco54.zip"
+            ]
+          }
+        },
+        {
+          "name": "Galaga (Midway set 1 with fast shoot hack).mra",
+          "sha": "f2559402e2e21542ef2d56da1dea0260e8dda5b5",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaga_MiSTer/master/releases/_alternatives/_Galaga/Galaga%20(Midway%20set%201%20with%20fast%20shoot%20hack).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Galaga",
+            "rbf": "galaga",
+            "zips": [
+              "galaga.zip|galagamf.zip|namco51.zip|namco54.zip"
+            ]
+          }
+        },
+        {
+          "name": "Galaga (Namco rev. B).mra",
+          "sha": "ef5f8c18f238e97311b79b849b3fd5542ff047f9",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaga_MiSTer/master/releases/_alternatives/_Galaga/Galaga%20(Namco%20rev.%20B).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Galaga",
+            "rbf": "galaga",
+            "zips": [
+              "galaga.zip|galagao.zip|namco51.zip|namco54.zip"
+            ]
+          }
+        },
+        {
+          "name": "Galaga (Namco).mra",
+          "sha": "f2827ca2f9e27acc72ffb4ab9e19beceb7bebe12",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaga_MiSTer/master/releases/_alternatives/_Galaga/Galaga%20(Namco).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Galaga (Namco)",
+            "rbf": "galaga",
+            "zips": [
+              "galaga.zip|namco51.zip|namco54.zip"
+            ]
+          }
+        },
+        {
+          "name": "Galaga (fast shoot) - HBMame.mra",
+          "sha": "9303125d6730bf9f868ec20bdd5f27f0a173aa47",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaga_MiSTer/master/releases/_alternatives/_Galaga/Galaga%20(fast%20shoot)%20-%20HBMame.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Galaga",
+            "rbf": "galaga",
+            "zips": [
+              "/hbmame/galaga.zip|namco51.zip|namco54.zip"
+            ]
+          }
+        },
+        {
+          "name": "Galaga Ghost (Set 1) - HBMame.mra",
+          "sha": "4cdf39861bff072035fa273645c1d9072052c954",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaga_MiSTer/master/releases/_alternatives/_Galaga/Galaga%20Ghost%20(Set%201)%20-%20HBMame.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Galaga Ghost",
+            "rbf": "galaga",
+            "zips": [
+              "/hbmame/galaga.zip|namco51.zip|namco54.zip"
+            ]
+          }
+        },
+        {
+          "name": "Galaga Ghost (Set 2 - 2002-11-28) - HBMame.mra",
+          "sha": "c02e91ea69f0e91c7bd3f28c9b023f927daf717d",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaga_MiSTer/master/releases/_alternatives/_Galaga/Galaga%20Ghost%20(Set%202%20-%202002-11-28)%20-%20HBMame.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Galaga Ghost",
+            "rbf": "galaga",
+            "zips": [
+              "/hbmame/galaga.zip|namco51.zip|namco54.zip"
+            ]
+          }
+        },
+        {
+          "name": "Galagalaxian - HBMame.mra",
+          "sha": "f29826259389c7012c49a48c8a9a8873f80703ba",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaga_MiSTer/master/releases/_alternatives/_Galaga/Galagalaxian%20-%20HBMame.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Galagalaxian",
+            "rbf": "galaga",
+            "zips": [
+              "/hbmame/galaga.zip|namco51.zip|namco54.zip"
+            ]
+          }
+        },
+        {
+          "name": "Galapede (Fast Shoot) - HBMame.mra",
+          "sha": "f761a6d03bb4242b0e022943053d3c6e9258a0cb",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaga_MiSTer/master/releases/_alternatives/_Galaga/Galapede%20(Fast%20Shoot)%20-%20HBMame.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Galapede",
+            "rbf": "galaga",
+            "zips": [
+              "/hbmame/galaga.zip|namco51.zip|namco54.zip"
+            ]
+          }
+        },
+        {
+          "name": "Gatsbee.mra",
+          "sha": "4c140956a09d42bb55f0f824f42e75e228301191",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaga_MiSTer/master/releases/_alternatives/_Galaga/Gatsbee.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Gatsbee",
+            "rbf": "galaga",
+            "zips": [
+              "galaga.zip|namco51.zip|namco54.zip"
+            ]
+          }
+        },
+        {
+          "name": "Vector Galaga - HBMame.mra",
+          "sha": "7a74ab73617f480333e3d609fd45ef00b30aad38",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaga_MiSTer/master/releases/_alternatives/_Galaga/Vector%20Galaga%20-%20HBMame.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Vector Galaga",
+            "rbf": "galaga",
+            "zips": [
+              "/hbmame/galaga.zip|namco51.zip|namco54.zip"
+            ]
+          }
+        },
+        {
+          "name": "Vector Galaga Fast Shoot - HBMame.mra",
+          "sha": "bb0b415977b3557b532067528546f48194298cb4",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaga_MiSTer/master/releases/_alternatives/_Galaga/Vector%20Galaga%20Fast%20Shoot%20-%20HBMame.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Vector Galaga",
+            "rbf": "galaga",
+            "zips": [
+              "/hbmame/galaga.zip|namco51.zip|namco54.zip"
+            ]
+          }
+        },
+        {
+          "name": "Vector Galaga Midway - HBMame.mra",
+          "sha": "689a381737768f2dcb0fba226d0221578f902f20",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaga_MiSTer/master/releases/_alternatives/_Galaga/Vector%20Galaga%20Midway%20-%20HBMame.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Vector Galaga",
+            "rbf": "galaga",
+            "zips": [
+              "/hbmame/galaga.zip|namco51.zip|namco54.zip"
             ]
           }
         }
