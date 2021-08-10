@@ -1084,7 +1084,13 @@
           "sha": "09d42fb386eae63ea937fb8964c4d84be04e2503",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Astrocade_MiSTer/master/releases/Wizard%20of%20Wor%20(Speech).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Wizard of Wor",
+            "rbf": "astrocade",
+            "zips": [
+              "wow.zip"
+            ]
+          }
         },
         {
           "name": "Wizard of Wor.mra",
@@ -3818,7 +3824,13 @@
           "sha": "ad08a94a5535090d8ec056a82f987a810fc714be",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM62_MiSTer/master/releases/Spelunker.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Spelunker",
+            "rbf": "iremm62",
+            "zips": [
+              "spelunkr.zip"
+            ]
+          }
         },
         {
           "name": "The Battle-Road.mra",
