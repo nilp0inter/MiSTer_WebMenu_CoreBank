@@ -1494,15 +1494,15 @@
           "type": "OTHER"
         },
         {
-          "name": "Contra (US 3).mra",
-          "sha": "87930589551fc60bc01d33122349fe4901e08009",
-          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/contra/releases/Contra%20(US%203).mra",
+          "name": "Contra (US - Asia, set 1).mra",
+          "sha": "44989323e76c805b11c00d9410c28aeabd3d4fc4",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/contra/releases/Contra%20(US%20-%20Asia%2C%20set%201).mra",
           "type": "MRA",
           "extra": {
-            "name": "Contra (US 3)",
+            "name": "Contra (US / Asia, set 1)",
             "rbf": "jtcontra",
             "zips": [
-              "contrae.zip|contra.zip"
+              "contra.zip"
             ]
           }
         },
