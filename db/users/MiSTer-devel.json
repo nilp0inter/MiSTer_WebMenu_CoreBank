@@ -11304,7 +11304,14 @@
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/Intv_MiSTer",
-      "releases": []
+      "releases": [
+        {
+          "name": "Intellivision_20210809.rbf",
+          "sha": "9e73b9ebcbeb91c51ecaf17e876dafdd0848d689",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Intv_MiSTer/master/releases/Intellivision_20210809.rbf",
+          "type": "RBF"
+        }
+      ]
     },
     {
       "name": "Jupiter_MiSTer",
