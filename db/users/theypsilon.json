@@ -239,15 +239,6 @@
       "releases": []
     },
     {
-      "name": "Updater_script_MiSTer",
-      "description": "Bash script for updating MiSTer",
-      "readme": "# jtupdate\n\nThis repository is dedicated to the update script(s) that download cores for MiSTer from any external sources. The primary intent is to use it with the [JT binary repositoty](https://github.com/jotego/jtbin/) but it is open to link to more sources of content.\n\nThe update scripts could be made to work with other upcoming FPGA platforms too. There is no specific limit to the target FPGA or the content source.\n\n## Mission\n\nIdeally the scripts should make user life nice:\n\n-download required RBF files\n-download required MRA files\n-do not break user's system\n-be open to independent content providers\n-be open to configuration files\n-be open to user-customized folder schemes\n-listen to user requests\n\nAlthough the repository starts far from these targets, hopefully we'll get there.\n\n## Branching\n\nAs this is a critical script for users, it is vital to prevent file corruption. To that purpose there will be two branches\n\n* *master*, the currently stable and recommended one\n* *test*, the one where new features are tested.\n\nPull requests should go to the *test* branch.\n\n## Final Statement\n\nContributions are more than welcome as I am more involved now in pure core development and am not the best suited person for this task.\n\nThank you\nJotego\n",
-      "archived": false,
-      "fork": true,
-      "url": "https://github.com/theypsilon/Updater_script_MiSTer",
-      "releases": []
-    },
-    {
       "name": "Updater_script_MiSTer_DB9",
       "description": "Updater script for MiSTer DB9 (Deprecated repository)",
       "readme": "# Updater script for MiSTer DB9\nThis repository is *obsolete*, please [click here](https://github.com/MiSTer-DB9/Updater_script_MiSTer_DB9) to go to the new one.\n",
