@@ -5888,7 +5888,13 @@
           "sha": "b909311e5ad5fa0ba6d30dc59aa711cf098158aa",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pooyan_MiSTer/master/releases/Pooyan.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Pooyan",
+            "rbf": "pooyan",
+            "zips": [
+              "pooyan.zip"
+            ]
+          }
         }
       ]
     },
