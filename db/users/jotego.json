@@ -3040,14 +3040,15 @@
         },
         {
           "name": "Exed Exes.mra",
-          "sha": "af75cb05fc6d80109f375d464ba3b5153b485129",
+          "sha": "c99400d42af16a6d810e68d26458c9f7cb25f925",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/exed/releases/Exed%20Exes.mra",
           "type": "MRA",
           "extra": {
             "name": "Exed Exes",
             "rbf": "jtexed",
             "zips": [
-              "exedexes.zip"
+              "exedexes.zip",
+              "jtbeta.zip|beta.zip"
             ]
           }
         },
