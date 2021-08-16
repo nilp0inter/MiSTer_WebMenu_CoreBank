@@ -11298,6 +11298,28 @@
       ]
     },
     {
+      "name": "Interact_MiSTer",
+      "description": "FPGA recreation of the Interact Home Computer, a early home computer from 1978",
+      "readme": "# [Interact](https://en.wikipedia.org/wiki/Interact_Home_Computer) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\n<p align=\"center\">\n  <img width=\"320\" height=\"240\" src=\"https://user-images.githubusercontent.com/105246/128786410-1230b6a1-10da-4fce-9910-e705d959d613.gif\">\n</p>\n\nFPGA recreation of the Interact Home Computer from 1978.  You can read about it on [Wikipedia](https://en.wikipedia.org/wiki/Interact_Home_Computer) and [Old-Computers.com](https://www.old-computers.com/museum/computer.asp?c=1004&st=1).\n\n### Features:\n- Cycle accurate, used the original schematics to recreate the discrete logic as closely as possible in Verilog\n- Uses the [vm80a](https://github.com/1801BM1/vm80a) reverse-engineered 8080a core\n- Compatible with .K7 and .CIN tape formats used by the MAME Interact, [DCHector](http://dchector.free.fr/index.html), and [Virtual Interact](http://www.geocities.ws/emucompboy/) emulators\n- An [Online Tape Converter](https://interact-tape-converter.netlify.app/) is available for converting tapes to .K7 files\n- PS/2 to Interact Keyboard mapping\n- Joystick support\n- HDMI output\n\n### Roadmap:\n- SN76477 Sound\n- RS232C Peripheral Interface Emulation (MC6850)\n\n### Install\n- Copy *.rbf to the root of SD card.<br/>\n- Rename the Interact ROM file to boot.rom and place in games/Interact<br/>\n- Place .K7 or .CIN files in games/Interact<br/>\n",
+      "archived": false,
+      "fork": false,
+      "url": "https://github.com/MiSTer-devel/Interact_MiSTer",
+      "releases": [
+        {
+          "name": "Interact-20210813.rbf",
+          "sha": "31800e4d6103409abe4b114919cd7c666afcec42",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Interact_MiSTer/main/releases/Interact-20210813.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Interact-20210815.rbf",
+          "sha": "6c63941fc50366cbd0927c966880ecace52d2fdd",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Interact_MiSTer/main/releases/Interact-20210815.rbf",
+          "type": "RBF"
+        }
+      ]
+    },
+    {
       "name": "Intv_MiSTer",
       "description": "Intellivision for MiSTer",
       "readme": "\n# Intv_MiSTer\n\nMattel Intellivision\n\nThis core needs copies of original ROMs in the Intellivision folder\n\n\n**Either use boot0..3.rom files**\n\nName      | Original   | Content\n----------|------------|--------------------\nboot0.rom | exec.bin   | System ROM (8kB)\nboot1.rom | grom.bin   | Character generator ROM (2kB)\nboot2.rom | sp0256-012.bin | Intellivoice ROM (2kB)\nboot3.rom | ecs.bin    | ECS extension ROM (24kB)\n\n\n**Or merge all 4 ROMs into a single boot.rom file**\n```\ncp exec.bin boot.rom\ncat grom.bin >>boot.rom\ncat sp0256-012.bin >>boot.rom\ncat ecs.bin >>boot.rom\n```\n",
