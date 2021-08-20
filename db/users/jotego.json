@@ -271,14 +271,14 @@
     {
       "name": "jtbin",
       "description": "Binary RBF files for MiST(er) FPGA cores",
-      "readme": "# FPGA Clones of Arcade Games by Jose Tejada ([@topapate](https://twitter.com/topapate))\n\nThis repository contains only the binary files of my FPGA cores. Although I have had some cores released through the MiSTer repository or the source code repository in the past; nowadays I only add new releases to this repository in binary form.\n\n## Currently Supported FPGA Systems\n\n* [MiST](https://github.com/mist-devel/mist-board/wiki)\n* [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n* [SiDi](https://github.com/ManuFerHi/SiDi-FPGA/wiki)\n* [neptUNO](https://www.antoniovillena.es/store/product/neptuno/)\n* [MultiCore 2(+)](https://gitlab.com/victor.trucco/Multicore_Bitstreams/-/tree/master/)\n\n## MiST & related systems (SiDi, MultiCore 2(+) & Neptuno)\n\nFor these systems you can generate ROMs using the MRA-to-rom file converter. The *README* file for each core can be found under the MiSTer folder or in the original repository.\n\nIf you want to access older versions of a file, use GitHub inherent control version capabilities.\n\n## MiSTer\n\nYou can download the binaries files from the mister folder. But you can also adapt\nyour update script to grab files from this repository. The folder mister/update contains\nthe update script\n\n# Source Code Repositories\n\nNormally each repository covers for many arcade games that share identical or similar hardware.\n\nFPGA Core           | Source code\n--------------------|--------------------------\nCAPCOM CPS0         | https://www.github.com/jotego/jt_gng\nCAPCOM CPS1/1.5/2   | https://www.github.com/jotego/jtcps1\nDouble Dragon       | https://www.github.com/jotego/jtdd\nPopeye              | https://www.github.com/jotego/jtpopeye\nContra              | https://www.github.com/jotego/jtcontra\nBubble Bobble       | https://www.github.com/jotego/jtbubl\nSystem 16           | https://www.github.com/JTFPGA/jts16\n\nIf you are a developer, don't miss these cores too:\n\nChip                   | Source code\n-----------------------|-----------------------------------\nYM2203, YM2612, YM2610 | [JT12](https://github.com/jotego/jt12)\nYM2151                 | [JT51](https://github.com/jotego/jt51)\nYM3526                 | [JTOPL](https://github.com/jotego/jtopl)\nYM2149                 | [JT49](https://github.com/jotego/jt49)\nsn76489an              | [JT89](https://github.com/jotego/jt89)\nNEC uPD7759            | [JT7759](https://github.com/jotego/jt7759)\nOKI 6295               | [JT6295](https://github.com/jotego/jt6295)\nOKI MSM5205            | [JT5205](https://github.com/jotego/jt5205)\nIntel 8255             | [JT8255](https://github.com/jotego/jt8255)\nVarious EEPROM Chips   | [JTEEPROM](https://github.com/jotego/jteeprom)\n\n# Final Words\n\nYou can show your appreciation through\n* Patreon: https://patreon.com/topapate\n* Paypal:  https://paypal.me/topapate\n\n```\n+--------------------------------------------------------------------------------+\n|oooooooooooooooooooooooooooooooooo+++++++++++ooooooooooooooooooooooooooooooooooo|\n|ooooooooooooooooooooooooooooooooo+. .    . .+ooooooooooooooooooooooooooooooooooo|\n|ooooooooooooooooooooooooooooooooo~         :o++ooooooooooooooooooooooooooooooooo|\n|oooooooooooooooooooooooooooo+ooo+.        .++.:oo+oo+oooooo+o+oo+oooooo++ooooooo|\n|ooooooooooooooooooooooooo+.......          .. .............................:oooo|\n|oooooooooooooooooooooooo+.                                                .+o+oo|\n|oooooooooooooooooooooooo:                                                 :o:.+o|\n|ooooooooooooooooooooooo+.                                                .++.:oo|\n|ooooooooooooooooooooooo:.....           ...........          ....... ....:o~.+oo|\n|oooooooooooooooooooooooo+++++~         ~+++:++:++++.         ++++++++++++++.+ooo|\n|oooooooooooooooooooooooooo+:~         .++.~:::::::.         .o+.~:::::::::::+ooo|\n|oooooooooooooooooooooooooooo:         :o~.+oooooo+.         ++.~oooooooooooooooo|\n|ooo~........~oooooooooooooo+.        .++.:ooooooo+         ~o:.+oooooooooooooooo|\n|oo:         ~o++ooooooooooo.         +o~.ooooooo+.        .++.~ooooooooooooooooo|\n|oo.         :+.:ooooooooo+.         ~o+.+ooooooo:         ~o:.+ooooooooooooooooo|\n|oo.         ...~:::::::..          .++.~ooooooo+.        .o+.:oooooooooooooooooo|\n|oo~                               ~o+..+ooooooo~         +o~.+oooooooooooooooooo|\n|oo+.                           .~+o+..+ooooooo+.        .o+.+ooooooooooooooooooo|\n|oooo~.                       .:+o+..:+oooooooo.         +o..oooooooooooooooooooo|\n|ooooo+:...              ..~:+++:..:+ooooooooo+         .o+.+oooooooooooooooooooo|\n|ooooooo+++::::::::::++++++++~~.~++ooooooooooo+:+:::::+:++.~ooooooooooooooooooooo|\n|ooooooooo+++:::::::::~:~~~~:++oooooooooooooooooo+::::~::~.+ooooooooooooooooooooo|\n|oooooooooooooo+o+oo++++o+ooooooooooooooooooooooo+o+++o++o+oooooooooooooooooooooo|\n+--------------------------------------------------------------------------------+\n```\n",
+      "readme": null,
       "archived": false,
       "fork": false,
       "url": "https://github.com/jotego/jtbin",
       "releases": [
         {
           "name": "README.md",
-          "sha": "8b178fcbce4f716d489422eeed7294086ffaf284",
+          "sha": "5334dd93f93ef285284552a4524314ecfc3222a8",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/1942/README.md",
           "type": "OTHER"
         },
@@ -471,7 +471,7 @@
         },
         {
           "name": "README.md",
-          "sha": "8b178fcbce4f716d489422eeed7294086ffaf284",
+          "sha": "5334dd93f93ef285284552a4524314ecfc3222a8",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/1943/README.md",
           "type": "OTHER"
         },
@@ -3053,9 +3053,9 @@
           }
         },
         {
-          "name": "jtexed_20210813.rbf",
-          "sha": "94aa5217b91576b3ee255cfa7bf2438fbf0f5adf",
-          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/exed/releases/jtexed_20210813.rbf",
+          "name": "jtexed_20210820.rbf",
+          "sha": "4d01403c26d29a79e47df78c4df54b29428ad8bc",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/exed/releases/jtexed_20210820.rbf",
           "type": "RBF"
         },
         {
@@ -3678,13 +3678,13 @@
         },
         {
           "name": "README.md",
-          "sha": "eb47e25106b0ec5fd0b8a106a6b9bc0ab25447b0",
+          "sha": "1adfbc3d4fa35fa94b500ee4eb3febca9ccd1324",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16/README.md",
           "type": "OTHER"
         },
         {
           "name": "Action Fighter (World, S16A) [FD1089A 317-0018].mra",
-          "sha": "96a23e104fddface0c71ec4cc158a0a00f1ceba6",
+          "sha": "aebe14e45dcbfd6f4731b4c25544890fc17b6297",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16/releases/Action%20Fighter%20(World%2C%20S16A)%20%5BFD1089A%20317-0018%5D.mra",
           "type": "MRA",
           "extra": {
@@ -3692,13 +3692,14 @@
             "rbf": "jts16",
             "zips": [
               "afighter.zip",
-              "jtbeta.zip|beta.zip"
+              "jtbeta.zip",
+              "debug.zip"
             ]
           }
         },
         {
           "name": "Alex Kidd The Lost Stars (Set 2, World, S16A) [No Protection].mra",
-          "sha": "aa64526919c3e84916afa8729dccf11de67c72ea",
+          "sha": "6a4a15a3ed8af006e8a58a64af0dc5577d24404d",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16/releases/Alex%20Kidd%20The%20Lost%20Stars%20(Set%202%2C%20World%2C%20S16A)%20%5BNo%20Protection%5D.mra",
           "type": "MRA",
           "extra": {
@@ -3706,13 +3707,14 @@
             "rbf": "jts16",
             "zips": [
               "alexkidd.zip",
-              "jtbeta.zip|beta.zip"
+              "jtbeta.zip",
+              "debug.zip"
             ]
           }
         },
         {
           "name": "Fantasy Zone (Rev A, World, S16A) [No Protection].mra",
-          "sha": "83c392cac73e8a15d2dc39310545d6a0d95d76fa",
+          "sha": "a10c68ea32a2465c09923242e40c5b1596063af1",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16/releases/Fantasy%20Zone%20(Rev%20A%2C%20World%2C%20S16A)%20%5BNo%20Protection%5D.mra",
           "type": "MRA",
           "extra": {
@@ -3720,13 +3722,14 @@
             "rbf": "jts16",
             "zips": [
               "fantzone.zip",
-              "jtbeta.zip|beta.zip"
+              "jtbeta.zip",
+              "debug.zip"
             ]
           }
         },
         {
           "name": "Shinobi (Set 6, World, S16A) [No Protection].mra",
-          "sha": "290d9ebb5a1e1a1bdcd14db670a63ac61544412a",
+          "sha": "3cb074a59c7e2e00af387f45577c4221f0b6e7e2",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16/releases/Shinobi%20(Set%206%2C%20World%2C%20S16A)%20%5BNo%20Protection%5D.mra",
           "type": "MRA",
           "extra": {
@@ -3734,7 +3737,8 @@
             "rbf": "jts16",
             "zips": [
               "shinobi.zip",
-              "jtbeta.zip|beta.zip"
+              "jtbeta.zip",
+              "debug.zip"
             ]
           }
         },
@@ -3757,14 +3761,26 @@
           "type": "RBF"
         },
         {
+          "name": "jts16_20210814.rbf",
+          "sha": "c11a16fefb3abac610e3702dc1769a58a416c61e",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16/releases/jts16_20210814.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "jts16_20210820.rbf",
+          "sha": "03bf7aa3113e72d41daaf8dce7f0fb9ddd8e9a23",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16/releases/jts16_20210820.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "README.md",
-          "sha": "eb47e25106b0ec5fd0b8a106a6b9bc0ab25447b0",
+          "sha": "1adfbc3d4fa35fa94b500ee4eb3febca9ccd1324",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16a2/README.md",
           "type": "OTHER"
         },
         {
           "name": "Action Fighter (World, S16A) [FD1089A 317-0018].mra",
-          "sha": "96a23e104fddface0c71ec4cc158a0a00f1ceba6",
+          "sha": "aebe14e45dcbfd6f4731b4c25544890fc17b6297",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16a2/releases/Action%20Fighter%20(World%2C%20S16A)%20%5BFD1089A%20317-0018%5D.mra",
           "type": "MRA",
           "extra": {
@@ -3772,7 +3788,8 @@
             "rbf": "jts16",
             "zips": [
               "afighter.zip",
-              "jtbeta.zip|beta.zip"
+              "jtbeta.zip",
+              "debug.zip"
             ]
           }
         },
@@ -3789,8 +3806,20 @@
           "type": "RBF"
         },
         {
+          "name": "jts16a2_20210814.rbf",
+          "sha": "a103419d869b074bfd9e9232fed5d4c3de772b9e",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16a2/releases/jts16a2_20210814.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "jts16a2_20210820.rbf",
+          "sha": "d1cc1ba7eb70d2dd6fc51c7e5f77d998f9b142f0",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16a2/releases/jts16a2_20210820.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "README.md",
-          "sha": "eb47e25106b0ec5fd0b8a106a6b9bc0ab25447b0",
+          "sha": "1adfbc3d4fa35fa94b500ee4eb3febca9ccd1324",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/README.md",
           "type": "OTHER"
         },
@@ -3810,7 +3839,7 @@
         },
         {
           "name": "RyuKyu (Rev A, Japan) (FD1094 317-5023A).mra",
-          "sha": "e3086ebbbb71f7d6d86398af6c727caf3ef0d54d",
+          "sha": "b3ee32a66b58d333caf11e0b2c2f0c875dec9c41",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/RyuKyu%20(Rev%20A%2C%20Japan)%20(FD1094%20317-5023A).mra",
           "type": "MRA",
           "extra": {
@@ -3818,13 +3847,14 @@
             "rbf": "jts16b",
             "zips": [
               "ryukyu.zip",
-              "jtbeta.zip|beta.zip"
+              "jtbeta.zip",
+              "debug.zip"
             ]
           }
         },
         {
           "name": "Time Scanner (set 2, System 16B).mra",
-          "sha": "f3d1c35f1f79ba4f2e34d40deea59b015771e5cf",
+          "sha": "c5d1a0221a145d86303544fefa16b26d5708d9fc",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/Time%20Scanner%20(set%202%2C%20System%2016B).mra",
           "type": "MRA",
           "extra": {
@@ -3832,7 +3862,8 @@
             "rbf": "jts16b",
             "zips": [
               "timescan.zip",
-              "jtbeta.zip|beta.zip"
+              "jtbeta.zip",
+              "debug.zip"
             ]
           }
         },
@@ -3843,14 +3874,38 @@
           "type": "RBF"
         },
         {
+          "name": "jts16b_20210814.rbf",
+          "sha": "831f959696af565b018b8939dda768cf2227103d",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/jts16b_20210814.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "jts16b_20210817.rbf",
+          "sha": "ec1fa52cbe7904af2ae9d06577b5614d09faad23",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/jts16b_20210817.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "jts16b_20210819.rbf",
+          "sha": "cc6fe2eceab5d85c42f804bed779c52e4ac0409f",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/jts16b_20210819.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "jts16b_20210820.rbf",
+          "sha": "c7140589a78c7024054452e21c0c2c216840ecd8",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/jts16b_20210820.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "README.md",
-          "sha": "eb47e25106b0ec5fd0b8a106a6b9bc0ab25447b0",
+          "sha": "1adfbc3d4fa35fa94b500ee4eb3febca9ccd1324",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b1/README.md",
           "type": "OTHER"
         },
         {
           "name": "Passing Shot (World, 2 Players) (FD1094 317-0080).mra",
-          "sha": "1ba3c54323aee8df2ae0826120b34c078b10c4ee",
+          "sha": "f5b24335697d6bd58f6c60e215a203890dab389d",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b1/releases/Passing%20Shot%20(World%2C%202%20Players)%20(FD1094%20317-0080).mra",
           "type": "MRA",
           "extra": {
@@ -3858,7 +3913,8 @@
             "rbf": "jts16b",
             "zips": [
               "passsht.zip",
-              "jtbeta.zip|beta.zip"
+              "jtbeta.zip",
+              "debug.zip"
             ]
           }
         },
@@ -3866,6 +3922,24 @@
           "name": "jts16b1_20210730.rbf",
           "sha": "f009ce5792548036719e6648580a47aa63122950",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b1/releases/jts16b1_20210730.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "jts16b1_20210814.rbf",
+          "sha": "2002dfa085d577dc48729efb236d863a6c076ddb",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b1/releases/jts16b1_20210814.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "jts16b1_20210819.rbf",
+          "sha": "4a60c1e92c02ca77b671f5111f4676c76ae5d64e",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b1/releases/jts16b1_20210819.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "jts16b1_20210820.rbf",
+          "sha": "06c13eefc94d26e7e72380eec1e4da9545a9d499",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b1/releases/jts16b1_20210820.rbf",
           "type": "RBF"
         },
         {
@@ -4409,7 +4483,7 @@
         },
         {
           "name": "README.md",
-          "sha": "8b178fcbce4f716d489422eeed7294086ffaf284",
+          "sha": "5334dd93f93ef285284552a4524314ecfc3222a8",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/vulgus/README.md",
           "type": "OTHER"
         },
