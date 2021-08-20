@@ -967,7 +967,7 @@
         },
         {
           "name": "MRA-Alternatives_20210820.zip",
-          "sha": "0aee12c23ef5a2332c81592cf292d8a96971f068",
+          "sha": "94fdeb96d8ea11e7c88464a754ec69680851d89d",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/MRA-Alternatives_MiSTer/releases/MRA-Alternatives_20210820.zip",
           "type": "OTHER"
         },
@@ -3719,6 +3719,21 @@
           }
         },
         {
+          "name": "Body Slam (World, S16) [8751 317-0015].mra",
+          "sha": "913838cf8c94a7ebbee94df9cd44c0e88c550531",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16/releases/Body%20Slam%20(World%2C%20S16)%20%5B8751%20317-0015%5D.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Body Slam (World, S16) [8751 317-0015]",
+            "rbf": "jts16",
+            "zips": [
+              "bodyslam.zip",
+              "jtbeta.zip",
+              "debug.zip"
+            ]
+          }
+        },
+        {
           "name": "Fantasy Zone (Rev A, World, S16A) [No Protection].mra",
           "sha": "a10c68ea32a2465c09923242e40c5b1596063af1",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16/releases/Fantasy%20Zone%20(Rev%20A%2C%20World%2C%20S16A)%20%5BNo%20Protection%5D.mra",
@@ -3785,15 +3800,15 @@
           "type": "OTHER"
         },
         {
-          "name": "Action Fighter (World, S16A) [FD1089A 317-0018].mra",
-          "sha": "aebe14e45dcbfd6f4731b4c25544890fc17b6297",
-          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16a2/releases/Action%20Fighter%20(World%2C%20S16A)%20%5BFD1089A%20317-0018%5D.mra",
+          "name": "Tetris (Set 4, Japan, S16A) [FD1094 317-0093].mra",
+          "sha": "43ba1e781819ad5e3dec9376ef55dde7e2772ccf",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16a2/releases/Tetris%20(Set%204%2C%20Japan%2C%20S16A)%20%5BFD1094%20317-0093%5D.mra",
           "type": "MRA",
           "extra": {
-            "name": "Action Fighter (World, S16A) [FD1089A 317-0018]",
-            "rbf": "jts16",
+            "name": "Tetris (Set 4, Japan, S16A) [FD1094 317-0093]",
+            "rbf": "jts16a2",
             "zips": [
-              "afighter.zip",
+              "tetris.zip",
               "jtbeta.zip",
               "debug.zip"
             ]
@@ -3831,7 +3846,7 @@
         },
         {
           "name": "Alien Syndrome (set 4, System 16B, unprotected).mra",
-          "sha": "fb85f3a62e07e7eebb49daadfa34ef998373c28d",
+          "sha": "aa34dd847a99892585baa9c945a792866485ce64",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/Alien%20Syndrome%20(set%204%2C%20System%2016B%2C%20unprotected).mra",
           "type": "MRA",
           "extra": {
@@ -3839,7 +3854,83 @@
             "rbf": "jts16b",
             "zips": [
               "aliensyn.zip",
-              "jtbeta.zip|beta.zip"
+              "jtbeta.zip",
+              "debug.zip"
+            ]
+          }
+        },
+        {
+          "name": "Aurail (set 3, US) (unprotected).mra",
+          "sha": "4988c62ba02485c5beaa6f7508be0ae4582c8b8e",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/Aurail%20(set%203%2C%20US)%20(unprotected).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Aurail (set 3, US) (unprotected)",
+            "rbf": "jts16b",
+            "zips": [
+              "aurail.zip",
+              "jtbeta.zip",
+              "debug.zip"
+            ]
+          }
+        },
+        {
+          "name": "Bullet (FD1094 317-0041).mra",
+          "sha": "9793917ae2765343d0c1f2d685f68a4427c4cbb6",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/Bullet%20(FD1094%20317-0041).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Bullet (FD1094 317-0041)",
+            "rbf": "jts16b",
+            "zips": [
+              "bullet.zip",
+              "jtbeta.zip",
+              "debug.zip"
+            ]
+          }
+        },
+        {
+          "name": "Dynamite Dux (set 3, World) (FD1094 317-0096).mra",
+          "sha": "f164705a5a3c335823cf2cb3c959c73f1e8bc810",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/Dynamite%20Dux%20(set%203%2C%20World)%20(FD1094%20317-0096).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Dynamite Dux (set 3, World) (FD1094 317-0096)",
+            "rbf": "jts16b",
+            "zips": [
+              "ddux.zip",
+              "jtbeta.zip",
+              "debug.zip"
+            ]
+          }
+        },
+        {
+          "name": "Flash Point (set 2, Japan) (FD1094 317-0127A).mra",
+          "sha": "a8de9bbd87bc9cca6037715acab167d810f1e872",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/Flash%20Point%20(set%202%2C%20Japan)%20(FD1094%20317-0127A).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Flash Point (set 2, Japan) (FD1094 317-0127A)",
+            "rbf": "jts16b",
+            "zips": [
+              "fpoint.zip",
+              "jtbeta.zip",
+              "debug.zip"
+            ]
+          }
+        },
+        {
+          "name": "Passing Shot (World, 2 Players) (FD1094 317-0080).mra",
+          "sha": "f5b24335697d6bd58f6c60e215a203890dab389d",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/Passing%20Shot%20(World%2C%202%20Players)%20(FD1094%20317-0080).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Passing Shot (World, 2 Players) (FD1094 317-0080)",
+            "rbf": "jts16b",
+            "zips": [
+              "passsht.zip",
+              "jtbeta.zip",
+              "debug.zip"
             ]
           }
         },
