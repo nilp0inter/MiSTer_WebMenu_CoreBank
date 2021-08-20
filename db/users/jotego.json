@@ -967,7 +967,7 @@
         },
         {
           "name": "MRA-Alternatives_20210820.zip",
-          "sha": "94fdeb96d8ea11e7c88464a754ec69680851d89d",
+          "sha": "acf595322bf5af66d45f0a7ffe5fe6ebf1a39767",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/MRA-Alternatives_MiSTer/releases/MRA-Alternatives_20210820.zip",
           "type": "OTHER"
         },
@@ -3046,7 +3046,7 @@
         },
         {
           "name": "Exed Exes.mra",
-          "sha": "c99400d42af16a6d810e68d26458c9f7cb25f925",
+          "sha": "fe29142c9fe1dc6fb9192493a4929dd91eb53c13",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/exed/releases/Exed%20Exes.mra",
           "type": "MRA",
           "extra": {
@@ -3054,7 +3054,8 @@
             "rbf": "jtexed",
             "zips": [
               "exedexes.zip",
-              "jtbeta.zip|beta.zip"
+              "jtbeta.zip",
+              "debug.zip"
             ]
           }
         },
