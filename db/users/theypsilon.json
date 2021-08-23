@@ -239,6 +239,286 @@
       "releases": []
     },
     {
+      "name": "NES_MiSTer",
+      "description": null,
+      "readme": "# [Nintendo Entertainment System](https://en.wikipedia.org/wiki/Nintendo_Entertainment_System) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\nThis is an FPGA implementation of the NES/Famicom based on [FPGANES](https://github.com/strigeus/fpganes) by Ludvig Strigeus and ported to MiSTer.\n\n## Features\n * Supports saves for most games\n * Savestates\n * Supports NTSC, PAL, and Dendy system types\n * FDS Support with expansion audio\n * Multiple Palette options\n * Zapper, Powerpad, Microphone, and Miracle Piano support\n * Supports four players\n * Setting for increasing sprite per line by 8\n * Supports up to 32 cheat codes\n * Supports NSF Player\n * Supports expansion audio from mappers including VRC6 & 7, MMC5, Namco 163 and Sunsoft 5b\n * Supports many popular mappers including VRC1-7, MMC0-5, and many more (see below)\n * Supports large games such as Legend of Link and Rockman Minus Infinity\n\n## Installation\nCopy the NES_\\*.rbf file to the root of the SD card. Create a **NES** folder on the root of the card, and place NES roms (\\*.NES) inside this folder. The ROMs must have an iNES or NES2.0 header, which most already do. NES2.0 headers are prefered for the best accuracy. To have a game ROM load automatically upon starting the core and place it in the **NES** folder.\n- boot0.rom = FDS BIOS file.  Will be used for any FDS images loaded\n- boot1.rom = NES Cart file.  Can be used with boot0.rom (BIOS) in place\n- boot2.rom = FDS image file.  Requires boot0.rom (BIOS).  Use a blank FDS (header only) to boot the FDS BIOS without a disk image.\n- boot3.rom = PAL file. It can be used to set your default custom palette. Save the menu option on \"Custom\" to apply immediately.\n\n## Famicom Disk System Usage\nBefore loading \\*.FDS files, you must first load the official, unpatched FDS BIOS. The BIOS file should be renamed to boot0.rom and placed in the same folder as the ROMs (NES).  Alternatively, it can be loaded from the OSD if boot0.rom doesn't exist. After loading the core and the bios you may select an FDS image. By default, the NES core will swap disk sides for you automatically. To suppress this behavior, hold the FDS button on the player 1 controller. The \"Disk Swap\" OSD option manually controls the disk side.  Each button press increments the disk side.  Press and hold the fds button to eject and increment the disk side in this mode.  Some games only work correctly in manual disk swap mode, and require holding the FDS button for up to a few seconds (Gall Force,...).\n\n## Extra Sprites\nThis feature will double the number of sprites drawn per scanlines, decreasing the flickering sprites that NES is known for. Some games relied on the 8 sprite behavior to work correctly, such as Simon's Quest swamps. Other mappers may be impacted by using extra sprites. While it works well in most games, glitches may occur with this enabled.\n\n## Saving and Loading\nThe battery backed RAM (Save RAM) for the NES does not write to disk automatically. After saving in your game, you must then write the RAM to the SD card by selecting **Save Backup RAM** from the menu. If you do not save your RAM to disk, the contents will be lost next time you restart the core or switch games. Alternatively you can enable to Autosave option from the OSD menu, and if you do your games will be recorded to disk every time you open the OSD menu. FDS saving uses the same method as for cartridge RAM saves. Save RAM is stored as a .sav file based on the NES/FDS filename in `/media/fat/saves/NES/`.  Examples:  \n`Metroid (Japan) (Rev 3).fds` -> `Metroid (Japan) (Rev 3).sav`  \n`Legend of Zelda, The (USA) (Rev 1).nes` -> `Legend of Zelda, The (USA) (Rev 1).sav`\n\n# Savestates\nCore provides 4 slots to save and restore the state (FDS not supported). \nThose can be saved to SDCard or reside only in memory for temporary use(OSD Option). \nUsage with either Keyboard, Gamepad mappable button or OSD. Save states are stored as .ss files in `/media/fat/savestates/NES/`, with an underscore and the save slot number (1,2,3,4) preceding `.ss`. Example (save slot 1): `Metroid (USA).nes` -> `Metroid (USA)_1.ss`\n\nKeyboard Hotkeys for save states:\n- Alt-F1..F4 - save the state\n- F1...F4 - restore\n\nGamepad:\n- Savestatebutton+Left or Right switches the savestate slot\n- Savestatebutton+Start+Down saves to the selected slot\n- Savestatebutton+Start+Up loads from the selected slot\n\n## Zapper Support\nThe \"Zapper\" (aka Light Gun) can be used via two methods. You can select Peripheral: Zapper(Mouse) to use your mouse to aim and shoot with the left button. This mode uses relative mouse motion, so devices that rely on absolute coordinates will not work via this method. Alternatively, you can choose Zapper(Joy) to use the Analog stick to aim, and the defined Trigger button to fire. Guns such as Aimtrak have joystick modes which may be compatible with this method.\n\n## Miracle Piano Support\nThe Miracle Piano is a MIDI keyboard compatible with the Miracle Piano Education System cart.  To use it with SNAC, no further settings are needed.  To use it with midilink, in the System Settings, set the UART connection to use MIDI.  The piano will then be connected on controller port 1 as expected.  The primary controller will automatically be assigned to port 2 as the cart expects.  The header for the ROM file should be set to NES 2.0 with controller type (0xF) set to the Miracle Piano (0x19).\n\n## Supported Mappers\n\n|#||||||||||||||||\n|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|\n|**0**|**1**|**2**|**3**|**4**|**5**||**7**||**9**|**10**|**11**|~~12~~|**13**||**15**|\n|**16**||**18**|**19**|**FDS**|**21**|**22**|**23**|**24**|**25**|**26**|**27**|**28**||**30**|**31**|\n|**32**|**33**|**34**|**35**|**36**|**37**|**38**||~~40~~|**41**|**42**|~~43~~|~~44~~|~~45~~|**46**|**47**|\n|**48**|~~49~~|~~50~~|~~51~~|~~52~~|~~53~~|~~54~~|~~55~~|~~56~~|~~57~~|~~58~~|~~59~~|~~60~~|~~61~~|~~62~~|~~63~~|\n|**64**|**65**|**66**|**67**|**68**|**69**|**70**|**71**|**72**|**73**|**74**|**75**|**76**|**77**|**78**|**79**|\n|**80**|~~81~~|**82**|**83**|~~84~~|**85**|**86**|**87**|**88**|**89**|**90**|**91**|**92**|**93**|**94**|**95**|\n|~~96~~|**97**||~~99~~|~~100~~|**101**|||~~104~~|**105**||**107**|~~108~~|~~109~~|~~110~~|**111**|\n|**112**|**113**|~~114~~|~~115~~|~~116~~|~~117~~|**118**|**119**|~~120~~||~~122~~|~~123~~||~~125~~|~~126~~|~~127~~|\n|~~128~~|~~129~~|~~130~~|~~131~~|**132**|**133**|~~134~~|~~135~~|**136**|**137**|**138**|**139**|**140**|**141**|~~142~~|**143**|\n|~~144~~|**145**|**146**|**147**|**148**|**149**|**150**|~~151~~|**152**|**153**|**154**|**155**|~~156~~|~~157~~|**158**|**159**|\n|~~160~~|~~161~~|**162**|**163**|**164**|**165**|~~166~~|~~167~~|~~168~~|~~169~~||**171**|**172**|**173**|||\n|||||**180**|~~181~~|~~182~~|~~183~~|**184**|**185**|~~186~~|~~187~~|~~188~~|**189**|**190**|**191**|\n|**192**|~~193~~|**194**|**195**|~~196~~||~~198~~|~~199~~|~~200~~|~~201~~|~~202~~|~~203~~|~~204~~|~~205~~|**206**|**207**|\n|~~208~~|**209**|**210**|**211**|~~212~~|~~213~~|~~214~~|~~215~~|~~216~~|~~217~~|**218**||||~~222~~||\n|~~224~~|**225**|~~226~~|~~227~~|**228**|~~229~~|~~230~~|~~231~~|**232**|~~233~~|**234**|~~235~~|~~236~~|~~237~~|||\n|~~240~~|~~241~~|~~242~~|**243**|~~244~~|~~245~~|~~246~~||~~248~~|~~249~~|~~250~~|~~251~~|~~252~~||~~254~~|**255**|\n\nKey: **Supported**, ~~Not Supported~~. Mappers that are not existent or not useful are blank.\n\n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/theypsilon/NES_MiSTer",
+      "releases": [
+        {
+          "name": "NES_20170615.rbf",
+          "sha": "7f0d56fe1e42aaa9c409f4703437498765888907",
+          "url": "https://raw.githubusercontent.com/theypsilon/NES_MiSTer/master/releases/NES_20170615.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NES_20170630.rbf",
+          "sha": "8d1e32556f6448794c714c43c726cddf0b86a674",
+          "url": "https://raw.githubusercontent.com/theypsilon/NES_MiSTer/master/releases/NES_20170630.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NES_20170712.rbf",
+          "sha": "03d64face1946d308531d1d038863715e3b8d546",
+          "url": "https://raw.githubusercontent.com/theypsilon/NES_MiSTer/master/releases/NES_20170712.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NES_20180305.rbf",
+          "sha": "7ae1baeb4308cfba94e29ef4586e0a4afa66dc4d",
+          "url": "https://raw.githubusercontent.com/theypsilon/NES_MiSTer/master/releases/NES_20180305.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NES_20180524.rbf",
+          "sha": "1a079491531c3234fb0c04590013455d10a96a62",
+          "url": "https://raw.githubusercontent.com/theypsilon/NES_MiSTer/master/releases/NES_20180524.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NES_20180624.rbf",
+          "sha": "b03901da1dab3d9b953c4d92f9f3464ed1a4f597",
+          "url": "https://raw.githubusercontent.com/theypsilon/NES_MiSTer/master/releases/NES_20180624.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NES_20181118.rbf",
+          "sha": "e927a573f5a365378e34e6be47b680c95cc9fa1c",
+          "url": "https://raw.githubusercontent.com/theypsilon/NES_MiSTer/master/releases/NES_20181118.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NES_20181206.rbf",
+          "sha": "7331fb9446f4fe1e69e0af97675f487cc743835e",
+          "url": "https://raw.githubusercontent.com/theypsilon/NES_MiSTer/master/releases/NES_20181206.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NES_20181207.rbf",
+          "sha": "ea030ba5db740476cab62be9899dcd596e9a4071",
+          "url": "https://raw.githubusercontent.com/theypsilon/NES_MiSTer/master/releases/NES_20181207.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NES_20181223.rbf",
+          "sha": "47300d977f21fc0b18f9906a9af6f519c3bd3629",
+          "url": "https://raw.githubusercontent.com/theypsilon/NES_MiSTer/master/releases/NES_20181223.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NES_20181224.rbf",
+          "sha": "c37fdfacd1dc9d6f4a668ff6cd3a9b0b9e8986af",
+          "url": "https://raw.githubusercontent.com/theypsilon/NES_MiSTer/master/releases/NES_20181224.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NES_20181228.rbf",
+          "sha": "a121cd6e3931bd4fd6ce3e31e738ae514982fa95",
+          "url": "https://raw.githubusercontent.com/theypsilon/NES_MiSTer/master/releases/NES_20181228.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NES_20181231.rbf",
+          "sha": "24ec0957e13f0fa7a359d8de3a6537029ef575f8",
+          "url": "https://raw.githubusercontent.com/theypsilon/NES_MiSTer/master/releases/NES_20181231.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NES_20190111.rbf",
+          "sha": "4c71136631fd7d98c2dc1982a13cca08388bf8f8",
+          "url": "https://raw.githubusercontent.com/theypsilon/NES_MiSTer/master/releases/NES_20190111.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NES_20190121.rbf",
+          "sha": "37b5e49b6f0c39dd56c525b05ffae4fdaf409187",
+          "url": "https://raw.githubusercontent.com/theypsilon/NES_MiSTer/master/releases/NES_20190121.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NES_20190307.rbf",
+          "sha": "e683210d32e60c517e0f400b22a19ec27fd1d528",
+          "url": "https://raw.githubusercontent.com/theypsilon/NES_MiSTer/master/releases/NES_20190307.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NES_20190321.rbf",
+          "sha": "f37deb25e2f8da5e416c8f70086cdc9d97f55443",
+          "url": "https://raw.githubusercontent.com/theypsilon/NES_MiSTer/master/releases/NES_20190321.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NES_20190325.rbf",
+          "sha": "f08a2764d3bc73274f9f143ecbd1d36d0eebfeb8",
+          "url": "https://raw.githubusercontent.com/theypsilon/NES_MiSTer/master/releases/NES_20190325.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NES_20190409.rbf",
+          "sha": "9ebb45675622e3f6825d8ab61337a0edb7129b42",
+          "url": "https://raw.githubusercontent.com/theypsilon/NES_MiSTer/master/releases/NES_20190409.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NES_20190421.rbf",
+          "sha": "0a8651999907b7aad41c6c8f3ee63c42eefccc85",
+          "url": "https://raw.githubusercontent.com/theypsilon/NES_MiSTer/master/releases/NES_20190421.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NES_20190428.rbf",
+          "sha": "6d82e08022fdddb2e87a17f36797c3edbb2a50a0",
+          "url": "https://raw.githubusercontent.com/theypsilon/NES_MiSTer/master/releases/NES_20190428.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NES_20190510.rbf",
+          "sha": "55598ef5edc81e3ce916c7e7e30054df00b1c662",
+          "url": "https://raw.githubusercontent.com/theypsilon/NES_MiSTer/master/releases/NES_20190510.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NES_20190627.rbf",
+          "sha": "202431f4255094376bee40a995866e92a922c5ae",
+          "url": "https://raw.githubusercontent.com/theypsilon/NES_MiSTer/master/releases/NES_20190627.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NES_20190703.rbf",
+          "sha": "ce8f31aed0ed8cfaa0ad00f5cfb9d5b3d6589a59",
+          "url": "https://raw.githubusercontent.com/theypsilon/NES_MiSTer/master/releases/NES_20190703.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NES_20190719.rbf",
+          "sha": "bab57a91437e5cea770a36691bfe7e12fdd17341",
+          "url": "https://raw.githubusercontent.com/theypsilon/NES_MiSTer/master/releases/NES_20190719.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NES_20190915.rbf",
+          "sha": "fdb4fb3f5f4c2589835751400074eeb4c664a3c7",
+          "url": "https://raw.githubusercontent.com/theypsilon/NES_MiSTer/master/releases/NES_20190915.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NES_20190927.rbf",
+          "sha": "00885421e460928dfac42d60593d9ef30ea79906",
+          "url": "https://raw.githubusercontent.com/theypsilon/NES_MiSTer/master/releases/NES_20190927.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NES_20191117.rbf",
+          "sha": "2330242d89b0a16ee1012586ddd4c09339572567",
+          "url": "https://raw.githubusercontent.com/theypsilon/NES_MiSTer/master/releases/NES_20191117.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NES_20200212.rbf",
+          "sha": "d82407ba6772b96d0233564973bb92de2012f2c7",
+          "url": "https://raw.githubusercontent.com/theypsilon/NES_MiSTer/master/releases/NES_20200212.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NES_20200213.rbf",
+          "sha": "06d3f5cc818349918f483d05eaebd33299bec266",
+          "url": "https://raw.githubusercontent.com/theypsilon/NES_MiSTer/master/releases/NES_20200213.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NES_20200307.rbf",
+          "sha": "bebfdc4354fabc2fcf5ae791ead527ef037a6c71",
+          "url": "https://raw.githubusercontent.com/theypsilon/NES_MiSTer/master/releases/NES_20200307.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NES_20200308.rbf",
+          "sha": "89ba090266f78123e3163f146a35a57fab82364a",
+          "url": "https://raw.githubusercontent.com/theypsilon/NES_MiSTer/master/releases/NES_20200308.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NES_20200519.rbf",
+          "sha": "018a10d88ab545999240f6863313cd603aea076c",
+          "url": "https://raw.githubusercontent.com/theypsilon/NES_MiSTer/master/releases/NES_20200519.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NES_20200522.rbf",
+          "sha": "945dd04790379812810c638099bd57c9cb47c48d",
+          "url": "https://raw.githubusercontent.com/theypsilon/NES_MiSTer/master/releases/NES_20200522.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NES_20200526.rbf",
+          "sha": "0fb1391b41667e06790cd64246f3b78744d6d49d",
+          "url": "https://raw.githubusercontent.com/theypsilon/NES_MiSTer/master/releases/NES_20200526.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NES_20200620.rbf",
+          "sha": "d51c0827be49bfc5c97968e11ee9844b66ea3315",
+          "url": "https://raw.githubusercontent.com/theypsilon/NES_MiSTer/master/releases/NES_20200620.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NES_20201102.rbf",
+          "sha": "e5d9b03cb498a0f322eae6024b7290f4e0bb4a5b",
+          "url": "https://raw.githubusercontent.com/theypsilon/NES_MiSTer/master/releases/NES_20201102.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NES_20210114.rbf",
+          "sha": "8c7cc63a6a6357281f4060a984c97b7d1b51bed7",
+          "url": "https://raw.githubusercontent.com/theypsilon/NES_MiSTer/master/releases/NES_20210114.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NES_20210210.rbf",
+          "sha": "6498575f7262174874b73daba94f1f2fa351c605",
+          "url": "https://raw.githubusercontent.com/theypsilon/NES_MiSTer/master/releases/NES_20210210.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NES_20210222.rbf",
+          "sha": "7e89052c54577fffcda404af02171a304d2580f1",
+          "url": "https://raw.githubusercontent.com/theypsilon/NES_MiSTer/master/releases/NES_20210222.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NES_20210225.rbf",
+          "sha": "a44fae9633c7dcd2361a6c1095fa0b8129cf5289",
+          "url": "https://raw.githubusercontent.com/theypsilon/NES_MiSTer/master/releases/NES_20210225.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NES_20210308.rbf",
+          "sha": "7f0e4e35af25c19fae2199908e0372b9c55f20b3",
+          "url": "https://raw.githubusercontent.com/theypsilon/NES_MiSTer/master/releases/NES_20210308.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NES_20210430.rbf",
+          "sha": "b91d004d7be73cd55e1725a130d628d1b4d4a9b8",
+          "url": "https://raw.githubusercontent.com/theypsilon/NES_MiSTer/master/releases/NES_20210430.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NES_20210708.rbf",
+          "sha": "5641991f1022856b896c28e1dd52ca5743764d92",
+          "url": "https://raw.githubusercontent.com/theypsilon/NES_MiSTer/master/releases/NES_20210708.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "blank.sav",
+          "sha": "e2c8fe92d8237d3c9169891e23a1b7d6ae8e0dcb",
+          "url": "https://raw.githubusercontent.com/theypsilon/NES_MiSTer/master/releases/blank.sav",
+          "type": "OTHER"
+        }
+      ]
+    },
+    {
       "name": "Updater_script_MiSTer_DB9",
       "description": "Updater script for MiSTer DB9 (Deprecated repository)",
       "readme": "# Updater script for MiSTer DB9\nThis repository is *obsolete*, please [click here](https://github.com/MiSTer-DB9/Updater_script_MiSTer_DB9) to go to the new one.\n",
