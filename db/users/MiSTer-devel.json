@@ -2313,7 +2313,13 @@
           "sha": "4f2af71618d0eafddcad81391ffcc2d65e3305e0",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Defender_MiSTer/master/releases/Mayday%20(Set%201).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Mayday",
+            "rbf": "defender",
+            "zips": [
+              "mayday.zip"
+            ]
+          }
         }
       ]
     },
