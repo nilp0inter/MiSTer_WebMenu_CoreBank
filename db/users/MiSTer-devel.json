@@ -11437,12 +11437,12 @@
       ]
     },
     {
-      "name": "Linux-Kernel_MiSTer",
+      "name": "Linux-Kernel_MiSTer_old",
       "description": "Linux development repository for MiSTer",
       "readme": "Linux kernel\n============\n\nThere are several guides for kernel developers and users. These guides can\nbe rendered in a number of formats, like HTML and PDF. Please read\nDocumentation/admin-guide/README.rst first.\n\nIn order to build the documentation, use ``make htmldocs`` or\n``make pdfdocs``.  The formatted documentation can also be read online at:\n\n    https://www.kernel.org/doc/html/latest/\n\nThere are various text files in the Documentation/ subdirectory,\nseveral of them using the Restructured Text markup notation.\nSee Documentation/00-INDEX for a list of what is contained in each file.\n\nPlease read the Documentation/process/changes.rst file, as it contains the\nrequirements for building and running the kernel, and information about\nthe problems which may result by upgrading your kernel.\n",
       "archived": false,
       "fork": true,
-      "url": "https://github.com/MiSTer-devel/Linux-Kernel_MiSTer",
+      "url": "https://github.com/MiSTer-devel/Linux-Kernel_MiSTer_old",
       "releases": []
     },
     {
