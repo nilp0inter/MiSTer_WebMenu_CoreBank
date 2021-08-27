@@ -978,6 +978,12 @@
           "type": "OTHER"
         },
         {
+          "name": "MRA-Alternatives_20210827.zip",
+          "sha": "971726bd3f94aa34811a124615ea39169ee8ec32",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/MRA-Alternatives_MiSTer/releases/MRA-Alternatives_20210827.zip",
+          "type": "OTHER"
+        },
+        {
           "name": "README.md",
           "sha": "8b178fcbce4f716d489422eeed7294086ffaf284",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/biocom/README.md",
@@ -3808,7 +3814,7 @@
         },
         {
           "name": "Tetris (Set 4, Japan, S16A) [FD1094 317-0093].mra",
-          "sha": "43ba1e781819ad5e3dec9376ef55dde7e2772ccf",
+          "sha": "d2715fc65b280907e197a11c9925d176acd16ae0",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16a2/releases/Tetris%20(Set%204%2C%20Japan%2C%20S16A)%20%5BFD1094%20317-0093%5D.mra",
           "type": "MRA",
           "extra": {
@@ -3906,6 +3912,21 @@
             "rbf": "jts16b",
             "zips": [
               "ddux.zip",
+              "jtbeta.zip",
+              "debug.zip"
+            ]
+          }
+        },
+        {
+          "name": "E-Swat - Cyber Police (set 4, World) (FD1094 317-0130).mra",
+          "sha": "dc7e3ae34414ce489051802dcd37769529c3e121",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/E-Swat%20-%20Cyber%20Police%20(set%204%2C%20World)%20(FD1094%20317-0130).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "E-Swat - Cyber Police (set 4, World) (FD1094 317-0130)",
+            "rbf": "jts16b",
+            "zips": [
+              "eswat.zip",
               "jtbeta.zip",
               "debug.zip"
             ]
