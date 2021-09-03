@@ -1003,7 +1003,7 @@
         },
         {
           "name": "MRA-Alternatives_20210903.zip",
-          "sha": "d038f3d0c94a0e3bdc74271aef7f7fbb5a96e953",
+          "sha": "e40708f2a5b4c12582597b6b344ebc26aba23090",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/MRA-Alternatives_MiSTer/releases/MRA-Alternatives_20210903.zip",
           "type": "OTHER"
         },
@@ -3118,24 +3118,16 @@
         },
         {
           "name": "Exed Exes.mra",
-          "sha": "fe29142c9fe1dc6fb9192493a4929dd91eb53c13",
+          "sha": "af75cb05fc6d80109f375d464ba3b5153b485129",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/exed/releases/Exed%20Exes.mra",
           "type": "MRA",
           "extra": {
             "name": "Exed Exes",
             "rbf": "jtexed",
             "zips": [
-              "exedexes.zip",
-              "jtbeta.zip",
-              "debug.zip"
+              "exedexes.zip"
             ]
           }
-        },
-        {
-          "name": "jtexed_20210820.rbf",
-          "sha": "4d01403c26d29a79e47df78c4df54b29428ad8bc",
-          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/exed/releases/jtexed_20210820.rbf",
-          "type": "RBF"
         },
         {
           "name": "README.md",
@@ -3744,7 +3736,7 @@
         },
         {
           "name": "README.md",
-          "sha": "545b5a1a41b7cc1c9ed9e8ece33fa12f61d290ce",
+          "sha": "e4022934e4039dddfee9616a71c85cfbbd59ccbd",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/mx5k/README.md",
           "type": "OTHER"
         },
