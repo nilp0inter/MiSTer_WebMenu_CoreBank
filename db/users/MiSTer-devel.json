@@ -15187,7 +15187,7 @@
     {
       "name": "UK101_MiSTer",
       "description": "A port of Grant Searle's UK101 FPGA project",
-      "readme": "# [Compukit UK101](https://en.wikipedia.org/wiki/Compukit_UK101) for [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\nPort by [danielb0](https://github.com/danielb0)\n\n## Description\n\nThis core is a port of [Grant Searle's UK101 FPGA project](http://searle.x10host.com/uk101FPGA/index.html) to MiSTer FPGA. It is a reconstruction of a kit computer from the late 1970s, which was based on a 6502 processor that ran at 1 MHz and originally came equipped with 8Kb of RAM.\n\nThis core includes some enhancements which Grant added to his own project such as the 64x32 display and a 32Kb RAM expansion.\n\nSaving and loading of Basic programs can be done via the UART, at 9600 baud. Instructions for this can be found on Grant's page and in the [Compukit UK101 manual](http://uk101.sourceforge.net/docs/pdf/manual.pdf).\n\n### Original sources\n\n[Grant Searle's original UK101 FPGA site](http://searle.x10host.com/uk101FPGA/index.html)\n\n[VGA interface by Cray Ze Ape](https://github.com/douggilliland/MultiComp/tree/master/MultiComp%20(VHDL%20Template)/Components/VGA/VGA_CraZeApe)\n\n### Licenses \n\n#### Grant Searle's original license:\n```\nBy downloading these files you must agree to the following:\nThe original copyright owners of ROM contents are respectfully acknowledged.\nUse of the contents of any file within your own projects is permitted freely, but\nany publishing of material containing whole or part of any file distributed here, \nor derived from the work that I have done here will contain an acknowledgement\nback to myself, Grant Searle, and a link back to this page.\nAny file published or distributed that contains all or part of any file from this \npage must be made available free of charge.\n```\n#### Cray Ze Ape's license:\n```\nUnrestricted release - do with it as you see fit.\n```\n",
+      "readme": "# [Compukit UK101](https://en.wikipedia.org/wiki/Compukit_UK101) for [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\nPort by [danielb0](https://github.com/danielb0)\n\n## Description\n\nThis core is a port of [Grant Searle's UK101 FPGA project](http://searle.x10host.com/uk101FPGA/index.html) to MiSTer FPGA. It is a reconstruction of a kit computer from the late 1970s, which was based on a 6502 processor that ran at 1 MHz and originally came equipped with 8Kb of RAM.\n\nThis core includes some enhancements which Grant added to his own project such as a 64Kb RAM expansion, giving 41K of free RAM for BASIC.\n\nSaving and loading of Basic programs can be done via the UART, at 9600 baud. Instructions for this can be found on Grant's page and in the [Compukit UK101 manual](http://uk101.sourceforge.net/docs/pdf/manual.pdf).\n\n### Original sources\n\n[Grant Searle's original UK101 FPGA site](http://searle.x10host.com/uk101FPGA/index.html)\n\n\n### Licenses \n\n#### Grant Searle's original license:\n```\nBy downloading these files you must agree to the following:\nThe original copyright owners of ROM contents are respectfully acknowledged.\nUse of the contents of any file within your own projects is permitted freely, but\nany publishing of material containing whole or part of any file distributed here, \nor derived from the work that I have done here will contain an acknowledgement\nback to myself, Grant Searle, and a link back to this page.\nAny file published or distributed that contains all or part of any file from this \npage must be made available free of charge.\n```\n\n\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/UK101_MiSTer",
@@ -15208,6 +15208,12 @@
           "name": "UK101_20210824.rbf",
           "sha": "e416c871c76dbb089e0c676b8f26fa0fd8ce8962",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/UK101_MiSTer/master/releases/UK101_20210824.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "UK101_20210903.rbf",
+          "sha": "4e13da271d53ac26893576cb0096e586981d02f9",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/UK101_MiSTer/master/releases/UK101_20210903.rbf",
           "type": "RBF"
         }
       ]
