@@ -1002,6 +1002,12 @@
           "type": "OTHER"
         },
         {
+          "name": "MRA-Alternatives_20210903.zip",
+          "sha": "d038f3d0c94a0e3bdc74271aef7f7fbb5a96e953",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/MRA-Alternatives_MiSTer/releases/MRA-Alternatives_20210903.zip",
+          "type": "OTHER"
+        },
+        {
           "name": "README.md",
           "sha": "8b178fcbce4f716d489422eeed7294086ffaf284",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/biocom/README.md",
@@ -3734,6 +3740,33 @@
           "name": "jtlabrun_20210708.rbf",
           "sha": "c9e72e5004e4817c22ce31fd3162e18d89ce3c8c",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/labrun/releases/jtlabrun_20210708.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "README.md",
+          "sha": "545b5a1a41b7cc1c9ed9e8ece33fa12f61d290ce",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/mx5k/README.md",
+          "type": "OTHER"
+        },
+        {
+          "name": "MX5000.mra",
+          "sha": "68defa2982fd56ca5c63d494f77c1ed5094dd2fe",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/mx5k/releases/MX5000.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "MX5000",
+            "rbf": "jtmx5k",
+            "zips": [
+              "mx5000.zip",
+              "jtbeta.zip",
+              "debug.zip"
+            ]
+          }
+        },
+        {
+          "name": "jtmx5k_20210903.rbf",
+          "sha": "b3ba0afaa7dfcfdd1d307e5dd3a456badd2b3ba8",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/mx5k/releases/jtmx5k_20210903.rbf",
           "type": "RBF"
         },
         {
