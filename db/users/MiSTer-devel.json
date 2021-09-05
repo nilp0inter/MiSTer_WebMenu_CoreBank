@@ -14143,7 +14143,7 @@
         },
         {
           "name": "Fantasy Zone II - The Tears of Opa-Opa.mra",
-          "sha": "4a59ee61d0dbee59da690c017f4c12c5298136cb",
+          "sha": "ffa4313081126b9d5f076784e86aa377ca190cf5",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/SMS_MiSTer/master/releases/Fantasy%20Zone%20II%20-%20The%20Tears%20of%20Opa-Opa.mra",
           "type": "MRA",
           "extra": {
@@ -14156,7 +14156,7 @@
         },
         {
           "name": "Hang On Jr.mra",
-          "sha": "8dce6af9acb57c2b96c9de95b76f91739c25873e",
+          "sha": "0d10b0c0bda1f78d2d6da924a75ef9a9e9005023",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/SMS_MiSTer/master/releases/Hang%20On%20Jr.mra",
           "type": "MRA",
           "extra": {
@@ -14169,7 +14169,7 @@
         },
         {
           "name": "Opa Opa (Rev A, unprotected).mra",
-          "sha": "c2e08a092433b16324f10e5024ef06fe65dffc56",
+          "sha": "0d46fd463ba0ba467f6128895e842a584ea289c4",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/SMS_MiSTer/master/releases/Opa%20Opa%20(Rev%20A%2C%20unprotected).mra",
           "type": "MRA",
           "extra": {
@@ -14182,11 +14182,11 @@
         },
         {
           "name": "Opa Opa.mra",
-          "sha": "0a4c55b2a18eeeb3ae52000b9e0212a681fe0195",
+          "sha": "264e6b0b1f808a12dd34d5fe5fafdedad4d7f13f",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/SMS_MiSTer/master/releases/Opa%20Opa.mra",
           "type": "MRA",
           "extra": {
-            "name": "Opa Opa",
+            "name": "Opa Opa (MC-8123, 317-0042)",
             "rbf": "SMS",
             "zips": [
               "opaopa.zip"
@@ -14195,16 +14195,10 @@
         },
         {
           "name": "Riddle of Pythagoras (Japan).mra",
-          "sha": "54d4c050f068a79c02ed89cf0415247d9ad3a797",
+          "sha": "a7c49fe8ae52c1614486ffe6927c40ba2ee3a98c",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/SMS_MiSTer/master/releases/Riddle%20of%20Pythagoras%20(Japan).mra",
           "type": "MRA",
-          "extra": {
-            "name": "Riddle of Pythagoras (Japan)",
-            "rbf": "SMS",
-            "zips": [
-              "ridleofp.zip"
-            ]
-          }
+          "extra": null
         },
         {
           "name": "SMS_20171002.rbf",
@@ -14352,7 +14346,7 @@
         },
         {
           "name": "Slap Shooter.mra",
-          "sha": "7a743a296c2f6e6a41110282dae4f14ad05b53a1",
+          "sha": "78c6b7347518e63b3bfcb4e71d74c514d8969813",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/SMS_MiSTer/master/releases/Slap%20Shooter.mra",
           "type": "MRA",
           "extra": {
@@ -14365,7 +14359,7 @@
         },
         {
           "name": "Tetris (Japan, System E).mra",
-          "sha": "c065280310866088defaa95c34415be1e0d0adcd",
+          "sha": "465ed9562345eedb724fed356059dbf11c77afff",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/SMS_MiSTer/master/releases/Tetris%20(Japan%2C%20System%20E).mra",
           "type": "MRA",
           "extra": {
@@ -14378,16 +14372,10 @@
         },
         {
           "name": "Transformer.mra",
-          "sha": "12b520ea898b7ec5edbce3ba9af1333ba6dbcbf6",
+          "sha": "1674a9350926abad4fc3501bacceda4598b59605",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/SMS_MiSTer/master/releases/Transformer.mra",
           "type": "MRA",
-          "extra": {
-            "name": "Transformer",
-            "rbf": "SMS",
-            "zips": [
-              "transfrm.zip"
-            ]
-          }
+          "extra": null
         }
       ]
     },
