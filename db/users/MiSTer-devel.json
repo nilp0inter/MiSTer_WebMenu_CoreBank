@@ -14137,22 +14137,16 @@
       "releases": [
         {
           "name": "Astro Flash (Japan).mra",
-          "sha": "241c273acfa9f9f429062214a6a8b0d24cb4ab9d",
+          "sha": "523f6846c7b1a477a4da46963a6b88c90b73bbbb",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/SMS_MiSTer/master/releases/Astro%20Flash%20(Japan).mra",
           "type": "MRA",
           "extra": {
-            "name": "Astro Flash (Japan) Broken - No key",
+            "name": "Astro Flash (Japan)",
             "rbf": "SMS",
             "zips": [
               "transfrm.zip"
             ]
           }
-        },
-        {
-          "name": "Astro Flash (Japan).mra.missingkey",
-          "sha": "ce87da314d48cac16144cb808c1ebed1804fbc74",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/SMS_MiSTer/master/releases/Astro%20Flash%20(Japan).mra.missingkey",
-          "type": "OTHER"
         },
         {
           "name": "Fantasy Zone II - The Tears of Opa-Opa.mra",
