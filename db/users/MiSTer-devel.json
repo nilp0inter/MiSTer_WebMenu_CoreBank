@@ -14136,6 +14136,19 @@
       "url": "https://github.com/MiSTer-devel/SMS_MiSTer",
       "releases": [
         {
+          "name": "Astro Flash (Japan).mra",
+          "sha": "241c273acfa9f9f429062214a6a8b0d24cb4ab9d",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/SMS_MiSTer/master/releases/Astro%20Flash%20(Japan).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Astro Flash (Japan) Broken - No key",
+            "rbf": "SMS",
+            "zips": [
+              "transfrm.zip"
+            ]
+          }
+        },
+        {
           "name": "Astro Flash (Japan).mra.missingkey",
           "sha": "ce87da314d48cac16144cb808c1ebed1804fbc74",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/SMS_MiSTer/master/releases/Astro%20Flash%20(Japan).mra.missingkey",
@@ -14143,7 +14156,7 @@
         },
         {
           "name": "Fantasy Zone II - The Tears of Opa-Opa.mra",
-          "sha": "ffa4313081126b9d5f076784e86aa377ca190cf5",
+          "sha": "14414a287dfcba184616a834bd79bae7a8b5079f",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/SMS_MiSTer/master/releases/Fantasy%20Zone%20II%20-%20The%20Tears%20of%20Opa-Opa.mra",
           "type": "MRA",
           "extra": {
@@ -14156,7 +14169,7 @@
         },
         {
           "name": "Hang On Jr.mra",
-          "sha": "0d10b0c0bda1f78d2d6da924a75ef9a9e9005023",
+          "sha": "0696a38c3508e8e798523d27a026d833c53b6876",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/SMS_MiSTer/master/releases/Hang%20On%20Jr.mra",
           "type": "MRA",
           "extra": {
@@ -14169,7 +14182,7 @@
         },
         {
           "name": "Opa Opa (Rev A, unprotected).mra",
-          "sha": "0d46fd463ba0ba467f6128895e842a584ea289c4",
+          "sha": "5267eaaa45621cc64d43266c3d1f29b4b40b1eca",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/SMS_MiSTer/master/releases/Opa%20Opa%20(Rev%20A%2C%20unprotected).mra",
           "type": "MRA",
           "extra": {
@@ -14182,7 +14195,7 @@
         },
         {
           "name": "Opa Opa.mra",
-          "sha": "264e6b0b1f808a12dd34d5fe5fafdedad4d7f13f",
+          "sha": "ef0199cfa2073f6772653a78663b2a75247b20e1",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/SMS_MiSTer/master/releases/Opa%20Opa.mra",
           "type": "MRA",
           "extra": {
@@ -14195,7 +14208,7 @@
         },
         {
           "name": "Riddle of Pythagoras (Japan).mra",
-          "sha": "a7c49fe8ae52c1614486ffe6927c40ba2ee3a98c",
+          "sha": "c7d1a1a1ce6a0df72925fd9424243f7376086228",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/SMS_MiSTer/master/releases/Riddle%20of%20Pythagoras%20(Japan).mra",
           "type": "MRA",
           "extra": null
@@ -14346,7 +14359,7 @@
         },
         {
           "name": "Slap Shooter.mra",
-          "sha": "78c6b7347518e63b3bfcb4e71d74c514d8969813",
+          "sha": "13b2ff4ac0ccfad8a6257af16734f09cda62fb83",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/SMS_MiSTer/master/releases/Slap%20Shooter.mra",
           "type": "MRA",
           "extra": {
@@ -14359,7 +14372,7 @@
         },
         {
           "name": "Tetris (Japan, System E).mra",
-          "sha": "465ed9562345eedb724fed356059dbf11c77afff",
+          "sha": "9055da77e7d3fe0d4c94c680123499b03817ed68",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/SMS_MiSTer/master/releases/Tetris%20(Japan%2C%20System%20E).mra",
           "type": "MRA",
           "extra": {
@@ -14372,7 +14385,7 @@
         },
         {
           "name": "Transformer.mra",
-          "sha": "1674a9350926abad4fc3501bacceda4598b59605",
+          "sha": "e15b2e85c2397676d3aca04c5b3b1e3d8427fc43",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/SMS_MiSTer/master/releases/Transformer.mra",
           "type": "MRA",
           "extra": null
