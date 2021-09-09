@@ -74,7 +74,13 @@
           "sha": "fcef1153e2523633d348db9e24c0b34bab628729",
           "url": "https://raw.githubusercontent.com/MrX-8B/Arcade-Druaga_MiSTer/master/releases/The%20Tower%20of%20Druaga.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "The Tower of Druaga (New Ver.)",
+            "rbf": "druaga",
+            "zips": [
+              "todruaga.zip"
+            ]
+          }
         },
         {
           "name": "rommap.txt",
@@ -655,7 +661,13 @@
           "sha": "79347528a74518837d0972620860b0eeb1c28757",
           "url": "https://raw.githubusercontent.com/MrX-8B/MiSTer-Arcade-PenguinKunWars/master/releases/Penguin-Kun_Wars.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Penguin-Kun Wars (US)",
+            "rbf": "PenguinKunWars",
+            "zips": [
+              "pkunwar.zip"
+            ]
+          }
         },
         {
           "name": "Penguin-Kun_Wars_Japan.mra",
@@ -783,7 +795,13 @@
           "sha": "39f584f1c25f4d2ba0112c4b30df106fb8d3197a",
           "url": "https://raw.githubusercontent.com/MrX-8B/MiSTer-Arcade-SEGASYS1/master/releases/I'm%20Sorry.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "I'm Sorry (315-5110, US)",
+            "rbf": "segasys1",
+            "zips": [
+              "imsorry.zip"
+            ]
+          }
         },
         {
           "name": "Mister Viking.mra",
@@ -952,7 +970,15 @@
           "sha": "a92f9b5405fc728d04f574d85c5fa3b130197857",
           "url": "https://raw.githubusercontent.com/MrX-8B/MiSTer-Arcade-SEGASYS1/master/releases/_alternatives/Seishun%20Scandal%20(315-5132%2C%20Japan).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Seishun Scandal (315-5132, Japan)",
+            "rbf": "segasys1",
+            "zips": [
+              "myhero.zip",
+              "sscandal.zip",
+              "sscandal.zip"
+            ]
+          }
         }
       ]
     },
