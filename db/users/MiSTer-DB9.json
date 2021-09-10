@@ -8172,7 +8172,7 @@
     {
       "name": "MegaCD_MiSTer",
       "description": "Mega CD for MiSTer",
-      "readme": null,
+      "readme": "# [Sega MegaCD](https://en.wikipedia.org/wiki/Sega_CD) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\n# Installation\nPlace BIOS to MegaCD folder with name boot.rom\n\n# Features\nAbout 150 games tested without long playing, US/EU regions only.\n\n### Known issues:\n- Microcosm & Ultraverse Prime (US) - graphic glitch in game\n- Supreme Warrior - Ying Heung (US) - can't select 2 disk\n\n### Supported image formats:\n- CUE + single image\n- CUE + multiple images (image per track)\n\n### ZIP\nZIP is supported but doesn't work due to long positioning time.\nSo DON'T zip the images!\n\n### CD BIOS\nsupport BIOS per game. Place cd_bios.rom in game's folder.\n\n### Pier Solar\nPlace cartridge dump named cart.rom into game's folder\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-DB9/MegaCD_MiSTer",
