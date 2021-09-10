@@ -3306,6 +3306,32 @@
         },
         {
           "name": "README.md",
+          "sha": "e4022934e4039dddfee9616a71c85cfbbd59ccbd",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/flane/README.md",
+          "type": "OTHER"
+        },
+        {
+          "name": "Fast Lane.mra",
+          "sha": "94bed4250445bda1e6a1a00e2c7c29cf39e7d234",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/flane/releases/Fast%20Lane.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Fast Lane",
+            "rbf": "jtflane",
+            "zips": [
+              "fastlane.zip",
+              "jtbeta.zip"
+            ]
+          }
+        },
+        {
+          "name": "jtflane_20210910.rbf",
+          "sha": "b7b6710d4e252d3f74e08122ce6c133dbb767578",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/flane/releases/jtflane_20210910.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "README.md",
           "sha": "8b178fcbce4f716d489422eeed7294086ffaf284",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/gng/README.md",
           "type": "OTHER"

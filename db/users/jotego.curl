@@ -76,6 +76,11 @@ url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/f1dream/rele
 output = "_Arcade/cores/jtf1dream_20210828.rbf"
 
 
+# jtflane
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/flane/releases/jtflane_20210910.rbf"
+output = "_Others/jtflane_20210910.rbf"
+
+
 # jtgng
 url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/gng/releases/jtgng_20210828.rbf"
 output = "_Arcade/cores/jtgng_20210828.rbf"
@@ -634,6 +639,11 @@ output = "_Arcade/Exed Exes.mra"
 # F-1 Dream.mra
 url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/f1dream/releases/F-1%20Dream.mra"
 output = "_Arcade/F-1 Dream.mra"
+
+
+# Fast Lane.mra
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/flane/releases/Fast%20Lane.mra"
+output = "_Arcade/Fast Lane.mra"
 
 
 # Ghosts'n Goblins (JT).mra
