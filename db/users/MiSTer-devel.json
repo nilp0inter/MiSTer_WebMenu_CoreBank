@@ -14409,10 +14409,16 @@
         },
         {
           "name": "Transformer.mra",
-          "sha": "8c1fb25d2225ceae205c1e968d09e71758abf52a",
+          "sha": "e5a8d795729725c2fd035774a7b9c31d257bf8c1",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/SMS_MiSTer/master/releases/Transformer.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Transformer",
+            "rbf": "SMS",
+            "zips": [
+              "transfrm.zip"
+            ]
+          }
         }
       ]
     },
