@@ -15411,7 +15411,14 @@
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/VC4000_MiSTer",
-      "releases": []
+      "releases": [
+        {
+          "name": "VC4000_20210914.rbf",
+          "sha": "b67bd36f7918f5b7d8a33aaa6b599c771919ef18",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/VC4000_MiSTer/main/releases/VC4000_20210914.rbf",
+          "type": "RBF"
+        }
+      ]
     },
     {
       "name": "Vector-06C_MiSTer",
