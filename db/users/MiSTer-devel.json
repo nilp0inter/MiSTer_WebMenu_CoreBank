@@ -1394,7 +1394,7 @@
     {
       "name": "Arcade-BlackWidow_MiSTer",
       "description": "Atari Black Widow Vector on MiSTer",
-      "readme": "# Black Widow\n\nFPGA implementation of [Atari Black Widow](http://spritesmods.com/?art=bwidow_fpga) by Jeroen Domburg with help from james10952001 \nRasterizer by Dave Woo and fpgaarcade.com\nPort to MiSTer by Alan Steremberg\n\nThis game used two joysticks. If you hook it to an ipac/jpac style adapter, it will use joystick 1 and 2. You can use the MiSTer OSD to\nmap the joystick buttons for the second joystick to the digital buttons on the gamepad.\n\n# Keyboard inputs :\n```\n   F1                        : Coin + Start 1P\n   F2                        : Coin + Start 2P\n   UP,DOWN,LEFT,RIGHT arrows : move spider\n\n   MAME/IPAC/JPAC Style Keyboard inputs:\n     5           : Coin 1\n     6           : Coin 2\n     1           : Start 1 Player\n     2           : Start 2 Players\n     R,F,D,G     : Right joystick motion\n   \n\n Joystick support. Make sure to setup the keys specifically for this. It will use 4 buttons for a second digital joypad.\n```\n \n# ROMs\n```\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n\n```\n",
+      "readme": "# Black Widow\n\nFPGA implementation of [Atari Black Widow](http://spritesmods.com/?art=bwidow_fpga) by Jeroen Domburg with help from james10952001 \nRasterizer by Dave Woo and fpgaarcade.com\nPort to MiSTer by Alan Steremberg\n\nThis game used two joysticks. If you hook it to an ipac/jpac style adapter, it will use joystick 1 and 2. You can use the MiSTer OSD to\nmap the joystick buttons for the second joystick to the digital buttons on the gamepad.\n\n## Keyboard inputs :\n```\n   F1                        : Coin + Start 1P\n   F2                        : Coin + Start 2P\n   UP,DOWN,LEFT,RIGHT arrows : move spider\n\n   MAME/IPAC/JPAC Style Keyboard inputs:\n     5           : Coin 1\n     6           : Coin 2\n     1           : Start 1 Player\n     2           : Start 2 Players\n     R,F,D,G     : Right joystick motion\n   \n\n Joystick support. Make sure to setup the keys specifically for this. It will use 4 buttons for a second digital joypad.\n```\n\n## Hiscore save/load\n\nSave and load of hiscores is supported for the following games on this core:\n - Black Widow\n - Gravitar\n\nTo save your hiscores manually, press the 'Save Settings' option in the OSD.  Hiscores will be automatically loaded when the core is started.\n\nTo enable automatic saving of hiscores, turn on the 'Autosave Hiscores' option, press the 'Save Settings' option in the OSD, and reload the core.  Hiscores will then be automatically saved (if they have changed) any time the OSD is opened.\n\nHiscore data is stored in /media/fat/config/nvram/ as ```<mra filename>.nvm```\n\n## ROMs\n```\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n\n```\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/Arcade-BlackWidow_MiSTer",
@@ -1430,8 +1430,14 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-BlackWidow_20210915.rbf",
+          "sha": "eecdad057bdf32ae20ddb902e6ea2eae4793bf24",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-BlackWidow_MiSTer/master/releases/Arcade-BlackWidow_20210915.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Black Widow.mra",
-          "sha": "10543a6599e40f1c0e269a2f087a42e13fdd2322",
+          "sha": "2b53f2ef6045c22af277581c59ba5b2d1daa5cb9",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-BlackWidow_MiSTer/master/releases/Black%20Widow.mra",
           "type": "MRA",
           "extra": {
@@ -1444,7 +1450,7 @@
         },
         {
           "name": "Gravitar (Ver 3).mra",
-          "sha": "44ab6204617be70fc5c24247fd36bcf04a4c814d",
+          "sha": "80b25aaa03b05ca39773d1ca0e08835e0b0f840e",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-BlackWidow_MiSTer/master/releases/Gravitar%20(Ver%203).mra",
           "type": "MRA",
           "extra": {
@@ -1457,7 +1463,7 @@
         },
         {
           "name": "Lunar Battle (Prototype).mra",
-          "sha": "1e210aeb8bd568007c4470b5be060675b12004cb",
+          "sha": "f0c755bddfb9f24c3b476879e81bfa7fdfaf4c00",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-BlackWidow_MiSTer/master/releases/Lunar%20Battle%20(Prototype).mra",
           "type": "MRA",
           "extra": {
@@ -1473,7 +1479,7 @@
     {
       "name": "Arcade-BombJack_MiSTer",
       "description": "Arcade: Bomb Jack for MiSTer",
-      "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: Bomb Jack port to MiSTer by Sorgelig\n-- 03 November 2017\n-- \n---------------------------------------------------------------------------------\n-- Bomb Jack implementation in FPGA. Author: Alex \n-- http://papilio.cc/index.php?n=Playground.BombJack\n---------------------------------------------------------------------------------\n-- \n-- Support screen and controls rotation on HDMI output.\n-- Only controls are rotated on VGA output.\n-- \n-- \n-- Keyboard inputs :\n--\n--   F2          : Insert the coin + Start 2 players\n--   F1          : Insert the coin + Start 1 player\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--   SPACE       : Jump\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   R,F,D,G     : Player 2 Movements\n--   A           : Player 2 Jump\n--\n-- Joystick support.\n-- \n-- \n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
+      "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: Bomb Jack port to MiSTer by Sorgelig\n-- 03 November 2017\n-- \n---------------------------------------------------------------------------------\n-- Bomb Jack implementation in FPGA. Author: Alex \n-- http://papilio.cc/index.php?n=Playground.BombJack\n---------------------------------------------------------------------------------\n-- \n-- Support screen and controls rotation on HDMI output.\n-- Only controls are rotated on VGA output.\n-- \n-- \n-- Keyboard inputs :\n--\n--   F2          : Insert the coin + Start 2 players\n--   F1          : Insert the coin + Start 1 player\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--   SPACE       : Jump\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   R,F,D,G     : Player 2 Movements\n--   A           : Player 2 Jump\n--\n-- Joystick support.\n-- \n-- \n----------------------------------------------\n\nHiscore save/load:\n\nSave and load of hiscores is supported for this core.\n\nTo save your hiscores manually, press the 'Save Settings' option in the OSD.  Hiscores will be automatically loaded when the core is started.\n\nTo enable automatic saving of hiscores, turn on the 'Autosave Hiscores' option, press the 'Save Settings' option in the OSD, and reload the core.  Hiscores will then be automatically saved (if they have changed) any time the OSD is opened.\n\nHiscore data is stored in /media/fat/config/nvram/ as ```<mra filename>.nvm```\n\n----------------------------------------------\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/Arcade-BombJack_MiSTer",
@@ -1533,8 +1539,14 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-BombJack_20210915.rbf",
+          "sha": "e606cb74958c9dc9e1b1addf23196dd7b55003a8",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-BombJack_MiSTer/master/releases/Arcade-BombJack_20210915.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Bomb Jack.mra",
-          "sha": "4f46dc25d2a95abab1c3bf72b81d79799fd1921d",
+          "sha": "6b15bbc3c4c48127670839734e0652ef4805b3a2",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-BombJack_MiSTer/master/releases/Bomb%20Jack.mra",
           "type": "MRA",
           "extra": {
@@ -1607,7 +1619,7 @@
     {
       "name": "Arcade-BurgerTime_MiSTer",
       "description": "Arcade: Burger Time for MiSTer",
-      "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: Burger Time port to MiSTer by Sorgelig\n-- 30 December 2017\n-- \n---------------------------------------------------------------------------------\n---------------------------------------------------------------------------------\n-- Burger Time by Dar (darfpga@aol.fr) (27/12/2017)\n-- http://darfpga.blogspot.fr\n---------------------------------------------------------------------------------\n-- gen_ram.vhd & io_ps2_keyboard\n-------------------------------- \n-- Copyright 2005-2008 by Peter Wendrich (pwsoft@syntiac.com)\n-- http://www.syntiac.com/fpga64.html\n---------------------------------------------------------------------------------\n-- T65(b) core.Ver 301 by MikeJ March 2005\n-- Latest version from www.fpgaarcade.com (original www.opencores.org)\n---------------------------------------------------------------------------------\n-- YM2149 (AY-3-8910)\n-- Copyright (c) MikeJ - Jan 2005\n---------------------------------------------------------------------------------\n-- \n-- Support screen and controls rotation on HDMI output.\n-- Only controls are rotated on VGA output.\n-- \n-- \n-- Keyboard inputs :\n--\n--   F2          : Start 2 players\n--   F1          : Start 1 player\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--   SPACE,CTRL  : Pepper\n--\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   R,F,D,G     : Player 2 Movements\n--   A           : Player 2 Pepper\n--\n-- Joystick support.\n-- \n\n-- High score save/load - To save your scores use the 'Save Settings' option in the OSD.  \n-- * Warning: Scores are only loaded when core starts, using reset will return scores to factory settings *\n-- \n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n\n",
+      "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: Burger Time port to MiSTer by Sorgelig\n-- 30 December 2017\n-- \n---------------------------------------------------------------------------------\n---------------------------------------------------------------------------------\n-- Burger Time by Dar (darfpga@aol.fr) (27/12/2017)\n-- http://darfpga.blogspot.fr\n---------------------------------------------------------------------------------\n-- gen_ram.vhd & io_ps2_keyboard\n-------------------------------- \n-- Copyright 2005-2008 by Peter Wendrich (pwsoft@syntiac.com)\n-- http://www.syntiac.com/fpga64.html\n---------------------------------------------------------------------------------\n-- T65(b) core.Ver 301 by MikeJ March 2005\n-- Latest version from www.fpgaarcade.com (original www.opencores.org)\n---------------------------------------------------------------------------------\n-- YM2149 (AY-3-8910)\n-- Copyright (c) MikeJ - Jan 2005\n---------------------------------------------------------------------------------\n-- \n-- Support screen and controls rotation on HDMI output.\n-- Only controls are rotated on VGA output.\n-- \n-- \n-- Keyboard inputs :\n--\n--   F2          : Start 2 players\n--   F1          : Start 1 player\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--   SPACE,CTRL  : Pepper\n--\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   R,F,D,G     : Player 2 Movements\n--   A           : Player 2 Pepper\n--\n-- Joystick support.\n-- \n\n----------------------------------------------\n\nHiscore save/load:\n\nSave and load of hiscores is supported for this core.\n\nTo save your hiscores manually, press the 'Save Settings' option in the OSD.  Hiscores will be automatically loaded when the core is started.\n\nTo enable automatic saving of hiscores, turn on the 'Autosave Hiscores' option, press the 'Save Settings' option in the OSD, and reload the core.  Hiscores will then be automatically saved (if they have changed) any time the OSD is opened.\n\nHiscore data is stored in /media/fat/config/nvram/ as ```<mra filename>.nvm```\n\n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/Arcade-BurgerTime_MiSTer",
@@ -1667,8 +1679,14 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-BurgerTime_20210915.rbf",
+          "sha": "871e1a34fc426468be5dfdf70a9b0a63051e7c45",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-BurgerTime_MiSTer/master/releases/Arcade-BurgerTime_20210915.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Burger Time (Set 1).mra",
-          "sha": "51114b7138918104f115c9ca661bae3ac6101812",
+          "sha": "b067f6aa4e606dfc91cf067b968d159bda81762d",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-BurgerTime_MiSTer/master/releases/Burger%20Time%20(Set%201).mra",
           "type": "MRA",
           "extra": {
