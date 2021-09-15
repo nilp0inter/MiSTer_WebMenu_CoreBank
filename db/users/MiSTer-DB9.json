@@ -7637,6 +7637,15 @@
       ]
     },
     {
+      "name": "Distribution_MiSTer",
+      "description": null,
+      "readme": null,
+      "archived": false,
+      "fork": false,
+      "url": "https://github.com/MiSTer-DB9/Distribution_MiSTer",
+      "releases": []
+    },
+    {
       "name": "EpochGalaxy2_MiSTer",
       "description": null,
       "readme": "# Port of Epoch Galaxy II for MiSTer FPGA\r\n\r\nRemap game buttons and use the skill level select for game mode.\r\n\r\nFrom original user guide:\r\n\r\n- Skill Level \"1\" - Alien fighters attack one at a time.\r\n- Skill Level \"2\" - Alien fighters attack one at a time but combat speed is faster.\r\n- Skill Level \"3\" - Alien fighters attack two at a time.\r\n- Skill Level \"4\" - Alien fighters attack two at a time but combat speed is faster.\r\n\r\nWhen game is switched on, skill level is automatically set to Level \"1\" and \"1\" is displayed at top of Game Display.",
