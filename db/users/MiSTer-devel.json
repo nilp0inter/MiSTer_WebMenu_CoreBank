@@ -4823,7 +4823,7 @@
     {
       "name": "Arcade-MCR3_MiSTer",
       "description": "Arcade: Midway MCR3 based games",
-      "readme": null,
+      "readme": "# Midway MCR3 port for MiSTer\n\n[Original readme](README_orig.txt) (mostly irrelevant to MiSTer)\n\n```\n# Games\n\n### Timber\nUp to 2 players. \n* Up/Down/Left/Right - movements \n* A - Chop Right \n* B - Chop Left\n\n### Tapper\nUp to 2 players.\n* Up/Down/Left/Right - movements\n* A - Fill\n \n### Discs of Tron\nUp to 2 players.\n* Up/Down/Left/Right - movements\n* A - Toss\n* B - Deflect\n* C - Aim Up\n* D - Aim Down\nSupports 2 control modes: Joystick/Spinner\nSpinner - Rotate Right,Rotate Left\n\n### Journey\nUp to 2 players.\n* Up/Down/Left/Right - movements\n* A - Blast\n\nDownload a sound file from mame sounds ( https://samples.mameworld.info/ click current samples ) , and put journey.zip in:\n_Arcade/sound/\n \n \n# ROMs\n```\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n\n```\n\nLaunch game using the appropriate .MRA\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/Arcade-MCR3_MiSTer",
