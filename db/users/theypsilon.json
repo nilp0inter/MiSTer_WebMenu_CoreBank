@@ -5,6 +5,141 @@
   "type": "User",
   "repos": [
     {
+      "name": "Arcade-Bagman_MiSTer",
+      "description": "Arcade: Bagman for MiSTer",
+      "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: Bagman port to MiSTer by Sorgelig\n-- 24 October 2017\n-- \n---------------------------------------------------------------------------------\n-- Bagman (STERN) FPGA - DAR - 2014\n-- http://darfpga.blogspot.fr\n---------------------------------------------------------------------------------\n-- T80/T80se - Version : 0247\n-----------------------------\n-- Z80 compatible microprocessor core\n-- Copyright (c) 2001-2002 Daniel Wallner (jesus@opencores.org)\n---------------------------------------------------------------------------------\n-- \n-- Support screen and controls rotation on HDMI output.\n-- Only controls are rotated on VGA output.\n-- \n-- \n-- Keyboard inputs :\n--\n--   F3          : Add coin (press 2 times for one credit!)\n--   F1          : Start\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--   SPACE       : Fire  \n--\n-- Joystick support.\n-- \n-- \n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/theypsilon/Arcade-Bagman_MiSTer",
+      "releases": [
+        {
+          "name": "Arcade-Bagman_20171125.rbf",
+          "sha": "3572d93755a4b0cd5d6bf0239c19c2b88d39cbf2",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-Bagman_MiSTer/master/releases/Arcade-Bagman_20171125.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Bagman_20180313.rbf",
+          "sha": "0eeff01d6e9db5a8c9a79ac95fc79dc2b5e32731",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-Bagman_MiSTer/master/releases/Arcade-Bagman_20180313.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Bagman_20191218.rbf",
+          "sha": "fd2770a13acba1b72e07938243399fd5ac563778",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-Bagman_MiSTer/master/releases/Arcade-Bagman_20191218.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Bagman_20200108.rbf",
+          "sha": "706bba9568cdb2a3b73fe50d8ab3e4b905675ab1",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-Bagman_MiSTer/master/releases/Arcade-Bagman_20200108.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Bagman_20200125.rbf",
+          "sha": "d8ffdb992506b68540adc01ab25b3d7797f2eef8",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-Bagman_MiSTer/master/releases/Arcade-Bagman_20200125.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Bagman_20200126.rbf",
+          "sha": "066e9a3cdb2ec702964f84af22d246a5931eea67",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-Bagman_MiSTer/master/releases/Arcade-Bagman_20200126.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Bagman_20210113.rbf",
+          "sha": "8fc34f0875a1f0726c765cc4bfc0b200f51d2c8d",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-Bagman_MiSTer/master/releases/Arcade-Bagman_20210113.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Bagman_20210830.rbf",
+          "sha": "0c77af750206f71f24d4b57b077f8fab09368f22",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-Bagman_MiSTer/master/releases/Arcade-Bagman_20210830.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Bagman_20210902.rbf",
+          "sha": "d15a716ee4e9785849dc0a89a54732fe186dd951",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-Bagman_MiSTer/master/releases/Arcade-Bagman_20210902.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Bagman.mra",
+          "sha": "2db987f6ad9b6291ab35e6ca9b9147add1322b31",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-Bagman_MiSTer/master/releases/Bagman.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Bagman",
+            "rbf": "bagman",
+            "zips": [
+              "bagman.zip"
+            ]
+          }
+        },
+        {
+          "name": "Bagman_20210903.rbf",
+          "sha": "b90ffc5fd18f57aa5fc8a3fc1804c0cf257dd00b",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-Bagman_MiSTer/master/releases/Bagman_20210903.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Botanic (English, Spanish, Set 1).mra",
+          "sha": "14ed9451843c6574e1720fb1ef30e2aaea80db20",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-Bagman_MiSTer/master/releases/Botanic%20(English%2C%20Spanish%2C%20Set%201).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Botanic",
+            "rbf": "bagman",
+            "zips": [
+              "botanic.zip"
+            ]
+          }
+        },
+        {
+          "name": "Pickin'.mra",
+          "sha": "a512fd781868d587860ac36f59ca20eb9e806b3d",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-Bagman_MiSTer/master/releases/Pickin'.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Pickin'",
+            "rbf": "bagman",
+            "zips": [
+              "pickin.zip"
+            ]
+          }
+        },
+        {
+          "name": "Squash.mra",
+          "sha": "779c3750ea61dccfad4ec077d8cc42170d4dd056",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-Bagman_MiSTer/master/releases/Squash.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Squash",
+            "rbf": "bagman",
+            "zips": [
+              "squaitsa.zip"
+            ]
+          }
+        },
+        {
+          "name": "Super Bagman.mra",
+          "sha": "003ce1cd6250db00e0ad768af4046b33fa7b1b45",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-Bagman_MiSTer/master/releases/Super%20Bagman.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Super Bagman",
+            "rbf": "bagman",
+            "zips": [
+              "sbagman.zip|sbagman2.zip"
+            ]
+          }
+        }
+      ]
+    },
+    {
       "name": "Arcade-Cosmic_MiSTer",
       "description": "Universal Cosmic series games (Z80 based)",
       "readme": "---------------------------------------------------------------------------------\n-- \n-- Universal Cosmic games (Z80 based) for MiSTer - Mike Coates\n--\n-- V 0.9 - 08/07/2021 - Mike Coates\n---------------------------------------------------------------------------------\n--\n-- Up, Down, Left, Right, Fire 1, Fire 2 (not all games use all buttons) \n-- \n---------------------------------------------------------------------------------\n\nThis is a recreation of the Universal games that run on similar hardware\n\nThe game timing should be very close to the original, but the code is not \nnecessarily identical to the real thing, but achieves the same end result.\n\n---------------------------------------------------------------------------------\n\nKnown differences / problems\n\nSound effects are all implemented using samples (other than the DAC)\n\nI have added a screen flip option which is not present on all parts of the \noriginal video hardware, sprites are instead flipped by software. \n\ncoinage dip on Magic Spot is wrong!\n\nThe CPU is running at the wrong frequency for a couple of the games, but this \ndoes not affect the game (other than the DAC sounds wil be higher frequency)\nThis will be fixed at some point. (by converting it to a CPU Enable signal and \nadding a second divider)\n\nNo mans land needs the background video lined up properly in all flip modes.\n\nDevil Zone and No Mans Land need sound samples sourcing and connecting up.\n\n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
