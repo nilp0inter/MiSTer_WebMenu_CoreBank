@@ -5,6 +5,91 @@
   "type": "User",
   "repos": [
     {
+      "name": "Arcade-QBert_MiSTer",
+      "description": "Q*Bert core for MiSTer",
+      "readme": "![QBert Character](./qbert.png) MiSTer Q*Bert\r\n=============================================\r\n\r\nQ*Bert arcade core for MiSTer FPGA by Pierco. It's a reproduction of the original PCBs rather than a reinterpretation but with some dual port RAM exceptions.\r\n\r\nAdditional details\r\n------------------\r\n\r\n**Audio board MA216:**\r\n\r\n- SC01 is not implemented. Waiting for brave people to do it.\r\n\r\n**NVRAM:**\r\n\r\n- Not implemented - NVRAM should be C5/C6 on schematics.\r\n\r\n**Ports:**\r\n\r\n- IP17-10: input port for test buttons, coins and player 1/2.\r\n- IP47-40: input port for joystick.\r\n- OP27-20: output port for sound interface\r\n- OP33-37: output port for knocker and coin meter.\r\n\r\nGame Compatibility List\r\n-----------------------\r\n\r\nWorking:\r\n\r\n- QBert: 100% compatible.\r\n- QBert Qubes: 100% compatible.\r\n- Mad Planets: 100% compatible.\r\n\r\nNot working yet:\r\n\r\n- Curve Ball: dip switch order is weird, no sound.\r\n- Insector: 100% compatible, dip switch problems, controller inverted & no test mode(?).\r\n- Tyls: 100% compatible - dip switches inverted.\r\n\r\nKnown Bugs\r\n----------\r\n\r\n- QBert Qubes: \"Supreme Nosers\" screen works only after a reset.\r\n- Problem with vertical position register E1-2. When a new object is falling from the top of the screen (ball), it appears briefly at the bottom of the screen.\r\n- High Scores screen: the big three letters of player's name are not displayed correctly. It works well after a few resets (is it a problem with bus sharing logic which sends zeros to simulate high impedance for ORing outputs?). I don't have the PCB so it's difficult to know the original behavior.\r\n- Votrax chip is cruelly missing, QBert needs his @!#?@! voice!!!\r\n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/pcornier/Arcade-QBert_MiSTer",
+      "releases": [
+        {
+          "name": "Arcade-QBert_20210206.rbf",
+          "sha": "f799abb30c1d748e4064aa69475aefcc207e36ce",
+          "url": "https://raw.githubusercontent.com/pcornier/Arcade-QBert_MiSTer/master/releases/Arcade-QBert_20210206.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-QBert_20210207.rbf",
+          "sha": "f8169b4a5487a64e13eb0ded45074cfc7dd4bdf5",
+          "url": "https://raw.githubusercontent.com/pcornier/Arcade-QBert_MiSTer/master/releases/Arcade-QBert_20210207.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-QBert_20210214.rbf",
+          "sha": "7c6e27d9ba53562e270f27cb19be84cebca5b283",
+          "url": "https://raw.githubusercontent.com/pcornier/Arcade-QBert_MiSTer/master/releases/Arcade-QBert_20210214.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-QBert_20210215.rbf",
+          "sha": "db98fcc249f806b3e837f564cc38481dee6e3b3b",
+          "url": "https://raw.githubusercontent.com/pcornier/Arcade-QBert_MiSTer/master/releases/Arcade-QBert_20210215.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-QBert_20210308.rbf",
+          "sha": "60013b502622a558f26062a704f0119f3fbcf0a3",
+          "url": "https://raw.githubusercontent.com/pcornier/Arcade-QBert_MiSTer/master/releases/Arcade-QBert_20210308.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-QBert_20211016.rbf",
+          "sha": "105ca3e7e2553b997d1920b85ef5ee06667cc224",
+          "url": "https://raw.githubusercontent.com/pcornier/Arcade-QBert_MiSTer/master/releases/Arcade-QBert_20211016.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Mad Planets.mra",
+          "sha": "bb6f5ae1d7842c261b9eb2b7c12dabeaedde9df9",
+          "url": "https://raw.githubusercontent.com/pcornier/Arcade-QBert_MiSTer/master/releases/Mad%20Planets.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Mad Planets",
+            "rbf": "qbert",
+            "zips": [
+              "mplanets.zip"
+            ]
+          }
+        },
+        {
+          "name": "Q'bert (US, Set 1).mra",
+          "sha": "3d4af0312d552b806b8c61dc8def9771aacb5cb8",
+          "url": "https://raw.githubusercontent.com/pcornier/Arcade-QBert_MiSTer/master/releases/Q'bert%20(US%2C%20Set%201).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Q*bert",
+            "rbf": "qbert",
+            "zips": [
+              "qbert.zip"
+            ]
+          }
+        },
+        {
+          "name": "QBert Qubes.mra",
+          "sha": "e80a43b805f341313765482566a975970d852ba3",
+          "url": "https://raw.githubusercontent.com/pcornier/Arcade-QBert_MiSTer/master/releases/QBert%20Qubes.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Q*bert Qubes",
+            "rbf": "qbert",
+            "zips": [
+              "qbertqub.zip"
+            ]
+          }
+        }
+      ]
+    },
+    {
       "name": "CoCo2_MiSTer",
       "description": "CoCo2",
       "readme": "\n# MiSTer Tandy Color Computer 2 (CoCo2)  and Dragon 32\n\nOriginally started by:\n\nhttps://github.com/pcornier/coco2\n\nFinished by dshadoff and alanswx and pcornier.\n\n### Tandy Color 2\n\nThis core implements a Tandy Color Computer 2 (CoCo2) including:\n * 64k Memory\n * 2 Analog Joysticks (with a swap feature)\n * Cassette Loading\n * Sound\n * Cartridge Support\n\n### Dragon 32 / 64\n\n * only the dragon 32 seems to work \n * 2 Analog Joysticks (with a swap feature)\n * Cassette Loading\n * Sound\n * Cartridge Support\n\n\n![Coco2 running on the AX309](photo.jpg)\n\n*Coco 2 running on a AX309 board*",

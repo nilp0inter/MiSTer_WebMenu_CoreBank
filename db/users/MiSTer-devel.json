@@ -6063,7 +6063,7 @@
     {
       "name": "Arcade-QBert_MiSTer",
       "description": "Q*Bert core for MiSTer",
-      "readme": "![QBert Character](./qbert.png) MiSTer Q*Bert\r\n=============================================\r\n\r\nQ*Bert arcade core for MiSTer FPGA. It's a reproduction of the original PCBs with the following exceptions:\r\n\r\n- I removed D2 to D4 multiplexers because FG POS/ID registers E1-2, E2-3 & E4 are now dual port RAM.\r\n- I removed D5 to D7 multiplexers because BG character RAM E7 is dual port.\r\n- I removed D8 to D10 multiplexers because E10-11 buffer RAM is dual port.\r\n- I removed E8/E9-10 bus isolation because of dual port E7 & E10-11.\r\n- I removed H13 mux because color RAM G13 to G14 is dual port.\r\n\r\nAdditional details\r\n------------------\r\n\r\n**Audio board MA216:**\r\n\r\n- SC01 is not implemented. Waiting for brave people to do it.\r\n\r\n**NVRAM:**\r\n\r\n- Not implemented - NVRAM should be C5/C6 on schematics.\r\n\r\n**Ports:**\r\n\r\n- IP17-10: input port for test buttons, coins and player 1/2.\r\n- IP47-40: input port for joystick.\r\n- OP27-20: output port for sound interface\r\n- OP33-37: output port for knocker and coin meter.\r\n\r\nGame Compatibility List\r\n-----------------------\r\n\r\n- QBert: 100% compatible.\r\n- QBert Qubes: 100% compatible, bug on rolling cube screen and dip switches inverted.\r\n- Curve Ball: dip switch order is weird, no sound.\r\n- Insector: 100% compatible, dip switch problems, controller inverted & no test mode(?).\r\n- Mad Planets: 100% compatible but blinking letters.\r\n- Tyls: 100% compatible - dip switches inverted.\r\n\r\n...so to summarize, with the exception of QBert, don't expect another game to work properly.\r\n\r\nKnown Bugs\r\n----------\r\n\r\n- Problem with vertical position register E1-2. When a new object is falling from the top of the screen (ball), it appears briefly at the bottom of the screen.\r\n- High Scores screen: the big three letters of player's name are not displayed correctly. It works well after a few resets (is it a problem with bus sharing logic which sends zeros to simulate high impedance for ORing outputs?). I don't have the PCB so it's difficult to know the original behavior.\r\n- Votrax chip is cruelly missing, QBert needs his @!#?@! voice!!!\r\n",
+      "readme": "![QBert Character](./qbert.png) MiSTer Q*Bert\r\n=============================================\r\n\r\nQ*Bert arcade core for MiSTer FPGA by Pierco. It's a reproduction of the original PCBs rather than a reinterpretation but with some dual port RAM exceptions.\r\n\r\nAdditional details\r\n------------------\r\n\r\n**Audio board MA216:**\r\n\r\n- SC01 is not implemented. Waiting for brave people to do it.\r\n\r\n**NVRAM:**\r\n\r\n- Not implemented - NVRAM should be C5/C6 on schematics.\r\n\r\n**Ports:**\r\n\r\n- IP17-10: input port for test buttons, coins and player 1/2.\r\n- IP47-40: input port for joystick.\r\n- OP27-20: output port for sound interface\r\n- OP33-37: output port for knocker and coin meter.\r\n\r\nGame Compatibility List\r\n-----------------------\r\n\r\nWorking:\r\n\r\n- QBert: 100% compatible.\r\n- QBert Qubes: 100% compatible.\r\n- Mad Planets: 100% compatible.\r\n\r\nNot working yet:\r\n\r\n- Curve Ball: dip switch order is weird, no sound.\r\n- Insector: 100% compatible, dip switch problems, controller inverted & no test mode(?).\r\n- Tyls: 100% compatible - dip switches inverted.\r\n\r\nKnown Bugs\r\n----------\r\n\r\n- QBert Qubes: \"Supreme Nosers\" screen works only after a reset.\r\n- Problem with vertical position register E1-2. When a new object is falling from the top of the screen (ball), it appears briefly at the bottom of the screen.\r\n- High Scores screen: the big three letters of player's name are not displayed correctly. It works well after a few resets (is it a problem with bus sharing logic which sends zeros to simulate high impedance for ORing outputs?). I don't have the PCB so it's difficult to know the original behavior.\r\n- Votrax chip is cruelly missing, QBert needs his @!#?@! voice!!!\r\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/Arcade-QBert_MiSTer",
@@ -6099,6 +6099,25 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-QBert_20211016.rbf",
+          "sha": "105ca3e7e2553b997d1920b85ef5ee06667cc224",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-QBert_MiSTer/master/releases/Arcade-QBert_20211016.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Mad Planets.mra",
+          "sha": "bb6f5ae1d7842c261b9eb2b7c12dabeaedde9df9",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-QBert_MiSTer/master/releases/Mad%20Planets.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Mad Planets",
+            "rbf": "qbert",
+            "zips": [
+              "mplanets.zip"
+            ]
+          }
+        },
+        {
           "name": "Q'bert (US, Set 1).mra",
           "sha": "3d4af0312d552b806b8c61dc8def9771aacb5cb8",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-QBert_MiSTer/master/releases/Q'bert%20(US%2C%20Set%201).mra",
@@ -6108,6 +6127,19 @@
             "rbf": "qbert",
             "zips": [
               "qbert.zip"
+            ]
+          }
+        },
+        {
+          "name": "QBert Qubes.mra",
+          "sha": "e80a43b805f341313765482566a975970d852ba3",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-QBert_MiSTer/master/releases/QBert%20Qubes.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Q*bert Qubes",
+            "rbf": "qbert",
+            "zips": [
+              "qbertqub.zip"
             ]
           }
         }
