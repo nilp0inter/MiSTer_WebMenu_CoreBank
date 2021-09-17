@@ -5641,8 +5641,14 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Pengo_20210917.rbf",
+          "sha": "d58fe40ef19f43f5f7967dd0d6526c8bb3d1bf95",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pengo_MiSTer/master/releases/Arcade-Pengo_20210917.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Pengo (Set 1, Rev C).mra",
-          "sha": "072c71899619fb00d526f7b45cb670a546264486",
+          "sha": "cd37d38e570dc088cc452a89eb7c55f9426ac550",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pengo_MiSTer/master/releases/Pengo%20(Set%201%2C%20Rev%20C).mra",
           "type": "MRA",
           "extra": {
@@ -5658,7 +5664,7 @@
     {
       "name": "Arcade-Phoenix_MiSTer",
       "description": "Arcade: Phoenix for MiSTer",
-      "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: Phoenix port to MiSTer by Sorgelig\n-- 22 October 2017\n-- \n---------------------------------------------------------------------------------\n-- Phoenix (Amstar) FPGA - DAR - 2016\n-- http://darfpga.blogspot.fr\n---------------------------------------------------------------------------------\n-- \n-- Support screen and controls rotation on HDMI output.\n-- Only controls are rotated on VGA output.\n-- \n-- \n-- Keyboard inputs :\n--\n--   F3          : Add coin\n--   F2          : Start 2 players\n--   F1          : Start 1 player\n--   SPACE       : Fire  \n--   UP/RIGHT    : Move up \n--   DOWN/LEFT   : Move down\n--   CTRL        : Barrier(Shield)\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   D,G     : Player 2 Movements\n--   A           : Player 2 Fire\n--   S           : Player 2 Barrier(Shield)\n--\n-- Joystick support.\n-- \n-- \n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
+      "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: Phoenix port to MiSTer by Sorgelig\n-- 22 October 2017\n-- \n---------------------------------------------------------------------------------\n-- Phoenix (Amstar) FPGA - DAR - 2016\n-- http://darfpga.blogspot.fr\n---------------------------------------------------------------------------------\n-- \n-- Support screen and controls rotation on HDMI output.\n-- Only controls are rotated on VGA output.\n-- \n-- \n-- Keyboard inputs :\n--\n--   F3          : Add coin\n--   F2          : Start 2 players\n--   F1          : Start 1 player\n--   SPACE       : Fire  \n--   UP/RIGHT    : Move up \n--   DOWN/LEFT   : Move down\n--   CTRL        : Barrier(Shield)\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   D,G     : Player 2 Movements\n--   A           : Player 2 Fire\n--   S           : Player 2 Barrier(Shield)\n--\n-- Joystick support.\n-- \n-- \n----------------------------------------------\n\nHiscore save/load:\n\nSave and load of hiscores is supported for this core:\n\nTo save your hiscores manually, press the 'Save Settings' option in the OSD.  Hiscores will be automatically loaded when the core is started.\n\nTo enable automatic saving of hiscores, turn on the 'Autosave Hiscores' option, press the 'Save Settings' option in the OSD, and reload the core.  Hiscores will then be automatically saved (if they have changed) any time the OSD is opened.\n\nHiscore data is stored in /media/fat/config/nvram/ as ```<mra filename>.nvm```\n\n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/Arcade-Phoenix_MiSTer",
@@ -5706,8 +5712,14 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Phoenix_20210915.rbf",
+          "sha": "4c5f59ab4dfeeb1bcab53c054bda9562c0aa00b5",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Phoenix_MiSTer/master/releases/Arcade-Phoenix_20210915.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Phoenix (Amstar, Set 1).mra",
-          "sha": "39f58a01a2fbe5f3ddd55560afb22df251f21762",
+          "sha": "f412c2d5be589765deea0c53783b9c91e36bdd17",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Phoenix_MiSTer/master/releases/Phoenix%20(Amstar%2C%20Set%201).mra",
           "type": "MRA",
           "extra": {
@@ -5720,7 +5732,7 @@
         },
         {
           "name": "Pleiads (Tehkan).mra",
-          "sha": "38a8ffa5bdca3d57fb1e6450e5a6b81f5da67a61",
+          "sha": "7acd2139e232ed2e3df4d81241c5e0c93ba169f5",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Phoenix_MiSTer/master/releases/Pleiads%20(Tehkan).mra",
           "type": "MRA",
           "extra": {
