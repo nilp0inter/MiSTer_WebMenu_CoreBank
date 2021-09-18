@@ -8433,7 +8433,7 @@
     {
       "name": "Arcade-Zaxxon_MiSTer",
       "description": "VHDL Zaxxon",
-      "readme": "# [Arcade: Zaxxon](https://www.system16.com/hardware.php?id=689) port to [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\nMiSTer port by Dar (darfpga@aol.fr - sourceforge/darfpga)\n\n## Description\n\nA simulation model of Sega's Zaxxon hardware.\n\n## Games\n\nCurrently implemented:\n\n* Zaxxon\n* Super Zaxxon\n* Future Spy\n\n## High score save/load\n\nHigh score save/load is set to 'Manual' by default for this core.\n * To save your scores use the 'Save Settings' option in the OSD\n * To restore original scores, set the 'High Score Save' option to 'Off' and reset the core\n\n## ROM Files Instructions\n\n**ROMs are not included!** In order to use this arcade core, you will need to provide the correct ROM file yourself.\n\nTo simplify the process .mra files are provided in the releases folder, that specify the required ROMs with their checksums. The ROMs .zip filename refers to the\ncorresponding file from the MAME project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for information on how to setup and use the environment.\n\nQuick reference for folders and file placement:\n\n```\n/_Arcade/<game name>.mra  \n/_Arcade/cores/<game rbf>.rbf  \n/_Arcade/mame/<mame rom>.zip  \n/_Arcade/hbmame/<hbmame rom>.zip  \n```\n",
+      "readme": "# [Arcade: Zaxxon](https://www.system16.com/hardware.php?id=689) port to [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\nMiSTer port by Dar (darfpga@aol.fr - sourceforge/darfpga)\n\n## Description\n\nA simulation model of Sega's Zaxxon hardware.\n\n## Games\n\nCurrently implemented:\n\n* Zaxxon\n* Super Zaxxon\n* Future Spy\n\n## Hiscore save/load\n\nSave and load of hiscores is supported for this core.\n\nTo save your hiscores manually, press the 'Save Settings' option in the OSD.  Hiscores will be automatically loaded when the core is started.\n\nTo enable automatic saving of hiscores, turn on the 'Autosave Hiscores' option, press the 'Save Settings' option in the OSD, and reload the core.  Hiscores will then be automatically saved (if they have changed) any time the OSD is opened.\n\nHiscore data is stored in /media/fat/config/nvram/ as ```<mra filename>.nvm```\n\n## ROM Files Instructions\n\n**ROMs are not included!** In order to use this arcade core, you will need to provide the correct ROM file yourself.\n\nTo simplify the process .mra files are provided in the releases folder, that specify the required ROMs with their checksums. The ROMs .zip filename refers to the\ncorresponding file from the MAME project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for information on how to setup and use the environment.\n\nQuick reference for folders and file placement:\n\n```\n/_Arcade/<game name>.mra  \n/_Arcade/cores/<game rbf>.rbf  \n/_Arcade/mame/<mame rom>.zip  \n/_Arcade/hbmame/<hbmame rom>.zip  \n```\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/Arcade-Zaxxon_MiSTer",
@@ -8475,6 +8475,12 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Zaxxon_20210915.rbf",
+          "sha": "8b8aa778ca4edb36913ab4875e2fc8b53371cdd8",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Zaxxon_MiSTer/master/releases/Arcade-Zaxxon_20210915.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Arcade-zaxxon_20200329.rbf",
           "sha": "252f8cdddad6fe09c9d260159c9822aa32a3b657",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Zaxxon_MiSTer/master/releases/Arcade-zaxxon_20200329.rbf",
@@ -8488,7 +8494,7 @@
         },
         {
           "name": "Future Spy.mra",
-          "sha": "9c3c6767bf5dd4a4ca92a997154dcfd83f38082d",
+          "sha": "ec64c8d33ba29534c3c4305378745939c2869196",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Zaxxon_MiSTer/master/releases/Future%20Spy.mra",
           "type": "MRA",
           "extra": {
@@ -8501,7 +8507,7 @@
         },
         {
           "name": "Super Zaxxon.mra",
-          "sha": "3e0f6f9725f8ff7b633825ab8f9a853cebe34dbe",
+          "sha": "f1d32f76b7d22756949bd518ceed74bb48ea597d",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Zaxxon_MiSTer/master/releases/Super%20Zaxxon.mra",
           "type": "MRA",
           "extra": {
@@ -8514,7 +8520,7 @@
         },
         {
           "name": "zaxxon.mra",
-          "sha": "355e1d3c7a2ed25a59540528298677d2b1a13d88",
+          "sha": "47b915b5e9aa1a2f57b80128e188c1a85e9de71e",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Zaxxon_MiSTer/master/releases/zaxxon.mra",
           "type": "MRA",
           "extra": {
