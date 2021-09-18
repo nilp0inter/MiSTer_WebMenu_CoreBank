@@ -2190,7 +2190,7 @@
     {
       "name": "Arcade-Galaga_MiSTer",
       "description": "Arcade: Galaga for MiSTer",
-      "readme": "Galaga\n======\n\nArcade Galaga implementation for the MiSTer FPGA\n\nCredits\n-------\n\n * Dar: original Galaga FPGA implementation\n * Daniel Wallner: T80/T80se - Z80 compatible CPU\n * Peter Wendrich: `gen_ram.vhd`\n * Sorgelig: MiSTer port\n * Alan Steremberg: DIP switches, maintenance\n * JimmyStones: Hi-score saving, pause\n * blackwine: Flip-screen, H/V-sync adjustments, full DIP switch mapping, support for nm51xx, low pass filters\n\nControls\n--------\n\nKeyboard inputs:\n\n```\n   F2          : Coin + Start 2 players\n   F1          : Coin + Start 1 player\n   UP,DOWN,LEFT,RIGHT arrows : Movements\n   SPACE       : Fire\n```\n\n Joystick support.\n\nRequired files\n--------------\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to\n[Arcade ROMS](https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms)\nfor information on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n * `/_Arcade/<game name>.mra`\n * `/_Arcade/cores/<game rbf>.rbf`\n * `/games/mame/<mame rom>.zip`\n * `/games/hbmame/<hbmame rom>.zip`\n\nKnown issues\n------------\n * /quote from [MAME sources](https://github.com/mamedev/mame/blob/a32810d97465ae077ece35984a98a92abbf3462f/src/mame/drivers/galaga.cpp#L584-L587)/:\n   There is a bug in the sound CPU program.\n   During initialization, it enables NMI before clearing RAM, but the NMI\n   handler doesn't save the registers, so it cannot interrupt program\n   execution. If the NMI happens before the LDIR that clears RAM has finished,\n   the program will crash.\n * optional rapid fire board is not implemented.\n\nEaster egg\n----------\n\nIn service mode with fire button pressed enter the following sequence:\n`5xR 6xL 3xR 7xLz`.\n[Source](https://github.com/mamedev/mame/blob/a32810d97465ae077ece35984a98a92abbf3462f/src/mame/drivers/galaga.cpp#L555-L559)\n",
+      "readme": "Galaga\n======\n\nArcade Galaga implementation for the MiSTer FPGA\n\nCredits\n-------\n\n * Dar: original Galaga FPGA implementation\n * Daniel Wallner: T80/T80se - Z80 compatible CPU\n * Peter Wendrich: `gen_ram.vhd`\n * Sorgelig: MiSTer port\n * Alan Steremberg: DIP switches, maintenance\n * JimmyStones: Hi-score saving, pause\n * blackwine: Flip-screen, H/V-sync adjustments, full DIP switch mapping, support for nm51xx, low pass filters\n\nControls\n--------\n\nKeyboard inputs:\n\n```\n   F2          : Coin + Start 2 players\n   F1          : Coin + Start 1 player\n   UP,DOWN,LEFT,RIGHT arrows : Movements\n   SPACE       : Fire\n```\n\n Joystick support.\n\nHiscore save/load\n-----------------\n\nSave and load of hiscores is supported on this core.\n\nTo save your hiscores manually, press the 'Save Settings' option in the OSD.  Hiscores will be automatically loaded when the core is started.\n\nTo enable automatic saving of hiscores, turn on the 'Autosave Hiscores' option, press the 'Save Settings' option in the OSD, and reload the core.  Hiscores will then be automatically saved (if they have changed) any time the OSD is opened.\n\nHiscore data is stored in /media/fat/config/nvram/ as ```<mra filename>.nvm```\n\nRequired files\n--------------\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to\n[Arcade ROMS](https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms)\nfor information on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n * `/_Arcade/<game name>.mra`\n * `/_Arcade/cores/<game rbf>.rbf`\n * `/games/mame/<mame rom>.zip`\n * `/games/hbmame/<hbmame rom>.zip`\n\nKnown issues\n------------\n * /quote from [MAME sources](https://github.com/mamedev/mame/blob/a32810d97465ae077ece35984a98a92abbf3462f/src/mame/drivers/galaga.cpp#L584-L587)/:\n   There is a bug in the sound CPU program.\n   During initialization, it enables NMI before clearing RAM, but the NMI\n   handler doesn't save the registers, so it cannot interrupt program\n   execution. If the NMI happens before the LDIR that clears RAM has finished,\n   the program will crash.\n * optional rapid fire board is not implemented.\n\nEaster egg\n----------\n\nIn service mode with fire button pressed enter the following sequence:\n`5xR 6xL 3xR 7xLz`.\n[Source](https://github.com/mamedev/mame/blob/a32810d97465ae077ece35984a98a92abbf3462f/src/mame/drivers/galaga.cpp#L555-L559)\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-DB9/Arcade-Galaga_MiSTer",
@@ -2262,8 +2262,14 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Galaga_20210916.rbf",
+          "sha": "0d88e6bef52b3c53122a4d77696e85b72826790a",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaga_MiSTer/master/releases/Arcade-Galaga_20210916.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Galaga (Midway, Set 1).mra",
-          "sha": "780eb029a5aeaf71b5288ab81444b6e8139a1faa",
+          "sha": "43e852ae021186d2668300786042d022dcd96219",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaga_MiSTer/master/releases/Galaga%20(Midway%2C%20Set%201).mra",
           "type": "MRA",
           "extra": {
@@ -4189,14 +4195,14 @@
     {
       "name": "Arcade-Pacman_MiSTer",
       "description": "Arcade: Pacman for MiSTer FPGA",
-      "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: Pacman port to MiSTer by Sorgelig\n-- 09 November 2017\n-- \n---------------------------------------------------------------------------------\n-- A simulation model of Pacman hardware\n-- Copyright (c) MikeJ - January 2006\n---------------------------------------------------------------------------------\n-- \n-- Support screen and controls rotation on HDMI output.\n-- Only controls are rotated on VGA output.\n-- \n-- \n-- Keyboard inputs :\n--\n--   F1          : Start Player 1\n--   F2          : Start Player 2\n--   F3\t\t : Coin Player 1\n--   F5          : Skip to next level\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   R,F,D,G     : Player 2 Movements\n--\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--\n-- Joystick support.\n-- \n---------------------------------------------------------------------------------\n\n                                 *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
+      "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: Pacman port to MiSTer by Sorgelig\n-- 09 November 2017\n-- \n---------------------------------------------------------------------------------\n-- A simulation model of Pacman hardware\n-- Copyright (c) MikeJ - January 2006\n---------------------------------------------------------------------------------\n-- \n-- Support screen and controls rotation on HDMI output.\n-- Only controls are rotated on VGA output.\n-- \n-- \n-- Keyboard inputs :\n--\n--   F1          : Start Player 1\n--   F2          : Start Player 2\n--   F3\t\t : Coin Player 1\n--   F5          : Skip to next level\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   R,F,D,G     : Player 2 Movements\n--\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--\n-- Joystick support.\n-- \n----------------------------------------------\n\nHiscore save/load:\n\nSave and load of hiscores is supported for the following games on this core:\n - Alibaba 40 Thieves\n - Crush Roller\n - Dream Shopper\n - Eggor\n - Gorkans\n - Lizard Wizard\n - Mr. TNT\n - Ms. Pacman\n - Pac-Man (Midway)\n - Pacman Club\n - Pacman Plus\n - Ponpoko\n - Puck Man\n - Woodpecker\n\nTo save your hiscores manually, press the 'Save Settings' option in the OSD.  Hiscores will be automatically loaded when the core is started.\n\nTo enable automatic saving of hiscores, turn on the 'Autosave Hiscores' option, press the 'Save Settings' option in the OSD, and reload the core.  Hiscores will then be automatically saved (if they have changed) any time the OSD is opened.\n\nHiscore data is stored in /media/fat/config/nvram/ as ```<mra filename>.nvm```\n\n---------------------------------------------------------------------------------\n\n                                 *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-DB9/Arcade-Pacman_MiSTer",
       "releases": [
         {
           "name": "Ali Baba and 40 Thieves.mra",
-          "sha": "e751b9c8fd9a45c8f635aedc6a7a59528651d654",
+          "sha": "f825cbec95dc34acfe0cb7b1fd001f4af17c3b46",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Ali%20Baba%20and%2040%20Thieves.mra",
           "type": "MRA",
           "extra": {
@@ -4277,6 +4283,12 @@
           "name": "Arcade-Pacman_20210621.rbf",
           "sha": "b98b281393581f6c3601af120dcd04d8e68091b6",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Arcade-Pacman_20210621.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Pacman_20210915.rbf",
+          "sha": "d98c38272c614dc8859621664c1f9c210fef5610",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Arcade-Pacman_20210915.rbf",
           "type": "RBF"
         },
         {
@@ -4411,7 +4423,7 @@
         },
         {
           "name": "Mr. TNT.mra",
-          "sha": "a290e27a5c668965b418bc0c92952317e91030f3",
+          "sha": "384e782f81148e705c53e9b447b179957c262899",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Mr.%20TNT.mra",
           "type": "MRA",
           "extra": {
@@ -4424,7 +4436,7 @@
         },
         {
           "name": "Ms. Pac-Man.mra",
-          "sha": "a95540033fea31ff95793a6a429191ede4ad494e",
+          "sha": "9452cdd980fa3ba9fcbd0297f0fe64def933232d",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Ms.%20Pac-Man.mra",
           "type": "MRA",
           "extra": {
@@ -4437,7 +4449,7 @@
         },
         {
           "name": "Pac-Man (Midway).mra",
-          "sha": "7fcb2d01b6bf3b42cc52a1f4d800aea66010cacc",
+          "sha": "647fb00e12997cca59da032f15fc1af5663e31a3",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Pac-Man%20(Midway).mra",
           "type": "MRA",
           "extra": {
@@ -4450,7 +4462,7 @@
         },
         {
           "name": "Pac-Man Club- Club Lambada (AR).mra",
-          "sha": "b13d866a78d1d721ea98d9bc2d2ae33913f10c42",
+          "sha": "27660ef9cc20c857363a4d0dd17ab1e2875bde7e",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Pac-Man%20Club-%20Club%20Lambada%20(AR).mra",
           "type": "MRA",
           "extra": {
@@ -4463,7 +4475,7 @@
         },
         {
           "name": "Pac-Man Plus.mra",
-          "sha": "5f7e9645b2c89518fa8fe3b91c8dc1c75db43a3b",
+          "sha": "d714b779e966bdedef88ac4446cfad9d29189195",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Pac-Man%20Plus.mra",
           "type": "MRA",
           "extra": {
@@ -4487,7 +4499,7 @@
         },
         {
           "name": "Ponpoko.mra",
-          "sha": "281b5149b8d0eef52694a3b383e449b11c98218e",
+          "sha": "2b5350c35d60d781f01c040fb5743856a0d5035c",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Ponpoko.mra",
           "type": "MRA",
           "extra": {
@@ -4500,7 +4512,7 @@
         },
         {
           "name": "Puck Man (JP, Set 1).mra",
-          "sha": "f7566b06a9ecef83636205a2fd4060956ca7ac9e",
+          "sha": "e05d13561ae0f6fc1407d75adf77524984096483",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Puck%20Man%20(JP%2C%20Set%201).mra",
           "type": "MRA",
           "extra": {
@@ -4552,7 +4564,7 @@
         },
         {
           "name": "Woodpecker (Set 1).mra",
-          "sha": "d4e4f28c2c70c3f69c620526739a7cd11c96d411",
+          "sha": "f77a13cab9151501daf1fffcc5b2a92e88b2e7aa",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Woodpecker%20(Set%201).mra",
           "type": "MRA",
           "extra": {
