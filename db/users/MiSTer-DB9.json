@@ -2999,7 +2999,13 @@
           "sha": "52abfe79709ecd1c90288e2a7d3441a0ced1d2a7",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IremM62_MiSTer/master/releases/Kid%20Niki%20-%20Radical%20Ninja%20(W).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Kid Niki- Radical Ninja",
+            "rbf": "iremm62",
+            "zips": [
+              "kidniki.zip"
+            ]
+          }
         },
         {
           "name": "Kung-Fu Master (W).mra",
@@ -5907,7 +5913,13 @@
           "sha": "e4cb990a3704eb3dcfc97fca6b0a71abd01cebe5",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SEGASYS1_MiSTer/main/releases/Rafflesia%20(315-5162).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Rafflesia",
+            "rbf": "segasys1",
+            "zips": [
+              "raflesia.zip"
+            ]
+          }
         },
         {
           "name": "Regulus (315-5033, Rev A).mra",
