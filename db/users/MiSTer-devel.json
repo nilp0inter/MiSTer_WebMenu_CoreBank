@@ -2563,8 +2563,14 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-DonkeyKongJunior_20210922.rbf",
+          "sha": "a682ab0905ba8e6dcb8a8076be8d9398950d459a",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-DonkeyKongJunior_MiSTer/master/releases/Arcade-DonkeyKongJunior_20210922.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Donkey Kong Junior (US, Set F-2).mra",
-          "sha": "7549b9ab0ef6c7ca7cfa62408e43c7d68f37bd79",
+          "sha": "978817418ed328a86ab08689fb53fab0cfe1d8c2",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-DonkeyKongJunior_MiSTer/master/releases/Donkey%20Kong%20Junior%20(US%2C%20Set%20F-2).mra",
           "type": "MRA",
           "extra": {
@@ -2671,7 +2677,7 @@
     {
       "name": "Arcade-DottoriKun_MiSTer",
       "description": "MiSTer arcade core for Sega's Dottori-Kun",
-      "readme": "# Dottori-Kun for [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\nBased on DottoriLog by Furrtek: https://github.com/furrtek/DottoriLog\n\nWhich was based on information from Chris Covell: http://www.chrismcovell.com/dottorikun.html\n\nUses the TV80 Z80 core by Guy Hutchison: https://github.com/hutch31/tv80\n\nPort to MiSTer and minor alterations by JimmyStones: https://github.com/JimmyStones/\n\n## Releases\nDottori-Kun (old) - Original ROM, coin input cycles the colour scheme\n\nDottori-Kun (new) - Revised ROM, coin input enters test menu (start to cycle option, coin to select)\n\nDottori-Man Jr. - ROM hack by Chris Covell, coin input enters test menu (arrows to change option, fire to select)\n\n## ROM Files Instructions\n\n**ROMs are not included!** In order to use this arcade core, you will need to provide the correct ROM file yourself.\n\nTo simplify the process .mra files are provided in the releases folder, that specify the required ROMs with their checksums. The ROMs .zip filename refers to the\ncorresponding file from the MAME project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for information on how to setup and use the environment.\n\nQuick reference for folders and file placement:\n\n```\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/games/mame/<mame rom>.zip\n/games/hbmame/<hbmame rom>.zip\n```",
+      "readme": null,
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/Arcade-DottoriKun_MiSTer",
@@ -6235,6 +6241,12 @@
           "name": "Arcade-RallyX_20210815.rbf",
           "sha": "2489a3a8f3c6cc9496054a366ae74bb8abd4facd",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-RallyX_MiSTer/master/releases/Arcade-RallyX_20210815.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-RallyX_20210922.rbf",
+          "sha": "792b8efa6cb3bd856c347df3bfd75f1325b8cb89",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-RallyX_MiSTer/master/releases/Arcade-RallyX_20210922.rbf",
           "type": "RBF"
         },
         {
