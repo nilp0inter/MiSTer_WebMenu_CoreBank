@@ -112,23 +112,33 @@ output = "_Others/jtrumble_20210828.rbf"
 
 
 # jts16
-url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16/releases/jts16_20210820.rbf"
-output = "_Others/jts16_20210820.rbf"
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16/releases/jts16_20210924.rbf"
+output = "_Others/jts16_20210924.rbf"
 
 
 # jts16a2
-url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16a2/releases/jts16a2_20210820.rbf"
-output = "_Others/jts16a2_20210820.rbf"
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16a2/releases/jts16a2_20210924.rbf"
+output = "_Others/jts16a2_20210924.rbf"
 
 
 # jts16b
-url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/jts16b_20210820.rbf"
-output = "_Others/jts16b_20210820.rbf"
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/jts16b_20210924.rbf"
+output = "_Others/jts16b_20210924.rbf"
 
 
 # jts16b1
-url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b1/releases/jts16b1_20210820.rbf"
-output = "_Others/jts16b1_20210820.rbf"
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b1/releases/jts16b1_20210924.rbf"
+output = "_Others/jts16b1_20210924.rbf"
+
+
+# jts16b2
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b2/releases/jts16b2_20210924.rbf"
+output = "_Others/jts16b2_20210924.rbf"
+
+
+# jts16b3
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b3/releases/jts16b3_20210924.rbf"
+output = "_Others/jts16b3_20210924.rbf"
 
 
 # jtsarms
@@ -749,6 +759,16 @@ output = "_Arcade/Time Scanner (set 2, System 16B).mra"
 # Passing Shot (World, 2 Players) (FD1094 317-0080).mra
 url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b1/releases/Passing%20Shot%20(World%2C%202%20Players)%20(FD1094%20317-0080).mra"
 output = "_Arcade/Passing Shot (World, 2 Players) (FD1094 317-0080).mra"
+
+
+# Altered Beast (set 2) (MC-8123B 317-0066).mra
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b2/releases/Altered%20Beast%20(set%202)%20(MC-8123B%20317-0066).mra"
+output = "_Arcade/Altered Beast (set 2) (MC-8123B 317-0066).mra"
+
+
+# Altered Beast (set 8) (8751 317-0078).mra
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b3/releases/Altered%20Beast%20(set%208)%20(8751%20317-0078).mra"
+output = "_Arcade/Altered Beast (set 8) (8751 317-0078).mra"
 
 
 # Side Arms - Hyper Dyne (World, 861129).mra
