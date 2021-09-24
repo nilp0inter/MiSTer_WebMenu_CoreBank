@@ -6625,14 +6625,14 @@
     {
       "name": "Arcade-Scramble_MiSTer",
       "description": "Arcade: Scramble for MiSTer",
-      "readme": "# [Arcade: Scramble](https://www.system16.com/hardware.php?id=554) port to [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\nMiSTer port by Sorgelig\nCopyright (c) MikeJ - Feb 2007\n\n## Description\n\nA simulation model of Konami's Scramble hardware.\n\n## Games\n\nCurrently implemented:\n\n* Amidar\n* Anteater\n* Armored Car\n* Battle of Atlantis\n* Calipso\n* Dark Planet\n* Frogger\n* Lost Tomb\n* Mars\n* Mighty Monkey\n* Minefield\n* Moonwar\n* Rescue\n* Scramble\n* Speed Coin\n* Strategy X\n* Super Cobra\n* Tazz-Mania\n* The End\n* Turtles\n\n## ROM Files Instructions\n\n**ROMs are not included!** In order to use this arcade core, you will need to provide the correct ROM file yourself.\n\nTo simplify the process .mra files are provided in the releases folder, that specify the required ROMs with their checksums. The ROMs .zip filename refers to the\ncorresponding file from the MAME project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for information on how to setup and use the environment.\n\nQuick reference for folders and file placement:\n\n```\n/_Arcade/<game name>.mra  \n/_Arcade/cores/<game rbf>.rbf  \n/_Arcade/mame/<mame rom>.zip  \n/_Arcade/hbmame/<hbmame rom>.zip  \n```\n",
+      "readme": "# [Arcade: Scramble](https://www.system16.com/hardware.php?id=554) port to [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\nMiSTer port by Sorgelig\nCopyright (c) MikeJ - Feb 2007\n\n## Description\n\nA simulation model of Konami's Scramble hardware.\n\n## Games\n\nCurrently implemented:\n\n* Amidar\n* Anteater\n* Armored Car\n* Battle of Atlantis\n* Calipso\n* Dark Planet\n* Frogger\n* Lost Tomb\n* Mars\n* Mighty Monkey\n* Minefield\n* Moonwar\n* Rescue\n* Scramble\n* Speed Coin\n* Strategy X\n* Super Cobra\n* Tazz-Mania\n* The End\n* Turtles\n\n## Hiscore save/load\n\nSave and load of hiscores is supported for the following games on this core:\n - Amidar\n - Anteater\n - Armored Car\n - Battle of Atlantis\n - Calipso\n - Dark Planet\n - Frogger\n - Lost Tomb\n - Minefield\n - Moonwar\n - Rescue\n - Scramble\n - Super Cobra\n - Tazz-Mania\n - The End\n - Turtles\n\nTo save your hiscores manually, press the 'Save Settings' option in the OSD.  Hiscores will be automatically loaded when the core is started.\n\nTo enable automatic saving of hiscores, turn on the 'Autosave Hiscores' option, press the 'Save Settings' option in the OSD, and reload the core.  Hiscores will then be automatically saved (if they have changed) any time the OSD is opened.\n\nHiscore data is stored in /media/fat/config/nvram/ as ```<mra filename>.nvm```\n\n---------------------------------------------------------------------------------\n\n## ROM Files Instructions\n\n**ROMs are not included!** In order to use this arcade core, you will need to provide the correct ROM file yourself.\n\nTo simplify the process .mra files are provided in the releases folder, that specify the required ROMs with their checksums. The ROMs .zip filename refers to the\ncorresponding file from the MAME project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for information on how to setup and use the environment.\n\nQuick reference for folders and file placement:\n\n```\n/_Arcade/<game name>.mra  \n/_Arcade/cores/<game rbf>.rbf  \n/_Arcade/mame/<mame rom>.zip  \n/_Arcade/hbmame/<hbmame rom>.zip  \n```\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/Arcade-Scramble_MiSTer",
       "releases": [
         {
           "name": "Amidar (Scramble).mra",
-          "sha": "a95c05a535a41ac93ac3720915983ac625042bc9",
+          "sha": "f317528b468ea17c2c702fe2b319b6da7ec6063b",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Scramble_MiSTer/master/releases/Amidar%20(Scramble).mra",
           "type": "MRA",
           "extra": {
@@ -6645,7 +6645,7 @@
         },
         {
           "name": "Anteater.mra",
-          "sha": "d2fa9276db109f17e293743596c1dee648a1be4d",
+          "sha": "c76daa9f7741f512cb67da2cc3e4c45c9b0a7602",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Scramble_MiSTer/master/releases/Anteater.mra",
           "type": "MRA",
           "extra": {
@@ -6753,8 +6753,14 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Scramble_20210915.rbf",
+          "sha": "5aaef1fd8fcdff00da9f171dced5f53df9d69745",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Scramble_MiSTer/master/releases/Arcade-Scramble_20210915.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Armored Car.mra",
-          "sha": "80bc662ff4f063a3d531ba4ea3492509eac6a562",
+          "sha": "bca33345bf5fdfafd3203a9fd68f962a64567080",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Scramble_MiSTer/master/releases/Armored%20Car.mra",
           "type": "MRA",
           "extra": {
@@ -6767,7 +6773,7 @@
         },
         {
           "name": "Battle of Atlantis.mra",
-          "sha": "e9699001c6f054fe1b0e1cb8c2f8da0f95fd4944",
+          "sha": "535a1628dbdf0569c23b146a6156d17f89fbd380",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Scramble_MiSTer/master/releases/Battle%20of%20Atlantis.mra",
           "type": "MRA",
           "extra": {
@@ -6780,7 +6786,7 @@
         },
         {
           "name": "Calipso.mra",
-          "sha": "effdd9388c1df06607246af271b9ccbc968c5316",
+          "sha": "b6e7d20e9b0eb3579c822bd136e9de2559aac879",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Scramble_MiSTer/master/releases/Calipso.mra",
           "type": "MRA",
           "extra": {
@@ -6793,7 +6799,7 @@
         },
         {
           "name": "Dark Planet (no bkg).mra",
-          "sha": "b44db840422c3650c1445c31376e33188879adfa",
+          "sha": "68305bcc2c24364d2fa3f27cfba692cad212de2c",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Scramble_MiSTer/master/releases/Dark%20Planet%20(no%20bkg).mra",
           "type": "MRA",
           "extra": {
@@ -6806,7 +6812,7 @@
         },
         {
           "name": "Dark Planet.mra",
-          "sha": "bed421d9ce286e6612dacbe3c1434611a3238b5f",
+          "sha": "33f12b60ee73a742aa335a24ba37950f261271d2",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Scramble_MiSTer/master/releases/Dark%20Planet.mra",
           "type": "MRA",
           "extra": {
@@ -6819,7 +6825,7 @@
         },
         {
           "name": "Frogger (Konami Bugfixed).mra",
-          "sha": "826f83c6e14bc3902c531d479c3687c5e4fd309e",
+          "sha": "de2574a5d47a9f3e1b7623bd0c6eb95137838203",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Scramble_MiSTer/master/releases/Frogger%20(Konami%20Bugfixed).mra",
           "type": "MRA",
           "extra": {
@@ -6832,7 +6838,7 @@
         },
         {
           "name": "Frogger (Sega, Set 2).mra",
-          "sha": "acc2f228d0326841ff87058d92fc109197b6d544",
+          "sha": "14fe449ef18fb8d154a05d2de784c0849e59cee1",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Scramble_MiSTer/master/releases/Frogger%20(Sega%2C%20Set%202).mra",
           "type": "MRA",
           "extra": {
@@ -6845,7 +6851,7 @@
         },
         {
           "name": "Lost Tomb.mra",
-          "sha": "30180609a25026f7a5b40b51a8ed7fa2fbd5700c",
+          "sha": "73369e3b0648c4e0b48b6176dd63a3592732db95",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Scramble_MiSTer/master/releases/Lost%20Tomb.mra",
           "type": "MRA",
           "extra": {
@@ -6884,7 +6890,7 @@
         },
         {
           "name": "Minefield.mra",
-          "sha": "69fed6c7519e597ef42e32d32fd32f7a6c3d30ef",
+          "sha": "1d1602dd88e705652963cd53aa1169fd42ca6681",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Scramble_MiSTer/master/releases/Minefield.mra",
           "type": "MRA",
           "extra": {
@@ -6897,7 +6903,7 @@
         },
         {
           "name": "Moon War.mra",
-          "sha": "8be8ffaf285a8aff10bff687c2aec739f31e38e5",
+          "sha": "315030b2a871cf5bd23e3f6afd2866c582477c44",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Scramble_MiSTer/master/releases/Moon%20War.mra",
           "type": "MRA",
           "extra": {
@@ -6910,7 +6916,7 @@
         },
         {
           "name": "Rescue.mra",
-          "sha": "5eca650d6a646d20900cba435741301bc70aac40",
+          "sha": "89f87fa3c5bc279a41a60d07d29d2bd9afd16aef",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Scramble_MiSTer/master/releases/Rescue.mra",
           "type": "MRA",
           "extra": {
@@ -6923,7 +6929,7 @@
         },
         {
           "name": "Scramble (Stern, Set 1).mra",
-          "sha": "dd0571da73b7aee16168e0cca1336ba3c591be48",
+          "sha": "0d257c7c54b449dcd8fd28ebe9175c6a15ccd03c",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Scramble_MiSTer/master/releases/Scramble%20(Stern%2C%20Set%201).mra",
           "type": "MRA",
           "extra": {
@@ -6962,7 +6968,7 @@
         },
         {
           "name": "Super Cobra.mra",
-          "sha": "a455f80fa25377a4f5aef68bdc4edd2c81c33cf4",
+          "sha": "c38e750bab6960af02e6c99e35ddf69a94616e38",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Scramble_MiSTer/master/releases/Super%20Cobra.mra",
           "type": "MRA",
           "extra": {
@@ -6975,7 +6981,7 @@
         },
         {
           "name": "Tazz-Mania (Set 1).mra",
-          "sha": "5ff2b4c8812543b02d79aa27aa64a8d0451ca980",
+          "sha": "da0dadf8ba1a6f5a08e6a3fa63d7428dd6b13964",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Scramble_MiSTer/master/releases/Tazz-Mania%20(Set%201).mra",
           "type": "MRA",
           "extra": {
@@ -6988,7 +6994,7 @@
         },
         {
           "name": "The End (bkg).mra",
-          "sha": "c753f8d7315b143436258386156e4cf40da98cfe",
+          "sha": "bb7fad13983163d04b4e9064d5c47279899345f3",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Scramble_MiSTer/master/releases/The%20End%20(bkg).mra",
           "type": "MRA",
           "extra": {
@@ -7001,7 +7007,7 @@
         },
         {
           "name": "The End.mra",
-          "sha": "1d6058c3dc00d3af38feca3b0d0897b98570aa3d",
+          "sha": "f00e59f6a9be69f73ea2c906a75683251f15f28f",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Scramble_MiSTer/master/releases/The%20End.mra",
           "type": "MRA",
           "extra": {
@@ -7014,7 +7020,7 @@
         },
         {
           "name": "Turtles.mra",
-          "sha": "459b48f2f0c955d5381caaba993168b7469858cc",
+          "sha": "a7a876dd9d0613893178301a400b9ef22b34741f",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Scramble_MiSTer/master/releases/Turtles.mra",
           "type": "MRA",
           "extra": {
