@@ -1382,11 +1382,89 @@
     {
       "name": "SMS_MiSTer",
       "description": "Sega Master System for MiSTer",
-      "readme": "# Sega Master System and Game Gear for the [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki) and [MiST](https://github.com/mist-devel/mist-board/wiki) boards\n\n### Installation:\n* Copy the *.rbf file at the root of the SD card.\n* Copy *.SMS ROMs into SMS folder.\n\n### Features: \n* Master System, Game Gear and SG-1000 Support\n* NTSC & PAL Support\n* Hide Borders Option - Allows you to fill the screen vertically without black borders.\n* FM Audio Support\n* Extra Sprites Option\n* Cheats\n\n### Download precompiled binaries at:\n* For MiSTer, go to [releases](https://github.com/MiSTer-devel/SMS_MISTer/tree/master/releases) folder.\n* For MiST, go to [mist-binaries](https://github.com/mist-devel/mist-binaries/tree/master/cores/sms).\n\n### Notes:\n* Some games come in .gg format but are in fact SMS games. Rename the .gg extention to .sms or .bin to fix them.\n  These games are mostly listed in this page [SMSpower-SMS-GG list](http://www.smspower.org/Tags/SMS-GG).\n* The \"Aspect ratio\" doesn't do much in PAL mode, that's normal\n* The \"Region\" parameter toggle some hardware features that are specific to the different console models.\n  Some localized games need these modifications to work properly\n* The \"Masked left column\" option controls behaviour of left column when hidden by system (usually during horizontal \n  scrolling). \"BG\" sets it to the background/overscan colour, as on original hardware. \"Black\" makes it black,\n  which may look better on non full-screen settings as the column will blend in with surrounding black area.\n  \"Cut\" will remove the column from the active image, so the horizontal resolution becomes 248 instead of 256. This\n  will distort the image when scaled, particularly on integer scaling settings, but will use more of the screen.\n  When \"Border\" is set to \"Yes\" the left column is always shown as part of the border, so \"Masked left column\" is \n  disabled.\n* Each game cartridge comes with a specific mapper, which description is not included in the .gg ou .sms file.\n  The core has a special logic to automatically determine which mapper needs to be used, but some games make\n  a good effort to make this logic fail. The \"Disable mappers\" parameter permits to force the usage \n  of the most used sega mapper. \n",
+      "readme": "# Sega Master System and Game Gear for the [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki) and [MiST](https://github.com/mist-devel/mist-board/wiki) boards\n\n### Installation:\n* Copy the *.rbf file at the root of the SD card.\n* Copy *.SMS ROMs into SMS folder.\n\n### Features: \n* Master System, Game Gear and SG-1000 Support\n* Sega System E arcade hardware support\n* NTSC & PAL Support\n* Hide Borders Option - Allows you to fill the screen vertically without black borders.\n* FM Audio Support\n* Extra Sprites Option\n* Cheats\n\n### Download precompiled binaries at:\n* For MiSTer, go to [releases](https://github.com/MiSTer-devel/SMS_MISTer/tree/master/releases) folder.\n* For MiST, go to [mist-binaries](https://github.com/mist-devel/mist-binaries/tree/master/cores/sms).\n\n### Notes:\n* Some games come in .gg format but are in fact SMS games. Rename the .gg extention to .sms or .bin to fix them.\n  These games are mostly listed in this page [SMSpower-SMS-GG list](http://www.smspower.org/Tags/SMS-GG).\n* The \"Aspect ratio\" doesn't do much in PAL mode, that's normal\n* The \"Region\" parameter toggle some hardware features that are specific to the different console models.\n  Some localized games need these modifications to work properly\n* The \"Masked left column\" option controls behaviour of left column when hidden by system (usually during horizontal \n  scrolling). \"BG\" sets it to the background/overscan colour, as on original hardware. \"Black\" makes it black,\n  which may look better on non full-screen settings as the column will blend in with surrounding black area.\n  \"Cut\" will remove the column from the active image, so the horizontal resolution becomes 248 instead of 256. This\n  will distort the image when scaled, particularly on integer scaling settings, but will use more of the screen.\n  When \"Border\" is set to \"Yes\" the left column is always shown as part of the border, so \"Masked left column\" is \n  disabled.\n* Each game cartridge comes with a specific mapper, which description is not included in the .gg ou .sms file.\n  The core has a special logic to automatically determine which mapper needs to be used, but some games make\n  a good effort to make this logic fail. The \"Disable mappers\" parameter permits to force the usage \n  of the most used sega mapper. \n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-LLAPI/SMS_MiSTer",
       "releases": [
+        {
+          "name": "Astro Flash (Japan).mra",
+          "sha": "bd594249e4edc5b9e8a36626d4938daa484a56e7",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SMS_MiSTer/master/releases/Astro%20Flash%20(Japan).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Astro Flash (Japan)",
+            "rbf": "SMS",
+            "zips": [
+              "transfrm.zip"
+            ]
+          }
+        },
+        {
+          "name": "Fantasy Zone II - The Tears of Opa-Opa.mra",
+          "sha": "ad80302cf61452c3e199b6bdb0aa34ad1974c401",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SMS_MiSTer/master/releases/Fantasy%20Zone%20II%20-%20The%20Tears%20of%20Opa-Opa.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Fantasy Zone II - The Tears of Opa-Opa (MC-8123, 317-0057)",
+            "rbf": "SMS",
+            "zips": [
+              "fantzn2.zip"
+            ]
+          }
+        },
+        {
+          "name": "Hang On Jr.mra",
+          "sha": "0ee0813363a1d8486f17497f786d3ed63a2e0a48",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SMS_MiSTer/master/releases/Hang%20On%20Jr.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Hang-On Jr. (Rev. B)",
+            "rbf": "SMS",
+            "zips": [
+              "hangonjr.zip"
+            ]
+          }
+        },
+        {
+          "name": "Opa Opa (Rev A, unprotected).mra",
+          "sha": "a313e9fa63df3b92f1ab16e622fd95bf477428f6",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SMS_MiSTer/master/releases/Opa%20Opa%20(Rev%20A%2C%20unprotected).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Opa Opa (Rev A, unprotected)",
+            "rbf": "SMS",
+            "zips": [
+              "opaopa.zip"
+            ]
+          }
+        },
+        {
+          "name": "Opa Opa.mra",
+          "sha": "02638d47de532cab5cbabfc6b84c69a8ba9a56d8",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SMS_MiSTer/master/releases/Opa%20Opa.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Opa Opa (MC-8123, 317-0042)",
+            "rbf": "SMS",
+            "zips": [
+              "opaopa.zip"
+            ]
+          }
+        },
+        {
+          "name": "Riddle of Pythagoras (Japan).mra",
+          "sha": "a033271dc21642b50f2d448c2a405a4c7c795986",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SMS_MiSTer/master/releases/Riddle%20of%20Pythagoras%20(Japan).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Riddle of Pythagoras (Japan)",
+            "rbf": "SMS",
+            "zips": [
+              "ridleofp.zip"
+            ]
+          }
+        },
         {
           "name": "SMS_20200309.rbf",
           "sha": "bce610d20a1548f33cbf61b6eea19a2f695bc841",
@@ -1439,6 +1517,18 @@
           "name": "SMS_20210225.rbf",
           "sha": "accecfa96505fd4d36e5a7ec57a8cb492fd902bd",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SMS_MiSTer/master/releases/SMS_20210225.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SMS_20210910.rbf",
+          "sha": "2040a0983e948486ef25f557e759d7d055ad8c7c",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SMS_MiSTer/master/releases/SMS_20210910.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SMS_20210926.rbf",
+          "sha": "e68e19c99c07bb10a5cc61ed889bd8ebc5a734fc",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SMS_MiSTer/master/releases/SMS_20210926.rbf",
           "type": "RBF"
         },
         {
@@ -1500,6 +1590,51 @@
           "sha": "11956d8dd40a3ac3a4e48d3181774c4e8b2e26bc",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SMS_MiSTer/master/releases/SMS_LLAPI_20210301.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "SMS_LLAPI_20210926.rbf",
+          "sha": "5af32aadf19efd87ba11756de24ef12737354779",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SMS_MiSTer/master/releases/SMS_LLAPI_20210926.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Slap Shooter.mra",
+          "sha": "13b2ff4ac0ccfad8a6257af16734f09cda62fb83",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SMS_MiSTer/master/releases/Slap%20Shooter.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Slap Shooter",
+            "rbf": "SMS",
+            "zips": [
+              "slapshtr.zip"
+            ]
+          }
+        },
+        {
+          "name": "Tetris (Japan, System E).mra",
+          "sha": "d89ec9c6cf80eb989c30f108cd20d710bb449cac",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SMS_MiSTer/master/releases/Tetris%20(Japan%2C%20System%20E).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Tetris (Japan, System E)",
+            "rbf": "SMS",
+            "zips": [
+              "tetrisse.zip"
+            ]
+          }
+        },
+        {
+          "name": "Transformer.mra",
+          "sha": "e5a8d795729725c2fd035774a7b9c31d257bf8c1",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SMS_MiSTer/master/releases/Transformer.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Transformer",
+            "rbf": "SMS",
+            "zips": [
+              "transfrm.zip"
+            ]
+          }
         }
       ]
     },
