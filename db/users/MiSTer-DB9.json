@@ -3127,6 +3127,48 @@
       ]
     },
     {
+      "name": "Arcade-Jailbreak_MiSTer",
+      "description": "An FPGA implementation of JAILBREAK Arcade PCB for the MiSTer platform",
+      "readme": "# JAILBREAK for [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\nAn FPGA implementation of JAILBREAK for the MiSTer platform\n\n## Credits\n- Sorgelig: MiSTer project lead\n- MiSTer-X: [Original Green Beret core design](https://github.com/MiSTer-devel/Arcade-RushnAttack_MiSTer) used as a base for this game\n- blackwine: [Initial JAILBREAK core design](https://github.com/blackwine/Arcade-Jailbreak_MiSTer/tree/3feee0baf62ca38cdddea546f4fb525ef23e596b)\n- Ace: New JAILBREAK core design and Konami custom chip implementations\n- JimmyStones: High score saving support & pause feature\n- Kitrinx: ROM loader\n\n## Features\n- Logic modelled to match the original PCB design as closely as possible\n- Standard joystick and keyboard controls\n- High score saving (Can be saved manually or automatically - manual saving is the default)\n- Greg Miller's cycle-accurate MC6809E CPU core with modifications by Sorgelig and bugfixes by Arnim Laeuger and Jotego as the basis for the KONAMI-1 custom encrypted MC6809E\n- SN76489 sound core by Arnim Laeuger with fixes by Ace and Enforcer\n- VLM5030 sound core by Arnim Laeuger (https://github.com/FPGAArcade/replay_common/tree/master/lib/sound/vlm5030)\n- All audio filters modeled\n\n## Installation\nPlace `*.rbf` into the \"_Arcade/cores\" folder on your SD card.  Then, place `*.mra` into the \"_Arcade\" folder and ROM files from MAME into \"games/mame\".\n\n### ****ATTENTION****\nROMs are not included. In order to use this arcade core, you must provide the correct ROMs.\n\nTo simplify the process, .mra files are provided in the releases folder that specify the required ROMs along with their checksums.  The ROM's .zip filename refers to the corresponding file in the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for information on how to setup and use the environment.\n\nQuick reference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/games/mame/<mame rom>.zip\n/games/hbmame/<hbmame rom>.zip\n\n## Controls\n### Keyboard\n| Key | Function |\n| --- | --- |\n| 1 | 1-Player Start |\n| 2 | 2-Player Start |\n| 5, 6 | Coin |\n| 9 | Service Credit |\n| Arrow keys | Movement |\n| CTRL | Fire |\n| ALT | Cycle weapons |\n\n### Joystick (buttons follow Super NES layout)\n| Joystick action | Function |\n| --- | --- |\n| D-Pad | Movement |\n| B | Fire |\n| A | Cycle weapons |\n\n## Known Issues\n1) Accuracy of video timings cannot be guaranteed yet until they are measured on an original JAILBREAK PCB\n2) Audio filter accuracy cannot be guaranteed yet until the frequency response of an original JAILBREAK PCB is fully analyzed\n3) Sprite/tilemap priorities are not 100% accurate\n\n## High Score Save/Load\nSave and load of high scores is supported for this core.\n\n- To save your high scores manually, press the 'Save Settings' option in the OSD.  Hiscores will be automatically loaded when the core is started.\n- To enable automatic saving of high scores, turn on the 'Autosave Hiscores' option, press the 'Save Settings' option in the OSD, and reload the core.  High scores will then be automatically saved (if they have changed) any time the OSD is opened.\n\nHigh score data is stored in /media/fat/config/nvram/ as ```<mra filename>.nvm```\n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/MiSTer-DB9/Arcade-Jailbreak_MiSTer",
+      "releases": [
+        {
+          "name": "Arcade-Jailbreak_20210915.rbf",
+          "sha": "7e8030b9983afa77c0bf8fb91f2c123213f257d0",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Jailbreak_MiSTer/main/releases/Arcade-Jailbreak_20210915.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Jailbreak.mra",
+          "sha": "84f8b7663bec18b59a8cf672e4391595c9645796",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Jailbreak_MiSTer/main/releases/Jailbreak.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Jailbreak",
+            "rbf": "Jailbreak",
+            "zips": [
+              "jailbrek.zip"
+            ]
+          }
+        },
+        {
+          "name": "Manhattan 24 Bunsyo (J).mra",
+          "sha": "411545f896c0f977247493e59d1b9e485ea08a62",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Jailbreak_MiSTer/main/releases/Manhattan%2024%20Bunsyo%20(J).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Manhattan 24 Bunsyo",
+            "rbf": "Jailbreak",
+            "zips": [
+              "jailbrek.zip|manhatan.zip"
+            ]
+          }
+        }
+      ]
+    },
+    {
       "name": "Arcade-LadyBug_MiSTer",
       "description": "Arcade: Lady Bug for MiSTer",
       "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: Lady Bug port to MiSTer by Sorgelig\n-- 14 November 2017\n-- \n---------------------------------------------------------------------------------\n-- A simulation model of Lady Bug hardware\n-- Unknown Author on Papilio Plus board.\n---------------------------------------------------------------------------------\n-- \n-- Support screen and controls rotation on HDMI output.\n-- Only controls are rotated on VGA output.\n-- \n-- \n-- Keyboard inputs :\n--\n--   F2  : Coin + Start 2 players\n--   F1  : Coin + Start 1 player\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   R,F,D,G     : Player 2 Movements\n--\n--\n-- Joystick support.\n-- \n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
