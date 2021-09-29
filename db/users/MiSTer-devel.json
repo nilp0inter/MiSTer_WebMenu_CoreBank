@@ -6653,6 +6653,35 @@
       "releases": []
     },
     {
+      "name": "Arcade-ScooterShooter_MiSTer",
+      "description": "Scooter Shooter for MiSTer",
+      "readme": "# Scooter Shooter for [MISTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\nAn FPGA implementation of Scooter Shooter for the MiSTer platform\n\n## Credits\n- Sorgelig: MiSTer project lead\n- MiSTer-X: Original Konami 005849 design sourced from Green Beret core (https://github.com/MiSTer-devel/Arcade-RushnAttack_MiSTer)\n- Ace: Core design & 005849 tweaks\n- JimmyStones: High score saving support & pause feature\n- Kitrinx: ROM loader\n\n## Features\n- Logic modelled to match the original PCB design as closely as possible\n- Standard joystick and keyboard controls\n- High score saving (Can be saved manually or automatically - manual saving is the default)\n- Greg Miller's cycle-accurate MC6809E CPU core with modifications by Sorgelig and bugfixes by Arnim Laeuger and Jotego\n- T80s CPU by Daniel Wallner with fixes by MikeJ, Sorgelig, and others\n- YM2203 implementation using JT03 by Jotego\n- Audio filtering, including the PCB's switchable low-pass filters\n\n## Installation\nPlace `*.rbf` into the \"_Arcade/cores\" folder on your SD card.  Then, place `*.mra` into the \"_Arcade\" folder and ROM files from MAME into \"games/mame\".\n\n### ****ATTENTION****\nROMs are not included. In order to use this arcade core, you must provide the correct ROMs.\n\nTo simplify the process, .mra files are provided in the releases folder that specify the required ROMs along with their checksums.  The ROM's .zip filename refers to the corresponding file in the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for information on how to setup and use the environment.\n\nQuick reference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/games/mame/<mame rom>.zip\n/games/hbmame/<hbmame rom>.zip\n\n## Controls\n### Keyboard\n| Key | Function |\n| --- | --- |\n| 1 | 1-Player Start |\n| 2 | 2-Player Start |\n| 5, 6 | Coin |\n| 9 | Service Credit |\n| Arrow keys | Movement |\n| CTRL | Fire |\n\n### Joystick (buttons follow Super NES layout)\n| Joystick action | Function |\n| --- | --- |\n| D-Pad | Movement |\n| B | Fire |\n\n## Note regarding video output\nThe video output from Scooter Shooter has highly elevated gamma levels.  To correct this, apply gamma correction from within MiSTer's UI, Contrast Boost 3 recommended.\n\n## Known Issues\n1) Accuracy of video timings and audio frequency response cannot be guaranteed yet until they are measured on an original Scooter Shooter PCB\n\n## High Score Save/Load\nSave and load of high scores is supported for this core.\n\n- To save your high scores manually, press the 'Save Settings' option in the OSD.  High scores will be automatically loaded when the core is started.\n- To enable automatic saving of high scores, turn on the 'Autosave Hiscores' option, press the 'Save Settings' option in the OSD, and reload the core.  High scores will then be automatically saved (if they have changed) any time the OSD is opened.\n\nHigh score data is stored in /media/fat/config/nvram/ as ```<mra filename>.nvm```\n",
+      "archived": false,
+      "fork": false,
+      "url": "https://github.com/MiSTer-devel/Arcade-ScooterShooter_MiSTer",
+      "releases": [
+        {
+          "name": "Arcade-ScooterShooter_20210928.rbf",
+          "sha": "3fa5e8f4ec6c3987070f25d07b93a0f924ce1181",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-ScooterShooter_MiSTer/main/releases/Arcade-ScooterShooter_20210928.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Scooter Shooter.mra",
+          "sha": "6beb8adf08d3af6f2eec761e521d188a9e385611",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-ScooterShooter_MiSTer/main/releases/Scooter%20Shooter.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Scooter Shooter",
+            "rbf": "ScooterShooter",
+            "zips": [
+              "scotrsht.zip"
+            ]
+          }
+        }
+      ]
+    },
+    {
       "name": "Arcade-Scramble_MiSTer",
       "description": "Arcade: Scramble for MiSTer",
       "readme": "# [Arcade: Scramble](https://www.system16.com/hardware.php?id=554) port to [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\nMiSTer port by Sorgelig\nCopyright (c) MikeJ - Feb 2007\n\n## Description\n\nA simulation model of Konami's Scramble hardware.\n\n## Games\n\nCurrently implemented:\n\n* Amidar\n* Anteater\n* Armored Car\n* Battle of Atlantis\n* Calipso\n* Dark Planet\n* Frogger\n* Lost Tomb\n* Mars\n* Mighty Monkey\n* Minefield\n* Moonwar\n* Rescue\n* Scramble\n* Speed Coin\n* Strategy X\n* Super Cobra\n* Tazz-Mania\n* The End\n* Turtles\n\n## Hiscore save/load\n\nSave and load of hiscores is supported for the following games on this core:\n - Amidar\n - Anteater\n - Armored Car\n - Battle of Atlantis\n - Calipso\n - Dark Planet\n - Frogger\n - Lost Tomb\n - Minefield\n - Moonwar\n - Rescue\n - Scramble\n - Super Cobra\n - Tazz-Mania\n - The End\n - Turtles\n\nTo save your hiscores manually, press the 'Save Settings' option in the OSD.  Hiscores will be automatically loaded when the core is started.\n\nTo enable automatic saving of hiscores, turn on the 'Autosave Hiscores' option, press the 'Save Settings' option in the OSD, and reload the core.  Hiscores will then be automatically saved (if they have changed) any time the OSD is opened.\n\nHiscore data is stored in /media/fat/config/nvram/ as ```<mra filename>.nvm```\n\n---------------------------------------------------------------------------------\n\n## ROM Files Instructions\n\n**ROMs are not included!** In order to use this arcade core, you will need to provide the correct ROM file yourself.\n\nTo simplify the process .mra files are provided in the releases folder, that specify the required ROMs with their checksums. The ROMs .zip filename refers to the\ncorresponding file from the MAME project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for information on how to setup and use the environment.\n\nQuick reference for folders and file placement:\n\n```\n/_Arcade/<game name>.mra  \n/_Arcade/cores/<game rbf>.rbf  \n/_Arcade/mame/<mame rom>.zip  \n/_Arcade/hbmame/<hbmame rom>.zip  \n```\n",
@@ -8088,112 +8117,6 @@
               "silkworm.zip"
             ]
           }
-        }
-      ]
-    },
-    {
-      "name": "Arcade-TIAMC1_MiSTer",
-      "description": "Soviet/Ukrainian Arcade TIA-MC1.",
-      "readme": "## Introduction\n\nThis is the TIA-MC1 arcade from USSR for the [MiSTer board](https://github.com/MiSTer-devel).\n\nAll information taken from [mame/tiamc1.cpp](https://github.com/mamedev/mame/blob/master/src/mame/drivers/tiamc1.cpp). Many thanks to Shiru, Eugene Sandulenko and all the other contributors.\n\nSee https://en.wikipedia.org/wiki/TIA-MC-1\n\nA short [video of the arcade in action](https://www.youtube.com/watch?v=bwcVSt5q1GA)\n\n## The MiSTer Core\n\nThere may still be a few things off.\n\nThe first 2 buttons are for game inputs, the 3rd is used for coin.\n\nGorodki uses a single axis for analog input, the core supports joystick x axis, paddle or spinner. See OSD for config.",
-      "archived": false,
-      "fork": false,
-      "url": "https://github.com/MiSTer-devel/Arcade-TIAMC1_MiSTer",
-      "releases": [
-        {
-          "name": "Billiard.mra",
-          "sha": "0dfc44f21a09a81b2af6ef953ac991f5ed47342f",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TIAMC1_MiSTer/main/releases/Billiard.mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Billiard",
-            "rbf": "tiamc1",
-            "zips": [
-              "bilyard.zip"
-            ]
-          }
-        },
-        {
-          "name": "Gorodki.mra",
-          "sha": "13fc9026fa62fd97867c7a3a337338841f74e405",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TIAMC1_MiSTer/main/releases/Gorodki.mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Gorodki",
-            "rbf": "tiamc1",
-            "zips": [
-              "gorodki.zip"
-            ]
-          }
-        },
-        {
-          "name": "Konek Gorbunok.mra",
-          "sha": "0b74a73f296b089b1b6cf97192709f64647d7094",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TIAMC1_MiSTer/main/releases/Konek%20Gorbunok.mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Konek Gorbunok",
-            "rbf": "tiamc1",
-            "zips": [
-              "konek.zip"
-            ]
-          }
-        },
-        {
-          "name": "Kot-Rybolov.mra",
-          "sha": "9ffa8bd869477256ec27b3bf2b3284c7cb0fc8e3",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TIAMC1_MiSTer/main/releases/Kot-Rybolov.mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Kot-Rybolov",
-            "rbf": "tiamc1",
-            "zips": [
-              "kot.zip"
-            ]
-          }
-        },
-        {
-          "name": "S.O.S..mra",
-          "sha": "c84ce1425914b0eea87d7dde65b159cf4fced874",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TIAMC1_MiSTer/main/releases/S.O.S..mra",
-          "type": "MRA",
-          "extra": {
-            "name": "S.O.S.",
-            "rbf": "tiamc1",
-            "zips": [
-              "sosterm.zip"
-            ]
-          }
-        },
-        {
-          "name": "Snezhnaja Koroleva.mra",
-          "sha": "96aec0c88feebf03fe0ff81ca2d4cc9a75d54ca2",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TIAMC1_MiSTer/main/releases/Snezhnaja%20Koroleva.mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Snezhnaja Koroleva",
-            "rbf": "tiamc1",
-            "zips": [
-              "koroleva.zip"
-            ]
-          }
-        },
-        {
-          "name": "TIAMC1_20210320.rbf",
-          "sha": "3dd8b65549c979f4d60b2187ea0426ea722a8084",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TIAMC1_MiSTer/main/releases/TIAMC1_20210320.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "TIAMC1_20210321.rbf",
-          "sha": "8d0bbce9b1d6a3567c3ebc65e9a66efcd74f0b93",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TIAMC1_MiSTer/main/releases/TIAMC1_20210321.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "TIAMC1_20210322.rbf",
-          "sha": "5639fb64badfc1d39b1e12b3bf7086dcd6b458f2",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TIAMC1_MiSTer/main/releases/TIAMC1_20210322.rbf",
-          "type": "RBF"
         }
       ]
     },
