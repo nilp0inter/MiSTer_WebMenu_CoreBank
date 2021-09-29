@@ -8198,6 +8198,112 @@
       ]
     },
     {
+      "name": "Arcade-TIAMC1_MiSTer",
+      "description": "Soviet/Ukrainian Arcade TIA-MC1.",
+      "readme": "## Introduction\n\nThis is the TIA-MC1 arcade from USSR for the [MiSTer board](https://github.com/MiSTer-devel).\n\nAll information taken from [mame/tiamc1.cpp](https://github.com/mamedev/mame/blob/master/src/mame/drivers/tiamc1.cpp). Many thanks to Shiru, Eugene Sandulenko and all the other contributors.\n\nSee https://en.wikipedia.org/wiki/TIA-MC-1\n\nA short [video of the arcade in action](https://www.youtube.com/watch?v=bwcVSt5q1GA)\n\n## The MiSTer Core\n\nThere may still be a few things off.\n\nThe first 2 buttons are for game inputs, the 3rd is used for coin.\n\nGorodki uses a single axis for analog input, the core supports joystick x axis, paddle or spinner. See OSD for config.",
+      "archived": false,
+      "fork": false,
+      "url": "https://github.com/MiSTer-devel/Arcade-TIAMC1_MiSTer",
+      "releases": [
+        {
+          "name": "Billiard.mra",
+          "sha": "0dfc44f21a09a81b2af6ef953ac991f5ed47342f",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TIAMC1_MiSTer/main/releases/Billiard.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Billiard",
+            "rbf": "tiamc1",
+            "zips": [
+              "bilyard.zip"
+            ]
+          }
+        },
+        {
+          "name": "Gorodki.mra",
+          "sha": "13fc9026fa62fd97867c7a3a337338841f74e405",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TIAMC1_MiSTer/main/releases/Gorodki.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Gorodki",
+            "rbf": "tiamc1",
+            "zips": [
+              "gorodki.zip"
+            ]
+          }
+        },
+        {
+          "name": "Konek Gorbunok.mra",
+          "sha": "0b74a73f296b089b1b6cf97192709f64647d7094",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TIAMC1_MiSTer/main/releases/Konek%20Gorbunok.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Konek Gorbunok",
+            "rbf": "tiamc1",
+            "zips": [
+              "konek.zip"
+            ]
+          }
+        },
+        {
+          "name": "Kot-Rybolov.mra",
+          "sha": "9ffa8bd869477256ec27b3bf2b3284c7cb0fc8e3",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TIAMC1_MiSTer/main/releases/Kot-Rybolov.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Kot-Rybolov",
+            "rbf": "tiamc1",
+            "zips": [
+              "kot.zip"
+            ]
+          }
+        },
+        {
+          "name": "S.O.S..mra",
+          "sha": "c84ce1425914b0eea87d7dde65b159cf4fced874",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TIAMC1_MiSTer/main/releases/S.O.S..mra",
+          "type": "MRA",
+          "extra": {
+            "name": "S.O.S.",
+            "rbf": "tiamc1",
+            "zips": [
+              "sosterm.zip"
+            ]
+          }
+        },
+        {
+          "name": "Snezhnaja Koroleva.mra",
+          "sha": "96aec0c88feebf03fe0ff81ca2d4cc9a75d54ca2",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TIAMC1_MiSTer/main/releases/Snezhnaja%20Koroleva.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Snezhnaja Koroleva",
+            "rbf": "tiamc1",
+            "zips": [
+              "koroleva.zip"
+            ]
+          }
+        },
+        {
+          "name": "TIAMC1_20210320.rbf",
+          "sha": "3dd8b65549c979f4d60b2187ea0426ea722a8084",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TIAMC1_MiSTer/main/releases/TIAMC1_20210320.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "TIAMC1_20210321.rbf",
+          "sha": "8d0bbce9b1d6a3567c3ebc65e9a66efcd74f0b93",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TIAMC1_MiSTer/main/releases/TIAMC1_20210321.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "TIAMC1_20210322.rbf",
+          "sha": "5639fb64badfc1d39b1e12b3bf7086dcd6b458f2",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TIAMC1_MiSTer/main/releases/TIAMC1_20210322.rbf",
+          "type": "RBF"
+        }
+      ]
+    },
+    {
       "name": "Arcade-TimePilot_MiSTer",
       "description": "Arcade: Time Pilot for MiSTer",
       "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: Time Pilot port to MiSTer by Sorgelig\n-- 06 November 2017\n-- \n---------------------------------------------------------------------------------\n-- Time pilot by Dar (darfpga@aol.fr) (29/10/2017)\n-- http://darfpga.blogspot.fr\n---------------------------------------------------------------------------------\n-- gen_ram.vhd & io_ps2_keyboard\n-------------------------------- \n-- Copyright 2005-2008 by Peter Wendrich (pwsoft@syntiac.com)\n-- http://www.syntiac.com/fpga64.html\n---------------------------------------------------------------------------------\n-- T80/T80se - Version : 0247\n-----------------------------\n-- Z80 compatible microprocessor core\n-- Copyright (c) 2001-2002 Daniel Wallner (jesus@opencores.org)\n---------------------------------------------------------------------------------\n-- YM2149 (AY-3-8910)\n-- Copyright (c) MikeJ - Jan 2005\n---------------------------------------------------------------------------------\n-- \n-- Support screen and controls rotation on HDMI output.\n-- Only controls are rotated on VGA output.\n-- \n-- \n-- Keyboard inputs :\n--\n--   F2          : Coin + Start 2 players\n--   F1          : Coin + Start 1 player\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--   SPACE,CTRL  : Fire  \n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   R,F,D,G     : Player 2 Movements\n--   A           : Fire\n--\n-- Joystick support.\n-- \n-- High score save/load - To save your scores use the 'Save Settings' option in the OSD.  \n-- \n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
