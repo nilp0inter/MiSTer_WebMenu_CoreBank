@@ -3959,7 +3959,7 @@
     {
       "name": "Arcade-IronHorse_MiSTer",
       "description": "Iron Horse for MiSTer",
-      "readme": "# Iron Horse for [MISTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\nAn FPGA implementation of Iron Horse for the MiSTer platform\n\n## Credits\n- Sorgelig: MiSTer project lead\n- Ace: Core design and Konami custom chip implementations\n- ElectronAsh: Assistance with Konami custom chip implementations\n- Steve C. - Shiffy: Sourcing a bootleg Iron Horse PCB for reverse-engineering\n- JimmyStones: High score saving support & pause feature\n- Kitrinx: ROM loader\n\n## Features\n- Logic modelled to match the original as closely as possible\n- Standard joystick and keyboard controls\n- High score saving (To save your scores, use the 'Save Settings' option in the OSD)\n- Greg Miller's cycle-accurate MC6809E CPU core with modifications by Sorgelig\n- T80s CPU by Daniel Wallner with fixes by MikeJ, Sorgelig, and others\n- YM2203 implementation using JT03 by Jotego\n- Modeling of bootleg PCBs' timing and graphical differences\n- Fully-tuned audio filters including the PCB's switchable low-pass filters\n\n## Installation\nPlace `*.rbf` into the \"_Arcade/cores\" folder on your SD card.  Then, place `*.mra` into the \"_Arcade\" folder and ROM files from MAME into \"games/mame\".\n\n### ****ATTENTION****\nROMs are not included. In order to use this arcade core, you must provide the correct ROMs.\n\nTo simplify the process, .mra files are provided in the releases folder that specify the required ROMs along with their checksums.  The ROM's .zip filename refers to the corresponding file in the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for information on how to setup and use the environment.\n\nQuick reference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/games/mame/<mame rom>.zip\n/games/hbmame/<hbmame rom>.zip\n\n## Controls\n### Keyboard\n| Key | Function |\n| --- | --- |\n| 1 | 1-Player Start |\n| 2 | 2-Player Start |\n| 5, 6 | Coin |\n| 9 | Service Credit |\n| Arrow keys | Movement |\n| CTRL | Power |\n| ALT | Shoot |\n| Space | Crouch |\n\n### Joystick\n| Joystick action | Function |\n| --- | --- |\n| D-Pad | Movement |\n| Y | Power |\n| B | Attack |\n| A | Crouch |\n\n## Known Issues\n1) Sprites render one frame earlier than normal - this is not correct behavior for Iron Horse's graphics rendering\n2) Although bootleg flaws are modeled, sprite flickering is not 100% accurate and the slower clock used by bootleg Iron Horse PCBs is missing - as such, the core behaves as if said bootleg used the same clock as the original PCB\n3) The high score system may cause lockups or unusual behavior when high scores are loaded - resetting the core usually fixes this\n4) The volume scale of the YM2203's SSG section needs further verification\n",
+      "readme": "# Iron Horse for [MISTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\nAn FPGA implementation of Iron Horse for the MiSTer platform\n\n## Credits\n- Sorgelig: MiSTer project lead\n- Ace: Core design and Konami custom chip implementations\n- ElectronAsh: Assistance with Konami custom chip implementations\n- Steve C. - Shiffy: Sourcing a bootleg Iron Horse PCB for reverse-engineering\n- JimmyStones: High score saving support & pause feature\n- Kitrinx: ROM loader\n\n## Features\n- Logic modelled to match the original as closely as possible\n- Standard joystick and keyboard controls\n- High score saving\n- Greg Miller's cycle-accurate MC6809E CPU core with modifications by Sorgelig\n- T80s CPU by Daniel Wallner with fixes by MikeJ, Sorgelig, and others\n- YM2203 implementation using JT03 by Jotego\n- Modeling of bootleg PCBs' timing and graphical differences\n- Fully-tuned audio filters including the PCB's switchable low-pass filters\n\n## Installation\nPlace `*.rbf` into the \"_Arcade/cores\" folder on your SD card.  Then, place `*.mra` into the \"_Arcade\" folder and ROM files from MAME into \"games/mame\".\n\n### ****ATTENTION****\nROMs are not included. In order to use this arcade core, you must provide the correct ROMs.\n\nTo simplify the process, .mra files are provided in the releases folder that specify the required ROMs along with their checksums.  The ROM's .zip filename refers to the corresponding file in the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for information on how to setup and use the environment.\n\nQuick reference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/games/mame/<mame rom>.zip\n/games/hbmame/<hbmame rom>.zip\n\n## Controls\n### Keyboard\n| Key | Function |\n| --- | --- |\n| 1 | 1-Player Start |\n| 2 | 2-Player Start |\n| 5, 6 | Coin |\n| 9 | Service Credit |\n| Arrow keys | Movement |\n| CTRL | Power |\n| ALT | Shoot |\n| Space | Crouch |\n\n### Joystick\n| Joystick action | Function |\n| --- | --- |\n| D-Pad | Movement |\n| Y | Power |\n| B | Attack |\n| A | Crouch |\n\n## Known Issues\n1) Sprites render one frame earlier than normal - this is not correct behavior for Iron Horse's graphics rendering\n2) Although bootleg flaws are modeled, sprite flickering is not 100% accurate and the slower clock used by bootleg Iron Horse PCBs is missing - as such, the core behaves as if said bootleg used the same clock as the original PCB\n3) The high score system may cause lockups or unusual behavior when high scores are loaded - resetting the core usually fixes this\n4) The volume scale of the YM2203's SSG section needs further verification\n\n## Hiscore save/load\n\nSave and load of hiscores is supported for this core:\n\nTo save your hiscores manually, press the 'Save Settings' option in the OSD.  Hiscores will be automatically loaded when the core is started.\n\nTo enable automatic saving of hiscores, turn on the 'Autosave Hiscores' option, press the 'Save Settings' option in the OSD, and reload the core.  Hiscores will then be automatically saved (if they have changed) any time the OSD is opened.\n\nHiscore data is stored in /media/fat/config/nvram/ as ```<mra filename>.nvm```\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/Arcade-IronHorse_MiSTer",
@@ -3971,8 +3971,14 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-IronHorse_20210928.rbf",
+          "sha": "b5447b092c28073079490ac26831701244ac8066",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IronHorse_MiSTer/main/releases/Arcade-IronHorse_20210928.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Iron Horse (Ver. K).mra",
-          "sha": "13d0c38870e20f68eb0a139570cf96f7f1c4c5c1",
+          "sha": "42133cf9f06ad8954854b536fa3dd5bccff573ea",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IronHorse_MiSTer/main/releases/Iron%20Horse%20(Ver.%20K).mra",
           "type": "MRA",
           "extra": {
@@ -4172,8 +4178,14 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-LadyBug_20210927.rbf",
+          "sha": "62a3c0db9e170262ed83f9467f40c0268f21f90e",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-LadyBug_MiSTer/master/releases/Arcade-LadyBug_20210927.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Cosmic Avenger.mra",
-          "sha": "befe4e886b78d302cba48afde9741f8e013e03f0",
+          "sha": "6442d76e37d9558f76fb2b4cf52a64ac6505f305",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-LadyBug_MiSTer/master/releases/Cosmic%20Avenger.mra",
           "type": "MRA",
           "extra": {
@@ -4187,7 +4199,7 @@
         },
         {
           "name": "Dorodon (Set 1).mra",
-          "sha": "97da8d299ce634263b80072ac60c03bfb2a668e6",
+          "sha": "15559e96d7aa2b741990cd560add156cc1f317ce",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-LadyBug_MiSTer/master/releases/Dorodon%20(Set%201).mra",
           "type": "MRA",
           "extra": {
@@ -4201,7 +4213,7 @@
         },
         {
           "name": "Lady Bug.mra",
-          "sha": "ae6b3f079b07f50d72294a71a4c03d0ce5cce6e2",
+          "sha": "2cbad4ef314b989efdf7b5b685df97195adc7cce",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-LadyBug_MiSTer/master/releases/Lady%20Bug.mra",
           "type": "MRA",
           "extra": {
@@ -4215,7 +4227,7 @@
         },
         {
           "name": "Snap Jack.mra",
-          "sha": "d02ce372a930dc1afdb605fbf62a2f2021925ac9",
+          "sha": "39643b12d1319e6a1fa46f5b48f09e07a4e5b2ba",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-LadyBug_MiSTer/master/releases/Snap%20Jack.mra",
           "type": "MRA",
           "extra": {
