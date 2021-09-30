@@ -5019,6 +5019,97 @@
       ]
     },
     {
+      "name": "Arcade-QBert_MiSTer",
+      "description": "Q*Bert core for MiSTer",
+      "readme": "![QBert Character](./qbert.png) MiSTer Q*Bert\r\n=============================================\r\n\r\nQ*Bert arcade core for MiSTer FPGA by Pierco. It's a reproduction of the original PCBs rather than a reinterpretation but with some dual port RAM exceptions.\r\n\r\nAdditional details\r\n------------------\r\n\r\n**Audio board MA216:**\r\n\r\n- SC01 is not implemented. Waiting for brave people to do it.\r\n\r\n**NVRAM:**\r\n\r\n- Not implemented - NVRAM should be C5/C6 on schematics.\r\n\r\n**Ports:**\r\n\r\n- IP17-10: input port for test buttons, coins and player 1/2.\r\n- IP47-40: input port for joystick.\r\n- OP27-20: output port for sound interface\r\n- OP33-37: output port for knocker and coin meter.\r\n\r\nGame Compatibility List\r\n-----------------------\r\n\r\nWorking:\r\n\r\n- QBert: 100% compatible.\r\n- QBert Qubes: 100% compatible.\r\n- Mad Planets: 100% compatible.\r\n\r\nNot working yet:\r\n\r\n- Curve Ball: dip switch order is weird, no sound.\r\n- Insector: 100% compatible, dip switch problems, controller inverted & no test mode(?).\r\n- Tyls: 100% compatible - dip switches inverted.\r\n\r\nKnown Bugs\r\n----------\r\n\r\n- QBert Qubes: \"Supreme Nosers\" screen works only after a reset.\r\n- Problem with vertical position register E1-2. When a new object is falling from the top of the screen (ball), it appears briefly at the bottom of the screen.\r\n- High Scores screen: the big three letters of player's name are not displayed correctly. It works well after a few resets (is it a problem with bus sharing logic which sends zeros to simulate high impedance for ORing outputs?). I don't have the PCB so it's difficult to know the original behavior.\r\n- Votrax chip is cruelly missing, QBert needs his @!#?@! voice!!!\r\n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/MiSTer-DB9/Arcade-QBert_MiSTer",
+      "releases": [
+        {
+          "name": "Arcade-QBert_20210206.rbf",
+          "sha": "f799abb30c1d748e4064aa69475aefcc207e36ce",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-QBert_MiSTer/master/releases/Arcade-QBert_20210206.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-QBert_20210207.rbf",
+          "sha": "f8169b4a5487a64e13eb0ded45074cfc7dd4bdf5",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-QBert_MiSTer/master/releases/Arcade-QBert_20210207.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-QBert_20210214.rbf",
+          "sha": "7c6e27d9ba53562e270f27cb19be84cebca5b283",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-QBert_MiSTer/master/releases/Arcade-QBert_20210214.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-QBert_20210215.rbf",
+          "sha": "db98fcc249f806b3e837f564cc38481dee6e3b3b",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-QBert_MiSTer/master/releases/Arcade-QBert_20210215.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-QBert_20210308.rbf",
+          "sha": "60013b502622a558f26062a704f0119f3fbcf0a3",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-QBert_MiSTer/master/releases/Arcade-QBert_20210308.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-QBert_20210916.rbf",
+          "sha": "105ca3e7e2553b997d1920b85ef5ee06667cc224",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-QBert_MiSTer/master/releases/Arcade-QBert_20210916.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-QBert_20210923.rbf",
+          "sha": "286d9a54b70ec39dc677bc2b0f154a1383e8d472",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-QBert_MiSTer/master/releases/Arcade-QBert_20210923.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Mad Planets.mra",
+          "sha": "bb6f5ae1d7842c261b9eb2b7c12dabeaedde9df9",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-QBert_MiSTer/master/releases/Mad%20Planets.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Mad Planets",
+            "rbf": "qbert",
+            "zips": [
+              "mplanets.zip"
+            ]
+          }
+        },
+        {
+          "name": "Q'bert (US, Set 1).mra",
+          "sha": "3d4af0312d552b806b8c61dc8def9771aacb5cb8",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-QBert_MiSTer/master/releases/Q'bert%20(US%2C%20Set%201).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Q*bert",
+            "rbf": "qbert",
+            "zips": [
+              "qbert.zip"
+            ]
+          }
+        },
+        {
+          "name": "QBert Qubes.mra",
+          "sha": "e80a43b805f341313765482566a975970d852ba3",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-QBert_MiSTer/master/releases/QBert%20Qubes.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Q*bert Qubes",
+            "rbf": "qbert",
+            "zips": [
+              "qbertqub.zip"
+            ]
+          }
+        }
+      ]
+    },
+    {
       "name": "Arcade-RallyX_MiSTer",
       "description": "RallyX and NRallyX core",
       "readme": "# [Arcade: New Rally-X](https://www.arcade-museum.com/game_detail.php?game_id=9259) for [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\nby [MiSTer-X](https://twitter.com/mrx_8b)  \nFrom: https://github.com/MrX-8B/MiSTer-Arcade-RallyX\n\n## Description\n\nA simulation model of the Midway Manufacturing Rally-X arcade hardware. Click the wikipedia link in the title for more information or search \"Rally-X Arcade\" in your favorite search engine to learn more.\n\n## Games\n\n* Rally-X (32k Version)\n* New Rally-X\n\n## ROM Files Instructions\n\n**ROMs are not included!** In order to use this arcade core, you will need to provide the correct ROM file yourself.\n\nFind this zip file somewhere. You need to find the file exactly as required. Check the .mra file in a text editor for more information.  \nDo not rename other zip files even if they also represent the same game - they are not compatible!  \nThe name of zip is taken from M.A.M.E. project, so you can get more info about hashes and contained files there.\n\nHow to install:\n1. Update MiSTer binary to v200106 or later\n2. copy releases/*.mra to /media/fat/_Arcade\n3. copy releases/*.rbf to /media/fat/_Arcade/cores\n4. copy ROM zip files  to /media/fat/_Arcade/mame\n\nBe sure to use the MRA file in \"releases\" of this repository.  \nIt does not guarantee the operation when using other MRA files.\n\n## Copyright and License\n\n```\n---------------------------------------------------------------------------------\n-- FPGA New Rally-X for Spartan-3 Starter Board\n------------------------------------------------\n-- Copyright (c) 2005 MiSTer-X\n---------------------------------------------------------------------------------\n-- T80/T80s - Version : 0242\n-----------------------------\n-- Z80 compatible microprocessor core\n-- Copyright (c) 2001-2002 Daniel Wallner (jesus@opencores.org)\n---------------------------------------------------------------------------------\n```\n",
@@ -5447,6 +5538,35 @@
           "sha": "c50969b011b6581dcfefd5d6fb3b69df0d8586fa",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-RushnAttack_MiSTer/master/releases/rommap.txt",
           "type": "OTHER"
+        }
+      ]
+    },
+    {
+      "name": "Arcade-ScooterShooter_MiSTer",
+      "description": "Scooter Shooter for MiSTer",
+      "readme": "# Scooter Shooter for [MISTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\nAn FPGA implementation of Scooter Shooter for the MiSTer platform\n\n## Credits\n- Sorgelig: MiSTer project lead\n- MiSTer-X: Original Konami 005849 design sourced from Green Beret core (https://github.com/MiSTer-devel/Arcade-RushnAttack_MiSTer)\n- Ace: Core design & 005849 tweaks\n- JimmyStones: High score saving support & pause feature\n- Kitrinx: ROM loader\n\n## Features\n- Logic modelled to match the original PCB design as closely as possible\n- Standard joystick and keyboard controls\n- High score saving (Can be saved manually or automatically - manual saving is the default)\n- Greg Miller's cycle-accurate MC6809E CPU core with modifications by Sorgelig and bugfixes by Arnim Laeuger and Jotego\n- T80s CPU by Daniel Wallner with fixes by MikeJ, Sorgelig, and others\n- YM2203 implementation using JT03 by Jotego\n- Audio filtering, including the PCB's switchable low-pass filters\n\n## Installation\nPlace `*.rbf` into the \"_Arcade/cores\" folder on your SD card.  Then, place `*.mra` into the \"_Arcade\" folder and ROM files from MAME into \"games/mame\".\n\n### ****ATTENTION****\nROMs are not included. In order to use this arcade core, you must provide the correct ROMs.\n\nTo simplify the process, .mra files are provided in the releases folder that specify the required ROMs along with their checksums.  The ROM's .zip filename refers to the corresponding file in the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for information on how to setup and use the environment.\n\nQuick reference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/games/mame/<mame rom>.zip\n/games/hbmame/<hbmame rom>.zip\n\n## Controls\n### Keyboard\n| Key | Function |\n| --- | --- |\n| 1 | 1-Player Start |\n| 2 | 2-Player Start |\n| 5, 6 | Coin |\n| 9 | Service Credit |\n| Arrow keys | Movement |\n| CTRL | Fire |\n\n### Joystick (buttons follow Super NES layout)\n| Joystick action | Function |\n| --- | --- |\n| D-Pad | Movement |\n| B | Fire |\n\n## Note regarding video output\nThe video output from Scooter Shooter has highly elevated gamma levels.  To correct this, apply gamma correction from within MiSTer's UI, Contrast Boost 3 recommended.\n\n## Known Issues\n1) Accuracy of video timings and audio frequency response cannot be guaranteed yet until they are measured on an original Scooter Shooter PCB\n\n## High Score Save/Load\nSave and load of high scores is supported for this core.\n\n- To save your high scores manually, press the 'Save Settings' option in the OSD.  High scores will be automatically loaded when the core is started.\n- To enable automatic saving of high scores, turn on the 'Autosave Hiscores' option, press the 'Save Settings' option in the OSD, and reload the core.  High scores will then be automatically saved (if they have changed) any time the OSD is opened.\n\nHigh score data is stored in /media/fat/config/nvram/ as ```<mra filename>.nvm```\n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/MiSTer-DB9/Arcade-ScooterShooter_MiSTer",
+      "releases": [
+        {
+          "name": "Arcade-ScooterShooter_20210928.rbf",
+          "sha": "3fa5e8f4ec6c3987070f25d07b93a0f924ce1181",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-ScooterShooter_MiSTer/main/releases/Arcade-ScooterShooter_20210928.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Scooter Shooter.mra",
+          "sha": "6beb8adf08d3af6f2eec761e521d188a9e385611",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-ScooterShooter_MiSTer/main/releases/Scooter%20Shooter.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Scooter Shooter",
+            "rbf": "ScooterShooter",
+            "zips": [
+              "scotrsht.zip"
+            ]
+          }
         }
       ]
     },
