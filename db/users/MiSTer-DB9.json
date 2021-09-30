@@ -5673,7 +5673,13 @@
           "sha": "69fed6c7519e597ef42e32d32fd32f7a6c3d30ef",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Scramble_MiSTer/master/releases/Minefield.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Minefield",
+            "rbf": "scramble",
+            "zips": [
+              "minefld.zip"
+            ]
+          }
         },
         {
           "name": "Moon War.mra",

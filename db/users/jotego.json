@@ -2451,7 +2451,13 @@
           "sha": "06dd302847485e6556d2d6cd899f265fbe51c704",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps2/releases/Alien%20vs.%20Predator%20(Euro%20940520).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Alien vs. Predator (Euro 940520)",
+            "rbf": "jtcps2",
+            "zips": [
+              "avsp.zip|qsound.zip"
+            ]
+          }
         },
         {
           "name": "Armored Warriors (Euro 941024).mra",
