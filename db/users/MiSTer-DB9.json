@@ -7027,7 +7027,13 @@
           "sha": "d57cc4fe46393b72cf0d38c5bd56704030eda3a1",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-TimePilot_MiSTer/master/releases/Time%20Pilot.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Time Pilot",
+            "rbf": "timepilot",
+            "zips": [
+              "timeplt.zip"
+            ]
+          }
         }
       ]
     },
