@@ -2805,14 +2805,26 @@
           "sha": "d1451748c3428df5b0b69ff3eb40cc01b02b9aaa",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Gaplus_MiSTer/master/releases/Galaga%203%20(GP3%20Rev%20D).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Galaga 3",
+            "rbf": "gaplus",
+            "zips": [
+              "gaplus.zip|galaga3.zip"
+            ]
+          }
         },
         {
           "name": "Gaplus (GP2 Rev B).mra",
           "sha": "d0e6e6ef863e0e4af4f7fc5808445fe175934db3",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Gaplus_MiSTer/master/releases/Gaplus%20(GP2%20Rev%20B).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Gaplus",
+            "rbf": "gaplus",
+            "zips": [
+              "gaplus.zip"
+            ]
+          }
         },
         {
           "name": "rommap.txt",
