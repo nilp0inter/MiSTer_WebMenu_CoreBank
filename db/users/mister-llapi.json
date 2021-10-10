@@ -65,7 +65,7 @@
     {
       "name": "Gameboy_MiSTer",
       "description": "Gameboy for MiSTer",
-      "readme": "# [Gameboy](https://en.wikipedia.org/wiki/Game_Boy)  / [Gameboy Color](https://en.wikipedia.org/wiki/Game_Boy_Color) port to [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\r\n\r\nThis is port of [Gameboy for MiST](https://github.com/mist-devel/mist-board/tree/master/cores/gameboy)\r\n\r\n* Place RBF file into root of SD card.\r\n* Place *.gb files into Gameboy folder.\r\n\r\n## Features\r\n* Original Gameboy & Gameboy Color Support\r\n* Super Gameboy Support - Borders, Palettes and Multiplayer\r\n* Custom Borders\r\n* SaveStates\r\n* Fastforward \r\n* Rewind - Allows you to rewind up to 40 seconds of gameplay\r\n* Frameblending - Prevents flicker in some games (e.g. \"Chikyuu Kaihou Gun Zas\") \r\n* Custom Palette Loading\r\n* Real-Time Clock Support\r\n* Gameboy Link Port Support - Requires USERIO adapter\r\n* Cheats\r\n\r\n## Open Source Bootstrap roms\r\nThis now includes the open source boot ROMs from [https://github.com/LIJI32/SameBoy/](https://github.com/LIJI32/SameBoy/). For maximum GBC compatibility/authenticity you can still place the Gameboy color bios/bootrom into the Gameboy folder and rename it to boot1.rom\r\n\r\n## Palettes\r\nThis core supports custom palettes (*.gbp) which should be placed into the Gameboy folder. Some examples are available in the palettes folder.\r\n\r\n## Custom Borders\r\nThis core supports custom borders (*.sgb) which should be placed into the Gameboy folder. Some examples are available in the borders folder.\r\n\r\n## Autoload\r\nTo autoload your favorite game at startup rename it to `boot2.rom`.\r\n\r\n## Video output\r\nThe Gameboy can disable video output at any time which causes problems with vsync_adjust=2 or analog video during screen transitions. Enabling the Stabilize video option may fix this at the cost of some increased latency.\r\n\r\n# Savestates\r\nThis core provides 4 slots to save and restore the memory state which means you can save at any point in the game. These can be saved to your SDCard or they can reside only in memory for temporary use (OSD Option). Save states can be performed with the Keyboard, a mapped button to a gamepad, or through the OSD.\r\n\r\nKeyboard Hotkeys for save states:\r\n- Alt+F1 thru Alt+F4 - save state\r\n- F1 thru F4 - restore state\r\n\r\nGamepad:\r\n- Savestatebutton+Left or Right switches the savestate slot\r\n- Savestatebutton+Start+Down saves to the selected slot\r\n- Savestatebutton+Start+Up loads from the selected slot\r\n",
+      "readme": "# [Gameboy](https://en.wikipedia.org/wiki/Game_Boy)  / [Gameboy Color](https://en.wikipedia.org/wiki/Game_Boy_Color) port to [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\r\n\r\nThis is port of [Gameboy for MiST](https://github.com/mist-devel/gameboy)\r\n\r\n* Place RBF file into root of SD card.\r\n* Place *.gb files into Gameboy folder.\r\n\r\n## Features\r\n* Original Gameboy & Gameboy Color Support\r\n* Super Gameboy Support - Borders, Palettes and Multiplayer\r\n* Custom Borders\r\n* SaveStates\r\n* Fastforward \r\n* Rewind - Allows you to rewind up to 40 seconds of gameplay\r\n* Frameblending - Prevents flicker in some games (e.g. \"Chikyuu Kaihou Gun Zas\") \r\n* Custom Palette Loading\r\n* Real-Time Clock Support\r\n* Gameboy Link Port Support - Requires USERIO adapter\r\n* Cheats\r\n\r\n## Open Source Bootstrap roms\r\nThis now includes the open source boot ROMs from [https://github.com/LIJI32/SameBoy/](https://github.com/LIJI32/SameBoy/). For maximum GBC compatibility/authenticity you can still place the Gameboy color bios/bootrom into the Gameboy folder and rename it to boot1.rom\r\n\r\n## Palettes\r\nThis core supports custom palettes (*.gbp) which should be placed into the Gameboy folder. Some examples are available in the palettes folder.\r\n\r\n## Custom Borders\r\nThis core supports custom borders (*.sgb) which should be placed into the Gameboy folder. Some examples are available in the borders folder.\r\n\r\n## Autoload\r\nTo autoload your favorite game at startup rename it to `boot2.rom`.\r\n\r\n## Video output\r\nThe Gameboy can disable video output at any time which causes problems with vsync_adjust=2 or analog video during screen transitions. Enabling the Stabilize video option may fix this at the cost of some increased latency.\r\n\r\n# Savestates\r\nThis core provides 4 slots to save and restore the memory state which means you can save at any point in the game. These can be saved to your SDCard or they can reside only in memory for temporary use (OSD Option). Save states can be performed with the Keyboard, a mapped button to a gamepad, or through the OSD.\r\n\r\nKeyboard Hotkeys for save states:\r\n- Alt+F1 thru Alt+F4 - save state\r\n- F1 thru F4 - restore state\r\n\r\nGamepad:\r\n- Savestatebutton+Left or Right switches the savestate slot\r\n- Savestatebutton+Start+Down saves to the selected slot\r\n- Savestatebutton+Start+Up loads from the selected slot\r\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-LLAPI/Gameboy_MiSTer",
@@ -161,6 +161,12 @@
           "type": "RBF"
         },
         {
+          "name": "Gameboy_20210930.rbf",
+          "sha": "f4076d1a4332fbd9cc70d1c6ba2273a6072bae10",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Gameboy_MiSTer/master/releases/Gameboy_20210930.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Gameboy_LLAPI_20190927.rbf",
           "sha": "d5ba7ee489ea767d7fd4a0672b758afca3a35d92",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Gameboy_MiSTer/master/releases/Gameboy_LLAPI_20190927.rbf",
@@ -248,6 +254,12 @@
           "name": "Gameboy_LLAPI_20210713.rbf",
           "sha": "8915a79595bbdc414f63cc4a4c4d3873b51ec0f6",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Gameboy_MiSTer/master/releases/Gameboy_LLAPI_20210713.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_LLAPI_20211010.rbf",
+          "sha": "77163330ad189c8b60b9d69c77885cc725bf52e2",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Gameboy_MiSTer/master/releases/Gameboy_LLAPI_20211010.rbf",
           "type": "RBF"
         }
       ]
@@ -1258,6 +1270,12 @@
           "type": "RBF"
         },
         {
+          "name": "NES_20211004.rbf",
+          "sha": "471941f7b188695b972bf73dfc10cc394f63c660",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/NES_MiSTer/master/releases/NES_20211004.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "NES_LLAPI_20191014.rbf",
           "sha": "e8eaf552dcbcd865364919faa7d8ff44eca21181",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/NES_MiSTer/master/releases/NES_LLAPI_20191014.rbf",
@@ -1369,6 +1387,12 @@
           "name": "NES_LLAPI_20210926.rbf",
           "sha": "1d2122658466d0e72005b15c82cc29dde47cbf80",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/NES_MiSTer/master/releases/NES_LLAPI_20210926.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NES_LLAPI_20211010.rbf",
+          "sha": "8549812d530fe64bafac5f95e48043c1152fcbe5",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/NES_MiSTer/master/releases/NES_LLAPI_20211010.rbf",
           "type": "RBF"
         },
         {
@@ -1532,6 +1556,12 @@
           "type": "RBF"
         },
         {
+          "name": "SMS_20210930.rbf",
+          "sha": "5b37fb0ffe483ec3a15ab26266fcd1f34da90012",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SMS_MiSTer/master/releases/SMS_20210930.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "SMS_LLAPI_20191002.rbf",
           "sha": "0c2fe55cd9624d7336b3eb1267f5f67a544abfb8",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SMS_MiSTer/master/releases/SMS_LLAPI_20191002.rbf",
@@ -1595,6 +1625,12 @@
           "name": "SMS_LLAPI_20210926.rbf",
           "sha": "5af32aadf19efd87ba11756de24ef12737354779",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SMS_MiSTer/master/releases/SMS_LLAPI_20210926.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SMS_LLAPI_20211010.rbf",
+          "sha": "bf60e6be2d65d4d185c10748a04bd60f8a9ac6d3",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SMS_MiSTer/master/releases/SMS_LLAPI_20211010.rbf",
           "type": "RBF"
         },
         {
