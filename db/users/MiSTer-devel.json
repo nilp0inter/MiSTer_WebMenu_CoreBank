@@ -4427,7 +4427,13 @@
           "sha": "6101e35dc87c33157ae85b0c9a8bf4752078ce05",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MCR2_MiSTer/master/releases/Kozmik%20Krooz'r.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Kozmik Krooz'r",
+            "rbf": "mcr2",
+            "zips": [
+              "kroozr.zip"
+            ]
+          }
         },
         {
           "name": "Satan's Hollow (Set 1).mra",
