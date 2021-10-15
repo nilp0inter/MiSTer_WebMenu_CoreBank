@@ -3415,9 +3415,9 @@
           }
         },
         {
-          "name": "jtflane_20210910.rbf",
-          "sha": "b7b6710d4e252d3f74e08122ce6c133dbb767578",
-          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/flane/releases/jtflane_20210910.rbf",
+          "name": "jtflane_20211015.rbf",
+          "sha": "9d8ed01810f34b0ad2b02c20a5729f5a48eb1b34",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/flane/releases/jtflane_20211015.rbf",
           "type": "RBF"
         },
         {
@@ -3914,6 +3914,27 @@
           "type": "RBF"
         },
         {
+          "name": "Bad Dudes vs. Dragonninja (US revision 1).mra",
+          "sha": "5b99d1ce79cbdd300e41d2a1e5f49b013048a21c",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/ninja/releases/Bad%20Dudes%20vs.%20Dragonninja%20(US%20revision%201).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Bad Dudes vs. Dragonninja (US revision 1)",
+            "rbf": "jtninja",
+            "zips": [
+              "baddudes.zip",
+              "jtbeta.zip",
+              "debug.zip"
+            ]
+          }
+        },
+        {
+          "name": "jtninja_20211015.rbf",
+          "sha": "6751c55265a1c77205e35266f259ccaca43ce213",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/ninja/releases/jtninja_20211015.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "README.md",
           "sha": "8b178fcbce4f716d489422eeed7294086ffaf284",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/rumble/README.md",
@@ -4074,6 +4095,12 @@
           "type": "RBF"
         },
         {
+          "name": "jts16_20211015.rbf",
+          "sha": "dafdd0401575ad0d1fc379085aba053de9fc3ce5",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16/releases/jts16_20211015.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "README.md",
           "sha": "762ecdca2809c9b59cf1b4a96f3effc7f5d417ef",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16a2/README.md",
@@ -4122,6 +4149,12 @@
           "name": "jts16a2_20210924.rbf",
           "sha": "88fa8de92cbba8cd5dfbd805b59c6a439e56a68f",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16a2/releases/jts16a2_20210924.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "jts16a2_20211015.rbf",
+          "sha": "75ab4f06a80c425899404e71c5d5bbbdbbfde0a5",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16a2/releases/jts16a2_20211015.rbf",
           "type": "RBF"
         },
         {
@@ -4287,6 +4320,12 @@
           "type": "RBF"
         },
         {
+          "name": "jts16b_20211015.rbf",
+          "sha": "b0951375ff7719bc0f7fc049f52851798910008d",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/jts16b_20211015.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "README.md",
           "sha": "762ecdca2809c9b59cf1b4a96f3effc7f5d417ef",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b1/README.md",
@@ -4338,6 +4377,12 @@
           "type": "RBF"
         },
         {
+          "name": "jts16b1_20211015.rbf",
+          "sha": "a0b59b095685cb983f571ee0754f0171523e5429",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b1/releases/jts16b1_20211015.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "README.md",
           "sha": "762ecdca2809c9b59cf1b4a96f3effc7f5d417ef",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b2/README.md",
@@ -4365,6 +4410,12 @@
           "type": "RBF"
         },
         {
+          "name": "jts16b2_20211015.rbf",
+          "sha": "2174313a8d4bd9b19d6fe5245c29b943aceb73fd",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b2/releases/jts16b2_20211015.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "README.md",
           "sha": "762ecdca2809c9b59cf1b4a96f3effc7f5d417ef",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b3/README.md",
@@ -4389,6 +4440,12 @@
           "name": "jts16b3_20210929.rbf",
           "sha": "0d37690a3c3ac42f53e94fcdf2e4efa4c686dc53",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b3/releases/jts16b3_20210929.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "jts16b3_20211015.rbf",
+          "sha": "1eaa6799371814ffdd2582737a5bb393cb09bb67",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b3/releases/jts16b3_20211015.rbf",
           "type": "RBF"
         },
         {

@@ -77,8 +77,8 @@ output = "_Arcade/cores/jtf1dream_20210921.rbf"
 
 
 # jtflane
-url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/flane/releases/jtflane_20210910.rbf"
-output = "_Others/jtflane_20210910.rbf"
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/flane/releases/jtflane_20211015.rbf"
+output = "_Others/jtflane_20211015.rbf"
 
 
 # jtgng
@@ -106,39 +106,44 @@ url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/mx5k/release
 output = "_Others/jtmx5k_20211001.rbf"
 
 
+# jtninja
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/ninja/releases/jtninja_20211015.rbf"
+output = "_Others/jtninja_20211015.rbf"
+
+
 # jtrumble
 url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/rumble/releases/jtrumble_20210828.rbf"
 output = "_Others/jtrumble_20210828.rbf"
 
 
 # jts16
-url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16/releases/jts16_20210924.rbf"
-output = "_Others/jts16_20210924.rbf"
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16/releases/jts16_20211015.rbf"
+output = "_Others/jts16_20211015.rbf"
 
 
 # jts16a2
-url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16a2/releases/jts16a2_20210924.rbf"
-output = "_Others/jts16a2_20210924.rbf"
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16a2/releases/jts16a2_20211015.rbf"
+output = "_Others/jts16a2_20211015.rbf"
 
 
 # jts16b
-url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/jts16b_20210924.rbf"
-output = "_Others/jts16b_20210924.rbf"
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/jts16b_20211015.rbf"
+output = "_Others/jts16b_20211015.rbf"
 
 
 # jts16b1
-url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b1/releases/jts16b1_20210924.rbf"
-output = "_Others/jts16b1_20210924.rbf"
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b1/releases/jts16b1_20211015.rbf"
+output = "_Others/jts16b1_20211015.rbf"
 
 
 # jts16b2
-url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b2/releases/jts16b2_20210924.rbf"
-output = "_Others/jts16b2_20210924.rbf"
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b2/releases/jts16b2_20211015.rbf"
+output = "_Others/jts16b2_20211015.rbf"
 
 
 # jts16b3
-url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b3/releases/jts16b3_20210929.rbf"
-output = "_Others/jts16b3_20210929.rbf"
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b3/releases/jts16b3_20211015.rbf"
+output = "_Others/jts16b3_20211015.rbf"
 
 
 # jtsarms
@@ -679,6 +684,11 @@ output = "_Arcade/Trick Trap (World).mra"
 # MX5000.mra
 url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/mx5k/releases/MX5000.mra"
 output = "_Arcade/MX5000.mra"
+
+
+# Bad Dudes vs. Dragonninja (US revision 1).mra
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/ninja/releases/Bad%20Dudes%20vs.%20Dragonninja%20(US%20revision%201).mra"
+output = "_Arcade/Bad Dudes vs. Dragonninja (US revision 1).mra"
 
 
 # The Speed Rumbler (set 1).mra
