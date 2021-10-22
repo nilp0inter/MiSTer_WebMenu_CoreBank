@@ -1044,6 +1044,12 @@
           "type": "OTHER"
         },
         {
+          "name": "MRA-Alternatives_20211022.zip",
+          "sha": "ee2483b11fcd42d750e9a8992421b492ba87a227",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/MRA-Alternatives_MiSTer/releases/MRA-Alternatives_20211022.zip",
+          "type": "OTHER"
+        },
+        {
           "name": "README.md",
           "sha": "54368a871e6a1752c69ec6908667cc99e34e0466",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/biocom/README.md",
@@ -3946,9 +3952,29 @@
           }
         },
         {
+          "name": "Heavy Barrel (World).mra",
+          "sha": "0e1dc22ce0101e5db39e973a37b7a44c0d4982c8",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/ninja/releases/Heavy%20Barrel%20(World).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Heavy Barrel (World)",
+            "rbf": "jtninja",
+            "zips": [
+              "hbarrel.zip",
+              "jtbeta.zip"
+            ]
+          }
+        },
+        {
           "name": "jtninja_20211015.rbf",
           "sha": "6751c55265a1c77205e35266f259ccaca43ce213",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/ninja/releases/jtninja_20211015.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "jtninja_20211022.rbf",
+          "sha": "c3627abf691c754c06d9474bae5b9292125db2d3",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/ninja/releases/jtninja_20211022.rbf",
           "type": "RBF"
         },
         {
