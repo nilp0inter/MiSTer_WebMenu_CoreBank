@@ -7828,7 +7828,13 @@
           "sha": "40551aad877973f9150798503697ff368300e39c",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Sprint1_MiSTer/master/releases/Sprint%201.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Sprint 1",
+            "rbf": "sprint1",
+            "zips": [
+              "sprint1.zip"
+            ]
+          }
         }
       ]
     },
