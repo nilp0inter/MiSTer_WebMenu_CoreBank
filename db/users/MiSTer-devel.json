@@ -2028,7 +2028,7 @@
     {
       "name": "Arcade-Cosmic_MiSTer",
       "description": "Universal Cosmic series games (Z80 based)",
-      "readme": "# [Arcade: Universal Cosmic](https://www.arcade-museum.com/game_detail.php?game_id=7398) games (Z80-based) for [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\nBy [Mike Coates](https://github.com/macrofpga)  \nCurrent Version - 0.9 - 08/07/2021\n\n## Description\n\nThis is a recreation of the [Universal](https://www.arcade-museum.com/manuf_detail.php?manuf_id=1703&orig_game_id=7398) games that run on similar hardware.\n\nThe game timing should be very close to the original, but the code is not necessarily identical to the real thing, but achieves the same end result.\n\n## Controls\n\nUp, Down, Left, Right, Fire 1, Fire 2 (not all games use all buttons)\n\n## Games currently supported\n\n* [Cosmic Alien](https://www.arcade-museum.com/game_detail.php?game_id=7398)\n* [Magical Spot](https://www.arcade-museum.com/game_detail.php?game_id=8505)\n* [Space Panic](https://www.arcade-museum.com/game_detail.php?game_id=9676)\n\n## Known differences/problems\n\nSound effects are all implemented using samples (other than the DAC).\n\nI have added a screen flip option to the sprite code, sprites are flipped by the software on the real hardware, but everything else does have a flip signal. It is implemented as a fake dip switch.\n\nNo Man's Land needs the background video lined up properly in all flip modes.\n\nDevil Zone and No Man's Land need sound samples sourced and connected up.\n\n## ROM Files Instructions\n\n**ROMs are not included!** In order to use this arcade core, you will need to provide the correct ROM file yourself.\n\nTo simplify the process `.mra` files are provided in the releases folder, that specify the required ROMs with their checksums. The ROMs `.zip` filename refers to the corresponding file from the MAME project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for information on how to setup and use the environment.\n\nQuick reference for folders and file placement:\n\n```\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/games/mame/<mame rom>.zip\n/games/hbmame/<hbmame rom>.zip\n```\n",
+      "readme": "# [Arcade: Universal Cosmic](https://www.arcade-museum.com/game_detail.php?game_id=7398) games (Z80-based) for [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\nBy [Mike Coates](https://github.com/macrofpga)  \nCurrent Version - 0.9 - 08/07/2021\n\n## Description\n\nThis is a recreation of the [Universal](https://www.arcade-museum.com/manuf_detail.php?manuf_id=1703&orig_game_id=7398) games that run on similar hardware.\n\nThe game timing should be very close to the original, but the code is not necessarily identical to the real thing, but achieves the same end result.\n\n## Controls\n\nUp, Down, Left, Right, Fire 1, Fire 2 (not all games use all buttons)\n\n## Games currently supported\n\n* [Cosmic Alien](https://www.arcade-museum.com/game_detail.php?game_id=7398)\n* [Magical Spot](https://www.arcade-museum.com/game_detail.php?game_id=8505)\n* [Space Panic](https://www.arcade-museum.com/game_detail.php?game_id=9676)\n\n## Known differences/problems\n\nSound effects are all implemented using samples (other than the DAC).\n\nI have added a screen flip option to the sprite code, sprites are flipped by the software on the real hardware, but everything else does have a flip signal. It is implemented as a fake dip switch.\n\nNo Man's Land needs the background video lined up properly in all flip modes.\n\nDevil Zone and No Man's Land need sound samples sourced and connected up.\n\n## Hiscore save/load\n\nSave and load of hiscores is supported for Cosmic Alien only.\n\nTo save your hiscores manually, press the 'Save Settings' option in the OSD.  Hiscores will be automatically loaded when the core is started.\n\nTo enable automatic saving of hiscores, turn on the 'Autosave Hiscores' option, press the 'Save Settings' option in the OSD, and reload the core.  Hiscores will then be automatically saved (if they have changed) any time the OSD is opened.\n\nHiscore data is stored in /media/fat/config/nvram/ as ```<mra filename>.nvm```\n\n## ROM Files Instructions\n\n**ROMs are not included!** In order to use this arcade core, you will need to provide the correct ROM file yourself.\n\nTo simplify the process `.mra` files are provided in the releases folder, that specify the required ROMs with their checksums. The ROMs `.zip` filename refers to the corresponding file from the MAME project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for information on how to setup and use the environment.\n\nQuick reference for folders and file placement:\n\n```\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/games/mame/<mame rom>.zip\n/games/hbmame/<hbmame rom>.zip\n```\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/Arcade-Cosmic_MiSTer",
@@ -2052,8 +2052,14 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Cosmic_20211002.rbf",
+          "sha": "ca1f5d40f31dadff892231313af721085b60ea14",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cosmic_MiSTer/main/releases/Arcade-Cosmic_20211002.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Cosmic Alien.mra",
-          "sha": "25ca6d52aac0a3bc5f596df625f9f2edfc81367d",
+          "sha": "d5f7135d4be7a67f79c8488e843a66a4c76ac200",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cosmic_MiSTer/main/releases/Cosmic%20Alien.mra",
           "type": "MRA",
           "extra": {
@@ -2066,7 +2072,7 @@
         },
         {
           "name": "Magical Spot.mra",
-          "sha": "d6be968fc6afe2c0cbc96001ec77337ee2cb4c45",
+          "sha": "e46ec2e328ebc3582073d68034ef6f4943384bda",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cosmic_MiSTer/main/releases/Magical%20Spot.mra",
           "type": "MRA",
           "extra": {
@@ -2079,7 +2085,7 @@
         },
         {
           "name": "Space Panic.mra",
-          "sha": "50e787807ab42b54ae0d272d97c878b7365de8bb",
+          "sha": "73c580c2dad8a7c858a53f85d8527df5f1b207c1",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cosmic_MiSTer/main/releases/Space%20Panic.mra",
           "type": "MRA",
           "extra": {
