@@ -10244,7 +10244,14 @@
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/ChannelF_MiSTer",
-      "releases": []
+      "releases": [
+        {
+          "name": "ChannelF_20211026.rbf",
+          "sha": "2601990e8edcf6a2c977018e019297ddefd12a32",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/ChannelF_MiSTer/master/releases/ChannelF_20211026.rbf",
+          "type": "RBF"
+        }
+      ]
     },
     {
       "name": "Chess_MiSTer",
@@ -15879,6 +15886,12 @@
           "name": "VC4000_20210914.rbf",
           "sha": "b67bd36f7918f5b7d8a33aaa6b599c771919ef18",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/VC4000_MiSTer/main/releases/VC4000_20210914.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "VC4000_20211026.rbf",
+          "sha": "680a12cd95579f98dcbe4b2afa57935eb792217f",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/VC4000_MiSTer/main/releases/VC4000_20211026.rbf",
           "type": "RBF"
         }
       ]
