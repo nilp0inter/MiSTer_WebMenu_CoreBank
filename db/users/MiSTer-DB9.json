@@ -2142,6 +2142,61 @@
       ]
     },
     {
+      "name": "Arcade-Finalizer_MiSTer",
+      "description": "Finalizer - Super Transformation for MiSTer",
+      "readme": "# Finalizer - Super Transformation for [MISTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\nAn FPGA implementation of Finalizer - Super Transformation for the MiSTer platform\n\n## Credits\n- Sorgelig: MiSTer project lead\n- Ace: Core design and Konami custom chip implementations\n- ElectronAsh, Arnim Laeuger: Assistance with Konami custom chip implementations\n- JimmyStones: High score saving support & pause feature\n- Kitrinx: ROM loader\n\n## Features\n- Logic modelled to match the original as closely as possible\n- Standard joystick and keyboard controls\n- High score saving (Can be saved manually or automatically - manual saving is the default)\n- Greg Miller's cycle-accurate MC6809E CPU core with modifications by Sorgelig and bugfixes by Arnim Laeuger and Jotego as the basis for the KONAMI-1 custom encrypted MC6809E\n- SN76489 sound core by Arnim Laeuger with fixes by Ace and Enforcer\n- T48 MCU by Arnim Laeuger configured as an NEC uPD8749 as the basis for the Konami SND01 custom chip\n\n## Installation\nPlace `*.rbf` into the \"_Arcade/cores\" folder on your SD card.  Then, place `*.mra` into the \"_Arcade\" folder and ROM files from MAME into \"games/mame\".\n\n### ****ATTENTION****\nROMs are not included. In order to use this arcade core, you must provide the correct ROMs.\n\nTo simplify the process, .mra files are provided in the releases folder that specify the required ROMs along with their checksums.  The ROM's .zip filename refers to the corresponding file in the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for information on how to setup and use the environment.\n\nQuick reference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/games/mame/<mame rom>.zip\n/games/hbmame/<hbmame rom>.zip\n\n## Controls\n### Keyboard\n| Key | Function |\n| --- | --- |\n| 1 | 1-Player Start |\n| 2 | 2-Player Start |\n| 5, 6 | Coin |\n| 9 | Service Credit |\n| Arrow keys | Movement |\n| CTRL | Fire 1 |\n| ALT | Fire 2/Shield |\n\n### Joystick\n| Joystick action | Function |\n| --- | --- |\n| D-Pad | Movement |\n| B | Fire 1 |\n| A | Fire 2/Shield |\n\n## Known Issues\n1) Sprites render one frame earlier than normal - this is not correct behavior for Finalizer's graphics rendering\n2) Although bootleg audio errors are recreated, the rest of the inaccurate behavior on bootleg Finalizer boards is currently unknown and not implemented\n\n## High Score Save/Load\nSave and load of high scores is supported for this core.\n\n- To save your high scores manually, press the 'Save Settings' option in the OSD.  High scores will be automatically loaded when the core is started.\n- To enable automatic saving of high scores, turn on the 'Autosave Hiscores' option, press the 'Save Settings' option in the OSD, and reload the core.  High scores will then be automatically saved (if they have changed) any time the OSD is opened.\n\nHigh score data is stored in /media/fat/config/nvram/ as ```<mra filename>.nvm```\n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/MiSTer-DB9/Arcade-Finalizer_MiSTer",
+      "releases": [
+        {
+          "name": "Arcade-Finalizer_20211025.rbf",
+          "sha": "7346d0950f1e78e7380984f4eac2c2eb03c71cf3",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Finalizer_MiSTer/main/releases/Arcade-Finalizer_20211025.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Finalizer - Super Transformation (Set 1).mra",
+          "sha": "d057296229bab5fc494fd34200b6a531ad3fa0f7",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Finalizer_MiSTer/main/releases/Finalizer%20-%20Super%20Transformation%20(Set%201).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Finalizer: Super Transformation",
+            "rbf": "Finalizer",
+            "zips": [
+              "finalizr.zip"
+            ]
+          }
+        },
+        {
+          "name": "Finalizer - Super Transformation (Set 2) [bl].mra",
+          "sha": "f396bc340a1ac49711252fd71b306416e52fa9cb",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Finalizer_MiSTer/main/releases/Finalizer%20-%20Super%20Transformation%20(Set%202)%20%5Bbl%5D.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Finalizer: Super Transformation",
+            "rbf": "Finalizer",
+            "zips": [
+              "finalizr.zip|finalizrb.zip"
+            ]
+          }
+        },
+        {
+          "name": "Finalizer - Super Transformation (Set 2).mra",
+          "sha": "1e665470e0665f26b692706072ec2e2b4a364a2d",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Finalizer_MiSTer/main/releases/Finalizer%20-%20Super%20Transformation%20(Set%202).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Finalizer: Super Transformation",
+            "rbf": "Finalizer",
+            "zips": [
+              "finalizr.zip|finalizra.zip"
+            ]
+          }
+        }
+      ]
+    },
+    {
       "name": "Arcade-FoodFight_MiSTer",
       "description": "Arcade: Food Fight for MiSTer",
       "readme": "--------------------------------------------------------------------------------------------------------------\n-- \n-- Arcade: Food Fight  for MiSTer by MiSTer-X\n-- 26 November 2019\n--\n-- https://github.com/MrX-8B/MiSTer-Arcade-FoodFight\n-- \n--------------------------------------------------------------------------------------------------------------\n-- MC68000 compatible softcore\n----------------------------------------------------------------------\n-- TG68 Revision 1.08\n-- Copyright (c) 2007-2010 Tobias Gubener <tobiflex@opencores.org>  \n--------------------------------------------------------------------------------------------------------------\n-- Pokey\n----------------------------------------------------------------------\n-- (c) 2013 mark watson\n--------------------------------------------------------------------------------------------------------------\n-- \n-- \n-- Keyboard inputs :\n--\n--   F2          : Coin + Start 2 players\n--   F1          : Coin + Start 1 player\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--   SPACE,CTRL  : Throw\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   R,F,D,G     : Player 2 Movements\n--   A,S         : Player 2 Throw\n--\n--\n-- Highly recommend use an analog joystick.\n-- For a digital joystick or keyboard, turn on the \"Pseudo Analog Stick\" in the OSD.\n--\n-- Immediately after boot, turn the stick several times on the demo screen or in the game for calibration.\n--\n--------------------------------------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
