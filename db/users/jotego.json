@@ -1068,6 +1068,12 @@
           "type": "OTHER"
         },
         {
+          "name": "MRA-Alternatives_20211030.zip",
+          "sha": "6f89a700d01327a4cea88262d4f65eb33824e5de",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/MRA-Alternatives_MiSTer/releases/MRA-Alternatives_20211030.zip",
+          "type": "OTHER"
+        },
+        {
           "name": "README.md",
           "sha": "54368a871e6a1752c69ec6908667cc99e34e0466",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/biocom/README.md",
@@ -4401,6 +4407,20 @@
             "rbf": "jts16b",
             "zips": [
               "bullet.zip|s16mcu_alt.zip",
+              "jtbeta.zip"
+            ]
+          }
+        },
+        {
+          "name": "Cotton (set 4, World) (FD1094 317-0181a).mra",
+          "sha": "2a0f0b0c576a498ac2d53e2728b0ab57f9bde2bf",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/Cotton%20(set%204%2C%20World)%20(FD1094%20317-0181a).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Cotton (set 4, World) (FD1094 317-0181a)",
+            "rbf": "jts16b",
+            "zips": [
+              "cotton.zip|s16mcu_alt.zip",
               "jtbeta.zip"
             ]
           }
