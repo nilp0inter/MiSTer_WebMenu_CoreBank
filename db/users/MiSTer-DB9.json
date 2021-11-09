@@ -8713,7 +8713,7 @@
     {
       "name": "Distribution_MiSTer",
       "description": null,
-      "readme": "# MiSTer Distribution\n\nThis repository contains all the files that you'll want in your MiSTer.\n\nYou may download all of them at once as a zip through the [following link](https://github.com/MiSTer-devel/Distribution_MiSTer/archive/refs/heads/main.zip). Once you have them, place them as-is in your SD card, and everything should work out of the box.\n\n### MiSTer Project\n\nIf you want to check more about the MiSTer project, please check [this wiki](https://github.com/MiSTer-devel/Main_MiSTer/wiki).\n\n### Updater script\n\nFor downloading all of these files in an automatic fashion, use [this script](https://github.com/MiSTer-devel/Updater_script_MiSTer).\n",
+      "readme": "# MiSTer Distribution DB9\n\nThis repository contains all the files that you'll want in your MiSTer.\n\nYou may download all of them at once as a zip through the [following link](https://github.com/MiSTer-DB9/Distribution_MiSTer/archive/refs/heads/main.zip). Once you have them, place them as-is in your SD card, and everything should work out of the box.\n\n### MiSTer Project\n\nIf you want to check more about the MiSTer project, please check [this wiki](https://github.com/MiSTer-devel/Main_MiSTer/wiki).\n\n### Updater script\n\nFor downloading all of these files in an automatic fashion, use [this tool](https://github.com/MiSTer-devel/Downloader_MiSTer).\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-DB9/Distribution_MiSTer",
@@ -8886,6 +8886,18 @@
           "name": "Gameboy_20211010.rbf",
           "sha": "fd1f248dd8c5ff4bfa167cfa9c17374c774dd2d9",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Gameboy_MiSTer/master/releases/Gameboy_20211010.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20211107.rbf",
+          "sha": "91ad7bc442c5559f9bf3590f8078a224a54c3efc",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Gameboy_MiSTer/master/releases/Gameboy_20211107.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20211108.rbf",
+          "sha": "92019952c710631570a17a669595bd97b5e2b7e8",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Gameboy_MiSTer/master/releases/Gameboy_20211108.rbf",
           "type": "RBF"
         }
       ]
