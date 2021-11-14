@@ -2782,7 +2782,13 @@
           "sha": "93069abf839450fde5f27797c3bf638361ebfb4a",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps2/releases/Dungeons%20%26%20Dragons%20Shadow%20over%20Mystara%20(Euro%20960619).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Dungeons & Dragons: Shadow over Mystara (Euro 960619)",
+            "rbf": "jtcps2",
+            "zips": [
+              "ddsom.zip|qsound.zip"
+            ]
+          }
         },
         {
           "name": "Dungeons & Dragons Tower of Doom (Euro 940412).mra",
