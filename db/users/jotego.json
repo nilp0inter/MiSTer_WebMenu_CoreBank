@@ -1122,6 +1122,12 @@
           "type": "OTHER"
         },
         {
+          "name": "MRA-Alternatives_20211119.zip",
+          "sha": "53598caef0206180bf4eb59b56b7d792b61a6e0e",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/MRA-Alternatives_MiSTer/releases/MRA-Alternatives_20211119.zip",
+          "type": "OTHER"
+        },
+        {
           "name": "README.md",
           "sha": "54368a871e6a1752c69ec6908667cc99e34e0466",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/biocom/README.md",
@@ -4166,6 +4172,38 @@
           "sha": "f54c9d6f5ad3d53511da53ee66c7416c0548bd31",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/hige/releases/jthige_20211024.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "README.md",
+          "sha": "b7122f2a30629f60d207206a3d05355cb6763280",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kicker/README.md",
+          "type": "OTHER"
+        },
+        {
+          "name": "Kicker.mra",
+          "sha": "3cad9f0e271cd383adb7136e5cf9e779be29cab2",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kicker/releases/Kicker.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Kicker",
+            "rbf": "jtkicker",
+            "zips": [
+              "kicker.zip",
+              "jtbeta.zip"
+            ]
+          }
+        },
+        {
+          "name": "jtkicker_20211119.rbf",
+          "sha": "a9d1bba78f400f6bd90b9759467e68d72fa9f56e",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kicker/releases/jtkicker_20211119.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "version.log",
+          "sha": "dcec8f621811024b83fe9da904070ef084bb074d",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kicker/version.log",
+          "type": "OTHER"
         },
         {
           "name": "README.md",
