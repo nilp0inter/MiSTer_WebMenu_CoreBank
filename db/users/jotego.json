@@ -4286,7 +4286,7 @@
         },
         {
           "name": "MX5000.mra",
-          "sha": "68defa2982fd56ca5c63d494f77c1ed5094dd2fe",
+          "sha": "5d70c0dc97894511f98d80002ca400a75a26f4b2",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/mx5k/releases/MX5000.mra",
           "type": "MRA",
           "extra": {
@@ -4294,8 +4294,7 @@
             "rbf": "jtmx5k",
             "zips": [
               "mx5000.zip",
-              "jtbeta.zip",
-              "debug.zip"
+              "jtbeta.zip"
             ]
           }
         },
