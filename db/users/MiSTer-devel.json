@@ -12485,6 +12485,12 @@
           "sha": "59a53bf8c4b04a3e3e0899e88a6c6952a822f9bf",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Main_MiSTer/master/releases/MiSTer_20211112",
           "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20211126",
+          "sha": "519ee0a60e7362efd68fe5c6d661c01f86b204db",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Main_MiSTer/master/releases/MiSTer_20211126",
+          "type": "OTHER"
         }
       ]
     },
@@ -12608,6 +12614,12 @@
           "name": "MegaCD_20210725.rbf",
           "sha": "06141f2637b37ea727b8927bbca8f4b18a6fc1e1",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/MegaCD_MiSTer/master/releases/MegaCD_20210725.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "MegaCD_20211126.rbf",
+          "sha": "796f209dcf9b55e0eade3cd3d3921b14442780e2",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/MegaCD_MiSTer/master/releases/MegaCD_20211126.rbf",
           "type": "RBF"
         }
       ]
@@ -13683,6 +13695,12 @@
           "type": "RBF"
         },
         {
+          "name": "NeoGeo_20211126.rbf",
+          "sha": "fd1a71e358c54881a7673b34792db81832b44c69",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/NeoGeo_MiSTer/master/releases/NeoGeo_20211126.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "README.md",
           "sha": "91abd5fd1fe831e59d750a409d3f9b19393d5849",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/NeoGeo_MiSTer/master/releases/README.md",
@@ -14008,6 +14026,12 @@
           "name": "NES_20211018.rbf",
           "sha": "012ea713312dbfc23d2e71b086df68f45faeb007",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/NES_MiSTer/master/releases/NES_20211018.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NES_20211126.rbf",
+          "sha": "0cd74eed5aff362c13c31bd80871970dc3410ac5",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/NES_MiSTer/master/releases/NES_20211126.rbf",
           "type": "RBF"
         },
         {
@@ -14592,6 +14616,15 @@
           "type": "OTHER"
         }
       ]
+    },
+    {
+      "name": "ShadowMasks_MiSTer",
+      "description": "HDMI Shadow Masks",
+      "readme": null,
+      "archived": false,
+      "fork": false,
+      "url": "https://github.com/MiSTer-devel/ShadowMasks_MiSTer",
+      "releases": []
     },
     {
       "name": "SharpMZ_MiSTer",
@@ -15259,6 +15292,12 @@
           "sha": "3139e371c6c44872af18ec66c06d481e9f2f3a15",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/SNES_MiSTer/master/releases/SNES_20210713.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "SNES_20211126.rbf",
+          "sha": "9e0ffc3c64a1b42c184311eb866865d2e9026522",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/SNES_MiSTer/master/releases/SNES_20211126.rbf",
+          "type": "RBF"
         }
       ]
     },
@@ -15852,6 +15891,12 @@
           "name": "TurboGrafx16_20211115.rbf",
           "sha": "4579cc2788c40ab03c1fc85c391b74e20e3e9dd6",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/TurboGrafx16_MiSTer/master/releases/TurboGrafx16_20211115.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "TurboGrafx16_20211126.rbf",
+          "sha": "8d0838c63f1a8030a1250e6f45a2ec55bd8fe638",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/TurboGrafx16_MiSTer/master/releases/TurboGrafx16_20211126.rbf",
           "type": "RBF"
         }
       ]
