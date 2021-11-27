@@ -14654,7 +14654,7 @@
     {
       "name": "ShadowMasks_MiSTer",
       "description": "HDMI Shadow Masks",
-      "readme": null,
+      "readme": "# Shadow Masks for [MiSTer FPGA](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\nThis repository contains the Shadow Mask files for the MiSTer FPGA.\n\n## Instructions\n\nCreate a folder named `Shadow_Masks` in the root of your MicroSD Card along with the other folders like \"filters\", \"games\", etc... Place the .txt Shadow Mask files into that folder.\n\n## Color Palette\n\n| Color | Value | Bits |\n| --- | --- | --- |\n| Gray | 0 | 000 |\n| Blue | 1 | 001 |\n| Green | 2 | 010 |\n| Cyan | 3 | 011 |\n| Red | 4 | 100 |\n| Magenta | 5 | 101 |\n| Yellow | 6 | 110 |\n| White | 7 | 111 |\n\nMax width = 8  \nMax Height = 8\n\n## How It Works\n\nHere's an example. If you wanted to make RGB dots that use this pattern:\n\n![](example.png)\n\nThen you would make a file like this:\n\n```\n# w,h\n6,4\n\n# lut\n4,4,2,2,1,1\n4,4,2,2,1,1\n2,1,1,4,4,2\n2,1,1,4,4,2\n```\n\nThese numbers correspond to the following r, g, b values like this:\n\n```\nr,r,g,g,b,b\nr,r,g,g,b,b\ng,b,b,r,r,g\ng,b,b,r,r,g\n```\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/ShadowMasks_MiSTer",
