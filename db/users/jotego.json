@@ -1134,6 +1134,12 @@
           "type": "OTHER"
         },
         {
+          "name": "MRA-Alternatives_20211127.zip",
+          "sha": "d94e2936c47f682c41147032c41946bcc857ecbc",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/MRA-Alternatives_MiSTer/releases/MRA-Alternatives_20211127.zip",
+          "type": "OTHER"
+        },
+        {
           "name": "README.md",
           "sha": "54368a871e6a1752c69ec6908667cc99e34e0466",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/biocom/README.md",
@@ -4771,20 +4777,6 @@
             "rbf": "jts16b",
             "zips": [
               "ddux.zip|s16mcu_alt.zip",
-              "jtbeta.zip"
-            ]
-          }
-        },
-        {
-          "name": "E-Swat - Cyber Police (set 4, World) (FD1094 317-0130).mra",
-          "sha": "6f4b97160263c0fd22a016da1cdde762eab2c8fb",
-          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/E-Swat%20-%20Cyber%20Police%20(set%204%2C%20World)%20(FD1094%20317-0130).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "E-Swat - Cyber Police (set 4, World) (FD1094 317-0130)",
-            "rbf": "jts16b",
-            "zips": [
-              "eswat.zip|s16mcu_alt.zip",
               "jtbeta.zip"
             ]
           }
