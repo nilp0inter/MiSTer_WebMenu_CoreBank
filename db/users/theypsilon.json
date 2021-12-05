@@ -60,6 +60,313 @@
       ]
     },
     {
+      "name": "Arcade-SpaceInvaders_MiSTer",
+      "description": "MiSTer FPGA version of the midway and taito board most known for Space Invaders ",
+      "readme": "# Space Invaders Board\n\nSpace Invaders is a classic arcade game. However, the same hardware with different sound boards, and slight modifications was used on many many games. \n\n## Credits\n\nOriginal Authors:\n* Daniel Wallner\n* Mike J\n* Paul Walsh\nMiST and MiSTer Port:\n* Gehstock\n* Gyurco\n* David Woods\n* Mike Coates\n* Shane Lynch (Gun support)\n* Alan Steremberg\n\n## Scripts and Such\n\n### Color Overlay\n\nThe Midway games often shipped with a plastic color overlay to add color to the games. The Taito boards had color overlay hardware. This included two roms (one for each direction of cocktail games) that added color in a fixed position on the screen. The Taito rom was a digital version of the plastic overlay. Included is a python script that converts the MAME .lay files into Taito color overlay rom format. All games that had plastic overlays now have color roms included.\n\n### Graphic Overlays\n\nMany games were enhanced with 1/2 silvered mirrors and fancy graphics. Some games like 280Z ZZap even had a toy car in view. There is a script that will convert a PNG into raw hex codes to include in the MRA file. ",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/theypsilon/Arcade-SpaceInvaders_MiSTer",
+      "releases": [
+        {
+          "name": "280Z-ZZAP (US).mra",
+          "sha": "e756f2ad6cb4e2812d7cdd9c283232a0af3c43d3",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-SpaceInvaders_MiSTer/master/releases/280Z-ZZAP%20(US).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "280Z-ZZAP",
+            "rbf": "spaceinvaders",
+            "zips": [
+              "280zzzap.zip"
+            ]
+          }
+        },
+        {
+          "name": "Amazing Maze.mra",
+          "sha": "d39ddad85ef822a0bd127bcd237f3237262e406f",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-SpaceInvaders_MiSTer/master/releases/Amazing%20Maze.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Amazing Maze",
+            "rbf": "spaceinvaders",
+            "zips": [
+              "maze.zip"
+            ]
+          }
+        },
+        {
+          "name": "Arcade-SpaceInvaders_20201223.rbf",
+          "sha": "c5367d9efd9014fc20e2ac90b6f1a6fa46d1718c",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-SpaceInvaders_MiSTer/master/releases/Arcade-SpaceInvaders_20201223.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-SpaceInvaders_20210307.rbf",
+          "sha": "fae57f48ce54a10dc80f8fa963a97e609d40e1c8",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-SpaceInvaders_MiSTer/master/releases/Arcade-SpaceInvaders_20210307.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-SpaceInvaders_20210823.rbf",
+          "sha": "acd4c8bd1c1d2873d87e8ae5a77b5491c53097d6",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-SpaceInvaders_MiSTer/master/releases/Arcade-SpaceInvaders_20210823.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-SpaceInvaders_20211006.rbf",
+          "sha": "dcaecb5e93cca74ceb876be5adbfb1418a51486d",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-SpaceInvaders_MiSTer/master/releases/Arcade-SpaceInvaders_20211006.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-SpaceInvaders_20211201.rbf",
+          "sha": "ba7020336c33e2983f452c699b90f300ad0fe114",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-SpaceInvaders_MiSTer/master/releases/Arcade-SpaceInvaders_20211201.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Attack Force.mra",
+          "sha": "f8e0b23b27b43b0d275cf08d551807791523fd8c",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-SpaceInvaders_MiSTer/master/releases/Attack%20Force.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Attack Force",
+            "rbf": "spaceinvaders",
+            "zips": [
+              "attackfc.zip"
+            ]
+          }
+        },
+        {
+          "name": "Balloon Bomber.mra",
+          "sha": "e374008f98038eec678c9949b2f386fc218f635f",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-SpaceInvaders_MiSTer/master/releases/Balloon%20Bomber.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Balloon Bomber",
+            "rbf": "spaceinvaders",
+            "zips": [
+              "ballbomb.zip"
+            ]
+          }
+        },
+        {
+          "name": "Blue Shark.mra",
+          "sha": "3f168fe944dc4bda1c779679accd260bbbc17386",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-SpaceInvaders_MiSTer/master/releases/Blue%20Shark.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Blue Shark",
+            "rbf": "spaceinvaders",
+            "zips": [
+              "blueshrk.zip"
+            ]
+          }
+        },
+        {
+          "name": "Boot Hill.mra",
+          "sha": "61d9d72cfd88f30576f352908bc9c8bc2036fa45",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-SpaceInvaders_MiSTer/master/releases/Boot%20Hill.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Boot Hill",
+            "rbf": "spaceinvaders",
+            "zips": [
+              "boothill.zip"
+            ]
+          }
+        },
+        {
+          "name": "Clowns.mra",
+          "sha": "60b97bd1104007325ad31d84e1e2e3ff4d9de510",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-SpaceInvaders_MiSTer/master/releases/Clowns.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Clowns",
+            "rbf": "spaceinvaders",
+            "zips": [
+              "clowns.zip"
+            ]
+          }
+        },
+        {
+          "name": "Cosmo.mra",
+          "sha": "fcc2713619e2b8dea1e99651d3f6ee2feb16b3a3",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-SpaceInvaders_MiSTer/master/releases/Cosmo.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Cosmo",
+            "rbf": "spaceinvaders",
+            "zips": [
+              "cosmo.zip"
+            ]
+          }
+        },
+        {
+          "name": "Galaxy Wars (Universal, Set 1).mra",
+          "sha": "cef7bdfd6c4365e51fbc89cf20886b35f28cde54",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-SpaceInvaders_MiSTer/master/releases/Galaxy%20Wars%20(Universal%2C%20Set%201).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Galaxy Wars",
+            "rbf": "spaceinvaders",
+            "zips": [
+              "galxwars.zip"
+            ]
+          }
+        },
+        {
+          "name": "Gun Fight.mra",
+          "sha": "74462c28c7dfff78efbe8405e85e437e1af2d067",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-SpaceInvaders_MiSTer/master/releases/Gun%20Fight.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Gun Fight",
+            "rbf": "spaceinvaders",
+            "zips": [
+              "gunfight.zip"
+            ]
+          }
+        },
+        {
+          "name": "Laguna Racer.mra",
+          "sha": "fe525dfa77594b7e30a4f3f0a787487350bf66d7",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-SpaceInvaders_MiSTer/master/releases/Laguna%20Racer.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Laguna Racer",
+            "rbf": "spaceinvaders",
+            "zips": [
+              "lagunar.zip"
+            ]
+          }
+        },
+        {
+          "name": "Lunar Rescue.mra",
+          "sha": "24957f3cde6ce921bf8362360a18bfd8e91a18a9",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-SpaceInvaders_MiSTer/master/releases/Lunar%20Rescue.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Lunar Rescue",
+            "rbf": "spaceinvaders",
+            "zips": [
+              "lrescue.zip"
+            ]
+          }
+        },
+        {
+          "name": "Lupin III (Set 2).mra",
+          "sha": "112e3b1a4b6ca38fce1550e99c1af0782e029f34",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-SpaceInvaders_MiSTer/master/releases/Lupin%20III%20(Set%202).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Lupin III",
+            "rbf": "spaceinvaders",
+            "zips": [
+              "lupin3.zip|lupin3a.zip"
+            ]
+          }
+        },
+        {
+          "name": "Sea Wolf (Set 1).mra",
+          "sha": "c4bbd7a69f5415ad5a5dcde0df77687133861c49",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-SpaceInvaders_MiSTer/master/releases/Sea%20Wolf%20(Set%201).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Sea Wolf",
+            "rbf": "spaceinvaders",
+            "zips": [
+              "seawolf.zip"
+            ]
+          }
+        },
+        {
+          "name": "Shuffleboard.mra",
+          "sha": "13411fd3f9d958a83d2898d77dad5805276e6e00",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-SpaceInvaders_MiSTer/master/releases/Shuffleboard.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Shuffleboard",
+            "rbf": "spaceinvaders",
+            "zips": [
+              "shuffle.zip"
+            ]
+          }
+        },
+        {
+          "name": "Space Chaser.mra",
+          "sha": "4443a3c13663ed23c83f99c17989d4b1c9c352bc",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-SpaceInvaders_MiSTer/master/releases/Space%20Chaser.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Space Chaser ",
+            "rbf": "spaceinvaders",
+            "zips": [
+              "schaser.zip"
+            ]
+          }
+        },
+        {
+          "name": "Space Encounters.mra",
+          "sha": "1879bccc3f99e7113b85c891f401108886bd3634",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-SpaceInvaders_MiSTer/master/releases/Space%20Encounters.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Space Encounters",
+            "rbf": "spaceinvaders",
+            "zips": [
+              "spcenctr.zip"
+            ]
+          }
+        },
+        {
+          "name": "Space Invaders (Samples).mra",
+          "sha": "5a2a390ad1f1927d87aea37dac788343538f80f9",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-SpaceInvaders_MiSTer/master/releases/Space%20Invaders%20(Samples).mra",
+          "type": "MRA",
+          "extra": null
+        },
+        {
+          "name": "Space Invaders Part II (Taito, Bigger ROMs).mra",
+          "sha": "2fabb39c47e1ba601c5b972faa4802f177a03e56",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-SpaceInvaders_MiSTer/master/releases/Space%20Invaders%20Part%20II%20(Taito%2C%20Bigger%20ROMs).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Space Invaders Part II",
+            "rbf": "spaceinvaders",
+            "zips": [
+              "invadpt2.zip"
+            ]
+          }
+        },
+        {
+          "name": "Space Invaders.mra",
+          "sha": "706d1d2b98a20b4a75f000d7f4e31ed7b559960e",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-SpaceInvaders_MiSTer/master/releases/Space%20Invaders.mra",
+          "type": "MRA",
+          "extra": null
+        },
+        {
+          "name": "Vortex.mra",
+          "sha": "081b8bc656fd99fd4d35da5c423fa2cddeb11697",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-SpaceInvaders_MiSTer/master/releases/Vortex.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Vortex",
+            "rbf": "spaceinvaders",
+            "zips": [
+              "vortex.zip"
+            ]
+          }
+        },
+        {
+          "name": "convert_image.py",
+          "sha": "8c0bbe061b0550e6649b07db36641e61d61c9dc0",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-SpaceInvaders_MiSTer/master/releases/convert_image.py",
+          "type": "OTHER"
+        }
+      ]
+    },
+    {
       "name": "Archie_MiSTer",
       "description": "Acorn Archimedes for MiSTer",
       "readme": "# Acorn Archimedes for [MiSTer Board](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\r\n\r\n### This is the port of [Archie](https://github.com/mist-devel/mist-board/tree/master/cores/archie) core from MiST by Stephen Leary\r\n\r\n**CURRENTLY THIS CORE IS IN BETA STATUS**\r\n\r\n1. Basic internals are implemented.\r\n1. Basic Floppy disk support\r\n1. Sound support added but may not work in all situations.\r\n1. The core emulates a 4Mb A3000 type machine with an ARM2a with caches disabled for now (has an A3010 style joystick interface).\r\n1. Core runs at ~91% of an ARM2 @ 8Mhz when using VGA Modes.\r\n1. Some games now run. Expect issues.\r\n\r\n## Installation\r\n\r\nCopy the [*.rbf](https://github.com/MiSTer-devel/Archie_MiSTer/tree/master/releases) into a root folder of the SD card.\r\nCopy a version of a RiscOS ROM into the \"Archie\" folder, renaming it to `riscos.rom`.\r\n\r\n### Floppy disk images\r\n\r\nThe current version supports two floppy drives. Floppy disk images ADF format and of exactly 819200 bytes in size are currently required. This is the most common format for the Acorn Archimedes.\r\n\r\nImages named `floppy0.adf` and `floppy1.adf` (from Archie folder) are auto-inserted into the floppy disk drives on startup. Other images can be selected via the on-screen-display (OSD) which can be opened using the **WIN+F12** key combo.\r\n\r\n\r\n## OSD Menu\r\n\r\nIf the ROM is recognized the core should boot into Risc OS.\r\nPress **Win+F12** to open the OSD menu.\r\n\r\n* Floppy 0: Choose the floppy disk images to use for floppy 0\r\n* Floppy 1: Choose the floppy disk images to use for floppy 1\r\n* OS ROM: Choose the RISCOS rom to use\r\n* Save config: Save current config for next boot\r\n\r\nYou can move to other pages of settings by pressing the right arrow key.\r\n\r\n## Notes\r\n\r\n* CPU module (amber23) has no reset signal, so the only way to reset the core is to reload it. MiSTer will help to reload the core if **USER** button is pressed (or reset combo pressed on keyboard) and core file is named as **\"Archie.rbf\"**. Otherwise you can reload the core manually from menu (**Win+Alt+F12**).\r\n\r\n\r\n# License\r\n\r\nThis core uses the Amber CPU core from OpenCores which is LGPL.\r\nThe core itself is dual licensed LGPL/BSD.\r\n",
