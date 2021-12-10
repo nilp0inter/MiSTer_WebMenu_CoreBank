@@ -16419,11 +16419,17 @@
     {
       "name": "X68000_MiSTer",
       "description": "Sharp X68000 for MiSTer",
-      "readme": "# [Sharp X68000](https://en.wikipedia.org/wiki/X68000) for MiSTer Platform\r\n\r\n## Work in progress...\r\n\r\n### What is working:\r\n* FDD images on secondary SD card\r\n* HDD images (SASI only!) on secondary SD card\r\n\r\n### Issues:\r\n* keyboard in disk emu screen sometimes doesn't work\r\n* config file sometimes gets corrupted after save.\r\n* floppy images mounted as ejected (Nios II source code required to get it fixed)\r\n* Unused real HDD/FDD options should be deleted from menu.\r\n* Reset works only once (probably Nios II FW bug).\r\n\r\n### Special keys\r\n**F11** - switch to diskemu menu.\r\n",
+      "readme": "# [Sharp X68000](https://en.wikipedia.org/wiki/X68000) for MiSTer Platform\r\n\r\n## Work in progress...\r\n\r\n### Supported storage\r\n* FDD *.d88 images\r\n* SASI HDD *.hdf images\r\n\r\n### Additional info\r\n- Supported MT32-pi over USER I/O port.\r\n\r\n### Installation\r\nCopy *.rbf to SD card. Copy boot.rom and boot3.vhd to Games/X69000 folder.\r\nYou can use BLANK_disk_X68000.D88 if you need to make a new FDD image (or for saves).",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/X68000_MiSTer",
       "releases": [
+        {
+          "name": "BLANK_disk_X68000.D88",
+          "sha": "0473e140bd777a497093a8bd7bda0b6e9aa80dcf",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/X68000_MiSTer/master/releases/BLANK_disk_X68000.D88",
+          "type": "OTHER"
+        },
         {
           "name": "X68000_20171102.rbf",
           "sha": "6315dd57c9b1f488310997b6a4490d4f724b9e68",
@@ -16437,9 +16443,21 @@
           "type": "RBF"
         },
         {
-          "name": "x68000.rom",
+          "name": "X68000_20211210.rbf",
+          "sha": "f07db931f4cff7884b1ef602ea8ec8590242a96a",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/X68000_MiSTer/master/releases/X68000_20211210.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "boot.rom",
           "sha": "dbca3f1dc642925eddbbacc6b9cc070f2119ea6d",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/X68000_MiSTer/master/releases/x68000.rom",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/X68000_MiSTer/master/releases/boot.rom",
+          "type": "OTHER"
+        },
+        {
+          "name": "boot3.vhd",
+          "sha": "150ab248aaf0f6bf292f93b5f004a632dfbe4dac",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/X68000_MiSTer/master/releases/boot3.vhd",
           "type": "OTHER"
         }
       ]
