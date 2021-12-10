@@ -16419,7 +16419,7 @@
     {
       "name": "X68000_MiSTer",
       "description": "Sharp X68000 for MiSTer",
-      "readme": "# [Sharp X68000](https://en.wikipedia.org/wiki/X68000) for MiSTer Platform\r\n\r\n## Work in progress...\r\n\r\n### Supported storage\r\n* FDD *.d88 images\r\n* SASI HDD *.hdf images\r\n\r\n### Additional info\r\n- Supported MT32-pi over USER I/O port.\r\n\r\n### Installation\r\nCopy *.rbf to SD card. Copy boot.rom and boot3.vhd to Games/X69000 folder.\r\nYou can use BLANK_disk_X68000.D88 if you need to make a new FDD image (or for saves).",
+      "readme": "# [Sharp X68000](https://en.wikipedia.org/wiki/X68000) for MiSTer Platform\r\n\r\n## Work in progress...\r\n\r\n### Supported storage\r\n* FDD *.d88 images\r\n* SASI HDD *.hdf images\r\n\r\n### Additional info\r\n- Supported MT32-pi over USER I/O port.\r\n\r\n### Installation\r\nCopy *.rbf to SD card. Copy boot.rom and boot3.vhd to Games/X68000 folder.\r\nYou can use BLANK_disk_X68000.D88 if you need to make a new FDD image (or for saves).\r\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/X68000_MiSTer",
