@@ -4385,15 +4385,14 @@
         },
         {
           "name": "Kicker.mra",
-          "sha": "3cad9f0e271cd383adb7136e5cf9e779be29cab2",
+          "sha": "652c83fdd2ec1a588d45b7f91d8abe7d3a3ddefc",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kicker/releases/Kicker.mra",
           "type": "MRA",
           "extra": {
             "name": "Kicker",
             "rbf": "jtkicker",
             "zips": [
-              "kicker.zip",
-              "jtbeta.zip"
+              "kicker.zip"
             ]
           }
         },
