@@ -10387,6 +10387,15 @@
       ]
     },
     {
+      "name": "CoCo3_MiSTer",
+      "description": "CoCo3FPGA port to MiSTer",
+      "readme": "# CoCo3 Mister\n\n\n## CoCo3FPGA port to MiSTer\n\nThis is a port of Gary Becker's famous CoCo3 in an FPGA to the MiSTer platform by Stan Hodge.\n\n## Roms Needed\n\n* boot0.rom - 32K coco3 rom\n* boot1.rom - 8K extended color basic rom\n* boot2.rom - 8K orch90 rom\n\nRename your roms, and place them in the games/CoCo3/ directory\notherwise you will get a black screen\n\n\n",
+      "archived": false,
+      "fork": false,
+      "url": "https://github.com/MiSTer-devel/CoCo3_MiSTer",
+      "releases": []
+    },
+    {
       "name": "ColecoVision_MiSTer",
       "description": "ColecoVision for MiSTer",
       "readme": "# [Colecovision](https://en.wikipedia.org/wiki/ColecoVision) and [Sega SG-1000](https://en.wikipedia.org/wiki/SG-1000) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\n### Installation\n* Copy the *.rbf file to the root of the system SD card.\n* Place ROMs into Coleco folder\n\n### Supported Filetypes\n * .col/.bin/.rom files for Coleco system\n * .sg files for SG-1000 system\n\nOriginal core https://github.com/wsoltys/mist-cores/tree/master/fpga_colecovision\n",
