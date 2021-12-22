@@ -10393,7 +10393,14 @@
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/CoCo3_MiSTer",
-      "releases": []
+      "releases": [
+        {
+          "name": "CoCo3_20211221.rbf",
+          "sha": "8d75afec72b2a47dcd4e51c32506527dbf0bb05f",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/CoCo3_MiSTer/master/releases/CoCo3_20211221.rbf",
+          "type": "RBF"
+        }
+      ]
     },
     {
       "name": "ColecoVision_MiSTer",
