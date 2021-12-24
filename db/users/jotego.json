@@ -4451,8 +4451,20 @@
           "type": "RBF"
         },
         {
+          "name": "jtkicker_20211222.rbf",
+          "sha": "3a1ebf37729eac5e300aed01e1b1296c8ce5976d",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kicker/releases/jtkicker_20211222.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "jtkicker_20211223.rbf",
+          "sha": "333b899df99b0f2ce3bedd6f0ab4febbc0e8b526",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kicker/releases/jtkicker_20211223.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "version.log",
-          "sha": "ca7ef7624c7a0f9b6d883d8d2865a685a2cb71f6",
+          "sha": "443a6ac9059d113d77d70e78934170dc26d36e35",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kicker/version.log",
           "type": "OTHER"
         },
@@ -6417,6 +6429,38 @@
           "name": "version.log",
           "sha": "c051a27f0024786b827ecf0207ec32ecd8cdf69d",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/vulgus/version.log",
+          "type": "OTHER"
+        },
+        {
+          "name": "README.md",
+          "sha": "4ba344f51ea1376480fddb81b1221e25c31d28dc",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/yiear/README.md",
+          "type": "OTHER"
+        },
+        {
+          "name": "Yie Ar Kung-Fu (program code I).mra",
+          "sha": "327880cf455a08f6987d62da6cd0bc05ef1fdd92",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/yiear/releases/Yie%20Ar%20Kung-Fu%20(program%20code%20I).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Yie Ar Kung-Fu (program code I)",
+            "rbf": "jtyiear",
+            "zips": [
+              "yiear.zip",
+              "jtbeta.zip"
+            ]
+          }
+        },
+        {
+          "name": "jtyiear_20211224.rbf",
+          "sha": "1646251ee7327e2cef57500e6e90ce5136d908e1",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/yiear/releases/jtyiear_20211224.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "version.log",
+          "sha": "73d4b787671399d4540ac80cce0613f411fab38e",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/yiear/version.log",
           "type": "OTHER"
         }
       ]
