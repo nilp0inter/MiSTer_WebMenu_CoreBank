@@ -7667,7 +7667,13 @@
           "sha": "e374008f98038eec678c9949b2f386fc218f635f",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SpaceInvaders_MiSTer/master/releases/Balloon%20Bomber.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Balloon Bomber",
+            "rbf": "spaceinvaders",
+            "zips": [
+              "ballbomb.zip"
+            ]
+          }
         },
         {
           "name": "Blue Shark.mra",
@@ -7687,7 +7693,13 @@
           "sha": "61d9d72cfd88f30576f352908bc9c8bc2036fa45",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SpaceInvaders_MiSTer/master/releases/Boot%20Hill.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Boot Hill",
+            "rbf": "spaceinvaders",
+            "zips": [
+              "boothill.zip"
+            ]
+          }
         },
         {
           "name": "Clowns.mra",
