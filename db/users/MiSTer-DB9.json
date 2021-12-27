@@ -1530,7 +1530,13 @@
           "sha": "d3ee1491ebcf3286df391855745885e48430b983",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-CrazyKong_MiSTer/master/releases/Crazy%20Kong%20Part%20II%20(Set%201).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Crazy Kong Part II",
+            "rbf": "crazykong",
+            "zips": [
+              "ckongpt2.zip"
+            ]
+          }
         },
         {
           "name": "Donkey Kong (Spanish Crazy Kong bootleg).mra",
@@ -9690,7 +9696,13 @@
           "sha": "d6eb5eed336177f01b90143da56a34288278bda1",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/MiSTer-Arcade-Gyruss/master/releases/Gyruss%20(bootleg).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Gyruss (bootleg)",
+            "rbf": "gyruss",
+            "zips": [
+              "gyruss.zip|gyrussb.zip"
+            ]
+          }
         },
         {
           "name": "Gyruss.mra",
