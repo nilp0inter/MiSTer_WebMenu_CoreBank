@@ -321,7 +321,13 @@
           "sha": "122d028d98b920716935ba7b462bbb1750a19f91",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Astrocade_MiSTer/master/releases/Gorf%20(Program%201).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Gorf",
+            "rbf": "astrocade",
+            "zips": [
+              "gorf.zip|gorfpgm1.zip "
+            ]
+          }
         },
         {
           "name": "Gorf (Speech).mra",
@@ -4806,7 +4812,11 @@
           "sha": "ab786a42e9b24899a6a00b0dfbca21d6d81908e2",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Pac-Manic%20Miner.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Pac-Manic Miner",
+            "rbf": "pacman",
+            "zips": []
+          }
         },
         {
           "name": "Ponpoko.mra",
