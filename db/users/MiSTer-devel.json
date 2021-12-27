@@ -7239,7 +7239,13 @@
           "sha": "08b2ddded377a5951c9f5ec4cce5e89e8fdd4794",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SEGASYS1_MiSTer/main/releases/Bull%20Fight%20(315-5056).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Bull Fight",
+            "rbf": "segasys1",
+            "zips": [
+              "bullfgt.zip"
+            ]
+          }
         },
         {
           "name": "Flicky (128k Version, 315-5051).mra",
