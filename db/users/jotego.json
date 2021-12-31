@@ -5629,6 +5629,46 @@
           "type": "OTHER"
         },
         {
+          "name": "Super Basketball (version I, encrypted).mra",
+          "sha": "7ee3010ffece03ce762e869788c2040fe0dc1977",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/sbask1/releases/Super%20Basketball%20(version%20I%2C%20encrypted).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Super Basketball (version I, encrypted)",
+            "rbf": "jtsbask1",
+            "zips": [
+              "sbasketb.zip",
+              "jtbeta.zip"
+            ]
+          }
+        },
+        {
+          "name": "jtsbask1_20211231.rbf",
+          "sha": "2f29253d2704c0cda2a46af01386ca7a6e7055a1",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/sbask1/releases/jtsbask1_20211231.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Super Basketball (version I, encrypted).mra",
+          "sha": "7ee3010ffece03ce762e869788c2040fe0dc1977",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/sbaskt/releases/Super%20Basketball%20(version%20I%2C%20encrypted).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Super Basketball (version I, encrypted)",
+            "rbf": "jtsbask1",
+            "zips": [
+              "sbasketb.zip",
+              "jtbeta.zip"
+            ]
+          }
+        },
+        {
+          "name": "jtsbaskt_20211231.rbf",
+          "sha": "4a2465f5de5e564b17f919d19348f3c06f97a6a1",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/sbaskt/releases/jtsbaskt_20211231.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "README.md",
           "sha": "19115ebd6f9599d25d03f7d90edc577675176ca1",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/sdram48/README.md",
