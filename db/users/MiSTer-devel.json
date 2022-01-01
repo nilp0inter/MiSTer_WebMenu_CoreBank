@@ -1910,7 +1910,13 @@
           "sha": "754b55a941db5ddaa5d9795ebb205cbd15d4dc95",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cave_MiSTer/main/releases/DoDonPachi.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "DoDonPachi",
+            "rbf": "cave",
+            "zips": [
+              "ddonpach.zip"
+            ]
+          }
         }
       ]
     },
