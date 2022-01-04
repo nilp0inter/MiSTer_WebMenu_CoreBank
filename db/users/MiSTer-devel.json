@@ -3889,7 +3889,13 @@
           "sha": "9e22edf22c8543637185d998f2126959c38025df",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM62_MiSTer/master/releases/Spelunker%20II%20-%2023%20no%20Kagi%20(JP).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Spelunker II - 23 no Kagi",
+            "rbf": "iremm62",
+            "zips": [
+              "spelunk2.zip"
+            ]
+          }
         },
         {
           "name": "Spelunker.mra",
@@ -6345,7 +6351,13 @@
           "sha": "e6f01b1456809fcff67803a1d9a3a89b1af8432e",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-RallyX_MiSTer/master/releases/Rally-X%20(32k%20Ver).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Rally-X",
+            "rbf": "rallyx",
+            "zips": [
+              "rallyx.zip"
+            ]
+          }
         },
         {
           "name": "rommap.txt",

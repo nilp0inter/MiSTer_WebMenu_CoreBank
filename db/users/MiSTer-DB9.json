@@ -3329,7 +3329,13 @@
           "sha": "94f2a24d0238ef393b655508ef912321311f3f05",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Jackal_MiSTer/main/releases/Top%20Gunner%20(US).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Top Gunner",
+            "rbf": "Jackal",
+            "zips": [
+              "jackal.zip|topgunr.zip"
+            ]
+          }
         }
       ]
     },
@@ -5126,7 +5132,13 @@
           "sha": "d190417fb82474ecd05ee472437dd6370ff6155e",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pleiads_MiSTer/master/releases/Pleiads%20(Centuri).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Pleiads (Centuri)",
+            "rbf": "pleiads",
+            "zips": [
+              "pleiads.zip|pleiadce.zip"
+            ]
+          }
         },
         {
           "name": "Pleiads.mra",
