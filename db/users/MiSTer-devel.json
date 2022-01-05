@@ -8056,6 +8056,35 @@
       ]
     },
     {
+      "name": "Arcade-Subs_MiSTer",
+      "description": null,
+      "readme": "# Atari Subs by James Sweet\n\nAtari Subs is an early Atari Raster game. It had a color overlay, which is emulated by a PNG file in the overlays directory.\n\nThis version was ported to MiST by Gehstock and MiSTer by alanswx and JasonA\n\nThe original game had two displays, and a head to head combat mode. Given the limitations of MiSTer this just shows the right screen and offers a 1 player game with computer opponent.  The VHDL simulation supports two players, but it isn't presented to the user.\n\n",
+      "archived": false,
+      "fork": false,
+      "url": "https://github.com/MiSTer-devel/Arcade-Subs_MiSTer",
+      "releases": [
+        {
+          "name": "Arcade-Subs_20220105.rbf",
+          "sha": "a17c3c908de528d6eaafbb2a93aca1774d165d34",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Subs_MiSTer/main/releases/Arcade-Subs_20220105.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Subs.mra",
+          "sha": "032f962a054c83d446c7cf9dca445541e09d217b",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Subs_MiSTer/main/releases/Subs.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Subs",
+            "rbf": "subs",
+            "zips": [
+              "subs.zip"
+            ]
+          }
+        }
+      ]
+    },
+    {
       "name": "Arcade-SuperBreakout_MiSTer",
       "description": "FPGA implementation of Super Breakout arcade game released by Atari in 1978",
       "readme": "# SuperBreakout\nFPGA implementation by james10952001 of [Super Breakout](https://github.com/james10952001/SuperBreakout \"SuperBreakout\") arcade game released by Atari in 1978\n\nPort to MiSTer by Alan Steremberg\n\n# Keyboard inputs :\n```\n   F1          : Coin + Start 1P\n   F2          : Coin + Start 2P\n   LEFT,RIGHT arrows : Controls\n   space/ctrl  : Serve\n\n   MAME/IPAC/JPAC Style Keyboard inputs:\n     5           : Coin 1\n     6           : Coin 2\n     1           : Start 1 Player\n     2           : Start 2 Players\n     D,G     : Player 2 Movements\n     A           : Player 2 Serve\n Joystick support. (two supported)\n```\n \n# ROMs\n```\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n\n```\n",
