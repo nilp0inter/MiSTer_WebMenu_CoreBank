@@ -2364,7 +2364,13 @@
           "sha": "af229f020ddddff886026a3a917da829600a86c5",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Frenzy_MiSTer/master/releases/Frenzy%20(Rev%20RA1).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Frenzy",
+            "rbf": "frenzy",
+            "zips": [
+              "frenzy.zip"
+            ]
+          }
         }
       ]
     },
