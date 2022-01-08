@@ -2096,7 +2096,13 @@
           "sha": "d84c1e1eaedc8e28176df0a5c8a69244dd3808ba",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps1/releases/Final%20Fight%20-World%2C%20set%201-.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Final Fight (World, set 1)",
+            "rbf": "jtcps1",
+            "zips": [
+              "ffight.zip"
+            ]
+          }
         },
         {
           "name": "Forgotten Worlds -World, newer-.mra",
