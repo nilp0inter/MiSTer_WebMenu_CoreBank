@@ -3493,7 +3493,13 @@
           "sha": "d36737929ae9dcd70fd2102e0b541fc8e20f0b01",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Galaxian_MiSTer/master/releases/Pisces.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Pisces",
+            "rbf": "galaxian",
+            "zips": [
+              "pisces.zip"
+            ]
+          }
         },
         {
           "name": "UniWar S.mra",
