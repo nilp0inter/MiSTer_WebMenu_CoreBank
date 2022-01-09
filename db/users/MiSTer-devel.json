@@ -7660,7 +7660,13 @@
           "sha": "f8e0b23b27b43b0d275cf08d551807791523fd8c",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SpaceInvaders_MiSTer/master/releases/Attack%20Force.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Attack Force",
+            "rbf": "spaceinvaders",
+            "zips": [
+              "attackfc.zip"
+            ]
+          }
         },
         {
           "name": "Balloon Bomber.mra",
