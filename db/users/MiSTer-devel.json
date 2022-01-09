@@ -4200,7 +4200,14 @@
           "sha": "6442d76e37d9558f76fb2b4cf52a64ac6505f305",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-LadyBug_MiSTer/master/releases/Cosmic%20Avenger.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Cosmic Avenger",
+            "rbf": "ladybug",
+            "zips": [
+              "cavenger.zip",
+              "cavenger.zip"
+            ]
+          }
         },
         {
           "name": "Dorodon (Set 1).mra",
