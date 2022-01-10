@@ -6868,7 +6868,13 @@
           "sha": "e374008f98038eec678c9949b2f386fc218f635f",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SpaceInvaders_MiSTer/master/releases/Balloon%20Bomber.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Balloon Bomber",
+            "rbf": "spaceinvaders",
+            "zips": [
+              "ballbomb.zip"
+            ]
+          }
         },
         {
           "name": "Blue Shark.mra",
