@@ -5628,7 +5628,13 @@
           "sha": "33c110bda5fae3e096292982b638cd753f675cd0",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/sarms/releases/Side%20Arms%20-%20Hyper%20Dyne%20(World%2C%20861129).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Side Arms - Hyper Dyne (World, 861129)",
+            "rbf": "jtsarms",
+            "zips": [
+              "sidearms.zip"
+            ]
+          }
         },
         {
           "name": "jtsarms_20200814.rbf",
