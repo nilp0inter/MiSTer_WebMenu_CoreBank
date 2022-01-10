@@ -5526,7 +5526,14 @@
           "sha": "ad83a307290e909eeaba09fab94b09b7f25fbee1",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b3/releases/Tough%20Turf%20(set%202%2C%20Japan)%20(8751%20317-0104).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Tough Turf (set 2, Japan) (8751 317-0104)",
+            "rbf": "jts16b3",
+            "zips": [
+              "tturf.zip|s16mcu_alt.zip",
+              "jtbeta.zip"
+            ]
+          }
         },
         {
           "name": "Wonder Boy III - Monster Lair (set 6, World, System 16B) (8751 317-0098).mra",
