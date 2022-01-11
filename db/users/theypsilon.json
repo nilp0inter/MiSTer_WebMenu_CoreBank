@@ -49,7 +49,13 @@
           "sha": "0d29c36b81338e8261800d8f9c597682487c4f21",
           "url": "https://raw.githubusercontent.com/theypsilon/Arcade-Cosmic_MiSTer/main/releases/Space%20Panic.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Space Panic",
+            "rbf": "cosmic",
+            "zips": [
+              "panic.zip"
+            ]
+          }
         }
       ]
     },
