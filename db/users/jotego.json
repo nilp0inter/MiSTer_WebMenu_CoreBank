@@ -5498,7 +5498,14 @@
           "sha": "7871943144d77ec19cdc0f93341c9966c1db81cd",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b3/releases/Altered%20Beast%20(set%208)%20(8751%20317-0078).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Altered Beast (set 8) (8751 317-0078)",
+            "rbf": "jts16b3",
+            "zips": [
+              "altbeast.zip|s16mcu_alt.zip",
+              "jtbeta.zip"
+            ]
+          }
         },
         {
           "name": "Golden Axe (set 6, US) (8751 317-123A).mra",
