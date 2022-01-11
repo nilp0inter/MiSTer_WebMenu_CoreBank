@@ -2369,7 +2369,13 @@
           "sha": "b3d58766fa1b19fd77a669a6950c8a12e3fab4cd",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps1/releases/The%20King%20of%20Dragons%20-World%20910805-.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "The King of Dragons (World 910805)",
+            "rbf": "jtcps1",
+            "zips": [
+              "kod.zip"
+            ]
+          }
         },
         {
           "name": "Three Wonders -World 910520-.mra",
