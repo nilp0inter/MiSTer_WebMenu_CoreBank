@@ -5489,7 +5489,13 @@
           "sha": "0c8e4348abc5f24728561f0fc3a089c5df8b63c0",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pacman_MiSTer/master/releases/Eyes%20(US%2C%20Set%201).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Eyes",
+            "rbf": "pacman",
+            "zips": [
+              "eyes.zip"
+            ]
+          }
         },
         {
           "name": "Gorkans.mra",
@@ -5574,7 +5580,13 @@
           "sha": "27660ef9cc20c857363a4d0dd17ab1e2875bde7e",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pacman_MiSTer/master/releases/Pac-Man%20Club-%20Club%20Lambada%20(AR).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Pac-Man Club- Club Lambada",
+            "rbf": "pacman",
+            "zips": [
+              "clubpacm.zip"
+            ]
+          }
         },
         {
           "name": "Pac-Man Plus.mra",
