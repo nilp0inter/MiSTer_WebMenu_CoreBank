@@ -10460,7 +10460,7 @@
     {
       "name": "CoCo3_MiSTer",
       "description": "CoCo3FPGA port to MiSTer",
-      "readme": "# CoCo3 Mister\n\n\n## CoCo3FPGA port to MiSTer\n\nThis is a port of Gary Becker's famous CoCo3 in an FPGA to the MiSTer platform by Stan Hodge.\n\n## Roms Needed\n\n* boot0.rom - 32K coco3 rom\n* boot1.rom - 8K extended color basic rom\n* boot2.rom - 8K orch90 rom\n\nRename your roms, and place them in the games/CoCo3/ directory\notherwise you will get a black screen\n\n\n\n",
+      "readme": "# CoCo3 Mister\n\n\n## CoCo3FPGA port to MiSTer\n\nThis is a port of Gary Becker's famous CoCo3 in an FPGA to the MiSTer platform by Stan Hodge.\n\n## Roms Needed\n\n* boot0.rom - 32K coco3 rom\n* boot1.rom - 8K extended color basic rom\n* boot2.rom - 8K orch90 rom\n\nNote: This core requires the external sdram memory module to function.\n\nRename your roms, and place them in the games/CoCo3/ directory\notherwise you will get a black screen\n\n\n\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/CoCo3_MiSTer",
