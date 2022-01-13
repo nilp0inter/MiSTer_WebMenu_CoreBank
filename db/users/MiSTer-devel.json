@@ -8460,7 +8460,13 @@
           "sha": "5042f121c57dc8b8fde665b01922bc5a7f35d8e3",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TraverseUSA_MiSTer/master/releases/Shot%20Rider%20(B-Board%2089624B-1).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Shot Rider",
+            "rbf": "traverseusa",
+            "zips": [
+              "shtrider.zip"
+            ]
+          }
         },
         {
           "name": "Traverse USA- Zippy Race (US).mra",
