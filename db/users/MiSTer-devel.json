@@ -45,7 +45,14 @@
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/AcornElectron_MiSTer",
-      "releases": []
+      "releases": [
+        {
+          "name": "AcornElectron_20220114.rbf",
+          "sha": "dbc729100e0a2003ecac88cb46f98779cc03ce7d",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/AcornElectron_MiSTer/master/releases/AcornElectron_20220114.rbf",
+          "type": "RBF"
+        }
+      ]
     },
     {
       "name": "ADCTest_MiSTer",
