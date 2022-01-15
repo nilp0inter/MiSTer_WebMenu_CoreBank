@@ -5715,16 +5715,15 @@
           "type": "OTHER"
         },
         {
-          "name": "Super Basketball (version I, encrypted).mra",
-          "sha": "7ee3010ffece03ce762e869788c2040fe0dc1977",
-          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/sbask1/releases/Super%20Basketball%20(version%20I%2C%20encrypted).mra",
+          "name": "Super Basketball (version H, unprotected).mra",
+          "sha": "6a42d63ab7efe1deeb49e466899290d05ad02d42",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/sbask1/releases/Super%20Basketball%20(version%20H%2C%20unprotected).mra",
           "type": "MRA",
           "extra": {
-            "name": "Super Basketball (version I, encrypted)",
-            "rbf": "jtsbask1",
+            "name": "Super Basketball (version H, unprotected)",
+            "rbf": "jtsbaskt",
             "zips": [
-              "sbasketb.zip",
-              "jtbeta.zip"
+              "sbasketh.zip|sbasketb.zip"
             ]
           }
         },
@@ -5754,15 +5753,14 @@
         },
         {
           "name": "Super Basketball (version I, encrypted).mra",
-          "sha": "7ee3010ffece03ce762e869788c2040fe0dc1977",
+          "sha": "445a4da79c9bf6b99d90915716678b1b540e2ca7",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/sbaskt/releases/Super%20Basketball%20(version%20I%2C%20encrypted).mra",
           "type": "MRA",
           "extra": {
             "name": "Super Basketball (version I, encrypted)",
             "rbf": "jtsbask1",
             "zips": [
-              "sbasketb.zip",
-              "jtbeta.zip"
+              "sbasketb.zip"
             ]
           }
         },
@@ -6613,15 +6611,14 @@
         },
         {
           "name": "Yie Ar Kung-Fu (program code I).mra",
-          "sha": "327880cf455a08f6987d62da6cd0bc05ef1fdd92",
+          "sha": "93bcc81269265792be869508ef8ce5e5c3228030",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/yiear/releases/Yie%20Ar%20Kung-Fu%20(program%20code%20I).mra",
           "type": "MRA",
           "extra": {
             "name": "Yie Ar Kung-Fu (program code I)",
             "rbf": "jtyiear",
             "zips": [
-              "yiear.zip",
-              "jtbeta.zip"
+              "yiear.zip"
             ]
           }
         },
