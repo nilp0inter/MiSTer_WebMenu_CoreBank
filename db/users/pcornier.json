@@ -153,22 +153,6 @@
       ]
     },
     {
-      "name": "TatungEinstein_MiSTer",
-      "description": "Port of the Tatung Einstein for MiSTer FPGA",
-      "readme": "# Tatung Einstein for MiSTer FPGA\r\n\r\nIt's a WIP, not usable yet.",
-      "archived": false,
-      "fork": false,
-      "url": "https://github.com/pcornier/TatungEinstein_MiSTer",
-      "releases": [
-        {
-          "name": "_put_rbf_here_",
-          "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
-          "url": "https://raw.githubusercontent.com/pcornier/TatungEinstein_MiSTer/master/releases/_put_rbf_here_",
-          "type": "OTHER"
-        }
-      ]
-    },
-    {
       "name": "TomyScramble_MiSTer",
       "description": "MiSTer Port of Tomy Scramble Game",
       "readme": "# MiSTer Port of TomyTronic Scramble game\r\n\r\nThis is the port of Tomy Scramble for MiSTer.\r\n\r\n## Installation\r\n\r\nCopy the *.rbf and *.rom files to the root of the SD card.",
