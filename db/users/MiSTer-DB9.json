@@ -4777,7 +4777,13 @@
           "sha": "384e782f81148e705c53e9b447b179957c262899",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Mr.%20TNT.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Mr. TNT",
+            "rbf": "pacman",
+            "zips": [
+              "mrtnt.zip"
+            ]
+          }
         },
         {
           "name": "Ms. Pac-Man.mra",
