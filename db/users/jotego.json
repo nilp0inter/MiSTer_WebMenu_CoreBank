@@ -1989,8 +1989,14 @@
           "type": "RBF"
         },
         {
+          "name": "jtcop_20220121.rbf",
+          "sha": "cffebde13110afa8f1871aa68540e41fa26cf6db",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cop/releases/jtcop_20220121.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "version.log",
-          "sha": "d870b2fdcf7936a09449d138b734d28b5e442d38",
+          "sha": "efc0b61ccabf704489577f03de5d9558b1cd3703",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cop/version.log",
           "type": "OTHER"
         },
@@ -4471,7 +4477,7 @@
         },
         {
           "name": "README.md",
-          "sha": "4ba344f51ea1376480fddb81b1221e25c31d28dc",
+          "sha": "af4521fa0febb1f900d48c5b60d28e65c4646a63",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kicker/README.md",
           "type": "OTHER"
         },
@@ -4513,8 +4519,14 @@
           "type": "RBF"
         },
         {
+          "name": "jtkicker_20220121.rbf",
+          "sha": "52892d3cf84b2f9e2f52c399631ce7d7bf55752a",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kicker/releases/jtkicker_20220121.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "version.log",
-          "sha": "443a6ac9059d113d77d70e78934170dc26d36e35",
+          "sha": "272efca208482118721942e29afee01c9ef00c02",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kicker/version.log",
           "type": "OTHER"
         },
@@ -4589,6 +4601,38 @@
           "name": "version.log",
           "sha": "4a2c52165fe4e83aaf01acbf3c2c065658c1e407",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/labrun/version.log",
+          "type": "OTHER"
+        },
+        {
+          "name": "README.md",
+          "sha": "af4521fa0febb1f900d48c5b60d28e65c4646a63",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/mikie/README.md",
+          "type": "OTHER"
+        },
+        {
+          "name": "Mikie.mra",
+          "sha": "4d054ccd407c82e70fc45f62018d3e4d070bce2e",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/mikie/releases/Mikie.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Mikie",
+            "rbf": "jtmikie",
+            "zips": [
+              "mikie.zip",
+              "jtbeta.zip"
+            ]
+          }
+        },
+        {
+          "name": "jtmikie_20220121.rbf",
+          "sha": "f15148766d247c545b30deb117f35a843deb87dc",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/mikie/releases/jtmikie_20220121.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "version.log",
+          "sha": "b678cc62f3a1c735f277e792070c8409e6ec719e",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/mikie/version.log",
           "type": "OTHER"
         },
         {
@@ -5715,6 +5759,12 @@
           "type": "OTHER"
         },
         {
+          "name": "README.md",
+          "sha": "af4521fa0febb1f900d48c5b60d28e65c4646a63",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/sbask1/README.md",
+          "type": "OTHER"
+        },
+        {
           "name": "Super Basketball (version H, unprotected).mra",
           "sha": "6a42d63ab7efe1deeb49e466899290d05ad02d42",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/sbask1/releases/Super%20Basketball%20(version%20H%2C%20unprotected).mra",
@@ -5746,9 +5796,21 @@
           "type": "RBF"
         },
         {
+          "name": "jtsbask1_20220121.rbf",
+          "sha": "9b3ca5dabf83e0f1d68242a5c1bb84ca5f95d73a",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/sbask1/releases/jtsbask1_20220121.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "version.log",
-          "sha": "f3887eb75c989465c1b312887bdb26a5345a52fc",
+          "sha": "deee72d5f1ca0ee1a96b0e7ac99395374bfb07bb",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/sbask1/version.log",
+          "type": "OTHER"
+        },
+        {
+          "name": "README.md",
+          "sha": "af4521fa0febb1f900d48c5b60d28e65c4646a63",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/sbaskt/README.md",
           "type": "OTHER"
         },
         {
@@ -5783,8 +5845,14 @@
           "type": "RBF"
         },
         {
+          "name": "jtsbaskt_20220121.rbf",
+          "sha": "e912b024ca8159b2a7a96f1a909f1e3e82fc700b",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/sbaskt/releases/jtsbaskt_20220121.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "version.log",
-          "sha": "13751a7dbeddf42a952c2fac0ad7a515a3ffe80d",
+          "sha": "4389a748931e6b0070f33541b54d3083f1484426",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/sbaskt/version.log",
           "type": "OTHER"
         },
@@ -6605,7 +6673,7 @@
         },
         {
           "name": "README.md",
-          "sha": "4ba344f51ea1376480fddb81b1221e25c31d28dc",
+          "sha": "af4521fa0febb1f900d48c5b60d28e65c4646a63",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/yiear/README.md",
           "type": "OTHER"
         },
