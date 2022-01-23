@@ -4009,7 +4009,13 @@
           "sha": "42133cf9f06ad8954854b536fa3dd5bccff573ea",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IronHorse_MiSTer/main/releases/Iron%20Horse%20(Ver.%20K).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Iron Horse",
+            "rbf": "IronHorse",
+            "zips": [
+              "ironhors.zip"
+            ]
+          }
         }
       ]
     },
