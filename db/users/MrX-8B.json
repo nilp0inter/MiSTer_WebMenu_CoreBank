@@ -74,7 +74,13 @@
           "sha": "fcef1153e2523633d348db9e24c0b34bab628729",
           "url": "https://raw.githubusercontent.com/MrX-8B/Arcade-Druaga_MiSTer/master/releases/The%20Tower%20of%20Druaga.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "The Tower of Druaga (New Ver.)",
+            "rbf": "druaga",
+            "zips": [
+              "todruaga.zip"
+            ]
+          }
         },
         {
           "name": "rommap.txt",
@@ -880,7 +886,13 @@
           "sha": "b6c957ddbc25ead5a20d23363ad010fa72cd7ed7",
           "url": "https://raw.githubusercontent.com/MrX-8B/MiSTer-Arcade-SEGASYS1/master/releases/TeddyBoy%20Blues.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "TeddyBoy Blues (315-5115, New Ver.)",
+            "rbf": "segasys1",
+            "zips": [
+              "teddybb.zip"
+            ]
+          }
         },
         {
           "name": "Up'n Down.mra",

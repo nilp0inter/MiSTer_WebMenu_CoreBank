@@ -1480,7 +1480,13 @@
           "sha": "02638d47de532cab5cbabfc6b84c69a8ba9a56d8",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SMS_MiSTer/master/releases/Opa%20Opa.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Opa Opa (MC-8123, 317-0042)",
+            "rbf": "SMS",
+            "zips": [
+              "opaopa.zip"
+            ]
+          }
         },
         {
           "name": "Riddle of Pythagoras (Japan).mra",

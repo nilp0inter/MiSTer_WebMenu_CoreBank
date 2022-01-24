@@ -891,7 +891,13 @@
           "sha": "c86b8f7cca80656bb3f9d6057326e23c5243ca10",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-AsteroidsDeluxe_MiSTer/master/releases/Asteroids%20Deluxe.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Asteroids Deluxe (rev 3)",
+            "rbf": "asteroidsdeluxe",
+            "zips": [
+              "astdelux.zip"
+            ]
+          }
         }
       ]
     },
@@ -1336,7 +1342,13 @@
           "sha": "a512fd781868d587860ac36f59ca20eb9e806b3d",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Bagman_MiSTer/master/releases/Pickin'.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Pickin'",
+            "rbf": "bagman",
+            "zips": [
+              "pickin.zip"
+            ]
+          }
         },
         {
           "name": "Squash.mra",
@@ -5871,7 +5883,13 @@
           "sha": "f412c2d5be589765deea0c53783b9c91e36bdd17",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Phoenix_MiSTer/master/releases/Phoenix%20(Amstar%2C%20Set%201).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Phoenix",
+            "rbf": "phoenix",
+            "zips": [
+              "phoenix.zip"
+            ]
+          }
         },
         {
           "name": "Pleiads (Tehkan).mra",

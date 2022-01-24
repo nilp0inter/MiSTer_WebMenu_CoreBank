@@ -201,7 +201,13 @@
           "sha": "92c0e95d482e1ba21b92aaca5b2ed66b0e86aea6",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Asteroids_MiSTer/master/releases/Asteroids.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Asteroids (rev 4)",
+            "rbf": "asteroids",
+            "zips": [
+              "asteroid.zip"
+            ]
+          }
         }
       ]
     },
@@ -6944,7 +6950,13 @@
           "sha": "60b97bd1104007325ad31d84e1e2e3ff4d9de510",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SpaceInvaders_MiSTer/master/releases/Clowns.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Clowns",
+            "rbf": "spaceinvaders",
+            "zips": [
+              "clowns.zip"
+            ]
+          }
         },
         {
           "name": "Cosmo.mra",
