@@ -22,8 +22,8 @@ output = "_Arcade/cores/jtbtiger_20211205.rbf"
 
 
 # jtbubl
-url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/bubl/releases/jtbubl_20211227.rbf"
-output = "_Arcade/cores/jtbubl_20211227.rbf"
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/bubl/releases/jtbubl_20220121.rbf"
+output = "_Arcade/cores/jtbubl_20220121.rbf"
 
 
 # jtcommando
@@ -122,8 +122,8 @@ output = "_Others/jtmx5k_20211103.rbf"
 
 
 # jtninja
-url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/ninja/releases/jtninja_20220107.rbf"
-output = "_Others/jtninja_20220107.rbf"
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/ninja/releases/jtninja_20220121.rbf"
+output = "_Others/jtninja_20220121.rbf"
 
 
 # jtrumble
@@ -142,8 +142,8 @@ output = "_Others/jts16a2_20220107.rbf"
 
 
 # jts16b
-url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/jts16b_20220107.rbf"
-output = "_Others/jts16b_20220107.rbf"
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/jts16b_20220128.rbf"
+output = "_Others/jts16b_20220128.rbf"
 
 
 # jts16b1
@@ -784,6 +784,11 @@ output = "_Arcade/Alien Syndrome (set 4, System 16B, unprotected).mra"
 # Aurail (set 3, US) (unprotected).mra
 url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/Aurail%20(set%203%2C%20US)%20(unprotected).mra"
 output = "_Arcade/Aurail (set 3, US) (unprotected).mra"
+
+
+# Bay Route (set 3, World) (FD1094 317-0116).mra
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/Bay%20Route%20(set%203%2C%20World)%20(FD1094%20317-0116).mra"
+output = "_Arcade/Bay Route (set 3, World) (FD1094 317-0116).mra"
 
 
 # Bullet (FD1094 317-0041).mra
