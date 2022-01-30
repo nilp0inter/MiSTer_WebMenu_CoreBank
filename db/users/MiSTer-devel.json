@@ -11937,7 +11937,7 @@
     {
       "name": "Laser310_MiSTer",
       "description": "VTECH Laser 310 Mister FPGA core",
-      "readme": "\nThis is a MiSTer port of the core by:\nhttps://github.com/zzemu-cn/LASER310_FPGA_DD20\n\n\n# VZ Loader\n\nLoad VZ snapshots - there are two types, basic images and binary images. The basic images will load, and you need to type RUN&lt;enter&gt; to start. Binary ones should start automatically.\n\n# Joystick Support\n\nThe original system has a left and right joystick. It is possible you may need a second joystick to play some games.\n\n# TODO\n\n* cassette \n* floppy support\n* Sound\n",
+      "readme": "\nThis is a MiSTer port of the core by:\nhttps://github.com/zzemu-cn/LASER310_FPGA_DD20\n\n\n# VZ Loader\n\nLoad VZ snapshots - there are two types, basic images and binary images. The basic images will load, and you need to type RUN&lt;enter&gt; to start. Binary ones should start automatically.\n\n# Joystick Support\n\nThe original system has a left and right joystick. It is possible you may need a second joystick to play some games.\n\n\n# 08-SEP-20\n\nAdded switchable 64x32 Screen mode\nAdded 24K VRAM mode\nFixed error with CPU reading $7800-$7FFF range\nAdded 6847T1 style Lower Case, requires SHRG *ON*\n\n# 16-SEP-20\n\nFixed display shakiness.\nTweaked display parameters slightly.\n\n# TODO\n\n* cassette \n* floppy support\n* Sound\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/Laser310_MiSTer",
@@ -11946,6 +11946,12 @@
           "name": "Laser310_20200701.rbf",
           "sha": "3c661d5dd80d2fa552464d67fca30f8b4ebef078",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Laser310_MiSTer/master/releases/Laser310_20200701.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Laser310_20200916.rbf",
+          "sha": "20bbe59853d784c319522da534472c6da50a826e",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Laser310_MiSTer/master/releases/Laser310_20200916.rbf",
           "type": "RBF"
         }
       ]
