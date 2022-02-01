@@ -1136,7 +1136,13 @@
           "sha": "09d42fb386eae63ea937fb8964c4d84be04e2503",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Astrocade_MiSTer/master/releases/Wizard%20of%20Wor%20(Speech).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Wizard of Wor",
+            "rbf": "astrocade",
+            "zips": [
+              "wow.zip"
+            ]
+          }
         },
         {
           "name": "Wizard of Wor.mra",
@@ -2614,7 +2620,13 @@
           "sha": "27a19a12c2b7e89e923e03b83fcd3c8f8f823937",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-DonkeyKong3_MiSTer/master/releases/Donkey%20Kong%203%20(US).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Donkey Kong 3",
+            "rbf": "donkeykong3",
+            "zips": [
+              "dkong3.zip"
+            ]
+          }
         }
       ]
     },
