@@ -96,6 +96,74 @@
       ]
     },
     {
+      "name": "Arcade-VBall_MiSTer",
+      "description": "This is a port of V'Ball for MiSTer FPGA",
+      "readme": "# U.S. Championship V'ball\r\n\r\n\r\nThis is the emulation of V'Ball from Technos Japan ported to MiSTerFPGA by Pierre Cornier (Pierco). The core uses SDRAM for background tiles & DDRAM for PCM data, loaded automagically from mra.\r\n\r\nThe default joystick mapping is:\r\n\r\n| Name   | Button |\r\n|--------|--------|\r\n| Coin A | R2     |\r\n| Coin B | L2     |\r\n| Jump   | B      |\r\n| Action | A      |\r\n| Start  | Start  |\r\n\r\n## Games provided\r\n\r\n- U.S. Championship V'ball (US)\r\n- U.S. Championship V'ball (Bootleg of US set)\r\n\r\n## DIP-Switches\r\n\r\n- Difficulty\r\n- Single Player Game Time\r\n- Start Buttons (4-player)\r\n- Rotate Players 1 & 4\r\n- Player Mode (2/4)\r\n- Coin A (coins/credits)\r\n- Coin B (coins/credits)\r\n- Flip Screen\r\n- Demo Sounds\r\n\r\n\r\nI would like to thank Alan Steremberg, ElectronAsh, David Shadoff & Chockichoc for their help and support.",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/pcornier/Arcade-VBall_MiSTer",
+      "releases": [
+        {
+          "name": "Arcade-VBall_20210613.rbf",
+          "sha": "50fe1cc055cd495bdbf1692380722b31234c49c3",
+          "url": "https://raw.githubusercontent.com/pcornier/Arcade-VBall_MiSTer/master/releases/Arcade-VBall_20210613.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-VBall_20210614.rbf",
+          "sha": "dac8273ac3ed84ea7c296f2092a6933da9625cfa",
+          "url": "https://raw.githubusercontent.com/pcornier/Arcade-VBall_MiSTer/master/releases/Arcade-VBall_20210614.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-VBall_20210615.rbf",
+          "sha": "ff58e082aaf929cfc1007fc561af69b3cc7e616b",
+          "url": "https://raw.githubusercontent.com/pcornier/Arcade-VBall_MiSTer/master/releases/Arcade-VBall_20210615.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-VBall_20210618.rbf",
+          "sha": "4b516b6640945f07c3ec43d61886a6e15a5d3499",
+          "url": "https://raw.githubusercontent.com/pcornier/Arcade-VBall_MiSTer/master/releases/Arcade-VBall_20210618.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-VBall_20210621.rbf",
+          "sha": "c9d2ef18114eab28f9bed4b61a079d8cf775a170",
+          "url": "https://raw.githubusercontent.com/pcornier/Arcade-VBall_MiSTer/master/releases/Arcade-VBall_20210621.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "V'Ball (US) [bl].mra",
+          "sha": "702b8456b61c4df357314b55479708d3d1a98242",
+          "url": "https://raw.githubusercontent.com/pcornier/Arcade-VBall_MiSTer/master/releases/V'Ball%20(US)%20%5Bbl%5D.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "U.S. Championship V'ball",
+            "rbf": "vball",
+            "zips": [
+              "vball.zip|vballb.zip",
+              "vballb.zip"
+            ]
+          }
+        },
+        {
+          "name": "V'Ball (US).mra",
+          "sha": "c3b363707a03ec851e979d30772ea6601a02b773",
+          "url": "https://raw.githubusercontent.com/pcornier/Arcade-VBall_MiSTer/master/releases/V'Ball%20(US).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "U.S. Championship V'ball",
+            "rbf": "vball",
+            "zips": [
+              "vball.zip",
+              "vball.zip"
+            ]
+          }
+        }
+      ]
+    },
+    {
       "name": "CoCo2_MiSTer",
       "description": "CoCo2",
       "readme": "\n# MiSTer Tandy Color Computer 2 (CoCo2)  and Dragon 32\n\nOriginally started by:\n\nhttps://github.com/pcornier/coco2\n\nFinished by dshadoff and alanswx and pcornier.\n\n### Tandy Color 2\n\nThis core implements a Tandy Color Computer 2 (CoCo2) including:\n * 64k Memory\n * 2 Analog Joysticks (with a swap feature)\n * Cassette Loading\n * Sound\n * Cartridge Support\n\n### Dragon 32 / 64\n\n * only the dragon 32 seems to work \n * 2 Analog Joysticks (with a swap feature)\n * Cassette Loading\n * Sound\n * Cartridge Support\n\n\n![Coco2 running on the AX309](photo.jpg)\n\n*Coco 2 running on a AX309 board*",
