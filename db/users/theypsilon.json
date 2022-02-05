@@ -151,6 +151,34 @@
       ]
     },
     {
+      "name": "Atari7800_MiSTer",
+      "description": "Atari 7800 for MiSTer",
+      "readme": "# Atari7800 for MiSTer.\n\n## Features\n- Runs complete Atari 7800 retail library.\n- Supports NTSC and PAL regions.\n- Supports High Score Cart saving.\n- Supports Light Guns, Trakballs, Mice, Quadtari, and Paddles.\n- XEGS Keyboard support via POKEY at $450 or $4000.\n- Dual Pokey audio.\n- YM2151 Audio using Jotego's JT51.\n- Supports Covox.\n- Support for XM and XBoard modules.\n- Supports Activision, Absolute, Souper, and Supergame mappers up to 1mb.\n- Choice of Cool, Warm, or Hot system temperature color output.\n\n## Setup\nNot much setup is required, but you may optionally put a system bios as `boot0.rom` in your Atari7800 ROMs folder to use before loading a game. It may increase compatibility in some rare cases if used. This core does rely on properly configured Atari7800 headers as detailed [here](http://7800.8bitdev.org/index.php/A78_Header_Specification). Using Trebors 7800 ROM PROPack is recommended as this is a reliable source of correctly headered ROMs.\n\n## 2600 Support\nMost 2600 games are supported including most bankswitching schemes, with a few exceptions. ARM based mappers, such as DPC+ require a 70mhz ARM cpu, which would be either very difficult, or impossible, to have run properly on the cyclone V that MiSTer FPGA uses. To make the experience better, an Out of Order screen will be shown when one of these games using modern hardware is loaded. A few more eccentric peripherals are also not supported simply due to lack of any practical purpose, but anyone is welcome to add them someday if there's some need. This includes the Compumate and the Gameline peripherals. That said, the following bankswitching is supported: F8, F6, FE, E0, 3F, F4, P2, FA, CV, 2K, UA, E7, F0, 32, AR, 3E, SB, WD (8k dump), and EF. Bankswitching will now auto-detect the correct type, and does not require special extensions.\n\n## Paddles\nThe paddle peripheral is mostly used in 2600 games and has special handling surrounding it because of its unusual 2-paddles-per-port configuration. Three types of inputs are supported for paddles: analog sticks, mice, and mr. spinner compatible joystick adapters. It's important to note that PADDLES HAVE A DEDICATED FIRE BUTTON in this core, and it must be set in order to use the paddles properly. Because there are four paddles and two controllers ports, and a myriad of input devices, paddles are assigned independently of joysticks. Every time a game is cold reset, paddles are re-assigned. The core will assign paddles in order, when a port has paddles enabled. The various devices are recognised under these conditions:\n\n- Mice when you click the left button.\n- Analog sticks when you move either the Y axis or X axis to an extreme (make sure to assign analog x/y in the main mapping).\n- Mr. Spinner devices when they are moved to an extreme position.\n\nPlease note that some games do not use paddle 1A for their input, some exceptions are:\n\n- Astroblast: Uses 1B.\n- Tac Scan: Uses 2B.\n- Demons to Diamonds: Uses 1B.\n\nTo make dealing with this easier, there is an option to swap paddles A and B of either port, so that 1A will become 1B and vice versa. Additionally, if the input type is set to \"auto\" with 2600 games, pressing the fire button will toggle the input into Joystick mode, and pressing the paddle button will toggle the input into Paddle mode, for convenience.\n\n## Keyboard shortcuts\n- F1 Select\n- F2 Start\n- F3 B/W toggle switch\n- F4 Difficulty Left toggle switch A/B\n- F5 Difficulty Right toggle switch A/B\n- F6 Pause\n\n## Additional Notes\nSome games use the [difficulty switches](https://atariage.com/forums/topic/235913-atari-7800-difficulty-switches-guide/) to control their behavior, most notably Tower Toppler, which will continue to skip levels if the switches are in the \"low\" position. Tower Toppler also relies on composite blending artifacts to look correct, so it may be worthwhile to enable that for this game. The 7800 had issues with color consistency depending on the temperature of the system. Not all games may look ideal with the warm palette, so you may have to experiment per game to find the ideal colors.\n\n## Known Bugs\n- Expansion ram of XM module is not fully implemented because I couldnt find anything that used it.\n- YM Auto detection appears to fail because of an edge-case detection routine.\n- BupChip music chip is not implemented because it runs on a modern microcontroller.\n\n## Special Thanks\n- Mark Saarna for his enormous knowledge of the system and patient help.\n- Osman Celimli for his DMA timing traces and experience.\n- Robert Tuccitto for the extensive palette information.\n- Remowilliams for testing a zillion games for me on real hardware.\n- Alan Steremberg for getting access to valuable documentation.\n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/theypsilon/Atari7800_MiSTer",
+      "releases": [
+        {
+          "name": "Atari7800_20210417.rbf",
+          "sha": "cb917d1d83f107606f3b8229d5724f0424d3c080",
+          "url": "https://raw.githubusercontent.com/theypsilon/Atari7800_MiSTer/master/releases/Atari7800_20210417.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Atari7800_20211128.rbf",
+          "sha": "9fbef5671675c05e00e5e4419e2fd846d0c6abf0",
+          "url": "https://raw.githubusercontent.com/theypsilon/Atari7800_MiSTer/master/releases/Atari7800_20211128.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Atari7800_20220130.rbf",
+          "sha": "e61fedc5d8d17e2f3654544e8d20c146ae94c48e",
+          "url": "https://raw.githubusercontent.com/theypsilon/Atari7800_MiSTer/master/releases/Atari7800_20220130.rbf",
+          "type": "RBF"
+        }
+      ]
+    },
+    {
       "name": "BadAppleDB_MiSTer",
       "description": null,
       "readme": null,
