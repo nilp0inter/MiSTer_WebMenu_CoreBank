@@ -7,16 +7,23 @@
     {
       "name": "Arcade-Pacman_MiSTer",
       "description": "Arcade: Pacman for MiSTer",
-      "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: Pacman port to MiSTer by Sorgelig\n-- 09 November 2017\n-- \n---------------------------------------------------------------------------------\n-- A simulation model of Pacman hardware\n-- Copyright (c) MikeJ - January 2006\n---------------------------------------------------------------------------------\n-- \n-- Support screen and controls rotation on HDMI output.\n-- Only controls are rotated on VGA output.\n-- \n-- \n-- Keyboard inputs :\n--\n--   F1          : Start Player 1\n--   F2          : Start Player 2\n--   F3\t\t : Coin Player 1\n--   F5          : Skip to next level\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   R,F,D,G     : Player 2 Movements\n--\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--\n-- Joystick support.\n-- \n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROM is not included. In order to use this arcade, you need to provide a correct ROM file.\n\nFind this zip file somewhere. You need to find the file exactly as required.\nDo not rename other zip files even if they also represent the same game - they are not compatible!\nThe name of zip is taken from M.A.M.E. project, so you can get more info about\nhashes and contained files there.\n\nTo generate the ROM using Windows:\n1) Copy the zip into \"releases\" directory\n2) Execute bat file - it will show the name of zip file containing required files.\n3) Put required zip into the same directory and execute the bat again.\n4) If everything will go without errors or warnings, then you will get the a.*.rom file.\n5) Copy generated a.*.rom into root of SD card along with the Arcade-*.rbf file\n\nTo generate the ROM using Linux/MacOS:\n1) Copy the zip into \"releases\" directory\n2) Execute build_rom.sh\n3) Copy generated a.*.rom into root of SD card along with the Arcade-*.rbf file\n\nTo generate the ROM using MiSTer:\n1) scp \"releases\" directory along with the zip file onto MiSTer:/media/fat/\n2) Using OSD execute build_rom.sh\n3) Copy generated a.*.rom into root of SD card along with the Arcade-*.rbf file\n",
+      "readme": "LLAPI Note : \n\nIn order to play with 2 players you need to insert 2 coins at least and press START2P button. This button has been mapped to the LEFT shoulder button (SNES controller used as a reference)\n\n---------------------------------------------------------------------------------\n-- \n-- Arcade: Pacman port to MiSTer by Sorgelig\n-- 09 November 2017\n-- \n---------------------------------------------------------------------------------\n-- A simulation model of Pacman hardware\n-- Copyright (c) MikeJ - January 2006\n---------------------------------------------------------------------------------\n-- \n-- Support screen and controls rotation on HDMI output.\n-- Only controls are rotated on VGA output.\n-- \n-- \n-- Keyboard inputs :\n--\n--   F1          : Start Player 1\n--   F2          : Start Player 2\n--   F3\t\t : Coin Player 1\n--   F5          : Skip to next level\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   R,F,D,G     : Player 2 Movements\n--\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--\n-- Joystick support.\n-- \n----------------------------------------------\n\nHiscore save/load:\n\nSave and load of hiscores is supported for the following games on this core:\n - Alibaba 40 Thieves\n - Crush Roller\n - Dream Shopper\n - Eggor\n - Gorkans\n - Lizard Wizard\n - Mr. TNT\n - Ms. Pacman\n - Pac-Man (Midway)\n - Pacman Club\n - Pacman Plus\n - Ponpoko\n - Puck Man\n - Woodpecker\n\nTo save your hiscores manually, press the 'Save Settings' option in the OSD.  Hiscores will be automatically loaded when the core is started.\n\nTo enable automatic saving of hiscores, turn on the 'Autosave Hiscores' option and press the 'Save Settings' option in the OSD.  Hiscores will then be automatically saved (if they have changed) any time the OSD is opened.\n\nHiscore data is stored in /media/fat/config/nvram/ as ```<mra filename>.nvm```\n\n---------------------------------------------------------------------------------\n\n                                 *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer",
       "releases": [
         {
-          "name": "7za.exe",
-          "sha": "7f6bf86bc43ed71decf8b03f54dcb9b2be143a24",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer/master/releases/7za.exe",
-          "type": "OTHER"
+          "name": "Ali Baba and 40 Thieves.mra",
+          "sha": "f825cbec95dc34acfe0cb7b1fd001f4af17c3b46",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer/master/releases/Ali%20Baba%20and%2040%20Thieves.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Ali Baba and 40 Thieves",
+            "rbf": "pacman",
+            "zips": [
+              "alibaba.zip"
+            ]
+          }
         },
         {
           "name": "Arcade-Pacman_20171125.rbf",
@@ -37,28 +44,409 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Pacman_20191218.rbf",
+          "sha": "41dc762f0804d53ceaee5fda9eb66fbc41107d0c",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer/master/releases/Arcade-Pacman_20191218.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Pacman_20191222.rbf",
+          "sha": "04510e7b3438b5399046ecb1bccad7041edb47bf",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer/master/releases/Arcade-Pacman_20191222.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Pacman_20191229.rbf",
+          "sha": "f9a5786f4ef068b6797a3a654a7aa57ed8094806",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer/master/releases/Arcade-Pacman_20191229.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Pacman_20191230.rbf",
+          "sha": "7bc0681e438b012cf8dc9a3f284f0ddccf481bd5",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer/master/releases/Arcade-Pacman_20191230.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Pacman_20200106.rbf",
+          "sha": "1d1b0e491493ced3c8243a34645c16529ab0485e",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer/master/releases/Arcade-Pacman_20200106.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Pacman_20200108.rbf",
+          "sha": "92f5d77daa14f872f2086d7ac4505b5db8b9a091",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer/master/releases/Arcade-Pacman_20200108.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Pacman_20200109.rbf",
+          "sha": "ebcedbbc1b14af8df18c235bc1d2ec44331c22ba",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer/master/releases/Arcade-Pacman_20200109.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Pacman_20200112.rbf",
+          "sha": "88e1a557170a0b2b60513b999d304a01782e32b4",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer/master/releases/Arcade-Pacman_20200112.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Pacman_20200114.rbf",
+          "sha": "afe98164f50b102d2767cb774d9c3006a8c106e8",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer/master/releases/Arcade-Pacman_20200114.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Pacman_20200114a.rbf",
+          "sha": "9289231e6d21466c26a0dd912deb3775d7fa368b",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer/master/releases/Arcade-Pacman_20200114a.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Pacman_20200116.rbf",
+          "sha": "14c98c131faf54ae0573a094b574b1e717dfd66f",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer/master/releases/Arcade-Pacman_20200116.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Pacman_20201215.rbf",
+          "sha": "4eb2b2455c472efd5271be250ee057a8e042b41b",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer/master/releases/Arcade-Pacman_20201215.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Pacman_20210121.rbf",
+          "sha": "00ca24c987596b79fdc93f7cf2b3313bce5290de",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer/master/releases/Arcade-Pacman_20210121.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Pacman_20210207.rbf",
+          "sha": "77ecd4a807a29c7d440551052b8196e3ac84f048",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer/master/releases/Arcade-Pacman_20210207.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Pacman_20210317.rbf",
+          "sha": "4a17ce32aebdb9a4a129c86c3eeebb18394d428b",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer/master/releases/Arcade-Pacman_20210317.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Pacman_20210420.rbf",
+          "sha": "63f7f638ab32820a16e66c263a5ba70515864575",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer/master/releases/Arcade-Pacman_20210420.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Pacman_20210915.rbf",
+          "sha": "d98c38272c614dc8859621664c1f9c210fef5610",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer/master/releases/Arcade-Pacman_20210915.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Arcade-Pacman_LLAPI_20191125.rbf",
           "sha": "af220fc0153301546680552761c8e321ef7ecb97",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer/master/releases/Arcade-Pacman_LLAPI_20191125.rbf",
           "type": "RBF"
         },
         {
-          "name": "build_rom.ini",
-          "sha": "ea5adf91f0b9023a272d9272901796cb0ca77b57",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer/master/releases/build_rom.ini",
-          "type": "OTHER"
+          "name": "Beastie Feastie (Pac-Man Conversion).mra",
+          "sha": "5d527e8bac5d5957d99da490460dfb5ce4171ce3",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer/master/releases/Beastie%20Feastie%20(Pac-Man%20Conversion).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Beastie Feastie",
+            "rbf": "pacman",
+            "zips": [
+              "suprglob.zip|beastfp.zip"
+            ]
+          }
         },
         {
-          "name": "build_rom.sh",
-          "sha": "2b1f85f7c258b5e9407b9bcc73f97c1092b82d5f",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer/master/releases/build_rom.sh",
-          "type": "OTHER"
+          "name": "Birdiy.mra",
+          "sha": "bd6c219395309796a18efc29fb851a30b0c1c6c2",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer/master/releases/Birdiy.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Birdiy",
+            "rbf": "pacman",
+            "zips": [
+              "birdiy.zip"
+            ]
+          }
         },
         {
-          "name": "build_rom_Pacman.bat",
-          "sha": "832a1ddbd6582e6549cda9ca689bd62544b7cad1",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer/master/releases/build_rom_Pacman.bat",
-          "type": "OTHER"
+          "name": "Crush Roller (Set 2).mra",
+          "sha": "1d63d270218a783203cc3377433fa98bfa4b652e",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer/master/releases/Crush%20Roller%20(Set%202).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Crush Roller",
+            "rbf": "pacman",
+            "zips": [
+              "crush.zip|crush2.zip"
+            ]
+          }
+        },
+        {
+          "name": "Dream Shopper.mra",
+          "sha": "b0a197372d914ec866af3653efdda67fcd403833",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer/master/releases/Dream%20Shopper.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Dream Shopper",
+            "rbf": "pacman",
+            "zips": [
+              "dremshpr.zip"
+            ]
+          }
+        },
+        {
+          "name": "Eeek! (Pac-Man Conversion).mra",
+          "sha": "2d4262dc5827fdcdc63453deb10a48f3dee79828",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer/master/releases/Eeek!%20(Pac-Man%20Conversion).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Eeek!",
+            "rbf": "pacman",
+            "zips": [
+              "eeekk.zip|eeekkp.zip"
+            ]
+          }
+        },
+        {
+          "name": "Eggor.mra",
+          "sha": "11ece169dd5d2ae7af186dfd435d1199341bb88c",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer/master/releases/Eggor.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Eggor",
+            "rbf": "pacman",
+            "zips": [
+              "eggor.zip"
+            ]
+          }
+        },
+        {
+          "name": "Eyes (US, Set 1).mra",
+          "sha": "0c8e4348abc5f24728561f0fc3a089c5df8b63c0",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer/master/releases/Eyes%20(US%2C%20Set%201).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Eyes",
+            "rbf": "pacman",
+            "zips": [
+              "eyes.zip"
+            ]
+          }
+        },
+        {
+          "name": "Gorkans.mra",
+          "sha": "55c0cb85edce714009989e31110af2653d8c1bfd",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer/master/releases/Gorkans.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Gorkans",
+            "rbf": "pacman",
+            "zips": [
+              "mrtnt.zip|gorkans.zip"
+            ]
+          }
+        },
+        {
+          "name": "Jump Shot.mra",
+          "sha": "98aa8b86edea67a4175b6ac8d12740c822190aea",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer/master/releases/Jump%20Shot.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Jump Shot",
+            "rbf": "pacman",
+            "zips": [
+              "jumpshot.zip"
+            ]
+          }
+        },
+        {
+          "name": "Lizard Wizard.mra",
+          "sha": "eba7d061a303153499a9c2eb43ea519df6e46a5f",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer/master/releases/Lizard%20Wizard.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Lizard Wizard",
+            "rbf": "pacman",
+            "zips": [
+              "lizwiz.zip"
+            ]
+          }
+        },
+        {
+          "name": "Mr. TNT.mra",
+          "sha": "384e782f81148e705c53e9b447b179957c262899",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer/master/releases/Mr.%20TNT.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Mr. TNT",
+            "rbf": "pacman",
+            "zips": [
+              "mrtnt.zip"
+            ]
+          }
+        },
+        {
+          "name": "Ms. Pac-Man.mra",
+          "sha": "9452cdd980fa3ba9fcbd0297f0fe64def933232d",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer/master/releases/Ms.%20Pac-Man.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Ms. Pac-Man",
+            "rbf": "pacman",
+            "zips": [
+              "mspacman.zip"
+            ]
+          }
+        },
+        {
+          "name": "Number Crash.mra",
+          "sha": "fe76f58671d087c5fa6265a0a4b9a639cc4f16f9",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer/master/releases/Number%20Crash.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Number Crash",
+            "rbf": "pacman",
+            "zips": [
+              "numcrash.zip"
+            ]
+          }
+        },
+        {
+          "name": "Pac-Man (Midway).mra",
+          "sha": "647fb00e12997cca59da032f15fc1af5663e31a3",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer/master/releases/Pac-Man%20(Midway).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Pac-Man",
+            "rbf": "pacman",
+            "zips": [
+              "puckman.zip|pacman.zip"
+            ]
+          }
+        },
+        {
+          "name": "Pac-Man Club- Club Lambada (AR).mra",
+          "sha": "27660ef9cc20c857363a4d0dd17ab1e2875bde7e",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer/master/releases/Pac-Man%20Club-%20Club%20Lambada%20(AR).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Pac-Man Club- Club Lambada",
+            "rbf": "pacman",
+            "zips": [
+              "clubpacm.zip"
+            ]
+          }
+        },
+        {
+          "name": "Pac-Man Plus.mra",
+          "sha": "d714b779e966bdedef88ac4446cfad9d29189195",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer/master/releases/Pac-Man%20Plus.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Pac-Man Plus",
+            "rbf": "pacman",
+            "zips": [
+              "/hbmame/puckman.zip"
+            ]
+          }
+        },
+        {
+          "name": "Pac-Manic Miner.mra",
+          "sha": "ab786a42e9b24899a6a00b0dfbca21d6d81908e2",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer/master/releases/Pac-Manic%20Miner.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Pac-Manic Miner",
+            "rbf": "pacman",
+            "zips": []
+          }
+        },
+        {
+          "name": "Ponpoko.mra",
+          "sha": "19562f77df9251c075b0dfa6c5f0f19d46951fef",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer/master/releases/Ponpoko.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Ponpoko",
+            "rbf": "pacman",
+            "zips": [
+              "ponpoko.zip"
+            ]
+          }
+        },
+        {
+          "name": "Puck Man (JP, Set 1).mra",
+          "sha": "e05d13561ae0f6fc1407d75adf77524984096483",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer/master/releases/Puck%20Man%20(JP%2C%20Set%201).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Puck Man",
+            "rbf": "pacman",
+            "zips": [
+              "puckman.zip"
+            ]
+          }
+        },
+        {
+          "name": "Super Glob (Pac-Man, German) [bl].mra",
+          "sha": "58582e7794168df2fde51b3ddb78432e058665bc",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer/master/releases/Super%20Glob%20(Pac-Man%2C%20German)%20%5Bbl%5D.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Super Glob",
+            "rbf": "pacman",
+            "zips": [
+              "suprglob.zip|sprglbpg.zip"
+            ]
+          }
+        },
+        {
+          "name": "The Glob (Pac-Man Hardware).mra",
+          "sha": "0d38b3f32d16503cf082d53906a81d1781b6f91a",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer/master/releases/The%20Glob%20(Pac-Man%20Hardware).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "The Glob",
+            "rbf": "pacman",
+            "zips": [
+              "suprglob.zip|theglobp.zip"
+            ]
+          }
+        },
+        {
+          "name": "Van-Van Car.mra",
+          "sha": "dd5f1f0a423e8ea63dfdbc3ede9df7abfdc2a39e",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer/master/releases/Van-Van%20Car.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Van-Van Car",
+            "rbf": "pacman",
+            "zips": [
+              "vanvan.zip"
+            ]
+          }
+        },
+        {
+          "name": "Woodpecker (Set 1).mra",
+          "sha": "834db5d7cc08ff18e61b525b997e34a4fe5704e8",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer/master/releases/Woodpecker%20(Set%201).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Woodpecker",
+            "rbf": "pacman",
+            "zips": [
+              "woodpeck.zip"
+            ]
+          }
         }
       ]
     },
