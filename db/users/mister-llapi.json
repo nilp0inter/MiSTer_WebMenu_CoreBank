@@ -17,7 +17,13 @@
           "sha": "f825cbec95dc34acfe0cb7b1fd001f4af17c3b46",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer/master/releases/Ali%20Baba%20and%2040%20Thieves.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Ali Baba and 40 Thieves",
+            "rbf": "pacman",
+            "zips": [
+              "alibaba.zip"
+            ]
+          }
         },
         {
           "name": "Arcade-Pacman_20171125.rbf",
@@ -388,7 +394,13 @@
           "sha": "e05d13561ae0f6fc1407d75adf77524984096483",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer/master/releases/Puck%20Man%20(JP%2C%20Set%201).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Puck Man",
+            "rbf": "pacman",
+            "zips": [
+              "puckman.zip"
+            ]
+          }
         },
         {
           "name": "Super Glob (Pac-Man, German) [bl].mra",

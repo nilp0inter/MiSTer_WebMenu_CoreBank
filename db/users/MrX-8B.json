@@ -74,7 +74,13 @@
           "sha": "fcef1153e2523633d348db9e24c0b34bab628729",
           "url": "https://raw.githubusercontent.com/MrX-8B/Arcade-Druaga_MiSTer/master/releases/The%20Tower%20of%20Druaga.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "The Tower of Druaga (New Ver.)",
+            "rbf": "druaga",
+            "zips": [
+              "todruaga.zip"
+            ]
+          }
         },
         {
           "name": "rommap.txt",
