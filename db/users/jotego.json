@@ -2053,6 +2053,26 @@
           "type": "OTHER"
         },
         {
+          "name": "README.md",
+          "sha": "e0a528c3e7f3fea4187e3398c602401241e468a3",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cop/README.md",
+          "type": "OTHER"
+        },
+        {
+          "name": "Hippodrome (US).mra",
+          "sha": "c228b187de876e3a0a87ee5be1f5dbac24a1cf73",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cop/releases/Hippodrome%20(US).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Hippodrome (US)",
+            "rbf": "jtcop",
+            "zips": [
+              "hippodrm.zip",
+              "jtbeta.zip"
+            ]
+          }
+        },
+        {
           "name": "Robocop (World revision 4).mra",
           "sha": "9d3e1d0d8f608b8790148f6ea73bee786fc4f69f",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cop/releases/Robocop%20(World%20revision%204).mra",
@@ -2085,8 +2105,14 @@
           "type": "RBF"
         },
         {
+          "name": "jtcop_20220211.rbf",
+          "sha": "33358d005347c9811ca8805c99971ed97eca7d72",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cop/releases/jtcop_20220211.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "version.log",
-          "sha": "ab5b8223511e0277a9affb2a5746008b3914620d",
+          "sha": "042cc3945279842681b9f3a244f09f2f2d8aba05",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cop/version.log",
           "type": "OTHER"
         },
@@ -4897,7 +4923,7 @@
         },
         {
           "name": "README.md",
-          "sha": "92d2cb1d72f2c9c2d5be506a86a235c5444bfb44",
+          "sha": "e0a528c3e7f3fea4187e3398c602401241e468a3",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/ninja/README.md",
           "type": "OTHER"
         },
@@ -4960,8 +4986,14 @@
           "type": "RBF"
         },
         {
+          "name": "jtninja_20220211.rbf",
+          "sha": "10b82e9d7563c2aa2b68957ca9c58ffddc26a46c",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/ninja/releases/jtninja_20220211.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "version.log",
-          "sha": "33cf13ff14e6a47ed9f16793a9d7094c0edcb5c3",
+          "sha": "3bae1a7d77ae68842e130e22f94740013ccb6609",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/ninja/version.log",
           "type": "OTHER"
         },

@@ -42,8 +42,8 @@ output = "_Others/jtcontra_20220201.rbf"
 
 
 # jtcop
-url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cop/releases/jtcop_20220204.rbf"
-output = "_Others/jtcop_20220204.rbf"
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cop/releases/jtcop_20220211.rbf"
+output = "_Others/jtcop_20220211.rbf"
 
 
 # jtcps1
@@ -122,8 +122,8 @@ output = "_Others/jtmx5k_20220201.rbf"
 
 
 # jtninja
-url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/ninja/releases/jtninja_20220204.rbf"
-output = "_Others/jtninja_20220204.rbf"
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/ninja/releases/jtninja_20220211.rbf"
+output = "_Others/jtninja_20220211.rbf"
 
 
 # jtrumble
@@ -274,6 +274,11 @@ output = "_Arcade/Combat School Joystick.mra"
 # Contra (US - Asia, set 1).mra
 url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/contra/releases/Contra%20(US%20-%20Asia%2C%20set%201).mra"
 output = "_Arcade/Contra (US - Asia, set 1).mra"
+
+
+# Hippodrome (US).mra
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cop/releases/Hippodrome%20(US).mra"
+output = "_Arcade/Hippodrome (US).mra"
 
 
 # Robocop (World revision 4).mra
