@@ -2112,7 +2112,7 @@
         },
         {
           "name": "version.log",
-          "sha": "042cc3945279842681b9f3a244f09f2f2d8aba05",
+          "sha": "18e10ac72053a35f9d262bf8c0c1da6683ecb29d",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cop/version.log",
           "type": "OTHER"
         },
@@ -4829,6 +4829,38 @@
         },
         {
           "name": "README.md",
+          "sha": "c3ef9abe16cc9233fddc16d7b272ae11b60615e3",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/midres/README.md",
+          "type": "OTHER"
+        },
+        {
+          "name": "Midnight Resistance (World).mra",
+          "sha": "4057c37564aa4ca8386da10ca6d0026235ab34d0",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/midres/releases/Midnight%20Resistance%20(World).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Midnight Resistance (World)",
+            "rbf": "jtmidres",
+            "zips": [
+              "midres.zip",
+              "jtbeta.zip"
+            ]
+          }
+        },
+        {
+          "name": "jtmidres_20220218.rbf",
+          "sha": "2cc9b46a70818478583978814a82ad3a1e046478",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/midres/releases/jtmidres_20220218.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "version.log",
+          "sha": "5f1ab4613e4b630770f950e760a766fbe55e847d",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/midres/version.log",
+          "type": "OTHER"
+        },
+        {
+          "name": "README.md",
           "sha": "af4521fa0febb1f900d48c5b60d28e65c4646a63",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/mikie/README.md",
           "type": "OTHER"
@@ -4993,7 +5025,7 @@
         },
         {
           "name": "version.log",
-          "sha": "3bae1a7d77ae68842e130e22f94740013ccb6609",
+          "sha": "177846ef70158daf4cf2d0c9cb171233b88be77c",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/ninja/version.log",
           "type": "OTHER"
         },
