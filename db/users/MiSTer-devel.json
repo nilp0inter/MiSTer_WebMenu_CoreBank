@@ -1565,6 +1565,74 @@
       ]
     },
     {
+      "name": "Arcade-Blockade_MiSTer",
+      "description": null,
+      "readme": "# Blockade by Sega/Gremlin Industries for [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\nAn FPGA implementation of Blockade arcade hardware by Gremlin Industries for the MiSTer platform.\n\n## Credits\n- [__JimmyStones__](https://github.com/JimmyStones): Core design and implementation\n- [__Vslav__](https://github.com/1801BM1): [vm80a](https://github.com/1801BM1/vm80a) CPU (8080A implementation reverse engineered from a Soviet replica!)\n- [__Jotego__](https://github.com/jotego): [jtframe_resync](https://github.com/jotego/jtframe/blob/master/hdl/video/jtframe_resync.v) for analog video H/V re-positioning\n- __Soltan_G42__: 1st order low-pass filter for audio circuit - thanks also to __Ace__ for explanations on how to use and tune the filter\n- __Ethan__ of [The History of How We Play](https://thehistoryofhowweplay.wordpress.com): Editing and expansion of history\n\n## FPGA implementation\n- Built entirely in simulation using original schematics and information from MAME, logic has been simplified where possible\n- Supports all Gremlin produced games which use the Blockade 8080A-based hardware\n- Monochrome video output with selectable colour overlay (Green,White,Yellow,Red)\n\n## Supported games\n- Blockade (1976)\n- CoMotion (1977)\n- Hustle (1977)\n- Blasto (1978)\n\n## History of Blockade\nBlockade was created by Lane Hauck in 1976 as a project to get the Gremlin management interested in producing video games.\nInitially the game concept began as an expression of the \u201crandom walk\u201d in physics, using a 2D plane with tiles to represent spaces where the cursor had been. He developed this into a game which proved popular enough to develop into a full product to be launched at the end of 1976.\nThe analog circuits used to generate the explosion sound effects were designed by Bob Pecoraro. Additional programming was done by George Kiss. Lonnie Pogue designed the cabinet for the game while Verl \u201cOle\u201d Olson designed the four player cabinet.\nThe game was shown at the 1976 AMOA expo from November 12th-14th, along with a 4-player version called CoMotion. It received accolades from the coin-op trade press and was quickly copied by competitors.\n\nBlockade is effectively the original 'light-cycles' game, but unfortunately due to Gremlin's inexperience in producing arcade cabinets they were outpaced by a number of clones, including Ramtek's Barricade, Midway's Checkmate, and Atari's Dominos.\nThis led to many circuit boards being unsold and so further games were produced using the surplus Blockade hardware, with minor changes including larger ROMs and more RAM.\n\nHustle was released in May 1977 and was the origin  of the 'Snake' genre which later became popular as a casual game on low end computers, web-based Flash applications, and mobile phones.  1 or 2 players compete to collect points while avoiding their ever growing tail and that of their opponent.\n\nBlasto (conceived by Hauck and programmed by Bill Blewett) was released in July 1978, and is a 1 or 2 player shooter where players maneuver around a destructible maze and destroy mines, while avoiding the explosions and chain reactions that occur.\n\nSources:\n- Ethan of [History of How We Play](https://thehistoryofhowweplay.wordpress.com)\n- http://allincolorforaquarter.blogspot.com/2015/09/the-ultimate-so-far-history-of-gremlin_25.html\n\n## Known issues\n- Square-wave sound circuit is probably not producing the correct frequency (hard to verify without access to a good recording of original machine)\n- Boom sound circuit is not implemented, so it uses a sample (from https://samples.mameworld.info/)\n- Coin circuit timing is suspect, but it works!\n- Free game on Hustle cannot be disabled in DIPs (due to limitation of MiSTer DIPs support)\n\n## Installation\nPlace `*.rbf` into the \"_Arcade/cores\" folder on your SD card.  Then, place `*.mra` into the \"_Arcade\" folder and ROM files from MAME into \"games/mame\".\n\n### ****ATTENTION****\nROMs are not included. In order to use this arcade core, you must provide the correct ROMs.\n\nTo simplify the process, .mra files are provided in the releases folder that specify the required ROMs along with their checksums.  The ROM's .zip filename refers to the corresponding file in the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms-and-MRA-files for information on how to setup and use the environment.\n\nQuick reference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/games/mame/<mame rom>.zip\n/games/hbmame/<hbmame rom>.zip\n",
+      "archived": false,
+      "fork": false,
+      "url": "https://github.com/MiSTer-devel/Arcade-Blockade_MiSTer",
+      "releases": [
+        {
+          "name": "Arcade-Blockade_20220216.rbf",
+          "sha": "453d323fcdafea8c68ca46e63dce6d00eeb0fc76",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Blockade_MiSTer/main/releases/Arcade-Blockade_20220216.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Blasto.mra",
+          "sha": "c7076a6bd0842b26b666b8bc35c61b7bb54b67bd",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Blockade_MiSTer/main/releases/Blasto.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Blasto",
+            "rbf": "blockade",
+            "zips": [
+              "blasto.zip"
+            ]
+          }
+        },
+        {
+          "name": "Blockade.mra",
+          "sha": "f4765c255c129ce3b4583683e201aec50ccc3327",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Blockade_MiSTer/main/releases/Blockade.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Blockade",
+            "rbf": "blockade",
+            "zips": [
+              "blockade.zip"
+            ]
+          }
+        },
+        {
+          "name": "CoMotion.mra",
+          "sha": "0b2f834191b4f1e845705cc3937bc67cf2b5d21a",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Blockade_MiSTer/main/releases/CoMotion.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "CoMotion",
+            "rbf": "blockade",
+            "zips": [
+              "comotion.zip"
+            ]
+          }
+        },
+        {
+          "name": "Hustle.mra",
+          "sha": "1ac6343386de87d3f90d346b7b42a585cb328137",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Blockade_MiSTer/main/releases/Hustle.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Hustle",
+            "rbf": "blockade",
+            "zips": [
+              "hustle.zip"
+            ]
+          }
+        }
+      ]
+    },
+    {
       "name": "Arcade-BombJack_MiSTer",
       "description": "Arcade: Bomb Jack for MiSTer",
       "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: Bomb Jack port to MiSTer by Sorgelig\n-- 03 November 2017\n-- \n---------------------------------------------------------------------------------\n-- Bomb Jack implementation in FPGA. Author: Alex \n-- http://papilio.cc/index.php?n=Playground.BombJack\n---------------------------------------------------------------------------------\n-- \n-- Support screen and controls rotation on HDMI output.\n-- Only controls are rotated on VGA output.\n-- \n-- \n-- Keyboard inputs :\n--\n--   F2          : Insert the coin + Start 2 players\n--   F1          : Insert the coin + Start 1 player\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--   SPACE       : Jump\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   R,F,D,G     : Player 2 Movements\n--   A           : Player 2 Jump\n--\n-- Joystick support.\n-- \n-- \n----------------------------------------------\n\nHiscore save/load:\n\nSave and load of hiscores is supported for this core.\n\nTo save your hiscores manually, press the 'Save Settings' option in the OSD.  Hiscores will be automatically loaded when the core is started.\n\nTo enable automatic saving of hiscores, turn on the 'Autosave Hiscores' option, press the 'Save Settings' option in the OSD, and reload the core.  Hiscores will then be automatically saved (if they have changed) any time the OSD is opened.\n\nHiscore data is stored in /media/fat/config/nvram/ as ```<mra filename>.nvm```\n\n----------------------------------------------\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
