@@ -4785,7 +4785,13 @@
           "sha": "0c8e4348abc5f24728561f0fc3a089c5df8b63c0",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Eyes%20(US%2C%20Set%201).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Eyes",
+            "rbf": "pacman",
+            "zips": [
+              "eyes.zip"
+            ]
+          }
         },
         {
           "name": "Gorkans.mra",
@@ -7708,7 +7714,13 @@
           "sha": "503c7d38147f279836c4fcb4c036fade263eb3de",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Zaxxon_MiSTer/master/releases/zaxxon.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Zaxxon",
+            "rbf": "zaxxon",
+            "zips": [
+              "zaxxon.zip"
+            ]
+          }
         }
       ]
     },
@@ -7761,7 +7773,13 @@
           "sha": "999a27d53747f0139be7f579d4a386501d2e2507",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-ZigZag_MiSTer/master/releases/Zig%20Zag%20(Dig%20Dug%20Conversion)%20%5Bbl%5D.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Zig Zag",
+            "rbf": "zigzag",
+            "zips": [
+              "zigzagb.zip"
+            ]
+          }
         }
       ]
     },
@@ -10002,28 +10020,52 @@
           "sha": "e35d39e5700601e7f6afafa8a257147f24442a1f",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/MiSTer-Arcade-Gyruss/master/releases/Gyruss%20(Centuri).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Gyruss (Centuri)",
+            "rbf": "Gyruss",
+            "zips": [
+              "gyruss.zip|gyrussce.zip"
+            ]
+          }
         },
         {
           "name": "Gyruss (bootleg).mra",
           "sha": "d6eb5eed336177f01b90143da56a34288278bda1",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/MiSTer-Arcade-Gyruss/master/releases/Gyruss%20(bootleg).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Gyruss (bootleg)",
+            "rbf": "gyruss",
+            "zips": [
+              "gyruss.zip|gyrussb.zip"
+            ]
+          }
         },
         {
           "name": "Gyruss.mra",
           "sha": "bb7e6bab2b1e750429d73146203047da639ebf28",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/MiSTer-Arcade-Gyruss/master/releases/Gyruss.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Gyruss",
+            "rbf": "Gyruss",
+            "zips": [
+              "gyruss.zip"
+            ]
+          }
         },
         {
           "name": "Venus (bootleg of Gyruss).mra",
           "sha": "406ce74cd738a6116a56a5f60ce89176e878197c",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/MiSTer-Arcade-Gyruss/master/releases/Venus%20(bootleg%20of%20Gyruss).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Venus (bootleg of Gyruss)",
+            "rbf": "gyruss",
+            "zips": [
+              "gyruss.zip|venus.zip"
+            ]
+          }
         }
       ]
     },
@@ -10712,42 +10754,78 @@
           "sha": "bd594249e4edc5b9e8a36626d4938daa484a56e7",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/SMS_MiSTer/master/releases/Astro%20Flash%20(Japan).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Astro Flash (Japan)",
+            "rbf": "SMS",
+            "zips": [
+              "transfrm.zip"
+            ]
+          }
         },
         {
           "name": "Fantasy Zone II - The Tears of Opa-Opa.mra",
           "sha": "ad80302cf61452c3e199b6bdb0aa34ad1974c401",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/SMS_MiSTer/master/releases/Fantasy%20Zone%20II%20-%20The%20Tears%20of%20Opa-Opa.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Fantasy Zone II - The Tears of Opa-Opa (MC-8123, 317-0057)",
+            "rbf": "SMS",
+            "zips": [
+              "fantzn2.zip"
+            ]
+          }
         },
         {
           "name": "Hang On Jr.mra",
           "sha": "0ee0813363a1d8486f17497f786d3ed63a2e0a48",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/SMS_MiSTer/master/releases/Hang%20On%20Jr.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Hang-On Jr. (Rev. B)",
+            "rbf": "SMS",
+            "zips": [
+              "hangonjr.zip"
+            ]
+          }
         },
         {
           "name": "Opa Opa (Rev A, unprotected).mra",
           "sha": "a313e9fa63df3b92f1ab16e622fd95bf477428f6",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/SMS_MiSTer/master/releases/Opa%20Opa%20(Rev%20A%2C%20unprotected).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Opa Opa (Rev A, unprotected)",
+            "rbf": "SMS",
+            "zips": [
+              "opaopa.zip"
+            ]
+          }
         },
         {
           "name": "Opa Opa.mra",
           "sha": "02638d47de532cab5cbabfc6b84c69a8ba9a56d8",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/SMS_MiSTer/master/releases/Opa%20Opa.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Opa Opa (MC-8123, 317-0042)",
+            "rbf": "SMS",
+            "zips": [
+              "opaopa.zip"
+            ]
+          }
         },
         {
           "name": "Riddle of Pythagoras (Japan).mra",
           "sha": "a033271dc21642b50f2d448c2a405a4c7c795986",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/SMS_MiSTer/master/releases/Riddle%20of%20Pythagoras%20(Japan).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Riddle of Pythagoras (Japan)",
+            "rbf": "SMS",
+            "zips": [
+              "ridleofp.zip"
+            ]
+          }
         },
         {
           "name": "SMS_20200225.rbf",
@@ -10898,21 +10976,39 @@
           "sha": "13b2ff4ac0ccfad8a6257af16734f09cda62fb83",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/SMS_MiSTer/master/releases/Slap%20Shooter.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Slap Shooter",
+            "rbf": "SMS",
+            "zips": [
+              "slapshtr.zip"
+            ]
+          }
         },
         {
           "name": "Tetris (Japan, System E).mra",
           "sha": "d89ec9c6cf80eb989c30f108cd20d710bb449cac",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/SMS_MiSTer/master/releases/Tetris%20(Japan%2C%20System%20E).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Tetris (Japan, System E)",
+            "rbf": "SMS",
+            "zips": [
+              "tetrisse.zip"
+            ]
+          }
         },
         {
           "name": "Transformer.mra",
           "sha": "e5a8d795729725c2fd035774a7b9c31d257bf8c1",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/SMS_MiSTer/master/releases/Transformer.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Transformer",
+            "rbf": "SMS",
+            "zips": [
+              "transfrm.zip"
+            ]
+          }
         }
       ]
     },

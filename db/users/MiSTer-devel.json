@@ -7894,70 +7894,130 @@
           "sha": "fcc2713619e2b8dea1e99651d3f6ee2feb16b3a3",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SpaceInvaders_MiSTer/master/releases/Cosmo.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Cosmo",
+            "rbf": "spaceinvaders",
+            "zips": [
+              "cosmo.zip"
+            ]
+          }
         },
         {
           "name": "Galaxy Wars (Universal, Set 1).mra",
           "sha": "cef7bdfd6c4365e51fbc89cf20886b35f28cde54",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SpaceInvaders_MiSTer/master/releases/Galaxy%20Wars%20(Universal%2C%20Set%201).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Galaxy Wars",
+            "rbf": "spaceinvaders",
+            "zips": [
+              "galxwars.zip"
+            ]
+          }
         },
         {
           "name": "Gun Fight.mra",
           "sha": "74462c28c7dfff78efbe8405e85e437e1af2d067",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SpaceInvaders_MiSTer/master/releases/Gun%20Fight.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Gun Fight",
+            "rbf": "spaceinvaders",
+            "zips": [
+              "gunfight.zip"
+            ]
+          }
         },
         {
           "name": "Laguna Racer.mra",
           "sha": "fe525dfa77594b7e30a4f3f0a787487350bf66d7",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SpaceInvaders_MiSTer/master/releases/Laguna%20Racer.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Laguna Racer",
+            "rbf": "spaceinvaders",
+            "zips": [
+              "lagunar.zip"
+            ]
+          }
         },
         {
           "name": "Lunar Rescue.mra",
           "sha": "24957f3cde6ce921bf8362360a18bfd8e91a18a9",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SpaceInvaders_MiSTer/master/releases/Lunar%20Rescue.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Lunar Rescue",
+            "rbf": "spaceinvaders",
+            "zips": [
+              "lrescue.zip"
+            ]
+          }
         },
         {
           "name": "Lupin III (Set 2).mra",
           "sha": "112e3b1a4b6ca38fce1550e99c1af0782e029f34",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SpaceInvaders_MiSTer/master/releases/Lupin%20III%20(Set%202).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Lupin III",
+            "rbf": "spaceinvaders",
+            "zips": [
+              "lupin3.zip|lupin3a.zip"
+            ]
+          }
         },
         {
           "name": "Sea Wolf (Set 1).mra",
           "sha": "c4bbd7a69f5415ad5a5dcde0df77687133861c49",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SpaceInvaders_MiSTer/master/releases/Sea%20Wolf%20(Set%201).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Sea Wolf",
+            "rbf": "spaceinvaders",
+            "zips": [
+              "seawolf.zip"
+            ]
+          }
         },
         {
           "name": "Shuffleboard.mra",
           "sha": "13411fd3f9d958a83d2898d77dad5805276e6e00",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SpaceInvaders_MiSTer/master/releases/Shuffleboard.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Shuffleboard",
+            "rbf": "spaceinvaders",
+            "zips": [
+              "shuffle.zip"
+            ]
+          }
         },
         {
           "name": "Space Chaser.mra",
           "sha": "4443a3c13663ed23c83f99c17989d4b1c9c352bc",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SpaceInvaders_MiSTer/master/releases/Space%20Chaser.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Space Chaser ",
+            "rbf": "spaceinvaders",
+            "zips": [
+              "schaser.zip"
+            ]
+          }
         },
         {
           "name": "Space Encounters.mra",
           "sha": "1879bccc3f99e7113b85c891f401108886bd3634",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SpaceInvaders_MiSTer/master/releases/Space%20Encounters.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Space Encounters",
+            "rbf": "spaceinvaders",
+            "zips": [
+              "spcenctr.zip"
+            ]
+          }
         },
         {
           "name": "Space Invaders (Samples).mra",
@@ -7971,7 +8031,13 @@
           "sha": "2fabb39c47e1ba601c5b972faa4802f177a03e56",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SpaceInvaders_MiSTer/master/releases/Space%20Invaders%20Part%20II%20(Taito%2C%20Bigger%20ROMs).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Space Invaders Part II",
+            "rbf": "spaceinvaders",
+            "zips": [
+              "invadpt2.zip"
+            ]
+          }
         },
         {
           "name": "Space Invaders.mra",
@@ -7985,7 +8051,13 @@
           "sha": "081b8bc656fd99fd4d35da5c423fa2cddeb11697",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SpaceInvaders_MiSTer/master/releases/Vortex.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Vortex",
+            "rbf": "spaceinvaders",
+            "zips": [
+              "vortex.zip"
+            ]
+          }
         },
         {
           "name": "convert_image.py",
@@ -8014,7 +8086,11 @@
           "sha": "2908f66b65e9f629a254b54b919f2eae7745f017",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SpaceRace_MiSTer/master/releases/Space%20Race%20%5BTTL%5D.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Space Race [TTL]",
+            "rbf": "spacerace",
+            "zips": []
+          }
         }
       ]
     },
@@ -8079,7 +8155,13 @@
           "sha": "40551aad877973f9150798503697ff368300e39c",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Sprint1_MiSTer/master/releases/Sprint%201.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Sprint 1",
+            "rbf": "sprint1",
+            "zips": [
+              "sprint1.zip"
+            ]
+          }
         }
       ]
     },
@@ -8132,7 +8214,13 @@
           "sha": "88b59534c196fa212ee9a41d0db4e8b8f173e503",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Sprint2_MiSTer/master/releases/Sprint%202.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Sprint 2",
+            "rbf": "sprint2",
+            "zips": [
+              "sprint1.zip|sprint2.zip"
+            ]
+          }
         }
       ]
     },
@@ -8155,7 +8243,13 @@
           "sha": "032f962a054c83d446c7cf9dca445541e09d217b",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Subs_MiSTer/main/releases/Subs.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Subs",
+            "rbf": "subs",
+            "zips": [
+              "subs.zip"
+            ]
+          }
         }
       ]
     },
@@ -8214,7 +8308,13 @@
           "sha": "ec4ea54f39c2064dc2ada534382f823bc8a29839",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SuperBreakout_MiSTer/master/releases/Super%20Breakout%20(Rev%2004).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Super Breakout",
+            "rbf": "superbreakout",
+            "zips": [
+              "sbrkout.zip"
+            ]
+          }
         }
       ]
     },
@@ -8261,21 +8361,39 @@
           "sha": "646b7857c9c75e254fa1090e07e3e48c4841b9af",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Tecmo_MiSTer/master/releases/Gemini%20Wing.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Gemini Wing",
+            "rbf": "tecmo",
+            "zips": [
+              "gemini.zip"
+            ]
+          }
         },
         {
           "name": "Rygar.mra",
           "sha": "9b58bce8bc8de209071ade60acc9bf2585c2b904",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Tecmo_MiSTer/master/releases/Rygar.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Rygar",
+            "rbf": "tecmo",
+            "zips": [
+              "rygar.zip"
+            ]
+          }
         },
         {
           "name": "Silkworm.mra",
           "sha": "7eb0534207b477709583cba953414e10fd1abd00",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Tecmo_MiSTer/master/releases/Silkworm.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Silkworm",
+            "rbf": "tecmo",
+            "zips": [
+              "silkworm.zip"
+            ]
+          }
         }
       ]
     },
@@ -8292,42 +8410,78 @@
           "sha": "0dfc44f21a09a81b2af6ef953ac991f5ed47342f",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TIAMC1_MiSTer/main/releases/Billiard.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Billiard",
+            "rbf": "tiamc1",
+            "zips": [
+              "bilyard.zip"
+            ]
+          }
         },
         {
           "name": "Gorodki.mra",
           "sha": "13fc9026fa62fd97867c7a3a337338841f74e405",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TIAMC1_MiSTer/main/releases/Gorodki.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Gorodki",
+            "rbf": "tiamc1",
+            "zips": [
+              "gorodki.zip"
+            ]
+          }
         },
         {
           "name": "Konek Gorbunok.mra",
           "sha": "0b74a73f296b089b1b6cf97192709f64647d7094",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TIAMC1_MiSTer/main/releases/Konek%20Gorbunok.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Konek Gorbunok",
+            "rbf": "tiamc1",
+            "zips": [
+              "konek.zip"
+            ]
+          }
         },
         {
           "name": "Kot-Rybolov.mra",
           "sha": "9ffa8bd869477256ec27b3bf2b3284c7cb0fc8e3",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TIAMC1_MiSTer/main/releases/Kot-Rybolov.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Kot-Rybolov",
+            "rbf": "tiamc1",
+            "zips": [
+              "kot.zip"
+            ]
+          }
         },
         {
           "name": "S.O.S..mra",
           "sha": "c84ce1425914b0eea87d7dde65b159cf4fced874",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TIAMC1_MiSTer/main/releases/S.O.S..mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "S.O.S.",
+            "rbf": "tiamc1",
+            "zips": [
+              "sosterm.zip"
+            ]
+          }
         },
         {
           "name": "Snezhnaja Koroleva.mra",
           "sha": "96aec0c88feebf03fe0ff81ca2d4cc9a75d54ca2",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TIAMC1_MiSTer/main/releases/Snezhnaja%20Koroleva.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Snezhnaja Koroleva",
+            "rbf": "tiamc1",
+            "zips": [
+              "koroleva.zip"
+            ]
+          }
         },
         {
           "name": "TIAMC1_20210320.rbf",
@@ -8422,7 +8576,13 @@
           "sha": "5992786008ec85e058916834f347aa33ed4c6084",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TimePilot_MiSTer/master/releases/Time%20Pilot.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Time Pilot",
+            "rbf": "timepilot",
+            "zips": [
+              "timeplt.zip"
+            ]
+          }
         }
       ]
     },
@@ -8463,14 +8623,26 @@
           "sha": "5042f121c57dc8b8fde665b01922bc5a7f35d8e3",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TraverseUSA_MiSTer/master/releases/Shot%20Rider%20(B-Board%2089624B-1).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Shot Rider",
+            "rbf": "traverseusa",
+            "zips": [
+              "shtrider.zip"
+            ]
+          }
         },
         {
           "name": "Traverse USA- Zippy Race (US).mra",
           "sha": "bbbb195e9041445cc4c32752afe36aeafe0a15ac",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TraverseUSA_MiSTer/master/releases/Traverse%20USA-%20Zippy%20Race%20(US).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Traverse USA- Zippy Race",
+            "rbf": "traverseusa",
+            "zips": [
+              "travrusa.zip"
+            ]
+          }
         }
       ]
     },
@@ -8511,7 +8683,13 @@
           "sha": "3cb658cde1fd57eaace2bfaa61e729f44577d851",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Ultratank_MiSTer/master/releases/Ultra%20Tank.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Ultra Tank",
+            "rbf": "ultratank",
+            "zips": [
+              "ultratnk.zip"
+            ]
+          }
         }
       ]
     },
@@ -8558,14 +8736,28 @@
           "sha": "702b8456b61c4df357314b55479708d3d1a98242",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-VBall_MiSTer/master/releases/V'Ball%20(US)%20%5Bbl%5D.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "U.S. Championship V'ball",
+            "rbf": "vball",
+            "zips": [
+              "vball.zip|vballb.zip",
+              "vballb.zip"
+            ]
+          }
         },
         {
           "name": "V'Ball (US).mra",
           "sha": "c3b363707a03ec851e979d30772ea6601a02b773",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-VBall_MiSTer/master/releases/V'Ball%20(US).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "U.S. Championship V'ball",
+            "rbf": "vball",
+            "zips": [
+              "vball.zip",
+              "vball.zip"
+            ]
+          }
         }
       ]
     },
@@ -8636,7 +8828,13 @@
           "sha": "03f01db16a17bf628bc56d0179058f1cd06d3855",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Xevious_MiSTer/master/releases/Xevious.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Xevious",
+            "rbf": "xevious",
+            "zips": [
+              "xevious.zip|namco50.zip|namco51.zip|namco54.zip"
+            ]
+          }
         }
       ]
     },
@@ -8707,21 +8905,39 @@
           "sha": "ec64c8d33ba29534c3c4305378745939c2869196",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Zaxxon_MiSTer/master/releases/Future%20Spy.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Future Spy",
+            "rbf": "zaxxon",
+            "zips": [
+              "futspy.zip"
+            ]
+          }
         },
         {
           "name": "Super Zaxxon.mra",
           "sha": "f1d32f76b7d22756949bd518ceed74bb48ea597d",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Zaxxon_MiSTer/master/releases/Super%20Zaxxon.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Super Zaxxon",
+            "rbf": "zaxxon",
+            "zips": [
+              "szaxxon.zip"
+            ]
+          }
         },
         {
           "name": "zaxxon.mra",
           "sha": "47b915b5e9aa1a2f57b80128e188c1a85e9de71e",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Zaxxon_MiSTer/master/releases/zaxxon.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Zaxxon",
+            "rbf": "zaxxon",
+            "zips": [
+              "zaxxon.zip"
+            ]
+          }
         }
       ]
     },
@@ -8768,7 +8984,13 @@
           "sha": "999a27d53747f0139be7f579d4a386501d2e2507",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-ZigZag_MiSTer/master/releases/Zig%20Zag%20(Dig%20Dug%20Conversion)%20%5Bbl%5D.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Zig Zag",
+            "rbf": "zigzag",
+            "zips": [
+              "zigzagb.zip"
+            ]
+          }
         }
       ]
     },
