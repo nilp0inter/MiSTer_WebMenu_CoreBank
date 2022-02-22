@@ -59,21 +59,39 @@
           "sha": "bb6f5ae1d7842c261b9eb2b7c12dabeaedde9df9",
           "url": "https://raw.githubusercontent.com/pcornier/Arcade-QBert_MiSTer/master/releases/Mad%20Planets.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Mad Planets",
+            "rbf": "qbert",
+            "zips": [
+              "mplanets.zip"
+            ]
+          }
         },
         {
           "name": "Q'bert (US, Set 1).mra",
           "sha": "3d4af0312d552b806b8c61dc8def9771aacb5cb8",
           "url": "https://raw.githubusercontent.com/pcornier/Arcade-QBert_MiSTer/master/releases/Q'bert%20(US%2C%20Set%201).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Q*bert",
+            "rbf": "qbert",
+            "zips": [
+              "qbert.zip"
+            ]
+          }
         },
         {
           "name": "QBert Qubes.mra",
           "sha": "e80a43b805f341313765482566a975970d852ba3",
           "url": "https://raw.githubusercontent.com/pcornier/Arcade-QBert_MiSTer/master/releases/QBert%20Qubes.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Q*bert Qubes",
+            "rbf": "qbert",
+            "zips": [
+              "qbertqub.zip"
+            ]
+          }
         }
       ]
     },
@@ -120,14 +138,28 @@
           "sha": "702b8456b61c4df357314b55479708d3d1a98242",
           "url": "https://raw.githubusercontent.com/pcornier/Arcade-VBall_MiSTer/master/releases/V'Ball%20(US)%20%5Bbl%5D.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "U.S. Championship V'ball",
+            "rbf": "vball",
+            "zips": [
+              "vball.zip|vballb.zip",
+              "vballb.zip"
+            ]
+          }
         },
         {
           "name": "V'Ball (US).mra",
           "sha": "c3b363707a03ec851e979d30772ea6601a02b773",
           "url": "https://raw.githubusercontent.com/pcornier/Arcade-VBall_MiSTer/master/releases/V'Ball%20(US).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "U.S. Championship V'ball",
+            "rbf": "vball",
+            "zips": [
+              "vball.zip",
+              "vball.zip"
+            ]
+          }
         }
       ]
     },
