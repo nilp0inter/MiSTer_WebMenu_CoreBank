@@ -225,7 +225,13 @@
           "sha": "92c0e95d482e1ba21b92aaca5b2ed66b0e86aea6",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Asteroids_MiSTer/master/releases/Asteroids.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Asteroids (rev 4)",
+            "rbf": "asteroids",
+            "zips": [
+              "asteroid.zip"
+            ]
+          }
         }
       ]
     },
@@ -350,63 +356,117 @@
           "sha": "bf2a59786bcf11b93b45925d25c9cf3cb4d7ed73",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Astrocade_MiSTer/master/releases/Extra%20Bases.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Extra Bases",
+            "rbf": "astrocade",
+            "zips": [
+              "ebases.zip"
+            ]
+          }
         },
         {
           "name": "Gorf (Program 1).mra",
           "sha": "1f34a2d7e24c3b0d1d061e75b8f6ddd01f8c2c0e",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Astrocade_MiSTer/master/releases/Gorf%20(Program%201).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Gorf",
+            "rbf": "astrocade",
+            "zips": [
+              "gorf.zip|gorfpgm1.zip "
+            ]
+          }
         },
         {
           "name": "Gorf (Speech).mra",
           "sha": "d58922e0f488225391d3d00e17fe0e1cb587a741",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Astrocade_MiSTer/master/releases/Gorf%20(Speech).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Gorf",
+            "rbf": "astrocade",
+            "zips": [
+              "gorf.zip"
+            ]
+          }
         },
         {
           "name": "Gorf.mra",
           "sha": "83e29f31a0891408d336f3f6a7b0c7e216342c22",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Astrocade_MiSTer/master/releases/Gorf.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Gorf",
+            "rbf": "astrocade",
+            "zips": [
+              "gorf.zip"
+            ]
+          }
         },
         {
           "name": "Sea Wolf II.mra",
           "sha": "5c5476112ee20051f9ed64e1053d62e645267c2d",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Astrocade_MiSTer/master/releases/Sea%20Wolf%20II.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Sea Wolf II",
+            "rbf": "astrocade",
+            "zips": [
+              "seawolf2.zip"
+            ]
+          }
         },
         {
           "name": "Space Zap.mra",
           "sha": "21106d1967ccd1da58dcfac81d146e35945b2cfa",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Astrocade_MiSTer/master/releases/Space%20Zap.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Space Zap",
+            "rbf": "astrocade",
+            "zips": [
+              "spacezap.zip"
+            ]
+          }
         },
         {
           "name": "The Adventures of Robby Roto!.mra",
           "sha": "17e0da7731d3c74eff3007a959012e6968f8f508",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Astrocade_MiSTer/master/releases/The%20Adventures%20of%20Robby%20Roto!.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "The Adventures of Robby Roto!",
+            "rbf": "astrocade",
+            "zips": [
+              "robby.zip"
+            ]
+          }
         },
         {
           "name": "Wizard of Wor (Speech).mra",
           "sha": "09d42fb386eae63ea937fb8964c4d84be04e2503",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Astrocade_MiSTer/master/releases/Wizard%20of%20Wor%20(Speech).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Wizard of Wor",
+            "rbf": "astrocade",
+            "zips": [
+              "wow.zip"
+            ]
+          }
         },
         {
           "name": "Wizard of Wor.mra",
           "sha": "69b29696c0bf7a8585b40a8a01baca9c6994e212",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Astrocade_MiSTer/master/releases/Wizard%20of%20Wor.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Wizard of Wor",
+            "rbf": "astrocade",
+            "zips": [
+              "wow.zip"
+            ]
+          }
         }
       ]
     },
@@ -465,14 +525,26 @@
           "sha": "105952e2c8f1ab1f6c1a647be3e4e5beea80178c",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-ATetris_MiSTer/master/releases/Tetris%20(Cocktail%2C%20Set%201).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Tetris",
+            "rbf": "ataritetris",
+            "zips": [
+              "atetris.zip|atetrisc.zip"
+            ]
+          }
         },
         {
           "name": "Tetris.mra",
           "sha": "632c4165b512d59f11de818fcfe363a88d83e259",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-ATetris_MiSTer/master/releases/Tetris.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Tetris",
+            "rbf": "ataritetris",
+            "zips": [
+              "atetris.zip"
+            ]
+          }
         },
         {
           "name": "rommap.txt",

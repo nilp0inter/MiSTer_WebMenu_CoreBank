@@ -35,28 +35,52 @@
           "sha": "1ea0f326f29cbea1d38e572b07ea44939ba62461",
           "url": "https://raw.githubusercontent.com/MrX-8B/Arcade-Druaga_MiSTer/master/releases/Dig%20Dug%20II.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Dig Dug II (New Ver.)",
+            "rbf": "druaga",
+            "zips": [
+              "digdug2.zip"
+            ]
+          }
         },
         {
           "name": "Mappy.mra",
           "sha": "0b7b0d76bd4b81814d4501a868857a112441c972",
           "url": "https://raw.githubusercontent.com/MrX-8B/Arcade-Druaga_MiSTer/master/releases/Mappy.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Mappy (US)",
+            "rbf": "druaga",
+            "zips": [
+              "mappy.zip"
+            ]
+          }
         },
         {
           "name": "Motos.mra",
           "sha": "9de0ba79f70817dc933febada66b4a7e1457abe9",
           "url": "https://raw.githubusercontent.com/MrX-8B/Arcade-Druaga_MiSTer/master/releases/Motos.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Motos",
+            "rbf": "druaga",
+            "zips": [
+              "motos.zip"
+            ]
+          }
         },
         {
           "name": "The Tower of Druaga.mra",
           "sha": "fcef1153e2523633d348db9e24c0b34bab628729",
           "url": "https://raw.githubusercontent.com/MrX-8B/Arcade-Druaga_MiSTer/master/releases/The%20Tower%20of%20Druaga.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "The Tower of Druaga (New Ver.)",
+            "rbf": "druaga",
+            "zips": [
+              "todruaga.zip"
+            ]
+          }
         },
         {
           "name": "rommap.txt",
@@ -97,21 +121,39 @@
           "sha": "56c7d16590c62497d380c67866bff669d6410803",
           "url": "https://raw.githubusercontent.com/MrX-8B/MiSTer-Arcade-AtariTetris/master/releases/Atari%20Tetris%20(cocktail%20set%201).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": null,
+            "rbf": "AtariTetris",
+            "zips": [
+              "atetris.zip"
+            ]
+          }
         },
         {
           "name": "Atari Tetris (cocktail set 2).mra",
           "sha": "9375a4bc02071cacb14ae7f1d6bf268fd9ec621a",
           "url": "https://raw.githubusercontent.com/MrX-8B/MiSTer-Arcade-AtariTetris/master/releases/Atari%20Tetris%20(cocktail%20set%202).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": null,
+            "rbf": "AtariTetris",
+            "zips": [
+              "atetris.zip"
+            ]
+          }
         },
         {
           "name": "Atari Tetris.mra",
           "sha": "2e635a29eb62440900ee91b140fa79c7847cf5b8",
           "url": "https://raw.githubusercontent.com/MrX-8B/MiSTer-Arcade-AtariTetris/master/releases/Atari%20Tetris.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": null,
+            "rbf": "AtariTetris",
+            "zips": [
+              "atetris.zip"
+            ]
+          }
         },
         {
           "name": "build_rom.bat",
@@ -164,7 +206,13 @@
           "sha": "e2aee2387aefbb567f2f52f181b9e4eac2b8a90d",
           "url": "https://raw.githubusercontent.com/MrX-8B/MiSTer-Arcade-DigDug/master/releases/Dig%20Dug.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Dig Dug (rev 2)",
+            "rbf": "digdug",
+            "zips": [
+              "digdug.zip"
+            ]
+          }
         },
         {
           "name": "rommap.txt",
@@ -333,7 +381,13 @@
           "sha": "321ba4a6dd1346d8c8fd1e2d94d6d2f2ac844245",
           "url": "https://raw.githubusercontent.com/MrX-8B/MiSTer-Arcade-FoodFight/master/releases/Food%20Fight.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Food Fight (rev 3)",
+            "rbf": "foodfight",
+            "zips": [
+              "foodf.zip"
+            ]
+          }
         },
         {
           "name": "rommap.txt",
@@ -438,14 +492,26 @@
           "sha": "a54080e10a557cd77f1d2710078dfe242ca8e83c",
           "url": "https://raw.githubusercontent.com/MrX-8B/MiSTer-Arcade-GreenBeret/master/releases/Green%20Beret.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Green Beret",
+            "rbf": "rshnatk",
+            "zips": [
+              "gberet.zip"
+            ]
+          }
         },
         {
           "name": "Rush'n Attack (US).mra",
           "sha": "bda5e279daa2043f35c98771a59605200d2144ca",
           "url": "https://raw.githubusercontent.com/MrX-8B/MiSTer-Arcade-GreenBeret/master/releases/Rush'n%20Attack%20(US).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Rush'n Attack (US)",
+            "rbf": "rshnatk",
+            "zips": [
+              "gberet.zip|rushatck.zip"
+            ]
+          }
         },
         {
           "name": "rommap.txt",
@@ -954,7 +1020,13 @@
           "sha": "545e2b78ceb57dadc54513cd3315dbf8b82f16c1",
           "url": "https://raw.githubusercontent.com/MrX-8B/MiSTer-Arcade-SolomonsKey/master/releases/Solomon's%20Key.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Solomon's Key (US)",
+            "rbf": "solomonskey",
+            "zips": [
+              "solomon.zip"
+            ]
+          }
         },
         {
           "name": "rommap.txt",
