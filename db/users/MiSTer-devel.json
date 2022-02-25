@@ -12299,7 +12299,14 @@
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/Lynx48_MiSTer",
-      "releases": []
+      "releases": [
+        {
+          "name": "Lynx48_20220224.rbf",
+          "sha": "e4887abf9e6ee6d2e07d76adbccaa4f403a54255",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Lynx48_MiSTer/master/releases/Lynx48_20220224.rbf",
+          "type": "RBF"
+        }
+      ]
     },
     {
       "name": "MacPlus_MiSTer",
