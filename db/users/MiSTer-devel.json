@@ -12419,15 +12419,27 @@
           "type": "RBF"
         },
         {
+          "name": "MacPlus_20220309.rbf",
+          "sha": "aa8659d565185e4b805c91d837144e85d41a3f3f",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/MacPlus_MiSTer/master/releases/MacPlus_20220309.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "bin2dsk.sh",
           "sha": "9881907c584d34f9735f7ac7571de1fb27f108fb",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/MacPlus_MiSTer/master/releases/bin2dsk.sh",
           "type": "OTHER"
         },
         {
-          "name": "boot.rom",
+          "name": "boot0.rom",
           "sha": "ea66af5bec097c13a44f536dcdf453c9d05254e6",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/MacPlus_MiSTer/master/releases/boot.rom",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/MacPlus_MiSTer/master/releases/boot0.rom",
+          "type": "OTHER"
+        },
+        {
+          "name": "boot1.rom",
+          "sha": "8a6ea3304f05888d7ccce955e7049172a6f3262a",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/MacPlus_MiSTer/master/releases/boot1.rom",
           "type": "OTHER"
         },
         {
