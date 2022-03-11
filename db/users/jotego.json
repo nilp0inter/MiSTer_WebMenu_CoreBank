@@ -3715,7 +3715,7 @@
         },
         {
           "name": "version.log",
-          "sha": "995adb9bc2afa9761b2fb0b5133f7a679f5d00a3",
+          "sha": "b75e5e229ff364d12d0a7e5bb1b70e8c00a543bc",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/dd/version.log",
           "type": "OTHER"
         },
@@ -3848,7 +3848,7 @@
         },
         {
           "name": "version.log",
-          "sha": "73d16f9f63930d9be4bb5fb70d8724ba66382568",
+          "sha": "c4eaf187e180fced1c0957ad9b45a230ea65748e",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/dd2/version.log",
           "type": "OTHER"
         },
@@ -4102,7 +4102,7 @@
         },
         {
           "name": "version.log",
-          "sha": "23e423f73c41a3b1e4cd6d124924ec68bd528acc",
+          "sha": "38ff70cd48a5182ef59a79e605cbcbb73900c917",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/f1dream/version.log",
           "type": "OTHER"
         },
@@ -4164,7 +4164,7 @@
         },
         {
           "name": "version.log",
-          "sha": "4dbee328c5f4c44e438025e2a4c7cb32e0ffa04d",
+          "sha": "c071209bab6c71880cb1e7bbb87f590daeabc817",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/flane/version.log",
           "type": "OTHER"
         },
@@ -4586,7 +4586,7 @@
         },
         {
           "name": "version.log",
-          "sha": "f7df6a96302aebbe2e331aea1bbf6e824a1627f8",
+          "sha": "cbe2609d66e3081d0e47b2aa1a0d1d1326be5648",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/gunsmoke/version.log",
           "type": "OTHER"
         },
@@ -4683,7 +4683,7 @@
         },
         {
           "name": "version.log",
-          "sha": "93ef979f054bcfd2d1fe016a1e6b3885053787fb",
+          "sha": "62c5c109d3dae6c16fc6d0ca205b224e76e67643",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/hige/version.log",
           "type": "OTHER"
         },
@@ -4744,7 +4744,7 @@
         },
         {
           "name": "version.log",
-          "sha": "4b41740590c09125ba3725dbf315953e4fcd5323",
+          "sha": "d4a5f73163e2d073ab5d62ce7988a08d2dce96b1",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kicker/version.log",
           "type": "OTHER"
         },
@@ -4823,7 +4823,7 @@
         },
         {
           "name": "version.log",
-          "sha": "3cc9b8f46b69525d2e0eb46baac9624b81f4edb7",
+          "sha": "ece1a2365c2cb258010d756d32a0c8e59fd54199",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/labrun/version.log",
           "type": "OTHER"
         },
@@ -4893,7 +4893,7 @@
         },
         {
           "name": "version.log",
-          "sha": "2c2c93467612be8904972f42c8dae416e728d585",
+          "sha": "b1ee154f5b45b7725d30e61288e7291a249e1790",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/mikie/version.log",
           "type": "OTHER"
         },
@@ -4949,7 +4949,7 @@
         },
         {
           "name": "version.log",
-          "sha": "0fe6c0d3348a28c8e23fd753b692ab7381274a61",
+          "sha": "8bbc1d3b4a36d409d1f17c2642bdb6ef3e3efde3",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/mx5k/version.log",
           "type": "OTHER"
         },
@@ -5024,8 +5024,14 @@
           "type": "RBF"
         },
         {
+          "name": "jtninja_20220311.rbf",
+          "sha": "7cd52fc5ff251ecac1697276be2656082b1d7ab8",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/ninja/releases/jtninja_20220311.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "version.log",
-          "sha": "177846ef70158daf4cf2d0c9cb171233b88be77c",
+          "sha": "f8af84b1169028fd41f359fefafdf8903fa6df6f",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/ninja/version.log",
           "type": "OTHER"
         },
@@ -5116,7 +5122,7 @@
         },
         {
           "name": "version.log",
-          "sha": "a6e566a6304817550d30713ca7f4d790d9f72e1a",
+          "sha": "64f03e5a1389d533ac4ea5a9ae0cd12ffcfb07f4",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/rumble/version.log",
           "type": "OTHER"
         },
@@ -5128,71 +5134,66 @@
         },
         {
           "name": "Action Fighter (World, S16A) [FD1089A 317-0018].mra",
-          "sha": "8f60613820bab9a9f40d9ea1f9be184c21aa25c9",
+          "sha": "2c7651e11bde1443cf296f2e402fe4debb565b1d",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16/releases/Action%20Fighter%20(World%2C%20S16A)%20%5BFD1089A%20317-0018%5D.mra",
           "type": "MRA",
           "extra": {
             "name": "Action Fighter (World, S16A) [FD1089A 317-0018]",
             "rbf": "jts16",
             "zips": [
-              "afighter.zip",
-              "jtbeta.zip"
+              "afighter.zip"
             ]
           }
         },
         {
           "name": "Alex Kidd The Lost Stars (Set 2, World, S16A) [No Protection].mra",
-          "sha": "2688674b379f424d9f5fc9a8713b750798418826",
+          "sha": "9d3cf3a0c08844e8b4f02bae436f50a233302f2e",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16/releases/Alex%20Kidd%20The%20Lost%20Stars%20(Set%202%2C%20World%2C%20S16A)%20%5BNo%20Protection%5D.mra",
           "type": "MRA",
           "extra": {
             "name": "Alex Kidd: The Lost Stars (Set 2, World, S16A) [No Protection]",
             "rbf": "jts16",
             "zips": [
-              "alexkidd.zip",
-              "jtbeta.zip"
+              "alexkidd.zip"
             ]
           }
         },
         {
           "name": "Body Slam (World, S16) [8751 317-0015].mra",
-          "sha": "658ecd49e83a9b7b8ab10bb21f8e94beb4204353",
+          "sha": "0bd477f4384de6b482a0f6850d0781e466bc13d9",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16/releases/Body%20Slam%20(World%2C%20S16)%20%5B8751%20317-0015%5D.mra",
           "type": "MRA",
           "extra": {
             "name": "Body Slam (World, S16) [8751 317-0015]",
             "rbf": "jts16",
             "zips": [
-              "bodyslam.zip",
-              "jtbeta.zip"
+              "bodyslam.zip"
             ]
           }
         },
         {
           "name": "Fantasy Zone (Rev A, World, S16A) [No Protection].mra",
-          "sha": "5291eaf052775492f7930ee14861b2cbf7236ca9",
+          "sha": "3e616be8909d05ece3ad1a3c53f5210a9b4cf95f",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16/releases/Fantasy%20Zone%20(Rev%20A%2C%20World%2C%20S16A)%20%5BNo%20Protection%5D.mra",
           "type": "MRA",
           "extra": {
             "name": "Fantasy Zone (Rev A, World, S16A) [No Protection]",
             "rbf": "jts16",
             "zips": [
-              "fantzone.zip",
-              "jtbeta.zip"
+              "fantzone.zip"
             ]
           }
         },
         {
           "name": "Shinobi (Set 6, World, S16A) [No Protection].mra",
-          "sha": "c7abc263b97bdb77ac4b156677d1b1383362fec1",
+          "sha": "ddf53e7b8bd8807d93c1ae6d52f3584bc23eafdc",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16/releases/Shinobi%20(Set%206%2C%20World%2C%20S16A)%20%5BNo%20Protection%5D.mra",
           "type": "MRA",
           "extra": {
             "name": "Shinobi (Set 6, World, S16A) [No Protection]",
             "rbf": "jts16",
             "zips": [
-              "shinobi.zip",
-              "jtbeta.zip"
+              "shinobi.zip"
             ]
           }
         },
@@ -5275,8 +5276,14 @@
           "type": "RBF"
         },
         {
+          "name": "jts16_20220311.rbf",
+          "sha": "c698a7c9e9d39fd22bb8e08e1d5e3d2293c1099c",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16/releases/jts16_20220311.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "version.log",
-          "sha": "d346fbefac1de24eb850ee70d6399c21987f447e",
+          "sha": "a2f4e6f9cad860a82bdf70e0982168358afba7b0",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16/version.log",
           "type": "OTHER"
         },
@@ -5288,15 +5295,14 @@
         },
         {
           "name": "Tetris (Set 4, Japan, S16A) [FD1094 317-0093].mra",
-          "sha": "a2e86d023628b94fbcaafaa356c8581996fe8b40",
+          "sha": "4e895aded7fa7b2164ebf1886e282b2456a42f90",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16a2/releases/Tetris%20(Set%204%2C%20Japan%2C%20S16A)%20%5BFD1094%20317-0093%5D.mra",
           "type": "MRA",
           "extra": {
             "name": "Tetris (Set 4, Japan, S16A) [FD1094 317-0093]",
             "rbf": "jts16a2",
             "zips": [
-              "tetris.zip",
-              "jtbeta.zip"
+              "tetris.zip"
             ]
           }
         },
@@ -5367,8 +5373,14 @@
           "type": "RBF"
         },
         {
+          "name": "jts16a2_20220311.rbf",
+          "sha": "5c1f764fd1fcd3846d27b91b71c83cc4c5990096",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16a2/releases/jts16a2_20220311.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "version.log",
-          "sha": "6d5413a5caf9a0d9172af2c7306c53d55f1ba9be",
+          "sha": "371e8e91a4b11767b82a09cdae4b560efe80ed1b",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16a2/version.log",
           "type": "OTHER"
         },
@@ -5380,225 +5392,209 @@
         },
         {
           "name": "Alien Syndrome (set 4, System 16B, unprotected).mra",
-          "sha": "c309f3977b3caa7ddfe1995d0d7e73bcfaba2e98",
+          "sha": "5107e44b5b8ebe3689ce443c0f6e4e2b04824c0f",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/Alien%20Syndrome%20(set%204%2C%20System%2016B%2C%20unprotected).mra",
           "type": "MRA",
           "extra": {
             "name": "Alien Syndrome (set 4, System 16B, unprotected)",
             "rbf": "jts16b",
             "zips": [
-              "aliensyn.zip|s16mcu_alt.zip",
-              "jtbeta.zip"
+              "aliensyn.zip|s16mcu_alt.zip"
             ]
           }
         },
         {
           "name": "Aurail (set 3, US) (unprotected).mra",
-          "sha": "9c8c8b803dace6ba395e0a0df5157c31c8a08210",
+          "sha": "d69dae7b170bf30e4cdfd0313841ddf33ae0f758",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/Aurail%20(set%203%2C%20US)%20(unprotected).mra",
           "type": "MRA",
           "extra": {
             "name": "Aurail (set 3, US) (unprotected)",
             "rbf": "jts16b",
             "zips": [
-              "aurail.zip|s16mcu_alt.zip",
-              "jtbeta.zip"
+              "aurail.zip|s16mcu_alt.zip"
             ]
           }
         },
         {
           "name": "Bay Route (set 3, World) (FD1094 317-0116).mra",
-          "sha": "b81d05fc0a267d3c434e349ee4555f4aa0235795",
+          "sha": "7f5ac983d3895406f1a2d1c87f29035e98933a0f",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/Bay%20Route%20(set%203%2C%20World)%20(FD1094%20317-0116).mra",
           "type": "MRA",
           "extra": {
             "name": "Bay Route (set 3, World) (FD1094 317-0116)",
             "rbf": "jts16b",
             "zips": [
-              "bayroute.zip|s16mcu_alt.zip",
-              "jtbeta.zip"
+              "bayroute.zip|s16mcu_alt.zip"
             ]
           }
         },
         {
           "name": "Bullet (FD1094 317-0041).mra",
-          "sha": "a0a6a1c4a669f5a98ca49a4ec449c03495a6505d",
+          "sha": "fa71831621c2926158284a4d34d8abeea6c58b3c",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/Bullet%20(FD1094%20317-0041).mra",
           "type": "MRA",
           "extra": {
             "name": "Bullet (FD1094 317-0041)",
             "rbf": "jts16b",
             "zips": [
-              "bullet.zip|s16mcu_alt.zip",
-              "jtbeta.zip"
+              "bullet.zip|s16mcu_alt.zip"
             ]
           }
         },
         {
           "name": "Cotton (set 4, World) (FD1094 317-0181a).mra",
-          "sha": "85e792855c2eb1ddbabb41500daf79ec95b5dfe4",
+          "sha": "b9e864061c8dff36451abb88edd1f75914264164",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/Cotton%20(set%204%2C%20World)%20(FD1094%20317-0181a).mra",
           "type": "MRA",
           "extra": {
             "name": "Cotton (set 4, World) (FD1094 317-0181a)",
             "rbf": "jts16b",
             "zips": [
-              "cotton.zip|s16mcu_alt.zip",
-              "jtbeta.zip"
+              "cotton.zip|s16mcu_alt.zip"
             ]
           }
         },
         {
           "name": "Dynamite Dux (set 3, World) (FD1094 317-0096).mra",
-          "sha": "a7ddcdabced0593e46e0b01018841dc87c9fcb04",
+          "sha": "cd6f6a6b7ec04b5119e12184e471ab3c0312a688",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/Dynamite%20Dux%20(set%203%2C%20World)%20(FD1094%20317-0096).mra",
           "type": "MRA",
           "extra": {
             "name": "Dynamite Dux (set 3, World) (FD1094 317-0096)",
             "rbf": "jts16b",
             "zips": [
-              "ddux.zip|s16mcu_alt.zip",
-              "jtbeta.zip"
+              "ddux.zip|s16mcu_alt.zip"
             ]
           }
         },
         {
           "name": "Excite League (FD1094 317-0079).mra",
-          "sha": "129ad73c2f1aac20edd8975f0e348c7b28a0eb62",
+          "sha": "f003da62bdae69a2a2003772a2542bd4e9eaed65",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/Excite%20League%20(FD1094%20317-0079).mra",
           "type": "MRA",
           "extra": {
             "name": "Excite League (FD1094 317-0079)",
             "rbf": "jts16b",
             "zips": [
-              "exctleag.zip|s16mcu_alt.zip",
-              "jtbeta.zip"
+              "exctleag.zip|s16mcu_alt.zip"
             ]
           }
         },
         {
           "name": "Fantasy Zone II - The Tears of Opa-Opa (System 16C version).mra",
-          "sha": "c8eb27e40a1b0950ffb72ab054b9123db775c8f5",
+          "sha": "2932706add1844ad8044d4f61cfc9bd609584fc4",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/Fantasy%20Zone%20II%20-%20The%20Tears%20of%20Opa-Opa%20(System%2016C%20version).mra",
           "type": "MRA",
           "extra": {
             "name": "Fantasy Zone II - The Tears of Opa-Opa (System 16C version)",
             "rbf": "jts16b",
             "zips": [
-              "fantzn2x.zip|s16mcu_alt.zip",
-              "jtbeta.zip"
+              "fantzn2x.zip|s16mcu_alt.zip"
             ]
           }
         },
         {
           "name": "Flash Point (set 2, Japan) (FD1094 317-0127A).mra",
-          "sha": "bd7bf482f6976b69d1e8697bbe59e7173acb380a",
+          "sha": "64dc7bb6135bc2453a5ccc25fd6eb37a87eb1f5a",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/Flash%20Point%20(set%202%2C%20Japan)%20(FD1094%20317-0127A).mra",
           "type": "MRA",
           "extra": {
             "name": "Flash Point (set 2, Japan) (FD1094 317-0127A)",
             "rbf": "jts16b",
             "zips": [
-              "fpoint.zip|s16mcu_alt.zip",
-              "jtbeta.zip"
+              "fpoint.zip|s16mcu_alt.zip"
             ]
           }
         },
         {
           "name": "MVP (set 2, US) (FD1094 317-0143).mra",
-          "sha": "3cec42044398a249d00e011b99a5debf7f1cc95f",
+          "sha": "a58c8b52de82f02fa04e43961a96acc1c995690e",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/MVP%20(set%202%2C%20US)%20(FD1094%20317-0143).mra",
           "type": "MRA",
           "extra": {
             "name": "MVP (set 2, US) (FD1094 317-0143)",
             "rbf": "jts16b",
             "zips": [
-              "mvp.zip|s16mcu_alt.zip",
-              "jtbeta.zip"
+              "mvp.zip|s16mcu_alt.zip"
             ]
           }
         },
         {
           "name": "Passing Shot (World, 2 Players) (FD1094 317-0080).mra",
-          "sha": "19a0b56c241b73329844f3429aae3959501056bc",
+          "sha": "f99de3ba8ffa376c25cb2f7997217da4de1d5977",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/Passing%20Shot%20(World%2C%202%20Players)%20(FD1094%20317-0080).mra",
           "type": "MRA",
           "extra": {
             "name": "Passing Shot (World, 2 Players) (FD1094 317-0080)",
             "rbf": "jts16b",
             "zips": [
-              "passsht.zip|s16mcu_alt.zip",
-              "jtbeta.zip"
+              "passsht.zip|s16mcu_alt.zip"
             ]
           }
         },
         {
           "name": "Riot City (Japan).mra",
-          "sha": "e5deea37ff98f3630fdf213586c81d95243f1488",
+          "sha": "db27383ef5b48b28835fc9a3667c1959e36bc0a2",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/Riot%20City%20(Japan).mra",
           "type": "MRA",
           "extra": {
             "name": "Riot City (Japan)",
             "rbf": "jts16b",
             "zips": [
-              "riotcity.zip|s16mcu_alt.zip",
-              "jtbeta.zip"
+              "riotcity.zip|s16mcu_alt.zip"
             ]
           }
         },
         {
           "name": "RyuKyu (Rev A, Japan) (FD1094 317-5023A).mra",
-          "sha": "b06335ebc4163ff3eafb6c80c2422d638722927f",
+          "sha": "a39c254ca9d5b735f1edf96ce88ce338c4d9ea19",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/RyuKyu%20(Rev%20A%2C%20Japan)%20(FD1094%20317-5023A).mra",
           "type": "MRA",
           "extra": {
             "name": "RyuKyu (Rev A, Japan) (FD1094 317-5023A)",
             "rbf": "jts16b",
             "zips": [
-              "ryukyu.zip|s16mcu_alt.zip",
-              "jtbeta.zip"
+              "ryukyu.zip|s16mcu_alt.zip"
             ]
           }
         },
         {
           "name": "Sonic Boom (FD1094 317-0053).mra",
-          "sha": "0e90c3bb1787992a77c3c1fd881d1446a97c8eab",
+          "sha": "715093c05793b76109ae056b1f0d18b0043c6e1f",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/Sonic%20Boom%20(FD1094%20317-0053).mra",
           "type": "MRA",
           "extra": {
             "name": "Sonic Boom (FD1094 317-0053)",
             "rbf": "jts16b",
             "zips": [
-              "sonicbom.zip|s16mcu_alt.zip",
-              "jtbeta.zip"
+              "sonicbom.zip|s16mcu_alt.zip"
             ]
           }
         },
         {
           "name": "Time Scanner (set 2, System 16B).mra",
-          "sha": "156ac68dfd265932e5dadd410013c5fb604bef46",
+          "sha": "a060e0d793a48eebc357378e8996a8d6d797f5a7",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/Time%20Scanner%20(set%202%2C%20System%2016B).mra",
           "type": "MRA",
           "extra": {
             "name": "Time Scanner (set 2, System 16B)",
             "rbf": "jts16b",
             "zips": [
-              "timescan.zip|s16mcu_alt.zip",
-              "jtbeta.zip"
+              "timescan.zip|s16mcu_alt.zip"
             ]
           }
         },
         {
           "name": "Toryumon.mra",
-          "sha": "0d9b4085fd60dfd1c3db1e4041abfbf337438289",
+          "sha": "d18c39ca4c333c25916f8d5e319c7d0ccd60be35",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/Toryumon.mra",
           "type": "MRA",
           "extra": {
             "name": "Toryumon",
             "rbf": "jts16b",
             "zips": [
-              "toryumon.zip|s16mcu_alt.zip",
-              "jtbeta.zip"
+              "toryumon.zip|s16mcu_alt.zip"
             ]
           }
         },
@@ -5693,8 +5689,14 @@
           "type": "RBF"
         },
         {
+          "name": "jts16b_20220311.rbf",
+          "sha": "eb1953378de613328d347ede19e6bdb7e32cd3b4",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/jts16b_20220311.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "version.log",
-          "sha": "c6dfffd740eb6cb2be0d2fcc6bf6470bdb36a44f",
+          "sha": "a2daa1f78be1884d771acf10d5466d9a7a9c16d2",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/version.log",
           "type": "OTHER"
         },
@@ -5706,15 +5708,14 @@
         },
         {
           "name": "Dunk Shot (Rev C, FD1089A 317-0022).mra",
-          "sha": "0b640fcf345606e19b9075149a9145b7f48ef75e",
+          "sha": "f3d4d3c4c19354dd056f865615dc126e5123ab3e",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b1/releases/Dunk%20Shot%20(Rev%20C%2C%20FD1089A%20317-0022).mra",
           "type": "MRA",
           "extra": {
             "name": "Dunk Shot (Rev C, FD1089A 317-0022)",
             "rbf": "jts16b1",
             "zips": [
-              "dunkshot.zip|s16mcu_alt.zip",
-              "jtbeta.zip"
+              "dunkshot.zip|s16mcu_alt.zip"
             ]
           }
         },
@@ -5811,8 +5812,14 @@
           "type": "RBF"
         },
         {
+          "name": "jts16b1_20220311.rbf",
+          "sha": "654695482bfb7e5d2b3e846d0dee1dae94700f7f",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b1/releases/jts16b1_20220311.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "version.log",
-          "sha": "d6023615932a042dbe535e2ee5685d0de7eb8231",
+          "sha": "4dc117a67dcad90bfd7bca6431232ee5a6df83b7",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b1/version.log",
           "type": "OTHER"
         },
@@ -5886,8 +5893,14 @@
           "type": "RBF"
         },
         {
+          "name": "jts16b2_20220311.rbf",
+          "sha": "b1405f39d30954476d526d6760b5f2bdd1cdbd04",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b2/releases/jts16b2_20220311.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "version.log",
-          "sha": "75c8c391b6a512da8e4fc1cebedb60306801c155",
+          "sha": "4f60b590ac38b9f672cb135803bc60990915f932",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b2/version.log",
           "type": "OTHER"
         },
@@ -5899,71 +5912,66 @@
         },
         {
           "name": "Altered Beast (set 8) (8751 317-0078).mra",
-          "sha": "8c5a676facd71d6a497154db9d1a7674825a3fcc",
+          "sha": "ff1f33ac1368b7f501fc5537b572cf740299c6c0",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b3/releases/Altered%20Beast%20(set%208)%20(8751%20317-0078).mra",
           "type": "MRA",
           "extra": {
             "name": "Altered Beast (set 8) (8751 317-0078)",
             "rbf": "jts16b3",
             "zips": [
-              "altbeast.zip|s16mcu_alt.zip",
-              "jtbeta.zip"
+              "altbeast.zip|s16mcu_alt.zip"
             ]
           }
         },
         {
           "name": "Golden Axe (set 6, US) (8751 317-123A).mra",
-          "sha": "b25dbf8c4b1121a0c6b6065fd1c3361fe2c3e7e8",
+          "sha": "5139193866aa23bcd6e830d10146a6635c7a6fcd",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b3/releases/Golden%20Axe%20(set%206%2C%20US)%20(8751%20317-123A).mra",
           "type": "MRA",
           "extra": {
             "name": "Golden Axe (set 6, US) (8751 317-123A)",
             "rbf": "jts16b3",
             "zips": [
-              "goldnaxe.zip|s16mcu_alt.zip",
-              "jtbeta.zip"
+              "goldnaxe.zip|s16mcu_alt.zip"
             ]
           }
         },
         {
           "name": "Tough Turf (set 2, Japan) (8751 317-0104).mra",
-          "sha": "b136afc7aba35412faafcb9a6f6f1391c5351efb",
+          "sha": "3260b0fb068f486b6e2d7625f4db61bf6a3d0c39",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b3/releases/Tough%20Turf%20(set%202%2C%20Japan)%20(8751%20317-0104).mra",
           "type": "MRA",
           "extra": {
             "name": "Tough Turf (set 2, Japan) (8751 317-0104)",
             "rbf": "jts16b3",
             "zips": [
-              "tturf.zip|s16mcu_alt.zip",
-              "jtbeta.zip"
+              "tturf.zip|s16mcu_alt.zip"
             ]
           }
         },
         {
           "name": "Wonder Boy III - Monster Lair (set 6, World, System 16B) (8751 317-0098).mra",
-          "sha": "043dcdc26ffc8004239a84221cb981f10d150361",
+          "sha": "41b361fefdf2f516450e938488ef06325b1e2048",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b3/releases/Wonder%20Boy%20III%20-%20Monster%20Lair%20(set%206%2C%20World%2C%20System%2016B)%20(8751%20317-0098).mra",
           "type": "MRA",
           "extra": {
             "name": "Wonder Boy III - Monster Lair (set 6, World, System 16B) (8751 317-0098)",
             "rbf": "jts16b3",
             "zips": [
-              "wb3.zip|s16mcu_alt.zip",
-              "jtbeta.zip"
+              "wb3.zip|s16mcu_alt.zip"
             ]
           }
         },
         {
           "name": "Wrestle War (set 3, World) (8751 317-0103).mra",
-          "sha": "1dcb5dc7be278517258fa17c9723346e25c76b39",
+          "sha": "6d55f245151fe7e24f4a160215d0c324a6e21bb4",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b3/releases/Wrestle%20War%20(set%203%2C%20World)%20(8751%20317-0103).mra",
           "type": "MRA",
           "extra": {
             "name": "Wrestle War (set 3, World) (8751 317-0103)",
             "rbf": "jts16b3",
             "zips": [
-              "wrestwar.zip|s16mcu_alt.zip",
-              "jtbeta.zip"
+              "wrestwar.zip|s16mcu_alt.zip"
             ]
           }
         },
@@ -6016,8 +6024,14 @@
           "type": "RBF"
         },
         {
+          "name": "jts16b3_20220311.rbf",
+          "sha": "b247f5a4801c2df0d3312ab9fd51b63858526b24",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b3/releases/jts16b3_20220311.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "version.log",
-          "sha": "b459057a3f33fba8996c71b839f38f592ec9149d",
+          "sha": "62e71998c08d21df37b97f7b088599c528fd47ae",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b3/version.log",
           "type": "OTHER"
         },
@@ -6126,7 +6140,7 @@
         },
         {
           "name": "version.log",
-          "sha": "f0a5b836768809d4129b2519126e685c7800a7f9",
+          "sha": "1b87a408c0127dd86100a9b8be51c3769965cc88",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/sarms/version.log",
           "type": "OTHER"
         },
@@ -6181,7 +6195,7 @@
         },
         {
           "name": "version.log",
-          "sha": "68259cca663ca743def29bfd3ce59b81e1067ad3",
+          "sha": "0bc28bb2cdac72020d45c478a2b517149cf2ba01",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/sbask1/version.log",
           "type": "OTHER"
         },
@@ -6236,7 +6250,7 @@
         },
         {
           "name": "version.log",
-          "sha": "22db6a04f11be96506b763bcefc947d9d430ddba",
+          "sha": "3e7dd3829bbad465b8e797008624f492b50a8441",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/sbaskt/version.log",
           "type": "OTHER"
         },
@@ -6471,7 +6485,7 @@
         },
         {
           "name": "version.log",
-          "sha": "76a94d0ed6503bf144fe1d2fa7644d8cfa0e9bb3",
+          "sha": "b0a1a14b87c83c9885715c53ef3764d4d37a4f49",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/sectionz/version.log",
           "type": "OTHER"
         },
@@ -6803,7 +6817,7 @@
         },
         {
           "name": "version.log",
-          "sha": "07b40c9791015edc302580c2fbcc520657207e03",
+          "sha": "adee015fc1c616adab7782d7227bb9e6ee003360",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/tora/version.log",
           "type": "OTHER"
         },
@@ -6900,7 +6914,7 @@
         },
         {
           "name": "version.log",
-          "sha": "6c7030312dabeae2cb037f62512b4e18b6fde1b9",
+          "sha": "a4bd8748ef7c2d089909ac54453ee2a401941ac2",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/trojan/version.log",
           "type": "OTHER"
         },
@@ -7184,7 +7198,7 @@
         },
         {
           "name": "version.log",
-          "sha": "94dd9c27a4e27b98489a7b560928b88453602355",
+          "sha": "51875500dd85d51350a1a71f48457f968d52f6ce",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/yiear/version.log",
           "type": "OTHER"
         }
