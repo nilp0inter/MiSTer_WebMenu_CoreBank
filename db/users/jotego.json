@@ -763,7 +763,7 @@
         },
         {
           "name": "version.log",
-          "sha": "50c0e1ee2c11662495d7bca777c15cd67d1e5568",
+          "sha": "c400f920fe98310079319c3d598ef3c49598110e",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/1943/version.log",
           "type": "OTHER"
         },
@@ -1310,7 +1310,7 @@
         },
         {
           "name": "version.log",
-          "sha": "5fa35595fd8e91e32cf422c91248cb125e99cc9a",
+          "sha": "c907579af25cb6d6493f3287e7b4e64a4a0e72d0",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/biocom/version.log",
           "type": "OTHER"
         },
@@ -1479,7 +1479,7 @@
         },
         {
           "name": "version.log",
-          "sha": "bd1b6dcdb9b30a413dd271dacdc9477746ab0d7e",
+          "sha": "151d21f69d17d67fd726030ece28098f34f337cd",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/btiger/version.log",
           "type": "OTHER"
         },
@@ -1619,7 +1619,7 @@
         },
         {
           "name": "version.log",
-          "sha": "d901d923ad6a463ff1d7dfda84e7aa77303be05d",
+          "sha": "cfb7441574c502cdc9b5405f559448e6ead815a6",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/bubl/version.log",
           "type": "OTHER"
         },
@@ -1848,7 +1848,7 @@
         },
         {
           "name": "version.log",
-          "sha": "cca94e4804958fef8ae418ae550470d3e28e8b6c",
+          "sha": "6e045f10dba900129647fc83a99ac2a4daa770d5",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/commando/version.log",
           "type": "OTHER"
         },
@@ -1933,7 +1933,7 @@
         },
         {
           "name": "version.log",
-          "sha": "b2506eb1717257ceaa70c7e8c6197703a223f338",
+          "sha": "55c42258f8437687cda071c450c1ff64625ad542",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/comsc/version.log",
           "type": "OTHER"
         },
@@ -2048,7 +2048,7 @@
         },
         {
           "name": "version.log",
-          "sha": "ad3049d37ff360d37ebe563f8d230c46fa7af0ce",
+          "sha": "e6faa5e62459d490a1d3174044a50c36d90e5260",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/contra/version.log",
           "type": "OTHER"
         },
@@ -2111,8 +2111,14 @@
           "type": "RBF"
         },
         {
+          "name": "jtcop_20220311.rbf",
+          "sha": "432f054bebd8590c6e0f6e20eb3aac8dc78e94f0",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cop/releases/jtcop_20220311.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "version.log",
-          "sha": "18e10ac72053a35f9d262bf8c0c1da6683ecb29d",
+          "sha": "693bd1cedc841f6b8f8a3043f2efb704297505f6",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cop/version.log",
           "type": "OTHER"
         },
@@ -2732,8 +2738,14 @@
           "type": "RBF"
         },
         {
+          "name": "jtcps1_20220311.rbf",
+          "sha": "f288aa0bec7932a0c8d64357fd2c16c1505651e0",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps1/releases/jtcps1_20220311.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "version.log",
-          "sha": "f4c782d1e7fb300b603dd8fe2e4785d1394aeea0",
+          "sha": "9609c101df34b348ae4b9ffdb165d6a0b38e8a03",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps1/version.log",
           "type": "OTHER"
         },
@@ -2953,8 +2965,20 @@
           "type": "RBF"
         },
         {
+          "name": "jtcps15_20220310.rbf",
+          "sha": "a101872ea5a6ddb8b270b2c3fcb452ae80ff01ed",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps15/releases/jtcps15_20220310.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "jtcps15_20220311.rbf",
+          "sha": "09437e108f0a3eec30cdc2450c79c63c979615c0",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps15/releases/jtcps15_20220311.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "version.log",
-          "sha": "4583a5e0d969a6bb6088f1f691815e4c901a2355",
+          "sha": "692ecde45b3513ae11d00ca161bd395094c9161b",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps15/version.log",
           "type": "OTHER"
         },
@@ -3557,8 +3581,20 @@
           "type": "RBF"
         },
         {
+          "name": "jtcps2_20220310.rbf",
+          "sha": "c399d52c551b1e060f59b237a7fb0c69dbe76e33",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps2/releases/jtcps2_20220310.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "jtcps2_20220311.rbf",
+          "sha": "32b77d9214407814530b593100e50694461694c8",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps2/releases/jtcps2_20220311.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "version.log",
-          "sha": "703bffe9ac79eea148f2a6b2ed6b39f3fdffdf25",
+          "sha": "196c4590ced65105aa85979a90298036519c3c50",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps2/version.log",
           "type": "OTHER"
         },
@@ -5721,15 +5757,14 @@
         },
         {
           "name": "Passing Shot (World, 2 Players) (FD1094 317-0080).mra",
-          "sha": "19a0b56c241b73329844f3429aae3959501056bc",
+          "sha": "f99de3ba8ffa376c25cb2f7997217da4de1d5977",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b1/releases/Passing%20Shot%20(World%2C%202%20Players)%20(FD1094%20317-0080).mra",
           "type": "MRA",
           "extra": {
             "name": "Passing Shot (World, 2 Players) (FD1094 317-0080)",
             "rbf": "jts16b",
             "zips": [
-              "passsht.zip|s16mcu_alt.zip",
-              "jtbeta.zip"
+              "passsht.zip|s16mcu_alt.zip"
             ]
           }
         },
@@ -6627,6 +6662,40 @@
           "sha": "7bdc5dfb514459194cb125cc6cd3002eb2e6f0a7",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/sf/version.log",
           "type": "OTHER"
+        },
+        {
+          "name": "Boulder Dash - Boulder Dash Part 2 (World).mra",
+          "sha": "46e67fd3897034c9c4cb4ddf208ff750c7b4c733",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/slyspy/releases/Boulder%20Dash%20-%20Boulder%20Dash%20Part%202%20(World).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Boulder Dash / Boulder Dash Part 2 (World)",
+            "rbf": "jtslyspy",
+            "zips": [
+              "bouldash.zip",
+              "jtbeta.zip"
+            ]
+          }
+        },
+        {
+          "name": "Secret Agent (World revision 3).mra",
+          "sha": "9bb51393eb32615c1efdca7480db7e294930467e",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/slyspy/releases/Secret%20Agent%20(World%20revision%203).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Secret Agent (World revision 3)",
+            "rbf": "jtslyspy",
+            "zips": [
+              "secretag.zip",
+              "jtbeta.zip"
+            ]
+          }
+        },
+        {
+          "name": "jtslyspy_20220311.rbf",
+          "sha": "ec1ae17c4cce5891d513cbadbdb706c188aa6fd8",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/slyspy/releases/jtslyspy_20220311.rbf",
+          "type": "RBF"
         },
         {
           "name": "README.md",

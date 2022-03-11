@@ -42,23 +42,23 @@ output = "_Others/jtcontra_20220201.rbf"
 
 
 # jtcop
-url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cop/releases/jtcop_20220211.rbf"
-output = "_Others/jtcop_20220211.rbf"
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cop/releases/jtcop_20220311.rbf"
+output = "_Others/jtcop_20220311.rbf"
 
 
 # jtcps1
-url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps1/releases/jtcps1_20220201.rbf"
-output = "_Arcade/cores/jtcps1_20220201.rbf"
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps1/releases/jtcps1_20220311.rbf"
+output = "_Arcade/cores/jtcps1_20220311.rbf"
 
 
 # jtcps15
-url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps15/releases/jtcps15_20220201.rbf"
-output = "_Others/jtcps15_20220201.rbf"
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps15/releases/jtcps15_20220311.rbf"
+output = "_Others/jtcps15_20220311.rbf"
 
 
 # jtcps2
-url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps2/releases/jtcps2_20220202.rbf"
-output = "_Others/jtcps2_20220202.rbf"
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps2/releases/jtcps2_20220311.rbf"
+output = "_Others/jtcps2_20220311.rbf"
 
 
 # jtdd
@@ -199,6 +199,11 @@ output = "_Arcade/cores/jtsectionz_20220203.rbf"
 # jtsf
 url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/sf/releases/jtsf_20220203.rbf"
 output = "_Others/jtsf_20220203.rbf"
+
+
+# jtslyspy
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/slyspy/releases/jtslyspy_20220311.rbf"
+output = "_Others/jtslyspy_20220311.rbf"
 
 
 # jttora
@@ -944,6 +949,16 @@ output = "_Arcade/SectionZ.mra"
 # Street Fighter (US, set 1).mra
 url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/sf/releases/Street%20Fighter%20(US%2C%20set%201).mra"
 output = "_Arcade/Street Fighter (US, set 1).mra"
+
+
+# Boulder Dash - Boulder Dash Part 2 (World).mra
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/slyspy/releases/Boulder%20Dash%20-%20Boulder%20Dash%20Part%202%20(World).mra"
+output = "_Arcade/Boulder Dash - Boulder Dash Part 2 (World).mra"
+
+
+# Secret Agent (World revision 3).mra
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/slyspy/releases/Secret%20Agent%20(World%20revision%203).mra"
+output = "_Arcade/Secret Agent (World revision 3).mra"
 
 
 # Tiger Road.mra
