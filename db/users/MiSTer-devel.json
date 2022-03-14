@@ -2109,7 +2109,7 @@
     {
       "name": "Arcade-Centipede_MiSTer",
       "description": "Arcade: Centipede",
-      "readme": "# Centipede\n\nFPGA implementation by lisper of [Centipede](https://github.com/lisper/arcade-centipede \"Centipede\") arcade game \nPort to MiSTer by Alan Steremberg\n\n# Keyboard inputs :\n```\n   F1          : Coin + Start 1P\n   F2          : Coin + Start 2P\n   LEFT,RIGHT,UP,DOWN  arrows : Steering\n   Space,Ctrl  : Fire\n\n   MAME/IPAC/JPAC Style Keyboard inputs:\n     5           : Coin 1\n     6           : Coin 2\n     1           : Start 1 Player\n     2           : Start 2 Players\n     R,F,D,G     : Player 2 Movements\n     A           : Player 2 Fire\n   \n\n Joystick support. \n```\n\n# Known Problems\n\nNot sure the colors are quite right.\n \n# ROMs\n```\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n\n",
+      "readme": "# Centipede\n\nFPGA implementation by lisper of [Centipede](https://github.com/lisper/arcade-centipede \"Centipede\") arcade game \nPort to MiSTer by Alan Steremberg\n\n# Keyboard inputs :\n```\n   F1          : Coin + Start 1P\n   F2          : Coin + Start 2P\n   LEFT,RIGHT,UP,DOWN  arrows : Steering\n   Space,Ctrl  : Fire\n\n   MAME/IPAC/JPAC Style Keyboard inputs:\n     5           : Coin 1\n     6           : Coin 2\n     1           : Start 1 Player\n     2           : Start 2 Players\n     R,F,D,G     : Player 2 Movements\n     A           : Player 2 Fire\n   \n\n Joystick support. \n```\n\n# Hiscore save/load\n\nSave and load of the top 3 hiscores is supported on this core.\n\nWarning: If any DIP settings are changed then your high score will reset.\n\nTo save your hiscores manually, press the 'Save Settings' option in the OSD.  Hiscores will be automatically loaded when the core is started.\n\nTo enable automatic saving of hiscores, turn on the 'Autosave Hiscores' option, press the 'Save Settings' option in the OSD, and reload the core.  Hiscores will then be automatically saved (if they have changed) any time the OSD is opened.\n\nHiscore data is stored in /media/fat/config/nvram/ as ```<mra filename>.nvm```\n\n# Known Problems\n\nNot sure the colors are quite right.\n \n# ROMs\n```\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/Arcade-Centipede_MiSTer",
@@ -2151,8 +2151,14 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Centipede_20220311.rbf",
+          "sha": "68a69ac15781c9965f182afc79e4138a45ffab5d",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Centipede_MiSTer/master/releases/Arcade-Centipede_20220311.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Centipede (Rev 3).mra",
-          "sha": "a6d9a423a5b94eb70740bc066b0e103d3682e246",
+          "sha": "ee2f76835f069de2c6eee86d4b5373c4393ece70",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Centipede_MiSTer/master/releases/Centipede%20(Rev%203).mra",
           "type": "MRA",
           "extra": {
@@ -2165,7 +2171,7 @@
         },
         {
           "name": "Centipede (Rev 4).mra",
-          "sha": "ed0940f9aaaa98603c3e17ed519d13e4c7df5975",
+          "sha": "fcf5aff7ae68c0e3350dd26b28645bae0b425188",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Centipede_MiSTer/master/releases/Centipede%20(Rev%204).mra",
           "type": "MRA",
           "extra": {
