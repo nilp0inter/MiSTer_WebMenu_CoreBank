@@ -197,7 +197,7 @@
     {
       "name": "Arcade-Asteroids_MiSTer",
       "description": "Atari Asteroids for MiSTer",
-      "readme": "This is a Model of Asteroids hardware adapted from Asteroids Deluxe by James Sweet.\r\n\r\n-- Keyboard players inputs :\r\n--\r\n   F1          : Coin + Start 1P\r\n   F2          : Coin + Start 2P\r\n   LEFT,RIGHT  arrows : Steering\r\n   Space: Hyperspace\r\n   Ctrl,M  : Fire\r\n   LAlt: Thrust\r\n\r\n   MAME/IPAC/JPAC Style Keyboard inputs:\r\n     5           : Coin 1\r\n     6           : Coin 2\r\n     1           : Start 1 Player\r\n     2           : Start 1 Player\r\n\r\n-- Joystick support.\r\n\r\n-- OSD language selection\r\n\r\nThe rbf and mra file is in releases\r\n\r\n---------------------------------------------------------------------------------\r\n\r\n                                *** Attention ***\r\n\r\nROMs are not included. In order to use this arcade, you need to provide the\r\ncorrect ROMs.\r\n\r\nTo simplify the process .mra files are provided in the releases folder, that\r\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\r\ncorresponding file of the M.A.M.E. project.\r\n\r\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\r\ninformation on how to setup and use the environment.\r\n\r\nQuickreference for folders and file placement:\r\n\r\n/_Arcade/<game name>.mra\r\n/_Arcade/cores/<game rbf>.rbf\r\n/_Arcade/mame/<mame rom>.zip\r\n/_Arcade/hbmame/<hbmame rom>.zip\r\n",
+      "readme": "# [Arcade: Asteroids](https://www.arcade-museum.com/game_detail.php?game_id=6939) for [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\nPorted to MiSTer from an Asteroids Deluxe core which was originally made by James Sweet\n\n## Description\n\nThis is a simulation model of the Asteroids hardware which was a vector graphics based arcade system that utilized a 6502 processor along with a proprietary display.\n\nThis Arcade Core only runs Asteroids. There is a separate core for the Asteroids Deluxe arcade game: https://github.com/MiSTer-devel/Arcade-AsteroidsDeluxe_MiSTer\n\n## ROM Files Instructions\n\n**ROMs are not included!** In order to use this arcade core, you will need to provide the correct ROM file yourself.\n\nTo simplify the process .mra files are provided in the releases folder, that specify the required ROMs with their checksums. The ROMs .zip filename refers to the\ncorresponding file from the MAME project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for information on how to setup and use the environment.\n\nQuick reference for folders and file placement:\n\n```\n/_Arcade/<game name>.mra  \n/_Arcade/cores/<game rbf>.rbf  \n/_Arcade/mame/<mame rom>.zip  \n/_Arcade/hbmame/<hbmame rom>.zip  \n```\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-DB9/Arcade-Asteroids_MiSTer",
@@ -218,6 +218,12 @@
           "name": "Arcade-Asteroids_20201219.rbf",
           "sha": "500249c33ff58a55c15c774be5276b8d2910bb14",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Asteroids_MiSTer/master/releases/Arcade-Asteroids_20201219.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Asteroids_20220313.rbf",
+          "sha": "41d1ad407c942eaa93f1f1cb673f3ef296a18217",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Asteroids_MiSTer/master/releases/Arcade-Asteroids_20220313.rbf",
           "type": "RBF"
         },
         {
@@ -1139,6 +1145,18 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-CanyonBomber_20220313.rbf",
+          "sha": "475e1804e275048bd91a2cd30e6c06886860e269",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-CanyonBomber_MiSTer/master/releases/Arcade-CanyonBomber_20220313.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-CanyonBomber_20220314.rbf",
+          "sha": "3c77fcebfa5b85a71282d0a84eb14e1a549397dd",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-CanyonBomber_MiSTer/master/releases/Arcade-CanyonBomber_20220314.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Canyon Bomber.mra",
           "sha": "53dc57a0bed4a614cd473dbdb76f6433173e5df4",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-CanyonBomber_MiSTer/master/releases/Canyon%20Bomber.mra",
@@ -1798,6 +1816,12 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-DigDug_20220313.rbf",
+          "sha": "f33c7a1291bcb7a2b4fd3fa9921d6164297e18a8",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-DigDug_MiSTer/master/releases/Arcade-DigDug_20220313.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Dig Dug (Rev 2).mra",
           "sha": "e4be2dc3fdfea9cbbce9bea30ae58774f46ad97a",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-DigDug_MiSTer/master/releases/Dig%20Dug%20(Rev%202).mra",
@@ -1854,6 +1878,18 @@
           "name": "Arcade-Dominos_20210625.rbf",
           "sha": "494b96dc3e18358f3cb8b07a8b6eabe0d1a7fd63",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Dominos_MiSTer/master/releases/Arcade-Dominos_20210625.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Dominos_20220313.rbf",
+          "sha": "53dff7258192fc0e609bde2c9ac51575049dc975",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Dominos_MiSTer/master/releases/Arcade-Dominos_20220313.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Dominos_20220314.rbf",
+          "sha": "7fb06ac29f7c0c1573a930fb02fd9e9f8fa7b273",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Dominos_MiSTer/master/releases/Arcade-Dominos_20220314.rbf",
           "type": "RBF"
         },
         {
