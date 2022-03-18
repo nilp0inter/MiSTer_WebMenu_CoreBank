@@ -4815,7 +4815,7 @@
         },
         {
           "name": "README.md",
-          "sha": "af4521fa0febb1f900d48c5b60d28e65c4646a63",
+          "sha": "328cb795c5d006c88b4ad7536089d45b84adfe75",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kicker/README.md",
           "type": "OTHER"
         },
@@ -4869,8 +4869,14 @@
           "type": "RBF"
         },
         {
+          "name": "jtkicker_20220318.rbf",
+          "sha": "67217c7da2c66b482c1812d46902cee8abaa3e70",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kicker/releases/jtkicker_20220318.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "version.log",
-          "sha": "d4a5f73163e2d073ab5d62ce7988a08d2dce96b1",
+          "sha": "5ec83f756020af4aca083f7ff8dd907d139487f0",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kicker/version.log",
           "type": "OTHER"
         },
@@ -4993,7 +4999,7 @@
         },
         {
           "name": "README.md",
-          "sha": "af4521fa0febb1f900d48c5b60d28e65c4646a63",
+          "sha": "328cb795c5d006c88b4ad7536089d45b84adfe75",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/mikie/README.md",
           "type": "OTHER"
         },
@@ -5024,8 +5030,14 @@
           "type": "RBF"
         },
         {
+          "name": "jtmikie_20220318.rbf",
+          "sha": "dc7a23975ec35fc3bd3a8d72a97f980cd19be669",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/mikie/releases/jtmikie_20220318.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "version.log",
-          "sha": "b1ee154f5b45b7725d30e61288e7291a249e1790",
+          "sha": "090c526927cd1274dcb9eaeca9a0cbf8658abdb6",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/mikie/version.log",
           "type": "OTHER"
         },
@@ -5172,6 +5184,32 @@
           "sha": "f8af84b1169028fd41f359fefafdf8903fa6df6f",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/ninja/version.log",
           "type": "OTHER"
+        },
+        {
+          "name": "README.md",
+          "sha": "328cb795c5d006c88b4ad7536089d45b84adfe75",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/roadf/README.md",
+          "type": "OTHER"
+        },
+        {
+          "name": "Road Fighter (set 1).mra",
+          "sha": "96f56f1deaa807f5cdeaead7f97b18de5ed479d0",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/roadf/releases/Road%20Fighter%20(set%201).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Road Fighter (set 1)",
+            "rbf": "jtroadf",
+            "zips": [
+              "roadf.zip",
+              "jtbeta.zip"
+            ]
+          }
+        },
+        {
+          "name": "jtroadf_20220318.rbf",
+          "sha": "6b30c76abc8093084f0dd0ed385bfdf79ab16d35",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/roadf/releases/jtroadf_20220318.rbf",
+          "type": "RBF"
         },
         {
           "name": "README.md",
@@ -6295,7 +6333,7 @@
         },
         {
           "name": "README.md",
-          "sha": "af4521fa0febb1f900d48c5b60d28e65c4646a63",
+          "sha": "328cb795c5d006c88b4ad7536089d45b84adfe75",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/sbask1/README.md",
           "type": "OTHER"
         },
@@ -6343,14 +6381,20 @@
           "type": "RBF"
         },
         {
+          "name": "jtsbask1_20220318.rbf",
+          "sha": "5ee57e9dfe8e2990b8ceb9e7b17488577c17a499",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/sbask1/releases/jtsbask1_20220318.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "version.log",
-          "sha": "0bc28bb2cdac72020d45c478a2b517149cf2ba01",
+          "sha": "d4bc01cf133fc02fa67dd9833a694cd7b610e03f",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/sbask1/version.log",
           "type": "OTHER"
         },
         {
           "name": "README.md",
-          "sha": "af4521fa0febb1f900d48c5b60d28e65c4646a63",
+          "sha": "328cb795c5d006c88b4ad7536089d45b84adfe75",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/sbaskt/README.md",
           "type": "OTHER"
         },
@@ -6398,8 +6442,14 @@
           "type": "RBF"
         },
         {
+          "name": "jtsbaskt_20220318.rbf",
+          "sha": "cd9320d1cf55310f0949d0228684206aa44af0c3",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/sbaskt/releases/jtsbaskt_20220318.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "version.log",
-          "sha": "3e7dd3829bbad465b8e797008624f492b50a8441",
+          "sha": "60d4966563c5a6fad5f94cd68bb576087bac5acd",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/sbaskt/version.log",
           "type": "OTHER"
         },
@@ -7356,7 +7406,7 @@
         },
         {
           "name": "README.md",
-          "sha": "af4521fa0febb1f900d48c5b60d28e65c4646a63",
+          "sha": "328cb795c5d006c88b4ad7536089d45b84adfe75",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/yiear/README.md",
           "type": "OTHER"
         },
@@ -7404,8 +7454,14 @@
           "type": "RBF"
         },
         {
+          "name": "jtyiear_20220318.rbf",
+          "sha": "fa25ed67320d5268ca1161bfdaae477c6cd7515b",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/yiear/releases/jtyiear_20220318.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "version.log",
-          "sha": "51875500dd85d51350a1a71f48457f968d52f6ce",
+          "sha": "b63db2d12188c2d68dc0969d80a49b36aea1a1d6",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/yiear/version.log",
           "type": "OTHER"
         }
