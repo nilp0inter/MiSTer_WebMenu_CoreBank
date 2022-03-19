@@ -83,6 +83,22 @@
       ]
     },
     {
+      "name": "AdventureVision_MiSTer",
+      "description": "Adventure Vision core for MiSTer",
+      "readme": "# Adventure Vision\n\n## General Information\nThis is a port of the adventure vision core originally written by Arnim Laeuger in 2006. The system has 4 retail games, and two homebrew games. The core uses the folder AVision for its games, and no other setup is required.\n\n## Technical Details\nThe screen of the Adventure Vision was a strip of 40 LEDs that reflected off a rapidly rotating mirror, similar to a grocery store scanner. This resulted in a 15 frames per second image of 150x40 pixels. The original system's display was extremely flickery as a result, and the shape of it \"wobbled\". The core has an option to try to emulate this, but it defaults to having the flicker off for comfort and safety. If you choose to try this feature, it seems to look best on very small CRTs.\n\n## Button Layout\n```\n   1          1\n 2   4  JS  4   2\n   3          3\n```\nThere are two sets of buttons, intended for multiplayer, which have slightly different layouts. On the core, both the first and second player controllers will have full access to the controls.",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/MiSTer-devel/AdventureVision_MiSTer",
+      "releases": [
+        {
+          "name": "AdventureVision_20220319.rbf",
+          "sha": "0c2329a1ea224dedf3d19c5fd414b1d624d73b31",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/AdventureVision_MiSTer/master/releases/AdventureVision_20220319.rbf",
+          "type": "RBF"
+        }
+      ]
+    },
+    {
       "name": "AliceMC10_MiSTer",
       "description": "Matra-Hachette Alice MC-10 for MiSTer FPGA",
       "readme": "Matra-Hachette Alice MC-10 for MiSTer FPGA\r\n==========================================\r\n\r\nThis is the port of the Alice 4K / Tandy MC-10 to MiSTer FPGA.\r\n\r\nCassettes\r\n---------\r\n\r\nTo facilitate the use of the cassette player, an option to display the data stream on the screen is available form the OSD.\r\n\r\nThe core is compatible with .c10 tape files. A small script `k72c10.py` is available for converting .k7 files from Alice into .c10 files. The script adds the two leader sections before and after the name block.\r\n\r\nUsage: `python k72c10.py <path to k7 file>`.\r\n\r\nYou will end up with a new file named k7.c10, which should be compatible with the core.\r\n\r\nJoystick\r\n--------\r\n\r\nWhile the Alice 4k was sold with a DB9 adapter cartridge, the MC10 has no official support for joysticks. A article published in SoftGold magazine shows how to build a simple two directional joystick connected on the RS-232 connector. The two joystick interfaces have been implemented in the core.\r\n\r\nTo do\r\n-----\r\n\r\nMany games/programs already work, however, there's currently a bug in the video module that prevents some games from changing the display mode. Other MiSTer contributors and I are working on the problem right now.\r\n",
