@@ -8930,8 +8930,27 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Xevious_20220323.rbf",
+          "sha": "e58312643471a78a67bcfdb2002b205bef49be6a",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Xevious_MiSTer/master/releases/Arcade-Xevious_20220323.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Super Xevious.mra",
+          "sha": "65270aba90244f8e1c4c44b31adbe073d565f534",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Xevious_MiSTer/master/releases/Super%20Xevious.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Super Xevious",
+            "rbf": "xevious",
+            "zips": [
+              "xevious.zip|namco50.zip|namco51.zip|namco54.zip"
+            ]
+          }
+        },
+        {
           "name": "Xevious.mra",
-          "sha": "03f01db16a17bf628bc56d0179058f1cd06d3855",
+          "sha": "5fa0e4eadf978c72d639954431c17511f8292f72",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Xevious_MiSTer/master/releases/Xevious.mra",
           "type": "MRA",
           "extra": {
