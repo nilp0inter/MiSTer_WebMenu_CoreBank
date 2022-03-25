@@ -5204,8 +5204,22 @@
           "type": "OTHER"
         },
         {
+          "name": "Hyper Sports.mra",
+          "sha": "caaf137092e7210858c944e87aa4e0fd07898887",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/roadf/releases/Hyper%20Sports.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Hyper Sports",
+            "rbf": "jtroadf",
+            "zips": [
+              "hyperspt.zip",
+              "jtbeta.zip"
+            ]
+          }
+        },
+        {
           "name": "Road Fighter (set 1).mra",
-          "sha": "96f56f1deaa807f5cdeaead7f97b18de5ed479d0",
+          "sha": "7235ba3d8b19227e57b0ea8c56aa6cb4f5184c16",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/roadf/releases/Road%20Fighter%20(set%201).mra",
           "type": "MRA",
           "extra": {
