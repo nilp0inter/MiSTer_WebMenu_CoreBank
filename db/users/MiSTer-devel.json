@@ -629,6 +629,12 @@
           "type": "RBF"
         },
         {
+          "name": "ao486_20220326.rbf",
+          "sha": "be2eb909add3ac4d8020d60f5a71ff4746f9ac22",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/ao486_MiSTer/master/releases/ao486_20220326.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "boot0.rom",
           "sha": "b336b9a9bfb856062e0f15edec6a426b001054d0",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/ao486_MiSTer/master/releases/boot0.rom",
@@ -666,7 +672,7 @@
         },
         {
           "name": "misterfs.exe",
-          "sha": "ba8ae87be8ef290e852c6621a2fdc247612316d7",
+          "sha": "4897d04738a918f966f265fe5ce82cd179e46bd8",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/ao486_MiSTer/master/releases/drv/misterfs.exe",
           "type": "OTHER"
         },
@@ -13145,6 +13151,12 @@
           "name": "MiSTer_20220224",
           "sha": "ef01e173a01320edb7101bac5b2480d6a33d2294",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Main_MiSTer/master/releases/MiSTer_20220224",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20220326",
+          "sha": "5e3b22bae84b71ac480b3113508a503d38ef4dbb",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Main_MiSTer/master/releases/MiSTer_20220326",
           "type": "OTHER"
         }
       ]
