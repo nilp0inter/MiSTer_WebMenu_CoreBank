@@ -4584,6 +4584,12 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-MoonPatrol_20220322.rbf",
+          "sha": "816681e482e250a304fb5530c67af7850179c565",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MoonPatrol_MiSTer/master/releases/Arcade-MoonPatrol_20220322.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Moon Patrol.mra",
           "sha": "a4d94e51ee699d667dd18697a5bfc0a45e6a122c",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MoonPatrol_MiSTer/master/releases/Moon%20Patrol.mra",
@@ -7759,8 +7765,27 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Xevious_20220323.rbf",
+          "sha": "e58312643471a78a67bcfdb2002b205bef49be6a",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Xevious_MiSTer/master/releases/Arcade-Xevious_20220323.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Super Xevious.mra",
+          "sha": "65270aba90244f8e1c4c44b31adbe073d565f534",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Xevious_MiSTer/master/releases/Super%20Xevious.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Super Xevious",
+            "rbf": "xevious",
+            "zips": [
+              "xevious.zip|namco50.zip|namco51.zip|namco54.zip"
+            ]
+          }
+        },
+        {
           "name": "Xevious.mra",
-          "sha": "03f01db16a17bf628bc56d0179058f1cd06d3855",
+          "sha": "5fa0e4eadf978c72d639954431c17511f8292f72",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Xevious_MiSTer/master/releases/Xevious.mra",
           "type": "MRA",
           "extra": {
@@ -10844,6 +10869,12 @@
           "type": "RBF"
         },
         {
+          "name": "QL_20220328.rbf",
+          "sha": "00f56ec747d2937f1cfb06b16ab5e10a95b1322d",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/QL_MiSTer/master/releases/QL_20220328.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "boot.rom",
           "sha": "7cae62c00c5c5eae3c6dd69c4d9c2024e4266e67",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/QL_MiSTer/master/releases/boot.rom",
@@ -10911,6 +10942,12 @@
           "name": "SAMCoupe_20220326.rbf",
           "sha": "bf028ac42ca935dcc6681e9b97c0802f49c2657a",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/SAM-Coupe_MiSTer/master/releases/SAMCoupe_20220326.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SAMCoupe_20220328.rbf",
+          "sha": "d99a75b4da4f121c33d133d22a6d636dd9841f72",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/SAM-Coupe_MiSTer/master/releases/SAMCoupe_20220328.rbf",
           "type": "RBF"
         }
       ]
