@@ -306,6 +306,11 @@ url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MrDo_MiSTer/main/re
 output = "_Arcade/cores/MrDo_20220304.rbf"
 
 
+# mysticm
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MysticMarathon-MiSTer/master/releases/mysticm_20220329.rbf"
+output = "_Others/mysticm_20220329.rbf"
+
+
 # NinjaKun
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-NinjaKun_MiSTer/master/releases/Arcade-NinjaKun_20210929.rbf"
 output = "_Arcade/cores/NinjaKun_20210929.rbf"
@@ -1584,6 +1589,16 @@ output = "_Arcade/Mr. Do! Fixed.mra"
 # Mr. Do!.mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MrDo_MiSTer/main/releases/Mr.%20Do!.mra"
 output = "_Arcade/Mr. Do!.mra"
+
+
+# Mystic Marathon.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MysticMarathon-MiSTer/master/releases/Mystic%20Marathon.mra"
+output = "_Arcade/Mystic Marathon.mra"
+
+
+# Mystic Marathon (prototype).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MysticMarathon-MiSTer/master/releases/_alternatives/Mystic%20Marathon%20(prototype).mra"
+output = "_Arcade/Mystic Marathon (prototype).mra"
 
 
 # Ninjakun.mra
