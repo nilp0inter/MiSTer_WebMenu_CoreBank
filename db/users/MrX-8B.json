@@ -552,7 +552,13 @@
           "sha": "e35d39e5700601e7f6afafa8a257147f24442a1f",
           "url": "https://raw.githubusercontent.com/MrX-8B/MiSTer-Arcade-Gyruss/master/releases/Gyruss%20(Centuri).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Gyruss (Centuri)",
+            "rbf": "Gyruss",
+            "zips": [
+              "gyruss.zip|gyrussce.zip"
+            ]
+          }
         },
         {
           "name": "Gyruss (bootleg).mra",
@@ -964,7 +970,15 @@
           "sha": "a92f9b5405fc728d04f574d85c5fa3b130197857",
           "url": "https://raw.githubusercontent.com/MrX-8B/MiSTer-Arcade-SEGASYS1/master/releases/_alternatives/Seishun%20Scandal%20(315-5132%2C%20Japan).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Seishun Scandal (315-5132, Japan)",
+            "rbf": "segasys1",
+            "zips": [
+              "myhero.zip",
+              "sscandal.zip",
+              "sscandal.zip"
+            ]
+          }
         }
       ]
     },

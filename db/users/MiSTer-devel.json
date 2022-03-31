@@ -2754,7 +2754,13 @@
           "sha": "e4be2dc3fdfea9cbbce9bea30ae58774f46ad97a",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-DigDug_MiSTer/master/releases/Dig%20Dug%20(Rev%202).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Dig Dug",
+            "rbf": "digdug",
+            "zips": [
+              "digdug.zip"
+            ]
+          }
         },
         {
           "name": "rommap.txt",
@@ -4929,7 +4935,13 @@
           "sha": "715bc7408ba5fab978d891ab7a101bae300480d9",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MCR2_MiSTer/master/releases/Wacko.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Wacko",
+            "rbf": "mcr2",
+            "zips": [
+              "wacko.zip"
+            ]
+          }
         }
       ]
     },
@@ -5957,7 +5969,13 @@
           "sha": "27660ef9cc20c857363a4d0dd17ab1e2875bde7e",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pacman_MiSTer/master/releases/Pac-Man%20Club-%20Club%20Lambada%20(AR).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Pac-Man Club- Club Lambada",
+            "rbf": "pacman",
+            "zips": [
+              "clubpacm.zip"
+            ]
+          }
         },
         {
           "name": "Pac-Man Plus.mra",
