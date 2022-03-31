@@ -2754,13 +2754,7 @@
           "sha": "e4be2dc3fdfea9cbbce9bea30ae58774f46ad97a",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-DigDug_MiSTer/master/releases/Dig%20Dug%20(Rev%202).mra",
           "type": "MRA",
-          "extra": {
-            "name": "Dig Dug",
-            "rbf": "digdug",
-            "zips": [
-              "digdug.zip"
-            ]
-          }
+          "extra": null
         },
         {
           "name": "rommap.txt",
@@ -2901,7 +2895,13 @@
           "sha": "6897576a8420b7c88474529abe494d46ee560d0c",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-DonkeyKongJunior_MiSTer/master/releases/Donkey%20Kong%20Junior%20(US%2C%20Set%20F-2).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Donkey Kong Junior",
+            "rbf": "donkeykongjunior",
+            "zips": [
+              "dkongjr.zip"
+            ]
+          }
         }
       ]
     },
@@ -5957,13 +5957,7 @@
           "sha": "27660ef9cc20c857363a4d0dd17ab1e2875bde7e",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pacman_MiSTer/master/releases/Pac-Man%20Club-%20Club%20Lambada%20(AR).mra",
           "type": "MRA",
-          "extra": {
-            "name": "Pac-Man Club- Club Lambada",
-            "rbf": "pacman",
-            "zips": [
-              "clubpacm.zip"
-            ]
-          }
+          "extra": null
         },
         {
           "name": "Pac-Man Plus.mra",

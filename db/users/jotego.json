@@ -1518,13 +1518,7 @@
           "sha": "d3a792501631ccd1cb663a1639545a2765bbe81c",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/bubl/releases/Bubble%20Bobble%20(Japan%2C%20Ver%200.1).mra",
           "type": "MRA",
-          "extra": {
-            "name": "Bubble Bobble (Japan, Ver 0.1)",
-            "rbf": "jtbubl",
-            "zips": [
-              "bublbobl.zip"
-            ]
-          }
+          "extra": null
         },
         {
           "name": "Tokio - Scramble Formation (bootleg).mra",
@@ -2401,13 +2395,7 @@
           "sha": "09aed16e8b21ced50c657e7d56e52dd77a90867f",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps1/releases/Mega%20Twins%20-World%20900619-.mra",
           "type": "MRA",
-          "extra": {
-            "name": "Mega Twins (World 900619)",
-            "rbf": "jtcps1",
-            "zips": [
-              "mtwins.zip"
-            ]
-          }
+          "extra": null
         },
         {
           "name": "Mercs -World 900302-.mra",
@@ -3143,7 +3131,13 @@
           "sha": "bbb4a5fcd6a4e83824e698779e35ccf9d1fc60a0",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps2/releases/Cyberbots%20Fullmetal%20Madness%20(Euro%20950424).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Cyberbots: Fullmetal Madness (Euro 950424)",
+            "rbf": "jtcps2",
+            "zips": [
+              "cybots.zip|qsound.zip"
+            ]
+          }
         },
         {
           "name": "Darkstalkers The Night Warriors (Euro 940705).mra",
@@ -3345,13 +3339,7 @@
           "sha": "c1a83b7982c210e841bf03c23922989d5b77bd54",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps2/releases/Night%20Warriors%20Darkstalkers%20Revenge%20(Euro%20950316).mra",
           "type": "MRA",
-          "extra": {
-            "name": "Night Warriors: Darkstalkers' Revenge (Euro 950316)",
-            "rbf": "jtcps2",
-            "zips": [
-              "nwarr.zip|qsound.zip"
-            ]
-          }
+          "extra": null
         },
         {
           "name": "Progear (USA 010117).mra",
@@ -3553,13 +3541,7 @@
           "sha": "1f647c45e91a8b6e792a1ad054518e030037f04c",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps2/releases/X-Men%20Children%20of%20the%20Atom%20(Euro%20950331).mra",
           "type": "MRA",
-          "extra": {
-            "name": "X-Men: Children of the Atom (Euro 950331)",
-            "rbf": "jtcps2",
-            "zips": [
-              "xmcota.zip|qsound.zip"
-            ]
-          }
+          "extra": null
         },
         {
           "name": "X-Men Vs. Street Fighter (Euro 961004).mra",
@@ -5162,14 +5144,7 @@
           "sha": "0c863bef1fc905542378f6ff66d72d3865d392b6",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/ninja/releases/Bad%20Dudes%20vs.%20Dragonninja%20(US%20revision%201).mra",
           "type": "MRA",
-          "extra": {
-            "name": "Bad Dudes vs. Dragonninja (US revision 1)",
-            "rbf": "jtninja",
-            "zips": [
-              "baddudes.zip",
-              "jtbeta.zip"
-            ]
-          }
+          "extra": null
         },
         {
           "name": "Heavy Barrel (World).mra",
@@ -5801,13 +5776,7 @@
           "sha": "a39c254ca9d5b735f1edf96ce88ce338c4d9ea19",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/RyuKyu%20(Rev%20A%2C%20Japan)%20(FD1094%20317-5023A).mra",
           "type": "MRA",
-          "extra": {
-            "name": "RyuKyu (Rev A, Japan) (FD1094 317-5023A)",
-            "rbf": "jts16b",
-            "zips": [
-              "ryukyu.zip|s16mcu_alt.zip"
-            ]
-          }
+          "extra": null
         },
         {
           "name": "Sonic Boom (FD1094 317-0053).mra",
@@ -6202,13 +6171,7 @@
           "sha": "41b361fefdf2f516450e938488ef06325b1e2048",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b3/releases/Wonder%20Boy%20III%20-%20Monster%20Lair%20(set%206%2C%20World%2C%20System%2016B)%20(8751%20317-0098).mra",
           "type": "MRA",
-          "extra": {
-            "name": "Wonder Boy III - Monster Lair (set 6, World, System 16B) (8751 317-0098)",
-            "rbf": "jts16b3",
-            "zips": [
-              "wb3.zip|s16mcu_alt.zip"
-            ]
-          }
+          "extra": null
         },
         {
           "name": "Wrestle War (set 3, World) (8751 317-0103).mra",

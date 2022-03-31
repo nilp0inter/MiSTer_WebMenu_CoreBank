@@ -2241,7 +2241,13 @@
           "sha": "d89ec9c6cf80eb989c30f108cd20d710bb449cac",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SMS_MiSTer/master/releases/Tetris%20(Japan%2C%20System%20E).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Tetris (Japan, System E)",
+            "rbf": "SMS",
+            "zips": [
+              "tetrisse.zip"
+            ]
+          }
         },
         {
           "name": "Transformer.mra",

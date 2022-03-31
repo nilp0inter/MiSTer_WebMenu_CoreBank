@@ -2862,13 +2862,7 @@
           "sha": "eac3df26a4020ae81e26f289cf20fd6c68c9a078",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaxian_MiSTer/master/releases/Orbitron.mra",
           "type": "MRA",
-          "extra": {
-            "name": "Orbitron",
-            "rbf": "galaxian",
-            "zips": [
-              "orbitron.zip"
-            ]
-          }
+          "extra": null
         },
         {
           "name": "Pisces.mra",
@@ -3198,13 +3192,7 @@
           "sha": "7ee3127619a97c1ae6b9880b427aaf0f24cc5bcf",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IremM62_MiSTer/master/releases/Kung-Fu%20Master%20(W).mra",
           "type": "MRA",
-          "extra": {
-            "name": "Kung-Fu Master",
-            "rbf": "iremm62",
-            "zips": [
-              "kungfum.zip"
-            ]
-          }
+          "extra": null
         },
         {
           "name": "Lode Runner (Set 1).mra",
@@ -3402,7 +3390,13 @@
           "sha": "64385ef38c0be26f00d66b5573477ae8dd5038fa",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Jackal_MiSTer/main/releases/Jackal%20(W)%20%5Bbl%5D.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Jackal",
+            "rbf": "Jackal",
+            "zips": [
+              "jackal.zip|jackalbl.zip"
+            ]
+          }
         },
         {
           "name": "Jackal (W).mra",
@@ -6690,13 +6684,7 @@
           "sha": "58f41cfc9477edf9ed6d1c1543f444f8db74f282",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SEGASYS1_MiSTer/main/releases/Star%20Jacker.mra",
           "type": "MRA",
-          "extra": {
-            "name": "Star Jacker",
-            "rbf": "segasys1",
-            "zips": [
-              "starjack.zip"
-            ]
-          }
+          "extra": null
         },
         {
           "name": "Swat (315-5048).mra",
