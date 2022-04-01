@@ -5240,6 +5240,26 @@
           "type": "OTHER"
         },
         {
+          "name": "Konami's Ping-Pong.mra",
+          "sha": "ab318a83a17b4e2a3fe6cf01f1f10b1d86ed8640",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/pinpon/releases/Konami's%20Ping-Pong.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Konami's Ping-Pong",
+            "rbf": "jtpinpon",
+            "zips": [
+              "pingpong.zip",
+              "jtbeta.zip"
+            ]
+          }
+        },
+        {
+          "name": "jtpinpon_20220401.rbf",
+          "sha": "d2799f62ebde04496ec9235ecb7edf9ed71a5395",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/pinpon/releases/jtpinpon_20220401.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "README.md",
           "sha": "328cb795c5d006c88b4ad7536089d45b84adfe75",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/roadf/README.md",
