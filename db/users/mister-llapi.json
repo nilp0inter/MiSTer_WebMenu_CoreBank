@@ -7,7 +7,7 @@
     {
       "name": "Arcade-IremM62_MiSTer",
       "description": "Irem62 from pace, and mist including Lode Runner, etc",
-      "readme": "Irem M62 Hardware\n=================\n\nBased on old PACE code by Mark McDougall(tcdev), enhanced by Gyorgy Szombathelyi in March 2020.\n\nGames supported:\n- Lode Runner 1-4\n- Kung Fu Master\n- Horizon\n- Battle Road\n- Spelunker 1-2\n- Kid Niki\n- Youjyudn\n\n# Keyboard inputs :\n```\n\n   MAME/IPAC/JPAC Style Keyboard inputs:\n     1           : Start 1 Player\n     2           : Start 2 Player\n     5           : Coin 1\n     6           : Coin 2\n     R,F,D,G     : Player 2\n     A           : Fire2 A\n     S           : Fire2 B \n\t\n Joystick support. \n```\n\n# Known Bugs\n\n- Kung-Fu Master has a sprite color problem\n- Lot Lot isn't fully implemented\n\n\n# ROMs\n```\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n\n```\n\nLaunch game using the appropriate .MRA\n\n",
+      "readme": "LLAPI Note : \n\n1. Place the rbf core file in a folder named _LLAPI/cores/\n2. Place the MRAs files in _LLAPI/_Arcade/\n3. Dont forget to enable LLAPI in the core OSD (this has to be done for each MRA for now)\n4. Play !\n\nIn order to play with 2 players you need to insert 2 coins at least and press START2P button.\nThis button has been mapped to the LEFT shoulder button (SNES controller used as a reference)\n\nIrem M62 Hardware\n=================\n\nBased on old PACE code by Mark McDougall(tcdev), enhanced by Gyorgy Szombathelyi in March 2020.\n\nGames supported:\n- Lode Runner 1-4\n- Kung Fu Master\n- Horizon\n- Battle Road\n- Spelunker 1-2\n- Kid Niki\n- Youjyudn\n\n# Keyboard inputs :\n```\n\n   MAME/IPAC/JPAC Style Keyboard inputs:\n     1           : Start 1 Player\n     2           : Start 2 Player\n     5           : Coin 1\n     6           : Coin 2\n     R,F,D,G     : Player 2\n     A           : Fire2 A\n     S           : Fire2 B \n\t\n Joystick support. \n```\n\n# Known Bugs\n\n- Kung-Fu Master has a sprite color problem\n- Lot Lot isn't fully implemented\n\n\n# ROMs\n```\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n\n```\n\nLaunch game using the appropriate .MRA\n\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-LLAPI/Arcade-IremM62_MiSTer",
@@ -55,6 +55,12 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-IremM62_LLAPI_20220107.rbf",
+          "sha": "131331ff601fdb166dbd8e1a5172994561445986",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM62_MiSTer/master/releases/Arcade-IremM62_LLAPI_20220107.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Horizon (Irem).mra",
           "sha": "1590460bd4ab478d71a63e568a4471d4dd022a0b",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM62_MiSTer/master/releases/Horizon%20(Irem).mra",
@@ -66,12 +72,6 @@
               "horizon.zip"
             ]
           }
-        },
-        {
-          "name": "IremM62_LLAPI_20220107.rbf",
-          "sha": "131331ff601fdb166dbd8e1a5172994561445986",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM62_MiSTer/master/releases/IremM62_LLAPI_20220107.rbf",
-          "type": "RBF"
         },
         {
           "name": "Kid Niki - Radical Ninja (W).mra",
@@ -208,7 +208,7 @@
     {
       "name": "Arcade-Pacman_MiSTer",
       "description": "Arcade: Pacman for MiSTer",
-      "readme": "LLAPI Note : \n\n1. Place the rbf core file in a folder named _LLAPI/cores/\n2. Place the MRAs files in _LLAPI/_Arcade/\n\nIn order to play with 2 players you need to insert 2 coins at least and press START2P button.\nThis button has been mapped to the LEFT shoulder button (SNES controller used as a reference)\n\n---------------------------------------------------------------------------------\n-- \n-- Arcade: Pacman port to MiSTer by Sorgelig\n-- 09 November 2017\n-- \n---------------------------------------------------------------------------------\n-- A simulation model of Pacman hardware\n-- Copyright (c) MikeJ - January 2006\n---------------------------------------------------------------------------------\n-- \n-- Support screen and controls rotation on HDMI output.\n-- Only controls are rotated on VGA output.\n-- \n-- \n-- Keyboard inputs :\n--\n--   F1          : Start Player 1\n--   F2          : Start Player 2\n--   F3\t\t : Coin Player 1\n--   F5          : Skip to next level\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   R,F,D,G     : Player 2 Movements\n--\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--\n-- Joystick support.\n-- \n----------------------------------------------\n\nHiscore save/load:\n\nSave and load of hiscores is supported for the following games on this core:\n - Alibaba 40 Thieves\n - Crush Roller\n - Dream Shopper\n - Eggor\n - Gorkans\n - Lizard Wizard\n - Mr. TNT\n - Ms. Pacman\n - Pac-Man (Midway)\n - Pacman Club\n - Pacman Plus\n - Ponpoko\n - Puck Man\n - Woodpecker\n\nTo save your hiscores manually, press the 'Save Settings' option in the OSD.  Hiscores will be automatically loaded when the core is started.\n\nTo enable automatic saving of hiscores, turn on the 'Autosave Hiscores' option and press the 'Save Settings' option in the OSD.  Hiscores will then be automatically saved (if they have changed) any time the OSD is opened.\n\nHiscore data is stored in /media/fat/config/nvram/ as ```<mra filename>.nvm```\n\n---------------------------------------------------------------------------------\n\n                                 *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
+      "readme": "LLAPI Note : \n\n1. Place the rbf core file in a folder named _LLAPI/cores/\n2. Place the MRAs files in _LLAPI/_Arcade/\n3. Dont forget to enable LLAPI in the core OSD (this has to be done for each MRA for now)\n4. Play !\n\nIn order to play with 2 players you need to insert 2 coins at least and press START2P button.\nThis button has been mapped to the LEFT shoulder button (SNES controller used as a reference)\n\n---------------------------------------------------------------------------------\n-- \n-- Arcade: Pacman port to MiSTer by Sorgelig\n-- 09 November 2017\n-- \n---------------------------------------------------------------------------------\n-- A simulation model of Pacman hardware\n-- Copyright (c) MikeJ - January 2006\n---------------------------------------------------------------------------------\n-- \n-- Support screen and controls rotation on HDMI output.\n-- Only controls are rotated on VGA output.\n-- \n-- \n-- Keyboard inputs :\n--\n--   F1          : Start Player 1\n--   F2          : Start Player 2\n--   F3\t\t : Coin Player 1\n--   F5          : Skip to next level\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   R,F,D,G     : Player 2 Movements\n--\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--\n-- Joystick support.\n-- \n----------------------------------------------\n\nHiscore save/load:\n\nSave and load of hiscores is supported for the following games on this core:\n - Alibaba 40 Thieves\n - Crush Roller\n - Dream Shopper\n - Eggor\n - Gorkans\n - Lizard Wizard\n - Mr. TNT\n - Ms. Pacman\n - Pac-Man (Midway)\n - Pacman Club\n - Pacman Plus\n - Ponpoko\n - Puck Man\n - Woodpecker\n\nTo save your hiscores manually, press the 'Save Settings' option in the OSD.  Hiscores will be automatically loaded when the core is started.\n\nTo enable automatic saving of hiscores, turn on the 'Autosave Hiscores' option and press the 'Save Settings' option in the OSD.  Hiscores will then be automatically saved (if they have changed) any time the OSD is opened.\n\nHiscore data is stored in /media/fat/config/nvram/ as ```<mra filename>.nvm```\n\n---------------------------------------------------------------------------------\n\n                                 *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer",
@@ -652,6 +652,311 @@
             "rbf": "pacman",
             "zips": [
               "woodpeck.zip"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Arcade-SEGASYS1_MiSTer",
+      "description": "Sega System 1 for MiSTer",
+      "readme": "# [Arcade: SEGA System 1](https://www.system16.com/hardware.php?id=693) for [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki) \n\nby [MiSTer-X](https://twitter.com/mrx_8b)\n\n## Specifications\n\n* T80/T80s - Version : 0242\n* Z80 compatible microprocessor core - Copyright (c) 2001-2002 Daniel Wallner (jesus@opencores.org)\n* 2020/01/08  Impl. Trigger 3  (for SEGA Ninja)\n\n## Supported Games\n\nCurrently implemented:\n\n* 4-D Warriors\n* Block Gal\n* Bullfight\n* Flicky\n* I'm Sorry\n* Mister Viking\n* My Hero\n* Pitfall II\n* Rafflesia\n* Regulus\n* Sega Ninja\n* Spatter\n* Star Jacker\n* Swat\n* TeddyBoy Blues\n* Up'n Down\n* Water Match\n* Wonder Boy\n\nSega System 1 games currently **not yet** implemented:\n\n* Choplifter\n* Gardia\n* Noboranka / Zippy Bug\n\n## High score save/load\n\n* To save your scores use the 'Save Settings' option in the OSD\n* All games supported except Water Match and Wonder Boy\n\n## ROM Files Instructions\n\n**ROMs are not included!** In order to use this arcade core, you will need to provide the correct ROM file yourself.\n\nFind this zip file somewhere. You need to find the file exactly as required. Check the .mra file in a text editor for more information.  \nDo not rename other zip files even if they also represent the same game - they are not compatible!  \nThe name of zip is taken from M.A.M.E. project, so you can get more info about hashes and contained files there.\n\nHow to install:\n1. Update MiSTer binary to v200106 or later\n2. copy releases/*.mra to /media/fat/_Arcade\n3. copy releases/*.rbf to /media/fat/_Arcade/cores\n4. copy ROM zip files  to /media/fat/_Arcade/mame\n\nBe sure to use the MRA file in \"releases\" of this repository.  \nIt does not guarantee the operation when using other MRA files.\n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/MiSTer-LLAPI/Arcade-SEGASYS1_MiSTer",
+      "releases": [
+        {
+          "name": "4D Warriors (315-5162).mra",
+          "sha": "a45459c85faf9ce5d4126ef77002ae97f7c7a0bf",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-SEGASYS1_MiSTer/main/releases/4D%20Warriors%20(315-5162).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "4D Warriors",
+            "rbf": "segasys1",
+            "zips": [
+              "4dwarrio.zip"
+            ]
+          }
+        },
+        {
+          "name": "Arcade-SEGASYS1_20201115.rbf",
+          "sha": "6cb71ea580bf268130505a62e8e4b8f7a6c3d728",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-SEGASYS1_MiSTer/main/releases/Arcade-SEGASYS1_20201115.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-SEGASYS1_20201116.rbf",
+          "sha": "489787e59d078001b1e1dfb2fc55b0bf5b8ac651",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-SEGASYS1_MiSTer/main/releases/Arcade-SEGASYS1_20201116.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-SEGASYS1_20210121.rbf",
+          "sha": "7aafb5f48bf210cd25ff3605a63ba881379ae387",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-SEGASYS1_MiSTer/main/releases/Arcade-SEGASYS1_20210121.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-SEGASYS1_20210218.rbf",
+          "sha": "b92adcbf88bb065ee60255558f5e4ba2d5f203cf",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-SEGASYS1_MiSTer/main/releases/Arcade-SEGASYS1_20210218.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-SEGASYS1_20210225.rbf",
+          "sha": "d1f2b6ffde3ccb2d4e9e9d927c765d7bea28d0a3",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-SEGASYS1_MiSTer/main/releases/Arcade-SEGASYS1_20210225.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-SEGASYS1_20210405.rbf",
+          "sha": "9935b8863fb2949b52717d2a6b1c6e298093e436",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-SEGASYS1_MiSTer/main/releases/Arcade-SEGASYS1_20210405.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-SEGASYS1_20210614.rbf",
+          "sha": "5c2a9e40cd5a2330a04391f10fce10303a15cbd1",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-SEGASYS1_MiSTer/main/releases/Arcade-SEGASYS1_20210614.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-SEGASYS1_20210618.rbf",
+          "sha": "3344399083393116d8359b27dd4dea8451272c4a",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-SEGASYS1_MiSTer/main/releases/Arcade-SEGASYS1_20210618.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Block Gal.mra",
+          "sha": "ca0738e96b6829c60ccdd0110dae7635a4675621",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-SEGASYS1_MiSTer/main/releases/Block%20Gal.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Block Gal",
+            "rbf": "segasys1",
+            "zips": [
+              "blockgal.zip"
+            ]
+          }
+        },
+        {
+          "name": "Bull Fight (315-5056).mra",
+          "sha": "08b2ddded377a5951c9f5ec4cce5e89e8fdd4794",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-SEGASYS1_MiSTer/main/releases/Bull%20Fight%20(315-5056).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Bull Fight",
+            "rbf": "segasys1",
+            "zips": [
+              "bullfgt.zip"
+            ]
+          }
+        },
+        {
+          "name": "Flicky (128k Version, 315-5051).mra",
+          "sha": "a5c2999dc44f66a57ddf9a624cab4539a0f950a3",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-SEGASYS1_MiSTer/main/releases/Flicky%20(128k%20Version%2C%20315-5051).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Flicky",
+            "rbf": "segasys1",
+            "zips": [
+              "flicky.zip"
+            ]
+          }
+        },
+        {
+          "name": "I'm Sorry (US, 315-5110).mra",
+          "sha": "a39df38d67554d0ac5f7de01916adc7c1a80d508",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-SEGASYS1_MiSTer/main/releases/I'm%20Sorry%20(US%2C%20315-5110).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "I'm Sorry",
+            "rbf": "segasys1",
+            "zips": [
+              "imsorry.zip"
+            ]
+          }
+        },
+        {
+          "name": "Mister Viking (315-5041).mra",
+          "sha": "385cbb89a3ee9a048979967c184c5950eb6a5824",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-SEGASYS1_MiSTer/main/releases/Mister%20Viking%20(315-5041).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Mister Viking",
+            "rbf": "segasys1",
+            "zips": [
+              "mrviking.zip"
+            ]
+          }
+        },
+        {
+          "name": "My Hero (US, not Encrypted).mra",
+          "sha": "45fa034265982375f8602038090c3e8f9f7adaee",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-SEGASYS1_MiSTer/main/releases/My%20Hero%20(US%2C%20not%20Encrypted).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "My Hero",
+            "rbf": "segasys1",
+            "zips": [
+              "myhero.zip"
+            ]
+          }
+        },
+        {
+          "name": "Pitfall II.mra",
+          "sha": "5846249ab832021462a2dfdaf7e5737804dd93bb",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-SEGASYS1_MiSTer/main/releases/Pitfall%20II.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Pitfall II",
+            "rbf": "segasys1",
+            "zips": [
+              "pitfall2.zip"
+            ]
+          }
+        },
+        {
+          "name": "Rafflesia (315-5162).mra",
+          "sha": "e4cb990a3704eb3dcfc97fca6b0a71abd01cebe5",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-SEGASYS1_MiSTer/main/releases/Rafflesia%20(315-5162).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Rafflesia",
+            "rbf": "segasys1",
+            "zips": [
+              "raflesia.zip"
+            ]
+          }
+        },
+        {
+          "name": "Regulus (315-5033, Rev A).mra",
+          "sha": "2d7cb43f7b808557bfa528c4e7d3cb3751b7fa03",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-SEGASYS1_MiSTer/main/releases/Regulus%20(315-5033%2C%20Rev%20A).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Regulus",
+            "rbf": "segasys1",
+            "zips": [
+              "regulus.zip"
+            ]
+          }
+        },
+        {
+          "name": "Sega Ninja (315-5102).mra",
+          "sha": "3ed5539bd6cec0d5f9ff1a424fa85ed8f8237303",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-SEGASYS1_MiSTer/main/releases/Sega%20Ninja%20(315-5102).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Sega Ninja",
+            "rbf": "segasys1",
+            "zips": [
+              "seganinj.zip"
+            ]
+          }
+        },
+        {
+          "name": "Spatter (315-5xxx).mra",
+          "sha": "db64588075c4d329d8773d5b6c72e8968a4deb80",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-SEGASYS1_MiSTer/main/releases/Spatter%20(315-5xxx).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Spatter",
+            "rbf": "segasys1",
+            "zips": [
+              "spatter.zip"
+            ]
+          }
+        },
+        {
+          "name": "Star Jacker (alt).mra",
+          "sha": "95888fcdc5590097e9690afd7acfe693913d7f33",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-SEGASYS1_MiSTer/main/releases/Star%20Jacker%20(alt).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Star Jacker",
+            "rbf": "segasys1",
+            "zips": [
+              "starjack.zip"
+            ]
+          }
+        },
+        {
+          "name": "Star Jacker.mra",
+          "sha": "58f41cfc9477edf9ed6d1c1543f444f8db74f282",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-SEGASYS1_MiSTer/main/releases/Star%20Jacker.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Star Jacker",
+            "rbf": "segasys1",
+            "zips": [
+              "starjack.zip"
+            ]
+          }
+        },
+        {
+          "name": "Swat (315-5048).mra",
+          "sha": "c4508e35776c62508da03e7d9ced36735ac394bb",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-SEGASYS1_MiSTer/main/releases/Swat%20(315-5048).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Swat",
+            "rbf": "segasys1",
+            "zips": [
+              "swat.zip"
+            ]
+          }
+        },
+        {
+          "name": "TeddyBoy Blues (315-5115, New Ver).mra",
+          "sha": "5ff5adab24a59d3d76998c136ee8473a1c5f0abd",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-SEGASYS1_MiSTer/main/releases/TeddyBoy%20Blues%20(315-5115%2C%20New%20Ver).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "TeddyBoy Blues",
+            "rbf": "segasys1",
+            "zips": [
+              "teddybb.zip"
+            ]
+          }
+        },
+        {
+          "name": "Up'n Down.mra",
+          "sha": "d30acc10d610b86cfd2960ae97cbd52f09753d0d",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-SEGASYS1_MiSTer/main/releases/Up'n%20Down.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Up'n Down",
+            "rbf": "segasys1",
+            "zips": [
+              "upndown.zip"
+            ]
+          }
+        },
+        {
+          "name": "Water Match (315-5064).mra",
+          "sha": "3b96c9ed7eef9d5b328e512ed24fbefb4f564253",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-SEGASYS1_MiSTer/main/releases/Water%20Match%20(315-5064).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Water Match",
+            "rbf": "segasys1",
+            "zips": [
+              "wmatch.zip"
+            ]
+          }
+        },
+        {
+          "name": "Wonder Boy (Set 1, 315-5177).mra",
+          "sha": "a639ed3a6f87bb4e1310cbbb065c7d272c46c475",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-SEGASYS1_MiSTer/main/releases/Wonder%20Boy%20(Set%201%2C%20315-5177).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Wonder Boy",
+            "rbf": "segasys1",
+            "zips": [
+              "wboy.zip"
             ]
           }
         }
@@ -1410,7 +1715,7 @@
     {
       "name": "LLAPI_folder_MiSTer",
       "description": "Binary distribution of LLAPI cores",
-      "readme": "# LLAPI Folder\n\nThis repository contains all MiSTer-LLAPI cores under the _LLAPI folder.\n\n#### List of Tags that you may use with the Downloader and the 'Custom Download Filters' feature.\n\n`arcade-arcade-pacman_llapi`, `cores`, `gameboy_llapi`, `gba2p_llapi`, `gba_llapi`, `genesis_llapi`, `llapi`, `megacd_llapi`, `neogeo_llapi`, `nes_llapi`, `sms_llapi`, `snes_llapi`, `turbografx16_llapi`",
+      "readme": "# LLAPI Folder\n\nThis repository contains all MiSTer-LLAPI cores under the _LLAPI folder.\n\n#### List of Tags that you may use with the Downloader and the 'Custom Download Filters' feature.\n\n`arcade-arcade-iremm62_llapi`, `arcade-arcade-pacman_llapi`, `cores`, `gameboy_llapi`, `gba2p_llapi`, `gba_llapi`, `genesis_llapi`, `llapi`, `megacd_llapi`, `neogeo_llapi`, `nes_llapi`, `sms_llapi`, `snes_llapi`, `turbografx16_llapi`",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-LLAPI/LLAPI_folder_MiSTer",
