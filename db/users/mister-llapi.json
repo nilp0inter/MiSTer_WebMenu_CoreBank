@@ -660,7 +660,7 @@
     {
       "name": "Arcade-SEGASYS1_MiSTer",
       "description": "Sega System 1 for MiSTer",
-      "readme": "# [Arcade: SEGA System 1](https://www.system16.com/hardware.php?id=693) for [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki) \n\nby [MiSTer-X](https://twitter.com/mrx_8b)\n\n## Specifications\n\n* T80/T80s - Version : 0242\n* Z80 compatible microprocessor core - Copyright (c) 2001-2002 Daniel Wallner (jesus@opencores.org)\n* 2020/01/08  Impl. Trigger 3  (for SEGA Ninja)\n\n## Supported Games\n\nCurrently implemented:\n\n* 4-D Warriors\n* Block Gal\n* Bullfight\n* Flicky\n* I'm Sorry\n* Mister Viking\n* My Hero\n* Pitfall II\n* Rafflesia\n* Regulus\n* Sega Ninja\n* Spatter\n* Star Jacker\n* Swat\n* TeddyBoy Blues\n* Up'n Down\n* Water Match\n* Wonder Boy\n\nSega System 1 games currently **not yet** implemented:\n\n* Choplifter\n* Gardia\n* Noboranka / Zippy Bug\n\n## High score save/load\n\n* To save your scores use the 'Save Settings' option in the OSD\n* All games supported except Water Match and Wonder Boy\n\n## ROM Files Instructions\n\n**ROMs are not included!** In order to use this arcade core, you will need to provide the correct ROM file yourself.\n\nFind this zip file somewhere. You need to find the file exactly as required. Check the .mra file in a text editor for more information.  \nDo not rename other zip files even if they also represent the same game - they are not compatible!  \nThe name of zip is taken from M.A.M.E. project, so you can get more info about hashes and contained files there.\n\nHow to install:\n1. Update MiSTer binary to v200106 or later\n2. copy releases/*.mra to /media/fat/_Arcade\n3. copy releases/*.rbf to /media/fat/_Arcade/cores\n4. copy ROM zip files  to /media/fat/_Arcade/mame\n\nBe sure to use the MRA file in \"releases\" of this repository.  \nIt does not guarantee the operation when using other MRA files.\n",
+      "readme": "LLAPI Note : \n\n1. Place the rbf core file in a folder named _LLAPI/cores/\n2. Place the MRAs files in _LLAPI/_Arcade/\n3. Dont forget to enable LLAPI in the core OSD (this has to be done for each MRA for now)\n4. Play !\n\nIn order to play with 2 players you need to insert 2 coins at least and press START2P button.\nThis button has been mapped to the LEFT shoulder button (SNES controller used as a reference)\n\n# [Arcade: SEGA System 1](https://www.system16.com/hardware.php?id=693) for [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki) \n\nby [MiSTer-X](https://twitter.com/mrx_8b)\n\n## Specifications\n\n* T80/T80s - Version : 0242\n* Z80 compatible microprocessor core - Copyright (c) 2001-2002 Daniel Wallner (jesus@opencores.org)\n* 2020/01/08  Impl. Trigger 3  (for SEGA Ninja)\n\n## Supported Games\n\nCurrently implemented:\n\n* 4-D Warriors\n* Block Gal\n* Bullfight\n* Flicky\n* I'm Sorry\n* Mister Viking\n* My Hero\n* Pitfall II\n* Rafflesia\n* Regulus\n* Sega Ninja\n* Spatter\n* Star Jacker\n* Swat\n* TeddyBoy Blues\n* Up'n Down\n* Water Match\n* Wonder Boy\n\nSega System 1 games currently **not yet** implemented:\n\n* Choplifter\n* Gardia\n* Noboranka / Zippy Bug\n\n## High score save/load\n\n* To save your scores use the 'Save Settings' option in the OSD\n* All games supported except Water Match and Wonder Boy\n\n## ROM Files Instructions\n\n**ROMs are not included!** In order to use this arcade core, you will need to provide the correct ROM file yourself.\n\nFind this zip file somewhere. You need to find the file exactly as required. Check the .mra file in a text editor for more information.  \nDo not rename other zip files even if they also represent the same game - they are not compatible!  \nThe name of zip is taken from M.A.M.E. project, so you can get more info about hashes and contained files there.\n\nHow to install:\n1. Update MiSTer binary to v200106 or later\n2. copy releases/*.mra to /media/fat/_Arcade\n3. copy releases/*.rbf to /media/fat/_Arcade/cores\n4. copy ROM zip files  to /media/fat/_Arcade/mame\n\nBe sure to use the MRA file in \"releases\" of this repository.  \nIt does not guarantee the operation when using other MRA files.\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-LLAPI/Arcade-SEGASYS1_MiSTer",
@@ -724,6 +724,12 @@
           "name": "Arcade-SEGASYS1_20210618.rbf",
           "sha": "3344399083393116d8359b27dd4dea8451272c4a",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-SEGASYS1_MiSTer/main/releases/Arcade-SEGASYS1_20210618.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-SEGASYS1_LLAPI_20220125.rbf",
+          "sha": "13d71d210e8806fb541de0128c85174d3cc473f1",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-SEGASYS1_MiSTer/main/releases/Arcade-SEGASYS1_LLAPI_20220125.rbf",
           "type": "RBF"
         },
         {
@@ -1715,7 +1721,7 @@
     {
       "name": "LLAPI_folder_MiSTer",
       "description": "Binary distribution of LLAPI cores",
-      "readme": "# LLAPI Folder\n\nThis repository contains all MiSTer-LLAPI cores under the _LLAPI folder.\n\n#### List of Tags that you may use with the Downloader and the 'Custom Download Filters' feature.\n\n`arcade-arcade-iremm62_llapi`, `arcade-arcade-pacman_llapi`, `cores`, `gameboy_llapi`, `gba2p_llapi`, `gba_llapi`, `genesis_llapi`, `llapi`, `megacd_llapi`, `neogeo_llapi`, `nes_llapi`, `sms_llapi`, `snes_llapi`, `turbografx16_llapi`",
+      "readme": "# LLAPI Folder\n\nThis repository contains all MiSTer-LLAPI cores under the _LLAPI folder.\n\n#### List of Tags that you may use with the Downloader and the 'Custom Download Filters' feature.\n\n`arcade-arcade-iremm62_llapi`, `arcade-arcade-pacman_llapi`, `arcade-arcade-segasys1_llapi`, `cores`, `gameboy_llapi`, `gba2p_llapi`, `gba_llapi`, `genesis_llapi`, `llapi`, `megacd_llapi`, `neogeo_llapi`, `nes_llapi`, `sms_llapi`, `snes_llapi`, `turbografx16_llapi`",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-LLAPI/LLAPI_folder_MiSTer",
