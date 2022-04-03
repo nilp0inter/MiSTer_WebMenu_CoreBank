@@ -5,6 +5,207 @@
   "type": "Organization",
   "repos": [
     {
+      "name": "Arcade-IremM62_MiSTer",
+      "description": "Irem62 from pace, and mist including Lode Runner, etc",
+      "readme": "Irem M62 Hardware\n=================\n\nBased on old PACE code by Mark McDougall(tcdev), enhanced by Gyorgy Szombathelyi in March 2020.\n\nGames supported:\n- Lode Runner 1-4\n- Kung Fu Master\n- Horizon\n- Battle Road\n- Spelunker 1-2\n- Kid Niki\n- Youjyudn\n\n# Keyboard inputs :\n```\n\n   MAME/IPAC/JPAC Style Keyboard inputs:\n     1           : Start 1 Player\n     2           : Start 2 Player\n     5           : Coin 1\n     6           : Coin 2\n     R,F,D,G     : Player 2\n     A           : Fire2 A\n     S           : Fire2 B \n\t\n Joystick support. \n```\n\n# Known Bugs\n\n- Kung-Fu Master has a sprite color problem\n- Lot Lot isn't fully implemented\n\n\n# ROMs\n```\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n\n```\n\nLaunch game using the appropriate .MRA\n\n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/MiSTer-LLAPI/Arcade-IremM62_MiSTer",
+      "releases": [
+        {
+          "name": "Arcade-IremM62_20200601.rbf",
+          "sha": "168b0e83c08ade1c41c46d13b476ceda87e79d87",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM62_MiSTer/master/releases/Arcade-IremM62_20200601.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-IremM62_20200704.rbf",
+          "sha": "d869a1cd2a9039c68fb6a795cc96fc15e60e77d0",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM62_MiSTer/master/releases/Arcade-IremM62_20200704.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-IremM62_20210210.rbf",
+          "sha": "1ab7ba4cb108d6debe19ff3661fbaa05b32dc940",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM62_MiSTer/master/releases/Arcade-IremM62_20210210.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-IremM62_20210303.rbf",
+          "sha": "6239e17f3af8816f8d96542648214096634efbd2",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM62_MiSTer/master/releases/Arcade-IremM62_20210303.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-IremM62_20210409.rbf",
+          "sha": "1c4cbb752cabb8a4647d5cd6935ef7ad8d29e962",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM62_MiSTer/master/releases/Arcade-IremM62_20210409.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-IremM62_20210508.rbf",
+          "sha": "1bc8c78490a5d1b74f525ba5b60ca461481859d7",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM62_MiSTer/master/releases/Arcade-IremM62_20210508.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-IremM62_20210925.rbf",
+          "sha": "3c44bc38025e38e96471e6e524be01a3b63ad044",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM62_MiSTer/master/releases/Arcade-IremM62_20210925.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Horizon (Irem).mra",
+          "sha": "1590460bd4ab478d71a63e568a4471d4dd022a0b",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM62_MiSTer/master/releases/Horizon%20(Irem).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Horizon (Irem)",
+            "rbf": "iremm62",
+            "zips": [
+              "horizon.zip"
+            ]
+          }
+        },
+        {
+          "name": "IremM62_LLAPI_20220107.rbf",
+          "sha": "131331ff601fdb166dbd8e1a5172994561445986",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM62_MiSTer/master/releases/IremM62_LLAPI_20220107.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Kid Niki - Radical Ninja (W).mra",
+          "sha": "098db5d110450a4d1c1ccacc8e5a4ff526e9aa10",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM62_MiSTer/master/releases/Kid%20Niki%20-%20Radical%20Ninja%20(W).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Kid Niki- Radical Ninja",
+            "rbf": "iremm62",
+            "zips": [
+              "kidniki.zip"
+            ]
+          }
+        },
+        {
+          "name": "Kung-Fu Master (W).mra",
+          "sha": "7ee3127619a97c1ae6b9880b427aaf0f24cc5bcf",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM62_MiSTer/master/releases/Kung-Fu%20Master%20(W).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Kung-Fu Master",
+            "rbf": "iremm62",
+            "zips": [
+              "kungfum.zip"
+            ]
+          }
+        },
+        {
+          "name": "Lode Runner (Set 1).mra",
+          "sha": "9980b1f42b9aea8cfa1834a93102485595b2cad4",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM62_MiSTer/master/releases/Lode%20Runner%20(Set%201).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Lode Runner",
+            "rbf": "iremm62",
+            "zips": [
+              "ldrun.zip"
+            ]
+          }
+        },
+        {
+          "name": "Lode Runner II - The Bungeling Strikes Back.mra",
+          "sha": "62d5a0c7440b3f320e49714ccd31ccf6cb79bc43",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM62_MiSTer/master/releases/Lode%20Runner%20II%20-%20The%20Bungeling%20Strikes%20Back.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Lode Runner II- The Bungeling Strikes Back",
+            "rbf": "iremm62",
+            "zips": [
+              "ldrun2.zip"
+            ]
+          }
+        },
+        {
+          "name": "Lode Runner III - The Golden Labyrinth.mra",
+          "sha": "844dec3b97e3e01a6579ca4e82ce36910951b128",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM62_MiSTer/master/releases/Lode%20Runner%20III%20-%20The%20Golden%20Labyrinth.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Lode Runner III- The Golden Labyrinth",
+            "rbf": "iremm62",
+            "zips": [
+              "ldrun3.zip"
+            ]
+          }
+        },
+        {
+          "name": "Lode Runner IV - Teikoku Karano Dasshutsu (JP).mra",
+          "sha": "31bd94149bdf05d59fb22cb22371b2e9656a9112",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM62_MiSTer/master/releases/Lode%20Runner%20IV%20-%20Teikoku%20Karano%20Dasshutsu%20(JP).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Lode Runner IV- Teikoku Karano Dasshutsu",
+            "rbf": "iremm62",
+            "zips": [
+              "ldrun4.zip"
+            ]
+          }
+        },
+        {
+          "name": "Spelunker II - 23 no Kagi (JP).mra",
+          "sha": "9e22edf22c8543637185d998f2126959c38025df",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM62_MiSTer/master/releases/Spelunker%20II%20-%2023%20no%20Kagi%20(JP).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Spelunker II - 23 no Kagi",
+            "rbf": "iremm62",
+            "zips": [
+              "spelunk2.zip"
+            ]
+          }
+        },
+        {
+          "name": "Spelunker.mra",
+          "sha": "ff03233eb79d70b5896f81ece5523e1fc2fa7072",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM62_MiSTer/master/releases/Spelunker.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Spelunker",
+            "rbf": "iremm62",
+            "zips": [
+              "spelunkr.zip"
+            ]
+          }
+        },
+        {
+          "name": "The Battle-Road.mra",
+          "sha": "bfc37bfd3c94eff0a56f663ecf8b6105967494d5",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM62_MiSTer/master/releases/The%20Battle-Road.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "The Battle-Road",
+            "rbf": "iremm62",
+            "zips": [
+              "battroad.zip"
+            ]
+          }
+        },
+        {
+          "name": "Youjyuden (JP).mra",
+          "sha": "c43250afc092f55870b99a1f747474e0c1708cd3",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM62_MiSTer/master/releases/Youjyuden%20(JP).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Youjyuden",
+            "rbf": "iremm62",
+            "zips": [
+              "youjyudn.zip"
+            ]
+          }
+        }
+      ]
+    },
+    {
       "name": "Arcade-Pacman_MiSTer",
       "description": "Arcade: Pacman for MiSTer",
       "readme": "LLAPI Note : \n\n1. Place the rbf core file in a folder named _LLAPI/cores/\n2. Place the MRAs files in _LLAPI/_Arcade/\n\nIn order to play with 2 players you need to insert 2 coins at least and press START2P button.\nThis button has been mapped to the LEFT shoulder button (SNES controller used as a reference)\n\n---------------------------------------------------------------------------------\n-- \n-- Arcade: Pacman port to MiSTer by Sorgelig\n-- 09 November 2017\n-- \n---------------------------------------------------------------------------------\n-- A simulation model of Pacman hardware\n-- Copyright (c) MikeJ - January 2006\n---------------------------------------------------------------------------------\n-- \n-- Support screen and controls rotation on HDMI output.\n-- Only controls are rotated on VGA output.\n-- \n-- \n-- Keyboard inputs :\n--\n--   F1          : Start Player 1\n--   F2          : Start Player 2\n--   F3\t\t : Coin Player 1\n--   F5          : Skip to next level\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   R,F,D,G     : Player 2 Movements\n--\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--\n-- Joystick support.\n-- \n----------------------------------------------\n\nHiscore save/load:\n\nSave and load of hiscores is supported for the following games on this core:\n - Alibaba 40 Thieves\n - Crush Roller\n - Dream Shopper\n - Eggor\n - Gorkans\n - Lizard Wizard\n - Mr. TNT\n - Ms. Pacman\n - Pac-Man (Midway)\n - Pacman Club\n - Pacman Plus\n - Ponpoko\n - Puck Man\n - Woodpecker\n\nTo save your hiscores manually, press the 'Save Settings' option in the OSD.  Hiscores will be automatically loaded when the core is started.\n\nTo enable automatic saving of hiscores, turn on the 'Autosave Hiscores' option and press the 'Save Settings' option in the OSD.  Hiscores will then be automatically saved (if they have changed) any time the OSD is opened.\n\nHiscore data is stored in /media/fat/config/nvram/ as ```<mra filename>.nvm```\n\n---------------------------------------------------------------------------------\n\n                                 *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
