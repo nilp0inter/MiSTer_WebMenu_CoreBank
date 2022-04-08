@@ -42,8 +42,8 @@ output = "_Others/jtcontra_20220330.rbf"
 
 
 # jtcop
-url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cop/releases/jtcop_20220311.rbf"
-output = "_Others/jtcop_20220311.rbf"
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cop/releases/jtcop_20220408.rbf"
+output = "_Others/jtcop_20220408.rbf"
 
 
 # jtcps1
@@ -127,18 +127,23 @@ output = "_Others/jtmx5k_20220330.rbf"
 
 
 # jtninja
-url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/ninja/releases/jtninja_20220311.rbf"
-output = "_Others/jtninja_20220311.rbf"
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/ninja/releases/jtninja_20220408.rbf"
+output = "_Others/jtninja_20220408.rbf"
 
 
 # jtpinpon
-url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/pinpon/releases/jtpinpon_20220401.rbf"
-output = "_Others/jtpinpon_20220401.rbf"
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/pinpon/releases/jtpinpon_20220408.rbf"
+output = "_Others/jtpinpon_20220408.rbf"
+
+
+# jtrastan
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/rastan/releases/jtrastan_20220408.rbf"
+output = "_Others/jtrastan_20220408.rbf"
 
 
 # jtroadf
-url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/roadf/releases/jtroadf_20220401.rbf"
-output = "_Others/jtroadf_20220401.rbf"
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/roadf/releases/jtroadf_20220408.rbf"
+output = "_Others/jtroadf_20220408.rbf"
 
 
 # jtrumble
@@ -147,33 +152,33 @@ output = "_Others/jtrumble_20220311.rbf"
 
 
 # jts16
-url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16/releases/jts16_20220311.rbf"
-output = "_Others/jts16_20220311.rbf"
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16/releases/jts16_20220408.rbf"
+output = "_Others/jts16_20220408.rbf"
 
 
 # jts16a2
-url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16a2/releases/jts16a2_20220311.rbf"
-output = "_Others/jts16a2_20220311.rbf"
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16a2/releases/jts16a2_20220408.rbf"
+output = "_Others/jts16a2_20220408.rbf"
 
 
 # jts16b
-url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/jts16b_20220311.rbf"
-output = "_Others/jts16b_20220311.rbf"
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/jts16b_20220408.rbf"
+output = "_Others/jts16b_20220408.rbf"
 
 
 # jts16b1
-url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b1/releases/jts16b1_20220311.rbf"
-output = "_Others/jts16b1_20220311.rbf"
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b1/releases/jts16b1_20220408.rbf"
+output = "_Others/jts16b1_20220408.rbf"
 
 
 # jts16b2
-url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b2/releases/jts16b2_20220311.rbf"
-output = "_Others/jts16b2_20220311.rbf"
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b2/releases/jts16b2_20220408.rbf"
+output = "_Others/jts16b2_20220408.rbf"
 
 
 # jts16b3
-url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b3/releases/jts16b3_20220311.rbf"
-output = "_Others/jts16b3_20220311.rbf"
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b3/releases/jts16b3_20220408.rbf"
+output = "_Others/jts16b3_20220408.rbf"
 
 
 # jtsarms
@@ -212,8 +217,8 @@ output = "_Others/jtsf_20220203.rbf"
 
 
 # jtslyspy
-url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/slyspy/releases/jtslyspy_20220311.rbf"
-output = "_Others/jtslyspy_20220311.rbf"
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/slyspy/releases/jtslyspy_20220408.rbf"
+output = "_Others/jtslyspy_20220408.rbf"
 
 
 # jttora
@@ -774,6 +779,11 @@ output = "_Arcade/Heavy Barrel (World).mra"
 # Konami's Ping-Pong.mra
 url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/pinpon/releases/Konami's%20Ping-Pong.mra"
 output = "_Arcade/Konami's Ping-Pong.mra"
+
+
+# Rastan (World Rev 1).mra
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/rastan/releases/Rastan%20(World%20Rev%201).mra"
+output = "_Arcade/Rastan (World Rev 1).mra"
 
 
 # Hyper Sports.mra

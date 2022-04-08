@@ -2114,7 +2114,7 @@
         },
         {
           "name": "README.md",
-          "sha": "e0a528c3e7f3fea4187e3398c602401241e468a3",
+          "sha": "aeb8d59052f3ac1ce82a34f852845e2fbc7185bf",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cop/README.md",
           "type": "OTHER"
         },
@@ -2177,8 +2177,14 @@
           "type": "RBF"
         },
         {
+          "name": "jtcop_20220408.rbf",
+          "sha": "42b8ba70dce905b0247d0e827fe3bf4ebfa4f564",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cop/releases/jtcop_20220408.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "version.log",
-          "sha": "eb390c686cb0e6e3c952376e5bad724d30876176",
+          "sha": "5a4867c3e796811574ff901c5f806a5fcc369319",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cop/version.log",
           "type": "OTHER"
         },
@@ -5159,7 +5165,7 @@
         },
         {
           "name": "README.md",
-          "sha": "e0a528c3e7f3fea4187e3398c602401241e468a3",
+          "sha": "aeb8d59052f3ac1ce82a34f852845e2fbc7185bf",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/ninja/README.md",
           "type": "OTHER"
         },
@@ -5234,14 +5240,20 @@
           "type": "RBF"
         },
         {
+          "name": "jtninja_20220408.rbf",
+          "sha": "aa6d3b6b117e6b9076e2584a91b9c991065607e0",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/ninja/releases/jtninja_20220408.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "version.log",
-          "sha": "f3ea2b966cea8d9bc3c6ab274e818bafb7c6485e",
+          "sha": "563071f2827f63ae0933ccc744e5374cee40c369",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/ninja/version.log",
           "type": "OTHER"
         },
         {
           "name": "README.md",
-          "sha": "328cb795c5d006c88b4ad7536089d45b84adfe75",
+          "sha": "49a73181343a5054d7f4d89b46588f40167305cf",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/pinpon/README.md",
           "type": "OTHER"
         },
@@ -5266,14 +5278,52 @@
           "type": "RBF"
         },
         {
+          "name": "jtpinpon_20220408.rbf",
+          "sha": "25906227f0cb3553857a80a2424f4b121e418bfd",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/pinpon/releases/jtpinpon_20220408.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "version.log",
-          "sha": "62e4c994cbefbe7c45e6492cd0cbf2ec34ba14b0",
+          "sha": "443106251b2ad4bf1308eda6a99a3394ef5c2495",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/pinpon/version.log",
           "type": "OTHER"
         },
         {
           "name": "README.md",
-          "sha": "328cb795c5d006c88b4ad7536089d45b84adfe75",
+          "sha": "a164b003819701e297481fa868ff4b9790fa24e0",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/rastan/README.md",
+          "type": "OTHER"
+        },
+        {
+          "name": "Rastan (World Rev 1).mra",
+          "sha": "265182a08c190da3f84ae0832dd20efa5376aaf5",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/rastan/releases/Rastan%20(World%20Rev%201).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Rastan (World Rev 1)",
+            "rbf": "jtrastan",
+            "zips": [
+              "rastan.zip",
+              "jtbeta.zip"
+            ]
+          }
+        },
+        {
+          "name": "jtrastan_20220408.rbf",
+          "sha": "369e3f2502a7abf73ee35870e37e5269988bb93d",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/rastan/releases/jtrastan_20220408.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "version.log",
+          "sha": "ec86f6b57fc54ecb2f27718222bc6d2ee548ecac",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/rastan/version.log",
+          "type": "OTHER"
+        },
+        {
+          "name": "README.md",
+          "sha": "49a73181343a5054d7f4d89b46588f40167305cf",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/roadf/README.md",
           "type": "OTHER"
         },
@@ -5316,6 +5366,18 @@
           "sha": "5f1f7de11010c7d36a0db15d54da72b87dd4d2a0",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/roadf/releases/jtroadf_20220401.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "jtroadf_20220408.rbf",
+          "sha": "d2d5c9b8926df2d1b8b3cba4cf5a8f43f0547380",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/roadf/releases/jtroadf_20220408.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "version.log",
+          "sha": "cf0c7d56f05aa843b4184e86f0ed872499036729",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/roadf/version.log",
+          "type": "OTHER"
         },
         {
           "name": "README.md",
@@ -5416,7 +5478,7 @@
         },
         {
           "name": "README.md",
-          "sha": "4ba344f51ea1376480fddb81b1221e25c31d28dc",
+          "sha": "7506a5384f941c3438b6f03c8d2717205dc9a99e",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16/README.md",
           "type": "OTHER"
         },
@@ -5570,14 +5632,20 @@
           "type": "RBF"
         },
         {
+          "name": "jts16_20220408.rbf",
+          "sha": "c2943617d0140fe4c351d56d4e8630d6cc538066",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16/releases/jts16_20220408.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "version.log",
-          "sha": "a2f4e6f9cad860a82bdf70e0982168358afba7b0",
+          "sha": "323ac7899c517c937a22f93e5080cfd4b8c56874",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16/version.log",
           "type": "OTHER"
         },
         {
           "name": "README.md",
-          "sha": "4ba344f51ea1376480fddb81b1221e25c31d28dc",
+          "sha": "7506a5384f941c3438b6f03c8d2717205dc9a99e",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16a2/README.md",
           "type": "OTHER"
         },
@@ -5667,14 +5735,20 @@
           "type": "RBF"
         },
         {
+          "name": "jts16a2_20220408.rbf",
+          "sha": "4d0d9d6e1bce2bcf5844c728b9e9d6573e8b3ed8",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16a2/releases/jts16a2_20220408.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "version.log",
-          "sha": "371e8e91a4b11767b82a09cdae4b560efe80ed1b",
+          "sha": "a97d56633dc2537373299ff681b42667c3175924",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16a2/version.log",
           "type": "OTHER"
         },
         {
           "name": "README.md",
-          "sha": "4ba344f51ea1376480fddb81b1221e25c31d28dc",
+          "sha": "7506a5384f941c3438b6f03c8d2717205dc9a99e",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/README.md",
           "type": "OTHER"
         },
@@ -5983,14 +6057,20 @@
           "type": "RBF"
         },
         {
+          "name": "jts16b_20220408.rbf",
+          "sha": "1a3924ddb880990f542f97e3d0f0d568951ff66c",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/jts16b_20220408.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "version.log",
-          "sha": "a2daa1f78be1884d771acf10d5466d9a7a9c16d2",
+          "sha": "1b17cddded4fb58a1b92b7bbd749eebe5f253a55",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/version.log",
           "type": "OTHER"
         },
         {
           "name": "README.md",
-          "sha": "4ba344f51ea1376480fddb81b1221e25c31d28dc",
+          "sha": "7506a5384f941c3438b6f03c8d2717205dc9a99e",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b1/README.md",
           "type": "OTHER"
         },
@@ -6105,14 +6185,20 @@
           "type": "RBF"
         },
         {
+          "name": "jts16b1_20220408.rbf",
+          "sha": "7536221d32da0939c2dcf6b4bc0add4686fad2a1",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b1/releases/jts16b1_20220408.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "version.log",
-          "sha": "4dc117a67dcad90bfd7bca6431232ee5a6df83b7",
+          "sha": "0872dd7d47cab9b86dc5d1c4fc5c4f3520f30f1b",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b1/version.log",
           "type": "OTHER"
         },
         {
           "name": "README.md",
-          "sha": "4ba344f51ea1376480fddb81b1221e25c31d28dc",
+          "sha": "7506a5384f941c3438b6f03c8d2717205dc9a99e",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b2/README.md",
           "type": "OTHER"
         },
@@ -6185,14 +6271,20 @@
           "type": "RBF"
         },
         {
+          "name": "jts16b2_20220408.rbf",
+          "sha": "5194e1f0d199bda3d07b86f59511f1e21f82b2b7",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b2/releases/jts16b2_20220408.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "version.log",
-          "sha": "4f60b590ac38b9f672cb135803bc60990915f932",
+          "sha": "e117728f9efa27dd26327f56c24ef39c57f326d7",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b2/version.log",
           "type": "OTHER"
         },
         {
           "name": "README.md",
-          "sha": "4ba344f51ea1376480fddb81b1221e25c31d28dc",
+          "sha": "7506a5384f941c3438b6f03c8d2717205dc9a99e",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b3/README.md",
           "type": "OTHER"
         },
@@ -6316,8 +6408,14 @@
           "type": "RBF"
         },
         {
+          "name": "jts16b3_20220408.rbf",
+          "sha": "12383827642324888bfcfb002bd7d48efafa2c2a",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b3/releases/jts16b3_20220408.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "version.log",
-          "sha": "62e71998c08d21df37b97f7b088599c528fd47ae",
+          "sha": "4b5e45de57a2572bb78b2aced4e7987bc7ef1753",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b3/version.log",
           "type": "OTHER"
         },
@@ -6951,6 +7049,12 @@
           "type": "OTHER"
         },
         {
+          "name": "README.md",
+          "sha": "aeb8d59052f3ac1ce82a34f852845e2fbc7185bf",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/slyspy/README.md",
+          "type": "OTHER"
+        },
+        {
           "name": "Boulder Dash - Boulder Dash Part 2 (World).mra",
           "sha": "46e67fd3897034c9c4cb4ddf208ff750c7b4c733",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/slyspy/releases/Boulder%20Dash%20-%20Boulder%20Dash%20Part%202%20(World).mra",
@@ -6983,6 +7087,18 @@
           "sha": "ec1ae17c4cce5891d513cbadbdb706c188aa6fd8",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/slyspy/releases/jtslyspy_20220311.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "jtslyspy_20220408.rbf",
+          "sha": "511cc825219296bc627ecf9faa82ea23d6d9e1f2",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/slyspy/releases/jtslyspy_20220408.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "version.log",
+          "sha": "702d84dabbafb8d9d84e2dbdb0417ad72bffed93",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/slyspy/version.log",
+          "type": "OTHER"
         },
         {
           "name": "README.md",
