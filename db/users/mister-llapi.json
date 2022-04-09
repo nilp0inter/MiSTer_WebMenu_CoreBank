@@ -1097,6 +1097,85 @@
       ]
     },
     {
+      "name": "Arcade-Tecmo_MiSTer",
+      "description": "MiSTer arcade core for Tecmo arcade classics: Rygar (1986), Gemini Wing (1987), and Silkworm (1988).",
+      "readme": "# Tecmo\n\nTecmo was a Japanese video game company founded in 1967, who like many other game companies of the era, had their roots outside the amusement business. In Tecmo's case, they were originally a supplier of cleaning equipment.\n\nNevertheless, they went on to create some classic arcade games during the 80s and 90s. Many of which saw later releases on consoles like Nintendo Entertainment System, Sega Master System, Commodore 64, Atari Lynx, etc.\n\nThis core currently supports three games: Rygar (1986), Gemini Wing (1987), and Silkworm (1988).\n\n## Getting Started\n\nPlace the MRA, RBF, and the MAME ROM files in the following locations:\n\n```\n_Arcade/Rygar.mra\n_Arcade/Gemini Wing.mra\n_Arcade/Silkworm.mra\n_Arcade/cores/tecmo.rbf\n_Arcade/mame/rygar.zip\n_Arcade/mame/gemini.zip\n_Arcade/mame/silkworm.zip\n```\n\nFor more information on using MRA files with MiSTer, please refer to the [wiki](https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms).\n\n## Controls\n\nKeyboard inputs:\n\n| name     | key                   |\n| ---      | ---                   |\n| Coin 1   | 5                     |\n| Coin 2   | 6                     |\n| Start 1  | 1                     |\n| Start 2  | 1                     |\n| Button 1 | CTRL                  |\n| Button 2 | ALT                   |\n| Button 3 | SPACE                 |\n| Movement | UP, DOWN, LEFT, RIGHT |\n\nJoystick inputs:\n\n| name     | button                |\n| ---      | ---                   |\n| Coin     | L                     |\n| Start    | R                     |\n| Pause    | START                 |\n| Button 1 | A                     |\n| Button 2 | B                     |\n| Button 3 | X                     |\n| Movement | UP, DOWN, LEFT, RIGHT |\n\n## Credits\n\nMade with :heart: by [Josh Bassett](https://twitter.com/nullobject), 2020.\n\nI would also like to give a massive shout out to all my [Patreon](https://www.patreon.com/nullobject) supporters. Your support keeps me working on these games, and helps bring them to everybody.\n\nSpecial thanks to:\n\n<table>\n  <tr>\n    <td><img src=\"https://github.com/MiSTer-devel/Arcade-Tecmo_MiSTer/raw/master/doc/avatar.png\" width=\"100px;\" /></td>\n    <td>Alex Painemilla Carre\u00f1o</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://github.com/MiSTer-devel/Arcade-Tecmo_MiSTer/raw/master/doc/amineko-stone.jpeg\" width=\"100px;\" /></td>\n    <td>Amineko Stone</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://github.com/MiSTer-devel/Arcade-Tecmo_MiSTer/raw/master/doc/andrew-boudreau.jpg\" width=\"100px;\" /></td>\n    <td>Andrew Boudreau</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://github.com/MiSTer-devel/Arcade-Tecmo_MiSTer/raw/master/doc/avatar.png\" width=\"100px;\" /></td>\n    <td>Arjan de Lang</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://github.com/MiSTer-devel/Arcade-Tecmo_MiSTer/raw/master/doc/avatar.png\" width=\"100px;\" /></td>\n    <td>Benjamin Walker</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://github.com/MiSTer-devel/Arcade-Tecmo_MiSTer/raw/master/doc/christopher-gelatt.png\" width=\"100px;\" /></td>\n    <td>Christopher Gelatt</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://github.com/MiSTer-devel/Arcade-Tecmo_MiSTer/raw/master/doc/christopher-tuckwell.jpeg\" width=\"100px;\" /></td>\n    <td>Christopher Tuckwell</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://github.com/MiSTer-devel/Arcade-Tecmo_MiSTer/raw/master/doc/hard-rich.jpeg\" width=\"100px;\" /></td>\n    <td>Hard Rich</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://github.com/MiSTer-devel/Arcade-Tecmo_MiSTer/raw/master/doc/avatar.png\" width=\"100px;\" /></td>\n    <td>iker</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://github.com/MiSTer-devel/Arcade-Tecmo_MiSTer/raw/master/doc/lakeside.jpeg\" width=\"100px;\" /></td>\n    <td>Lakeside</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://github.com/MiSTer-devel/Arcade-Tecmo_MiSTer/raw/master/doc/avatar.png\" width=\"100px;\" /></td>\n    <td>Matt Postema</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://github.com/MiSTer-devel/Arcade-Tecmo_MiSTer/raw/master/doc/ordigdug.png\" width=\"100px;\" /></td>\n    <td>ordigdug</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://github.com/MiSTer-devel/Arcade-Tecmo_MiSTer/raw/master/doc/scralings.png\" width=\"100px;\" /></td>\n    <td>Scralings</td>\n  </tr>\n</table>\n\nThanks to:\n\nAdrian Longland, Akai Futari, Allen Tipper, Amosfear, Andrew Francomb, Antonio Bellotta, Benjamin Leggett, Charles Sagett, Chris B, Darren Newman, David Filskov, David Jones, Devon Nelson, Filip Kindt, Funkycochise, George Stravopodis, Herbert Krammer, Humanoide70, Jim Wehrfritz, John Perry, John Stringer, Jordan Retterer, JPS (RetroFPGA), Juan Jose Velez Ramirez, Keith Kelly, Leslie Welch, Ludovic Germaneau, Mahendra, Manuel Antoni, Mark Fulton, Mark Paterson, Mat Azel, Matthew, Matthias Penkert-Hennig, Max L Schultz, Max Sch\u00fctz, Michael Fuerst, Michael Yount, Miguel Candelario, Mike Parks, Monokrom, MrX-8B, Naku aka Ben, Octavio Bernacer Sempere, olivier bernhard, Oscar Laguna Garcia, Per Sweden, Phillip McMahon, Porkchop Express, RetroDriven, Ross Jolet, Shane Lynch, Shaneus, SpearZ, Tony Peters, toolb0x, Victor Bly, V\u00edctor Gomariz Ladr\u00f3n de Guevara, Xzarian, Zichio\n\n...and the rest of my supporters :sparkling_heart:\n\n## Development\n\nCompile the core:\n\n    $ make build\n\nProgram the DE10-Nano:\n\n    $ make program\n\n## Licence\n\nThis project is licensed under the MIT licence. See the LICENCE file for more details.\n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/MiSTer-LLAPI/Arcade-Tecmo_MiSTer",
+      "releases": [
+        {
+          "name": "Arcade-Tecmo_20200615.rbf",
+          "sha": "425387b532866dddf03dd0dd49dc240c185e9773",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Tecmo_MiSTer/master/releases/Arcade-Tecmo_20200615.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Tecmo_20200616.rbf",
+          "sha": "a4d7f2304947949284b3239710c8219eaface38e",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Tecmo_MiSTer/master/releases/Arcade-Tecmo_20200616.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Tecmo_20200620.rbf",
+          "sha": "3a303a9351e9081e2e8f3ca164cab1663867c780",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Tecmo_MiSTer/master/releases/Arcade-Tecmo_20200620.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Tecmo_20200728.rbf",
+          "sha": "3d465c2fda8a379e4770c7160316eff5ebed3440",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Tecmo_MiSTer/master/releases/Arcade-Tecmo_20200728.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Tecmo_20200810.rbf",
+          "sha": "a01f895a9fb80266dd8e31240e88017c0e4a8e04",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Tecmo_MiSTer/master/releases/Arcade-Tecmo_20200810.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gemini Wing.mra",
+          "sha": "646b7857c9c75e254fa1090e07e3e48c4841b9af",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Tecmo_MiSTer/master/releases/Gemini%20Wing.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Gemini Wing",
+            "rbf": "tecmo",
+            "zips": [
+              "gemini.zip"
+            ]
+          }
+        },
+        {
+          "name": "Rygar.mra",
+          "sha": "9b58bce8bc8de209071ade60acc9bf2585c2b904",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Tecmo_MiSTer/master/releases/Rygar.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Rygar",
+            "rbf": "tecmo",
+            "zips": [
+              "rygar.zip"
+            ]
+          }
+        },
+        {
+          "name": "Silkworm.mra",
+          "sha": "7eb0534207b477709583cba953414e10fd1abd00",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Tecmo_MiSTer/master/releases/Silkworm.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Silkworm",
+            "rbf": "tecmo",
+            "zips": [
+              "silkworm.zip"
+            ]
+          }
+        }
+      ]
+    },
+    {
       "name": "Atari7800_MiSTer",
       "description": "Atari 7800 for MiSTer",
       "readme": "# Atari7800 for MiSTer.\n\n## Features\n- Runs complete Atari 7800 retail library.\n- Supports NTSC and PAL regions.\n- Supports High Score Cart saving.\n- Supports Light Guns, Trakballs, Mice, Quadtari, and Paddles.\n- XEGS Keyboard support via POKEY at $450 or $4000.\n- Dual Pokey audio.\n- YM2151 Audio using Jotego's JT51.\n- Supports Covox.\n- Support for XM and XBoard modules.\n- Supports Activision, Absolute, Souper, and Supergame mappers up to 1mb.\n- Choice of Cool, Warm, or Hot system temperature color output.\n\n## Setup\nNot much setup is required, but you may optionally put a system bios as `boot0.rom` in your Atari7800 ROMs folder to use before loading a game. It may increase compatibility in some rare cases if used. This core does rely on properly configured Atari7800 headers as detailed [here](http://7800.8bitdev.org/index.php/A78_Header_Specification). Using Trebors 7800 ROM PROPack is recommended as this is a reliable source of correctly headered ROMs.\n\n## 2600 Support\nMost 2600 games are supported including most bankswitching schemes, with a few exceptions. ARM based mappers, such as DPC+ require a 70mhz ARM cpu, which would be either very difficult, or impossible, to have run properly on the cyclone V that MiSTer FPGA uses. To make the experience better, an Out of Order screen will be shown when one of these games using modern hardware is loaded. A few more eccentric peripherals are also not supported simply due to lack of any practical purpose, but anyone is welcome to add them someday if there's some need. This includes the Compumate and the Gameline peripherals. That said, the following bankswitching is supported: F8, F6, FE, E0, 3F, F4, P2, FA, CV, 2K, UA, E7, F0, 32, AR, 3E, SB, WD (8k dump), and EF. Bankswitching will now auto-detect the correct type, and does not require special extensions.\n\n## Paddles\nThe paddle peripheral is mostly used in 2600 games and has special handling surrounding it because of its unusual 2-paddles-per-port configuration. Three types of inputs are supported for paddles: analog sticks, mice, and mr. spinner compatible joystick adapters. It's important to note that PADDLES HAVE A DEDICATED FIRE BUTTON in this core, and it must be set in order to use the paddles properly. Because there are four paddles and two controllers ports, and a myriad of input devices, paddles are assigned independently of joysticks. Every time a game is cold reset, paddles are re-assigned. The core will assign paddles in order, when a port has paddles enabled. The various devices are recognised under these conditions:\n\n- Mice when you click the left button.\n- Analog sticks when you move either the Y axis or X axis to an extreme (make sure to assign analog x/y in the main mapping).\n- Mr. Spinner devices when they are moved to an extreme position.\n\nPlease note that some games do not use paddle 1A for their input, some exceptions are:\n\n- Astroblast: Uses 1B.\n- Tac Scan: Uses 2B.\n- Demons to Diamonds: Uses 1B.\n\nTo make dealing with this easier, there is an option to swap paddles A and B of either port, so that 1A will become 1B and vice versa. Additionally, if the input type is set to \"auto\" with 2600 games, pressing the fire button will toggle the input into Joystick mode, and pressing the paddle button will toggle the input into Paddle mode, for convenience.\n\n## Additional Notes\nSome games use the [difficulty switches](https://atariage.com/forums/topic/235913-atari-7800-difficulty-switches-guide/) to control their behavior, most notably Tower Toppler, which will continue to skip levels if the switches are in the \"low\" position. Tower Toppler also relies on composite blending artifacts to look correct, so it may be worthwhile to enable that for this game. The 7800 had issues with color consistency depending on the temperature of the system. Not all games may look ideal with the warm palette, so you may have to experiment per game to find the ideal colors.\n\n## Known Bugs\n- Expansion ram of XM module is not fully implemented because I couldnt find anything that used it.\n- YM Auto detection appears to fail because of an edge-case detection routine.\n- BupChip music chip is not implemented because it runs on a modern microcontroller.\n\n## Special Thanks\n- Mike Saarna for his enormous knowledge of the system and patient help.\n- Osman Celimli for his DMA timing traces and experience.\n- Robert Tuccitto for the extensive palette information.\n- Remowilliams for testing a zillion games for me on real hardware.\n- Alan Steremberg for getting access to valuable documentation.\n",
