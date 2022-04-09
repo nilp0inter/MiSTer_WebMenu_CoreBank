@@ -2112,8 +2112,14 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Cave_20220409.rbf",
+          "sha": "311d55762c88e411278735efadc7e2a3857fb075",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cave_MiSTer/main/releases/Arcade-Cave_20220409.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "DoDonPachi (Arrange).mra",
-          "sha": "f972bdd9ab4f32d2f617a33b1d93f166f5223355",
+          "sha": "d21106a9cc83ea970e35996ef4fec2264af7dc22",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cave_MiSTer/main/releases/DoDonPachi%20(Arrange).mra",
           "type": "MRA",
           "extra": {
@@ -2126,7 +2132,7 @@
         },
         {
           "name": "DoDonPachi (Japan).mra",
-          "sha": "b6094ca349d26424d6f8d0559e9b50909e979b0e",
+          "sha": "8355a00af363c9c37beba8f944d8093cebabb7fa",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cave_MiSTer/main/releases/DoDonPachi%20(Japan).mra",
           "type": "MRA",
           "extra": {
@@ -2147,6 +2153,32 @@
             "rbf": "cave",
             "zips": [
               "ddonpach.zip"
+            ]
+          }
+        },
+        {
+          "name": "ESP Ra.De. (Japan).mra",
+          "sha": "7c400c21cd4e188dc6979686cfffe39af264b282",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cave_MiSTer/main/releases/ESP%20Ra.De.%20(Japan).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "ESP Ra.De. (Japan)",
+            "rbf": "cave",
+            "zips": [
+              "espradej.zip|esprade.zip"
+            ]
+          }
+        },
+        {
+          "name": "ESP Ra.De..mra",
+          "sha": "50915e2dc74dc063d55524f59260196abba19f7c",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cave_MiSTer/main/releases/ESP%20Ra.De..mra",
+          "type": "MRA",
+          "extra": {
+            "name": "ESP Ra.De.",
+            "rbf": "cave",
+            "zips": [
+              "esprade.zip"
             ]
           }
         }
