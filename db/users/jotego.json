@@ -5662,8 +5662,14 @@
           "type": "RBF"
         },
         {
+          "name": "jts16_20220415.rbf",
+          "sha": "dd816d558a6ade31ff36e3ee6c4eab9455db13cd",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16/releases/jts16_20220415.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "version.log",
-          "sha": "a3244ba23bba6ee8a67c1b56f0be8fd8c0a4e4ab",
+          "sha": "ad3abc63e4839f990aa50fc8c03994a8460b73b3",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16/version.log",
           "type": "OTHER"
         },
@@ -5771,8 +5777,14 @@
           "type": "RBF"
         },
         {
+          "name": "jts16a2_20220415.rbf",
+          "sha": "ab7a365dd2356eb7ccdc21f1c4a857231a968b69",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16a2/releases/jts16a2_20220415.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "version.log",
-          "sha": "7652aedfe0ab15bb90347b558520ed5e74a56f40",
+          "sha": "0b4d0c34c8c78e86cb85c3883db9a03a12b60e9e",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16a2/version.log",
           "type": "OTHER"
         },
@@ -6099,8 +6111,14 @@
           "type": "RBF"
         },
         {
+          "name": "jts16b_20220415.rbf",
+          "sha": "3f2c638ebf01c76f2436bcb9f259708b9b7f4956",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/jts16b_20220415.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "version.log",
-          "sha": "3110502074c82d040995aa7200d0ddb81315f0cf",
+          "sha": "66eee6b53bba62cbcdb04313f8e3e35a0f24d7df",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/version.log",
           "type": "OTHER"
         },
@@ -6233,8 +6251,14 @@
           "type": "RBF"
         },
         {
+          "name": "jts16b1_20220415.rbf",
+          "sha": "ddf0338d18462c159c9c4ea23243137193fc31c8",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b1/releases/jts16b1_20220415.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "version.log",
-          "sha": "6303d8d2d41935ea9534c23c41e91835546374e8",
+          "sha": "b14031def2fd1faf234957690fa6e0b08d30cd1f",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b1/version.log",
           "type": "OTHER"
         },
@@ -6325,8 +6349,14 @@
           "type": "RBF"
         },
         {
+          "name": "jts16b2_20220415.rbf",
+          "sha": "797475f5651f32217cad1e393978c6946e7aa7ac",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b2/releases/jts16b2_20220415.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "version.log",
-          "sha": "6056d19e49b6cd26447e07683b6f7679f4c9ccd9",
+          "sha": "a3d6d2a499bd59e50ef26ff93962f558d060d934",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b2/version.log",
           "type": "OTHER"
         },
@@ -6468,8 +6498,14 @@
           "type": "RBF"
         },
         {
+          "name": "jts16b3_20220415.rbf",
+          "sha": "3a0ea04c43a7e64a29492abad6d2cb08eadc3d45",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b3/releases/jts16b3_20220415.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "version.log",
-          "sha": "22571e38ff4550d4746fb1787d522de8f75961c0",
+          "sha": "b8296c95b9fb8e8061d5396f61e818d6a6112f59",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b3/version.log",
           "type": "OTHER"
         },
@@ -7358,6 +7394,32 @@
           "sha": "a9002ea08ec00614629ebca4f753e35cc728bf8e",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/tora/version.log",
           "type": "OTHER"
+        },
+        {
+          "name": "README.md",
+          "sha": "20c7d87b2cb05f6d847773a87ed767e1ff54cc84",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/track/README.md",
+          "type": "OTHER"
+        },
+        {
+          "name": "Track & Field.mra",
+          "sha": "71b9ffdfb30d24cc12b9f814fd6cfe0b4908d498",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/track/releases/Track%20%26%20Field.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Track & Field",
+            "rbf": "jttrack",
+            "zips": [
+              "trackfld.zip",
+              "jtbeta.zip"
+            ]
+          }
+        },
+        {
+          "name": "jttrack_20220415.rbf",
+          "sha": "fd5b9357b1e7384f778b848a6a4b4121f54bcceb",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/track/releases/jttrack_20220415.rbf",
+          "type": "RBF"
         },
         {
           "name": "README.md",
