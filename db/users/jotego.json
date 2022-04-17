@@ -3991,8 +3991,14 @@
           "type": "RBF"
         },
         {
+          "name": "jtdd2_20220417.rbf",
+          "sha": "cacb4d8abe38cc3245f2546f91b50ffb5455a2e3",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/dd2/releases/jtdd2_20220417.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "version.log",
-          "sha": "cf71a06cccf83db2430e7806e744f891a00a0337",
+          "sha": "8c04524589a50542a5bc866f83d0700d02bbb90e",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/dd2/version.log",
           "type": "OTHER"
         },
@@ -6424,15 +6430,15 @@
           }
         },
         {
-          "name": "Wonder Boy III - Monster Lair (set 6, World, System 16B) (8751 317-0098).mra",
-          "sha": "41b361fefdf2f516450e938488ef06325b1e2048",
-          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b3/releases/Wonder%20Boy%20III%20-%20Monster%20Lair%20(set%206%2C%20World%2C%20System%2016B)%20(8751%20317-0098).mra",
+          "name": "Wonder Boy III - Monster Lair (set 3, World, System 16B) (FD1094 317-0089).mra",
+          "sha": "c8eba50248635111b30b3083128eb1d62ef23271",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b3/releases/Wonder%20Boy%20III%20-%20Monster%20Lair%20(set%203%2C%20World%2C%20System%2016B)%20(FD1094%20317-0089).mra",
           "type": "MRA",
           "extra": {
-            "name": "Wonder Boy III - Monster Lair (set 6, World, System 16B) (8751 317-0098)",
-            "rbf": "jts16b3",
+            "name": "Wonder Boy III - Monster Lair (set 3, World, System 16B) (FD1094 317-0089)",
+            "rbf": "jts16b",
             "zips": [
-              "wb3.zip|s16mcu_alt.zip"
+              "wb33.zip|wb3.zip|s16mcu_alt.zip"
             ]
           }
         },
