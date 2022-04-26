@@ -10937,6 +10937,34 @@
       ]
     },
     {
+      "name": "S32X_MiSTer",
+      "description": null,
+      "readme": "# [Sega 32X](https://en.wikipedia.org/wiki/32X) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\nby [Sergey Dvodnenko](https://github.com/srg320)\n\n[![Patreon](https://img.shields.io/website?label=patreon&logo=patreon&style=social&url=https%3A%2F%2Fwww.patreon.com%2Fsrg320%2F)](https://www.patreon.com/srg320)\n\n## Status\n* Most games are playable and run without major issues.\n* Some bugs present with audio playback and graphics.\n* Some features like cheats and game saves are not implemented at this time. Please don't submit an issue to request cheats or saves, this is known.\n\nCheck the issues page to see if the issue you are experiencing is already known before submitting a new issue.\n\n## Region detection\nRegion detection is known to work for all commercially released 32X games except the following. These are not bugs, this is due to the way the games were developed and due to the nature of the region code system in Sega Genesis games in general:\n\n* Shadow Squadron ~ Stellar Assault (USA, Europe) always initially boots to Europe region. The ROM header has \"E\" (Europe) for the region, so the developers set it to the european region, you will have to set the region manually.\n* FIFA Soccer 96 (Europe) and Mortal Kombat II (Europe) boot to US/JP Region. Header has the \"JUE\" (Region-Free) region code, so just set your region priority.\n",
+      "archived": false,
+      "fork": false,
+      "url": "https://github.com/MiSTer-DB9/S32X_MiSTer",
+      "releases": [
+        {
+          "name": "S32X_20220421.rbf",
+          "sha": "66a062ce4c32d29b1732c94d8db3064202beecbf",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/S32X_MiSTer/main/releases/S32X_20220421.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "S32X_20220423.rbf",
+          "sha": "09ad0542091e9d65a91ef9d5e70f01e2e82aeddc",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/S32X_MiSTer/main/releases/S32X_20220423.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "S32X_20220425.rbf",
+          "sha": "d8431ea37c7cf27fd73211c0332e14b7225c6c62",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/S32X_MiSTer/main/releases/S32X_20220425.rbf",
+          "type": "RBF"
+        }
+      ]
+    },
+    {
       "name": "SAM-Coupe_MiSTer",
       "description": null,
       "readme": "# [SAM Coupe](https://en.wikipedia.org/wiki/SAM_Coup%C3%A9) for [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\n### Features:\n- Fully functional SAM Coupe with precise CPU and Video timings.\n- Real CPU frequency for ZX mode and full speed (6MHz) for other modes.\n- Turbo up to 24MHz\n- 512KB of original internal memory.\n- Emulation for 4MB of extended memory.\n- Two disk drives.\n- Support for disk formats: EDSK, MGT, IMG.\n- Write support (Drive 1).\n- Original SAM joysticks (same as Sinclair 1 and 2).\n- Kempston joystick (useful for some ZX games).\n- SAA1099 sound chip.\n- SID MOS6581 sound chip.\n- Stereo SAM DAC on LPT1.\n- Mouse.\n\n### Installation:\nCopy the *.rbf file at the root of the SD card.\n\n### Notes about supported formats:\n**MGT** is simple sector dump of SAM disks. All disks have the same size 819200 (for 80 track disks).\n\n**IMG** is the same as **MGT** but uses different layout. It's used on +D FDC add-on (ZX Spectrum).\n\n**EDSK** is format for non-standard disks. Sizes up to 1024kb are supported.\nThere is only basic support for EDSK format. If application has strong copy protection then it may not work.\n\n**MGT and EDSK formats may have common file extension - DSK. IMG format should use extension IMG for correct detection**.\n\nOther formats like **SAD,SDF,TD0, etc.** can be converted to one of supported format by [SAMdisk](http://simonowen.com/samdisk/) utility.\n\nWrite feature isn't mature yet. Make backup of important disks before write to them.\n\nCore provides autostart for newly inserted disk into drive 1. Autostart works only on startup screen with stripes. Press any key after restart before loading the disk if you don't want autostart.\n\n### Keyboard:\nMost PC keys are mapped to the same SAM Coupe keys.\n**F1-F10** mapped to **F1-F0**, thus reduced keyboards like Logitech K400r can be used. **Alt** is mapped to **Symbol shift**. **Left Shift** is mapped to **Shift**, **Right Shift** doesn't map to SAM Coupe key but used as modifier for unfitted keys to represent original SAM Coupe keys. For example RShift + 6...0 prodice keys as written on PC keyboards. Suitable for other close to RShift PC keys. **RShift+Ctrl** switches to layout more suitable for ZX (where cursor keys are mapped to CAPS 5-8) although most SAM Coupe ZX emulators already provide good mapping and thus usually you don't need to switch layout.\n\n* F11 - NMI key\n* Ctrl-F11 - reset.\n* Alt-F11 - reset and unload disk images.\n* F12 - show OSD\n\n### Other info:\n**CPU Speed** modes:\n- Normal - original SAM coupe 6MHz clock with wait states (full 6MHz while accessing extended RAM).\n- 6MHz - full 6MHz speed without wait states.\n- 9.6MHz, 12MHz, 24MHz - turbo modes.\n\n**ZX mode speed**:\n- Emulated - original SAM Coupe ZX CPU emulation (through wait states).\n- Full - full SAM Coupe CPU clock.\n- Real - original ZX CPU clock (3.5MHz).\n\n*Note 1*: Real mode is useful for ZX import where beeper used for sound. In emulation and full modes the sound is garbled in such games while real frequency provides clean sound. (Arkanoid 48k is a good example).\n\n*Note2*: Emulated mode is true only for Normal CPU speed. For other CPU speeds this value equals to Full speed.\n\n**External RAM** enables/disables support for additional 4MB of RAM. Disabling external RAM reduces startup time of some apps. Some apps can gain advantages if this option is enabled. Actual change of this option happens upon reset.\n\n### Download precompiled binaries and system ROMs:\nGo to [releases](https://github.com/MiSTer-devel/SAM-Coupe_MiSTer/tree/master/releases) folder.\n",
