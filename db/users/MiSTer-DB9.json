@@ -3053,6 +3053,12 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Gauntlet_20220426.rbf",
+          "sha": "0f71acb6cdf5a6da4fe7be1c537b0fe82e434d29",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Gauntlet_MiSTer/main/releases/Arcade-Gauntlet_20220426.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Gauntlet (rev 14).mra",
           "sha": "f6c1183f59b118d2280dde8e66131c323e2add1e",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Gauntlet_MiSTer/main/releases/Gauntlet%20(rev%2014).mra",
@@ -10943,7 +10949,14 @@
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-DB9/S32X_MiSTer",
-      "releases": []
+      "releases": [
+        {
+          "name": "S32X_20220425.rbf",
+          "sha": "891a791fd01e388d0a3720f9dbfe2a4f99c16c41",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/S32X_MiSTer/main/releases/S32X_20220425.rbf",
+          "type": "RBF"
+        }
+      ]
     },
     {
       "name": "SAM-Coupe_MiSTer",
