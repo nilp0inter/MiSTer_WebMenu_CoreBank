@@ -1241,7 +1241,13 @@
           "sha": "17e0da7731d3c74eff3007a959012e6968f8f508",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Astrocade_MiSTer/master/releases/The%20Adventures%20of%20Robby%20Roto!.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "The Adventures of Robby Roto!",
+            "rbf": "astrocade",
+            "zips": [
+              "robby.zip"
+            ]
+          }
         },
         {
           "name": "Wizard of Wor (Speech).mra",
