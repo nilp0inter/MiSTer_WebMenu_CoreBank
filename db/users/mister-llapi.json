@@ -109,7 +109,13 @@
           "sha": "c4ccacc3d31f0ac487a85d51457ba44b2e743c03",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-DonkeyKong_MiSTer/master/releases/Radar%20Scope%20(rev.%20D).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Radar Scope (rev. D)",
+            "rbf": "donkeykong",
+            "zips": [
+              "radarscp.zip"
+            ]
+          }
         },
         {
           "name": "Radar Scope.mra",

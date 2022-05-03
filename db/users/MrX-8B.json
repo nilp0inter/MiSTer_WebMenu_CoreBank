@@ -61,7 +61,13 @@
           "sha": "9de0ba79f70817dc933febada66b4a7e1457abe9",
           "url": "https://raw.githubusercontent.com/MrX-8B/Arcade-Druaga_MiSTer/master/releases/Motos.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Motos",
+            "rbf": "druaga",
+            "zips": [
+              "motos.zip"
+            ]
+          }
         },
         {
           "name": "The Tower of Druaga.mra",
