@@ -2821,22 +2821,6 @@
       ]
     },
     {
-      "name": "S32X_MiSTer",
-      "description": "Sega 32X implementation for MiSTer",
-      "readme": "# [Sega 32X](https://en.wikipedia.org/wiki/32X) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\nby [Sergey Dvodnenko](https://github.com/srg320)\n\n[![Patreon](https://img.shields.io/website?label=patreon&logo=patreon&style=social&url=https%3A%2F%2Fwww.patreon.com%2Fsrg320%2F)](https://www.patreon.com/srg320)\n\n## Status\n* Most games are playable and run without major issues.\n* Some bugs present with audio playback (sound plays too fast) and graphics.\n* Some features like cheats and game saves are not implemented at this time. Please don't submit an issue to request cheats or saves, this is known.\n\nCheck the issues page to see if the issue you are experiencing is already known before submitting a new issue.\n",
-      "archived": false,
-      "fork": true,
-      "url": "https://github.com/MiSTer-LLAPI/S32X_MiSTer",
-      "releases": [
-        {
-          "name": "S32X_20220421.rbf",
-          "sha": "66a062ce4c32d29b1732c94d8db3064202beecbf",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/S32X_MiSTer/main/releases/S32X_20220421.rbf",
-          "type": "RBF"
-        }
-      ]
-    },
-    {
       "name": "SMS_MiSTer",
       "description": "Sega Master System for MiSTer",
       "readme": "# Sega Master System and Game Gear for the [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki) and [MiST](https://github.com/mist-devel/mist-board/wiki) boards\n\nThis core is a port of Bens Sega Master System implementation for the Papilio. See http://fpga-hacks.blogspot.de/\n\n### Installation:\n* Copy the *.rbf file at the root of the SD card.\n* Copy *.SMS ROMs into SMS folder.\n\n### Features: \n* Master System, Game Gear and SG-1000 Support\n* Sega System E arcade hardware support\n* NTSC & PAL Support\n* Hide Borders Option - Allows you to fill the screen vertically without black borders.\n* FM Audio Support\n* Extra Sprites Option\n* Cheats\n\n### Download precompiled binaries at:\n* For MiSTer, go to [releases](https://github.com/MiSTer-devel/SMS_MISTer/tree/master/releases) folder.\n* For MiST, go to [mist-binaries](https://github.com/mist-devel/mist-binaries/tree/master/cores/sms).\n\n### Notes:\n* Some games come in .gg format but are in fact SMS games. Rename the .gg extention to .sms or .bin to fix them.\n  These games are mostly listed in this page [SMSpower-SMS-GG list](http://www.smspower.org/Tags/SMS-GG).\n* The \"Aspect ratio\" doesn't do much in PAL mode, that's normal\n* The \"Region\" parameter toggle some hardware features that are specific to the different console models.\n  Some localized games need these modifications to work properly\n* The \"Masked left column\" option controls behaviour of left column when hidden by system (usually during horizontal \n  scrolling). \"BG\" sets it to the background/overscan colour, as on original hardware. \"Black\" makes it black,\n  which may look better on non full-screen settings as the column will blend in with surrounding black area.\n  \"Cut\" will remove the column from the active image, so the horizontal resolution becomes 248 instead of 256. This\n  will distort the image when scaled, particularly on integer scaling settings, but will use more of the screen.\n  When \"Border\" is set to \"Yes\" the left column is always shown as part of the border, so \"Masked left column\" is \n  disabled.\n* Each game cartridge comes with a specific mapper, which description is not included in the .gg ou .sms file.\n  The core has a special logic to automatically determine which mapper needs to be used, but some games make\n  a good effort to make this logic fail. The \"Disable mappers\" parameter permits to force the usage \n  of the most used sega mapper. \n",
