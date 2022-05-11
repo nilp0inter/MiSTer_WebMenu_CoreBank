@@ -13472,6 +13472,12 @@
           "sha": "fbf3f002c46704c8fa924e25570e0afe475d2b3b",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Main_MiSTer/master/releases/MiSTer_20220413",
           "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20220511",
+          "sha": "e3eac1ad7dc0969f00174b93467f09f14d6e2beb",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Main_MiSTer/master/releases/MiSTer_20220511",
+          "type": "OTHER"
         }
       ]
     },
@@ -15486,7 +15492,14 @@
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/PSX_MiSTer",
-      "releases": []
+      "releases": [
+        {
+          "name": "PSX_20220511.rbf",
+          "sha": "fe73475f7a1f038d8215e8eb83d32ca9d2e255bc",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/PSX_MiSTer/main/releases/PSX_20220511.rbf",
+          "type": "RBF"
+        }
+      ]
     },
     {
       "name": "QL_MiSTer",
