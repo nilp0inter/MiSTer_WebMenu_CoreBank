@@ -1120,7 +1120,13 @@
           "sha": "1204c4e750108410ac177286cb42a9514cf732dd",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-BurningRubber_MiSTer/master/releases/Burnin'%20Rubber.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Burnin' Rubber",
+            "rbf": "burningrubber",
+            "zips": [
+              "brubber.zip"
+            ]
+          }
         }
       ]
     },
