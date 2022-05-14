@@ -197,6 +197,24 @@
       "releases": []
     },
     {
+      "name": "Deprecated_Updater_script_Linux_Only_MiSTer",
+      "description": null,
+      "readme": null,
+      "archived": false,
+      "fork": false,
+      "url": "https://github.com/theypsilon/Deprecated_Updater_script_Linux_Only_MiSTer",
+      "releases": []
+    },
+    {
+      "name": "Deprecated_Updater_script_MiSTer",
+      "description": "Legacy script for MiSTer, please use Downloader instead.",
+      "readme": "# DO NOT USE THIS\nThis repository will be deleted the 31th of December of 2022.\n\nIf you are here for simply updating your MiSTer FPGA, please use [Downloader](https://github.com/MiSTer-devel/Downloader_MiSTer/) instead.",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/theypsilon/Deprecated_Updater_script_MiSTer",
+      "releases": []
+    },
+    {
       "name": "Gameboy_MiSTer",
       "description": "Gameboy for MiSTer",
       "readme": "# [Gameboy](https://en.wikipedia.org/wiki/Game_Boy)  / [Gameboy Color](https://en.wikipedia.org/wiki/Game_Boy_Color) port to [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\r\n\r\nThis is port of [Gameboy for MiST](https://github.com/mist-devel/gameboy)\r\n\r\n* Place RBF file into root of SD card.\r\n* Place *.gb files into Gameboy folder.\r\n\r\n## Features\r\n* Original Gameboy & Gameboy Color Support\r\n* Super Gameboy Support - Borders, Palettes and Multiplayer\r\n* Custom Borders\r\n* SaveStates\r\n* Fastforward \r\n* Rewind - Allows you to rewind up to 40 seconds of gameplay\r\n* Frameblending - Prevents flicker in some games (e.g. \"Chikyuu Kaihou Gun Zas\") \r\n* Custom Palette Loading\r\n* Real-Time Clock Support\r\n* Gameboy Link Port Support - Requires USERIO adapter\r\n* Cheats\r\n\r\n## Open Source Bootstrap roms\r\nThis now includes the open source boot ROMs from [https://github.com/LIJI32/SameBoy/](https://github.com/LIJI32/SameBoy/). For maximum GBC compatibility/authenticity you can still place the Gameboy color bios/bootrom into the Gameboy folder and rename it to boot1.rom\r\n\r\n## Palettes\r\nThis core supports custom palettes (*.gbp) which should be placed into the Gameboy folder. Some examples are available in the palettes folder.\r\n\r\n## Custom Borders\r\nThis core supports custom borders (*.sgb) which should be placed into the Gameboy folder. Some examples are available in the borders folder.\r\n\r\n## Autoload\r\nTo autoload your favorite game at startup rename it to `boot2.rom`.\r\n\r\n## Video output\r\nThe Gameboy can disable video output at any time which causes problems with vsync_adjust=2 or analog video during screen transitions. Enabling the Stabilize video option may fix this at the cost of some increased latency.\r\n\r\n# Savestates\r\nThis core provides 4 slots to save and restore the memory state which means you can save at any point in the game. These can be saved to your SDCard or they can reside only in memory for temporary use (OSD Option). Save states can be performed with the Keyboard, a mapped button to a gamepad, or through the OSD.\r\n\r\nKeyboard Hotkeys for save states:\r\n- Alt+F1 thru Alt+F4 - save state\r\n- F1 thru F4 - restore state\r\n\r\nGamepad:\r\n- Savestatebutton+Left or Right switches the savestate slot\r\n- Savestatebutton+Start+Down saves to the selected slot\r\n- Savestatebutton+Start+Up loads from the selected slot\r\n",
@@ -1413,15 +1431,6 @@
       "archived": false,
       "fork": false,
       "url": "https://github.com/theypsilon/Unofficial_Distribution_MiSTer",
-      "releases": []
-    },
-    {
-      "name": "Updater_script_Linux_Only_MiSTer",
-      "description": null,
-      "readme": null,
-      "archived": false,
-      "fork": false,
-      "url": "https://github.com/theypsilon/Updater_script_Linux_Only_MiSTer",
       "releases": []
     },
     {
