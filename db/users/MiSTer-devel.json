@@ -2176,10 +2176,16 @@
         },
         {
           "name": "DoDonPachi Trainer (Japan).mra",
-          "sha": "004f737bd82c585444d80a2a6c4e35f48b937251",
+          "sha": "f831ccf014d8e1ed828e4f02a4ed8c63cfa9d733",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cave_MiSTer/main/releases/DoDonPachi%20Trainer%20(Japan).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "DoDonPachi (Japan)",
+            "rbf": "cave",
+            "zips": [
+              "ddonpach.zip|ddonpachj.zip"
+            ]
+          }
         },
         {
           "name": "DoDonPachi.mra",
@@ -6497,6 +6503,12 @@
           "name": "Arcade-Pleiads_20210524.rbf",
           "sha": "3a5564260802cb2291b1d1a1a95c588747dccec0",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pleiads_MiSTer/master/releases/Arcade-Pleiads_20210524.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Pleiads_20220521.rbf",
+          "sha": "e0a3043a6450face9060175bade023e8920356c2",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pleiads_MiSTer/master/releases/Arcade-Pleiads_20220521.rbf",
           "type": "RBF"
         },
         {
