@@ -7194,7 +7194,13 @@
           "sha": "fe525dfa77594b7e30a4f3f0a787487350bf66d7",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SpaceInvaders_MiSTer/master/releases/Laguna%20Racer.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Laguna Racer",
+            "rbf": "spaceinvaders",
+            "zips": [
+              "lagunar.zip"
+            ]
+          }
         },
         {
           "name": "Lunar Rescue.mra",
