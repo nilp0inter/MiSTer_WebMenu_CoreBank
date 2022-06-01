@@ -661,7 +661,13 @@
           "sha": "79347528a74518837d0972620860b0eeb1c28757",
           "url": "https://raw.githubusercontent.com/MrX-8B/MiSTer-Arcade-PenguinKunWars/master/releases/Penguin-Kun_Wars.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Penguin-Kun Wars (US)",
+            "rbf": "PenguinKunWars",
+            "zips": [
+              "pkunwar.zip"
+            ]
+          }
         },
         {
           "name": "Penguin-Kun_Wars_Japan.mra",
