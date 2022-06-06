@@ -12480,7 +12480,7 @@
     {
       "name": "GnW_MiSTer",
       "description": "MiSTer Port of Game and Watch Games",
-      "readme": "# MiSTer Port of Game and Watch Games\r\n\r\nThe Game and Watch handheld devices emulator for MiSTer FPGA by Pierco.\r\n\r\nThis is still a work in progress:\r\n\r\n- RTC is not working yet.\r\n- SM5A is not implemented.\r\n- SM511 is not implemented.\r\n- Timing is not perfect.\r\n- Two screen games have problems with anti-aliasing.\r\n\r\nThe core comes with a ROM generator so in theory, it could be possible to create new Game and Watch games. A SM510 assembler exists here: https://github.com/trevorjay/marios-binary-factory\r\n\r\n\r\nI would like to thank Tonton for his work with the generator!! Thanks to him, pre-compiled games are available on archive.org:\r\nhttps://archive.org/download/gnw-games\r\n\r\nIf you would like to convert games yourself, read the manual in the Tools directory.\r\n\r\nA big thank you to all my Patreon contributors!!\r\n\r\nAshfall,\r\nGentlemen's Pixel Club,\r\nMike Holzinger,\r\nSwedishGojira,\r\nlamarax,\r\nJ BG,\r\nAuryn Beorn,\r\nHerbert Krammer,\r\nDimitris Zongas,\r\nmutman,\r\nCory Stargel,\r\nChristopher Garland,\r\nDany Kwan,\r\nStefan Pausch,\r\nGrumpy Old Gamer,\r\nDave Ely,\r\naxxxtz,\r\nRaspberryAlpine,\r\nTonton Kaloun,\r\nJohan Sj\u00f6strand,\r\nPhilip Lawson,\r\nSamuel Giroux,\r\nAllen Tipper,\r\nDarren Newman,\r\nAlan Steremberg.\r\n",
+      "readme": "# MiSTer Port of Game and Watch Games\r\n\r\nThe Game and Watch handheld devices emulator for MiSTer FPGA by Pierco.\r\n\r\nThis is still a work in progress:\r\n\r\n- RTC is not working yet.\r\n- SM5A is not implemented.\r\n- SM511 is not implemented.\r\n- Timing is not perfect.\r\n- Two screen games have problems with anti-aliasing.\r\n\r\nThe core comes with a ROM generator so in theory, it could be possible to create new Game and Watch games. A SM510 assembler exists here: https://github.com/trevorjay/marios-binary-factory\r\n\r\nIt has been reported that some non-Nintendo games are working: Konami Top Gun, Konami Double Dribble and probably other ones.\r\n\r\nI would like to thank Tonton for helping me generate the games!! Pre-compiled games are available on archive.org:\r\nhttps://archive.org/download/gnw-games\r\n\r\nIf you would like to convert games yourself, read the manual in the Tools directory.\r\n\r\nA big thank you to all my Patreon contributors!!\r\n\r\nFunkycochise,\r\nAshfall,\r\nGentlemen's Pixel Club,\r\nMike Holzinger,\r\nSwedishGojira,\r\nlamarax,\r\nJ BG,\r\nAuryn Beorn,\r\nHerbert Krammer,\r\nDimitris Zongas,\r\nmutman,\r\nCory Stargel,\r\nChristopher Garland,\r\nDany Kwan,\r\nStefan Pausch,\r\nGrumpy Old Gamer,\r\nDave Ely,\r\naxxxtz,\r\nRaspberryAlpine,\r\nTonton Kaloun,\r\nJohan Sj\u00f6strand,\r\nPhilip Lawson,\r\nSamuel Giroux,\r\nAllen Tipper,\r\nDarren Newman,\r\nAlan Steremberg.\r\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/GnW_MiSTer",
@@ -12489,6 +12489,12 @@
           "name": "GnW_20220603.rbf",
           "sha": "608e5b8551a58dace86ab18376c61506eaf0c24c",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/GnW_MiSTer/master/releases/GnW_20220603.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "GnW_20220606.rbf",
+          "sha": "aaa8737b9b5b39ce9696640baea3565431bbf3e3",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/GnW_MiSTer/master/releases/GnW_20220606.rbf",
           "type": "RBF"
         }
       ]
