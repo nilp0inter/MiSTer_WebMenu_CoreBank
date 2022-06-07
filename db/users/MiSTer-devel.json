@@ -1352,20 +1352,20 @@
     {
       "name": "Arcade-Athena_MiSTer",
       "description": null,
-      "readme": "# SNK Athena (Beta):\nFollow any core updates and news on my Twitter acount [@RndMnkIII](https://twitter.com/RndMnkIII). this project is a hobby but it requires investing in arcade game boards and specific tools, so any donation is welcome: [https://ko-fi.com/rndmnkiii](https://ko-fi.com/rndmnkiii).\n\n## About\nThis core as beta release will be published as independet core. Finally will be unified with the SNK Triple Z80 Core. For a list of games intended to work with the SNK Triple Z80 Core see:\n[https://github.com/mamedev/mame/blob/master/src/mame/drivers/snk.cpp](https://github.com/mamedev/mame/blob/master/src/mame/drivers/snk.cpp).  \n\n## Third party cores\n* Daniel Wallner T80 core [jesus@opencores.org](https://opencores.org/projects/t80).\n* JTOPL FPGA Clone of Yamaha OPL hardware by Jose Tejada, @topapate [(https://github.com/jotego/jtopl)](https://github.com/jotego/jtopl).\n* Based on Tim Rudy 7400 TTL library [https://github.com/TimRudy/ice-chips-verilog](https://github.com/TimRudy/ice-chips-verilog).\n\n## Instructions:\nThis game is multiplayer, where two players can play taking turns with their own controllers. You have two action buttons for jump and attack and the 8-way joystick. As in the rest of the SNK Triple Z80 cores you have buttons for service and pause.\n\n## Manual installation\nRename the Arcade-Athena_XXXXXXXX.rbf file to Athena_XXXXXXXX.rbf and copy to the SD Card to the folder  /media/fat/_Arcade/cores and the .MRA files to /media/fat/_Arcade.\n\nThe required ROM files follow the MAME naming conventions (check inside MRA for this). Is the user responsability to be installed in the following folder:\n/media/fat/_Arcade/mame/<mame rom>.zip\n\n## Acknowledgments\n* __@caiusarcade__ for their assistance in using files and converting PLD files.\n* __@topapate__ for general advice with the JTOPL core.\n* __@FCochise__ for helping with the rom settings of MRA files.\n* __@alanswx__ for helping me with some technical aspects related to the use of the MiSTer framework.\n* Ko-fi supporters: @bdlou, Matteo\n* And all those who with their comments and shows of support have encouraged me to continue with this project.\n\n\n",
+      "readme": "# SNK Athena (Beta):\nFollow any core updates and news on my Twitter acount [@RndMnkIII](https://twitter.com/RndMnkIII). this project is a hobby but it requires investing in arcade game boards and specific tools, so any donation is welcome: [https://ko-fi.com/rndmnkiii](https://ko-fi.com/rndmnkiii).\n\n## About\nThis core as beta release will be published as independet core. Finally will be unified with the SNK Triple Z80 Core. For a list of games intended to work with the SNK Triple Z80 Core see:\n[https://github.com/mamedev/mame/blob/master/src/mame/drivers/snk.cpp](https://github.com/mamedev/mame/blob/master/src/mame/drivers/snk.cpp).  \n\n## Third party cores\n* Daniel Wallner T80 core [jesus@opencores.org](https://opencores.org/projects/t80).\n* JTOPL FPGA Clone of Yamaha OPL hardware by Jose Tejada, @topapate [(https://github.com/jotego/jtopl)](https://github.com/jotego/jtopl).\n* Based on Tim Rudy 7400 TTL library [https://github.com/TimRudy/ice-chips-verilog](https://github.com/TimRudy/ice-chips-verilog).\n\n## Instructions:\nThis game is multiplayer, where two players can play taking turns with their own controllers. You have two action buttons for jump and attack and the 8-way joystick. As in the rest of the SNK Triple Z80 cores you have buttons for service and pause.\n\n## Manual installation\nRename the Arcade-Athena_XXXXXXXX.rbf file to Athena_XXXXXXXX.rbf and copy to the SD Card to the folder  /media/fat/_Arcade/cores and the .MRA files to /media/fat/_Arcade.\n\nThe required ROM files follow the MAME naming conventions (check inside MRA for this). Is the user responsability to be installed in the following folder:\n/media/fat/_Arcade/mame/<mame rom>.zip\n\n## Acknowledgments\n* __@caiusarcade__ for their assistance in using files and converting PLD files.\n* __@topapate__ for general advice with the JTOPL core.\n* __@FCochise__ for helping with the rom settings of MRA files.\n* __@alanswx__ for helping me with some technical aspects related to the use of the MiSTer framework.\n* Ko-fi supporters: bdlou, schermobianco\n* And all those who with their comments and shows of support have encouraged me to continue with this project.\n\n\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/Arcade-Athena_MiSTer",
       "releases": [
         {
           "name": "Arcade-Athena_20220607.rbf",
-          "sha": "d3c1f7ae212c1605f645688e5fcc7f0a566b665b",
+          "sha": "85965bd36681556c76b9455d7c15e662d08cdb14",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Athena_MiSTer/main/releases/Arcade-Athena_20220607.rbf",
           "type": "RBF"
         },
         {
           "name": "Athena.mra",
-          "sha": "b41445e167619cd0f2748a0aa880982a225397d9",
+          "sha": "0545078d1a63acb8d1d4885469622f4b5e7ae8aa",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Athena_MiSTer/main/releases/Athena.mra",
           "type": "MRA",
           "extra": {
@@ -1378,7 +1378,7 @@
         },
         {
           "name": "Athena_bootleg.mra",
-          "sha": "db810ca6b337656cb4e5c99fb67f0e09e5033faf",
+          "sha": "3a510b6be63e7e39902155632deef4b498e4f6c7",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Athena_MiSTer/main/releases/_alternatives/_Athena/Athena_bootleg.mra",
           "type": "MRA",
           "extra": {
@@ -1391,7 +1391,7 @@
         },
         {
           "name": "Super_Athena.mra",
-          "sha": "38832683b17101c1c8b14d41723407ac464c5980",
+          "sha": "cb10ad072cf1f0d6fe61ed29d3b30490cf3dbea7",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Athena_MiSTer/main/releases/_alternatives/_Athena/Super_Athena.mra",
           "type": "MRA",
           "extra": {
