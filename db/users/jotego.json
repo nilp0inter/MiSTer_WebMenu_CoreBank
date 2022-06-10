@@ -5401,8 +5401,14 @@
           "type": "RBF"
         },
         {
+          "name": "jtkicker_20220610.rbf",
+          "sha": "25ea9ece1ada2e8eb58db8933f2857cf95f7296b",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kicker/releases/jtkicker_20220610.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "version.log",
-          "sha": "44be8d5ab160fec2e415440ec2e639ecb3b0e3ba",
+          "sha": "0ab5b40f8064baf54a87d8299314f5793257a25d",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kicker/version.log",
           "type": "OTHER"
         },
@@ -5657,8 +5663,14 @@
           "type": "RBF"
         },
         {
+          "name": "jtmikie_20220610.rbf",
+          "sha": "92f3d1805a83b3ad9cdaa46bfda34636ee395b19",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/mikie/releases/jtmikie_20220610.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "version.log",
-          "sha": "368130683418a7161bb0373c2ee4304db4f3071d",
+          "sha": "156770ea6738386a33fdf4f4361b1094dc4a8867",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/mikie/version.log",
           "type": "OTHER"
         },
@@ -5885,14 +5897,34 @@
           }
         },
         {
+          "name": "Super Pang (World 900914).mra",
+          "sha": "dc7f31c9ecbaf069454cb6b16c6ea10d1a88d460",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/pang/releases/Super%20Pang%20(World%20900914).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Super Pang (World 900914)",
+            "rbf": "jtpang",
+            "zips": [
+              "spang.zip",
+              "jtbeta.zip"
+            ]
+          }
+        },
+        {
           "name": "jtpang_20220603.rbf",
           "sha": "efc4ed09fe1c2436d1168ebbad6b611e3a579e68",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/pang/releases/jtpang_20220603.rbf",
           "type": "RBF"
         },
         {
+          "name": "jtpang_20220610.rbf",
+          "sha": "79e5a809e89dfee6679d24b487cb99e777045d9c",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/pang/releases/jtpang_20220610.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "version.log",
-          "sha": "b24ba65ace343cb02e3dc40d522b6e8dabbd2ed4",
+          "sha": "4e471e26916459f93ccd055d3920f6a6faa5b6c4",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/pang/version.log",
           "type": "OTHER"
         },
@@ -5958,8 +5990,14 @@
           "type": "RBF"
         },
         {
+          "name": "jtpinpon_20220610.rbf",
+          "sha": "66d2f4e7b2778cfdbc9a314faf988361c78d9498",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/pinpon/releases/jtpinpon_20220610.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "version.log",
-          "sha": "96a23a7e3a2198371341fffe0a4c7a0d65b5858a",
+          "sha": "87c9db84ec258fe3dcb936fd188c4783f9bf4776",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/pinpon/version.log",
           "type": "OTHER"
         },
@@ -6082,8 +6120,14 @@
           "type": "RBF"
         },
         {
+          "name": "jtroadf_20220610.rbf",
+          "sha": "863359db0abfb46b32bbd47876278158015a5524",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/roadf/releases/jtroadf_20220610.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "version.log",
-          "sha": "9fbd4289c9a2883ff53d77f6561e01e1c35475d8",
+          "sha": "9e813ff52722172950a73a9a57bcc86bd65ec60a",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/roadf/version.log",
           "type": "OTHER"
         },
@@ -7192,8 +7236,14 @@
           "type": "RBF"
         },
         {
+          "name": "jtsbask1_20220610.rbf",
+          "sha": "92b1e7960ba6b8edf696d3e95015ae5881e5dbc9",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/sbask1/releases/jtsbask1_20220610.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "version.log",
-          "sha": "830502c6d935178c234ec6d1e48db82be37e8b8a",
+          "sha": "05d141ab6b937cd1f26829cf44868f4ad9975fd2",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/sbask1/version.log",
           "type": "OTHER"
         },
@@ -7283,8 +7333,14 @@
           "type": "RBF"
         },
         {
+          "name": "jtsbaskt_20220610.rbf",
+          "sha": "6f05bda6c364819772bd34f0178a51dee8d98727",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/sbaskt/releases/jtsbaskt_20220610.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "version.log",
-          "sha": "c9eabbad8539ab797ff31ffcfc97a6cbf65a21ac",
+          "sha": "dda658c301f8a5f4afe558f3ec1d9b5510c2a69d",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/sbaskt/version.log",
           "type": "OTHER"
         },
@@ -7997,15 +8053,14 @@
         },
         {
           "name": "Track & Field.mra",
-          "sha": "2bc6e6fc9e398b843e0037f4d791bbac440eb760",
+          "sha": "24304a821b048e00313bcf18b1b0f7dfb9d4aafc",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/track/releases/Track%20%26%20Field.mra",
           "type": "MRA",
           "extra": {
             "name": "Track & Field",
             "rbf": "jttrack",
             "zips": [
-              "trackfld.zip",
-              "jtbeta.zip"
+              "trackfld.zip"
             ]
           }
         },
@@ -8035,13 +8090,13 @@
         },
         {
           "name": "jttrack_20220610.rbf",
-          "sha": "6dd1204af42c7deb6c410f0e8e91be70f847d781",
+          "sha": "92b6cc1e841aa7534f3f36a13ff4949cee08205b",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/track/releases/jttrack_20220610.rbf",
           "type": "RBF"
         },
         {
           "name": "version.log",
-          "sha": "bd611f4c318dea6c655423983733c283da8225f3",
+          "sha": "d6c450ab3e954abe89828792c4a7f6b627aebe97",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/track/version.log",
           "type": "OTHER"
         },
@@ -8543,8 +8598,14 @@
           "type": "RBF"
         },
         {
+          "name": "jtyiear_20220610.rbf",
+          "sha": "d46010dd70b3fc834bc6a0995b28d3eb357092fb",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/yiear/releases/jtyiear_20220610.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "version.log",
-          "sha": "42cde42e8d459dba72b4f5f1382bd81e28ec0fac",
+          "sha": "1e3abbeb3ffa0d78521d30fa42306e1efe024fc5",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/yiear/version.log",
           "type": "OTHER"
         }
