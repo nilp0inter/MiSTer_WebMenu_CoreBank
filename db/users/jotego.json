@@ -4610,15 +4610,14 @@
         },
         {
           "name": "Fast Lane.mra",
-          "sha": "94bed4250445bda1e6a1a00e2c7c29cf39e7d234",
+          "sha": "b5d1aa7d2adf9f784b85b8d2c096b99443016a42",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/flane/releases/Fast%20Lane.mra",
           "type": "MRA",
           "extra": {
             "name": "Fast Lane",
             "rbf": "jtflane",
             "zips": [
-              "fastlane.zip",
-              "jtbeta.zip"
+              "fastlane.zip"
             ]
           }
         },
@@ -5596,15 +5595,14 @@
         },
         {
           "name": "Mikie.mra",
-          "sha": "29f46e792bc44cc5ed73f07c62b44919e5cfbea5",
+          "sha": "de9587995cb00af774ab397e366ba5b4a42ccdc6",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/mikie/releases/Mikie.mra",
           "type": "MRA",
           "extra": {
             "name": "Mikie",
             "rbf": "jtmikie",
             "zips": [
-              "mikie.zip",
-              "jtbeta.zip"
+              "mikie.zip"
             ]
           }
         },
@@ -5682,15 +5680,14 @@
         },
         {
           "name": "MX5000.mra",
-          "sha": "5d70c0dc97894511f98d80002ca400a75a26f4b2",
+          "sha": "c5f2742ec97be427d36fec3f6ab3b30fb09b9663",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/mx5k/releases/MX5000.mra",
           "type": "MRA",
           "extra": {
             "name": "MX5000",
             "rbf": "jtmx5k",
             "zips": [
-              "mx5000.zip",
-              "jtbeta.zip"
+              "mx5000.zip"
             ]
           }
         },
@@ -6126,8 +6123,14 @@
           "type": "RBF"
         },
         {
+          "name": "jtroadf_20220611.rbf",
+          "sha": "99dacc3a0fe33cc41226087f2b5c16bf7ae46d33",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/roadf/releases/jtroadf_20220611.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "version.log",
-          "sha": "9e813ff52722172950a73a9a57bcc86bd65ec60a",
+          "sha": "02ba49a6b6b487b804d3ff13ad3e96b782f3d37e",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/roadf/version.log",
           "type": "OTHER"
         },
@@ -8095,8 +8098,14 @@
           "type": "RBF"
         },
         {
+          "name": "jttrack_20220611.rbf",
+          "sha": "4b219babb93432e06e544693a7f34903ba69ac8d",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/track/releases/jttrack_20220611.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "version.log",
-          "sha": "d6c450ab3e954abe89828792c4a7f6b627aebe97",
+          "sha": "6ab21f422f471f63396a6267db1554aabe7b9714",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/track/version.log",
           "type": "OTHER"
         },
