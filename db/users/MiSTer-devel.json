@@ -17156,6 +17156,22 @@
       ]
     },
     {
+      "name": "SuperVision_MiSTer",
+      "description": "Watara Supervision for MiSTer",
+      "readme": "# Watara Supervision for MiSTer\r\nBased upon initial work by Pierco, rewritten by Jamie Blanks.\r\n\r\nAn implementation of the unfortunate GameBoy clone, the Watara SuperVision. No boot ROMs are required and there is no additional setup.\r\n\r\nThis core is compatible with gameboy palettes which can be found with the GameBoy core.\r\n\r\nThe full game library is supported, including the rare \"Journey to the West\".\r\n\r\nThe USER_IO port for this core outputs the link port pins, but I know of nothing that uses them.\r\n\r\n## Special Thanks\r\nA special thank you to Osman Celimli for his very thorough reverse engineering notes and personal help in getting this core accurate.\r\n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/MiSTer-devel/SuperVision_MiSTer",
+      "releases": [
+        {
+          "name": "SuperVision_20220612.rbf",
+          "sha": "846a1202e44c6752abdafa01dca5ea39c16e5b13",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/SuperVision_MiSTer/master/releases/SuperVision_20220612.rbf",
+          "type": "RBF"
+        }
+      ]
+    },
+    {
       "name": "SVI328_MiSTer",
       "description": "Spectravideo 328 ",
       "readme": "# Spectravideo SV-328 \n\nCore by fpganoob on misterfpga.org\n\n\nPlace the rom in a boot.rom file in the SVI328 folder\n\n## Loading Games\n\n### Cartridges\n\n1) Load the cartridge in the OSD\n\n* note - you will need to reboot to get out of the cartridge until this is fixed\n\n### Cassettes - either with a file, or through ADC input\n\nTapes take a long time to load (5-6 minutes?) so be patient. Having the sound on will help your nerves.\n\n1) load  CAS file on the OSD menu (F12) \n2) SOUND ON (optionnel: sound for the K7)\n3) CLOAD\n4) RUN \nor\n3) BLOAD \"CAS:\",R\n",
