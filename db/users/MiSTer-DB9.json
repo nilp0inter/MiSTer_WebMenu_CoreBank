@@ -452,13 +452,7 @@
           "sha": "17e0da7731d3c74eff3007a959012e6968f8f508",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Astrocade_MiSTer/master/releases/The%20Adventures%20of%20Robby%20Roto!.mra",
           "type": "MRA",
-          "extra": {
-            "name": "The Adventures of Robby Roto!",
-            "rbf": "astrocade",
-            "zips": [
-              "robby.zip"
-            ]
-          }
+          "extra": null
         },
         {
           "name": "Wizard of Wor (Speech).mra",
@@ -543,13 +537,7 @@
           "sha": "105952e2c8f1ab1f6c1a647be3e4e5beea80178c",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-ATetris_MiSTer/master/releases/Tetris%20(Cocktail%2C%20Set%201).mra",
           "type": "MRA",
-          "extra": {
-            "name": "Tetris",
-            "rbf": "ataritetris",
-            "zips": [
-              "atetris.zip|atetrisc.zip"
-            ]
-          }
+          "extra": null
         },
         {
           "name": "Tetris.mra",
@@ -645,13 +633,7 @@
           "sha": "2db987f6ad9b6291ab35e6ca9b9147add1322b31",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Bagman_MiSTer/master/releases/Bagman.mra",
           "type": "MRA",
-          "extra": {
-            "name": "Bagman",
-            "rbf": "bagman",
-            "zips": [
-              "bagman.zip"
-            ]
-          }
+          "extra": null
         },
         {
           "name": "Botanic (English, Spanish, Set 1).mra",
@@ -684,26 +666,14 @@
           "sha": "779c3750ea61dccfad4ec077d8cc42170d4dd056",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Bagman_MiSTer/master/releases/Squash.mra",
           "type": "MRA",
-          "extra": {
-            "name": "Squash",
-            "rbf": "bagman",
-            "zips": [
-              "squaitsa.zip"
-            ]
-          }
+          "extra": null
         },
         {
           "name": "Super Bagman.mra",
           "sha": "003ce1cd6250db00e0ad768af4046b33fa7b1b45",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Bagman_MiSTer/master/releases/Super%20Bagman.mra",
           "type": "MRA",
-          "extra": {
-            "name": "Super Bagman",
-            "rbf": "bagman",
-            "zips": [
-              "sbagman.zip|sbagman2.zip"
-            ]
-          }
+          "extra": null
         }
       ]
     },
