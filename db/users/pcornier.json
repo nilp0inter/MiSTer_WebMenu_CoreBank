@@ -164,6 +164,15 @@
       ]
     },
     {
+      "name": "BasicMasterJr_MiSTer",
+      "description": "Hitachi MB-6885",
+      "readme": "# Hitachi Basic Master Jr core for MiSTer\r\n\r\nWork in progress\r\n",
+      "archived": false,
+      "fork": false,
+      "url": "https://github.com/pcornier/BasicMasterJr_MiSTer",
+      "releases": []
+    },
+    {
       "name": "CoCo2_MiSTer",
       "description": "CoCo2",
       "readme": "\n# MiSTer Tandy Color Computer 2 (CoCo2)  and Dragon 32\n\nOriginally started by:\n\nhttps://github.com/pcornier/coco2\n\nFinished by dshadoff and alanswx and pcornier.\n\n### Tandy Color 2\n\nThis core implements a Tandy Color Computer 2 (CoCo2) including:\n * 64k Memory\n * 2 Analog Joysticks (with a swap feature)\n * Cassette Loading\n * Sound\n * Cartridge Support\n\n### Dragon 32 / 64\n\n * only the dragon 32 seems to work \n * 2 Analog Joysticks (with a swap feature)\n * Cassette Loading\n * Sound\n * Cartridge Support\n\n\n![Coco2 running on the AX309](photo.jpg)\n\n*Coco 2 running on a AX309 board*",
