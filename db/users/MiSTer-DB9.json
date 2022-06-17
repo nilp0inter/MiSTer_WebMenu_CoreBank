@@ -9278,10 +9278,22 @@
       "url": "https://github.com/MiSTer-DB9/EpochGalaxy2_MiSTer",
       "releases": [
         {
+          "name": "EpochGalaxyII_20200818.rbf",
+          "sha": "53bf03d34ae2fccdb5696ca82f191b50c5194f7f",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/EpochGalaxy2_MiSTer/master/releases/EpochGalaxyII_20200818.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "EpochGalaxyII_20200916.rbf",
           "sha": "8f51137842f9a9948837e4778c55c66145d79466",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/EpochGalaxy2_MiSTer/master/releases/EpochGalaxyII_20200916.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "boot.rom",
+          "sha": "5818ed76e8dae57a69f9781292c09cbd8f5b2ac2",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/EpochGalaxy2_MiSTer/master/releases/boot.rom",
+          "type": "OTHER"
         }
       ]
     },
@@ -11881,10 +11893,22 @@
       "url": "https://github.com/MiSTer-DB9/TomyScramble_MiSTer",
       "releases": [
         {
+          "name": "TomyScramble_20200724.rbf",
+          "sha": "cce1143f2ff575643f7c4ceece090140c481edc0",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/TomyScramble_MiSTer/master/releases/TomyScramble_20200724.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "TomyScramble_20200916.rbf",
           "sha": "5d6a5d1c8304fae43ac7e97f930b199450aa32c2",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/TomyScramble_MiSTer/master/releases/TomyScramble_20200916.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "boot.rom",
+          "sha": "acc6563c67b7feec35c08e285aac7fc110f387f1",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/TomyScramble_MiSTer/master/releases/boot.rom",
+          "type": "OTHER"
         },
         {
           "name": "scramble_20200916.rbf",
