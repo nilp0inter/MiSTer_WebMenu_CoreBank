@@ -1359,7 +1359,7 @@
       "releases": [
         {
           "name": "Arcade-Athena_20220614.rbf",
-          "sha": "1ac8ea83566d1d3476b3d6048523d3ed9932310d",
+          "sha": "7bc5597467ac758fbe3cc0eb5c079c2d7f2c755f",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Athena_MiSTer/main/releases/Arcade-Athena_20220614.rbf",
           "type": "RBF"
         },
@@ -1373,6 +1373,19 @@
             "rbf": "Athena",
             "zips": [
               "athena.zip"
+            ]
+          }
+        },
+        {
+          "name": "FightingGolf.mra",
+          "sha": "245dbb1b18c9cf5e29f0b72fe391367010e3665a",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Athena_MiSTer/main/releases/FightingGolf.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Fighting Golf",
+            "rbf": "Athena",
+            "zips": [
+              "fitegolf.zip"
             ]
           }
         },
