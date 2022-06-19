@@ -2223,8 +2223,14 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Cave_20220619.rbf",
+          "sha": "e9e00a47e86e345df738c1d2a0784531a05d06fa",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cave_MiSTer/main/releases/Arcade-Cave_20220619.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Dangun Feveron.mra",
-          "sha": "b4240ebfd7b73f9c6bedc604927113b9e1449480",
+          "sha": "4f0253fffb977f15319f1abb937d16a88520ef44",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cave_MiSTer/main/releases/Dangun%20Feveron.mra",
           "type": "MRA",
           "extra": {
@@ -2237,7 +2243,7 @@
         },
         {
           "name": "DoDonPachi (Arrange).mra",
-          "sha": "d1dbbd0837fd0b1cc0ac8f3a7e6e99bbe082b5f6",
+          "sha": "03cf101f00466848aa77f56c6685351411b0e50b",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cave_MiSTer/main/releases/DoDonPachi%20(Arrange).mra",
           "type": "MRA",
           "extra": {
@@ -2250,7 +2256,7 @@
         },
         {
           "name": "DoDonPachi (Japan).mra",
-          "sha": "736dfe444f4dbaf6608e8c429f1db475c5ba582b",
+          "sha": "8665a6c129459ea27dfc0e338545d379f64a35b0",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cave_MiSTer/main/releases/DoDonPachi%20(Japan).mra",
           "type": "MRA",
           "extra": {
@@ -2263,7 +2269,7 @@
         },
         {
           "name": "DoDonPachi Trainer (Japan).mra",
-          "sha": "f8bb9ba65d02a8ccf549c541c7ba3b36e8a1978b",
+          "sha": "a694f22f8cb53bdbab3ed36f74b9417c4cf0612a",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cave_MiSTer/main/releases/DoDonPachi%20Trainer%20(Japan).mra",
           "type": "MRA",
           "extra": {
@@ -2276,7 +2282,7 @@
         },
         {
           "name": "DoDonPachi.mra",
-          "sha": "e645ea451350a502a725c704f469c2b8b952cfef",
+          "sha": "0b866a7495350dca9d1bff2088dab544ba2d6ff7",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cave_MiSTer/main/releases/DoDonPachi.mra",
           "type": "MRA",
           "extra": {
@@ -2288,8 +2294,34 @@
           }
         },
         {
+          "name": "DonPachi (Japan).mra",
+          "sha": "c91343d988aec0dc8bb71a4589f5c6e44e4cf711",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cave_MiSTer/main/releases/DonPachi%20(Japan).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "DonPachi (Japan)",
+            "rbf": "cave",
+            "zips": [
+              "donpachi.zip|donpachij.zip"
+            ]
+          }
+        },
+        {
+          "name": "DonPachi.mra",
+          "sha": "479a6815b8e36bc13886d33c626be2b382fe6e13",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cave_MiSTer/main/releases/DonPachi.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "DonPachi",
+            "rbf": "cave",
+            "zips": [
+              "donpachi.zip"
+            ]
+          }
+        },
+        {
           "name": "ESP Ra.De. (Japan).mra",
-          "sha": "05dba7d200cd8cbaeb4439e0870d9f577e27e314",
+          "sha": "6be17571ad5c69079ffb92b31dabab53797a1fed",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cave_MiSTer/main/releases/ESP%20Ra.De.%20(Japan).mra",
           "type": "MRA",
           "extra": {
@@ -2302,7 +2334,7 @@
         },
         {
           "name": "ESP Ra.De..mra",
-          "sha": "bdd63444d80e5803582bd84f1b3111657cd88773",
+          "sha": "3c3371918266d5119c05884d3c7bb325fcdc6821",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cave_MiSTer/main/releases/ESP%20Ra.De..mra",
           "type": "MRA",
           "extra": {
@@ -2315,7 +2347,7 @@
         },
         {
           "name": "Fever SOS.mra",
-          "sha": "9c39d19c2164d65bcdf10cc8965dc03e425572fc",
+          "sha": "83814266a5d990c058958b22ed603b152af0709e",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cave_MiSTer/main/releases/Fever%20SOS.mra",
           "type": "MRA",
           "extra": {
@@ -2328,7 +2360,7 @@
         },
         {
           "name": "Guwange (Special).mra",
-          "sha": "4c7afab2edc37a9e54b34a6cf0323984e567c275",
+          "sha": "17a94a01e5ecd6b749d2bca04b638e933feface0",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cave_MiSTer/main/releases/Guwange%20(Special).mra",
           "type": "MRA",
           "extra": {
@@ -2341,7 +2373,7 @@
         },
         {
           "name": "Guwange.mra",
-          "sha": "21a45025973a019c1424600a7c09009f3ef9b989",
+          "sha": "d82cd53153f91cfcb53c126a995e34fef1a179a8",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cave_MiSTer/main/releases/Guwange.mra",
           "type": "MRA",
           "extra": {
@@ -2354,7 +2386,7 @@
         },
         {
           "name": "Puzzle Uo Poko (Japan).mra",
-          "sha": "8d0bab0f2768db59b2d2cac943d0cbabb7bad60c",
+          "sha": "cc75bef79347e306c695ab1e82f374d752774217",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cave_MiSTer/main/releases/Puzzle%20Uo%20Poko%20(Japan).mra",
           "type": "MRA",
           "extra": {
@@ -2367,7 +2399,7 @@
         },
         {
           "name": "Puzzle Uo Poko.mra",
-          "sha": "dac219a7a10cf730370c36038d9bf8402b29977c",
+          "sha": "76da2c708ae74b2c4406667c2d89fc8301c00652",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cave_MiSTer/main/releases/Puzzle%20Uo%20Poko.mra",
           "type": "MRA",
           "extra": {
