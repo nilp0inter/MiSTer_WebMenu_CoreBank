@@ -2914,6 +2914,19 @@
           }
         },
         {
+          "name": "Megumi Rescue (Japan).mra",
+          "sha": "cc6dfa868277971d7131030e1fd546933b977504",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SMS_MiSTer/master/releases/Megumi%20Rescue%20(Japan).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Megumi Rescue (Japan)",
+            "rbf": "SMS",
+            "zips": [
+              "megrescu.zip"
+            ]
+          }
+        },
+        {
           "name": "Opa Opa (Rev A, unprotected).mra",
           "sha": "a313e9fa63df3b92f1ab16e622fd95bf477428f6",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SMS_MiSTer/master/releases/Opa%20Opa%20(Rev%20A%2C%20unprotected).mra",
@@ -3037,6 +3050,12 @@
           "type": "RBF"
         },
         {
+          "name": "SMS_20220620.rbf",
+          "sha": "34cc3c321c714addf7d665c8caef5459419f0166",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SMS_MiSTer/master/releases/SMS_20220620.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "SMS_LLAPI_20191002.rbf",
           "sha": "0c2fe55cd9624d7336b3eb1267f5f67a544abfb8",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SMS_MiSTer/master/releases/SMS_LLAPI_20191002.rbf",
@@ -3121,6 +3140,12 @@
           "type": "RBF"
         },
         {
+          "name": "SMS_LLAPI_20220620.rbf",
+          "sha": "7f3588e5562d5cb44c41608977a5d5fb84c57d55",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SMS_MiSTer/master/releases/SMS_LLAPI_20220620.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Slap Shooter.mra",
           "sha": "13b2ff4ac0ccfad8a6257af16734f09cda62fb83",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SMS_MiSTer/master/releases/Slap%20Shooter.mra",
@@ -3164,7 +3189,7 @@
     {
       "name": "SNES_MiSTer",
       "description": "SNES for MiSTer",
-      "readme": "# [Super Nintendo Entertainment System](https://en.wikipedia.org/wiki/Super_Nintendo_Entertainment_System) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\nWritten by [srg320](https://github.com/srg320)\n\n## Installing\ncopy \\*.rbf to root of SD card. Put some ROMs (\\*.SFC, \\*.SMC, \\*.BIN) into SNES folder\n\n## Features\n* Cycle accurate SNES replica.\n* Supports LoROM, HiROM, ExHiROM.\n* Supports additional chips: DSP-1/2/3/4, ST010, CX4, SDD1, SuperFX(GSU-1/2), SA1, OBC1, SPC7110, S-RTC.\n* Cheat engine.\n* Save/Load Backup RAM.\n* Supports mouse.\n* Light gun support via Wiimote, mouse or analog stick.\n* [SuperFX Turbo and CPU Turbo.](https://github.com/MiSTer-devel/SNES_MiSTer/blob/master/SNES_Turbo.md)\n* LLAPI support, for use with BlisSTer\n\n### BSX BIOS\nPlace bsx_bios.rom in game's folder.\n",
+      "readme": "# [Super Nintendo Entertainment System](https://en.wikipedia.org/wiki/Super_Nintendo_Entertainment_System) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\nWritten by [srg320](https://github.com/srg320)\n\n## Installing\ncopy \\*.rbf to root of SD card. Put some ROMs (\\*.SFC, \\*.SMC, \\*.BIN) into SNES folder\n\n## Features\n* Cycle accurate SNES replica.\n* Supports LoROM, HiROM, ExHiROM.\n* Supports additional chips: DSP-1/2/3/4, ST010, CX4, SDD1, SuperFX(GSU-1/2), SA1, OBC1, SPC7110, S-RTC.\n* MSU-1 Support\n* Cheat engine.\n* Save/Load Backup RAM.\n* Supports mouse.\n* Light gun support via Wiimote, mouse or analog stick.\n* [SuperFX Turbo and CPU Turbo.](https://github.com/MiSTer-devel/SNES_MiSTer/blob/master/SNES_Turbo.md)\n* LLAPI support, for use with BlisSTer\n\n### BSX BIOS\nPlace bsx_bios.rom in game's folder.\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-LLAPI/SNES_MiSTer",
@@ -3338,6 +3363,12 @@
           "type": "RBF"
         },
         {
+          "name": "SNES_20220620.rbf",
+          "sha": "9ad447acecf853d353d14486d1377ef21a1fe5a1",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SNES_MiSTer/master/releases/SNES_20220620.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "SNES_LLAPI_20191019.rbf",
           "sha": "7c3759eb5d11edabbc51473d02a5952f77d54807",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SNES_MiSTer/master/releases/SNES_LLAPI_20191019.rbf",
@@ -3485,6 +3516,12 @@
           "name": "SNES_LLAPI_20220519.rbf",
           "sha": "09fd08ea24b31010ce4594ee5d884a1368eda610",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SNES_MiSTer/master/releases/SNES_LLAPI_20220519.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_LLAPI_20220620.rbf",
+          "sha": "f906d64db7de83e4dedac643e210579bcd04bf08",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SNES_MiSTer/master/releases/SNES_LLAPI_20220620.rbf",
           "type": "RBF"
         }
       ]
