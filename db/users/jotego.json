@@ -5875,13 +5875,55 @@
         },
         {
           "name": "README.md",
-          "sha": "8005971312b6a74dc350d9cd9ed909354d1ab668",
+          "sha": "feaea76ed4c2f499d4d1450485c783bc39d4b4c8",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/pang/README.md",
           "type": "OTHER"
         },
         {
+          "name": "Block Block (World 911219 Joystick).mra",
+          "sha": "4bf9438afbfeb8a699e1497016c0f8c286d21963",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/pang/releases/Block%20Block%20(World%20911219%20Joystick).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Block Block (World 911219 Joystick)",
+            "rbf": "jtpang",
+            "zips": [
+              "block.zip",
+              "jtbeta.zip"
+            ]
+          }
+        },
+        {
+          "name": "Capcom World (Japan).mra",
+          "sha": "3370feb8e701fd0e1e582a840eac5ce0e94c58ae",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/pang/releases/Capcom%20World%20(Japan).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Capcom World (Japan)",
+            "rbf": "jtpang",
+            "zips": [
+              "cworld.zip",
+              "jtbeta.zip"
+            ]
+          }
+        },
+        {
+          "name": "Dokaben (Japan).mra",
+          "sha": "2456aec14e395a93e7df0289be78d1e017f47bf8",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/pang/releases/Dokaben%20(Japan).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Dokaben (Japan)",
+            "rbf": "jtpang",
+            "zips": [
+              "dokaben.zip",
+              "jtbeta.zip"
+            ]
+          }
+        },
+        {
           "name": "Pang (World).mra",
-          "sha": "fb5915c537fd3879ae1ee5be91935a7a09a29d86",
+          "sha": "38e5aff1ec706fedcf27ed447c99f03e96c7f9aa",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/pang/releases/Pang%20(World).mra",
           "type": "MRA",
           "extra": {
@@ -5895,7 +5937,7 @@
         },
         {
           "name": "Super Pang (World 900914).mra",
-          "sha": "dc7f31c9ecbaf069454cb6b16c6ea10d1a88d460",
+          "sha": "4ddc76dea78ae6d0960aa5288567a6832fa67623",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/pang/releases/Super%20Pang%20(World%20900914).mra",
           "type": "MRA",
           "extra": {
@@ -5920,8 +5962,14 @@
           "type": "RBF"
         },
         {
+          "name": "jtpang_20220624.rbf",
+          "sha": "bba81101fb299d6c6298a602296104ea118ec7a5",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/pang/releases/jtpang_20220624.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "version.log",
-          "sha": "4e471e26916459f93ccd055d3920f6a6faa5b6c4",
+          "sha": "6a170d89974d368029bd4b26c3ff9f66b159d5bf",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/pang/version.log",
           "type": "OTHER"
         },
