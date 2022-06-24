@@ -190,7 +190,7 @@
     {
       "name": "BiosDB_MiSTer",
       "description": null,
-      "readme": "\n",
+      "readme": "\n# Bios DB for MiSTer\n\nThis is a Database that will help you get a few console and computer BIOS that are compatible with MiSTer cores.\n\n### How to install\n\nIf you use [Update All](https://github.com/theypsilon/Update_All_MiSTer), you may simply activate it there in the Settings Screen.\n\nAlternatively, if you don't use it, you can add an entry to the `downloader.ini` file on the root of your SD (create it if it doesn't exist), to use it with the [MiSTer Downloader](https://github.com/MiSTer-devel/Downloader_MiSTer/) (which is what Update All calls under the hood). For that, please add the following entry there:\n\n```\n[bios_db]\ndb_url = https://raw.githubusercontent.com/theypsilon/BiosDB_MiSTer/db/bios_db.json\n```\n\nOnce you've done this, next time you run downloader, the BIOS will get installed too.\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/theypsilon/BiosDB_MiSTer",
