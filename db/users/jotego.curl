@@ -157,18 +157,13 @@ output = "_Others/jtrumble_20220707.rbf"
 
 
 # jts16
-url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16/releases/jts16_20220708.rbf"
-output = "_Others/jts16_20220708.rbf"
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16/releases/jts16_20220709.rbf"
+output = "_Others/jts16_20220709.rbf"
 
 
 # jts16b
-url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/jts16b_20220708.rbf"
-output = "_Others/jts16b_20220708.rbf"
-
-
-# jts16b3
-url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b3/releases/jts16b3_20220708.rbf"
-output = "_Others/jts16b3_20220708.rbf"
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/jts16b_20220709.rbf"
+output = "_Others/jts16b_20220709.rbf"
 
 
 # jtsarms
@@ -856,9 +851,19 @@ url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16/releases
 output = "_Arcade/Tetris (Set 4, Japan, S16A) [FD1094 317-0093].mra"
 
 
+# Ace Attacker (FD1094 317-0059).mra
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/Ace%20Attacker%20(FD1094%20317-0059).mra"
+output = "_Arcade/Ace Attacker (FD1094 317-0059).mra"
+
+
 # Alien Syndrome (set 4, System 16B, unprotected).mra
 url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/Alien%20Syndrome%20(set%204%2C%20System%2016B%2C%20unprotected).mra"
 output = "_Arcade/Alien Syndrome (set 4, System 16B, unprotected).mra"
+
+
+# Altered Beast (set 8) (8751 317-0078).mra
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/Altered%20Beast%20(set%208)%20(8751%20317-0078).mra"
+output = "_Arcade/Altered Beast (set 8) (8751 317-0078).mra"
 
 
 # Aurail (set 3, US) (unprotected).mra
@@ -891,6 +896,16 @@ url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/release
 output = "_Arcade/Dynamite Dux (set 3, World) (FD1094 317-0096).mra"
 
 
+# E-Swat - Cyber Police (set 4, World) (FD1094 317-0130).mra
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/E-Swat%20-%20Cyber%20Police%20(set%204%2C%20World)%20(FD1094%20317-0130).mra"
+output = "_Arcade/E-Swat - Cyber Police (set 4, World) (FD1094 317-0130).mra"
+
+
+# Excite League (FD1094 317-0079).mra
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/Excite%20League%20(FD1094%20317-0079).mra"
+output = "_Arcade/Excite League (FD1094 317-0079).mra"
+
+
 # Fantasy Zone II - The Tears of Opa-Opa (System 16C version).mra
 url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/Fantasy%20Zone%20II%20-%20The%20Tears%20of%20Opa-Opa%20(System%2016C%20version).mra"
 output = "_Arcade/Fantasy Zone II - The Tears of Opa-Opa (System 16C version).mra"
@@ -899,6 +914,11 @@ output = "_Arcade/Fantasy Zone II - The Tears of Opa-Opa (System 16C version).mr
 # Flash Point (set 2, Japan) (FD1094 317-0127A).mra
 url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/Flash%20Point%20(set%202%2C%20Japan)%20(FD1094%20317-0127A).mra"
 output = "_Arcade/Flash Point (set 2, Japan) (FD1094 317-0127A).mra"
+
+
+# Golden Axe (set 6, US) (8751 317-123A).mra
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/Golden%20Axe%20(set%206%2C%20US)%20(8751%20317-123A).mra"
+output = "_Arcade/Golden Axe (set 6, US) (8751 317-123A).mra"
 
 
 # MVP (set 2, US) (FD1094 317-0143).mra
@@ -936,28 +956,18 @@ url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/release
 output = "_Arcade/Toryumon.mra"
 
 
-# Altered Beast (set 8) (8751 317-0078).mra
-url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b3/releases/Altered%20Beast%20(set%208)%20(8751%20317-0078).mra"
-output = "_Arcade/Altered Beast (set 8) (8751 317-0078).mra"
-
-
-# Golden Axe (set 6, US) (8751 317-123A).mra
-url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b3/releases/Golden%20Axe%20(set%206%2C%20US)%20(8751%20317-123A).mra"
-output = "_Arcade/Golden Axe (set 6, US) (8751 317-123A).mra"
-
-
 # Tough Turf (set 2, Japan) (8751 317-0104).mra
-url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b3/releases/Tough%20Turf%20(set%202%2C%20Japan)%20(8751%20317-0104).mra"
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/Tough%20Turf%20(set%202%2C%20Japan)%20(8751%20317-0104).mra"
 output = "_Arcade/Tough Turf (set 2, Japan) (8751 317-0104).mra"
 
 
-# Wonder Boy III - Monster Lair (set 3, World, System 16B) (FD1094 317-0089).mra
-url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b3/releases/Wonder%20Boy%20III%20-%20Monster%20Lair%20(set%203%2C%20World%2C%20System%2016B)%20(FD1094%20317-0089).mra"
-output = "_Arcade/Wonder Boy III - Monster Lair (set 3, World, System 16B) (FD1094 317-0089).mra"
+# Wonder Boy III - Monster Lair (set 6, World, System 16B) (8751 317-0098).mra
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/Wonder%20Boy%20III%20-%20Monster%20Lair%20(set%206%2C%20World%2C%20System%2016B)%20(8751%20317-0098).mra"
+output = "_Arcade/Wonder Boy III - Monster Lair (set 6, World, System 16B) (8751 317-0098).mra"
 
 
 # Wrestle War (set 3, World) (8751 317-0103).mra
-url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b3/releases/Wrestle%20War%20(set%203%2C%20World)%20(8751%20317-0103).mra"
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/Wrestle%20War%20(set%203%2C%20World)%20(8751%20317-0103).mra"
 output = "_Arcade/Wrestle War (set 3, World) (8751 317-0103).mra"
 
 
