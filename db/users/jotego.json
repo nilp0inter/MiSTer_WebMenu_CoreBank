@@ -8474,7 +8474,13 @@
           "sha": "0530b9585b06120ff5138a561364d811063ca088",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/vulgus/releases/Vulgus.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Vulgus (set 1)",
+            "rbf": "jtvulgus",
+            "zips": [
+              "vulgus.zip"
+            ]
+          }
         },
         {
           "name": "jtvulgus_20191007.rbf",
