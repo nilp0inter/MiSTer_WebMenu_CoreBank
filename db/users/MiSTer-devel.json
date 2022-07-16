@@ -16463,6 +16463,22 @@
       ]
     },
     {
+      "name": "SGB_MiSTer",
+      "description": null,
+      "readme": "# [Super Game Boy](https://en.wikipedia.org/wiki/Super_Game_Boy) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n \nBased on the [SNES core](https://github.com/MiSTer-devel/SNES_MiSTer) written by [srg320](https://github.com/srg320)\n\n## Installing\ncopy \\*.rbf to root of SD card. Put some ROMs (\\*.GBC, \\*.GB) and the SGB BIOS into SGB folder\n\n## Features\n* MSU-1 Support\n* Cheat engine.\n* Save/Load Backup Game Boy RAM.\n",
+      "archived": false,
+      "fork": false,
+      "url": "https://github.com/MiSTer-devel/SGB_MiSTer",
+      "releases": [
+        {
+          "name": "SGB_20220716.rbf",
+          "sha": "7d07cc750f0022d77d630da53952a22b0cc54a41",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/SGB_MiSTer/main/releases/SGB_20220716.rbf",
+          "type": "RBF"
+        }
+      ]
+    },
+    {
       "name": "ShadowMasks_MiSTer",
       "description": "HDMI Shadow Masks",
       "readme": "# Shadow Masks for [MiSTer FPGA](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\nThis repository contains the Shadow Mask files for the MiSTer FPGA.\n\n## Instructions\n\nAutomated Method: Run the [Downloader.sh](https://github.com/MiSTer-devel/Downloader_MiSTer/raw/main/downloader.sh) script to receive the most up to date ShadowMasks placed in the proper folder.\n\nManual Method: Create a folder named `Shadow_Masks` in the root of your MicroSD Card along with the other folders like \"filters\", \"games\", etc... Place the .txt Shadow Mask files into that folder.\n\n## Create Your Own\n\nWith the tool found here: [MiSTer - Shadow Mask Editor](https://bool.space/mister/ShadowMaskEditor.htm)\n\nTool provided by [Tonurics](https://github.com/tonurics)\n\n## Specifications\n\n### Dimensions\n\nMax width = 16  \nMax Height = 16\n\n### Color Palette\n\n|  Color  | Value |\n| ------- | ----- |\n|  Gray   |   0   |\n|  Blue   |   1   |\n|  Green  |   2   |\n|  Cyan   |   3   |\n|   Red   |   4   |\n| Magenta |   5   |\n| Yellow  |   6   |\n|  White  |   7   |\n\n### Intensity On\n\n|   %    | Value |\n| ------ | ----- |\n| 100    |   0   |\n| 106.25 |   1   |\n| 112.25 |   2   |\n| 118.75 |   3   |\n| 125    |   4   |\n| 131.25 |   5   |\n| 137.5  |   6   |\n| 143.75 |   7   |\n| 150    |   8   |\n| 156.25 |   9   |\n| 162.5  |   a   |\n| 168.75 |   b   |\n| 175    |   c   |\n| 181.25 |   d   |\n| 187.5  |   e   |\n| 193.75 |   f   |\n\n### Intensity Off\n\n|   %    | Value |\n| ------ | ----- |\n| 0      |   0   |\n| 6.25   |   1   |\n| 12.5   |   2   |\n| 18.75  |   3   |\n| 25     |   4   |\n| 31.25  |   5   |\n| 37.5   |   6   |\n| 43.75  |   7   |\n| 50     |   8   |\n| 56.25  |   9   |\n| 62.5   |   a   |\n| 68.75  |   b   |\n| 75     |   c   |\n| 81.25  |   d   |\n| 87.5   |   e   |\n| 93.75  |   f   |\n",
