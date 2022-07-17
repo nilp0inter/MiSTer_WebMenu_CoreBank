@@ -2235,6 +2235,12 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Cave_20220717.rbf",
+          "sha": "988f7f325d0c87ea770fa447518ee492b10e6cf7",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cave_MiSTer/main/releases/Arcade-Cave_20220717.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Dangun Feveron.mra",
           "sha": "4f0253fffb977f15319f1abb937d16a88520ef44",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cave_MiSTer/main/releases/Dangun%20Feveron.mra",
@@ -2365,6 +2371,19 @@
           }
         },
         {
+          "name": "Gaia Crusaders.mra",
+          "sha": "374a60ad831e57829f8cda611062a0139a2c8c50",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cave_MiSTer/main/releases/Gaia%20Crusaders.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Gaia Crusaders",
+            "rbf": "cave",
+            "zips": [
+              "gaia.zip"
+            ]
+          }
+        },
+        {
           "name": "Guwange (Special).mra",
           "sha": "17a94a01e5ecd6b749d2bca04b638e933feface0",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cave_MiSTer/main/releases/Guwange%20(Special).mra",
@@ -2413,6 +2432,19 @@
             "rbf": "cave",
             "zips": [
               "uopoko.zip"
+            ]
+          }
+        },
+        {
+          "name": "Thunder Heroes.mra",
+          "sha": "5b7152451716f5c2c9e33c18f131d0314d862b5b",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cave_MiSTer/main/releases/Thunder%20Heroes.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Thunder Heroes",
+            "rbf": "cave",
+            "zips": [
+              "theroes.zip"
             ]
           }
         }
