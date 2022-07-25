@@ -5758,99 +5758,6 @@
       ]
     },
     {
-      "name": "Arcade-MiSTer_Raizing",
-      "description": "Bakraid, Batrider, Garegga, Kingdom Grandprix & Sorcer Striker MiSTer Cores",
-      "readme": "# Raizing MiSTer Cores\n\nThis project contains the MiSTer core for Raizing boards operating on the Toaplan v2 board platform.\n\n## Supported Games\n\n| Title                                                                                                                 | Status        |\n|-----------------------------------------------------------------------------------------------------------------------|---------------|\n| [**Sorcer Striker**](https://en.wikipedia.org/wiki/Sorcer_Striker)                                                    | Public        |\n| [**Kingdom Grandprix**](https://en.wikipedia.org/wiki/Kingdom_Grand_Prix)                                             | Public        |\n| [**Battle Garegga**](https://en.wikipedia.org/wiki/Battle_Garegga)                                                    | Public        |\n| [**Batrider**](https://en.wikipedia.org/wiki/Armed_Police_Batrider)                                                   | Public        |\n| [**Battle Bakraid**](https://en.wikipedia.org/wiki/Battle_Bakraid)                                                    | Public        |\n\n## Development\n\nThis core uses JTFrame, however, I have only utilized the template of JTFrame as I do not use linux. I added some stuff to it, but fairly minimal.\nUpgrading for the most part is a matter of dropping in the latest release in modules.\n\nTo compile the cores, I have included separate qsf files for each core. There are a total of 3 cores entitled bakraid, batrider and garegga.\n\nThe garegga core will play Sorcer Striker & Kingdom Grandprix as well.\n\nIt is a matter of loading up the project in quartus, and synthesizing/ building to get the rbf which you can put on your sd card for MiSTer.\n\nNote:\n- the JT9346 I have in Bakraid is not compatible with 93C66 chips, I made some changes to make it compatible.\n- the YMZ280b module comes from Nullobject, I have isolated and generated the module as standalone in scala, which emits verilog. No changes.\n## License\n\nThis program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.\n",
-      "archived": false,
-      "fork": false,
-      "url": "https://github.com/MiSTer-devel/Arcade-MiSTer_Raizing",
-      "releases": [
-        {
-          "name": "Arcade-Bakraid_20220724.rbf",
-          "sha": "ffa3a4040bf9021ef7c60264faceba2e3e6d223e",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MiSTer_Raizing/develop/releases/Arcade-Bakraid_20220724.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Arcade-Batrider_20220724.rbf",
-          "sha": "31c8ce7b1790f39efaf23d8d42b6866a1501ada0",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MiSTer_Raizing/develop/releases/Arcade-Batrider_20220724.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Arcade-Garegga_20220724.rbf",
-          "sha": "b1714fd624a3694e618ac0ca0ca52273f85c79aa",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MiSTer_Raizing/develop/releases/Arcade-Garegga_20220724.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Armed Police Batrider (USA) (Fri Feb 13 1998).mra",
-          "sha": "9821f048acaa8660fac64a841d8987f4b4066282",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MiSTer_Raizing/develop/releases/Armed%20Police%20Batrider%20(USA)%20(Fri%20Feb%2013%201998).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Armed Police Batrider (USA) (Fri Feb 13 1998)",
-            "rbf": "batrider",
-            "zips": [
-              "batrideru.zip"
-            ]
-          }
-        },
-        {
-          "name": "Battle Bakraid - Unlimited Version (USA) (Tue Jun 8 1999).mra",
-          "sha": "4d9e3acc76120f5aab5b133e6fabecafa83c2b2f",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MiSTer_Raizing/develop/releases/Battle%20Bakraid%20-%20Unlimited%20Version%20(USA)%20(Tue%20Jun%208%201999).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Battle Bakraid - Unlimited Version (USA) (Tue Jun 8 1999)",
-            "rbf": "bakraid",
-            "zips": [
-              "bbakraid.zip"
-            ]
-          }
-        },
-        {
-          "name": "Battle Garegga (Europe  USA  Japan  Asia) (Sat Feb 3 1996).mra",
-          "sha": "62282b196d6f16791fbdb645184d4b18cbd9f3d9",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MiSTer_Raizing/develop/releases/Battle%20Garegga%20(Europe%20%20USA%20%20Japan%20%20Asia)%20(Sat%20Feb%203%201996).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Battle Garegga (Europe / USA / Japan / Asia) (Sat Feb 3 1996)",
-            "rbf": "garegga",
-            "zips": [
-              "bgaregga.zip"
-            ]
-          }
-        },
-        {
-          "name": "Kingdom Grandprix.mra",
-          "sha": "74c89952b94ed4ca94e22f9fe7e7284e2e7ec265",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MiSTer_Raizing/develop/releases/Kingdom%20Grandprix.mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Kingdom Grandprix",
-            "rbf": "garegga",
-            "zips": [
-              "kingdmgp.zip"
-            ]
-          }
-        },
-        {
-          "name": "Sorcer Striker.mra",
-          "sha": "2e34b40689a416d5b8625b46a8936fc73b1385ca",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MiSTer_Raizing/develop/releases/Sorcer%20Striker.mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Sorcer Striker",
-            "rbf": "garegga",
-            "zips": [
-              "sstriker.zip"
-            ]
-          }
-        }
-      ]
-    },
-    {
       "name": "Arcade-MoonPatrol_MiSTer",
       "description": "Arcade: Moon Patrol for MiSTer",
       "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: Moon Patrol port to MiSTer by Sorgelig\n-- 27 November 2017\n-- \n---------------------------------------------------------------------------------\n-- Uses PACE framework by http://pacedev.net/\n---------------------------------------------------------------------------------\n-- Moon patrol sound board by Dar (darfpga@aol.fr)\n-- http://darfpga.blogspot.fr\n---------------------------------------------------------------------------------\n-- cpu68 - Version 9th Jan 2004 0.8\n-- 6800/01 compatible CPU core \n-- GNU public license - December 2002 : John E. Kent\n---------------------------------------------------------------------------------\n-- \n-- \n-- Keyboard inputs :\n--\n--   F1          : Coin + Start\n--   CTRL        : Fire\n--   SPACE       : Jump\n--   LEFT,RIGHT  : Increase/Decrease the speed\n--\n-- Joystick support.\n-- \n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
@@ -7216,6 +7123,117 @@
             "rbf": "qbert",
             "zips": [
               "qbertqub.zip"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Arcade-Raizing_MiSTer",
+      "description": "Bakraid, Batrider, Garegga, Kingdom Grandprix & Sorcer Striker MiSTer Cores",
+      "readme": "# Raizing MiSTer Cores\n\nThis project contains the MiSTer core for Raizing boards operating on the Toaplan v2 board platform.\n\n## Supported Games\n\n| Title                                                                                                                 | Status        |\n|-----------------------------------------------------------------------------------------------------------------------|---------------|\n| [**Sorcer Striker**](https://en.wikipedia.org/wiki/Sorcer_Striker)                                                    | Public        |\n| [**Kingdom Grandprix**](https://en.wikipedia.org/wiki/Kingdom_Grand_Prix)                                             | Public        |\n| [**Battle Garegga**](https://en.wikipedia.org/wiki/Battle_Garegga)                                                    | Public        |\n| [**Batrider**](https://en.wikipedia.org/wiki/Armed_Police_Batrider)                                                   | Public        |\n| [**Battle Bakraid**](https://en.wikipedia.org/wiki/Battle_Bakraid)                                                    | Public        |\n\n## Development\n\nThis core uses JTFrame, however, I have only utilized the template of JTFrame as I do not use linux. I added some stuff to it, but fairly minimal.\nUpgrading for the most part is a matter of dropping in the latest release in modules.\n\nTo compile the cores, I have included separate qsf files for each core. There are a total of 3 cores entitled bakraid, batrider and garegga.\n\nThe garegga core will play Sorcer Striker & Kingdom Grandprix as well.\n\nIt is a matter of loading up the project in quartus, and synthesizing/ building to get the rbf which you can put on your sd card for MiSTer.\n\nNote:\n- the JT9346 I have in Bakraid is not compatible with 93C66 chips, I made some changes to make it compatible.\n- the YMZ280b module comes from Nullobject, I have isolated and generated the module as standalone in scala, which emits verilog. No changes.\n## License\n\nThis program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.\n",
+      "archived": false,
+      "fork": false,
+      "url": "https://github.com/MiSTer-devel/Arcade-Raizing_MiSTer",
+      "releases": [
+        {
+          "name": "Arcade-Bakraid_20220724.rbf",
+          "sha": "ffa3a4040bf9021ef7c60264faceba2e3e6d223e",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Raizing_MiSTer/develop/releases/Arcade-Bakraid_20220724.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Bakraid_20220725.rbf",
+          "sha": "50d66ea03206eb1c9f21d408937b214da2cc39a4",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Raizing_MiSTer/develop/releases/Arcade-Bakraid_20220725.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Batrider_20220724.rbf",
+          "sha": "31c8ce7b1790f39efaf23d8d42b6866a1501ada0",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Raizing_MiSTer/develop/releases/Arcade-Batrider_20220724.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Batrider_20220725.rbf",
+          "sha": "dc3de32c1818a963f79ed26c3c2be92799e9df18",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Raizing_MiSTer/develop/releases/Arcade-Batrider_20220725.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Garegga_20220724.rbf",
+          "sha": "b1714fd624a3694e618ac0ca0ca52273f85c79aa",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Raizing_MiSTer/develop/releases/Arcade-Garegga_20220724.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Garegga_20220725.rbf",
+          "sha": "f6923d2d29ba3c09054516704dc46c492daebd14",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Raizing_MiSTer/develop/releases/Arcade-Garegga_20220725.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Armed Police Batrider (USA) (Fri Feb 13 1998).mra",
+          "sha": "9821f048acaa8660fac64a841d8987f4b4066282",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Raizing_MiSTer/develop/releases/Armed%20Police%20Batrider%20(USA)%20(Fri%20Feb%2013%201998).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Armed Police Batrider (USA) (Fri Feb 13 1998)",
+            "rbf": "batrider",
+            "zips": [
+              "batrideru.zip"
+            ]
+          }
+        },
+        {
+          "name": "Battle Bakraid - Unlimited Version (USA) (Tue Jun 8 1999).mra",
+          "sha": "4d9e3acc76120f5aab5b133e6fabecafa83c2b2f",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Raizing_MiSTer/develop/releases/Battle%20Bakraid%20-%20Unlimited%20Version%20(USA)%20(Tue%20Jun%208%201999).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Battle Bakraid - Unlimited Version (USA) (Tue Jun 8 1999)",
+            "rbf": "bakraid",
+            "zips": [
+              "bbakraid.zip"
+            ]
+          }
+        },
+        {
+          "name": "Battle Garegga (Europe  USA  Japan  Asia) (Sat Feb 3 1996).mra",
+          "sha": "62282b196d6f16791fbdb645184d4b18cbd9f3d9",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Raizing_MiSTer/develop/releases/Battle%20Garegga%20(Europe%20%20USA%20%20Japan%20%20Asia)%20(Sat%20Feb%203%201996).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Battle Garegga (Europe / USA / Japan / Asia) (Sat Feb 3 1996)",
+            "rbf": "garegga",
+            "zips": [
+              "bgaregga.zip"
+            ]
+          }
+        },
+        {
+          "name": "Kingdom Grandprix.mra",
+          "sha": "74c89952b94ed4ca94e22f9fe7e7284e2e7ec265",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Raizing_MiSTer/develop/releases/Kingdom%20Grandprix.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Kingdom Grandprix",
+            "rbf": "garegga",
+            "zips": [
+              "kingdmgp.zip"
+            ]
+          }
+        },
+        {
+          "name": "Sorcer Striker.mra",
+          "sha": "2e34b40689a416d5b8625b46a8936fc73b1385ca",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Raizing_MiSTer/develop/releases/Sorcer%20Striker.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Sorcer Striker",
+            "rbf": "garegga",
+            "zips": [
+              "sstriker.zip"
             ]
           }
         }

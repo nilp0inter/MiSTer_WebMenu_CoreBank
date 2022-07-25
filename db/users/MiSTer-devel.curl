@@ -301,21 +301,6 @@ url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MCR3_MiSTer/master/
 output = "_Arcade/cores/MCR3_20210112.rbf"
 
 
-# Bakraid
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MiSTer_Raizing/develop/releases/Arcade-Bakraid_20220724.rbf"
-output = "_Arcade/cores/Bakraid_20220724.rbf"
-
-
-# Batrider
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MiSTer_Raizing/develop/releases/Arcade-Batrider_20220724.rbf"
-output = "_Arcade/cores/Batrider_20220724.rbf"
-
-
-# Garegga
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MiSTer_Raizing/develop/releases/Arcade-Garegga_20220724.rbf"
-output = "_Arcade/cores/Garegga_20220724.rbf"
-
-
 # MoonPatrol
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MoonPatrol_MiSTer/master/releases/Arcade-MoonPatrol_20220322.rbf"
 output = "_Arcade/cores/MoonPatrol_20220322.rbf"
@@ -379,6 +364,21 @@ output = "_Arcade/cores/Popeye_20210117.rbf"
 # QBert
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-QBert_MiSTer/master/releases/Arcade-QBert_20210923.rbf"
 output = "_Arcade/cores/QBert_20210923.rbf"
+
+
+# Bakraid
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Raizing_MiSTer/develop/releases/Arcade-Bakraid_20220725.rbf"
+output = "_Arcade/cores/Bakraid_20220725.rbf"
+
+
+# Batrider
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Raizing_MiSTer/develop/releases/Arcade-Batrider_20220725.rbf"
+output = "_Arcade/cores/Batrider_20220725.rbf"
+
+
+# Garegga
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Raizing_MiSTer/develop/releases/Arcade-Garegga_20220725.rbf"
+output = "_Arcade/cores/Garegga_20220725.rbf"
 
 
 # RallyX
@@ -1741,31 +1741,6 @@ url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MCR3_MiSTer/master/
 output = "_Arcade/Timber.mra"
 
 
-# Armed Police Batrider (USA) (Fri Feb 13 1998).mra
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MiSTer_Raizing/develop/releases/Armed%20Police%20Batrider%20(USA)%20(Fri%20Feb%2013%201998).mra"
-output = "_Arcade/Armed Police Batrider (USA) (Fri Feb 13 1998).mra"
-
-
-# Battle Bakraid - Unlimited Version (USA) (Tue Jun 8 1999).mra
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MiSTer_Raizing/develop/releases/Battle%20Bakraid%20-%20Unlimited%20Version%20(USA)%20(Tue%20Jun%208%201999).mra"
-output = "_Arcade/Battle Bakraid - Unlimited Version (USA) (Tue Jun 8 1999).mra"
-
-
-# Battle Garegga (Europe  USA  Japan  Asia) (Sat Feb 3 1996).mra
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MiSTer_Raizing/develop/releases/Battle%20Garegga%20(Europe%20%20USA%20%20Japan%20%20Asia)%20(Sat%20Feb%203%201996).mra"
-output = "_Arcade/Battle Garegga (Europe  USA  Japan  Asia) (Sat Feb 3 1996).mra"
-
-
-# Kingdom Grandprix.mra
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MiSTer_Raizing/develop/releases/Kingdom%20Grandprix.mra"
-output = "_Arcade/Kingdom Grandprix.mra"
-
-
-# Sorcer Striker.mra
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MiSTer_Raizing/develop/releases/Sorcer%20Striker.mra"
-output = "_Arcade/Sorcer Striker.mra"
-
-
 # Moon Patrol.mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MoonPatrol_MiSTer/master/releases/Moon%20Patrol.mra"
 output = "_Arcade/Moon Patrol.mra"
@@ -1989,6 +1964,31 @@ output = "_Arcade/Q'bert (US, Set 1).mra"
 # QBert Qubes.mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-QBert_MiSTer/master/releases/QBert%20Qubes.mra"
 output = "_Arcade/QBert Qubes.mra"
+
+
+# Armed Police Batrider (USA) (Fri Feb 13 1998).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Raizing_MiSTer/develop/releases/Armed%20Police%20Batrider%20(USA)%20(Fri%20Feb%2013%201998).mra"
+output = "_Arcade/Armed Police Batrider (USA) (Fri Feb 13 1998).mra"
+
+
+# Battle Bakraid - Unlimited Version (USA) (Tue Jun 8 1999).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Raizing_MiSTer/develop/releases/Battle%20Bakraid%20-%20Unlimited%20Version%20(USA)%20(Tue%20Jun%208%201999).mra"
+output = "_Arcade/Battle Bakraid - Unlimited Version (USA) (Tue Jun 8 1999).mra"
+
+
+# Battle Garegga (Europe  USA  Japan  Asia) (Sat Feb 3 1996).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Raizing_MiSTer/develop/releases/Battle%20Garegga%20(Europe%20%20USA%20%20Japan%20%20Asia)%20(Sat%20Feb%203%201996).mra"
+output = "_Arcade/Battle Garegga (Europe  USA  Japan  Asia) (Sat Feb 3 1996).mra"
+
+
+# Kingdom Grandprix.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Raizing_MiSTer/develop/releases/Kingdom%20Grandprix.mra"
+output = "_Arcade/Kingdom Grandprix.mra"
+
+
+# Sorcer Striker.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Raizing_MiSTer/develop/releases/Sorcer%20Striker.mra"
+output = "_Arcade/Sorcer Striker.mra"
 
 
 # New Rally-X.mra
