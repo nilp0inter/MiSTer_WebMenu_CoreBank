@@ -7161,6 +7161,12 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Batrider_20220726.rbf",
+          "sha": "2f3df882b6799754f893cdac0c02ac82da89cc98",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Raizing_MiSTer/develop/releases/Arcade-Batrider_20220726.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Arcade-Garegga_20220724.rbf",
           "sha": "b1714fd624a3694e618ac0ca0ca52273f85c79aa",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Raizing_MiSTer/develop/releases/Arcade-Garegga_20220724.rbf",
@@ -7174,14 +7180,14 @@
         },
         {
           "name": "Armed Police Batrider (USA) (Fri Feb 13 1998).mra",
-          "sha": "9821f048acaa8660fac64a841d8987f4b4066282",
+          "sha": "6d5e1f827618cbed1dd3610e614752f05c2b0f18",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Raizing_MiSTer/develop/releases/Armed%20Police%20Batrider%20(USA)%20(Fri%20Feb%2013%201998).mra",
           "type": "MRA",
           "extra": {
             "name": "Armed Police Batrider (USA) (Fri Feb 13 1998)",
             "rbf": "batrider",
             "zips": [
-              "batrideru.zip"
+              "batrideru.zip|batrider.zip"
             ]
           }
         },
