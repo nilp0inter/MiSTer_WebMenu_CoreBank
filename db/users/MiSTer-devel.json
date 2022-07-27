@@ -7149,6 +7149,12 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Bakraid_20220726.rbf",
+          "sha": "cef57d1b278a54ba524f5c77e3b2734f15f3b37a",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Raizing_MiSTer/develop/releases/Arcade-Bakraid_20220726.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Arcade-Batrider_20220724.rbf",
           "sha": "31c8ce7b1790f39efaf23d8d42b6866a1501ada0",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Raizing_MiSTer/develop/releases/Arcade-Batrider_20220724.rbf",
@@ -7180,7 +7186,7 @@
         },
         {
           "name": "Armed Police Batrider (USA) (Fri Feb 13 1998).mra",
-          "sha": "6d5e1f827618cbed1dd3610e614752f05c2b0f18",
+          "sha": "39eeab411ea127bbd69478df6a9f910d5ef14ef6",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Raizing_MiSTer/develop/releases/Armed%20Police%20Batrider%20(USA)%20(Fri%20Feb%2013%201998).mra",
           "type": "MRA",
           "extra": {
@@ -7193,16 +7199,10 @@
         },
         {
           "name": "Battle Bakraid - Unlimited Version (USA) (Tue Jun 8 1999).mra",
-          "sha": "4d9e3acc76120f5aab5b133e6fabecafa83c2b2f",
+          "sha": "7693a2c754392203fa7a71dd1a73bca2d9b2f022",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Raizing_MiSTer/develop/releases/Battle%20Bakraid%20-%20Unlimited%20Version%20(USA)%20(Tue%20Jun%208%201999).mra",
           "type": "MRA",
-          "extra": {
-            "name": "Battle Bakraid - Unlimited Version (USA) (Tue Jun 8 1999)",
-            "rbf": "bakraid",
-            "zips": [
-              "bbakraid.zip"
-            ]
-          }
+          "extra": null
         },
         {
           "name": "Battle Garegga (Europe  USA  Japan  Asia) (Sat Feb 3 1996).mra",
