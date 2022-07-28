@@ -7199,10 +7199,16 @@
         },
         {
           "name": "Battle Bakraid - Unlimited Version (USA) (Tue Jun 8 1999).mra",
-          "sha": "7693a2c754392203fa7a71dd1a73bca2d9b2f022",
+          "sha": "2f2da7fafe961349515ae2467959d7ab67d93ab5",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Raizing_MiSTer/develop/releases/Battle%20Bakraid%20-%20Unlimited%20Version%20(USA)%20(Tue%20Jun%208%201999).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Battle Bakraid - Unlimited Version (USA) (Tue Jun 8 1999)",
+            "rbf": "bakraid",
+            "zips": [
+              "bbakraid.zip"
+            ]
+          }
         },
         {
           "name": "Battle Garegga (Europe  USA  Japan  Asia) (Sat Feb 3 1996).mra",
