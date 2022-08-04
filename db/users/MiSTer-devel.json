@@ -4380,7 +4380,7 @@
     {
       "name": "Arcade-IkariWarriors_MiSTer",
       "description": null,
-      "readme": "# SNK Ikari Warriors / Victory Road (beta):\n![Ikari Warriors](/docs/ikaria-warriors-flyer.jpg)\n![Victory Road](/docs/victory_road.pjg.jpg)\n\nIkari Warriors and Victory Road are run and gun vertical shooters developed by SNK in 1986. Victory Road is the sequel to Ikari Warriors.\nThe game was released at the time when there were many Commando clones on the market. What made Ikari Warriors instantly distinct, were rotary joysticks and the allowing simultaneous play by two people.\n\nIkari Warriors involves Ralf Jones and Clark Steel (known outside Japan as Paul and Vince in the Ikari series) battling through hordes of enemies. According to designer Keiko Iju, the game was inspired by the then-popular Rambo films and takes its name from the Japanese title of Rambo: First Blood Part II (Rambo: Ikari no Dasshutsu or \"The Angry Escape\").\nFollow any core updates and news on my Twitter acount [@RndMnkIII](https://twitter.com/RndMnkIII). this project is a hobby but it requires investing in arcade game boards and specific tools, so any donation is welcome: [https://ko-fi.com/rndmnkiii](https://ko-fi.com/rndmnkiii).\n\n## About\nThis core as beta release will be published as independet core. Finally will be unified with the SNK Triple Z80 Core. For a list of games intended to work with the SNK Triple Z80 Core see:\n[https://github.com/mamedev/mame/blob/master/src/mame/drivers/snk.cpp](https://github.com/mamedev/mame/blob/master/src/mame/drivers/snk.cpp).  \n\n## Third party cores\n* Based on [https://github.com/antoniovillena/MiSTer_DB9/blob/master/Cores/AtariST_MiSTer/sys/joydb15.v](joydb15.v) by Aitor Pelaez (NeuroRulez).\n* Daniel Wallner T80 core [jesus@opencores.org](https://opencores.org/projects/t80).\n* JTOPL FPGA Clone of Yamaha OPL hardware by Jose Tejada, @topapate [(https://github.com/jotego/jtopl)](https://github.com/jotego/jtopl).\n* Based on Tim Rudy 7400 TTL library [https://github.com/TimRudy/ice-chips-verilog](https://github.com/TimRudy/ice-chips-verilog).\n\n## Instructions:\nTwo players can participate in this game simultaneously. Ikari Warriors/Victory Road use rotary joysticks: those which could be rotated in addition to being pushed in eight directions. The game also featured two buttons, one for the standard gun and another for lobbing grenades. It allowed two players to play cooperatively, side by side and to use vehicles (tank).\nApart from the standard MiSTer game controller support there is also there is SNAC support for:\n* DB15 arcade controls (tested with the Splitter for official MiSTer by Antonio Villena. See: https://www.antoniovillena.es/store/product/splitter-for-official-mister/).\n* Native adapter for SNK LS-30 joystick. This is a D.I.Y development of the author of the core and is commented on in a separate project. See: https://github.com/RndMnkIII/SNK_LS-30_Rotary_Joystick_SNAC_adapter. You can build a alternative one if you already have some DB15 SNAC adapter as the Antonio Villena Splitter seen before.\nYou can change the settings in the Core Menu: \n* SNAC > DB15 Devices: Off,OnlyP1,OnlyP2,P1&P2 (fixed controls: button A: rotate left, button B: fire, button C: grenade, button D: rotate right).\n* SNAC > Native LS-30 Adapter: Off,OnlyP1,OnlyP2,P1&P2 (maps over buttons F,E,D,C of a DB15 interface the LS-30 rotary four wire data, button A: fire, button B: grenade).\n\nAlternatively, you can wire this adapter if you already are using a DB15 SNAC adapter as the Official Mister Splitter by Antonio Villena and you don't want to build my native adapter design MCU based:\n![gamepad buttons](/docs/ls30_to_db15_adapter2.png)\n\n\n## Manual installation\nRename the Arcade-IkariWarriors_XXXXXXXX.rbf file to IkariWarriors_XXXXXXXX.rbf and copy to the SD Card to the folder  /media/fat/_Arcade/cores and the .MRA files to /media/fat/_Arcade.\n\nThe required ROM files follow the MAME naming conventions (check inside MRA for this). Is the user responsability to be installed in the following folder:\n/media/fat/_Arcade/mame/<mame rom>.zip\n\n## Acknowledgments\n* To all Ko-fi contributors for supporting this project: __@bdlou__, __Peter Bray__, __Nat__, __Funkycochise__, __David__, __Kevin Coleman__, __Denymetanol__, __Schermobianco__, __TontonKaloun__, __Wark91__, __Dan__, __Beaps__, __Todd Gill__, __John Stringer__, __Moi__, __Olivier Krumm__, __Raymond Bielun__.\n* Thanks to __@antoniovillena__ and __@NeuroRulez__ for their help and patience with SNAC support for DB15.\n* __@FCochise__ for helping with the rom settings of MRA files.\n* __@alanswx__ for helping me with some technical aspects related to the use of the MiSTer framework.\n* And all those who with their comments and shows of support have encouraged me to continue with this project.\n\n\n",
+      "readme": "# SNK Ikari Warriors / Victory Road (beta):\n![Ikari Warriors](/docs/ikaria-warriors-flyer.jpg)\n![Victory Road](/docs/victory_road.pjg.jpg)\n\nIkari Warriors and Victory Road are run and gun vertical shooters developed by SNK in 1986. Victory Road is the sequel to Ikari Warriors.\nThe game was released at the time when there were many Commando clones on the market. What made Ikari Warriors instantly distinct, were rotary joysticks and the allowing simultaneous play by two people.\n\nIkari Warriors involves Ralf Jones and Clark Steel (known outside Japan as Paul and Vince in the Ikari series) battling through hordes of enemies. According to designer Keiko Iju, the game was inspired by the then-popular Rambo films and takes its name from the Japanese title of Rambo: First Blood Part II (Rambo: Ikari no Dasshutsu or \"The Angry Escape\").\nFollow any core updates and news on my Twitter acount [@RndMnkIII](https://twitter.com/RndMnkIII). this project is a hobby but it requires investing in arcade game boards and specific tools, so any donation is welcome: [https://ko-fi.com/rndmnkiii](https://ko-fi.com/rndmnkiii).\n\n## About\nThis core as beta release will be published as independet core. Finally will be unified with the SNK Triple Z80 Core. For a list of games intended to work with the SNK Triple Z80 Core see:\n[https://github.com/mamedev/mame/blob/master/src/mame/drivers/snk.cpp](https://github.com/mamedev/mame/blob/master/src/mame/drivers/snk.cpp).  \n\n## Third party cores\n* Based on [https://github.com/antoniovillena/MiSTer_DB9/blob/master/Cores/AtariST_MiSTer/sys/joydb15.v](joydb15.v) by Aitor Pelaez (NeuroRulez).\n* Daniel Wallner T80 core [jesus@opencores.org](https://opencores.org/projects/t80).\n* JTOPL FPGA Clone of Yamaha OPL hardware by Jose Tejada, @topapate [(https://github.com/jotego/jtopl)](https://github.com/jotego/jtopl).\n* Based on Tim Rudy 7400 TTL library [https://github.com/TimRudy/ice-chips-verilog](https://github.com/TimRudy/ice-chips-verilog).\n\n## Instructions:\nTwo players can participate in this game simultaneously. Ikari Warriors/Victory Road use rotary joysticks: those which could be rotated in addition to being pushed in eight directions. The game also featured two buttons, one for the standard gun and another for lobbing grenades. It allowed two players to play cooperatively, side by side and to use vehicles (tank).\nApart from the standard MiSTer game controller support there is also there is SNAC support for:\n* DB15 arcade controls (tested with the Splitter for official MiSTer by Antonio Villena. See: https://www.antoniovillena.es/store/product/splitter-for-official-mister/).\n* Native adapter for SNK LS-30 joystick. This is a D.I.Y development of the author of the core and is commented on in a separate project. See: https://github.com/RndMnkIII/SNK_LS-30_Rotary_Joystick_SNAC_adapter. You can build a alternative one if you already have some DB15 SNAC adapter as the Antonio Villena Splitter seen before.\nYou can change the settings in the Core Menu: \n* SNAC > DB15 Devices: Off,OnlyP1,OnlyP2,P1&P2 (fixed controls: button A: rotate left, button B: fire, button C: grenade, button D: rotate right).\n* SNAC > Native LS-30 Adapter: Off,OnlyP1,OnlyP2,P1&P2 (maps over buttons F,E,D,C of a DB15 interface the LS-30 rotary four wire data, button A: fire, button B: grenade).\n\nAlternatively, you can wire this adapter if you already are using a DB15 SNAC adapter as the Official Mister Splitter by Antonio Villena and you don't want to build my native adapter design MCU based:\n![gamepad buttons](/docs/ls30_to_db15_adapter2.png)\n\n\n## Manual installation\nRename the Arcade-IkariWarriors_XXXXXXXX.rbf file to IkariWarriors_XXXXXXXX.rbf and copy to the SD Card to the folder  /media/fat/_Arcade/cores and the .MRA files to /media/fat/_Arcade.\n\nThe required ROM files follow the MAME naming conventions (check inside MRA for this). Is the user responsability to be installed in the following folder:\n/media/fat/_Arcade/mame/<mame rom>.zip\n\n## Acknowledgments\n* To all Ko-fi contributors for supporting this project: __@bdlou__, __Peter Bray__, __Nat__, __Funkycochise__, __David__, __Kevin Coleman__, __Denymetanol__, __Schermobianco__, __TontonKaloun__, __Wark91__, __Dan__, __Beaps__, __Todd Gill__, __John Stringer__, __Moi__, __Olivier Krumm__, __Raymond Bielun__.\n* Thanks to __@antoniovillena__ and __@NeuroRulez__ for their help and patience with SNAC support for DB15.\n* Thanks to __@Salamander329__ for his MiSTer LED screen artworks, gives a more special arcade touch to MiSTer.\n* __@FCochise__ for helping with the rom settings of MRA files.\n* __@alanswx__ for helping me with some technical aspects related to the use of the MiSTer framework.\n* And all those who with their comments and shows of support have encouraged me to continue with this project.\n\n\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/Arcade-IkariWarriors_MiSTer",
@@ -4393,31 +4393,55 @@
         },
         {
           "name": "Ikari Warriors.mra",
-          "sha": "e6b25d2a48a5b9ae7fdeeba71cb89a9279733941",
+          "sha": "f1884427ca771043ae39f07a82e9376a5c29c5ca",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IkariWarriors_MiSTer/main/releases/Ikari%20Warriors.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Ikari Warriors",
+            "rbf": "IkariWarriors",
+            "zips": [
+              "ikari.zip"
+            ]
+          }
         },
         {
           "name": "Victory Road.mra",
-          "sha": "e7d5dc59d993b51975f20f099c62b46428fb3bc0",
+          "sha": "5e0f303172a73686d25aa7820a4638fa0ff912ef",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IkariWarriors_MiSTer/main/releases/Victory%20Road.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Victory Road",
+            "rbf": "IkariWarriors",
+            "zips": [
+              "victroad.zip"
+            ]
+          }
         },
         {
           "name": "Ikari Warriors JP.mra",
-          "sha": "6af2ba514203ef2fff80b641c51d392c2ad06064",
+          "sha": "7f267cd9259d92f18abc82ec1829b2f7f4e4a7dc",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IkariWarriors_MiSTer/main/releases/_alternatives/_Ikari%20Warriors/Ikari%20Warriors%20JP.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Ikari Warriors (Japan No Continues)",
+            "rbf": "IkariWarriors",
+            "zips": [
+              "ikarijp.zip|ikari.zip"
+            ]
+          }
         },
         {
           "name": "Dogou Souken.mra",
-          "sha": "da8f74d2844bfb53df94e159b1bf91bf606fb7c9",
+          "sha": "d415be0a34b0184c2f62cea071a16d5f3c406eee",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IkariWarriors_MiSTer/main/releases/_alternatives/_Victory%20Road/Dogou%20Souken.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Dogou Souken",
+            "rbf": "IkariWarriors",
+            "zips": [
+              "dogosoke.zip|victroad.zip"
+            ]
+          }
         }
       ]
     },
