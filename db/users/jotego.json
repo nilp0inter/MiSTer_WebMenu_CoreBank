@@ -5533,6 +5533,52 @@
         },
         {
           "name": "README.md",
+          "sha": "b55bfe09ceff0221195f69733b0fbb86773d9b22",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kunio/README.md",
+          "type": "OTHER"
+        },
+        {
+          "name": "Renegade (US bootleg).mra",
+          "sha": "194480c33bbcc95f94da170e01d4f12f06fff9e9",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kunio/releases/Renegade%20(US%20bootleg).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Renegade (US bootleg)",
+            "rbf": "jtkunio",
+            "zips": [
+              "renegadeb.zip|renegade.zip",
+              "jtbeta.zip"
+            ]
+          }
+        },
+        {
+          "name": "Renegade (US).mra",
+          "sha": "63c0c575997d1268dd1346ecd0e33af5e71fb987",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kunio/releases/Renegade%20(US).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Renegade (US)",
+            "rbf": "jtkunio",
+            "zips": [
+              "renegade.zip",
+              "jtbeta.zip"
+            ]
+          }
+        },
+        {
+          "name": "jtkunio_20220805.rbf",
+          "sha": "cc17c22fcf58ac54cb7b9061d7ab5534318fa54f",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kunio/releases/jtkunio_20220805.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "version.log",
+          "sha": "6cdc17bc7b222880295e3be9359b7dafff54b8d7",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kunio/version.log",
+          "type": "OTHER"
+        },
+        {
+          "name": "README.md",
           "sha": "c15392981907739869bc510392f96df6e6ca2a23",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/labrun/README.md",
           "type": "OTHER"
@@ -6100,8 +6146,14 @@
           "type": "RBF"
         },
         {
+          "name": "jtpang_20220805.rbf",
+          "sha": "0e90acfd1f6bc4b40d7633047056473b05022881",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/pang/releases/jtpang_20220805.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "version.log",
-          "sha": "fd1b89b5b41be2a5bf8d4b8016ea476190cd23bd",
+          "sha": "239c95cc94487fbb406ea2882c0e805c32ab9da7",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/pang/version.log",
           "type": "OTHER"
         },

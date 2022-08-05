@@ -106,6 +106,11 @@ url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kicker/relea
 output = "_Others/jtkicker_20220610.rbf"
 
 
+# jtkunio
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kunio/releases/jtkunio_20220805.rbf"
+output = "_Others/jtkunio_20220805.rbf"
+
+
 # jtlabrun
 url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/labrun/releases/jtlabrun_20220601.rbf"
 output = "_Others/jtlabrun_20220601.rbf"
@@ -132,8 +137,8 @@ output = "_Others/jtninja_20220607.rbf"
 
 
 # jtpang
-url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/pang/releases/jtpang_20220708.rbf"
-output = "_Others/jtpang_20220708.rbf"
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/pang/releases/jtpang_20220805.rbf"
+output = "_Others/jtpang_20220805.rbf"
 
 
 # jtpinpon
@@ -739,6 +744,16 @@ output = "_Arcade/Pirate Ship Higemaru.mra"
 # Kicker.mra
 url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kicker/releases/Kicker.mra"
 output = "_Arcade/Kicker.mra"
+
+
+# Renegade (US bootleg).mra
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kunio/releases/Renegade%20(US%20bootleg).mra"
+output = "_Arcade/Renegade (US bootleg).mra"
+
+
+# Renegade (US).mra
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kunio/releases/Renegade%20(US).mra"
+output = "_Arcade/Renegade (US).mra"
 
 
 # Trick Trap (World).mra
