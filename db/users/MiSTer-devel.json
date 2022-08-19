@@ -1358,20 +1358,20 @@
     {
       "name": "Arcade-Athena_MiSTer",
       "description": null,
-      "readme": "# SNK Athena (Beta):\n![SNK logo](/docs/snk_corp_logo.png)\n![Game Flyer](/docs/Athena_flyer.png)\nAthena, also known as Athena's Wonder Land, is a platform arcade game produced and published in 1986 by SNK.\nFollow any core updates and news on my Twitter acount [@RndMnkIII](https://twitter.com/RndMnkIII). This project is a hobby but it requires investing in arcade game boards and specific tools, so **any donation is welcome: [https://ko-fi.com/rndmnkiii](https://ko-fi.com/rndmnkiii).**\n\n## About\nThis core as beta release will be published as independet core. Finally will be unified with the SNK Triple Z80 Core. For a list of games intended to work with the SNK Triple Z80 Core see:\n[https://github.com/mamedev/mame/blob/master/src/mame/drivers/snk.cpp](https://github.com/mamedev/mame/blob/master/src/mame/drivers/snk.cpp).  \n\n## Third party cores\n* Daniel Wallner T80 core [jesus@opencores.org](https://opencores.org/projects/t80).\n* JTOPL FPGA Clone of Yamaha OPL hardware by Jose Tejada, @topapate [(https://github.com/jotego/jtopl)](https://github.com/jotego/jtopl).\n* Based on Tim Rudy 7400 TTL library [https://github.com/TimRudy/ice-chips-verilog](https://github.com/TimRudy/ice-chips-verilog).\n\n## Instructions:\nThis game is multiplayer, where two players can play taking turns with their own controllers. You have two action buttons for jump and attack and the 8-way joystick. As in the rest of the SNK Triple Z80 cores you have buttons for service and pause. Recomended gamepad button assignments:\n![gamepad buttons](/docs/Athena_btn_map.jpg)\n\n## Flip Screen settings:\nAthena does not include in the DIP settings an option to flip the screen (although it does include a Cocktail mode). Due to the fact that the default position of the screen in a screen appears inverted\nNow you have two options to fix this:\n* **Using the non-patched Athena MRA (Athena.MRA) with core hardware settings options:**\n\t* **For HDMI or/and VGA with scaler activated users (uses MiSTer framework support):** `Athena Core OSD options: other settings > Flip: Off, On`. Save settings and reload (not merely apply a reset) the Core.\n\t* **For CRT users (raw core video ouput without MiSTer framework support):** `Athena Core OSD options: HACKS (Only for Upright cabinet) > Core Screen Flip: Off, On`. Save settings.\n\tNote: you can have both video outputs active at the same time, then you could need to activate both depending on the characteristics of your screen.\n\n* **Using the JunoMan's patched MRA (_alternatives/_Athena/Athena_Screen_Flip_Fix_ROM_Patch.mra):**\nSimply load the core using said MRA file and do not touch any of the core OSD options related to flipping the screen or disable them if they were previously active. Important saving the settings after any change or reloading the core will not apply.\n\n**Note:** Do not activate screen flip settings or patch in Cocktail mode as it will not be displayed correctly.\n\n## Manual installation\nRename the Arcade-Athena_XXXXXXXX.rbf file to Athena_XXXXXXXX.rbf and copy to the SD Card to the folder  /media/fat/_Arcade/cores and the .MRA files to /media/fat/_Arcade.\n\nThe required ROM files follow the MAME naming conventions (check inside MRA for this). Is the user responsability to be installed in the following folder:\n/media/fat/_Arcade/mame/<mame rom>.zip\n\n## Acknowledgments\n* __@caiusarcade__ for their assistance in using files and converting PLD files.\n* __@topapate__ for general advice with the JTOPL core.\n* __@FCochise__ for helping with the rom settings of MRA files.\n* __@alanswx__ for helping me with some technical aspects related to the use of the MiSTer framework.\n* __Ko-fi supporters__: __bdlou__, __schermobianco__, __Nat__, __David__, __Peter Bray__, __Kevin Coleman__.\n* And all those who with their comments and shows of support have encouraged me to continue with this project.\n\n\n",
+      "readme": "# SNK Athena (Beta):\n![SNK logo](/docs/snk_corp_logo.png)\n![Game Flyer](/docs/Athena_flyer.png)\nAthena, also known as Athena's Wonder Land, is a platform arcade game produced and published in 1986 by SNK.\nFollow any core updates and news on my Twitter acount [@RndMnkIII](https://twitter.com/RndMnkIII). This project is a hobby but it requires investing in arcade game boards and specific tools, so **any donation is welcome: [https://ko-fi.com/rndmnkiii](https://ko-fi.com/rndmnkiii).**\n\n## About\nThis core as beta release will be published as independet core. Finally will be unified with the SNK Triple Z80 Core. For a list of games intended to work with the SNK Triple Z80 Core see:\n[https://github.com/mamedev/mame/blob/master/src/mame/drivers/snk.cpp](https://github.com/mamedev/mame/blob/master/src/mame/drivers/snk.cpp).  \n\n## Third party cores\n* Daniel Wallner T80 core [jesus@opencores.org](https://opencores.org/projects/t80).\n* JTOPL FPGA Clone of Yamaha OPL hardware by Jose Tejada, @topapate [(https://github.com/jotego/jtopl)](https://github.com/jotego/jtopl).\n* Based on Tim Rudy 7400 TTL library [https://github.com/TimRudy/ice-chips-verilog](https://github.com/TimRudy/ice-chips-verilog).\n\n## Instructions:\nAthena is multiplayer, where two players can play taking turns with their own controllers. You have two action buttons for jump and attack and the 8-way joystick. As in the rest of the SNK Triple Z80 cores you have buttons for service and pause. Recomended gamepad button assignments:\n![gamepad buttons](/docs/Athena_btn_map.jpg)\n\n\nFor Country Club golf game, the trackball controls (one or up to two trackballs can be used simultaneously) are emulated using a gamepad with two analog sticks (tested with the Nintendo Switch Pro Controller with USB cable):\n![analog controls](/docs/Country_Club_controls.png)\n\nApart from the standard MiSTer game controller support there is also there is SNAC support (for non-trackball) games for:\n* DB15 arcade controls (tested with the Splitter for official MiSTer by Antonio Villena. See: https://www.antoniovillena.es/store/product/splitter-for-official-mister/).\n\n## Flip Screen settings:\nAthena does not include in the DIP settings an option to flip the screen (although it does include a Cocktail mode). Due to the fact that the default position of the screen in a screen appears inverted\nNow you have two options to fix this:\n* **Using the non-patched Athena MRA (Athena.MRA) with core hardware settings options:**\n\t* **For HDMI or/and VGA with scaler activated users (uses MiSTer framework support):** `Athena Core OSD options: other settings > Flip: Off, On`. Save settings and reload (not merely apply a reset) the Core.\n\t* **For CRT users (raw core video ouput without MiSTer framework support):** `Athena Core OSD options: HACKS (Only for Upright cabinet) > Core Screen Flip: Off, On`. Save settings.\n\tNote: you can have both video outputs active at the same time, then you could need to activate both depending on the characteristics of your screen.\n\n* **Using the JunoMan's patched MRA (_alternatives/_Athena/Athena_Screen_Flip_Fix_ROM_Patch.mra):**\nSimply load the core using said MRA file and do not touch any of the core OSD options related to flipping the screen or disable them if they were previously active. Important saving the settings after any change or reloading the core will not apply.\n\n**Note:** Do not activate screen flip settings or patch in Cocktail mode as it will not be displayed correctly.\n\n## Manual installation\nRename the Arcade-Athena_XXXXXXXX.rbf file to Athena_XXXXXXXX.rbf and copy to the SD Card to the folder  /media/fat/_Arcade/cores and the .MRA files to /media/fat/_Arcade.\n\nThe required ROM files follow the MAME naming conventions (check inside MRA for this). Is the user responsability to be installed in the following folder:\n/media/fat/_Arcade/mame/<mame rom>.zip\n\n## Acknowledgments\n* To all Ko-fi contributors for supporting this project: __@bdlou__, __Peter Bray__, __Nat__, __Funkycochise__, __David__, __Kevin Coleman__, __Denymetanol__, __Schermobianco__, __TontonKaloun__, __Wark91__, __Dan__, __Beaps__, __Todd Gill__, __John Stringer__, __Moi__, __Olivier Krumm__, __Raymond Bielun__.\n* __@caiusarcade__ for their assistance in using files and converting PLD files.\n* __@topapate__ for general advice with the JTOPL core.\n* __@FCochise__ for helping with the rom settings of MRA files.\n* __@alanswx__ for helping me with some technical aspects related to the use of the MiSTer framework.\n* And all those who with their comments and shows of support have encouraged me to continue with this project.\n\n\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/Arcade-Athena_MiSTer",
       "releases": [
         {
-          "name": "Arcade-Athena_20220617.rbf",
-          "sha": "7bc5597467ac758fbe3cc0eb5c079c2d7f2c755f",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Athena_MiSTer/main/releases/Arcade-Athena_20220617.rbf",
+          "name": "Arcade-Athena_20220810.rbf",
+          "sha": "88b0b95923889ff6505d2ed83e8ddf4921c0b139",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Athena_MiSTer/main/releases/Arcade-Athena_20220810.rbf",
           "type": "RBF"
         },
         {
           "name": "Athena.mra",
-          "sha": "b3fcc22623a1c30e2975219cc97c6002de981c67",
+          "sha": "62b2f75f051eec8b2ec44b7ea8fe498b171d7cb8",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Athena_MiSTer/main/releases/Athena.mra",
           "type": "MRA",
           "extra": {
@@ -1383,8 +1383,21 @@
           }
         },
         {
+          "name": "CountryClub.mra",
+          "sha": "149164946c55fe4c65c50b14cf85334909ed191e",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Athena_MiSTer/main/releases/CountryClub.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Country Club",
+            "rbf": "Athena",
+            "zips": [
+              "countryc.zip"
+            ]
+          }
+        },
+        {
           "name": "FightingGolf.mra",
-          "sha": "78beb6bb78d8e9abd31e8333bb7de86f4eb445f7",
+          "sha": "490161074379b784a75be813c9b61ae4eabe1952",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Athena_MiSTer/main/releases/FightingGolf.mra",
           "type": "MRA",
           "extra": {
@@ -1397,7 +1410,7 @@
         },
         {
           "name": "Athena_Screen_Flip_Fix_ROM_Patch.mra",
-          "sha": "6a25b0587bc25885367333f13cac2182de5d68de",
+          "sha": "49e0a257b186ed2f4e8d0ae1a13a7eb1fbdda70a",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Athena_MiSTer/main/releases/_alternatives/_Athena/Athena_Screen_Flip_Fix_ROM_Patch.mra",
           "type": "MRA",
           "extra": {
@@ -1410,7 +1423,7 @@
         },
         {
           "name": "Athena_bootleg.mra",
-          "sha": "09db4ac5a856db2c3ea2673bb6c36b2335022351",
+          "sha": "08b8cd8192163b850526ce9745a8b1fbde9fa636",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Athena_MiSTer/main/releases/_alternatives/_Athena/Athena_bootleg.mra",
           "type": "MRA",
           "extra": {
@@ -1423,7 +1436,7 @@
         },
         {
           "name": "Super_Athena.mra",
-          "sha": "671f0a73764eaf0de1261c5758dbb3d50e2ee982",
+          "sha": "57481236413cbd2ea774867f1d8968d656a70a73",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Athena_MiSTer/main/releases/_alternatives/_Athena/Super_Athena.mra",
           "type": "MRA",
           "extra": {
@@ -2175,7 +2188,7 @@
     {
       "name": "Arcade-Cave_MiSTer",
       "description": "MiSTer arcade core for Cave 68K arcade classics.",
-      "readme": "# Cave 68000\n\nThis project contains the MiSTer core for Cave's first-generation 68000 arcade hardware.\n\n![23](https://user-images.githubusercontent.com/32810066/126911397-e54b786a-39ff-4200-8fdb-8750d1b40976.png)\n\n## Supported Games\n\n| Title                                                                                                                 | Status        |\n|-----------------------------------------------------------------------------------------------------------------------|---------------|\n| [**DoDonpachi**](https://en.wikipedia.org/wiki/DoDonPachi)                                                            | Public        |\n| [**ESP Ra. De.**](https://en.wikipedia.org/wiki/ESP_Ra.De.)                                                           | Public        |\n| [**Dangun Feveron**](https://en.wikipedia.org/wiki/Dangun_Feveron)                                                    | Public        |\n| [**Uo Poko**](https://en.wikipedia.org/wiki/Puzzle_Uo_Poko)                                                           | Public        |\n| [**Guwange**](https://en.wikipedia.org/wiki/Guwange)                                                                  | Public        |\n| [**Gaia Crusaders**](http://adb.arcadeitalia.net/dettaglio_mame.php?game_name=gaia&arcade_only=0&autosearch=1)        | Public        |\n| [**Thunder Heroes**](http://adb.arcadeitalia.net/dettaglio_mame.php?game_name=theroes&arcade_only=0&autosearch=1)     | Public        |\n| [**Donpachi**](https://en.wikipedia.org/wiki/DonPachi)                                                                | Public        |\n| [**Air Gallet**](https://en.wikipedia.org/wiki/Air_Gallet)                                                            | Unimplemented |\n| [**Hotdog Storm**](http://adb.arcadeitalia.net/dettaglio_mame.php?game_name=hotdogst&arcade_only=0&autosearch=1)      | Unimplemented |\n| [**Koro Koro Quest**](http://adb.arcadeitalia.net/dettaglio_mame.php?game_name=korokoro&arcade_only=0&autosearch=1)   | Unimplemented |\n| [**Mazinger Z**](http://adb.arcadeitalia.net/dettaglio_mame.php?game_name=mazinger&arcade_only=0&autosearch=1)        | Unimplemented |\n| [**Gogetsuji Legends**](http://adb.arcadeitalia.net/dettaglio_mame.php?game_name=plegends&arcade_only=0&autosearch=1) | Unimplemented |\n| [**Power Instinct 2**](http://adb.arcadeitalia.net/dettaglio_mame.php?game_name=pwrinst2&arcade_only=0&autosearch=1)  | Unimplemented |\n| [**Saikyou Densetsu**](http://adb.arcadeitalia.net/dettaglio_mame.php?game_name=plegendsj&arcade_only=0&autosearch=1) | Unimplemented |\n| [**Pretty Soldier Sailor Moon**](https://en.wikipedia.org/wiki/Pretty_Soldier_Sailor_Moon_(arcade_game))              | Unimplemented |\n| [**The Ninja Master**](http://adb.arcadeitalia.net/dettaglio_mame.php?game_name=metmqstr&arcade_only=0&autosearch=1)  | Unimplemented |\n\n## Credits\n\nMade with :heart: by Josh (nullobject) Bassett, 2022.\n\nThis project is based on the [prior work](https://gitlab.com/rwk-source/cave_1st_gen) of Rick (rwk) Wertenbroek, who reverse engineered DoDonPachi for his master's thesis back in 2019. I would like to thank him personally for his technical guidance along the way, and providing me with source code for his original prototype.\n\nI would also like to give a massive shout out to all my Patreon supporters. Your support keeps me working on these games, and helps bring them to everybody in the MiSTer community.\n\nSpecial thanks to my top-tier Patrons:\n\nSherwood Hachtman, J, Michael Lawlor, TheDirtyScreech, Christopher R, Bitmap Bureau, Jason Philp, cbab, Magnus Aspling, Keith Stack, Andy Palmer, Jeremy Rayner, raoulvp, Hexxellor, Dorkocity, loopfz, Benjamin Walker, Adrian Longland, Lakeside, Christopher Tuckwell, Christopher Gelatt, 80's spaceman, Shane Lynch\n\nThanks to:\n\nsixtyfps, Jeremy , Johan , Alfonso Clemente, Josh Mayer, Joost Peters, Kike Alcor, Frank Reyes, Niko, Joseph , Norman Walz, Cory Stargel, Mike Chapa, [mRg], marumusisan , richard thompson, Sam Matthews, Jeremy Riley, Raul3D, J Z, Arthur Fung, ItsACerealWow , Jon , Jonathan Garrard, Ryley, Corey Mark, dishwasherlove , Paul Houbart, fierman, Eugenio, Jaeson DeLeon, Jason Baker, Mike G, Ralph Barbagallo, Alexander Facchini, BinaryLuke, James Boone, Brock Lathrop, Castorgroup, The Collector, Hasan Tasdemir, Shaun Leach, Jan Paul, bnjc, Mahendra T., Ian Buer, Francois P, Nicolas VAILLANT, Dionys Descois, Pat Jones, CookSomeSoup, Dave Nice, Jimnakkum, Mark Alvarez, Magus Incognito, Josh Yates-Walker, Simon Rodemann, ItsBobDudes, \ud64d\ub300 \ubb38, Brian Bickell, RayGun, Oriez, chackokhan, Mo Roy, James Jefferies, Mike Puelinckx, Chris Moon, Matt McCarthy, Aurich Lawson, freddie duron, Andrew Hannan, Roberto, Matt Richenburg, sascha matzke, Mist Sonata, \"\", Akshay Wadekar, Jeff Stanifer, David Nissen Schmidt, Paul Morales, Etik, Tymour Azzam, Arthur Carra, villainmarks, Psamtik , David Moylan, Allan Locso, Richard Thompson, Tyrone Cheng, Jay Lanagan, G Foyle, Andrea Bogazzi, IndieRetroHack , b garcia, Elio Berrios, Guy B, JSwan, Jonathan McDougall, twiiins, Martin Donlon, Amir Kavehrad, Alan Steremberg, Andre Bergei, Stefan Krueger, Denis Br\u00e6khus, Josh, Bakaskal, Colton Taylor, KanedaGTTurbo, Connor Stevens, Thomas Oskam, Edwin Fisher, Shannon King, Kevin Phelps, David Gralnik, jklax, Mike Stimpson, SwedishGojira , Nick Catto, OzMiSTerMods, Kelly Greenidge, BigJuffer, PaulieWalnuts, Scott Dowdle, Kinnon Yee, Barry Porch, \ud615 \ub3d9\ubc14, Daniel Bauza, jbrlll, Martin Birkeldh, Torren Beitler, Negativeions, Tsht , Hung Ta, mpong , Meanderthal, yomitron, Adrian , Ulrich Straller, Erhune , ParkNangJung, Guillermo Izard, Matthew Hutchinson, Adrian Bledsoe, CyberpunkDre, Stephane Tremblay, Michael Deutsch, Grant King, Nailbomb , Michele Fiordispina, Adam Pita, Johan Smolinski, Balthasar Schopman, Dan Doyle, Darren Chell, M, Chris Marshall, Karl Lurman, Gillaxian, Jordon Phillips, Hayden Brown, Niall O'Higgins, Erik Krogh, Christian Keilback, Laurent Cooper, Tony Tang, Spiff , Phil Piwonka, Sipan Calli, Larry , SteveP, Matt Hargett, Arturo Sanchez, lamarax, Adrian Nabarro, 8PercentAndroid , Ben Cooper, James , Todd Lemons, Gladius, RetroRGB , Christa Isobel Lee, Rachael Netz, Report2Marty , David Becerro Recio, Peter Antoniew, Phil Fleabag, nakedarthur, Anthony Foderaro, Ian Court, Alex Limi, Matt Vande Vorde, lynn minmei, Keith Gordon, Michele Fornasini, Oliver Wndmth, the Chuckwagon, Tonton Kaloun, Matsu, Michael Brillant, Matthew Belshan, type78 , Vincent Bijwaard, Zakk, AL1138, krivx , Craig Somerfield, Hentai Joe, Steven , Jonathan Tuttle, Joshua Jodoin, it290, Lucian , Roberto Pedroni, Serge.EXE, Shannon Birt, Robert Dickenson, Richard Simpson, Adam Kessell, Klaus Wolf, dot_lvl , Ed Balan, Robert Douglas, Bradon Kanyid, RandomRetro, Nicholas Murray, Andyways , Nikolay Ivanchev, Scott Taylor, Josiah Wilson, hyp36rmax, Ben, Steven LeMaire, Chris Mawman, modsbox, Collin Jacobs, Darren Wootton, Fay Dek, Anton Gale, Steven Yedwab, Michael Anderson, Matthew Chretien, Owlnonymous , Quentin Sykes, Peter Brown, Charles , Trifle, Angelo Kanaris, Silvio Samadelli, AHMAD ALHAMLI, SteelRush , Rub\u00e8n Celada, felleg, odinmma ofili, SJohansson , Victor Lindo, Keith Stebor, ARCADEAGES , Ben Toman, loloC2C , Ronan Amicel, Magnus Kvevlander, SmoMo, Ludovic Germaneau, BigJazzyJay, Rob Shaw, Jim Wehrfritz, Xtro, Jockel, MrX-8B , Ruben Johnson, David Jones, Benjamin Leggett, ShootTheCore , Henry R, Miguel Candelario, Matt Postema, ganondork, Cody E, Marvin Blauth, Arjan de Lang, Tony Peters, Shaneus , DarkStar7 , Samuli Tuomola, Jeffrey Skube, Vlad Bogdalik, Darren Newman, Michael Packard, Porkchop Express, Keith F. Kelly, Humanoide70 , Mingus, Ross Jolet, Mike Holzinger, Matthew, emceebois , John Stringer, Allen Tipper, Johan Sj\u00f6strand, Roland , Kevin Igoe, Steven Hertz, Ulf Skutnabba\n\n...and the rest of my supporters :sparkling_heart:\n\nThe table template and attached image credit goes to [**atrac17**](https://github.com/atrac17).\n\n## Development\n\nThis core is primarily written in [Chisel](https://www.chisel-lang.org/).\n\nTo compile this core you will need a working Scala environment and Intel Quartus 17 (or greater).\n\nCompile the core:\n\n    make build\n\nProgram the DE10-Nano:\n\n    make program\n\n## License\n\nThis program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.\n",
+      "readme": "# Cave 68000\n\n[![Test](https://github.com/MiSTer-devel/Arcade-Cave_MiSTer/actions/workflows/test.yml/badge.svg)](https://github.com/MiSTer-devel/Arcade-Cave_MiSTer/actions/workflows/test.yml)\n\nThis project contains the MiSTer core for Cave's first-generation 68000 arcade hardware.\n\n![23](https://user-images.githubusercontent.com/32810066/126911397-e54b786a-39ff-4200-8fdb-8750d1b40976.png)\n\n## Supported Games\n\n| Title                                                                                                                 | Status        |\n|-----------------------------------------------------------------------------------------------------------------------|---------------|\n| [**DoDonpachi**](https://en.wikipedia.org/wiki/DoDonPachi)                                                            | Public        |\n| [**ESP Ra. De.**](https://en.wikipedia.org/wiki/ESP_Ra.De.)                                                           | Public        |\n| [**Dangun Feveron**](https://en.wikipedia.org/wiki/Dangun_Feveron)                                                    | Public        |\n| [**Uo Poko**](https://en.wikipedia.org/wiki/Puzzle_Uo_Poko)                                                           | Public        |\n| [**Guwange**](https://en.wikipedia.org/wiki/Guwange)                                                                  | Public        |\n| [**Gaia Crusaders**](http://adb.arcadeitalia.net/dettaglio_mame.php?game_name=gaia&arcade_only=0&autosearch=1)        | Public        |\n| [**Thunder Heroes**](http://adb.arcadeitalia.net/dettaglio_mame.php?game_name=theroes&arcade_only=0&autosearch=1)     | Public        |\n| [**Donpachi**](https://en.wikipedia.org/wiki/DonPachi)                                                                | Public        |\n| [**Air Gallet**](https://en.wikipedia.org/wiki/Air_Gallet)                                                            | Unimplemented |\n| [**Hotdog Storm**](http://adb.arcadeitalia.net/dettaglio_mame.php?game_name=hotdogst&arcade_only=0&autosearch=1)      | WIP           |\n| [**Koro Koro Quest**](http://adb.arcadeitalia.net/dettaglio_mame.php?game_name=korokoro&arcade_only=0&autosearch=1)   | Unimplemented |\n| [**Mazinger Z**](http://adb.arcadeitalia.net/dettaglio_mame.php?game_name=mazinger&arcade_only=0&autosearch=1)        | Unimplemented |\n| [**Gogetsuji Legends**](http://adb.arcadeitalia.net/dettaglio_mame.php?game_name=plegends&arcade_only=0&autosearch=1) | Unimplemented |\n| [**Power Instinct 2**](http://adb.arcadeitalia.net/dettaglio_mame.php?game_name=pwrinst2&arcade_only=0&autosearch=1)  | Unimplemented |\n| [**Saikyou Densetsu**](http://adb.arcadeitalia.net/dettaglio_mame.php?game_name=plegendsj&arcade_only=0&autosearch=1) | Unimplemented |\n| [**Pretty Soldier Sailor Moon**](https://en.wikipedia.org/wiki/Pretty_Soldier_Sailor_Moon_(arcade_game))              | Unimplemented |\n| [**The Ninja Master**](http://adb.arcadeitalia.net/dettaglio_mame.php?game_name=metmqstr&arcade_only=0&autosearch=1)  | Unimplemented |\n\n## Credits\n\nMade with :heart: by Josh (nullobject) Bassett, 2022.\n\nThis project is based on the [prior work](https://gitlab.com/rwk-source/cave_1st_gen) of Rick (rwk) Wertenbroek, who reverse engineered DoDonPachi for his master's thesis back in 2019. I would like to thank him personally for his technical guidance along the way, and providing me with source code for his original prototype.\n\nI would also like to give a massive shout out to all my Patreon supporters. Your support keeps me working on these games, and helps bring them to everybody in the MiSTer community.\n\nSpecial thanks to my top-tier Patrons:\n\nSherwood Hachtman, J, Michael Lawlor, TheDirtyScreech, Christopher R, Bitmap Bureau, Jason Philp, cbab, Magnus Aspling, Keith Stack, Andy Palmer, Jeremy Rayner, raoulvp, Hexxellor, Dorkocity, loopfz, Benjamin Walker, Adrian Longland, Lakeside, Christopher Tuckwell, Christopher Gelatt, 80's spaceman, Shane Lynch\n\nThanks to:\n\nsixtyfps, Jeremy , Johan , Alfonso Clemente, Josh Mayer, Joost Peters, Kike Alcor, Frank Reyes, Niko, Joseph , Norman Walz, Cory Stargel, Mike Chapa, [mRg], marumusisan , richard thompson, Sam Matthews, Jeremy Riley, Raul3D, J Z, Arthur Fung, ItsACerealWow , Jon , Jonathan Garrard, Ryley, Corey Mark, dishwasherlove , Paul Houbart, fierman, Eugenio, Jaeson DeLeon, Jason Baker, Mike G, Ralph Barbagallo, Alexander Facchini, BinaryLuke, James Boone, Brock Lathrop, Castorgroup, The Collector, Hasan Tasdemir, Shaun Leach, Jan Paul, bnjc, Mahendra T., Ian Buer, Francois P, Nicolas VAILLANT, Dionys Descois, Pat Jones, CookSomeSoup, Dave Nice, Jimnakkum, Mark Alvarez, Magus Incognito, Josh Yates-Walker, Simon Rodemann, ItsBobDudes, \ud64d\ub300 \ubb38, Brian Bickell, RayGun, Oriez, chackokhan, Mo Roy, James Jefferies, Mike Puelinckx, Chris Moon, Matt McCarthy, Aurich Lawson, freddie duron, Andrew Hannan, Roberto, Matt Richenburg, sascha matzke, Mist Sonata, \"\", Akshay Wadekar, Jeff Stanifer, David Nissen Schmidt, Paul Morales, Etik, Tymour Azzam, Arthur Carra, villainmarks, Psamtik , David Moylan, Allan Locso, Richard Thompson, Tyrone Cheng, Jay Lanagan, G Foyle, Andrea Bogazzi, IndieRetroHack , b garcia, Elio Berrios, Guy B, JSwan, Jonathan McDougall, twiiins, Martin Donlon, Amir Kavehrad, Alan Steremberg, Andre Bergei, Stefan Krueger, Denis Br\u00e6khus, Josh, Bakaskal, Colton Taylor, KanedaGTTurbo, Connor Stevens, Thomas Oskam, Edwin Fisher, Shannon King, Kevin Phelps, David Gralnik, jklax, Mike Stimpson, SwedishGojira , Nick Catto, OzMiSTerMods, Kelly Greenidge, BigJuffer, PaulieWalnuts, Scott Dowdle, Kinnon Yee, Barry Porch, \ud615 \ub3d9\ubc14, Daniel Bauza, jbrlll, Martin Birkeldh, Torren Beitler, Negativeions, Tsht , Hung Ta, mpong , Meanderthal, yomitron, Adrian , Ulrich Straller, Erhune , ParkNangJung, Guillermo Izard, Matthew Hutchinson, Adrian Bledsoe, CyberpunkDre, Stephane Tremblay, Michael Deutsch, Grant King, Nailbomb , Michele Fiordispina, Adam Pita, Johan Smolinski, Balthasar Schopman, Dan Doyle, Darren Chell, M, Chris Marshall, Karl Lurman, Gillaxian, Jordon Phillips, Hayden Brown, Niall O'Higgins, Erik Krogh, Christian Keilback, Laurent Cooper, Tony Tang, Spiff , Phil Piwonka, Sipan Calli, Larry , SteveP, Matt Hargett, Arturo Sanchez, lamarax, Adrian Nabarro, 8PercentAndroid , Ben Cooper, James , Todd Lemons, Gladius, RetroRGB , Christa Isobel Lee, Rachael Netz, Report2Marty , David Becerro Recio, Peter Antoniew, Phil Fleabag, nakedarthur, Anthony Foderaro, Ian Court, Alex Limi, Matt Vande Vorde, lynn minmei, Keith Gordon, Michele Fornasini, Oliver Wndmth, the Chuckwagon, Tonton Kaloun, Matsu, Michael Brillant, Matthew Belshan, type78 , Vincent Bijwaard, Zakk, AL1138, krivx , Craig Somerfield, Hentai Joe, Steven , Jonathan Tuttle, Joshua Jodoin, it290, Lucian , Roberto Pedroni, Serge.EXE, Shannon Birt, Robert Dickenson, Richard Simpson, Adam Kessell, Klaus Wolf, dot_lvl , Ed Balan, Robert Douglas, Bradon Kanyid, RandomRetro, Nicholas Murray, Andyways , Nikolay Ivanchev, Scott Taylor, Josiah Wilson, hyp36rmax, Ben, Steven LeMaire, Chris Mawman, modsbox, Collin Jacobs, Darren Wootton, Fay Dek, Anton Gale, Steven Yedwab, Michael Anderson, Matthew Chretien, Owlnonymous , Quentin Sykes, Peter Brown, Charles , Trifle, Angelo Kanaris, Silvio Samadelli, AHMAD ALHAMLI, SteelRush , Rub\u00e8n Celada, felleg, odinmma ofili, SJohansson , Victor Lindo, Keith Stebor, ARCADEAGES , Ben Toman, loloC2C , Ronan Amicel, Magnus Kvevlander, SmoMo, Ludovic Germaneau, BigJazzyJay, Rob Shaw, Jim Wehrfritz, Xtro, Jockel, MrX-8B , Ruben Johnson, David Jones, Benjamin Leggett, ShootTheCore , Henry R, Miguel Candelario, Matt Postema, ganondork, Cody E, Marvin Blauth, Arjan de Lang, Tony Peters, Shaneus , DarkStar7 , Samuli Tuomola, Jeffrey Skube, Vlad Bogdalik, Darren Newman, Michael Packard, Porkchop Express, Keith F. Kelly, Humanoide70 , Mingus, Ross Jolet, Mike Holzinger, Matthew, emceebois , John Stringer, Allen Tipper, Johan Sj\u00f6strand, Roland , Kevin Igoe, Steven Hertz, Ulf Skutnabba\n\n...and the rest of my supporters :sparkling_heart:\n\nThe table template and attached image credit goes to [**atrac17**](https://github.com/atrac17).\n\n## Development\n\nThis core is primarily written in [Chisel](https://www.chisel-lang.org/).\n\nTo compile this core you will need a working Scala environment and Intel Quartus 17 (or greater).\n\nCompile the core:\n\n    make build\n\nProgram the DE10-Nano:\n\n    make program\n\n## License\n\nThis program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/Arcade-Cave_MiSTer",
@@ -2255,7 +2268,7 @@
         },
         {
           "name": "DoDonPachi (Arrange).mra",
-          "sha": "03cf101f00466848aa77f56c6685351411b0e50b",
+          "sha": "887690ee3ab48c8925091e0fe922ff182674724b",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cave_MiSTer/main/releases/DoDonPachi%20(Arrange).mra",
           "type": "MRA",
           "extra": {
@@ -2268,7 +2281,7 @@
         },
         {
           "name": "DoDonPachi (Japan).mra",
-          "sha": "8665a6c129459ea27dfc0e338545d379f64a35b0",
+          "sha": "86fcc45339d2182e07d31333c2ecf1ef3a0e9e67",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cave_MiSTer/main/releases/DoDonPachi%20(Japan).mra",
           "type": "MRA",
           "extra": {
@@ -2307,7 +2320,7 @@
         },
         {
           "name": "DonPachi (Japan).mra",
-          "sha": "c91343d988aec0dc8bb71a4589f5c6e44e4cf711",
+          "sha": "84280c18aab317371898ed71750d2cb67147c988",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cave_MiSTer/main/releases/DonPachi%20(Japan).mra",
           "type": "MRA",
           "extra": {
@@ -2359,7 +2372,7 @@
         },
         {
           "name": "Fever SOS.mra",
-          "sha": "83814266a5d990c058958b22ed603b152af0709e",
+          "sha": "0d02b8bdbc4b603897d94f1f7f43babb1c92feb6",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cave_MiSTer/main/releases/Fever%20SOS.mra",
           "type": "MRA",
           "extra": {
@@ -2385,7 +2398,7 @@
         },
         {
           "name": "Guwange (Special).mra",
-          "sha": "17a94a01e5ecd6b749d2bca04b638e933feface0",
+          "sha": "b3965ff5db14f739233325962779fcf40a57ac85",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cave_MiSTer/main/releases/Guwange%20(Special).mra",
           "type": "MRA",
           "extra": {
@@ -2411,7 +2424,7 @@
         },
         {
           "name": "Puzzle Uo Poko (Japan).mra",
-          "sha": "cc75bef79347e306c695ab1e82f374d752774217",
+          "sha": "77c3363a8a466b4c1b000c374957fb14b232816d",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cave_MiSTer/main/releases/Puzzle%20Uo%20Poko%20(Japan).mra",
           "type": "MRA",
           "extra": {
@@ -2437,7 +2450,7 @@
         },
         {
           "name": "Thunder Heroes.mra",
-          "sha": "5b7152451716f5c2c9e33c18f131d0314d862b5b",
+          "sha": "c615383b2415e73816b58e8e51b071aabfd85a0a",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cave_MiSTer/main/releases/Thunder%20Heroes.mra",
           "type": "MRA",
           "extra": {
@@ -4386,14 +4399,14 @@
       "url": "https://github.com/MiSTer-devel/Arcade-IkariWarriors_MiSTer",
       "releases": [
         {
-          "name": "Arcade-IkariWarriors_20220803.rbf",
-          "sha": "600110bdb9a1810774ef4057910ddecfb77d9d0c",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IkariWarriors_MiSTer/main/releases/Arcade-IkariWarriors_20220803.rbf",
+          "name": "Arcade-IkariWarriors_20220806.rbf",
+          "sha": "e8cb2b1c6ca72e435a62b0ee3bfd44178073e172",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IkariWarriors_MiSTer/main/releases/Arcade-IkariWarriors_20220806.rbf",
           "type": "RBF"
         },
         {
           "name": "Ikari Warriors.mra",
-          "sha": "f1884427ca771043ae39f07a82e9376a5c29c5ca",
+          "sha": "c8c2e774dd5b2e767059f25ebd32a1b6ced83048",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IkariWarriors_MiSTer/main/releases/Ikari%20Warriors.mra",
           "type": "MRA",
           "extra": {
@@ -4406,7 +4419,7 @@
         },
         {
           "name": "Victory Road.mra",
-          "sha": "5e0f303172a73686d25aa7820a4638fa0ff912ef",
+          "sha": "37e12e63b0ecf772530ae9438c292e01af776d7a",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IkariWarriors_MiSTer/main/releases/Victory%20Road.mra",
           "type": "MRA",
           "extra": {
@@ -4419,7 +4432,7 @@
         },
         {
           "name": "Ikari Warriors JP.mra",
-          "sha": "7f267cd9259d92f18abc82ec1829b2f7f4e4a7dc",
+          "sha": "993f587449b403aed54294d9aadac776c7db4e06",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IkariWarriors_MiSTer/main/releases/_alternatives/_Ikari%20Warriors/Ikari%20Warriors%20JP.mra",
           "type": "MRA",
           "extra": {
@@ -4432,7 +4445,7 @@
         },
         {
           "name": "Dogou Souken.mra",
-          "sha": "d415be0a34b0184c2f62cea071a16d5f3c406eee",
+          "sha": "cd814aab62891cff0533f3b659ea894e9a285009",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IkariWarriors_MiSTer/main/releases/_alternatives/_Victory%20Road/Dogou%20Souken.mra",
           "type": "MRA",
           "extra": {
@@ -7229,6 +7242,30 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Bakraid_20220814.rbf",
+          "sha": "b9750dcfcef280da83891fe78ccbe83a8bf4e0cc",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Raizing_MiSTer/develop/releases/Arcade-Bakraid_20220814.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Bakraid_20220815.rbf",
+          "sha": "2f345cb4cb0eb6b0835b212f8f44cb3bf630ccb3",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Raizing_MiSTer/develop/releases/Arcade-Bakraid_20220815.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Bakraid_20220816.rbf",
+          "sha": "2f345cb4cb0eb6b0835b212f8f44cb3bf630ccb3",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Raizing_MiSTer/develop/releases/Arcade-Bakraid_20220816.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Bakraid_20220818.rbf",
+          "sha": "177702b6473cf342282195b4a29db56afa662dc1",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Raizing_MiSTer/develop/releases/Arcade-Bakraid_20220818.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Arcade-Batrider_20220724.rbf",
           "sha": "31c8ce7b1790f39efaf23d8d42b6866a1501ada0",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Raizing_MiSTer/develop/releases/Arcade-Batrider_20220724.rbf",
@@ -7253,6 +7290,30 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Batrider_20220814.rbf",
+          "sha": "1fa75ada48799db1b2b435b78f5af49477d7c1a4",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Raizing_MiSTer/develop/releases/Arcade-Batrider_20220814.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Batrider_20220815.rbf",
+          "sha": "773ec2a7e364cd5f65f4d15f03df6ebdfed01219",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Raizing_MiSTer/develop/releases/Arcade-Batrider_20220815.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Batrider_20220816.rbf",
+          "sha": "220e2c4c1c9e22630783d639da251536c6607f25",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Raizing_MiSTer/develop/releases/Arcade-Batrider_20220816.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Batrider_20220818.rbf",
+          "sha": "d1b982151878502bc49799e0558689e085f88c49",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Raizing_MiSTer/develop/releases/Arcade-Batrider_20220818.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Arcade-Garegga_20220724.rbf",
           "sha": "b1714fd624a3694e618ac0ca0ca52273f85c79aa",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Raizing_MiSTer/develop/releases/Arcade-Garegga_20220724.rbf",
@@ -7268,6 +7329,30 @@
           "name": "Arcade-Garegga_20220729.rbf",
           "sha": "37a58ff5ee8588a2d72820872cbaaa287c6d3f91",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Raizing_MiSTer/develop/releases/Arcade-Garegga_20220729.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Garegga_20220814.rbf",
+          "sha": "5ced2a714a4a5d68c06210060a4ed77e04b05d73",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Raizing_MiSTer/develop/releases/Arcade-Garegga_20220814.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Garegga_20220815.rbf",
+          "sha": "54b6bc274c9e53d94077392daa90c86d2aa1bf9e",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Raizing_MiSTer/develop/releases/Arcade-Garegga_20220815.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Garegga_20220816.rbf",
+          "sha": "9ede892dd587c4f38104807f08a5d82bbfc0bea7",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Raizing_MiSTer/develop/releases/Arcade-Garegga_20220816.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Garegga_20220818.rbf",
+          "sha": "b8e4ab9bc47683d1e6b98cc80bfa58b2ad9f63ed",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Raizing_MiSTer/develop/releases/Arcade-Garegga_20220818.rbf",
           "type": "RBF"
         },
         {
@@ -9590,7 +9675,7 @@
         },
         {
           "name": "TNKIII.mra",
-          "sha": "e471fd9748bffbe6e0effdfe8e575afec6c1d465",
+          "sha": "f365a13292fd36954b590c8e1473ce8b0d3c6d4d",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TNKIII_MiSTer/main/releases/TNKIII.mra",
           "type": "MRA",
           "extra": {
@@ -9603,7 +9688,7 @@
         },
         {
           "name": "T.A.N.K_Japan.mra",
-          "sha": "2633d52396abecb79feaf76ccbc7710ea9b4b703",
+          "sha": "fcbd1ee3ffc2c376fdae9e288e8563488c3bb2b0",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TNKIII_MiSTer/main/releases/_alternatives/_TNKIII/T.A.N.K_Japan.mra",
           "type": "MRA",
           "extra": {
@@ -11622,6 +11707,22 @@
       ]
     },
     {
+      "name": "Casio_PV-2000_MiSTer",
+      "description": "Casio PV-2000 for MiSTer",
+      "readme": "<p align=\"center\">\n    <img style=\"width: 450px;\" src=\"assets/casio-pv-2000.png\">\n</p>\n\n# [Casio PV-2000](https://www.old-computers.com/museum/computer.asp?c=1167) for [MiSTer](https://mister-devel.github.io/MkDocs_MiSTer/)\nThis is an FPGA implementation of the Casio PV-2000 computer for the MiSTer FPGA platform.\n\n## Features\n- Cartridge Bin files (.bin)\n- Joysticks for up to two players\n\n## Required Files - Not Included\nSystem Rom can be obtained from Mame and must be named boot0.rom in the games/Casio_PV-2000/ folder.\n- Extract the hn613128pc64.bin file from pv2000.zip and rename it boot0.rom\n\n## Joystick\n- Support for two controllers, each with two Fire Buttons (Attack 0 and Attack 1), Select and Start.\n- Configure buttons via in-core OSD menu.\n\n## Keyboard Mapping\nPC | Casio\n-- | ----\n<kbd>F1</kbd> | <kbd>Mode</kbd>\n<kbd>F11</kbd> | <kbd>_</kbd>\n<kbd>Insert</kbd> | <kbd>Insert/Delete</kbd>\n<kbd>Delete</kbd> | <kbd>Insert/Delete</kbd>\n<kbd>Home</kbd> | <kbd>Home/CLS</kbd>\n<kbd>Left CTRL</kbd> | <kbd>Attack 0</kbd>\n<kbd>Left ALT</kbd> | <kbd>Attack 1</kbd>\n<kbd>Right CTRL</kbd> | <kbd>FUNC</kbd>\n<kbd>Right ALT</kbd> | <kbd>COLOR</kbd>\n<kbd>ESC</kbd> | <kbd>Stop/Cont</kbd>\n<kbd>Page Up</kbd> | <kbd>Stop/Cont</kbd>\n<kbd>Backspace</kbd> | <kbd>Cursor Left</kbd>\n<kbd>Caps Lock</kbd> | Toggle Between English and Hiragana\n<kbd>\"</kbd> | <kbd>:</kbd>\n<kbd>=</kbd> | <kbd>&#65509;</kbd>\n<kbd>\\\\</kbd> | <kbd>@</kbd>\n\n## Features not implemented\n- Tape/Cassette support\n- Printer Support\n\n## Notes\n- Mame contains three cartriges that are split into two rom files.  These files must be merged together into one rom file.\n    - (Win Command Prompt) `copy /B Rom1.bin + Rom2.bin MyCart.bin`\n    - (Linux/MiSTer) `cat Rom1.bin Rom2.bin > MyCart.bin`\n",
+      "archived": false,
+      "fork": false,
+      "url": "https://github.com/MiSTer-devel/Casio_PV-2000_MiSTer",
+      "releases": [
+        {
+          "name": "Casio_PV-2000_20220811.rbf",
+          "sha": "a50a5d252c1accf2f25b14c3e2799ab856e2dcdb",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Casio_PV-2000_MiSTer/main/releases/Casio_PV-2000_20220811.rbf",
+          "type": "RBF"
+        }
+      ]
+    },
+    {
       "name": "ChannelF_MiSTer",
       "description": "Fairchild Channel F core for MiSTer",
       "readme": "# ChannelF_MiSTer\n\nControls\nChannelF uses two joysticks that can be moved in 4 directions, they can also be pushed, pulled and the knob can be turned left or right.\n\nThere are 5 buttons on the Channel F unit :\n    RESET\n    (1) TIME  / 2 min / HOCKEY\n    (2) MODE  / 5 min / TENNIS\n    (3) HOLD  / 10 min / GAME 3\n    (4) START / 20 min / GAME 4\n\nThere are 2 games in ROM : Hockey and Tennis which can be run without loading any cartridge.\n\n1) Press RESET\nG? : The console asks which game shall be started\n     - Press 1 for Hockey\n     - Press 2 for Tennis\nS? : The console waits before starting the game\n     - Press 1 to select a time limit\n       T? : Set time limit\n          - Press 1..4 for the time limit\n     - Press 2 to select game speed\n       M? : Set speed\n          - Press 1..4 for the speed\n     - Press 4 to start play\n    \n",
@@ -11950,9 +12051,25 @@
       ]
     },
     {
+      "name": "CreatiVision_MiSTer",
+      "description": "CreatiVision FPGA Implementation",
+      "readme": "# VTech Creativision\n\nVTech CreatiVision core for MiSTer FPGA by Kitrinx\n\n## General description\nThe CreatiVision, also known as the \"Dick Smith Wizzard\" in Australia and New Zealand, was released in 1982 and is a console-cum-computer from the era of the Coleco Adam and Intellivision. The system would see 18 games released for it on cart, as well as a Visual Basic cart to allow writing code, and a cassette add-on for saving and loading code from Basic.\n\nA novel feature of the system are the controllers. Two joysticks sit either side of a QWERTY keyboard on the console, each of which can be removed and rotated 90 degrees for gameplay. The unique aspect here is half of the keyboard is attached to each joystick and form additional buttons utilised in games which each had a simple overlay provided renaming the buttons in use. In addition to the keyboard buttons each joystick also had a button on each side. Despite the extra keyboard buttons, most carts only used two for start and select, and relied solely on the side buttons for gameplay.\n\nThe CreatiVision was slightly revised and released as the home computers the \"Laser 2001\" in West Germany and France, while in Finland it was released by Salora as the \"Manager\" with a Finnish keyboard layout and character set. These computers are fully supported in the core and can be experienced by loading the corresponding BIOS for the system. The computers boot straight into Basic.\n\n## Setup\nThis core requires a BIOS. Any of the BIOSes will work, but the best one is for either the funvision or the Creativision. The Laser2001 bios doesn't have any real advantages. BIOS can be loaded either by naming it boot0.rom, or loading it from the menu. Boot1.rom can be a game of your choosing that you want loaded by default.\n\n## ROM Compatibility\nThe roms for this system don't have a consistent format. All games have been tested to work using [this](http://www.madrigaldesign.it/creativemu/news.php) site as a reference. The rom loading also complies with the way mame loads them. Some packs may have older or other formatted roms which don't load correctly because they have a different data order.\n\n## TODO\nCasette loading is not finished yet. Right now you can load .bas file to have the system emulate typing them into the basic prompt. In the future this will be expanded to load proper audio casettes and enter the text directly into memory.\n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/MiSTer-devel/CreatiVision_MiSTer",
+      "releases": [
+        {
+          "name": "CreatiVision_20220814.rbf",
+          "sha": "a8d734a6d9559f4098deb32b25a5b16af233bfcf",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/CreatiVision_MiSTer/master/releases/CreatiVision_20220814.rbf",
+          "type": "RBF"
+        }
+      ]
+    },
+    {
       "name": "Distribution_MiSTer",
       "description": "This repository contains all the files that you'll want in your MiSTer",
-      "readme": "# MiSTer Distribution\n\nThis repository contains all the files that you'll want in your MiSTer.\n\nYou may download all of them at once as a zip through the [following link](https://github.com/MiSTer-devel/Distribution_MiSTer/archive/refs/heads/main.zip). Once you have them, place them as-is in your [properly initialised SD card](https://github.com/MiSTer-devel/mr-fusion), and everything should work out of the box.\n\n### MiSTer Project\n\nIf you want to check more about the MiSTer project, please check [this wiki](https://github.com/MiSTer-devel/Main_MiSTer/wiki).\n\n### MiSTer Downloader\n\nFor downloading all of these files directly from your MiSTer, use the [MiSTer Downloader](https://github.com/MiSTer-devel/Downloader_MiSTer).\n\n#### Tags that you may use with 'Download Filters' feature\n\nRead about how to use them [here](https://github.com/MiSTer-devel/Downloader_MiSTer/blob/main/docs/download-filters.md).\n\n##### List:\n\n`acornatom`, `acornelectron`, `adam`, `adctest`, `adventurevision`, `alicemc10`, `all_filters`, `altair8800`, `alternatives`, `amiga`, `amstrad`, `amstrad-pcw`, `amstradpcw`, `ao486`, `apogee`, `apple-i`, `apple-ii`, `aquarius`, `arcade`, `arcade-arkanoid`, `arcade-asteroids`, `arcade-asteroidsdeluxe`, `arcade-astrocade`, `arcade-ataritetris`, `arcade-athena`, `arcade-bagman`, `arcade-bakraid`, `arcade-batrider`, `arcade-berzerk`, `arcade-blackwidow`, `arcade-blockade`, `arcade-bombjack`, `arcade-breakout`, `arcade-burgertime`, `arcade-burningrubber`, `arcade-canyonbomber`, `arcade-cave`, `arcade-centipede`, `arcade-computerspace`, `arcade-cores`, `arcade-cosmic`, `arcade-crazyballoon`, `arcade-crazyclimber`, `arcade-crazykong`, `arcade-defender`, `arcade-digdug`, `arcade-dominos`, `arcade-donkeykong`, `arcade-donkeykong3`, `arcade-donkeykongjunior`, `arcade-dorodon`, `arcade-dottorikun`, `arcade-druaga`, `arcade-finalizer`, `arcade-foodfight`, `arcade-frenzy`, `arcade-galaga`, `arcade-galaxian`, `arcade-gaplus`, `arcade-garegga`, `arcade-gauntlet`, `arcade-gyruss`, `arcade-ikariwarriors`, `arcade-iremm62`, `arcade-ironhorse`, `arcade-jackal`, `arcade-jailbreak`, `arcade-joust2`, `arcade-ladybug`, `arcade-lunarlander`, `arcade-mariobros`, `arcade-mcr1`, `arcade-mcr2`, `arcade-mcr3`, `arcade-mcr3mono`, `arcade-mcr3scroll`, `arcade-moonpatrol`, `arcade-mrdo`, `arcade-mysticmarathon`, `arcade-ninjakun`, `arcade-pacman`, `arcade-pengo`, `arcade-phoenix`, `arcade-pleiads`, `arcade-polyplay`, `arcade-pong`, `arcade-pooyan`, `arcade-popeye`, `arcade-qbert`, `arcade-rallyx`, `arcade-riverpatrol`, `arcade-robotron`, `arcade-rshnatk`, `arcade-scootershooter`, `arcade-scramble`, `arcade-segasys1`, `arcade-silverland`, `arcade-sms`, `arcade-snk_triplez80`, `arcade-solomonskey`, `arcade-spaceinvaders`, `arcade-spacerace`, `arcade-sprint1`, `arcade-sprint2`, `arcade-subs`, `arcade-superbreakout`, `arcade-tecmo`, `arcade-tiamc1`, `arcade-timepilot`, `arcade-timepilot84`, `arcade-tnkiii`, `arcade-traverseusa`, `arcade-turkeyshoot`, `arcade-ultratank`, `arcade-vball`, `arcade-xevious`, `arcade-zaxxon`, `arcade-zigzag`, `arcadelpf`, `arcadia`, `archie`, `arduboy`, `astrocade`, `atari5200`, `atari7800`, `atari800`, `atarilynx`, `atarist`, `avision`, `ay-3-8500`, `bbcmicro`, `bios`, `bk0011m`, `c16`, `c64`, `channelf`, `cheats`, `chess`, `chip8`, `coco2`, `coco3`, `coleco`, `colecoadam`, `colecovision`, `complexmultichromatic`, `computer`, `computer-cores`, `console`, `console-cores`, `contrast_boost`, `cores`, `corespecific`, `crt-simulation`, `displayspecific`, `docs`, `drv`, `edsac`, `epochgalaxyii`, `essential`, `extra-utilities`, `famicom`, `filters`, `filters_audio`, `filters_video`, `flappy`, `flappybird`, `font`, `galaksija`, `gamate`, `gameboy`, `gameboy2p`, `gamenwatch`, `gameoflife`, `games`, `gamma`, `gba`, `gba2p`, `generallpf`, `genesis`, `gnw`, `handheld2p`, `hbmame`, `inputtest`, `intellivision`, `interact`, `jupiter`, `laser`, `laser310`, `lcd-general`, `lcd-integeronly`, `linux`, `lynx48`, `macplus`, `mame`, `mastersystem`, `megacd`, `megadrive`, `memte`, `memtest`, `menu`, `minimig`, `mra`, `msx`, `multicomp`, `neogeo`, `nes`, `nintendo`, `odyssey2`, `old`, `ondra_spo186`, `orao`, `oric`, `other`, `other-cores`, `palettes`, `pc88`, `pc8801`, `pcengine`, `pcenginecd`, `pdp1`, `pet2001`, `pmd85`, `poly_gamma`, `presets`, `psx`, `pure_gamma`, `ql`, `readme`, `rx78`, `s32x`, `samcoupe`, `scanlines-adaptive`, `scanlines-brighter`, `scanlines-standard`, `scripts`, `segacd`, `service-cores`, `sgb`, `shadow_masks`, `sharpmz`, `simplemonochrome`, `slugcross`, `sms`, `snes`, `sordm5`, `specialist`, `spectrum`, `spmx`, `sufami`, `superfamicom`, `supernes`, `supernintendo`, `supervision`, `svi328`, `tatungeinstein`, `tgfx16`, `tgfx16-cd`, `tgfx16cd`, `ti-99_4a`, `ti994a`, `tomyscramble`, `tomytutor`, `trs-80`, `tsconf`, `turbografx`, `turbografx16`, `turbografx16cd`, `turbografxcd`, `uk101`, `upscaling-lanczosbicubicetc`, `upscaling-recommended`, `upscaling-sharpbilinear`, `utility`, `vc4000`, `vector-06c`, `vector06`, `vector06c`, `vectrex`, `vic20`, `wonderswan`, `x68000`, `zx-spectrum`, `zx81`, `zxnext`, `zxspectrum`\n\n##### Some relevant tag descriptions:\n\n- `arcade-cores` / `arcade`: All arcade cores and MRA files.\n- `computer-cores` / `computer`: All computer cores.\n- `console-cores` / `console`: All console cores.\n- `other-cores` / `other`: All other cores.\n- `service-cores` / `utility`: All utility cores.\n- `cores`: All cores (RBF files).\n- `mra`: All MRA files & folders.\n- `alternatives`: All MRA Alternatives\n- `hbmame`: All files & folders linked to the HBMame collection.\n- `handheld2p`: All 2 Player versions for Handheld cores.\n- `filters_video`: All video filters (`gamma` & `filters` & `shadow_masks`).\n- `all_filters`: All video & audio filters (`filters_video` & `filters_audio`).\n- `essential`: Menu core & MiSTer firmware.\n- `readme`: All README files.\n- `docs`: All documentation files & folders, including README files.\n- `extra-utilities`: All extra utilities that are installed in games folders of some computer cores.\n- `bios`: All bioses that are installed in the games folders for some computer & console cores.\n- `cheats`: All cheat files & folders.\n",
+      "readme": "# MiSTer Distribution\n\nThis repository contains all the files that you'll want in your MiSTer.\n\nYou may download all of them at once as a zip through the [following link](https://github.com/MiSTer-devel/Distribution_MiSTer/archive/refs/heads/main.zip). Once you have them, place them as-is in your [properly initialised SD card](https://github.com/MiSTer-devel/mr-fusion), and everything should work out of the box.\n\n### MiSTer Project\n\nIf you want to check more about the MiSTer project, please check [this wiki](https://github.com/MiSTer-devel/Main_MiSTer/wiki).\n\n### MiSTer Downloader\n\nFor downloading all of these files directly from your MiSTer, use the [MiSTer Downloader](https://github.com/MiSTer-devel/Downloader_MiSTer).\n\n#### Tags that you may use with 'Download Filters' feature\n\nRead about how to use them [here](https://github.com/MiSTer-devel/Downloader_MiSTer/blob/main/docs/download-filters.md).\n\n##### List:\n\n`acornatom`, `acornelectron`, `adam`, `adctest`, `adventurevision`, `alicemc10`, `all_filters`, `altair8800`, `alternatives`, `amiga`, `amstrad`, `amstrad-pcw`, `amstradpcw`, `ao486`, `apogee`, `apple-i`, `apple-ii`, `aquarius`, `arcade`, `arcade-arkanoid`, `arcade-asteroids`, `arcade-asteroidsdeluxe`, `arcade-astrocade`, `arcade-ataritetris`, `arcade-athena`, `arcade-bagman`, `arcade-bakraid`, `arcade-batrider`, `arcade-berzerk`, `arcade-blackwidow`, `arcade-blockade`, `arcade-bombjack`, `arcade-breakout`, `arcade-burgertime`, `arcade-burningrubber`, `arcade-canyonbomber`, `arcade-cave`, `arcade-centipede`, `arcade-computerspace`, `arcade-cores`, `arcade-cosmic`, `arcade-crazyballoon`, `arcade-crazyclimber`, `arcade-crazykong`, `arcade-defender`, `arcade-digdug`, `arcade-dominos`, `arcade-donkeykong`, `arcade-donkeykong3`, `arcade-donkeykongjunior`, `arcade-dorodon`, `arcade-dottorikun`, `arcade-druaga`, `arcade-finalizer`, `arcade-foodfight`, `arcade-frenzy`, `arcade-galaga`, `arcade-galaxian`, `arcade-gaplus`, `arcade-garegga`, `arcade-gauntlet`, `arcade-gyruss`, `arcade-ikariwarriors`, `arcade-iremm62`, `arcade-ironhorse`, `arcade-jackal`, `arcade-jailbreak`, `arcade-joust2`, `arcade-ladybug`, `arcade-lunarlander`, `arcade-mariobros`, `arcade-mcr1`, `arcade-mcr2`, `arcade-mcr3`, `arcade-mcr3mono`, `arcade-mcr3scroll`, `arcade-moonpatrol`, `arcade-mrdo`, `arcade-mysticmarathon`, `arcade-ninjakun`, `arcade-pacman`, `arcade-pengo`, `arcade-phoenix`, `arcade-pleiads`, `arcade-polyplay`, `arcade-pong`, `arcade-pooyan`, `arcade-popeye`, `arcade-qbert`, `arcade-rallyx`, `arcade-riverpatrol`, `arcade-robotron`, `arcade-rshnatk`, `arcade-scootershooter`, `arcade-scramble`, `arcade-segasys1`, `arcade-silverland`, `arcade-sms`, `arcade-snk_triplez80`, `arcade-solomonskey`, `arcade-spaceinvaders`, `arcade-spacerace`, `arcade-sprint1`, `arcade-sprint2`, `arcade-subs`, `arcade-superbreakout`, `arcade-tecmo`, `arcade-tiamc1`, `arcade-timepilot`, `arcade-timepilot84`, `arcade-tnkiii`, `arcade-traverseusa`, `arcade-turkeyshoot`, `arcade-ultratank`, `arcade-vball`, `arcade-xevious`, `arcade-zaxxon`, `arcade-zigzag`, `arcadelpf`, `arcadia`, `archie`, `arduboy`, `astrocade`, `atari5200`, `atari7800`, `atari800`, `atarilynx`, `atarist`, `avision`, `ay-3-8500`, `bbcmicro`, `bios`, `bk0011m`, `c16`, `c64`, `casio_pv-2000`, `channelf`, `cheats`, `chess`, `chip8`, `coco2`, `coco3`, `coleco`, `colecoadam`, `colecovision`, `complexmultichromatic`, `computer`, `computer-cores`, `console`, `console-cores`, `contrast_boost`, `cores`, `corespecific`, `creativision`, `crt-simulation`, `displayspecific`, `docs`, `drv`, `edsac`, `epochgalaxyii`, `essential`, `extra-utilities`, `famicom`, `filters`, `filters_audio`, `filters_video`, `flappy`, `flappybird`, `font`, `galaksija`, `gamate`, `gameboy`, `gameboy2p`, `gamenwatch`, `gameoflife`, `games`, `gamma`, `gba`, `gba2p`, `generallpf`, `genesis`, `gnw`, `handheld2p`, `hbmame`, `inputtest`, `intellivision`, `interact`, `jupiter`, `laser`, `laser310`, `lcd-general`, `lcd-integeronly`, `linux`, `lynx48`, `macplus`, `mame`, `mastersystem`, `megacd`, `megadrive`, `memte`, `memtest`, `menu`, `minimig`, `mra`, `msx`, `multicomp`, `neogeo`, `nes`, `nintendo`, `odyssey2`, `old`, `ondra_spo186`, `orao`, `oric`, `other`, `other-cores`, `palettes`, `pc88`, `pc8801`, `pcengine`, `pcenginecd`, `pdp1`, `pet2001`, `pmd85`, `poly_gamma`, `presets`, `psx`, `pure_gamma`, `ql`, `readme`, `rx78`, `s32x`, `samcoupe`, `scanlines-adaptive`, `scanlines-brighter`, `scanlines-standard`, `scripts`, `segacd`, `service-cores`, `sgb`, `shadow_masks`, `sharpmz`, `simplemonochrome`, `slugcross`, `sms`, `snes`, `sordm5`, `specialist`, `spectrum`, `spmx`, `sufami`, `superfamicom`, `supernes`, `supernintendo`, `supervision`, `svi328`, `tatungeinstein`, `tgfx16`, `tgfx16-cd`, `tgfx16cd`, `ti-99_4a`, `ti994a`, `tomyscramble`, `tomytutor`, `trs-80`, `tsconf`, `turbografx`, `turbografx16`, `turbografx16cd`, `turbografxcd`, `uk101`, `upscaling-lanczosbicubicetc`, `upscaling-recommended`, `upscaling-sharpbilinear`, `utility`, `vc4000`, `vector-06c`, `vector06`, `vector06c`, `vectrex`, `vic20`, `wonderswan`, `x68000`, `zx-spectrum`, `zx81`, `zxnext`, `zxspectrum`\n\n##### Some relevant tag descriptions:\n\n- `arcade-cores` / `arcade`: All arcade cores and MRA files.\n- `computer-cores` / `computer`: All computer cores.\n- `console-cores` / `console`: All console cores.\n- `other-cores` / `other`: All other cores.\n- `service-cores` / `utility`: All utility cores.\n- `cores`: All cores (RBF files).\n- `mra`: All MRA files & folders.\n- `alternatives`: All MRA Alternatives\n- `hbmame`: All files & folders linked to the HBMame collection.\n- `handheld2p`: All 2 Player versions for Handheld cores.\n- `filters_video`: All video filters (`gamma` & `filters` & `shadow_masks`).\n- `all_filters`: All video & audio filters (`filters_video` & `filters_audio`).\n- `essential`: Menu core & MiSTer firmware.\n- `readme`: All README files.\n- `docs`: All documentation files & folders, including README files.\n- `extra-utilities`: All extra utilities that are installed in games folders of some computer cores.\n- `bios`: All bioses that are installed in the games folders for some computer & console cores.\n- `cheats`: All cheat files & folders.\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/Distribution_MiSTer",
@@ -12418,13 +12535,19 @@
           "sha": "40eebbbd4a153f47522d480989e97ad64632cc6c",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Gameboy_MiSTer/master/releases/Gameboy_20220429.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20220806.rbf",
+          "sha": "0cd5559cdc396983ed0777e03165cedf9c0a7605",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Gameboy_MiSTer/master/releases/Gameboy_20220806.rbf",
+          "type": "RBF"
         }
       ]
     },
     {
       "name": "GBA_MiSTer",
       "description": "GBA for MiSTer",
-      "readme": "# [Gameboy Advance](https://en.wikipedia.org/wiki/Game_Boy_Advance) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\n\n# HW Requirements/Features\nThe games can run from a naked DE10-Nano with the build-in DDR-RAM.\nHowever, using SDRAM is highly recommended, as some games may slowdown or loose sync when using DDR-RAM.\n\nWhen using SDRAM, it requires 32MB SDRAM for games less than 32MB. 32MB games require either 64MB or 128MB module.\nSDRAM will be automatically used when available.\n\n# Bios\nOpensource Bios from Normmatt is included, however it has issues with some games.\nOriginal GBA BIOS can be placed to GBA folder with name boot.rom\n\nPLEASE do not report errors without testing with the original BIOS\n\nHomebrew games are sometimes not supported by the official BIOS, \nbecause the BIOS checks for Nintendo Logo included in the ROM, which is protected by copyright.\nTo use these ROMs without renaming or removing the the boot.rom, \nyou can activate the \"Homebrew BIOS\" settings in OSD.\nAs the BIOS is already replaced at boot time, you must save this settings and hard reset/reload the GBA core.\n\n# Status\n~1600 games tested until ingame.\nThere is no known official game that doesn't work.\nExceptions are games that require rare extra hardware (mostly japanese).\nSome small video glitches remain, see issue list.\n\n# Features\n- saving as in GBA\n- Savestates\n- FastForward - speed up game by factor 2-4\n- CPU Turbomode - give games additional CPU power\n- Flickerblend - set to blend or 30Hz mode for games like F-Zero, Mario Kart or NES Classics to prevent flickering effects\n- Spritelimit - turn on to prevent wrong sprites for games that rely on the limit (opt-in)\n- Cheats\n- Color optimizations: shader colors and desaturate\n- Rewind: go back up to 60 seconds in time\n- Tilt: use analog stick (map stick in Mister Main before)\n- Solar Sensor: Set brightness in OSD\n- Gyro: use analog stick (map stick in Mister Main before)\n- RTC: automatically used, works with RTC board or internet connection\n- 2x Resolution: game is rendered at 480x320 instead of 240x160 pixels\n\n# Savestates\nCore provides 4 slots to save and restore the state. \nThose can be saved to SDCard or reside only in memory for temporary use(OSD Option). \nUsage with either Keyboard, Gamepad mappable button or OSD.\n\nKeyboard Hotkeys for save states:\n- Alt-F1..F4 - save the state\n- F1...F4 - restore\n\nGamepad:\n- Savestatebutton+Left or Right switches the savestate slot\n- Savestatebutton+Start+Down saves to the selected slot\n- Savestatebutton+Start+Up loads from the selected slot\n\n# Rewind\nTo use rewind, turn on the OSD Option \"Rewind Capture\" and map the rewind button.\nYou may have to restart the game for the function to work properly.\nAttention: Rewind capture will slow down your game by about 0.5% and may lead to light audio stutter.\nRewind capture is not compatible to \"Pause when OSD is open\", so pause is disabled when Rewind capture is on.\n\n# Spritelimit\nThere are only very few games known that produce glitches without sprite pixel limit.\nThose games use the sprite pixel limit automatically.\nYou can optionally also turn this on if you notice problems.\n\n# 2x Resolution\nOnly works over HDMI, Analog output is not changed in 2x Resolution mode. \n\nImproved rendering resolution for:\n- Affine background: \"Mode7\" games, typically racing games like Mario Kart\n- Affine sprites: games that scale or rotate sprites\n\nThis rendering is experimental and can cause glitches, as not all game behavior can be supported.\nThose glitches can not be fixed without gamespecific hacks and therefore will not be fixed. \nPlease don't add bugs in such cases.\n\n# Cartridge Hardware supported games\n- RTC: Pokemon Sapphire+Ruby+Emerald, Boktai 1+2+3, Sennen Kazoku, Rockman EXE 4.5\n- Solar Sensor: Boktai 1+2+3\n- Gyro: Wario Ware Twisted\n- Tilt: Yoshi Topsy Turvy/Universal Gravitation, Koro Koro Puzzle - Happy Panechu!\n- Rumble: Wario Ware Twisted, Drill Dozer\n\nIf there is a game you want to play that also uses one of these features, but is not listed, please open a bug request.\n\n# Not included\n- Multiplayer features like Serials\n- E-Reader support\n\n# Information for developers\n\nHow to simulate:\nhttps://github.com/MiSTer-devel/GBA_MiSTer/tree/master/sim\n\nHow to implement a GPIO module:\nhttps://github.com/MiSTer-devel/GBA_MiSTer/blob/master/gpio_readme.md\n",
+      "readme": "# [Gameboy Advance](https://en.wikipedia.org/wiki/Game_Boy_Advance) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\n\n# HW Requirements/Features\nThe games can run from a naked DE10-Nano with the build-in DDR-RAM.\nHowever, using SDRAM is highly recommended, as some games may slowdown or loose sync when using DDR-RAM.\n\nWhen using SDRAM, it requires 32MB SDRAM for games less than 32MB. 32MB games require either 64MB or 128MB module.\nSDRAM will be automatically used when available and size is sufficient.\n\n# Bios\nOpensource Bios from Normmatt is included, however it has issues with some games.\nOriginal GBA BIOS can be placed to GBA folder with name boot.rom\n\nPLEASE do not report errors without testing with the original BIOS\n\nHomebrew games are sometimes not supported by the official BIOS, \nbecause the BIOS checks for Nintendo Logo included in the ROM, which is protected by copyright.\nTo use these ROMs without renaming or removing the the boot.rom, \nyou can activate the \"Homebrew BIOS\" settings in OSD.\nAs the BIOS is already replaced at boot time, you must save this settings and hard reset/reload the GBA core.\n\n# Status\n~1600 games tested until ingame.\nThere is no known official game that doesn't work.\nExceptions are games that require rare extra hardware (mostly japanese).\nSome small video glitches remain, see issue list.\n\n# Features\n- saving as in GBA\n- Savestates\n- FastForward - speed up game by factor 2-4\n- CPU Turbomode - give games additional CPU power\n- Flickerblend - set to blend or 30Hz mode for games like F-Zero, Mario Kart or NES Classics to prevent flickering effects\n- Spritelimit - turn on to prevent wrong sprites for games that rely on the limit (opt-in)\n- Cheats\n- Color optimizations: shader colors and desaturate\n- Rewind: go back up to 60 seconds in time\n- Tilt: use analog stick (map stick in Mister Main before)\n- Solar Sensor: Set brightness in OSD\n- Gyro: use analog stick (map stick in Mister Main before)\n- RTC: automatically used, works with RTC board or internet connection\n- Rumble: for Drill Dozer, Wario Ware Twisted and some romhacks\n- 2x Resolution: game is rendered at 480x320 instead of 240x160 pixels\n\n# Savestates\nCore provides 4 slots to save and restore the state. \nThose can be saved to SDCard or reside only in memory for temporary use(OSD Option). \nUsage with either Keyboard, Gamepad mappable button or OSD.\n\nKeyboard Hotkeys for save states:\n- Alt-F1..F4 - save the state\n- F1...F4 - restore\n\nGamepad:\n- Savestatebutton+Left or Right switches the savestate slot\n- Savestatebutton+Start+Down saves to the selected slot\n- Savestatebutton+Start+Up loads from the selected slot\n\n# Rewind\nTo use rewind, turn on the OSD Option \"Rewind Capture\" and map the rewind button.\nYou may have to restart the game for the function to work properly.\nAttention: Rewind capture will slow down your game by about 0.5% and may lead to light audio stutter.\nRewind capture is not compatible to \"Pause when OSD is open\", so pause is disabled when Rewind capture is on.\n\n# Spritelimit\nThere are only very few games known that produce glitches without sprite pixel limit.\nThose games use the sprite pixel limit automatically.\nYou can optionally also turn this on if you notice problems.\n\n# 2x Resolution\nOnly works over HDMI, Analog output is not changed in 2x Resolution mode. \n\nImproved rendering resolution for:\n- Affine background: \"Mode7\" games, typically racing games like Mario Kart\n- Affine sprites: games that scale or rotate sprites\n\nThis rendering is experimental and can cause glitches, as not all game behavior can be supported.\nThose glitches can not be fixed without gamespecific hacks and therefore will not be fixed. \nPlease don't add bugs in such cases.\n\n# Cartridge Hardware supported games\n- RTC: Pokemon Sapphire+Ruby+Emerald, Boktai 1+2+3, Sennen Kazoku, Rockman EXE 4.5\n- Solar Sensor: Boktai 1+2+3\n- Gyro: Wario Ware Twisted\n- Tilt: Yoshi Topsy Turvy/Universal Gravitation, Koro Koro Puzzle - Happy Panechu!\n- Rumble: Wario Ware Twisted, Drill Dozer\n\nIf there is a game you want to play that also uses one of these features, but is not listed, please open a bug request.\n\nFor romhacks you can activate the option \"GPIO HACK(RTC+Rumble)\". Make sure to deactivate it for other games, otherwise you will experience crashes.\n\n# Not included\n- Multiplayer features like serial communication\n- E-Reader support\n- Gameboy Player features\n\n# Information for developers\n\nHow to simulate:\nhttps://github.com/MiSTer-devel/GBA_MiSTer/tree/master/sim\n\nHow to implement a GPIO module:\nhttps://github.com/MiSTer-devel/GBA_MiSTer/blob/master/gpio_readme.md\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/GBA_MiSTer",
@@ -12571,6 +12694,12 @@
           "name": "GBA_20220428.rbf",
           "sha": "25580879845fa46de66cc5feb4d2a28bed7177ae",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/GBA_MiSTer/master/releases/GBA_20220428.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "GBA_20220812.rbf",
+          "sha": "5af5e12109fa0d89bd6555160ba6c799ea4ccef7",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/GBA_MiSTer/master/releases/GBA_20220812.rbf",
           "type": "RBF"
         }
       ]
@@ -14309,6 +14438,12 @@
           "sha": "4687cc6ee4172c47573923ac7f8896304419d7f6",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Main_MiSTer/master/releases/MiSTer_20220723",
           "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20220819",
+          "sha": "fb867a5d2a7f8b5242ed68588556e8e119429222",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Main_MiSTer/master/releases/MiSTer_20220819",
+          "type": "OTHER"
         }
       ]
     },
@@ -15649,7 +15784,7 @@
         },
         {
           "name": "romsets.xml",
-          "sha": "66fe2481539834bff289b8a0cb8f0a65d9c0cdf7",
+          "sha": "fd574fc3bf6249da34f03b51cbce3d4ce57e01e5",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/NeoGeo_MiSTer/master/releases/romsets.xml",
           "type": "OTHER"
         }
@@ -16166,6 +16301,136 @@
       ]
     },
     {
+      "name": "PCXT_MiSTer",
+      "description": "PCXT port for MiSTer by spark2k06.",
+      "readme": "# PCXT_MiSTer\nPCXT port for MiSTer by spark2k06.\n\nThe purpose of this core is to implement a PCXT as reliable as possible. For this purpose, the MCL86 core from @MicroCoreLabs and KTPC-XT from @kitune-san are used.\n\nThe Graphics Gremlin project from TubeTimeUS (@schlae) has also been integrated in this first stage.\n\nJTOPL by Jose Tejada (@topapate)\n\nSN76489AN Compatible Implementation in VHDL Copyright (c) 2005, 2006, Arnim Laeuger (arnim.laeuger@gmx.net)\n\nPlace pcxt.rom and tandy.rom (in SW folder) inside games/PCXT folder at root of SD card. Original and copyrighted ROMs can be generated on the fly using the python scripts available in the SW folder of this repository:\n\n* make_rom_with_ibm5160.py: A valid ROM is created for the PCXT model (pcxt.rom) based on the original IBM 5160 ROM, and with the XTIDE BIOS embedded at address EC00h.\n* make_rom_with_jukost.py: A valid ROM is created for the PCXT model (pcxt.rom) based on the original Juko ST ROM, and with the XTIDE BIOS embedded at address F000h.\n* make_rom_with_tandy.py: A valid ROM is created for the Tandy model (tandy.rom) based on the original Tandy 1000 ROM, and with the XTIDE BIOS embedded at address EC00h.\n\nOther OpenSource ROMs are available in the same folder:\n\n* pcxt_pcxt31.rom\n\nhttps://github.com/virtualxt/pcxtbios\n\nThis ROM should be renamed to pcxt.rom.\n\n* pcxt_micro8088.rom: \n\nhttps://github.com/skiselev/8088_bios\n\nThis ROM should be renamed to pcxt.rom.\n\n* ide_xtl.rom:\n\nhttps://www.xtideuniversalbios.org/\n\nThis ROM corresponds to the XTIDE BIOS, it must be maintained for the scripts to work, it can also be upgraded to a newer version.\n\nDiscussion and evolution of the core in the following misterfpga forum thread:\n\nhttps://misterfpga.org/viewtopic.php?t=4680&start=1020\n\n# Mounting the disk image\n\nInitially, and until an 8-bit IDE module compatible with XTIDE is available, floppy and hdd mounting will be done through the serial port available in the core via the OSD menu. The available transfer speeds are as follows:\n\n* 115200 Kbps\n* 230400 Kbps\n* 460800 Kbps\n* 921600 Kbps\n\nBy default it is set to 115200, but this speed does not work, as XTIDE does not identify it... The most suitable speed is 460800, although 921600 is possible to use only with the CPU speed at 14.318MHz.\n\nThe FDD image is recognised by XTIDE as B:, so to boot from floppy disk when booting, the 'B' key must be pressed when the XTIDE boot screen appears.\n\n# To-do list and challenges\n\n* Refactor Graphics Gremlin module, the new KFPC-XT system will make this refactor possible.\n* 8-bit IDE module implementation\n* Floppy implementation\n* Addition of other modules\n\n# Developers\n\nAny contribution and pull request, please carry it out on the prerelease branch. Periodically they will be reviewed, moved and merged into the main branch, together with the corresponding release.\n\nThank you!\n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/MiSTer-devel/PCXT_MiSTer",
+      "releases": [
+        {
+          "name": "PCXT_20220507.rbf",
+          "sha": "56595a09294fb3127d4b4869d48e0e34996b5287",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/PCXT_MiSTer/main/releases/PCXT_20220507.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "PCXT_20220510.rbf",
+          "sha": "b405e2f67267d1cb7deb8ae5df40b87b56470bfb",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/PCXT_MiSTer/main/releases/PCXT_20220510.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "PCXT_20220512.rbf",
+          "sha": "d474bfb09542a833c813aa42355f4e102c8f57db",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/PCXT_MiSTer/main/releases/PCXT_20220512.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "PCXT_20220523.rbf",
+          "sha": "f2378bf48f9204a234f511f0a1a5f1aa7248e40f",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/PCXT_MiSTer/main/releases/PCXT_20220523.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "PCXT_20220529.rbf",
+          "sha": "c26d6b09b8747e104f638cd47cd333bf6cd2c597",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/PCXT_MiSTer/main/releases/PCXT_20220529.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "PCXT_20220603.rbf",
+          "sha": "9f33bad8338bbdb5ce053bc64397b5101da3b658",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/PCXT_MiSTer/main/releases/PCXT_20220603.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "PCXT_20220606.rbf",
+          "sha": "5e0efa24e2843168426ec61c4e1a7fa63bc85363",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/PCXT_MiSTer/main/releases/PCXT_20220606.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "PCXT_20220607.rbf",
+          "sha": "bb205da29a2622970ba273a2c2bb25db90fc826e",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/PCXT_MiSTer/main/releases/PCXT_20220607.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "PCXT_20220613.rbf",
+          "sha": "bd15341bdf8cea0826b304aea99be936d8d22bda",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/PCXT_MiSTer/main/releases/PCXT_20220613.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "PCXT_20220617.rbf",
+          "sha": "39bd9955e49cb8a531f6b530b9866a58a99cd68f",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/PCXT_MiSTer/main/releases/PCXT_20220617.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "PCXT_20220620.rbf",
+          "sha": "986454534dc6046c74605be8364975b1e48939aa",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/PCXT_MiSTer/main/releases/PCXT_20220620.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "PCXT_20220623.rbf",
+          "sha": "625c53a4de37fba27a17093d6bd528878a9e723b",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/PCXT_MiSTer/main/releases/PCXT_20220623.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "PCXT_20220626.rbf",
+          "sha": "03dad3419f620fb4b864a9e0c3d55d6b5964ac0b",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/PCXT_MiSTer/main/releases/PCXT_20220626.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "PCXT_20220703.rbf",
+          "sha": "9de51dc2453db3e0928b1faa74be7cda81de9eda",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/PCXT_MiSTer/main/releases/PCXT_20220703.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "PCXT_20220710.rbf",
+          "sha": "a4712e76a6b02d4906b1a842f6182d735e7913ee",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/PCXT_MiSTer/main/releases/PCXT_20220710.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "PCXT_20220717.rbf",
+          "sha": "fdf69d2edad1b7c64e76e0c86b1d66fbab53295d",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/PCXT_MiSTer/main/releases/PCXT_20220717.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "PCXT_20220723.rbf",
+          "sha": "4b91be4b5c9b63484319317442d2e1ad1ba9e00a",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/PCXT_MiSTer/main/releases/PCXT_20220723.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "PCXT_20220817.rbf",
+          "sha": "e532d6577984ab2448aa2d47594c445887c89a76",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/PCXT_MiSTer/main/releases/PCXT_20220817.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "PCXT_20220818.rbf",
+          "sha": "42ef45ce48875f2d61abe57fa7901e175bf116e1",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/PCXT_MiSTer/main/releases/PCXT_20220818.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "PCXT_20220819.rbf",
+          "sha": "8ac789ea76b8a0b107be8d0c8e9fd81dd1537d6e",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/PCXT_MiSTer/main/releases/PCXT_20220819.rbf",
+          "type": "RBF"
+        }
+      ]
+    },
+    {
       "name": "PDFViewer_MiSTer",
       "description": "PDF Viewer For MiSTer",
       "readme": "\n# PDF Viewer \n\nThis is a framebuffer pdfviewer from:\n\nhttps://github.com/jichu4n/jfbview\n\nThat is compiled to run on MiSTer. There is a patch that adds escape, and enter to the keymapping for the viewer. This will allow it to work well with the joystick emulation.\n\n\n## JOYSTICK:\n\nThe joystick emulation maps to these keys:\n```\nright,left,up,down\nbtn1 - enter   -- next page\nbtn2 - escape  -- quit\nbtn3 - space   -- down\nbtn4 - tab     -- index view\n```\n\n\n## Glow MD Viewer\n\nWe also include the Glow Viewer: https://github.com/charmbracelet/glow/\nhttps://github.com/charmbracelet/glow/releases/download/v1.4.1/glow_1.4.1_linux_armv6.tar.gz\n\n## Less file\n\nThis creates a less key file that we use to set esc/esc or tab to exit from the less pager.\n",
@@ -16331,7 +16596,7 @@
     {
       "name": "PSX_MiSTer",
       "description": "PSX for MiSTer",
-      "readme": "# [Playstation](https://en.wikipedia.org/wiki/PlayStation_(console)) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\n## Hardware Requirements\nSDRAM of any size is required.\n\n## Features\n* Savestates\n* Option for core pause when OSD is open\n* Optional manual Memory Card file loading (.MCD)\n* CUE+BIN and CHD format support\n* Multiple Disc Game support with automatic Lid open/close toggle\n* Fast Boot (Skips BIOS)\n* Dithering On/Off Toggle\n* Bob or Weave Deinterlacing\n* Texture Filtering\n* Widescreen modes\n* Screen roation by 180\u00b0\n* Inputs: DualShock, Digital, Analog, Mouse, NeGcon, Wheel, Justifier and Guncon support.\n* Native Input support through SNAC\n\n## Bios\nRename your playstation bios file (e.g. `scph-1001.bin`/`ps-22a.bin` ) and place it in the `./games/PSX/` folder.\n\n```\nboot.rom  => US BIOS\nboot1.rom => JP BIOS\nboot2.rom => EU BIOS\n```\n\nYou can also place a cd_bios.rom in the same directory as the CD or 1 directory above, to have it uses together with that CD. This can be used for games that depend on a special BIOS beyond usual US,EU,JP.\n\nIf you get a black screen with \"ED\" overlay in upper left corner, either your BIOS files are corrupt or missing or you have no SDRAM module installed.\n\n## Region\n\nRegion settings (e.g. Clock, BIOS, CD check) are selected automatically when loading a CD. You can force a different Region in OSD.\n\n## Memory Card\n\nGames that are in their own folder will create it's own memory card in media/fat/saves/psx as <folder name>.sav \n\nOne card can be mounted for each controller slot. Cards are in raw .mcd format. An empty formatted .mcd file is available for [download here](https://github.com/MiSTer-devel/PSX_MiSTer/raw/main/memcard/empty.mcd).\n\nYou need to save them either manually in the OSD or turn on autosave. Saving or loading a card will pause the core for a short time.\n\n## Multiple Disc Games\n\nTo swap discs while the game is running, you will need have all of the disc files for the game placed in the same folder. Then when loading a new disc for most games you will need to toggle the Lid Open/Close option to tell the game you have opened the lid and closed it. Example folder structure of a multi disc game:\n\n```\n/media/fat/games/PSX/Final Fantasy VII (USA)/Final Fantasy VII (USA) (Disc 1).chd\n/media/fat/games/PSX/Final Fantasy VII (USA)/Final Fantasy VII (USA) (Disc 2).chd\n/media/fat/games/PSX/Final Fantasy VII (USA)/Final Fantasy VII (USA) (Disc 3).chd\n```\n\n## Video output\n\nCore can output through HDMI and Analog out.\n\nHDMI also offers a debugging framebuffer mode with support of full VRAM as 1024x512 pixel image(debug only)\n\nAnalog out from Direct Video is full 24Bit Color, but from Analog Board will only deliver 18 Bits of color.\nYou can activate the 24 Bit dithering option to remove color banding in FMVs without decreasing the image quality in 16 bit color ingame.\n\nFixed Hblank as well as Fixed Vblank can help delivering correct aspect rations and keeping the screen in sync with e.g. shaking animations.\nBoth also offer crop options for games that depend on CRT viewports to hide artifacts at the edge of the image.\n\nSync 480i for HDMI will make 480i content run with 240p timings, making it easier for HDMI devices to keep the sync when switching between both modes in games. \n\n## Libcrypt\n\nSome games are secured with Libcrypt and will not work if it's not circumvented.\n\nYou can provide a .sbi file to do that.\nIf there is a .sbi file next to a .cue with the same name, it is loaded automatically when mounting the CD image.\n\n## Error messages\n\nIf there is a recognized problem, an overlay is displayed, showing which error has occured.\nYou can hide these messages with an OSD option, by default they are on.\n\nList of Errors:\n- E2     - CPU exception(only relevant if game shows issues)\n- E3..E6 - GPU hangs (e.g. corrupt display list)\n- E7     - CPU2VRAM with mask-AND enabled\n- E8     - DMA chopping enabled\n- E9     - GPU FIFO overflow\n- EA     - SPU timeout\n- EB     - DMA and CPU interlock error \n- EC     - DMA FIFO overflow\n- ED     - CPU Data/Bus request timeout -> will also appear if the BIOS is not found or corrupt or no SDRAM module is installed\n\n## Debug Options\n\nThe debug menu is intended for use by developers only. They don't really serve any purpose for regular users so it's best to leave them at their default setting as a lot of undesirable behavior could occur.\n\n## Pad Options\nThe following pad types are emulated by the core and can be independently assigned to each port:\n- DualShock:\n  Switch Digital/Analog mode with mouse/touchpad click or L3+R3+Up/Down or mapable button \n- Digital  \n  (ID 0x41) Ten button digital pad.\n- Analog  \n  (ID 0x73) Twinstick pad.  \n- Mouse  \n  (ID 0x12) Two button mouse.\n- Off  \n  Pad unplugged from port.\n- GunCon  \n  (ID 0x62) GunCon compatible lightgun.\n- Justifier  \n- NeGcon  \n  (ID 0x23) NeGcon compatible racing pad.  \n  Primarily developed for dual analog stick usage with the following mapping (genuine NeGcons  \n   may work if usb adapters map steering to Left Analog and I/II to Right Analog):\n   - Steering -> Left Analog\n   - Circle -> Circle\n   - Triangle -> Triangle\n   - I -> Right Analog Up, Cross (100% pressed), R2 (100% pressed)\n   - II -> Right Analog Down, Rectangle (100% pressed), L2 (100% pressed)\n   - L -> L1 (100% pressed)\n   - R -> R1\n   \nSNAC can be selected for each port and will support gamepads and memory cards on the corresponding slot.\nWhen SNAC is enabled for a slot, the emulated gamepad/memory for this slot is disconnected.\n\n## Status\n\nMany games working\n\n--\n\nCPU    : 90%\n- exception for read in invalid instruction and data area missing\n\nGPU    : 90%\n- mask bits not implemented for cpu2vram -> nothing yet found that uses it\n- vram2vram read/modify/write race condition when copying to same line\n\nMemory : 80%\n- sdram controller needs rewrite to support fast banked read\n\nIRQ    : 90%\n- irq_SIO missing because unused        \n\nPAD    : 90%\n\nDMA    : 80%\n- DMA write performance only 32bit/2 cycles, should be 32Bit/1 cycle?\n\nMemctrl: register stubs only\n\nSIO    : register stubs only\n\nTimer  : 90%\n- accuracy for start/wraparound not tested\n\nGTE    : 90%\n- CPU <-> GTE Transfer pipeline delay not fully correct\n\nMDEC   : 90%\n- timing slightly too fast (4996/5376)\n \nCD     : 90%\n\nSPU    : 90%\n",
+      "readme": "# [Playstation](https://en.wikipedia.org/wiki/PlayStation_(console)) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\n## Hardware Requirements\nSDRAM of any size is required.\n\n## Features\n* Savestates\n* Option for core pause when OSD is open\n* Optional manual Memory Card file loading (.MCD)\n* CUE+BIN and CHD format support\n* Multiple Disc Game support with automatic Lid open/close toggle\n* Fast Boot (Skips BIOS)\n* Dithering On/Off Toggle\n* Bob or Weave Deinterlacing\n* Texture Filtering\n* Widescreen modes\n* Screen roation by 180\u00b0\n* Inputs: DualShock, Digital, Analog, Mouse, NeGcon, Wheel, Justifier and Guncon support.\n* Native Input support through SNAC\n\n## Bios\nRename your playstation bios file (e.g. `scph-1001.bin`/`ps-22a.bin` ) and place it in the `./games/PSX/` folder.\n\n```\nboot.rom  => US BIOS\nboot1.rom => JP BIOS\nboot2.rom => EU BIOS\n```\n\nYou can also place a cd_bios.rom in the same directory as the CD or 1 directory above, to have it uses together with that CD. This can be used for games that depend on a special BIOS beyond usual US,EU,JP.\n\nIf you get a black screen with \"ED\" overlay in upper left corner, either your BIOS files are corrupt or missing or you have no SDRAM module installed.\n\n## Region\n\nRegion settings (e.g. Clock, BIOS, CD check) are selected automatically when loading a CD. You can force a different Region in OSD.\n\n## Memory Card\n\nGames that are in their own folder will create it's own memory card in media/fat/saves/psx as <folder name>.sav \n\nOne card can be mounted for each controller slot. Cards are in raw .mcd format. An empty formatted .mcd file is available for [download here](https://github.com/MiSTer-devel/PSX_MiSTer/raw/main/memcard/empty.mcd).\n\nYou need to save them either manually in the OSD or turn on autosave. Saving or loading a card will pause the core for a short time.\n\n## Multiple Disc Games\n\nTo swap discs while the game is running, you will need have all of the disc files for the game placed in the same folder. Then when loading a new disc for most games you will need to toggle the Lid Open/Close option to tell the game you have opened the lid and closed it. Example folder structure of a multi disc game:\n\n```\n/media/fat/games/PSX/Final Fantasy VII (USA)/Final Fantasy VII (USA) (Disc 1).chd\n/media/fat/games/PSX/Final Fantasy VII (USA)/Final Fantasy VII (USA) (Disc 2).chd\n/media/fat/games/PSX/Final Fantasy VII (USA)/Final Fantasy VII (USA) (Disc 3).chd\n```\n\n## Video output\n\nCore can output through HDMI and Analog out.\n\nHDMI also offers a debugging framebuffer mode with support of full VRAM as 1024x512 pixel image(debug only)\n\nAnalog out from Direct Video is full 24Bit Color, but from Analog Board will only deliver 18 Bits of color.\nYou can activate the 24 Bit dithering option to remove color banding in FMVs without decreasing the image quality in 16 bit color ingame.\n\nFixed Hblank as well as Fixed Vblank can help delivering correct aspect rations and keeping the screen in sync with e.g. shaking animations.\nBoth also offer crop options for games that depend on CRT viewports to hide artifacts at the edge of the image.\n\nSync 480i for HDMI will make 480i content run with 240p timings, making it easier for HDMI devices to keep the sync when switching between both modes in games. \n\n## Libcrypt\n\nSome games are secured with Libcrypt and will not work if it's not circumvented.\n\nYou can provide a .sbi file to do that.\nIf there is a .sbi file next to a .cue with the same name, it is loaded automatically when mounting the CD image.\n\n## Error messages\n\nIf there is a recognized problem, an overlay is displayed, showing which error has occured.\nYou can hide these messages with an OSD option, by default they are on.\n\nList of Errors:\n- E2     - CPU exception(only relevant if game shows issues)\n- E3..E6 - GPU hangs (e.g. corrupt display list)\n- E7     - CPU2VRAM with mask-AND enabled\n- E8     - DMA chopping enabled\n- E9     - GPU FIFO overflow\n- EA     - SPU timeout\n- EB     - DMA and CPU interlock error \n- EC     - DMA FIFO overflow\n- ED     - CPU Data/Bus request timeout -> will also appear if the BIOS is not found or corrupt or no SDRAM module is installed\n\n## Debug Options\n\nThe debug menu is intended for use by developers only. They don't really serve any purpose for regular users so it's best to leave them at their default setting as a lot of undesirable behavior could occur.\n\n## Pad Options\nThe following pad types are emulated by the core and can be independently assigned to each port:\n- DualShock:\n  Switch Digital/Analog mode with mouse/touchpad click or L3+R3+Up/Down or mapable button \n- Digital  \n  (ID 0x41) Ten button digital pad.\n- Analog  \n  (ID 0x73) Twinstick pad.  \n- Mouse  \n  (ID 0x12) Two button mouse.\n- Off  \n  Pad unplugged from port.\n- GunCon  \n  (ID 0x62) GunCon compatible lightgun.\n- Justifier  \n- NeGcon  \n  (ID 0x23) NeGcon compatible racing pad.  \n  Primarily developed for dual analog stick usage with the following mapping (genuine NeGcons  \n   may work if usb adapters map steering to Left Analog and I/II to Right Analog):\n   - Steering -> Left Analog\n   - Circle -> Circle\n   - Triangle -> Triangle\n   - I -> Right Analog Up, Cross (100% pressed), R2 (100% pressed)\n   - II -> Right Analog Down, Rectangle (100% pressed), L2 (100% pressed)\n   - L -> L1 (100% pressed)\n   - R -> R1\n   \nSNAC can be selected for each port and will support gamepads and memory cards on the corresponding slot.\nWhen SNAC is enabled for a slot, the emulated gamepad/memory for this slot is disconnected.\n\n## Status\n\nMany games working\n\n--\n\nCPU    : 90%\n- exception for read in invalid instruction and data area missing\n\nGPU    : 90%\n- mask bits not implemented for cpu2vram -> nothing yet found that uses it\n- vram2vram read/modify/write race condition when copying to same line\n\nIRQ    : 90%\n- irq_SIO missing because unused        \n\nPAD    : 90%\n- full configurable multitap missing\n\nMemctrl: register stubs only\n\nSIO    : register stubs only\n\nTimer  : 90%\n- accuracy for start/wraparound not tested\n\nGTE    : 90%\n- CPU <-> GTE Transfer pipeline delay not fully correct\n\nMDEC   : 90%\n- timing slightly too fast (4996/5376)\n \nCD     : 90%\n- accurate CD access model for correct seek times should be added\n- drive and controller logic shozuld be seperated\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/PSX_MiSTer",
@@ -16358,6 +16623,12 @@
           "name": "PSX_20220727.rbf",
           "sha": "cda9568859d2a0cb8da238450ec700deeae77b27",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/PSX_MiSTer/main/releases/PSX_20220727.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "PSX_20220813.rbf",
+          "sha": "2634621eb4ebd4e1f1f9a3147b54384917410dee",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/PSX_MiSTer/main/releases/PSX_20220813.rbf",
           "type": "RBF"
         }
       ]
@@ -16745,6 +17016,12 @@
           "name": "SGB_20220716.rbf",
           "sha": "7d07cc750f0022d77d630da53952a22b0cc54a41",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/SGB_MiSTer/main/releases/SGB_20220716.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SGB_20220809.rbf",
+          "sha": "ffa0801e479b09fbc9e91ae984c2f351b86b2db5",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/SGB_MiSTer/main/releases/SGB_20220809.rbf",
           "type": "RBF"
         }
       ]

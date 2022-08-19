@@ -5,6 +5,29 @@
   "type": "User",
   "repos": [
     {
+      "name": "Arcade-Chameleon_MiSTer",
+      "description": "Jaleco Chameleon core for MiSTer FPGA",
+      "readme": "# Jaleco Chameleon for MiSTer\r\n\r\nWork in progress.\r\n\r\nToDo:\r\n- Sound, the two JT89 chips are there but sound is noisy and different from the original machine.\r\n- The video module requires one additionnal vertical row and image is offset to the right on CRT.\r\n- The 2 joysticks, they are directly connected from hps_io to the core for now.\r\n- Coins, a NMI is generated on coin insertion. Does not work yet. Is NMI not detected by the CPU? It needs to be verified with SignalTap.\r\n- Nice to have: replace the current CPU with a more accurate one, the chip_6502!!\r\n",
+      "archived": false,
+      "fork": false,
+      "url": "https://github.com/pcornier/Arcade-Chameleon_MiSTer",
+      "releases": [
+        {
+          "name": "chameleon.mra",
+          "sha": "53398864fd44ca7fbcf14d7aa8bde7011a777e57",
+          "url": "https://raw.githubusercontent.com/pcornier/Arcade-Chameleon_MiSTer/master/releases/chameleon.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Chameleon",
+            "rbf": "Chameleon",
+            "zips": [
+              "chameleo.zip"
+            ]
+          }
+        }
+      ]
+    },
+    {
       "name": "Arcade-QBert_MiSTer",
       "description": "Q*Bert core for MiSTer",
       "readme": "![QBert Character](./qbert.png) MiSTer Q*Bert\r\n=============================================\r\n\r\nQ*Bert arcade core for MiSTer FPGA by Pierco. It's a reproduction of the original PCBs rather than a reinterpretation but with some dual port RAM exceptions.\r\n\r\nAdditional details\r\n------------------\r\n\r\n**Audio board MA216:**\r\n\r\n- SC01 is not implemented. Waiting for brave people to do it.\r\n\r\n**NVRAM:**\r\n\r\n- Not implemented - NVRAM should be C5/C6 on schematics.\r\n\r\n**Ports:**\r\n\r\n- IP17-10: input port for test buttons, coins and player 1/2.\r\n- IP47-40: input port for joystick.\r\n- OP27-20: output port for sound interface\r\n- OP33-37: output port for knocker and coin meter.\r\n\r\nGame Compatibility List\r\n-----------------------\r\n\r\nWorking:\r\n\r\n- QBert: 100% compatible.\r\n- QBert Qubes: 100% compatible.\r\n- Mad Planets: 100% compatible.\r\n\r\nNot working yet:\r\n\r\n- Curve Ball: dip switch order is weird, no sound.\r\n- Insector: 100% compatible, dip switch problems, controller inverted & no test mode(?).\r\n- Tyls: 100% compatible - dip switches inverted.\r\n\r\nKnown Bugs\r\n----------\r\n\r\n- QBert Qubes: \"Supreme Nosers\" screen works only after a reset.\r\n- Problem with vertical position register E1-2. When a new object is falling from the top of the screen (ball), it appears briefly at the bottom of the screen.\r\n- High Scores screen: the big three letters of player's name are not displayed correctly. It works well after a few resets (is it a problem with bus sharing logic which sends zeros to simulate high impedance for ORing outputs?). I don't have the PCB so it's difficult to know the original behavior.\r\n- Votrax chip is cruelly missing, QBert needs his @!#?@! voice!!!\r\n",

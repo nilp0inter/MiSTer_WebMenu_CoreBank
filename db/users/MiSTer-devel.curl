@@ -72,8 +72,8 @@ output = "_Arcade/cores/AtariTetris_20210405.rbf"
 
 
 # Athena
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Athena_MiSTer/main/releases/Arcade-Athena_20220617.rbf"
-output = "_Arcade/cores/Athena_20220617.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Athena_MiSTer/main/releases/Arcade-Athena_20220810.rbf"
+output = "_Arcade/cores/Athena_20220810.rbf"
 
 
 # Bagman
@@ -237,8 +237,8 @@ output = "_Arcade/cores/Gyruss_20220526.rbf"
 
 
 # IkariWarriors
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IkariWarriors_MiSTer/main/releases/Arcade-IkariWarriors_20220803.rbf"
-output = "_Arcade/cores/IkariWarriors_20220803.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IkariWarriors_MiSTer/main/releases/Arcade-IkariWarriors_20220806.rbf"
+output = "_Arcade/cores/IkariWarriors_20220806.rbf"
 
 
 # IremM62
@@ -372,18 +372,18 @@ output = "_Arcade/cores/QBert_20210923.rbf"
 
 
 # Bakraid
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Raizing_MiSTer/develop/releases/Arcade-Bakraid_20220729.rbf"
-output = "_Arcade/cores/Bakraid_20220729.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Raizing_MiSTer/develop/releases/Arcade-Bakraid_20220818.rbf"
+output = "_Arcade/cores/Bakraid_20220818.rbf"
 
 
 # Batrider
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Raizing_MiSTer/develop/releases/Arcade-Batrider_20220729.rbf"
-output = "_Arcade/cores/Batrider_20220729.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Raizing_MiSTer/develop/releases/Arcade-Batrider_20220818.rbf"
+output = "_Arcade/cores/Batrider_20220818.rbf"
 
 
 # Garegga
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Raizing_MiSTer/develop/releases/Arcade-Garegga_20220729.rbf"
-output = "_Arcade/cores/Garegga_20220729.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Raizing_MiSTer/develop/releases/Arcade-Garegga_20220818.rbf"
+output = "_Arcade/cores/Garegga_20220818.rbf"
 
 
 # RallyX
@@ -637,13 +637,13 @@ output = "_Others/Gamate_20220613.rbf"
 
 
 # Gameboy
-url = "https://raw.githubusercontent.com/MiSTer-devel/Gameboy_MiSTer/master/releases/Gameboy_20220429.rbf"
-output = "_Console/Gameboy_20220429.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Gameboy_MiSTer/master/releases/Gameboy_20220806.rbf"
+output = "_Console/Gameboy_20220806.rbf"
 
 
 # GBA
-url = "https://raw.githubusercontent.com/MiSTer-devel/GBA_MiSTer/master/releases/GBA_20220428.rbf"
-output = "_Console/GBA_20220428.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/GBA_MiSTer/master/releases/GBA_20220812.rbf"
+output = "_Console/GBA_20220812.rbf"
 
 
 # Genesis
@@ -772,8 +772,8 @@ output = "_Others/PMD85_20220129.rbf"
 
 
 # PSX
-url = "https://raw.githubusercontent.com/MiSTer-devel/PSX_MiSTer/main/releases/PSX_20220727.rbf"
-output = "_Others/PSX_20220727.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/PSX_MiSTer/main/releases/PSX_20220813.rbf"
+output = "_Others/PSX_20220813.rbf"
 
 
 # QL
@@ -797,8 +797,8 @@ output = "_Computer/SAMCoupe_20220326.rbf"
 
 
 # SGB
-url = "https://raw.githubusercontent.com/MiSTer-devel/SGB_MiSTer/main/releases/SGB_20220716.rbf"
-output = "_Others/SGB_20220716.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/SGB_MiSTer/main/releases/SGB_20220809.rbf"
+output = "_Others/SGB_20220809.rbf"
 
 
 # SharpMZ
@@ -974,6 +974,11 @@ output = "_Arcade/Tetris.mra"
 # Athena.mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Athena_MiSTer/main/releases/Athena.mra"
 output = "_Arcade/Athena.mra"
+
+
+# CountryClub.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Athena_MiSTer/main/releases/CountryClub.mra"
+output = "_Arcade/CountryClub.mra"
 
 
 # FightingGolf.mra
