@@ -9394,11 +9394,37 @@
     {
       "name": "Arcade-TankBattalion_MiSTer",
       "description": "FPGA implementation of Namco's Tank Battalion arcade game ",
-      "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade version of Tank Battalion for MiSTer fom Namco - MiSTerRetroWolf\n--\n-- V 1.0 08/20/2022 - Nick Stone\n---------------------------------------------------------------------------------\n-- Support screen and controls rotation on HDMI output.\n-- Only controls are rotated on VGA output.\n-- Sound now supported via samples\n-- \n-- Inputs:\n--   UP,DOWN,LEFT,RIGHT : Tank Movements\n--   Fire\n--   Coin 1\n--   Start 1 Player\n--   Start 2 Players (alternate play)\n--   Test button: in DIP settings enable test mode\n--   and then the test button toggle which bullet is selected\n--\n-- \n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
+      "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade version of Tank Battalion for MiSTer from Namco - MiSTerRetroWolf\n--\n-- V 1.0 08/20/2022 - Nick Stone\n---------------------------------------------------------------------------------\n-- Supports screen and controls rotation on HDMI output.\n-- Sound now supported via samples\n-- \n-- Inputs:\n--   UP,DOWN,LEFT,RIGHT : Tank Movements\n--   Fire\n--   Coin 1\n--   Start 1 Player\n--   Start 2 Players (alternate play)\n--   Test button: in DIP settings enable test mode\n--   and then the test button toggle which bullet is selected\n--\n-- \n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/Arcade-TankBattalion_MiSTer",
-      "releases": []
+      "releases": [
+        {
+          "name": "Arcade-TankBattalion_20220730.rbf",
+          "sha": "f9ece9b933a8359f968e83157de3ebf45f7d6397",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TankBattalion_MiSTer/main/releases/Arcade-TankBattalion_20220730.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-TankBattalion_20220820.rbf",
+          "sha": "3b6a1021cbdccb9f27c09b04c5c40f57c1ac4e9f",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TankBattalion_MiSTer/main/releases/Arcade-TankBattalion_20220820.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "TankBattalion.mra",
+          "sha": "2fcf74ca985290e2ae2283c7becb8247b74254e6",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TankBattalion_MiSTer/main/releases/TankBattalion.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Tank Battalion",
+            "rbf": "TankBattalion",
+            "zips": [
+              "tankbatt.zip"
+            ]
+          }
+        }
+      ]
     },
     {
       "name": "Arcade-Tecmo_MiSTer",
