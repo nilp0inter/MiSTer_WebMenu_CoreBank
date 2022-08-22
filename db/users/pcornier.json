@@ -7,14 +7,14 @@
     {
       "name": "Arcade-Chameleon_MiSTer",
       "description": "Jaleco Chameleon core for MiSTer FPGA",
-      "readme": "# Jaleco Chameleon for MiSTer\r\n\r\nWork in progress.\r\n\r\nToDo:\r\n- Sound, the two JT89 chips are there but sound is noisy and different from the original machine.\r\n- The video module requires one additionnal vertical row and image is offset to the right on CRT.\r\n- The 2 joysticks, they are directly connected from hps_io to the core for now.\r\n- Coins, a NMI is generated on coin insertion. Does not work yet. Is NMI not detected by the CPU? It needs to be verified with SignalTap.\r\n- Nice to have: replace the current CPU with a more accurate one, the chip_6502!!\r\n",
+      "readme": "# Jaleco Chameleon for MiSTer\r\n\r\nWork in progress.\r\n\r\nToDo:\r\n- The video module requires one additionnal vertical row and image is offset to the right on CRT.\r\n- Nice to have: replace the current CPU with a more accurate one, the chip_6502!!\r\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/pcornier/Arcade-Chameleon_MiSTer",
       "releases": [
         {
           "name": "chameleon.mra",
-          "sha": "53398864fd44ca7fbcf14d7aa8bde7011a777e57",
+          "sha": "25d03baeeb581c01d6d474fcc3633c5e0396a6ab",
           "url": "https://raw.githubusercontent.com/pcornier/Arcade-Chameleon_MiSTer/master/releases/chameleon.mra",
           "type": "MRA",
           "extra": {
