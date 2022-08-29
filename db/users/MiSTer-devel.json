@@ -2562,7 +2562,7 @@
     {
       "name": "Arcade-Chameleon_MiSTer",
       "description": "Jaleco Chameleon core for MiSTer FPGA",
-      "readme": "# Jaleco Chameleon for MiSTerFPGA\r\n\r\nA game from Jaleco procuded in 1983. This is a beta port for MiSTerFPGA by Pierco. I did it for fun on my phone during my vacations.\r\n\r\n## Tasks for a stable release\r\n\r\n- fix video timings: image appears on the right on CRT screens! I added a H-Pos setting in OSD.\r\n- fix joysticks, they are weird for now, a better mapping is possible\r\n\r\n",
+      "readme": "# Jaleco Chameleon for MiSTerFPGA\r\n\r\nA game from Jaleco procuded in 1983. This is a beta port for MiSTerFPGA by Pierco. I did it for fun on my phone during my vacations.\r\n\r\n## Tasks for a stable release\r\n\r\n- fix joysticks, they are weird for now, a better mapping is possible\r\n\r\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/Arcade-Chameleon_MiSTer",
@@ -2571,6 +2571,12 @@
           "name": "Arcade-Chameleon_20220828.rbf",
           "sha": "cd64777e9a08b0a15adebcc021bf096108d70b03",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Chameleon_MiSTer/master/releases/Arcade-Chameleon_20220828.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Chameleon_20220829.rbf",
+          "sha": "7ce30ed62d14d9defdae7f8890f94ba9f291b6a5",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Chameleon_MiSTer/master/releases/Arcade-Chameleon_20220829.rbf",
           "type": "RBF"
         },
         {
