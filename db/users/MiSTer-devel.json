@@ -4852,19 +4852,6 @@
           }
         },
         {
-          "name": "X Multiply (Inv) (Japan, M72 hardware).mra",
-          "sha": "a20ac117bc5a290b4be4d952ab7ad633c76f7cc6",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM72_MiSTer/main/releases/X%20Multiply%20(Inv)%20(Japan%2C%20M72%20hardware).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "X Multiply (Japan, M72 hardware)",
-            "rbf": "IremM72",
-            "zips": [
-              "xmultiplm72.zip|xmultipl.zip"
-            ]
-          }
-        },
-        {
           "name": "X Multiply (Japan, M72 hardware).mra",
           "sha": "c40b8f5aca641b6b13cd11161e6275b411497b1b",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM72_MiSTer/main/releases/X%20Multiply%20(Japan%2C%20M72%20hardware).mra",
@@ -4913,6 +4900,19 @@
             "rbf": "IremM72",
             "zips": [
               "rtype.zip|rtypeb.zip"
+            ]
+          }
+        },
+        {
+          "name": "X Multiply (Inv) (Japan, M72 hardware).mra",
+          "sha": "633658b5952a316a228779f552cf99f92948de16",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM72_MiSTer/main/releases/_alternatives/X%20Multiply%20(Inv)%20(Japan%2C%20M72%20hardware).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "X Multiply (Inv) (Japan, M72 hardware)",
+            "rbf": "IremM72",
+            "zips": [
+              "xmultiplm72.zip|xmultipl.zip"
             ]
           }
         }
