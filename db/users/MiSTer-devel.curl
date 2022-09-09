@@ -252,8 +252,8 @@ output = "_Arcade/cores/IremM62_20210925.rbf"
 
 
 # IremM72
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM72_MiSTer/main/releases/Arcade-IremM72_20220902.rbf"
-output = "_Arcade/cores/IremM72_20220902.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM72_MiSTer/main/releases/Arcade-IremM72_20220909.rbf"
+output = "_Arcade/cores/IremM72_20220909.rbf"
 
 
 # IronHorse
@@ -1661,6 +1661,16 @@ url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM72_MiSTer/main
 output = "_Arcade/R-Type (World).mra"
 
 
+# R-Type II (Japan).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM72_MiSTer/main/releases/R-Type%20II%20(Japan).mra"
+output = "_Arcade/R-Type II (Japan).mra"
+
+
+# R-Type II (World).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM72_MiSTer/main/releases/R-Type%20II%20(World).mra"
+output = "_Arcade/R-Type II (World).mra"
+
+
 # X Multiply (Japan, M72 hardware).mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM72_MiSTer/main/releases/X%20Multiply%20(Japan%2C%20M72%20hardware).mra"
 output = "_Arcade/X Multiply (Japan, M72 hardware).mra"
@@ -1679,6 +1689,11 @@ output = "_Arcade/R-Type (US).mra"
 # R-Type (World bootleg).mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM72_MiSTer/main/releases/_alternatives/R-Type%20(World%20bootleg).mra"
 output = "_Arcade/R-Type (World bootleg).mra"
+
+
+# R-Type II (Japan, revision C).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM72_MiSTer/main/releases/_alternatives/R-Type%20II%20(Japan%2C%20revision%20C).mra"
+output = "_Arcade/R-Type II (Japan, revision C).mra"
 
 
 # X Multiply (Inv) (Japan, M72 hardware).mra
