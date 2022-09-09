@@ -5556,6 +5556,38 @@
         },
         {
           "name": "README.md",
+          "sha": "13f87a604a65d373559b1776b239300e388e675c",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kchamp/README.md",
+          "type": "OTHER"
+        },
+        {
+          "name": "Karate Champ (US).mra",
+          "sha": "a0d0343bca8ef71774f1bc88dc167b1c475e036a",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kchamp/releases/Karate%20Champ%20(US).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Karate Champ (US)",
+            "rbf": "jtkchamp",
+            "zips": [
+              "kchamp.zip",
+              "jtbeta.zip"
+            ]
+          }
+        },
+        {
+          "name": "jtkchamp_20220909.rbf",
+          "sha": "4ecece16acba88ff94a76be750d312af080f6c6b",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kchamp/releases/jtkchamp_20220909.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "version.log",
+          "sha": "cd8457d181970f458b3dec764a9bf8b3a96fe221",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kchamp/version.log",
+          "type": "OTHER"
+        },
+        {
+          "name": "README.md",
           "sha": "34992383ff42cf9e7e4bd581f6f8c5769bd878c3",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kicker/README.md",
           "type": "OTHER"
