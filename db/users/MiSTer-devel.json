@@ -4515,10 +4515,16 @@
         },
         {
           "name": "Inferno (Williams).mra",
-          "sha": "c005d6e5597b1bd5ff62b899f26381d0ec5bdb08",
+          "sha": "984ad1f9dbd21fe37ba425f523ce29041cf1f0d2",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Inferno_MiSTer/master/releases/Inferno%20(Williams).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Inferno (Williams)",
+            "rbf": "inferno",
+            "zips": [
+              "inferno.zip"
+            ]
+          }
         }
       ]
     },
