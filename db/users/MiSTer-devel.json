@@ -4225,6 +4225,48 @@
       ]
     },
     {
+      "name": "Arcade-Galivan_MiSTer",
+      "description": null,
+      "readme": "# Cosmo Police Galivan for MiSTerFPGA\r\n\r\n## General description\r\nThis core is an emulation of the GV-1412 PCB from Nichibutsu by [Pierco](https://github.com/pcornier). Two games are supported: Cosmo Police Galivan & UFO Robo Dangar. Use a vertically oriented CRT for the best gaming experience!\r\n\r\n## Patreon Supporters :heart:\r\nAlan Steremberg\r\nAllen Tipper\r\nAmosfear\r\nAndreas Micklei\r\natrac17\r\nbirdybro\r\nChristopher Garland\r\nCory Stargel\r\nCyrille Jouineau\r\nDarren Chell\r\nDave Ely\r\nDimitris Zongas\r\nFrancois P\r\nFunkycochise\r\nGentlemen's Pixel Club\r\nGrumpy Old Gamer\r\nHerbert Krammer\r\nHiddenbyleaves\r\nHolger Lagerfeldt\r\nHumanoide70\r\nJ BG\r\nJohan Sj\u00f6strand\r\nJohn Stringer\r\nJos\u00e9 L\u00f3pez Navarrete\r\nJuan Carlos Pastor (Denymetanol)\r\nMatt Hargett\r\nMax\r\nMax Riptide\r\nMichael Packard\r\nMike Holzinger\r\nMiSTerFPGA.co.uk\r\nNicolas VAILLANT\r\nPhilip Lawson\r\nPons Cremator\r\nRaspberryAlpine\r\nSamuel Giroux\r\nSwedishGojira\r\nTonton Kaloun\r\nwwark\r\nyomitron\r\n\r\n\r\n\r\n",
+      "archived": false,
+      "fork": false,
+      "url": "https://github.com/MiSTer-devel/Arcade-Galivan_MiSTer",
+      "releases": [
+        {
+          "name": "Arcade-Galivan_20220913.rbf",
+          "sha": "c674663c309294203502c1d570010bde26f78d64",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Galivan_MiSTer/master/releases/Arcade-Galivan_20220913.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Cosmo Police Galivan (12-26-1985).mra",
+          "sha": "c6a9a425f55b36fa38ce4149ce61d28f5817de79",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Galivan_MiSTer/master/releases/Cosmo%20Police%20Galivan%20(12-26-1985).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Cosmo Police Galivan (12/26/1985)",
+            "rbf": "galivan",
+            "zips": [
+              "galivan.zip"
+            ]
+          }
+        },
+        {
+          "name": "Ufo Robo Dangar (4-07-1987).mra",
+          "sha": "2a0d457d2ef1ca7217d71c5b753641b7fd87dbbe",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Galivan_MiSTer/master/releases/Ufo%20Robo%20Dangar%20(4-07-1987).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Ufo Robo Dangar (4/07/1987)",
+            "rbf": "galivan",
+            "zips": [
+              "dangar.zip"
+            ]
+          }
+        }
+      ]
+    },
+    {
       "name": "Arcade-Gaplus_MiSTer",
       "description": "Gaplus for MiSTer",
       "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: Gaplus  port to MiSTer by MiSTer-X\n-- 26 October 2019\n-- From: https://github.com/MrX-8B/MiSTer-Arcade-Gaplus\n-- \n---------------------------------------------------------------------------------\n-- FPGA Gaplus for XILINX Spartan-3\n--------------------------------------\n-- Copyright (c) 2007 MiSTer-X\n---------------------------------------------------------------------------------\n-- Cycle-Accurate 6809 Core\n-- Revision 1.0 - 13th August 2016\n---------------------------------------------------\n-- Copyright (c) 2016, Greg Miller\n---------------------------------------------------------------------------------\n-- \n-- \n-- Keyboard inputs :\n--\n--   F2          : Coin + Start 2 players\n--   F1          : Coin + Start 1 player\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--   SPACE/CTRL  : Fire\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   R,F,D,G     : Player 2 Movements\n--   A/S         : Player 2 Fire\n--\n-- Joystick support.\n-- \n-- \n---------------------------------------------------------------------------------\n\n                                 *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
