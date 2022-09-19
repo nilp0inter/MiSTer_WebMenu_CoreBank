@@ -17275,7 +17275,7 @@
     {
       "name": "PET2001_MiSTer",
       "description": "Commodore PET for MiSTer",
-      "readme": "# PET2001 for [MiSTer Board](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\r\n\r\n### This is the port of [pet2001fpga](https://github.com/skibo/Pet2001_Nexys3).\r\n\r\n## Installation:\r\nCopy the *.rbf file at the root of the SD card. Copy roms (*.prg,*.tap) to **PET2001** folder.\r\n\r\n### Notes:\r\n* PRG apps are directly injected into RAM. Load command is not required.\r\n* TAP files are loaded through virtual tape input. press **F1** to issue LOAD command, and then choose TAP file in OSD.\r\n* **F12** opens OSD.\r\n\r\n## Download precompiled binaries\r\nGo to [releases](https://github.com/MiSTer-devel/PET2001_MiSTer/tree/master/releases) folder.\r\n",
+      "readme": null,
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/PET2001_MiSTer",
