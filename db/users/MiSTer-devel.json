@@ -12835,6 +12835,22 @@
       ]
     },
     {
+      "name": "EG2000_MiSTer",
+      "description": null,
+      "readme": "# EACA EG2000 Colour Genie FPGA implementation for MiSTer\n\nThis core is a RW-FPGA dev team project implemented by Ricardo Martinez (KYP) initially in ZXUno.\nA port to Altera has been made, covering the boards, MiST, MiSTica, SiDi and MiSTer by KYP and rampa069.\nThis core has been designed from scratch.\n\nPort to MiSTer by alanswx, CAS tape support by Flandango.\n\n## Background\n\nThe Colour Genie was released in 1982.  It was an attractive machine, with a solid \nfull-stroke keyboard and 16K BASIC in ROM. \nAs well as the 63-key typewriter keyboard and powerful BASIC, it featured the \ntrusty Z-80, running at 2.2 MHz, 16k-32k of RAM, 3 channels of sound, 8 colours \n(4 for text), 40 columns x 24 rows for text (initially) and 160 x 102 pixels \nfor graphics.Ports which included RS-232, Joysticks (2), light pen, RGB and audio.  \n\n## Specifications:\n\nZ80 running at 2.2 MHz\n\nVideo Hardware\n\n    Motorola 6845 CRTC\n    40\u00d724 text (original ROMs) or 40\u00d725 text (upgraded ROMs), 16 colours, \n    128 user defined characters\n    \n    160\u00d796 graphics (original ROMs) or 160\u00d7102 graphics (upgraded ROMs), \n    4 colours x up to 4 pages\n\nSound Hardware\n\n    General Instruments AY-3-8910\n    3 sound channels, ADSR programmable\n    1 noise channel\n \n## Coverage\n\nThe core works in RGB (15khz), VGA (31Khz) and HDMI. \nBoth Basic and Machine Code programs are loaded through the audio input ( CLOAD or SYSTEM ) TRS-80 style. CAS tape support via OSD (see instructions below). \n\n## OSD CAS Loading Instructions\n\nWhen the computer starts, you will see this:\n\n    MEMORY?\n\npress ENTER\n\nThis prompt will appear:\n\n    COLOUR BASIC\n    READY\n    >\n\ntype \"SYSTEM\" and press ENTER\n\nThen at this prompt:\n\n    *?\n\npress FIRST LETTER OF THE CAS FILE (for example T) and press ENTER\n\nChoose any CAS file with the same first letter and select Play/Pause in the OSD\n\nYou will see some \"**\" appear in the top right as the CAS file loads. It is real-time, and might take a minute or two.\n\nThen at this prompt:\n\n    *? \n\npress \"/\" and press ENTER\n\nThe loaded CAS file will now run.\n\n## Keys\n * **F5** NMI.\n * **F11** Reset on MiSTer.\n * **F12** OSD on MiSTer.",
+      "archived": false,
+      "fork": false,
+      "url": "https://github.com/MiSTer-devel/EG2000_MiSTer",
+      "releases": [
+        {
+          "name": "eg2000_20220923.rbf",
+          "sha": "171352cf2895c6ab334e3957c165f49e275e0e2e",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/EG2000_MiSTer/main/releases/eg2000_20220923.rbf",
+          "type": "RBF"
+        }
+      ]
+    },
+    {
       "name": "EpochGalaxy2_MiSTer",
       "description": null,
       "readme": "# Port of Epoch Galaxy II for MiSTer FPGA\r\n\r\nRemap game buttons and use the skill level select for game mode.\r\n\r\nFrom original user guide:\r\n\r\n- Skill Level \"1\" - Alien fighters attack one at a time.\r\n- Skill Level \"2\" - Alien fighters attack one at a time but combat speed is faster.\r\n- Skill Level \"3\" - Alien fighters attack two at a time.\r\n- Skill Level \"4\" - Alien fighters attack two at a time but combat speed is faster.\r\n\r\nWhen game is switched on, skill level is automatically set to Level \"1\" and \"1\" is displayed at top of Game Display.",
