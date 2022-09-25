@@ -12418,7 +12418,7 @@
     {
       "name": "Casio_PV-1000_MiSTer",
       "description": "Casio PV-1000 Console core for the MiSTer",
-      "readme": "<p align=\"center\">\n    <img style=\"width: 450px;\" src=\"assets/Casio-PV1000.png\">\n</p>\n\n# [Casio PV-1000](https://www.wikipedia.org/wiki/PV-1000) for [MiSTer](https://mister-devel.github.io/MkDocs_MiSTer/)\nThis is an FPGA implementation of the Casio PV-1000 Console for the MiSTer FPGA platform.\n\n## Features\n- Support for the massive library of Cartridges (all 13 of them) via .bin files.\n- Joysticks for up to two players, each with two fire buttons, Select and Start.\n\n## Notes\n- Video signal can use a good look over in regards to things like Vertical Sync.\n- Casio PV-1000 Image is courtesy of [Evan Amos](https://en.wikipedia.org/wiki/File:Casio-PV1000-Console-Set.jpg)",
+      "readme": null,
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/Casio_PV-1000_MiSTer",
