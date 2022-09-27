@@ -12456,7 +12456,7 @@
     {
       "name": "Vectrex_MiSTer",
       "description": "Vectrex for MiSTer",
-      "readme": null,
+      "readme": "# [Vectrex](https://en.wikipedia.org/wiki/Vectrex) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\nPort of Vectrex by Dar (darfpga@aol.fr) http://darfpga.blogspot.fr\n\nSupports both digital and analog joystick/gamepad\n\n### Installation:\nCopy the *.rbf file at the root of the SD card. Copy *.vec/*.bin files to Vectrex folder.\n\n### Overlays\nPlace overlay to the same folder with the same name as ROM with extension OVR. It will be loaded automatically.",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-DB9/Vectrex_MiSTer",
