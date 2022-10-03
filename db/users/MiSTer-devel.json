@@ -7220,6 +7220,54 @@
       ]
     },
     {
+      "name": "Arcade-PenguinKunWars_MiSTer",
+      "description": "PenguinKunWars by MiSTer-X",
+      "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: Penguin-Kun Wars  port to MiSTer by MiSTer-X\n-- 30 May 2020\n-- \n---------------------------------------------------------------------------------\n-- FPGA Penguin-Kun Wars for Spartan-3 Starter Kit\n-- Copyright (c) 2012 MiSTer-X\n---------------------------------------------------------------------------------\n-- T80/T80s - Version : 0242\n-- Z80 compatible microprocessor core\n-- Copyright (c) 2001-2002 Daniel Wallner (jesus@opencores.org)\n---------------------------------------------------------------------------------\n-- YM2149 (AY-3-8910)\n-- Copyright (c) MikeJ - Jan 2005\n-- (Modified by MiSTer-X)\n---------------------------------------------------------------------------------\n-- Base MRA files by Bruno Silva\n---------------------------------------------------------------------------------\n-- \n-- \n-- Keyboard inputs :\n--\n--   F2          : Coin + Start 2 players\n--   F1          : Coin + Start 1 player\n--   LEFT,RIGHT arrows : Movements\n--   SPACE       : Throw\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   D,G         : Player 2 Movements\n--   A           : Player 2 Throw\n--\n-- Joystick support.\n--\n--\n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/games/mame/<mame rom>.zip\n/games/hbmame/<hbmame rom>.zip\n\n",
+      "archived": false,
+      "fork": false,
+      "url": "https://github.com/MiSTer-devel/Arcade-PenguinKunWars_MiSTer",
+      "releases": [
+        {
+          "name": "Arcade-PenguinKunWars_20200530.rbf",
+          "sha": "87d7f5565359819ee3b352a5abf924e0107b4019",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-PenguinKunWars_MiSTer/main/releases/Arcade-PenguinKunWars_20200530.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-PenguinKunWars_20221002.rbf",
+          "sha": "0f1bc19e5cc2611efbc94ac54aed496bb526bb5d",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-PenguinKunWars_MiSTer/main/releases/Arcade-PenguinKunWars_20221002.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Penguin-Kun_Wars.mra",
+          "sha": "79347528a74518837d0972620860b0eeb1c28757",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-PenguinKunWars_MiSTer/main/releases/Penguin-Kun_Wars.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Penguin-Kun Wars (US)",
+            "rbf": "PenguinKunWars",
+            "zips": [
+              "pkunwar.zip"
+            ]
+          }
+        },
+        {
+          "name": "Penguin-Kun_Wars_Japan.mra",
+          "sha": "87e85e8ccfa4f21ef0aaea05697bbb99eb042386",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-PenguinKunWars_MiSTer/main/releases/Penguin-Kun_Wars_Japan.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Penguin-Kun Wars (Japan)",
+            "rbf": "PenguinKunWars",
+            "zips": [
+              "pkunwar.zip|pkunwarj.zip"
+            ]
+          }
+        }
+      ]
+    },
+    {
       "name": "Arcade-Phoenix_MiSTer",
       "description": "Arcade: Phoenix for MiSTer",
       "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: Phoenix port to MiSTer by Sorgelig\n-- 22 October 2017\n-- \n---------------------------------------------------------------------------------\n-- Phoenix (Amstar) FPGA - DAR - 2016\n-- http://darfpga.blogspot.fr\n---------------------------------------------------------------------------------\n-- \n-- Support screen and controls rotation on HDMI output.\n-- Only controls are rotated on VGA output.\n-- \n-- \n-- Keyboard inputs :\n--\n--   F3          : Add coin\n--   F2          : Start 2 players\n--   F1          : Start 1 player\n--   SPACE       : Fire  \n--   UP/RIGHT    : Move up \n--   DOWN/LEFT   : Move down\n--   CTRL        : Barrier(Shield)\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   D,G     : Player 2 Movements\n--   A           : Player 2 Fire\n--   S           : Player 2 Barrier(Shield)\n--\n-- Joystick support.\n-- \n-- \n----------------------------------------------\n\nHiscore save/load:\n\nSave and load of hiscores is supported for this core:\n\nTo save your hiscores manually, press the 'Save Settings' option in the OSD.  Hiscores will be automatically loaded when the core is started.\n\nTo enable automatic saving of hiscores, turn on the 'Autosave Hiscores' option, press the 'Save Settings' option in the OSD, and reload the core.  Hiscores will then be automatically saved (if they have changed) any time the OSD is opened.\n\nHiscore data is stored in /media/fat/config/nvram/ as ```<mra filename>.nvm```\n\n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
