@@ -5,6 +5,29 @@
   "type": "User",
   "repos": [
     {
+      "name": "Arcade-BankPanic_MiSTer",
+      "description": "BankPanic FPGA core for MiSTer",
+      "readme": "# BankPanic for MiSTerFPGA\r\n\r\n## General description\r\nThis is the port of Bank Panic for MiSTerFPGA by Pierco (Pierre Cornier). I tried to reproduce the PCB as much as possible so it should be very close to the original hardware.\r\n\r\nI would like to give special thanks to Mark Haysman from RetroClinic for sharing the equations of the PAL 315-5075, and to David Shadoff, Alan Steremberg & Chockichoc for their support and friendship!\r\n\r\n## Patreon contributors!\r\nAdrian Vargerson\r\nAlan Steremberg\r\nAllen Tipper\r\nAmosfear\r\nAndreas Micklei\r\nbirdybro\r\nChristopher Garland\r\nCory Stargel\r\nCyrille Jouineau\r\nDarren Chell\r\nDarren Newman\r\nDave Ely\r\nDavide Lorigliola\r\nDimitris Zongas\r\nFrancois P\r\nFunkycochise\r\nGentlemen's Pixel Club\r\nGrumpy Old Gamer\r\nHerbert Krammer\r\nHiddenbyleaves\r\nHolger Lagerfeldt\r\nHumanoide70\r\nJ BG\r\nJohan Sj\u00f6strand\r\nJohn Stringer\r\nJos\u00e9 L\u00f3pez Navarrete\r\nJuan Carlos Pastor (Denymetanol)\r\nMatt Hargett\r\nMax\r\nMichael Packard\r\nMike Holzinger\r\nMike S\r\nMiSTerFPGA.co.uk\r\nNicolas VAILLANT\r\nPhilip Lawson\r\nPons Cremator\r\nRaspberryAlpine\r\nRune P\r\nSamuel Giroux\r\nSwedishGojira\r\nTonton Kaloun\r\nwwark\r\n",
+      "archived": false,
+      "fork": false,
+      "url": "https://github.com/pcornier/Arcade-BankPanic_MiSTer",
+      "releases": [
+        {
+          "name": "BankPanic.mra",
+          "sha": "15577bafd5812c76dd927422e00c6b450ff2f50e",
+          "url": "https://raw.githubusercontent.com/pcornier/Arcade-BankPanic_MiSTer/master/releases/BankPanic.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "BankPanic",
+            "rbf": "bankpanic",
+            "zips": [
+              "bankp.zip"
+            ]
+          }
+        }
+      ]
+    },
+    {
       "name": "Arcade-QBert_MiSTer",
       "description": "Q*Bert core for MiSTer",
       "readme": "![QBert Character](./qbert.png) MiSTer Q*Bert\r\n=============================================\r\n\r\nQ*Bert arcade core for MiSTer FPGA by Pierco. It's a reproduction of the original PCBs rather than a reinterpretation but with some dual port RAM exceptions.\r\n\r\nAdditional details\r\n------------------\r\n\r\n**Audio board MA216:**\r\n\r\n- SC01 is not implemented. Waiting for brave people to do it.\r\n\r\n**NVRAM:**\r\n\r\n- Not implemented - NVRAM should be C5/C6 on schematics.\r\n\r\n**Ports:**\r\n\r\n- IP17-10: input port for test buttons, coins and player 1/2.\r\n- IP47-40: input port for joystick.\r\n- OP27-20: output port for sound interface\r\n- OP33-37: output port for knocker and coin meter.\r\n\r\nGame Compatibility List\r\n-----------------------\r\n\r\nWorking:\r\n\r\n- QBert: 100% compatible.\r\n- QBert Qubes: 100% compatible.\r\n- Mad Planets: 100% compatible.\r\n\r\nNot working yet:\r\n\r\n- Curve Ball: dip switch order is weird, no sound.\r\n- Insector: 100% compatible, dip switch problems, controller inverted & no test mode(?).\r\n- Tyls: 100% compatible - dip switches inverted.\r\n\r\nKnown Bugs\r\n----------\r\n\r\n- QBert Qubes: \"Supreme Nosers\" screen works only after a reset.\r\n- Problem with vertical position register E1-2. When a new object is falling from the top of the screen (ball), it appears briefly at the bottom of the screen.\r\n- High Scores screen: the big three letters of player's name are not displayed correctly. It works well after a few resets (is it a problem with bus sharing logic which sends zeros to simulate high impedance for ORing outputs?). I don't have the PCB so it's difficult to know the original behavior.\r\n- Votrax chip is cruelly missing, QBert needs his @!#?@! voice!!!\r\n",
