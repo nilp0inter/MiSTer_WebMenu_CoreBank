@@ -81,6 +81,11 @@ url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Bagman_MiSTer/maste
 output = "_Arcade/cores/Bagman_20211114.rbf"
 
 
+# BankPanic
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-BankPanic_MiSTer/master/releases/Arcade-BankPanic_20221007.rbf"
+output = "_Arcade/cores/BankPanic_20221007.rbf"
+
+
 # Berzerk
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Berzerk_MiSTer/master/releases/Arcade-Berzerk_20211009.rbf"
 output = "_Arcade/cores/Berzerk_20211009.rbf"
@@ -577,8 +582,8 @@ output = "_Others/AtariLynx_20220417.rbf"
 
 
 # AtariST
-url = "https://raw.githubusercontent.com/MiSTer-devel/AtariST_MiSTer/master/releases/AtariST_20220413.rbf"
-output = "_Computer/AtariST_20220413.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/AtariST_MiSTer/master/releases/AtariST_20221007.rbf"
+output = "_Computer/AtariST_20221007.rbf"
 
 
 # AY-3-8500
@@ -1064,6 +1069,11 @@ output = "_Arcade/Squash.mra"
 # Super Bagman.mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Bagman_MiSTer/master/releases/Super%20Bagman.mra"
 output = "_Arcade/Super Bagman.mra"
+
+
+# BankPanic.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-BankPanic_MiSTer/master/releases/BankPanic.mra"
+output = "_Arcade/BankPanic.mra"
 
 
 # Berzerk.mra
