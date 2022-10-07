@@ -133,15 +133,6 @@
       ]
     },
     {
-      "name": "Arcade-IREM72_MiSTer",
-      "description": null,
-      "readme": "# Arcade-IREM72_MiSTer\nBeta Impletation of LLAPI\n",
-      "archived": false,
-      "fork": false,
-      "url": "https://github.com/MiSTer-LLAPI/Arcade-IREM72_MiSTer",
-      "releases": []
-    },
-    {
       "name": "Arcade-IremM62_MiSTer",
       "description": "Irem62 from pace, and mist including Lode Runner, etc",
       "readme": "LLAPI Note : \n\n1. Place the rbf core file in a folder named _LLAPI/cores/\n2. Place the MRAs files in _LLAPI/_Arcade/\n3. Dont forget to enable LLAPI in the core OSD (this has to be done for each MRA for now)\n4. Play !\n\nIn order to play with 2 players you need to insert 2 coins at least and press START2P button.\nThis button has been mapped to the LEFT shoulder button (SNES controller used as a reference)\n\nIrem M62 Hardware\n=================\n\nBased on old PACE code by Mark McDougall(tcdev), enhanced by Gyorgy Szombathelyi in March 2020.\n\nGames supported:\n- Lode Runner 1-4\n- Kung Fu Master\n- Horizon\n- Battle Road\n- Spelunker 1-2\n- Kid Niki\n- Youjyudn\n\n# Keyboard inputs :\n```\n\n   MAME/IPAC/JPAC Style Keyboard inputs:\n     1           : Start 1 Player\n     2           : Start 2 Player\n     5           : Coin 1\n     6           : Coin 2\n     R,F,D,G     : Player 2\n     A           : Fire2 A\n     S           : Fire2 B \n\t\n Joystick support. \n```\n\n# Known Bugs\n\n- Kung-Fu Master has a sprite color problem\n- Lot Lot isn't fully implemented\n\n\n# ROMs\n```\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n\n```\n\nLaunch game using the appropriate .MRA\n\n",
@@ -337,6 +328,351 @@
             "rbf": "iremm62",
             "zips": [
               "youjyudn.zip"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Arcade-IremM72_MiSTer",
+      "description": "BlisSTer support",
+      "readme": "# Irem M72 Core\n\n![](docs/header_small.png)\n\nImplemention of the Irem M72 & M84 arcade hardware (https://www.system16.com/hardware.php?id=738) for the MiSTer FPGA platform.\n\n## Supported Games\n\n|Name|Region|Notes|\n|---|---|---|\n|[R-Type](https://en.wikipedia.org/wiki/R-Type)|Japan, US, World||\n|[Ninja Spirit](https://en.wikipedia.org/wiki/Ninja_Spirit)|Japan||\n|[Image Fight](https://en.wikipedia.org/wiki/Image_Fight)|Japan, World||\n|[Gallop - Armed Police Unit](https://en.wikipedia.org/wiki/Armed_Police_Unit_Gallop)|Japan|Emulated MCU.|\n|[Legend of Hero Tonma](https://en.wikipedia.org/wiki/Legend_of_Hero_Tonma)|Japan||\n|[Mr. HELI no Daibouken](https://en.wikipedia.org/wiki/Mr._Heli)|Japan||\n|[Air Duel](https://en.wikipedia.org/wiki/Air_Duel)|Japan, World|Conversion from M81 hardware.|\n|[Dragon Breed](https://en.wikipedia.org/wiki/Dragon_Breed)|Japan|Conversion from M81 hardware.|\n|[X-Multiply](https://en.wikipedia.org/wiki/X_Multiply)|Japan|Conversion from M81 hardware.|\n|[Daiku no Gensan](https://en.wikipedia.org/wiki/Hammerin%27_Harry)|Japan|Conversion from M81 hardware. Emulated MCU.|\n|[Hammerin' Harry](https://en.wikipedia.org/wiki/Hammerin%27_Harry)|US, Japan|M84 Hardware.|\n|[R-Type II](https://en.wikipedia.org/wiki/R-Type_II)|Japan,World|M84 hardware.|\n\n## Video Modes\nAll of these games output a 256 line signal at 55.02hz, that can be difficult for some consumer CRTs to sync too and the refresh rate can cause irregular scrolling on some digital displays. The core offers three additional refresh rates: 50hz, 57hz and 60hz. These will slow down or speed up gameplay, but sound playback will remain uneffected.\n\n## Pause\nThe core implements pause functionality. You can bind a pause button and/or enable the \"OSD Pause\" option in the OSD, which will pause the game whenever the OSD is open. Pause is not something the original hardware supported and certain parts of the graphics state need to be saved and replayed during the paused frame. This may cause slight graphical issues when paused in some situations.\n\n## Thanks\nMany people, knowingly or not, contributed to this work.\n- @ElectronAsh for the initial verilator version and help with the various KNA ICs\n- @furrtek for the KNA70H015(11) reverse engineering https://github.com/furrtek/VGChips/tree/master/Nanao/KNA70H015(11)\n- @jotego for the YM2151 implementation and analog adjustment module\n- @Ace9921 because I used a lot of his TimePilot'84 code as an example for hooking up inputs and dipswitches\n- The people from PLD Archive and https://www.jammarcade.net/ for collecting and archiving schematics and PAL information http://wiki.pldarchive.co.uk/index.php?title=R-Type_(M72)\n- @sorgelig for developing and maintaining MiSTer\n- @RobertPeip for the v30mz cpu I am using as the basis for the v30\n- @sentientsixp for encouraging me to do this\n- @atrac17 for schematics and MRAs\n- @tdlabac for help with MCU emulation\n- @_ShootTheCore for providing audio captures from original M72 hardware\n- @gyurco for fixes, optimizations and Hammerin' Harry support.\n- The MiSTer FPGA discord server for the helpful advice and support\n\n\n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer",
+      "releases": [
+        {
+          "name": "Air Duel (Japan, M72 hardware).mra",
+          "sha": "0f10c76dce9ba061baf5cdbee0c74e5aa96433d3",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/Air%20Duel%20(Japan%2C%20M72%20hardware).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Air Duel (Japan, M72 hardware)",
+            "rbf": "IremM72",
+            "zips": [
+              "airdueljm72.zip|airduel.zip"
+            ]
+          }
+        },
+        {
+          "name": "Air Duel (World, M72 hardware).mra",
+          "sha": "9a61b4c313eecb7689d5c28cd6f02eb7ad735a85",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/Air%20Duel%20(World%2C%20M72%20hardware).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Air Duel (World, M72 hardware)",
+            "rbf": "IremM72",
+            "zips": [
+              "airduelm72.zip|airduel.zip"
+            ]
+          }
+        },
+        {
+          "name": "Arcade-IremM72_20220830.rbf",
+          "sha": "7f051faa3eccf963ef668bd64ee4e1a8a4b41234",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/Arcade-IremM72_20220830.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-IremM72_20220902.rbf",
+          "sha": "2bd277f670291ad56ce072eb279baf2f3d3b7532",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/Arcade-IremM72_20220902.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-IremM72_20220909.rbf",
+          "sha": "dca2605e9f62072510ca2c12b7957bbf919eb894",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/Arcade-IremM72_20220909.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-IremM72_20220910.rbf",
+          "sha": "1f9c10e490a65ceca04d90b02b648d06fb7683eb",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/Arcade-IremM72_20220910.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-IremM72_20220912.rbf",
+          "sha": "c096fe30c16586e79a5534dfad30df3cbf10b8c1",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/Arcade-IremM72_20220912.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Daiku no Gensan (Japan, M72 hardware).mra",
+          "sha": "1845c28a2fec08411a09a93a9bb32e38838b6c4a",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/Daiku%20no%20Gensan%20(Japan%2C%20M72%20hardware).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Daiku no Gensan (Japan, M72 hardware)",
+            "rbf": "IremM72",
+            "zips": [
+              "dkgensanm72.zip|hharry.zip"
+            ]
+          }
+        },
+        {
+          "name": "Daiku no Gensan (Japan, M84 hardware).mra",
+          "sha": "4b3d4f75b2498dd4951bd9c210fd2135cdfcd67e",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/Daiku%20no%20Gensan%20(Japan%2C%20M84%20hardware).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Daiku no Gensan (Japan, M84 hardware)",
+            "rbf": "IremM72",
+            "zips": [
+              "dkgensan.zip|hharry.zip"
+            ]
+          }
+        },
+        {
+          "name": "Dragon Breed (Japan, M72 hardware).mra",
+          "sha": "7d0943bb4826fb2f47831140621590819cae5858",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/Dragon%20Breed%20(Japan%2C%20M72%20hardware).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Dragon Breed (Japan, M72 hardware)",
+            "rbf": "IremM72",
+            "zips": [
+              "dbreedjm72.zip|dbreed.zip"
+            ]
+          }
+        },
+        {
+          "name": "Gallop - Armed Police Unit (Japan, M72 hardware).mra",
+          "sha": "29c33f04a8ad69e21b75b4527240313430064e69",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/Gallop%20-%20Armed%20Police%20Unit%20(Japan%2C%20M72%20hardware).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Gallop - Armed Police Unit (Japan, M72 hardware)",
+            "rbf": "IremM72",
+            "zips": [
+              "cosmccop.zip|gallop.zip"
+            ]
+          }
+        },
+        {
+          "name": "Hammerin' Harry (US, M84 hardware).mra",
+          "sha": "8744a27b6fedd8bd2b875f50f6e5ba8a68e15e15",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/Hammerin'%20Harry%20(US%2C%20M84%20hardware).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Hammerin' Harry (US, M84 hardware)",
+            "rbf": "IremM72",
+            "zips": [
+              "hharryu.zip|hharry.zip"
+            ]
+          }
+        },
+        {
+          "name": "Image Fight (Japan).mra",
+          "sha": "25523c16c9be26f05670aef38a98e194e39f451d",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/Image%20Fight%20(Japan).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Image Fight (Japan)",
+            "rbf": "IremM72",
+            "zips": [
+              "imgfightj.zip|imgfight.zip"
+            ]
+          }
+        },
+        {
+          "name": "Image Fight (World).mra",
+          "sha": "cf82ef97b93956699e92c5f4d5ff1df3fa963aa4",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/Image%20Fight%20(World).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Image Fight (World)",
+            "rbf": "IremM72",
+            "zips": [
+              "imgfight.zip"
+            ]
+          }
+        },
+        {
+          "name": "IremM72_LLAPI_20221007.rbf",
+          "sha": "1cf55400bc163f83b7f5241c6a1e0a902f5e8428",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/IremM72_LLAPI_20221007.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Legend of Hero Tonma (Japan).mra",
+          "sha": "ff8ec8c6d59618049d67da26f49f239280ff0aaa",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/Legend%20of%20Hero%20Tonma%20(Japan).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Legend of Hero Tonma (Japan)",
+            "rbf": "IremM72",
+            "zips": [
+              "lohtj.zip|loht.zip"
+            ]
+          }
+        },
+        {
+          "name": "Mr. HELI no Daibouken (Japan).mra",
+          "sha": "d596f60292e0fbbd5099aa61376cbd7ea1773eb1",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/Mr.%20HELI%20no%20Daibouken%20(Japan).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Mr. HELI no Daibouken (Japan)",
+            "rbf": "IremM72",
+            "zips": [
+              "mrheli.zip|bchopper.zip"
+            ]
+          }
+        },
+        {
+          "name": "Ninja Spirit (Japan).mra",
+          "sha": "732e2217504a1a4e0fb1883d5ea5d49b1a9cdc70",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/Ninja%20Spirit%20(Japan).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Ninja Spirit (Japan)",
+            "rbf": "IremM72",
+            "zips": [
+              "nspirit.zip|nspiritj.zip"
+            ]
+          }
+        },
+        {
+          "name": "R-Type (Japan).mra",
+          "sha": "615f8e24bf7000b6b6c5a89c6cd12695f8330929",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/R-Type%20(Japan).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "R-Type (Japan)",
+            "rbf": "IremM72",
+            "zips": [
+              "rtype.zip|rtypej.zip"
+            ]
+          }
+        },
+        {
+          "name": "R-Type (World).mra",
+          "sha": "0b8ffc8d2d8043085752804edf60309e5bbce8e5",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/R-Type%20(World).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "R-Type (World)",
+            "rbf": "IremM72",
+            "zips": [
+              "rtype.zip"
+            ]
+          }
+        },
+        {
+          "name": "R-Type II (Japan).mra",
+          "sha": "dabfecfb160734d07716e061881c673dba69e214",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/R-Type%20II%20(Japan).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "R-Type II (Japan)",
+            "rbf": "IremM72",
+            "zips": [
+              "rtype2.zip|rtype2j.zip"
+            ]
+          }
+        },
+        {
+          "name": "R-Type II (World).mra",
+          "sha": "242361600379a846eb66a9ab1f3681717141a6e7",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/R-Type%20II%20(World).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "R-Type II (World)",
+            "rbf": "IremM72",
+            "zips": [
+              "rtype2.zip"
+            ]
+          }
+        },
+        {
+          "name": "X Multiply (Japan, M72 hardware).mra",
+          "sha": "953526c53e24c7f3cda8e93eb116f6bf9eaadf65",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/X%20Multiply%20(Japan%2C%20M72%20hardware).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "X Multiply (Japan, M72 hardware)",
+            "rbf": "IremM72",
+            "zips": [
+              "xmultiplm72.zip|xmultipl.zip"
+            ]
+          }
+        },
+        {
+          "name": "R-Type (Japan prototype).mra",
+          "sha": "d521f45e82453114947a049955f19b4e235bfdb5",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/_alternatives/R-Type%20(Japan%20prototype).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "R-Type (Japan prototype)",
+            "rbf": "IremM72",
+            "zips": [
+              "rtype.zip|rtypejp.zip"
+            ]
+          }
+        },
+        {
+          "name": "R-Type (US).mra",
+          "sha": "77b9c04c7d3de2d3d89e12d6fc9ab91d33493252",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/_alternatives/R-Type%20(US).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "R-Type (US)",
+            "rbf": "IremM72",
+            "zips": [
+              "rtype.zip|rtypeu.zip"
+            ]
+          }
+        },
+        {
+          "name": "R-Type (World bootleg).mra",
+          "sha": "76066995ababa4771d3b01661332a460b85c8ad4",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/_alternatives/R-Type%20(World%20bootleg).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "R-Type (World bootleg)",
+            "rbf": "IremM72",
+            "zips": [
+              "rtype.zip|rtypeb.zip"
+            ]
+          }
+        },
+        {
+          "name": "R-Type II (Japan, revision C).mra",
+          "sha": "207a05a993258deecb458c0827f61d6a80b9d6f7",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/_alternatives/R-Type%20II%20(Japan%2C%20revision%20C).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "R-Type II (Japan, revision C)",
+            "rbf": "IremM72",
+            "zips": [
+              "rtype2.zip|rtype2jc.zip"
+            ]
+          }
+        },
+        {
+          "name": "R-Type II (inv) (World).mra",
+          "sha": "8a3ab01c9e8763c0013b24944f823d6fb3df581d",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/_alternatives/R-Type%20II%20(inv)%20(World).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "R-Type II (Inv) (World)",
+            "rbf": "IremM72",
+            "zips": [
+              "rtype2.zip"
+            ]
+          }
+        },
+        {
+          "name": "X Multiply (Inv) (Japan, M72 hardware).mra",
+          "sha": "7b248410c8368c51524530625fb2c80381ef9bd2",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/_alternatives/X%20Multiply%20(Inv)%20(Japan%2C%20M72%20hardware).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "X Multiply (Inv) (Japan, M72 hardware)",
+            "rbf": "IremM72",
+            "zips": [
+              "xmultiplm72.zip|xmultipl.zip"
             ]
           }
         }
