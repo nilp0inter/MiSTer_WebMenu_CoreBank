@@ -6718,7 +6718,7 @@
         },
         {
           "name": "Ninjakun.mra",
-          "sha": "2036f344dd1e6d281fd77ba1528a84341595a6e4",
+          "sha": "1c542ac08c43b0968af966f122f35f03ec6689aa",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-NinjaKun_MiSTer/master/releases/Ninjakun.mra",
           "type": "MRA",
           "extra": {
@@ -6726,6 +6726,19 @@
             "rbf": "ninjakun",
             "zips": [
               "ninjakun.zip"
+            ]
+          }
+        },
+        {
+          "name": "Raiders5.mra",
+          "sha": "8faa1671c300d462a9c870e51ef11a7f1ca1b508",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-NinjaKun_MiSTer/master/releases/Raiders5.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Raiders5",
+            "rbf": "ninjakun",
+            "zips": [
+              "raiders5.zip"
             ]
           }
         },
