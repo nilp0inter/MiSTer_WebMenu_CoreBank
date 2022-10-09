@@ -807,9 +807,9 @@
           "type": "RBF"
         },
         {
-          "name": "Arcade-MCR2_20221008.rbf",
+          "name": "Arcade-MCR2_20221010.rbf",
           "sha": "0bc9a118589d97b1e151363b1e9b163d045f8209",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-MCR2_MiSTer/master/releases/Arcade-MCR2_20221008.rbf",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-MCR2_MiSTer/master/releases/Arcade-MCR2_20221010.rbf",
           "type": "RBF"
         },
         {
@@ -929,6 +929,12 @@
           "name": "Arcade-NinjaKun_20210929.rbf",
           "sha": "31440cfa50e3b7adfa0f6148ecb7340a96ed3da4",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-NinjaKun_MiSTer/master/releases/Arcade-NinjaKun_20210929.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-NinjaKun_20221009.rbf",
+          "sha": "79c189f1b8e503f1f5ca9ea70b4cbcff46f9339b",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-NinjaKun_MiSTer/master/releases/Arcade-NinjaKun_20221009.rbf",
           "type": "RBF"
         },
         {
@@ -2654,7 +2660,7 @@
     {
       "name": "LLAPI_folder_MiSTer",
       "description": "Binary distribution of LLAPI cores",
-      "readme": "# LLAPI Folder\n\nThis repository contains all MiSTer-LLAPI cores under the _LLAPI folder.\n\n#### List of Tags that you may use with the Downloader and the 'Custom Download Filters' feature.\n\n`arcade`, `arcade-cores`, `arcade-donkeykong`, `arcade-iremm62`, `arcade-iremm72`, `arcade-joust2`, `arcade-mcr2`, `arcade-pacman`, `arcade-segasys1`, `arcade-tecmo`, `atari7800_llapi`, `cores`, `donkeykong_llapi`, `gameboy_llapi`, `gba2p_llapi`, `gba_llapi`, `genesis_llapi`, `hbmame`, `iremm62_llapi`, `iremm72_llapi`, `llapi`, `megacd_llapi`, `mra`, `neogeo_llapi`, `nes_llapi`, `pacman_llapi`, `s32x_llapi`, `segasys1_llapi`, `sgb_llapi`, `sms_llapi`, `snes_llapi`, `tecmo_llapi`, `turbografx16_llapi`",
+      "readme": "# LLAPI Folder\n\nThis repository contains all MiSTer-LLAPI cores under the _LLAPI folder.\n\n#### List of Tags that you may use with the Downloader and the 'Custom Download Filters' feature.\n\n`arcade`, `arcade-cores`, `arcade-donkeykong`, `arcade-iremm62`, `arcade-iremm72`, `arcade-joust2`, `arcade-mcr2`, `arcade-ninjakun`, `arcade-pacman`, `arcade-segasys1`, `arcade-tecmo`, `atari7800_llapi`, `cores`, `donkeykong_llapi`, `gameboy_llapi`, `gba2p_llapi`, `gba_llapi`, `genesis_llapi`, `hbmame`, `iremm62_llapi`, `iremm72_llapi`, `llapi`, `megacd_llapi`, `mra`, `neogeo_llapi`, `nes_llapi`, `pacman_llapi`, `s32x_llapi`, `segasys1_llapi`, `sgb_llapi`, `sms_llapi`, `snes_llapi`, `tecmo_llapi`, `turbografx16_llapi`",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-LLAPI/LLAPI_folder_MiSTer",
