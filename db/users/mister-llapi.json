@@ -721,6 +721,173 @@
       ]
     },
     {
+      "name": "Arcade-MCR2_MiSTer",
+      "description": null,
+      "readme": "# Midway MCR2 port for MiSTer\n\n[Original readme](README_orig.txt) (mostly irrelevant to MiSTer)\n\n# Keyboard inputs :\n```\n   ESC    : Coin 1\n   UP,DOWN,LEFT,RIGHT arrows : Player 1\n   LCtrl  : Fire A\n   LAlt   : Fire B\n   Space  : Fire C   \n   LShift : Fire D\n   Z      : Fire E\n   X      : Fire F \n\n   MAME/IPAC/JPAC Style Keyboard inputs:\n     1           : Start 1 Player\n     2           : Start 2 Player\n\t 5           : Coin 1\n     6           : Coin 2\n     R,F,D,G     : Player 2\n     A           : Fire2 A\n     S           : Fire2 B \n     Q           : Fire2 C\n     W           : Fire2 D\n     I           : Fire2 E\n     K           : Fire2 F\n\t\n Joystick support. \n```\n# Games\n\n### Domino Man\nUp to 2 players. \n* Up/Down/Left/Right - movements \n* A - Swat \n\n### Kozmik Krooz'r\nUp to 2 players.\n* Up/Down/Left/Right - movements\n* A - Fire\n* B - Shield\nSupports 2 control modes: Joystick/Spinner\nSpinner - Rotate Right,Rotate Left\n \n### Satan's Hollow\nUp to 2 players.\n* Left/Right - movements\n* A - Fire\n\n### Tron\nUp to 2 players.\n* Up/Down/Left/Right - movements\n* A - Fire\nSupports 2 control modes: Joystick/Spinner\nSpinner - Rotate Right,Rotate Left\n\n### Two Tigers\nUp to 2 players.\n* Left/Right - movements\n* A - Shoot\n* B - Bomb\n* C - DogFight\nSupports 2 control modes: Joystick/Spinner\nSpinner - Rotate Right,Rotate Left\n\n### Wacko\nUp to 2 players.\n* Up/Down/Left/Right - movements\n* A - Zap Right\n* B - Zap Down\n* C - Zap Up\n* D - Zap Left\nSupports 2 control modes: Joystick/Trackball\nTrackball - Up/Down/Left/Right\n \n# ROMs\n```\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n\n```\n\nLaunch game using the appropriate .MRA\n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/MiSTer-LLAPI/Arcade-MCR2_MiSTer",
+      "releases": [
+        {
+          "name": "Arcade-MCR2_20200124.rbf",
+          "sha": "829535d41f375bbbe74d9e7a1c148a9f5e6ace6c",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-MCR2_MiSTer/master/releases/Arcade-MCR2_20200124.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-MCR2_20200127.rbf",
+          "sha": "26ae4db8212618dd9aed123d021a1f649725f468",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-MCR2_MiSTer/master/releases/Arcade-MCR2_20200127.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-MCR2_20200204.rbf",
+          "sha": "ef62665f471761f6858b10a4e4ebf8e96dab27bb",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-MCR2_MiSTer/master/releases/Arcade-MCR2_20200204.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-MCR2_20200206.rbf",
+          "sha": "7ba34c88e48f70cf29d9bdef19b0dd2d35363cea",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-MCR2_MiSTer/master/releases/Arcade-MCR2_20200206.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-MCR2_20200211.rbf",
+          "sha": "0a21debf7b3b4173fe86ccd78cc4ce05f072f493",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-MCR2_MiSTer/master/releases/Arcade-MCR2_20200211.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-MCR2_20200216.rbf",
+          "sha": "8a7ec4114c2f8ec6ea44aa20d135eadc19627982",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-MCR2_MiSTer/master/releases/Arcade-MCR2_20200216.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-MCR2_20200223.rbf",
+          "sha": "7d170d9ec128152485d7bb7fd3be9c59bb2f1148",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-MCR2_MiSTer/master/releases/Arcade-MCR2_20200223.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-MCR2_20200302.rbf",
+          "sha": "6d4880a84e4f3eaba8dd7ee8986a7790eaba6538",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-MCR2_MiSTer/master/releases/Arcade-MCR2_20200302.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-MCR2_20200521.rbf",
+          "sha": "16685c01830532ba8d5cf112152a84d93cf2a918",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-MCR2_MiSTer/master/releases/Arcade-MCR2_20200521.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-MCR2_20201213.rbf",
+          "sha": "1a03e9547ce83dd54da4d61193523a3ae7898cd1",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-MCR2_MiSTer/master/releases/Arcade-MCR2_20201213.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-MCR2_20201215.rbf",
+          "sha": "afe86b3d5820537e3f0e3342a37a99a566d2c6e8",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-MCR2_MiSTer/master/releases/Arcade-MCR2_20201215.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-MCR2_20201216.rbf",
+          "sha": "5e37525e44e2c103d764420af6e8f2c19ddb367c",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-MCR2_MiSTer/master/releases/Arcade-MCR2_20201216.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-MCR2_20210114.rbf",
+          "sha": "c48d03971ed06bf9bdfb6c36e898e7c1a91ceb8d",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-MCR2_MiSTer/master/releases/Arcade-MCR2_20210114.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Domino Man.mra",
+          "sha": "198513c8a30eaf5f149bbe39a68d0e1737558cda",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-MCR2_MiSTer/master/releases/Domino%20Man.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Domino Man",
+            "rbf": "mcr2",
+            "zips": [
+              "domino.zip"
+            ]
+          }
+        },
+        {
+          "name": "Kozmik Krooz'r.mra",
+          "sha": "6101e35dc87c33157ae85b0c9a8bf4752078ce05",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-MCR2_MiSTer/master/releases/Kozmik%20Krooz'r.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Kozmik Krooz'r",
+            "rbf": "mcr2",
+            "zips": [
+              "kroozr.zip"
+            ]
+          }
+        },
+        {
+          "name": "Satan's Hollow (Set 1).mra",
+          "sha": "1cf86b6e16eb5320b3d5dd04992aee4ffeed77b4",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-MCR2_MiSTer/master/releases/Satan's%20Hollow%20(Set%201).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Satan's Hollow",
+            "rbf": "mcr2",
+            "zips": [
+              "shollow.zip"
+            ]
+          }
+        },
+        {
+          "name": "Tron.mra",
+          "sha": "1340b58fffa95b8edda36293198e84c70437d493",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-MCR2_MiSTer/master/releases/Tron.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Tron",
+            "rbf": "mcr2",
+            "zips": [
+              "tron.zip"
+            ]
+          }
+        },
+        {
+          "name": "Two Tigers (Tron Conversion).mra",
+          "sha": "c5d0e0e391a3032a3720bd2f76594f7f0e1ff51c",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-MCR2_MiSTer/master/releases/Two%20Tigers%20(Tron%20Conversion).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Two Tigers",
+            "rbf": "mcr2",
+            "zips": [
+              "twotiger.zip",
+              "twotigerc.zip"
+            ]
+          }
+        },
+        {
+          "name": "Wacko.mra",
+          "sha": "715bc7408ba5fab978d891ab7a101bae300480d9",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-MCR2_MiSTer/master/releases/Wacko.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Wacko",
+            "rbf": "mcr2",
+            "zips": [
+              "wacko.zip"
+            ]
+          }
+        }
+      ]
+    },
+    {
       "name": "Arcade-Pacman_MiSTer",
       "description": "Arcade: Pacman for MiSTer",
       "readme": "LLAPI Note : \n\n1. Place the rbf core file in a folder named _LLAPI/cores/\n2. Place the MRAs files in _LLAPI/_Arcade/\n3. Dont forget to enable LLAPI in the core OSD (this has to be done for each MRA for now)\n4. Play !\n\nIn order to play with 2 players you need to insert 2 coins at least and press START2P button.\nThis button has been mapped to the LEFT shoulder button (SNES controller used as a reference)\n\n---------------------------------------------------------------------------------\n-- \n-- Arcade: Pacman port to MiSTer by Sorgelig\n-- 09 November 2017\n-- \n---------------------------------------------------------------------------------\n-- A simulation model of Pacman hardware\n-- Copyright (c) MikeJ - January 2006\n---------------------------------------------------------------------------------\n-- \n-- Support screen and controls rotation on HDMI output.\n-- Only controls are rotated on VGA output.\n-- \n-- \n-- Keyboard inputs :\n--\n--   F1          : Start Player 1\n--   F2          : Start Player 2\n--   F3\t\t : Coin Player 1\n--   F5          : Skip to next level\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   R,F,D,G     : Player 2 Movements\n--\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--\n-- Joystick support.\n-- \n----------------------------------------------\n\nHiscore save/load:\n\nSave and load of hiscores is supported for the following games on this core:\n - Alibaba 40 Thieves\n - Crush Roller\n - Dream Shopper\n - Eggor\n - Gorkans\n - Lizard Wizard\n - Mr. TNT\n - Ms. Pacman\n - Pac-Man (Midway)\n - Pacman Club\n - Pacman Plus\n - Ponpoko\n - Puck Man\n - Woodpecker\n\nTo save your hiscores manually, press the 'Save Settings' option in the OSD.  Hiscores will be automatically loaded when the core is started.\n\nTo enable automatic saving of hiscores, turn on the 'Autosave Hiscores' option and press the 'Save Settings' option in the OSD.  Hiscores will then be automatically saved (if they have changed) any time the OSD is opened.\n\nHiscore data is stored in /media/fat/config/nvram/ as ```<mra filename>.nvm```\n\n---------------------------------------------------------------------------------\n\n                                 *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
