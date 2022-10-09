@@ -894,6 +894,78 @@
       ]
     },
     {
+      "name": "Arcade-NinjaKun_MiSTer",
+      "description": "Ninja-Kun for MiSter",
+      "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: Ninja-Kun  port to MiSTer by MiSTer-X\n-- 23 October 2019\n-- https://github.com/MrX-8B/MiSTer-Arcade-NinjaKun\n-- \n---------------------------------------------------------------------------------\n-- FPGA Ninja-Kun for Spartan-6\n------------------------------------------------\n-- Copyright (c) 2011 MiSTer-X\n---------------------------------------------------------------------------------\n-- T80/T80s - Version : 0242\n-----------------------------\n-- Z80 compatible microprocessor core\n-- Copyright (c) 2001-2002 Daniel Wallner (jesus@opencores.org)\n---------------------------------------------------------------------------------\n-- YM2149 (AY-3-8910)\n-- Copyright (c) MikeJ - Jan 2005\n---------------------------------------------------------------------------------\n-- \n-- \n-- Keyboard inputs :\n--\n--   F2          : Coin + Start 2 players\n--   F1          : Coin + Start 1 player\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--   SPACE       : Shot\n--   CTRL        : Jump\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   R,F,D,G     : Player 2 Movements\n--   A           : Player 2 Shot\n--   S           : Player 2 Jump\n--\n-- Joystick support.\n--\n--\n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/MiSTer-LLAPI/Arcade-NinjaKun_MiSTer",
+      "releases": [
+        {
+          "name": "Arcade-NinjaKun_20191023.rbf",
+          "sha": "ffa0b7272485233a55a86a14ed8bc27386fe4535",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-NinjaKun_MiSTer/master/releases/Arcade-NinjaKun_20191023.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-NinjaKun_20200108.rbf",
+          "sha": "6b01b5adb9d49c689cf350a12d6bc8fb82ef1517",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-NinjaKun_MiSTer/master/releases/Arcade-NinjaKun_20200108.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-NinjaKun_20210116.rbf",
+          "sha": "70395018d83a56fa21f9efc42f34cfb0dec3180a",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-NinjaKun_MiSTer/master/releases/Arcade-NinjaKun_20210116.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-NinjaKun_20210606.rbf",
+          "sha": "7846d4edeed7308cebb1bcf743a3004b7f67f4ff",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-NinjaKun_MiSTer/master/releases/Arcade-NinjaKun_20210606.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-NinjaKun_20210929.rbf",
+          "sha": "31440cfa50e3b7adfa0f6148ecb7340a96ed3da4",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-NinjaKun_MiSTer/master/releases/Arcade-NinjaKun_20210929.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Ninjakun.mra",
+          "sha": "1c542ac08c43b0968af966f122f35f03ec6689aa",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-NinjaKun_MiSTer/master/releases/Ninjakun.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Ninjakun Majou no Bouken",
+            "rbf": "ninjakun",
+            "zips": [
+              "ninjakun.zip"
+            ]
+          }
+        },
+        {
+          "name": "Raiders5.mra",
+          "sha": "8faa1671c300d462a9c870e51ef11a7f1ca1b508",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-NinjaKun_MiSTer/master/releases/Raiders5.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Raiders5",
+            "rbf": "ninjakun",
+            "zips": [
+              "raiders5.zip"
+            ]
+          }
+        },
+        {
+          "name": "rommap.txt",
+          "sha": "ea7c701cf1bc398c70dcb4519f5b7c35d21f0316",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-NinjaKun_MiSTer/master/releases/rommap.txt",
+          "type": "OTHER"
+        }
+      ]
+    },
+    {
       "name": "Arcade-Pacman_MiSTer",
       "description": "Arcade: Pacman for MiSTer",
       "readme": "LLAPI Note : \n\n1. Place the rbf core file in a folder named _LLAPI/cores/\n2. Place the MRAs files in _LLAPI/_Arcade/\n3. Dont forget to enable LLAPI in the core OSD (this has to be done for each MRA for now)\n4. Play !\n\nIn order to play with 2 players you need to insert 2 coins at least and press START2P button.\nThis button has been mapped to the LEFT shoulder button (SNES controller used as a reference)\n\n---------------------------------------------------------------------------------\n-- \n-- Arcade: Pacman port to MiSTer by Sorgelig\n-- 09 November 2017\n-- \n---------------------------------------------------------------------------------\n-- A simulation model of Pacman hardware\n-- Copyright (c) MikeJ - January 2006\n---------------------------------------------------------------------------------\n-- \n-- Support screen and controls rotation on HDMI output.\n-- Only controls are rotated on VGA output.\n-- \n-- \n-- Keyboard inputs :\n--\n--   F1          : Start Player 1\n--   F2          : Start Player 2\n--   F3\t\t : Coin Player 1\n--   F5          : Skip to next level\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   R,F,D,G     : Player 2 Movements\n--\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--\n-- Joystick support.\n-- \n----------------------------------------------\n\nHiscore save/load:\n\nSave and load of hiscores is supported for the following games on this core:\n - Alibaba 40 Thieves\n - Crush Roller\n - Dream Shopper\n - Eggor\n - Gorkans\n - Lizard Wizard\n - Mr. TNT\n - Ms. Pacman\n - Pac-Man (Midway)\n - Pacman Club\n - Pacman Plus\n - Ponpoko\n - Puck Man\n - Woodpecker\n\nTo save your hiscores manually, press the 'Save Settings' option in the OSD.  Hiscores will be automatically loaded when the core is started.\n\nTo enable automatic saving of hiscores, turn on the 'Autosave Hiscores' option and press the 'Save Settings' option in the OSD.  Hiscores will then be automatically saved (if they have changed) any time the OSD is opened.\n\nHiscore data is stored in /media/fat/config/nvram/ as ```<mra filename>.nvm```\n\n---------------------------------------------------------------------------------\n\n                                 *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
