@@ -5,6 +5,48 @@
   "type": "Organization",
   "repos": [
     {
+      "name": "Arcade-BankPanic_MiSTer",
+      "description": "BankPanic FPGA core for MiSTer with LLAPI support",
+      "readme": "# BankPanic for MiSTerFPGA\r\n\r\n## General description\r\nThis is the port of Bank Panic for MiSTerFPGA by Pierco (Pierre Cornier). I tried to reproduce the PCB as much as possible so it should be very close to the original hardware.\r\n\r\nI would like to give special thanks to Mark Haysman from RetroClinic for sharing the equations of the PAL 315-5075, and to David Shadoff, Alan Steremberg & Chockichoc for their support and friendship!\r\n\r\n## Patreon contributors!\r\nAdrian Vargerson\r\nAlan Steremberg\r\nAllen Tipper\r\nAmosfear\r\nAndreas Micklei\r\nbirdybro\r\nChristopher Garland\r\nCory Stargel\r\nCyrille Jouineau\r\nDarren Chell\r\nDarren Newman\r\nDave Ely\r\nDavide Lorigliola\r\nDimitris Zongas\r\nFrancois P\r\nFunkycochise\r\nGentlemen's Pixel Club\r\nGrumpy Old Gamer\r\nHerbert Krammer\r\nHiddenbyleaves\r\nHolger Lagerfeldt\r\nHumanoide70\r\nJ BG\r\nJohan Sj\u00f6strand\r\nJohn Stringer\r\nJos\u00e9 L\u00f3pez Navarrete\r\nJuan Carlos Pastor (Denymetanol)\r\nMatt Hargett\r\nMax\r\nMichael Packard\r\nMike Holzinger\r\nMike S\r\nMiSTerFPGA.co.uk\r\nNicolas VAILLANT\r\nPhilip Lawson\r\nPons Cremator\r\nRaspberryAlpine\r\nRune P\r\nSamuel Giroux\r\nSwedishGojira\r\nTonton Kaloun\r\nwwark\r\n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/MiSTer-LLAPI/Arcade-BankPanic_MiSTer",
+      "releases": [
+        {
+          "name": "Arcade-BankPanic_20221007.rbf",
+          "sha": "77a485093fb10e6a1375ebf1408edb99d7b7f5cb",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-BankPanic_MiSTer/master/releases/Arcade-BankPanic_20221007.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "BankPanic.mra",
+          "sha": "15577bafd5812c76dd927422e00c6b450ff2f50e",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-BankPanic_MiSTer/master/releases/BankPanic.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "BankPanic",
+            "rbf": "bankpanic",
+            "zips": [
+              "bankp.zip"
+            ]
+          }
+        },
+        {
+          "name": "Combat Hawk.mra",
+          "sha": "6952ffb776b350bc7890dd182a17041c36ba9558",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-BankPanic_MiSTer/master/releases/Combat%20Hawk.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Combat Hawk",
+            "rbf": "bankpanic",
+            "zips": [
+              "combh.zip"
+            ]
+          }
+        }
+      ]
+    },
+    {
       "name": "Arcade-DonkeyKong_MiSTer",
       "description": "Arcade: Donkey Kong for MiSTer",
       "readme": "LLAPI Note : \r\n\r\n1. Place the rbf core file in a folder named _LLAPI/cores/\r\n2. Place the MRAs files in _LLAPI/_Arcade/\r\n3. Dont forget to enable LLAPI in the core OSD (this has to be done for each MRA for now)\r\n4. Play !\r\n\r\nIn order to play with 2 players you need to insert 2 coins at least and press START2P button.\r\nThis button has been mapped to the LEFT shoulder button (SNES controller used as a reference)\r\n\r\n---------------------------------------------------------------------------------\r\n-- \r\n-- Arcade: Donkey Kong port to MiSTer by Sorgelig\r\n-- 18 April 2018\r\n-- \r\n---------------------------------------------------------------------------------\r\n-- \r\n-- dkong Copyright (c) 2003 - 2004 Katsumi Degawa\r\n-- T80   Copyright (c) 2001-2002 Daniel Wallner (jesus@opencores.org) All rights reserved\r\n-- T48   Copyright (c) 2004, Arnim Laeuger (arniml@opencores.org) All rights reserved\r\n-- \r\n---------------------------------------------------------------------------------\r\n-- \r\n-- Support screen and controls rotation on HDMI output.\r\n-- Only controls are rotated on VGA output.\r\n-- \r\n-- \r\n-- Keyboard inputs :\r\n--\r\n--   F1          : Coin + Start 1P\r\n--   F2          : Coin + Start 2P\r\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\r\n--   SPACE       : Jump\r\n--\r\n-- Joystick support.\r\n-- \r\n-- High score save/load - To save your scores use the 'Save Settings' option in the OSD.\r\n-- * Warning: For Donkey Kong 3 (bootleg) Scores are only loaded when core starts, using reset will return scores to factory settings *\r\n--\r\n---------------------------------------------------------------------------------\r\n\r\n                                *** Attention ***\r\n\r\nROMs are not included. In order to use this arcade, you need to provide the\r\ncorrect ROMs.\r\n\r\nTo simplify the process .mra files are provided in the releases folder, that\r\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\r\ncorresponding file of the M.A.M.E. project.\r\n\r\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\r\ninformation on how to setup and use the environment.\r\n\r\nQuickreference for folders and file placement:\r\n\r\n/_Arcade/<game name>.mra\r\n/_Arcade/cores/<game rbf>.rbf\r\n/_Arcade/mame/<mame rom>.zip\r\n/_Arcade/hbmame/<hbmame rom>.zip\r\n",
