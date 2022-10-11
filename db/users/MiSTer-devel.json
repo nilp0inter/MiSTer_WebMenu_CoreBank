@@ -6694,7 +6694,7 @@
     {
       "name": "Arcade-NinjaKun_MiSTer",
       "description": "Ninja-Kun for MiSter",
-      "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: Ninja-Kun  port to MiSTer by MiSTer-X\n-- 23 October 2019\n-- https://github.com/MrX-8B/MiSTer-Arcade-NinjaKun\n-- \n---------------------------------------------------------------------------------\n-- FPGA Ninja-Kun for Spartan-6\n------------------------------------------------\n-- Copyright (c) 2011 MiSTer-X\n---------------------------------------------------------------------------------\n-- T80/T80s - Version : 0242\n-----------------------------\n-- Z80 compatible microprocessor core\n-- Copyright (c) 2001-2002 Daniel Wallner (jesus@opencores.org)\n---------------------------------------------------------------------------------\n-- YM2149 (AY-3-8910)\n-- Copyright (c) MikeJ - Jan 2005\n---------------------------------------------------------------------------------\n-- \n-- \n-- Keyboard inputs :\n--\n--   F2          : Coin + Start 2 players\n--   F1          : Coin + Start 1 player\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--   SPACE       : Shot\n--   CTRL        : Jump\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   R,F,D,G     : Player 2 Movements\n--   A           : Player 2 Shot\n--   S           : Player 2 Jump\n--\n-- Joystick support.\n--\n--\n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
+      "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: Ninja-Kun  port to MiSTer by MiSTer-X\n-- 23 October 2019\n-- https://github.com/MrX-8B/MiSTer-Arcade-NinjaKun\n-- \n-- Added support for Raiders5, Nova 2001 from MiST by Mike S\n---------------------------------------------------------------------------------\n-- FPGA Ninja-Kun for Spartan-6\n------------------------------------------------\n-- Copyright (c) 2011 MiSTer-X\n---------------------------------------------------------------------------------\n-- T80/T80s - Version : 0242\n-----------------------------\n-- Z80 compatible microprocessor core\n-- Copyright (c) 2001-2002 Daniel Wallner (jesus@opencores.org)\n---------------------------------------------------------------------------------\n-- YM2149 (AY-3-8910)\n-- Copyright (c) MikeJ - Jan 2005\n---------------------------------------------------------------------------------\n-- \n-- \n-- Keyboard inputs :\n--\n--   F2          : Coin + Start 2 players\n--   F1          : Coin + Start 1 player\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--   SPACE       : Shot\n--   CTRL        : Jump\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   R,F,D,G     : Player 2 Movements\n--   A           : Player 2 Shot\n--   S           : Player 2 Jump\n--\n-- Joystick support.\n--\n--\n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n\nNote for Nova 2001 (From Mame)\n\n- nova2001 is very sensitive to coin inputs, if the coin isn't held down long\n  enough, or is held down too long the game will reset, likewise if coins are\n  inserted too quickly. This only happens in nova2001 and not in nova2001u.\n  (the nova2001h set seems to be an unofficial fix for this issue, presumably\n   it's so sensitive it would reset sometimes in the original cabinet?)\n- nova2001h MRA was added to address the original cabinet issue.\n\n\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/Arcade-NinjaKun_MiSTer",
@@ -6739,6 +6739,32 @@
             "rbf": "ninjakun",
             "zips": [
               "ninjakun.zip"
+            ]
+          }
+        },
+        {
+          "name": "Nova 2001 (Hack).mra",
+          "sha": "9dbd9d591623c7c5c6fcc2932ac4eb0a573e2e0e",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-NinjaKun_MiSTer/master/releases/Nova%202001%20(Hack).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Nova 2001",
+            "rbf": "ninjakun",
+            "zips": [
+              "nova2001h.zip"
+            ]
+          }
+        },
+        {
+          "name": "Nova 2001.mra",
+          "sha": "28e66588df81fd8ba13f776a0333187aa04502e6",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-NinjaKun_MiSTer/master/releases/Nova%202001.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Nova 2001",
+            "rbf": "ninjakun",
+            "zips": [
+              "nova2001.zip"
             ]
           }
         },
