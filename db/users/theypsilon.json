@@ -585,6 +585,15 @@
       ]
     },
     {
+      "name": "Incomplete_MAD_DB_Generator_MiSTer",
+      "description": null,
+      "readme": "# Incomplete MAD Database Generator for MiSTer and the Arcade Organizer\n\nThis project generates the mad files at: https://github.com/theypsilon/MAD_Database_MiSTer\n\nThey don't cover all the fields from the schema. The generated files are only meant to be used as a template for new maintainers to write their own MAD DBs.\n\nIf you want to become a MAD DB maintainer, follow the instructions from the linked repository above.\n",
+      "archived": false,
+      "fork": false,
+      "url": "https://github.com/theypsilon/Incomplete_MAD_DB_Generator_MiSTer",
+      "releases": []
+    },
+    {
       "name": "JT_Cores_MiSTer",
       "description": null,
       "readme": null,
