@@ -4435,21 +4435,39 @@
           "sha": "f6c1183f59b118d2280dde8e66131c323e2add1e",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Gauntlet_MiSTer/main/releases/Gauntlet%20(rev%2014).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Gauntlet",
+            "rbf": "gauntlet",
+            "zips": [
+              "gauntlet.zip"
+            ]
+          }
         },
         {
           "name": "Gauntlet II.mra",
           "sha": "208251c1fe0003f70cf2d5eb379d6bdbb7e38730",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Gauntlet_MiSTer/main/releases/Gauntlet%20II.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Gauntlet II",
+            "rbf": "gauntlet",
+            "zips": [
+              "gaunt2.zip"
+            ]
+          }
         },
         {
           "name": "Vindicators Part II (rev 3).mra",
           "sha": "085d9ce5d03ca8b367247028d5afa81061bf3595",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Gauntlet_MiSTer/main/releases/Vindicators%20Part%20II%20(rev%203).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Vindicators Part II",
+            "rbf": "gauntlet",
+            "zips": [
+              "vindctr2.zip"
+            ]
+          }
         }
       ]
     },
