@@ -185,7 +185,7 @@
     {
       "name": "ArcadeROMsDB_MiSTer",
       "description": null,
-      "readme": null,
+      "readme": "# Arcade ROMs Database\n\n\nActivate it through [Update All](https://github.com/theypsilon/Update_All_MiSTer), or install it manually by adding the following lines to the `downloader.ini` file:\n\n```ini\n[arcade_roms_db]\ndb_url = https://raw.githubusercontent.com/theypsilon/ArcadeROMsDB_MiSTer/db/arcade_roms_db.json.zip\n```\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/theypsilon/ArcadeROMsDB_MiSTer",
