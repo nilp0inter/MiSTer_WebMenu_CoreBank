@@ -142,8 +142,8 @@ output = "_Others/jtninja_20220819.rbf"
 
 
 # jtoutrun
-url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/outrun/releases/jtoutrun_20220930.rbf"
-output = "_Others/jtoutrun_20220930.rbf"
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/outrun/releases/jtoutrun_20221104.rbf"
+output = "_Others/jtoutrun_20221104.rbf"
 
 
 # jtpang
@@ -219,6 +219,11 @@ output = "_Arcade/cores/jtsectionz_20220818.rbf"
 # jtsf
 url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/sf/releases/jtsf_20220818.rbf"
 output = "_Others/jtsf_20220818.rbf"
+
+
+# jtshanon
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/shanon/releases/jtshanon_20221104.rbf"
+output = "_Others/jtshanon_20221104.rbf"
 
 
 # jtslyspy
@@ -801,9 +806,9 @@ url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/ninja/releas
 output = "_Arcade/Heavy Barrel (World).mra"
 
 
-# Super Hang-On (sitdown-upright) (unprotected).mra
-url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/outrun/releases/Super%20Hang-On%20(sitdown-upright)%20(unprotected).mra"
-output = "_Arcade/Super Hang-On (sitdown-upright) (unprotected).mra"
+# Out Run (sitdown-upright, Rev B).mra
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/outrun/releases/Out%20Run%20(sitdown-upright%2C%20Rev%20B).mra"
+output = "_Arcade/Out Run (sitdown-upright, Rev B).mra"
 
 
 # Block Block (World 911219 Joystick).mra
@@ -1044,6 +1049,11 @@ output = "_Arcade/SectionZ.mra"
 # Street Fighter (US, set 1).mra
 url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/sf/releases/Street%20Fighter%20(US%2C%20set%201).mra"
 output = "_Arcade/Street Fighter (US, set 1).mra"
+
+
+# Super Hang-On (sitdown-upright) (unprotected).mra
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/shanon/releases/Super%20Hang-On%20(sitdown-upright)%20(unprotected).mra"
+output = "_Arcade/Super Hang-On (sitdown-upright) (unprotected).mra"
 
 
 # Boulder Dash - Boulder Dash Part 2 (World).mra

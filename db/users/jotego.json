@@ -6245,33 +6245,33 @@
         },
         {
           "name": "README.md",
-          "sha": "a4384ec909736f9bb661c8d412123c76f2874ccc",
+          "sha": "a16bbf3ae8152815dc358daf9b212ced90174f9d",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/outrun/README.md",
           "type": "OTHER"
         },
         {
-          "name": "Super Hang-On (sitdown-upright) (unprotected).mra",
-          "sha": "991b5eeead2b064ddad0af80c7a5e02a15fc3484",
-          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/outrun/releases/Super%20Hang-On%20(sitdown-upright)%20(unprotected).mra",
+          "name": "Out Run (sitdown-upright, Rev B).mra",
+          "sha": "67b083566a3e58c297aaf713540eee4c35018427",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/outrun/releases/Out%20Run%20(sitdown-upright%2C%20Rev%20B).mra",
           "type": "MRA",
           "extra": {
-            "name": "Super Hang-On (sitdown/upright) (unprotected)",
+            "name": "Out Run (sitdown/upright, Rev B)",
             "rbf": "jtoutrun",
             "zips": [
-              "shangon.zip",
+              "outrun.zip",
               "jtbeta.zip"
             ]
           }
         },
         {
-          "name": "jtoutrun_20220930.rbf",
-          "sha": "6a6c04128895dde9fbab3e33b759f1ae68c6b105",
-          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/outrun/releases/jtoutrun_20220930.rbf",
+          "name": "jtoutrun_20221104.rbf",
+          "sha": "85aa80dc1bb1c1e3a052a144b7c3505425f4b516",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/outrun/releases/jtoutrun_20221104.rbf",
           "type": "RBF"
         },
         {
           "name": "version.log",
-          "sha": "08e9eada3bf5f02f7d66f122252a2c305c7b9c03",
+          "sha": "2b7b08455100b84f2b7dd8599bdf666948cd7d5f",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/outrun/version.log",
           "type": "OTHER"
         },
@@ -8317,6 +8317,38 @@
           "name": "version.log",
           "sha": "5a0b0558062f78423a433e3a92352ba9e777eb9d",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/sf/version.log",
+          "type": "OTHER"
+        },
+        {
+          "name": "README.md",
+          "sha": "a16bbf3ae8152815dc358daf9b212ced90174f9d",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/shanon/README.md",
+          "type": "OTHER"
+        },
+        {
+          "name": "Super Hang-On (sitdown-upright) (unprotected).mra",
+          "sha": "d884d55631cebd15746a961d330e7a245063f386",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/shanon/releases/Super%20Hang-On%20(sitdown-upright)%20(unprotected).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Super Hang-On (sitdown/upright) (unprotected)",
+            "rbf": "jtshanon",
+            "zips": [
+              "shangon.zip",
+              "jtbeta.zip"
+            ]
+          }
+        },
+        {
+          "name": "jtshanon_20221104.rbf",
+          "sha": "85d5cdb1088cc17821787831cfc39834e897958e",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/shanon/releases/jtshanon_20221104.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "version.log",
+          "sha": "5db3055f07eef360e202d811abb63b1c5979c1f4",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/shanon/version.log",
           "type": "OTHER"
         },
         {
