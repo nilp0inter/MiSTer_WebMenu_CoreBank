@@ -612,6 +612,15 @@
       "releases": []
     },
     {
+      "name": "LinuxDB_MiSTer",
+      "description": null,
+      "readme": "# Linux DB for MiSTer\n\nThis is the same Linux version that is contained in this other database: https://github.com/MiSTer-devel/Distribution_MiSTer",
+      "archived": false,
+      "fork": false,
+      "url": "https://github.com/theypsilon/LinuxDB_MiSTer",
+      "releases": []
+    },
+    {
       "name": "MAD_Database_MiSTer",
       "description": null,
       "readme": "# MAD Database for MiSTer\n\nAuto-Generated json DB file at: https://github.com/theypsilon/MAD_Database_MiSTer/tree/db\n\n## How to generate your own MAD Database:\n\n1. Create your own public repository on GitHub\n2. Place the contents of this zip (https://github.com/theypsilon/MAD_Database_MiSTer/archive/refs/heads/main.zip) on your new public repository as-is\n3. Make sure that there is a .github hidden folder there, if there isn't go back to Step 2, cause something was not copied correctly.\n4. Substitute the contents of the mad folder with files of your own. The folder structure inside mad does not matter, it will just look for files with the .mad extension.\n5. Commit and push the changes.\n6. After 5 mins, your new repository will generate a new branch named db by itself, this is an automatic task. It will contain the zipped json that we need in the [Arcade Organizer](https://github.com/theypsilon/_arcade-organizer/).\n\n## MAD Schema\n\nMAD files are XML files that have to be validated against [this schema](mad_schema.xsd).\n\nAn example of a valid MAD file would be the following:\n\n```xml\n<?xml version=\"1.0\" ?>\n<misterarcadedescription>\n\n\t<setname>ddonpach</setname>\n\t<name>DoDonPachi (JP)</name>\n\t<region>Japan</region>\n\t<alternative>yes</alternative>\n\t<parent_title>DonPachi</parent_title>\n\t<platform>CAVE 68000</platform>\n\t<series>DonPachi</series>\n\t<homebrew>no</homebrew>\n\t<bootleg>no</bootleg>\n\t<year>1997</year>\n\t<manufacturer>CAVE</manufacturer>\n\t<category>Shooter - Vertical</category>\n\t<best_of>theypsilon Top Shmups|1</best_of>\n\n\t<rotation>vertical (ccw)</rotation>\n\t<flip>yes</flip>\n\t<resolution>15kHz</resolution>\n\n\t<players>2 (simultaneous)</players>\n\t<move_inputs>8-way</move_inputs>\n\t<special_controls></special_controls>\n\t<num_buttons>3</num_buttons>\n\n</misterarcadedescription>\n```\n",
