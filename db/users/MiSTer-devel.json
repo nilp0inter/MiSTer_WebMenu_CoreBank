@@ -9747,6 +9747,15 @@
       ]
     },
     {
+      "name": "Arcade-Sonson_MiSTer",
+      "description": null,
+      "readme": "# [Arcade: Capcom SonSon](https://en.wikipedia.org/wiki/SonSon) for [MiSTer](https://mister-devel.github.io/MkDocs_MiSTer/)\n\n![SonSon 2 Logo](docs/SonsonCover.jpg)\n\nOriginal core developed by [Mark McDougall(tcdev)] and Ported to MiST\n\nPorted to MiSTer by [Mike Simone](https://github.com/MikeS11)\n\n## Description\n\nThis is a simulation model of the **Capcom SonSon** hardware.\n\nOriginal source is located in `docs/`\n\n## Controls\n\n\n\n## To-Do\n\n*Add Hi Scores\n\n\n\n## ROM Files Instructions\n\nROMs are not included! In order to use this arcade core, you will need to provide the correct ROM file yourself.\n\nTo simplify the process .mra files are provided in the releases folder, that specify the required ROMs with their checksums. The ROMs .zip filename refers to the corresponding file from the MAME project.\n\nPlease refer to [https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms-and-MRA-files](https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms-and-MRA-files) for information on how to setup and use the environment.\n\nQuick reference for folders and file placement:\n\n```\n/_Arcade/<game name>.mra  \n/_Arcade/cores/<game rbf>.rbf  \n/_Arcade/mame/<mame rom>.zip  \n/_Arcade/hbmame/<hbmame rom>.zip  \n```\n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/MiSTer-devel/Arcade-Sonson_MiSTer",
+      "releases": []
+    },
+    {
       "name": "Arcade-SpaceInvaders_MiSTer",
       "description": "MiSTer FPGA version of the midway and taito board most known for Space Invaders ",
       "readme": "# Space Invaders Board\n\nSpace Invaders is a classic arcade game. However, the same hardware with different sound boards, and slight modifications was used on many many games. \n\n## Credits\n\nOriginal Authors:\n* Daniel Wallner\n* Mike J\n* Paul Walsh\nMiST and MiSTer Port:\n* Gehstock\n* Gyurco\n* David Woods\n* Mike Coates\n* Shane Lynch (Gun support)\n* Alan Steremberg\n\n## Scripts and Such\n\n### Color Overlay\n\nThe Midway games often shipped with a plastic color overlay to add color to the games. The Taito boards had color overlay hardware. This included two roms (one for each direction of cocktail games) that added color in a fixed position on the screen. The Taito rom was a digital version of the plastic overlay. Included is a python script that converts the MAME .lay files into Taito color overlay rom format. All games that had plastic overlays now have color roms included.\n\n### Graphic Overlays\n\nMany games were enhanced with 1/2 silvered mirrors and fancy graphics. Some games like 280Z ZZap even had a toy car in view. There is a script that will convert a PNG into raw hex codes to include in the MRA file. ",
