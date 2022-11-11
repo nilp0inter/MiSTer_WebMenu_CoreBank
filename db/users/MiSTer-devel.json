@@ -9753,7 +9753,27 @@
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-devel/Arcade-Sonson_MiSTer",
-      "releases": []
+      "releases": [
+        {
+          "name": "Arcade-Sonson_20221108.rbf",
+          "sha": "b91542f084520c9965ecec4089f51ecb8ecbd947",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Sonson_MiSTer/main/releases/Arcade-Sonson_20221108.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SonSon.mra",
+          "sha": "9e1672e79fae931a65f3a09977bed1f1537a35a5",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Sonson_MiSTer/main/releases/SonSon.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "SonSon",
+            "rbf": "sonson",
+            "zips": [
+              "sonson.zip"
+            ]
+          }
+        }
+      ]
     },
     {
       "name": "Arcade-SpaceInvaders_MiSTer",
