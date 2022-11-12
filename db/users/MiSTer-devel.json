@@ -10793,6 +10793,48 @@
       ]
     },
     {
+      "name": "Arcade-TropicalAngel_MiSTer",
+      "description": "Irem M57 Tropical Angel Arcade FPGA implementation ported from MiST to MiSTer FPGA",
+      "readme": "# [Tropical Angel](https://www.arcade-museum.com/game_detail.php?game_id=10205) for [MiSTer FPGA](https://mister-devel.github.io/MkDocs_MiSTer/)\r\n\r\n![Tropical Angel Logo](doc/clear_logo.png)\r\n\r\nBased on code from Traverse USA by [@darfpga](https://github.com/darfpga/)\r\n\r\nDeveloped by [Slingshot](https://atari-forum.com/memberlist.php?mode=viewprofile&u=27648) for [MiST](https://github.com/Gehstock/Mist_FPGA/tree/master/Arcade_MiST/IremM57%20Hardware/TropicalAngel_MiST)\r\n\r\nPorted to MiSTer by [@birdybro](https://github.com/birdybro/) with help from [Mike Simone](https://github.com/MikeS11/) and [Alan Steremberg](https://github.com/alanswx/)\r\n\r\n## Description\r\n\r\nThis is a simulation model of the Irem M57 Arcade Hardware which only ran Tropical Angel. From the manual:\r\n\r\nIn TROPICAL ANGEL, you are the person who leads a beautiful lady known as TROPICAL ANGEL to achieve her goal of obtaining the highest grade in water ski, A MASTER OF WATER SKI.\r\n\r\n## Controls\r\n\r\n| Name    | Description                 |\r\n| ------- | --------------------------- |\r\n| Gas     | Accelerate the boat         |\r\n| Trick   | Spin around for more points |\r\n| Left    | Steer boat left             |\r\n| Right   | Steer boat right            |\r\n| Coin    | Put in a coin               |\r\n| Start   | Start the game              |\r\n\r\nThere is a 1P Start and a 2P Start. Each player's start button mapped corresponds to it.\r\n\r\n## To-Do\r\n\r\nWe need to investigate whether or not the purple water color is inaccurate, we need confirmation from real game footage or someone with one of the rare boards to get measurements, pictures on posters are not enough to go on and would only be an assumption.\r\n\r\n## ROM Files Instructions\r\n\r\nROMs are not included! In order to use this arcade core, you will need to provide the correct ROM file yourself.\r\n\r\nTo simplify the process .mra files are provided in the releases folder, that specify the required ROMs with their checksums. The ROMs .zip filename refers to the corresponding file from the MAME project.\r\n\r\nPlease refer to [Arcade Roms and MRA files](https://mister-devel.github.io/MkDocs_MiSTer/developer/mra/) for information on how to setup and use the environment.\r\n\r\nQuick reference for folders and file placement:\r\n\r\n```\r\n/_Arcade/<game name>.mra  \r\n/_Arcade/cores/<game rbf>.rbf  \r\n/_Arcade/mame/<mame rom>.zip  \r\n/_Arcade/hbmame/<hbmame rom>.zip  \r\n```\r\n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/MiSTer-devel/Arcade-TropicalAngel_MiSTer",
+      "releases": [
+        {
+          "name": "Arcade-TropicalAngel_20221112.rbf",
+          "sha": "e5ed78ed33ed839dea1e0377c05871de9292cc73",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TropicalAngel_MiSTer/master/releases/Arcade-TropicalAngel_20221112.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Tropical Angel.mra",
+          "sha": "a902e65642d7e09754ec1916c75d1f7b4660e923",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TropicalAngel_MiSTer/master/releases/Tropical%20Angel.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Tropical Angel",
+            "rbf": "TropicalAngel",
+            "zips": [
+              "troangel.zip"
+            ]
+          }
+        },
+        {
+          "name": "New Tropical Angel.mra",
+          "sha": "6db0b347998cac5a13a4b7dc97cab041b8b3c6c2",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TropicalAngel_MiSTer/master/releases/_alternatives/New%20Tropical%20Angel.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "New Tropical Angel",
+            "rbf": "TropicalAngel",
+            "zips": [
+              "troangel.zip|newtangl.zip"
+            ]
+          }
+        }
+      ]
+    },
+    {
       "name": "Arcade-TurkeyShoot_MiSTer",
       "description": "Turkey Shoot by darfpga ported to MiSTer ",
       "readme": "# [Turkey Shoot - The Day They Took Over](https://www.arcade-museum.com/game_detail.php?game_id=10222) for [MiSTer](https://mister-devel.github.io/MkDocs_MiSTer/)\n\n![](doc/logo.png)\n\nOriginal core developed by [darfpga](https://github.com/darfpga) - [Original Source](https://github.com/darfpga/vhdl_turkey_shoot)\n\nPorted to MiSTer by [birdybro](https://github.com/birdybro)\n\n## Description\n\nThis is a simulation model of the Turkey Shoot hardware released in 1984. Approximately only 450 units were produced. It is labeled \"Prototype\" by MAME, but plays quite well and it doesn't seem like a Prototype to me. \n\nThe original hardware had two panes of glass and in-between there was a vent and an inlet. In this place in-between the two panes of glass there were feathers inside and a fan would blow the feathers around whenever you shot a turkey.\n\nThe game was designed by [John R. Newcomer](https://en.wikipedia.org/wiki/John_Newcomer). Software was programmed by Thomas N. Dreaux and Wayne P. Breivogel. Graphics were done by Chris L. Simmons and Jill Chittenden (Mystic Marathon).\n\n## Controls\n\n| Name     | Description                            |\n| -------- | -------------------------------------- |\n| Fire     | Shoot your gun                         |\n| Grenade  | Fire a grenade (AoE)                   |\n| Gobble   | Gobble at the turkeys to distract them |\n| Left     | Move gun left                          |\n| Right    | Move gun right                         |\n| Up       | Move gun up                            |\n| Down     | Move gun down                          |\n| Coin     | Put in a coin                          |\n| Start    | Start the game with 1 Player           |\n\n## Service Menu\n\nWhen you press the \"Advance\" button in the OSD, this enables you to access the bookkeeping totals by then pressing \"Auto Up\" in the OSD. Currently the data in here is not saved to the MiSTer but that may come at a later time. \n\nIf you want to change any options, then press \"Auto Up\" again to see the Game Adjustments menu. Here you use up and and down to move to whatever option you want to change and then use the right and left inputs to modify the desired setting. You then push \"Auto up\" again to set the changes.\n\nIf you press \"Advance\" again, it will return to it's original state (not in service mode), but \"Auto Up\" now will cycle through various test programs that the arcade board used to have.\n\nHigh Score reset is another internal button, and it makes the game pause for a second until the high score resets.\n\nOne of the coolest features of the Williams service menu was you could customize the attract mode screen with your own letters!\n\n## To-Do\n\n* No hiscore or pause modules yet, I have to learn how to implement them first.\n* The flickering at the bottom of the screen and the centering being a little weird seems to be part of how the original hardware worked (similar to cram dots on Genesis), they were likely in the overscan area. I might add some cropping to that later as an OSD option.\n\n## ROM Files Instructions\n\nROMs are not included! In order to use this arcade core, you will need to provide the correct ROM file yourself.\n\nTo simplify the process .mra files are provided in the releases folder, that specify the required ROMs with their checksums. The ROMs .zip filename refers to the corresponding file from the MAME project.\n\nPlease refer to [https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms-and-MRA-files](https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms-and-MRA-files) for information on how to setup and use the environment.\n\nQuick reference for folders and file placement:\n\n```\n/_Arcade/<game name>.mra  \n/_Arcade/cores/<game rbf>.rbf  \n/_Arcade/mame/<mame rom>.zip  \n/_Arcade/hbmame/<hbmame rom>.zip  \n```\n",
