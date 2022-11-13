@@ -23,7 +23,13 @@
           "sha": "420c5d380f979344823f93f6589965c3cd64a9e6",
           "url": "https://raw.githubusercontent.com/theypsilon/Arcade-Cosmic_MiSTer/main/releases/Cosmic%20Alien.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Cosmic Alien",
+            "rbf": "cosmic",
+            "zips": [
+              "cosmica.zip"
+            ]
+          }
         },
         {
           "name": "Magical Spot.mra",
