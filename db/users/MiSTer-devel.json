@@ -2775,11 +2775,24 @@
         },
         {
           "name": "Congo Bongo.mra",
-          "sha": "3fd2b724251b266d7fba1810708fb86d5387c9c8",
+          "sha": "c19441401c5fa020d39ebbd431f7250cee61d339",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-CongoBongo_MiSTer/master/releases/Congo%20Bongo.mra",
           "type": "MRA",
           "extra": {
             "name": "CongoBongo",
+            "rbf": "CongoBongo",
+            "zips": [
+              "congo.zip"
+            ]
+          }
+        },
+        {
+          "name": "Tip Top (3 board stack).mra",
+          "sha": "f5c7face6422b7120a330f99bacffbc74f8ddd53",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-CongoBongo_MiSTer/master/releases/Tip%20Top%20(3%20board%20stack).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Tip Top",
             "rbf": "CongoBongo",
             "zips": [
               "congo.zip"
