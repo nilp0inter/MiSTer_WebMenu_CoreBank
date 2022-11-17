@@ -7266,7 +7266,13 @@
           "sha": "fcc2713619e2b8dea1e99651d3f6ee2feb16b3a3",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SpaceInvaders_MiSTer/master/releases/Cosmo.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Cosmo",
+            "rbf": "spaceinvaders",
+            "zips": [
+              "cosmo.zip"
+            ]
+          }
         },
         {
           "name": "Galaxy Wars (Universal, Set 1).mra",
