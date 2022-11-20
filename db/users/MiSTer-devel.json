@@ -7963,6 +7963,66 @@
       ]
     },
     {
+      "name": "Arcade-Popeye_MiSTer",
+      "description": "Arcade: Popeye for MiSTer",
+      "readme": "# Nintendo Popeye port for MiSTer\r\n\r\n# Keyboard inputs :\r\n```\r\n   ESC         : Coin 1\r\n   F1          : Start 1P\r\n   F2          : Start 2P \r\n   UP,DOWN,LEFT,RIGHT arrows : Player 1\r\n   LCtrl : Fire A\r\n\r\n\r\n   MAME/IPAC/JPAC Style Keyboard inputs:\r\n     5           : Coin 1\r\n     6           : Coin 2\r\n     1           : Start 1 Player\r\n     2           : Start 2 Player\r\n     R,F,D,G     : Player 2\r\n     A           : Fire2 A\r\n\t\r\n Joystick support. \r\n```\r\n# Games\r\n \r\n# ROMs\r\n```\r\n                                *** Attention ***\r\n\r\nROMs are not included. In order to use this arcade, you need to provide the\r\ncorrect ROMs.\r\n\r\nTo simplify the process .mra files are provided in the releases folder, that\r\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\r\ncorresponding file of the M.A.M.E. project.\r\n\r\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\r\ninformation on how to setup and use the environment.\r\n\r\nQuickreference for folders and file placement:\r\n\r\n/_Arcade/<game name>.mra\r\n/_Arcade/cores/<game rbf>.rbf\r\n/_Arcade/mame/<mame rom>.zip\r\n/_Arcade/hbmame/<hbmame rom>.zip\r\n\r\n```\r\n\r\nLaunch game using the appropriate .MRA\r\n",
+      "archived": false,
+      "fork": false,
+      "url": "https://github.com/MiSTer-devel/Arcade-Popeye_MiSTer",
+      "releases": [
+        {
+          "name": "Arcade-Popeye_20200303.rbf",
+          "sha": "2c075720b81f1b05dc7ac2f760f7a9c6625171c0",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Popeye_MiSTer/master/releases/Arcade-Popeye_20200303.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Popeye_20200303a.rbf",
+          "sha": "02672e67256777b0cab87db30504250c550bd522",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Popeye_MiSTer/master/releases/Arcade-Popeye_20200303a.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Popeye_20200305.rbf",
+          "sha": "bf6af4559a0b7d01f091f52497db6059e926444f",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Popeye_MiSTer/master/releases/Arcade-Popeye_20200305.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Popeye_20210117.rbf",
+          "sha": "7e5de109459dd08f40aad3c93fcfc0f33ff0bcd9",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Popeye_MiSTer/master/releases/Arcade-Popeye_20210117.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Popeye (Rev D).mra",
+          "sha": "03dcf2940b35175ded4c2130533ca9889df9103f",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Popeye_MiSTer/master/releases/Popeye%20(Rev%20D).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Popeye",
+            "rbf": "popeye",
+            "zips": [
+              "popeye.zip"
+            ]
+          }
+        },
+        {
+          "name": "Sky Skipper.mra",
+          "sha": "d681b1770c0bb073eda921d97b177b389aa53150",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Popeye_MiSTer/master/releases/Sky%20Skipper.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Sky Skipper",
+            "rbf": "popeye",
+            "zips": [
+              "skyskipr.zip"
+            ]
+          }
+        }
+      ]
+    },
+    {
       "name": "Arcade-QBert_MiSTer",
       "description": "Q*Bert core for MiSTer",
       "readme": "![QBert Character](./qbert.png) MiSTer Q*Bert\r\n=============================================\r\n\r\nQ*Bert arcade core for MiSTer FPGA by Pierco. It's a reproduction of the original PCBs rather than a reinterpretation but with some dual port RAM exceptions.\r\n\r\nAdditional details\r\n------------------\r\n\r\n**Audio board MA216:**\r\n\r\n- SC01 is not implemented. Waiting for brave people to do it.\r\n\r\n**NVRAM:**\r\n\r\n- Not implemented - NVRAM should be C5/C6 on schematics.\r\n\r\n**Ports:**\r\n\r\n- IP17-10: input port for test buttons, coins and player 1/2.\r\n- IP47-40: input port for joystick.\r\n- OP27-20: output port for sound interface\r\n- OP33-37: output port for knocker and coin meter.\r\n\r\nGame Compatibility List\r\n-----------------------\r\n\r\nWorking:\r\n\r\n- QBert: 100% compatible.\r\n- QBert Qubes: 100% compatible.\r\n- Mad Planets: 100% compatible.\r\n\r\nNot working yet:\r\n\r\n- Curve Ball: dip switch order is weird, no sound.\r\n- Insector: 100% compatible, dip switch problems, controller inverted & no test mode(?).\r\n- Tyls: 100% compatible - dip switches inverted.\r\n\r\nKnown Bugs\r\n----------\r\n\r\n- QBert Qubes: \"Supreme Nosers\" screen works only after a reset.\r\n- Problem with vertical position register E1-2. When a new object is falling from the top of the screen (ball), it appears briefly at the bottom of the screen.\r\n- High Scores screen: the big three letters of player's name are not displayed correctly. It works well after a few resets (is it a problem with bus sharing logic which sends zeros to simulate high impedance for ORing outputs?). I don't have the PCB so it's difficult to know the original behavior.\r\n- Votrax chip is cruelly missing, QBert needs his @!#?@! voice!!!\r\n",
