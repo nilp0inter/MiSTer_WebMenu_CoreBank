@@ -3878,6 +3878,48 @@
       ]
     },
     {
+      "name": "Arcade-ExpressRaider_MiSTer",
+      "description": "Express Raider - MiSTer FPGA core",
+      "readme": "# Express Raider core for MiSTer\r\n\r\n## General description\r\nThis core is a port of Express Raider PCB from Data East USA by [Pierco](https://github.com/pcornier). I tried to stay as close as possible to the original schematics.\r\n\r\n## Thanks to my supporters!!\r\n\r\n...and friends and the great MiSTer community!\r\n\r\nAdrian Vargerson -\r\nAlan Steremberg -\r\nAllen Tipper -\r\nAmosfear  -\r\nAndreas Micklei -\r\nBoogermann -\r\nChristopher Garland -\r\nCory Stargel -\r\nCyril Despontin -\r\nCyrille Jouineau -\r\nDarren Chell -\r\nDarren Newman -\r\nDave Ely -\r\nDavide Lorigliola -\r\ndECKARD -\r\nDimitris Zongas -\r\nFrancois P -\r\nFunkycochise -\r\nGrumpy Old Gamer -\r\nHerbert Krammer -\r\nHiddenbyleaves -\r\nHolger Lagerfeldt -\r\nHumanoide70  -\r\nJ BG -\r\nJohan Sj\u00f6strand -\r\nJohn Stringer -\r\nJos\u00e9 L\u00f3pez Navarrete -\r\nJuan Carlos Pastor (Denymetanol) -\r\nManuel Gomez Grande -\r\nMatt Hargett -\r\nMax -\r\nMichael Fuerst -\r\nMichael Packard -\r\nMike Holzinger -\r\nMike S -\r\nMiSTerFPGA.co.uk -\r\nNicolas VAILLANT -\r\nPhilip Lawson -\r\nPons Cremator -\r\nRaspberryAlpine  -\r\nRune P -\r\nSamuel Giroux -\r\nTonton Kaloun -\r\nTony Escobar -\r\nwwark  -\r\nyomitron\r\n",
+      "archived": false,
+      "fork": false,
+      "url": "https://github.com/MiSTer-devel/Arcade-ExpressRaider_MiSTer",
+      "releases": [
+        {
+          "name": "Arcade-ExpressRaider_20221121.rbf",
+          "sha": "75d76642443e8bfaea31630f8e3320cb9fb758c7",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-ExpressRaider_MiSTer/master/releases/Arcade-ExpressRaider_20221121.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Express Raider.mra",
+          "sha": "b87cc07d80bc48fdd50f02d7726a18fd6081a171",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-ExpressRaider_MiSTer/master/releases/Express%20Raider.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Express Raider",
+            "rbf": "expressraider",
+            "zips": [
+              "exprraid.zip"
+            ]
+          }
+        },
+        {
+          "name": "Western Express (Japan, rev 4).mra",
+          "sha": "e42a106e0babb61a49ea4984c4b6dd2ab718b1fa",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-ExpressRaider_MiSTer/master/releases/Western%20Express%20(Japan%2C%20rev%204).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Western Express (Japan, rev 4)",
+            "rbf": "expressraider",
+            "zips": [
+              "exprraid.zip|wexpress.zip"
+            ]
+          }
+        }
+      ]
+    },
+    {
       "name": "Arcade-Finalizer_MiSTer",
       "description": "Finalizer - Super Transformation for MiSTer",
       "readme": "# Finalizer - Super Transformation for [MISTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\nAn FPGA implementation of Finalizer - Super Transformation for the MiSTer platform\n\n## Credits\n- Sorgelig: MiSTer project lead\n- Ace: Core design and Konami custom chip implementations\n- ElectronAsh, Arnim Laeuger: Assistance with Konami custom chip implementations\n- JimmyStones: High score saving support & pause feature\n- Kitrinx: ROM loader\n\n## Features\n- Logic modelled to match the original as closely as possible\n- Standard joystick and keyboard controls\n- High score saving (Can be saved manually or automatically - manual saving is the default)\n- Greg Miller's cycle-accurate MC6809E CPU core with modifications by Sorgelig and bugfixes by Arnim Laeuger and Jotego as the basis for the KONAMI-1 custom encrypted MC6809E\n- SN76489 sound core by Arnim Laeuger with fixes by Ace and Enforcer\n- T48 MCU by Arnim Laeuger configured as an NEC uPD8749 as the basis for the Konami SND01 custom chip\n- Option for normalized video timings to use with picky HDTVs and monitors (underclocks the game by ~1.8%)\n\n## Installation\nPlace `*.rbf` into the \"_Arcade/cores\" folder on your SD card.  Then, place `*.mra` into the \"_Arcade\" folder and ROM files from MAME into \"games/mame\".\n\n### ****ATTENTION****\nROMs are not included. In order to use this arcade core, you must provide the correct ROMs.\n\nTo simplify the process, .mra files are provided in the releases folder that specify the required ROMs along with their checksums.  The ROM's .zip filename refers to the corresponding file in the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for information on how to setup and use the environment.\n\nQuick reference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/games/mame/<mame rom>.zip\n/games/hbmame/<hbmame rom>.zip\n\n## Controls\n### Keyboard\n| Key | Function |\n| --- | --- |\n| 1 | 1-Player Start |\n| 2 | 2-Player Start |\n| 5, 6 | Coin |\n| 9 | Service Credit |\n| Arrow keys | Movement |\n| CTRL | Fire 1 |\n| ALT | Fire 2/Shield |\n\n### Joystick\n| Joystick action | Function |\n| --- | --- |\n| D-Pad | Movement |\n| B | Fire 1 |\n| A | Fire 2/Shield |\n\n## Known Issues\n1) Although bootleg audio errors are recreated, the rest of the inaccurate behavior on bootleg Finalizer boards is currently unknown and not implemented\n\n## High Score Save/Load\nSave and load of high scores is supported for this core.\n\n- To save your high scores manually, press the 'Save Settings' option in the OSD.  High scores will be automatically loaded when the core is started.\n- To enable automatic saving of high scores, turn on the 'Autosave Hiscores' option, press the 'Save Settings' option in the OSD, and reload the core.  High scores will then be automatically saved (if they have changed) any time the OSD is opened.\n\nHigh score data is stored in /media/fat/config/nvram/ as ```<mra filename>.nvm```\n",

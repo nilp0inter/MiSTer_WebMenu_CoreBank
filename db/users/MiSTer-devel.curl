@@ -216,6 +216,11 @@ url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Druaga_MiSTer/maste
 output = "_Arcade/cores/Druaga_20210610.rbf"
 
 
+# ExpressRaider
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-ExpressRaider_MiSTer/master/releases/Arcade-ExpressRaider_20221121.rbf"
+output = "_Arcade/cores/ExpressRaider_20221121.rbf"
+
+
 # Finalizer
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Finalizer_MiSTer/main/releases/Arcade-Finalizer_20220511.rbf"
 output = "_Arcade/cores/Finalizer_20220511.rbf"
@@ -1444,6 +1449,16 @@ output = "_Arcade/Super Pac-Man.mra"
 # The Tower of Druaga.mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Druaga_MiSTer/master/releases/The%20Tower%20of%20Druaga.mra"
 output = "_Arcade/The Tower of Druaga.mra"
+
+
+# Express Raider.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-ExpressRaider_MiSTer/master/releases/Express%20Raider.mra"
+output = "_Arcade/Express Raider.mra"
+
+
+# Western Express (Japan, rev 4).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-ExpressRaider_MiSTer/master/releases/Western%20Express%20(Japan%2C%20rev%204).mra"
+output = "_Arcade/Western Express (Japan, rev 4).mra"
 
 
 # Finalizer - Super Transformation (Set 1).mra
