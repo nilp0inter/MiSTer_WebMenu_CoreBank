@@ -3124,7 +3124,27 @@
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/Arcade-CrystalCastles_MiSTer",
-      "releases": []
+      "releases": [
+        {
+          "name": "Arcade-CrystalCastles_20221119.rbf",
+          "sha": "abe9984b8be515e493b4ec39f4a823ecb6dccae3",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-CrystalCastles_MiSTer/main/releases/Arcade-CrystalCastles_20221119.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Crystal Castles.mra",
+          "sha": "eb28dc4def8532e6df286709b1cf0789d189f2c8",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-CrystalCastles_MiSTer/main/releases/Crystal%20Castles.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Crystal Castles",
+            "rbf": "CrystalCastles",
+            "zips": [
+              "ccastles.zip"
+            ]
+          }
+        }
+      ]
     },
     {
       "name": "Arcade-Defender_MiSTer",
