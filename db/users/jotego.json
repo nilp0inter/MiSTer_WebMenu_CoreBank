@@ -296,7 +296,7 @@
         },
         {
           "name": "1942.mra",
-          "sha": "4e1bf3af72d78fd8b0a987d2bfbecffa809e28e4",
+          "sha": "47dfd7c2c224287c1a0639041cf50a618230426f",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/1942/releases/1942.mra",
           "type": "MRA",
           "extra": {
@@ -548,6 +548,12 @@
           "type": "RBF"
         },
         {
+          "name": "jt1942_20221124.rbf",
+          "sha": "7f149a01d1c686b1470892fc87ad1cd0ac4d536e",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/1942/releases/jt1942_20221124.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "version.log",
           "sha": "111922bed955a81f85c20ef8bf5f2d81950a76ee",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/1942/version.log",
@@ -612,7 +618,7 @@
         },
         {
           "name": "1943 The Battle of Midway.mra",
-          "sha": "01303589df866f0cc9c58c3eab88f66b4ce25ba1",
+          "sha": "9a34bdea32fa84df04770abf1ae5a7128972f779",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/1943/releases/1943%20The%20Battle%20of%20Midway.mra",
           "type": "MRA",
           "extra": {
@@ -825,6 +831,12 @@
           "name": "jt1943_20220818.rbf",
           "sha": "b11cf9a0bf40d6c93720bf3b5774fc283ec8dc27",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/1943/releases/jt1943_20220818.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "jt1943_20221124.rbf",
+          "sha": "8c9a13cf376cf005128631dd2d3b0424f2160ed3",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/1943/releases/jt1943_20221124.rbf",
           "type": "RBF"
         },
         {
@@ -1411,6 +1423,12 @@
           "type": "RBF"
         },
         {
+          "name": "jtbiocom_20221124.rbf",
+          "sha": "7518ac7aebf78b20225c8749fe53935a08af3390",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/biocom/releases/jtbiocom_20221124.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "version.log",
           "sha": "02263a180ae1cf100e9a618243003acee3ed0a2b",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/biocom/version.log",
@@ -1607,6 +1625,12 @@
           "name": "jtbtiger_20220819.rbf",
           "sha": "9cdd1c1767e35942e6d0e61fed02e613eede5262",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/btiger/releases/jtbtiger_20220819.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "jtbtiger_20221124.rbf",
+          "sha": "4c5b7f8146c4b398d6bda5c1f7ab5bf07773f26b",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/btiger/releases/jtbtiger_20221124.rbf",
           "type": "RBF"
         },
         {
@@ -2160,6 +2184,18 @@
           "type": "RBF"
         },
         {
+          "name": "jtcomsc_20221123.rbf",
+          "sha": "7687b23c1d3af7f19ab22b947b46af8583c483b7",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/comsc/releases/jtcomsc_20221123.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "jtcomsc_20221124.rbf",
+          "sha": "7687b23c1d3af7f19ab22b947b46af8583c483b7",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/comsc/releases/jtcomsc_20221124.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "version.log",
           "sha": "aa9d81b4a8aaebc96970e3301c8ca015951264e0",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/comsc/version.log",
@@ -2317,6 +2353,12 @@
           "type": "RBF"
         },
         {
+          "name": "jtcontra_20221124.rbf",
+          "sha": "1887a1bf2f988978edbf01bff26e43eb5ac6328c",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/contra/releases/jtcontra_20221124.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "version.log",
           "sha": "ceac338b2b30af95db7683ec7554e2de312ac53a",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/contra/version.log",
@@ -2440,7 +2482,7 @@
         },
         {
           "name": "1941  Counter Attack -World 900227-.mra",
-          "sha": "95f3ea7d5877e1dabc3e2d75f06583d0a741e2a2",
+          "sha": "36004f7d6d613609ebc5801fa70ce070ad6a74d7",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps1/releases/1941%20%20Counter%20Attack%20-World%20900227-.mra",
           "type": "MRA",
           "extra": {
@@ -3117,6 +3159,12 @@
           "name": "jtcps1_20220819.rbf",
           "sha": "e7d3933e31f6136db1140d12d7d0d435d7267f75",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps1/releases/jtcps1_20220819.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "jtcps1_20221125.rbf",
+          "sha": "a363324100e249244a5ac5617eca9c6f959031ce",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps1/releases/jtcps1_20221125.rbf",
           "type": "RBF"
         },
         {
@@ -4306,6 +4354,18 @@
           "type": "RBF"
         },
         {
+          "name": "jtdd_20221124.rbf",
+          "sha": "3bb352dfd54109483349472b221c945760275753",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/dd/releases/jtdd_20221124.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "jtdd_20221125.rbf",
+          "sha": "3c132e14c7e5bb4eee0d6163445b5422a74981d1",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/dd/releases/jtdd_20221125.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "version.log",
           "sha": "8359e4e09006fcece196cde196a3da2e30d6873d",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/dd/version.log",
@@ -4487,6 +4547,18 @@
           "type": "RBF"
         },
         {
+          "name": "jtdd2_20221124.rbf",
+          "sha": "34c0339607b8fb946db39655ce6056dff29c5a4c",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/dd2/releases/jtdd2_20221124.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "jtdd2_20221125.rbf",
+          "sha": "0f07023e4ce45bf382c691943330be80be892d4a",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/dd2/releases/jtdd2_20221125.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "version.log",
           "sha": "4e86ab61a3d005f10197bd302a735480c1fddd64",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/dd2/version.log",
@@ -4506,7 +4578,7 @@
         },
         {
           "name": "Exed Exes.mra",
-          "sha": "044ec4af5a2c7f818d553067317154e315e9eab8",
+          "sha": "cfdc38bb02eeacff846edde0ebfedb18f04e9c3b",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/exed/releases/Exed%20Exes.mra",
           "type": "MRA",
           "extra": {
@@ -4587,6 +4659,12 @@
           "name": "jtexed_20220818.rbf",
           "sha": "4c9ec527c93b3341a80423e9137417f9495b63bd",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/exed/releases/jtexed_20220818.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "jtexed_20221124.rbf",
+          "sha": "21d5b13a276d89c861a9b2522ca7c7ed5e809d7d",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/exed/releases/jtexed_20221124.rbf",
           "type": "RBF"
         },
         {
@@ -4813,6 +4891,12 @@
           "type": "RBF"
         },
         {
+          "name": "jtf1drm_20221124.rbf",
+          "sha": "25fe66cb6c486396ad89337f520d98ad54d62be5",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/f1dream/releases/jtf1drm_20221124.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "version.log",
           "sha": "ee7caaaf72ed5b252ef82e041e7da7afced7cc46",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/f1dream/version.log",
@@ -4826,7 +4910,7 @@
         },
         {
           "name": "Fast Lane.mra",
-          "sha": "101323be1f2dce118ab8993e7fe06e64bc426a70",
+          "sha": "637397b5ede24a2cefb2c8a86f6dc2fccbe3d137",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/flane/releases/Fast%20Lane.mra",
           "type": "MRA",
           "extra": {
@@ -4907,6 +4991,18 @@
           "name": "jtflane_20220819.rbf",
           "sha": "ffa3f6266f091a9e52354360b2476d111257cdb8",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/flane/releases/jtflane_20220819.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "jtflane_20221123.rbf",
+          "sha": "b90d497f3e88266cd7fbebc56423d32aa2d9ad22",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/flane/releases/jtflane_20221123.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "jtflane_20221124.rbf",
+          "sha": "4df013265cae4a5367c5fcd3327c75bf0e116a0c",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/flane/releases/jtflane_20221124.rbf",
           "type": "RBF"
         },
         {
@@ -5175,6 +5271,12 @@
           "type": "RBF"
         },
         {
+          "name": "jtgng_20221124.rbf",
+          "sha": "94667853e88403948c220b671dbd35a9c60b9538",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/gng/releases/jtgng_20221124.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "version.log",
           "sha": "baded54c6259da6d69b090e9c994aa4d188561bf",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/gng/version.log",
@@ -5200,7 +5302,7 @@
         },
         {
           "name": "Gun Smoke.mra",
-          "sha": "56262c1fe9e1f020d788baeb0c822215d37cc178",
+          "sha": "544317df6b10d94f93ce70b2fcceeee660568df6",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/gunsmoke/releases/Gun%20Smoke.mra",
           "type": "MRA",
           "extra": {
@@ -5210,6 +5312,12 @@
               "gunsmoke.zip"
             ]
           }
+        },
+        {
+          "name": "jtgun_20221124.rbf",
+          "sha": "9b1f61a3e07597c655c8116637606dc82e3fb2bb",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/gunsmoke/releases/jtgun_20221124.rbf",
+          "type": "RBF"
         },
         {
           "name": "jtgunsmoke_20191007.rbf",
@@ -5549,6 +5657,12 @@
           "type": "RBF"
         },
         {
+          "name": "jthige_20221124.rbf",
+          "sha": "69c035c0b533ba7c495ab552e5f8befde378e579",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/hige/releases/jthige_20221124.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "version.log",
           "sha": "e9ee49d9d7ddf3d5a75d9a15330dd4e76582ab07",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/hige/version.log",
@@ -5581,6 +5695,12 @@
           "type": "RBF"
         },
         {
+          "name": "jtkchamp_20221124.rbf",
+          "sha": "8c4a28eb73d67f02c2c476d70cc1220ece5760e6",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kchamp/releases/jtkchamp_20221124.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "version.log",
           "sha": "cd8457d181970f458b3dec764a9bf8b3a96fe221",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kchamp/version.log",
@@ -5594,7 +5714,7 @@
         },
         {
           "name": "Kicker.mra",
-          "sha": "d14e8df4265a5bc99ac7dcf942ba2332ba3a7641",
+          "sha": "2b955e7e6838d28f039ee26991e484351ee20a3e",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kicker/releases/Kicker.mra",
           "type": "MRA",
           "extra": {
@@ -5702,6 +5822,12 @@
           "type": "RBF"
         },
         {
+          "name": "jtkicker_20221123.rbf",
+          "sha": "f4e9c201ad39fc6412a88ca80627c7a4514fd671",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kicker/releases/jtkicker_20221123.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "version.log",
           "sha": "5e75af2430730b0ae6ba7b61bd3f5b3d2d55654e",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kicker/version.log",
@@ -5740,6 +5866,18 @@
           "type": "RBF"
         },
         {
+          "name": "jtkunio_20221124.rbf",
+          "sha": "ded32d5569422b5f4cddf136041d2bc113e78ad4",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kunio/releases/jtkunio_20221124.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "jtkunio_20221125.rbf",
+          "sha": "cdb9f6dfe1b639f413e6faf1a321af7677d79440",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kunio/releases/jtkunio_20221125.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "version.log",
           "sha": "8acb68ea680dc13b5c79f832f6c8f2303cbbfb0a",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kunio/version.log",
@@ -5753,7 +5891,7 @@
         },
         {
           "name": "Trick Trap (World).mra",
-          "sha": "1ff2b69b352725589206aa24cd0e093fa0873206",
+          "sha": "9f8e21f722d1242d87e1cbb30602435b6ec1b595",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/labrun/releases/Trick%20Trap%20(World).mra",
           "type": "MRA",
           "extra": {
@@ -5861,6 +5999,18 @@
           "type": "RBF"
         },
         {
+          "name": "jtlabrun_20221123.rbf",
+          "sha": "e0103a72d0bdca5ae54ef9c892325a58d063c3e5",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/labrun/releases/jtlabrun_20221123.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "jtlabrun_20221124.rbf",
+          "sha": "e0103a72d0bdca5ae54ef9c892325a58d063c3e5",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/labrun/releases/jtlabrun_20221124.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "version.log",
           "sha": "db3c52dd2ef6b95153f2390243401e2ab8dcee87",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/labrun/version.log",
@@ -5941,7 +6091,7 @@
         },
         {
           "name": "Mikie.mra",
-          "sha": "4a3f8c2821a4d3126e3844ca7ec014c2da08d605",
+          "sha": "b06acbb445269f488f2261b3697ce2d40e415d28",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/mikie/releases/Mikie.mra",
           "type": "MRA",
           "extra": {
@@ -6038,7 +6188,7 @@
         },
         {
           "name": "MX5000.mra",
-          "sha": "1a1401f3e80c9808238f5f75d58a172eeba4bece",
+          "sha": "12b5a96aadb047b12c7b61a619c896c71be1dc0f",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/mx5k/releases/MX5000.mra",
           "type": "MRA",
           "extra": {
@@ -6113,6 +6263,18 @@
           "name": "jtmx5k_20220819.rbf",
           "sha": "c3ae0945d269546ac7818fb8e54d90ef058dd568",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/mx5k/releases/jtmx5k_20220819.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "jtmx5k_20221123.rbf",
+          "sha": "cdcb4a1f730ffd133c29b2abc3bc3887e6390b0e",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/mx5k/releases/jtmx5k_20221123.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "jtmx5k_20221124.rbf",
+          "sha": "60b7a043c0a47b227026c63b0f0ef4cda3cc8f6d",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/mx5k/releases/jtmx5k_20221124.rbf",
           "type": "RBF"
         },
         {
@@ -6549,7 +6711,7 @@
         },
         {
           "name": "Hyper Sports.mra",
-          "sha": "7b432a92a034ff994c0ace569050eb8617371c96",
+          "sha": "9d461b2ff790c713e3559c5892949994a2a525a4",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/roadf/releases/Hyper%20Sports.mra",
           "type": "MRA",
           "extra": {
@@ -6640,6 +6802,12 @@
           "type": "RBF"
         },
         {
+          "name": "jtroadf_20221123.rbf",
+          "sha": "867bb3c15b9e141fd75666559c0b2d82c03afc7a",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/roadf/releases/jtroadf_20221123.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "version.log",
           "sha": "5049f385f0a51f829fda849d35c0e5b7d5c87a84",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/roadf/version.log",
@@ -6669,6 +6837,12 @@
           "name": "jtroc_20220819.rbf",
           "sha": "bf62b155a4d15825f46b2277514cbb9518a8d0e6",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/roc/releases/jtroc_20220819.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "jtroc_20221123.rbf",
+          "sha": "1a6d8dee2969e5fd1d6df4eb7719b93a00488231",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/roc/releases/jtroc_20221123.rbf",
           "type": "RBF"
         },
         {
@@ -6808,6 +6982,12 @@
           "name": "jtrumble_20220819.rbf",
           "sha": "2114706d4bb043098105be344e6bffad93fc3083",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/rumble/releases/jtrumble_20220819.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "jtrumble_20221124.rbf",
+          "sha": "8aa4b11490c727007308590ed45ae4426010ba2a",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/rumble/releases/jtrumble_20221124.rbf",
           "type": "RBF"
         },
         {
@@ -7694,6 +7874,12 @@
           "type": "RBF"
         },
         {
+          "name": "jtsarms_20221124.rbf",
+          "sha": "8e8cc6bf7b7e864dee0969217990a6282788121c",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/sarms/releases/jtsarms_20221124.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "version.log",
           "sha": "d9cf507848d7163fac7449ded243692f71e0bcf1",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/sarms/version.log",
@@ -7797,6 +7983,12 @@
           "type": "RBF"
         },
         {
+          "name": "jtsbask1_20221123.rbf",
+          "sha": "daa8a72fe6390db80222b0441f15dfb93838e5b2",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/sbask1/releases/jtsbask1_20221123.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "version.log",
           "sha": "8a3df00316cfbe641963885195937db84c94945d",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/sbask1/version.log",
@@ -7897,6 +8089,12 @@
           "name": "jtsbaskt_20220818.rbf",
           "sha": "c6090768c5f2b0c4b5443530bc6c6df303977a1d",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/sbaskt/releases/jtsbaskt_20220818.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "jtsbaskt_20221123.rbf",
+          "sha": "fa0c9e117fc957454f46e77c9f19b7d20aa28825",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/sbaskt/releases/jtsbaskt_20221123.rbf",
           "type": "RBF"
         },
         {
@@ -8178,7 +8376,7 @@
         },
         {
           "name": "Street Fighter (US, set 1).mra",
-          "sha": "7dcb4af101efdd2ac22970514e62fc5684d72c40",
+          "sha": "0aca169c03769790303f6213117a2f541423ddd9",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/sf/releases/Street%20Fighter%20(US%2C%20set%201).mra",
           "type": "MRA",
           "extra": {
@@ -8331,6 +8529,12 @@
           "name": "jtsf_20220818.rbf",
           "sha": "61de375b309e82067afcc34b2fd8c961fb30f3b4",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/sf/releases/jtsf_20220818.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "jtsf_20221125.rbf",
+          "sha": "0199452185b8d12b238e4e651a66ef8f2ba50426",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/sf/releases/jtsf_20221125.rbf",
           "type": "RBF"
         },
         {
@@ -8681,6 +8885,12 @@
           "type": "RBF"
         },
         {
+          "name": "jttora_20221124.rbf",
+          "sha": "6dca5dcc0208e9c5710ac3a8ac98d9d30a138e05",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/tora/releases/jttora_20221124.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "version.log",
           "sha": "30e7feaa1bf90242ad1ce8df3f411c110960f431",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/tora/version.log",
@@ -8694,7 +8904,7 @@
         },
         {
           "name": "Track & Field.mra",
-          "sha": "c49f85388a1ad6d13fbd01369d0cb196b053219c",
+          "sha": "04f61331a1ee9d1be2e36309d4ce1c2265dc35fb",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/track/releases/Track%20%26%20Field.mra",
           "type": "MRA",
           "extra": {
@@ -8881,6 +9091,12 @@
           "type": "RBF"
         },
         {
+          "name": "jttrojan_20221124.rbf",
+          "sha": "26a1bd634c4b670116ff5e9a68bcda5b7aa8b73e",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/trojan/releases/jttrojan_20221124.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "version.log",
           "sha": "c8a6b8f7241c7b0831a19bb102e9f3e67628b3b2",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/trojan/version.log",
@@ -8967,7 +9183,7 @@
         },
         {
           "name": "Vulgus.mra",
-          "sha": "1d44a07bbfdc7a248344f1b2b525ba80c0c5dcad",
+          "sha": "0530b9585b06120ff5138a561364d811063ca088",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/vulgus/releases/Vulgus.mra",
           "type": "MRA",
           "extra": {
@@ -9189,6 +9405,12 @@
           "type": "RBF"
         },
         {
+          "name": "jtvulgus_20221124.rbf",
+          "sha": "b833f000fabad6068b9ad704ba65086f9646d1a4",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/vulgus/releases/jtvulgus_20221124.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "version.log",
           "sha": "a38a061464f5bbb4079b68ce6f7f4516329ce187",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/vulgus/version.log",
@@ -9202,7 +9424,7 @@
         },
         {
           "name": "Yie Ar Kung-Fu (program code I).mra",
-          "sha": "2bf893815b1615afc643b792f0d6c9e71dfe29f3",
+          "sha": "70089d5e9ec213f9688ffd876c00eb7843269f8e",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/yiear/releases/Yie%20Ar%20Kung-Fu%20(program%20code%20I).mra",
           "type": "MRA",
           "extra": {
