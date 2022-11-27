@@ -1904,6 +1904,64 @@
       ]
     },
     {
+      "name": "AtariLynx_MiSTer",
+      "description": null,
+      "readme": "# [Atari Lynx](https://en.wikipedia.org/wiki/Atari_Lynx) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\n\n# HW Requirements\nSDRam module of any size is required\n\n# Bootrom\nYou need to add the Bootrom file(often called lynxboot.img) to the AtariLynx Folder and name it: boot.rom\n\nChecksum for valid Bootrom:\n\nSHA-1:\nE4ED47FAE31693E016B081C6BDA48DA5B70D7CCB\n\nMD5:\nFCD403DB69F54290B51035D82F835E7B\n\n# Status\nAll official games should be playable.\nMost Homebrew works.\n\n# Features\n- Savestates\n- FastForward - speed up game by factor 4, hold button or tap Button to toggle\n- CPU GPU Turbo - give games additional computation power\n- Rewind: go back up to 80 seconds in time\n- Orientation: rotate video by 90 or 270 degree\n- 240p mode: doubled resolution, mainly for CRT output\n- Flickerblend: 2 or 3 frames blending like real Lynx Screen\n\n# Refresh Rate\nLynx uses custom refresh rates from ~50Hz up to ~79Hz.\nSome games switch between different modes.\nTo compensate you can either:\n- live with tearing\n- Buffer video: triple buffering for clean image, but increases lag\n- Sync core to 60Hz: Run core at exact 60Hz output rate, no matter what internal speed is used\n\n# Rotation\nLynx has built in rotation, supported by most games, using the Joypad Keys \"Option2\" + \"Pause\"\n\n# Savestates\nCore provides 4 slots to save and restore the state. \nThose can be saved to SDCard or reside only in memory for temporary use(OSD Option). \nUsage with either Keyboard, Gamepad mappable button or OSD.\n\nKeyboard Hotkeys for save states:\n- Alt-F1..F4 - save the state\n- F1...F4 - restore\n\nGamepad:\n- Savestatebutton+Left or Right switches the savestate slot\n- Savestatebutton+Pause+Down saves to the selected slot\n- Savestatebutton+Pause+Up loads from the selected slot\n\n# Rewind\nTo use rewind, turn on the OSD Option \"Rewind Capture\" and map the rewind button.\nYou may have to restart the game for the function to work properly.\nAttention: Rewind capture will slow down your game by about 0.5% and may lead to light audio stutter.\nRewind capture is not compatible to \"Pause when OSD is open\", so pause is disabled when Rewind capture is on.\n\n# Missing features\nComlynx/UART only implemented for Interrupts\nCustom external EEPROM not supported(not used in official games, only homebrew)",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/MiSTer-LLAPI/AtariLynx_MiSTer",
+      "releases": [
+        {
+          "name": "AtariLynx._LLAPI_20221127.rbf",
+          "sha": "a7885ac384211ed9b8a57b2d314bdb8527312e36",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/AtariLynx_MiSTer/main/releases/AtariLynx._LLAPI_20221127.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "AtariLynx_20210319.rbf",
+          "sha": "edbbcf42b4db10d45f0aebcd71bc4241f60f0077",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/AtariLynx_MiSTer/main/releases/AtariLynx_20210319.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "AtariLynx_20210330.rbf",
+          "sha": "c27f29bc4317373b93bb32e2778a79095ade68fa",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/AtariLynx_MiSTer/main/releases/AtariLynx_20210330.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "AtariLynx_20210413.rbf",
+          "sha": "649117ee4d7a8b5f785a389a8350f99a456d0410",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/AtariLynx_MiSTer/main/releases/AtariLynx_20210413.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "AtariLynx_20210627.rbf",
+          "sha": "83c50fcd808f027952e8c8a4052f3eb65df510ea",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/AtariLynx_MiSTer/main/releases/AtariLynx_20210627.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "AtariLynx_20211024.rbf",
+          "sha": "334928b4b19bcb90dc1558e7735f5dd329aaae7a",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/AtariLynx_MiSTer/main/releases/AtariLynx_20211024.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "AtariLynx_20220417.rbf",
+          "sha": "41b70160e2051c304afc373506b7b23abf2499d5",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/AtariLynx_MiSTer/main/releases/AtariLynx_20220417.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "AtariLynx_20221107.rbf",
+          "sha": "4075b5ed2a9c781627c809b7dfa6ed2df7b7f278",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/AtariLynx_MiSTer/main/releases/AtariLynx_20221107.rbf",
+          "type": "RBF"
+        }
+      ]
+    },
+    {
       "name": "Gameboy_MiSTer",
       "description": "Gameboy for MiSTer",
       "readme": "# [Gameboy](https://en.wikipedia.org/wiki/Game_Boy)  / [Gameboy Color](https://en.wikipedia.org/wiki/Game_Boy_Color) port to [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\r\n\r\nThis is port of [Gameboy for MiST](https://github.com/mist-devel/gameboy)\r\n\r\n* Place RBF file into root of SD card.\r\n* Place *.gb|*.gbc files into Gameboy folder.\r\n\r\n## Features\r\n* Original Gameboy & Gameboy Color Support\r\n* Super Gameboy Support - Borders, Palettes and Multiplayer\r\n* MegaDuck Support\r\n* Custom Borders\r\n* SaveStates\r\n* Fastforward \r\n* Rewind - Allows you to rewind up to 40 seconds of gameplay\r\n* Frameblending - Prevents flicker in some games (e.g. \"Chikyuu Kaihou Gun Zas\") \r\n* Custom Palette Loading\r\n* Real-Time Clock Support\r\n* Gameboy Link Port Support - Requires USERIO adapter\r\n* Cheats\r\n\r\n## Open Source Bootstrap roms\r\nThis now includes the open source boot ROMs from [https://github.com/LIJI32/SameBoy/](https://github.com/LIJI32/SameBoy/). For maximum compatibility/authenticity you can still place the Gameboy bios/bootroms into the Gameboy folder and load them in the menu with Misc->Load GBC/DMG/SGB boot.\r\n\r\n## Palettes\r\nThis core supports custom palettes (*.gbp) which should be placed into the Gameboy folder. Some examples are available in the palettes folder.\r\n\r\n## Custom Borders\r\nThis core supports custom borders (*.sgb) which should be placed into the Gameboy folder. Some examples are available in the borders folder.\r\n\r\n## Autoload\r\nTo autoload your favorite game at startup rename it to `boot2.rom`.\r\n\r\n## Video output\r\nThe Gameboy can disable video output at any time which causes problems with vsync_adjust=2 or analog video during screen transitions. Enabling the Stabilize video option may fix this at the cost of some increased latency.\r\n\r\n# Savestates\r\nThis core provides 4 slots to save and restore the memory state which means you can save at any point in the game. These can be saved to your SDCard or they can reside only in memory for temporary use (OSD Option). Save states can be performed with the Keyboard, a mapped button to a gamepad, or through the OSD.\r\n\r\nKeyboard Hotkeys for save states:\r\n- Alt+F1 thru Alt+F4 - save state\r\n- F1 thru F4 - restore state\r\n\r\nGamepad:\r\n- Savestatebutton+Left or Right switches the savestate slot\r\n- Savestatebutton+Start+Down saves to the selected slot\r\n- Savestatebutton+Start+Up loads from the selected slot\r\n",
