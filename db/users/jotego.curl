@@ -26,9 +26,9 @@ url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/bubl/release
 output = "_Arcade/cores/jtbubl_20220819.rbf"
 
 
-# jtcommando
-url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/commando/releases/jtcommando_20220818.rbf"
-output = "_Arcade/cores/jtcommando_20220818.rbf"
+# jtcommnd
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/commnd/releases/jtcommnd_20221127.rbf"
+output = "_Others/jtcommnd_20221127.rbf"
 
 
 # jtcomsc
@@ -76,14 +76,9 @@ url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/exed/release
 output = "_Others/jtexed_20221124.rbf"
 
 
-# jtf1dream
-url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/f1dream/releases/jtf1dream_20220819.rbf"
-output = "_Arcade/cores/jtf1dream_20220819.rbf"
-
-
 # jtf1drm
-url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/f1dream/releases/jtf1drm_20221124.rbf"
-output = "_Others/jtf1drm_20221124.rbf"
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/f1drm/releases/jtf1drm_20221127.rbf"
+output = "_Others/jtf1drm_20221127.rbf"
 
 
 # jtflane
@@ -97,12 +92,17 @@ output = "_Arcade/cores/jtgng_20221124.rbf"
 
 
 # jtgun
-url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/gunsmoke/releases/jtgun_20221124.rbf"
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/gunsmk/releases/jtgun_20221124.rbf"
 output = "_Others/jtgun_20221124.rbf"
 
 
+# jtgunsmk
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/gunsmk/releases/jtgunsmk_20221127.rbf"
+output = "_Others/jtgunsmk_20221127.rbf"
+
+
 # jtgunsmoke
-url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/gunsmoke/releases/jtgunsmoke_20220818.rbf"
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/gunsmk/releases/jtgunsmoke_20220818.rbf"
 output = "_Arcade/cores/jtgunsmoke_20220818.rbf"
 
 
@@ -222,8 +222,13 @@ output = "_Others/jtsdram96_20210108.rbf"
 
 
 # jtsectionz
-url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/sectionz/releases/jtsectionz_20220818.rbf"
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/sectnz/releases/jtsectionz_20220818.rbf"
 output = "_Arcade/cores/jtsectionz_20220818.rbf"
+
+
+# jtsectnz
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/sectnz/releases/jtsectnz_20221127.rbf"
+output = "_Others/jtsectnz_20221127.rbf"
 
 
 # jtsf
@@ -317,7 +322,7 @@ output = "_Arcade/Tokio - Scramble Formation (bootleg).mra"
 
 
 # Commando.mra
-url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/commando/releases/Commando.mra"
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/commnd/releases/Commando.mra"
 output = "_Arcade/Commando.mra"
 
 
@@ -747,7 +752,7 @@ output = "_Arcade/Exed Exes.mra"
 
 
 # F-1 Dream.mra
-url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/f1dream/releases/F-1%20Dream.mra"
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/f1drm/releases/F-1%20Dream.mra"
 output = "_Arcade/F-1 Dream.mra"
 
 
@@ -762,7 +767,7 @@ output = "_Arcade/Ghosts'n Goblins (World Set 1).mra"
 
 
 # Gun Smoke.mra
-url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/gunsmoke/releases/Gun%20Smoke.mra"
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/gunsmk/releases/Gun%20Smoke.mra"
 output = "_Arcade/Gun Smoke.mra"
 
 
@@ -1052,12 +1057,12 @@ output = "_Arcade/sdram parallel read 48.mra"
 
 
 # Legendary Wings.mra
-url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/sectionz/releases/Legendary%20Wings.mra"
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/sectnz/releases/Legendary%20Wings.mra"
 output = "_Arcade/Legendary Wings.mra"
 
 
 # SectionZ.mra
-url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/sectionz/releases/SectionZ.mra"
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/sectnz/releases/SectionZ.mra"
 output = "_Arcade/SectionZ.mra"
 
 
