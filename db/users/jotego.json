@@ -1641,13 +1641,13 @@
         },
         {
           "name": "README.md",
-          "sha": "63cb1a28f61de070a7418fb3896d6d2b750c90fe",
+          "sha": "03f1164b565ff7039c5d2856c930b6e1ca5d6004",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/bubl/README.md",
           "type": "OTHER"
         },
         {
           "name": "Bubble Bobble (Japan, Ver 0.1).mra",
-          "sha": "8938ea4d600152a362327aa7edbbc913a19d71db",
+          "sha": "402f4fab97306421483afb34107e73de1374a5b5",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/bubl/releases/Bubble%20Bobble%20(Japan%2C%20Ver%200.1).mra",
           "type": "MRA",
           "extra": {
@@ -5256,15 +5256,14 @@
         },
         {
           "name": "Karate Champ (US).mra",
-          "sha": "a0d0343bca8ef71774f1bc88dc167b1c475e036a",
+          "sha": "14ea11e8047d2c026854fba0e11b69575354fc14",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kchamp/releases/Karate%20Champ%20(US).mra",
           "type": "MRA",
           "extra": {
             "name": "Karate Champ (US)",
             "rbf": "jtkchamp",
             "zips": [
-              "kchamp.zip",
-              "jtbeta.zip"
+              "kchamp.zip"
             ]
           }
         },
@@ -5294,7 +5293,7 @@
         },
         {
           "name": "Kicker.mra",
-          "sha": "2b955e7e6838d28f039ee26991e484351ee20a3e",
+          "sha": "d1b715796d82276e0896346a5fd207236130be84",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kicker/releases/Kicker.mra",
           "type": "MRA",
           "extra": {
@@ -5415,21 +5414,46 @@
         },
         {
           "name": "README.md",
+          "sha": "03f1164b565ff7039c5d2856c930b6e1ca5d6004",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kiwi/README.md",
+          "type": "OTHER"
+        },
+        {
+          "name": "Insector X (World).mra",
+          "sha": "fee7df169e720b550cffacd419f4f256d4fcf938",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kiwi/releases/Insector%20X%20(World).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Insector X (World)",
+            "rbf": "jtkiwi",
+            "zips": [
+              "insectx.zip",
+              "jtbeta.zip"
+            ]
+          }
+        },
+        {
+          "name": "jtkiwi_20221209.rbf",
+          "sha": "eadb101ab4b08b1a6cd4dc17ffb2553dc1053c93",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kiwi/releases/jtkiwi_20221209.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "README.md",
           "sha": "f3a484e6c670512c16311f07c36e00ef5d5bad50",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kunio/README.md",
           "type": "OTHER"
         },
         {
           "name": "Renegade (US bootleg).mra",
-          "sha": "1813620ec5b9da323342d27dfe1923c0fe16b92d",
+          "sha": "2d5cb5bff080c7a160cd660500d9afaab81b1265",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kunio/releases/Renegade%20(US%20bootleg).mra",
           "type": "MRA",
           "extra": {
             "name": "Renegade (US bootleg)",
             "rbf": "jtkunio",
             "zips": [
-              "renegadeb.zip|renegade.zip",
-              "jtbeta.zip"
+              "renegadeb.zip|renegade.zip"
             ]
           }
         },
@@ -5665,7 +5689,7 @@
         },
         {
           "name": "Mikie.mra",
-          "sha": "b06acbb445269f488f2261b3697ce2d40e415d28",
+          "sha": "bcb1634d9e90f2c394efa4ded18a397e41fc51d6",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/mikie/releases/Mikie.mra",
           "type": "MRA",
           "extra": {
@@ -6033,43 +6057,40 @@
         },
         {
           "name": "Block Block (World 911219 Joystick).mra",
-          "sha": "7e4bdb13f115466a7e933a16ef148efa421a116e",
+          "sha": "b70cc3d939e6eb024bddc4fd677c59cb8b074009",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/pang/releases/Block%20Block%20(World%20911219%20Joystick).mra",
           "type": "MRA",
           "extra": {
             "name": "Block Block (World 911219 Joystick)",
             "rbf": "jtpang",
             "zips": [
-              "block.zip",
-              "jtbeta.zip"
+              "block.zip"
             ]
           }
         },
         {
           "name": "Capcom World (Japan).mra",
-          "sha": "ffbbd3daef9f643d24c4904f583e568269aef037",
+          "sha": "97632ad9d8fa6fca5cc008e8831366d657c3cd9c",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/pang/releases/Capcom%20World%20(Japan).mra",
           "type": "MRA",
           "extra": {
             "name": "Capcom World (Japan)",
             "rbf": "jtpang",
             "zips": [
-              "cworld.zip",
-              "jtbeta.zip"
+              "cworld.zip"
             ]
           }
         },
         {
           "name": "Dokaben (Japan).mra",
-          "sha": "65088751599d282ced07dde967289a0c8c291656",
+          "sha": "1e8c2b08b6e3164ac00f1a731d816e7948d68ae6",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/pang/releases/Dokaben%20(Japan).mra",
           "type": "MRA",
           "extra": {
             "name": "Dokaben (Japan)",
             "rbf": "jtpang",
             "zips": [
-              "dokaben.zip",
-              "jtbeta.zip"
+              "dokaben.zip"
             ]
           }
         },
@@ -6088,15 +6109,14 @@
         },
         {
           "name": "Super Pang (World 900914).mra",
-          "sha": "2046f1266a3d81a0f367c81d97fda810f445480c",
+          "sha": "7ee3136dfed3635128d3fcadf93cac176a5f03bb",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/pang/releases/Super%20Pang%20(World%20900914).mra",
           "type": "MRA",
           "extra": {
             "name": "Super Pang (World 900914)",
             "rbf": "jtpang",
             "zips": [
-              "spang.zip",
-              "jtbeta.zip"
+              "spang.zip"
             ]
           }
         },
@@ -6156,7 +6176,7 @@
         },
         {
           "name": "Konami's Ping-Pong.mra",
-          "sha": "90d66f853e101ba310ae1d9fb0970bc19ab84d4b",
+          "sha": "19234d87b5b2bc4f69b74ebb38cc06d279df8aec",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/pinpon/releases/Konami's%20Ping-Pong.mra",
           "type": "MRA",
           "extra": {
@@ -6235,15 +6255,14 @@
         },
         {
           "name": "Rastan (World Rev 1).mra",
-          "sha": "870ac706357e9114f6228be61d21c4670faa1bb8",
+          "sha": "bf22c13c26595c7b0b24402113438da21004d0f1",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/rastan/releases/Rastan%20(World%20Rev%201).mra",
           "type": "MRA",
           "extra": {
             "name": "Rastan (World Rev 1)",
             "rbf": "jtrastan",
             "zips": [
-              "rastan.zip",
-              "jtbeta.zip"
+              "rastan.zip"
             ]
           }
         },
@@ -6285,7 +6304,7 @@
         },
         {
           "name": "Hyper Sports.mra",
-          "sha": "9d461b2ff790c713e3559c5892949994a2a525a4",
+          "sha": "a5cccf84c21358124ae721f516a9930999f87e28",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/roadf/releases/Hyper%20Sports.mra",
           "type": "MRA",
           "extra": {
@@ -6298,7 +6317,7 @@
         },
         {
           "name": "Road Fighter (set 1).mra",
-          "sha": "2afe011122a907a30e229731f3eb5a2d22e0aac0",
+          "sha": "0d8234cacb7009b37de7749a1ade2b3f60bf2994",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/roadf/releases/Road%20Fighter%20(set%201).mra",
           "type": "MRA",
           "extra": {
@@ -6395,15 +6414,14 @@
         },
         {
           "name": "Roc'n Rope.mra",
-          "sha": "41dc3a55ca166c1f2da2878a7c67847b87f8fa28",
+          "sha": "7a98f83bc5c14a8f16d06b73da9dd569e2a2663b",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/roc/releases/Roc'n%20Rope.mra",
           "type": "MRA",
           "extra": {
             "name": "Roc'n Rope",
             "rbf": "jtroc",
             "zips": [
-              "rocnrope.zip",
-              "jtbeta.zip"
+              "rocnrope.zip"
             ]
           }
         },
@@ -7576,7 +7594,7 @@
         },
         {
           "name": "Super Basketball (version I, encrypted).mra",
-          "sha": "b75d41156266cb5b6315de0a365b13a4ac2af8b5",
+          "sha": "ecda22068c8b2ba047aa70944bec1cbc1bd446b0",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/sbaskt/releases/Super%20Basketball%20(version%20I%2C%20encrypted).mra",
           "type": "MRA",
           "extra": {
