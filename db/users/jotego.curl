@@ -47,13 +47,13 @@ output = "_Others/jtcop_20220819.rbf"
 
 
 # jtcps1
-url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps1/releases/jtcps1_20220819.rbf"
-output = "_Arcade/cores/jtcps1_20220819.rbf"
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps1/releases/jtcps1_20220705.rbf"
+output = "_Arcade/cores/jtcps1_20220705.rbf"
 
 
 # jtcps15
-url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps15/releases/jtcps15_20220819.rbf"
-output = "_Others/jtcps15_20220819.rbf"
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps15/releases/jtcps15_20220818.rbf"
+output = "_Others/jtcps15_20220818.rbf"
 
 
 # jtcps2
@@ -122,8 +122,8 @@ output = "_Others/jtkicker_20221123.rbf"
 
 
 # jtkiwi
-url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kiwi/releases/jtkiwi_20221209.rbf"
-output = "_Others/jtkiwi_20221209.rbf"
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kiwi/releases/jtkiwi_20221217.rbf"
+output = "_Others/jtkiwi_20221217.rbf"
 
 
 # jtkunio
@@ -794,6 +794,11 @@ output = "_Arcade/Kicker.mra"
 # Insector X (World).mra
 url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kiwi/releases/Insector%20X%20(World).mra"
 output = "_Arcade/Insector X (World).mra"
+
+
+# Kageki (World).mra
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kiwi/releases/Kageki%20(World).mra"
+output = "_Arcade/Kageki (World).mra"
 
 
 # Renegade (US bootleg).mra

@@ -32,8 +32,8 @@ output = "_Computer/Amstrad_20220620.rbf"
 
 
 # ao486
-url = "https://raw.githubusercontent.com/MiSTer-devel/ao486_MiSTer/master/releases/ao486_20220914.rbf"
-output = "_Computer/ao486_20220914.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/ao486_MiSTer/master/releases/ao486_20221217.rbf"
+output = "_Computer/ao486_20221217.rbf"
 
 
 # Apogee
@@ -561,6 +561,11 @@ url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Xevious_MiSTer/mast
 output = "_Arcade/cores/Xevious_20220714.rbf"
 
 
+# XSleenaCore
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-XSleena_MiSTer/main/releases/Arcade-XSleenaCore_20221212.rbf"
+output = "_Arcade/cores/XSleenaCore_20221212.rbf"
+
+
 # Zaxxon
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Zaxxon_MiSTer/master/releases/Arcade-Zaxxon_20210915.rbf"
 output = "_Arcade/cores/Zaxxon_20210915.rbf"
@@ -714,6 +719,11 @@ output = "_Console/Genesis_20221109.rbf"
 # GnW
 url = "https://raw.githubusercontent.com/MiSTer-devel/GnW_MiSTer/master/releases/GnW_20220606.rbf"
 output = "_Others/GnW_20220606.rbf"
+
+
+# Homelab
+url = "https://raw.githubusercontent.com/MiSTer-devel/Homelab-MiSTer/main/releases/Homelab_20221216.rbf"
+output = "_Others/Homelab_20221216.rbf"
 
 
 # InputTest
@@ -917,8 +927,8 @@ output = "_Others/TomyScramble_20200724.rbf"
 
 
 # TomyTutor
-url = "https://raw.githubusercontent.com/MiSTer-devel/TomyTutor_MiSTer/main/releases/TomyTutor_20220716.rbf"
-output = "_Others/TomyTutor_20220716.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/TomyTutor_MiSTer/main/releases/TomyTutor_20221217.rbf"
+output = "_Others/TomyTutor_20221217.rbf"
 
 
 # TRS-80
@@ -1046,14 +1056,14 @@ url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Athena_MiSTer/main/
 output = "_Arcade/Athena.mra"
 
 
-# CountryClub.mra
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Athena_MiSTer/main/releases/CountryClub.mra"
-output = "_Arcade/CountryClub.mra"
+# Country Club.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Athena_MiSTer/main/releases/Country%20Club.mra"
+output = "_Arcade/Country Club.mra"
 
 
-# FightingGolf.mra
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Athena_MiSTer/main/releases/FightingGolf.mra"
-output = "_Arcade/FightingGolf.mra"
+# Fighting Golf.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Athena_MiSTer/main/releases/Fighting%20Golf.mra"
+output = "_Arcade/Fighting Golf.mra"
 
 
 # Athena_Screen_Flip_Fix_ROM_Patch.mra
@@ -2864,6 +2874,16 @@ output = "_Arcade/Super Xevious.mra"
 # Xevious.mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Xevious_MiSTer/master/releases/Xevious.mra"
 output = "_Arcade/Xevious.mra"
+
+
+# XSleenaB.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-XSleena_MiSTer/main/releases/XSleenaB.mra"
+output = "_Arcade/XSleenaB.mra"
+
+
+# XSleenaBA.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-XSleena_MiSTer/main/releases/XSleenaBA.mra"
+output = "_Arcade/XSleenaBA.mra"
 
 
 # Future Spy.mra

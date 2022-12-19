@@ -2934,12 +2934,6 @@
           "type": "RBF"
         },
         {
-          "name": "jtcps1_20220819.rbf",
-          "sha": "e7d3933e31f6136db1140d12d7d0d435d7267f75",
-          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps1/releases/jtcps1_20220819.rbf",
-          "type": "RBF"
-        },
-        {
           "name": "version.log",
           "sha": "a14a73478bc3df59d41ae8b725950cb0df95ae41",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps1/version.log",
@@ -3230,12 +3224,6 @@
           "name": "jtcps15_20220818.rbf",
           "sha": "ff81e1fccca5966c25ce3f14dd1edda14c74e934",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps15/releases/jtcps15_20220818.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "jtcps15_20220819.rbf",
-          "sha": "5f1abef37e25faf5b97450d04d60be99a13de7b5",
-          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps15/releases/jtcps15_20220819.rbf",
           "type": "RBF"
         },
         {
@@ -5414,13 +5402,13 @@
         },
         {
           "name": "README.md",
-          "sha": "03f1164b565ff7039c5d2856c930b6e1ca5d6004",
+          "sha": "afff60711112b9ef421d50fbc1edf3c11f92e15e",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kiwi/README.md",
           "type": "OTHER"
         },
         {
           "name": "Insector X (World).mra",
-          "sha": "fee7df169e720b550cffacd419f4f256d4fcf938",
+          "sha": "6078abe4567b557dd64d7997af0e35f7dd1bb735",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kiwi/releases/Insector%20X%20(World).mra",
           "type": "MRA",
           "extra": {
@@ -5433,9 +5421,35 @@
           }
         },
         {
+          "name": "Kageki (World).mra",
+          "sha": "57132a4685381fce167d096cf7ef17097a217f99",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kiwi/releases/Kageki%20(World).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Kageki (World)",
+            "rbf": "jtkiwi",
+            "zips": [
+              "kageki.zip",
+              "jtbeta.zip"
+            ]
+          }
+        },
+        {
           "name": "jtkiwi_20221209.rbf",
           "sha": "eadb101ab4b08b1a6cd4dc17ffb2553dc1053c93",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kiwi/releases/jtkiwi_20221209.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "jtkiwi_20221216.rbf",
+          "sha": "2ac4d9f922082f12af6387c097912133370035a4",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kiwi/releases/jtkiwi_20221216.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "jtkiwi_20221217.rbf",
+          "sha": "e5329ba846d4f979a87598c66bdbb25bdede7703",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kiwi/releases/jtkiwi_20221217.rbf",
           "type": "RBF"
         },
         {
