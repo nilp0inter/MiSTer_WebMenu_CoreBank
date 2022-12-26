@@ -1962,18 +1962,6 @@
           "type": "RBF"
         },
         {
-          "name": "jtcomsc_20221123.rbf",
-          "sha": "7687b23c1d3af7f19ab22b947b46af8583c483b7",
-          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/comsc/releases/jtcomsc_20221123.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "jtcomsc_20221124.rbf",
-          "sha": "7687b23c1d3af7f19ab22b947b46af8583c483b7",
-          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/comsc/releases/jtcomsc_20221124.rbf",
-          "type": "RBF"
-        },
-        {
           "name": "version.log",
           "sha": "aa9d81b4a8aaebc96970e3301c8ca015951264e0",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/comsc/version.log",
@@ -5238,6 +5226,38 @@
         },
         {
           "name": "README.md",
+          "sha": "1fbae2a554ac9bcb3df57315eab87776dbac8d4a",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/karnov/README.md",
+          "type": "OTHER"
+        },
+        {
+          "name": "Chelnov - Atomic Runner (World).mra",
+          "sha": "563529289aa8a3c84e088a99697f0541a6e50fa3",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/karnov/releases/Chelnov%20-%20Atomic%20Runner%20(World).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Chelnov - Atomic Runner (World)",
+            "rbf": "jtkarnov",
+            "zips": [
+              "chelnov.zip",
+              "jtbeta.zip"
+            ]
+          }
+        },
+        {
+          "name": "jtkarnov_20221223.rbf",
+          "sha": "253e9ead1ab0f6884e7f973ce9443fbf6a2f0c02",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/karnov/releases/jtkarnov_20221223.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "version.log",
+          "sha": "afaed5bac8271644d5acba8c1e5dd5e6fda68ef0",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/karnov/version.log",
+          "type": "OTHER"
+        },
+        {
+          "name": "README.md",
           "sha": "13f87a604a65d373559b1776b239300e388e675c",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kchamp/README.md",
           "type": "OTHER"
@@ -7129,27 +7149,27 @@
         },
         {
           "name": "Tough Turf (set 2, Japan) (8751 317-0104).mra",
-          "sha": "137d64ab075a9303aacac121ee782f8e928c5edb",
+          "sha": "d3a625407144f46c9075994a0649cf95da17e3ff",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/Tough%20Turf%20(set%202%2C%20Japan)%20(8751%20317-0104).mra",
           "type": "MRA",
           "extra": {
             "name": "Tough Turf (set 2, Japan) (8751 317-0104)",
             "rbf": "jts16b",
             "zips": [
-              "tturf.zip|s16mcu_alt.zip"
+              "tturf.zip"
             ]
           }
         },
         {
           "name": "Wonder Boy III - Monster Lair (set 6, World, System 16B) (8751 317-0098).mra",
-          "sha": "e787a96c084c40921f8aa5a639852f66c0c92bce",
+          "sha": "9ddab59c1d9ef0b52703dbe4d521e93840e4565e",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/Wonder%20Boy%20III%20-%20Monster%20Lair%20(set%206%2C%20World%2C%20System%2016B)%20(8751%20317-0098).mra",
           "type": "MRA",
           "extra": {
             "name": "Wonder Boy III - Monster Lair (set 6, World, System 16B) (8751 317-0098)",
             "rbf": "jts16b",
             "zips": [
-              "wb3.zip|s16mcu_alt.zip"
+              "wb3.zip"
             ]
           }
         },

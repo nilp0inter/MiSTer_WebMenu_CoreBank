@@ -32,8 +32,8 @@ output = "_Others/jtcommnd_20221127.rbf"
 
 
 # jtcomsc
-url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/comsc/releases/jtcomsc_20221124.rbf"
-output = "_Others/jtcomsc_20221124.rbf"
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/comsc/releases/jtcomsc_20220819.rbf"
+output = "_Others/jtcomsc_20220819.rbf"
 
 
 # jtcontra
@@ -109,6 +109,11 @@ output = "_Arcade/cores/jtgunsmoke_20220818.rbf"
 # jthige
 url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/hige/releases/jthige_20221124.rbf"
 output = "_Others/jthige_20221124.rbf"
+
+
+# jtkarnov
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/karnov/releases/jtkarnov_20221223.rbf"
+output = "_Others/jtkarnov_20221223.rbf"
 
 
 # jtkchamp
@@ -779,6 +784,11 @@ output = "_Arcade/Gun Smoke.mra"
 # Pirate Ship Higemaru.mra
 url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/hige/releases/Pirate%20Ship%20Higemaru.mra"
 output = "_Arcade/Pirate Ship Higemaru.mra"
+
+
+# Chelnov - Atomic Runner (World).mra
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/karnov/releases/Chelnov%20-%20Atomic%20Runner%20(World).mra"
+output = "_Arcade/Chelnov - Atomic Runner (World).mra"
 
 
 # Karate Champ (US).mra
