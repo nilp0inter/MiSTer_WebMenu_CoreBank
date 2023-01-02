@@ -471,6 +471,11 @@ url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SilverLand_MiSTer/m
 output = "_Arcade/cores/SilverLand_20220521.rbf"
 
 
+# SlapFight
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SlapFight_MiSTer/main/releases/Arcade-SlapFight_20221231.rbf"
+output = "_Arcade/cores/SlapFight_20221231.rbf"
+
+
 # SolomonsKey
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SolomonsKey_MiSTer/master/releases/Arcade-SolomonsKey_20210116.rbf"
 output = "_Arcade/cores/SolomonsKey_20210116.rbf"
@@ -562,8 +567,8 @@ output = "_Arcade/cores/Xevious_20220714.rbf"
 
 
 # XSleenaCore
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-XSleena_MiSTer/main/releases/Arcade-XSleenaCore_20221212.rbf"
-output = "_Arcade/cores/XSleenaCore_20221212.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-XSleena_MiSTer/main/releases/Arcade-XSleenaCore_20221221.rbf"
+output = "_Arcade/cores/XSleenaCore_20221221.rbf"
 
 
 # Zaxxon
@@ -637,8 +642,8 @@ output = "_Computer/C64_20221124.rbf"
 
 
 # ChannelF
-url = "https://raw.githubusercontent.com/MiSTer-devel/ChannelF_MiSTer/master/releases/ChannelF_20211026.rbf"
-output = "_Others/ChannelF_20211026.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/ChannelF_MiSTer/master/releases/ChannelF_20221229.rbf"
+output = "_Others/ChannelF_20221229.rbf"
 
 
 # Chess
@@ -2604,6 +2609,21 @@ output = "_Arcade/Wonder Boy (Set 1, 315-5177).mra"
 # Silver Land.mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SilverLand_MiSTer/master/releases/Silver%20Land.mra"
 output = "_Arcade/Silver Land.mra"
+
+
+# Alcon Bootleg.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SlapFight_MiSTer/main/releases/Alcon%20Bootleg.mra"
+output = "_Arcade/Alcon Bootleg.mra"
+
+
+# SlapFight Bootleg.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SlapFight_MiSTer/main/releases/SlapFight%20Bootleg.mra"
+output = "_Arcade/SlapFight Bootleg.mra"
+
+
+# Tiger Heli Bootleg.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SlapFight_MiSTer/main/releases/Tiger%20Heli%20Bootleg.mra"
+output = "_Arcade/Tiger Heli Bootleg.mra"
 
 
 # ASO.mra
