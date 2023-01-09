@@ -356,6 +356,11 @@ url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MrDo_MiSTer/main/re
 output = "_Arcade/cores/MrDo_20220304.rbf"
 
 
+# MrJong
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MrJong_MiSTer/master/releases/Arcade-MrJong_20230102.rbf"
+output = "_Arcade/cores/MrJong_20230102.rbf"
+
+
 # MysticMarathon
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MysticMarathon_MiSTer/master/releases/Arcade-MysticMarathon_20220720.rbf"
 output = "_Arcade/cores/MysticMarathon_20220720.rbf"
@@ -707,8 +712,8 @@ output = "_Others/Gamate_20220613.rbf"
 
 
 # Gameboy
-url = "https://raw.githubusercontent.com/MiSTer-devel/Gameboy_MiSTer/master/releases/Gameboy_20220806.rbf"
-output = "_Console/Gameboy_20220806.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Gameboy_MiSTer/master/releases/Gameboy_20230102.rbf"
+output = "_Console/Gameboy_20230102.rbf"
 
 
 # GBA
@@ -947,8 +952,8 @@ output = "_Computer/TSConf_20220216.rbf"
 
 
 # TurboGrafx16
-url = "https://raw.githubusercontent.com/MiSTer-devel/TurboGrafx16_MiSTer/master/releases/TurboGrafx16_20220326.rbf"
-output = "_Console/TurboGrafx16_20220326.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/TurboGrafx16_MiSTer/master/releases/TurboGrafx16_20230102.rbf"
+output = "_Console/TurboGrafx16_20230102.rbf"
 
 
 # UK101
@@ -2049,6 +2054,21 @@ output = "_Arcade/Mr. Do! Fixed.mra"
 # Mr. Do!.mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MrDo_MiSTer/main/releases/Mr.%20Do!.mra"
 output = "_Arcade/Mr. Do!.mra"
+
+
+# BlockBuster.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MrJong_MiSTer/master/releases/BlockBuster.mra"
+output = "_Arcade/BlockBuster.mra"
+
+
+# Crazy Blocks.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MrJong_MiSTer/master/releases/Crazy%20Blocks.mra"
+output = "_Arcade/Crazy Blocks.mra"
+
+
+# Mr. Jong.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MrJong_MiSTer/master/releases/Mr.%20Jong.mra"
+output = "_Arcade/Mr. Jong.mra"
 
 
 # Mystic Marathon.mra

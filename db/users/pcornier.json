@@ -5,55 +5,6 @@
   "type": "User",
   "repos": [
     {
-      "name": "Arcade-MrJong_MiSTer",
-      "description": "Mr.Jong for MiSTer FPGA",
-      "readme": "# Mr.Jong/CrazyBlocks/BlockBuster by Kiwako Co., Ltd.\r\n\r\n## General description\r\nMr.Jong/CrazyBlocks/BlockBuster ported to MiSTerFPGA by Pierco (Pierre Cornier).\r\n\r\n## Patreon Contributors!!\r\n\r\n- Adrian Vargerson\r\n- Alan Steremberg\r\n- Allen Tipper\r\n- Amosfear\r\n- Andreas Micklei\r\n- Boogermann\r\n- Christopher Garland\r\n- Cory Stargel\r\n- Count Duckula\r\n- Cyril Despontin\r\n- Cyrille Jouineau\r\n- Darren Chell\r\n- Darren Newman\r\n- Dave Ely\r\n- Davide Lorigliola\r\n- dECKARD\r\n- Dimitris Zongas\r\n- Francois P\r\n- Funkycochise\r\n- Grumpy Old Gamer\r\n- Herbert Krammer\r\n- Hiddenbyleaves\r\n- Holger Lagerfeldt\r\n- Humanoide70\r\n- J BG\r\n- Jo le Zef\r\n- Johan Sj\u00f6strand\r\n- John Stringer\r\n- Jorge Gal\u00e1n\r\n- Jos\u00e9 L\u00f3pez Navarrete\r\n- Manuel Gomez Grande\r\n- Matt Hargett\r\n- Max\r\n- Michael Fuerst\r\n- Michael Packard\r\n- Mike Holzinger\r\n- Mike S\r\n- MiSTerFPGA.co.uk\r\n- Nicolas VAILLANT\r\n- Philip Lawson\r\n- Pons Cremator\r\n- RaspberryAlpine\r\n- Rune P\r\n- Samuel Giroux\r\n- Tony Escobar\r\n- wwark\r\n",
-      "archived": false,
-      "fork": false,
-      "url": "https://github.com/pcornier/Arcade-MrJong_MiSTer",
-      "releases": [
-        {
-          "name": "BlockBuster.mra",
-          "sha": "cdae4207ac70386216242f8149a946e18522b006",
-          "url": "https://raw.githubusercontent.com/pcornier/Arcade-MrJong_MiSTer/master/releases/BlockBuster.mra",
-          "type": "MRA",
-          "extra": {
-            "name": "BlockBuster",
-            "rbf": "mrjong",
-            "zips": [
-              "blkbustr.zip|mrjong.zip"
-            ]
-          }
-        },
-        {
-          "name": "CrazyBlocks.mra",
-          "sha": "7a2da395d3f92505ac05863f319a5086d987f73f",
-          "url": "https://raw.githubusercontent.com/pcornier/Arcade-MrJong_MiSTer/master/releases/CrazyBlocks.mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Crazy Blocks",
-            "rbf": "mrjong",
-            "zips": [
-              "crazyblk.zip|mrjong.zip"
-            ]
-          }
-        },
-        {
-          "name": "MrJong.mra",
-          "sha": "8d7634a29f467d14a52a76a317d00bffbb0bfee8",
-          "url": "https://raw.githubusercontent.com/pcornier/Arcade-MrJong_MiSTer/master/releases/MrJong.mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Mr.Jong",
-            "rbf": "mrjong",
-            "zips": [
-              "mrjong.zip"
-            ]
-          }
-        }
-      ]
-    },
-    {
       "name": "Arcade-QBert_MiSTer",
       "description": "Q*Bert core for MiSTer",
       "readme": "![QBert Character](./qbert.png) MiSTer Q*Bert\r\n=============================================\r\n\r\nQ*Bert arcade core for MiSTer FPGA by Pierco. It's a reproduction of the original PCBs rather than a reinterpretation but with some dual port RAM exceptions.\r\n\r\nAdditional details\r\n------------------\r\n\r\n**Audio board MA216:**\r\n\r\n- SC01 is not implemented. Waiting for brave people to do it.\r\n\r\n**NVRAM:**\r\n\r\n- Not implemented - NVRAM should be C5/C6 on schematics.\r\n\r\n**Ports:**\r\n\r\n- IP17-10: input port for test buttons, coins and player 1/2.\r\n- IP47-40: input port for joystick.\r\n- OP27-20: output port for sound interface\r\n- OP33-37: output port for knocker and coin meter.\r\n\r\nGame Compatibility List\r\n-----------------------\r\n\r\nWorking:\r\n\r\n- QBert: 100% compatible.\r\n- QBert Qubes: 100% compatible.\r\n- Mad Planets: 100% compatible.\r\n\r\nNot working yet:\r\n\r\n- Curve Ball: dip switch order is weird, no sound.\r\n- Insector: 100% compatible, dip switch problems, controller inverted & no test mode(?).\r\n- Tyls: 100% compatible - dip switches inverted.\r\n\r\nKnown Bugs\r\n----------\r\n\r\n- QBert Qubes: \"Supreme Nosers\" screen works only after a reset.\r\n- Problem with vertical position register E1-2. When a new object is falling from the top of the screen (ball), it appears briefly at the bottom of the screen.\r\n- High Scores screen: the big three letters of player's name are not displayed correctly. It works well after a few resets (is it a problem with bus sharing logic which sends zeros to simulate high impedance for ORing outputs?). I don't have the PCB so it's difficult to know the original behavior.\r\n- Votrax chip is cruelly missing, QBert needs his @!#?@! voice!!!\r\n",
