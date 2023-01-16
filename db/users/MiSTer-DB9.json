@@ -3433,6 +3433,351 @@
       ]
     },
     {
+      "name": "Arcade-IremM72_MiSTer",
+      "description": null,
+      "readme": "# Irem M72 Core\n\n![](docs/header_small.png)\n\nImplemention of the Irem M72 & M84 arcade hardware (https://www.system16.com/hardware.php?id=738) for the MiSTer FPGA platform.\n\n## Supported Games\n\n|Name|Region|Notes|\n|---|---|---|\n|[R-Type](https://en.wikipedia.org/wiki/R-Type)|Japan, US, World||\n|[Ninja Spirit](https://en.wikipedia.org/wiki/Ninja_Spirit)|Japan||\n|[Image Fight](https://en.wikipedia.org/wiki/Image_Fight)|Japan, World||\n|[Gallop - Armed Police Unit](https://en.wikipedia.org/wiki/Armed_Police_Unit_Gallop)|Japan|Emulated MCU.|\n|[Legend of Hero Tonma](https://en.wikipedia.org/wiki/Legend_of_Hero_Tonma)|Japan||\n|[Mr. HELI no Daibouken](https://en.wikipedia.org/wiki/Mr._Heli)|Japan||\n|[Air Duel](https://en.wikipedia.org/wiki/Air_Duel)|Japan, World|Conversion from M81 hardware.|\n|[Dragon Breed](https://en.wikipedia.org/wiki/Dragon_Breed)|Japan|Conversion from M81 hardware.|\n|[X-Multiply](https://en.wikipedia.org/wiki/X_Multiply)|Japan|Conversion from M81 hardware.|\n|[Daiku no Gensan](https://en.wikipedia.org/wiki/Hammerin%27_Harry)|Japan|Conversion from M81 hardware. Emulated MCU.|\n|[Hammerin' Harry](https://en.wikipedia.org/wiki/Hammerin%27_Harry)|US, Japan|M84 Hardware.|\n|[R-Type II](https://en.wikipedia.org/wiki/R-Type_II)|Japan,World|M84 hardware.|\n\n## Video Modes\nAll of these games output a 256 line signal at 55.02hz, that can be difficult for some consumer CRTs to sync too and the refresh rate can cause irregular scrolling on some digital displays. The core offers three additional refresh rates: 50hz, 57hz and 60hz. These will slow down or speed up gameplay, but sound playback will remain uneffected.\n\n## Pause\nThe core implements pause functionality. You can bind a pause button and/or enable the \"OSD Pause\" option in the OSD, which will pause the game whenever the OSD is open. Pause is not something the original hardware supported and certain parts of the graphics state need to be saved and replayed during the paused frame. This may cause slight graphical issues when paused in some situations.\n\n## Thanks\nMany people, knowingly or not, contributed to this work.\n- @ElectronAsh for the initial verilator version and help with the various KNA ICs\n- @furrtek for the KNA70H015(11) reverse engineering https://github.com/furrtek/VGChips/tree/master/Nanao/KNA70H015(11)\n- @jotego for the YM2151 implementation and analog adjustment module\n- @Ace9921 because I used a lot of his TimePilot'84 code as an example for hooking up inputs and dipswitches\n- The people from PLD Archive and https://www.jammarcade.net/ for collecting and archiving schematics and PAL information http://wiki.pldarchive.co.uk/index.php?title=R-Type_(M72)\n- @sorgelig for developing and maintaining MiSTer\n- @RobertPeip for the v30mz cpu I am using as the basis for the v30\n- @sentientsixp for encouraging me to do this\n- @atrac17 for schematics and MRAs\n- @tdlabac for help with MCU emulation\n- @_ShootTheCore for providing audio captures from original M72 hardware\n- @gyurco for fixes, optimizations and Hammerin' Harry support.\n- The MiSTer FPGA discord server for the helpful advice and support\n\n\n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/MiSTer-DB9/Arcade-IremM72_MiSTer",
+      "releases": [
+        {
+          "name": "Air Duel (Japan, M72 hardware).mra",
+          "sha": "795d979715787c4e6a471dd384606fb21fd43836",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IremM72_MiSTer/main/releases/Air%20Duel%20(Japan%2C%20M72%20hardware).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Air Duel (Japan, M72 hardware)",
+            "rbf": "IremM72",
+            "zips": [
+              "airdueljm72.zip|airduel.zip"
+            ]
+          }
+        },
+        {
+          "name": "Air Duel (World, M72 hardware).mra",
+          "sha": "36b78f1dfd14d898e11efb8e173ac3943095a1bd",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IremM72_MiSTer/main/releases/Air%20Duel%20(World%2C%20M72%20hardware).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Air Duel (World, M72 hardware)",
+            "rbf": "IremM72",
+            "zips": [
+              "airduelm72.zip|airduel.zip"
+            ]
+          }
+        },
+        {
+          "name": "Arcade-IremM72_20220830.rbf",
+          "sha": "7f051faa3eccf963ef668bd64ee4e1a8a4b41234",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IremM72_MiSTer/main/releases/Arcade-IremM72_20220830.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-IremM72_20220902.rbf",
+          "sha": "2bd277f670291ad56ce072eb279baf2f3d3b7532",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IremM72_MiSTer/main/releases/Arcade-IremM72_20220902.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-IremM72_20220909.rbf",
+          "sha": "dca2605e9f62072510ca2c12b7957bbf919eb894",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IremM72_MiSTer/main/releases/Arcade-IremM72_20220909.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-IremM72_20220910.rbf",
+          "sha": "1f9c10e490a65ceca04d90b02b648d06fb7683eb",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IremM72_MiSTer/main/releases/Arcade-IremM72_20220910.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-IremM72_20220912.rbf",
+          "sha": "c096fe30c16586e79a5534dfad30df3cbf10b8c1",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IremM72_MiSTer/main/releases/Arcade-IremM72_20220912.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-IremM72_20221210.rbf",
+          "sha": "248e6f42777ff9d65326d6c4e894d0e13c087eb4",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IremM72_MiSTer/main/releases/Arcade-IremM72_20221210.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Daiku no Gensan (Japan, M72 hardware).mra",
+          "sha": "bb812c11ca73fa39a58e5d9c8149bec330b2dab4",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IremM72_MiSTer/main/releases/Daiku%20no%20Gensan%20(Japan%2C%20M72%20hardware).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Daiku no Gensan (Japan, M72 hardware)",
+            "rbf": "IremM72",
+            "zips": [
+              "dkgensanm72.zip|hharry.zip"
+            ]
+          }
+        },
+        {
+          "name": "Daiku no Gensan (Japan, M84 hardware).mra",
+          "sha": "8b9debf1c1ea169f3f119ef9a5436827bcb2d1a5",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IremM72_MiSTer/main/releases/Daiku%20no%20Gensan%20(Japan%2C%20M84%20hardware).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Daiku no Gensan (Japan, M84 hardware)",
+            "rbf": "IremM72",
+            "zips": [
+              "dkgensan.zip|hharry.zip"
+            ]
+          }
+        },
+        {
+          "name": "Dragon Breed (Japan, M72 hardware).mra",
+          "sha": "15f9d452394b836cc369ab3d086e25be0e7a6d6e",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IremM72_MiSTer/main/releases/Dragon%20Breed%20(Japan%2C%20M72%20hardware).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Dragon Breed (Japan, M72 hardware)",
+            "rbf": "IremM72",
+            "zips": [
+              "dbreedjm72.zip|dbreed.zip"
+            ]
+          }
+        },
+        {
+          "name": "Gallop - Armed Police Unit (Japan, M72 hardware).mra",
+          "sha": "21f393c345225503c27e983afe3cd86563785442",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IremM72_MiSTer/main/releases/Gallop%20-%20Armed%20Police%20Unit%20(Japan%2C%20M72%20hardware).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Gallop - Armed Police Unit (Japan, M72 hardware)",
+            "rbf": "IremM72",
+            "zips": [
+              "cosmccop.zip|gallop.zip"
+            ]
+          }
+        },
+        {
+          "name": "Hammerin' Harry (US, M84 hardware).mra",
+          "sha": "f06faa5f963c980b271e56387b7f230030f6ec9e",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IremM72_MiSTer/main/releases/Hammerin'%20Harry%20(US%2C%20M84%20hardware).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Hammerin' Harry (US, M84 hardware)",
+            "rbf": "IremM72",
+            "zips": [
+              "hharryu.zip|hharry.zip"
+            ]
+          }
+        },
+        {
+          "name": "Image Fight (Japan).mra",
+          "sha": "38fb1a690e34aba53480faa386f539daa76c1e36",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IremM72_MiSTer/main/releases/Image%20Fight%20(Japan).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Image Fight (Japan)",
+            "rbf": "IremM72",
+            "zips": [
+              "imgfightj.zip|imgfight.zip"
+            ]
+          }
+        },
+        {
+          "name": "Image Fight (World).mra",
+          "sha": "97ebe131c6907d0c147411c396e2ded25d135c25",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IremM72_MiSTer/main/releases/Image%20Fight%20(World).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Image Fight (World)",
+            "rbf": "IremM72",
+            "zips": [
+              "imgfight.zip"
+            ]
+          }
+        },
+        {
+          "name": "Legend of Hero Tonma (Japan).mra",
+          "sha": "359f24976f8b4faea589766d4d1e538c3150ffc7",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IremM72_MiSTer/main/releases/Legend%20of%20Hero%20Tonma%20(Japan).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Legend of Hero Tonma (Japan)",
+            "rbf": "IremM72",
+            "zips": [
+              "lohtj.zip|loht.zip"
+            ]
+          }
+        },
+        {
+          "name": "Mr. HELI no Daibouken (Japan).mra",
+          "sha": "3f24df916315e126344eca67f81ea8437c3723c9",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IremM72_MiSTer/main/releases/Mr.%20HELI%20no%20Daibouken%20(Japan).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Mr. HELI no Daibouken (Japan)",
+            "rbf": "IremM72",
+            "zips": [
+              "mrheli.zip|bchopper.zip"
+            ]
+          }
+        },
+        {
+          "name": "Ninja Spirit (Japan).mra",
+          "sha": "e35f8f86d9bf3838655ba79ddda32b57ba87f5f6",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IremM72_MiSTer/main/releases/Ninja%20Spirit%20(Japan).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Ninja Spirit (Japan)",
+            "rbf": "IremM72",
+            "zips": [
+              "nspirit.zip|nspiritj.zip"
+            ]
+          }
+        },
+        {
+          "name": "R-Type (Japan).mra",
+          "sha": "5ffa03cc3b036053b0096506bfc2826e8f50dc25",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IremM72_MiSTer/main/releases/R-Type%20(Japan).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "R-Type (Japan)",
+            "rbf": "IremM72",
+            "zips": [
+              "rtype.zip|rtypej.zip"
+            ]
+          }
+        },
+        {
+          "name": "R-Type (World).mra",
+          "sha": "27f8799d71388fa7d6a0fa868f305ef05c236a51",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IremM72_MiSTer/main/releases/R-Type%20(World).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "R-Type (World)",
+            "rbf": "IremM72",
+            "zips": [
+              "rtype.zip"
+            ]
+          }
+        },
+        {
+          "name": "R-Type II (Japan).mra",
+          "sha": "a458503a2d02e15376f602e5960a990cf56867ef",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IremM72_MiSTer/main/releases/R-Type%20II%20(Japan).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "R-Type II (Japan)",
+            "rbf": "IremM72",
+            "zips": [
+              "rtype2.zip|rtype2j.zip"
+            ]
+          }
+        },
+        {
+          "name": "R-Type II (World).mra",
+          "sha": "83c33c6f69e24e10f039c3b455244253058f3b2c",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IremM72_MiSTer/main/releases/R-Type%20II%20(World).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "R-Type II (World)",
+            "rbf": "IremM72",
+            "zips": [
+              "rtype2.zip"
+            ]
+          }
+        },
+        {
+          "name": "X Multiply (Japan, M72 hardware).mra",
+          "sha": "333672c2db9361d2c44a48f8f1e3d1d8b2ad3966",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IremM72_MiSTer/main/releases/X%20Multiply%20(Japan%2C%20M72%20hardware).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "X Multiply (Japan, M72 hardware)",
+            "rbf": "IremM72",
+            "zips": [
+              "xmultiplm72.zip|xmultipl.zip"
+            ]
+          }
+        },
+        {
+          "name": "R-Type (Japan prototype).mra",
+          "sha": "1f74a1fa584dcc99092627c053c469f736ce2900",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IremM72_MiSTer/main/releases/_alternatives/R-Type%20(Japan%20prototype).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "R-Type (Japan prototype)",
+            "rbf": "IremM72",
+            "zips": [
+              "rtype.zip|rtypejp.zip"
+            ]
+          }
+        },
+        {
+          "name": "R-Type (US).mra",
+          "sha": "6fac61e14b212fdb3e5f8831b28a652935551c2b",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IremM72_MiSTer/main/releases/_alternatives/R-Type%20(US).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "R-Type (US)",
+            "rbf": "IremM72",
+            "zips": [
+              "rtype.zip|rtypeu.zip"
+            ]
+          }
+        },
+        {
+          "name": "R-Type (World bootleg).mra",
+          "sha": "10a4aaa0946d279561a70827d8454ae3ef8e888d",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IremM72_MiSTer/main/releases/_alternatives/R-Type%20(World%20bootleg).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "R-Type (World bootleg)",
+            "rbf": "IremM72",
+            "zips": [
+              "rtype.zip|rtypeb.zip"
+            ]
+          }
+        },
+        {
+          "name": "R-Type II (Japan, revision C).mra",
+          "sha": "d29a4609fd6325c89db01262a50ea8b1e125e7b9",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IremM72_MiSTer/main/releases/_alternatives/R-Type%20II%20(Japan%2C%20revision%20C).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "R-Type II (Japan, revision C)",
+            "rbf": "IremM72",
+            "zips": [
+              "rtype2.zip|rtype2jc.zip"
+            ]
+          }
+        },
+        {
+          "name": "R-Type II (inv) (World).mra",
+          "sha": "7f564f5951c68088a658b6c9838d79b4b9a6bd4c",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IremM72_MiSTer/main/releases/_alternatives/R-Type%20II%20(inv)%20(World).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "R-Type II (Inv) (World)",
+            "rbf": "IremM72",
+            "zips": [
+              "rtype2.zip"
+            ]
+          }
+        },
+        {
+          "name": "X Multiply (Inv) (Japan, M72 hardware).mra",
+          "sha": "c9d9f9f79c46bbe7b59b6ed15e80570bba412133",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IremM72_MiSTer/main/releases/_alternatives/X%20Multiply%20(Inv)%20(Japan%2C%20M72%20hardware).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "X Multiply (Inv) (Japan, M72 hardware)",
+            "rbf": "IremM72",
+            "zips": [
+              "xmultiplm72.zip|xmultipl.zip"
+            ]
+          }
+        }
+      ]
+    },
+    {
       "name": "Arcade-IronHorse_MiSTer",
       "description": "Iron Horse for MiSTer",
       "readme": "# Iron Horse for [MISTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\nAn FPGA implementation of Iron Horse for the MiSTer platform\n\n## Credits\n- Sorgelig: MiSTer project lead\n- Ace: Core design and Konami custom chip implementations\n- ElectronAsh: Assistance with Konami custom chip implementations\n- Steve C. - Shiffy: Sourcing a bootleg Iron Horse PCB for reverse-engineering\n- JimmyStones: High score saving support & pause feature\n- Kitrinx: ROM loader\n\n## Features\n- Logic modelled to match the original as closely as possible\n- Standard joystick and keyboard controls\n- High score saving\n- Greg Miller's cycle-accurate MC6809E CPU core with modifications by Sorgelig\n- T80s CPU by Daniel Wallner with fixes by MikeJ, Sorgelig, and others\n- YM2203 implementation using JT03 by Jotego\n- Modeling of bootleg PCBs' timing and graphical differences\n- Fully-tuned audio filters including the PCB's switchable low-pass filters\n- Option for normalized video timings to use with picky HDTVs and monitors (underclocks the game by ~1.8%)\n\n## Installation\nPlace `*.rbf` into the \"_Arcade/cores\" folder on your SD card.  Then, place `*.mra` into the \"_Arcade\" folder and ROM files from MAME into \"games/mame\".\n\n### ****ATTENTION****\nROMs are not included. In order to use this arcade core, you must provide the correct ROMs.\n\nTo simplify the process, .mra files are provided in the releases folder that specify the required ROMs along with their checksums.  The ROM's .zip filename refers to the corresponding file in the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for information on how to setup and use the environment.\n\nQuick reference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/games/mame/<mame rom>.zip\n/games/hbmame/<hbmame rom>.zip\n\n## Controls\n### Keyboard\n| Key | Function |\n| --- | --- |\n| 1 | 1-Player Start |\n| 2 | 2-Player Start |\n| 5, 6 | Coin |\n| 9 | Service Credit |\n| Arrow keys | Movement |\n| CTRL | Power |\n| ALT | Shoot |\n| Space | Crouch |\n\n### Joystick\n| Joystick action | Function |\n| --- | --- |\n| D-Pad | Movement |\n| Y | Power |\n| B | Attack |\n| A | Crouch |\n\n## Known Issues\n1) Although bootleg flaws are modeled, sprite flickering is not 100% accurate\n2) The high score system may cause lockups or unusual behavior when high scores are loaded with normalized video timings\n3) The volume scale of the YM2203's SSG section needs further verification\n\n## High score save/load\n\nSave and load of high scores is supported for this core:\n\nTo save your high scores manually, press the 'Save Settings' option in the OSD.  High scores will be automatically loaded when the core is started.\n\nTo enable automatic saving of high scores, turn on the 'Autosave Hiscores' option, press the 'Save Settings' option in the OSD, and reload the core.  High scores will then be automatically saved (if they have changed) any time the OSD is opened.\n\nHigh score data is stored in /media/fat/config/nvram/ as ```<mra filename>.nvm```\n",
@@ -7153,6 +7498,18 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-SolomonsKey_20230110.rbf",
+          "sha": "b4d931ee560d732f96ddfb97e45d658de8b46b4e",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SolomonsKey_MiSTer/master/releases/Arcade-SolomonsKey_20230110.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-SolomonsKey_20230112.rbf",
+          "sha": "741c88f87b3abc5a3434541d848e87dd47a75da9",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SolomonsKey_MiSTer/master/releases/Arcade-SolomonsKey_20230112.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Solomon no Kagi (JP).mra",
           "sha": "fb5257238dd3b023ca029bb037ae3f6c867fc872",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SolomonsKey_MiSTer/master/releases/Solomon%20no%20Kagi%20(JP).mra",
@@ -9482,7 +9839,7 @@
     {
       "name": "Distribution_MiSTer",
       "description": null,
-      "readme": "# MiSTer Distribution DB9\n\nThis repository contains all the files that you'll want in your MiSTer.\n\nYou may download all of them at once as a zip through the [following link](https://github.com/MiSTer-DB9/Distribution_MiSTer/archive/refs/heads/main.zip). Once you have them, place them as-is in your SD card, and everything should work out of the box.\n\n### MiSTer Project\n\nIf you want to check more about the MiSTer project, please check [this wiki](https://github.com/MiSTer-devel/Main_MiSTer/wiki).\n\n### Downloader script\n\nFor downloading all of these files in an automatic fashion, use [this tool](https://github.com/MiSTer-devel/Downloader_MiSTer).\n\n#### List of Tags that you may use with the Downloader Filters:\n\n`acornatom`, `acornelectron`, `adam`, `adctest`, `adventurevision`, `alicemc10`, `all_filters`, `altair8800`, `alternatives`, `amiga`, `amstrad`, `amstrad-pcw`, `amstradpcw`, `ao486`, `apogee`, `apple-i`, `apple-ii`, `aquarius`, `arcade`, `arcade-arkanoid`, `arcade-asteroids`, `arcade-asteroidsdeluxe`, `arcade-astrocade`, `arcade-ataritetris`, `arcade-athena`, `arcade-bagman`, `arcade-bakraid`, `arcade-bankpanic`, `arcade-batrider`, `arcade-berzerk`, `arcade-blackwidow`, `arcade-blockade`, `arcade-bombjack`, `arcade-bosconian`, `arcade-breakout`, `arcade-burgertime`, `arcade-burningrubber`, `arcade-canyonbomber`, `arcade-cave`, `arcade-centipede`, `arcade-chameleon`, `arcade-computerspace`, `arcade-congobongo`, `arcade-cores`, `arcade-cosmic`, `arcade-crazyballoon`, `arcade-crazyclimber`, `arcade-crazykong`, `arcade-crystalcastles`, `arcade-defender`, `arcade-digdug`, `arcade-dominos`, `arcade-donkeykong`, `arcade-donkeykong3`, `arcade-donkeykongjunior`, `arcade-dorodon`, `arcade-dottorikun`, `arcade-druaga`, `arcade-exerion`, `arcade-expressraider`, `arcade-finalizer`, `arcade-foodfight`, `arcade-frenzy`, `arcade-galaga`, `arcade-galaxian`, `arcade-galivan`, `arcade-gaplus`, `arcade-garegga`, `arcade-gauntlet`, `arcade-gyruss`, `arcade-ikariwarriors`, `arcade-inferno`, `arcade-iremm62`, `arcade-iremm72`, `arcade-ironhorse`, `arcade-jackal`, `arcade-jailbreak`, `arcade-joust2`, `arcade-ladybug`, `arcade-lunarlander`, `arcade-mariobros`, `arcade-mcr1`, `arcade-mcr2`, `arcade-mcr3`, `arcade-mcr3mono`, `arcade-mcr3scroll`, `arcade-missilecommand`, `arcade-moonpatrol`, `arcade-mrdo`, `arcade-mrjong`, `arcade-mysticmarathon`, `arcade-ninjakun`, `arcade-pacman`, `arcade-pengo`, `arcade-penguinkunwars`, `arcade-phoenix`, `arcade-pleiads`, `arcade-polyplay`, `arcade-pong`, `arcade-pooyan`, `arcade-popeye`, `arcade-qbert`, `arcade-rallyx`, `arcade-riverpatrol`, `arcade-robotron`, `arcade-rshnatk`, `arcade-scootershooter`, `arcade-scramble`, `arcade-segasys1`, `arcade-silverland`, `arcade-slapfight`, `arcade-sms`, `arcade-snk_triplez80`, `arcade-solomonskey`, `arcade-sonson`, `arcade-spaceinvaders`, `arcade-spacerace`, `arcade-sprint1`, `arcade-sprint2`, `arcade-subs`, `arcade-superbreakout`, `arcade-tankbattalion`, `arcade-tecmo`, `arcade-tiamc1`, `arcade-timepilot`, `arcade-timepilot84`, `arcade-tnkiii`, `arcade-traverseusa`, `arcade-tropicalangel`, `arcade-turkeyshoot`, `arcade-ultratank`, `arcade-vball`, `arcade-xevious`, `arcade-xsleenacore`, `arcade-zaxxon`, `arcade-zigzag`, `arcadelpf`, `arcadia`, `archie`, `arduboy`, `astrocade`, `atari2600`, `atari5200`, `atari7800`, `atari800`, `atarilynx`, `atarist`, `avision`, `ay-3-8500`, `bbcmicro`, `bios`, `bk0011m`, `c16`, `c64`, `casio_pv-1000`, `casio_pv-2000`, `channelf`, `cheats`, `chess`, `chip8`, `coco2`, `coco3`, `coleco`, `colecoadam`, `colecovision`, `complexmultichromatic`, `computer`, `computer-cores`, `console`, `console-cores`, `contrast_boost`, `cores`, `corespecific`, `creativision`, `crt-simulation`, `displayspecific`, `docs`, `drv`, `edsac`, `eg2000`, `epochgalaxyii`, `essential`, `extra-utilities`, `famicom`, `filters`, `filters_audio`, `filters_video`, `flappy`, `flappybird`, `font`, `galaksija`, `gamate`, `gameboy`, `gameboy2p`, `gameboyadvance`, `gameboycolor`, `gamecontrollerdb`, `gamegear`, `gamenwatch`, `gameoflife`, `games`, `gamma`, `gb`, `gba`, `gba2p`, `gbc`, `generalhardware`, `generallpf`, `genesis`, `gnw`, `handheld2p`, `hbmame`, `homelab`, `inputtest`, `intellivision`, `interact`, `jupiter`, `laser`, `laser310`, `lcd-general`, `lcd-integeronly`, `linux`, `lynx48`, `macplus`, `mame`, `mastersystem`, `megacd`, `megadrive`, `megaduck`, `memte`, `memtest`, `menu`, `mgl`, `minimig`, `minimigdb9`, `minimigrgb8`, `mra`, `msx`, `msx1`, `multicomp`, `neogeo`, `nes`, `nintendo`, `odyssey2`, `old`, `ondra_spo186`, `orao`, `oric`, `other`, `other-cores`, `palettes`, `pc88`, `pc8801`, `pcengine`, `pcenginecd`, `pcxt`, `pdp1`, `pet2001`, `pmd85`, `pokemonmini`, `poly_gamma`, `presets`, `psx`, `pure_gamma`, `ql`, `readme`, `rx78`, `s32x`, `samcoupe`, `scanlines-adaptive`, `scanlines-brighter`, `scanlines-standard`, `scripts`, `segacd`, `segamark3`, `service-cores`, `sg-1000`, `sg1000`, `sg1000sv`, `sgb`, `shadow_masks`, `sharpmz`, `simplemonochrome`, `slugcross`, `sms`, `snes`, `sordm5`, `specialist`, `spectrum`, `spmx`, `sufami`, `superfamicom`, `supergameboy`, `supernes`, `supernintendo`, `supervision`, `svi328`, `tatungeinstein`, `tgfx16`, `tgfx16-cd`, `tgfx16cd`, `ti-99_4a`, `ti994a`, `tomyscramble`, `tomytutor`, `trs-80`, `tsconf`, `turbografx`, `turbografx16`, `turbografx16cd`, `turbografxcd`, `uk101`, `upscaling-lanczosbicubicetc`, `upscaling-recommended`, `upscaling-sharpbilinear`, `utility`, `vc4000`, `vector-06c`, `vector06`, `vector06c`, `vectrex`, `vic20`, `wonderswan`, `wonderswancolor`, `x68000`, `zx-spectrum`, `zx81`, `zxnext`, `zxspectrum`\n",
+      "readme": "# MiSTer Distribution DB9\n\nThis repository contains all the files that you'll want in your MiSTer.\n\nYou may download all of them at once as a zip through the [following link](https://github.com/MiSTer-DB9/Distribution_MiSTer/archive/refs/heads/main.zip). Once you have them, place them as-is in your SD card, and everything should work out of the box.\n\n### MiSTer Project\n\nIf you want to check more about the MiSTer project, please check [this wiki](https://github.com/MiSTer-devel/Main_MiSTer/wiki).\n\n### Downloader script\n\nFor downloading all of these files in an automatic fashion, use [this tool](https://github.com/MiSTer-devel/Downloader_MiSTer).\n\n#### List of Tags that you may use with the Downloader Filters:\n\n`acornatom`, `acornelectron`, `adam`, `adctest`, `adventurevision`, `alicemc10`, `all_filters`, `altair8800`, `alternatives`, `amiga`, `amstrad`, `amstrad-pcw`, `amstradpcw`, `ao486`, `apogee`, `apple-i`, `apple-ii`, `aquarius`, `arcade`, `arcade-arkanoid`, `arcade-asteroids`, `arcade-asteroidsdeluxe`, `arcade-astrocade`, `arcade-ataritetris`, `arcade-athena`, `arcade-bagman`, `arcade-bakraid`, `arcade-bankpanic`, `arcade-batrider`, `arcade-berzerk`, `arcade-blackwidow`, `arcade-blockade`, `arcade-bombjack`, `arcade-bosconian`, `arcade-breakout`, `arcade-burgertime`, `arcade-burningrubber`, `arcade-canyonbomber`, `arcade-cave`, `arcade-centipede`, `arcade-chameleon`, `arcade-computerspace`, `arcade-congobongo`, `arcade-cores`, `arcade-cosmic`, `arcade-crazyballoon`, `arcade-crazyclimber`, `arcade-crazykong`, `arcade-crystalcastles`, `arcade-defender`, `arcade-digdug`, `arcade-dominos`, `arcade-donkeykong`, `arcade-donkeykong3`, `arcade-donkeykongjunior`, `arcade-dorodon`, `arcade-dottorikun`, `arcade-druaga`, `arcade-exerion`, `arcade-expressraider`, `arcade-finalizer`, `arcade-foodfight`, `arcade-frenzy`, `arcade-galaga`, `arcade-galaxian`, `arcade-galivan`, `arcade-gaplus`, `arcade-garegga`, `arcade-gauntlet`, `arcade-gyruss`, `arcade-ikariwarriors`, `arcade-inferno`, `arcade-iremm62`, `arcade-iremm72`, `arcade-ironhorse`, `arcade-jackal`, `arcade-jailbreak`, `arcade-joust2`, `arcade-ladybug`, `arcade-lunarlander`, `arcade-mariobros`, `arcade-mcr1`, `arcade-mcr2`, `arcade-mcr3`, `arcade-mcr3mono`, `arcade-mcr3scroll`, `arcade-missilecommand`, `arcade-moonpatrol`, `arcade-mrdo`, `arcade-mrjong`, `arcade-mysticmarathon`, `arcade-ninjakun`, `arcade-pacman`, `arcade-pengo`, `arcade-penguinkunwars`, `arcade-phoenix`, `arcade-pleiads`, `arcade-polyplay`, `arcade-pong`, `arcade-pooyan`, `arcade-popeye`, `arcade-qbert`, `arcade-rallyx`, `arcade-riverpatrol`, `arcade-robotron`, `arcade-rshnatk`, `arcade-scootershooter`, `arcade-scramble`, `arcade-segasys1`, `arcade-silverland`, `arcade-slapfight`, `arcade-sms`, `arcade-snk_triplez80`, `arcade-solomonskey`, `arcade-sonson`, `arcade-spaceinvaders`, `arcade-spacerace`, `arcade-sprint1`, `arcade-sprint2`, `arcade-subs`, `arcade-superbreakout`, `arcade-tankbattalion`, `arcade-tecmo`, `arcade-tiamc1`, `arcade-timepilot`, `arcade-timepilot84`, `arcade-tnkiii`, `arcade-traverseusa`, `arcade-tropicalangel`, `arcade-turkeyshoot`, `arcade-ultratank`, `arcade-vball`, `arcade-xevious`, `arcade-xsleenacore`, `arcade-zaxxon`, `arcade-zigzag`, `arcadelpf`, `arcadia`, `archie`, `arduboy`, `astrocade`, `atari2600`, `atari5200`, `atari7800`, `atari800`, `atarilynx`, `atarist`, `avision`, `ay-3-8500`, `bbcmicro`, `bios`, `bk0011m`, `c16`, `c64`, `casio_pv-1000`, `casio_pv-2000`, `channelf`, `cheats`, `chess`, `chip8`, `coco2`, `coco3`, `coleco`, `colecoadam`, `colecovision`, `complexmultichromatic`, `computer`, `computer-cores`, `console`, `console-cores`, `contrast_boost`, `cores`, `corespecific`, `creativision`, `crt-simulation`, `displayspecific`, `docs`, `drv`, `edsac`, `eg2000`, `epochgalaxyii`, `essential`, `extra-utilities`, `famicom`, `filters`, `filters_audio`, `filters_video`, `flappy`, `flappybird`, `font`, `galaksija`, `gamate`, `gameboy`, `gameboy2p`, `gameboyadvance`, `gameboycolor`, `gamecontrollerdb`, `gamegear`, `gamenwatch`, `gameoflife`, `games`, `gamma`, `gb`, `gba`, `gba2p`, `gbc`, `generalhardware`, `generallpf`, `genesis`, `gnw`, `handheld2p`, `hbmame`, `homelab`, `inputtest`, `intellivision`, `interact`, `jupiter`, `laser`, `laser310`, `lcd-general`, `lcd-integeronly`, `linux`, `lynx48`, `macplus`, `mame`, `mastersystem`, `megacd`, `megadrive`, `megaduck`, `memte`, `memtest`, `menu`, `mgl`, `minimig`, `minimigdb9`, `minimigrgb8`, `mra`, `msx`, `msx1`, `multicomp`, `neogeo`, `nes`, `nintendo`, `odyssey2`, `old`, `ondra_spo186`, `orao`, `oric`, `other`, `other-cores`, `palettes`, `pc88`, `pc8801`, `pcengine`, `pcenginecd`, `pcxt`, `pdp1`, `pet2001`, `pmd85`, `pocketchallengev2`, `pokemonmini`, `poly_gamma`, `presets`, `psx`, `pure_gamma`, `ql`, `readme`, `rx78`, `s32x`, `samcoupe`, `scanlines-adaptive`, `scanlines-brighter`, `scanlines-standard`, `scripts`, `segacd`, `segamark3`, `service-cores`, `sg-1000`, `sg1000`, `sg1000sv`, `sgb`, `shadow_masks`, `sharpmz`, `simplemonochrome`, `slugcross`, `sms`, `snes`, `sordm5`, `specialist`, `spectrum`, `spmx`, `sufami`, `superfamicom`, `supergameboy`, `supernes`, `supernintendo`, `supervision`, `svi328`, `tatungeinstein`, `tgfx16`, `tgfx16-cd`, `tgfx16cd`, `ti-99_4a`, `ti994a`, `tomyscramble`, `tomytutor`, `trs-80`, `tsconf`, `turbografx`, `turbografx16`, `turbografx16cd`, `turbografxcd`, `uk101`, `upscaling-lanczosbicubicetc`, `upscaling-recommended`, `upscaling-sharpbilinear`, `utility`, `vc4000`, `vector-06c`, `vector06`, `vector06c`, `vectrex`, `vic20`, `wonderswan`, `wonderswancolor`, `x68000`, `zx-spectrum`, `zx81`, `zxnext`, `zxspectrum`\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-DB9/Distribution_MiSTer",

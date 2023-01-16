@@ -5244,13 +5244,13 @@
         },
         {
           "name": "README.md",
-          "sha": "1fbae2a554ac9bcb3df57315eab87776dbac8d4a",
+          "sha": "d177f827a4264781dcc917b2488e5d3bb1443d3e",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/karnov/README.md",
           "type": "OTHER"
         },
         {
           "name": "Chelnov - Atomic Runner (World).mra",
-          "sha": "563529289aa8a3c84e088a99697f0541a6e50fa3",
+          "sha": "633dd13368ce80076bad38bd078865e90f25591b",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/karnov/releases/Chelnov%20-%20Atomic%20Runner%20(World).mra",
           "type": "MRA",
           "extra": {
@@ -5263,14 +5263,28 @@
           }
         },
         {
-          "name": "jtkarnov_20221223.rbf",
-          "sha": "253e9ead1ab0f6884e7f973ce9443fbf6a2f0c02",
-          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/karnov/releases/jtkarnov_20221223.rbf",
+          "name": "Karnov (US, rev 6).mra",
+          "sha": "47b8270aa7c36f3f3be1965d540683338594796d",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/karnov/releases/Karnov%20(US%2C%20rev%206).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Karnov (US, rev 6)",
+            "rbf": "jtkarnov",
+            "zips": [
+              "karnov.zip",
+              "jtbeta.zip"
+            ]
+          }
+        },
+        {
+          "name": "jtkarnov_20230113.rbf",
+          "sha": "ce65e7efa18733f1fd13b261a00a8bed4a04cf10",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/karnov/releases/jtkarnov_20230113.rbf",
           "type": "RBF"
         },
         {
           "name": "version.log",
-          "sha": "afaed5bac8271644d5acba8c1e5dd5e6fda68ef0",
+          "sha": "56bd9637c456cfe7f16d8fd91d5dd9cfbde5b714",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/karnov/version.log",
           "type": "OTHER"
         },
