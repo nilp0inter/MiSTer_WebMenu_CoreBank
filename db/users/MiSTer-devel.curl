@@ -386,6 +386,11 @@ url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-PenguinKunWars_MiST
 output = "_Arcade/cores/PenguinKunWars_20221002.rbf"
 
 
+# Performan
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Performan_MiSTer/main/releases/Performan_20230118.rbf"
+output = "_Others/Performan_20230118.rbf"
+
+
 # Phoenix
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Phoenix_MiSTer/master/releases/Arcade-Phoenix_20221127.rbf"
 output = "_Arcade/cores/Phoenix_20221127.rbf"
@@ -812,8 +817,8 @@ output = "_Computer/MultiComp_20210113.rbf"
 
 
 # NeoGeo
-url = "https://raw.githubusercontent.com/MiSTer-devel/NeoGeo_MiSTer/master/releases/NeoGeo_20221224.rbf"
-output = "_Console/NeoGeo_20221224.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/NeoGeo_MiSTer/master/releases/NeoGeo_20230122.rbf"
+output = "_Console/NeoGeo_20230122.rbf"
 
 
 # NES
@@ -2236,6 +2241,16 @@ url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-PenguinKunWars_MiST
 output = "_Arcade/Penguin-Kun_Wars_Japan.mra"
 
 
+# Performan (Japan).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Performan_MiSTer/main/releases/Performan%20(Japan).mra"
+output = "_Arcade/Performan (Japan).mra"
+
+
+# Performan (US).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Performan_MiSTer/main/releases/alt/Performan%20(US).mra"
+output = "_Arcade/Performan (US).mra"
+
+
 # Phoenix (Amstar, Set 1).mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Phoenix_MiSTer/master/releases/Phoenix%20(Amstar%2C%20Set%201).mra"
 output = "_Arcade/Phoenix (Amstar, Set 1).mra"
@@ -2926,19 +2941,19 @@ url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-XSleena_MiSTer/main
 output = "_Arcade/XSleenaBA.mra"
 
 
-# Future Spy.mra
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Zaxxon_MiSTer/master/releases/Future%20Spy.mra"
-output = "_Arcade/Future Spy.mra"
+# Future Spy (315-5061).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Zaxxon_MiSTer/master/releases/Future%20Spy%20(315-5061).mra"
+output = "_Arcade/Future Spy (315-5061).mra"
 
 
-# Super Zaxxon.mra
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Zaxxon_MiSTer/master/releases/Super%20Zaxxon.mra"
-output = "_Arcade/Super Zaxxon.mra"
+# Super Zaxxon (315-5013).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Zaxxon_MiSTer/master/releases/Super%20Zaxxon%20(315-5013).mra"
+output = "_Arcade/Super Zaxxon (315-5013).mra"
 
 
-# Zaxxon.mra
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Zaxxon_MiSTer/master/releases/Zaxxon.mra"
-output = "_Arcade/Zaxxon.mra"
+# Zaxxon (Set 1, Rev D).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Zaxxon_MiSTer/master/releases/Zaxxon%20(Set%201%2C%20Rev%20D).mra"
+output = "_Arcade/Zaxxon (Set 1, Rev D).mra"
 
 
 # Zig Zag (Dig Dug Conversion) [bl].mra

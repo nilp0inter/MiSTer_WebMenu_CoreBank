@@ -271,7 +271,7 @@
     {
       "name": "jtbin",
       "description": "Binary files for MiSTerFPGA, Pocket and other platforms",
-      "readme": "# Arcade replicas for FPGA\n\nThis repository contains arcade cores for several FPGA platforms and hundreds of arcade titles. All these cores are written by Jose Tejada (aka JOTEGO), but some of the pieces come from other developers. Particularly the M68000, M6809 and Z80 CPUs, to name easy ones to spot.\n\n**RBF Files LICENSE**\n\nYou are only allowed to use these FPGA cores with files (i.e. *ROMs*) you legally own. The license to use these FPGA files is thus based upon the condition of using legal software with them.\n\n**LICENCIA de los ficheros RBF**\n\nSe permite el uso de estos ficheros de configuraci\u00f3n para FPGAs exclusivamente con ficheros (es decir, *ROMs*) que usted posea legalmente. La licencia de uso de estos cores FPGA est\u00e1 por tanto supeditada a su uso parejo con software legal\n\nThe source code for each system can be found if you browse [Jotego's github account](https://github.com/jotego).\n\nAll this work has been produced thanks to the community support:\n\n* Patreon: https://patreon.com/jotego\n* Github: https://github.com/sponsors/jotego\n\n## MiST and related platforms\n\nFor non MiSTer users, you have the latest compilations in the folder with your system name. You then need to grab the MRA files (in the [mra](mra) folder) and use it to generate the ROM file based in a MAME ROM set. This is done using [this tool](https://github.com/sebdel/mra-tools-c). For MiST and SiDi, generate an ARC file too and copy everything.\n\nMake sure you are using the latest firmware, as my cores often need the latest features to work.\n\n## MiSTer\n\nYou can manually install the files by getting the files in the [MiSTer](mister) folder. But if it is a fresh installation, you can just download all files in a single zip [here](https://github.com/jotego/jtcores_mister/archive/refs/heads/main.zip).\n\nI recommend setting up the MiSTer downloader tool to get the files for you. Add these lines to `/media/fat/downloader.ini`:\n\n```\n[jtcores]\ndb_url = https://raw.githubusercontent.com/jotego/jtcores_mister/main/jtbindb.json.zip\n```\n\n## Analogue Pocket\n\nAt this stage, Analogue Pocket files are offered only via [Patreon](https://patreon.com/jotego)\n\n## New cores - The beta phase\n\nWhen I develop new cores, these are available for download during the beta phase only if you enable it. Follow the instructions in this [video](https://www.youtube.com/watch?v=alcKBAxl82k) to enable beta download.\n\nCores in beta phase have their inputs locked up unless you place the file **jtbeta.zip** in the folder `games/mame` of your SD card. The **jtbeta.zip** can be found in Patreon and our Discord server.\n\nBeta testers provide feedback about the cores and also financial support thanks to the beta test program. Please join the beta group if you want to contribute to further development.",
+      "readme": "# Arcade replicas for FPGA\n\nThis repository contains arcade cores for several FPGA platforms and hundreds of arcade titles. All these cores are written by Jose Tejada (aka JOTEGO), but some of the pieces come from other developers. Particularly the M68000, M6809 and Z80 CPUs, to name easy ones to spot.\n\n**RBF Files LICENSE**\n\nYou are only allowed to use these FPGA cores with files (i.e. *ROMs*) you legally own. The license to use these FPGA files is thus based upon the condition of using legal software with them.\n\n**LICENCIA de los ficheros RBF**\n\nSe permite el uso de estos ficheros de configuraci\u00f3n para FPGAs exclusivamente con ficheros (es decir, *ROMs*) que usted posea legalmente. La licencia de uso de estos cores FPGA est\u00e1 por tanto supeditada a su uso parejo con software legal\n\nThe source code for each system can be found if you browse [Jotego's github account](https://github.com/jotego).\n\nAll this work has been produced thanks to the community support:\n\n* Patreon: https://patreon.com/jotego\n* Github: https://github.com/sponsors/jotego\n\n## MiST and related platforms\n\nFor non MiSTer users, you have the latest compilations in the folder with your system name. You then need to grab the MRA files (in the [mra](mra) folder) and use it to generate the ROM file based in a MAME ROM set. This is done using [this tool](https://github.com/sebdel/mra-tools-c). For MiST and SiDi, generate an ARC file too and copy everything.\n\nMake sure you are using the latest firmware, as my cores often need the latest features to work.\n\n## MiSTer\n\nYou can manually install the files by getting the files in the [MiSTer](mister) folder. But if it is a fresh installation, you can just download all files in a single zip [here](https://github.com/jotego/jtcores_mister/archive/refs/heads/main.zip).\n\nI recommend setting up the MiSTer downloader tool to get the files for you. Add these lines to `/media/fat/downloader.ini`:\n\n```\n[jtcores]\ndb_url = https://raw.githubusercontent.com/jotego/jtcores_mister/main/jtbindb.json.zip\n```\n\n## Analogue Pocket\n\nAt this stage, Analogue Pocket files are offered only via [Patreon](https://patreon.com/jotego)\n\n## New cores - The beta phase\n\nWhen I develop new cores, these are available for download during the beta phase only if you enable it. Follow the instructions in this [video](https://www.youtube.com/watch?v=alcKBAxl82k) to enable beta download.\n\nCores in beta phase have their inputs locked up unless you place the file **jtbeta.zip** in the folder `games/mame` of your SD card. The **jtbeta.zip** can be found in Patreon and our Discord server.\n\nBeta testers provide feedback about the cores and also financial support thanks to the beta test program. Please join the beta group if you want to contribute to further development.\n\n## Schematics\n\n- [CAPCOM Bowling](sch/bowl.pdf)\n- [Exed Exes](sch/exed.pdf)\n- [Extermination](sch/exterm.pdf)\n- [Gun Bird II](sch/bird.pdf)\n- [Insector X](sch/insectx.pdf)\n- [Kicker/Shaolin's Road](sch/kicker.pdf)\n- [Konami's Ping Pong](sch/pinpon.pdf)\n- [Kyukyoku Tiger/Twin Cobra](sch/ktiger.pdf)\n- [Renegade/Kunio-kun](sch/kunio.pdf)\n- [SEGA System 18](sch/s18.pdf)\n- [Side Arms](sch/sarms.pdf)\n- [Sly Spy](sch/slyspy.pdf)\n- [The New Zealand Story](sch/tnzs.pdf) by Skutis\n- [The Speed Rumbler](sch/rumble.pdf)\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/jotego/jtbin",
@@ -5244,7 +5244,7 @@
         },
         {
           "name": "README.md",
-          "sha": "d177f827a4264781dcc917b2488e5d3bb1443d3e",
+          "sha": "1b4abc1cb1e0b901cdc274e9368e5999bc7c49c1",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/karnov/README.md",
           "type": "OTHER"
         },
@@ -5277,14 +5277,28 @@
           }
         },
         {
-          "name": "jtkarnov_20230113.rbf",
-          "sha": "ce65e7efa18733f1fd13b261a00a8bed4a04cf10",
-          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/karnov/releases/jtkarnov_20230113.rbf",
+          "name": "Wonder Planet (Japan).mra",
+          "sha": "c411b1655c9261a3163bda2e808df2c61cbaf549",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/karnov/releases/Wonder%20Planet%20(Japan).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Wonder Planet (Japan)",
+            "rbf": "jtkarnov",
+            "zips": [
+              "wndrplnt.zip",
+              "jtbeta.zip"
+            ]
+          }
+        },
+        {
+          "name": "jtkarnov_20230120.rbf",
+          "sha": "31cb4e960694f6e1029cb125ae514f9cf785163f",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/karnov/releases/jtkarnov_20230120.rbf",
           "type": "RBF"
         },
         {
           "name": "version.log",
-          "sha": "56bd9637c456cfe7f16d8fd91d5dd9cfbde5b714",
+          "sha": "e8883ff79cd2574d230855fbbf4b6913e7dee3a2",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/karnov/version.log",
           "type": "OTHER"
         },
