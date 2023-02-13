@@ -4544,7 +4544,7 @@
         },
         {
           "name": "Cosmo Police Galivan (12-26-1985).mra",
-          "sha": "c6a9a425f55b36fa38ce4149ce61d28f5817de79",
+          "sha": "f7b53b83b87ee17ab331301e25677aa88ad34212",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Galivan_MiSTer/master/releases/Cosmo%20Police%20Galivan%20(12-26-1985).mra",
           "type": "MRA",
           "extra": {
@@ -4557,7 +4557,7 @@
         },
         {
           "name": "Ufo Robo Dangar (4-07-1987).mra",
-          "sha": "2a0d457d2ef1ca7217d71c5b753641b7fd87dbbe",
+          "sha": "acda740cb235015180a238e05c5e74cd95561742",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Galivan_MiSTer/master/releases/Ufo%20Robo%20Dangar%20(4-07-1987).mra",
           "type": "MRA",
           "extra": {
@@ -7675,7 +7675,7 @@
         },
         {
           "name": "Penguin-Kun_Wars.mra",
-          "sha": "79347528a74518837d0972620860b0eeb1c28757",
+          "sha": "7747e7330c1e1c5464e4be2a8341e7f77b69c37c",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-PenguinKunWars_MiSTer/main/releases/Penguin-Kun_Wars.mra",
           "type": "MRA",
           "extra": {
@@ -7688,7 +7688,7 @@
         },
         {
           "name": "Penguin-Kun_Wars_Japan.mra",
-          "sha": "87e85e8ccfa4f21ef0aaea05697bbb99eb042386",
+          "sha": "8fecc6bbe6129628257c31246830881a73a80628",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-PenguinKunWars_MiSTer/main/releases/Penguin-Kun_Wars_Japan.mra",
           "type": "MRA",
           "extra": {
@@ -8236,7 +8236,7 @@
         },
         {
           "name": "Mad Planets.mra",
-          "sha": "bb6f5ae1d7842c261b9eb2b7c12dabeaedde9df9",
+          "sha": "0fc6e520e738df563ad5bfb706dcd647f7c6c800",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-QBert_MiSTer/master/releases/Mad%20Planets.mra",
           "type": "MRA",
           "extra": {
@@ -8262,7 +8262,7 @@
         },
         {
           "name": "QBert Qubes.mra",
-          "sha": "e80a43b805f341313765482566a975970d852ba3",
+          "sha": "db692fcaaaf4559586e1706999a9a994db39b4fe",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-QBert_MiSTer/master/releases/QBert%20Qubes.mra",
           "type": "MRA",
           "extra": {
@@ -10811,7 +10811,7 @@
         },
         {
           "name": "TankBattalion.mra",
-          "sha": "2fcf74ca985290e2ae2283c7becb8247b74254e6",
+          "sha": "33fe5eb9f484a056848430001ebff0c86f3a9e10",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TankBattalion_MiSTer/main/releases/TankBattalion.mra",
           "type": "MRA",
           "extra": {
@@ -13979,7 +13979,7 @@
     {
       "name": "Gameboy_MiSTer",
       "description": "Gameboy for MiSTer",
-      "readme": "# [Gameboy](https://en.wikipedia.org/wiki/Game_Boy)  / [Gameboy Color](https://en.wikipedia.org/wiki/Game_Boy_Color) port to [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\r\n\r\nThis is port of [Gameboy for MiST](https://github.com/mist-devel/gameboy)\r\n\r\n* Place RBF file into root of SD card.\r\n* Place *.gb|*.gbc files into Gameboy folder.\r\n\r\n## Features\r\n* Original Gameboy & Gameboy Color Support\r\n* Super Gameboy Support - Borders, Palettes and Multiplayer\r\n* MegaDuck Support\r\n* Custom Borders\r\n* SaveStates\r\n* Fastforward \r\n* Rewind - Allows you to rewind up to 40 seconds of gameplay\r\n* Frameblending - Prevents flicker in some games (e.g. \"Chikyuu Kaihou Gun Zas\") \r\n* Custom Palette Loading\r\n* Real-Time Clock Support\r\n* Gameboy Link Port Support - Requires USERIO adapter\r\n* Cheats\r\n\r\n## Open Source Bootstrap roms\r\nThis now includes the open source boot ROMs from [https://github.com/LIJI32/SameBoy/](https://github.com/LIJI32/SameBoy/). For maximum compatibility/authenticity you can still place the Gameboy bios/bootroms into the Gameboy folder and load them in the menu with Misc->Load GBC/DMG/SGB boot. Loading an authentic Gameboy Color bios/bootroom is required in order to use GBA Mode.\r\n\r\n## Palettes\r\nThis core supports custom palettes (*.gbp) which should be placed into the Gameboy folder. Some examples are available in the palettes folder.\r\n\r\n## Custom Borders\r\nThis core supports custom borders (*.sgb) which should be placed into the Gameboy folder. Some examples are available in the borders folder.\r\n\r\n## Autoload\r\nTo autoload your favorite game at startup rename it to `boot2.rom`.\r\n\r\n## Video output\r\nThe Gameboy can disable video output at any time which causes problems with vsync_adjust=2 or analog video during screen transitions. Enabling the Stabilize video option may fix this at the cost of some increased latency.\r\n\r\n# Savestates\r\nThis core provides 4 slots to save and restore the memory state which means you can save at any point in the game. These can be saved to your SDCard or they can reside only in memory for temporary use (OSD Option). Save states can be performed with the Keyboard, a mapped button to a gamepad, or through the OSD.\r\n\r\nKeyboard Hotkeys for save states:\r\n- Alt+F1 thru Alt+F4 - save state\r\n- F1 thru F4 - restore state\r\n\r\nGamepad:\r\n- Savestatebutton+Left or Right switches the savestate slot\r\n- Savestatebutton+Start+Down saves to the selected slot\r\n- Savestatebutton+Start+Up loads from the selected slot\r\n",
+      "readme": "# [Gameboy](https://en.wikipedia.org/wiki/Game_Boy)  / [Gameboy Color](https://en.wikipedia.org/wiki/Game_Boy_Color) port to [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\r\n\r\nThis is port of [Gameboy for MiST](https://github.com/mist-devel/gameboy)\r\n\r\n* Place RBF file into root of SD card.\r\n* Place *.gb|*.gbc files into Gameboy folder.\r\n\r\n## Features\r\n* Original Gameboy & Gameboy Color Support\r\n* Super Gameboy Support - Borders, Palettes and Multiplayer\r\n* MegaDuck Support\r\n* Custom Borders\r\n* SaveStates\r\n* Fastforward \r\n* Rewind - Allows you to rewind up to 40 seconds of gameplay\r\n* Frameblending - Prevents flicker in some games (e.g. \"Chikyuu Kaihou Gun Zas\") \r\n* Custom Palette Loading\r\n* Real-Time Clock Support\r\n* Gameboy Link Port Support - Requires USERIO adapter\r\n* Cheats\r\n* Fast boot\r\n* GBA mode for GBC games\r\n\r\n## Open Source Bootstrap roms\r\nOpen source roms are included in the core, adapted from the SameBoy project [https://github.com/LIJI32/SameBoy/](https://github.com/LIJI32/SameBoy/). These roms have MiSTer-specific enhancements, allowing fast booting and GBA mode to be controlled by the on-screen display.\r\n\r\n For maximum compatibility/authenticity you can still place the Gameboy bios/bootroms into the Gameboy folder and load them in the menu with `Bootroms->Load GBC/DMG/SGB boot`. \r\n\r\nFor more information see the [BootROM README](./BootROMs/README.md)  \r\n\r\n## Palettes\r\nThis core supports custom palettes (*.gbp) which should be placed into the Gameboy folder. Some examples are available in the palettes folder.\r\n\r\n## Custom Borders\r\nThis core supports custom borders (*.sgb) which should be placed into the Gameboy folder. Some examples are available in the borders folder.\r\n\r\n## Autoload\r\nTo autoload your favorite game at startup rename it to `boot2.rom`.\r\n\r\n## Video output\r\nThe Gameboy can disable video output at any time which causes problems with vsync_adjust=2 or analog video during screen transitions. Enabling the Stabilize video option may fix this at the cost of some increased latency.\r\n\r\n# Savestates\r\nThis core provides 4 slots to save and restore the memory state which means you can save at any point in the game. These can be saved to your SDCard or they can reside only in memory for temporary use (OSD Option). Save states can be performed with the Keyboard, a mapped button to a gamepad, or through the OSD.\r\n\r\nKeyboard Hotkeys for save states:\r\n- Alt+F1 thru Alt+F4 - save state\r\n- F1 thru F4 - restore state\r\n\r\nGamepad:\r\n- Savestatebutton+Left or Right switches the savestate slot\r\n- Savestatebutton+Start+Down saves to the selected slot\r\n- Savestatebutton+Start+Up loads from the selected slot\r\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/Gameboy_MiSTer",
