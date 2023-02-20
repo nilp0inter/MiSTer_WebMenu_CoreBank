@@ -278,7 +278,7 @@
       "releases": [
         {
           "name": "README.md",
-          "sha": "f32f0dead33abafa8bb7d80ce82b47ae8b2dca34",
+          "sha": "97271b5522b80ce666db4077f42d9349c6a53b09",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/1942/README.md",
           "type": "OTHER"
         },
@@ -295,9 +295,9 @@
           "type": "OTHER"
         },
         {
-          "name": "1942.mra",
-          "sha": "47dfd7c2c224287c1a0639041cf50a618230426f",
-          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/1942/releases/1942.mra",
+          "name": "1942 (Revision B).mra",
+          "sha": "d5b85d15b007641da2db938f0035f87146d2e05a",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/1942/releases/1942%20(Revision%20B).mra",
           "type": "MRA",
           "extra": {
             "name": "1942 (Revision B)",
@@ -308,68 +308,14 @@
           }
         },
         {
-          "name": "jt1942_20220131.rbf",
-          "sha": "4e8d30c503f784342eea298993d842c2a71b9c3d",
-          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/1942/releases/jt1942_20220131.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "jt1942_20220203.rbf",
-          "sha": "00c3e2895be84d48ad9f534ff2be228c01489ce8",
-          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/1942/releases/jt1942_20220203.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "jt1942_20220311.rbf",
-          "sha": "66aeaf8069d6dc0f6e42cba3abfb963a8e2db4c9",
-          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/1942/releases/jt1942_20220311.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "jt1942_20220422.rbf",
-          "sha": "1307aee1f1b2a40833888af85e5d798c64cbdaeb",
-          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/1942/releases/jt1942_20220422.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "jt1942_20220429.rbf",
-          "sha": "7f005eceed486cdacef3785451ecaaeef3334c69",
-          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/1942/releases/jt1942_20220429.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "jt1942_20220707.rbf",
-          "sha": "c3446c0f4bf6851fbfdde0c65ae80c72aa9fcc66",
-          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/1942/releases/jt1942_20220707.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "jt1942_20220818.rbf",
-          "sha": "871e57187efe995deee09ddb5dd143db32aa3103",
-          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/1942/releases/jt1942_20220818.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "jt1942_20220819.rbf",
-          "sha": "c94f92675a060cafe4648109843442b884b6dcb3",
-          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/1942/releases/jt1942_20220819.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "jt1942_20221124.rbf",
-          "sha": "7f149a01d1c686b1470892fc87ad1cd0ac4d536e",
-          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/1942/releases/jt1942_20221124.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "jt1942_20230201.rbf",
-          "sha": "fac647e41c2fe4519d871a193ec0d8a7cbddeb26",
-          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/1942/releases/jt1942_20230201.rbf",
+          "name": "jt1942_20230217.rbf",
+          "sha": "42c39449db78539de294dfa5e0f23518aa000f8c",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/1942/releases/jt1942_20230217.rbf",
           "type": "RBF"
         },
         {
           "name": "version.log",
-          "sha": "111922bed955a81f85c20ef8bf5f2d81950a76ee",
+          "sha": "12f9f1457b79069e52d29474f9a30359b452bc68",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/1942/version.log",
           "type": "OTHER"
         },
@@ -2878,7 +2824,7 @@
         },
         {
           "name": "README.md",
-          "sha": "99ab1c75497f250a0da58ceb4f382537a52e9955",
+          "sha": "f09142b33dc984ae905db696fed89a10ffee76c3",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/gunsmk/README.md",
           "type": "OTHER"
         },
@@ -2908,6 +2854,19 @@
           }
         },
         {
+          "name": "Gun.Smoke (World, 1985-11-15).mra",
+          "sha": "0b54e22db86df2dbc97ba4ee7d386b983d9fe9f6",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/gunsmk/releases/Gun.Smoke%20(World%2C%201985-11-15).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Gun.Smoke (World, 1985-11-15)",
+            "rbf": "jtgunsmk",
+            "zips": [
+              "gunsmoke.zip"
+            ]
+          }
+        },
+        {
           "name": "jtgun_20221124.rbf",
           "sha": "9b1f61a3e07597c655c8116637606dc82e3fb2bb",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/gunsmk/releases/jtgun_20221124.rbf",
@@ -2929,6 +2888,12 @@
           "name": "jtgunsmk_20230203.rbf",
           "sha": "e5bb79c3ceb9ff53d9c339d0b24ad3cfb4085f34",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/gunsmk/releases/jtgunsmk_20230203.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "jtgunsmk_20230217.rbf",
+          "sha": "d517c2805e637063286a833cd0ff8cfeefa7452c",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/gunsmk/releases/jtgunsmk_20230217.rbf",
           "type": "RBF"
         },
         {
@@ -2981,7 +2946,7 @@
         },
         {
           "name": "version.log",
-          "sha": "705d300c06bac8a96521cc95d1e7b4d6dee4c6d3",
+          "sha": "12f9f1457b79069e52d29474f9a30359b452bc68",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/gunsmk/version.log",
           "type": "OTHER"
         },

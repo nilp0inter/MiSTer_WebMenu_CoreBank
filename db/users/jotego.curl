@@ -2,8 +2,8 @@ insecure
 create-dirs
 
 # jt1942
-url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/1942/releases/jt1942_20230201.rbf"
-output = "_Arcade/cores/jt1942_20230201.rbf"
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/1942/releases/jt1942_20230217.rbf"
+output = "_Arcade/cores/jt1942_20230217.rbf"
 
 
 # jt1943
@@ -97,8 +97,8 @@ output = "_Others/jtgun_20221124.rbf"
 
 
 # jtgunsmk
-url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/gunsmk/releases/jtgunsmk_20230203.rbf"
-output = "_Others/jtgunsmk_20230203.rbf"
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/gunsmk/releases/jtgunsmk_20230217.rbf"
+output = "_Others/jtgunsmk_20230217.rbf"
 
 
 # jtgunsmoke
@@ -286,9 +286,9 @@ url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/yiear/releas
 output = "_Others/jtyiear_20221227.rbf"
 
 
-# 1942.mra
-url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/1942/releases/1942.mra"
-output = "_Arcade/1942.mra"
+# 1942 (Revision B).mra
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/1942/releases/1942%20(Revision%20B).mra"
+output = "_Arcade/1942 (Revision B).mra"
 
 
 # 1943 Kai Midway Kaisen.mra
@@ -779,6 +779,11 @@ output = "_Arcade/Ghosts'n Goblins (World Set 1).mra"
 # Gun Smoke.mra
 url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/gunsmk/releases/Gun%20Smoke.mra"
 output = "_Arcade/Gun Smoke.mra"
+
+
+# Gun.Smoke (World, 1985-11-15).mra
+url = "https://raw.githubusercontent.com/jotego/jtbin/master/mister/gunsmk/releases/Gun.Smoke%20(World%2C%201985-11-15).mra"
+output = "_Arcade/Gun.Smoke (World, 1985-11-15).mra"
 
 
 # Pirate Ship Higemaru.mra
