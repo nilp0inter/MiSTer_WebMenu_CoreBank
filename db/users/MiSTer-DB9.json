@@ -4215,6 +4215,12 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-LunarLander_20210111.rbf",
+          "sha": "587b550c935fddb5e02562dbb27f02d9af721b16",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-LunarLander_MiSTer/master/releases/Arcade-LunarLander_20210111.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Arcade-LunarLander_20210113.rbf",
           "sha": "363d57281ce0fac6c4a008bdd601bdb3f5419f99",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-LunarLander_MiSTer/master/releases/Arcade-LunarLander_20210113.rbf",
@@ -4222,11 +4228,11 @@
         },
         {
           "name": "Lunar Lander.mra",
-          "sha": "03f49db4df4df84910adcdabb1774e17be9843bd",
+          "sha": "1a9879d1ea2dda92b4627950a6c65167fb3b213e",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-LunarLander_MiSTer/master/releases/Lunar%20Lander.mra",
           "type": "MRA",
           "extra": {
-            "name": "Lunar Lander (rev 2)",
+            "name": "Lunar Lander ",
             "rbf": "lunarlander",
             "zips": [
               "llander.zip"
@@ -9129,6 +9135,12 @@
           "sha": "1cad8bd99712797aed1cfb0849bbf5b8378aed42",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/AtariST_MiSTer/master/releases/AtariST_20221007.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "AtariST_20230225.rbf",
+          "sha": "4574e4454d4bf7a13a9c3aba230af8d4435f338b",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/AtariST_MiSTer/master/releases/AtariST_20230225.rbf",
+          "type": "RBF"
         }
       ]
     },
@@ -9290,6 +9302,12 @@
           "name": "C16_20221022.rbf",
           "sha": "0aaa662e7149ed952c93d64ab5ff99c9f26438a3",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/C16_MiSTer/master/releases/C16_20221022.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "C16_20230225.rbf",
+          "sha": "1ba1ad261afb143a854cc6e3b6b9a7a2239bd493",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/C16_MiSTer/master/releases/C16_20230225.rbf",
           "type": "RBF"
         }
       ]
@@ -9717,6 +9735,12 @@
           "type": "RBF"
         },
         {
+          "name": "C64_20230224.rbf",
+          "sha": "d917cbe315fc33a0c606ed577932cf54539c0188",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/C64_MiSTer/master/releases/C64_20230224.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "CP-ClockF83_1.3.D64",
           "sha": "b08a9e28c54da9a4b858a590f7f0ec76efc88be0",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/C64_MiSTer/master/releases/CP-ClockF83_1.3.D64",
@@ -9857,7 +9881,7 @@
     {
       "name": "Distribution_MiSTer",
       "description": null,
-      "readme": "# MiSTer Distribution DB9\n\nThis repository contains all the files that you'll want in your MiSTer.\n\nYou may download all of them at once as a zip through the [following link](https://github.com/MiSTer-DB9/Distribution_MiSTer/archive/refs/heads/main.zip). Once you have them, place them as-is in your SD card, and everything should work out of the box.\n\n### MiSTer Project\n\nIf you want to check more about the MiSTer project, please check [this wiki](https://github.com/MiSTer-devel/Main_MiSTer/wiki).\n\n### Downloader script\n\nFor downloading all of these files in an automatic fashion, use [this tool](https://github.com/MiSTer-devel/Downloader_MiSTer).\n\n#### List of Tags that you may use with the Downloader Filters:\n\n`acornatom`, `acornelectron`, `adam`, `adctest`, `adventurevision`, `alicemc10`, `all_filters`, `altair8800`, `alternatives`, `amiga`, `amstrad`, `amstrad-pcw`, `amstradpcw`, `ao486`, `apogee`, `apple-i`, `apple-ii`, `aquarius`, `arcade`, `arcade-arkanoid`, `arcade-asteroids`, `arcade-asteroidsdeluxe`, `arcade-astrocade`, `arcade-ataritetris`, `arcade-athena`, `arcade-bagman`, `arcade-bakraid`, `arcade-bankpanic`, `arcade-batrider`, `arcade-berzerk`, `arcade-blackwidow`, `arcade-blockade`, `arcade-bombjack`, `arcade-bosconian`, `arcade-breakout`, `arcade-burgertime`, `arcade-burningrubber`, `arcade-canyonbomber`, `arcade-cave`, `arcade-centipede`, `arcade-chameleon`, `arcade-computerspace`, `arcade-congobongo`, `arcade-cores`, `arcade-cosmic`, `arcade-crazyballoon`, `arcade-crazyclimber`, `arcade-crazykong`, `arcade-crystalcastles`, `arcade-defender`, `arcade-digdug`, `arcade-dominos`, `arcade-donkeykong`, `arcade-donkeykong3`, `arcade-donkeykongjunior`, `arcade-dorodon`, `arcade-dottorikun`, `arcade-druaga`, `arcade-exerion`, `arcade-expressraider`, `arcade-finalizer`, `arcade-foodfight`, `arcade-frenzy`, `arcade-galaga`, `arcade-galaxian`, `arcade-galivan`, `arcade-gaplus`, `arcade-garegga`, `arcade-gauntlet`, `arcade-gyruss`, `arcade-ikariwarriors`, `arcade-inferno`, `arcade-iremm62`, `arcade-iremm72`, `arcade-ironhorse`, `arcade-jackal`, `arcade-jailbreak`, `arcade-joust2`, `arcade-ladybug`, `arcade-lunarlander`, `arcade-mariobros`, `arcade-mcr1`, `arcade-mcr2`, `arcade-mcr3`, `arcade-mcr3mono`, `arcade-mcr3scroll`, `arcade-missilecommand`, `arcade-moonpatrol`, `arcade-mrdo`, `arcade-mrjong`, `arcade-mysticmarathon`, `arcade-ninjakun`, `arcade-pacman`, `arcade-pengo`, `arcade-penguinkunwars`, `arcade-performan`, `arcade-phoenix`, `arcade-pleiads`, `arcade-polyplay`, `arcade-pong`, `arcade-pooyan`, `arcade-popeye`, `arcade-qbert`, `arcade-rallyx`, `arcade-riverpatrol`, `arcade-robotron`, `arcade-rshnatk`, `arcade-scootershooter`, `arcade-scramble`, `arcade-segasys1`, `arcade-silverland`, `arcade-slapfight`, `arcade-sms`, `arcade-snk_triplez80`, `arcade-solomonskey`, `arcade-sonson`, `arcade-spaceinvaders`, `arcade-spacerace`, `arcade-sprint1`, `arcade-sprint2`, `arcade-subs`, `arcade-superbreakout`, `arcade-tankbattalion`, `arcade-tecmo`, `arcade-tiamc1`, `arcade-timepilot`, `arcade-timepilot84`, `arcade-tnkiii`, `arcade-traverseusa`, `arcade-tropicalangel`, `arcade-turkeyshoot`, `arcade-ultratank`, `arcade-vball`, `arcade-xevious`, `arcade-xsleenacore`, `arcade-zaxxon`, `arcade-zigzag`, `arcadelpf`, `arcadia`, `archie`, `arduboy`, `astrocade`, `atari2600`, `atari5200`, `atari7800`, `atari800`, `atarilynx`, `atarist`, `avision`, `ay-3-8500`, `bbcbridgecompanion`, `bbcmicro`, `bios`, `bk0011m`, `c16`, `c64`, `casio_pv-1000`, `casio_pv-2000`, `channelf`, `cheats`, `chess`, `chip8`, `coco2`, `coco3`, `coleco`, `colecoadam`, `colecovision`, `complexmultichromatic`, `computer`, `computer-cores`, `console`, `console-cores`, `contrast_boost`, `cores`, `corespecific`, `creativision`, `crt-simulation`, `displayspecific`, `docs`, `drv`, `edsac`, `eg2000`, `epochgalaxyii`, `essential`, `extra-utilities`, `famicom`, `filters`, `filters_audio`, `filters_video`, `flappy`, `flappybird`, `font`, `galaksija`, `gamate`, `gameboy`, `gameboy2p`, `gameboyadvance`, `gameboycolor`, `gamecontrollerdb`, `gamegear`, `gamenwatch`, `gameoflife`, `games`, `gamma`, `gb`, `gba`, `gba2p`, `gbc`, `generalhardware`, `generallpf`, `genesis`, `gnw`, `handheld2p`, `hbmame`, `homelab`, `inputtest`, `intellivision`, `interact`, `jupiter`, `laser`, `laser310`, `lcd-general`, `lcd-integeronly`, `linux`, `lynx48`, `macplus`, `mame`, `mastersystem`, `megacd`, `megadrive`, `megaduck`, `memte`, `memtest`, `menu`, `mgl`, `minimig`, `minimigdb9`, `minimigrgb8`, `mra`, `msx`, `msx1`, `multicomp`, `neogeo`, `nes`, `nintendo`, `odyssey2`, `old`, `ondra_spo186`, `orao`, `oric`, `other`, `other-cores`, `palettes`, `pc88`, `pc8801`, `pcengine`, `pcenginecd`, `pcxt`, `pdp1`, `pet2001`, `pmd85`, `pocketchallengev2`, `pokemonmini`, `poly_gamma`, `presets`, `psx`, `pure_gamma`, `ql`, `readme`, `rx78`, `s32x`, `samcoupe`, `scanlines-adaptive`, `scanlines-brighter`, `scanlines-standard`, `scripts`, `segacd`, `segamark3`, `service-cores`, `sg-1000`, `sg1000`, `sg1000sv`, `sgb`, `shadow_masks`, `sharpmz`, `simplemonochrome`, `slugcross`, `sms`, `snes`, `sordm5`, `specialist`, `spectrum`, `spmx`, `sufami`, `superfamicom`, `supergameboy`, `supernes`, `supernintendo`, `supervision`, `svi328`, `tatungeinstein`, `tgfx16`, `tgfx16-cd`, `tgfx16cd`, `ti-99_4a`, `ti994a`, `tomyscramble`, `tomytutor`, `trs-80`, `tsconf`, `turbografx`, `turbografx16`, `turbografx16cd`, `turbografxcd`, `uk101`, `upscaling-lanczosbicubicetc`, `upscaling-recommended`, `upscaling-sharpbilinear`, `utility`, `vc4000`, `vector-06c`, `vector06`, `vector06c`, `vectrex`, `vic20`, `wonderswan`, `wonderswancolor`, `x68000`, `zx-spectrum`, `zx81`, `zxnext`, `zxspectrum`\n",
+      "readme": "# MiSTer Distribution DB9\n\nThis repository contains all the files that you'll want in your MiSTer.\n\nYou may download all of them at once as a zip through the [following link](https://github.com/MiSTer-DB9/Distribution_MiSTer/archive/refs/heads/main.zip). Once you have them, place them as-is in your SD card, and everything should work out of the box.\n\n### MiSTer Project\n\nIf you want to check more about the MiSTer project, please check [this wiki](https://github.com/MiSTer-devel/Main_MiSTer/wiki).\n\n### Downloader script\n\nFor downloading all of these files in an automatic fashion, use [this tool](https://github.com/MiSTer-devel/Downloader_MiSTer).\n\n#### List of Tags that you may use with the Downloader Filters:\n\n`acornatom`, `acornelectron`, `adam`, `adctest`, `adventurevision`, `alicemc10`, `all_filters`, `altair8800`, `alternatives`, `amiga`, `amstrad`, `amstrad-pcw`, `amstradpcw`, `ao486`, `apogee`, `apple-i`, `apple-ii`, `aquarius`, `arcade`, `arcade-arkanoid`, `arcade-asteroids`, `arcade-asteroidsdeluxe`, `arcade-astrocade`, `arcade-ataritetris`, `arcade-athena`, `arcade-bagman`, `arcade-bakraid`, `arcade-bankpanic`, `arcade-batrider`, `arcade-berzerk`, `arcade-blackwidow`, `arcade-blockade`, `arcade-bombjack`, `arcade-bosconian`, `arcade-breakout`, `arcade-burgertime`, `arcade-burningrubber`, `arcade-canyonbomber`, `arcade-cave`, `arcade-centipede`, `arcade-chameleon`, `arcade-computerspace`, `arcade-congobongo`, `arcade-cores`, `arcade-cosmic`, `arcade-crazyballoon`, `arcade-crazyclimber`, `arcade-crazykong`, `arcade-crystalcastles`, `arcade-defender`, `arcade-digdug`, `arcade-dominos`, `arcade-donkeykong`, `arcade-donkeykong3`, `arcade-donkeykongjunior`, `arcade-dorodon`, `arcade-dottorikun`, `arcade-druaga`, `arcade-exerion`, `arcade-expressraider`, `arcade-finalizer`, `arcade-foodfight`, `arcade-frenzy`, `arcade-galaga`, `arcade-galaxian`, `arcade-galivan`, `arcade-gaplus`, `arcade-garegga`, `arcade-gauntlet`, `arcade-gyruss`, `arcade-ikariwarriors`, `arcade-inferno`, `arcade-iremm62`, `arcade-iremm72`, `arcade-ironhorse`, `arcade-jackal`, `arcade-jailbreak`, `arcade-joust2`, `arcade-ladybug`, `arcade-lunarlander`, `arcade-mariobros`, `arcade-mcr1`, `arcade-mcr2`, `arcade-mcr3`, `arcade-mcr3mono`, `arcade-mcr3scroll`, `arcade-missilecommand`, `arcade-moonpatrol`, `arcade-mrdo`, `arcade-mrjong`, `arcade-mysticmarathon`, `arcade-ninjakun`, `arcade-pacman`, `arcade-pengo`, `arcade-penguinkunwars`, `arcade-performan`, `arcade-phoenix`, `arcade-pleiads`, `arcade-polyplay`, `arcade-pong`, `arcade-pooyan`, `arcade-popeye`, `arcade-qbert`, `arcade-rallyx`, `arcade-riverpatrol`, `arcade-robotron`, `arcade-rshnatk`, `arcade-scootershooter`, `arcade-scramble`, `arcade-segasys1`, `arcade-silverland`, `arcade-slapfight`, `arcade-sms`, `arcade-snk_triplez80`, `arcade-solomonskey`, `arcade-sonson`, `arcade-spaceinvaders`, `arcade-spacerace`, `arcade-sprint1`, `arcade-sprint2`, `arcade-subs`, `arcade-superbreakout`, `arcade-tankbattalion`, `arcade-tecmo`, `arcade-tiamc1`, `arcade-timepilot`, `arcade-timepilot84`, `arcade-tnkiii`, `arcade-traverseusa`, `arcade-tropicalangel`, `arcade-turkeyshoot`, `arcade-ultratank`, `arcade-vball`, `arcade-xevious`, `arcade-xsleenacore`, `arcade-zaxxon`, `arcade-zigzag`, `arcadelpf`, `arcadia`, `archie`, `arduboy`, `astrocade`, `atari2600`, `atari5200`, `atari7800`, `atari800`, `atarilynx`, `atarist`, `avision`, `ay-3-8500`, `bbcbridgecompanion`, `bbcmicro`, `bios`, `bk0011m`, `c128`, `c16`, `c64`, `casio_pv-1000`, `casio_pv-2000`, `channelf`, `cheats`, `chess`, `chip8`, `coco2`, `coco3`, `coleco`, `colecoadam`, `colecovision`, `complexmultichromatic`, `computer`, `computer-cores`, `console`, `console-cores`, `contrast_boost`, `cores`, `corespecific`, `creativision`, `crt-simulation`, `displayspecific`, `docs`, `drv`, `edsac`, `eg2000`, `epochgalaxyii`, `essential`, `extra-utilities`, `famicom`, `filters`, `filters_audio`, `filters_video`, `flappy`, `flappybird`, `font`, `galaksija`, `gamate`, `gameboy`, `gameboy2p`, `gameboyadvance`, `gameboycolor`, `gamecontrollerdb`, `gamegear`, `gamenwatch`, `gameoflife`, `games`, `gamma`, `gb`, `gba`, `gba2p`, `gbc`, `generalhardware`, `generallpf`, `genesis`, `gnw`, `handheld2p`, `hbmame`, `homelab`, `inputtest`, `intellivision`, `interact`, `jupiter`, `laser`, `laser310`, `lcd-general`, `lcd-integeronly`, `linux`, `lynx48`, `macplus`, `mame`, `mastersystem`, `megacd`, `megadrive`, `megaduck`, `memte`, `memtest`, `menu`, `mgl`, `minimig`, `minimigdb9`, `minimigrgb8`, `mra`, `msx`, `msx1`, `multicomp`, `neogeo`, `nes`, `nintendo`, `odyssey2`, `old`, `ondra_spo186`, `orao`, `oric`, `other`, `other-cores`, `palettes`, `pc88`, `pc8801`, `pcengine`, `pcenginecd`, `pcxt`, `pdp1`, `pet2001`, `pmd85`, `pocketchallengev2`, `pokemonmini`, `poly_gamma`, `presets`, `psx`, `pure_gamma`, `ql`, `readme`, `rx78`, `s32x`, `samcoupe`, `scanlines-adaptive`, `scanlines-brighter`, `scanlines-standard`, `scripts`, `segacd`, `segamark3`, `service-cores`, `sg-1000`, `sg1000`, `sg1000sv`, `sgb`, `shadow_masks`, `sharpmz`, `simplemonochrome`, `slugcross`, `sms`, `snes`, `sordm5`, `specialist`, `spectrum`, `spmx`, `sufami`, `superfamicom`, `supergameboy`, `supernes`, `supernintendo`, `supervision`, `svi328`, `tatungeinstein`, `tgfx16`, `tgfx16-cd`, `tgfx16cd`, `ti-99_4a`, `ti994a`, `tomyscramble`, `tomytutor`, `trs-80`, `tsconf`, `turbografx`, `turbografx16`, `turbografx16cd`, `turbografxcd`, `uk101`, `upscaling-lanczosbicubicetc`, `upscaling-recommended`, `upscaling-sharpbilinear`, `utility`, `vc4000`, `vector-06c`, `vector06`, `vector06c`, `vectrex`, `vic20`, `wonderswan`, `wonderswancolor`, `x68000`, `yctxt`, `zx-spectrum`, `zx81`, `zxnext`, `zxspectrum`\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-DB9/Distribution_MiSTer",
@@ -9919,7 +9943,7 @@
     {
       "name": "Gameboy_MiSTer",
       "description": "Gameboy for MiSTer",
-      "readme": "# [Gameboy](https://en.wikipedia.org/wiki/Game_Boy)  / [Gameboy Color](https://en.wikipedia.org/wiki/Game_Boy_Color) port to [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\r\n\r\nThis is port of [Gameboy for MiST](https://github.com/mist-devel/gameboy)\r\n\r\n* Place RBF file into root of SD card.\r\n* Place *.gb|*.gbc files into Gameboy folder.\r\n\r\n## Features\r\n* Original Gameboy & Gameboy Color Support\r\n* Super Gameboy Support - Borders, Palettes and Multiplayer\r\n* MegaDuck Support\r\n* Custom Borders\r\n* SaveStates\r\n* Fastforward \r\n* Rewind - Allows you to rewind up to 40 seconds of gameplay\r\n* Frameblending - Prevents flicker in some games (e.g. \"Chikyuu Kaihou Gun Zas\") \r\n* Custom Palette Loading\r\n* Real-Time Clock Support\r\n* Gameboy Link Port Support - Requires USERIO adapter\r\n* Cheats\r\n\r\n## Open Source Bootstrap roms\r\nThis now includes the open source boot ROMs from [https://github.com/LIJI32/SameBoy/](https://github.com/LIJI32/SameBoy/). For maximum compatibility/authenticity you can still place the Gameboy bios/bootroms into the Gameboy folder and load them in the menu with Misc->Load GBC/DMG/SGB boot.\r\n\r\n## Palettes\r\nThis core supports custom palettes (*.gbp) which should be placed into the Gameboy folder. Some examples are available in the palettes folder.\r\n\r\n## Custom Borders\r\nThis core supports custom borders (*.sgb) which should be placed into the Gameboy folder. Some examples are available in the borders folder.\r\n\r\n## Autoload\r\nTo autoload your favorite game at startup rename it to `boot2.rom`.\r\n\r\n## Video output\r\nThe Gameboy can disable video output at any time which causes problems with vsync_adjust=2 or analog video during screen transitions. Enabling the Stabilize video option may fix this at the cost of some increased latency.\r\n\r\n# Savestates\r\nThis core provides 4 slots to save and restore the memory state which means you can save at any point in the game. These can be saved to your SDCard or they can reside only in memory for temporary use (OSD Option). Save states can be performed with the Keyboard, a mapped button to a gamepad, or through the OSD.\r\n\r\nKeyboard Hotkeys for save states:\r\n- Alt+F1 thru Alt+F4 - save state\r\n- F1 thru F4 - restore state\r\n\r\nGamepad:\r\n- Savestatebutton+Left or Right switches the savestate slot\r\n- Savestatebutton+Start+Down saves to the selected slot\r\n- Savestatebutton+Start+Up loads from the selected slot\r\n",
+      "readme": "# [Gameboy](https://en.wikipedia.org/wiki/Game_Boy)  / [Gameboy Color](https://en.wikipedia.org/wiki/Game_Boy_Color) port to [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\r\n\r\nThis is port of [Gameboy for MiST](https://github.com/mist-devel/gameboy)\r\n\r\n* Place RBF file into root of SD card.\r\n* Place *.gb|*.gbc files into Gameboy folder.\r\n\r\n## Features\r\n* Original Gameboy & Gameboy Color Support\r\n* Super Gameboy Support - Borders, Palettes and Multiplayer\r\n* MegaDuck Support\r\n* Custom Borders\r\n* SaveStates\r\n* Fastforward \r\n* Rewind - Allows you to rewind up to 40 seconds of gameplay\r\n* Frameblending - Prevents flicker in some games (e.g. \"Chikyuu Kaihou Gun Zas\") \r\n* Custom Palette Loading\r\n* Real-Time Clock Support\r\n* Gameboy Link Port Support - Requires USERIO adapter\r\n* Cheats\r\n* Fast boot\r\n* GBA mode for GBC games\r\n\r\n## Open Source Bootstrap roms\r\nOpen source roms are included in the core, adapted from the SameBoy project [https://github.com/LIJI32/SameBoy/](https://github.com/LIJI32/SameBoy/). These roms have MiSTer-specific enhancements, allowing fast booting and GBA mode to be controlled by the on-screen display.\r\n\r\n For maximum compatibility/authenticity you can still place the Gameboy bios/bootroms into the Gameboy folder and load them in the menu with `Bootroms->Load GBC/DMG/SGB boot`. \r\n\r\nFor more information see the [BootROM README](./BootROMs/README.md)  \r\n\r\n## Palettes\r\nThis core supports custom palettes (*.gbp) which should be placed into the Gameboy folder. Some examples are available in the palettes folder.\r\n\r\n## Custom Borders\r\nThis core supports custom borders (*.sgb) which should be placed into the Gameboy folder. Some examples are available in the borders folder.\r\n\r\n## Autoload\r\nTo autoload your favorite game at startup rename it to `boot2.rom`.\r\n\r\n## Video output\r\nThe Gameboy can disable video output at any time which causes problems with vsync_adjust=2 or analog video during screen transitions. Enabling the Stabilize video option may fix this at the cost of some increased latency.\r\n\r\n# Savestates\r\nThis core provides 4 slots to save and restore the memory state which means you can save at any point in the game. These can be saved to your SDCard or they can reside only in memory for temporary use (OSD Option). Save states can be performed with the Keyboard, a mapped button to a gamepad, or through the OSD.\r\n\r\nKeyboard Hotkeys for save states:\r\n- Alt+F1 thru Alt+F4 - save state\r\n- F1 thru F4 - restore state\r\n\r\nGamepad:\r\n- Savestatebutton+Left or Right switches the savestate slot\r\n- Savestatebutton+Start+Down saves to the selected slot\r\n- Savestatebutton+Start+Up loads from the selected slot\r\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-DB9/Gameboy_MiSTer",
@@ -10117,6 +10141,12 @@
           "type": "RBF"
         },
         {
+          "name": "Gameboy_20230225.rbf",
+          "sha": "ad485ab640bc39358256af068150d9435719b174",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Gameboy_MiSTer/master/releases/Gameboy_20230225.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Mega Duck.mgl",
           "sha": "46182bf8d3cb712157b1b1dcc9235fe7f9c4daed",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Gameboy_MiSTer/master/releases/Mega%20Duck.mgl",
@@ -10293,6 +10323,12 @@
           "sha": "bd7e1cfdaf09b2f959e02cfe8e56dcfecd5b0e3d",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/GBA_MiSTer/master/releases/GBA_20220812.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "GBA_20230225.rbf",
+          "sha": "9e212fee3de0a4f850ed06a8659c0123f63e7583",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/GBA_MiSTer/master/releases/GBA_20230225.rbf",
+          "type": "RBF"
         }
       ]
     },
@@ -10465,6 +10501,12 @@
           "sha": "e380b6de7260ea2063161291031a9bae4e9ca8e5",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Genesis_MiSTer/master/releases/Genesis_20221109.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "Genesis_20230224.rbf",
+          "sha": "bc334529968a774bdcef7e322bca822846856a8f",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Genesis_MiSTer/master/releases/Genesis_20230224.rbf",
+          "type": "RBF"
         }
       ]
     },
@@ -10572,6 +10614,12 @@
           "name": "Laser310_20220204.rbf",
           "sha": "e0d407157766daf3b741b1fbbfdf81c440da004b",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Laser310_MiSTer/master/releases/Laser310_20220204.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Laser310_20230224.rbf",
+          "sha": "c9dee3f289cc1e16a60fe218e826415027edcfab",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Laser310_MiSTer/master/releases/Laser310_20230224.rbf",
           "type": "RBF"
         }
       ]
@@ -10829,13 +10877,19 @@
           "sha": "389ac892edb5e7463fa42a972deeb338f60a5496",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Main_MiSTer/master/releases/MiSTer_20230122",
           "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20230223",
+          "sha": "43a81fd6878b6ce77f60e96c23ad8936b338bca3",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Main_MiSTer/master/releases/MiSTer_20230223",
+          "type": "OTHER"
         }
       ]
     },
     {
       "name": "MegaCD_MiSTer",
       "description": "Mega CD for MiSTer",
-      "readme": "# [Sega MegaCD](https://en.wikipedia.org/wiki/Sega_CD) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\n# Installation\nPlace BIOS to MegaCD folder with name boot.rom\n\n# Features\nAbout 150 games tested without long playing, US/EU regions only.\n\n### Known issues:\n- Microcosm & Ultraverse Prime (US) - graphic glitch in game\n- Supreme Warrior - Ying Heung (US) - can't select 2 disk\n\n### Supported image formats:\n- CUE + single image\n- CUE + multiple images (image per track)\n\n### ZIP\nZIP is supported but doesn't work due to long positioning time.\nSo DON'T zip the images!\n\n### CD BIOS\nsupport BIOS per game. Place cd_bios.rom in game's folder.\n\n### Pier Solar\nPlace cartridge dump named cart.rom into game's folder\n",
+      "readme": "# [Sega MegaCD](https://en.wikipedia.org/wiki/Sega_CD) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\n# Installation\nPlace BIOS to MegaCD folder with name boot.rom\n\n# Features\nAbout 150 games tested without long playing, US/EU regions only.\n\n### Known issues:\n- Microcosm & Ultraverse Prime (US) - graphic glitch in game\n- Supreme Warrior - Ying Heung (US) - can't select 2 disk\n\n### Supported image formats:\n- CUE + single image\n- CUE + multiple images (image per track)\n- CHD file\n\n### ZIP\nZIP is supported but doesn't work due to long positioning time.\nSo DON'T zip the images!\n\n### CD BIOS\nsupport BIOS per game. Place cd_bios.rom in game's folder.\n\n### Pier Solar\nPlace cartridge dump named cart.rom into game's folder\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-DB9/MegaCD_MiSTer",
@@ -11007,6 +11061,12 @@
           "sha": "d7a352455c29aec3f9f4106d015b3c6753f568f6",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/MegaCD_MiSTer/master/releases/MegaCD_20220626.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "MegaCD_20230224.rbf",
+          "sha": "518d44b0f77090f97a9d66a44683db49b4340271",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/MegaCD_MiSTer/master/releases/MegaCD_20230224.rbf",
+          "type": "RBF"
         }
       ]
     },
@@ -11101,13 +11161,19 @@
           "sha": "61cef9a4064748fad69da9246508e6e8e87162c0",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Menu_MiSTer/master/releases/menu_20221224.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "menu_20230223.rbf",
+          "sha": "e11aec8b33de6c5ef758bfb9ec80b74807d600b0",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Menu_MiSTer/master/releases/menu_20230223.rbf",
+          "type": "RBF"
         }
       ]
     },
     {
       "name": "Minimig-AGA_MiSTer",
       "description": null,
-      "readme": "\n# Minimig-AGA_MiSTer\n\nThis is a port of the minimig core to the [MiSTer board](https://github.com/MiSTer-devel).\n\n[minimig](http://en.wikipedia.org/wiki/Minimig) (short for Mini Amiga) is an open source re-implementation of an Amiga using a field-programmable gate array (FPGA). Original minimig author is Dennis van Weeren.\n\n[Amiga](http://en.wikipedia.org/wiki/Amiga_500) was - in my opinion - an amazing personal computer, announced around 1984, which - at the time - far surpassed any other personal computer on the market, with advanced graphic & sound capabilities, not to mention its great OS with preemptive multitasking capabilities.\n\nThe minimig-MiSTer variant in this repository has been upgraded with [AGA chipset](http://en.wikipedia.org/wiki/Amiga_Advanced_Graphics_Architecture) capabilites, which allows it to emulate the latest Amiga models ([Amiga 1200](http://en.wikipedia.org/wiki/Amiga_1200), [Amiga 4000](http://en.wikipedia.org/wiki/Amiga_4000) and (partially) [Amiga CD32](http://en.wikipedia.org/wiki/Amiga_CD32)). Ofcourse it also supports previous OCS/ECS Amigas like [Amiga 500](http://en.wikipedia.org/wiki/Amiga_500), [Amiga 600](http://en.wikipedia.org/wiki/Amiga_600) etc.\n\n\n## Core features supported\n\n* chipset variants : OCS, ECS, AGA\n* chipRAM : 0.5MB - 2.0MB\n* slowRAM : 0.0MB - 1.5MB\n* fastRAM : 0.0MB - 384MB\n* CPU core : 68000, 68020\n* kickstart : 1.2 - 3.1 (256kB, 512kB & 1MB kickstart ROMs currently supported)\n* HRTmon with custom registers mirror\n* floppy disks : 1-4 floppies (supports ADF floppy image format), with normal & turbo speeds\n* Up to 4 IDE devices\n* CDROM\n* video standard : PAL / NTSC\n* supports almost all OCS/ECS/AGA custom resolutions\n* RTG with up to 1920x1080 and 1600x1200 resolutions\n* peripherals : USB keyboards, USB mice, USB gamepads\n* serial connection to Linux with ability to connect to internet.\n* shared folder for rapid file exchange between Linux and Amiga.\n* MIDI: both MiSTer internal emulation and external through USER_IO port (MT32-pi and generic MIDI device)\n* Akiko chunk to planar implementation\n* Mouse with wheel.\n\n## Usage\n\n### Screen adjustment\nAdjustment is initiated from OSD menu. Keyboard control:\n* Cursor keys - top/left corner.\n* ALT+Cursor keys - bottom/right corner.\n* Enter - finish and store position.\n* Backspace - reset do default.\n* Esc - cancel and finish.\n\nPositions are saved in the configuration file. Up to 64 different resolutions can be adjusted.\n\n### Shared folder\n\nAll required files (and sources) are in extra/MiSTer_share.lha\n\nAmiga driver is based on Niklas Ekstr\u00f6m [a314](https://github.com/niklasekstrom/a314) driver.\n\nOn Amiga:\n- copy dummy.device to DEVS:\n- copy MountList to DEVS: (or add content from MountList to existing file)\n- copy MiSTerFileSystem to L:\n- open CLI and type there: mount share:\n- MiSTer drive will appear on main WB screen. If it will work, then you can add this command into user-startup file, and it will be mounted at every boot.\n\nOn Linux side the folder is \"shared\" inside Amiga folder.\n\n### RTG\n\n* install [Picasso96.lha](http://aminet.net/package/driver/video/Picasso96) Choose uaegfx while installing.\n* remove uaegfx (or whatever driver you choose in install) from SYS:Devs/Monitors\n* extract [MiSTer_RTG.lha](https://github.com/MiSTer-devel/Minimig-AGA_MiSTer/raw/MiSTer/extra/rtg_driver/MiSTer_RTG.lha) and copy content to SYS:\n* reboot\n\nNew video modes will appear in ScreenMode preference. For more screen modes use Picasso96Mode preference (attn: it has awkward interface!)\n\n**Note: RTG outputs to HDMI primarily as it uses scaler.**\nIf you want to see RTG video on VGA output, then set vga_scaler=1 in MiSTer.ini.\nRTG is available only for 68020 CPU.\n\n### IDE and CDROM\nBy default up to 2 IDE devices are supported. For Secondary Master/Slave devices, you have to install either IDEFix97 (shareware, WB3.1/3.9) or AtapiMagic (freeware, WB 3.1.4/3.2).\nRemovable/CD mode allows to hot swap CDs. Currently audio portion of CD isn't implemented (although playback commands should be accepted).\n\n### How to make a new HDF (HDD Image)\n1) Create an empty HDF file of required size on PC (ideally fill it by 0 if possible).\n2) Copy it to MiSTer\n3) Mount it as HDF on OSD, and also mount some adf with HDToolBox (for example install3.2.adf from OS3.2)\n4) Boot that ADF\n5) go to HDToolBox, then Change Drive Type -> Define New -> Read Configuration. Then Ok, Ok. Then Save Changes to Drive.\n6) Press Partition Drive. Optionally delete MDH1 partition, expand MDH0 to full drive. Rename MDH0 to standard DH0 name, mark it as Bootable. Then OK, then Save Changes to Drive.\n7) Exit, reboot.\n8) After booting you will see DH0:Uninitialized. Format it from Workbench menu. You can use Quick format option.\n9) Install required OS.\n\n\n### MIDI\nSupported internal MiSTer emulation and external devices such as MT32-pi or generic MIDI though USER_IO.\nFor MIDI-IN support through USER_IO set UART mode to None in OSD settings.\n\n### Akiko\nChunk to planar engine of Akiko is supported. It requires SetAkiko util (from releases/WheelDriverAkiko.adf) to be executed.\n\n### Mouse Wheel\nTo enable wheel support both WheelDriver and FreeWheel must be run from releases/WheelDriverAkiko.adf\n\n### Software\nTo use the core, you will need a Kickstart ROM image file, which you can obtain by copying Kickstart ROM IC from your actual Amiga, or by buying an [Amiga Forever](http://www.amigaforever.com/) software pack. The Kickstart image should be placed on the root of the SD card with the name KICK.ROM. Minimig also supports the [AROS](http://aros.sourceforge.net/) kickstart ROM replacement.\n\nThe minimig can read any ADF floppy images you place on the SD card. I recommend at least Workbench 1.3 or 3.1 (AmigaOS), some of the Amigas great games (I recommend Ruff'n'Tumble) or some of the amazing demos from the vast Amiga demoscene (like State of the Art from Spaceballs).\n\nThe minimig can also use HDF harddisk images, which can be created with [WinUAE](http://www.winuae.net/).\n\n### Recommended minimig config\n\n* for ECS games / demos : CPU = 68000, Turbo=NONE, Chipset=ECS, chipRAM=0.5MB, slowRAM=0.5MB, Kickstart 1.3\n* for AGA games / demos : CPU = 68020, Turbo=NONE, Chipset=AGA, chipRAM=2MB, slowRAM=0MB, fastRAM=24MB, Kickstart 3.1\n\n### Controlling minimig\n\nKeyboard special keys:\n\n* F12         - OSD menu\n* F11         - start monitor (HRTmon) if HRTmon is enabled in OSD menu (otherwise F11 is the Amiga HELP key)\n* ScrollLock  - toggle keyoard only / mouse / joystick 1 / joystick 2 emulation on the keyboard (direction keys + LCTRL)\n\n\n## Sources\n\nThis sourcecode is based on Rok Krajnc project ([minimig-de1](https://github.com/rkrajnc/minimig-de1)).\n\nOriginal minimig sources from Dennis van Weeren with updates by Jakub Bednarski are published on [Google Code](http://code.google.com/p/minimig/).\n\nSome minimig updates are published on the [Minimig Discussion Forum](http://www.minimig.net/), done by Sascha Boing.\n\nARM firmware updates and minimig-tc64 port changes by Christian Vogelsang ([minimig_tc64](https://github.com/cnvogelg/minimig_tc64)) and A.M. Robinson ([minimig_tc64](https://github.com/robinsonb5/minimig_tc64)).\n\nMiSTer project by Sorgelig ([MiSTer](https://github.com/MiSTer-devel)).\n\nTG68K.C core by Tobias Gubener.\n\n\n## Links & more info\n\nMy page [somuch.guru](http://somuch.guru/).\n\nFurther info about minimig can be found on the [Minimig Discussion Forum](http://www.minimig.net/).\n\nMiSTer board support & other cores on the [MiSTer Project Page](https://github.com/MiSTer-devel).\n\n\n## License\n\nCopyright \u00a9 2011 - 2016 Rok Krajnc (rok.krajnc@gmail.com)\n\nCopyright \u00a9 2005 - 2015 Dennis van Weeren, Jakub Bednarski, Sascha Boing, A.M. Robinson, Tobias Gubener, Till Harbaum\n\nCopyright \u00a9 2017 - 2020 Sorgelig (mister.devel@gmail.com)\n\nThis program is free software: you can redistribute it and/or modify\nit under the terms of the GNU General Public License as published by\nthe Free Software Foundation, either version 3 of the License, or\n(at your option) any later version.\n\nThis program is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License\nalong with this program.  If not, see <http://www.gnu.org/licenses/>.\n",
+      "readme": "\n# Minimig-AGA_MiSTer\n\nThis is a port of the minimig core to the [MiSTer board](https://github.com/MiSTer-devel).\n\n[minimig](http://en.wikipedia.org/wiki/Minimig) (short for Mini Amiga) is an open source re-implementation of an Amiga using a field-programmable gate array (FPGA). Original minimig author is Dennis van Weeren.\n\n[Amiga](http://en.wikipedia.org/wiki/Amiga_500) was - in my opinion - an amazing personal computer, announced around 1984, which - at the time - far surpassed any other personal computer on the market, with advanced graphic & sound capabilities, not to mention its great OS with preemptive multitasking capabilities.\n\nThe minimig-MiSTer variant in this repository has been upgraded with [AGA chipset](http://en.wikipedia.org/wiki/Amiga_Advanced_Graphics_Architecture) capabilites, which allows it to emulate the latest Amiga models ([Amiga 1200](http://en.wikipedia.org/wiki/Amiga_1200)) and (partially) [Amiga CD32](http://en.wikipedia.org/wiki/Amiga_CD32)). Ofcourse it also supports previous OCS/ECS Amigas like [Amiga 500](http://en.wikipedia.org/wiki/Amiga_500), [Amiga 600](http://en.wikipedia.org/wiki/Amiga_600) etc.\n\n\n## Core features supported\n\n* chipset variants : OCS, ECS, AGA\n* chipRAM : 0.5MB - 2.0MB\n* slowRAM : 0.0MB - 1.5MB\n* fastRAM : 0.0MB - 384MB\n* CPU core : 68000, 68020\n* kickstart : 1.2 - 3.1 (256kB, 512kB & 1MB kickstart ROMs currently supported)\n* HRTmon with custom registers mirror\n* floppy disks : 1-4 floppies (supports ADF floppy image format), with normal & turbo speeds\n* Up to 4 IDE devices\n* CDROM\n* video standard : PAL / NTSC\n* supports almost all OCS/ECS/AGA custom resolutions\n* RTG with up to 1920x1080 and 1600x1200 resolutions\n* peripherals : USB keyboards, USB mice, USB gamepads\n* serial connection to Linux with ability to connect to internet.\n* shared folder for rapid file exchange between Linux and Amiga.\n* MIDI: both MiSTer internal emulation and external through USER_IO port (MT32-pi and generic MIDI device)\n* Akiko chunk to planar implementation\n* Mouse with wheel.\n\n## Usage\n\n### Screen adjustment\nAdjustment is initiated from OSD menu. Keyboard control:\n* Cursor keys - top/left corner.\n* ALT+Cursor keys - bottom/right corner.\n* Enter - finish and store position.\n* Backspace - reset do default.\n* Esc - cancel and finish.\n\nPositions are saved in the configuration file. Up to 64 different resolutions can be adjusted.\n\n### Shared folder\n\nAll required files (and sources) are in extra/MiSTer_share.lha\n\nAmiga driver is based on Niklas Ekstr\u00f6m [a314](https://github.com/niklasekstrom/a314) driver.\n\nOn Amiga:\n- copy dummy.device to DEVS:\n- copy MountList to DEVS: (or add content from MountList to existing file)\n- copy MiSTerFileSystem to L:\n- open CLI and type there: mount share:\n- MiSTer drive will appear on main WB screen. If it will work, then you can add this command into user-startup file, and it will be mounted at every boot.\n\nOn Linux side the folder is \"shared\" inside Amiga folder.\n\n### RTG\n\n* install [Picasso96.lha](http://aminet.net/package/driver/video/Picasso96) Choose uaegfx while installing.\n* remove uaegfx (or whatever driver you choose in install) from SYS:Devs/Monitors\n* extract [MiSTer_RTG.lha](https://github.com/MiSTer-devel/Minimig-AGA_MiSTer/raw/MiSTer/extra/rtg_driver/MiSTer_RTG.lha) and copy content to SYS:\n* reboot\n\nNew video modes will appear in ScreenMode preference. For more screen modes use Picasso96Mode preference (attn: it has awkward interface!)\n\n**Note: RTG outputs to HDMI primarily as it uses scaler.**\nIf you want to see RTG video on VGA output, then set vga_scaler=1 in MiSTer.ini.\nRTG is available only for 68020 CPU.\n\n### IDE and CDROM\nBy default up to 2 IDE devices are supported. For Secondary Master/Slave devices, you have to install either IDEFix97 (shareware, WB3.1/3.9) or AtapiMagic (freeware, WB 3.1.4/3.2).\nRemovable/CD mode allows to hot swap CDs. Currently audio portion of CD isn't implemented (although playback commands should be accepted).\n\n### How to make a new HDF (HDD Image)\n1) Create an empty HDF file of required size on PC (ideally fill it by 0 if possible).\n2) Copy it to MiSTer\n3) Mount it as HDF on OSD, and also mount some adf with HDToolBox (for example install3.2.adf from OS3.2)\n4) Boot that ADF\n5) go to HDToolBox, then Change Drive Type -> Define New -> Read Configuration. Then Ok, Ok. Then Save Changes to Drive.\n6) Press Partition Drive. Optionally delete MDH1 partition, expand MDH0 to full drive. Rename MDH0 to standard DH0 name, mark it as Bootable. Then OK, then Save Changes to Drive.\n7) Exit, reboot.\n8) After booting you will see DH0:Uninitialized. Format it from Workbench menu. You can use Quick format option.\n9) Install required OS.\n\n\n### MIDI\nSupported internal MiSTer emulation and external devices such as MT32-pi or generic MIDI though USER_IO.\nFor MIDI-IN support through USER_IO set UART mode to None in OSD settings.\n\n### Akiko\nChunk to planar engine of Akiko is supported. It requires SetAkiko util (from releases/WheelDriverAkiko.adf) to be executed.\n\n### Mouse Wheel\nTo enable wheel support both WheelDriver and FreeWheel must be run from releases/WheelDriverAkiko.adf\n\n### Software\nTo use the core, you will need a Kickstart ROM image file, which you can obtain by copying Kickstart ROM IC from your actual Amiga, or by buying an [Amiga Forever](http://www.amigaforever.com/) software pack. The Kickstart image should be placed on the root of the SD card with the name KICK.ROM. Minimig also supports the [AROS](http://aros.sourceforge.net/) kickstart ROM replacement.\n\nThe minimig can read any ADF floppy images you place on the SD card. I recommend at least Workbench 1.3 or 3.1 (AmigaOS), some of the Amigas great games (I recommend Ruff'n'Tumble) or some of the amazing demos from the vast Amiga demoscene (like State of the Art from Spaceballs).\n\nThe minimig can also use HDF harddisk images, which can be created with [WinUAE](http://www.winuae.net/).\n\n### Recommended minimig config\n\n* for ECS games / demos : CPU = 68000, Turbo=NONE, Chipset=ECS, chipRAM=0.5MB, slowRAM=0.5MB, Kickstart 1.3\n* for AGA games / demos : CPU = 68020, Turbo=NONE, Chipset=AGA, chipRAM=2MB, slowRAM=0MB, fastRAM=24MB, Kickstart 3.1\n\n### Controlling minimig\n\nKeyboard special keys:\n\n* F12         - OSD menu\n* F11         - start monitor (HRTmon) if HRTmon is enabled in OSD menu (otherwise F11 is the Amiga HELP key)\n* ScrollLock  - toggle keyoard only / mouse / joystick 1 / joystick 2 emulation on the keyboard (direction keys + LCTRL)\n\n\n## Sources\n\nThis sourcecode is based on Rok Krajnc project ([minimig-de1](https://github.com/rkrajnc/minimig-de1)).\n\nOriginal minimig sources from Dennis van Weeren with updates by Jakub Bednarski are published on [Google Code](http://code.google.com/p/minimig/).\n\nSome minimig updates are published on the [Minimig Discussion Forum](http://www.minimig.net/), done by Sascha Boing.\n\nARM firmware updates and minimig-tc64 port changes by Christian Vogelsang ([minimig_tc64](https://github.com/cnvogelg/minimig_tc64)) and A.M. Robinson ([minimig_tc64](https://github.com/robinsonb5/minimig_tc64)).\n\nMiSTer project by Sorgelig ([MiSTer](https://github.com/MiSTer-devel)).\n\nTG68K.C core by Tobias Gubener.\n\n\n## Links & more info\n\nMy page [somuch.guru](http://somuch.guru/).\n\nFurther info about minimig can be found on the [Minimig Discussion Forum](http://www.minimig.net/).\n\nMiSTer board support & other cores on the [MiSTer Project Page](https://github.com/MiSTer-devel).\n\n\n## License\n\nCopyright \u00a9 2011 - 2016 Rok Krajnc (rok.krajnc@gmail.com)\n\nCopyright \u00a9 2005 - 2015 Dennis van Weeren, Jakub Bednarski, Sascha Boing, A.M. Robinson, Tobias Gubener, Till Harbaum\n\nCopyright \u00a9 2017 - 2020 Sorgelig (mister.devel@gmail.com)\n\nThis program is free software: you can redistribute it and/or modify\nit under the terms of the GNU General Public License as published by\nthe Free Software Foundation, either version 3 of the License, or\n(at your option) any later version.\n\nThis program is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License\nalong with this program.  If not, see <http://www.gnu.org/licenses/>.\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-DB9/Minimig-AGA_MiSTer",
@@ -11188,6 +11254,12 @@
           "name": "Minimig_20220726.rbf",
           "sha": "fe39d9d7d79d85a9578629b530dc515e6ec6a526",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Minimig-AGA_MiSTer/MiSTer/releases/Minimig_20220726.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Minimig_20230216.rbf",
+          "sha": "0fa0c3fdbc915cf48a260fd3dddd97a797a128f1",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Minimig-AGA_MiSTer/MiSTer/releases/Minimig_20230216.rbf",
           "type": "RBF"
         },
         {
@@ -11549,6 +11621,12 @@
           "type": "RBF"
         },
         {
+          "name": "NeoGeo_20230223.rbf",
+          "sha": "e1cfd600bab511073a094d78c4dd864c7e96b726",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/NeoGeo_MiSTer/master/releases/NeoGeo_20230223.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "README.md",
           "sha": "91abd5fd1fe831e59d750a409d3f9b19393d5849",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/NeoGeo_MiSTer/master/releases/README.md",
@@ -11833,6 +11911,12 @@
           "sha": "c68239b8a81e2f67d1511d4a29f07e658c9a351b",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/NES_MiSTer/master/releases/NES_20221002.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "NES_20230223.rbf",
+          "sha": "0c128c86ed7bd18e4aa7fedbbfc07cfe99f5bc18",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/NES_MiSTer/master/releases/NES_20230223.rbf",
+          "type": "RBF"
         }
       ]
     },
@@ -12018,6 +12102,12 @@
           "name": "S32X_20221002.rbf",
           "sha": "c65340c96a9329cd3764effe99a0a048cc372d54",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/S32X_MiSTer/main/releases/S32X_20221002.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "S32X_20230224.rbf",
+          "sha": "dbd8b578b93ed6c45fdc6ea47f3fb13f8f03871f",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/S32X_MiSTer/main/releases/S32X_20230224.rbf",
           "type": "RBF"
         }
       ]
@@ -12370,6 +12460,12 @@
           "type": "RBF"
         },
         {
+          "name": "SMS_20230225.rbf",
+          "sha": "661543bc460eaa2c8597d8778f3a550903ab660a",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/SMS_MiSTer/master/releases/SMS_20230225.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Slap Shooter.mra",
           "sha": "13b2ff4ac0ccfad8a6257af16734f09cda62fb83",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/SMS_MiSTer/master/releases/Slap%20Shooter.mra",
@@ -12680,6 +12776,12 @@
           "name": "SNES_20221121.rbf",
           "sha": "af2aa29f1eacf00e61074d134df932a91fa494cd",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/SNES_MiSTer/master/releases/SNES_20221121.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_20230223.rbf",
+          "sha": "608a2b77e04684e401b12bba46ee845e1757415e",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/SNES_MiSTer/master/releases/SNES_20230223.rbf",
           "type": "RBF"
         }
       ]
@@ -13109,6 +13211,12 @@
           "sha": "4781decb7d76e76cf0f3c7d1a4ec33a8d19d1060",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/TurboGrafx16_MiSTer/master/releases/TurboGrafx16_20230103.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "TurboGrafx16_20230224.rbf",
+          "sha": "ad5c2d65c6a5deeaebc15c176264d6adc3d784c1",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/TurboGrafx16_MiSTer/master/releases/TurboGrafx16_20230224.rbf",
+          "type": "RBF"
         }
       ]
     },
@@ -13357,6 +13465,12 @@
           "name": "VIC20_20221203.rbf",
           "sha": "cc35d5a15a64af35d9d8acfa7fa47ab939a036a7",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/VIC20_MiSTer/master/releases/VIC20_20221203.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "VIC20_20230225.rbf",
+          "sha": "a0adc1b7eb00fdde0515e5044d9a81203df55430",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/VIC20_MiSTer/master/releases/VIC20_20230225.rbf",
           "type": "RBF"
         }
       ]
