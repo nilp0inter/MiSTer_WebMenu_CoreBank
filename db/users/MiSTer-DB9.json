@@ -133,13 +133,19 @@
           "sha": "929ee7a1f0c76cc6500d07afc5d2136dc87ca3b3",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Amstrad_MiSTer/master/releases/Amstrad_20220620.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "Amstrad_20230227.rbf",
+          "sha": "e4b77dd32beb5a45998358449a1ba7223a961c8c",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Amstrad_MiSTer/master/releases/Amstrad_20230227.rbf",
+          "type": "RBF"
         }
       ]
     },
     {
       "name": "Apple-II_MiSTer",
       "description": "Apple II+ for MiSTer",
-      "readme": "# [Apple IIe](https://en.wikipedia.org/wiki/Apple_IIe) for [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\nThis is a MiSTer port of the Apple IIe core from MiST.\n\n## Description\n\nThis the MiST port of a reconstruction of an 1980s-era Apple ][+ implemented in VHDL for FPGAs.  \nOriginal for the DE2: http://www1.cs.columbia.edu/~sedwards/apple2fpga/  \nPort for the MiST: http://ws0.org/tag/apple2/\n\n## Features\n\n* disk loading via osd (no write support yet) supported formats: .nib, .dsk, .do, .po\n* HDD loading via osd\n* Tape loading via the ADC-in\n* Selectable 6502 or 65C02 CPU\n* joystick support\n* scanlines\n* color, amber, green and black&white monitor\n* language card in slot 0\n* 64K base + 64K auxilary RAM with 80 column and double hi-res support (256KB total with Saturn 128K)\n* Saturn 128k RAM expansion in slot 5 (get the utility disks from here: http://apple2online.com/index.php?p=1_28)\n* Mockingboard model A (two AY-3-8913 chips for six audio channels) in slot 4\n\n## Disk format notes\n\nApple-II has a big mess in disk formats. DSK image may contain either DO or PO format. Even PO and DO may contain opposite format. So if PO disk doesn't work, then try to rename it to DO. If DO or DSK doesn't work then try to rename it to PO.\n\nFor HDD, only HDV images (raw ProDOS partition images) 32MB in size are supported. 2MG images may work if the 64-byte header is removed.\n\n## Instructions\n\nPut disk files into the `/games/Apple-II/` folder.\n\nOn the \"Apple ][\" boot screen open the OSD with F12 and choose a disk. It will boot the disk automatically. \n\nIf you press reset (the right button on the MiST) you'll enter Applesoft with the ] prompt.\nFrom here you have some limited commands. See: http://www.landsnail.com/a2ref.htm\n\nIf you want to boot another disk choose a .nib image via the osd and type the following:\n\n```\n]PR#6\n```\n\nor\n\n```\n]CALL -151`\n*C600G\n```\n\nThe call command will enter the Monitor. Type the call a second time if the * prompt won't\nshow the first time. \nAt the Monitor you can also type 6 and then Ctrl-P followed by return.\nSee http://vectronicsappleworld.com/appleii/dos.html#bootdos\n\nThe HDD interface is in slot 7. Unlike the floppy interface, it does not stall until an image is mounted, so either reset the machine or use one of the following after mounting an image:\n\n```\n]PR#7\n```\n\nor\n\n```\n]CALL -151`\n*C700G\n```\n\n### Pre-MiST ReadMe for historical purposes:\n\n```\nThis is a reconstruction of an 1980s-era Apple ][+ implemented in VHDL for\nFPGAs.\n\nStephen A. Edwards, sedwards@cs.columbia.edu\nhttp://www1.cs.columbia.edu/~sedwards\n------------------------------\nThe current implementation uses the Altera DE2 board and takes advantage\nof its off-chip SRAM, VGA DAC, SD card, audio CODEC, and PS/2 keyboard\ninterface. \n\nIt was designed to be fairly easy to port: the apple2.vhd file should\nbe implementation-agnostic: it only assumes the external availability\nof 48K of RAM and a keyboard.\n\nIt contains a simple read-only Disk II emulator that expects\n\"nibblized\" disk images written raw onto an SD or MMC card (i.e., it\ndoes not use a FAT or any other type of filesystem).\n\nThe VGA controller (not part of an original Apple) doubles each line\nand interprets the Apple's NTSC-compatible color signals to produce a color\n640 X 480 VGA display with non-standard dot timing.\n------------------------------\nTo compile under Altera's Quartus software, open the apple2fpga.qpf\nproject file and compile.\n------------------------------\nVHDL files, in order of elaboration:\n\ntiming_generator.vhd Timing signal generation, video counters\ncharacter_rom.vhd    The beautiful 5 X 8 uppercase-only text font\nvideo_generator.vhd  Text, lores, and hires mode shift registers\nmain_roms.vhd        D000-FFFF ROMs: Applesoft and the Monitor\ncpu6502.vhd          The 6502 CPU core\napple2.vhd           Top-level of the Apple: mostly address decode\ndisk_ii_rom.vhd      C600-C6FF ROM: Disk II bootstrap ROM\ndisk_ii.vhd          Read-only Disk II emulator\nvga_controller.vhd   NTSC-to-VGA color interpolation, line doubler\nPS2_Ctrl.vhd         Low-level PS/2 keyboard interface\nkeyboard.vhd         PS/2 keyboard-to-Apple interface\nspi_controller.vhd   SD/MMC card controller: reads raw tracks\ni2c_controller.vhd   Simple I2C bus driver; initializes the codec\nwm8731_audio.vhd     Controller for the Wolfson WM8731 audio codec\nDE2_TOP.vhd          Top-level entity for the Altera DE2 board\nCLK28MPLL.vhd\t     Altera-specific configuration for 28 MHz PLL\n\nOther files:\n\ndsk2nib.c            Converts a 140K .dsk image file to the raw 228K\n                     .nib format used by the Disk II emulator\n\nmakenibs\t     A shell (e.g., bash) script that assembles\n\t\t     collections of .dsk files into a file suitable\n\t\t     for directly writing onto an SD card\t\t     \n\nrom2vhdl             Script to convert raw ROM files into\n\t\t     synthesizable VHDL code.  Used to produce main_roms.vhd\n\napple2fpga.qpf       Project file for Altera's Quartus\nDE2_TOP.qsf          Mostly pin assignments for Altera's Quartus\nDE2_TOP.sof\t     A compiled bitstream for the DE2 board: the\n\t\t     result of compiling all the VHDL files in\n\t\t     Quartus; suitable for programming if you have a\n\t\t     DE2 board.\n\ndos33master.nib      Bootable disk image: Apple DOS 3.3 system master\n\nbios.a65\t     6502 assembly source for a \"fake\" BIOS\nbios.rom\t     Binary data for the \"fake\" BIOS\n\nMakefile             Rules for creating the .zip, .vhd files, etc.\n------------------------------\nDisk images\n\nThe system expects a sequence of \"nibblized\" (227K) disk images on the\nSD card starting at block 0.  Switches on the DE2 board selects which\nimage appears to be in the drive; the image number is displayed in hex\non two of the seven-segment displays.\n\nMost Apple II disk images are in 140K .dsk files, which stores only\nthe disk's logical data, i.e., is not encoded.  dsk2nib.c is a small C\nprogram that expands .dsk files to .nib files.\n\nI used the \"makenibs\" script to find all the .dsk files in a tree of\ndirectories, assemble them into an image suitable for downloading to\nthe SD card, and print an image number/file name cross-listing.\n\nTo write .nib images to an SD/MMC card under Linux, I use\n\ndd if=dos33master.nib of=/dev/sdd\n\nOf course, your card may appear as something other than /dev/sdd.\n------------------------------\nROMs\n\nThis archive does NOT include a copy of the Apple ][+'s ROMs, which\nare copyright Apple Computer.  Instead, it includes a very trivial\nBIOS that beeps, displays a text screen, then cycles through some\nlores and hires graphics patterns when keys are pressed.  This should\nbe enough to verify the graphics, sound, and keyboard are working (but\nnot the disk emulator).  Source for this BIOS is in the bios.a65 file,\nwhich I assembled using the xa65 cross-assembler.\n\nThe system requires two ROM images: a 12K image of the system roms\n(memory from 0xD000 - 0xFFFF) and a 256-byte image of the Disk II\ncontroller bootstrap ROM (memory from 0xc600 - 0xc6ff if the card is\nin the usual slot 6).\n\nOnce you obtain them, run the \"rom2vhdl\" script to convert the binary\nfiles into .vhd files that hold the data.  The Makefile contains rules\nfor doing this.\n------------------------------\nCredits:\n\nPeter Wendrich supplied the 6502 core:\n\n-- cpu65xx_fast.vhdl, part of FPGA-64, is made available strictly for personal\n-- educational purposes. Distributed with apple2fgpa with permission.\n--\n-- Copyright 2005-2008 by Peter Wendrich (pwsoft@syntiac.com).\n-- All rights reserved.\n-- http://www.syntiac.com/fpga64.html\n\nThe low-level PS/2 keyboard controller is from ALSE:\n\n-- PS2_Ctrl.vhd\n-- ------------------------------------------------\n--   Simplified PS/2 Controller  (kbd, mouse...)\n-- ------------------------------------------------\n-- Only the Receive function is implemented !\n-- (c) ALSE. http://www.alse-fr.com\n\nI adapted the Apple ][ keyboard emulation from Alex Freed's FPGApple:\nhttp://mirrow.com/FPGApple/\n```\n ",
+      "readme": "# [Apple IIe](https://en.wikipedia.org/wiki/Apple_IIe) for [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\nThis is a MiSTer port of the Apple IIe core from MiST.\n\n## Description\n\nThis the MiST port of a reconstruction of an 1980s-era Apple ]\\[+ implemented in VHDL for FPGAs.  \nOriginal for the DE2: http://www1.cs.columbia.edu/~sedwards/apple2fpga/  \nPort for the MiST: http://ws0.org/tag/apple2/\n\n## Features\n\n* disk loading via osd (no write support yet) supported formats: .nib, .dsk, .do, .po\n* HDD loading via osd\n* Tape loading via the ADC-in\n* Selectable 6502 or 65C02 CPU\n* joystick support\n* scanlines\n* color, amber, green and black&white monitor\n* language card in slot 0\n* 64K base + 64K auxilary RAM with 80 column and double hi-res support (256KB total with Saturn 128K)\n* Saturn 128k RAM expansion in slot 5 (get the utility disks from here: http://apple2online.com/?page_id=3447 , under \"Saturn RAMSoft\")\n* Mockingboard model A (two AY-3-8913 chips for six audio channels) in slot 4\n\n## Disk format notes\n\nApple-II has a big mess in disk formats. DSK image may contain either DO or PO format. Even PO and DO may contain opposite format. So if PO disk doesn't work, then try to rename it to DO. If DO or DSK doesn't work then try to rename it to PO.\n\nFor HDD, only HDV images (raw ProDOS partition images) 32MB in size are supported. 2MG images may work if the 64-byte header is removed.\n```bash\ndd if=diskimage.2mg of=diskimage.hdv bs=64 skip=1\n```\n\n\n## Instructions\n\nPut disk files into the `/games/Apple-II/` folder.\n\nOn the \"Apple ][\" boot screen open the OSD with F12 and choose a disk. It will boot the disk automatically. \n\nIf you press reset (the right button on the MiST) you'll enter Applesoft with the ] prompt.\nFrom here you have some limited commands. See: http://www.landsnail.com/a2ref.htm\n\nIf you want to boot another disk choose a .nib image via the osd and type the following:\n\n```\n]PR#6\n```\n\nor\n\n```\n]CALL -151`\n*C600G\n```\n\nThe call command will enter the Monitor. Type the call a second time if the * prompt won't\nshow the first time. \nAt the Monitor you can also type 6 and then Ctrl-P followed by return.\nSee https://web.archive.org/web/20140827184511/http://vectronicsappleworld.com:80/appleii/dos.html#bootdos\n\nThe HDD interface is in slot 7. Unlike the floppy interface, it does not stall until an image is mounted, so either reset the machine or use one of the following after mounting an image:\n\n```\n]PR#7\n```\n\nor\n\n```\n]CALL -151`\n*C700G\n```\n\n### Pre-MiST ReadMe for historical purposes:\n\n```\nThis is a reconstruction of an 1980s-era Apple ][+ implemented in VHDL for\nFPGAs.\n\nStephen A. Edwards, sedwards@cs.columbia.edu\nhttp://www1.cs.columbia.edu/~sedwards\n------------------------------\nThe current implementation uses the Altera DE2 board and takes advantage\nof its off-chip SRAM, VGA DAC, SD card, audio CODEC, and PS/2 keyboard\ninterface. \n\nIt was designed to be fairly easy to port: the apple2.vhd file should\nbe implementation-agnostic: it only assumes the external availability\nof 48K of RAM and a keyboard.\n\nIt contains a simple read-only Disk II emulator that expects\n\"nibblized\" disk images written raw onto an SD or MMC card (i.e., it\ndoes not use a FAT or any other type of filesystem).\n\nThe VGA controller (not part of an original Apple) doubles each line\nand interprets the Apple's NTSC-compatible color signals to produce a color\n640 X 480 VGA display with non-standard dot timing.\n------------------------------\nTo compile under Altera's Quartus software, open the apple2fpga.qpf\nproject file and compile.\n------------------------------\nVHDL files, in order of elaboration:\n\ntiming_generator.vhd Timing signal generation, video counters\ncharacter_rom.vhd    The beautiful 5 X 8 uppercase-only text font\nvideo_generator.vhd  Text, lores, and hires mode shift registers\nmain_roms.vhd        D000-FFFF ROMs: Applesoft and the Monitor\ncpu6502.vhd          The 6502 CPU core\napple2.vhd           Top-level of the Apple: mostly address decode\ndisk_ii_rom.vhd      C600-C6FF ROM: Disk II bootstrap ROM\ndisk_ii.vhd          Read-only Disk II emulator\nvga_controller.vhd   NTSC-to-VGA color interpolation, line doubler\nPS2_Ctrl.vhd         Low-level PS/2 keyboard interface\nkeyboard.vhd         PS/2 keyboard-to-Apple interface\nspi_controller.vhd   SD/MMC card controller: reads raw tracks\ni2c_controller.vhd   Simple I2C bus driver; initializes the codec\nwm8731_audio.vhd     Controller for the Wolfson WM8731 audio codec\nDE2_TOP.vhd          Top-level entity for the Altera DE2 board\nCLK28MPLL.vhd\t     Altera-specific configuration for 28 MHz PLL\n\nOther files:\n\ndsk2nib.c            Converts a 140K .dsk image file to the raw 228K\n                     .nib format used by the Disk II emulator\n\nmakenibs\t     A shell (e.g., bash) script that assembles\n\t\t     collections of .dsk files into a file suitable\n\t\t     for directly writing onto an SD card\t\t     \n\nrom2vhdl             Script to convert raw ROM files into\n\t\t     synthesizable VHDL code.  Used to produce main_roms.vhd\n\napple2fpga.qpf       Project file for Altera's Quartus\nDE2_TOP.qsf          Mostly pin assignments for Altera's Quartus\nDE2_TOP.sof\t     A compiled bitstream for the DE2 board: the\n\t\t     result of compiling all the VHDL files in\n\t\t     Quartus; suitable for programming if you have a\n\t\t     DE2 board.\n\ndos33master.nib      Bootable disk image: Apple DOS 3.3 system master\n\nbios.a65\t     6502 assembly source for a \"fake\" BIOS\nbios.rom\t     Binary data for the \"fake\" BIOS\n\nMakefile             Rules for creating the .zip, .vhd files, etc.\n------------------------------\nDisk images\n\nThe system expects a sequence of \"nibblized\" (227K) disk images on the\nSD card starting at block 0.  Switches on the DE2 board selects which\nimage appears to be in the drive; the image number is displayed in hex\non two of the seven-segment displays.\n\nMost Apple II disk images are in 140K .dsk files, which stores only\nthe disk's logical data, i.e., is not encoded.  dsk2nib.c is a small C\nprogram that expands .dsk files to .nib files.\n\nI used the \"makenibs\" script to find all the .dsk files in a tree of\ndirectories, assemble them into an image suitable for downloading to\nthe SD card, and print an image number/file name cross-listing.\n\nTo write .nib images to an SD/MMC card under Linux, I use\n\ndd if=dos33master.nib of=/dev/sdd\n\nOf course, your card may appear as something other than /dev/sdd.\n------------------------------\nROMs\n\nThis archive does NOT include a copy of the Apple ][+'s ROMs, which\nare copyright Apple Computer.  Instead, it includes a very trivial\nBIOS that beeps, displays a text screen, then cycles through some\nlores and hires graphics patterns when keys are pressed.  This should\nbe enough to verify the graphics, sound, and keyboard are working (but\nnot the disk emulator).  Source for this BIOS is in the bios.a65 file,\nwhich I assembled using the xa65 cross-assembler.\n\nThe system requires two ROM images: a 12K image of the system roms\n(memory from 0xD000 - 0xFFFF) and a 256-byte image of the Disk II\ncontroller bootstrap ROM (memory from 0xc600 - 0xc6ff if the card is\nin the usual slot 6).\n\nOnce you obtain them, run the \"rom2vhdl\" script to convert the binary\nfiles into .vhd files that hold the data.  The Makefile contains rules\nfor doing this.\n------------------------------\nCredits:\n\nPeter Wendrich supplied the 6502 core:\n\n-- cpu65xx_fast.vhdl, part of FPGA-64, is made available strictly for personal\n-- educational purposes. Distributed with apple2fgpa with permission.\n--\n-- Copyright 2005-2008 by Peter Wendrich (pwsoft@syntiac.com).\n-- All rights reserved.\n-- http://www.syntiac.com/fpga64.html\n\nThe low-level PS/2 keyboard controller is from ALSE:\n\n-- PS2_Ctrl.vhd\n-- ------------------------------------------------\n--   Simplified PS/2 Controller  (kbd, mouse...)\n-- ------------------------------------------------\n-- Only the Receive function is implemented !\n-- (c) ALSE. http://www.alse-fr.com\n\nI adapted the Apple ][ keyboard emulation from Alex Freed's FPGApple:\nhttp://mirrow.com/FPGApple/\n```\n \n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-DB9/Apple-II_MiSTer",
@@ -196,6 +202,18 @@
           "name": "Apple-II_20220222.rbf",
           "sha": "47071f99855003c3576ce6ea61845995f059d0d9",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Apple-II_MiSTer/master/releases/Apple-II_20220222.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Apple-II_20230227.rbf",
+          "sha": "5a88fdf20150a1d4e56e671785377d52982b1a7d",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Apple-II_MiSTer/master/releases/Apple-II_20230227.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Apple-II_20230228.rbf",
+          "sha": "33b8c5f4291629ab3e4d1e0f234c6a411b6b2308",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Apple-II_MiSTer/master/releases/Apple-II_20230228.rbf",
           "type": "RBF"
         },
         {
@@ -788,6 +806,18 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Berzerk_20230215.rbf",
+          "sha": "6c7342fa6ead786af17e6820f2b4252fd5093a4c",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Berzerk_MiSTer/master/releases/Arcade-Berzerk_20230215.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Berzerk_20230227.rbf",
+          "sha": "9d1650009ee6e8a9a42bda79b6f012efdac0b212",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Berzerk_MiSTer/master/releases/Arcade-Berzerk_20230227.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Berzerk.mra",
           "sha": "7bb047f8ce4d13a8aaaa2d5db0ec14df69300e04",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Berzerk_MiSTer/master/releases/Berzerk.mra",
@@ -1181,6 +1211,12 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-CanyonBomber_20230226.rbf",
+          "sha": "1bd8827ea30e0173e650577454bcf2f7c1018731",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-CanyonBomber_MiSTer/master/releases/Arcade-CanyonBomber_20230226.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Canyon Bomber.mra",
           "sha": "53dc57a0bed4a614cd473dbdb76f6433173e5df4",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-CanyonBomber_MiSTer/master/releases/Canyon%20Bomber.mra",
@@ -1388,6 +1424,12 @@
           "name": "Arcade-Centipede_20230130.rbf",
           "sha": "60fb750c929fb9d169fc27b533e31b66fedf06f3",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Centipede_MiSTer/master/releases/Arcade-Centipede_20230130.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Centipede_20230226.rbf",
+          "sha": "ba03da22931ec83f7236ca24329896021e924433",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Centipede_MiSTer/master/releases/Arcade-Centipede_20230226.rbf",
           "type": "RBF"
         },
         {
@@ -1936,6 +1978,18 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-DigDug_20230226.rbf",
+          "sha": "7de26fd35667a3d952a70cc1e83bd87711b6b1dd",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-DigDug_MiSTer/master/releases/Arcade-DigDug_20230226.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-DigDug_20230228.rbf",
+          "sha": "05b2a16a9ec8b9980a7c3ecb8623b15fe4672e68",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-DigDug_MiSTer/master/releases/Arcade-DigDug_20230228.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Dig Dug (Rev 2).mra",
           "sha": "e4be2dc3fdfea9cbbce9bea30ae58774f46ad97a",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-DigDug_MiSTer/master/releases/Dig%20Dug%20(Rev%202).mra",
@@ -2004,6 +2058,18 @@
           "name": "Arcade-Dominos_20220314.rbf",
           "sha": "7fb06ac29f7c0c1573a930fb02fd9e9f8fa7b273",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Dominos_MiSTer/master/releases/Arcade-Dominos_20220314.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Dominos_20230226.rbf",
+          "sha": "4c7c2c000ca9f1f26a1d1313634a462f0b9f7c95",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Dominos_MiSTer/master/releases/Arcade-Dominos_20230226.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Dominos_20230228.rbf",
+          "sha": "e5607c0a35270b92f6016fbb4a3a557209b7c4e6",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Dominos_MiSTer/master/releases/Arcade-Dominos_20230228.rbf",
           "type": "RBF"
         },
         {
@@ -2606,6 +2672,12 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Frenzy_20230226.rbf",
+          "sha": "7de9548e5f152ff07d368279f01a86e16aef5bb1",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Frenzy_MiSTer/master/releases/Arcade-Frenzy_20230226.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Frenzy (Rev RA1).mra",
           "sha": "af229f020ddddff886026a3a917da829600a86c5",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Frenzy_MiSTer/master/releases/Frenzy%20(Rev%20RA1).mra",
@@ -2724,7 +2796,7 @@
     {
       "name": "Arcade-Galaxian_MiSTer",
       "description": "Arcade: Galaxian for MiSTer",
-      "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: Galaxian port to MiSTer by Sorgelig\n-- 15 November 2017\n-- \n---------------------------------------------------------------------------------\n-- A simulation model of Galaxian hardware\n-- Copyright(c) 2004 Katsumi Degawa\n---------------------------------------------------------------------------------\n-- \n-- Support screen and controls rotation on HDMI output.\n-- Only controls are rotated on VGA output.\n-- \n-- \n-- Keyboard inputs :\n--\n--   F2         : Coin + Start 2 players\n--   F1         : Coin + Start 1 player\n--   SPACE,CTRL : Fire\n--   LEFT,RIGHT : Movements\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   D,G         : Player 2 Movements\n--   A           : Player 2 Fire\n--\n--\n-- Joystick support.\n-- \n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
+      "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: Galaxian port to MiSTer by Sorgelig\n-- 15 November 2017\n-- \n---------------------------------------------------------------------------------\n-- A simulation model of Galaxian hardware\n-- Copyright(c) 2004 Katsumi Degawa\n---------------------------------------------------------------------------------\n-- \n-- Support screen and controls rotation on HDMI output.\n-- Only controls are rotated on VGA output.\n-- \n-- \n-- Keyboard inputs :\n--\n--   F2         : Coin + Start 2 players\n--   F1         : Coin + Start 1 player\n--   SPACE,CTRL : Fire\n--   LEFT,RIGHT : Movements\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   D,G         : Player 2 Movements\n--   A           : Player 2 Fire\n--\n--\n-- Joystick support.\n-- \n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcades/<game name>.mra\n/_Arcades/cores/<game rbf>.rbf\n/_Arcades/mame/<mame rom>.zip\n/_Arcades/hbmame/<hbmame rom>.zip\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-DB9/Arcade-Galaxian_MiSTer",
@@ -2803,7 +2875,7 @@
         },
         {
           "name": "Arcade-Galaxian_20210920.rbf",
-          "sha": "422242f9fec6e4be7521b8d10ef46e893a2ea918",
+          "sha": "376bc801062b2fd470eb53d48d3df123c103aaef",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaxian_MiSTer/master/releases/Arcade-Galaxian_20210920.rbf",
           "type": "RBF"
         },
@@ -2890,9 +2962,9 @@
           }
         },
         {
-          "name": "King And Balloon (Japan).mra",
+          "name": "King and Balloon (Japan).mra",
           "sha": "d404825d43a5b4111b656ade5d8183cfa381b17e",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaxian_MiSTer/master/releases/King%20And%20Balloon%20(Japan).mra",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaxian_MiSTer/master/releases/King%20and%20Balloon%20(Japan).mra",
           "type": "MRA",
           "extra": {
             "name": "King and Balloon",
@@ -3179,6 +3251,12 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Gauntlet_20230226.rbf",
+          "sha": "dfd9ba78c03e870efe01494ed0c33f93e9aac5bc",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Gauntlet_MiSTer/main/releases/Arcade-Gauntlet_20230226.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Gauntlet (rev 14).mra",
           "sha": "f6c1183f59b118d2280dde8e66131c323e2add1e",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Gauntlet_MiSTer/main/releases/Gauntlet%20(rev%2014).mra",
@@ -3291,6 +3369,18 @@
           "name": "Arcade-IremM62_20211010.rbf",
           "sha": "4fdf7f712f826dd344400857f0945def6a507818",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IremM62_MiSTer/master/releases/Arcade-IremM62_20211010.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-IremM62_20230226.rbf",
+          "sha": "94b6231a35eae77d13b41dcb573fb752ee4c924b",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IremM62_MiSTer/master/releases/Arcade-IremM62_20230226.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-IremM62_20230228.rbf",
+          "sha": "4f92f77cb27df9369eb4bcbb6df4cb37f5c79047",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IremM62_MiSTer/master/releases/Arcade-IremM62_20230228.rbf",
           "type": "RBF"
         },
         {
@@ -3518,6 +3608,12 @@
           "name": "Arcade-IremM72_20230206.rbf",
           "sha": "b26df1cfca313a7d4b45421b471057af7b6c0e27",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IremM72_MiSTer/main/releases/Arcade-IremM72_20230206.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-IremM72_20230227.rbf",
+          "sha": "246625d4fb8da4275b66909888d0dc41f7546811",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IremM72_MiSTer/main/releases/Arcade-IremM72_20230227.rbf",
           "type": "RBF"
         },
         {
@@ -4411,6 +4507,18 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-MCR1_20230226.rbf",
+          "sha": "ee120843b1dcbc302ce7112c06c5be2dc9d0803a",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MCR1_MiSTer/master/releases/Arcade-MCR1_20230226.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-MCR1_20230228.rbf",
+          "sha": "2cefce3810f9d0fc6fc015c7ccc7dcf4018b9cce",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MCR1_MiSTer/master/releases/Arcade-MCR1_20230228.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Kick-Man.mra",
           "sha": "ad2f879821e68606ae23a5c1c0622d636f99614b",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MCR1_MiSTer/master/releases/Kick-Man.mra",
@@ -4535,6 +4643,18 @@
           "name": "Arcade-MCR2_20210620.rbf",
           "sha": "1ef225d3a51185132372e65162da17ecc61b7634",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MCR2_MiSTer/master/releases/Arcade-MCR2_20210620.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-MCR2_20230226.rbf",
+          "sha": "195519a99280bfa07b42ef431c380ad838302dcb",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MCR2_MiSTer/master/releases/Arcade-MCR2_20230226.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-MCR2_20230228.rbf",
+          "sha": "bfc9a9269c7da4d5ec730341dc6fe2f2451cf5e6",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MCR2_MiSTer/master/releases/Arcade-MCR2_20230228.rbf",
           "type": "RBF"
         },
         {
@@ -4690,6 +4810,18 @@
           "name": "Arcade-MCR3Mono_20210114.rbf",
           "sha": "cc285c6d737c82bba15b1e837cfb015c675f54ca",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MCR3Mono_MiSTer/master/releases/Arcade-MCR3Mono_20210114.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-MCR3Mono_20230226.rbf",
+          "sha": "fe63ef23228e133fbcd73cf07703d1dd934aba77",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MCR3Mono_MiSTer/master/releases/Arcade-MCR3Mono_20230226.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-MCR3Mono_20230228.rbf",
+          "sha": "9bec898f5e72e4b5a9f4134ecd944cf6d7c695ee",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MCR3Mono_MiSTer/master/releases/Arcade-MCR3Mono_20230228.rbf",
           "type": "RBF"
         },
         {
@@ -4977,6 +5109,18 @@
           "name": "Arcade-MCR3_20210112.rbf",
           "sha": "b019531d02690163dc0901d0b90220bcfb60cc5c",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MCR3_MiSTer/master/releases/Arcade-MCR3_20210112.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-MCR3_20230226.rbf",
+          "sha": "46391c80ca75b74469874b47a19a3da33a986fea",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MCR3_MiSTer/master/releases/Arcade-MCR3_20230226.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-MCR3_20230228.rbf",
+          "sha": "0103e240a0469a57b1adb58d4507d830e1983358",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-MCR3_MiSTer/master/releases/Arcade-MCR3_20230228.rbf",
           "type": "RBF"
         },
         {
@@ -5891,12 +6035,18 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Pleiads_20230226.rbf",
+          "sha": "0dee47fe65cd53a58023cdbea8d806694c0ed479",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pleiads_MiSTer/master/releases/Arcade-Pleiads_20230226.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Pleiads (Centuri).mra",
-          "sha": "d190417fb82474ecd05ee472437dd6370ff6155e",
+          "sha": "5dff96a3a00e831b885960976bb88ac282518542",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pleiads_MiSTer/master/releases/Pleiads%20(Centuri).mra",
           "type": "MRA",
           "extra": {
-            "name": "Pleiads (Centuri)",
+            "name": "Pleiades",
             "rbf": "pleiads",
             "zips": [
               "pleiads.zip|pleiadce.zip"
@@ -5905,11 +6055,11 @@
         },
         {
           "name": "Pleiads.mra",
-          "sha": "c77b1ce440b63a4322f58336545046480d94d35f",
+          "sha": "c85d0c6424bd91193e8a6b952dba37dfacc34aff",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pleiads_MiSTer/master/releases/Pleiads.mra",
           "type": "MRA",
           "extra": {
-            "name": "Pleiads (Tehkan)",
+            "name": "Pleiads",
             "rbf": "pleiads",
             "zips": [
               "pleiads.zip"
@@ -6209,6 +6359,18 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-RallyX_20230226.rbf",
+          "sha": "1f963f563dd027fd19b4ef235d280090b346e4db",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-RallyX_MiSTer/master/releases/Arcade-RallyX_20230226.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-RallyX_20230228.rbf",
+          "sha": "547e777755ec9814905c5cdb30d94118c32a8d62",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-RallyX_MiSTer/master/releases/Arcade-RallyX_20230228.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "New Rally-X.mra",
           "sha": "6cb5a8ba584868fac1325eafa131871b132092f2",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-RallyX_MiSTer/master/releases/New%20Rally-X.mra",
@@ -6272,6 +6434,18 @@
           "name": "Arcade-RiverPatrol_20210113.rbf",
           "sha": "6b62d851de12042a7a3e083e47ebf43a8f0d043f",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-RiverPatrol_MiSTer/master/releases/Arcade-RiverPatrol_20210113.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-RiverPatrol_20230226.rbf",
+          "sha": "58d928a417a0a69a9f3ce389b49dbda55c83453b",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-RiverPatrol_MiSTer/master/releases/Arcade-RiverPatrol_20230226.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-RiverPatrol_20230228.rbf",
+          "sha": "24de136a73e4ef7d726149494a4589df6b8e8d58",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-RiverPatrol_MiSTer/master/releases/Arcade-RiverPatrol_20230228.rbf",
           "type": "RBF"
         },
         {
@@ -7428,6 +7602,18 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-SilverLand_20230226.rbf",
+          "sha": "9bb18d6abc287109d9474d44e5d7d7a7144d57b6",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SilverLand_MiSTer/master/releases/Arcade-SilverLand_20230226.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-SilverLand_20230228.rbf",
+          "sha": "cd56a2feba56506e6b73d801d14b3adaf87c799a",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SilverLand_MiSTer/master/releases/Arcade-SilverLand_20230228.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Silver Land.mra",
           "sha": "31db2c0374f578fa6f70154c11a3b225bce17ee6",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SilverLand_MiSTer/master/releases/Silver%20Land.mra",
@@ -7647,6 +7833,18 @@
           "name": "Arcade-SpaceInvaders_20211201.rbf",
           "sha": "57d7b5427776af0d253cd4af022758106d3e40da",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SpaceInvaders_MiSTer/master/releases/Arcade-SpaceInvaders_20211201.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-SpaceInvaders_20230226.rbf",
+          "sha": "c52de02374814961c11eccdfde6bfb29352c8e2e",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SpaceInvaders_MiSTer/master/releases/Arcade-SpaceInvaders_20230226.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-SpaceInvaders_20230228.rbf",
+          "sha": "c5f92fa395094685913db6780c8af5b35e59e52a",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SpaceInvaders_MiSTer/master/releases/Arcade-SpaceInvaders_20230228.rbf",
           "type": "RBF"
         },
         {
@@ -7961,6 +8159,18 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Sprint1_20230226.rbf",
+          "sha": "bae40eb0a90ed0a4c0f906712359fbe31cf233d5",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Sprint1_MiSTer/master/releases/Arcade-Sprint1_20230226.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Sprint1_20230228.rbf",
+          "sha": "255267ba090452d6c39cd4f4281322362ad0693c",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Sprint1_MiSTer/master/releases/Arcade-Sprint1_20230228.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Sprint 1.mra",
           "sha": "40551aad877973f9150798503697ff368300e39c",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Sprint1_MiSTer/master/releases/Sprint%201.mra",
@@ -8026,6 +8236,18 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Sprint2_20230226.rbf",
+          "sha": "48253456060c727a05d7415c3754b1ae99d2304e",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Sprint2_MiSTer/master/releases/Arcade-Sprint2_20230226.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Sprint2_20230228.rbf",
+          "sha": "237cef2f0cd799a04c1e2a1f84e76158a4e47588",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Sprint2_MiSTer/master/releases/Arcade-Sprint2_20230228.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Sprint 2.mra",
           "sha": "88b59534c196fa212ee9a41d0db4e8b8f173e503",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Sprint2_MiSTer/master/releases/Sprint%202.mra",
@@ -8082,6 +8304,12 @@
           "name": "Arcade-SuperBreakout_20220524.rbf",
           "sha": "b5391b8b0937ad8a3d534dc53d3a4836baa2a056",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SuperBreakout_MiSTer/master/releases/Arcade-SuperBreakout_20220524.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-SuperBreakout_20230226.rbf",
+          "sha": "b0a193f5d63f28fff140a01011f82cc25cc00b7c",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SuperBreakout_MiSTer/master/releases/Arcade-SuperBreakout_20230226.rbf",
           "type": "RBF"
         },
         {
@@ -8291,6 +8519,18 @@
           "name": "Arcade-TraverseUSA_20201215.rbf",
           "sha": "a7fe982dd48ae7c8350427e97c8db9283961f2fc",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-TraverseUSA_MiSTer/master/releases/Arcade-TraverseUSA_20201215.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-TraverseUSA_20230226.rbf",
+          "sha": "633a8f88b5d1ad5fe0b7219a34fcde3bb0e0359b",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-TraverseUSA_MiSTer/master/releases/Arcade-TraverseUSA_20230226.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-TraverseUSA_20230228.rbf",
+          "sha": "a692ecebab4385420605f2718c23d09e288679eb",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-TraverseUSA_MiSTer/master/releases/Arcade-TraverseUSA_20230228.rbf",
           "type": "RBF"
         },
         {
@@ -8771,6 +9011,18 @@
           "sha": "46ea25696a5e6a24d78416a73455f874ed3a1a9c",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Astrocade_MiSTer/master/releases/Astrocade_20210622.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "Astrocade_20230227.rbf",
+          "sha": "7fa991115e0e6e7d8b8576627c243bc609821b4c",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Astrocade_MiSTer/master/releases/Astrocade_20230227.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Astrocade_20230228.rbf",
+          "sha": "f925b8e357173e19e55d42fa7cf043169e504e1e",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Astrocade_MiSTer/master/releases/Astrocade_20230228.rbf",
+          "type": "RBF"
         }
       ]
     },
@@ -9001,6 +9253,12 @@
           "type": "RBF"
         },
         {
+          "name": "Atari5200_20230227.rbf",
+          "sha": "b44e32d28d2c15d6d2414f7521669ab4fe23231d",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Atari800_MiSTer/master/releases/Atari5200_20230227.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Atari800_20200225.rbf",
           "sha": "9e8e80b551f70cb89d612aacc8aa4db08b131e60",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Atari800_MiSTer/master/releases/Atari800_20200225.rbf",
@@ -9082,6 +9340,12 @@
           "name": "Atari800_20220927.rbf",
           "sha": "7f43ff56f75691bf3eaa9d780b5ea2304512a740",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Atari800_MiSTer/master/releases/Atari800_20220927.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Atari800_20230227.rbf",
+          "sha": "73b1f01b3f226de279d074bdcbbe2c126e3da2cd",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Atari800_MiSTer/master/releases/Atari800_20230227.rbf",
           "type": "RBF"
         }
       ]
@@ -9232,6 +9496,18 @@
           "name": "BBCMicro_20210622.rbf",
           "sha": "cd0a8aca7e27bf583d0c48e4dcf692a3c6c286f0",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/BBCMicro_MiSTer/master/releases/BBCMicro_20210622.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "BBCMicro_20230225.rbf",
+          "sha": "c85377735267b5ad0bdfb983052662dea1bcb3b9",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/BBCMicro_MiSTer/master/releases/BBCMicro_20230225.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "BBCMicro_20230227.rbf",
+          "sha": "2018af2fbb733c9ab23150950e7fd6749a020f87",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/BBCMicro_MiSTer/master/releases/BBCMicro_20230227.rbf",
           "type": "RBF"
         }
       ]
@@ -9871,17 +10147,17 @@
           "type": "RBF"
         },
         {
-          "name": "SG-1000.mgl",
-          "sha": "c37a1aebe27a6ef798cd810eb15adbde8f471518",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/ColecoVision_MiSTer/master/releases/SG-1000.mgl",
-          "type": "OTHER"
+          "name": "ColecoVision_20230227.rbf",
+          "sha": "40344afcb3128234f62963179efa70b585a99568",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/ColecoVision_MiSTer/master/releases/ColecoVision_20230227.rbf",
+          "type": "RBF"
         }
       ]
     },
     {
       "name": "Distribution_MiSTer",
       "description": null,
-      "readme": "# MiSTer Distribution DB9\n\nThis repository contains all the files that you'll want in your MiSTer.\n\nYou may download all of them at once as a zip through the [following link](https://github.com/MiSTer-DB9/Distribution_MiSTer/archive/refs/heads/main.zip). Once you have them, place them as-is in your SD card, and everything should work out of the box.\n\n### MiSTer Project\n\nIf you want to check more about the MiSTer project, please check [this wiki](https://github.com/MiSTer-devel/Main_MiSTer/wiki).\n\n### Downloader script\n\nFor downloading all of these files in an automatic fashion, use [this tool](https://github.com/MiSTer-devel/Downloader_MiSTer).\n\n#### List of Tags that you may use with the Downloader Filters:\n\n`acornatom`, `acornelectron`, `adam`, `adctest`, `adventurevision`, `alicemc10`, `all_filters`, `altair8800`, `alternatives`, `amiga`, `amstrad`, `amstrad-pcw`, `amstradpcw`, `ao486`, `apogee`, `apple-i`, `apple-ii`, `aquarius`, `arcade`, `arcade-arkanoid`, `arcade-asteroids`, `arcade-asteroidsdeluxe`, `arcade-astrocade`, `arcade-ataritetris`, `arcade-athena`, `arcade-bagman`, `arcade-bakraid`, `arcade-bankpanic`, `arcade-batrider`, `arcade-berzerk`, `arcade-blackwidow`, `arcade-blockade`, `arcade-bombjack`, `arcade-bosconian`, `arcade-breakout`, `arcade-burgertime`, `arcade-burningrubber`, `arcade-canyonbomber`, `arcade-cave`, `arcade-centipede`, `arcade-chameleon`, `arcade-computerspace`, `arcade-congobongo`, `arcade-cores`, `arcade-cosmic`, `arcade-crazyballoon`, `arcade-crazyclimber`, `arcade-crazykong`, `arcade-crystalcastles`, `arcade-defender`, `arcade-digdug`, `arcade-dominos`, `arcade-donkeykong`, `arcade-donkeykong3`, `arcade-donkeykongjunior`, `arcade-dorodon`, `arcade-dottorikun`, `arcade-druaga`, `arcade-exerion`, `arcade-expressraider`, `arcade-finalizer`, `arcade-foodfight`, `arcade-frenzy`, `arcade-galaga`, `arcade-galaxian`, `arcade-galivan`, `arcade-gaplus`, `arcade-garegga`, `arcade-gauntlet`, `arcade-gyruss`, `arcade-ikariwarriors`, `arcade-inferno`, `arcade-iremm62`, `arcade-iremm72`, `arcade-ironhorse`, `arcade-jackal`, `arcade-jailbreak`, `arcade-joust2`, `arcade-ladybug`, `arcade-lunarlander`, `arcade-mariobros`, `arcade-mcr1`, `arcade-mcr2`, `arcade-mcr3`, `arcade-mcr3mono`, `arcade-mcr3scroll`, `arcade-missilecommand`, `arcade-moonpatrol`, `arcade-mrdo`, `arcade-mrjong`, `arcade-mysticmarathon`, `arcade-ninjakun`, `arcade-pacman`, `arcade-pengo`, `arcade-penguinkunwars`, `arcade-performan`, `arcade-phoenix`, `arcade-pleiads`, `arcade-polyplay`, `arcade-pong`, `arcade-pooyan`, `arcade-popeye`, `arcade-qbert`, `arcade-rallyx`, `arcade-riverpatrol`, `arcade-robotron`, `arcade-rshnatk`, `arcade-scootershooter`, `arcade-scramble`, `arcade-segasys1`, `arcade-silverland`, `arcade-slapfight`, `arcade-sms`, `arcade-snk_triplez80`, `arcade-solomonskey`, `arcade-sonson`, `arcade-spaceinvaders`, `arcade-spacerace`, `arcade-sprint1`, `arcade-sprint2`, `arcade-subs`, `arcade-superbreakout`, `arcade-tankbattalion`, `arcade-tecmo`, `arcade-tiamc1`, `arcade-timepilot`, `arcade-timepilot84`, `arcade-tnkiii`, `arcade-traverseusa`, `arcade-tropicalangel`, `arcade-turkeyshoot`, `arcade-ultratank`, `arcade-vball`, `arcade-xevious`, `arcade-xsleenacore`, `arcade-zaxxon`, `arcade-zigzag`, `arcadelpf`, `arcadia`, `archie`, `arduboy`, `astrocade`, `atari2600`, `atari5200`, `atari7800`, `atari800`, `atarilynx`, `atarist`, `avision`, `ay-3-8500`, `bbcbridgecompanion`, `bbcmicro`, `bios`, `bk0011m`, `c128`, `c16`, `c64`, `casio_pv-1000`, `casio_pv-2000`, `channelf`, `cheats`, `chess`, `chip8`, `coco2`, `coco3`, `coleco`, `colecoadam`, `colecovision`, `complexmultichromatic`, `computer`, `computer-cores`, `console`, `console-cores`, `contrast_boost`, `cores`, `corespecific`, `creativision`, `crt-simulation`, `displayspecific`, `docs`, `drv`, `edsac`, `eg2000`, `epochgalaxyii`, `essential`, `extra-utilities`, `famicom`, `filters`, `filters_audio`, `filters_video`, `flappy`, `flappybird`, `font`, `galaksija`, `gamate`, `gameboy`, `gameboy2p`, `gameboyadvance`, `gameboycolor`, `gamecontrollerdb`, `gamegear`, `gamenwatch`, `gameoflife`, `games`, `gamma`, `gb`, `gba`, `gba2p`, `gbc`, `generalhardware`, `generallpf`, `genesis`, `gnw`, `handheld2p`, `hbmame`, `homelab`, `inputtest`, `intellivision`, `interact`, `jupiter`, `laser`, `laser310`, `lcd-general`, `lcd-integeronly`, `linux`, `lynx48`, `macplus`, `mame`, `mastersystem`, `megacd`, `megadrive`, `megaduck`, `memte`, `memtest`, `menu`, `mgl`, `minimig`, `minimigdb9`, `minimigrgb8`, `mra`, `msx`, `msx1`, `multicomp`, `neogeo`, `nes`, `nintendo`, `odyssey2`, `old`, `ondra_spo186`, `orao`, `oric`, `other`, `other-cores`, `palettes`, `pc88`, `pc8801`, `pcengine`, `pcenginecd`, `pcxt`, `pdp1`, `pet2001`, `pmd85`, `pocketchallengev2`, `pokemonmini`, `poly_gamma`, `presets`, `psx`, `pure_gamma`, `ql`, `readme`, `rx78`, `s32x`, `samcoupe`, `scanlines-adaptive`, `scanlines-brighter`, `scanlines-standard`, `scripts`, `segacd`, `segamark3`, `service-cores`, `sg-1000`, `sg1000`, `sg1000sv`, `sgb`, `shadow_masks`, `sharpmz`, `simplemonochrome`, `slugcross`, `sms`, `snes`, `sordm5`, `specialist`, `spectrum`, `spmx`, `sufami`, `superfamicom`, `supergameboy`, `supernes`, `supernintendo`, `supervision`, `svi328`, `tatungeinstein`, `tgfx16`, `tgfx16-cd`, `tgfx16cd`, `ti-99_4a`, `ti994a`, `tomyscramble`, `tomytutor`, `trs-80`, `tsconf`, `turbografx`, `turbografx16`, `turbografx16cd`, `turbografxcd`, `uk101`, `upscaling-lanczosbicubicetc`, `upscaling-recommended`, `upscaling-sharpbilinear`, `utility`, `vc4000`, `vector-06c`, `vector06`, `vector06c`, `vectrex`, `vic20`, `wonderswan`, `wonderswancolor`, `x68000`, `yctxt`, `zx-spectrum`, `zx81`, `zxnext`, `zxspectrum`\n",
+      "readme": "# MiSTer Distribution DB9\n\nThis repository contains all the files that you'll want in your MiSTer.\n\nYou may download all of them at once as a zip through the [following link](https://github.com/MiSTer-DB9/Distribution_MiSTer/archive/refs/heads/main.zip). Once you have them, place them as-is in your SD card, and everything should work out of the box.\n\n### MiSTer Project\n\nIf you want to check more about the MiSTer project, please check [this wiki](https://github.com/MiSTer-devel/Main_MiSTer/wiki).\n\n### Downloader script\n\nFor downloading all of these files in an automatic fashion, use [this tool](https://github.com/MiSTer-devel/Downloader_MiSTer).\n\n#### List of Tags that you may use with the Downloader Filters:\n\n`acornatom`, `acornelectron`, `adam`, `adctest`, `adventurevision`, `alicemc10`, `all_filters`, `altair8800`, `alternatives`, `amiga`, `amstrad`, `amstrad-pcw`, `amstradpcw`, `ao486`, `apogee`, `apple-i`, `apple-ii`, `aquarius`, `arcade`, `arcade-arkanoid`, `arcade-asteroids`, `arcade-asteroidsdeluxe`, `arcade-astrocade`, `arcade-ataritetris`, `arcade-athena`, `arcade-bagman`, `arcade-bakraid`, `arcade-bankpanic`, `arcade-batrider`, `arcade-berzerk`, `arcade-blackwidow`, `arcade-blockade`, `arcade-bombjack`, `arcade-bosconian`, `arcade-breakout`, `arcade-burgertime`, `arcade-burningrubber`, `arcade-canyonbomber`, `arcade-cave`, `arcade-centipede`, `arcade-chameleon`, `arcade-computerspace`, `arcade-congobongo`, `arcade-cores`, `arcade-cosmic`, `arcade-crazyballoon`, `arcade-crazyclimber`, `arcade-crazykong`, `arcade-crystalcastles`, `arcade-defender`, `arcade-digdug`, `arcade-dominos`, `arcade-donkeykong`, `arcade-donkeykong3`, `arcade-donkeykongjunior`, `arcade-dorodon`, `arcade-dottorikun`, `arcade-druaga`, `arcade-exerion`, `arcade-expressraider`, `arcade-finalizer`, `arcade-foodfight`, `arcade-frenzy`, `arcade-galaga`, `arcade-galaxian`, `arcade-galivan`, `arcade-gaplus`, `arcade-garegga`, `arcade-gauntlet`, `arcade-gyruss`, `arcade-ikariwarriors`, `arcade-inferno`, `arcade-iremm62`, `arcade-iremm72`, `arcade-ironhorse`, `arcade-jackal`, `arcade-jailbreak`, `arcade-joust2`, `arcade-ladybug`, `arcade-lunarlander`, `arcade-mariobros`, `arcade-mcr1`, `arcade-mcr2`, `arcade-mcr3`, `arcade-mcr3mono`, `arcade-mcr3scroll`, `arcade-missilecommand`, `arcade-moonpatrol`, `arcade-mrdo`, `arcade-mrjong`, `arcade-mysticmarathon`, `arcade-ninjakun`, `arcade-pacman`, `arcade-pengo`, `arcade-penguinkunwars`, `arcade-performan`, `arcade-phoenix`, `arcade-pleiads`, `arcade-polyplay`, `arcade-pong`, `arcade-pooyan`, `arcade-popeye`, `arcade-qbert`, `arcade-rallyx`, `arcade-riverpatrol`, `arcade-robotron`, `arcade-rshnatk`, `arcade-scootershooter`, `arcade-scramble`, `arcade-segasys1`, `arcade-silverland`, `arcade-slapfight`, `arcade-sms`, `arcade-snk_triplez80`, `arcade-solomonskey`, `arcade-sonson`, `arcade-spaceinvaders`, `arcade-spacerace`, `arcade-sprint1`, `arcade-sprint2`, `arcade-subs`, `arcade-superbreakout`, `arcade-tankbattalion`, `arcade-tecmo`, `arcade-tiamc1`, `arcade-timepilot`, `arcade-timepilot84`, `arcade-tnkiii`, `arcade-traverseusa`, `arcade-tropicalangel`, `arcade-turkeyshoot`, `arcade-ultratank`, `arcade-vball`, `arcade-xevious`, `arcade-xsleenacore`, `arcade-zaxxon`, `arcade-zigzag`, `arcadelpf`, `arcadia`, `archie`, `arduboy`, `astrocade`, `atari2600`, `atari5200`, `atari7800`, `atari800`, `atarilynx`, `atarist`, `avision`, `ay-3-8500`, `bbcbridgecompanion`, `bbcmicro`, `bios`, `bk0011m`, `c128`, `c16`, `c64`, `casio_pv-1000`, `casio_pv-2000`, `channelf`, `cheats`, `chess`, `chip8`, `coco2`, `coco3`, `coleco`, `colecoadam`, `colecovision`, `complexmultichromatic`, `computer`, `computer-cores`, `console`, `console-cores`, `contrast_boost`, `cores`, `corespecific`, `creativision`, `crt-simulation`, `displayspecific`, `docs`, `drv`, `edsac`, `eg2000`, `epochgalaxyii`, `essential`, `extra-utilities`, `famicom`, `filters`, `filters_audio`, `filters_video`, `flappy`, `flappybird`, `font`, `galaksija`, `gamate`, `gameboy`, `gameboy2p`, `gameboyadvance`, `gameboycolor`, `gamecontrollerdb`, `gamegear`, `gamenwatch`, `gameoflife`, `games`, `gamma`, `gb`, `gba`, `gba2p`, `gbc`, `generalhardware`, `generallpf`, `genesis`, `gnw`, `handheld2p`, `hbmame`, `homelab`, `inputtest`, `intellivision`, `interact`, `jupiter`, `laser`, `laser310`, `lcd-general`, `lcd-integeronly`, `linux`, `lynx48`, `macplus`, `mame`, `mastersystem`, `megacd`, `megadrive`, `megaduck`, `memte`, `memtest`, `menu`, `mgl`, `minimig`, `minimigdb9`, `minimigrgb8`, `mra`, `msx`, `msx1`, `multicomp`, `neogeo`, `nes`, `nintendo`, `odyssey2`, `old`, `ondra_spo186`, `orao`, `oric`, `other`, `other-cores`, `palettes`, `pc88`, `pc8801`, `pcengine`, `pcenginecd`, `pcxt`, `pdp1`, `pet2001`, `pmd85`, `pocketchallengev2`, `pokemonmini`, `poly_gamma`, `presets`, `psx`, `pure_gamma`, `ql`, `readme`, `rx78`, `s32x`, `samcoupe`, `scanlines-adaptive`, `scanlines-brighter`, `scanlines-standard`, `scripts`, `segacd`, `segamark3`, `service-cores`, `sgb`, `shadow_masks`, `sharpmz`, `simplemonochrome`, `slugcross`, `sms`, `snes`, `sordm5`, `specialist`, `spectrum`, `spmx`, `sufami`, `superfamicom`, `supergameboy`, `supernes`, `supernintendo`, `supervision`, `svi328`, `tatungeinstein`, `tgfx16`, `tgfx16-cd`, `tgfx16cd`, `ti-99_4a`, `ti994a`, `tomyscramble`, `tomytutor`, `trs-80`, `tsconf`, `turbografx`, `turbografx16`, `turbografx16cd`, `turbografxcd`, `uk101`, `upscaling-lanczosbicubicetc`, `upscaling-recommended`, `upscaling-sharpbilinear`, `utility`, `vc4000`, `vector-06c`, `vector06`, `vector06c`, `vectrex`, `vic20`, `wonderswan`, `wonderswancolor`, `x68000`, `yctxt`, `zx-spectrum`, `zx81`, `zxnext`, `zxspectrum`\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-DB9/Distribution_MiSTer",
@@ -10574,6 +10850,18 @@
           "name": "Jupiter_20210303.rbf",
           "sha": "e0a39fdcc804250eec928ab762d9542af2cf5782",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Jupiter_MiSTer/master/releases/Jupiter_20210303.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Jupiter_20230301.rbf",
+          "sha": "56542eac6f9c84b0a5a0343f55775309fa12539f",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Jupiter_MiSTer/master/releases/Jupiter_20230301.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Jupiter_20230302.rbf",
+          "sha": "10f76251258018f8b616cdd5cddac721bfdf774b",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Jupiter_MiSTer/master/releases/Jupiter_20230302.rbf",
           "type": "RBF"
         }
       ]
@@ -11429,6 +11717,12 @@
           "sha": "50a51c311282dd21f992f8246598f51d8a89cee4",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/MSX_MiSTer/master/releases/MSX_20221109.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "MSX_20230301.rbf",
+          "sha": "897674baea3a59b4383b8c0eb1f6284bf166962d",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/MSX_MiSTer/master/releases/MSX_20230301.rbf",
+          "type": "RBF"
         }
       ]
     },
@@ -12059,6 +12353,12 @@
           "type": "RBF"
         },
         {
+          "name": "QL_20230301.rbf",
+          "sha": "6fb34596ff491e94c80e7a5c561eef5d04faaca4",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/QL_MiSTer/master/releases/QL_20230301.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "boot.rom",
           "sha": "7cae62c00c5c5eae3c6dd69c4d9c2024e4266e67",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/QL_MiSTer/master/releases/boot.rom",
@@ -12182,6 +12482,12 @@
           "name": "SAMCoupe_20220328.rbf",
           "sha": "d99a75b4da4f121c33d133d22a6d636dd9841f72",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/SAM-Coupe_MiSTer/master/releases/SAMCoupe_20220328.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SAMCoupe_20230301.rbf",
+          "sha": "516f6bb46119c345d53745f46b0bed24a57ce4f0",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/SAM-Coupe_MiSTer/master/releases/SAMCoupe_20230301.rbf",
           "type": "RBF"
         }
       ]
@@ -12911,6 +13217,18 @@
           "type": "RBF"
         },
         {
+          "name": "TRS-80_20230224.rbf",
+          "sha": "c4a57b617d8bbf32dec65cbd36b5d4df6429a0d9",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/TRS-80_MiSTer/master/releases/TRS-80_20230224.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "TRS-80_20230227.rbf",
+          "sha": "d34c821f2d2d9c230d72becfbfdd79e614b0670b",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/TRS-80_MiSTer/master/releases/TRS-80_20230227.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "env.cas",
           "sha": "6ba4ef68623ce6ac0b67fac08d01b25ab364597f",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/TRS-80_MiSTer/master/releases/env.cas",
@@ -12984,6 +13302,12 @@
           "name": "TSConf_20220217.rbf",
           "sha": "8c2fd105d5e34403fdceb01579d3db17d3054c14",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/TSConf_MiSTer/master/releases/TSConf_20220217.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "TSConf_20230302.rbf",
+          "sha": "e8c64c9211a785099ce063c8751085ca3106e257",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/TSConf_MiSTer/master/releases/TSConf_20230302.rbf",
           "type": "RBF"
         },
         {
@@ -13284,6 +13608,12 @@
           "sha": "c58fc52df469cfaf7598b52abb1b94e1905d88fe",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Vector-06C_MiSTer/master/releases/Vector-06C_20221022.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "Vector-06C_20230302.rbf",
+          "sha": "e5095dce5f705134c790214edb446933e1b2ab8e",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Vector-06C_MiSTer/master/releases/Vector-06C_20230302.rbf",
+          "type": "RBF"
         }
       ]
     },
@@ -13523,6 +13853,12 @@
           "name": "ZX81_20220217.rbf",
           "sha": "1f545852a49a2d850666e49c8b9f85807705e81a",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/ZX81_MiSTer/master/releases/ZX81_20220217.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "ZX81_20230301.rbf",
+          "sha": "44520b3b28b664034d81b65d0277d826c3b620e4",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/ZX81_MiSTer/master/releases/ZX81_20230301.rbf",
           "type": "RBF"
         }
       ]
