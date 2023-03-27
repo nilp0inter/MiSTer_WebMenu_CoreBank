@@ -661,7 +661,7 @@
         },
         {
           "name": "Hippodrome (US).mra",
-          "sha": "419c69f025f99942ca4c973261f8dd347c2b5478",
+          "sha": "0eca137be983412f4385982681cc9a372deebca8",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cop/releases/Hippodrome%20(US).mra",
           "type": "MRA",
           "extra": {
@@ -674,7 +674,7 @@
         },
         {
           "name": "Robocop (World revision 4).mra",
-          "sha": "e0ae580c47ab36e7398888b73f9d7d535a5a0e94",
+          "sha": "4d86ca51ecbf95e3426d7e8e0dc70a36aa1bebd9",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cop/releases/Robocop%20(World%20revision%204).mra",
           "type": "MRA",
           "extra": {
@@ -2474,47 +2474,45 @@
         },
         {
           "name": "README.md",
-          "sha": "a16bbf3ae8152815dc358daf9b212ced90174f9d",
+          "sha": "22f03a3d87c518d1cbfc5b8a0c43dfd0177694d1",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/outrun/README.md",
           "type": "OTHER"
         },
         {
           "name": "Out Run (sitdown-upright, Rev B).mra",
-          "sha": "67b083566a3e58c297aaf713540eee4c35018427",
+          "sha": "2c555c167cafe201251eef22f315fb788146c275",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/outrun/releases/Out%20Run%20(sitdown-upright%2C%20Rev%20B).mra",
           "type": "MRA",
           "extra": {
             "name": "Out Run (sitdown/upright, Rev B)",
             "rbf": "jtoutrun",
             "zips": [
-              "outrun.zip",
-              "jtbeta.zip"
+              "outrun.zip"
             ]
           }
         },
         {
           "name": "Turbo Out Run (Out Run upgrade) (FD1094 317-0118).mra",
-          "sha": "268e9ec0eca84521cb2ce59c495f7b2ca649554e",
+          "sha": "4cc8c6d6358c219df37c3f4923b56abedbb213c5",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/outrun/releases/Turbo%20Out%20Run%20(Out%20Run%20upgrade)%20(FD1094%20317-0118).mra",
           "type": "MRA",
           "extra": {
             "name": "Turbo Out Run (Out Run upgrade) (FD1094 317-0118)",
             "rbf": "jtoutrun",
             "zips": [
-              "toutrun.zip",
-              "jtbeta.zip"
+              "toutrun.zip"
             ]
           }
         },
         {
           "name": "jtoutrun.rbf",
-          "sha": "85aa80dc1bb1c1e3a052a144b7c3505425f4b516",
+          "sha": "975016bab46bac49d52664c55e9aa7f3acc98e36",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/outrun/releases/jtoutrun.rbf",
           "type": "RBF"
         },
         {
           "name": "version.log",
-          "sha": "2b7b08455100b84f2b7dd8599bdf666948cd7d5f",
+          "sha": "dc211ffa0f1618255809ac25ecad8dc7e17b942f",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/outrun/version.log",
           "type": "OTHER"
         },

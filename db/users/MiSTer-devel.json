@@ -1705,6 +1705,87 @@
       ]
     },
     {
+      "name": "Arcade-BattleZone_MiSTer",
+      "description": "Battlezone for MiSTer",
+      "readme": "\n# Battle Zone For Mister\n\nPort to MiSTer by alanswx, asicguy, and Jopdorp.\n\n## Thanks\n\nThanks to asicguy for fixing timing and cleaning things up, Jopdorp for analog sound support, and of course the original authors.\n\n\n## Based on: F15_18545_BattleZone\nF15 18-545 Capstone Project to rebuild the Atari Battlezone game on the FPGA\nFrom:\nhttps://github.com/MXButterfly/F15_18545_BattleZone\n",
+      "archived": false,
+      "fork": false,
+      "url": "https://github.com/MiSTer-devel/Arcade-BattleZone_MiSTer",
+      "releases": [
+        {
+          "name": "Arcade-BattleZone_20230324.rbf",
+          "sha": "0477f1c1def6783ed80ccc33d2eb7273e2635c12",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-BattleZone_MiSTer/master/releases/Arcade-BattleZone_20230324.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Battle Zone rev 1.mra",
+          "sha": "bd7cd7c4e8cb9ce13501b4222cf01459407fc933",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-BattleZone_MiSTer/master/releases/Battle%20Zone%20rev%201.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Battle Zone (rev 1)",
+            "rbf": "BattleZone",
+            "zips": [
+              "bzone.zip|bzonea.zip"
+            ]
+          }
+        },
+        {
+          "name": "Battle Zone.mra",
+          "sha": "71ee90deaf38b8fb473e957b089c318ef09616d6",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-BattleZone_MiSTer/master/releases/Battle%20Zone.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Battle Zone (rev 2)",
+            "rbf": "BattleZone",
+            "zips": [
+              "bzone.zip"
+            ]
+          }
+        },
+        {
+          "name": "Bradley Trainer.mra",
+          "sha": "1c362a0d7bfe8e97b6e3d0763bac9c0ba3a45edf",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-BattleZone_MiSTer/master/releases/Bradley%20Trainer.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Bradley Trainer",
+            "rbf": "BattleZone",
+            "zips": [
+              "bradley.zip"
+            ]
+          }
+        },
+        {
+          "name": "Red Baron - non A.mra",
+          "sha": "7151b0572a9884ee22b1f67f76165d7cfc285140",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-BattleZone_MiSTer/master/releases/Red%20Baron%20-%20non%20A.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Red Baron",
+            "rbf": "BattleZone",
+            "zips": [
+              "redbaron.zip"
+            ]
+          }
+        },
+        {
+          "name": "Red Baron.mra",
+          "sha": "532b9f17a281aa425a6b7bf7ee8c040cf417e0e6",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-BattleZone_MiSTer/master/releases/Red%20Baron.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Red Baron",
+            "rbf": "BattleZone",
+            "zips": [
+              "redbaron.zip|redbarona.zip"
+            ]
+          }
+        }
+      ]
+    },
+    {
       "name": "Arcade-Berzerk_MiSTer",
       "description": "Berzerk Arcade Game",
       "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: Berzerk Port to MiSTer\n-- 24 March 2019\n-- \n---------------------------------------------------------------------------------\n-- Berzerk FPGA by Dar - (darfpga@aol.fr)\n-- http://darfpga.blogspot.fr\n---------------------------------------------------------------------------------\n-- \n-- Support screen and controls rotation on HDMI output.\n-- Only controls are rotated on VGA output.\n-- \n-- \n-- Keyboard inputs :\n--\n--   F2          : Coin + Start 2 players\n--   F1          : Coin + Start 1 player\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--   Space,Ctrl  : Fire\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   R,F,D,G     : Player 2 Movements\n--   A           : Player 2 Fire\n--   \n-- Joystick support.\n-- \n---------------------------------------------------------------------------------\n\n\n\n\n-------------------------------------------------\n-- Berzerk FPGA by Dar - (darfpga@aol.fr)\n-- http://darfpga.blogspot.fr\n-------------------------------------------------\n-- Berzerk releases\n--\n-- Release 0.0 - 07/07/2018 - Dar\n-------------------------------------------------\nEducational use only\nDo not redistribute synthetized file with roms\nDo not redistribute roms whatever the form\nUse at your own risk\n--------------------------------------------------------------------\nmake sure to use berzerk.zip roms \n--------------------------------------------------------------------\n--\n-- Main features :\n--  PS2 keyboard input @gpio pins 35/34 (beware voltage translation/protection) \n--  Audio pwm output   @gpio pins 1/3 (beware voltage translation/protection) \n--\n-- Uses 1 pll for 10MHz generation from 50MHz\n--\n-- Board key :\n--   0 : reset game\n--\n-- Board switch :\n--\t  1 : tv 15Khz mode / VGA 640x480 mode\n--\n-- Keyboard players inputs :\n--\n--   F3 : Add coin\n--   F2 : Start 2 players\n--   F1 : Start 1 player\n--   SPACE       : fire\n--   RIGHT arrow : move right\n--   LEFT  arrow : move left\n--   UP    arrow : move up \n--   DOWN  arrow : move down\n--\n-- Sound effects : OK\n-- Speech synthesis : todo \n--\n---------------\nVHDL File list \n---------------\n\nmax10_pll_10M.vhd       Pll 10MHz from 50MHz altera mf\n\nberzerk_de10_lite.vhd   Top level for de10-lite board\nberzerk.vhd             Main logic\nberzerk_sound_fx.vhd    Music logic\nberzerk_program1.vhd\nberzerk_program2.vhd\n\nvideo_gen.vhd           Video scheduler, syncs (h,v and composite)\nline_doubler.vhd        Line doubler 15kHz -> 31kHz VGA\n\nkbd_joystick.vhd        Keyboard key to player/coin input\n\nT80se.vhd               T80 release 304  \nT80_Reg.vhd\nT80_Pack.vhd\nT80_MCode.vhd\nT80_ALU.vhd\nT80.vhd\n\nio_ps2_keyboard.vhd     Copyright 2005-2008 by Peter Wendrich (pwsoft@syntiac.com)\ngen_ram.vhd\n\ndecodeur_7_seg.vhd      for debug\n\n----------------------\nQuartus project files\n----------------------\nde10_lite/berzerk_de10_lite.qsf   de10_lite settings (files,pins,...)\nde10_lite/berzerk_de10_lite.qpf   de10_lite project\nde10_lite/berzerk_de10_lite.sdc   timequest constraints\n\n\n+----------------------------------------------------------------------------------+\n; Fitter Summary                                                                   ;\n+------------------------------------+---------------------------------------------+\n; Fitter Status                      ; Successful - Sat Jul 07 07:38:44 2018       ;\n; Quartus Prime Version              ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;\n; Revision Name                      ; berzerk_de10_lite                           ;\n; Top-level Entity Name              ; berzerk_de10_lite                           ;\n; Family                             ; MAX 10                                      ;\n; Device                             ; 10M50DAF484C6GES                            ;\n; Timing Models                      ; Preliminary                                 ;\n; Total logic elements               ; 3,277 / 49,760 ( 7 % )                      ;\n;     Total combinational functions  ; 3,043 / 49,760 ( 6 % )                      ;\n;     Dedicated logic registers      ; 886 / 49,760 ( 2 % )                        ;\n; Total registers                    ; 886                                         ;\n; Total pins                         ; 121 / 360 ( 34 % )                          ;\n; Total virtual pins                 ; 0                                           ;\n; Total memory bits                  ; 241,664 / 1,677,312 ( 14 % )                ;\n; Embedded Multiplier 9-bit elements ; 0 / 288 ( 0 % )                             ;\n; Total PLLs                         ; 1 / 4 ( 25 % )                              ;\n; UFM blocks                         ; 0 / 1 ( 0 % )                               ;\n; ADC blocks                         ; 0 / 2 ( 0 % )                               ;\n+------------------------------------+---------------------------------------------+\n-----------------------------\nRequired ROMs (Not included)\n-----------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n\n---------------------------------\nCompiling for de10_lite\n---------------------------------\nYou can rebuild the project with ROM image embeded in the sof file. DO NOT REDISTRIBUTE THESE FILES.\n4 steps\n\n - put the VHDL rom files into the project directory\n - rebuild berzerk_de10_lite\n - program berzerk_de10_lite.sof into the fpga \n\n------------------------\nEnd of file\n------------------------\n",
@@ -3771,6 +3852,12 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-DonkeyKong_20221120.rbf",
+          "sha": "35265320b5dd4c2f03eff11ee73ae94ec23052db",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-DonkeyKong_MiSTer/master/releases/Arcade-DonkeyKong_20221120.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Arcade-DonkeyKong_20230314.rbf",
           "sha": "e79dd02192dc02aac260d5d9171786c1ff9a15e7",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-DonkeyKong_MiSTer/master/releases/Arcade-DonkeyKong_20230314.rbf",
@@ -4073,9 +4160,9 @@
       "url": "https://github.com/MiSTer-devel/Arcade-Exerion_MiSTer",
       "releases": [
         {
-          "name": "Arcade-Exerion_20221116.rbf",
-          "sha": "c9462650f34b9f30301dad585e2b46795c644455",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Exerion_MiSTer/main/releases/Arcade-Exerion_20221116.rbf",
+          "name": "Arcade-Exerion_20230325.rbf",
+          "sha": "061af52ffc3b2d868d6cdb410ccda4e9e12b41c7",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Exerion_MiSTer/main/releases/Arcade-Exerion_20230325.rbf",
           "type": "RBF"
         },
         {
@@ -10426,15 +10513,15 @@
           }
         },
         {
-          "name": "Arcade-SlapFight_20221231.rbf",
-          "sha": "8eceed32ffa63674c742caae9ccf0fa096e5cae7",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SlapFight_MiSTer/main/releases/Arcade-SlapFight_20221231.rbf",
+          "name": "Arcade-SlapFight_20220322.rbf",
+          "sha": "97a5b4356e2869630cbe2ebf437f9f6f4d0b0762",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SlapFight_MiSTer/main/releases/Arcade-SlapFight_20220322.rbf",
           "type": "RBF"
         },
         {
-          "name": "Arcade-SlapFight_20230315.rbf",
-          "sha": "9abbe1456d1e3eefca2db2611f134f124fd2431f",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SlapFight_MiSTer/main/releases/Arcade-SlapFight_20230315.rbf",
+          "name": "Arcade-SlapFight_60HZ.rbf",
+          "sha": "c45adf87bc5dd3c04f6d145daf9ab0c501f506ab",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SlapFight_MiSTer/main/releases/Arcade-SlapFight_60HZ.rbf",
           "type": "RBF"
         },
         {
@@ -11704,6 +11791,12 @@
           "name": "Arcade-TropicalAngel_20221114.rbf",
           "sha": "e0f4334559a3fdb0091a513ae0e6c8674c73d90e",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TropicalAngel_MiSTer/master/releases/Arcade-TropicalAngel_20221114.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-TropicalAngel_20230315.rbf",
+          "sha": "3d0eb7298c5e4094e6132d04e9a6e3747631a8f3",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TropicalAngel_MiSTer/master/releases/Arcade-TropicalAngel_20230315.rbf",
           "type": "RBF"
         },
         {
@@ -13312,6 +13405,12 @@
           "type": "RBF"
         },
         {
+          "name": "C128_20230325.rbf",
+          "sha": "8e471bfd15edc114be561bd96f8dc9c1f542861b",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/C128_MiSTer/master/releases/C128_20230325.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "CP-ClockF83_1.3.D64",
           "sha": "b08a9e28c54da9a4b858a590f7f0ec76efc88be0",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/C128_MiSTer/master/releases/CP-ClockF83_1.3.D64",
@@ -14417,7 +14516,7 @@
     {
       "name": "Distribution_MiSTer",
       "description": "This repository contains all the files that you'll want in your MiSTer",
-      "readme": "# MiSTer Distribution\n\nThis repository contains all the files that you'll want in your MiSTer.\n\nYou may download all of them at once as a zip through the [following link](https://github.com/MiSTer-devel/Distribution_MiSTer/archive/refs/heads/main.zip). Once you have them, place them as-is in your [properly initialised SD card](https://github.com/MiSTer-devel/mr-fusion), and everything should work out of the box.\n\n### MiSTer Project\n\nIf you want to check more about the MiSTer project, please check [this wiki](https://github.com/MiSTer-devel/Wiki_MiSTer/wiki).\n\n### MiSTer Downloader\n\nFor downloading all of these files directly from your MiSTer, use the [MiSTer Downloader](https://github.com/MiSTer-devel/Downloader_MiSTer).\n\n#### Tags that you may use with 'Download Filters' feature\n\nRead about how to use them [here](https://github.com/MiSTer-devel/Downloader_MiSTer/blob/main/docs/download-filters.md).\n\n##### List:\n\n`acornatom`, `acornelectron`, `adam`, `adctest`, `adventurevision`, `alicemc10`, `all_filters`, `altair8800`, `alternatives`, `amiga`, `amstrad`, `amstrad-pcw`, `amstradpcw`, `ao486`, `apogee`, `apple-i`, `apple-ii`, `aquarius`, `arcade`, `arcade-arkanoid`, `arcade-asteroids`, `arcade-asteroidsdeluxe`, `arcade-astrocade`, `arcade-ataritetris`, `arcade-athena`, `arcade-athena_mister`, `arcade-bagman`, `arcade-bakraid`, `arcade-bankpanic`, `arcade-batrider`, `arcade-berzerk`, `arcade-blackwidow`, `arcade-blockade`, `arcade-bombjack`, `arcade-bosconian`, `arcade-breakout`, `arcade-burgertime`, `arcade-burningrubber`, `arcade-canyonbomber`, `arcade-cave`, `arcade-centipede`, `arcade-chameleon`, `arcade-computerspace`, `arcade-congobongo`, `arcade-cores`, `arcade-cosmic`, `arcade-crazyballoon`, `arcade-crazyclimber`, `arcade-crazykong`, `arcade-crystalcastles`, `arcade-defender`, `arcade-digdug`, `arcade-dominos`, `arcade-donkeykong`, `arcade-donkeykong3`, `arcade-donkeykongjunior`, `arcade-dorodon`, `arcade-dottorikun`, `arcade-druaga`, `arcade-exerion`, `arcade-expressraider`, `arcade-finalizer`, `arcade-foodfight`, `arcade-frenzy`, `arcade-galaga`, `arcade-galaxian`, `arcade-galivan`, `arcade-gaplus`, `arcade-garegga`, `arcade-gauntlet`, `arcade-gyruss`, `arcade-ikariwarriors`, `arcade-inferno`, `arcade-iremm62`, `arcade-iremm72`, `arcade-ironhorse`, `arcade-jackal`, `arcade-jailbreak`, `arcade-joust2`, `arcade-ladybug`, `arcade-lunarlander`, `arcade-mariobros`, `arcade-mcr1`, `arcade-mcr2`, `arcade-mcr3`, `arcade-mcr3mono`, `arcade-mcr3scroll`, `arcade-missilecommand`, `arcade-moonpatrol`, `arcade-mrdo`, `arcade-mrjong`, `arcade-mysticmarathon`, `arcade-ninjakun`, `arcade-pacman`, `arcade-pengo`, `arcade-penguinkunwars`, `arcade-performan`, `arcade-phoenix`, `arcade-pleiads`, `arcade-polyplay`, `arcade-pong`, `arcade-pooyan`, `arcade-popeye`, `arcade-qbert`, `arcade-rallyx`, `arcade-riverpatrol`, `arcade-robotron`, `arcade-rshnatk`, `arcade-scootershooter`, `arcade-scramble`, `arcade-segasys1`, `arcade-silverland`, `arcade-slapfight`, `arcade-sms`, `arcade-snk_triplez80`, `arcade-solomonskey`, `arcade-sonson`, `arcade-spaceinvaders`, `arcade-spacerace`, `arcade-sprint1`, `arcade-sprint2`, `arcade-subs`, `arcade-superbreakout`, `arcade-tankbattalion`, `arcade-tecmo`, `arcade-tiamc1`, `arcade-timepilot`, `arcade-timepilot84`, `arcade-tnkiii`, `arcade-traverseusa`, `arcade-tropicalangel`, `arcade-turkeyshoot`, `arcade-ultratank`, `arcade-vball`, `arcade-xevious`, `arcade-xsleenacore`, `arcade-zaxxon`, `arcade-zigzag`, `arcadelpf`, `arcadia`, `archie`, `arduboy`, `astrocade`, `atari2600`, `atari5200`, `atari7800`, `atari800`, `atarilynx`, `atarist`, `avision`, `ay-3-8500`, `bbcbridgecompanion`, `bbcmicro`, `bios`, `bk0011m`, `c128`, `c16`, `c64`, `casio_pv-1000`, `casio_pv-2000`, `channelf`, `cheats`, `chess`, `chip8`, `coco2`, `coco3`, `coleco`, `colecoadam`, `colecovision`, `complexmultichromatic`, `computer`, `computer-cores`, `console`, `console-cores`, `contrast_boost`, `cores`, `corespecific`, `creativision`, `crt-simulation`, `displayspecific`, `docs`, `drv`, `edsac`, `eg2000`, `epochgalaxyii`, `essential`, `extra-utilities`, `famicom`, `filters`, `filters_audio`, `filters_video`, `flappy`, `flappybird`, `font`, `galaksija`, `gamate`, `gameboy`, `gameboy2p`, `gameboyadvance`, `gameboycolor`, `gamecontrollerdb`, `gamegear`, `gamenwatch`, `gameoflife`, `games`, `gamma`, `gb`, `gba`, `gba2p`, `gbc`, `generalhardware`, `generallpf`, `genesis`, `gnw`, `handheld2p`, `hbmame`, `homelab`, `inputtest`, `intellivision`, `interact`, `jupiter`, `laser`, `laser310`, `lcd-general`, `lcd-integeronly`, `linux`, `lynx48`, `macplus`, `mame`, `mastersystem`, `megacd`, `megadrive`, `megaduck`, `memte`, `memtest`, `menu`, `mgl`, `minimig`, `mra`, `msx`, `msx1`, `multicomp`, `neogeo`, `nes`, `nintendo`, `odyssey2`, `old`, `ondra_spo186`, `orao`, `oric`, `other`, `other-cores`, `palettes`, `pc88`, `pc8801`, `pcengine`, `pcenginecd`, `pcxt`, `pdp1`, `pet2001`, `pmd85`, `pocketchallengev2`, `pokemonmini`, `poly_gamma`, `presets`, `psx`, `pure_gamma`, `ql`, `readme`, `rx78`, `s32x`, `samcoupe`, `scanlines-adaptive`, `scanlines-brighter`, `scanlines-standard`, `scripts`, `segacd`, `segamark3`, `service-cores`, `sgb`, `shadow_masks`, `sharpmz`, `simplemonochrome`, `slugcross`, `sms`, `snes`, `sordm5`, `specialist`, `spectrum`, `spmx`, `sufami`, `superfamicom`, `supergameboy`, `supernes`, `supernintendo`, `supervision`, `svi328`, `tatungeinstein`, `tgfx16`, `tgfx16-cd`, `tgfx16cd`, `ti-99_4a`, `ti994a`, `tomyscramble`, `tomytutor`, `trs-80`, `tsconf`, `turbografx`, `turbografx16`, `turbografx16cd`, `turbografxcd`, `uk101`, `upscaling-lanczosbicubicetc`, `upscaling-recommended`, `upscaling-sharpbilinear`, `utility`, `vc4000`, `vector-06c`, `vector06`, `vector06c`, `vectrex`, `vic20`, `wonderswan`, `wonderswancolor`, `x68000`, `yctxt`, `zx-spectrum`, `zx81`, `zxnext`, `zxspectrum`\n\n##### Some relevant tag descriptions:\n\n- `arcade-cores` / `arcade`: All arcade cores and MRA files.\n- `computer-cores` / `computer`: All computer cores and related folders.\n- `console-cores` / `console`: All console cores and related folders.\n- `other-cores` / `other`: All cores from the top folder Other with their related folders.\n- `service-cores` / `utility`: All utility cores and related folders.\n- `cores`: All cores (RBF files).\n- `mra`: All MRA files & folders.\n- `alternatives`: All MRA Alternatives\n- `hbmame`: All files & folders linked to the HBMame collection.\n- `handheld2p`: All 2 Player versions for Handheld cores.\n- `filters_video`: All video filters (`gamma` & `filters` & `shadow_masks`).\n- `all_filters`: All video & audio filters (`filters_video` & `filters_audio`).\n- `essential`: Menu core & MiSTer firmware.\n- `readme`: All README files.\n- `docs`: All documentation files & folders, including README files.\n- `extra-utilities`: All extra utilities that are installed in games folders of some computer cores.\n- `bios`: All bioses that are installed in the games folders for some computer & console cores.\n- `cheats`: All cheat files & folders.\n\n### Contributing\n\nYou are more than welcome to contribute to the [MiSTer-devel Organization](https://github.com/MiSTer-devel). But you can't do it by openening PRs to the main branch of this repository. This repository is only for file distribution. Whatever content shows up here depends on the other repositories of this organization, so you should target your PRs there.\n\nThere is a development branch in this repository for the content collection. Is fine to send PRs there but they should only modify the content collection scripts that are being used by the workflows.\n",
+      "readme": "# MiSTer Distribution\n\nThis repository contains all the files that you'll want in your MiSTer.\n\nYou may download all of them at once as a zip through the [following link](https://github.com/MiSTer-devel/Distribution_MiSTer/archive/refs/heads/main.zip). Once you have them, place them as-is in your [properly initialised SD card](https://github.com/MiSTer-devel/mr-fusion), and everything should work out of the box.\n\n### MiSTer Project\n\nIf you want to check more about the MiSTer project, please check [this wiki](https://github.com/MiSTer-devel/Wiki_MiSTer/wiki).\n\n### MiSTer Downloader\n\nFor downloading all of these files directly from your MiSTer, use the [MiSTer Downloader](https://github.com/MiSTer-devel/Downloader_MiSTer).\n\n#### Tags that you may use with 'Download Filters' feature\n\nRead about how to use them [here](https://github.com/MiSTer-devel/Downloader_MiSTer/blob/main/docs/download-filters.md).\n\n##### List:\n\n`acornatom`, `acornelectron`, `adam`, `adctest`, `adventurevision`, `alicemc10`, `all_filters`, `altair8800`, `alternatives`, `amiga`, `amstrad`, `amstrad-pcw`, `amstradpcw`, `ao486`, `apogee`, `apple-i`, `apple-ii`, `aquarius`, `arcade`, `arcade-arkanoid`, `arcade-asteroids`, `arcade-asteroidsdeluxe`, `arcade-astrocade`, `arcade-ataritetris`, `arcade-athena`, `arcade-athena_mister`, `arcade-bagman`, `arcade-bakraid`, `arcade-bankpanic`, `arcade-batrider`, `arcade-battlezone`, `arcade-berzerk`, `arcade-blackwidow`, `arcade-blockade`, `arcade-bombjack`, `arcade-bosconian`, `arcade-breakout`, `arcade-burgertime`, `arcade-burningrubber`, `arcade-canyonbomber`, `arcade-cave`, `arcade-centipede`, `arcade-chameleon`, `arcade-computerspace`, `arcade-congobongo`, `arcade-cores`, `arcade-cosmic`, `arcade-crazyballoon`, `arcade-crazyclimber`, `arcade-crazykong`, `arcade-crystalcastles`, `arcade-defender`, `arcade-digdug`, `arcade-dominos`, `arcade-donkeykong`, `arcade-donkeykong3`, `arcade-donkeykongjunior`, `arcade-dorodon`, `arcade-dottorikun`, `arcade-druaga`, `arcade-exerion`, `arcade-expressraider`, `arcade-finalizer`, `arcade-foodfight`, `arcade-frenzy`, `arcade-galaga`, `arcade-galaxian`, `arcade-galivan`, `arcade-gaplus`, `arcade-garegga`, `arcade-gauntlet`, `arcade-gyruss`, `arcade-ikariwarriors`, `arcade-inferno`, `arcade-iremm62`, `arcade-iremm72`, `arcade-ironhorse`, `arcade-jackal`, `arcade-jailbreak`, `arcade-joust2`, `arcade-ladybug`, `arcade-lunarlander`, `arcade-mariobros`, `arcade-mcr1`, `arcade-mcr2`, `arcade-mcr3`, `arcade-mcr3mono`, `arcade-mcr3scroll`, `arcade-missilecommand`, `arcade-moonpatrol`, `arcade-mrdo`, `arcade-mrjong`, `arcade-mysticmarathon`, `arcade-ninjakun`, `arcade-pacman`, `arcade-pengo`, `arcade-penguinkunwars`, `arcade-performan`, `arcade-phoenix`, `arcade-pleiads`, `arcade-polyplay`, `arcade-pong`, `arcade-pooyan`, `arcade-popeye`, `arcade-qbert`, `arcade-rallyx`, `arcade-riverpatrol`, `arcade-robotron`, `arcade-rshnatk`, `arcade-scootershooter`, `arcade-scramble`, `arcade-segasys1`, `arcade-silverland`, `arcade-slapfight`, `arcade-sms`, `arcade-snk_triplez80`, `arcade-solomonskey`, `arcade-sonson`, `arcade-spaceinvaders`, `arcade-spacerace`, `arcade-sprint1`, `arcade-sprint2`, `arcade-subs`, `arcade-superbreakout`, `arcade-tankbattalion`, `arcade-tecmo`, `arcade-tiamc1`, `arcade-timepilot`, `arcade-timepilot84`, `arcade-tnkiii`, `arcade-traverseusa`, `arcade-tropicalangel`, `arcade-turkeyshoot`, `arcade-ultratank`, `arcade-vball`, `arcade-xevious`, `arcade-xsleenacore`, `arcade-zaxxon`, `arcade-zigzag`, `arcadelpf`, `arcadia`, `archie`, `arduboy`, `astrocade`, `atari2600`, `atari5200`, `atari7800`, `atari800`, `atarilynx`, `atarist`, `avision`, `ay-3-8500`, `bbcbridgecompanion`, `bbcmicro`, `bios`, `bk0011m`, `c128`, `c16`, `c64`, `casio_pv-1000`, `casio_pv-2000`, `channelf`, `cheats`, `chess`, `chip8`, `coco2`, `coco3`, `coleco`, `colecoadam`, `colecovision`, `complexmultichromatic`, `computer`, `computer-cores`, `console`, `console-cores`, `contrast_boost`, `cores`, `corespecific`, `creativision`, `crt-simulation`, `displayspecific`, `docs`, `drv`, `edsac`, `eg2000`, `epochgalaxyii`, `essential`, `extra-utilities`, `famicom`, `filters`, `filters_audio`, `filters_video`, `flappy`, `flappybird`, `font`, `galaksija`, `gamate`, `gameboy`, `gameboy2p`, `gameboyadvance`, `gameboycolor`, `gamecontrollerdb`, `gamegear`, `gamenwatch`, `gameoflife`, `games`, `gamma`, `gb`, `gba`, `gba2p`, `gbc`, `generalhardware`, `generallpf`, `genesis`, `gnw`, `handheld2p`, `hbmame`, `homelab`, `inputtest`, `intellivision`, `interact`, `jupiter`, `laser`, `laser310`, `lcd-general`, `lcd-integeronly`, `linux`, `lynx48`, `macplus`, `mame`, `mastersystem`, `megacd`, `megadrive`, `megaduck`, `memte`, `memtest`, `menu`, `mgl`, `minimig`, `mra`, `msx`, `msx1`, `multicomp`, `neogeo`, `nes`, `nintendo`, `odyssey2`, `old`, `ondra_spo186`, `orao`, `oric`, `other`, `other-cores`, `palettes`, `pc88`, `pc8801`, `pcengine`, `pcenginecd`, `pcxt`, `pdp1`, `pet2001`, `pmd85`, `pocketchallengev2`, `pokemonmini`, `poly_gamma`, `presets`, `psx`, `pure_gamma`, `ql`, `readme`, `rx78`, `s32x`, `samcoupe`, `scanlines-adaptive`, `scanlines-brighter`, `scanlines-standard`, `scripts`, `segacd`, `segamark3`, `service-cores`, `sgb`, `shadow_masks`, `sharpmz`, `simplemonochrome`, `slugcross`, `sms`, `snes`, `sordm5`, `specialist`, `spectrum`, `spmx`, `sufami`, `superfamicom`, `supergameboy`, `supernes`, `supernintendo`, `supervision`, `svi328`, `tatungeinstein`, `tgfx16`, `tgfx16-cd`, `tgfx16cd`, `ti-99_4a`, `ti994a`, `tomyscramble`, `tomytutor`, `trs-80`, `tsconf`, `turbografx`, `turbografx16`, `turbografx16cd`, `turbografxcd`, `uk101`, `upscaling-lanczosbicubicetc`, `upscaling-recommended`, `upscaling-sharpbilinear`, `utility`, `vc4000`, `vector-06c`, `vector06`, `vector06c`, `vectrex`, `vic20`, `wonderswan`, `wonderswancolor`, `x68000`, `yctxt`, `zx-spectrum`, `zx81`, `zxnext`, `zxspectrum`\n\n##### Some relevant tag descriptions:\n\n- `arcade-cores` / `arcade`: All arcade cores and MRA files.\n- `computer-cores` / `computer`: All computer cores and related folders.\n- `console-cores` / `console`: All console cores and related folders.\n- `other-cores` / `other`: All cores from the top folder Other with their related folders.\n- `service-cores` / `utility`: All utility cores and related folders.\n- `cores`: All cores (RBF files).\n- `mra`: All MRA files & folders.\n- `alternatives`: All MRA Alternatives\n- `hbmame`: All files & folders linked to the HBMame collection.\n- `handheld2p`: All 2 Player versions for Handheld cores.\n- `filters_video`: All video filters (`gamma` & `filters` & `shadow_masks`).\n- `all_filters`: All video & audio filters (`filters_video` & `filters_audio`).\n- `essential`: Menu core & MiSTer firmware.\n- `readme`: All README files.\n- `docs`: All documentation files & folders, including README files.\n- `extra-utilities`: All extra utilities that are installed in games folders of some computer cores.\n- `bios`: All bioses that are installed in the games folders for some computer & console cores.\n- `cheats`: All cheat files & folders.\n\n### Contributing\n\nYou are more than welcome to contribute to the [MiSTer-devel Organization](https://github.com/MiSTer-devel). But you can't do it by openening PRs to the main branch of this repository. This repository is only for file distribution. Whatever content shows up here depends on the other repositories of this organization, so you should target your PRs there.\n\nThere is a development branch in this repository for the content collection. Is fine to send PRs there but they should only modify the content collection scripts that are being used by the workflows.\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/Distribution_MiSTer",

@@ -86,6 +86,11 @@ url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-BankPanic_MiSTer/ma
 output = "_Arcade/cores/BankPanic_20230310.rbf"
 
 
+# BattleZone
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-BattleZone_MiSTer/master/releases/Arcade-BattleZone_20230324.rbf"
+output = "_Arcade/cores/BattleZone_20230324.rbf"
+
+
 # Berzerk
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Berzerk_MiSTer/master/releases/Arcade-Berzerk_20230215.rbf"
 output = "_Arcade/cores/Berzerk_20230215.rbf"
@@ -482,8 +487,8 @@ output = "_Arcade/cores/SilverLand_20230226.rbf"
 
 
 # SlapFight
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SlapFight_MiSTer/main/releases/Arcade-SlapFight_20230315.rbf"
-output = "_Arcade/cores/SlapFight_20230315.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SlapFight_MiSTer/main/releases/Arcade-SlapFight_20220322.rbf"
+output = "_Arcade/cores/SlapFight_20220322.rbf"
 
 
 # SolomonsKey
@@ -552,8 +557,8 @@ output = "_Arcade/cores/TraverseUSA_20230226.rbf"
 
 
 # TropicalAngel
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TropicalAngel_MiSTer/master/releases/Arcade-TropicalAngel_20221114.rbf"
-output = "_Arcade/cores/TropicalAngel_20221114.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TropicalAngel_MiSTer/master/releases/Arcade-TropicalAngel_20230315.rbf"
+output = "_Arcade/cores/TropicalAngel_20230315.rbf"
 
 
 # TurkeyShoot
@@ -647,8 +652,8 @@ output = "_Computer/BK0011M_20230227.rbf"
 
 
 # C128
-url = "https://raw.githubusercontent.com/MiSTer-devel/C128_MiSTer/master/releases/C128_20230223.rbf"
-output = "_Others/C128_20230223.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/C128_MiSTer/master/releases/C128_20230325.rbf"
+output = "_Others/C128_20230325.rbf"
 
 
 # C16
@@ -1139,6 +1144,31 @@ output = "_Arcade/BankPanic.mra"
 # Combat Hawk.mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-BankPanic_MiSTer/master/releases/Combat%20Hawk.mra"
 output = "_Arcade/Combat Hawk.mra"
+
+
+# Battle Zone rev 1.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-BattleZone_MiSTer/master/releases/Battle%20Zone%20rev%201.mra"
+output = "_Arcade/Battle Zone rev 1.mra"
+
+
+# Battle Zone.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-BattleZone_MiSTer/master/releases/Battle%20Zone.mra"
+output = "_Arcade/Battle Zone.mra"
+
+
+# Bradley Trainer.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-BattleZone_MiSTer/master/releases/Bradley%20Trainer.mra"
+output = "_Arcade/Bradley Trainer.mra"
+
+
+# Red Baron - non A.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-BattleZone_MiSTer/master/releases/Red%20Baron%20-%20non%20A.mra"
+output = "_Arcade/Red Baron - non A.mra"
+
+
+# Red Baron.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-BattleZone_MiSTer/master/releases/Red%20Baron.mra"
+output = "_Arcade/Red Baron.mra"
 
 
 # Berzerk.mra
