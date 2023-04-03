@@ -222,8 +222,8 @@ output = "_Arcade/cores/Druaga_20230313.rbf"
 
 
 # ExpressRaider
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-ExpressRaider_MiSTer/master/releases/Arcade-ExpressRaider_20230313.rbf"
-output = "_Arcade/cores/ExpressRaider_20230313.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-ExpressRaider_MiSTer/master/releases/Arcade-ExpressRaider_20230401.rbf"
+output = "_Arcade/cores/ExpressRaider_20230401.rbf"
 
 
 # Finalizer
@@ -234,6 +234,11 @@ output = "_Arcade/cores/Finalizer_20220511.rbf"
 # FoodFight
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-FoodFight_MiSTer/master/releases/Arcade-FoodFight_20230313.rbf"
 output = "_Arcade/cores/FoodFight_20230313.rbf"
+
+
+# Freeze
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Freeze_MiSTer/master/releases/Arcade-Freeze_20230327.rbf"
+output = "_Arcade/cores/Freeze_20230327.rbf"
 
 
 # Frenzy
@@ -977,8 +982,8 @@ output = "_Console/TurboGrafx16_20230224.rbf"
 
 
 # UK101
-url = "https://raw.githubusercontent.com/MiSTer-devel/UK101_MiSTer/master/releases/UK101_20220606.rbf"
-output = "_Others/UK101_20220606.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/UK101_MiSTer/master/releases/UK101_20230331.rbf"
+output = "_Others/UK101_20230331.rbf"
 
 
 # VC4000
@@ -997,8 +1002,8 @@ output = "_Console/Vectrex_20221022.rbf"
 
 
 # VIC20
-url = "https://raw.githubusercontent.com/MiSTer-devel/VIC20_MiSTer/master/releases/VIC20_20230225.rbf"
-output = "_Computer/VIC20_20230225.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/VIC20_MiSTer/master/releases/VIC20_20230331.rbf"
+output = "_Computer/VIC20_20230331.rbf"
 
 
 # WonderSwan
@@ -1161,9 +1166,9 @@ url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-BattleZone_MiSTer/m
 output = "_Arcade/Bradley Trainer.mra"
 
 
-# Red Baron - non A.mra
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-BattleZone_MiSTer/master/releases/Red%20Baron%20-%20non%20A.mra"
-output = "_Arcade/Red Baron - non A.mra"
+# Red Baron (Revised Hardware).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-BattleZone_MiSTer/master/releases/Red%20Baron%20(Revised%20Hardware).mra"
+output = "_Arcade/Red Baron (Revised Hardware).mra"
 
 
 # Red Baron.mra
@@ -1549,6 +1554,31 @@ output = "_Arcade/Finalizer - Super Transformation (Set 2).mra"
 # Food Fight (Rev 3).mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-FoodFight_MiSTer/master/releases/Food%20Fight%20(Rev%203).mra"
 output = "_Arcade/Food Fight (Rev 3).mra"
+
+
+# Freeze.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Freeze_MiSTer/master/releases/Freeze.mra"
+output = "_Arcade/Freeze.mra"
+
+
+# Jack the Giantkiller (set 1).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Freeze_MiSTer/master/releases/Jack%20the%20Giantkiller%20(set%201).mra"
+output = "_Arcade/Jack the Giantkiller (set 1).mra"
+
+
+# Super Casino.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Freeze_MiSTer/master/releases/Super%20Casino.mra"
+output = "_Arcade/Super Casino.mra"
+
+
+# Tri-Pool (Casino Tech).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Freeze_MiSTer/master/releases/Tri-Pool%20(Casino%20Tech).mra"
+output = "_Arcade/Tri-Pool (Casino Tech).mra"
+
+
+# Zzyzzyxx (set 1).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Freeze_MiSTer/master/releases/Zzyzzyxx%20(set%201).mra"
+output = "_Arcade/Zzyzzyxx (set 1).mra"
 
 
 # Frenzy (Rev RA1).mra

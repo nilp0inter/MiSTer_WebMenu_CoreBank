@@ -5,6 +5,81 @@
   "type": "User",
   "repos": [
     {
+      "name": "Arcade-Freeze_MiSTer",
+      "description": null,
+      "readme": "# Jack the Giantkiller\r\n\r\n## General description\r\nThis is a port of Jack the Giantkiller from Cinematronics. It includes:\r\n- Jack the Giantkiller\r\n- Freeze\r\n- Zzyzzyxx\r\n- SuperCasino\r\n- Tri-Pool\r\n\r\n### TODO\r\n\r\n- Fix MRA names and information.\r\n- Some of the H/V switches are not working. The CPU reads it but whatever the value is, it always clears the flip register. We need to check in the original games. Cocktail mode works on Jack.\r\n- HS/VS timings are certainly wrong.\r\n- Fix OSD options that are not working well: reset & aspect ratio.\r\n\r\nThanks to all my contributors as usual!\r\n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/theypsilon/Arcade-Freeze_MiSTer",
+      "releases": [
+        {
+          "name": "Arcade-Freeze_20230327.rbf",
+          "sha": "67beaf95b744634bff9f982f77fffdfc37034a42",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-Freeze_MiSTer/master/releases/Arcade-Freeze_20230327.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "freeze.mra",
+          "sha": "713451d6cc11e7bd5169d07d1da680b36ffab258",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-Freeze_MiSTer/master/releases/freeze.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Freeze",
+            "rbf": "freeze",
+            "zips": [
+              "freeze.zip"
+            ]
+          }
+        },
+        {
+          "name": "jack.mra",
+          "sha": "dc165ecda1a7addd776fabed8a566322b5f9a2a4",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-Freeze_MiSTer/master/releases/jack.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Jack the Giantkiller",
+            "rbf": "freeze",
+            "zips": [
+              "jack.zip"
+            ]
+          }
+        },
+        {
+          "name": "sucasino.mra",
+          "sha": "6a41db22bcd7b4a18868195126d9dbc6e4cb9323",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-Freeze_MiSTer/master/releases/sucasino.mra",
+          "type": "MRA",
+          "extra": null
+        },
+        {
+          "name": "tripool.mra",
+          "sha": "bf3f4bdb74df9e8b7dd101ff38e098df6f7e97ed",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-Freeze_MiSTer/master/releases/tripool.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Tri-pool",
+            "rbf": "freeze",
+            "zips": [
+              "tripool.zip"
+            ]
+          }
+        },
+        {
+          "name": "zzyzzyxx.mra",
+          "sha": "ed970f4dbddf43fc67dc5b03d3236c8b2352f641",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-Freeze_MiSTer/master/releases/zzyzzyxx.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Zzyzzyxx",
+            "rbf": "freeze",
+            "zips": [
+              "zzyzzyxx.zip"
+            ]
+          }
+        }
+      ]
+    },
+    {
       "name": "ArcadeROMsDB_MiSTer",
       "description": null,
       "readme": "# Arcade ROMs Database\n\n\nActivate it through [Update All](https://github.com/theypsilon/Update_All_MiSTer), or install it manually by adding the following lines to the `downloader.ini` file:\n\n```ini\n[arcade_roms_db]\ndb_url = https://raw.githubusercontent.com/theypsilon/ArcadeROMsDB_MiSTer/db/arcade_roms_db.json.zip\n```\n",
