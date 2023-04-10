@@ -62,8 +62,8 @@ output = "_Arcade/cores/Asteroids_20220313.rbf"
 
 
 # Astrocade
-url = "https://raw.githubusercontent.com/MiSTer-devel/Astrocade_MiSTer/master/releases/Astrocade_20230227.rbf"
-output = "_Console/Astrocade_20230227.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Astrocade_MiSTer/master/releases/Astrocade_20230407.rbf"
+output = "_Console/Astrocade_20230407.rbf"
 
 
 # AtariTetris
@@ -154,6 +154,11 @@ output = "_Arcade/cores/ComputerSpace_20221106.rbf"
 # CongoBongo
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-CongoBongo_MiSTer/master/releases/Arcade-CongoBongo_20230313.rbf"
 output = "_Arcade/cores/CongoBongo_20230313.rbf"
+
+
+# CosmicGuerilla
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-CosmicGuerilla_MiSTer/main/releases/Arcade-CosmicGuerilla_20230404.rbf"
+output = "_Arcade/cores/CosmicGuerilla_20230404.rbf"
 
 
 # Cosmic
@@ -1349,6 +1354,11 @@ output = "_Arcade/Congo Bongo.mra"
 # Tip Top (3 board stack).mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-CongoBongo_MiSTer/master/releases/Tip%20Top%20(3%20board%20stack).mra"
 output = "_Arcade/Tip Top (3 board stack).mra"
+
+
+# Cosmic Guerilla.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-CosmicGuerilla_MiSTer/main/releases/Cosmic%20Guerilla.mra"
+output = "_Arcade/Cosmic Guerilla.mra"
 
 
 # Cosmic Alien.mra
