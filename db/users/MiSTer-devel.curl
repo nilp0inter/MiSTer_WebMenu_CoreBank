@@ -296,6 +296,11 @@ url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM72_MiSTer/main
 output = "_Arcade/cores/IremM72_20230227.rbf"
 
 
+# IremM92
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM92_MiSTer/main/releases/Arcade-IremM92_20230414.rbf"
+output = "_Arcade/cores/IremM92_20230414.rbf"
+
+
 # IronHorse
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IronHorse_MiSTer/main/releases/Arcade-IronHorse_20220511.rbf"
 output = "_Arcade/cores/IronHorse_20220511.rbf"
@@ -582,8 +587,8 @@ output = "_Arcade/cores/Ultratank_20230315.rbf"
 
 
 # VBall
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-VBall_MiSTer/master/releases/Arcade-VBall_20230315.rbf"
-output = "_Arcade/cores/VBall_20230315.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-VBall_MiSTer/master/releases/Arcade-VBall_20230407.rbf"
+output = "_Arcade/cores/VBall_20230407.rbf"
 
 
 # Xevious
@@ -839,6 +844,11 @@ output = "_Computer/MSX_20230301.rbf"
 # MultiComp
 url = "https://raw.githubusercontent.com/MiSTer-devel/MultiComp_MiSTer/master/releases/MultiComp_20210113.rbf"
 output = "_Computer/MultiComp_20210113.rbf"
+
+
+# MyVision
+url = "https://raw.githubusercontent.com/MiSTer-devel/MyVision_MiSTer/main/releases/MyVision_20230410.rbf"
+output = "_Others/MyVision_20230410.rbf"
 
 
 # NeoGeo
@@ -1914,6 +1924,151 @@ output = "_Arcade/R-Type II (inv) (World).mra"
 # X Multiply (Inv) (Japan, M72 hardware).mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM72_MiSTer/main/releases/_alternatives/X%20Multiply%20(Inv)%20(Japan%2C%20M72%20hardware).mra"
 output = "_Arcade/X Multiply (Inv) (Japan, M72 hardware).mra"
+
+
+# Blade Master (World).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM92_MiSTer/main/releases/Blade%20Master%20(World).mra"
+output = "_Arcade/Blade Master (World).mra"
+
+
+# Dream Soccer '94 (Japan, M92 hardware).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM92_MiSTer/main/releases/Dream%20Soccer%20'94%20(Japan%2C%20M92%20hardware).mra"
+output = "_Arcade/Dream Soccer '94 (Japan, M92 hardware).mra"
+
+
+# Gun Force II (US).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM92_MiSTer/main/releases/Gun%20Force%20II%20(US).mra"
+output = "_Arcade/Gun Force II (US).mra"
+
+
+# Gunforce - Battle Fire Engulfed Terror Island (World).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM92_MiSTer/main/releases/Gunforce%20-%20Battle%20Fire%20Engulfed%20Terror%20Island%20(World).mra"
+output = "_Arcade/Gunforce - Battle Fire Engulfed Terror Island (World).mra"
+
+
+# Hook (World).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM92_MiSTer/main/releases/Hook%20(World).mra"
+output = "_Arcade/Hook (World).mra"
+
+
+# In The Hunt (World).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM92_MiSTer/main/releases/In%20The%20Hunt%20(World).mra"
+output = "_Arcade/In The Hunt (World).mra"
+
+
+# Lethal Thunder (World).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM92_MiSTer/main/releases/Lethal%20Thunder%20(World).mra"
+output = "_Arcade/Lethal Thunder (World).mra"
+
+
+# Major Title 2 (World, set 1).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM92_MiSTer/main/releases/Major%20Title%202%20(World%2C%20set%201).mra"
+output = "_Arcade/Major Title 2 (World, set 1).mra"
+
+
+# Mystic Riders (World).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM92_MiSTer/main/releases/Mystic%20Riders%20(World).mra"
+output = "_Arcade/Mystic Riders (World).mra"
+
+
+# Ninja Baseball Bat Man (World).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM92_MiSTer/main/releases/Ninja%20Baseball%20Bat%20Man%20(World).mra"
+output = "_Arcade/Ninja Baseball Bat Man (World).mra"
+
+
+# R-Type Leo (World).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM92_MiSTer/main/releases/R-Type%20Leo%20(World).mra"
+output = "_Arcade/R-Type Leo (World).mra"
+
+
+# Superior Soldiers (US).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM92_MiSTer/main/releases/Superior%20Soldiers%20(US).mra"
+output = "_Arcade/Superior Soldiers (US).mra"
+
+
+# Undercover Cops (World).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM92_MiSTer/main/releases/Undercover%20Cops%20(World).mra"
+output = "_Arcade/Undercover Cops (World).mra"
+
+
+# Cross Blades! (Japan).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM92_MiSTer/main/releases/_alternatives/_Blade%20Master/Cross%20Blades!%20(Japan).mra"
+output = "_Arcade/Cross Blades! (Japan).mra"
+
+
+# Geo Storm (Japan).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM92_MiSTer/main/releases/_alternatives/_Gun%20Force%20II/Geo%20Storm%20(Japan).mra"
+output = "_Arcade/Geo Storm (Japan).mra"
+
+
+# Gunforce - Battle Fire Engulfed Terror Island (Japan).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM92_MiSTer/main/releases/_alternatives/_Gunforce%20-%20Battle%20Fire%20Engulfed%20Terror%20Island/Gunforce%20-%20Battle%20Fire%20Engulfed%20Terror%20Island%20(Japan).mra"
+output = "_Arcade/Gunforce - Battle Fire Engulfed Terror Island (Japan).mra"
+
+
+# Gunforce - Battle Fire Engulfed Terror Island (USA).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM92_MiSTer/main/releases/_alternatives/_Gunforce%20-%20Battle%20Fire%20Engulfed%20Terror%20Island/Gunforce%20-%20Battle%20Fire%20Engulfed%20Terror%20Island%20(USA).mra"
+output = "_Arcade/Gunforce - Battle Fire Engulfed Terror Island (USA).mra"
+
+
+# Hook (Japan).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM92_MiSTer/main/releases/_alternatives/_Hook/Hook%20(Japan).mra"
+output = "_Arcade/Hook (Japan).mra"
+
+
+# In The Hunt (US).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM92_MiSTer/main/releases/_alternatives/_In%20The%20Hunt/In%20The%20Hunt%20(US).mra"
+output = "_Arcade/In The Hunt (US).mra"
+
+
+# Kaitei Daisensou (Japan).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM92_MiSTer/main/releases/_alternatives/_In%20The%20Hunt/Kaitei%20Daisensou%20(Japan).mra"
+output = "_Arcade/Kaitei Daisensou (Japan).mra"
+
+
+# Thunder Blaster (Japan).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM92_MiSTer/main/releases/_alternatives/_Lethal%20Thunder/Thunder%20Blaster%20(Japan).mra"
+output = "_Arcade/Thunder Blaster (Japan).mra"
+
+
+# Mahou Keibitai Gun Hohki (Japan).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM92_MiSTer/main/releases/_alternatives/_Mystic%20Riders/Mahou%20Keibitai%20Gun%20Hohki%20(Japan).mra"
+output = "_Arcade/Mahou Keibitai Gun Hohki (Japan).mra"
+
+
+# Ninja Baseball Bat Man (US).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM92_MiSTer/main/releases/_alternatives/_Ninja%20Baseball%20Bat%20Man/Ninja%20Baseball%20Bat%20Man%20(US).mra"
+output = "_Arcade/Ninja Baseball Bat Man (US).mra"
+
+
+# Yakyuu Kakutou League-Man (Japan).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM92_MiSTer/main/releases/_alternatives/_Ninja%20Baseball%20Bat%20Man/Yakyuu%20Kakutou%20League-Man%20(Japan).mra"
+output = "_Arcade/Yakyuu Kakutou League-Man (Japan).mra"
+
+
+# R-Type Leo (Japan).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM92_MiSTer/main/releases/_alternatives/_R-Type%20Leo/R-Type%20Leo%20(Japan).mra"
+output = "_Arcade/R-Type Leo (Japan).mra"
+
+
+# Undercover Cops (Japan).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM92_MiSTer/main/releases/_alternatives/_Undercover%20Cops/Undercover%20Cops%20(Japan).mra"
+output = "_Arcade/Undercover Cops (Japan).mra"
+
+
+# Undercover Cops (US).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM92_MiSTer/main/releases/_alternatives/_Undercover%20Cops/Undercover%20Cops%20(US).mra"
+output = "_Arcade/Undercover Cops (US).mra"
+
+
+# Undercover Cops - Alpha Renewal Version (US).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM92_MiSTer/main/releases/_alternatives/_Undercover%20Cops/Undercover%20Cops%20-%20Alpha%20Renewal%20Version%20(US).mra"
+output = "_Arcade/Undercover Cops - Alpha Renewal Version (US).mra"
+
+
+# Undercover Cops - Alpha Renewal Version (World).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM92_MiSTer/main/releases/_alternatives/_Undercover%20Cops/Undercover%20Cops%20-%20Alpha%20Renewal%20Version%20(World).mra"
+output = "_Arcade/Undercover Cops - Alpha Renewal Version (World).mra"
 
 
 # Iron Horse (Ver. K).mra

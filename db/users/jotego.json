@@ -556,6 +556,38 @@
         },
         {
           "name": "README.md",
+          "sha": "a7a6690209e022879ae38588725a1d2457b3fadf",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/castle/README.md",
+          "type": "OTHER"
+        },
+        {
+          "name": "Haunted Castle (version M).mra",
+          "sha": "dd039bd2b9ab0d920d9ca0942f1130793e1e1713",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/castle/releases/Haunted%20Castle%20(version%20M).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Haunted Castle (version M)",
+            "rbf": "jtcastle",
+            "zips": [
+              "hcastle.zip",
+              "jtbeta.zip"
+            ]
+          }
+        },
+        {
+          "name": "jtcastle.rbf",
+          "sha": "1fb31d8fe22c3e3476a7c9cedc38d2267149e48d",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/castle/releases/jtcastle.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "version.log",
+          "sha": "60ec48468158c9a43437102156ab498dccd21601",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/castle/version.log",
+          "type": "OTHER"
+        },
+        {
+          "name": "README.md",
           "sha": "4ce25d65db844593756b0a145c8de5e5873a1383",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/commnd/README.md",
           "type": "OTHER"
@@ -612,19 +644,19 @@
         },
         {
           "name": "jtcomsc.rbf",
-          "sha": "10c63376db97651c82839150780e1b4cb60b30dc",
+          "sha": "4739070a4f6925bbda2759c7540222d909adfc3b",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/comsc/releases/jtcomsc.rbf",
           "type": "RBF"
         },
         {
           "name": "version.log",
-          "sha": "57137a7a14e8dae9c0b5789034e5782d3faa4f98",
+          "sha": "60ec48468158c9a43437102156ab498dccd21601",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/comsc/version.log",
           "type": "OTHER"
         },
         {
           "name": "README.md",
-          "sha": "8e9e35ac4147d9b2138dac35fa96ca5c5798037d",
+          "sha": "af7d0716c9fe14255bd11bc9d9a75f805ca67c8a",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/contra/README.md",
           "type": "OTHER"
         },
@@ -643,13 +675,13 @@
         },
         {
           "name": "jtcontra.rbf",
-          "sha": "f7af7f036d0c7d6c6e378cb76aad97527ba19338",
+          "sha": "ef9d8c6d787ce2bd72bddc3ad24988c7f41524bd",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/contra/releases/jtcontra.rbf",
           "type": "RBF"
         },
         {
           "name": "version.log",
-          "sha": "57137a7a14e8dae9c0b5789034e5782d3faa4f98",
+          "sha": "60ec48468158c9a43437102156ab498dccd21601",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/contra/version.log",
           "type": "OTHER"
         },

@@ -5894,6 +5894,400 @@
       ]
     },
     {
+      "name": "Arcade-IremM92_MiSTer",
+      "description": null,
+      "readme": "# Irem M92 Core\n\n![](docs/header-small.png)\n\nThis is the MiSTer FPGA core for the Irem M92 arcade system (http://www.system16.com/hardware.php?id=747). The Irem M92 system is known for its high-quality graphics and sound, and this core brings these games to the MiSTer platform for arcade enthusiasts to enjoy.\n\nThe Irem M92 core includes numerous games that have not been ported elsewhere, providing a unique and authentic arcade experience. Some of the popular games available in this core are:\n\n- In the Hunt\n- Gunforce\n- R-Type Leo\n- Hook\n- Blade Master\n- Mystic Riders\n- Undercover Cops\n- Ninja Baseball Batman\n\n## Controls\nAll of the games use standard 8-way input with two buttons with the exception of *Superior Soldiers* which uses six button input. Several of the games support 3 or 4 players but you will need to change a DIP switch in the DIP switch menu to enable that. By default the button buttons are mapped to the MiSTers SNES-like layout as `B,A,X,Y,L,R`. The `Coin` and `Start` buttons are mapped to Select and Start. There are two additional buttons that can be mapped that are not mapped by default. `P2 Start` maps the the second players start button. The only purpose this serves is for accessing the service menu with a single controller since most games require pressing P1 and P2 start to access it. The second unmapped button is `Pause` which pauses the core.\n\nStandard MAME keyboard controls are also supported for up to 4-players.\n\n\n## Thanks\nMany people, knowingly or not, contributed to this work.\n- Mark, for his R-Type Leo PCB and his support through the years.\n- @sorgelig, for developing and maintaining MiSTer.\n- @RobertPeip, for the v30mz cpu I am using as the basis for the v33 & v35.\n- @jotego, for the YM2151 implementation and analog adjustment module.\n- @ArtemioUrbina, for their support building [MDfourier](https://junkerhq.net/MDFourier/) tests.\n- @zakk4223, for hiscore support.\n- @birdybro, @Toryalai1 & @wwark for MRA help.\n- Sanborn, for help with the docs.\n- The people from PLD Archive collecting and archiving PAL information https://wiki.pldarchive.co.uk/index.php?title=Category:Irem_M92\n- The MiSTer FPGA discord server for support, advice and testing.\n\n\n",
+      "archived": false,
+      "fork": false,
+      "url": "https://github.com/MiSTer-devel/Arcade-IremM92_MiSTer",
+      "releases": [
+        {
+          "name": "Arcade-IremM92_20230414.rbf",
+          "sha": "4797c7e53d9e4e76d41faa4d014ccca7aa1d9943",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM92_MiSTer/main/releases/Arcade-IremM92_20230414.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Blade Master (World).mra",
+          "sha": "acb87af4d7e5f14e5ceb7cbeee4d19fdb8f76726",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM92_MiSTer/main/releases/Blade%20Master%20(World).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Blade Master (World)",
+            "rbf": "IremM92",
+            "zips": [
+              "bmaster.zip"
+            ]
+          }
+        },
+        {
+          "name": "Dream Soccer '94 (Japan, M92 hardware).mra",
+          "sha": "67aa912dad84300a9449ce312c3177331bff2c73",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM92_MiSTer/main/releases/Dream%20Soccer%20'94%20(Japan%2C%20M92%20hardware).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Dream Soccer '94 (Japan, M92 hardware)",
+            "rbf": "IremM92",
+            "zips": [
+              "dsoccr94.zip|dsoccr94j.zip"
+            ]
+          }
+        },
+        {
+          "name": "Gun Force II (US).mra",
+          "sha": "e6174d8fabefae74c8f9197009ea9d8df1ccf1e6",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM92_MiSTer/main/releases/Gun%20Force%20II%20(US).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Gun Force II (US)",
+            "rbf": "IremM92",
+            "zips": [
+              "gunforc2.zip"
+            ]
+          }
+        },
+        {
+          "name": "Gunforce - Battle Fire Engulfed Terror Island (World).mra",
+          "sha": "1a4fc54878fd70adbba43d1444c448c62762fa52",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM92_MiSTer/main/releases/Gunforce%20-%20Battle%20Fire%20Engulfed%20Terror%20Island%20(World).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Gunforce - Battle Fire Engulfed Terror Island (World)",
+            "rbf": "IremM92",
+            "zips": [
+              "gunforce.zip"
+            ]
+          }
+        },
+        {
+          "name": "Hook (World).mra",
+          "sha": "8df2f9ff566c42930b5dff3d0bf7fe99ab6c62d0",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM92_MiSTer/main/releases/Hook%20(World).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Hook (World)",
+            "rbf": "IremM92",
+            "zips": [
+              "hook.zip"
+            ]
+          }
+        },
+        {
+          "name": "In The Hunt (World).mra",
+          "sha": "5b4f92f1c76b96a4d8316db8e2b1b175cc5aef3d",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM92_MiSTer/main/releases/In%20The%20Hunt%20(World).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "In The Hunt (World)",
+            "rbf": "IremM92",
+            "zips": [
+              "inthunt.zip"
+            ]
+          }
+        },
+        {
+          "name": "Lethal Thunder (World).mra",
+          "sha": "5cfc397c8b92b79112db8f756cf93e3fcf22bed6",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM92_MiSTer/main/releases/Lethal%20Thunder%20(World).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Lethal Thunder (World)",
+            "rbf": "IremM92",
+            "zips": [
+              "lethalth.zip"
+            ]
+          }
+        },
+        {
+          "name": "Major Title 2 (World, set 1).mra",
+          "sha": "4c26beafb1f2599adf905426d2bbd3f3039728ac",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM92_MiSTer/main/releases/Major%20Title%202%20(World%2C%20set%201).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Major Title 2 (World, set 1)",
+            "rbf": "IremM92",
+            "zips": [
+              "majtitl2.zip",
+              "majtitl2.zip"
+            ]
+          }
+        },
+        {
+          "name": "Mystic Riders (World).mra",
+          "sha": "7500bdb6391a82b3ad9102d2d8cec8cebac24a72",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM92_MiSTer/main/releases/Mystic%20Riders%20(World).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Mystic Riders (World)",
+            "rbf": "IremM92",
+            "zips": [
+              "mysticri.zip"
+            ]
+          }
+        },
+        {
+          "name": "Ninja Baseball Bat Man (World).mra",
+          "sha": "2e7a7fcb92fd844809660af1a8d383796ab2b5b8",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM92_MiSTer/main/releases/Ninja%20Baseball%20Bat%20Man%20(World).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Ninja Baseball Bat Man (World)",
+            "rbf": "IremM92",
+            "zips": [
+              "nbbatman.zip"
+            ]
+          }
+        },
+        {
+          "name": "R-Type Leo (World).mra",
+          "sha": "ebabba6b0183f5459d72a0a004c6f8ffbb7d7107",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM92_MiSTer/main/releases/R-Type%20Leo%20(World).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "R-Type Leo (World)",
+            "rbf": "IremM92",
+            "zips": [
+              "rtypeleo.zip"
+            ]
+          }
+        },
+        {
+          "name": "Superior Soldiers (US).mra",
+          "sha": "b82623dbef2ec9e855c26e5d64cd99f64ca61c05",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM92_MiSTer/main/releases/Superior%20Soldiers%20(US).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Superior Soldiers (US)",
+            "rbf": "IremM92",
+            "zips": [
+              "ssoldier.zip"
+            ]
+          }
+        },
+        {
+          "name": "Undercover Cops (World).mra",
+          "sha": "6b3b2439d50cbce4b52291ec4b691277c7e1fd7d",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM92_MiSTer/main/releases/Undercover%20Cops%20(World).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Undercover Cops (World)",
+            "rbf": "IremM92",
+            "zips": [
+              "uccops.zip"
+            ]
+          }
+        },
+        {
+          "name": "Cross Blades! (Japan).mra",
+          "sha": "22330856b705256de6087e6849fda888c735a833",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM92_MiSTer/main/releases/_alternatives/_Blade%20Master/Cross%20Blades!%20(Japan).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Cross Blades! (Japan)",
+            "rbf": "IremM92",
+            "zips": [
+              "crossbld.zip|bmaster.zip"
+            ]
+          }
+        },
+        {
+          "name": "Geo Storm (Japan).mra",
+          "sha": "a15f309e45c339407c7d35c5992bb67749dcbc5e",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM92_MiSTer/main/releases/_alternatives/_Gun%20Force%20II/Geo%20Storm%20(Japan).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Geo Storm (Japan)",
+            "rbf": "IremM92",
+            "zips": [
+              "geostorm.zip|gunforc2.zip"
+            ]
+          }
+        },
+        {
+          "name": "Gunforce - Battle Fire Engulfed Terror Island (Japan).mra",
+          "sha": "5e552037c9d901fbb0866efff187112ac65bc7c5",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM92_MiSTer/main/releases/_alternatives/_Gunforce%20-%20Battle%20Fire%20Engulfed%20Terror%20Island/Gunforce%20-%20Battle%20Fire%20Engulfed%20Terror%20Island%20(Japan).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Gunforce - Battle Fire Engulfed Terror Island (Japan)",
+            "rbf": "IremM92",
+            "zips": [
+              "gunforcej.zip|gunforce.zip"
+            ]
+          }
+        },
+        {
+          "name": "Gunforce - Battle Fire Engulfed Terror Island (USA).mra",
+          "sha": "e5bb7ed510770ee5021ccddad7a6cac2ebf70f90",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM92_MiSTer/main/releases/_alternatives/_Gunforce%20-%20Battle%20Fire%20Engulfed%20Terror%20Island/Gunforce%20-%20Battle%20Fire%20Engulfed%20Terror%20Island%20(USA).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Gunforce - Battle Fire Engulfed Terror Island (USA)",
+            "rbf": "IremM92",
+            "zips": [
+              "gunforce.zip|gunforceu.zip"
+            ]
+          }
+        },
+        {
+          "name": "Hook (Japan).mra",
+          "sha": "87c328bcbc70514582bc9bde309014e65e2f01c1",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM92_MiSTer/main/releases/_alternatives/_Hook/Hook%20(Japan).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Hook (Japan)",
+            "rbf": "IremM92",
+            "zips": [
+              "hookj.zip|hook.zip"
+            ]
+          }
+        },
+        {
+          "name": "In The Hunt (US).mra",
+          "sha": "eae934c476efa3c2757f4079b8142233c0d7d6ca",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM92_MiSTer/main/releases/_alternatives/_In%20The%20Hunt/In%20The%20Hunt%20(US).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "In The Hunt (US)",
+            "rbf": "IremM92",
+            "zips": [
+              "inthunt.zip|inthuntu.zip"
+            ]
+          }
+        },
+        {
+          "name": "Kaitei Daisensou (Japan).mra",
+          "sha": "dbcc8cae254b58dd35bcc919af5b8882b122c1d5",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM92_MiSTer/main/releases/_alternatives/_In%20The%20Hunt/Kaitei%20Daisensou%20(Japan).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Kaitei Daisensou (Japan)",
+            "rbf": "IremM92",
+            "zips": [
+              "kaiteids.zip|inthunt.zip"
+            ]
+          }
+        },
+        {
+          "name": "Thunder Blaster (Japan).mra",
+          "sha": "c22ed44fe43fe020e0bc5b41b6ff76cba4fb2b7f",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM92_MiSTer/main/releases/_alternatives/_Lethal%20Thunder/Thunder%20Blaster%20(Japan).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Thunder Blaster (Japan)",
+            "rbf": "IremM92",
+            "zips": [
+              "thndblst.zip|lethalth.zip"
+            ]
+          }
+        },
+        {
+          "name": "Mahou Keibitai Gun Hohki (Japan).mra",
+          "sha": "0516d360cc79f4bd58316c223fa6839adb7bc850",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM92_MiSTer/main/releases/_alternatives/_Mystic%20Riders/Mahou%20Keibitai%20Gun%20Hohki%20(Japan).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Mahou Keibitai Gun Hohki (Japan)",
+            "rbf": "IremM92",
+            "zips": [
+              "gunhohki.zip|mysticri.zip"
+            ]
+          }
+        },
+        {
+          "name": "Ninja Baseball Bat Man (US).mra",
+          "sha": "6b6a31c714de0ea96e201bc9ae833ccb6fd59d19",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM92_MiSTer/main/releases/_alternatives/_Ninja%20Baseball%20Bat%20Man/Ninja%20Baseball%20Bat%20Man%20(US).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Ninja Baseball Bat Man (World)",
+            "rbf": "IremM92",
+            "zips": [
+              "nbbatman.zip|nbbatmanu.zip"
+            ]
+          }
+        },
+        {
+          "name": "Yakyuu Kakutou League-Man (Japan).mra",
+          "sha": "4a524fecccc0105a9439daa9f023aeb03d22b812",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM92_MiSTer/main/releases/_alternatives/_Ninja%20Baseball%20Bat%20Man/Yakyuu%20Kakutou%20League-Man%20(Japan).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Yakyuu Kakutou League-Man (Japan)",
+            "rbf": "IremM92",
+            "zips": [
+              "nbbatman.zip|leaguemn.zip"
+            ]
+          }
+        },
+        {
+          "name": "R-Type Leo (Japan).mra",
+          "sha": "8d46aaba994b8952930849a21c7b4ab42d7ac871",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM92_MiSTer/main/releases/_alternatives/_R-Type%20Leo/R-Type%20Leo%20(Japan).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "R-Type Leo (Japan)",
+            "rbf": "IremM92",
+            "zips": [
+              "rtypeleoj.zip|rtypeleo.zip"
+            ]
+          }
+        },
+        {
+          "name": "Undercover Cops (Japan).mra",
+          "sha": "e574d26c45accf4d7f9ad1c5dda770aacdafc8d5",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM92_MiSTer/main/releases/_alternatives/_Undercover%20Cops/Undercover%20Cops%20(Japan).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Undercover Cops (Japan)",
+            "rbf": "IremM92",
+            "zips": [
+              "uccopsj.zip|uccops.zip"
+            ]
+          }
+        },
+        {
+          "name": "Undercover Cops (US).mra",
+          "sha": "57ebe0436f3e03ae27466501492629534796418c",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM92_MiSTer/main/releases/_alternatives/_Undercover%20Cops/Undercover%20Cops%20(US).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Undercover Cops (US)",
+            "rbf": "IremM92",
+            "zips": [
+              "uccops.zip|uccopsu.zip"
+            ]
+          }
+        },
+        {
+          "name": "Undercover Cops - Alpha Renewal Version (US).mra",
+          "sha": "e4673e3a12751fc4db489ed4d37915c3ca863d53",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM92_MiSTer/main/releases/_alternatives/_Undercover%20Cops/Undercover%20Cops%20-%20Alpha%20Renewal%20Version%20(US).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Undercover Cops - Alpha Renewal Version (US)",
+            "rbf": "IremM92",
+            "zips": [
+              "uccops.zip|uccopsaru.zip"
+            ]
+          }
+        },
+        {
+          "name": "Undercover Cops - Alpha Renewal Version (World).mra",
+          "sha": "e9eef55f4944997e1c4c5a6d7990e8ad2c6784d5",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM92_MiSTer/main/releases/_alternatives/_Undercover%20Cops/Undercover%20Cops%20-%20Alpha%20Renewal%20Version%20(World).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Undercover Cops - Alpha Renewal Version (World)",
+            "rbf": "IremM92",
+            "zips": [
+              "uccops.zip|uccopsar.zip"
+            ]
+          }
+        }
+      ]
+    },
+    {
       "name": "Arcade-IronHorse_MiSTer",
       "description": "Iron Horse for MiSTer",
       "readme": "# Iron Horse for [MISTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\nAn FPGA implementation of Iron Horse for the MiSTer platform\n\n## Credits\n- Sorgelig: MiSTer project lead\n- Ace: Core design and Konami custom chip implementations\n- ElectronAsh: Assistance with Konami custom chip implementations\n- Steve C. - Shiffy: Sourcing a bootleg Iron Horse PCB for reverse-engineering\n- JimmyStones: High score saving support & pause feature\n- Kitrinx: ROM loader\n\n## Features\n- Logic modelled to match the original as closely as possible\n- Standard joystick and keyboard controls\n- High score saving\n- Greg Miller's cycle-accurate MC6809E CPU core with modifications by Sorgelig\n- T80s CPU by Daniel Wallner with fixes by MikeJ, Sorgelig, and others\n- YM2203 implementation using JT03 by Jotego\n- Modeling of bootleg PCBs' timing and graphical differences\n- Fully-tuned audio filters including the PCB's switchable low-pass filters\n- Option for normalized video timings to use with picky HDTVs and monitors (underclocks the game by ~1.8%)\n\n## Installation\nPlace `*.rbf` into the \"_Arcade/cores\" folder on your SD card.  Then, place `*.mra` into the \"_Arcade\" folder and ROM files from MAME into \"games/mame\".\n\n### ****ATTENTION****\nROMs are not included. In order to use this arcade core, you must provide the correct ROMs.\n\nTo simplify the process, .mra files are provided in the releases folder that specify the required ROMs along with their checksums.  The ROM's .zip filename refers to the corresponding file in the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for information on how to setup and use the environment.\n\nQuick reference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/games/mame/<mame rom>.zip\n/games/hbmame/<hbmame rom>.zip\n\n## Controls\n### Keyboard\n| Key | Function |\n| --- | --- |\n| 1 | 1-Player Start |\n| 2 | 2-Player Start |\n| 5, 6 | Coin |\n| 9 | Service Credit |\n| Arrow keys | Movement |\n| CTRL | Power |\n| ALT | Shoot |\n| Space | Crouch |\n\n### Joystick\n| Joystick action | Function |\n| --- | --- |\n| D-Pad | Movement |\n| Y | Power |\n| B | Attack |\n| A | Crouch |\n\n## Known Issues\n1) Although bootleg flaws are modeled, sprite flickering is not 100% accurate\n2) The high score system may cause lockups or unusual behavior when high scores are loaded with normalized video timings\n3) The volume scale of the YM2203's SSG section needs further verification\n\n## High score save/load\n\nSave and load of high scores is supported for this core:\n\nTo save your high scores manually, press the 'Save Settings' option in the OSD.  High scores will be automatically loaded when the core is started.\n\nTo enable automatic saving of high scores, turn on the 'Autosave Hiscores' option, press the 'Save Settings' option in the OSD, and reload the core.  High scores will then be automatically saved (if they have changed) any time the OSD is opened.\n\nHigh score data is stored in /media/fat/config/nvram/ as ```<mra filename>.nvm```\n",
@@ -12100,6 +12494,12 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-VBall_20230407.rbf",
+          "sha": "87d6cb1a64b6e0f9708db3623ad6c67377049417",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-VBall_MiSTer/master/releases/Arcade-VBall_20230407.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "V'Ball (US) [bl].mra",
           "sha": "702b8456b61c4df357314b55479708d3d1a98242",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-VBall_MiSTer/master/releases/V'Ball%20(US)%20%5Bbl%5D.mra",
@@ -14632,7 +15032,7 @@
     {
       "name": "Distribution_MiSTer",
       "description": "This repository contains all the files that you'll want in your MiSTer",
-      "readme": "# MiSTer Distribution\n\nThis repository contains all the files that you'll want in your MiSTer.\n\nYou may download all of them at once as a zip through the [following link](https://github.com/MiSTer-devel/Distribution_MiSTer/archive/refs/heads/main.zip). Once you have them, place them as-is in your [properly initialised SD card](https://github.com/MiSTer-devel/mr-fusion), and everything should work out of the box.\n\n### MiSTer Project\n\nIf you want to check more about the MiSTer project, please check [this wiki](https://github.com/MiSTer-devel/Wiki_MiSTer/wiki).\n\n### MiSTer Downloader\n\nFor downloading all of these files directly from your MiSTer, use the [MiSTer Downloader](https://github.com/MiSTer-devel/Downloader_MiSTer).\n\n#### Tags that you may use with 'Download Filters' feature\n\nRead about how to use them [here](https://github.com/MiSTer-devel/Downloader_MiSTer/blob/main/docs/download-filters.md).\n\n##### List:\n\n`acornatom`, `acornelectron`, `adam`, `adctest`, `adventurevision`, `alicemc10`, `all_filters`, `altair8800`, `alternatives`, `amiga`, `amstrad`, `amstrad-pcw`, `amstradpcw`, `ao486`, `apogee`, `apple-i`, `apple-ii`, `aquarius`, `arcade`, `arcade-arkanoid`, `arcade-asteroids`, `arcade-asteroidsdeluxe`, `arcade-astrocade`, `arcade-ataritetris`, `arcade-athena`, `arcade-athena_mister`, `arcade-bagman`, `arcade-bakraid`, `arcade-bankpanic`, `arcade-batrider`, `arcade-battlezone`, `arcade-berzerk`, `arcade-blackwidow`, `arcade-blockade`, `arcade-bombjack`, `arcade-bosconian`, `arcade-breakout`, `arcade-burgertime`, `arcade-burningrubber`, `arcade-canyonbomber`, `arcade-cave`, `arcade-centipede`, `arcade-chameleon`, `arcade-computerspace`, `arcade-congobongo`, `arcade-cores`, `arcade-cosmic`, `arcade-cosmicguerilla`, `arcade-crazyballoon`, `arcade-crazyclimber`, `arcade-crazykong`, `arcade-crystalcastles`, `arcade-defender`, `arcade-digdug`, `arcade-dominos`, `arcade-donkeykong`, `arcade-donkeykong3`, `arcade-donkeykongjunior`, `arcade-dorodon`, `arcade-dottorikun`, `arcade-druaga`, `arcade-exerion`, `arcade-expressraider`, `arcade-finalizer`, `arcade-foodfight`, `arcade-freeze`, `arcade-frenzy`, `arcade-galaga`, `arcade-galaxian`, `arcade-galivan`, `arcade-gaplus`, `arcade-garegga`, `arcade-gauntlet`, `arcade-gyruss`, `arcade-ikariwarriors`, `arcade-inferno`, `arcade-iremm62`, `arcade-iremm72`, `arcade-ironhorse`, `arcade-jackal`, `arcade-jailbreak`, `arcade-joust2`, `arcade-ladybug`, `arcade-lunarlander`, `arcade-mariobros`, `arcade-mcr1`, `arcade-mcr2`, `arcade-mcr3`, `arcade-mcr3mono`, `arcade-mcr3scroll`, `arcade-missilecommand`, `arcade-moonpatrol`, `arcade-mrdo`, `arcade-mrjong`, `arcade-mysticmarathon`, `arcade-ninjakun`, `arcade-pacman`, `arcade-pengo`, `arcade-penguinkunwars`, `arcade-performan`, `arcade-phoenix`, `arcade-pleiads`, `arcade-polyplay`, `arcade-pong`, `arcade-pooyan`, `arcade-popeye`, `arcade-qbert`, `arcade-rallyx`, `arcade-riverpatrol`, `arcade-robotron`, `arcade-rshnatk`, `arcade-scootershooter`, `arcade-scramble`, `arcade-segasys1`, `arcade-silverland`, `arcade-slapfight`, `arcade-sms`, `arcade-snk_triplez80`, `arcade-solomonskey`, `arcade-sonson`, `arcade-spaceinvaders`, `arcade-spacerace`, `arcade-sprint1`, `arcade-sprint2`, `arcade-subs`, `arcade-superbreakout`, `arcade-tankbattalion`, `arcade-tecmo`, `arcade-tiamc1`, `arcade-timepilot`, `arcade-timepilot84`, `arcade-tnkiii`, `arcade-traverseusa`, `arcade-tropicalangel`, `arcade-turkeyshoot`, `arcade-ultratank`, `arcade-vball`, `arcade-xevious`, `arcade-xsleenacore`, `arcade-zaxxon`, `arcade-zigzag`, `arcadelpf`, `arcadia`, `archie`, `arduboy`, `astrocade`, `atari2600`, `atari5200`, `atari7800`, `atari800`, `atarilynx`, `atarist`, `avision`, `ay-3-8500`, `bbcbridgecompanion`, `bbcmicro`, `bios`, `bk0011m`, `c128`, `c16`, `c64`, `casio_pv-1000`, `casio_pv-2000`, `channelf`, `cheats`, `chess`, `chip8`, `coco2`, `coco3`, `coleco`, `colecoadam`, `colecovision`, `complexmultichromatic`, `computer`, `computer-cores`, `console`, `console-cores`, `contrast_boost`, `cores`, `corespecific`, `creativision`, `crt-simulation`, `displayspecific`, `docs`, `drv`, `edsac`, `eg2000`, `epochgalaxyii`, `essential`, `extra-utilities`, `famicom`, `filters`, `filters_audio`, `filters_video`, `flappy`, `flappybird`, `font`, `galaksija`, `gamate`, `gameboy`, `gameboy2p`, `gameboyadvance`, `gameboycolor`, `gamecontrollerdb`, `gamegear`, `gamenwatch`, `gameoflife`, `games`, `gamma`, `gb`, `gba`, `gba2p`, `gbc`, `generalhardware`, `generallpf`, `genesis`, `gnw`, `handheld2p`, `hbmame`, `homelab`, `inputtest`, `intellivision`, `interact`, `jupiter`, `laser`, `laser310`, `lcd-general`, `lcd-integeronly`, `linux`, `lynx48`, `macplus`, `mame`, `mastersystem`, `megacd`, `megadrive`, `megaduck`, `memte`, `memtest`, `menu`, `mgl`, `minimig`, `mra`, `msx`, `msx1`, `multicomp`, `neogeo`, `nes`, `nintendo`, `odyssey2`, `old`, `ondra_spo186`, `orao`, `oric`, `other`, `other-cores`, `palettes`, `pc88`, `pc8801`, `pcengine`, `pcenginecd`, `pcxt`, `pdp1`, `pet2001`, `pmd85`, `pocketchallengev2`, `pokemonmini`, `poly_gamma`, `presets`, `psx`, `pure_gamma`, `ql`, `readme`, `rx78`, `s32x`, `samcoupe`, `scanlines-adaptive`, `scanlines-brighter`, `scanlines-standard`, `scripts`, `segacd`, `segamark3`, `service-cores`, `sgb`, `shadow_masks`, `sharpmz`, `simplemonochrome`, `slugcross`, `sms`, `snes`, `sordm5`, `specialist`, `spectrum`, `spmx`, `sufami`, `superfamicom`, `supergameboy`, `supernes`, `supernintendo`, `supervision`, `svi328`, `tatungeinstein`, `tgfx16`, `tgfx16-cd`, `tgfx16cd`, `ti-99_4a`, `ti994a`, `tomyscramble`, `tomytutor`, `trs-80`, `tsconf`, `turbografx`, `turbografx16`, `turbografx16cd`, `turbografxcd`, `uk101`, `upscaling-lanczosbicubicetc`, `upscaling-recommended`, `upscaling-sharpbilinear`, `utility`, `vc4000`, `vector-06c`, `vector06`, `vector06c`, `vectrex`, `vic20`, `wonderswan`, `wonderswancolor`, `x68000`, `yctxt`, `zx-spectrum`, `zx81`, `zxnext`, `zxspectrum`\n\n##### Some relevant tag descriptions:\n\n- `arcade-cores` / `arcade`: All arcade cores and MRA files.\n- `computer-cores` / `computer`: All computer cores and related folders.\n- `console-cores` / `console`: All console cores and related folders.\n- `other-cores` / `other`: All cores from the top folder Other with their related folders.\n- `service-cores` / `utility`: All utility cores and related folders.\n- `cores`: All cores (RBF files).\n- `mra`: All MRA files & folders.\n- `alternatives`: All MRA Alternatives\n- `hbmame`: All files & folders linked to the HBMame collection.\n- `handheld2p`: All 2 Player versions for Handheld cores.\n- `filters_video`: All video filters (`gamma` & `filters` & `shadow_masks`).\n- `all_filters`: All video & audio filters (`filters_video` & `filters_audio`).\n- `essential`: Menu core & MiSTer firmware.\n- `readme`: All README files.\n- `docs`: All documentation files & folders, including README files.\n- `extra-utilities`: All extra utilities that are installed in games folders of some computer cores.\n- `bios`: All bioses that are installed in the games folders for some computer & console cores.\n- `cheats`: All cheat files & folders.\n\n### Contributing\n\nYou are more than welcome to contribute to the [MiSTer-devel Organization](https://github.com/MiSTer-devel). But you can't do it by openening PRs to the main branch of this repository. This repository is only for file distribution. Whatever content shows up here depends on the other repositories of this organization, so you should target your PRs there.\n\nThere is a development branch in this repository for the content collection. Is fine to send PRs there but they should only modify the content collection scripts that are being used by the workflows.\n",
+      "readme": "# MiSTer Distribution\n\nThis repository contains all the files that you'll want in your MiSTer.\n\nYou may download all of them at once as a zip through the [following link](https://github.com/MiSTer-devel/Distribution_MiSTer/archive/refs/heads/main.zip). Once you have them, place them as-is in your [properly initialised SD card](https://github.com/MiSTer-devel/mr-fusion), and everything should work out of the box.\n\n### MiSTer Project\n\nIf you want to check more about the MiSTer project, please check [this wiki](https://github.com/MiSTer-devel/Wiki_MiSTer/wiki).\n\n### MiSTer Downloader\n\nFor downloading all of these files directly from your MiSTer, use the [MiSTer Downloader](https://github.com/MiSTer-devel/Downloader_MiSTer).\n\n#### Tags that you may use with 'Download Filters' feature\n\nRead about how to use them [here](https://github.com/MiSTer-devel/Downloader_MiSTer/blob/main/docs/download-filters.md).\n\n##### List:\n\n`acornatom`, `acornelectron`, `adam`, `adctest`, `adventurevision`, `alicemc10`, `all_filters`, `altair8800`, `alternatives`, `amiga`, `amstrad`, `amstrad-pcw`, `amstradpcw`, `ao486`, `apogee`, `apple-i`, `apple-ii`, `aquarius`, `arcade`, `arcade-arkanoid`, `arcade-asteroids`, `arcade-asteroidsdeluxe`, `arcade-astrocade`, `arcade-ataritetris`, `arcade-athena`, `arcade-athena_mister`, `arcade-bagman`, `arcade-bakraid`, `arcade-bankpanic`, `arcade-batrider`, `arcade-battlezone`, `arcade-berzerk`, `arcade-blackwidow`, `arcade-blockade`, `arcade-bombjack`, `arcade-bosconian`, `arcade-breakout`, `arcade-burgertime`, `arcade-burningrubber`, `arcade-canyonbomber`, `arcade-cave`, `arcade-centipede`, `arcade-chameleon`, `arcade-computerspace`, `arcade-congobongo`, `arcade-cores`, `arcade-cosmic`, `arcade-cosmicguerilla`, `arcade-crazyballoon`, `arcade-crazyclimber`, `arcade-crazykong`, `arcade-crystalcastles`, `arcade-defender`, `arcade-digdug`, `arcade-dominos`, `arcade-donkeykong`, `arcade-donkeykong3`, `arcade-donkeykongjunior`, `arcade-dorodon`, `arcade-dottorikun`, `arcade-druaga`, `arcade-exerion`, `arcade-expressraider`, `arcade-finalizer`, `arcade-foodfight`, `arcade-freeze`, `arcade-frenzy`, `arcade-galaga`, `arcade-galaxian`, `arcade-galivan`, `arcade-gaplus`, `arcade-garegga`, `arcade-gauntlet`, `arcade-gyruss`, `arcade-ikariwarriors`, `arcade-inferno`, `arcade-iremm62`, `arcade-iremm72`, `arcade-iremm92`, `arcade-ironhorse`, `arcade-jackal`, `arcade-jailbreak`, `arcade-joust2`, `arcade-ladybug`, `arcade-lunarlander`, `arcade-mariobros`, `arcade-mcr1`, `arcade-mcr2`, `arcade-mcr3`, `arcade-mcr3mono`, `arcade-mcr3scroll`, `arcade-missilecommand`, `arcade-moonpatrol`, `arcade-mrdo`, `arcade-mrjong`, `arcade-mysticmarathon`, `arcade-ninjakun`, `arcade-pacman`, `arcade-pengo`, `arcade-penguinkunwars`, `arcade-performan`, `arcade-phoenix`, `arcade-pleiads`, `arcade-polyplay`, `arcade-pong`, `arcade-pooyan`, `arcade-popeye`, `arcade-qbert`, `arcade-rallyx`, `arcade-riverpatrol`, `arcade-robotron`, `arcade-rshnatk`, `arcade-scootershooter`, `arcade-scramble`, `arcade-segasys1`, `arcade-silverland`, `arcade-slapfight`, `arcade-sms`, `arcade-snk_triplez80`, `arcade-solomonskey`, `arcade-sonson`, `arcade-spaceinvaders`, `arcade-spacerace`, `arcade-sprint1`, `arcade-sprint2`, `arcade-subs`, `arcade-superbreakout`, `arcade-tankbattalion`, `arcade-tecmo`, `arcade-tiamc1`, `arcade-timepilot`, `arcade-timepilot84`, `arcade-tnkiii`, `arcade-traverseusa`, `arcade-tropicalangel`, `arcade-turkeyshoot`, `arcade-ultratank`, `arcade-vball`, `arcade-xevious`, `arcade-xsleenacore`, `arcade-zaxxon`, `arcade-zigzag`, `arcadelpf`, `arcadia`, `archie`, `arduboy`, `astrocade`, `atari2600`, `atari5200`, `atari7800`, `atari800`, `atarilynx`, `atarist`, `avision`, `ay-3-8500`, `bbcbridgecompanion`, `bbcmicro`, `bios`, `bk0011m`, `c128`, `c16`, `c64`, `casio_pv-1000`, `casio_pv-2000`, `channelf`, `cheats`, `chess`, `chip8`, `coco2`, `coco3`, `coleco`, `colecoadam`, `colecovision`, `complexmultichromatic`, `computer`, `computer-cores`, `console`, `console-cores`, `contrast_boost`, `cores`, `corespecific`, `creativision`, `crt-simulation`, `displayspecific`, `docs`, `drv`, `edsac`, `eg2000`, `epochgalaxyii`, `essential`, `extra-utilities`, `famicom`, `filters`, `filters_audio`, `filters_video`, `flappy`, `flappybird`, `font`, `galaksija`, `gamate`, `gameboy`, `gameboy2p`, `gameboyadvance`, `gameboycolor`, `gamecontrollerdb`, `gamegear`, `gamenwatch`, `gameoflife`, `games`, `gamma`, `gb`, `gba`, `gba2p`, `gbc`, `generalhardware`, `generallpf`, `genesis`, `gnw`, `handheld2p`, `hbmame`, `homelab`, `inputtest`, `intellivision`, `interact`, `jupiter`, `laser`, `laser310`, `lcd-general`, `lcd-integeronly`, `linux`, `lynx48`, `macplus`, `mame`, `mastersystem`, `megacd`, `megadrive`, `megaduck`, `memte`, `memtest`, `menu`, `mgl`, `minimig`, `mra`, `msx`, `msx1`, `multicomp`, `myvision`, `neogeo`, `nes`, `nintendo`, `odyssey2`, `old`, `ondra_spo186`, `orao`, `oric`, `other`, `other-cores`, `palettes`, `pc88`, `pc8801`, `pcengine`, `pcenginecd`, `pcxt`, `pdp1`, `pet2001`, `pmd85`, `pocketchallengev2`, `pokemonmini`, `poly_gamma`, `presets`, `psx`, `pure_gamma`, `ql`, `readme`, `rx78`, `s32x`, `samcoupe`, `scanlines-adaptive`, `scanlines-brighter`, `scanlines-standard`, `scripts`, `segacd`, `segamark3`, `service-cores`, `sgb`, `shadow_masks`, `sharpmz`, `simplemonochrome`, `slugcross`, `sms`, `snes`, `sordm5`, `specialist`, `spectrum`, `spmx`, `sufami`, `super_vision_8000`, `superfamicom`, `supergameboy`, `supernes`, `supernintendo`, `supervision`, `supervision8000`, `svi328`, `tatungeinstein`, `tgfx16`, `tgfx16-cd`, `tgfx16cd`, `ti-99_4a`, `ti994a`, `tomyscramble`, `tomytutor`, `trs-80`, `tsconf`, `turbografx`, `turbografx16`, `turbografx16cd`, `turbografxcd`, `uk101`, `upscaling-lanczosbicubicetc`, `upscaling-recommended`, `upscaling-sharpbilinear`, `utility`, `vc4000`, `vector-06c`, `vector06`, `vector06c`, `vectrex`, `vic20`, `wonderswan`, `wonderswancolor`, `x68000`, `yctxt`, `zx-spectrum`, `zx81`, `zxnext`, `zxspectrum`\n\n##### Some relevant tag descriptions:\n\n- `arcade-cores` / `arcade`: All arcade cores and MRA files.\n- `computer-cores` / `computer`: All computer cores and related folders.\n- `console-cores` / `console`: All console cores and related folders.\n- `other-cores` / `other`: All cores from the top folder Other with their related folders.\n- `service-cores` / `utility`: All utility cores and related folders.\n- `cores`: All cores (RBF files).\n- `mra`: All MRA files & folders.\n- `alternatives`: All MRA Alternatives\n- `hbmame`: All files & folders linked to the HBMame collection.\n- `handheld2p`: All 2 Player versions for Handheld cores.\n- `filters_video`: All video filters (`gamma` & `filters` & `shadow_masks`).\n- `all_filters`: All video & audio filters (`filters_video` & `filters_audio`).\n- `essential`: Menu core & MiSTer firmware.\n- `readme`: All README files.\n- `docs`: All documentation files & folders, including README files.\n- `extra-utilities`: All extra utilities that are installed in games folders of some computer cores.\n- `bios`: All bioses that are installed in the games folders for some computer & console cores.\n- `cheats`: All cheat files & folders.\n\n### Contributing\n\nYou are more than welcome to contribute to the [MiSTer-devel Organization](https://github.com/MiSTer-devel). But you can't do it by openening PRs to the main branch of this repository. This repository is only for file distribution. Whatever content shows up here depends on the other repositories of this organization, so you should target your PRs there.\n\nThere is a development branch in this repository for the content collection. Is fine to send PRs there but they should only modify the content collection scripts that are being used by the workflows.\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/Distribution_MiSTer",
@@ -18407,6 +18807,22 @@
       ]
     },
     {
+      "name": "MyVision_MiSTer",
+      "description": "Nichibutsu My Vision Console for MiSTer",
+      "readme": "<p align=\"center\">\n    <img style=\"width: 400px;\" src=\"img/MyVision.gif\">\n</p>\n\n# [My Vision](https://wikipedia.org/wiki/My_Vision) for [MiSTer](https://mister-devel.github.io/MkDocs_MiSTer/)\nThis is an FPGA implementation of the My Vision Console by Nichibutsu for the MiSTer FPGA platform.\n\n## About the System\n- Released only in Japan with only 6 Games/Cartridges.\n- It did not use controllers, instead it had buttons on the console itself.\n- The Direction Buttons (A,B,C & D) are mapped to the Cursor Keys, or you can use a Joystick\n- The E button is mapped to the <kbd>Space Bar</kbd> or you can use the Fire Button on a Joystick.\n\nConsole Button to Keyboard Mapping\n\nConsole : |<kbd>1</kbd> | <kbd>2</kbd> | <kbd>3</kbd> | <kbd>4</kbd> | <kbd>5</kbd> | <kbd>6</kbd> | <kbd>7</kbd> | <kbd>8</kbd> | <kbd>9</kbd> | <kbd>10</kbd> | <kbd>11</kbd> | <kbd>12</kbd> | <kbd>13</kbd> | <kbd>14</kbd> | <kbd>A</kbd> | <kbd>B</kbd> | <kbd>C</kbd> | <kbd>D</kbd> | <kbd>E</kbd> \n----------|-|-|-|-|-|-|-|-|-|--|--|--|--|--|-|-|-|-|-|\nOption A : |<kbd>1</kbd> | <kbd>2</kbd> | <kbd>3</kbd> | <kbd>4</kbd> | <kbd>5</kbd> | <kbd>6</kbd> | <kbd>7</kbd> | <kbd>8</kbd> | <kbd>9</kbd> | <kbd>0</kbd> | <kbd>-</kbd> | <kbd>=</kbd> | <kbd>\u232b</kbd> | <kbd>\\\\</kbd> | <kbd>\u2190</kbd> | <kbd>\u2191</kbd> | <kbd>\u2193</kbd> | <kbd>\u2192</kbd> | <kbd>Space</kbd>\nOption B: |<kbd>A</kbd> | <kbd>B</kbd> | <kbd>C</kbd> | <kbd>D</kbd> | <kbd>E</kbd> | <kbd>F</kbd> | <kbd>G</kbd> | <kbd>H</kbd> | <kbd>I</kbd> | <kbd>J</kbd> | <kbd>K</kbd> | <kbd>L</kbd> | <kbd>M</kbd> | <kbd>N</kbd> |  <kbd>\u2190</kbd> | <kbd>\u2191</kbd> | <kbd>\u2193</kbd> | <kbd>\u2192</kbd> | <kbd>Fire</kbd>\n\n## Prepping Files\nIf your game is a zip and contains multiple files such as \"f1\" \"f2\" and so on, then you'll need to convert them to .bin for the core to be able to load it. First extract those files and then perform the following commands.\n\n**Using MS-DOS/CMD:**\n```\ncopy /B f1 + /B f2 + /B f3 Hanafuda.bin\n```\n   \n**Using Linux/MiSTer:**\n```\ncat f1 f2 f3 > Hanafuda.bin\n```\n",
+      "archived": false,
+      "fork": false,
+      "url": "https://github.com/MiSTer-devel/MyVision_MiSTer",
+      "releases": [
+        {
+          "name": "MyVision_20230410.rbf",
+          "sha": "ced62b29ad0f37d27138a83400e5ec96673cb7cd",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/MyVision_MiSTer/main/releases/MyVision_20230410.rbf",
+          "type": "RBF"
+        }
+      ]
+    },
+    {
       "name": "NeoGeo_MiSTer",
       "description": "NeoGeo for MiSTer",
       "readme": "\r\n# [SNK Neo Geo](https://en.wikipedia.org/wiki/Neo_Geo_(system)) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki) \r\n\r\nThis is an FPGA implementation of the NEO GEO/MVS system by [Furrtek](https://www.patreon.com/furrtek/posts)\r\n\r\n## Features\r\n* Supports memory card saving\r\n* MVS and AES system support\r\n* Compatible with Darksoft ROM sets using provided XML\r\n* Compatible with decrypted MAME ROM sets using your own XML\r\n* Compatible with decrypted .neo ROM sets\r\n* Compatible with gog.com ROMs using provided XML\r\n* Support for Universe BIOS\r\n\r\nNote: Core doesn't support encrypted ROMs. Make sure the ROM has no encrypted parts before use. MAME ROM pack includes many encrypted ROMs so it's not recommended for inexperienced users. Using the .neo conversion tool with a MAME ROM set will result in some ROMs still being encrypted. There is an alternate .neo conversion tool for the Darksoft ROM set that will give you a fully decrypted set.\r\n\r\n[MAME to .neo conversion tool](https://github.com/city41/neosdconv)\r\n\r\n[Darksoft to .neo conversion tool](https://gitlab.com/loic.petit/darksoft-to-neosd/)\r\n\r\n## Installation\r\nCopy the NeoGeo_\\*.rbf file to the 'Console' or 'Arcade' folder (your choice) on the SD card. ROMS should go in the 'games\\NeoGeo' folder. For ease of use, it is strongly suggested that people use the Darksoft ROM pack. These can be either zipped or unzipped with minimal loading speed difference. Several things must be observed:\r\n* When using an unzipped Darksoft ROM set, each game's ROM files must be in their own folder and the folders containing the ROM sets must be named to match the XML (MAME standard names)\r\n* ROMs can be placed inside sub-folders for organization\r\n* Zipped ROMs must **not** contain folders.\r\n\r\nIn addition, several bios files must be placed in the 'games\\NeoGeo' folder for the core to function properly:\r\n* 000-lo.lo\r\n* sfix.sfix\r\n* sp-s2.sp1 (MVS)\r\n* neo-epo.sp1 (AES)\r\n* uni-bios.rom\r\n\r\nSometimes these files may be named slightly different depending on where they are obtained, but they must be renamed to match the filenames above to work with MiSTer. You may choose between using original system BIOS (sp-s2.sp1/neo-epo.sp1) and uni-bios.rom. Using uni-bios is recommended, and can be obtained [here](http://unibios.free.fr/).\r\n\r\nLastly, **romsets.xml** from the release folder must also be placed in the directory. The provided XML is for Darksoft ROMs only, you must make your own for MAME ROMs. This file describes to the core where the ROM sets are located and how to load them. **gog-romsets.xml** can be used (renamed to **romsets.xml**) for games purchased from gog.com (which also include all the needed bios files), see comments in gog-romsets.xml .\r\n\r\n## Saving and Loading\r\nIn AES mode, all saves are to the memory card only. In MVS mode, some games and uni-bios save their settings to a special area of battery backed ram built into the system, while game data can be still be saved to a memory card. To simplify things, it is suggested to stick to one system type on the OSD and use uni-bios to change the system type, so that game information is saved consistently.\r\n\r\n## RAM and Game Sizes\r\nNeo Geo uses very large ROMs. About 84% of the library will fit onto a 32 megabyte SDRAM module. Another 12% will fit onto a 64 megabyte SDRAM module. The remaining 8 games require a 128 megabyte module. For more information about which games can be loaded with which sized RAM, open romsets.xml in your favorite text editor or github. The games are organized by size.\r\n",
@@ -21121,6 +21537,28 @@
           "name": "SuperVision_20220612.rbf",
           "sha": "846a1202e44c6752abdafa01dca5ea39c16e5b13",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/SuperVision_MiSTer/master/releases/SuperVision_20220612.rbf",
+          "type": "RBF"
+        }
+      ]
+    },
+    {
+      "name": "Super_Vision_8000_MiSTer",
+      "description": "Bandai Super Vision 8000 FPGA core for MiSTer",
+      "readme": "<p align=\"center\">\n    <img style=\"width: 400px;\" src=\"img/BandaiSuperVision8000.jpg\" title=\"Image courtesy of Wikipedia\">\n</p>\n\n# [Bandai Super Vision 8000](https://wikipedia.org/wiki/Bandai_Super_Vision_8000) for [MiSTer](https://mister-devel.github.io/MkDocs_MiSTer/)\nThis is an FPGA implementation of the Super Vision 8000 by Bandai for the MiSTer FPGA platform.\n\n## Controllers\n- Support for two keypad controllers using a combination of Joystick and the Keyboard.\n- The controllers don't have Fire buttons, but for convenience, Fire button 1 is mapped to the <kbd>*</kbd> and Fire button 2 is mapped to <kbd>#</kbd>, which seem the most commonly used \"Action/Fire buttons\"\n- Player 1 is typically the Right Controller and Player 2 is the Left Controller.\n- Player 1 Keypad is mapped to the Numpad while Player 2 uses the main keys.\n- Keypad keys are also mappable to multi-button controllers (ex Coleco/Intv/Jaguar with usb adapter)\n\nPlayer 2 | Player 1\n-------- | --------\nKeyboard | Numpad\n<kbd>1</kbd><kbd>2</kbd><kbd>3</kbd> | <kbd>1</kbd><kbd>2</kbd><kbd>3</kbd>\n<kbd>Q</kbd><kbd>W</kbd><kbd>E</kbd> | <kbd>4</kbd><kbd>5</kbd><kbd>6</kbd>\n<kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> | <kbd>7</kbd><kbd>8</kbd><kbd>9</kbd>\n<kbd>Z</kbd><kbd>X</kbd><kbd>C</kbd> | <kbd>*</kbd><kbd>0</kbd><kbd>-</kbd>\n",
+      "archived": false,
+      "fork": false,
+      "url": "https://github.com/MiSTer-devel/Super_Vision_8000_MiSTer",
+      "releases": [
+        {
+          "name": "Super_Vision_8000_20230410.rbf",
+          "sha": "5e6c241d2099c69751606f102250bd90d5ba6712",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Super_Vision_8000_MiSTer/main/releases/Super_Vision_8000_20230410.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Super_Vision_8000_20230411.rbf",
+          "sha": "cbc6969308170d93adf8f1d8cc9594541fa250b0",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Super_Vision_8000_MiSTer/main/releases/Super_Vision_8000_20230411.rbf",
           "type": "RBF"
         }
       ]
