@@ -3048,6 +3048,12 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Galaxian_20230430.rbf",
+          "sha": "2bac5f742364b4010d6d3fe92587293916e37324",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaxian_MiSTer/master/releases/Arcade-Galaxian_20230430.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Azurian Attack.mra",
           "sha": "a8d53c1d57a2d898956b264bacf1340baa79bd78",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaxian_MiSTer/master/releases/Azurian%20Attack.mra",
@@ -3176,6 +3182,19 @@
           }
         },
         {
+          "name": "Moon Quasar.mra",
+          "sha": "4acfc20f680525b81179804eb89431df0510d465",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaxian_MiSTer/master/releases/Moon%20Quasar.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Moon Quasar",
+            "rbf": "galaxian",
+            "zips": [
+              "moonqsr.zip"
+            ]
+          }
+        },
+        {
           "name": "Mr. Do Nightmare.mra",
           "sha": "188e2cdf534defadbf3b191838da38c64b544ab0",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaxian_MiSTer/master/releases/Mr.%20Do%20Nightmare.mra",
@@ -3222,6 +3241,19 @@
             "rbf": "galaxian",
             "zips": [
               "pisces.zip"
+            ]
+          }
+        },
+        {
+          "name": "Portman (Galaxian Hardware).mra",
+          "sha": "ba0a3564f60444ec2ee321a2a27c9af9732bfb0b",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaxian_MiSTer/master/releases/Portman%20(Galaxian%20Hardware).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Portman",
+            "rbf": "galaxian",
+            "zips": [
+              "porter.zip|dockman.zip"
             ]
           }
         },
@@ -10819,6 +10851,12 @@
           "type": "RBF"
         },
         {
+          "name": "Gameboy_20230501.rbf",
+          "sha": "844a15bdca1ad2b43dcc31c7803e06827b54b5ce",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Gameboy_MiSTer/master/releases/Gameboy_20230501.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Mega Duck.mgl",
           "sha": "46182bf8d3cb712157b1b1dcc9235fe7f9c4daed",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Gameboy_MiSTer/master/releases/Mega%20Duck.mgl",
@@ -12810,6 +12848,12 @@
           "name": "S32X_20230224.rbf",
           "sha": "dbd8b578b93ed6c45fdc6ea47f3fb13f8f03871f",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/S32X_MiSTer/main/releases/S32X_20230224.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "S32X_20230501.rbf",
+          "sha": "75e7b3b7a4f8864e1f3d396526e3961f654c96f0",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/S32X_MiSTer/main/releases/S32X_20230501.rbf",
           "type": "RBF"
         }
       ]

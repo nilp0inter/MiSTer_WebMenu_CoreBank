@@ -4909,14 +4909,14 @@
         },
         {
           "name": "Portman (Galaxian Hardware).mra",
-          "sha": "f8955079ef47fd9794962a7aced7c364d2db03c6",
+          "sha": "ba0a3564f60444ec2ee321a2a27c9af9732bfb0b",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Galaxian_MiSTer/master/releases/Portman%20(Galaxian%20Hardware).mra",
           "type": "MRA",
           "extra": {
             "name": "Portman",
             "rbf": "galaxian",
             "zips": [
-              "porter.zip"
+              "porter.zip|dockman.zip"
             ]
           }
         },
@@ -15590,6 +15590,12 @@
           "type": "RBF"
         },
         {
+          "name": "Gameboy_20230501.rbf",
+          "sha": "e12f4211309a06dc49f931809ed5f49317189151",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Gameboy_MiSTer/master/releases/Gameboy_20230501.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Mega Duck.mgl",
           "sha": "46182bf8d3cb712157b1b1dcc9235fe7f9c4daed",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Gameboy_MiSTer/master/releases/Mega%20Duck.mgl",
@@ -19623,7 +19629,7 @@
     {
       "name": "PCXT_MiSTer",
       "description": "PCXT port for MiSTer by spark2k06.",
-      "readme": "# [IBM PC/XT](https://en.wikipedia.org/wiki/IBM_Personal_Computer_XT) for [MiSTer FPGA](https://mister-devel.github.io/MkDocs_MiSTer/)\n\nPCXT port for MiSTer by [@spark2k06](https://github.com/spark2k06/).\n\nDiscussion and evolution of the core in the following misterfpga forum section:\n\nhttps://misterfpga.org/viewforum.php?f=40\n\n## Description\n\nThe purpose of this core is to implement a PCXT as reliable as possible. For this purpose, the [MCL86 core](https://github.com/MicroCoreLabs/Projects/tree/master/MCL86) from [@MicroCoreLabs](https://github.com/MicroCoreLabs/) and [KFPC-XT](https://github.com/kitune-san/KFPC-XT) from [@kitune-san](https://github.com/kitune-san) are used.\n\nThe [Graphics Gremlin project](https://github.com/schlae/graphics-gremlin) from TubeTimeUS ([@schlae](https://github.com/schlae)) has also been integrated in this first stage.\n\n[JTOPL](https://github.com/jotego/jtopl) by Jose Tejada (@jotego) was integrated for AdLib sound.\n\n[JT89](https://github.com/jotego/jt89) by Jose Tejada (@jotego) was integrated for Tandy sound.\n\n## Key features\n\n* 8088 CPU with these speed settings: 4.77 MHz, 7.16 MHz, 9.54 MHz cycle accurate, and PC/AT 286 at 3.5MHz equivalent (max. speed)\n* BIOS selectable (Tandy 1000 / PCXT)\n* Support for IBM Tandy 1000\n* Support for IBM PCXT 5160 and clones (CGA graphics)\n* Main memory 640Kb + 384Kb UMB memory\n* Simulated Composite Video, F11 -> Swap Video Output with RGB for Tandy model \n* Simultaneous video Hercules Graphics Card, F11 -> Swap Video Output with CGA for PCXT model\n* Enable/Disable of CGA and Hercules I/O ports (Only with PCXT model)\n* 1st Graphics Card selection from System & BIOS (Only with PCXT model)\n* EMS memory up to 2Mb\n* XTIDE support\n* Tandy graphics with 128Kb of shared RAM + CGA graphics\n* Audio: Adlib, Tandy, speaker\n* Joystick support\n* Mouse support into COM1 serial port, this works like any Microsoft mouse... you just need a driver to configure it, like CTMOUSE 1.9 (available into hdd folder)\n\n## Quick Start\n\n* Copy the contents of games/PCTXT to your Mister SD Card and uncompress hd_image.zip. It contains a freedos image ( http://www.freedos.org/ )\n* Select the core from Computers/PCXT.\n* Press WinKey + F12 on your keyboard.\n*  Model: IBM PCXT.\n*  CPU Speed: PC/AT 3.5MHz (Max speed)\n*  FDD & HDD -> HDD Image: FreeDOS_HD.img\n*  BIOS -> PCXT BIOS: pcxt_micro8088.rom\n* Choose Reset & apply model.\n\n## ROM Instructions\n\nROMs should be provided initially from the BIOS section of the OSD menu, then it is only necessary to indicate the computer model and reset, on subsequent boot of the core, it is no longer necessary to provide them, unless we want to use others. Original and copyrighted ROMs can be generated on the fly using the python scripts available in the SW folder of this repository:\n\n* `make_rom_with_ibm5160.py`: A valid ROM is created for the PCXT model (pcxt.rom) based on the original IBM 5160 ROM, requires the XTIDE BIOS at address EC00h to work with HD images.\n* `make_rom_with_jukost.py`: A valid ROM is created for the PCXT model (pcxt.rom) based on the original Juko ST ROM, and with the XTIDE BIOS embedded at address F000h.\n* `make_rom_with_tandy.py`: A valid ROM is created for the Tandy model (tandy.rom) based on the original Tandy 1000 ROM, requires the XTIDE BIOS at address EC00h to work with HD images.\n\nFrom the same BIOS section of the OSD it is possible to specify an XTIDE ROM of up to 16Kb to work at address EC00h. It is also provided in this repository.\n\nOther Open Source ROMs are available in the same folder:\n\n* `pcxt_pcxt31.rom`: This ROM already has the XTIDE BIOS embedded at address F000h. ([Source Code](https://github.com/virtualxt/pcxtbios))\n* `pcxt_micro8088.rom`: This ROM already has the XTIDE BIOS embedded at address F000h. ([Source Code](https://github.com/skiselev/8088_bios))\n* `ide_xtl.rom`: This ROM corresponds to the XTIDE BIOS, it must be maintained for some scripts to work, it can also be upgraded to a newer version. ([Source Code](https://www.xtideuniversalbios.org/))\n\nNote: Not all ROMs work with MDA video: (IBM5160, Yuko ST and pcxt31 works)\n\n## Other BIOSes\n\n* https://github.com/640-KB/GLaBIOS\n\n## Mounting the FDD image\n\nThe floppy disk image size must be compatible with the BIOS, for example:\n\n* On IBM 5160 or Tandy 1000 only 360Kb images work well.\n* On Micro8088 only 720Kb and 1.44Mb images work properly.\n* Other BIOS may not be compatible, such as OpenXT by Ja'akov Miles and Jon Petroski.\n\nIt is possible to use images smaller than the size supported by the BIOS, but only pre-formatted images, as it will not be possible to format them from MS-Dos.\n\n## Developers\n\nAny contribution and pull request, please carry it out on the prerelease branch. Periodically they will be reviewed, moved and merged into the main branch, together with the corresponding release.\n\nThank you!\n",
+      "readme": "# [IBM PC/XT](https://en.wikipedia.org/wiki/IBM_Personal_Computer_XT) for [MiSTer FPGA](https://mister-devel.github.io/MkDocs_MiSTer/)\n\nPCXT port for MiSTer by [@spark2k06](https://github.com/spark2k06/).\n\nDiscussion and evolution of the core in the following misterfpga forum section:\n\nhttps://misterfpga.org/viewforum.php?f=40\n\n## Description\n\nThe purpose of this core is to implement a PCXT as reliable as possible. For this purpose, the [MCL86 core](https://github.com/MicroCoreLabs/Projects/tree/master/MCL86) from [@MicroCoreLabs](https://github.com/MicroCoreLabs/) and [KFPC-XT](https://github.com/kitune-san/KFPC-XT) from [@kitune-san](https://github.com/kitune-san) are used.\n\nThe [Graphics Gremlin project](https://github.com/schlae/graphics-gremlin) from TubeTimeUS ([@schlae](https://github.com/schlae)) has also been integrated in this first stage.\n\n[JTOPL](https://github.com/jotego/jtopl) by Jose Tejada (@jotego) was integrated for AdLib sound.\n\n[JT89](https://github.com/jotego/jt89) by Jose Tejada (@jotego) was integrated for Tandy sound.\n\n## Key features\n\n* 8088 CPU with these speed settings: 4.77 MHz, 7.16 MHz, 9.54 MHz cycle accurate, and PC/AT 286 at 3.5MHz equivalent (max. speed)\n* BIOS selectable (Tandy 1000 / PCXT)\n* Support for IBM Tandy 1000\n* Support for IBM PCXT 5160 and clones (CGA graphics)\n* Main memory 640Kb + 384Kb UMB memory\n* Simulated Composite Video, F11 -> Swap Video Output with RGB for Tandy model \n* Simultaneous video Hercules Graphics Card, F11 -> Swap Video Output with CGA for PCXT model\n* Enable/Disable of CGA and Hercules I/O ports (Only with PCXT model)\n* 1st Graphics Card selection from System & BIOS (Only with PCXT model)\n* EMS memory up to 2Mb\n* XTIDE support\n* Tandy graphics with 128Kb of shared RAM + CGA graphics\n* Audio: Adlib, Tandy, speaker\n* Joystick support\n* Mouse support into COM1 serial port, this works like any Microsoft mouse... you just need a driver to configure it, like CTMOUSE 1.9 (available into hdd folder)\n* 2nd SD card support\n\n## Quick Start\n\n* Copy the contents of games/PCTXT to your Mister SD Card and uncompress hd_image.zip. It contains a freedos image ( http://www.freedos.org/ )\n* Select the core from Computers/PCXT.\n* Press WinKey + F12 on your keyboard.\n*  Model: IBM PCXT.\n*  CPU Speed: PC/AT 3.5MHz (Max speed)\n*  FDD & HDD -> HDD Image: FreeDOS_HD.img\n*  BIOS -> PCXT BIOS: pcxt_micro8088.rom\n* Choose Reset & apply model.\n\n## ROM Instructions\n\nROMs should be provided initially from the BIOS section of the OSD menu, then it is only necessary to indicate the computer model and reset, on subsequent boot of the core, it is no longer necessary to provide them, unless we want to use others. Original and copyrighted ROMs can be generated on the fly using the python scripts available in the SW folder of this repository:\n\n* `make_rom_with_ibm5160.py`: A valid ROM is created for the PCXT model (pcxt.rom) based on the original IBM 5160 ROM, requires the XTIDE BIOS at address EC00h to work with HD images.\n* `make_rom_with_jukost.py`: A valid ROM is created for the PCXT model (pcxt.rom) based on the original Juko ST ROM, and with the XTIDE BIOS embedded at address F000h.\n* `make_rom_with_tandy.py`: A valid ROM is created for the Tandy model (tandy.rom) based on the original Tandy 1000 ROM, requires the XTIDE BIOS at address EC00h to work with HD images.\n\nFrom the same BIOS section of the OSD it is possible to specify an XTIDE ROM of up to 16Kb to work at address EC00h. It is also provided in this repository.\n\nOther Open Source ROMs are available in the same folder:\n\n* `pcxt_pcxt31.rom`: This ROM already has the XTIDE BIOS embedded at address F000h. ([Source Code](https://github.com/virtualxt/pcxtbios))\n* `pcxt_micro8088.rom`: This ROM already has the XTIDE BIOS embedded at address F000h. ([Source Code](https://github.com/skiselev/8088_bios))\n* `ide_xtl.rom`: This ROM corresponds to the XTIDE BIOS, it must be maintained for some scripts to work, it can also be upgraded to a newer version. ([Source Code](https://www.xtideuniversalbios.org/))\n\nNote: Not all ROMs work with MDA video: (IBM5160, Yuko ST and pcxt31 works)\n\n## Other BIOSes\n\n* https://github.com/640-KB/GLaBIOS\n\n## Mounting the FDD image\n\nThe floppy disk image size must be compatible with the BIOS, for example:\n\n* On IBM 5160 or Tandy 1000 only 360Kb images work well.\n* On Micro8088 only 720Kb and 1.44Mb images work properly.\n* Other BIOS may not be compatible, such as OpenXT by Ja'akov Miles and Jon Petroski.\n\nIt is possible to use images smaller than the size supported by the BIOS, but only pre-formatted images, as it will not be possible to format them from MS-Dos.\n\n## Developers\n\nAny contribution and pull request, please carry it out on the prerelease branch. Periodically they will be reviewed, moved and merged into the main branch, together with the corresponding release.\n\nThank you!\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-devel/PCXT_MiSTer",
@@ -19908,6 +19914,12 @@
           "name": "PCXT_20230408.rbf",
           "sha": "4dcadd4b88cfbfd087083f21229babc22f9b01d7",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/PCXT_MiSTer/main/releases/PCXT_20230408.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "PCXT_20230506.rbf",
+          "sha": "fb4bd8051dccc041271a7a1c334b4b71e270dd69",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/PCXT_MiSTer/main/releases/PCXT_20230506.rbf",
           "type": "RBF"
         }
       ]
@@ -20200,6 +20212,12 @@
           "sha": "9c6e7b6543f7e23bb9c53822dcd7ba775ca20c3e",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/PSX_MiSTer/main/releases/PSX_20230218.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "PSX_20230503.rbf",
+          "sha": "ffae9228933daaee6b72206aeaf5d1538bf9edae",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/PSX_MiSTer/main/releases/PSX_20230503.rbf",
+          "type": "RBF"
         }
       ]
     },
@@ -20418,6 +20436,12 @@
           "name": "S32X_20230224.rbf",
           "sha": "725134905a1f52b7cf57338e46bbd48f7ab2b044",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/S32X_MiSTer/main/releases/S32X_20230224.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "S32X_20230501.rbf",
+          "sha": "7adc420ce6a46b4e194b67daad530a96a5657bf3",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/S32X_MiSTer/main/releases/S32X_20230501.rbf",
           "type": "RBF"
         }
       ]
