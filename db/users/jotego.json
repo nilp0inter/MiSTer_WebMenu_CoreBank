@@ -432,6 +432,38 @@
         },
         {
           "name": "README.md",
+          "sha": "e24143b94e120e7b696a19ce74c2eee52674e401",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/aliens/README.md",
+          "type": "OTHER"
+        },
+        {
+          "name": "Aliens (World set 1).mra",
+          "sha": "e1b9901fcb50e88f3c5f76c480f8d7b1c667c4f0",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/aliens/releases/Aliens%20(World%20set%201).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Aliens (World set 1)",
+            "rbf": "jtaliens",
+            "zips": [
+              "aliens.zip",
+              "jtbeta.zip"
+            ]
+          }
+        },
+        {
+          "name": "jtaliens.rbf",
+          "sha": "007a3637a979c966087de2528cd11b5ba17c1681",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/aliens/releases/jtaliens.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "version.log",
+          "sha": "978b4ab287781213896e4089ea6746f482709af3",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/aliens/version.log",
+          "type": "OTHER"
+        },
+        {
+          "name": "README.md",
           "sha": "e6c7f686c564ebd5cee4d49919bd931ec0191113",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/biocom/README.md",
           "type": "OTHER"
@@ -556,7 +588,7 @@
         },
         {
           "name": "README.md",
-          "sha": "dd71cbf5e773376e6f7c0b2f950950e717816aec",
+          "sha": "783bcd976c11071c4038becbe0413712f0cf8834",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/castle/README.md",
           "type": "OTHER"
         },
@@ -576,13 +608,13 @@
         },
         {
           "name": "jtcastle.rbf",
-          "sha": "311ea8564ea4de170895ed7d7db671811db6ffb9",
+          "sha": "74d0652a620661eaf1bb983da387656a21894f55",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/castle/releases/jtcastle.rbf",
           "type": "RBF"
         },
         {
           "name": "version.log",
-          "sha": "dc5a340101dbaf133f00ce83f91a31cacb12afdf",
+          "sha": "6ff2f417dc44162251924c2d266fada64d74f5ae",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/castle/version.log",
           "type": "OTHER"
         },
@@ -2251,97 +2283,91 @@
         },
         {
           "name": "Arkanoid - Revenge of DOH (World).mra",
-          "sha": "fa30e2609ecb483ece222bbb3addfc94df910874",
+          "sha": "8b706ab0fb7d35c93f8617e364016b058bbe10fa",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kiwi/releases/Arkanoid%20-%20Revenge%20of%20DOH%20(World).mra",
           "type": "MRA",
           "extra": {
             "name": "Arkanoid - Revenge of DOH (World)",
             "rbf": "jtkiwi",
             "zips": [
-              "arknoid2.zip",
-              "jtbeta.zip"
+              "arknoid2.zip"
             ]
           }
         },
         {
           "name": "Dr. Toppel's Adventure (World).mra",
-          "sha": "acc343410684cba2dd5b257e2622b7ebec022cd2",
+          "sha": "0082b803e6738f15807153298c988b1cffa47e07",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kiwi/releases/Dr.%20Toppel's%20Adventure%20(World).mra",
           "type": "MRA",
           "extra": {
             "name": "Dr. Toppel's Adventure (World)",
             "rbf": "jtkiwi",
             "zips": [
-              "drtoppel.zip",
-              "jtbeta.zip"
+              "drtoppel.zip"
             ]
           }
         },
         {
           "name": "Extermination (World).mra",
-          "sha": "5ceaced704ec7204e8f09818f0e1f97dbbef7014",
+          "sha": "ed707ffbfa37d1da6321256600ab4e17dc448534",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kiwi/releases/Extermination%20(World).mra",
           "type": "MRA",
           "extra": {
             "name": "Extermination (World)",
             "rbf": "jtkiwi",
             "zips": [
-              "extrmatn.zip",
-              "jtbeta.zip"
+              "extrmatn.zip"
             ]
           }
         },
         {
           "name": "Insector X (World).mra",
-          "sha": "c854401ef17236dc96c5da7da79e0f51d716772a",
+          "sha": "2b050505908ff5594569884d19d91f197e5447d1",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kiwi/releases/Insector%20X%20(World).mra",
           "type": "MRA",
           "extra": {
             "name": "Insector X (World)",
             "rbf": "jtkiwi",
             "zips": [
-              "insectx.zip",
-              "jtbeta.zip"
+              "insectx.zip"
             ]
           }
         },
         {
           "name": "Kageki (World).mra",
-          "sha": "70ced1b7d8faba239246d22c4eea7f87ba072954",
+          "sha": "9b57fcf87c83d016db2af4dbcf6edb1511b509ec",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kiwi/releases/Kageki%20(World).mra",
           "type": "MRA",
           "extra": {
             "name": "Kageki (World)",
             "rbf": "jtkiwi",
             "zips": [
-              "kageki.zip",
-              "jtbeta.zip"
+              "kageki.zip"
             ]
           }
         },
         {
           "name": "The NewZealand Story (World, old version) (P0-041A PCB).mra",
-          "sha": "f02f8b885d41ac92057c4123754d0992fa2aad4c",
+          "sha": "6b01640bf54e2a04a293f741c9482037a124abbf",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kiwi/releases/The%20NewZealand%20Story%20(World%2C%20old%20version)%20(P0-041A%20PCB).mra",
           "type": "MRA",
           "extra": {
             "name": "The NewZealand Story (World, old version) (P0-041A PCB)",
             "rbf": "jtkiwi",
             "zips": [
-              "tnzso.zip|tnzs.zip",
-              "jtbeta.zip"
+              "tnzso.zip|tnzs.zip"
             ]
           }
         },
         {
           "name": "jtkiwi.rbf",
-          "sha": "f5f909dc970a9389c85298e84f5218ac0096d955",
+          "sha": "7ddb94315317f160a37a01a809bc028fb02b769a",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kiwi/releases/jtkiwi.rbf",
           "type": "RBF"
         },
         {
           "name": "version.log",
-          "sha": "24b50bc11006b81d3827e4261ac93f1e472b650e",
+          "sha": "d484254a4a4bffb32e9a4d55b7dbd2312f68dfed",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kiwi/version.log",
           "type": "OTHER"
         },
