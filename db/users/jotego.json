@@ -91,6 +91,230 @@
       ]
     },
     {
+      "name": "Arcade-TMNT_MiSTer",
+      "description": "Konami's Teenage Mutant Ninja Turtles for the MiSTer FPGA platform",
+      "readme": "# TMNT\r\n\r\nKonami's Teenage Mutant Ninja Turtles for the MiSTer FPGA platform.\r\n\r\nBefore reporting a bug please check the **issues** tab, some are already known.\r\n\r\nAll the video and the 007232 sound chip logic was extracted from custom chips by [reverse-engineering their silicon](https://github.com/furrtek/VGChips/tree/master/Konami).\r\n\r\nSupports the `tmnt` and `mia` romsets.\r\n\r\n# Thanks\r\n\r\n@Jotego for his support and his great work on JT51 and JT7759.\r\n\r\nAll my patrons on [Patreon](https://www.patreon.com/furrtek) for their encouraging messages and their financial support:\r\n\r\n8bitworkshop, ack, Adam Davis, Adrian, Adrian Nabarro, AHMAD ALHAMLI, Alan Steremberg, albconde, Alex K, Alex Limi, Alex Painemilla Carre\u00f1o, Alex Schuetz, Allen Tipper, Allister Fiend, amdrgn, Andrea Chiavazza, Andy Palmer, Andyways, Ange Albertini, Anonymous, Anthony Catalano, Anton Gale, Antonio Bellotta, ARCADEAGES, Arjan de Lang, Arkade_UK, Armando Doval-Lopez, Arnaud Jacquemin, arobotbitme ., Artemio Urbina, Arthur Carra, Aubrey Graves, AvramCE, Balthasar Schopman, BeardMonsterGames, Ben Phegan, Benjamin C. Wiley Sittler, Benjamin Leggett, Beretta Vex\u00e9e, Bigly Sevensix, Billy, birdybro, Bit2018, Bitmap Bureau, blastar, Boogermann, Brad, Brandon Ptacnik, Brandon Thomas, brian burney, Brian Hamburg, brian Yu, Bryan Evans, cacophony, Cam Gregory, Carl Hagstr\u00f6m, CastleMania Ryan, Chris Angelini, Chris Jardine, Chris Mawman, Chris Tar, Chris Thompson, Christian, Christian Meath, Christoph Helms, Christopher Feldman, Christopher Gelatt, Christopher Harvey, Christopher rumford, Christopher Tuckwell, Cody E, cognitivegears, Coin Retro, Colin Johnson, Cory Stargel, Count Duckula, Craig Bender, Craig Somerfield, Cristiano Moreira Carvalho, Curt Younkin, CyberpunkDre, Cyrille Jouineau, Dacide, Dan Doyle, Daniel Bauza, Daniel Hochman, Danielle (thegirlg33k), DarkStar7, Darren Wootton, Dashie, Dave Powell, Dave Wray, David Alegre, David Alvarado, David Dietrich, David Filskov, David Moylan, Dean Rymer, Dean Strey, DextersTechLab, Dillon Nichols, Douglas Alves, Dylan Lipsitz, Ed Mandy, ElectronAsh, Elio Berrios, emceebois, Emmanuel Vadot, Enrique Lopez, Eoin Gibney, Eric S, Erik O'Neill, Evan Clarke, F. Bennett Pearce, Jr., Fabio, Faye Salwin, Felix Michaux, Flygon, foo1138, Francois P, Frank Rosario, Frank Tenace, Fredrik Berglind, Fredrik Carlsson, GadgetUK164, Garrett Kapp, Gavin, giom, Grant King, Grant McNaught, gros75, grovdata, Guilherme Colombelli, Guillermo Izard, Guillermo Tunon, h1ghjuce, HardGay, Henry Colorado, Henry R, Hentai Joe, hicom150, ian Latta, Ichigo, Indo Jimbo, infebark, Infinite, Infinite NES Lives LLC, Isaac Totz, ItsACerealWow, ItsBobDudes, J Z, Jacek (Jack), Jake Lancaster, Jake Magee, Jan Kretschmer, Jan Paul, Jason, Jasper Soleymanzadeh, Jeffrey Haas, Jeffrey Skube, Jer!, Jeremy Hopkins, Jerrod Putman, Jerry Langwell, JFT, Jim Drewry, Jim Gregory, Jim Knowler, jklax, Jo, Joe Drilling, Joel Krueger, Johan Sj\u00f6strand, John Fletcher, John Kelley, John Klimek, John Laird, John McMaster, John P, John Rademan, John Stringer, Johnny Davies, Jon, Jon Van Dalen, Jonas, Jonathon Rau, Joost Peters, Jootec from Mars, Jose BG, Joseph Milazzo, Josh, Josh Emery, Josh O'Roake, Josh Yates-Walker, Josiah Freep, JOTEGO, Juan Diego, Kaiosten, Kasil, Kawika Pacheco, Kebulator, Keith F. Kelly, Keith Gordon, Kevin Igoe, kigf, kl3mousse, Klaus Wolf, Kristopher, krivx, Kuromi Bunny, Lecloclo, Lee F, loloC2C, Lukas Schaper, Mack H, Magnus Kvevlander, magus424, Manksalot, Manuel, Manuel Antoni, Manuel Gomez Grande, Marco Tavian, Mark Dell, Mark DeRidder, Mark Mahoney, Martin Ansin, Martin Birkeldh, Martin Donlon, Martin Hernandez, Marvin Blauth, Matt Clawson, Matt Elder, Matt Gibson, Matt McCarthy, Matthew Caron, mattsoft, Maude Tarvox, Maxime Mouflard, mbalders, mic _, Michael Irvine, Michael Lessard, Michael Packard, Michael Stegen, Michael Thompson, Michael Tontimonia, Michael's Workshop, Michal, Mike Dean, Mike G, Mike Holzinger, Mike Puelinckx, Mike S, Mike Strobel, Mike V., Mingus, Mitchell Mebane, Monte Greene, mpong, MrX-8B, Muramasa, Murray Melvin, N, Negativeions, NegativeStraw, NeoHomeBrew, Nesfreak, Nick Bartle, Nick Gamewell, Nick K, Nihar Bhatt, Niko, Nikolay Ivanchev, Nils Lundquist, Noah Evans, Nolan, Noyman29, Nuno Sousa, octamin, ojwales, Olivier Cahagne, Osnyg, Owlnonymous, pagetable.com, Paolo Pisati, ParkNangJung, patreoner, Paul, Paul, Paul Alvarez II, Paul Harris, Peter Brown, Peter Kooiman, Peter McQuillan, Phil Stevenson, Philip Lawson, Philippe Depre, philpem, Pierrick Grillet, Pirloui, Pons Cremator, Porkchop Express, prince_rakeem, QcRetro, Quentin Sykes, R, Rasmus Bonnedal, RaspberryAlpine, Raul3D, RavenX-1, Ray Commend, RayceARoni, Raziel, Reed Kennedy, remowilliams, RetroRGB, RetroShop.pt, RGBsince92, Ricardo Engel, Richard S, Richard Simpson, RichFX, Rob Young, Robert Brodie, Robert Dickenson, Robert MacLean, robert rodgers, Roberto, Roberto Lari, Rodrigo Augusto de Moraes Louren\u00e7o, rok, Roland, Rom1, Roman Buser, Ronald Dean, Ruben Johnson, Rune P, Ryan Costello, Rysha, Sam Hall, Samuli Tuomola, Sanc Coulors, Scott Dowdle, Scott Rising, Sean Hancock, Shane Gleeson, Shane Lynch, Shogun7, ShootTheCore, Sigmund68k, Silvio Samadelli, simon van den bon, Sipan Calli, SJohansson, Smarthuman, Spiff, SteelRush, Stefan Nordkvist, Stephane Tremblay, Stephen Marshall, Stephen Stalcup, Steve Randall, Steven A Rodriguez, Steven Hansen, Steven Hertz, Stuart Dunfield, Super Nicktendo, Sylver, TaylorBat, Thomas Gooddy, Thorias, Tianfeng, Tim, ToastCrust, Todd Gill, Tom Salvo, Tony Shadwick, Trifle, type78, Tyrone Cheng, Ulf Skutnabba, Victor, V\u00edctor Gomariz Ladr\u00f3n de Guevara, Victor Lindo, Victor Pando, Wes Brown, Will Green, Woof, Xtro, Zoltan Kovacs, ZooKneeKnow, zzBadnusty.\r\n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/jotego/Arcade-TMNT_MiSTer",
+      "releases": [
+        {
+          "name": "M.I.A. - Missing in Action (version T).mra",
+          "sha": "484213dac1e49a50b9590c973882fc511928b245",
+          "url": "https://raw.githubusercontent.com/jotego/Arcade-TMNT_MiSTer/master/releases/M.I.A.%20-%20Missing%20in%20Action%20(version%20T).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "M.I.A. - Missing in Action (version T)",
+            "rbf": "TMNT",
+            "zips": [
+              "mia.zip"
+            ]
+          }
+        },
+        {
+          "name": "TMNT_20230428.rbf",
+          "sha": "d86257791e0908731879db8739737c031f4b6683",
+          "url": "https://raw.githubusercontent.com/jotego/Arcade-TMNT_MiSTer/master/releases/TMNT_20230428.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Teenage Mutant Ninja Turtles (World 4 Players, version X).mra",
+          "sha": "2d102e107b354389ebf92676d43ae7ff5ce3a0f0",
+          "url": "https://raw.githubusercontent.com/jotego/Arcade-TMNT_MiSTer/master/releases/Teenage%20Mutant%20Ninja%20Turtles%20(World%204%20Players%2C%20version%20X).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Teenage Mutant Ninja Turtles (World 4 Players, version X)",
+            "rbf": "TMNT",
+            "zips": [
+              "tmnt.zip"
+            ]
+          }
+        },
+        {
+          "name": "M.I.A. - Missing in Action (version S).mra",
+          "sha": "816a7c1bd79875f613d2fa81d7c01760687e7a78",
+          "url": "https://raw.githubusercontent.com/jotego/Arcade-TMNT_MiSTer/master/releases/_alternatives/_M.I.A.%20-%20Missing%20in%20Action/M.I.A.%20-%20Missing%20in%20Action%20(version%20S).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "M.I.A. - Missing in Action (version S)",
+            "rbf": "TMNT",
+            "zips": [
+              "mia2.zip|mia.zip"
+            ]
+          }
+        },
+        {
+          "name": "Teenage Mutant Hero Turtles (UK 2 Players, version U).mra",
+          "sha": "1a2b915fded513d413e1b44dbb069f5e35a09512",
+          "url": "https://raw.githubusercontent.com/jotego/Arcade-TMNT_MiSTer/master/releases/_alternatives/_Teenage%20Mutant%20Ninja%20Turtles/Teenage%20Mutant%20Hero%20Turtles%20(UK%202%20Players%2C%20version%20U).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Teenage Mutant Hero Turtles (UK 2 Players, version U)",
+            "rbf": "TMNT",
+            "zips": [
+              "tmht2p.zip|tmnt.zip"
+            ]
+          }
+        },
+        {
+          "name": "Teenage Mutant Hero Turtles (UK 2 Players, version \uf03f).mra",
+          "sha": "2b2b29a82ff4e9ed96fdd6c8eeda415b07b59f41",
+          "url": "https://raw.githubusercontent.com/jotego/Arcade-TMNT_MiSTer/master/releases/_alternatives/_Teenage%20Mutant%20Ninja%20Turtles/Teenage%20Mutant%20Hero%20Turtles%20(UK%202%20Players%2C%20version%20%EF%80%BF).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Teenage Mutant Hero Turtles (UK 2 Players, version ?)",
+            "rbf": "TMNT",
+            "zips": [
+              "tmht2pa.zip|tmnt.zip"
+            ]
+          }
+        },
+        {
+          "name": "Teenage Mutant Hero Turtles (UK 4 Players, version F).mra",
+          "sha": "3b008a9e8720356443aecf303128b8b6b7e6b5a6",
+          "url": "https://raw.githubusercontent.com/jotego/Arcade-TMNT_MiSTer/master/releases/_alternatives/_Teenage%20Mutant%20Ninja%20Turtles/Teenage%20Mutant%20Hero%20Turtles%20(UK%204%20Players%2C%20version%20F).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Teenage Mutant Hero Turtles (UK 4 Players, version F)",
+            "rbf": "TMNT",
+            "zips": [
+              "tmht.zip|tmnt.zip"
+            ]
+          }
+        },
+        {
+          "name": "Teenage Mutant Hero Turtles (UK 4 Players, version S).mra",
+          "sha": "4c74e4d8341bf1c6905f78cef27eeafda006397b",
+          "url": "https://raw.githubusercontent.com/jotego/Arcade-TMNT_MiSTer/master/releases/_alternatives/_Teenage%20Mutant%20Ninja%20Turtles/Teenage%20Mutant%20Hero%20Turtles%20(UK%204%20Players%2C%20version%20S).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Teenage Mutant Hero Turtles (UK 4 Players, version S)",
+            "rbf": "TMNT",
+            "zips": [
+              "tmhta.zip|tmnt.zip"
+            ]
+          }
+        },
+        {
+          "name": "Teenage Mutant Hero Turtles (UK 4 Players, version \uf03f).mra",
+          "sha": "a5f4fb28746f63d6ad1b357b6cd7c76f781975ef",
+          "url": "https://raw.githubusercontent.com/jotego/Arcade-TMNT_MiSTer/master/releases/_alternatives/_Teenage%20Mutant%20Ninja%20Turtles/Teenage%20Mutant%20Hero%20Turtles%20(UK%204%20Players%2C%20version%20%EF%80%BF).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Teenage Mutant Hero Turtles (UK 4 Players, version ?)",
+            "rbf": "TMNT",
+            "zips": [
+              "tmhtb.zip|tmnt.zip"
+            ]
+          }
+        },
+        {
+          "name": "Teenage Mutant Ninja Turtles (Asia 4 Players, version \uf03f).mra",
+          "sha": "c08541f4f765310613de892d8099cebbefe1413a",
+          "url": "https://raw.githubusercontent.com/jotego/Arcade-TMNT_MiSTer/master/releases/_alternatives/_Teenage%20Mutant%20Ninja%20Turtles/Teenage%20Mutant%20Ninja%20Turtles%20(Asia%204%20Players%2C%20version%20%EF%80%BF).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Teenage Mutant Ninja Turtles (Asia 4 Players, version ?)",
+            "rbf": "TMNT",
+            "zips": [
+              "tmnta.zip|tmnt.zip"
+            ]
+          }
+        },
+        {
+          "name": "Teenage Mutant Ninja Turtles (Japan 2 Players, version 1).mra",
+          "sha": "8bd9ae4c19532b803194db0fe79d15226dc5a4f2",
+          "url": "https://raw.githubusercontent.com/jotego/Arcade-TMNT_MiSTer/master/releases/_alternatives/_Teenage%20Mutant%20Ninja%20Turtles/Teenage%20Mutant%20Ninja%20Turtles%20(Japan%202%20Players%2C%20version%201).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Teenage Mutant Ninja Turtles (Japan 2 Players, version 1)",
+            "rbf": "TMNT",
+            "zips": [
+              "tmnt2pj.zip|tmnt.zip"
+            ]
+          }
+        },
+        {
+          "name": "Teenage Mutant Ninja Turtles (Japan 4 Players, version 2).mra",
+          "sha": "1d98bbfc158600d97af9bc7e5854eb68986f1ea6",
+          "url": "https://raw.githubusercontent.com/jotego/Arcade-TMNT_MiSTer/master/releases/_alternatives/_Teenage%20Mutant%20Ninja%20Turtles/Teenage%20Mutant%20Ninja%20Turtles%20(Japan%204%20Players%2C%20version%202).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Teenage Mutant Ninja Turtles (Japan 2 Players, version 2)",
+            "rbf": "TMNT",
+            "zips": [
+              "tmntj.zip|tmnt.zip"
+            ]
+          }
+        },
+        {
+          "name": "Teenage Mutant Ninja Turtles (Oceania 2 Players, version \uf03f).mra",
+          "sha": "84ed691acd8fd461eb2f86ffd7ee9631879a3c5d",
+          "url": "https://raw.githubusercontent.com/jotego/Arcade-TMNT_MiSTer/master/releases/_alternatives/_Teenage%20Mutant%20Ninja%20Turtles/Teenage%20Mutant%20Ninja%20Turtles%20(Oceania%202%20Players%2C%20version%20%EF%80%BF).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Teenage Mutant Ninja Turtles (Oceania 2 Players, version ?)",
+            "rbf": "TMNT",
+            "zips": [
+              "tmnt2po.zip|tmnt.zip"
+            ]
+          }
+        },
+        {
+          "name": "Teenage Mutant Ninja Turtles (US 4 Players, version H).mra",
+          "sha": "a5f531aa725e06c21acdd11dc8aa05d75dd25e95",
+          "url": "https://raw.githubusercontent.com/jotego/Arcade-TMNT_MiSTer/master/releases/_alternatives/_Teenage%20Mutant%20Ninja%20Turtles/Teenage%20Mutant%20Ninja%20Turtles%20(US%204%20Players%2C%20version%20H).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Teenage Mutant Ninja Turtles (US 4 Players, version H)",
+            "rbf": "TMNT",
+            "zips": [
+              "tmntuc.zip|tmnt.zip"
+            ]
+          }
+        },
+        {
+          "name": "Teenage Mutant Ninja Turtles (US 4 Players, version J).mra",
+          "sha": "f5f85f97257a6965ddbfcbd7c41a1596dd5cf85e",
+          "url": "https://raw.githubusercontent.com/jotego/Arcade-TMNT_MiSTer/master/releases/_alternatives/_Teenage%20Mutant%20Ninja%20Turtles/Teenage%20Mutant%20Ninja%20Turtles%20(US%204%20Players%2C%20version%20J).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Teenage Mutant Ninja Turtles (US 4 Players, version J)",
+            "rbf": "alpha68k",
+            "zips": [
+              "tmntub.zip|tmnt.zip"
+            ]
+          }
+        },
+        {
+          "name": "Teenage Mutant Ninja Turtles (US 4 Players, version N).mra",
+          "sha": "503d6b0f8b292f75cf58f99137cdaad4f74eeea7",
+          "url": "https://raw.githubusercontent.com/jotego/Arcade-TMNT_MiSTer/master/releases/_alternatives/_Teenage%20Mutant%20Ninja%20Turtles/Teenage%20Mutant%20Ninja%20Turtles%20(US%204%20Players%2C%20version%20N).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Teenage Mutant Ninja Turtles (US 4 Players, version N)",
+            "rbf": "TMNT",
+            "zips": [
+              "tmntua.zip|tmnt.zip"
+            ]
+          }
+        },
+        {
+          "name": "Teenage Mutant Ninja Turtles (US 4 Players, version R).mra",
+          "sha": "9478d524d2278460cecb8515da0b72eed3643105",
+          "url": "https://raw.githubusercontent.com/jotego/Arcade-TMNT_MiSTer/master/releases/_alternatives/_Teenage%20Mutant%20Ninja%20Turtles/Teenage%20Mutant%20Ninja%20Turtles%20(US%204%20Players%2C%20version%20R).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Teenage Mutant Ninja Turtles (US 4 Players, version R)",
+            "rbf": "TMNT",
+            "zips": [
+              "tmntu.zip|tmnt.zip"
+            ]
+          }
+        }
+      ]
+    },
+    {
       "name": "Genesis_MiSTer",
       "description": "Sega Genesis for MiSTer",
       "readme": "# SEGA Megadrive/Genesis for MiSTer.\n\nThis is the port of fpgagen core.\n\nfpgagen - a SEGA Megadrive/Genesis clone in a FPGA.\nCopyright (c) 2010-2013 Gregory Estrade (greg@torlus.com)\nAll rights reserved\n\n## Installing\ncopy *.rbf to root of SD card. Put some ROMs (*.BIN/*.GEN/*.MD) into Genesis folder\n\n## Hot Keys\n* F1 - reset to JP(NTSC) region\n* F2 - reset to US(NTSC) region\n* F3 - reset to EU(PAL)  region\n\n## Auto Region option\nIf this option is enabled then region will be automatically switched upon loading according to file name extensions:\n\n* BIN -> JP\n* GEN -> US\n* MD -> EU\n",
