@@ -656,13 +656,13 @@
         },
         {
           "name": "README.md",
-          "sha": "e24143b94e120e7b696a19ce74c2eee52674e401",
+          "sha": "c851923e85f76f0be16de50728137f9c60cf9ea3",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/aliens/README.md",
           "type": "OTHER"
         },
         {
           "name": "Aliens (World set 1).mra",
-          "sha": "e1b9901fcb50e88f3c5f76c480f8d7b1c667c4f0",
+          "sha": "c3d4479ff278d9f51d6baf9914eb012f62ededb5",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/aliens/releases/Aliens%20(World%20set%201).mra",
           "type": "MRA",
           "extra": {
@@ -675,14 +675,28 @@
           }
         },
         {
+          "name": "Super Contra (set 1).mra",
+          "sha": "9b22663f0ab899bc92018389771b4d86257ba1b6",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/aliens/releases/Super%20Contra%20(set%201).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Super Contra (set 1)",
+            "rbf": "jtaliens",
+            "zips": [
+              "scontra.zip",
+              "jtbeta.zip"
+            ]
+          }
+        },
+        {
           "name": "jtaliens.rbf",
-          "sha": "cfbe0532e15b62135af8cb33fc117b2dd7360d28",
+          "sha": "4bdcb3ce5b38bd8f094bece0c94e8878805e34f1",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/aliens/releases/jtaliens.rbf",
           "type": "RBF"
         },
         {
           "name": "version.log",
-          "sha": "df8595c5e7ab1828ff7972ee25ccd58710ace97c",
+          "sha": "43e10d8c7b059556ca30e1dafe8c6f860b9b2ea2",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/aliens/version.log",
           "type": "OTHER"
         },
