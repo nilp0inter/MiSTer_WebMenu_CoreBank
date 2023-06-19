@@ -3017,7 +3017,7 @@
     {
       "name": "Arcade-CosmicGuerilla_MiSTer",
       "description": "Core for Universal Cosmic Guerilla arcade game",
-      "readme": "# [Arcade: Universal Cosmic Guerilla](https://www.arcade-museum.com/game_detail.php?game_id=7402) for [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\nBy [Mike Coates](https://github.com/macrofpga)  \nCurrent Version - 1.00 - 04/04/2023\n\n## Description\n\nThis is a recreation of the [Universal Cosmic Guerilla](https://www.arcade-museum.com/manuf_detail.php?manuf_id=1703&orig_game_id=7402) game.\n\nThe game timing should be very close to the original, but the code is not necessarily identical to the real thing, but achieves a similar end result.\n\n## Controls\n\nLeft, Right, Fire 1\n\n## Known differences/problems\n\nThis core uses a TMS9900 CPU where the original uses a TMS9980 (8 bit version of same CPU, just does 2 memory reads/writes instead of 1 16 bit read/write). Game speed is controlled using vertical counter, so should still be the same as the original.\n\nSound effects are all implemented using samples. (so core needs SDRAM fitted - 32Mb minimum)\n\nWatchdog is not implemented (since it uses a weird watchdog setup, and all my efforts to recreate one with the same timing results in it rebooting constantly)\n\nIt does seem possible to crash the game, especially by adding lots of coins quickly. It also does this in Mame. I guess in the real world you would not be able to put coins in quick enough to make it happen.\n\n## ROM Files Instructions\n\n**ROMs are not included!** In order to use this arcade core, you will need to provide the correct ROM file yourself.\n\nTo simplify the process `.mra` files are provided in the releases folder, that specify the required ROMs with their checksums. The ROMs `.zip` filename refers to the corresponding file from the MAME project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for information on how to setup and use the environment.\n\nQuick reference for folders and file placement:\n\n```\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/games/mame/<mame rom>.zip\n/games/hbmame/<hbmame rom>.zip\n```\n",
+      "readme": "# [Arcade: Universal Cosmic Guerilla](https://www.arcade-museum.com/game_detail.php?game_id=7402) for [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\nBy [Mike Coates](https://github.com/macrofpga)  \nCurrent Version - 1.00 - 04/04/2023\n                  1.01 - 14/06/2023 - Add blue background switch.\n\n## Description\n\nThis is a recreation of the [Universal Cosmic Guerilla](https://www.arcade-museum.com/manuf_detail.php?manuf_id=1703&orig_game_id=7402) game.\n\nThe game timing should be very close to the original, but the code is not necessarily identical to the real thing, but achieves a similar end result.\n\n## Controls\n\nLeft, Right, Fire 1\n\n## Known differences/problems\n\nThis core uses a TMS9900 CPU where the original uses a TMS9980 (8 bit version of same CPU, just does two byte reads/writes instead of one word read/write). Game speed is controlled using vertical counter, so should still be the same as the original.\n\nSound effects are all implemented using samples. (so core needs SDRAM fitted - 32Mb minimum)\n\nWatchdog is not implemented (since it uses a weird watchdog setup, and all my efforts to recreate one with the same timing results in it rebooting constantly)\n\nIt does seem possible to crash the game, especially by adding lots of coins quickly. It also does this in Mame. I guess in the real world you would not be able to put coins in quick enough to make it happen.\n\n## ROM Files Instructions\n\n**ROMs are not included!** In order to use this arcade core, you will need to provide the correct ROM file yourself.\n\nTo simplify the process `.mra` files are provided in the releases folder, that specify the required ROMs with their checksums. The ROMs `.zip` filename refers to the corresponding file from the MAME project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for information on how to setup and use the environment.\n\nQuick reference for folders and file placement:\n\n```\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/games/mame/<mame rom>.zip\n/games/hbmame/<hbmame rom>.zip\n```\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/Arcade-CosmicGuerilla_MiSTer",
@@ -3026,6 +3026,12 @@
           "name": "Arcade-CosmicGuerilla_20230404.rbf",
           "sha": "4acfe7d6be0e122dd04e76dab695a0e5676f2bc1",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-CosmicGuerilla_MiSTer/main/releases/Arcade-CosmicGuerilla_20230404.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-CosmicGuerilla_20230614.rbf",
+          "sha": "4b7fea041431dac71029a8a2f8712f53ce06345a",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-CosmicGuerilla_MiSTer/main/releases/Arcade-CosmicGuerilla_20230614.rbf",
           "type": "RBF"
         },
         {
@@ -11928,6 +11934,191 @@
       ]
     },
     {
+      "name": "Arcade-TaitoSystemSJ_MiSTer",
+      "description": "Taito System SJ Arcade Core",
+      "readme": "# [Taito System SJ](https://www.system16.com/hardware.php?id=634)\n<p>Thank you to the following members of the MiSTer community: Boogermann, misterretrowolf, Sorgelig, & Jotego.</p>\n\n<p>The Taito System SJ was manufactured by Taito in 1982.   The Taito System SJ featured hardware specifications that were relatively advanced for its time and can run several games.  The most recognizable games in the collection are Elevator Action and Jungle King.  </p>\n\n<strong>Main CPU :</strong> Zilog Z80 CPU running at 4 MHz for running game logic and an AY8910 @ 1.5Mhz.  \n<strong>Audio CPU:</strong> Zilog Z80 CPU running at 3 MHz for coordinating sound effects controlling 3 additional AY8910s @ 1.5Mhz.  \n<strong>Video resolution:</strong> 256x224 @ 59.2Hz  \n<strong>Video Hardware:</strong> 3 seperate independantly scrollable tile maps and adjustable priorities, a 4th layer is dedicated to 'objects' (sprites).   \n\n<h2>Compatible Platforms</h2>\n<li>MiSTer FPGA</li>\n\n<h2>Compatible Games</h2>\n<blockquote>\n<p dir=\"auto\"><strong>ROMs NOT INCLUDED:</strong> By using this core you agree to provide your own roms.</p>\n</blockquote>\n\n<li>Alpine Ski</li>\n<li>Bio Attack</li>\n<li>Elevator Action</li>\n<li>High Way Race</li>\n<li>Jungle King</li>\n<li>Pirate Pete</li>\n<li>Space Cruiser</li>\n<li>Space Seeker</li>\n<li>Time Tunnel</li>\n<li>Water Ski</li>\n<li>Wild Western</li>\n\n<h2>Not Working</h2>\n<li>Kick Start Wheelie King</li>\n<li>Front Line</li>\n<li>Sea Fighter Poseidon</li>\n<li>The Tin Star</li>\n\n<h2>Issues</h2>\nSprite offset issue (vertical and horizontal).  NOTE: This does not affect all sprites.\n\n<h2>Coming Soon</h2>\nHigh Score Saves\n",
+      "archived": false,
+      "fork": false,
+      "url": "https://github.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer",
+      "releases": [
+        {
+          "name": "Alpine Ski.mra",
+          "sha": "61eea73eb09c12859fd80b75fb819394ed445c8f",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/Alpine%20Ski.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Alpine Ski",
+            "rbf": "TaitoSJ",
+            "zips": [
+              "alpine.zip"
+            ]
+          }
+        },
+        {
+          "name": "Arcade-TaitoSJ_20230617.rbf",
+          "sha": "f4fb81a1e5704b320959ecbfddeab2e03d6174aa",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/Arcade-TaitoSJ_20230617.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Bio Attack.mra",
+          "sha": "bd7034e415d67e6402b141c86a69939aac26b444",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/Bio%20Attack.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Bio Attack",
+            "rbf": "TaitoSJ",
+            "zips": [
+              "bioatack.zip"
+            ]
+          }
+        },
+        {
+          "name": "Elevator Action Bootleg.mra",
+          "sha": "7f5f62a92065a7e2d2a7b583a09092b9adfcec84",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/Elevator%20Action%20Bootleg.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Elevator Action (bootleg)",
+            "rbf": "TaitoSJ",
+            "zips": [
+              "elevator.zip|elevatorb.zip"
+            ]
+          }
+        },
+        {
+          "name": "High Way Race.mra",
+          "sha": "56adb221765a8d8d5a07187b3bdcf06e49ab5139",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/High%20Way%20Race.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "High Way Race",
+            "rbf": "TaitoSJ",
+            "zips": [
+              "hwrace.zip"
+            ]
+          }
+        },
+        {
+          "name": "Jungle King.mra",
+          "sha": "425b99a13a7fdabacb8d3f1c652afa070c15cd08",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/Jungle%20King.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Jungle King",
+            "rbf": "TaitoSJ",
+            "zips": [
+              "junglek.zip"
+            ]
+          }
+        },
+        {
+          "name": "Pirate Pete.mra",
+          "sha": "bab6dfcbdc0358db45d8a59ddccce2b5b2791138",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/Pirate%20Pete.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Pirate Pete",
+            "rbf": "TaitoSJ",
+            "zips": [
+              "piratpet.zip|junglek.zip"
+            ]
+          }
+        },
+        {
+          "name": "Space Cruiser.mra",
+          "sha": "1792f627d435eb4a7188fd0c705ab4a9cef84d75",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/Space%20Cruiser.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Space Cruiser",
+            "rbf": "TaitoSJ",
+            "zips": [
+              "spacecr.zip"
+            ]
+          }
+        },
+        {
+          "name": "Space Seeker.mra",
+          "sha": "28af46bdd620be3d54c73579b9fce28a0383fdbd",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/Space%20Seeker.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "spaceskr",
+            "rbf": "TaitoSJ",
+            "zips": [
+              "spaceskr.zip"
+            ]
+          }
+        },
+        {
+          "name": "Time Tunnel.mra",
+          "sha": "930ce89030e2974f7907d1f04d84edbf4de3e3a0",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/Time%20Tunnel.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Time Tunnel",
+            "rbf": "TaitoSJ",
+            "zips": [
+              "timetunl.zip"
+            ]
+          }
+        },
+        {
+          "name": "Water Ski.mra",
+          "sha": "bfd4dbe17e2de05dc176aab9ec5b059390216a8c",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/Water%20Ski.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Water Ski",
+            "rbf": "TaitoSJ",
+            "zips": [
+              "waterski.zip"
+            ]
+          }
+        },
+        {
+          "name": "Wild Western.mra",
+          "sha": "f3a43f54b7b6468e595286a81e03ca2d48caa54d",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/Wild%20Western.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Wild Western",
+            "rbf": "TaitoSJ",
+            "zips": [
+              "wwestern.zip"
+            ]
+          }
+        },
+        {
+          "name": "Elevator Action.mra",
+          "sha": "a60d2267d3dbbada278447743e41fa9545a3edbb",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/_TaitoSystemSJ/non%20working/Elevator%20Action.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Elevator Action",
+            "rbf": "TaitoSJ",
+            "zips": [
+              "elevator.zip|elevatora.zip"
+            ]
+          }
+        },
+        {
+          "name": "Kick Start Wheelie King.mra",
+          "sha": "e88acb78772b5c81db58cb2b15c3867f26747849",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/_TaitoSystemSJ/non%20working/Kick%20Start%20Wheelie%20King.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Kick Start Wheelie King",
+            "rbf": "TaitoSJ",
+            "zips": [
+              "kikstart.zip"
+            ]
+          }
+        }
+      ]
+    },
+    {
       "name": "Arcade-TankBattalion_MiSTer",
       "description": "FPGA implementation of Namco's Tank Battalion arcade game ",
       "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade version of Tank Battalion for MiSTer from Namco - MiSTerRetroWolf\n--\n-- V 1.0 08/20/2022 - Nick Stone\n---------------------------------------------------------------------------------\n-- Supports screen and controls rotation on HDMI output.\n-- Sound now supported via samples\n-- \n-- Inputs:\n--   UP,DOWN,LEFT,RIGHT : Tank Movements\n--   Fire\n--   Coin 1\n--   Start 1 Player\n--   Start 2 Players (alternate play)\n--   Test button: in DIP settings enable test mode\n--   and then the test button toggle which bullet is selected\n--\n-- \n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
@@ -15111,7 +15302,7 @@
     {
       "name": "Distribution_MiSTer",
       "description": "This repository contains all the files that you'll want in your MiSTer",
-      "readme": "# MiSTer Distribution\n\nThis repository contains all the files that you'll want in your MiSTer.\n\nYou may download all of them at once as a zip through the [following link](https://github.com/MiSTer-devel/Distribution_MiSTer/archive/refs/heads/main.zip). Once you have them, place them as-is in your [properly initialised SD card](https://github.com/MiSTer-devel/mr-fusion), and everything should work out of the box.\n\n### MiSTer Project\n\nIf you want to check more about the MiSTer project, please check [this wiki](https://github.com/MiSTer-devel/Wiki_MiSTer/wiki).\n\n### MiSTer Downloader\n\nFor downloading all of these files directly from your MiSTer, use the [MiSTer Downloader](https://github.com/MiSTer-devel/Downloader_MiSTer).\n\n#### Tags that you may use with 'Download Filters' feature\n\nRead about how to use them [here](https://github.com/MiSTer-devel/Downloader_MiSTer/blob/main/docs/download-filters.md).\n\n##### List:\n\n`acornatom`, `acornelectron`, `adam`, `adctest`, `adventurevision`, `alicemc10`, `all_filters`, `altair8800`, `alternatives`, `amiga`, `amstrad`, `amstrad-pcw`, `amstradpcw`, `ao486`, `apogee`, `apple-i`, `apple-ii`, `aquarius`, `arcade`, `arcade-arkanoid`, `arcade-asteroids`, `arcade-asteroidsdeluxe`, `arcade-astrocade`, `arcade-ataritetris`, `arcade-athena`, `arcade-athena_mister`, `arcade-bagman`, `arcade-bakraid`, `arcade-bankpanic`, `arcade-batrider`, `arcade-battlezone`, `arcade-berzerk`, `arcade-blackwidow`, `arcade-blockade`, `arcade-bombjack`, `arcade-bosconian`, `arcade-breakout`, `arcade-burgertime`, `arcade-burningrubber`, `arcade-canyonbomber`, `arcade-cave`, `arcade-centipede`, `arcade-chameleon`, `arcade-computerspace`, `arcade-congobongo`, `arcade-cores`, `arcade-cosmic`, `arcade-cosmicguerilla`, `arcade-crazyballoon`, `arcade-crazyclimber`, `arcade-crazykong`, `arcade-crystalcastles`, `arcade-defender`, `arcade-digdug`, `arcade-dominos`, `arcade-donkeykong`, `arcade-donkeykong3`, `arcade-donkeykongjunior`, `arcade-dorodon`, `arcade-dottorikun`, `arcade-druaga`, `arcade-exerion`, `arcade-expressraider`, `arcade-finalizer`, `arcade-foodfight`, `arcade-freeze`, `arcade-frenzy`, `arcade-galaga`, `arcade-galaxian`, `arcade-galivan`, `arcade-gaplus`, `arcade-garegga`, `arcade-gauntlet`, `arcade-gyruss`, `arcade-ikariwarriors`, `arcade-inferno`, `arcade-iremm62`, `arcade-iremm72`, `arcade-iremm92`, `arcade-ironhorse`, `arcade-jackal`, `arcade-jailbreak`, `arcade-joust2`, `arcade-kickandrun`, `arcade-ladybug`, `arcade-lunarlander`, `arcade-mariobros`, `arcade-mcr1`, `arcade-mcr2`, `arcade-mcr3`, `arcade-mcr3mono`, `arcade-mcr3scroll`, `arcade-missilecommand`, `arcade-moonpatrol`, `arcade-mrdo`, `arcade-mrjong`, `arcade-mysticmarathon`, `arcade-ninjakun`, `arcade-pacman`, `arcade-pengo`, `arcade-penguinkunwars`, `arcade-performan`, `arcade-phoenix`, `arcade-pleiads`, `arcade-polyplay`, `arcade-pong`, `arcade-pooyan`, `arcade-popeye`, `arcade-qbert`, `arcade-rallyx`, `arcade-riverpatrol`, `arcade-robotron`, `arcade-rshnatk`, `arcade-scootershooter`, `arcade-scramble`, `arcade-segasys1`, `arcade-silverland`, `arcade-slapfight`, `arcade-sms`, `arcade-snk_triplez80`, `arcade-solomonskey`, `arcade-sonson`, `arcade-spaceinvaders`, `arcade-spacerace`, `arcade-sprint1`, `arcade-sprint2`, `arcade-subs`, `arcade-superbreakout`, `arcade-tankbattalion`, `arcade-tecmo`, `arcade-tiamc1`, `arcade-timepilot`, `arcade-timepilot84`, `arcade-tnkiii`, `arcade-traverseusa`, `arcade-tropicalangel`, `arcade-turkeyshoot`, `arcade-ultratank`, `arcade-vball`, `arcade-xevious`, `arcade-xsleenacore`, `arcade-zaxxon`, `arcade-zigzag`, `arcadelpf`, `arcadia`, `archie`, `arduboy`, `astrocade`, `atari2600`, `atari5200`, `atari7800`, `atari800`, `atarilynx`, `atarist`, `avision`, `ay-3-8500`, `bbcbridgecompanion`, `bbcmicro`, `bios`, `bk0011m`, `c128`, `c16`, `c64`, `casio_pv-1000`, `casio_pv-2000`, `channelf`, `cheats`, `chess`, `chip8`, `coco2`, `coco3`, `coleco`, `colecoadam`, `colecovision`, `complexmultichromatic`, `computer`, `computer-cores`, `console`, `console-cores`, `contrast_boost`, `cores`, `corespecific`, `creativision`, `crt-simulation`, `displayspecific`, `docs`, `drv`, `edsac`, `eg2000`, `epochgalaxyii`, `essential`, `extra-utilities`, `famicom`, `filters`, `filters_audio`, `filters_video`, `flappy`, `flappybird`, `font`, `galaksija`, `gamate`, `gameboy`, `gameboy2p`, `gameboyadvance`, `gameboycolor`, `gamecontrollerdb`, `gamegear`, `gamenwatch`, `gameoflife`, `games`, `gamma`, `gb`, `gba`, `gba2p`, `gbc`, `generalhardware`, `generallpf`, `genesis`, `gnw`, `handheld2p`, `hbmame`, `homelab`, `inputtest`, `intellivision`, `interact`, `jupiter`, `laser`, `laser310`, `lcd-general`, `lcd-integeronly`, `linux`, `lynx48`, `macplus`, `mame`, `mastersystem`, `megacd`, `megadrive`, `megaduck`, `memte`, `memtest`, `menu`, `mgl`, `minimig`, `mra`, `msx`, `msx1`, `multicomp`, `myvision`, `neogeo`, `nes`, `nintendo`, `odyssey2`, `old`, `ondra_spo186`, `orao`, `oric`, `other`, `other-cores`, `palettes`, `pc88`, `pc8801`, `pcengine`, `pcenginecd`, `pcxt`, `pdp1`, `pet2001`, `pmd85`, `pocketchallengev2`, `pokemonmini`, `poly_gamma`, `presets`, `psx`, `pure_gamma`, `ql`, `readme`, `rx78`, `s32x`, `samcoupe`, `scanlines-adaptive`, `scanlines-brighter`, `scanlines-standard`, `scripts`, `segacd`, `segamark3`, `service-cores`, `sgb`, `shadow_masks`, `sharpmz`, `simplemonochrome`, `slugcross`, `sms`, `snes`, `sordm5`, `specialist`, `spectrum`, `spmx`, `sufami`, `super_vision_8000`, `superfamicom`, `supergameboy`, `supernes`, `supernintendo`, `supervision`, `supervision8000`, `svi328`, `tatungeinstein`, `tgfx16`, `tgfx16-cd`, `tgfx16cd`, `ti-99_4a`, `ti994a`, `tomyscramble`, `tomytutor`, `trs-80`, `tsconf`, `turbografx`, `turbografx16`, `turbografx16cd`, `turbografxcd`, `uk101`, `upscaling-lanczosbicubicetc`, `upscaling-recommended`, `upscaling-sharpbilinear`, `utility`, `vc4000`, `vector-06c`, `vector06`, `vector06c`, `vectrex`, `vic20`, `wonderswan`, `wonderswancolor`, `x68000`, `yctxt`, `zx-spectrum`, `zx81`, `zxnext`, `zxspectrum`\n\n##### Some relevant tag descriptions:\n\n- `arcade-cores` / `arcade`: All arcade cores and MRA files.\n- `computer-cores` / `computer`: All computer cores and related folders.\n- `console-cores` / `console`: All console cores and related folders.\n- `other-cores` / `other`: All cores from the top folder Other with their related folders.\n- `service-cores` / `utility`: All utility cores and related folders.\n- `cores`: All cores (RBF files).\n- `mra`: All MRA files & folders.\n- `alternatives`: All MRA Alternatives\n- `hbmame`: All files & folders linked to the HBMame collection.\n- `handheld2p`: All 2 Player versions for Handheld cores.\n- `filters_video`: All video filters (`gamma` & `filters` & `shadow_masks`).\n- `all_filters`: All video & audio filters (`filters_video` & `filters_audio`).\n- `essential`: Menu core & MiSTer firmware.\n- `readme`: All README files.\n- `docs`: All documentation files & folders, including README files.\n- `extra-utilities`: All extra utilities that are installed in games folders of some computer cores.\n- `bios`: All bioses that are installed in the games folders for some computer & console cores.\n- `cheats`: All cheat files & folders.\n\n### Contributing\n\nYou are more than welcome to contribute to the [MiSTer-devel Organization](https://github.com/MiSTer-devel). But you can't do it by openening PRs to the main branch of this repository. This repository is only for file distribution. Whatever content shows up here depends on the other repositories of this organization, so you should target your PRs there.\n\nThere is a development branch in this repository for the content collection. Is fine to send PRs there but they should only modify the content collection scripts that are being used by the workflows.\n",
+      "readme": "# MiSTer Distribution\n\nThis repository contains all the files that you'll want in your MiSTer.\n\nYou may download all of them at once as a zip through the [following link](https://github.com/MiSTer-devel/Distribution_MiSTer/archive/refs/heads/main.zip). Once you have them, place them as-is in your [properly initialised SD card](https://github.com/MiSTer-devel/mr-fusion), and everything should work out of the box.\n\n### MiSTer Project\n\nIf you want to check more about the MiSTer project, please check [this wiki](https://github.com/MiSTer-devel/Wiki_MiSTer/wiki).\n\n### MiSTer Downloader\n\nFor downloading all of these files directly from your MiSTer, use the [MiSTer Downloader](https://github.com/MiSTer-devel/Downloader_MiSTer).\n\n#### Tags that you may use with 'Download Filters' feature\n\nRead about how to use them [here](https://github.com/MiSTer-devel/Downloader_MiSTer/blob/main/docs/download-filters.md).\n\n##### List:\n\n`acornatom`, `acornelectron`, `adam`, `adctest`, `adventurevision`, `alicemc10`, `all_filters`, `altair8800`, `alternatives`, `amiga`, `amstrad`, `amstrad-pcw`, `amstradpcw`, `ao486`, `apogee`, `apple-i`, `apple-ii`, `aquarius`, `arcade`, `arcade-arkanoid`, `arcade-asteroids`, `arcade-asteroidsdeluxe`, `arcade-astrocade`, `arcade-ataritetris`, `arcade-athena`, `arcade-athena_mister`, `arcade-bagman`, `arcade-bakraid`, `arcade-bankpanic`, `arcade-batrider`, `arcade-battlezone`, `arcade-berzerk`, `arcade-blackwidow`, `arcade-blockade`, `arcade-bombjack`, `arcade-bosconian`, `arcade-breakout`, `arcade-burgertime`, `arcade-burningrubber`, `arcade-canyonbomber`, `arcade-cave`, `arcade-centipede`, `arcade-chameleon`, `arcade-computerspace`, `arcade-congobongo`, `arcade-cores`, `arcade-cosmic`, `arcade-cosmicguerilla`, `arcade-crazyballoon`, `arcade-crazyclimber`, `arcade-crazykong`, `arcade-crystalcastles`, `arcade-defender`, `arcade-digdug`, `arcade-dominos`, `arcade-donkeykong`, `arcade-donkeykong3`, `arcade-donkeykongjunior`, `arcade-dorodon`, `arcade-dottorikun`, `arcade-druaga`, `arcade-exerion`, `arcade-expressraider`, `arcade-finalizer`, `arcade-foodfight`, `arcade-freeze`, `arcade-frenzy`, `arcade-galaga`, `arcade-galaxian`, `arcade-galivan`, `arcade-gaplus`, `arcade-garegga`, `arcade-gauntlet`, `arcade-gyruss`, `arcade-ikariwarriors`, `arcade-inferno`, `arcade-iremm62`, `arcade-iremm72`, `arcade-iremm92`, `arcade-ironhorse`, `arcade-jackal`, `arcade-jailbreak`, `arcade-joust2`, `arcade-kickandrun`, `arcade-ladybug`, `arcade-lunarlander`, `arcade-mariobros`, `arcade-mcr1`, `arcade-mcr2`, `arcade-mcr3`, `arcade-mcr3mono`, `arcade-mcr3scroll`, `arcade-missilecommand`, `arcade-moonpatrol`, `arcade-mrdo`, `arcade-mrjong`, `arcade-mysticmarathon`, `arcade-ninjakun`, `arcade-pacman`, `arcade-pengo`, `arcade-penguinkunwars`, `arcade-performan`, `arcade-phoenix`, `arcade-pleiads`, `arcade-polyplay`, `arcade-pong`, `arcade-pooyan`, `arcade-popeye`, `arcade-qbert`, `arcade-rallyx`, `arcade-riverpatrol`, `arcade-robotron`, `arcade-rshnatk`, `arcade-scootershooter`, `arcade-scramble`, `arcade-segasys1`, `arcade-silverland`, `arcade-slapfight`, `arcade-sms`, `arcade-snk_triplez80`, `arcade-solomonskey`, `arcade-sonson`, `arcade-spaceinvaders`, `arcade-spacerace`, `arcade-sprint1`, `arcade-sprint2`, `arcade-subs`, `arcade-superbreakout`, `arcade-taitosj`, `arcade-tankbattalion`, `arcade-tecmo`, `arcade-tiamc1`, `arcade-timepilot`, `arcade-timepilot84`, `arcade-tnkiii`, `arcade-traverseusa`, `arcade-tropicalangel`, `arcade-turkeyshoot`, `arcade-ultratank`, `arcade-vball`, `arcade-xevious`, `arcade-xsleenacore`, `arcade-zaxxon`, `arcade-zigzag`, `arcadelpf`, `arcadia`, `archie`, `arduboy`, `astrocade`, `atari2600`, `atari5200`, `atari7800`, `atari800`, `atarilynx`, `atarist`, `avision`, `ay-3-8500`, `bbcbridgecompanion`, `bbcmicro`, `bios`, `bk0011m`, `c128`, `c16`, `c64`, `casio_pv-1000`, `casio_pv-2000`, `channelf`, `cheats`, `chess`, `chip8`, `coco2`, `coco3`, `coleco`, `colecoadam`, `colecovision`, `complexmultichromatic`, `computer`, `computer-cores`, `console`, `console-cores`, `contrast_boost`, `cores`, `corespecific`, `creativision`, `crt-simulation`, `displayspecific`, `docs`, `drv`, `edsac`, `eg2000`, `epochgalaxyii`, `essential`, `extra-utilities`, `famicom`, `filters`, `filters_audio`, `filters_video`, `flappy`, `flappybird`, `font`, `galaksija`, `gamate`, `gameboy`, `gameboy2p`, `gameboyadvance`, `gameboycolor`, `gamecontrollerdb`, `gamegear`, `gamenwatch`, `gameoflife`, `games`, `gamma`, `gb`, `gba`, `gba2p`, `gbc`, `generalhardware`, `generallpf`, `genesis`, `gnw`, `handheld2p`, `hbmame`, `homelab`, `inputtest`, `intellivision`, `interact`, `jupiter`, `laser`, `laser310`, `lcd-general`, `lcd-integeronly`, `linux`, `lynx48`, `macplus`, `mame`, `mastersystem`, `megacd`, `megadrive`, `megaduck`, `memte`, `memtest`, `menu`, `mgl`, `minimig`, `mra`, `msx`, `msx1`, `multicomp`, `myvision`, `neogeo`, `nes`, `nintendo`, `odyssey2`, `old`, `ondra_spo186`, `orao`, `oric`, `other`, `other-cores`, `palettes`, `pc88`, `pc8801`, `pcengine`, `pcenginecd`, `pcxt`, `pdp1`, `pet2001`, `pmd85`, `pocketchallengev2`, `pokemonmini`, `poly_gamma`, `presets`, `psx`, `pure_gamma`, `ql`, `readme`, `rx78`, `s32x`, `samcoupe`, `scanlines-adaptive`, `scanlines-brighter`, `scanlines-standard`, `scripts`, `segacd`, `segamark3`, `service-cores`, `sgb`, `shadow_masks`, `sharpmz`, `simplemonochrome`, `slugcross`, `sms`, `snes`, `sordm5`, `specialist`, `spectrum`, `spmx`, `sufami`, `super_vision_8000`, `superfamicom`, `supergameboy`, `supernes`, `supernintendo`, `supervision`, `supervision8000`, `svi328`, `tatungeinstein`, `tgfx16`, `tgfx16-cd`, `tgfx16cd`, `ti-99_4a`, `ti994a`, `tomyscramble`, `tomytutor`, `trs-80`, `tsconf`, `turbografx`, `turbografx16`, `turbografx16cd`, `turbografxcd`, `uk101`, `upscaling-lanczosbicubicetc`, `upscaling-recommended`, `upscaling-sharpbilinear`, `utility`, `vc4000`, `vector-06c`, `vector06`, `vector06c`, `vectrex`, `vic20`, `wonderswan`, `wonderswancolor`, `x68000`, `yctxt`, `zx-spectrum`, `zx81`, `zxnext`, `zxspectrum`\n\n##### Some relevant tag descriptions:\n\n- `arcade-cores` / `arcade`: All arcade cores and MRA files.\n- `computer-cores` / `computer`: All computer cores and related folders.\n- `console-cores` / `console`: All console cores and related folders.\n- `other-cores` / `other`: All cores from the top folder Other with their related folders.\n- `service-cores` / `utility`: All utility cores and related folders.\n- `cores`: All cores (RBF files).\n- `mra`: All MRA files & folders.\n- `alternatives`: All MRA Alternatives\n- `hbmame`: All files & folders linked to the HBMame collection.\n- `handheld2p`: All 2 Player versions for Handheld cores.\n- `filters_video`: All video filters (`gamma` & `filters` & `shadow_masks`).\n- `all_filters`: All video & audio filters (`filters_video` & `filters_audio`).\n- `essential`: Menu core & MiSTer firmware.\n- `readme`: All README files.\n- `docs`: All documentation files & folders, including README files.\n- `extra-utilities`: All extra utilities that are installed in games folders of some computer cores.\n- `bios`: All bioses that are installed in the games folders for some computer & console cores.\n- `cheats`: All cheat files & folders.\n\n### Contributing\n\nYou are more than welcome to contribute to the [MiSTer-devel Organization](https://github.com/MiSTer-devel). But you can't do it by openening PRs to the main branch of this repository. This repository is only for file distribution. Whatever content shows up here depends on the other repositories of this organization, so you should target your PRs there.\n\nThere is a development branch in this repository for the content collection. Is fine to send PRs there but they should only modify the content collection scripts that are being used by the workflows.\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/Distribution_MiSTer",

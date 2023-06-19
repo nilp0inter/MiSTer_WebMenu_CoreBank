@@ -5,6 +5,359 @@
   "type": "User",
   "repos": [
     {
+      "name": "AliceMC10_MiSTer",
+      "description": "Matra-Hachette Alice MC-10 for MiSTer FPGA",
+      "readme": "Matra-Hachette Alice MC-10 for MiSTer FPGA\r\n==========================================\r\n\r\nThis is the port of the Alice 4K / Tandy MC-10 to MiSTer FPGA.\r\n\r\nCassettes\r\n---------\r\n\r\nTo facilitate the use of the cassette player, an option to display the data stream on the screen is available form the OSD.\r\n\r\nThe core is compatible with .c10 tape files. A small script `k72c10.py` is available for converting .k7 files from Alice into .c10 files. The script adds the two leader sections before and after the name block.\r\n\r\nUsage: `python k72c10.py <path to k7 file>`.\r\n\r\nYou will end up with a new file named k7.c10, which should be compatible with the core.\r\n\r\nJoystick\r\n--------\r\n\r\nWhile the Alice 4k was sold with a DB9 adapter cartridge, the MC10 has no official support for joysticks. A article published in SoftGold magazine shows how to build a simple two directional joystick connected on the RS-232 connector. The two joystick interfaces have been implemented in the core.\r\n\r\nTo do\r\n-----\r\n\r\nMany games/programs already work, however, there's currently a bug in the video module that prevents some games from changing the display mode. Other MiSTer contributors and I are working on the problem right now.\r\n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/pcornier/AliceMC10_MiSTer",
+      "releases": [
+        {
+          "name": "AliceMC10_20201108.rbf",
+          "sha": "7bd3f674f62671bae49c0736f81dffc5a347ad44",
+          "url": "https://raw.githubusercontent.com/pcornier/AliceMC10_MiSTer/master/releases/AliceMC10_20201108.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "AliceMC10_20201110.rbf",
+          "sha": "f6ad81c499a82096adb161c62b0b0a4478d9797f",
+          "url": "https://raw.githubusercontent.com/pcornier/AliceMC10_MiSTer/master/releases/AliceMC10_20201110.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "AliceMC10_20201114.rbf",
+          "sha": "fb0f612037825ddb217d32d6c9c77e7a695b6463",
+          "url": "https://raw.githubusercontent.com/pcornier/AliceMC10_MiSTer/master/releases/AliceMC10_20201114.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "AliceMC10_20210116.rbf",
+          "sha": "9c5366ee5ed4d80b62924c346efab496e7221a0e",
+          "url": "https://raw.githubusercontent.com/pcornier/AliceMC10_MiSTer/master/releases/AliceMC10_20210116.rbf",
+          "type": "RBF"
+        }
+      ]
+    },
+    {
+      "name": "Arcade-BankPanic_MiSTer",
+      "description": "BankPanic FPGA core for MiSTer",
+      "readme": "# BankPanic for MiSTerFPGA\r\n\r\n## General description\r\nThis is the port of Bank Panic for MiSTerFPGA by Pierco (Pierre Cornier). I tried to reproduce the PCB as much as possible so it should be very close to the original hardware.\r\n\r\nI would like to give special thanks to Mark Haysman from RetroClinic for sharing the equations of the PAL 315-5075, and to David Shadoff, Alan Steremberg & Chockichoc for their support and friendship!\r\n\r\n## Patreon contributors!\r\nAdrian Vargerson\r\nAlan Steremberg\r\nAllen Tipper\r\nAmosfear\r\nAndreas Micklei\r\nbirdybro\r\nChristopher Garland\r\nCory Stargel\r\nCyrille Jouineau\r\nDarren Chell\r\nDarren Newman\r\nDave Ely\r\nDavide Lorigliola\r\nDimitris Zongas\r\nFrancois P\r\nFunkycochise\r\nGentlemen's Pixel Club\r\nGrumpy Old Gamer\r\nHerbert Krammer\r\nHiddenbyleaves\r\nHolger Lagerfeldt\r\nHumanoide70\r\nJ BG\r\nJohan Sj\u00f6strand\r\nJohn Stringer\r\nJos\u00e9 L\u00f3pez Navarrete\r\nJuan Carlos Pastor (Denymetanol)\r\nMatt Hargett\r\nMax\r\nMichael Packard\r\nMike Holzinger\r\nMike S\r\nMiSTerFPGA.co.uk\r\nNicolas VAILLANT\r\nPhilip Lawson\r\nPons Cremator\r\nRaspberryAlpine\r\nRune P\r\nSamuel Giroux\r\nSwedishGojira\r\nTonton Kaloun\r\nwwark\r\n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/pcornier/Arcade-BankPanic_MiSTer",
+      "releases": [
+        {
+          "name": "Arcade-BankPanic_20221007.rbf",
+          "sha": "77a485093fb10e6a1375ebf1408edb99d7b7f5cb",
+          "url": "https://raw.githubusercontent.com/pcornier/Arcade-BankPanic_MiSTer/master/releases/Arcade-BankPanic_20221007.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-BankPanic_20230310.rbf",
+          "sha": "ad45ff02c1e6789293b0cb442a8644f80ff55862",
+          "url": "https://raw.githubusercontent.com/pcornier/Arcade-BankPanic_MiSTer/master/releases/Arcade-BankPanic_20230310.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "BankPanic.mra",
+          "sha": "15577bafd5812c76dd927422e00c6b450ff2f50e",
+          "url": "https://raw.githubusercontent.com/pcornier/Arcade-BankPanic_MiSTer/master/releases/BankPanic.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "BankPanic",
+            "rbf": "bankpanic",
+            "zips": [
+              "bankp.zip"
+            ]
+          }
+        },
+        {
+          "name": "Combat Hawk.mra",
+          "sha": "6952ffb776b350bc7890dd182a17041c36ba9558",
+          "url": "https://raw.githubusercontent.com/pcornier/Arcade-BankPanic_MiSTer/master/releases/Combat%20Hawk.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Combat Hawk",
+            "rbf": "bankpanic",
+            "zips": [
+              "combh.zip"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Arcade-Chameleon_MiSTer",
+      "description": "Jaleco Chameleon core for MiSTer FPGA",
+      "readme": "# Jaleco Chameleon for MiSTerFPGA\r\n\r\nA game from Jaleco procuded in 1983. This is a beta port for MiSTerFPGA by Pierco. I did it for fun on my phone during my vacations.\r\n\r\n## Tasks for a stable release\r\n\r\n- fix joysticks, they are weird for now, a better mapping is possible\r\n\r\n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/pcornier/Arcade-Chameleon_MiSTer",
+      "releases": [
+        {
+          "name": "Arcade-Chameleon_20220828.rbf",
+          "sha": "cd64777e9a08b0a15adebcc021bf096108d70b03",
+          "url": "https://raw.githubusercontent.com/pcornier/Arcade-Chameleon_MiSTer/master/releases/Arcade-Chameleon_20220828.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Chameleon_20220829.rbf",
+          "sha": "7ce30ed62d14d9defdae7f8890f94ba9f291b6a5",
+          "url": "https://raw.githubusercontent.com/pcornier/Arcade-Chameleon_MiSTer/master/releases/Arcade-Chameleon_20220829.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Chameleon_20230310.rbf",
+          "sha": "36b3e79544bd9023ff3a82a1b6ab99dfc36f9298",
+          "url": "https://raw.githubusercontent.com/pcornier/Arcade-Chameleon_MiSTer/master/releases/Arcade-Chameleon_20230310.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Chameleon.mra",
+          "sha": "db2f2c7534a82e9b577613a04624be8b40a7e298",
+          "url": "https://raw.githubusercontent.com/pcornier/Arcade-Chameleon_MiSTer/master/releases/Chameleon.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Chameleon",
+            "rbf": "Chameleon",
+            "zips": [
+              "chameleo.zip"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Arcade-ExpressRaider_MiSTer",
+      "description": "Express Raider - MiSTer FPGA core",
+      "readme": "# Express Raider core for MiSTer\r\n\r\n## General description\r\nThis core is a port of Express Raider PCB from Data East USA by [Pierco](https://github.com/pcornier). I tried to stay as close as possible to the original schematics.\r\n\r\n## Thanks to my supporters!!\r\n\r\n...and friends and the great MiSTer community!\r\n\r\nAdrian Vargerson -\r\nAlan Steremberg -\r\nAllen Tipper -\r\nAmosfear  -\r\nAndreas Micklei -\r\nBoogermann -\r\nChristopher Garland -\r\nCory Stargel -\r\nCyril Despontin -\r\nCyrille Jouineau -\r\nDarren Chell -\r\nDarren Newman -\r\nDave Ely -\r\nDavide Lorigliola -\r\ndECKARD -\r\nDimitris Zongas -\r\nFrancois P -\r\nFunkycochise -\r\nGrumpy Old Gamer -\r\nHerbert Krammer -\r\nHiddenbyleaves -\r\nHolger Lagerfeldt -\r\nHumanoide70  -\r\nJ BG -\r\nJohan Sj\u00f6strand -\r\nJohn Stringer -\r\nJos\u00e9 L\u00f3pez Navarrete -\r\nJuan Carlos Pastor (Denymetanol) -\r\nManuel Gomez Grande -\r\nMatt Hargett -\r\nMax -\r\nMichael Fuerst -\r\nMichael Packard -\r\nMike Holzinger -\r\nMike S -\r\nMiSTerFPGA.co.uk -\r\nNicolas VAILLANT -\r\nPhilip Lawson -\r\nPons Cremator -\r\nRaspberryAlpine  -\r\nRune P -\r\nSamuel Giroux -\r\nTonton Kaloun -\r\nTony Escobar -\r\nwwark  -\r\nyomitron\r\n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/pcornier/Arcade-ExpressRaider_MiSTer",
+      "releases": [
+        {
+          "name": "Arcade-ExpressRaider_20221121.rbf",
+          "sha": "75d76642443e8bfaea31630f8e3320cb9fb758c7",
+          "url": "https://raw.githubusercontent.com/pcornier/Arcade-ExpressRaider_MiSTer/master/releases/Arcade-ExpressRaider_20221121.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-ExpressRaider_20230313.rbf",
+          "sha": "adb986d480536c5e3d928586d3a410584c23071e",
+          "url": "https://raw.githubusercontent.com/pcornier/Arcade-ExpressRaider_MiSTer/master/releases/Arcade-ExpressRaider_20230313.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-ExpressRaider_20230401.rbf",
+          "sha": "c70731ba1c280c3c1b1def59532f707ffe14d072",
+          "url": "https://raw.githubusercontent.com/pcornier/Arcade-ExpressRaider_MiSTer/master/releases/Arcade-ExpressRaider_20230401.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Express Raider.mra",
+          "sha": "10a7309f1efa5cd8073fbc6cd7888a7b6f99aa00",
+          "url": "https://raw.githubusercontent.com/pcornier/Arcade-ExpressRaider_MiSTer/master/releases/Express%20Raider.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Express Raider (World, Rev 4)",
+            "rbf": "expressraider",
+            "zips": [
+              "exprraid.zip"
+            ]
+          }
+        },
+        {
+          "name": "Western Express (Japan, rev 4).mra",
+          "sha": "e42a106e0babb61a49ea4984c4b6dd2ab718b1fa",
+          "url": "https://raw.githubusercontent.com/pcornier/Arcade-ExpressRaider_MiSTer/master/releases/Western%20Express%20(Japan%2C%20rev%204).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Western Express (Japan, rev 4)",
+            "rbf": "expressraider",
+            "zips": [
+              "exprraid.zip|wexpress.zip"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Arcade-Freeze_MiSTer",
+      "description": null,
+      "readme": "# Jack the Giantkiller\r\n\r\n## General description\r\nThis is a port of Jack the Giantkiller from Cinematronics. It includes:\r\n- Jack the Giantkiller\r\n- Freeze\r\n- Zzyzzyxx\r\n- SuperCasino\r\n- Tri-Pool\r\n\r\n### TODO\r\n\r\n- Fix MRA names and information.\r\n- Some of the H/V switches are not working. The CPU reads it but whatever the value is, it always clears the flip register. We need to check in the original games. Cocktail mode works on Jack.\r\n- HS/VS timings are certainly wrong.\r\n- Fix OSD options that are not working well: reset & aspect ratio.\r\n\r\nThanks to all my contributors as usual!\r\n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/pcornier/Arcade-Freeze_MiSTer",
+      "releases": [
+        {
+          "name": "Arcade-Freeze_20230327.rbf",
+          "sha": "67beaf95b744634bff9f982f77fffdfc37034a42",
+          "url": "https://raw.githubusercontent.com/pcornier/Arcade-Freeze_MiSTer/master/releases/Arcade-Freeze_20230327.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Freeze.mra",
+          "sha": "0937d27a9f6ade098390ed8db17386f9bfa2a77c",
+          "url": "https://raw.githubusercontent.com/pcornier/Arcade-Freeze_MiSTer/master/releases/Freeze.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Freeze",
+            "rbf": "freeze",
+            "zips": [
+              "freeze.zip"
+            ]
+          }
+        },
+        {
+          "name": "Jack the Giantkiller (set 1).mra",
+          "sha": "138430759f774338b3730b3607e04e43038e10ec",
+          "url": "https://raw.githubusercontent.com/pcornier/Arcade-Freeze_MiSTer/master/releases/Jack%20the%20Giantkiller%20(set%201).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Jack the Giantkiller",
+            "rbf": "freeze",
+            "zips": [
+              "jack.zip"
+            ]
+          }
+        },
+        {
+          "name": "Super Casino.mra",
+          "sha": "fca544792b32532fc0dbbf2386a4bbe933b31754",
+          "url": "https://raw.githubusercontent.com/pcornier/Arcade-Freeze_MiSTer/master/releases/Super%20Casino.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Super Casino",
+            "rbf": "freeze",
+            "zips": [
+              "sucasino.zip"
+            ]
+          }
+        },
+        {
+          "name": "Tri-Pool (Casino Tech).mra",
+          "sha": "790d69e581e5595d7d6d0b686631caf0673d30ce",
+          "url": "https://raw.githubusercontent.com/pcornier/Arcade-Freeze_MiSTer/master/releases/Tri-Pool%20(Casino%20Tech).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Tri-pool",
+            "rbf": "freeze",
+            "zips": [
+              "tripool.zip"
+            ]
+          }
+        },
+        {
+          "name": "Zzyzzyxx (set 1).mra",
+          "sha": "415a92dda1a6fd0444a6861cb368468ef8d85a1d",
+          "url": "https://raw.githubusercontent.com/pcornier/Arcade-Freeze_MiSTer/master/releases/Zzyzzyxx%20(set%201).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Zzyzzyxx",
+            "rbf": "freeze",
+            "zips": [
+              "zzyzzyxx.zip"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Arcade-Galivan_MiSTer",
+      "description": null,
+      "readme": "# Cosmo Police Galivan for MiSTerFPGA\r\n\r\n## General description\r\nThis core is an emulation of the GV-1412 PCB from Nichibutsu by [Pierco](https://github.com/pcornier). Two games are supported: Cosmo Police Galivan & UFO Robo Dangar. Use a vertically oriented CRT for the best gaming experience!\r\n\r\n## Patreon Supporters :heart:\r\nAlan Steremberg\r\nAllen Tipper\r\nAmosfear\r\nAndreas Micklei\r\natrac17\r\nbirdybro\r\nChristopher Garland\r\nCory Stargel\r\nCyrille Jouineau\r\nDarren Chell\r\nDave Ely\r\nDimitris Zongas\r\nFrancois P\r\nFunkycochise\r\nGentlemen's Pixel Club\r\nGrumpy Old Gamer\r\nHerbert Krammer\r\nHiddenbyleaves\r\nHolger Lagerfeldt\r\nHumanoide70\r\nJ BG\r\nJohan Sj\u00f6strand\r\nJohn Stringer\r\nJos\u00e9 L\u00f3pez Navarrete\r\nJuan Carlos Pastor (Denymetanol)\r\nMatt Hargett\r\nMax\r\nMax Riptide\r\nMichael Packard\r\nMike Holzinger\r\nMiSTerFPGA.co.uk\r\nNicolas VAILLANT\r\nPhilip Lawson\r\nPons Cremator\r\nRaspberryAlpine\r\nSamuel Giroux\r\nSwedishGojira\r\nTonton Kaloun\r\nwwark\r\nyomitron\r\n\r\n\r\n\r\n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/pcornier/Arcade-Galivan_MiSTer",
+      "releases": [
+        {
+          "name": "Arcade-Galivan_20220913.rbf",
+          "sha": "c674663c309294203502c1d570010bde26f78d64",
+          "url": "https://raw.githubusercontent.com/pcornier/Arcade-Galivan_MiSTer/master/releases/Arcade-Galivan_20220913.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Galivan_20220919.rbf",
+          "sha": "3bf85b18c4da5e84524ea6b37c8931e7b593fb74",
+          "url": "https://raw.githubusercontent.com/pcornier/Arcade-Galivan_MiSTer/master/releases/Arcade-Galivan_20220919.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Galivan_20221013.rbf",
+          "sha": "a416da7a28b3b937287c72b00ef6f6dfd79ce55d",
+          "url": "https://raw.githubusercontent.com/pcornier/Arcade-Galivan_MiSTer/master/releases/Arcade-Galivan_20221013.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Galivan_20221103.rbf",
+          "sha": "2b040c32e888320e5eab62b3d8b4de26a5a6d110",
+          "url": "https://raw.githubusercontent.com/pcornier/Arcade-Galivan_MiSTer/master/releases/Arcade-Galivan_20221103.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Galivan_20230313.rbf",
+          "sha": "206b569f45e1daf84601917ae1781a25aa677b25",
+          "url": "https://raw.githubusercontent.com/pcornier/Arcade-Galivan_MiSTer/master/releases/Arcade-Galivan_20230313.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Cosmo Police Galivan (12-26-1985).mra",
+          "sha": "f7b53b83b87ee17ab331301e25677aa88ad34212",
+          "url": "https://raw.githubusercontent.com/pcornier/Arcade-Galivan_MiSTer/master/releases/Cosmo%20Police%20Galivan%20(12-26-1985).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Cosmo Police Galivan (12/26/1985)",
+            "rbf": "galivan",
+            "zips": [
+              "galivan.zip"
+            ]
+          }
+        },
+        {
+          "name": "Ufo Robo Dangar (4-07-1987).mra",
+          "sha": "acda740cb235015180a238e05c5e74cd95561742",
+          "url": "https://raw.githubusercontent.com/pcornier/Arcade-Galivan_MiSTer/master/releases/Ufo%20Robo%20Dangar%20(4-07-1987).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Ufo Robo Dangar (4/07/1987)",
+            "rbf": "galivan",
+            "zips": [
+              "dangar.zip"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Arcade-KickAndRun_MiSTer",
+      "description": "Taito Kick And Run for MiSTer FPGA",
+      "readme": "# Taito Kick And Run\r\n\r\nThis is a port of the classic Taito arcade game Kick And Run for the MiSTer FPGA platform by Pierco. The core is currently not compatible with Kiki Kaikai due to the lack of an MCU dump. However, I am actively working on it and I started to recreate a custom ROM in assembly. I hope to make the core compatible soon.\r\n\r\n## Original Hardware\r\n\r\nI tried to reproduce the PCB but all the PAL chips have been replaced with simple logic. In order to simplify the rendering logic, I added a DMA that is not present in the [original design](./doc/KickAndRun.pdf).\r\n\r\n## Known bugs\r\n\r\n- Sound may not always be active as intended in attract mode when the \"demo sounds\" switch is enabled. Additionally, during gameplay, certain sounds are skipped, and lastly, some level adjustments are needed.\r\n- It's likely a stupid error, but the aspect ratio does not work in OSD.\r\n\r\n## Thank you!\r\n\r\nI would like to thank all my contributors on Patreon and everyone who has provided assistance and support to me.\r\n\r\nWe need more sport games on MiSTerFPGA!\r\n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/pcornier/Arcade-KickAndRun_MiSTer",
+      "releases": [
+        {
+          "name": "Arcade-KickAndRun_20230608.rbf",
+          "sha": "2bdb12feb9f5d5b711d234de6ba7cadb6f955323",
+          "url": "https://raw.githubusercontent.com/pcornier/Arcade-KickAndRun_MiSTer/master/releases/Arcade-KickAndRun_20230608.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Kick And Run.mra",
+          "sha": "a094598ff864bf20f5a433fc0687867aebd9bed0",
+          "url": "https://raw.githubusercontent.com/pcornier/Arcade-KickAndRun_MiSTer/master/releases/Kick%20And%20Run.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Kick And Run",
+            "rbf": "KickAndRun",
+            "zips": [
+              "kicknrun.zip"
+            ]
+          }
+        }
+      ]
+    },
+    {
       "name": "Arcade-QBert_MiSTer",
       "description": "Q*Bert core for MiSTer",
       "readme": "![QBert Character](./qbert.png) MiSTer Q*Bert\r\n=============================================\r\n\r\nQ*Bert arcade core for MiSTer FPGA by Pierco. It's a reproduction of the original PCBs rather than a reinterpretation but with some dual port RAM exceptions.\r\n\r\nAdditional details\r\n------------------\r\n\r\n**Audio board MA216:**\r\n\r\n- SC01 is not implemented. Waiting for brave people to do it.\r\n\r\n**NVRAM:**\r\n\r\n- Not implemented - NVRAM should be C5/C6 on schematics.\r\n\r\n**Ports:**\r\n\r\n- IP17-10: input port for test buttons, coins and player 1/2.\r\n- IP47-40: input port for joystick.\r\n- OP27-20: output port for sound interface\r\n- OP33-37: output port for knocker and coin meter.\r\n\r\nGame Compatibility List\r\n-----------------------\r\n\r\nWorking:\r\n\r\n- QBert: 100% compatible.\r\n- QBert Qubes: 100% compatible.\r\n- Mad Planets: 100% compatible.\r\n\r\nNot working yet:\r\n\r\n- Curve Ball: dip switch order is weird, no sound.\r\n- Insector: 100% compatible, dip switch problems, controller inverted & no test mode(?).\r\n- Tyls: 100% compatible - dip switches inverted.\r\n\r\nKnown Bugs\r\n----------\r\n\r\n- QBert Qubes: \"Supreme Nosers\" screen works only after a reset.\r\n- Problem with vertical position register E1-2. When a new object is falling from the top of the screen (ball), it appears briefly at the bottom of the screen.\r\n- High Scores screen: the big three letters of player's name are not displayed correctly. It works well after a few resets (is it a problem with bus sharing logic which sends zeros to simulate high impedance for ORing outputs?). I don't have the PCB so it's difficult to know the original behavior.\r\n- Votrax chip is cruelly missing, QBert needs his @!#?@! voice!!!\r\n",
@@ -55,8 +408,14 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-QBert_20230315.rbf",
+          "sha": "00f254e3ab0b8fe082c27c53b350bb21db0f3cde",
+          "url": "https://raw.githubusercontent.com/pcornier/Arcade-QBert_MiSTer/master/releases/Arcade-QBert_20230315.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Mad Planets.mra",
-          "sha": "bb6f5ae1d7842c261b9eb2b7c12dabeaedde9df9",
+          "sha": "0fc6e520e738df563ad5bfb706dcd647f7c6c800",
           "url": "https://raw.githubusercontent.com/pcornier/Arcade-QBert_MiSTer/master/releases/Mad%20Planets.mra",
           "type": "MRA",
           "extra": {
@@ -82,7 +441,7 @@
         },
         {
           "name": "QBert Qubes.mra",
-          "sha": "e80a43b805f341313765482566a975970d852ba3",
+          "sha": "db692fcaaaf4559586e1706999a9a994db39b4fe",
           "url": "https://raw.githubusercontent.com/pcornier/Arcade-QBert_MiSTer/master/releases/QBert%20Qubes.mra",
           "type": "MRA",
           "extra": {
@@ -198,6 +557,80 @@
       ]
     },
     {
+      "name": "GnW_MiSTer",
+      "description": "MiSTer Port of Game and Watch Games",
+      "readme": "# MiSTer Port of Game and Watch Games\r\n\r\nThe Game and Watch handheld devices emulator for MiSTer FPGA by Pierco.\r\n\r\nPlace your ROMs into the folder \"/media/fat/games/GameNWatch\".\r\n\r\nThis is still a work in progress:\r\n\r\n- RTC is not working yet.\r\n- SM5A is not implemented.\r\n- SM511 is not implemented.\r\n- Timing is not perfect.\r\n- Two screen games have problems with anti-aliasing.\r\n\r\nThe core comes with a ROM generator so in theory, it could be possible to create new Game and Watch games. A SM510 assembler exists here: https://github.com/trevorjay/marios-binary-factory\r\n\r\nIt has been reported that some non-Nintendo games are working: Konami Top Gun, Konami Double Dribble and probably other ones.\r\n\r\nI would like to thank Tonton for helping me generate the games!! Pre-compiled games are available on archive.org:\r\nhttps://archive.org/download/gnw-games\r\n\r\nIf you would like to convert games yourself, read the manual in the Tools directory.\r\n\r\nA big thank you to all my Patreon contributors!!\r\n\r\nFunkycochise,\r\nAshfall,\r\nGentlemen's Pixel Club,\r\nMike Holzinger,\r\nSwedishGojira,\r\nlamarax,\r\nJ BG,\r\nAuryn Beorn,\r\nHerbert Krammer,\r\nDimitris Zongas,\r\nmutman,\r\nCory Stargel,\r\nChristopher Garland,\r\nDany Kwan,\r\nStefan Pausch,\r\nGrumpy Old Gamer,\r\nDave Ely,\r\naxxxtz,\r\nRaspberryAlpine,\r\nTonton Kaloun,\r\nJohan Sj\u00f6strand,\r\nPhilip Lawson,\r\nSamuel Giroux,\r\nAllen Tipper,\r\nDarren Newman,\r\nAlan Steremberg.\r\n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/pcornier/GnW_MiSTer",
+      "releases": [
+        {
+          "name": "GnW_20220603.rbf",
+          "sha": "608e5b8551a58dace86ab18376c61506eaf0c24c",
+          "url": "https://raw.githubusercontent.com/pcornier/GnW_MiSTer/master/releases/GnW_20220603.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "GnW_20220606.rbf",
+          "sha": "aaa8737b9b5b39ce9696640baea3565431bbf3e3",
+          "url": "https://raw.githubusercontent.com/pcornier/GnW_MiSTer/master/releases/GnW_20220606.rbf",
+          "type": "RBF"
+        }
+      ]
+    },
+    {
+      "name": "RX-78_MiSTer",
+      "description": "RX-78 core for MiSTer FPGA",
+      "readme": "# Bandai RX-78\n\nBandai RX-78 core for MiSTer FPGA by Pierco (Pierre Cornier) & Alanswx (Alan Steremberg).\n\nI would like to thank Reenthused (Johnny Blanchard) and Hubz (Dustin Hubbard) for their help and for taking their RX-78 apart for me.\n\n## About the core\n\nThere's no cassette support yet.\n\nFor 32k cartridge support, please activate the EXT RAM in OSD.\n\nTo do list:\n- Fix the choppy sound on Gundam title screen.\n- Add cassette support and ADC in.\n- Add game identification mechanism to support for different joystick mappings.\n- Identify & implement the missing I/O ports.\n- VGA output works but hsync timing seems wrong.\n\n\n## Games\n\n\n### Burger Shop\n  Z and X to start and move; Space to pick up and put down\n\n\n\n### Challenge Golf\n\n  Q1 = Home or Backspace; Q2 = \\ or End; ZXCV to rotate player; Arrows to rotate view; Middle row or Ctrl to choose a club; Alt or Space to shoot; Enter to abandon hole.\n\n### Championship Racer\n  PgUp = 1 or \\ = 2. Space to start; Ctrl to accelerate; Left-Right to move\n\n### Excite Baseball\n\n### Mobile Suit Gundam\n  Use either Z,X,Space; or Left,Right,Alt or Joystick\n\n  This game has an audio bug on the title screen.\n\n### Perfect Mah-jongg\n  Home = Yes; Backspace = No;Q4 = - or 9; Q5 = \\ or pgDn or PgUp; Space to start\n\n### Sekigahara\n   Wait for small beep. Press Space(keyboard) or S(joystick). Press G.\n\n\n### Super Motocross\n   Press Enter. Answer questions. Press Space to begin. Arrows to drive\n\n### Space Enemy\n   Press Space to begin and fire. QWEADZXC to steer. S toggle guidance system.\n\n### The Prowrestling\n    Ctrl to attack; Arrows to move\n\n### Ultraman\n    1 player: Use P[];./ticPGDN to move, Space to fire. 2 players: P1 use Arrows,Ctrl,Alt; P2 use RDFGAS\n\n\n\n## Emulators & machine information:\n\n- https://archive.org/download/rx-78-mister (games)\n- https://github.com/tautologico/common-src-project\n- http://takeda-toshiya.my.coocan.jp/\n- https://25yg7xnxvowpxahhot33jvnbmq-ac5fdsxevxq4s5y-my-coocan.translate.goog/rx78/tech.html\n- https://www.gamingalexandria.com/wp/2021/02/bandai-rx-78-gundam-computer-games-preserved/\n- http://takeda-toshiya.my.coocan.jp/rx78/index.html\n\n\nROM disassembly: https://onlinedisassembler.com/odaweb/BKu6rvkL\n\n\nManual:\nhttps://archive.org/details/bandai-rx-78-gundam-manual-scans/Bandai%20RX-78%20Gundam%20-%20Manual%20%28Compressed%29\n\n**We are looking for more technical documents, if you have any in your possession, please send us a message!**",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/pcornier/RX-78_MiSTer",
+      "releases": [
+        {
+          "name": "RX78_20210604.rbf",
+          "sha": "068748fcc93adda8112226fc14a661962afa0a37",
+          "url": "https://raw.githubusercontent.com/pcornier/RX-78_MiSTer/master/releases/RX78_20210604.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "RX78_20210607.rbf",
+          "sha": "50933710833fe45d5697eec89184f09cb41a61b7",
+          "url": "https://raw.githubusercontent.com/pcornier/RX-78_MiSTer/master/releases/RX78_20210607.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "RX78_20210703.rbf",
+          "sha": "6acfb07d0bad4a138f1d8f42cb612eb97f3a43e1",
+          "url": "https://raw.githubusercontent.com/pcornier/RX-78_MiSTer/master/releases/RX78_20210703.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "RX78_20210706.rbf",
+          "sha": "dd5d5730aa7d85fba8813b37579dd331cf90923a",
+          "url": "https://raw.githubusercontent.com/pcornier/RX-78_MiSTer/master/releases/RX78_20210706.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "RX78_20220314.rbf",
+          "sha": "5b7ad46ad749beb7c8833b9ee04aeae7c4a61aeb",
+          "url": "https://raw.githubusercontent.com/pcornier/RX-78_MiSTer/master/releases/RX78_20220314.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "RX78_20230224.rbf",
+          "sha": "933b9ed4c155fb989911a66abd78e06451161e40",
+          "url": "https://raw.githubusercontent.com/pcornier/RX-78_MiSTer/master/releases/RX78_20230224.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "RX78_20230225.rbf",
+          "sha": "54382588d3e65b2435fe375182e800cb92ad3c2a",
+          "url": "https://raw.githubusercontent.com/pcornier/RX-78_MiSTer/master/releases/RX78_20230225.rbf",
+          "type": "RBF"
+        }
+      ]
+    },
+    {
       "name": "Supervision_MiSTer",
       "description": "Port of Watara Supervision for MiSTer",
       "readme": "# Watara Supervision for MiSTer\r\n\r\nwip",
@@ -210,6 +643,34 @@
           "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
           "url": "https://raw.githubusercontent.com/pcornier/Supervision_MiSTer/master/releases/_put_rbf_here_",
           "type": "OTHER"
+        }
+      ]
+    },
+    {
+      "name": "TatungEinstein_MiSTer",
+      "description": "Port of the Tatung Einstein for MiSTer FPGA",
+      "readme": "Tatung Einstein for MiSTer FPGA\r\n===============================\r\n\r\nThis is the port of the Tatung Einstein TC01 & 256 for MiSTer FPGA by Pierco (Pierre Cornier).\r\n\r\n\r\nInsert a DSK file then press CTRL+TAB to load it. Use the `DIR` command to list the files if it's not a bootable disk. If you want to run a COM file, just type the name without the extension and press the [ENTER] key. For XBS basic files, you will need to load the XBasic first (insert the disk and type `XBAS`), then load your XBS file with `LOAD \"filename\"` and type `RUN`.\r\n\r\nThank you guys!\r\n---------------\r\n\r\nI want to thank Stan Hodge and Alan Steremberg for their help!\r\nAnd I would also like to thank Fabrizio Di Vittorio for allowing me to include his diagnostic ROM with the core. You can enable it in OSD.\r\n\r\nhttps://github.com/fdivitto/TatungEinsteinDiagnosticFirmware\r\n\r\n\r\nNot implemented\r\n---------------\r\n\r\nThe diagnostic ROM will fail at the floppy disc controller.\r\n\r\n- PIO connected to port M001 for printer.\r\n- PCI for serial communication.\r\n\r\nGames, Software and information\r\n-------------------------------\r\n\r\n- http://www.tatungeinstein.co.uk/\r\n- http://tatungeinstein.hopto.org/8-bit/Tatung%20Einstein/\r\n\r\n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/pcornier/TatungEinstein_MiSTer",
+      "releases": [
+        {
+          "name": "TatungEinstein_20220118.rbf",
+          "sha": "2c82f8225df88145086d35340c20cddef272b458",
+          "url": "https://raw.githubusercontent.com/pcornier/TatungEinstein_MiSTer/master/releases/TatungEinstein_20220118.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "TatungEinstein_20220119.rbf",
+          "sha": "bfcd3a52c86bc2d6807aa9a9e8abfdf0536969e6",
+          "url": "https://raw.githubusercontent.com/pcornier/TatungEinstein_MiSTer/master/releases/TatungEinstein_20220119.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "TatungEinstein_20220128.rbf",
+          "sha": "6c59f99ea764a973d3816d3191a40730467bf27e",
+          "url": "https://raw.githubusercontent.com/pcornier/TatungEinstein_MiSTer/master/releases/TatungEinstein_20220128.rbf",
+          "type": "RBF"
         }
       ]
     },
