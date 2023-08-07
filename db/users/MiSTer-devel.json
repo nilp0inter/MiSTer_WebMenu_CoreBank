@@ -17916,6 +17916,12 @@
           "sha": "0af2820391507de7fec067ef587a908944f70a3d",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Main_MiSTer/master/releases/MiSTer_20230716",
           "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20230803",
+          "sha": "dc1dd406c1d517430729f4f692956f8bfa211b4b",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Main_MiSTer/master/releases/MiSTer_20230803",
+          "type": "OTHER"
         }
       ]
     },
@@ -19341,6 +19347,12 @@
           "type": "RBF"
         },
         {
+          "name": "NeoGeo_20230803.rbf",
+          "sha": "e8eb625cf0097b26f8f051c5b45715e27bd96ee0",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/NeoGeo_MiSTer/master/releases/NeoGeo_20230803.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "README.md",
           "sha": "91abd5fd1fe831e59d750a409d3f9b19393d5849",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/NeoGeo_MiSTer/master/releases/README.md",
@@ -19360,7 +19372,7 @@
         },
         {
           "name": "romsets.xml",
-          "sha": "2342aeb0d1bc9c0f6ff209b3de48a52e2cf3281e",
+          "sha": "a36f19507285462f8ce084cbea5ed50b885dcf57",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/NeoGeo_MiSTer/master/releases/romsets.xml",
           "type": "OTHER"
         }
@@ -21766,6 +21778,12 @@
           "sha": "9bc5022d0b401f219256da3a6faf9995a6dd4433",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/SNES_MiSTer/master/releases/SNES_20230223.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "SNES_20230803.rbf",
+          "sha": "e7e01b52793f023c45a4d490b702da74684ea9bb",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/SNES_MiSTer/master/releases/SNES_20230803.rbf",
+          "type": "RBF"
         }
       ]
     },
@@ -23151,6 +23169,12 @@
           "name": "WonderSwan_20230303.rbf",
           "sha": "11c638fcac9e2edb9b6339c58c8dc7f38f289cee",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/WonderSwan_MiSTer/main/releases/WonderSwan_20230303.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "WonderSwan_20230803.rbf",
+          "sha": "29c5366b7f71701d6b07e357e26eca62ec9b5793",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/WonderSwan_MiSTer/main/releases/WonderSwan_20230803.rbf",
           "type": "RBF"
         }
       ]
