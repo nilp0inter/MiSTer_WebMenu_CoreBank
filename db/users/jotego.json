@@ -704,13 +704,13 @@
         },
         {
           "name": "jtaliens.rbf",
-          "sha": "704bb96ebfd3b6be38b6d6163a137364946cc634",
+          "sha": "411413c03dd8090acb7cbec5ecb03ea347ae6e45",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/aliens/releases/jtaliens.rbf",
           "type": "RBF"
         },
         {
           "name": "version.log",
-          "sha": "1bbd60bdc6bb4aba8542b0a27af5a52f7d82667b",
+          "sha": "6e88f1e995da6ee6a189b821954a79790e937ad9",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/aliens/version.log",
           "type": "OTHER"
         },
@@ -771,7 +771,7 @@
         },
         {
           "name": "Black Tiger.mra",
-          "sha": "d160e869db7e5ea5d0d53b9112cd1c5131cec82c",
+          "sha": "086c2405fc965adcedb75facedeec285493843b8",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/btiger/releases/Black%20Tiger.mra",
           "type": "MRA",
           "extra": {
@@ -3914,6 +3914,38 @@
           "name": "version.log",
           "sha": "f8405bec4f1b358b809abe5175aebedec953ce95",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/shanon/version.log",
+          "type": "OTHER"
+        },
+        {
+          "name": "README.md",
+          "sha": "220d81d7768bc31b9964ac947a770c631c9a51e2",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/simson/README.md",
+          "type": "OTHER"
+        },
+        {
+          "name": "The Simpsons (4 Players World, set 1).mra",
+          "sha": "4e0ad98d7bea2d72f88e9bbd078df6e19f4ce4a5",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/simson/releases/The%20Simpsons%20(4%20Players%20World%2C%20set%201).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "The Simpsons (4 Players World, set 1)",
+            "rbf": "jtsimson",
+            "zips": [
+              "simpsons.zip",
+              "jtbeta.zip"
+            ]
+          }
+        },
+        {
+          "name": "jtsimson.rbf",
+          "sha": "0f69727d858182e5b988b38fa850fea36401d217",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/simson/releases/jtsimson.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "version.log",
+          "sha": "a7409b62c98270597df24b359a8e5c9460bd77b4",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/simson/version.log",
           "type": "OTHER"
         },
         {
