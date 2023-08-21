@@ -3994,6 +3994,38 @@
         },
         {
           "name": "README.md",
+          "sha": "b680460668f064198a38897f0d48592c17169673",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/tmnt/README.md",
+          "type": "OTHER"
+        },
+        {
+          "name": "Teenage Mutant Ninja Turtles (World 4 Players, version X).mra",
+          "sha": "46e930278b1596e1a59cf9f6210acf9986550120",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/tmnt/releases/Teenage%20Mutant%20Ninja%20Turtles%20(World%204%20Players%2C%20version%20X).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Teenage Mutant Ninja Turtles (World 4 Players, version X)",
+            "rbf": "jttmnt",
+            "zips": [
+              "tmnt.zip",
+              "jtbeta.zip"
+            ]
+          }
+        },
+        {
+          "name": "jttmnt.rbf",
+          "sha": "d7ac6c18d7627796178971de64a4d539b08e943f",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/tmnt/releases/jttmnt.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "version.log",
+          "sha": "ca11288ff008a0d5e8bd932bd754330d7a6e4e18",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/tmnt/version.log",
+          "type": "OTHER"
+        },
+        {
+          "name": "README.md",
           "sha": "e6c7f686c564ebd5cee4d49919bd931ec0191113",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/tora/README.md",
           "type": "OTHER"
