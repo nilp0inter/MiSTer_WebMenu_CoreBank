@@ -1824,7 +1824,7 @@
         },
         {
           "name": "Arcade-CrazyKong_20230310.rbf",
-          "sha": "ed0442dc6e463cbf1a6bf9113125bd38f81f8295",
+          "sha": "c56bd81fddd1acdca71d829ad70b3ecdf0e971a9",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-CrazyKong_MiSTer/master/releases/Arcade-CrazyKong_20230310.rbf",
           "type": "RBF"
         },
@@ -1880,6 +1880,19 @@
           "type": "MRA",
           "extra": {
             "name": "Crazy Kong Part II",
+            "rbf": "crazykong",
+            "zips": [
+              "ckongpt2.zip"
+            ]
+          }
+        },
+        {
+          "name": "Crazy Kong Part II (alternative levels).mra",
+          "sha": "0f245ec7420a4a0edac6f3c403af75f2628ff278",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-CrazyKong_MiSTer/master/releases/Crazy%20Kong%20Part%20II%20(alternative%20levels).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Crazy Kong Part II (alternative levels)",
             "rbf": "crazykong",
             "zips": [
               "ckongpt2.zip"
