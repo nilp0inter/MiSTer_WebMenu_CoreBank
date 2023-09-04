@@ -10263,6 +10263,15 @@
       "releases": []
     },
     {
+      "name": "Arcade-Salamander_MiSTer",
+      "description": "An FPGA core compatible with Konami Salamander/Life Force(GX456)",
+      "readme": null,
+      "archived": false,
+      "fork": false,
+      "url": "https://github.com/MiSTer-devel/Arcade-Salamander_MiSTer",
+      "releases": []
+    },
+    {
       "name": "Arcade-ScooterShooter_MiSTer",
       "description": "Scooter Shooter for MiSTer",
       "readme": "# Scooter Shooter for [MISTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\nAn FPGA implementation of Scooter Shooter for the MiSTer platform\n\n## Credits\n- Sorgelig: MiSTer project lead\n- MiSTer-X: Original Konami 005849 design sourced from Green Beret core (https://github.com/MiSTer-devel/Arcade-RushnAttack_MiSTer)\n- Ace: Core design & 005849 tweaks\n- JimmyStones: High score saving support & pause feature\n- Kitrinx: ROM loader\n\n## Features\n- Logic modelled to match the original PCB design as closely as possible\n- Standard joystick and keyboard controls\n- High score saving (Can be saved manually or automatically - manual saving is the default)\n- Greg Miller's cycle-accurate MC6809E CPU core with modifications by Sorgelig and bugfixes by Arnim Laeuger and Jotego\n- T80s CPU by Daniel Wallner with fixes by MikeJ, Sorgelig, and others\n- YM2203 implementation using JT03 by Jotego\n- Audio filtering, including the PCB's switchable low-pass filters\n- Option for normalized video timings to use with picky HDTVs and monitors (underclocks the game by ~1%)\n\n## Installation\nPlace `*.rbf` into the \"_Arcade/cores\" folder on your SD card.  Then, place `*.mra` into the \"_Arcade\" folder and ROM files from MAME into \"games/mame\".\n\n### ****ATTENTION****\nROMs are not included. In order to use this arcade core, you must provide the correct ROMs.\n\nTo simplify the process, .mra files are provided in the releases folder that specify the required ROMs along with their checksums.  The ROM's .zip filename refers to the corresponding file in the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for information on how to setup and use the environment.\n\nQuick reference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/games/mame/<mame rom>.zip\n/games/hbmame/<hbmame rom>.zip\n\n## Controls\n### Keyboard\n| Key | Function |\n| --- | --- |\n| 1 | 1-Player Start |\n| 2 | 2-Player Start |\n| 5, 6 | Coin |\n| 9 | Service Credit |\n| Arrow keys | Movement |\n| CTRL | Fire |\n\n### Joystick (buttons follow Super NES layout)\n| Joystick action | Function |\n| --- | --- |\n| D-Pad | Movement |\n| B | Fire |\n\n## Note regarding video output\nThe video output from Scooter Shooter has highly elevated gamma levels.  To correct this, apply gamma correction from within MiSTer's UI, Contrast Boost 3 recommended.\n\n## High Score Save/Load\nSave and load of high scores is supported for this core.\n\n- To save your high scores manually, press the 'Save Settings' option in the OSD.  High scores will be automatically loaded when the core is started.\n- To enable automatic saving of high scores, turn on the 'Autosave Hiscores' option, press the 'Save Settings' option in the OSD, and reload the core.  High scores will then be automatically saved (if they have changed) any time the OSD is opened.\n\nHigh score data is stored in /media/fat/config/nvram/ as ```<mra filename>.nvm```\n",
@@ -18135,6 +18144,28 @@
       ]
     },
     {
+      "name": "MegaDrive_MiSTer",
+      "description": "Sega Megadrive for MiSTer",
+      "readme": "# Nuked-MD port for MiSTer\n\n![nukedmd_logo](rtl/nuked-md/nukedmd_logo.png)\n\n[Original Nuked-MD repository](https://github.com/nukeykt/Nuked-MD-FPGA)\n\n## Installing\ncopy rbf to root of SD card. Put some ROMs (.BIN/.GEN/.MD/.SMS) into MegaDrive folder\n\n\n## Hot Keys\n* F1 - reset to JP(NTSC) region\n* F2 - reset to US(NTSC) region\n* F3 - reset to EU(PAL)  region\n\n\n## Auto Region option (Megadrive/Genesis carts only)\nThere are 2 versions of region detection:\n\n1) File name extension:\n\n* BIN -> JP\n* GEN -> US\n* MD  -> EU\n\n2) Header. It may not always work as not all ROMs follow the rule, especially in European region.\nThe header may include several regions - the correct one will be selected depending on priority option.\n\n\n## Sega Master System\n\nCore supports SMS carts with the same compatibility level as original MegaDrive hardware. Not all SMS carts are compatible with MD hardware.\n\n\n## Additional features\n\n* Multitaps: 4-way, Team player, J-Cart\n* SVP chip (Virtua Racing)\n* Audio Filters for Model 1, Model 2, Minimal, No Filter.\n* Option to choose between YM2612 and YM3438 (changes Ladder Effect behavior).\n* FM chip for SMS carts.\n* Composite Blending, smooth dithering patterns in games.\n* Border/Borderless modes.\n* Support many popular mappers.\n",
+      "archived": false,
+      "fork": false,
+      "url": "https://github.com/MiSTer-devel/MegaDrive_MiSTer",
+      "releases": [
+        {
+          "name": "MegaDrive_20230901.rbf",
+          "sha": "8f37e8086096e98c34cd9e463303c2a8571670a9",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/MegaDrive_MiSTer/main/releases/MegaDrive_20230901.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "MegaDrive_20230902.rbf",
+          "sha": "2f8f575fe8a2559ad615dbe4a1e9a8a826a6c156",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/MegaDrive_MiSTer/main/releases/MegaDrive_20230902.rbf",
+          "type": "RBF"
+        }
+      ]
+    },
+    {
       "name": "MemTest_MiSTer",
       "description": null,
       "readme": "# MemTest - Utility to test SDRAM daughter board.\n\n## Memtest screen:\n\n![MemTest screen](img/memtest.png)\n\n 1. Auto mode indicator (animated),\n 2. Test time passed in minutes,\n 3. Current memory module frequency in MHz,\n 4. Memory module size:\n    * 0 - no memory board detected\n    * 1 - 32 MB\n    * 2 - 64 MB\n    * 3 - 128 MB\n 5. Number of of passed test cycles (each cycle is 32 MB),\n 6. Number of failed tests.\n\n## Controls (keyboard)\n* Up - increase frequency\n* Down - decrease frequency\n* Enter - reset the test\n* C - on 128MB module switches between chips.\n* A - auto mode, detecting the maximum frequency for module being tested. Test starts from maximum frequency.\nWith every error frequency will be decreased.\n\n## Controls (gamepad)\n* Up - increase frequency\n* Down - decrease frequency\n* Start - reset the test\n* B - on 128MB module switches between chips.\n* A - auto mode, detecting the maximum frequency for module being tested. Test starts from maximum frequency.\nWith every error frequency will be decreased.\n\nTest is passed if amount of errors is 0. For quick test let it run for 10 minutes in auto mode. If you want to be sure, let it run for 1-2 hours.\nBoard should pass at least 130 MHz clock test. Any higher clock will assure the higher quality of the board.\n",
@@ -20182,6 +20213,12 @@
           "name": "PCXT_20230811.rbf",
           "sha": "68de1af97a94de4e81ab79c9f2497a71319d1974",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/PCXT_MiSTer/main/releases/PCXT_20230811.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "PCXT_20230902.rbf",
+          "sha": "a18a7a339bff66cfe55b9a969ecd2b962ef63325",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/PCXT_MiSTer/main/releases/PCXT_20230902.rbf",
           "type": "RBF"
         }
       ]

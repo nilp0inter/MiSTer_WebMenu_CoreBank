@@ -3938,13 +3938,13 @@
         },
         {
           "name": "jtsimson.rbf",
-          "sha": "13356b8ebc13ae63d97f746eed5f773026de93b5",
+          "sha": "0b3e42059000d40424387d906f7468c88d9f83a9",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/simson/releases/jtsimson.rbf",
           "type": "RBF"
         },
         {
           "name": "version.log",
-          "sha": "d82bdd757567074b2723eba07d32598b68bbef64",
+          "sha": "24c966f08a0d6b6e740767bbf18f6f1b95d609e0",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/simson/version.log",
           "type": "OTHER"
         },
@@ -4058,14 +4058,15 @@
         },
         {
           "name": "Tiger Road (US).mra",
-          "sha": "973aa9ee82b0cd4ec2b00198be379ee91532a68e",
+          "sha": "adf2f48627654ec4ccdfbf12c5b2c1f8ae6352ae",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/tora/releases/Tiger%20Road%20(US).mra",
           "type": "MRA",
           "extra": {
             "name": "Tiger Road (US)",
             "rbf": "jttora",
             "zips": [
-              "tigeroad.zip"
+              "tigeroad.zip",
+              "jtbeta.zip"
             ]
           }
         },
@@ -4147,6 +4148,38 @@
           "name": "version.log",
           "sha": "6a352e094fedbed385755ac2b39548290e1101af",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/trojan/version.log",
+          "type": "OTHER"
+        },
+        {
+          "name": "README.md",
+          "sha": "51c4e584c7a2f1e819314f9c4727fcfafae9d3f5",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/twin16/README.md",
+          "type": "OTHER"
+        },
+        {
+          "name": "The Final Round (version M).mra",
+          "sha": "78fef72f7d0f841def595550f945863d387ccc39",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/twin16/releases/The%20Final%20Round%20(version%20M).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "The Final Round (version M)",
+            "rbf": "jttwin16",
+            "zips": [
+              "fround.zip",
+              "jtbeta.zip"
+            ]
+          }
+        },
+        {
+          "name": "jttwin16.rbf",
+          "sha": "d5238a2bddd81ef5edf165be8ea714e70f129bdb",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/twin16/releases/jttwin16.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "version.log",
+          "sha": "17609fe959a2436a0e02ae0ce195c2bb2b927324",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/twin16/version.log",
           "type": "OTHER"
         },
         {
