@@ -4000,7 +4000,7 @@
         },
         {
           "name": "M.I.A. - Missing in Action (version T).mra",
-          "sha": "e727a0884016e8f8ef4ff2011c4bdde2175349a8",
+          "sha": "5ae5827f55c15bb9e5cb3bfaf46114a72a2ec416",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/tmnt/releases/M.I.A.%20-%20Missing%20in%20Action%20(version%20T).mra",
           "type": "MRA",
           "extra": {
@@ -4013,8 +4013,22 @@
           }
         },
         {
+          "name": "Punk Shot (US 4 Players).mra",
+          "sha": "25813a9f95d58dfa753d4e33a0691b1e85af2db2",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/tmnt/releases/Punk%20Shot%20(US%204%20Players).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Punk Shot (US 4 Players)",
+            "rbf": "jttmnt",
+            "zips": [
+              "punkshot.zip",
+              "jtbeta.zip"
+            ]
+          }
+        },
+        {
           "name": "Teenage Mutant Ninja Turtles (World 4 Players, version X).mra",
-          "sha": "b13593d5d03fc81ffe3c6c0a5702999b73afe00c",
+          "sha": "2356ece10bb464a073303b93842c6d68b2251c82",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/tmnt/releases/Teenage%20Mutant%20Ninja%20Turtles%20(World%204%20Players%2C%20version%20X).mra",
           "type": "MRA",
           "extra": {
@@ -4028,13 +4042,13 @@
         },
         {
           "name": "jttmnt.rbf",
-          "sha": "155e7d0be7a34688adfd5f2b93509870a3718ed9",
+          "sha": "0a07b2c89c7eebd8b238937572d7f41b8a8f694a",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/tmnt/releases/jttmnt.rbf",
           "type": "RBF"
         },
         {
           "name": "version.log",
-          "sha": "8b683be94b10ac02023d370159eaabd96ae65126",
+          "sha": "89c529bbdcda5c8d36245c14efe56e2ceec5543e",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/tmnt/version.log",
           "type": "OTHER"
         },
