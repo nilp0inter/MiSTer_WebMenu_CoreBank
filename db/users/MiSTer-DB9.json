@@ -63,7 +63,7 @@
     {
       "name": "Amstrad_MiSTer",
       "description": "Amstrad CPC 6128 for MiSTer",
-      "readme": "\n# Amstrad CPC 6128 for MiST and MiSTer\nThis core has been started as a port of [CoreAmstrad by Renaud H\u00e9lias](https://github.com/renaudhelias/CoreAmstrad) but every module has been either rewritten or replaced so, now it can be treated as a completely new core.\n\n## Features\n* Precise CPU timings including proper contention model.\n* Precise CRTC model supporting many tricks of Types 1 and 0.\n* 2 disk drives\n* Disk write support.\n* Close to real disk drive emulation with support of some protections.\n* Selectable CPC 6128/664 mode with separate ROM sets.\n* Multiface 2.\n* Several monochrome modes and 2 types of palette (GA/ASIC).\n* Selectable expansion ROM loading.\n* Joystick support with up to 3 buttons (2 on MiST)\n* Kempston, SYMBiFACE II and Multiplay mice.\n* HQ2x and Scanlines FX for scandoubler.\n* Tape input through UART header (MiST) / ADC board (MiSTer)\n* Support *.CDT tape files.\n* Tape output through speaker.\n\n\n## Installation\nplace RBF and **amstrad.rom** into root of SD card. Or on **MiSTer** you can rename ROM to boot.rom and put it into Amstrad folder.\n\n## Disk support\nPut some *.DSK files into Amstrad folder and mount it from OSD menu.\nimportant Basic commands:\n* cat - list the files on mounted disk.\n* run\" - load and start the program. ex: run\"disc\n* |a, |b - switch between drives\n\n## Boot ROM\nBoot ROM has following structure:\n\nOS6128 + BASIC1.1 + AMSDOS + MF2 + OS664 + BASIC664 + AMSDOS + MF2\n\nEvery part is 16KB. You can create your own ROM if you have a special preference.\n\n## Expansion ROM\nExpansion ROM should have file extension .eXX, where XX is hex number 00-FF of ROM page to load.\nEvery page is 16KB. It's possible to load larger ROM. In this case every 16KB block will be loaded in subsequent pages.\n\n### Special extensions:\n* eZZ - LowROM(OS)\n* eZ0 - LowROM(OS) + Page 0(Basic) + subsequent pages depending on size.\n\n### Notes\nYou can load several expansions. With every load the system will reboot. System ROM also can be replaced the same way.\nTo restore original ROM you have to reload the core (Alt-F12).\n\n### MiSTer specific\nYou can define boot extensions to automatically load at start of core. Use following name rules:\n* boot.eXX  - load to both 664 and 6128 configs\n* boot0.eXX - load to 6128 config\n* boot1.eXX - load to 664 config\n\nwhehe XX is 00-FF, ZZ, Z0.\n\n## CDT tape files (MiSTer)\nCDT supported in very basic form for retro feeling and for some very specific apps. There is no way to rewind or fast forward the file. \nUSER LED will lit if there is a tape in the memory and still have data to play and blink while playback.\n\nControl keys:\n* Alt+F1 - mute/unmute the tape sound\n* Alt+F2 - unload the tape (turn off the LED)\n\nCDT playback respects the tape motor ON/OFF state.\n\n## RAM\nCPC664 model has only 64KB RAM - use this model for programs not compatible with 128KB RAM.\n\nCPC6128 model has 64KB+512KB RAM. Upper 448KB are visible in special OS ROM or application aware of 512KB expansion.\n\n## Multiface 2\n* Multiface 2 can be activated with F11.\n* USER LED shows if the MF2 ROM/RAM is active.\n* Returning from the MF2 menu via (r)eturn makes the device invisible.\n* Visibility can be restored via machine reset (original MF 2+).\n* For loading a saved game, MF2 must be visible.\n* ROM version is 8D.\n",
+      "readme": "\n# Amstrad CPC 6128 for MiSTer\nThis core has been started as a port of [CoreAmstrad by Renaud H\u00e9lias](https://github.com/renaudhelias/CoreAmstrad) but every module has been either rewritten or replaced so, now it can be treated as a completely new core.\n\n## Features\n* Precise CPU timings including proper contention model.\n* Precise CRTC model supporting many tricks of Types 1 and 0.\n* 2 disk drives\n* Disk write support.\n* Close to real disk drive emulation with support of some protections.\n* Selectable CPC 6128/664 mode with separate ROM sets.\n* Multiface 2.\n* Several monochrome modes and 2 types of palette (GA/ASIC).\n* Selectable expansion ROM loading.\n* Joystick support with up to 3 buttons\n* Kempston, SYMBiFACE II and Multiplay mice.\n* HQ2x and Scanlines FX for scandoubler.\n* Tape input through ADC board\n* Support *.CDT tape files.\n* Tape output through speaker.\n\n\n## Installation\nPlace rbf into root and **boot.rom** into **Games/Amstrad** folder of SD card.\n\n## Disk support\nPut some *.DSK files into Amstrad folder and mount it from OSD menu.\nimportant Basic commands:\n* cat - list the files on mounted disk.\n* run\" - load and start the program. ex: run\"disc\n* |a, |b - switch between drives\n\n## Boot ROM\nBoot ROM has following structure:\n\nOS6128 + BASIC1.1 + AMSDOS + MF2 + OS664 + BASIC664 + AMSDOS + MF2\n\nEvery part is 16KB. You can create your own ROM if you have a special preference.\n\n## Expansion ROM\nExpansion ROM should have file extension .eXX, where XX is hex number 00-FF of ROM page to load.\nEvery page is 16KB. It's possible to load larger ROM. In this case every 16KB block will be loaded in subsequent pages.\n\n### Special extensions:\n* eZZ - LowROM(OS)\n* eZ0 - LowROM(OS) + Page 0(Basic) + subsequent pages depending on size.\n\n### Notes\nYou can load several expansions. With every load the system will reboot. System ROM also can be replaced the same way.\nTo restore original ROM you have to reload the core (Alt-F12).\n\nYou can define boot extensions to automatically load at start of core. Use following name rules:\n* boot.eXX  - load to both 664 and 6128 configs\n* boot0.eXX - load to 6128 config\n* boot1.eXX - load to 664 config\n\nwhehe XX is 00-FF, ZZ, Z0.\n\n## CDT tape files\nCDT supported in very basic form for retro feeling and for some very specific apps. There is no way to rewind or fast forward the file. \nUSER LED will lit if there is a tape in the memory and still have data to play and blink while playback.\n\nControl keys:\n* Alt+F1 - mute/unmute the tape sound\n* Alt+F2 - unload the tape (turn off the LED)\n\nCDT playback respects the tape motor ON/OFF state.\n\n## RAM\nCPC664 model has only 64KB RAM - use this model for programs not compatible with 128KB RAM.\n\nCPC6128 model has 64KB+512KB RAM. Upper 448KB are visible in special OS ROM or application aware of 512KB expansion.\n\n## Multiface 2\n* Multiface 2 can be activated with F11.\n* USER LED shows if the MF2 ROM/RAM is active.\n* Returning from the MF2 menu via (r)eturn makes the device invisible.\n* Visibility can be restored via machine reset (original MF 2+).\n* For loading a saved game, MF2 must be visible.\n* ROM version is 8D.\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-DB9/Amstrad_MiSTer",
@@ -145,6 +145,18 @@
           "sha": "d95291e1bb23e98b3a262006541fb6acecac4c8e",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Amstrad_MiSTer/master/releases/Amstrad_20230818.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "Amstrad_20230913.rbf",
+          "sha": "30167b1e5627c875915d6603ddecd88f21121c59",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Amstrad_MiSTer/master/releases/Amstrad_20230913.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "boot.rom",
+          "sha": "a702ffd300628e4e926f2189dc5ec29b5408b822",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Amstrad_MiSTer/master/releases/boot.rom",
+          "type": "OTHER"
         }
       ]
     },
@@ -10610,7 +10622,7 @@
     {
       "name": "Distribution_MiSTer",
       "description": null,
-      "readme": "# MiSTer Distribution DB9\n\nThis repository contains all the files that you'll want in your MiSTer.\n\nYou may download all of them at once as a zip through the [following link](https://github.com/MiSTer-DB9/Distribution_MiSTer/archive/refs/heads/main.zip). Once you have them, place them as-is in your SD card, and everything should work out of the box.\n\n### MiSTer Project\n\nIf you want to check more about the MiSTer project, please check [this wiki](https://github.com/MiSTer-devel/Main_MiSTer/wiki).\n\n### Downloader script\n\nFor downloading all of these files in an automatic fashion, use [this tool](https://github.com/MiSTer-devel/Downloader_MiSTer).\n\n#### List of Tags that you may use with the Downloader Filters:\n\n`acornatom`, `acornelectron`, `adam`, `adctest`, `adventurevision`, `alicemc10`, `all_filters`, `altair8800`, `alternatives`, `amiga`, `amstrad`, `amstrad-pcw`, `amstradpcw`, `ao486`, `apogee`, `apple-i`, `apple-ii`, `aquarius`, `arcade`, `arcade-arkanoid`, `arcade-asteroids`, `arcade-asteroidsdeluxe`, `arcade-astrocade`, `arcade-ataritetris`, `arcade-athena`, `arcade-athena_mister`, `arcade-bagman`, `arcade-bakraid`, `arcade-bankpanic`, `arcade-batrider`, `arcade-battlezone`, `arcade-berzerk`, `arcade-blackwidow`, `arcade-blockade`, `arcade-bombjack`, `arcade-bosconian`, `arcade-breakout`, `arcade-burgertime`, `arcade-burningrubber`, `arcade-canyonbomber`, `arcade-cave`, `arcade-centipede`, `arcade-chameleon`, `arcade-computerspace`, `arcade-congobongo`, `arcade-cores`, `arcade-cosmic`, `arcade-cosmicguerilla`, `arcade-crazyballoon`, `arcade-crazyclimber`, `arcade-crazykong`, `arcade-crystalcastles`, `arcade-defender`, `arcade-digdug`, `arcade-dominos`, `arcade-donkeykong`, `arcade-donkeykong3`, `arcade-donkeykongjunior`, `arcade-dorodon`, `arcade-dottorikun`, `arcade-druaga`, `arcade-exerion`, `arcade-expressraider`, `arcade-finalizer`, `arcade-foodfight`, `arcade-freeze`, `arcade-frenzy`, `arcade-galaga`, `arcade-galaxian`, `arcade-galivan`, `arcade-gaplus`, `arcade-garegga`, `arcade-gauntlet`, `arcade-gyruss`, `arcade-ikariwarriors`, `arcade-inferno`, `arcade-iremm62`, `arcade-iremm72`, `arcade-iremm92`, `arcade-ironhorse`, `arcade-jackal`, `arcade-jailbreak`, `arcade-joust2`, `arcade-kickandrun`, `arcade-ladybug`, `arcade-lunarlander`, `arcade-mariobros`, `arcade-mcr1`, `arcade-mcr2`, `arcade-mcr3`, `arcade-mcr3mono`, `arcade-mcr3scroll`, `arcade-missilecommand`, `arcade-moonpatrol`, `arcade-mrdo`, `arcade-mrjong`, `arcade-mysticmarathon`, `arcade-ninjakun`, `arcade-pacman`, `arcade-pengo`, `arcade-penguinkunwars`, `arcade-performan`, `arcade-phoenix`, `arcade-pleiads`, `arcade-polyplay`, `arcade-pong`, `arcade-pooyan`, `arcade-popeye`, `arcade-qbert`, `arcade-rallyx`, `arcade-riverpatrol`, `arcade-robotron`, `arcade-rshnatk`, `arcade-scootershooter`, `arcade-scramble`, `arcade-segasys1`, `arcade-silverland`, `arcade-slapfight`, `arcade-sms`, `arcade-snk_triplez80`, `arcade-solomonskey`, `arcade-sonson`, `arcade-spaceinvaders`, `arcade-spacerace`, `arcade-sprint1`, `arcade-sprint2`, `arcade-subs`, `arcade-superbreakout`, `arcade-taitosj`, `arcade-tankbattalion`, `arcade-tecmo`, `arcade-tiamc1`, `arcade-timepilot`, `arcade-timepilot84`, `arcade-tnkiii`, `arcade-traverseusa`, `arcade-tropicalangel`, `arcade-turkeyshoot`, `arcade-ultratank`, `arcade-vball`, `arcade-xevious`, `arcade-xsleenacore`, `arcade-zaxxon`, `arcade-zigzag`, `arcadelpf`, `arcadia`, `archie`, `arduboy`, `astrocade`, `atari2600`, `atari5200`, `atari7800`, `atari800`, `atarilynx`, `atarist`, `avision`, `ay-3-8500`, `bbcbridgecompanion`, `bbcmicro`, `bios`, `bk0011m`, `c128`, `c16`, `c64`, `casio_pv-1000`, `casio_pv-2000`, `channelf`, `cheats`, `chess`, `chip8`, `coco2`, `coco3`, `coleco`, `colecoadam`, `colecovision`, `complexmultichromatic`, `computer`, `computer-cores`, `console`, `console-cores`, `contrast_boost`, `cores`, `corespecific`, `creativision`, `crt-simulation`, `displayspecific`, `docs`, `drv`, `edsac`, `eg2000`, `epochgalaxyii`, `essential`, `extra-utilities`, `famicom`, `filters`, `filters_audio`, `filters_video`, `flappy`, `flappybird`, `font`, `galaksija`, `gamate`, `gameboy`, `gameboy2p`, `gameboyadvance`, `gameboycolor`, `gamecontrollerdb`, `gamegear`, `gamenwatch`, `gameoflife`, `games`, `gamma`, `gb`, `gba`, `gba2p`, `gbc`, `generalhardware`, `generallpf`, `genesis`, `gnw`, `handheld2p`, `hbmame`, `homelab`, `inputtest`, `intellivision`, `interact`, `jupiter`, `laser`, `laser310`, `lcd-general`, `lcd-integeronly`, `linux`, `lynx48`, `macplus`, `mame`, `mastersystem`, `megacd`, `megadrive`, `megaduck`, `memte`, `memtest`, `menu`, `mgl`, `minimig`, `minimigdb9`, `minimigrgb8`, `misterfirmware`, `mra`, `msx`, `msx1`, `multicomp`, `myvision`, `neogeo`, `nes`, `nintendo`, `odyssey2`, `old`, `ondra_spo186`, `orao`, `oric`, `other`, `other-cores`, `palettes`, `pc88`, `pc8801`, `pcengine`, `pcenginecd`, `pcxt`, `pdp1`, `pet2001`, `pmd85`, `pocketchallengev2`, `pokemonmini`, `poly_gamma`, `presets`, `psx`, `pure_gamma`, `ql`, `readme`, `rx78`, `s32x`, `samcoupe`, `scanlines-adaptive`, `scanlines-brighter`, `scanlines-standard`, `scripts`, `segacd`, `segamark3`, `service-cores`, `sgb`, `shadow_masks`, `sharpmz`, `simplemonochrome`, `slugcross`, `sms`, `snes`, `sordm5`, `specialist`, `spectrum`, `spmx`, `sufami`, `super_vision_8000`, `superfamicom`, `supergameboy`, `supernes`, `supernintendo`, `supervision`, `supervision8000`, `svi328`, `tatungeinstein`, `tgfx16`, `tgfx16-cd`, `tgfx16cd`, `ti-99_4a`, `ti994a`, `tomyscramble`, `tomytutor`, `trs-80`, `tsconf`, `turbografx`, `turbografx16`, `turbografx16cd`, `turbografxcd`, `uk101`, `upscaling-lanczosbicubicetc`, `upscaling-recommended`, `upscaling-sharpbilinear`, `utility`, `vc4000`, `vector-06c`, `vector06`, `vector06c`, `vectrex`, `vic20`, `wonderswan`, `wonderswancolor`, `x68000`, `yctxt`, `zx-spectrum`, `zx81`, `zxnext`, `zxspectrum`\n",
+      "readme": "# MiSTer Distribution DB9\n\nThis repository contains all the files that you'll want in your MiSTer.\n\nYou may download all of them at once as a zip through the [following link](https://github.com/MiSTer-DB9/Distribution_MiSTer/archive/refs/heads/main.zip). Once you have them, place them as-is in your SD card, and everything should work out of the box.\n\n### MiSTer Project\n\nIf you want to check more about the MiSTer project, please check [this wiki](https://github.com/MiSTer-devel/Main_MiSTer/wiki).\n\n### Downloader script\n\nFor downloading all of these files in an automatic fashion, use [this tool](https://github.com/MiSTer-devel/Downloader_MiSTer).\n\n#### List of Tags that you may use with the Downloader Filters:\n\n`acornatom`, `acornelectron`, `adam`, `adctest`, `adventurevision`, `alicemc10`, `all_filters`, `altair8800`, `alternatives`, `amiga`, `amstrad`, `amstrad-pcw`, `amstradpcw`, `ao486`, `apogee`, `apple-i`, `apple-ii`, `aquarius`, `arcade`, `arcade-arkanoid`, `arcade-asteroids`, `arcade-asteroidsdeluxe`, `arcade-astrocade`, `arcade-ataritetris`, `arcade-athena`, `arcade-athena_mister`, `arcade-bagman`, `arcade-bankpanic`, `arcade-battlezone`, `arcade-berzerk`, `arcade-blackwidow`, `arcade-blockade`, `arcade-bombjack`, `arcade-bosconian`, `arcade-breakout`, `arcade-burgertime`, `arcade-burningrubber`, `arcade-canyonbomber`, `arcade-cave`, `arcade-centipede`, `arcade-chameleon`, `arcade-computerspace`, `arcade-congobongo`, `arcade-cores`, `arcade-cosmic`, `arcade-cosmicguerilla`, `arcade-crazyballoon`, `arcade-crazyclimber`, `arcade-crazykong`, `arcade-crystalcastles`, `arcade-defender`, `arcade-digdug`, `arcade-dominos`, `arcade-donkeykong`, `arcade-donkeykong3`, `arcade-donkeykongjunior`, `arcade-dorodon`, `arcade-dottorikun`, `arcade-druaga`, `arcade-exerion`, `arcade-expressraider`, `arcade-finalizer`, `arcade-foodfight`, `arcade-freeze`, `arcade-frenzy`, `arcade-galaga`, `arcade-galaxian`, `arcade-galivan`, `arcade-gaplus`, `arcade-gauntlet`, `arcade-gyruss`, `arcade-ikariwarriors`, `arcade-inferno`, `arcade-iremm62`, `arcade-iremm72`, `arcade-iremm92`, `arcade-ironhorse`, `arcade-jackal`, `arcade-jailbreak`, `arcade-joust2`, `arcade-kickandrun`, `arcade-ladybug`, `arcade-lunarlander`, `arcade-mariobros`, `arcade-mcr1`, `arcade-mcr2`, `arcade-mcr3`, `arcade-mcr3mono`, `arcade-mcr3scroll`, `arcade-missilecommand`, `arcade-moonpatrol`, `arcade-mrdo`, `arcade-mrjong`, `arcade-mysticmarathon`, `arcade-ninjakun`, `arcade-pacman`, `arcade-pengo`, `arcade-penguinkunwars`, `arcade-performan`, `arcade-phoenix`, `arcade-pleiads`, `arcade-polyplay`, `arcade-pong`, `arcade-pooyan`, `arcade-popeye`, `arcade-qbert`, `arcade-rallyx`, `arcade-riverpatrol`, `arcade-robotron`, `arcade-rshnatk`, `arcade-scootershooter`, `arcade-scramble`, `arcade-segasys1`, `arcade-silverland`, `arcade-slapfight`, `arcade-sms`, `arcade-snk_triplez80`, `arcade-solomonskey`, `arcade-sonson`, `arcade-spaceinvaders`, `arcade-spacerace`, `arcade-sprint1`, `arcade-sprint2`, `arcade-subs`, `arcade-superbreakout`, `arcade-taitosj`, `arcade-tankbattalion`, `arcade-tecmo`, `arcade-tiamc1`, `arcade-timepilot`, `arcade-timepilot84`, `arcade-tnkiii`, `arcade-traverseusa`, `arcade-tropicalangel`, `arcade-turkeyshoot`, `arcade-ultratank`, `arcade-vball`, `arcade-xevious`, `arcade-xsleenacore`, `arcade-zaxxon`, `arcade-zigzag`, `arcadelpf`, `arcadia`, `archie`, `arduboy`, `astrocade`, `atari2600`, `atari5200`, `atari7800`, `atari800`, `atarilynx`, `atarist`, `avision`, `ay-3-8500`, `bbcbridgecompanion`, `bbcmicro`, `bios`, `bk0011m`, `c128`, `c16`, `c64`, `casio_pv-1000`, `casio_pv-2000`, `channelf`, `cheats`, `chess`, `chip8`, `coco2`, `coco3`, `coleco`, `colecoadam`, `colecovision`, `complexmultichromatic`, `computer`, `computer-cores`, `console`, `console-cores`, `contrast_boost`, `cores`, `corespecific`, `creativision`, `crt-simulation`, `displayspecific`, `docs`, `drv`, `edsac`, `eg2000`, `epochgalaxyii`, `essential`, `extra-utilities`, `famicom`, `filters`, `filters_audio`, `filters_video`, `flappy`, `flappybird`, `font`, `galaksija`, `gamate`, `gameboy`, `gameboy2p`, `gameboyadvance`, `gameboycolor`, `gamecontrollerdb`, `gamegear`, `gamenwatch`, `gameoflife`, `games`, `gamma`, `gb`, `gba`, `gba2p`, `gbc`, `generalhardware`, `generallpf`, `genesis`, `gnw`, `handheld2p`, `hbmame`, `homelab`, `inputtest`, `intellivision`, `interact`, `jupiter`, `laser`, `laser310`, `lcd-general`, `lcd-integeronly`, `linux`, `lynx48`, `macplus`, `mame`, `mastersystem`, `megacd`, `megadrive`, `megaduck`, `memte`, `memtest`, `menu`, `mgl`, `minimig`, `minimigdb9`, `minimigrgb8`, `misterfirmware`, `mra`, `msx`, `msx1`, `multicomp`, `myvision`, `neogeo`, `nes`, `nintendo`, `odyssey2`, `old`, `ondra_spo186`, `orao`, `oric`, `other`, `other-cores`, `palettes`, `pc88`, `pc8801`, `pcengine`, `pcenginecd`, `pcxt`, `pdp1`, `pet2001`, `pmd85`, `pocketchallengev2`, `pokemonmini`, `poly_gamma`, `presets`, `psx`, `pure_gamma`, `ql`, `readme`, `rx78`, `s32x`, `samcoupe`, `scanlines-adaptive`, `scanlines-brighter`, `scanlines-standard`, `scripts`, `segacd`, `segamark3`, `service-cores`, `sgb`, `shadow_masks`, `sharpmz`, `simplemonochrome`, `slugcross`, `sms`, `snes`, `sordm5`, `specialist`, `spectrum`, `spmx`, `sufami`, `super_vision_8000`, `superfamicom`, `supergameboy`, `supernes`, `supernintendo`, `supervision`, `supervision8000`, `svi328`, `tatungeinstein`, `tgfx16`, `tgfx16-cd`, `tgfx16cd`, `ti-99_4a`, `ti994a`, `tomyscramble`, `tomytutor`, `trs-80`, `tsconf`, `turbografx`, `turbografx16`, `turbografx16cd`, `turbografxcd`, `uk101`, `upscaling-lanczosbicubicetc`, `upscaling-recommended`, `upscaling-sharpbilinear`, `utility`, `vc4000`, `vector-06c`, `vector06`, `vector06c`, `vectrex`, `vic20`, `wonderswan`, `wonderswancolor`, `x68000`, `yctxt`, `zx-spectrum`, `zx81`, `zxnext`, `zxspectrum`\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-DB9/Distribution_MiSTer",
@@ -10886,190 +10898,6 @@
           "sha": "46182bf8d3cb712157b1b1dcc9235fe7f9c4daed",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Gameboy_MiSTer/master/releases/Mega%20Duck.mgl",
           "type": "OTHER"
-        }
-      ]
-    },
-    {
-      "name": "GBA_MiSTer",
-      "description": "GBA for MiSTer",
-      "readme": "# [Gameboy Advance](https://en.wikipedia.org/wiki/Game_Boy_Advance) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\n\n# HW Requirements/Features\nThe games can run from a naked DE10-Nano with the build-in DDR-RAM.\nHowever, using SDRAM is highly recommended, as some games may slowdown or loose sync when using DDR-RAM.\n\nWhen using SDRAM, it requires 32MB SDRAM for games less than 32MB. 32MB games require either 64MB or 128MB module.\nSDRAM will be automatically used when available and size is sufficient.\n\n# Bios\nOpensource Bios from Normmatt is included, however it has issues with some games.\nOriginal GBA BIOS can be placed to GBA folder with name boot.rom\n\nPLEASE do not report errors without testing with the original BIOS\n\nHomebrew games are sometimes not supported by the official BIOS, \nbecause the BIOS checks for Nintendo Logo included in the ROM, which is protected by copyright.\nTo use these ROMs without renaming or removing the the boot.rom, \nyou can activate the \"Homebrew BIOS\" settings in OSD.\nAs the BIOS is already replaced at boot time, you must save this settings and hard reset/reload the GBA core.\n\n# Status\n~1600 games tested until ingame.\nThere is no known official game that doesn't work.\nExceptions are games that require rare extra hardware (mostly japanese).\nSome small video glitches remain, see issue list.\n\n# Features\n- saving as in GBA\n- Savestates\n- FastForward - speed up game by factor 2-4\n- CPU Turbomode - give games additional CPU power\n- Flickerblend - set to blend or 30Hz mode for games like F-Zero, Mario Kart or NES Classics to prevent flickering effects\n- Spritelimit - turn on to prevent wrong sprites for games that rely on the limit (opt-in)\n- Cheats\n- Color optimizations: shader colors and desaturate\n- Rewind: go back up to 60 seconds in time\n- Tilt: use analog stick (map stick in Mister Main before)\n- Solar Sensor: Set brightness in OSD\n- Gyro: use analog stick (map stick in Mister Main before)\n- RTC: automatically used, works with RTC board or internet connection\n- Rumble: for Drill Dozer, Wario Ware Twisted and some romhacks\n- 2x Resolution: game is rendered at 480x320 instead of 240x160 pixels\n\n# Savestates\nCore provides 4 slots to save and restore the state. \nThose can be saved to SDCard or reside only in memory for temporary use(OSD Option). \nUsage with either Keyboard, Gamepad mappable button or OSD.\n\nKeyboard Hotkeys for save states:\n- Alt-F1..F4 - save the state\n- F1...F4 - restore\n\nGamepad:\n- Savestatebutton+Left or Right switches the savestate slot\n- Savestatebutton+Down saves to the selected slot\n- Savestatebutton+Up loads from the selected slot\n\n# Rewind\nTo use rewind, turn on the OSD Option \"Rewind Capture\" and map the rewind button.\nYou may have to restart the game for the function to work properly.\nAttention: Rewind capture will slow down your game by about 0.5% and may lead to light audio stutter.\nRewind capture is not compatible to \"Pause when OSD is open\", so pause is disabled when Rewind capture is on.\n\n# Spritelimit\nThere are only very few games known that produce glitches without sprite pixel limit.\nThose games use the sprite pixel limit automatically.\nYou can optionally also turn this on if you notice problems.\n\n# 2x Resolution\nOnly works over HDMI, Analog output is not changed in 2x Resolution mode. \n\nImproved rendering resolution for:\n- Affine background: \"Mode7\" games, typically racing games like Mario Kart\n- Affine sprites: games that scale or rotate sprites\n\nThis rendering is experimental and can cause glitches, as not all game behavior can be supported.\nThose glitches can not be fixed without gamespecific hacks and therefore will not be fixed. \nPlease don't add bugs in such cases.\n\n# Cartridge Hardware supported games\n- RTC: Pokemon Sapphire+Ruby+Emerald, Boktai 1+2+3, Sennen Kazoku, Rockman EXE 4.5\n- Solar Sensor: Boktai 1+2+3\n- Gyro: Wario Ware Twisted\n- Tilt: Yoshi Topsy Turvy/Universal Gravitation, Koro Koro Puzzle - Happy Panechu!\n- Rumble: Wario Ware Twisted, Drill Dozer\n\nIf there is a game you want to play that also uses one of these features, but is not listed, please open a bug request.\n\nFor romhacks you can activate the option \"GPIO HACK(RTC+Rumble)\". Make sure to deactivate it for other games, otherwise you will experience crashes.\n\n# Not included\n- Multiplayer features like serial communication\n- E-Reader support\n- Gameboy Player features\n\n# Information for developers\n\nHow to simulate:\nhttps://github.com/MiSTer-devel/GBA_MiSTer/tree/master/sim\n\nHow to implement a GPIO module:\nhttps://github.com/MiSTer-devel/GBA_MiSTer/blob/master/gpio_readme.md\n",
-      "archived": false,
-      "fork": true,
-      "url": "https://github.com/MiSTer-DB9/GBA_MiSTer",
-      "releases": [
-        {
-          "name": "GBA_20200226.rbf",
-          "sha": "7bee7208ca2af796b069c87db713538b3f7b224d",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/GBA_MiSTer/master/releases/GBA_20200226.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "GBA_20200305.rbf",
-          "sha": "f6b9093dc376a43921cbbc0dfc2bf3e046573481",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/GBA_MiSTer/master/releases/GBA_20200305.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "GBA_20200309.rbf",
-          "sha": "b206a7c5bdebf5fc9d791f4bb4388f0707b930b0",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/GBA_MiSTer/master/releases/GBA_20200309.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "GBA_20200323.rbf",
-          "sha": "b5c3cf9f6390abbfa2e799ee3ffacc5b64312798",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/GBA_MiSTer/master/releases/GBA_20200323.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "GBA_20200408.rbf",
-          "sha": "2bb4b326cb194af1cd695554efd008c3e2dc08a3",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/GBA_MiSTer/master/releases/GBA_20200408.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "GBA_20200409.rbf",
-          "sha": "d200ec4c0c3e5c28e189c961998440cdf5562ddc",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/GBA_MiSTer/master/releases/GBA_20200409.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "GBA_20200422.rbf",
-          "sha": "012023da7e5498664c5a15a023140a81c63539b9",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/GBA_MiSTer/master/releases/GBA_20200422.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "GBA_20200513.rbf",
-          "sha": "4471858373e98f1b18ded71ce3b8f29501e59ced",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/GBA_MiSTer/master/releases/GBA_20200513.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "GBA_20200514.rbf",
-          "sha": "e6764fd91aca1a3418fbb6bcb7e93b5577a62a58",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/GBA_MiSTer/master/releases/GBA_20200514.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "GBA_20200617.rbf",
-          "sha": "3309a00a015bb8bc8e4cf752e0d99e8b0a6b1af0",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/GBA_MiSTer/master/releases/GBA_20200617.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "GBA_20201110.rbf",
-          "sha": "b4facda6f72f158f930cadca70e282466954c2c8",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/GBA_MiSTer/master/releases/GBA_20201110.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "GBA_20201120.rbf",
-          "sha": "65e17da816fa36cc4bc1d5e68d71805b3a1c88a4",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/GBA_MiSTer/master/releases/GBA_20201120.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "GBA_20210227.rbf",
-          "sha": "b3a740d969bc49e7fbdc7057a305bef70217a483",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/GBA_MiSTer/master/releases/GBA_20210227.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "GBA_20210415.rbf",
-          "sha": "cc61d94315c6be93e3d29265c40dc97437143a08",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/GBA_MiSTer/master/releases/GBA_20210415.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "GBA_20210622.rbf",
-          "sha": "1b68cdfc09cbb8ecb51eb95628c60625b83754c2",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/GBA_MiSTer/master/releases/GBA_20210622.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "GBA_20210624.rbf",
-          "sha": "880114465eed8af376fe8c12b727ded9f720106e",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/GBA_MiSTer/master/releases/GBA_20210624.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "GBA_20210629.rbf",
-          "sha": "bd027d8cf0bd5517b452f56e1d86e7dc2ac00667",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/GBA_MiSTer/master/releases/GBA_20210629.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "GBA_20210718.rbf",
-          "sha": "1c2a959fd8942c0112310cd9a3c82181e8b5587f",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/GBA_MiSTer/master/releases/GBA_20210718.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "GBA_20211201.rbf",
-          "sha": "a48f2581f8d1b46a8bc1a2ff4f695e6cfab544bc",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/GBA_MiSTer/master/releases/GBA_20211201.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "GBA_20220202.rbf",
-          "sha": "e949877c91bed28f5e62a1edd09a791ec4a9ae4b",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/GBA_MiSTer/master/releases/GBA_20220202.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "GBA_20220203.rbf",
-          "sha": "d8266fa28a40ceb9ffeda85e3fc1726b1fc1fb15",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/GBA_MiSTer/master/releases/GBA_20220203.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "GBA_20220214.rbf",
-          "sha": "4e67d379f620f1a694352a13bb8a87d93639de0a",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/GBA_MiSTer/master/releases/GBA_20220214.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "GBA_20220314.rbf",
-          "sha": "8a898c25e2cb1ecdb749e9d201576a1b55b15d09",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/GBA_MiSTer/master/releases/GBA_20220314.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "GBA_20220417.rbf",
-          "sha": "f5363b75f3333885b574afbf3dda9c1fe6a1b03d",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/GBA_MiSTer/master/releases/GBA_20220417.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "GBA_20220428.rbf",
-          "sha": "25580879845fa46de66cc5feb4d2a28bed7177ae",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/GBA_MiSTer/master/releases/GBA_20220428.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "GBA_20220503.rbf",
-          "sha": "6cd774ff821ac41ad59b54384e782f8dc1a11f56",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/GBA_MiSTer/master/releases/GBA_20220503.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "GBA_20220812.rbf",
-          "sha": "bd7e1cfdaf09b2f959e02cfe8e56dcfecd5b0e3d",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/GBA_MiSTer/master/releases/GBA_20220812.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "GBA_20230225.rbf",
-          "sha": "9e212fee3de0a4f850ed06a8659c0123f63e7583",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/GBA_MiSTer/master/releases/GBA_20230225.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "GBA_20230806.rbf",
-          "sha": "1a64b3f0cd00c97b825c314cf7137d7811f41812",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/GBA_MiSTer/master/releases/GBA_20230806.rbf",
-          "type": "RBF"
         }
       ]
     },
@@ -11671,6 +11499,12 @@
           "name": "MiSTer_20230816",
           "sha": "383548670660a0d28ccdb6fe06229d29731959c9",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Main_MiSTer/master/releases/MiSTer_20230816",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20230915",
+          "sha": "c152563f3dc5c81e1c1be51f5d785ba1ff7bfd7a",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Main_MiSTer/master/releases/MiSTer_20230915",
           "type": "OTHER"
         }
       ]
@@ -12443,6 +12277,12 @@
           "name": "NeoGeo_20230803.rbf",
           "sha": "e8eb625cf0097b26f8f051c5b45715e27bd96ee0",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/NeoGeo_MiSTer/master/releases/NeoGeo_20230803.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NeoGeo_20230914.rbf",
+          "sha": "33d9e790c1356a770c4c7e04861d75e45f326a63",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/NeoGeo_MiSTer/master/releases/NeoGeo_20230914.rbf",
           "type": "RBF"
         },
         {

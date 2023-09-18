@@ -2113,7 +2113,7 @@
         },
         {
           "name": "Double Dragon (Japan).mra",
-          "sha": "1c1ac47fe8e7d6cd92bfa008b33bfbed6bac5f76",
+          "sha": "2058f510024e1c72435fcb0d864a33eec6cf3714",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/dd/releases/Double%20Dragon%20(Japan).mra",
           "type": "MRA",
           "extra": {
@@ -2126,13 +2126,13 @@
         },
         {
           "name": "jtdd.rbf",
-          "sha": "2c8851a886ec2b51e09eded0b71c3a62e0fbc45f",
+          "sha": "7acbec46bf6b6f2a037d655cadb1ab74916b563d",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/dd/releases/jtdd.rbf",
           "type": "RBF"
         },
         {
           "name": "version.log",
-          "sha": "57137a7a14e8dae9c0b5789034e5782d3faa4f98",
+          "sha": "ad1829829df81715ebd89af36035b7d05154eac3",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/dd/version.log",
           "type": "OTHER"
         },
@@ -2150,7 +2150,7 @@
         },
         {
           "name": "Double Dragon II The Revenge (World).mra",
-          "sha": "93107ff565d2d6997c25579da91526942aca07e6",
+          "sha": "13b1057f889002b4ca1a31369e92cd769652d5a2",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/dd2/releases/Double%20Dragon%20II%20The%20Revenge%20(World).mra",
           "type": "MRA",
           "extra": {
@@ -2163,13 +2163,13 @@
         },
         {
           "name": "jtdd2.rbf",
-          "sha": "dc78fe09f20189ecdc1a55576ba70e2742a5493f",
+          "sha": "7931a502c9e4c236afb9167fa01ce6a9cf7fa94a",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/dd2/releases/jtdd2.rbf",
           "type": "RBF"
         },
         {
           "name": "version.log",
-          "sha": "57137a7a14e8dae9c0b5789034e5782d3faa4f98",
+          "sha": "ad1829829df81715ebd89af36035b7d05154eac3",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/dd2/version.log",
           "type": "OTHER"
         },
@@ -2316,6 +2316,19 @@
           }
         },
         {
+          "name": "Ghosts'n Goblins (World set 1).mra",
+          "sha": "553820fe556ccf22cb7a95f96224cd893f1503cb",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/gng/releases/Ghosts'n%20Goblins%20(World%20set%201).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Ghosts'n Goblins (World? set 1)",
+            "rbf": "jtgng",
+            "zips": [
+              "gng.zip"
+            ]
+          }
+        },
+        {
           "name": "jtgng.rbf",
           "sha": "256eaa321beb14c266313440d33cf49f5cd1cde0",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/gng/releases/jtgng.rbf",
@@ -2415,7 +2428,7 @@
         },
         {
           "name": "Chelnov - Atomic Runner (World).mra",
-          "sha": "87f87e7667cb49ebea92540f490d522722ce70e8",
+          "sha": "b7adefd990461d1af6907a8a1e505d348d8e368f",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/karnov/releases/Chelnov%20-%20Atomic%20Runner%20(World).mra",
           "type": "MRA",
           "extra": {
@@ -2428,7 +2441,7 @@
         },
         {
           "name": "Karnov (US, rev 6).mra",
-          "sha": "4ee250416c2ca6a0787a9ee8a591bc26fa1f4367",
+          "sha": "ba2e5fc551327738f844dc4ab69612c3b01a40e4",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/karnov/releases/Karnov%20(US%2C%20rev%206).mra",
           "type": "MRA",
           "extra": {
@@ -2441,7 +2454,7 @@
         },
         {
           "name": "Wonder Planet (Japan).mra",
-          "sha": "7c1c9853b472b65ac8be585a3414675e63c62257",
+          "sha": "7db3ccad1ea249b265deb2c3cfce3bcc174ab2c9",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/karnov/releases/Wonder%20Planet%20(Japan).mra",
           "type": "MRA",
           "extra": {
@@ -2503,7 +2516,7 @@
         },
         {
           "name": "Kicker.mra",
-          "sha": "d1b715796d82276e0896346a5fd207236130be84",
+          "sha": "6b8b432e02437c5dcc9d64b5eacd0f6d9a941119",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kicker/releases/Kicker.mra",
           "type": "MRA",
           "extra": {
@@ -3075,7 +3088,7 @@
         },
         {
           "name": "Roc'n Rope.mra",
-          "sha": "7a98f83bc5c14a8f16d06b73da9dd569e2a2663b",
+          "sha": "856bc00acff7ab44d8ac8285bec822751ee2ac80",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/roc/releases/Roc'n%20Rope.mra",
           "type": "MRA",
           "extra": {
@@ -3112,7 +3125,7 @@
         },
         {
           "name": "The Speed Rumbler (set 1).mra",
-          "sha": "bfe0f8f261379dde2c7bc61eeed42fc102fb9c43",
+          "sha": "6f333f88225e13ba57861712c5257a44b13ddbda",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/rumble/releases/The%20Speed%20Rumbler%20(set%201).mra",
           "type": "MRA",
           "extra": {
@@ -3143,7 +3156,7 @@
         },
         {
           "name": "Ace Attacker (Japan, S16A) [FD1094 317-0060].mra",
-          "sha": "d79a857f714c0412f514f7390401bc7011218aee",
+          "sha": "00770f8b60b0eb96ded297d8c39cfd63369f5d57",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16/releases/Ace%20Attacker%20(Japan%2C%20S16A)%20%5BFD1094%20317-0060%5D.mra",
           "type": "MRA",
           "extra": {
@@ -3156,7 +3169,7 @@
         },
         {
           "name": "Action Fighter (World, S16A) [FD1089A 317-0018].mra",
-          "sha": "4bd1f5fa2749ba68d05cc8ee7e212a0b556bb5be",
+          "sha": "098901a9a1c33ffc07430dd9d9e1dfd4ea7a37b6",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16/releases/Action%20Fighter%20(World%2C%20S16A)%20%5BFD1089A%20317-0018%5D.mra",
           "type": "MRA",
           "extra": {
@@ -3247,7 +3260,7 @@
         },
         {
           "name": "Shinobi (Set 6, World, S16A) [No Protection].mra",
-          "sha": "c061d9d996e34716bd2f3c54b48771a6279f509c",
+          "sha": "1a5a170b9445bb5d87a775d8240e7d264d23315e",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16/releases/Shinobi%20(Set%206%2C%20World%2C%20S16A)%20%5BNo%20Protection%5D.mra",
           "type": "MRA",
           "extra": {
@@ -3317,7 +3330,7 @@
         },
         {
           "name": "Altered Beast (set 8) (8751 317-0078).mra",
-          "sha": "9574e10f62567364e060685da593e35fbc7a5c48",
+          "sha": "3da76b16d19e16a6b6f7e271fc7311e74241a22f",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/Altered%20Beast%20(set%208)%20(8751%20317-0078).mra",
           "type": "MRA",
           "extra": {
@@ -3330,7 +3343,7 @@
         },
         {
           "name": "Aurail (set 3, US) (unprotected).mra",
-          "sha": "88ae9e675e90ffda74eaf801cbe0e0ea29299194",
+          "sha": "50a8f69120dd8a8bc454bbd77c8493fd7776d89d",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/Aurail%20(set%203%2C%20US)%20(unprotected).mra",
           "type": "MRA",
           "extra": {
@@ -3369,7 +3382,7 @@
         },
         {
           "name": "Cotton (set 4, World) (FD1094 317-0181a).mra",
-          "sha": "57c3d4a0b97fac2079ba80d4ba3e67021c9ee72d",
+          "sha": "31bff667e26713113942fffdadd0e27aa741b026",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/Cotton%20(set%204%2C%20World)%20(FD1094%20317-0181a).mra",
           "type": "MRA",
           "extra": {
@@ -3382,7 +3395,7 @@
         },
         {
           "name": "Dunk Shot (Rev C, FD1089A 317-0022).mra",
-          "sha": "c380feb514a203d8b9c3b1dc300cecbe3f07c31e",
+          "sha": "a4139d96d3565fa70babbfdc398c252c483154b9",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/Dunk%20Shot%20(Rev%20C%2C%20FD1089A%20317-0022).mra",
           "type": "MRA",
           "extra": {
@@ -3421,7 +3434,7 @@
         },
         {
           "name": "Excite League (FD1094 317-0079).mra",
-          "sha": "69f8a0db2b1a23398158b55139cd0b5640aeef33",
+          "sha": "68ae174c8703fe0fa4effd30a9ad5835b1c6772e",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/Excite%20League%20(FD1094%20317-0079).mra",
           "type": "MRA",
           "extra": {
@@ -3434,7 +3447,7 @@
         },
         {
           "name": "Fantasy Zone II - The Tears of Opa-Opa (System 16C version).mra",
-          "sha": "762689d008753612b21090a7e98ae5db8bfd162d",
+          "sha": "e84306c0b41855455505786eaf44d0e73181e8a5",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/Fantasy%20Zone%20II%20-%20The%20Tears%20of%20Opa-Opa%20(System%2016C%20version).mra",
           "type": "MRA",
           "extra": {
@@ -3460,7 +3473,7 @@
         },
         {
           "name": "Golden Axe (set 6, US) (8751 317-123A).mra",
-          "sha": "9cc7c60dc13f7f85e9f8c986a526a31b6eec0b90",
+          "sha": "c9b94f17d5a1d20e382eaee089b50515c2440ccb",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/Golden%20Axe%20(set%206%2C%20US)%20(8751%20317-123A).mra",
           "type": "MRA",
           "extra": {
@@ -3473,7 +3486,7 @@
         },
         {
           "name": "MVP (set 2, US) (FD1094 317-0143).mra",
-          "sha": "e5069428209395167bbd8d21bd2a06ce298b395d",
+          "sha": "b0a54bc216e7922f36e0ac86e5a00b9600c277f6",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/MVP%20(set%202%2C%20US)%20(FD1094%20317-0143).mra",
           "type": "MRA",
           "extra": {
@@ -3486,7 +3499,7 @@
         },
         {
           "name": "Passing Shot (World, 2 Players) (FD1094 317-0080).mra",
-          "sha": "ce9ab742637ac091994288cf33660b2fcf288a25",
+          "sha": "75407b450d74988be151dc8c7a67afb8177a77ea",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/Passing%20Shot%20(World%2C%202%20Players)%20(FD1094%20317-0080).mra",
           "type": "MRA",
           "extra": {
@@ -3499,7 +3512,7 @@
         },
         {
           "name": "Riot City (Japan).mra",
-          "sha": "b3d475685fab6c766434c64817804f6047d91aee",
+          "sha": "0b225c39083820ad5a343d042887d8586e8c7216",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/Riot%20City%20(Japan).mra",
           "type": "MRA",
           "extra": {
@@ -3564,7 +3577,7 @@
         },
         {
           "name": "Time Scanner (set 2, System 16B).mra",
-          "sha": "dd3a3387319ede2b86eeb891eeb50885e0f934a0",
+          "sha": "6678f6b8555b177691a30bbcbefe26cc59bd1fec",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/Time%20Scanner%20(set%202%2C%20System%2016B).mra",
           "type": "MRA",
           "extra": {
@@ -3577,7 +3590,7 @@
         },
         {
           "name": "Toryumon.mra",
-          "sha": "3dc4ad45c0eb7d9d3afcd4e9fa363211e8e36d6e",
+          "sha": "56666f3d97edcf7953eb04c06cf3354afce9ac58",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/Toryumon.mra",
           "type": "MRA",
           "extra": {
@@ -3603,7 +3616,7 @@
         },
         {
           "name": "Wonder Boy III - Monster Lair (set 6, World, System 16B) (8751 317-0098).mra",
-          "sha": "46bd1fbc44bcd81b84ef9ab64db4c6ff8b9bd6bd",
+          "sha": "673733705b8e1a1b61bc3509e89e6df19c9f831b",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/Wonder%20Boy%20III%20-%20Monster%20Lair%20(set%206%2C%20World%2C%20System%2016B)%20(8751%20317-0098).mra",
           "type": "MRA",
           "extra": {
@@ -3728,7 +3741,7 @@
         },
         {
           "name": "Super Basketball (version I, encrypted).mra",
-          "sha": "ecda22068c8b2ba047aa70944bec1cbc1bd446b0",
+          "sha": "7d6bdcfba014bbbf53fc6e2a9c43e2f3b658c4a1",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/sbaskt/releases/Super%20Basketball%20(version%20I%2C%20encrypted).mra",
           "type": "MRA",
           "extra": {
@@ -3862,7 +3875,7 @@
         },
         {
           "name": "Street Fighter (US, set 1).mra",
-          "sha": "0aca169c03769790303f6213117a2f541423ddd9",
+          "sha": "6104c85afb86ace0cc49eef6d7a566bb15f0347b",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/sf/releases/Street%20Fighter%20(US%2C%20set%201).mra",
           "type": "MRA",
           "extra": {
