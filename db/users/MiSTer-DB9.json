@@ -8745,6 +8745,191 @@
       ]
     },
     {
+      "name": "Arcade-TaitoSystemSJ_MiSTer",
+      "description": "Taito System SJ Arcade Core",
+      "readme": "# [Taito System SJ](https://www.system16.com/hardware.php?id=634)\n<p>Thank you to the following members of the MiSTer community: Boogermann, misterretrowolf, Sorgelig, & Jotego.</p>\n\n<p>The Taito System SJ was manufactured by Taito in 1982.   The Taito System SJ featured hardware specifications that were relatively advanced for its time and can run several games.  The most recognizable games in the collection are Elevator Action and Jungle King.  </p>\n\n<strong>Main CPU :</strong> Zilog Z80 CPU running at 4 MHz for running game logic and an AY8910 @ 1.5Mhz.  \n<strong>Audio CPU:</strong> Zilog Z80 CPU running at 3 MHz for coordinating sound effects controlling 3 additional AY8910s @ 1.5Mhz.  \n<strong>Video resolution:</strong> 256x224 @ 59.2Hz  \n<strong>Video Hardware:</strong> 3 seperate independantly scrollable tile maps and adjustable priorities, a 4th layer is dedicated to 'objects' (sprites).   \n\n<h2>Compatible Platforms</h2>\n<li>MiSTer FPGA</li>\n\n<h2>Compatible Games</h2>\n<blockquote>\n<p dir=\"auto\"><strong>ROMs NOT INCLUDED:</strong> By using this core you agree to provide your own roms.</p>\n</blockquote>\n\n<li>Alpine Ski</li>\n<li>Bio Attack</li>\n<li>Elevator Action</li>\n<li>High Way Race</li>\n<li>Jungle King</li>\n<li>Pirate Pete</li>\n<li>Space Cruiser</li>\n<li>Space Seeker</li>\n<li>Time Tunnel</li>\n<li>Water Ski</li>\n<li>Wild Western</li>\n\n<h2>Not Working</h2>\n<li>Kick Start Wheelie King</li>\n<li>Front Line</li>\n<li>Sea Fighter Poseidon</li>\n<li>The Tin Star</li>\n\n<h2>Issues</h2>\nSprite offset issue (vertical and horizontal).  NOTE: This does not affect all sprites.\n\n<h2>Coming Soon</h2>\nHigh Score Saves\n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/MiSTer-DB9/Arcade-TaitoSystemSJ_MiSTer",
+      "releases": [
+        {
+          "name": "Alpine Ski.mra",
+          "sha": "61eea73eb09c12859fd80b75fb819394ed445c8f",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-TaitoSystemSJ_MiSTer/main/releases/Alpine%20Ski.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Alpine Ski",
+            "rbf": "TaitoSJ",
+            "zips": [
+              "alpine.zip"
+            ]
+          }
+        },
+        {
+          "name": "Arcade-TaitoSJ_20230626.rbf",
+          "sha": "e9a854171d7ff7121e2f1b60cb7505fe7de8108b",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-TaitoSystemSJ_MiSTer/main/releases/Arcade-TaitoSJ_20230626.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Bio Attack.mra",
+          "sha": "bd7034e415d67e6402b141c86a69939aac26b444",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-TaitoSystemSJ_MiSTer/main/releases/Bio%20Attack.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Bio Attack",
+            "rbf": "TaitoSJ",
+            "zips": [
+              "bioatack.zip"
+            ]
+          }
+        },
+        {
+          "name": "Elevator Action Bootleg.mra",
+          "sha": "7f5f62a92065a7e2d2a7b583a09092b9adfcec84",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-TaitoSystemSJ_MiSTer/main/releases/Elevator%20Action%20Bootleg.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Elevator Action (bootleg)",
+            "rbf": "TaitoSJ",
+            "zips": [
+              "elevator.zip|elevatorb.zip"
+            ]
+          }
+        },
+        {
+          "name": "High Way Race.mra",
+          "sha": "56adb221765a8d8d5a07187b3bdcf06e49ab5139",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-TaitoSystemSJ_MiSTer/main/releases/High%20Way%20Race.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "High Way Race",
+            "rbf": "TaitoSJ",
+            "zips": [
+              "hwrace.zip"
+            ]
+          }
+        },
+        {
+          "name": "Jungle King.mra",
+          "sha": "425b99a13a7fdabacb8d3f1c652afa070c15cd08",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-TaitoSystemSJ_MiSTer/main/releases/Jungle%20King.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Jungle King",
+            "rbf": "TaitoSJ",
+            "zips": [
+              "junglek.zip"
+            ]
+          }
+        },
+        {
+          "name": "Pirate Pete.mra",
+          "sha": "bab6dfcbdc0358db45d8a59ddccce2b5b2791138",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-TaitoSystemSJ_MiSTer/main/releases/Pirate%20Pete.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Pirate Pete",
+            "rbf": "TaitoSJ",
+            "zips": [
+              "piratpet.zip|junglek.zip"
+            ]
+          }
+        },
+        {
+          "name": "Space Cruiser.mra",
+          "sha": "1792f627d435eb4a7188fd0c705ab4a9cef84d75",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-TaitoSystemSJ_MiSTer/main/releases/Space%20Cruiser.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Space Cruiser",
+            "rbf": "TaitoSJ",
+            "zips": [
+              "spacecr.zip"
+            ]
+          }
+        },
+        {
+          "name": "Space Seeker.mra",
+          "sha": "28af46bdd620be3d54c73579b9fce28a0383fdbd",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-TaitoSystemSJ_MiSTer/main/releases/Space%20Seeker.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "spaceskr",
+            "rbf": "TaitoSJ",
+            "zips": [
+              "spaceskr.zip"
+            ]
+          }
+        },
+        {
+          "name": "Time Tunnel.mra",
+          "sha": "930ce89030e2974f7907d1f04d84edbf4de3e3a0",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-TaitoSystemSJ_MiSTer/main/releases/Time%20Tunnel.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Time Tunnel",
+            "rbf": "TaitoSJ",
+            "zips": [
+              "timetunl.zip"
+            ]
+          }
+        },
+        {
+          "name": "Water Ski.mra",
+          "sha": "bfd4dbe17e2de05dc176aab9ec5b059390216a8c",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-TaitoSystemSJ_MiSTer/main/releases/Water%20Ski.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Water Ski",
+            "rbf": "TaitoSJ",
+            "zips": [
+              "waterski.zip"
+            ]
+          }
+        },
+        {
+          "name": "Wild Western.mra",
+          "sha": "f3a43f54b7b6468e595286a81e03ca2d48caa54d",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-TaitoSystemSJ_MiSTer/main/releases/Wild%20Western.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Wild Western",
+            "rbf": "TaitoSJ",
+            "zips": [
+              "wwestern.zip"
+            ]
+          }
+        },
+        {
+          "name": "Elevator Action.mra",
+          "sha": "a60d2267d3dbbada278447743e41fa9545a3edbb",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-TaitoSystemSJ_MiSTer/main/releases/_TaitoSystemSJ/non%20working/Elevator%20Action.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Elevator Action",
+            "rbf": "TaitoSJ",
+            "zips": [
+              "elevator.zip|elevatora.zip"
+            ]
+          }
+        },
+        {
+          "name": "Kick Start Wheelie King.mra",
+          "sha": "e88acb78772b5c81db58cb2b15c3867f26747849",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-TaitoSystemSJ_MiSTer/main/releases/_TaitoSystemSJ/non%20working/Kick%20Start%20Wheelie%20King.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Kick Start Wheelie King",
+            "rbf": "TaitoSJ",
+            "zips": [
+              "kikstart.zip"
+            ]
+          }
+        }
+      ]
+    },
+    {
       "name": "Arcade-Tecmo_MiSTer",
       "description": "MiSTer arcade core for Tecmo arcade classics: Rygar (1986), Gemini Wing (1987), and Silkworm (1988).",
       "readme": "# Tecmo\n\nTecmo was a Japanese video game company founded in 1967, who like many other game companies of the era, had their roots outside the amusement business. In Tecmo's case, they were originally a supplier of cleaning equipment.\n\nNevertheless, they went on to create some classic arcade games during the 80s and 90s. Many of which saw later releases on consoles like Nintendo Entertainment System, Sega Master System, Commodore 64, Atari Lynx, etc.\n\nThis core currently supports three games: Rygar (1986), Gemini Wing (1987), and Silkworm (1988).\n\n## Getting Started\n\nPlace the MRA, RBF, and the MAME ROM files in the following locations:\n\n```\n_Arcade/Rygar.mra\n_Arcade/Gemini Wing.mra\n_Arcade/Silkworm.mra\n_Arcade/cores/tecmo.rbf\n_Arcade/mame/rygar.zip\n_Arcade/mame/gemini.zip\n_Arcade/mame/silkworm.zip\n```\n\nFor more information on using MRA files with MiSTer, please refer to the [wiki](https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms).\n\n## Controls\n\nKeyboard inputs:\n\n| name     | key                   |\n| ---      | ---                   |\n| Coin 1   | 5                     |\n| Coin 2   | 6                     |\n| Start 1  | 1                     |\n| Start 2  | 1                     |\n| Button 1 | CTRL                  |\n| Button 2 | ALT                   |\n| Button 3 | SPACE                 |\n| Movement | UP, DOWN, LEFT, RIGHT |\n\nJoystick inputs:\n\n| name     | button                |\n| ---      | ---                   |\n| Coin     | L                     |\n| Start    | R                     |\n| Pause    | START                 |\n| Button 1 | A                     |\n| Button 2 | B                     |\n| Button 3 | X                     |\n| Movement | UP, DOWN, LEFT, RIGHT |\n\n## Credits\n\nMade with :heart: by [Josh Bassett](https://twitter.com/nullobject), 2020.\n\nI would also like to give a massive shout out to all my [Patreon](https://www.patreon.com/nullobject) supporters. Your support keeps me working on these games, and helps bring them to everybody.\n\nSpecial thanks to:\n\n<table>\n  <tr>\n    <td><img src=\"https://github.com/MiSTer-devel/Arcade-Tecmo_MiSTer/raw/master/doc/avatar.png\" width=\"100px;\" /></td>\n    <td>Alex Painemilla Carre\u00f1o</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://github.com/MiSTer-devel/Arcade-Tecmo_MiSTer/raw/master/doc/amineko-stone.jpeg\" width=\"100px;\" /></td>\n    <td>Amineko Stone</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://github.com/MiSTer-devel/Arcade-Tecmo_MiSTer/raw/master/doc/andrew-boudreau.jpg\" width=\"100px;\" /></td>\n    <td>Andrew Boudreau</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://github.com/MiSTer-devel/Arcade-Tecmo_MiSTer/raw/master/doc/avatar.png\" width=\"100px;\" /></td>\n    <td>Arjan de Lang</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://github.com/MiSTer-devel/Arcade-Tecmo_MiSTer/raw/master/doc/avatar.png\" width=\"100px;\" /></td>\n    <td>Benjamin Walker</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://github.com/MiSTer-devel/Arcade-Tecmo_MiSTer/raw/master/doc/christopher-gelatt.png\" width=\"100px;\" /></td>\n    <td>Christopher Gelatt</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://github.com/MiSTer-devel/Arcade-Tecmo_MiSTer/raw/master/doc/christopher-tuckwell.jpeg\" width=\"100px;\" /></td>\n    <td>Christopher Tuckwell</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://github.com/MiSTer-devel/Arcade-Tecmo_MiSTer/raw/master/doc/hard-rich.jpeg\" width=\"100px;\" /></td>\n    <td>Hard Rich</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://github.com/MiSTer-devel/Arcade-Tecmo_MiSTer/raw/master/doc/avatar.png\" width=\"100px;\" /></td>\n    <td>iker</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://github.com/MiSTer-devel/Arcade-Tecmo_MiSTer/raw/master/doc/lakeside.jpeg\" width=\"100px;\" /></td>\n    <td>Lakeside</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://github.com/MiSTer-devel/Arcade-Tecmo_MiSTer/raw/master/doc/avatar.png\" width=\"100px;\" /></td>\n    <td>Matt Postema</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://github.com/MiSTer-devel/Arcade-Tecmo_MiSTer/raw/master/doc/ordigdug.png\" width=\"100px;\" /></td>\n    <td>ordigdug</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://github.com/MiSTer-devel/Arcade-Tecmo_MiSTer/raw/master/doc/scralings.png\" width=\"100px;\" /></td>\n    <td>Scralings</td>\n  </tr>\n</table>\n\nThanks to:\n\nAdrian Longland, Akai Futari, Allen Tipper, Amosfear, Andrew Francomb, Antonio Bellotta, Benjamin Leggett, Charles Sagett, Chris B, Darren Newman, David Filskov, David Jones, Devon Nelson, Filip Kindt, Funkycochise, George Stravopodis, Herbert Krammer, Humanoide70, Jim Wehrfritz, John Perry, John Stringer, Jordan Retterer, JPS (RetroFPGA), Juan Jose Velez Ramirez, Keith Kelly, Leslie Welch, Ludovic Germaneau, Mahendra, Manuel Antoni, Mark Fulton, Mark Paterson, Mat Azel, Matthew, Matthias Penkert-Hennig, Max L Schultz, Max Sch\u00fctz, Michael Fuerst, Michael Yount, Miguel Candelario, Mike Parks, Monokrom, MrX-8B, Naku aka Ben, Octavio Bernacer Sempere, olivier bernhard, Oscar Laguna Garcia, Per Sweden, Phillip McMahon, Porkchop Express, RetroDriven, Ross Jolet, Shane Lynch, Shaneus, SpearZ, Tony Peters, toolb0x, Victor Bly, V\u00edctor Gomariz Ladr\u00f3n de Guevara, Xzarian, Zichio\n\n...and the rest of my supporters :sparkling_heart:\n\n## Development\n\nCompile the core:\n\n    $ make build\n\nProgram the DE10-Nano:\n\n    $ make program\n\n## Licence\n\nThis project is licensed under the MIT licence. See the LICENCE file for more details.\n",
