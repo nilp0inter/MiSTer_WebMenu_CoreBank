@@ -8766,9 +8766,9 @@
           }
         },
         {
-          "name": "Arcade-TaitoSJ_20230626.rbf",
-          "sha": "e9a854171d7ff7121e2f1b60cb7505fe7de8108b",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-TaitoSystemSJ_MiSTer/main/releases/Arcade-TaitoSJ_20230626.rbf",
+          "name": "Arcade-TaitoSJ_20231005.rbf",
+          "sha": "8ad903edc69153c91b005bd9870ffc350c9058e7",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-TaitoSystemSJ_MiSTer/main/releases/Arcade-TaitoSJ_20231005.rbf",
           "type": "RBF"
         },
         {
@@ -8861,6 +8861,12 @@
               "spaceskr.zip"
             ]
           }
+        },
+        {
+          "name": "TaitoSJ_20231005.rbf",
+          "sha": "8ad903edc69153c91b005bd9870ffc350c9058e7",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-TaitoSystemSJ_MiSTer/main/releases/TaitoSJ_20231005.rbf",
+          "type": "RBF"
         },
         {
           "name": "Time Tunnel.mra",
@@ -11885,6 +11891,40 @@
       ]
     },
     {
+      "name": "MegaDrive_MiSTer",
+      "description": "Sega Megadrive for MiSTer",
+      "readme": "# Nuked-MD port for MiSTer\n\n![nukedmd_logo](rtl/nuked-md/nukedmd_logo.png)\n\n[Original Nuked-MD repository](https://github.com/nukeykt/Nuked-MD-FPGA)\n\n## Installing\ncopy rbf to root of SD card. Put some ROMs (.BIN/.GEN/.MD/.SMS) into MegaDrive folder\n\n\n## Hot Keys\n* F1 - reset to JP(NTSC) region\n* F2 - reset to US(NTSC) region\n* F3 - reset to EU(PAL)  region\n\n\n## Auto Region option (Megadrive/Genesis carts only)\nThere are 2 versions of region detection:\n\n1) File name extension:\n\n* BIN -> JP\n* GEN -> US\n* MD  -> EU\n\n2) Header. It may not always work as not all ROMs follow the rule, especially in European region.\nThe header may include several regions - the correct one will be selected depending on priority option.\n\n\n## Sega Master System\n\nCore supports SMS carts with the same compatibility level as original MegaDrive hardware. Not all SMS carts are compatible with MD hardware.\n\n\n## Additional features\n\n* Multitaps: 4-way, Team player, J-Cart\n* SVP chip (Virtua Racing)\n* Audio Filters for Model 1, Model 2, Minimal, No Filter.\n* Option to choose between YM2612 and YM3438 (changes Ladder Effect behavior).\n* FM chip for SMS carts.\n* Composite Blending, smooth dithering patterns in games.\n* Border/Borderless modes.\n* Support many popular mappers.\n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/MiSTer-DB9/MegaDrive_MiSTer",
+      "releases": [
+        {
+          "name": "MegaDrive_20230901.rbf",
+          "sha": "8f37e8086096e98c34cd9e463303c2a8571670a9",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/MegaDrive_MiSTer/main/releases/MegaDrive_20230901.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "MegaDrive_20230902.rbf",
+          "sha": "2f8f575fe8a2559ad615dbe4a1e9a8a826a6c156",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/MegaDrive_MiSTer/main/releases/MegaDrive_20230902.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "MegaDrive_20230915.rbf",
+          "sha": "37e601d855284737458fd6f8f2e2328115dc3c18",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/MegaDrive_MiSTer/main/releases/MegaDrive_20230915.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Megadrive_20231007.rbf",
+          "sha": "2e36459990b4eb1acb11fe94624526febc401e16",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/MegaDrive_MiSTer/main/releases/Megadrive_20231007.rbf",
+          "type": "RBF"
+        }
+      ]
+    },
+    {
       "name": "Menu_MiSTer",
       "description": null,
       "readme": "# Startup core for MiSTer\r\n\r\n* **ESC** - switch to options\r\n* **F1** - switch the background\r\n* **F9** - Go to Linux terminal (F12 - back)\r\n\r\n## Notes:\r\n* Core supports sub-folders started with _ character.\r\n* Regardless the place of RBF file, boot rom/vhd should be placed into either root of SD card or core's dedicated folder (should be created in root of SD card).\r\n* Joystick (including emulation by keyboard) buttons defined in this core is default map for all cores unless defined in particalar core.\r\n\r\n## Artwork\r\n* Place menu.png or menu.jpg to the root of SD card to have it as background on HDMI (you can use vga_scaler=1 if you want it on VGA).\r\n",
@@ -13057,6 +13097,34 @@
           "sha": "516f6bb46119c345d53745f46b0bed24a57ce4f0",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/SAM-Coupe_MiSTer/master/releases/SAMCoupe_20230301.rbf",
           "type": "RBF"
+        }
+      ]
+    },
+    {
+      "name": "Saturn_MiSTer",
+      "description": null,
+      "readme": "# [Sega Saturn](https://en.wikipedia.org/wiki/Sega_Saturn) Compatible IP Core for FPGA\n\n![Active Development](https://img.shields.io/badge/Maintenance%20Level-Actively%20Developed-brightgreen.svg)\n[![Test Build (Single SDRAM)](https://github.com/srg320/Saturn_MiSTer/actions/workflows/test-build.yml/badge.svg?branch=master&event=push)](https://github.com/srg320/Saturn_MiSTer/actions/workflows/test-build.yml)\n[![Test Build (Dual SDRAM)](https://github.com/srg320/Saturn_MiSTer/actions/workflows/test-build_ds.yml/badge.svg?branch=master&event=push)](https://github.com/srg320/Saturn_MiSTer/actions/workflows/test-build_ds.yml)\n[![Funding](https://img.shields.io/endpoint?url=https://shieldsio-patreon.vercel.app/api/?username=srg320&type=patrons)](https://www.patreon.com/srg320)\n[![Funding](https://img.shields.io/badge/paypal-donate-blue.svg)](https://www.paypal.com/donate/?hosted_button_id=RCF2BEEN4V75L)\n[![Twitter Follow](https://img.shields.io/twitter/follow/srg320_?style=social)](https://twitter.com/srg320_)\n\n> **WARNING**: This repository is in active development. There are no guarantees about stability. Breaking changes will occur until a stable release is made and announced.\n\n## Overview\n\nThe Saturn was a 32-bit console by Sega, released in 1994 in Japan and 1995 in North America and Europe. Sega designed its Saturn with advanced hardware and with dual CPUs, making it difficult for programmers. In addition, components were not specifically created to work together, graphics hardware was complex, and the system's basic geometric primitive was based on quadrilaterals which proved difficult for Sega because the rest of the industry based its design on triangles. Eventually, the Saturn was eclipsed by the release of Sega's own Dreamcast.\n\n## Technical specifications\n\n- **CPU**: 2x Hitachi SH2 32-bit RISC CPUs @ 28.63 MHz\n- **RAM**: 16Mbit SDRAM\n- **VRAM**: 12Mbit SDRAM\n- **Graphics**:\n  - Sega/Hitachi VDP1 @ 28.63 MHz (sprite/texture and polygons)\n  - Sega/Yamaha VDP2 @ 28.63 MHz (background, scroll and 3D)\n- **Resolution**: 320x224 to 704x224, 16,777,216 millions colors\n- **Sound CPU**: Motorola 68EC000 @ 11.3 MHz\n- **Sound Processor**: Yamaha SCSP (Saturn Custom Sound Processor) YMF292 @ 22.6 MHz\n- **Media**: CD-ROM\n\n## Hardware Requirements\n\n- 128 MB SDRAM Module (Primary)\n- SDRAM Module of any size (32MB-128MB) (Secondary)\n\n> **Note:** Dual SDRAM modules is recommended for better compatibility.\n\n## Test Builds\n\nTest builds can be downloaded from the GitHub Actions, they are automatic generated on push against the current code of the repository and should not be considered releases.\n\nTo download select a workflow bellow, click on the most recent run and download the zip file under `Artifacts produced during runtime`.\n\n- [Single SDRAM](https://github.com/srg320/Saturn_MiSTer/actions/workflows/test-build.yml)\n- [Dual SDRAM](https://github.com/srg320/Saturn_MiSTer/actions/workflows/test-build_ds.yml)\n\n> **Note:** Actions has a 90-day retention rule by default, after that the artifacts are not available anymore.\n\n### Keys F1-F11 enable/disable the video screens/audio channels:\n- F1 - VDP2 NBG0\n- F2 - VDP2 NBG1\n- F3 - VDP2 NBG2\n- F4 - VDP2 NBG3\n- F5 - VDP2 RBG0\n- F6 - VDP2 Sprite\n- F7 - VDP2 Windows\n- F8 - SCSP Direct sound\n- F9 - SCSP DSP sound\n- F10 - CD audio\n- F11 - enable all\n\n## Building\n\n### Prerequisites\n\nTo build this project you also need the following repositories [Saturn](https://github.com/srg320/Saturn) and [SH](https://github.com/srg320/SH)\n\n### Cloning the Repositories\n\n```bash\ngit clone https://github.com/srg320/Saturn_MiSTer.git\ngit clone https://github.com/srg320/Saturn.git\ngit clone https://github.com/srg320/SH.git\n```\n\nThe repositories must be on the same level:\n\n```bash\n.\n\u251c\u2500\u2500 SH\n\u251c\u2500\u2500 Saturn\n\u2514\u2500\u2500 Saturn_MiSTer\n```\n\n### Project Files\n\nInside the folder `Saturn_MiSTer` you will find 2 Quartus project files.\n\n- `Saturn.qpf` - Build project for usage with Single SDRAM.\n- `Saturn_SD.qpf` - Build project for usage with Dual SDRAM (**recommended**).\n\n> **Note:** For both builds the primary SDRAM module must be 128MB (i.e. with two chips)!\n\n## Compatible BIOS\n\n> **BIOS NOT INCLUDED:** In order to use this core, you need to provide your own BIOS.\n\nRename your Saturn bios file to `boot.rom` and place it in the `games/Saturn/` folder.\n\n| Console           | Version | Region | SHA1                                     | Size   | Status |\n|-------------------|---------|--------|------------------------------------------|--------|:------:|\n| Sega Saturn       | 1.00    | Japan  | 2b8cb4f87580683eb4d760e4ed210813d667f0a2 | 512 KB |   \u2705    |\n| Sega Saturn       | 1.00a   | USA    | 3bb41feb82838ab9a35601ac666de5aacfd17a58 | 512 KB |   \u2705    |\n| Sega Saturn       | 1.00    | Europe | faa8ea183a6d7bbe5d4e03bb1332519800d3fbc3 | 512 KB |   \u2705    |\n| Sega Saturn       | 1.003   | Japan  | 7b23b53d62de0f29a23e423d0fe751dfb469c2fa | 512 KB |   \u274c    |\n| Sega Saturn       | 1.01    | Japan  | df94c5b4d47eb3cc404d88b33a8fda237eaf4720 | 512 KB |   \u2705    |\n| Sega Saturn       | 1.01a   | USA    | faa8ea183a6d7bbe5d4e03bb1332519800d3fbc3 | 512 KB |   \u2705    |\n| Hitachi Hi-Saturn | 1.01    | Japan  | 49d8493008fa715ca0c94d99817a5439d6f2c796 | 512 KB |   \u2705    |\n| Hitachi Hi-Saturn | 1.02    | Japan  | 8a22710e09ce75f39625894366cafe503ed1942d | 512 KB |   \u2705    |\n| Hitachi Hi-Saturn | 1.03    | Japan  | 8c031bf9908fd0142fdd10a9cdd79389f8a3f2fc | 512 KB |   \u2705    |\n| Victor V-Saturn   | 1.01    | Japan  | 4154e11959f3d5639b11d7902b3a393a99fb5776 | 512 KB |   \u2705    |\n\n> **Note:** You can also place a file named `cd_bios.rom` in the same directory as the CD image. This can be used for games that depend on a specific BIOS.\n\n## Status of Features (Not yet Prioritized)\n\n> Work in progress, don't report any bugs!\n\n### Video Display Processor 1 (VDP1)\n\n- [ ] 512\u00d7256 Framebuffer (current size is limited to 352x256 pixels). *Games that make usage of the framebuffer as temporary data storage will not work (e.g., Burning Rangers)*\n\n### Video Display Processor 2 (VDP2)\n\n- [ ] Mosaic\n\n### Yamaha SCSP (Saturn Custom Sound Processor) YMF292\n\n- [ ] LFO\n\n## Credits and acknowledgment\n\nMade with \u2764\ufe0f by [Sergey Dvodnenko](https://twitter.com/srg320_).\n\n- To all my [Patreon](https://www.patreon.com/srg320) supporters. Your support keeps me working on the core and helps me bring it to life.\n- Jorge Cwik - FX68K 68000 SystemVerilog core.\n\n## Legal Notice\n\nSega Saturn\u2122 - Copyright \u00a9 1994, 1995 SEGA ENTERPRISES, LTD. All rights reserved. SEGA and the SEGA logo are registered trademarks of SEGA CORPORATION. All other trademarks, logos, and copyrights are property of their respective owners.\n\nThe authors and contributors or any of its maintainers are in no way associated with or endorsed by SEGA\u00ae.\n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/MiSTer-DB9/Saturn_MiSTer",
+      "releases": [
+        {
+          "name": "Saturn.sv",
+          "sha": "74a2aa137cdfc88c5767a8ecb70356940ee710bc",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Saturn_MiSTer/master/releases/Saturn.sv",
+          "type": "OTHER"
+        },
+        {
+          "name": "Saturn_20231006.rbf",
+          "sha": "74a2aa137cdfc88c5767a8ecb70356940ee710bc",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Saturn_MiSTer/master/releases/Saturn_20231006.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "release_here.txt",
+          "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Saturn_MiSTer/master/releases/release_here.txt",
+          "type": "OTHER"
         }
       ]
     },

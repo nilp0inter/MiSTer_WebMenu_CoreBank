@@ -2113,7 +2113,7 @@
         },
         {
           "name": "Double Dragon (Japan).mra",
-          "sha": "2058f510024e1c72435fcb0d864a33eec6cf3714",
+          "sha": "84e155b8293166df0f4554f9bf7d785f18cb9a51",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/dd/releases/Double%20Dragon%20(Japan).mra",
           "type": "MRA",
           "extra": {
@@ -2126,13 +2126,13 @@
         },
         {
           "name": "jtdd.rbf",
-          "sha": "7acbec46bf6b6f2a037d655cadb1ab74916b563d",
+          "sha": "acb83f585d8a8f73d271f1cf4c0125e6589a9b62",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/dd/releases/jtdd.rbf",
           "type": "RBF"
         },
         {
           "name": "version.log",
-          "sha": "ad1829829df81715ebd89af36035b7d05154eac3",
+          "sha": "93e0bc8f576fb227354df69cb9c16936dc57cbe4",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/dd/version.log",
           "type": "OTHER"
         },
@@ -2286,7 +2286,7 @@
         },
         {
           "name": "README.md",
-          "sha": "7c18ea69fcec8a732d4e68df6e866f27171daf1a",
+          "sha": "480a77aa964435ee43cb4c89c157d6ec5c83ddfd",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/gng/README.md",
           "type": "OTHER"
         },
@@ -2330,13 +2330,13 @@
         },
         {
           "name": "jtgng.rbf",
-          "sha": "256eaa321beb14c266313440d33cf49f5cd1cde0",
+          "sha": "08977439f3325e5a66d54050ebc3a75b61999283",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/gng/releases/jtgng.rbf",
           "type": "RBF"
         },
         {
           "name": "version.log",
-          "sha": "57137a7a14e8dae9c0b5789034e5782d3faa4f98",
+          "sha": "4baaea467bd2148f1df8f311c69d0fda37b0fe2f",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/gng/version.log",
           "type": "OTHER"
         },
@@ -2811,27 +2811,29 @@
         },
         {
           "name": "Bad Dudes vs. Dragonninja (US revision 1).mra",
-          "sha": "6ad9ffa53e6a81c15c853e31e3655d783bf585ea",
+          "sha": "ad32dcbb29cea791acb64b676eea8df7f2fc7e9a",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/ninja/releases/Bad%20Dudes%20vs.%20Dragonninja%20(US%20revision%201).mra",
           "type": "MRA",
           "extra": {
             "name": "Bad Dudes vs. Dragonninja (US revision 1)",
             "rbf": "jtninja",
             "zips": [
-              "baddudes.zip"
+              "baddudes.zip",
+              "jtbeta.zip"
             ]
           }
         },
         {
           "name": "Heavy Barrel (World).mra",
-          "sha": "5d8e9e076413bba89214f336e03178b44392fa4d",
+          "sha": "e4fb7773cdf5487b4acd32cf09b59d6a8bad3e88",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/ninja/releases/Heavy%20Barrel%20(World).mra",
           "type": "MRA",
           "extra": {
             "name": "Heavy Barrel (World)",
             "rbf": "jtninja",
             "zips": [
-              "hbarrel.zip"
+              "hbarrel.zip",
+              "jtbeta.zip"
             ]
           }
         },
