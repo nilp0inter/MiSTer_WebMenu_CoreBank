@@ -3535,6 +3535,74 @@
       ]
     },
     {
+      "name": "Arcade-IkariWarriors_MiSTer",
+      "description": null,
+      "readme": "# SNK Ikari Warriors / Victory Road (beta):\n![Ikari Warriors](/docs/ikaria-warriors-flyer.jpg)\n![Victory Road](/docs/victory_road.pjg.jpg)\n\nIkari Warriors and Victory Road are run and gun vertical shooters developed by SNK in 1986. Victory Road is the sequel to Ikari Warriors.\nThe game was released at the time when there were many Commando clones on the market. What made Ikari Warriors instantly distinct, were rotary joysticks and the allowing simultaneous play by two people.\n\nIkari Warriors involves Ralf Jones and Clark Steel (known outside Japan as Paul and Vince in the Ikari series) battling through hordes of enemies. According to designer Keiko Iju, the game was inspired by the then-popular Rambo films and takes its name from the Japanese title of Rambo: First Blood Part II (Rambo: Ikari no Dasshutsu or \"The Angry Escape\").\nFollow any core updates and news on my Twitter acount [@RndMnkIII](https://twitter.com/RndMnkIII). this project is a hobby but it requires investing in arcade game boards and specific tools, so any donation is welcome: [https://ko-fi.com/rndmnkiii](https://ko-fi.com/rndmnkiii).\n\n## About\nThis core as beta release will be published as independet core. Finally will be unified with the SNK Triple Z80 Core. For a list of games intended to work with the SNK Triple Z80 Core see:\n[https://github.com/mamedev/mame/blob/master/src/mame/drivers/snk.cpp](https://github.com/mamedev/mame/blob/master/src/mame/drivers/snk.cpp).  \n\n## Third party cores\n* Based on [https://github.com/antoniovillena/MiSTer_DB9/blob/master/Cores/AtariST_MiSTer/sys/joydb15.v](joydb15.v) by Aitor Pelaez (NeuroRulez).\n* Daniel Wallner T80 core [jesus@opencores.org](https://opencores.org/projects/t80).\n* JTOPL FPGA Clone of Yamaha OPL hardware by Jose Tejada, @topapate [(https://github.com/jotego/jtopl)](https://github.com/jotego/jtopl).\n* Based on Tim Rudy 7400 TTL library [https://github.com/TimRudy/ice-chips-verilog](https://github.com/TimRudy/ice-chips-verilog).\n\n## Instructions:\nTwo players can participate in this game simultaneously. Ikari Warriors/Victory Road use rotary joysticks: those which could be rotated in addition to being pushed in eight directions. The game also featured two buttons, one for the standard gun and another for lobbing grenades. It allowed two players to play cooperatively, side by side and to use vehicles (tank).\nApart from the standard MiSTer game controller support there is also there is SNAC support for:\n* DB15 arcade controls (tested with the Splitter for official MiSTer by Antonio Villena. See: https://www.antoniovillena.es/store/product/splitter-for-official-mister/).\n* Native adapter for SNK LS-30 joystick. This is a D.I.Y development of the author of the core and is commented on in a separate project. See: https://github.com/RndMnkIII/SNK_LS-30_Rotary_Joystick_SNAC_adapter. You can build a alternative one if you already have some DB15 SNAC adapter as the Antonio Villena Splitter seen before.\nYou can change the settings in the Core Menu: \n* SNAC > DB15 Devices: Off,OnlyP1,OnlyP2,P1&P2 (fixed controls: button A: rotate left, button B: fire, button C: grenade, button D: rotate right).\n* SNAC > Native LS-30 Adapter: Off,OnlyP1,OnlyP2,P1&P2 (maps over buttons F,E,D,C of a DB15 interface the LS-30 rotary four wire data, button A: fire, button B: grenade).\n\nAlternatively, you can wire this adapter if you already are using a DB15 SNAC adapter as the Official Mister Splitter by Antonio Villena and you don't want to build my native adapter design MCU based:\n![gamepad buttons](/docs/ls30_to_db15_adapter2.png)\n\n\n## Manual installation\nRename the Arcade-IkariWarriors_XXXXXXXX.rbf file to IkariWarriors_XXXXXXXX.rbf and copy to the SD Card to the folder  /media/fat/_Arcade/cores and the .MRA files to /media/fat/_Arcade.\n\nThe required ROM files follow the MAME naming conventions (check inside MRA for this). Is the user responsability to be installed in the following folder:\n/media/fat/_Arcade/mame/<mame rom>.zip\n\n## Acknowledgments\n* To all Ko-fi contributors for supporting this project: __@bdlou__, __Peter Bray__, __Nat__, __Funkycochise__, __David__, __Kevin Coleman__, __Denymetanol__, __Schermobianco__, __TontonKaloun__, __Wark91__, __Dan__, __Beaps__, __Todd Gill__, __John Stringer__, __Moi__, __Olivier Krumm__, __Raymond Bielun__.\n* Thanks to __@antoniovillena__ and __@NeuroRulez__ for their help and patience with SNAC support for DB15.\n* Thanks to __@Salamander329__ for his MiSTer LED screen artworks, gives a more special arcade touch to MiSTer.\n* __@FCochise__ for helping with the rom settings of MRA files.\n* __@alanswx__ for helping me with some technical aspects related to the use of the MiSTer framework.\n* And all those who with their comments and shows of support have encouraged me to continue with this project.\n\n\n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/MiSTer-DB9/Arcade-IkariWarriors_MiSTer",
+      "releases": [
+        {
+          "name": "Arcade-IkariWarriors_20220806.rbf",
+          "sha": "f99f1995964898fbb1c6eaa4c91c0c501fed268b",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IkariWarriors_MiSTer/main/releases/Arcade-IkariWarriors_20220806.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Ikari Warriors.mra",
+          "sha": "f850dd5e377affa167d989450e7aab45ec5a1ec0",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IkariWarriors_MiSTer/main/releases/Ikari%20Warriors.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Ikari Warriors",
+            "rbf": "IkariWarriors",
+            "zips": [
+              "ikari.zip"
+            ]
+          }
+        },
+        {
+          "name": "Victory Road.mra",
+          "sha": "50df960089e51d6c6c46b33a630808117b882274",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IkariWarriors_MiSTer/main/releases/Victory%20Road.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Victory Road",
+            "rbf": "IkariWarriors",
+            "zips": [
+              "victroad.zip"
+            ]
+          }
+        },
+        {
+          "name": "Ikari Warriors JP.mra",
+          "sha": "20dd09d36947c85eee3b702343689bab3f77b237",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IkariWarriors_MiSTer/main/releases/_alternatives/_Ikari%20Warriors/Ikari%20Warriors%20JP.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Ikari Warriors (Japan No Continues)",
+            "rbf": "IkariWarriors",
+            "zips": [
+              "ikarijp.zip|ikari.zip"
+            ]
+          }
+        },
+        {
+          "name": "Dogou Souken.mra",
+          "sha": "50283de880da950c305d83e1f2a0613a8abaf93d",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IkariWarriors_MiSTer/main/releases/_alternatives/_Victory%20Road/Dogou%20Souken.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Dogou Souken",
+            "rbf": "IkariWarriors",
+            "zips": [
+              "dogosoke.zip|victroad.zip"
+            ]
+          }
+        }
+      ]
+    },
+    {
       "name": "Arcade-IremM62_MiSTer",
       "description": "Irem62 from pace, and mist including Lode Runner, etc",
       "readme": "Irem M62 Hardware\n=================\n\nBased on old PACE code by Mark McDougall(tcdev), enhanced by Gyorgy Szombathelyi in March 2020.\n\nGames supported:\n- Lode Runner 1-4\n- Kung Fu Master\n- Horizon\n- Battle Road\n- Spelunker 1-2\n- Kid Niki\n- Youjyudn\n\n# Keyboard inputs :\n```\n\n   MAME/IPAC/JPAC Style Keyboard inputs:\n     1           : Start 1 Player\n     2           : Start 2 Player\n     5           : Coin 1\n     6           : Coin 2\n     R,F,D,G     : Player 2\n     A           : Fire2 A\n     S           : Fire2 B \n\t\n Joystick support. \n```\n\n# Known Bugs\n\n- Kung-Fu Master has a sprite color problem\n- Lot Lot isn't fully implemented\n\n\n# ROMs\n```\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n\n```\n\nLaunch game using the appropriate .MRA\n\n",
@@ -9904,7 +9972,7 @@
         },
         {
           "name": "Atari5200_20230227.rbf",
-          "sha": "b44e32d28d2c15d6d2414f7521669ab4fe23231d",
+          "sha": "15cddefa1ce6c550882e75419fdca865a3e808ca",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Atari800_MiSTer/master/releases/Atari5200_20230227.rbf",
           "type": "RBF"
         },
@@ -9996,6 +10064,12 @@
           "name": "Atari800_20230227.rbf",
           "sha": "73b1f01b3f226de279d074bdcbbe2c126e3da2cd",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Atari800_MiSTer/master/releases/Atari800_20230227.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Atari800_20231018.rbf",
+          "sha": "01c93ffc27de4fe11ffc4ed6fc9b6c8433a3d3a7",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Atari800_MiSTer/master/releases/Atari800_20231018.rbf",
           "type": "RBF"
         }
       ]
@@ -10813,7 +10887,7 @@
     {
       "name": "Distribution_MiSTer",
       "description": null,
-      "readme": "# MiSTer Distribution DB9\n\nThis repository contains all the files that you'll want in your MiSTer.\n\nYou may download all of them at once as a zip through the [following link](https://github.com/MiSTer-DB9/Distribution_MiSTer/archive/refs/heads/main.zip). Once you have them, place them as-is in your SD card, and everything should work out of the box.\n\n### MiSTer Project\n\nIf you want to check more about the MiSTer project, please check [this wiki](https://github.com/MiSTer-devel/Main_MiSTer/wiki).\n\n### Downloader script\n\nFor downloading all of these files in an automatic fashion, use [this tool](https://github.com/MiSTer-devel/Downloader_MiSTer).\n\n#### List of Tags that you may use with the Downloader Filters:\n\n`acornatom`, `acornelectron`, `adam`, `adctest`, `adventurevision`, `alicemc10`, `all_filters`, `altair8800`, `alternatives`, `amiga`, `amstrad`, `amstrad-pcw`, `amstradpcw`, `ao486`, `apogee`, `apple-i`, `apple-ii`, `aquarius`, `arcade`, `arcade-arkanoid`, `arcade-asteroids`, `arcade-asteroidsdeluxe`, `arcade-astrocade`, `arcade-ataritetris`, `arcade-athena`, `arcade-athena_mister`, `arcade-bagman`, `arcade-bankpanic`, `arcade-battlezone`, `arcade-berzerk`, `arcade-blackwidow`, `arcade-blockade`, `arcade-bombjack`, `arcade-bosconian`, `arcade-breakout`, `arcade-burgertime`, `arcade-burningrubber`, `arcade-canyonbomber`, `arcade-cave`, `arcade-centipede`, `arcade-chameleon`, `arcade-computerspace`, `arcade-congobongo`, `arcade-cores`, `arcade-cosmic`, `arcade-cosmicguerilla`, `arcade-crazyballoon`, `arcade-crazyclimber`, `arcade-crazykong`, `arcade-crystalcastles`, `arcade-defender`, `arcade-digdug`, `arcade-dominos`, `arcade-donkeykong`, `arcade-donkeykong3`, `arcade-donkeykongjunior`, `arcade-dorodon`, `arcade-dottorikun`, `arcade-druaga`, `arcade-exerion`, `arcade-expressraider`, `arcade-finalizer`, `arcade-foodfight`, `arcade-freeze`, `arcade-frenzy`, `arcade-galaga`, `arcade-galaxian`, `arcade-galivan`, `arcade-gaplus`, `arcade-gauntlet`, `arcade-gyruss`, `arcade-ikariwarriors`, `arcade-inferno`, `arcade-iremm62`, `arcade-iremm72`, `arcade-iremm92`, `arcade-ironhorse`, `arcade-jackal`, `arcade-jailbreak`, `arcade-joust2`, `arcade-kickandrun`, `arcade-ladybug`, `arcade-lunarlander`, `arcade-mariobros`, `arcade-mcr1`, `arcade-mcr2`, `arcade-mcr3`, `arcade-mcr3mono`, `arcade-mcr3scroll`, `arcade-missilecommand`, `arcade-moonpatrol`, `arcade-mrdo`, `arcade-mrjong`, `arcade-mysticmarathon`, `arcade-ninjakun`, `arcade-pacman`, `arcade-pengo`, `arcade-penguinkunwars`, `arcade-performan`, `arcade-phoenix`, `arcade-pleiads`, `arcade-polyplay`, `arcade-pong`, `arcade-pooyan`, `arcade-popeye`, `arcade-qbert`, `arcade-rallyx`, `arcade-riverpatrol`, `arcade-robotron`, `arcade-rshnatk`, `arcade-scootershooter`, `arcade-scramble`, `arcade-segasys1`, `arcade-silverland`, `arcade-slapfight`, `arcade-sms`, `arcade-snk_triplez80`, `arcade-solomonskey`, `arcade-sonson`, `arcade-spaceinvaders`, `arcade-spacerace`, `arcade-sprint1`, `arcade-sprint2`, `arcade-subs`, `arcade-superbreakout`, `arcade-taitosj`, `arcade-tankbattalion`, `arcade-tecmo`, `arcade-tiamc1`, `arcade-timepilot`, `arcade-timepilot84`, `arcade-tnkiii`, `arcade-traverseusa`, `arcade-tropicalangel`, `arcade-turkeyshoot`, `arcade-ultratank`, `arcade-vball`, `arcade-xevious`, `arcade-xsleenacore`, `arcade-zaxxon`, `arcade-zigzag`, `arcadelpf`, `arcadia`, `archie`, `arduboy`, `astrocade`, `atari2600`, `atari5200`, `atari7800`, `atari800`, `atarilynx`, `atarist`, `avision`, `ay-3-8500`, `bbcbridgecompanion`, `bbcmicro`, `bios`, `bk0011m`, `c128`, `c16`, `c64`, `casio_pv-1000`, `casio_pv-2000`, `channelf`, `cheats`, `chess`, `chip8`, `coco2`, `coco3`, `coleco`, `colecoadam`, `colecovision`, `complexmultichromatic`, `computer`, `computer-cores`, `console`, `console-cores`, `contrast_boost`, `cores`, `corespecific`, `creativision`, `crt-simulation`, `displayspecific`, `docs`, `drv`, `edsac`, `eg2000`, `epochgalaxyii`, `essential`, `extra-utilities`, `famicom`, `filters`, `filters_audio`, `filters_video`, `flappy`, `flappybird`, `font`, `galaksija`, `gamate`, `gameboy`, `gameboy2p`, `gameboyadvance`, `gameboycolor`, `gamecontrollerdb`, `gamegear`, `gamenwatch`, `gameoflife`, `games`, `gamma`, `gb`, `gba`, `gba2p`, `gbc`, `generalhardware`, `generallpf`, `genesis`, `gnw`, `handheld2p`, `hbmame`, `homelab`, `inputtest`, `intellivision`, `interact`, `jupiter`, `laser`, `laser310`, `lcd-general`, `lcd-integeronly`, `linux`, `lynx48`, `macplus`, `mame`, `mastersystem`, `megacd`, `megadrive`, `megaduck`, `memte`, `memtest`, `menu`, `mgl`, `minimig`, `minimigdb9`, `minimigrgb8`, `misterfirmware`, `mra`, `msx`, `msx1`, `multicomp`, `myvision`, `neogeo`, `nes`, `nintendo`, `odyssey2`, `old`, `ondra_spo186`, `orao`, `oric`, `other`, `other-cores`, `palettes`, `pc88`, `pc8801`, `pcengine`, `pcenginecd`, `pcxt`, `pdp1`, `pet2001`, `pmd85`, `pocketchallengev2`, `pokemonmini`, `poly_gamma`, `presets`, `psx`, `pure_gamma`, `ql`, `readme`, `rx78`, `s32x`, `samcoupe`, `saturn`, `scanlines-adaptive`, `scanlines-brighter`, `scanlines-standard`, `scripts`, `segacd`, `segamark3`, `service-cores`, `sgb`, `shadow_masks`, `sharpmz`, `simplemonochrome`, `slugcross`, `sms`, `snes`, `sordm5`, `specialist`, `spectrum`, `spmx`, `sufami`, `super_vision_8000`, `superfamicom`, `supergameboy`, `supernes`, `supernintendo`, `supervision`, `supervision8000`, `svi328`, `tatungeinstein`, `tgfx16`, `tgfx16-cd`, `tgfx16cd`, `ti-99_4a`, `ti994a`, `tomyscramble`, `tomytutor`, `trs-80`, `tsconf`, `turbografx`, `turbografx16`, `turbografx16cd`, `turbografxcd`, `uk101`, `upscaling-lanczosbicubicetc`, `upscaling-recommended`, `upscaling-sharpbilinear`, `utility`, `vc4000`, `vector-06c`, `vector06`, `vector06c`, `vectrex`, `vic20`, `wonderswan`, `wonderswancolor`, `x68000`, `yctxt`, `zx-spectrum`, `zx81`, `zxnext`, `zxspectrum`\n",
+      "readme": "# MiSTer Distribution DB9\n\nThis repository contains all the files that you'll want in your MiSTer.\n\nYou may download all of them at once as a zip through the [following link](https://github.com/MiSTer-DB9/Distribution_MiSTer/archive/refs/heads/main.zip). Once you have them, place them as-is in your SD card, and everything should work out of the box.\n\n### MiSTer Project\n\nIf you want to check more about the MiSTer project, please check [this wiki](https://github.com/MiSTer-devel/Main_MiSTer/wiki).\n\n### Downloader script\n\nFor downloading all of these files in an automatic fashion, use [this tool](https://github.com/MiSTer-devel/Downloader_MiSTer).\n\n#### List of Tags that you may use with the Downloader Filters:\n\n`acornatom`, `acornelectron`, `adam`, `adctest`, `adventurevision`, `alicemc10`, `all_filters`, `altair8800`, `alternatives`, `amiga`, `amstrad`, `amstrad-pcw`, `amstradpcw`, `ao486`, `apogee`, `apple-i`, `apple-ii`, `aquarius`, `arcade`, `arcade-arkanoid`, `arcade-asteroids`, `arcade-asteroidsdeluxe`, `arcade-astrocade`, `arcade-ataritetris`, `arcade-athena`, `arcade-athena_mister`, `arcade-bagman`, `arcade-bankpanic`, `arcade-battlezone`, `arcade-berzerk`, `arcade-blackwidow`, `arcade-blockade`, `arcade-bombjack`, `arcade-bosconian`, `arcade-breakout`, `arcade-burgertime`, `arcade-burningrubber`, `arcade-canyonbomber`, `arcade-cave`, `arcade-centipede`, `arcade-chameleon`, `arcade-computerspace`, `arcade-congobongo`, `arcade-cores`, `arcade-cosmic`, `arcade-cosmicguerilla`, `arcade-crazyballoon`, `arcade-crazyclimber`, `arcade-crazykong`, `arcade-crystalcastles`, `arcade-defender`, `arcade-digdug`, `arcade-dominos`, `arcade-donkeykong`, `arcade-donkeykong3`, `arcade-donkeykongjunior`, `arcade-dorodon`, `arcade-dottorikun`, `arcade-druaga`, `arcade-exerion`, `arcade-expressraider`, `arcade-finalizer`, `arcade-foodfight`, `arcade-freeze`, `arcade-frenzy`, `arcade-galaga`, `arcade-galaxian`, `arcade-galivan`, `arcade-gaplus`, `arcade-gauntlet`, `arcade-gyruss`, `arcade-ikariwarriors`, `arcade-inferno`, `arcade-iremm62`, `arcade-iremm72`, `arcade-iremm92`, `arcade-ironhorse`, `arcade-jackal`, `arcade-jailbreak`, `arcade-joust2`, `arcade-kickandrun`, `arcade-ladybug`, `arcade-lunarlander`, `arcade-mariobros`, `arcade-mcr1`, `arcade-mcr2`, `arcade-mcr3`, `arcade-mcr3mono`, `arcade-mcr3scroll`, `arcade-missilecommand`, `arcade-moonpatrol`, `arcade-mrdo`, `arcade-mrjong`, `arcade-mysticmarathon`, `arcade-ninjakun`, `arcade-pacman`, `arcade-pengo`, `arcade-penguinkunwars`, `arcade-performan`, `arcade-phoenix`, `arcade-pleiads`, `arcade-polyplay`, `arcade-pong`, `arcade-pooyan`, `arcade-popeye`, `arcade-qbert`, `arcade-rallyx`, `arcade-riverpatrol`, `arcade-robotron`, `arcade-rshnatk`, `arcade-scootershooter`, `arcade-scramble`, `arcade-segasys1`, `arcade-silverland`, `arcade-slapfight`, `arcade-sms`, `arcade-snk_triplez80`, `arcade-solomonskey`, `arcade-sonson`, `arcade-spaceinvaders`, `arcade-spacerace`, `arcade-sprint1`, `arcade-sprint2`, `arcade-subs`, `arcade-superbreakout`, `arcade-taitosj`, `arcade-tankbattalion`, `arcade-tecmo`, `arcade-tiamc1`, `arcade-timepilot`, `arcade-timepilot84`, `arcade-tnkiii`, `arcade-traverseusa`, `arcade-tropicalangel`, `arcade-turkeyshoot`, `arcade-ultratank`, `arcade-vball`, `arcade-xevious`, `arcade-xsleenacore`, `arcade-zaxxon`, `arcade-zigzag`, `arcadelpf`, `arcadia`, `archie`, `arduboy`, `astrocade`, `atari2600`, `atari5200`, `atari7800`, `atari800`, `atarilynx`, `atarist`, `avision`, `ay-3-8500`, `bbcbridgecompanion`, `bbcmicro`, `bios`, `bk0011m`, `c128`, `c16`, `c64`, `casio_pv-1000`, `casio_pv-2000`, `channelf`, `cheats`, `chess`, `chip8`, `coco2`, `coco3`, `coleco`, `colecoadam`, `colecovision`, `complexmultichromatic`, `computer`, `computer-cores`, `console`, `console-cores`, `contrast_boost`, `cores`, `corespecific`, `creativision`, `crt-simulation`, `displayspecific`, `docs`, `drv`, `edsac`, `eg2000`, `epochgalaxyii`, `essential`, `extra-utilities`, `famicom`, `filters`, `filters_audio`, `filters_video`, `flappy`, `flappybird`, `font`, `galaksija`, `gamate`, `gameboy`, `gameboy2p`, `gameboyadvance`, `gameboycolor`, `gamecontrollerdb`, `gamegear`, `gamenwatch`, `gameoflife`, `games`, `gamma`, `gb`, `gba`, `gba2p`, `gbc`, `generalhardware`, `generallpf`, `genesis`, `gnw`, `handheld2p`, `hbmame`, `homelab`, `inputtest`, `intellivision`, `interact`, `jupiter`, `laser`, `laser310`, `lcd-general`, `lcd-integeronly`, `linux`, `lynx48`, `macplus`, `mame`, `mastersystem`, `megacd`, `megadrive`, `megaduck`, `memte`, `memtest`, `menu`, `mgl`, `minimig`, `minimigdb9`, `minimigrgb8`, `misterfirmware`, `misterlaggy`, `mra`, `msx`, `msx1`, `multicomp`, `myvision`, `neogeo`, `nes`, `nintendo`, `odyssey2`, `old`, `ondra_spo186`, `orao`, `oric`, `other`, `other-cores`, `palettes`, `pc88`, `pc8801`, `pcengine`, `pcenginecd`, `pcxt`, `pdp1`, `pet2001`, `pmd85`, `pocketchallengev2`, `pokemonmini`, `poly_gamma`, `presets`, `psx`, `pure_gamma`, `ql`, `readme`, `rx78`, `s32x`, `samcoupe`, `saturn`, `scanlines-adaptive`, `scanlines-brighter`, `scanlines-standard`, `scripts`, `segacd`, `segamark3`, `service-cores`, `sgb`, `shadow_masks`, `sharpmz`, `simplemonochrome`, `slugcross`, `sms`, `snes`, `sordm5`, `specialist`, `spectrum`, `spmx`, `sufami`, `super_vision_8000`, `superfamicom`, `supergameboy`, `supernes`, `supernintendo`, `supervision`, `supervision8000`, `svi328`, `tatungeinstein`, `tgfx16`, `tgfx16-cd`, `tgfx16cd`, `ti-99_4a`, `ti994a`, `tomyscramble`, `tomytutor`, `trs-80`, `tsconf`, `turbografx`, `turbografx16`, `turbografx16cd`, `turbografxcd`, `uk101`, `upscaling-lanczosbicubicetc`, `upscaling-recommended`, `upscaling-sharpbilinear`, `utility`, `vc4000`, `vector-06c`, `vector06`, `vector06c`, `vectrex`, `vic20`, `wonderswan`, `wonderswancolor`, `x68000`, `yctxt`, `zx-spectrum`, `zx81`, `zxnext`, `zxspectrum`\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-DB9/Distribution_MiSTer",
@@ -11429,27 +11503,9 @@
           "type": "OTHER"
         },
         {
-          "name": "MiSTer_20210705",
-          "sha": "7f27a196dedd617ddd7043a9abc8b8f2ade37f16",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Main_MiSTer/master/releases/MiSTer_20210705",
-          "type": "OTHER"
-        },
-        {
-          "name": "MiSTer_20210707",
-          "sha": "9cea3826cbd0fac52d34975281432f0204ed243f",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Main_MiSTer/master/releases/MiSTer_20210707",
-          "type": "OTHER"
-        },
-        {
           "name": "MiSTer_20210711",
           "sha": "40e535d112bbe4df2a04dccf8aeeb8d2446ed13c",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Main_MiSTer/master/releases/MiSTer_20210711",
-          "type": "OTHER"
-        },
-        {
-          "name": "MiSTer_20210719",
-          "sha": "54156ab0175c36847152e8e7eb4636865e86db83",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Main_MiSTer/master/releases/MiSTer_20210719",
           "type": "OTHER"
         },
         {
@@ -11471,12 +11527,6 @@
           "type": "OTHER"
         },
         {
-          "name": "MiSTer_20210825",
-          "sha": "6e64594d06315fbdcc2fc0a69024698d3d23f5cb",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Main_MiSTer/master/releases/MiSTer_20210825",
-          "type": "OTHER"
-        },
-        {
           "name": "MiSTer_20210829",
           "sha": "fd91f7e5eb7adc00a9dc7a5c1705011cbe65e479",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Main_MiSTer/master/releases/MiSTer_20210829",
@@ -11495,18 +11545,6 @@
           "type": "OTHER"
         },
         {
-          "name": "MiSTer_20211004",
-          "sha": "99ad6b79af1db3bbb01e9b6be946a6e409fc5e68",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Main_MiSTer/master/releases/MiSTer_20211004",
-          "type": "OTHER"
-        },
-        {
-          "name": "MiSTer_20211010",
-          "sha": "7d4927ef0da5d372244aa0b64203ddae9124c10e",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Main_MiSTer/master/releases/MiSTer_20211010",
-          "type": "OTHER"
-        },
-        {
           "name": "MiSTer_20211017",
           "sha": "9193edb3894cfef858234727b127e126059fb8b7",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Main_MiSTer/master/releases/MiSTer_20211017",
@@ -11516,12 +11554,6 @@
           "name": "MiSTer_20211112",
           "sha": "2cdde15a2f112ae678d8307786b3e0309d92a437",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Main_MiSTer/master/releases/MiSTer_20211112",
-          "type": "OTHER"
-        },
-        {
-          "name": "MiSTer_20211126",
-          "sha": "b338e678b50b9025d7c86706985b92f8f81ccaf4",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Main_MiSTer/master/releases/MiSTer_20211126",
           "type": "OTHER"
         },
         {
@@ -11537,12 +11569,6 @@
           "type": "OTHER"
         },
         {
-          "name": "MiSTer_20220105",
-          "sha": "dd713225ee957c6d3b56475af0e00d5ca2b6c60d",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Main_MiSTer/master/releases/MiSTer_20220105",
-          "type": "OTHER"
-        },
-        {
           "name": "MiSTer_20220108",
           "sha": "92827185a74326a8a4a37745a80e9633ec2fdc82",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Main_MiSTer/master/releases/MiSTer_20220108",
@@ -11552,12 +11578,6 @@
           "name": "MiSTer_20220131",
           "sha": "dcf9c103deafb3e9731ae3f5dd4d9ba27bf1e058",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Main_MiSTer/master/releases/MiSTer_20220131",
-          "type": "OTHER"
-        },
-        {
-          "name": "MiSTer_20220206",
-          "sha": "105a11845bf1552a6b3f8ba6f55a565098a6ee1e",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Main_MiSTer/master/releases/MiSTer_20220206",
           "type": "OTHER"
         },
         {
@@ -11582,12 +11602,6 @@
           "name": "MiSTer_20220413",
           "sha": "0855c85655e50080c9be7696848dd363c5473e36",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Main_MiSTer/master/releases/MiSTer_20220413",
-          "type": "OTHER"
-        },
-        {
-          "name": "MiSTer_20220511",
-          "sha": "c526aefeafb6361c14e7290c2ebf1e76254a70e3",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Main_MiSTer/master/releases/MiSTer_20220511",
           "type": "OTHER"
         },
         {
@@ -11618,12 +11632,6 @@
           "name": "MiSTer_20220819",
           "sha": "61ead28c8de190d444c8c49ad37398f14d1432bb",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Main_MiSTer/master/releases/MiSTer_20220819",
-          "type": "OTHER"
-        },
-        {
-          "name": "MiSTer_20221007",
-          "sha": "87e5c82a9a64a507e98762be7cb7ddec90ad62db",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Main_MiSTer/master/releases/MiSTer_20221007",
           "type": "OTHER"
         },
         {
@@ -11696,6 +11704,18 @@
           "name": "MiSTer_20230915",
           "sha": "c152563f3dc5c81e1c1be51f5d785ba1ff7bfd7a",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Main_MiSTer/master/releases/MiSTer_20230915",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20231018",
+          "sha": "80488b28c66b50685e41cfbf946b3788f36fc62c",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Main_MiSTer/master/releases/MiSTer_20231018",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20231019",
+          "sha": "2254c93d87b79f4d6cb1e8ae445acb58f3c813c3",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Main_MiSTer/master/releases/MiSTer_20231019",
           "type": "OTHER"
         }
       ]
@@ -12883,6 +12903,18 @@
           "sha": "04cdb58f812a55cdd42df3a0e9ef2ccd956e18bb",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Oric_MiSTer/master/releases/Oric_20230529.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "Oric_20231018.rbf",
+          "sha": "65ee54e9248a4fc43973e17d09167e794aab1627",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Oric_MiSTer/master/releases/Oric_20231018.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Oric_20231019.rbf",
+          "sha": "f71ec8be784eb7f90a1f8d887744bdca1af51f94",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Oric_MiSTer/master/releases/Oric_20231019.rbf",
+          "type": "RBF"
         }
       ]
     },
@@ -13124,6 +13156,12 @@
           "name": "Saturn_20231013.rbf",
           "sha": "e488d56d22f5924b773ecac559e2a4faee86ba3c",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Saturn_MiSTer/main/releases/Saturn_20231013.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Saturn_20231018.rbf",
+          "sha": "46000b39d394394aa531f85fa13539a59d95e399",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Saturn_MiSTer/main/releases/Saturn_20231018.rbf",
           "type": "RBF"
         }
       ]
@@ -14519,6 +14557,12 @@
           "name": "ZX81_20230301.rbf",
           "sha": "44520b3b28b664034d81b65d0277d826c3b620e4",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/ZX81_MiSTer/master/releases/ZX81_20230301.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "ZX81_20231018.rbf",
+          "sha": "2e44ee3b1ddd0f85e58d1217baa516f15a06f1a3",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/ZX81_MiSTer/master/releases/ZX81_20231018.rbf",
           "type": "RBF"
         }
       ]
