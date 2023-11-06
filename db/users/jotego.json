@@ -690,7 +690,7 @@
         },
         {
           "name": "Super Contra (set 1).mra",
-          "sha": "a1f5db1c6e30499806b2ce528380bd8842f9bdad",
+          "sha": "fd978601b5e8329f8ac79a4bc0d5380e55a87106",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/aliens/releases/Super%20Contra%20(set%201).mra",
           "type": "MRA",
           "extra": {
@@ -704,7 +704,7 @@
         },
         {
           "name": "jtaliens.rbf",
-          "sha": "61768888983d1032ca2bb82ed69ba5fa3e7982f8",
+          "sha": "f0f4b5a937679a3be5536a760c3cdc4b7bcbe0d5",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/aliens/releases/jtaliens.rbf",
           "type": "RBF"
         },
@@ -828,13 +828,13 @@
         },
         {
           "name": "jtbubl.rbf",
-          "sha": "ceb88fc0180721cb9b4f96e64b13c1c2e478c1e7",
+          "sha": "5b28cd92161a8e76da7aaa12355dc44fc4138bdd",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/bubl/releases/jtbubl.rbf",
           "type": "RBF"
         },
         {
           "name": "version.log",
-          "sha": "7ad95d4b3dc5f818e4c2dd5f909f3f012282fcf7",
+          "sha": "3661b9a27b4da21e10fcd694ca631b42787dd4bb",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/bubl/version.log",
           "type": "OTHER"
         },
@@ -1506,7 +1506,7 @@
         },
         {
           "name": "Tenchi wo Kurau II Sekiheki no Tatakai (CPS Changer, Japan 921031).mra",
-          "sha": "6573b335e60d98569df96904ce55ab521a4d642e",
+          "sha": "3cebdbf792b46bdc6c51458b4b6c9e65598ba1e8",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/cps15/releases/Tenchi%20wo%20Kurau%20II%20Sekiheki%20no%20Tatakai%20(CPS%20Changer%2C%20Japan%20921031).mra",
           "type": "MRA",
           "extra": {
@@ -2285,6 +2285,26 @@
           "type": "OTHER"
         },
         {
+          "name": "The Final Round (version M).mra",
+          "sha": "d7d8090a878586b443157e3c5201424fa285a0bf",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/fround/releases/The%20Final%20Round%20(version%20M).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "The Final Round (version M)",
+            "rbf": "jtfround",
+            "zips": [
+              "fround.zip",
+              "jtbeta.zip"
+            ]
+          }
+        },
+        {
+          "name": "jtfround.rbf",
+          "sha": "3d5c35666523d57e72c069662366b43afd6bc4f1",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/fround/releases/jtfround.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "README.md",
           "sha": "480a77aa964435ee43cb4c89c157d6ec5c83ddfd",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/gng/README.md",
@@ -2547,7 +2567,7 @@
         },
         {
           "name": "Arkanoid - Revenge of DOH (World).mra",
-          "sha": "e5c611c62419d3b8fec18d450f2c3089fc395bc2",
+          "sha": "484d7a866e53bbedd7984728c3763c218207c4db",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kiwi/releases/Arkanoid%20-%20Revenge%20of%20DOH%20(World).mra",
           "type": "MRA",
           "extra": {
@@ -2560,7 +2580,7 @@
         },
         {
           "name": "Dr. Toppel's Adventure (World).mra",
-          "sha": "16c5c73c426d3ba9d99f30801228b8d5f6e3f946",
+          "sha": "25e31ac63011859c522a3a5a9edd6d7c0df3346d",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kiwi/releases/Dr.%20Toppel's%20Adventure%20(World).mra",
           "type": "MRA",
           "extra": {
@@ -2573,7 +2593,7 @@
         },
         {
           "name": "Extermination (World).mra",
-          "sha": "862272de23eb4052b6800fca0cf4a15f3d5a61d4",
+          "sha": "258830674b35d48a39f708d5c4c109dec1399cd6",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kiwi/releases/Extermination%20(World).mra",
           "type": "MRA",
           "extra": {
@@ -2586,7 +2606,7 @@
         },
         {
           "name": "Insector X (World).mra",
-          "sha": "34e8a93e21738c6819e52c004cc03617971300e3",
+          "sha": "ae073320574d7dccba5c307fd5b35a84b42a5bf0",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kiwi/releases/Insector%20X%20(World).mra",
           "type": "MRA",
           "extra": {
@@ -2599,7 +2619,7 @@
         },
         {
           "name": "Kageki (World).mra",
-          "sha": "5c934c8f5b14b9bf77facebafe1bd63358d844c6",
+          "sha": "70378d2e4a5cab0f483628920b3d5fe501745c93",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kiwi/releases/Kageki%20(World).mra",
           "type": "MRA",
           "extra": {
@@ -2612,7 +2632,7 @@
         },
         {
           "name": "The NewZealand Story (World, old version) (P0-041A PCB).mra",
-          "sha": "a1e83062496f730a72b3a3935a9ba5f7abdc363d",
+          "sha": "f84642acaca3fbaaeb36f447421cd58440a75235",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kiwi/releases/The%20NewZealand%20Story%20(World%2C%20old%20version)%20(P0-041A%20PCB).mra",
           "type": "MRA",
           "extra": {
@@ -2811,21 +2831,20 @@
         },
         {
           "name": "Bad Dudes vs. Dragonninja (US revision 1).mra",
-          "sha": "ad32dcbb29cea791acb64b676eea8df7f2fc7e9a",
+          "sha": "6ad9ffa53e6a81c15c853e31e3655d783bf585ea",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/ninja/releases/Bad%20Dudes%20vs.%20Dragonninja%20(US%20revision%201).mra",
           "type": "MRA",
           "extra": {
             "name": "Bad Dudes vs. Dragonninja (US revision 1)",
             "rbf": "jtninja",
             "zips": [
-              "baddudes.zip",
-              "jtbeta.zip"
+              "baddudes.zip"
             ]
           }
         },
         {
           "name": "Heavy Barrel (World).mra",
-          "sha": "e4fb7773cdf5487b4acd32cf09b59d6a8bad3e88",
+          "sha": "1933726b17f2fe13198c72c00a2f64860c9cef41",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/ninja/releases/Heavy%20Barrel%20(World).mra",
           "type": "MRA",
           "extra": {
@@ -2833,7 +2852,7 @@
             "rbf": "jtninja",
             "zips": [
               "hbarrel.zip",
-              "jtbeta.zip"
+              "hbarrel_cheat.zip"
             ]
           }
         },
@@ -3958,6 +3977,26 @@
           "type": "OTHER"
         },
         {
+          "name": "Splatter House (World, new version (SH3)).mra",
+          "sha": "4e0d39d6b98bae423f671616cbf92684a4e971c2",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/shouse/releases/Splatter%20House%20(World%2C%20new%20version%20(SH3)).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Splatter House (World, new version (SH3))",
+            "rbf": "jtshouse",
+            "zips": [
+              "splatter.zip",
+              "jtbeta.zip"
+            ]
+          }
+        },
+        {
+          "name": "jtshouse.rbf",
+          "sha": "66bcd1df752f6a8bb4a51ccc897d9708c6f8864d",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/shouse/releases/jtshouse.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "README.md",
           "sha": "220d81d7768bc31b9964ac947a770c631c9a51e2",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/simson/README.md",
@@ -3979,7 +4018,7 @@
         },
         {
           "name": "jtsimson.rbf",
-          "sha": "0b3e42059000d40424387d906f7468c88d9f83a9",
+          "sha": "bd5fd8293fab7ceb01c3b0687a7faa26369d80d8",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/simson/releases/jtsimson.rbf",
           "type": "RBF"
         },
@@ -4055,7 +4094,7 @@
         },
         {
           "name": "Punk Shot (US 4 Players).mra",
-          "sha": "25813a9f95d58dfa753d4e33a0691b1e85af2db2",
+          "sha": "1506796d9712d4bd3af37e910d1503b3f3c0093c",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/tmnt/releases/Punk%20Shot%20(US%204%20Players).mra",
           "type": "MRA",
           "extra": {
@@ -4083,13 +4122,13 @@
         },
         {
           "name": "jttmnt.rbf",
-          "sha": "0a07b2c89c7eebd8b238937572d7f41b8a8f694a",
+          "sha": "b6cca8ad56e6fd633669dffda2c990d8b26487b7",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/tmnt/releases/jttmnt.rbf",
           "type": "RBF"
         },
         {
           "name": "version.log",
-          "sha": "89c529bbdcda5c8d36245c14efe56e2ceec5543e",
+          "sha": "80b94ce767f5eb122077ffcea49258903541b58e",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/tmnt/version.log",
           "type": "OTHER"
         },
@@ -4202,38 +4241,6 @@
           "name": "version.log",
           "sha": "6a352e094fedbed385755ac2b39548290e1101af",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/trojan/version.log",
-          "type": "OTHER"
-        },
-        {
-          "name": "README.md",
-          "sha": "51c4e584c7a2f1e819314f9c4727fcfafae9d3f5",
-          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/twin16/README.md",
-          "type": "OTHER"
-        },
-        {
-          "name": "The Final Round (version M).mra",
-          "sha": "78fef72f7d0f841def595550f945863d387ccc39",
-          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/twin16/releases/The%20Final%20Round%20(version%20M).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "The Final Round (version M)",
-            "rbf": "jttwin16",
-            "zips": [
-              "fround.zip",
-              "jtbeta.zip"
-            ]
-          }
-        },
-        {
-          "name": "jttwin16.rbf",
-          "sha": "d5238a2bddd81ef5edf165be8ea714e70f129bdb",
-          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/twin16/releases/jttwin16.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "version.log",
-          "sha": "17609fe959a2436a0e02ae0ce195c2bb2b927324",
-          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/twin16/version.log",
           "type": "OTHER"
         },
         {
