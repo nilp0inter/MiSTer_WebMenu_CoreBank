@@ -159,7 +159,7 @@
         {
           "name": "Teenage Mutant Hero Turtles (UK 2 Players, version \uf03f).mra",
           "sha": "2b2b29a82ff4e9ed96fdd6c8eeda415b07b59f41",
-          "url": "https://raw.githubusercontent.com/jotego/Arcade-TMNT_MiSTer/master/releases/_alternatives/_Teenage%20Mutant%20Ninja%20Turtles/Teenage%20Mutant%20Hero%20Turtles%20(UK%202%20Players%2C%20version%20%EF%80%BF).mra",
+          "url": "https://raw.githubusercontent.com/jotego/Arcade-TMNT_MiSTer/master/releases/_alternatives/_Teenage%20Mutant%20Ninja%20Turtles/Teenage Mutant Hero Turtles (UK 2 Players, version \uf03f).mra",
           "type": "MRA",
           "extra": {
             "name": "Teenage Mutant Hero Turtles (UK 2 Players, version ?)",
@@ -198,7 +198,7 @@
         {
           "name": "Teenage Mutant Hero Turtles (UK 4 Players, version \uf03f).mra",
           "sha": "a5f4fb28746f63d6ad1b357b6cd7c76f781975ef",
-          "url": "https://raw.githubusercontent.com/jotego/Arcade-TMNT_MiSTer/master/releases/_alternatives/_Teenage%20Mutant%20Ninja%20Turtles/Teenage%20Mutant%20Hero%20Turtles%20(UK%204%20Players%2C%20version%20%EF%80%BF).mra",
+          "url": "https://raw.githubusercontent.com/jotego/Arcade-TMNT_MiSTer/master/releases/_alternatives/_Teenage%20Mutant%20Ninja%20Turtles/Teenage Mutant Hero Turtles (UK 4 Players, version \uf03f).mra",
           "type": "MRA",
           "extra": {
             "name": "Teenage Mutant Hero Turtles (UK 4 Players, version ?)",
@@ -211,7 +211,7 @@
         {
           "name": "Teenage Mutant Ninja Turtles (Asia 4 Players, version \uf03f).mra",
           "sha": "c08541f4f765310613de892d8099cebbefe1413a",
-          "url": "https://raw.githubusercontent.com/jotego/Arcade-TMNT_MiSTer/master/releases/_alternatives/_Teenage%20Mutant%20Ninja%20Turtles/Teenage%20Mutant%20Ninja%20Turtles%20(Asia%204%20Players%2C%20version%20%EF%80%BF).mra",
+          "url": "https://raw.githubusercontent.com/jotego/Arcade-TMNT_MiSTer/master/releases/_alternatives/_Teenage%20Mutant%20Ninja%20Turtles/Teenage Mutant Ninja Turtles (Asia 4 Players, version \uf03f).mra",
           "type": "MRA",
           "extra": {
             "name": "Teenage Mutant Ninja Turtles (Asia 4 Players, version ?)",
@@ -250,7 +250,7 @@
         {
           "name": "Teenage Mutant Ninja Turtles (Oceania 2 Players, version \uf03f).mra",
           "sha": "84ed691acd8fd461eb2f86ffd7ee9631879a3c5d",
-          "url": "https://raw.githubusercontent.com/jotego/Arcade-TMNT_MiSTer/master/releases/_alternatives/_Teenage%20Mutant%20Ninja%20Turtles/Teenage%20Mutant%20Ninja%20Turtles%20(Oceania%202%20Players%2C%20version%20%EF%80%BF).mra",
+          "url": "https://raw.githubusercontent.com/jotego/Arcade-TMNT_MiSTer/master/releases/_alternatives/_Teenage%20Mutant%20Ninja%20Turtles/Teenage Mutant Ninja Turtles (Oceania 2 Players, version \uf03f).mra",
           "type": "MRA",
           "extra": {
             "name": "Teenage Mutant Ninja Turtles (Oceania 2 Players, version ?)",
@@ -743,14 +743,28 @@
           }
         },
         {
+          "name": "Thunder Cross (set 1).mra",
+          "sha": "b42a97f3de53a67dbc2d8deac6452b4050d07f4e",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/aliens/releases/Thunder%20Cross%20(set%201).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Thunder Cross (set 1)",
+            "rbf": "jtaliens",
+            "zips": [
+              "thunderx.zip",
+              "jtbeta.zip"
+            ]
+          }
+        },
+        {
           "name": "jtaliens.rbf",
-          "sha": "03b5529774c7c2f870f50fda058fbf5d36d4d6c7",
+          "sha": "77a91cfab1404d29f922861534b1de53e4345503",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/aliens/releases/jtaliens.rbf",
           "type": "RBF"
         },
         {
           "name": "version.log",
-          "sha": "546980cdc4447dc863430d832bf55c3a98cf8365",
+          "sha": "6840b8d01b95a3c4d17c6962c5b2afe16fa8df7b",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/aliens/version.log",
           "type": "OTHER"
         },
@@ -967,13 +981,13 @@
         },
         {
           "name": "jtcomsc.rbf",
-          "sha": "73be4096d6401ede5b5b351bb74657ffd89c0986",
+          "sha": "c9f68320d0d9ff8cd2bd8f8a7959887905a60661",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/comsc/releases/jtcomsc.rbf",
           "type": "RBF"
         },
         {
           "name": "version.log",
-          "sha": "5c718cbbd400fa5a43dffc4ef68c86b8da4e3ef4",
+          "sha": "f1ffcb6f356ed0f7b484956fcb372ee50f7f7e58",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/comsc/version.log",
           "type": "OTHER"
         },
@@ -998,13 +1012,13 @@
         },
         {
           "name": "jtcontra.rbf",
-          "sha": "ef9d8c6d787ce2bd72bddc3ad24988c7f41524bd",
+          "sha": "3cef8e672e2525ca60fe1b01ee260d0fbee4a096",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/contra/releases/jtcontra.rbf",
           "type": "RBF"
         },
         {
           "name": "version.log",
-          "sha": "60ec48468158c9a43437102156ab498dccd21601",
+          "sha": "12393a610b6d66004cad24e06bb42bc82eae1ef9",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/contra/version.log",
           "type": "OTHER"
         },
@@ -2153,7 +2167,7 @@
         },
         {
           "name": "Double Dragon (Japan).mra",
-          "sha": "f2a53d720cc9596cc7ec288ba81e83d1021b8ef4",
+          "sha": "2058f510024e1c72435fcb0d864a33eec6cf3714",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/dd/releases/Double%20Dragon%20(Japan).mra",
           "type": "MRA",
           "extra": {
@@ -2190,7 +2204,7 @@
         },
         {
           "name": "Double Dragon II The Revenge (World).mra",
-          "sha": "9850e698c3b357dd09d1c0349e0d386f91193f73",
+          "sha": "13b1057f889002b4ca1a31369e92cd769652d5a2",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/dd2/releases/Double%20Dragon%20II%20The%20Revenge%20(World).mra",
           "type": "MRA",
           "extra": {
@@ -3073,7 +3087,7 @@
         },
         {
           "name": "Roc'n Rope.mra",
-          "sha": "209b2e3b414a05cd90e2740f811609bc603af905",
+          "sha": "856bc00acff7ab44d8ac8285bec822751ee2ac80",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/roc/releases/Roc'n%20Rope.mra",
           "type": "MRA",
           "extra": {
@@ -3206,7 +3220,7 @@
         },
         {
           "name": "Major League (World, S16A) [No Protection].mra",
-          "sha": "69e072629cff7128ba3c6fe7be85e4def0ae2c14",
+          "sha": "f2f17e025e573522f1f092e8016f97c37a591b2e",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16/releases/Major%20League%20(World%2C%20S16A)%20%5BNo%20Protection%5D.mra",
           "type": "MRA",
           "extra": {
@@ -3219,7 +3233,7 @@
         },
         {
           "name": "Quartet 2 (World, S16A) [No Protection].mra",
-          "sha": "9d76e188a1c75d5282e4bab1a40be06684de8d80",
+          "sha": "65d12e06e5a7d7f69c08e857bacfdcecefea9b5e",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16/releases/Quartet%202%20(World%2C%20S16A)%20%5BNo%20Protection%5D.mra",
           "type": "MRA",
           "extra": {
@@ -3232,7 +3246,7 @@
         },
         {
           "name": "SDI Strategic Defense Initiative (Japan, New Ver., S16A) [FD1089B 317-0027].mra",
-          "sha": "7c59d7b7659d8bb4ef9a36d56f69f7fc4416786c",
+          "sha": "b7d9b0d8fa9aaf765bd76c505b1c80eb15587424",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16/releases/SDI%20Strategic%20Defense%20Initiative%20(Japan%2C%20New%20Ver.%2C%20S16A)%20%5BFD1089B%20317-0027%5D.mra",
           "type": "MRA",
           "extra": {
@@ -3258,7 +3272,7 @@
         },
         {
           "name": "Tetris (Set 4, Japan, S16A) [FD1094 317-0093].mra",
-          "sha": "e1811ab540e5abf3753e97208828b01e7966b7e8",
+          "sha": "ae366020048fbe9573027d6d55294333a57adb78",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16/releases/Tetris%20(Set%204%2C%20Japan%2C%20S16A)%20%5BFD1094%20317-0093%5D.mra",
           "type": "MRA",
           "extra": {
@@ -3328,7 +3342,7 @@
         },
         {
           "name": "Aurail (set 3, US) (unprotected).mra",
-          "sha": "50a8f69120dd8a8bc454bbd77c8493fd7776d89d",
+          "sha": "88ae9e675e90ffda74eaf801cbe0e0ea29299194",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/Aurail%20(set%203%2C%20US)%20(unprotected).mra",
           "type": "MRA",
           "extra": {
@@ -3367,7 +3381,7 @@
         },
         {
           "name": "Cotton (set 4, World) (FD1094 317-0181a).mra",
-          "sha": "31bff667e26713113942fffdadd0e27aa741b026",
+          "sha": "57c3d4a0b97fac2079ba80d4ba3e67021c9ee72d",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/Cotton%20(set%204%2C%20World)%20(FD1094%20317-0181a).mra",
           "type": "MRA",
           "extra": {
@@ -3419,7 +3433,7 @@
         },
         {
           "name": "Excite League (FD1094 317-0079).mra",
-          "sha": "68ae174c8703fe0fa4effd30a9ad5835b1c6772e",
+          "sha": "69f8a0db2b1a23398158b55139cd0b5640aeef33",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/Excite%20League%20(FD1094%20317-0079).mra",
           "type": "MRA",
           "extra": {
@@ -3432,7 +3446,7 @@
         },
         {
           "name": "Fantasy Zone II - The Tears of Opa-Opa (System 16C version).mra",
-          "sha": "017ff0cf16a2c74a86b49eb049f1f81c5fd09da4",
+          "sha": "4656cb8c66442e1adcaea04d7501aed6d6bc1365",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/Fantasy%20Zone%20II%20-%20The%20Tears%20of%20Opa-Opa%20(System%2016C%20version).mra",
           "type": "MRA",
           "extra": {
@@ -3458,7 +3472,7 @@
         },
         {
           "name": "Golden Axe (set 6, US) (8751 317-123A).mra",
-          "sha": "c9b94f17d5a1d20e382eaee089b50515c2440ccb",
+          "sha": "cbb8f5e6640ff17484e2e6296535bea2b1357f82",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/Golden%20Axe%20(set%206%2C%20US)%20(8751%20317-123A).mra",
           "type": "MRA",
           "extra": {
@@ -3484,7 +3498,7 @@
         },
         {
           "name": "Passing Shot (World, 2 Players) (FD1094 317-0080).mra",
-          "sha": "ce9ab742637ac091994288cf33660b2fcf288a25",
+          "sha": "75407b450d74988be151dc8c7a67afb8177a77ea",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/Passing%20Shot%20(World%2C%202%20Players)%20(FD1094%20317-0080).mra",
           "type": "MRA",
           "extra": {
@@ -3497,7 +3511,7 @@
         },
         {
           "name": "Riot City (Japan).mra",
-          "sha": "b3d475685fab6c766434c64817804f6047d91aee",
+          "sha": "0b225c39083820ad5a343d042887d8586e8c7216",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/Riot%20City%20(Japan).mra",
           "type": "MRA",
           "extra": {
@@ -3510,7 +3524,7 @@
         },
         {
           "name": "RyuKyu (Rev A, Japan) (FD1094 317-5023A).mra",
-          "sha": "48ef8abbc0c35de1578f7dec1a7c63cec0f7b2b6",
+          "sha": "8d3622453ca9a294d0742b7da3fedaa8c89932ea",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/RyuKyu%20(Rev%20A%2C%20Japan)%20(FD1094%20317-5023A).mra",
           "type": "MRA",
           "extra": {
@@ -3523,7 +3537,7 @@
         },
         {
           "name": "Sonic Boom (FD1094 317-0053).mra",
-          "sha": "f534dcedb160789ad29e81e05b549b22f6b82811",
+          "sha": "d3d19642c576f0ed8de747aa63fe2ef4e60d5119",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/Sonic%20Boom%20(FD1094%20317-0053).mra",
           "type": "MRA",
           "extra": {
@@ -3549,7 +3563,7 @@
         },
         {
           "name": "Super League (FD1094 317-0045).mra",
-          "sha": "a002d53dcd12ff3fc19378dc4c45791ac0aace2f",
+          "sha": "4b46bbdf35819c5e6d0e5819d731813f2683f097",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/Super%20League%20(FD1094%20317-0045).mra",
           "type": "MRA",
           "extra": {
@@ -3562,7 +3576,7 @@
         },
         {
           "name": "Time Scanner (set 2, System 16B).mra",
-          "sha": "c6f53540e834ad9084340702381ef9177c16fb43",
+          "sha": "f62d02d22d27a17b02da47fe5a5738192a21f360",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/Time%20Scanner%20(set%202%2C%20System%2016B).mra",
           "type": "MRA",
           "extra": {
@@ -3588,7 +3602,7 @@
         },
         {
           "name": "Tough Turf (set 1, US) (8751 317-0099).mra",
-          "sha": "18baf3bc4f4fb5ad3419be0255b5a6bbc13eb34e",
+          "sha": "26e4993ddca06506f0b77e0b3733a2607c050111",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/Tough%20Turf%20(set%201%2C%20US)%20(8751%20317-0099).mra",
           "type": "MRA",
           "extra": {
@@ -3614,7 +3628,7 @@
         },
         {
           "name": "Wrestle War (set 3, World) (8751 317-0103).mra",
-          "sha": "fe3ccf6504a7fdb641cb63394a911990f2d20ef4",
+          "sha": "2f06264aca694b81230512585822f4d7ea19db7d",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/s16b/releases/Wrestle%20War%20(set%203%2C%20World)%20(8751%20317-0103).mra",
           "type": "MRA",
           "extra": {
@@ -3969,7 +3983,7 @@
         },
         {
           "name": "Boulder Dash - Boulder Dash Part 2 (World).mra",
-          "sha": "5936ced7b7883064b2701ef811564a7ba50a2077",
+          "sha": "f8474b3915d8053bfc12a4575cdc4d5960b68d6e",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/slyspy/releases/Boulder%20Dash%20-%20Boulder%20Dash%20Part%202%20(World).mra",
           "type": "MRA",
           "extra": {
@@ -3982,7 +3996,7 @@
         },
         {
           "name": "Secret Agent (World revision 3).mra",
-          "sha": "1168876073fb3401ab53d397c078b825593d34d3",
+          "sha": "448e21c5dd567a9373a7066380ed36d90736d7d6",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/slyspy/releases/Secret%20Agent%20(World%20revision%203).mra",
           "type": "MRA",
           "extra": {
