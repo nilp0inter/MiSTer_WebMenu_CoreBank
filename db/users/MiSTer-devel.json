@@ -1362,6 +1362,360 @@
       ]
     },
     {
+      "name": "Arcade-Atari-system1_MiSTer",
+      "description": "Atari System-1",
+      "readme": "# Atari System-1 FPGA Arcade  \n\n## About  \nFPGA implementation of Atari's System 1 (LSI version) arcade platform from 1984.  \nBased primarily on the SP-280, SP-286 schematics with additional support from SP-277, SP-298  \n\nSystem-1 supported game cartridges according to MAME  \n* Marble Madness (1984)  \n* Peter Pack Rat (1985)  \n* Road Runner (1985)  \n* Indiana Jones and the Temple of Doom (1985)  \n* RoadBlasters (1987)  \n\n## Known Issues\nThe following mra files don't work as expected.\n* Indiana Jones (cocktail).mra graphics tiles incorrectly offset, directional controls not working.\n* Indiana Jones (set 3).mra upside down corrupt or missing graphics, text is OK.\n\n## Building  \nThe project files are setup for Quartus 17  \n",
+      "archived": false,
+      "fork": false,
+      "url": "https://github.com/MiSTer-devel/Arcade-Atari-system1_MiSTer",
+      "releases": [
+        {
+          "name": "Arcade-atarisys1_20231130.rbf",
+          "sha": "d3df9f197cf2158ac39d463741c330cf12089fee",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Atari-system1_MiSTer/main/releases/Arcade-atarisys1_20231130.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Indiana Jones (set 4).mra",
+          "sha": "e02a403d7eb55534e00ce998675f432700037d94",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Atari-system1_MiSTer/main/releases/Indiana%20Jones%20(set%204).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Indiana Jones (set 4)",
+            "rbf": "atarisys1",
+            "zips": [
+              "indytemp.zip"
+            ]
+          }
+        },
+        {
+          "name": "Marble Madness (set 5 - LSI).mra",
+          "sha": "059d2f7b78878b00fd1a090692d9d1e7c642255d",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Atari-system1_MiSTer/main/releases/Marble%20Madness%20(set%205%20-%20LSI).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Marble Madness (set 5 - LSI Cartridge)",
+            "rbf": "atarisys1",
+            "zips": [
+              "marble.zip"
+            ]
+          }
+        },
+        {
+          "name": "Peter Pack Rat.mra",
+          "sha": "f5140689674af06d8bf7a51e41ab736942377ed4",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Atari-system1_MiSTer/main/releases/Peter%20Pack%20Rat.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Peter Pack Rat",
+            "rbf": "atarisys1",
+            "zips": [
+              "peterpak.zip"
+            ]
+          }
+        },
+        {
+          "name": "Road Blasters (upright, rev 4).mra",
+          "sha": "fcd7de667ab1d6d5ae262db67691db1503df2370",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Atari-system1_MiSTer/main/releases/Road%20Blasters%20(upright%2C%20rev%204).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Road Blasters (upright, rev 4)",
+            "rbf": "atarisys1",
+            "zips": [
+              "roadblst.zip"
+            ]
+          }
+        },
+        {
+          "name": "Road Runner (rev 2).mra",
+          "sha": "5c2712dbdc44f54147730fdd8cee5cfde3d52e01",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Atari-system1_MiSTer/main/releases/Road%20Runner%20(rev%202).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Road Runner (rev 2)",
+            "rbf": "atarisys1",
+            "zips": [
+              "roadrunn.zip"
+            ]
+          }
+        },
+        {
+          "name": "Indiana Jones (cocktail).mra",
+          "sha": "9409ed402f44257912cc31f837067af04cab016a",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Atari-system1_MiSTer/main/releases/_alternatives/_Indiana_Jones/Indiana%20Jones%20(cocktail).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Indiana Jones (cocktail)",
+            "rbf": "atarisys1",
+            "zips": [
+              "indytemp.zip"
+            ]
+          }
+        },
+        {
+          "name": "Indiana Jones (german).mra",
+          "sha": "f14abba296e8bb633e780da668278675f37deebb",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Atari-system1_MiSTer/main/releases/_alternatives/_Indiana_Jones/Indiana%20Jones%20(german).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Indiana Jones (german)",
+            "rbf": "atarisys1",
+            "zips": [
+              "indytemp.zip"
+            ]
+          }
+        },
+        {
+          "name": "Indiana Jones (set 1).mra",
+          "sha": "2e814486aea165cad46f68ae20993276d2aa784b",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Atari-system1_MiSTer/main/releases/_alternatives/_Indiana_Jones/Indiana%20Jones%20(set%201).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Indiana Jones (set 1)",
+            "rbf": "atarisys1",
+            "zips": [
+              "indytemp.zip"
+            ]
+          }
+        },
+        {
+          "name": "Indiana Jones (set 2).mra",
+          "sha": "a546d48bae0fc9e7fa2e13af39c3eb1125eca6a7",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Atari-system1_MiSTer/main/releases/_alternatives/_Indiana_Jones/Indiana%20Jones%20(set%202).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Indiana Jones (set 2)",
+            "rbf": "atarisys1",
+            "zips": [
+              "indytemp.zip"
+            ]
+          }
+        },
+        {
+          "name": "Indiana Jones (set 3).mra",
+          "sha": "aa45c03b92c64a455a2a6af4f7b46be9276a65aa",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Atari-system1_MiSTer/main/releases/_alternatives/_Indiana_Jones/Indiana%20Jones%20(set%203).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Indiana Jones (set 3)",
+            "rbf": "atarisys1",
+            "zips": [
+              "indytemp.zip"
+            ]
+          }
+        },
+        {
+          "name": "Marble Madness (set 1).mra",
+          "sha": "a0c3d29685021ae14f803143531f5d185d40dc7c",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Atari-system1_MiSTer/main/releases/_alternatives/_Marble_Madness/Marble%20Madness%20(set%201).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Marble Madness (set 1)",
+            "rbf": "atarisys1",
+            "zips": [
+              "marble.zip"
+            ]
+          }
+        },
+        {
+          "name": "Marble Madness (set 2).mra",
+          "sha": "6d85f764542f54cb7211282bff3dc89c55681c80",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Atari-system1_MiSTer/main/releases/_alternatives/_Marble_Madness/Marble%20Madness%20(set%202).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Marble Madness (set 2)",
+            "rbf": "atarisys1",
+            "zips": [
+              "marble.zip"
+            ]
+          }
+        },
+        {
+          "name": "Marble Madness (set 3).mra",
+          "sha": "3dd958e548703d7c811252dc897c6695d3c57caa",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Atari-system1_MiSTer/main/releases/_alternatives/_Marble_Madness/Marble%20Madness%20(set%203).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Marble Madness (set 3)",
+            "rbf": "atarisys1",
+            "zips": [
+              "marble.zip"
+            ]
+          }
+        },
+        {
+          "name": "Marble Madness (set 4).mra",
+          "sha": "5238ddfce9c5f7d0479a955627199d950d62e8e4",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Atari-system1_MiSTer/main/releases/_alternatives/_Marble_Madness/Marble%20Madness%20(set%204).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Marble Madness (set 4)",
+            "rbf": "atarisys1",
+            "zips": [
+              "marble.zip"
+            ]
+          }
+        },
+        {
+          "name": "Road Blasters (cockpit, German, rev 1).mra",
+          "sha": "f020f0ffb002e0447fc8668c4c2a2769a350614b",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Atari-system1_MiSTer/main/releases/_alternatives/_Road_Blasters/Road%20Blasters%20(cockpit%2C%20German%2C%20rev%201).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Road Blasters (cockpit, German, rev 1)",
+            "rbf": "atarisys1",
+            "zips": [
+              "roadblst.zip"
+            ]
+          }
+        },
+        {
+          "name": "Road Blasters (cockpit, rev 1).mra",
+          "sha": "69b15417f4e2b70d055b0269c4f1c17f8517dbbc",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Atari-system1_MiSTer/main/releases/_alternatives/_Road_Blasters/Road%20Blasters%20(cockpit%2C%20rev%201).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Road Blasters (cockpit, rev 1)",
+            "rbf": "atarisys1",
+            "zips": [
+              "roadblst.zip"
+            ]
+          }
+        },
+        {
+          "name": "Road Blasters (cockpit, rev 2).mra",
+          "sha": "9d53c6d064ab618ad2ef558d67ab6e3f37113954",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Atari-system1_MiSTer/main/releases/_alternatives/_Road_Blasters/Road%20Blasters%20(cockpit%2C%20rev%202).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Road Blasters (cockpit, rev 2)",
+            "rbf": "atarisys1",
+            "zips": [
+              "roadblst.zip"
+            ]
+          }
+        },
+        {
+          "name": "Road Blasters (upright, German, rev 1).mra",
+          "sha": "69c78c15653ebf62f3a889c6a4213a0e0a0ed058",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Atari-system1_MiSTer/main/releases/_alternatives/_Road_Blasters/Road%20Blasters%20(upright%2C%20German%2C%20rev%201).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Road Blasters (upright, German, rev 1)",
+            "rbf": "atarisys1",
+            "zips": [
+              "roadblst.zip"
+            ]
+          }
+        },
+        {
+          "name": "Road Blasters (upright, German, rev 2).mra",
+          "sha": "a43698b1e46b6ae6ff24cb33900eabb531191b9c",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Atari-system1_MiSTer/main/releases/_alternatives/_Road_Blasters/Road%20Blasters%20(upright%2C%20German%2C%20rev%202).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Road Blasters (upright, German, rev 2)",
+            "rbf": "atarisys1",
+            "zips": [
+              "roadblst.zip"
+            ]
+          }
+        },
+        {
+          "name": "Road Blasters (upright, German, rev 3)).mra",
+          "sha": "a1b6b334b4f4f6f5fd59ebe9bf27e2ffff180a6d",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Atari-system1_MiSTer/main/releases/_alternatives/_Road_Blasters/Road%20Blasters%20(upright%2C%20German%2C%20rev%203)).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Road Blasters (upright, German, rev 3)",
+            "rbf": "atarisys1",
+            "zips": [
+              "roadblst.zip"
+            ]
+          }
+        },
+        {
+          "name": "Road Blasters (upright, German, rev X).mra",
+          "sha": "e7e4feb524fa568d08f7a9e104b938119557f9c7",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Atari-system1_MiSTer/main/releases/_alternatives/_Road_Blasters/Road%20Blasters%20(upright%2C%20German%2C%20rev%20X).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Road Blasters (upright, German, rev ?)",
+            "rbf": "atarisys1",
+            "zips": [
+              "roadblst.zip"
+            ]
+          }
+        },
+        {
+          "name": "Road Blasters (upright, rev 1).mra",
+          "sha": "152fc0953cd5376046dc2240bfc5b07610af3f58",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Atari-system1_MiSTer/main/releases/_alternatives/_Road_Blasters/Road%20Blasters%20(upright%2C%20rev%201).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Road Blasters (upright, rev 1)",
+            "rbf": "atarisys1",
+            "zips": [
+              "roadblst.zip"
+            ]
+          }
+        },
+        {
+          "name": "Road Blasters (upright, rev 2).mra",
+          "sha": "1f29498bae9f452d13586f35dd5a56b1e29f0382",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Atari-system1_MiSTer/main/releases/_alternatives/_Road_Blasters/Road%20Blasters%20(upright%2C%20rev%202).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Road Blasters (upright, rev 2)",
+            "rbf": "atarisys1",
+            "zips": [
+              "roadblst.zip"
+            ]
+          }
+        },
+        {
+          "name": "Road Blasters (upright, rev 3)).mra",
+          "sha": "c0d411dd65b0d641d68dbe10a1c2b16d6a75fea6",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Atari-system1_MiSTer/main/releases/_alternatives/_Road_Blasters/Road%20Blasters%20(upright%2C%20rev%203)).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Road Blasters (upright, rev 3)",
+            "rbf": "atarisys1",
+            "zips": [
+              "roadblst.zip"
+            ]
+          }
+        },
+        {
+          "name": "Road Runner (rev 1).mra",
+          "sha": "07959abb5d6af85b2fc82404887ccf75d217097b",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Atari-system1_MiSTer/main/releases/_alternatives/_Road_Runner/Road%20Runner%20(rev%201).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Road Runner (rev 1)",
+            "rbf": "atarisys1",
+            "zips": [
+              "roadrunn.zip"
+            ]
+          }
+        },
+        {
+          "name": "Road Runner (rev 1p).mra",
+          "sha": "a136d8d71937dffa7eab74710c4f1f99c748ba67",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Atari-system1_MiSTer/main/releases/_alternatives/_Road_Runner/Road%20Runner%20(rev%201p).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Road Runner (rev 1+)",
+            "rbf": "atarisys1",
+            "zips": [
+              "roadrunn.zip"
+            ]
+          }
+        }
+      ]
+    },
+    {
       "name": "Arcade-ATetris_MiSTer",
       "description": "Arcade: Atari Tetris for MiSTer",
       "readme": "-------------------------------------------------------------------------------------------\n-- \n-- Arcade: Atari Tetris  for MiSTer by MiSTer-X\n-- 11 December 2019\n-- From: https://github.com/MrX-8B/MiSTer-Arcade-AtariTetris\n-- \n-------------------------------------------------------------------------------------------\n-- 65xx compatible microprocessor core\n----------------------------------------------\n-- FPGAARCADE SVN: $Id: T65.vhd 1347 2015-05-27 20:07:34Z wolfgang.scherr $\n--\n-- Copyright (c) 2002...2015\n--               Daniel Wallner (jesus <at> opencores <dot> org)\n--               Mike Johnson   (mikej <at> fpgaarcade <dot> com)\n--               Wolfgang Scherr (WoS <at> pin4 <dot> at>\n--               Morten Leikvoll ()\n-------------------------------------------------------------------------------------------\n-- Pokey\n----------------------------------------------\n-- (c) 2013 mark watson\n-------------------------------------------------------------------------------------------\n-- Diagonal Input\n----------------------------------------------\n-- (c) 2019 Eniva  https://github.com/eniva/fpga-controls\n-------------------------------------------------------------------------------------------\n-- Tetris (and cocktail version) MRA files\n----------------------------------------------\n-- written by Bruno Silva (@eubrunosilvapt)\n-------------------------------------------------------------------------------------------\n--\n-- \n-- Keyboard inputs :\n--\n--   F2          : Coin + Start 2 players\n--   F1          : Coin + Start 1 player\n--   DOWN,LEFT,RIGHT arrows : Movements\n--   SPACE       : Rotate\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   F,D,G       : Player 2 Movements\n--   A           : Player 2 Rotate\n--\n-- Joystick support.\n--\n--\n-------------------------------------------------------------------------------------------\n\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
@@ -14924,7 +15278,7 @@
     {
       "name": "Distribution_MiSTer",
       "description": "This repository contains all the files that you'll want in your MiSTer",
-      "readme": "# MiSTer Distribution\n\nThis repository contains all the files that you'll want in your MiSTer.\n\nYou may download all of them at once as a zip through the [following link](https://github.com/MiSTer-devel/Distribution_MiSTer/archive/refs/heads/main.zip). Once you have them, place them as-is in your [properly initialised SD card](https://github.com/MiSTer-devel/mr-fusion), and everything should work out of the box.\n\n### MiSTer Project\n\nIf you want to check more about the MiSTer project, please check [this wiki](https://github.com/MiSTer-devel/Wiki_MiSTer/wiki).\n\n### MiSTer Downloader\n\nFor downloading all of these files directly from your MiSTer, use the [MiSTer Downloader](https://github.com/MiSTer-devel/Downloader_MiSTer).\n\n#### Tags that you may use with 'Download Filters' feature\n\nRead about how to use them [here](https://github.com/MiSTer-devel/Downloader_MiSTer/blob/main/docs/download-filters.md).\n\n##### List:\n\n`acornatom`, `acornelectron`, `adam`, `adctest`, `adventurevision`, `alicemc10`, `all_filters`, `altair8800`, `alternatives`, `amiga`, `amstrad`, `amstrad-pcw`, `amstradpcw`, `ao486`, `apogee`, `apple-i`, `apple-ii`, `aquarius`, `arcade`, `arcade-arkanoid`, `arcade-asteroids`, `arcade-asteroidsdeluxe`, `arcade-astrocade`, `arcade-ataritetris`, `arcade-athena`, `arcade-athena_mister`, `arcade-bagman`, `arcade-bankpanic`, `arcade-battlezone`, `arcade-berzerk`, `arcade-blackwidow`, `arcade-blockade`, `arcade-bombjack`, `arcade-bosconian`, `arcade-breakout`, `arcade-burgertime`, `arcade-burningrubber`, `arcade-canyonbomber`, `arcade-cave`, `arcade-centipede`, `arcade-chameleon`, `arcade-computerspace`, `arcade-congobongo`, `arcade-cores`, `arcade-cosmic`, `arcade-cosmicguerilla`, `arcade-crazyballoon`, `arcade-crazyclimber`, `arcade-crazykong`, `arcade-crystalcastles`, `arcade-defender`, `arcade-digdug`, `arcade-dominos`, `arcade-donkeykong`, `arcade-donkeykong3`, `arcade-donkeykongjunior`, `arcade-dorodon`, `arcade-dottorikun`, `arcade-druaga`, `arcade-exerion`, `arcade-expressraider`, `arcade-finalizer`, `arcade-foodfight`, `arcade-freeze`, `arcade-frenzy`, `arcade-galaga`, `arcade-galaxian`, `arcade-galivan`, `arcade-gaplus`, `arcade-gauntlet`, `arcade-gyruss`, `arcade-ikariwarriors`, `arcade-inferno`, `arcade-iremm62`, `arcade-iremm72`, `arcade-iremm92`, `arcade-ironhorse`, `arcade-jackal`, `arcade-jailbreak`, `arcade-joust2`, `arcade-kickandrun`, `arcade-ladybug`, `arcade-lunarlander`, `arcade-mariobros`, `arcade-mcr1`, `arcade-mcr2`, `arcade-mcr3`, `arcade-mcr3mono`, `arcade-mcr3scroll`, `arcade-missilecommand`, `arcade-moonpatrol`, `arcade-mrdo`, `arcade-mrjong`, `arcade-mysticmarathon`, `arcade-ninjakun`, `arcade-pacman`, `arcade-pengo`, `arcade-penguinkunwars`, `arcade-performan`, `arcade-phoenix`, `arcade-pleiads`, `arcade-polyplay`, `arcade-pong`, `arcade-pooyan`, `arcade-popeye`, `arcade-qbert`, `arcade-rallyx`, `arcade-riverpatrol`, `arcade-robotron`, `arcade-rshnatk`, `arcade-scootershooter`, `arcade-scramble`, `arcade-segasys1`, `arcade-silverland`, `arcade-slapfight`, `arcade-sms`, `arcade-snk_triplez80`, `arcade-solomonskey`, `arcade-sonson`, `arcade-spaceinvaders`, `arcade-spacerace`, `arcade-sprint1`, `arcade-sprint2`, `arcade-subs`, `arcade-superbreakout`, `arcade-taitosj`, `arcade-tankbattalion`, `arcade-tecmo`, `arcade-tiamc1`, `arcade-timepilot`, `arcade-timepilot84`, `arcade-tnkiii`, `arcade-traverseusa`, `arcade-tropicalangel`, `arcade-turkeyshoot`, `arcade-ultratank`, `arcade-vball`, `arcade-xevious`, `arcade-xsleenacore`, `arcade-zaxxon`, `arcade-zigzag`, `arcadelpf`, `arcadia`, `archie`, `arduboy`, `astrocade`, `atari2600`, `atari5200`, `atari7800`, `atari800`, `atarilynx`, `atarist`, `avision`, `ay-3-8500`, `bbcbridgecompanion`, `bbcmicro`, `bios`, `bk0011m`, `c128`, `c16`, `c64`, `casio_pv-1000`, `casio_pv-2000`, `channelf`, `cheats`, `chess`, `chip8`, `coco2`, `coco3`, `coleco`, `colecoadam`, `colecovision`, `complexmultichromatic`, `computer`, `computer-cores`, `console`, `console-cores`, `contrast_boost`, `cores`, `corespecific`, `creativision`, `crt-simulation`, `displayspecific`, `docs`, `drv`, `edsac`, `eg2000`, `epochgalaxyii`, `essential`, `extra-utilities`, `famicom`, `filters`, `filters_audio`, `filters_video`, `flappy`, `flappybird`, `font`, `galaksija`, `gamate`, `gameboy`, `gameboy2p`, `gameboyadvance`, `gameboycolor`, `gamecontrollerdb`, `gamegear`, `gamenwatch`, `gameoflife`, `games`, `gamma`, `gb`, `gba`, `gba2p`, `gbc`, `generalhardware`, `generallpf`, `genesis`, `gnw`, `handheld2p`, `hbmame`, `homelab`, `inputtest`, `intellivision`, `interact`, `jupiter`, `laser`, `laser310`, `lcd-general`, `lcd-integeronly`, `linux`, `lynx48`, `macplus`, `mame`, `mastersystem`, `megacd`, `megadrive`, `megaduck`, `memte`, `memtest`, `menu`, `mgl`, `minimig`, `misterfirmware`, `misterlaggy`, `mra`, `msx`, `msx1`, `multicomp`, `myvision`, `neogeo`, `nes`, `nintendo`, `odyssey2`, `old`, `ondra_spo186`, `orao`, `oric`, `other`, `other-cores`, `palettes`, `pc88`, `pc8801`, `pcengine`, `pcenginecd`, `pcxt`, `pdp1`, `pet2001`, `pmd85`, `pocketchallengev2`, `pokemonmini`, `poly_gamma`, `presets`, `psx`, `pure_gamma`, `ql`, `readme`, `rx78`, `s32x`, `samcoupe`, `saturn`, `scanlines-adaptive`, `scanlines-brighter`, `scanlines-standard`, `scripts`, `segacd`, `segamark3`, `service-cores`, `sgb`, `shadow_masks`, `sharpmz`, `simplemonochrome`, `slugcross`, `sms`, `snes`, `sordm5`, `specialist`, `spectrum`, `spmx`, `sufami`, `super_vision_8000`, `superfamicom`, `supergameboy`, `supernes`, `supernintendo`, `supervision`, `supervision8000`, `svi328`, `tatungeinstein`, `tgfx16`, `tgfx16-cd`, `tgfx16cd`, `ti-99_4a`, `ti994a`, `tomyscramble`, `tomytutor`, `trs-80`, `tsconf`, `turbografx`, `turbografx16`, `turbografx16cd`, `turbografxcd`, `uk101`, `upscaling-lanczosbicubicetc`, `upscaling-recommended`, `upscaling-sharpbilinear`, `utility`, `vc4000`, `vector-06c`, `vector06`, `vector06c`, `vectrex`, `vic20`, `wonderswan`, `wonderswancolor`, `x68000`, `yctxt`, `zx-spectrum`, `zx81`, `zxnext`, `zxspectrum`\n\n##### Some relevant tag descriptions:\n\n- `arcade-cores` / `arcade`: All arcade cores and MRA files.\n- `computer-cores` / `computer`: All computer cores and related folders.\n- `console-cores` / `console`: All console cores and related folders.\n- `other-cores` / `other`: All cores from the top folder Other with their related folders.\n- `service-cores` / `utility`: All utility cores and related folders.\n- `cores`: All cores (RBF files).\n- `mra`: All MRA files & folders.\n- `alternatives`: All MRA Alternatives\n- `hbmame`: All files & folders linked to the HBMame collection.\n- `handheld2p`: All 2 Player versions for Handheld cores.\n- `filters_video`: All video filters (`gamma` & `filters` & `shadow_masks`).\n- `all_filters`: All video & audio filters (`filters_video` & `filters_audio`).\n- `essential`: Menu core & MiSTer firmware.\n- `readme`: All README files.\n- `docs`: All documentation files & folders, including README files.\n- `extra-utilities`: All extra utilities that are installed in games folders of some computer cores.\n- `bios`: All bioses that are installed in the games folders for some computer & console cores.\n- `cheats`: All cheat files & folders.\n\n### Contributing\n\nYou are more than welcome to contribute to the [MiSTer-devel Organization](https://github.com/MiSTer-devel). But you can't do it by openening PRs to the main branch of this repository. This repository is only for file distribution. Whatever content shows up here depends on the other repositories of this organization, so you should target your PRs there.\n\nThere is a development branch in this repository for the content collection. Is fine to send PRs there but they should only modify the content collection scripts that are being used by the workflows.\n",
+      "readme": "# MiSTer Distribution\n\nThis repository contains all the files that you'll want in your MiSTer.\n\nYou may download all of them at once as a zip through the [following link](https://github.com/MiSTer-devel/Distribution_MiSTer/archive/refs/heads/main.zip). Once you have them, place them as-is in your [properly initialised SD card](https://github.com/MiSTer-devel/mr-fusion), and everything should work out of the box.\n\n### MiSTer Project\n\nIf you want to check more about the MiSTer project, please check [this wiki](https://github.com/MiSTer-devel/Wiki_MiSTer/wiki).\n\n### MiSTer Downloader\n\nFor downloading all of these files directly from your MiSTer, use the [MiSTer Downloader](https://github.com/MiSTer-devel/Downloader_MiSTer).\n\n#### Tags that you may use with 'Download Filters' feature\n\nRead about how to use them [here](https://github.com/MiSTer-devel/Downloader_MiSTer/blob/main/docs/download-filters.md).\n\n##### List:\n\n`acornatom`, `acornelectron`, `adam`, `adctest`, `adventurevision`, `alicemc10`, `all_filters`, `altair8800`, `alternatives`, `amiga`, `amstrad`, `amstrad-pcw`, `amstradpcw`, `ao486`, `apogee`, `apple-i`, `apple-ii`, `aquarius`, `arcade`, `arcade-arkanoid`, `arcade-asteroids`, `arcade-asteroidsdeluxe`, `arcade-astrocade`, `arcade-atarisys1`, `arcade-ataritetris`, `arcade-athena`, `arcade-athena_mister`, `arcade-bagman`, `arcade-bankpanic`, `arcade-battlezone`, `arcade-berzerk`, `arcade-blackwidow`, `arcade-blockade`, `arcade-bombjack`, `arcade-bosconian`, `arcade-breakout`, `arcade-burgertime`, `arcade-burningrubber`, `arcade-canyonbomber`, `arcade-cave`, `arcade-centipede`, `arcade-chameleon`, `arcade-computerspace`, `arcade-congobongo`, `arcade-cores`, `arcade-cosmic`, `arcade-cosmicguerilla`, `arcade-crazyballoon`, `arcade-crazyclimber`, `arcade-crazykong`, `arcade-crystalcastles`, `arcade-defender`, `arcade-digdug`, `arcade-dominos`, `arcade-donkeykong`, `arcade-donkeykong3`, `arcade-donkeykongjunior`, `arcade-dorodon`, `arcade-dottorikun`, `arcade-druaga`, `arcade-exerion`, `arcade-expressraider`, `arcade-finalizer`, `arcade-foodfight`, `arcade-freeze`, `arcade-frenzy`, `arcade-galaga`, `arcade-galaxian`, `arcade-galivan`, `arcade-gaplus`, `arcade-gauntlet`, `arcade-gyruss`, `arcade-ikariwarriors`, `arcade-inferno`, `arcade-iremm62`, `arcade-iremm72`, `arcade-iremm92`, `arcade-ironhorse`, `arcade-jackal`, `arcade-jailbreak`, `arcade-joust2`, `arcade-kickandrun`, `arcade-ladybug`, `arcade-lunarlander`, `arcade-mariobros`, `arcade-mcr1`, `arcade-mcr2`, `arcade-mcr3`, `arcade-mcr3mono`, `arcade-mcr3scroll`, `arcade-missilecommand`, `arcade-moonpatrol`, `arcade-mrdo`, `arcade-mrjong`, `arcade-mysticmarathon`, `arcade-ninjakun`, `arcade-pacman`, `arcade-pengo`, `arcade-penguinkunwars`, `arcade-performan`, `arcade-phoenix`, `arcade-pleiads`, `arcade-polyplay`, `arcade-pong`, `arcade-pooyan`, `arcade-popeye`, `arcade-qbert`, `arcade-rallyx`, `arcade-riverpatrol`, `arcade-robotron`, `arcade-rshnatk`, `arcade-scootershooter`, `arcade-scramble`, `arcade-segasys1`, `arcade-silverland`, `arcade-slapfight`, `arcade-sms`, `arcade-snk_triplez80`, `arcade-solomonskey`, `arcade-sonson`, `arcade-spaceinvaders`, `arcade-spacerace`, `arcade-sprint1`, `arcade-sprint2`, `arcade-subs`, `arcade-superbreakout`, `arcade-taitosj`, `arcade-tankbattalion`, `arcade-tecmo`, `arcade-tiamc1`, `arcade-timepilot`, `arcade-timepilot84`, `arcade-tnkiii`, `arcade-traverseusa`, `arcade-tropicalangel`, `arcade-turkeyshoot`, `arcade-ultratank`, `arcade-vball`, `arcade-xevious`, `arcade-xsleenacore`, `arcade-zaxxon`, `arcade-zigzag`, `arcadelpf`, `arcadia`, `archie`, `arduboy`, `astrocade`, `atari2600`, `atari5200`, `atari7800`, `atari800`, `atarilynx`, `atarist`, `avision`, `ay-3-8500`, `bbcbridgecompanion`, `bbcmicro`, `bios`, `bk0011m`, `c128`, `c16`, `c64`, `casio_pv-1000`, `casio_pv-2000`, `channelf`, `cheats`, `chess`, `chip8`, `coco2`, `coco3`, `coleco`, `colecoadam`, `colecovision`, `complexmultichromatic`, `computer`, `computer-cores`, `console`, `console-cores`, `contrast_boost`, `cores`, `corespecific`, `creativision`, `crt-simulation`, `displayspecific`, `docs`, `drv`, `edsac`, `eg2000`, `epochgalaxyii`, `essential`, `extra-utilities`, `famicom`, `filters`, `filters_audio`, `filters_video`, `flappy`, `flappybird`, `font`, `galaksija`, `gamate`, `gameboy`, `gameboy2p`, `gameboyadvance`, `gameboycolor`, `gamecontrollerdb`, `gamegear`, `gamenwatch`, `gameoflife`, `games`, `gamma`, `gb`, `gba`, `gba2p`, `gbc`, `generalhardware`, `generallpf`, `genesis`, `gnw`, `handheld2p`, `hbmame`, `homelab`, `inputtest`, `intellivision`, `interact`, `jupiter`, `laser`, `laser310`, `lcd-general`, `lcd-integeronly`, `linux`, `lynx48`, `macplus`, `mame`, `mastersystem`, `megacd`, `megadrive`, `megaduck`, `memte`, `memtest`, `menu`, `mgl`, `minimig`, `misterfirmware`, `misterlaggy`, `mra`, `msx`, `msx1`, `multicomp`, `myvision`, `neogeo`, `nes`, `nintendo`, `odyssey2`, `old`, `ondra_spo186`, `orao`, `oric`, `other`, `other-cores`, `palettes`, `pc88`, `pc8801`, `pcengine`, `pcenginecd`, `pcxt`, `pdp1`, `pet2001`, `pmd85`, `pocketchallengev2`, `pokemonmini`, `poly_gamma`, `presets`, `psx`, `pure_gamma`, `ql`, `readme`, `rx78`, `s32x`, `samcoupe`, `saturn`, `scanlines-adaptive`, `scanlines-brighter`, `scanlines-standard`, `scripts`, `segacd`, `segamark3`, `service-cores`, `sgb`, `shadow_masks`, `sharpmz`, `simplemonochrome`, `slugcross`, `sms`, `snes`, `sordm5`, `specialist`, `spectrum`, `spmx`, `sufami`, `super_vision_8000`, `superfamicom`, `supergameboy`, `supernes`, `supernintendo`, `supervision`, `supervision8000`, `svi328`, `tatungeinstein`, `tgfx16`, `tgfx16-cd`, `tgfx16cd`, `ti-99_4a`, `ti994a`, `tomyscramble`, `tomytutor`, `trs-80`, `tsconf`, `turbografx`, `turbografx16`, `turbografx16cd`, `turbografxcd`, `uk101`, `upscaling-lanczosbicubicetc`, `upscaling-recommended`, `upscaling-sharpbilinear`, `utility`, `vc4000`, `vector-06c`, `vector06`, `vector06c`, `vectrex`, `vic20`, `wonderswan`, `wonderswancolor`, `x68000`, `yctxt`, `zx-spectrum`, `zx81`, `zxnext`, `zxspectrum`\n\n##### Some relevant tag descriptions:\n\n- `arcade-cores` / `arcade`: All arcade cores and MRA files.\n- `computer-cores` / `computer`: All computer cores and related folders.\n- `console-cores` / `console`: All console cores and related folders.\n- `other-cores` / `other`: All cores from the top folder Other with their related folders.\n- `service-cores` / `utility`: All utility cores and related folders.\n- `cores`: All cores (RBF files).\n- `mra`: All MRA files & folders.\n- `alternatives`: All MRA Alternatives\n- `hbmame`: All files & folders linked to the HBMame collection.\n- `handheld2p`: All 2 Player versions for Handheld cores.\n- `filters_video`: All video filters (`gamma` & `filters` & `shadow_masks`).\n- `all_filters`: All video & audio filters (`filters_video` & `filters_audio`).\n- `essential`: Menu core & MiSTer firmware.\n- `readme`: All README files.\n- `docs`: All documentation files & folders, including README files.\n- `extra-utilities`: All extra utilities that are installed in games folders of some computer cores.\n- `bios`: All bioses that are installed in the games folders for some computer & console cores.\n- `cheats`: All cheat files & folders.\n\n### Contributing\n\nYou are more than welcome to contribute to the [MiSTer-devel Organization](https://github.com/MiSTer-devel). But you can't do it by openening PRs to the main branch of this repository. This repository is only for file distribution. Whatever content shows up here depends on the other repositories of this organization, so you should target your PRs there.\n\nThere is a development branch in this repository for the content collection. Is fine to send PRs there but they should only modify the content collection scripts that are being used by the workflows.\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/Distribution_MiSTer",
@@ -19346,7 +19700,7 @@
     {
       "name": "PCXT_MiSTer",
       "description": "PCXT port for MiSTer by spark2k06.",
-      "readme": "# [IBM PC/XT](https://en.wikipedia.org/wiki/IBM_Personal_Computer_XT) for [MiSTer FPGA](https://mister-devel.github.io/MkDocs_MiSTer/)\n\nPCXT port for MiSTer by [@spark2k06](https://github.com/spark2k06/).\n\nDiscussion and evolution of the core in the following misterfpga forum section:\n\nhttps://misterfpga.org/viewforum.php?f=40\n\n## Description\n\nThe purpose of this core is to implement a PCXT as reliable as possible. For this purpose, the [MCL86 core](https://github.com/MicroCoreLabs/Projects/tree/master/MCL86) from [@MicroCoreLabs](https://github.com/MicroCoreLabs/) and [KFPC-XT](https://github.com/kitune-san/KFPC-XT) from [@kitune-san](https://github.com/kitune-san) are used.\n\nThe [Graphics Gremlin project](https://github.com/schlae/graphics-gremlin) from TubeTimeUS ([@schlae](https://github.com/schlae)) has also been integrated in this first stage.\n\n[JTOPL](https://github.com/jotego/jtopl) by Jose Tejada (@jotego) was integrated for AdLib sound.\n\n[JT89](https://github.com/jotego/jt89) by Jose Tejada (@jotego) was integrated for Tandy sound.\n\n## Key features\n\n* 8088 CPU with these speed settings: 4.77 MHz, 7.16 MHz, 9.54 MHz cycle accurate, and PC/AT 286 at 3.5MHz equivalent (max. speed)\n* BIOS selectable (Tandy 1000 / PCXT)\n* Support for IBM Tandy 1000\n* Support for IBM PCXT 5160 and clones (CGA graphics)\n* Main memory 640Kb + 384Kb UMB memory\n* Simulated Composite Video, F11 -> Swap Video Output with RGB for Tandy model \n* Simultaneous video Hercules Graphics Card, F11 -> Swap Video Output with CGA for PCXT model\n* Enable/Disable of CGA and Hercules I/O ports (Only with PCXT model)\n* 1st Graphics Card selection from System & BIOS (Only with PCXT model)\n* EMS memory up to 2Mb\n* XTIDE support\n* Tandy graphics with 128Kb of shared RAM + CGA graphics\n* Audio: Adlib, Tandy, speaker\n* Joystick support\n* Mouse support into COM1 serial port, this works like any Microsoft mouse... you just need a driver to configure it, like CTMOUSE 1.9 (available into hdd folder)\n* 2nd SD card support\n\n## Quick Start\n\n* Copy the contents of `games/PCXT` to your MiSTer SD Card and uncompress `hd_image.zip`. It contains a FreeDOS image ( http://www.freedos.org/ )\n* Select the core from Computers/PCXT.\n* Press WinKey + F12 on your keyboard.\n*  Model: IBM PCXT.\n*  CPU Speed: PC/AT 3.5MHz (Max speed)\n*  FDD & HDD -> HDD Image: FreeDOS_HD.img\n*  BIOS -> PCXT BIOS: pcxt_micro8088.rom\n* Choose Reset & apply model.\n\n## ROM Instructions\n\nROMs should be provided initially from the BIOS section of the OSD menu, then it is only necessary to indicate the computer model and reset, on subsequent boot of the core, it is no longer necessary to provide them, unless we want to use others. Original and copyrighted ROMs can be generated on the fly using the python scripts available in the SW folder of this repository:\n\n* `make_rom_with_ibm5160.py`: A valid ROM is created for the PCXT model (pcxt.rom) based on the original IBM 5160 ROM, requires the XTIDE BIOS at address EC00h to work with HD images.\n* `make_rom_with_jukost.py`: A valid ROM is created for the PCXT model (pcxt.rom) based on the original Juko ST ROM, and with the XTIDE BIOS embedded at address F000h.\n* `make_rom_with_tandy.py`: A valid ROM is created for the Tandy model (tandy.rom) based on the original Tandy 1000 ROM, requires the XTIDE BIOS at address EC00h to work with HD images.\n\nFrom the same BIOS section of the OSD it is possible to specify an XTIDE ROM of up to 16Kb to work at address EC00h. It is also provided in this repository.\n\nOther Open Source ROMs are available in the same folder:\n\n* `pcxt_pcxt31.rom`: This ROM already has the XTIDE BIOS embedded at address F000h. ([Source Code](https://github.com/virtualxt/pcxtbios))\n* `pcxt_micro8088.rom`: This ROM already has the XTIDE BIOS embedded at address F000h. ([Source Code](https://github.com/skiselev/8088_bios))\n* `ide_xtl.rom`: This ROM corresponds to the XTIDE BIOS, it must be maintained for some scripts to work, it can also be upgraded to a newer version. ([Source Code](https://www.xtideuniversalbios.org/))\n\nNote: Not all ROMs work with MDA video: (IBM5160, Yuko ST and pcxt31 works)\n\n## Other BIOSes\n\n* https://github.com/640-KB/GLaBIOS\n\n## Mounting the FDD image\n\nThe floppy disk image size must be compatible with the BIOS, for example:\n\n* On IBM 5160 or Tandy 1000 only 360Kb images work well.\n* On Micro8088 only 720Kb and 1.44Mb images work properly.\n* Other BIOS may not be compatible, such as OpenXT by Ja'akov Miles and Jon Petroski.\n\nIt is possible to use images smaller than the size supported by the BIOS, but only pre-formatted images, as it will not be possible to format them from MS-Dos.\n\n## Developers\n\nAny contribution and pull request, please carry it out on the prerelease branch. Periodically they will be reviewed, moved and merged into the main branch, together with the corresponding release.\n\nThank you!\n",
+      "readme": "# [IBM PC/XT](https://en.wikipedia.org/wiki/IBM_Personal_Computer_XT) for [MiSTer FPGA](https://mister-devel.github.io/MkDocs_MiSTer/)\n\nPCXT port for MiSTer by [@spark2k06](https://github.com/spark2k06/).\n\nDiscussion and evolution of the core in the following misterfpga forum section:\n\nhttps://misterfpga.org/viewforum.php?f=40\n\n## Description\n\nThe purpose of this core is to implement a PCXT as reliable as possible. For this purpose, the [MCL86 core](https://github.com/MicroCoreLabs/Projects/tree/master/MCL86) from [@MicroCoreLabs](https://github.com/MicroCoreLabs/) and [KFPC-XT](https://github.com/kitune-san/KFPC-XT) from [@kitune-san](https://github.com/kitune-san) are used.\n\nThe [Graphics Gremlin project](https://github.com/schlae/graphics-gremlin) from TubeTimeUS ([@schlae](https://github.com/schlae)) has also been integrated in this first stage.\n\n[JTOPL](https://github.com/jotego/jtopl) by Jose Tejada (@jotego) was integrated for AdLib sound.\n\n[JT89](https://github.com/jotego/jt89) by Jose Tejada (@jotego) was integrated for Tandy sound.\n\n## Key features\n\n* 8088 CPU with these speed settings: 4.77 MHz, 7.16 MHz, 9.54 MHz cycle accurate, and PC/AT 286 at 3.5MHz equivalent (max. speed)\n* BIOS selectable (Tandy 1000 / PCXT)\n* Support for IBM Tandy 1000\n* Support for IBM PCXT 5160 and clones (CGA graphics)\n* Main memory 640Kb + 384Kb UMB memory\n* Simulated Composite Video, F11 -> Swap Video Output with RGB for Tandy model \n* Simultaneous video Hercules Graphics Card, F11 -> Swap Video Output with CGA for PCXT model\n* Enable/Disable of CGA and Hercules I/O ports (Only with PCXT model)\n* 1st Graphics Card selection from System & BIOS (Only with PCXT model)\n* EMS memory up to 2Mb\n* XTIDE support\n* Tandy graphics with 128Kb of shared RAM + CGA graphics\n* Audio: Adlib, Tandy, speaker\n* Joystick support\n* Mouse support into COM1 serial port, this works like any Microsoft mouse... you just need a driver to configure it, like CTMOUSE 1.9 (available into hdd folder)\n* 2nd SD card support\n\n## Quick Start\n\n* Copy the contents of `games/PCXT` to your MiSTer SD Card and uncompress `hd_image.zip`. It contains a FreeDOS image ( http://www.freedos.org/ )\n* Select the core from Computers/PCXT.\n* Press WinKey + F12 on your keyboard.\n  * Model: IBM PCXT.\n  * CPU Speed: PC/AT 3.5MHz (Max speed)\n  * FDD & HDD -> HDD Image: FreeDOS_HD.img\n  * BIOS -> PCXT BIOS: pcxt_micro8088.rom\n* Choose Reset & apply model.\n\n## ROM Instructions\n\nROMs should be provided initially from the BIOS section of the OSD menu, then it is only necessary to indicate the computer model and reset, on subsequent boot of the core, it is no longer necessary to provide them, unless we want to use others. Original and copyrighted ROMs can be generated on the fly using the python scripts available in the SW folder of this repository:\n\n* `make_rom_with_ibm5160.py`: A valid ROM is created for the PCXT model (pcxt.rom) based on the original IBM 5160 ROM, requires the XTIDE BIOS at address EC00h to work with HD images.\n* `make_rom_with_jukost.py`: A valid ROM is created for the PCXT model (pcxt.rom) based on the original Juko ST ROM, and with the XTIDE BIOS embedded at address F000h.\n* `make_rom_with_tandy.py`: A valid ROM is created for the Tandy model (tandy.rom) based on the original Tandy 1000 ROM, requires the XTIDE BIOS at address EC00h to work with HD images.\n\nFrom the same BIOS section of the OSD it is possible to specify an XTIDE ROM of up to 16Kb to work at address EC00h. It is also provided in this repository.\n\nOther Open Source ROMs are available in the same folder:\n\n* `pcxt_pcxt31.rom`: This ROM already has the XTIDE BIOS embedded at address F000h. ([Source Code](https://github.com/virtualxt/pcxtbios))\n* `pcxt_micro8088.rom`: This ROM already has the XTIDE BIOS embedded at address F000h. ([Source Code](https://github.com/skiselev/8088_bios))\n* `ide_xtl.rom`: This ROM corresponds to the XTIDE BIOS, it must be maintained for some scripts to work, it can also be upgraded to a newer version. ([Source Code](https://www.xtideuniversalbios.org/))\n\nNote: Not all ROMs work with MDA video: (IBM5160, Yuko ST and pcxt31 works)\n\n## Other BIOSes\n\n* https://github.com/640-KB/GLaBIOS\n\n## Mounting the FDD image\n\nThe floppy disk image size must be compatible with the BIOS, for example:\n\n* On IBM 5160 or Tandy 1000 only 360Kb images work well.\n* On Micro8088 only 720Kb and 1.44Mb images work properly.\n* Other BIOS may not be compatible, such as OpenXT by Ja'akov Miles and Jon Petroski.\n\nIt is possible to use images smaller than the size supported by the BIOS, but only pre-formatted images, as it will not be possible to format them from MS-Dos.\n\n## Developers\n\nAny contribution and pull request, please carry it out on the prerelease branch. Periodically they will be reviewed, moved and merged into the main branch, together with the corresponding release.\n\nThank you!\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-devel/PCXT_MiSTer",
