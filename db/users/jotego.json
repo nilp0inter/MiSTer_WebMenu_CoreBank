@@ -856,7 +856,7 @@
         },
         {
           "name": "Bubble Bobble (Japan, Ver 0.1).mra",
-          "sha": "c4c574a5ab0060100bcf50926e098e5cd6216e9d",
+          "sha": "526f75731944bf5d28a905b60bde1c0fb4e00780",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/bubl/releases/Bubble%20Bobble%20(Japan%2C%20Ver%200.1).mra",
           "type": "MRA",
           "extra": {
@@ -868,27 +868,27 @@
           }
         },
         {
-          "name": "Tokio - Scramble Formation (bootleg).mra",
-          "sha": "1033c0f35f916eaae4eddf6cef8041aed91d9345",
-          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/bubl/releases/Tokio%20-%20Scramble%20Formation%20(bootleg).mra",
+          "name": "Tokio - Scramble Formation (newer).mra",
+          "sha": "82ee854b3a5f2a133350a23c1bfa0228d839b9ea",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/bubl/releases/Tokio%20-%20Scramble%20Formation%20(newer).mra",
           "type": "MRA",
           "extra": {
-            "name": "Tokio - Scramble Formation (bootleg)",
+            "name": "Tokio - Scramble Formation (newer)",
             "rbf": "jtbubl",
             "zips": [
-              "tokiob.zip|tokio.zip"
+              "tokio.zip"
             ]
           }
         },
         {
           "name": "jtbubl.rbf",
-          "sha": "5b28cd92161a8e76da7aaa12355dc44fc4138bdd",
+          "sha": "c9a0fa5dc4ba52ba53351bc566dfb8b591f93477",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/bubl/releases/jtbubl.rbf",
           "type": "RBF"
         },
         {
           "name": "version.log",
-          "sha": "3661b9a27b4da21e10fcd694ca631b42787dd4bb",
+          "sha": "a1eea250dd9f32cd504dfa63ba0227290a7d25a0",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/bubl/version.log",
           "type": "OTHER"
         },
@@ -2641,27 +2641,27 @@
           "type": "OTHER"
         },
         {
-          "name": "Renegade (US bootleg).mra",
-          "sha": "6d0847b3c270a26bbe1fcb6d6f6c44c2047877e4",
-          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kunio/releases/Renegade%20(US%20bootleg).mra",
+          "name": "Renegade (US).mra",
+          "sha": "8cf6a2af6362743bf807220d66d607f942cdc640",
+          "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kunio/releases/Renegade%20(US).mra",
           "type": "MRA",
           "extra": {
-            "name": "Renegade (US bootleg)",
+            "name": "Renegade (US)",
             "rbf": "jtkunio",
             "zips": [
-              "renegadeb.zip|renegade.zip"
+              "renegade.zip"
             ]
           }
         },
         {
           "name": "jtkunio.rbf",
-          "sha": "6b2ef062cf23ad56f9f10a03a27d1c49396cf409",
+          "sha": "3065f205b2e13e5f88ee5b618fc51929c30e3b84",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kunio/releases/jtkunio.rbf",
           "type": "RBF"
         },
         {
           "name": "version.log",
-          "sha": "57137a7a14e8dae9c0b5789034e5782d3faa4f98",
+          "sha": "fa13f7c3f90693c7fa1f4540f1c600d78613d603",
           "url": "https://raw.githubusercontent.com/jotego/jtbin/master/mister/kunio/version.log",
           "type": "OTHER"
         },
