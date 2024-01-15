@@ -14275,6 +14275,12 @@
           "type": "RBF"
         },
         {
+          "name": "C128_20240110.rbf",
+          "sha": "cfbec5bfe67c9f8854f3cb0d91c25458814a1fc3",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/C128_MiSTer/master/releases/C128_20240110.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "CP-ClockF83_1.3.D64",
           "sha": "b08a9e28c54da9a4b858a590f7f0ec76efc88be0",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/C128_MiSTer/master/releases/CP-ClockF83_1.3.D64",
@@ -14907,6 +14913,12 @@
           "type": "RBF"
         },
         {
+          "name": "C64_20240110.rbf",
+          "sha": "a8a7085e8c25bbcb47d8bd8374ec2d5f3b314391",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/C64_MiSTer/master/releases/C64_20240110.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "CP-ClockF83_1.3.D64",
           "sha": "b08a9e28c54da9a4b858a590f7f0ec76efc88be0",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/C64_MiSTer/master/releases/CP-ClockF83_1.3.D64",
@@ -15136,7 +15148,7 @@
     {
       "name": "CoCo3_MiSTer",
       "description": "CoCo3FPGA port to MiSTer",
-      "readme": "# CoCo3 Mister\n\n\n## CoCo3FPGA port to MiSTer\n\nThis is a port of Gary Becker's famous CoCo3 in an FPGA to the MiSTer platform by Stan Hodge, Gary Becker and Alan Steremberg.\n\n## Roms Needed\n\n* boot0.rom - 32K coco3 rom\n* boot1.rom - 8K Disk extended color basic rom\n\nNote: This core requires the external sdram memory module to function.\n\nRename your roms, and place them in the games/CoCo3/ directory\notherwise you will get a black screen\n\n\n\n",
+      "readme": "# CoCo3 Mister\n\n\n## CoCo3FPGA port to MiSTer\n\nThis is a port of Gary Becker's famous CoCo3 in an FPGA to the MiSTer platform by Stan Hodge, Gary Becker and Alan Steremberg.\n\n## Roms Needed\n\n* boot0.rom - 32K coco3 rom\n* boot1.rom - 8K Disk extended color basic rom\n\nNote: This core requires the external sdram memory module (128M) to function.\n\nRename your roms, and place them in the games/CoCo3/ directory\notherwise you will get a black screen\n\n\n\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/CoCo3_MiSTer",
@@ -17855,6 +17867,12 @@
           "name": "MiSTer_20231018",
           "sha": "80488b28c66b50685e41cfbf946b3788f36fc62c",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Main_MiSTer/master/releases/MiSTer_20231018",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20240110",
+          "sha": "0c807b4e041d8a962d9c4afeba93d1da5426b444",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Main_MiSTer/master/releases/MiSTer_20240110",
           "type": "OTHER"
         }
       ]
