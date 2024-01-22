@@ -491,6 +491,11 @@ url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SEGASYS1_MiSTer/mai
 output = "_Arcade/cores/SEGASYS1_20230315.rbf"
 
 
+# SegaVICZ80
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SegaVICZ80_MiSTer/main/releases/Arcade-SegaVICZ80_20240121.rbf"
+output = "_Arcade/cores/SegaVICZ80_20240121.rbf"
+
+
 # SilverLand
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SilverLand_MiSTer/master/releases/Arcade-SilverLand_20230226.rbf"
 output = "_Arcade/cores/SilverLand_20230226.rbf"
@@ -572,8 +577,8 @@ output = "_Arcade/cores/TraverseUSA_20230226.rbf"
 
 
 # TropicalAngel
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TropicalAngel_MiSTer/master/releases/Arcade-TropicalAngel_20230727.rbf"
-output = "_Arcade/cores/TropicalAngel_20230727.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TropicalAngel_MiSTer/master/releases/Arcade-TropicalAngel_20240115.rbf"
+output = "_Arcade/cores/TropicalAngel_20240115.rbf"
 
 
 # TurkeyShoot
@@ -3004,6 +3009,16 @@ output = "_Arcade/Water Match (315-5064).mra"
 # Wonder Boy (Set 1, 315-5177).mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SEGASYS1_MiSTer/main/releases/Wonder%20Boy%20(Set%201%2C%20315-5177).mra"
 output = "_Arcade/Wonder Boy (Set 1, 315-5177).mra"
+
+
+# Carnival.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SegaVICZ80_MiSTer/main/releases/Carnival.mra"
+output = "_Arcade/Carnival.mra"
+
+
+# Pulsar.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SegaVICZ80_MiSTer/main/releases/Pulsar.mra"
+output = "_Arcade/Pulsar.mra"
 
 
 # Silver Land.mra
