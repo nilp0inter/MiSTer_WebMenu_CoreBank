@@ -122,30 +122,12 @@
       ]
     },
     {
-      "name": "ArcadeROMsDB_MiSTer",
-      "description": null,
-      "readme": "# Arcade ROMs Database\n\n\nActivate it through [Update All](https://github.com/theypsilon/Update_All_MiSTer), or install it manually by adding the following lines to the `downloader.ini` file:\n\n```ini\n[arcade_roms_db]\ndb_url = https://raw.githubusercontent.com/theypsilon/ArcadeROMsDB_MiSTer/db/arcade_roms_db.json.zip\n```\n",
-      "archived": false,
-      "fork": false,
-      "url": "https://github.com/theypsilon/ArcadeROMsDB_MiSTer",
-      "releases": []
-    },
-    {
       "name": "BadAppleDB_MiSTer",
       "description": null,
       "readme": null,
       "archived": false,
       "fork": false,
       "url": "https://github.com/theypsilon/BadAppleDB_MiSTer",
-      "releases": []
-    },
-    {
-      "name": "BiosDB_MiSTer",
-      "description": "Bios DB for the MiSTer Downloader ",
-      "readme": "\n# Bios DB for MiSTer\n\nThis is a Database that will help you get a few console and computer BIOS that are compatible with MiSTer cores.\n\n### How to install\n\nIf you use [Update All](https://github.com/theypsilon/Update_All_MiSTer), you may simply activate it there in the Settings Screen.\n\nAlternatively, if you don't use it, you can add an entry to the `downloader.ini` file on the root of your SD (create it if it doesn't exist), to use it with the [MiSTer Downloader](https://github.com/MiSTer-devel/Downloader_MiSTer/) (which is what Update All calls under the hood). For that, please add the following entry there:\n\n```\n[bios_db]\ndb_url = https://raw.githubusercontent.com/theypsilon/BiosDB_MiSTer/db/bios_db.json\n```\n\nOnce you've done this, next time you run downloader, the BIOS will get installed too.\n",
-      "archived": false,
-      "fork": false,
-      "url": "https://github.com/theypsilon/BiosDB_MiSTer",
       "releases": []
     },
     {
@@ -156,6 +138,70 @@
       "fork": false,
       "url": "https://github.com/theypsilon/BiosDB_MiSTer_old",
       "releases": []
+    },
+    {
+      "name": "CoCo3_MiSTer",
+      "description": "CoCo3FPGA port to MiSTer",
+      "readme": "# CoCo3 Mister\n\n\n## CoCo3FPGA port to MiSTer\n\nThis is a port of Gary Becker's famous CoCo3 in an FPGA to the MiSTer platform by Stan Hodge, Gary Becker and Alan Steremberg.\n\n## Roms Needed\n\n* boot0.rom - 32K coco3 rom\n* boot1.rom - 8K Disk extended color basic rom\n\nNote: This core requires the external sdram memory module (128M) to function.\n\nRename your roms, and place them in the games/CoCo3/ directory\notherwise you will get a black screen\n\n\n\n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/theypsilon/CoCo3_MiSTer",
+      "releases": [
+        {
+          "name": "CoCo3_20211221.rbf",
+          "sha": "8d75afec72b2a47dcd4e51c32506527dbf0bb05f",
+          "url": "https://raw.githubusercontent.com/theypsilon/CoCo3_MiSTer/master/releases/CoCo3_20211221.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "CoCo3_20211229.rbf",
+          "sha": "2c6a834285ed4b13fc0cbab9f22eb42cb95b73bf",
+          "url": "https://raw.githubusercontent.com/theypsilon/CoCo3_MiSTer/master/releases/CoCo3_20211229.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "CoCo3_20220124.rbf",
+          "sha": "bab04343e6c88be80bf5dd3f041c277a2dd3b5c4",
+          "url": "https://raw.githubusercontent.com/theypsilon/CoCo3_MiSTer/master/releases/CoCo3_20220124.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "CoCo3_20220211.rbf",
+          "sha": "5c6cf6d3b6325e867e86bf5b82f49acc028ac584",
+          "url": "https://raw.githubusercontent.com/theypsilon/CoCo3_MiSTer/master/releases/CoCo3_20220211.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "CoCo3_20220219.rbf",
+          "sha": "d62bdaf6b21d7da95b2315b88cc18b3cdd0f99b8",
+          "url": "https://raw.githubusercontent.com/theypsilon/CoCo3_MiSTer/master/releases/CoCo3_20220219.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "CoCo3_20220226.rbf",
+          "sha": "7f863a7817de8bcd87d4455e906375eacbdaac86",
+          "url": "https://raw.githubusercontent.com/theypsilon/CoCo3_MiSTer/master/releases/CoCo3_20220226.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "CoCo3_20230224.rbf",
+          "sha": "b61c1a597a92ca9b86f853d5f53631e9aa4a3bfc",
+          "url": "https://raw.githubusercontent.com/theypsilon/CoCo3_MiSTer/master/releases/CoCo3_20230224.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "CoCo3_20231023.rbf",
+          "sha": "5d7f90ef4f3ae2c663e129f33d230c3c1ca0cb98",
+          "url": "https://raw.githubusercontent.com/theypsilon/CoCo3_MiSTer/master/releases/CoCo3_20231023.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Tandy CoCo3 Overview.pdf",
+          "sha": "88e2667005ae70e915c21f04ce86f8525854ebbd",
+          "url": "https://raw.githubusercontent.com/theypsilon/CoCo3_MiSTer/master/releases/Tandy%20CoCo3%20Overview.pdf",
+          "type": "OTHER"
+        }
+      ]
     },
     {
       "name": "DB-Template_MiSTer",
