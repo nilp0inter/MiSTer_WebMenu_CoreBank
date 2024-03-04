@@ -2792,7 +2792,7 @@
     {
       "name": "LLAPI_folder_MiSTer",
       "description": "Binary distribution of LLAPI cores",
-      "readme": "# LLAPI Folder\n\nThis repository contains all MiSTer-LLAPI cores under the _LLAPI folder.\n\n#### List of Tags that you may use with the Downloader and the 'Custom Download Filters' feature.\n\n`arcade`, `arcade-bankpanic`, `arcade-cores`, `arcade-donkeykong`, `arcade-iremm62`, `arcade-iremm72`, `arcade-joust2`, `arcade-mcr2`, `arcade-ninjakun`, `arcade-pacman`, `arcade-segasys1`, `arcade-tecmo`, `atari7800_llapi`, `atarilynx_llapi`, `cores`, `donkeykong_llapi`, `gameboy_llapi`, `gba2p_llapi`, `gba_llapi`, `genesis_llapi`, `hbmame`, `iremm62_llapi`, `iremm72_llapi`, `llapi`, `megacd_llapi`, `mra`, `neogeo_llapi`, `nes_llapi`, `ninjakun_llapi`, `pacman_llapi`, `s32x_llapi`, `segasys1_llapi`, `sgb_llapi`, `sms_llapi`, `snes_llapi`, `tecmo_llapi`, `turbografx16_llapi`",
+      "readme": "# LLAPI Folder\n\nThis repository contains all MiSTer-LLAPI cores under the _LLAPI folder.\n\n#### List of Tags that you may use with the Downloader and the 'Custom Download Filters' feature.\n\n`arcade`, `arcade-bankpanic`, `arcade-cores`, `arcade-donkeykong`, `arcade-iremm62`, `arcade-iremm72`, `arcade-joust2`, `arcade-mcr2`, `arcade-ninjakun`, `arcade-pacman`, `arcade-segasys1`, `arcade-tecmo`, `atari7800_llapi`, `atarilynx_llapi`, `cores`, `donkeykong_llapi`, `gameboy_llapi`, `gba2p_llapi`, `gba_llapi`, `genesis_llapi`, `hbmame`, `iremm62_llapi`, `iremm72_llapi`, `llapi`, `megacd_llapi`, `megadrive_llapi`, `mra`, `neogeo_llapi`, `nes_llapi`, `ninjakun_llapi`, `pacman_llapi`, `s32x_llapi`, `segasys1_llapi`, `sgb_llapi`, `sms_llapi`, `snes_llapi`, `tecmo_llapi`, `turbografx16_llapi`",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-LLAPI/LLAPI_folder_MiSTer",
@@ -3073,9 +3073,55 @@
       ]
     },
     {
+      "name": "MegaDrive_MiSTer",
+      "description": "Sega Megadrive for MiSTer",
+      "readme": "# Nuked-MD port for MiSTer\n\n![nukedmd_logo](rtl/nuked-md/nukedmd_logo.png)\n\n[Original Nuked-MD repository](https://github.com/nukeykt/Nuked-MD-FPGA)\n\n## Installing\ncopy rbf to root of SD card. Put some ROMs (.BIN/.GEN/.MD/.SMS) into MegaDrive folder\n\n\n## Hot Keys\n* F1 - reset to JP(NTSC) region\n* F2 - reset to US(NTSC) region\n* F3 - reset to EU(PAL)  region\n\n\n## Auto Region option (Megadrive/Genesis carts only)\nThere are 2 versions of region detection:\n\n1) File name extension:\n\n* BIN -> JP\n* GEN -> US\n* MD  -> EU\n\n2) Header. It may not always work as not all ROMs follow the rule, especially in European region.\nThe header may include several regions - the correct one will be selected depending on priority option.\n\n\n## Sega Master System\n\nCore supports SMS carts with the same compatibility level as original MegaDrive hardware. Not all SMS carts are compatible with MD hardware.\n\n\n## Additional features\n\n* Multitaps: 4-way, Team player, J-Cart\n* SVP chip (Virtua Racing)\n* Audio Filters for Model 1, Model 2, Minimal, No Filter.\n* Option to choose between YM2612 and YM3438 (changes Ladder Effect behavior).\n* FM chip for SMS carts.\n* Composite Blending, smooth dithering patterns in games.\n* Border/Borderless modes.\n* Support many popular mappers.\n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/MiSTer-LLAPI/MegaDrive_MiSTer",
+      "releases": [
+        {
+          "name": "MegaDrive_20230901.rbf",
+          "sha": "8f37e8086096e98c34cd9e463303c2a8571670a9",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/MegaDrive_MiSTer/main/releases/MegaDrive_20230901.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "MegaDrive_20230902.rbf",
+          "sha": "2f8f575fe8a2559ad615dbe4a1e9a8a826a6c156",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/MegaDrive_MiSTer/main/releases/MegaDrive_20230902.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "MegaDrive_20230915.rbf",
+          "sha": "37e601d855284737458fd6f8f2e2328115dc3c18",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/MegaDrive_MiSTer/main/releases/MegaDrive_20230915.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "MegaDrive_20231108.rbf",
+          "sha": "0f5cb0cbff5a2116cf19b99694fd9ea21f179fe0",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/MegaDrive_MiSTer/main/releases/MegaDrive_20231108.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "MegaDrive_20231204.rbf",
+          "sha": "2bf823c45eb3609daa2056b3244aba54e2d51f38",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/MegaDrive_MiSTer/main/releases/MegaDrive_20231204.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "MegaDrive_LLAPI_20240302.rbf",
+          "sha": "74b43d581df6f07b43847a79d6ee485cd4f63225",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/MegaDrive_MiSTer/main/releases/MegaDrive_LLAPI_20240302.rbf",
+          "type": "RBF"
+        }
+      ]
+    },
+    {
       "name": "NeoGeo_MiSTer",
       "description": "NeoGeo for MiSTer",
-      "readme": "\r\n# [SNK Neo Geo](https://en.wikipedia.org/wiki/Neo_Geo_(system)) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki) \r\n\r\nThis is an FPGA implementation of the NEO GEO/MVS system by [Furrtek](https://www.patreon.com/furrtek/posts)\r\n\r\n## Features\r\n* Supports memory card saving\r\n* MVS and AES system support\r\n* Compatible with Darksoft ROM sets using provided XML\r\n* Compatible with decrypted MAME ROM sets using your own XML\r\n* Compatible with decrypted .neo ROM sets\r\n* Compatible with gog.com ROMs using provided XML\r\n* Support for Universe BIOS\r\n\r\nNote: Core doesn't support encrypted ROMs. Make sure the ROM has no encrypted parts before use. MAME ROM pack includes many encrypted ROMs so it's not recommended for inexperienced users. Using the .neo conversion tool with a MAME ROM set will result in some ROMs still being encrypted. There is an alternate .neo conversion tool for the Darksoft ROM set that will give you a fully decrypted set.\r\n\r\n[MAME to .neo conversion tool](https://github.com/city41/neosdconv)\r\n\r\n[Darksoft to .neo conversion tool](https://gitlab.com/loic.petit/darksoft-to-neosd/)\r\n\r\n## Installation\r\nCopy the NeoGeo_\\*.rbf file to the 'Console' or 'Arcade' folder (your choice) on the SD card. ROMS should go in the 'games\\NeoGeo' folder. For ease of use, it is strongly suggested that people use the Darksoft ROM pack. These can be either zipped or unzipped with minimal loading speed difference. Several things must be observed:\r\n* When using an unzipped Darksoft ROM set, each game's ROM files must be in their own folder and the folders containing the ROM sets must be named to match the XML (MAME standard names)\r\n* ROMs can be placed inside sub-folders for organization\r\n* Zipped ROMs must **not** contain folders.\r\n\r\nIn addition, several bios files must be placed in the 'games\\NeoGeo' folder for the core to function properly:\r\n* 000-lo.lo\r\n* sfix.sfix\r\n* sp-s2.sp1 (MVS)\r\n* neo-epo.sp1 (AES)\r\n* uni-bios.rom\r\n\r\nSometimes these files may be named slightly different depending on where they are obtained, but they must be renamed to match the filenames above to work with MiSTer. You may choose between using original system BIOS (sp-s2.sp1/neo-epo.sp1) and uni-bios.rom. Using uni-bios is recommended, and can be obtained [here](http://unibios.free.fr/).\r\n\r\nLastly, **romsets.xml** from the release folder must also be placed in the directory. The provided XML is for Darksoft ROMs only, you must make your own for MAME ROMs. This file describes to the core where the ROM sets are located and how to load them. **gog-romsets.xml** can be used (renamed to **romsets.xml**) for games purchased from gog.com (which also include all the needed bios files), see comments in gog-romsets.xml .\r\n\r\n## Saving and Loading\r\nIn AES mode, all saves are to the memory card only. In MVS mode, some games and uni-bios save their settings to a special area of battery backed ram built into the system, while game data can be still be saved to a memory card. To simplify things, it is suggested to stick to one system type on the OSD and use uni-bios to change the system type, so that game information is saved consistently.\r\n\r\n## RAM and Game Sizes\r\nNeo Geo uses very large ROMs. About 84% of the library will fit onto a 32 megabyte SDRAM module. Another 12% will fit onto a 64 megabyte SDRAM module. The remaining 8 games require a 128 megabyte module. For more information about which games can be loaded with which sized RAM, open romsets.xml in your favorite text editor or github. The games are organized by size.\r\n",
+      "readme": "\r\n# [SNK Neo Geo](https://en.wikipedia.org/wiki/Neo_Geo_(system)) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki) \r\n\r\nThis is an FPGA implementation of the NEO GEO/MVS system by [Furrtek](https://www.patreon.com/furrtek/posts)\r\n\r\n## Features\r\n* Supports memory card saving\r\n* MVS, AES, and CD system support\r\n* Compatible with Darksoft ROM sets using provided XML\r\n* Compatible with decrypted MAME ROM sets using your own XML\r\n* Compatible with decrypted .neo ROM sets\r\n* Compatible with gog.com ROMs using provided XML\r\n* Support for Universe BIOS\r\n\r\nNote: This core does not support encrypted ROMs. Make sure the ROM has no encrypted parts before using. MAME ROM pack includes many encrypted ROMs so it's not recommended for inexperienced users. Using the .neo conversion tool with a MAME ROM set will result in some ROMs still being encrypted. There is an alternate .neo conversion tool for the Darksoft ROM set that will give you a fully decrypted set.\r\n\r\n[MAME to .neo conversion tool](https://github.com/city41/neosdconv)\r\n\r\n[Darksoft to .neo conversion tool](https://gitlab.com/loic.petit/darksoft-to-neosd/)\r\n\r\n## Installation\r\nCopy the NeoGeo_\\*.rbf file to the 'Console' or 'Arcade' folder (your choice) on the SD card. ROMs should go in the 'games\\NeoGeo' folder. For ease of use, it is strongly suggested that people use the Darksoft ROM pack. These can be either zipped or unzipped with minimal loading speed difference. Several things must be observed:\r\n* When using an unzipped Darksoft ROM set, each game's ROM files must be in their own folder and the folders containing the ROM sets must be named to match the XML (MAME standard names)\r\n* ROMs can be placed inside sub-folders for organization\r\n* Zipped ROMs must **not** contain folders.\r\n\r\nIn addition, several bios files must be placed in the 'games\\NeoGeo' folder for the core to function properly:\r\n* 000-lo.lo\r\n* sfix.sfix\r\n* sp-s2.sp1 (MVS)\r\n* neo-epo.sp1 (AES)\r\n* uni-bios.rom\r\n\r\nThese bios files must be placed in the 'games\\NeoGeo-CD' folder:\r\n*\ttop-sp1.bin (CD)\r\n*\tneocd.bin (CDZ)\r\n*\tuni-bioscd.rom (CD and CDZ)\r\n\r\nSometimes these files may be named slightly different depending on where they are obtained, but they must be renamed to match the filenames above to work with MiSTer. You may choose between using the original system BIOS (sp-s2.sp1/neo-epo.sp1) or UniBios (uni-bios.rom). Using UniBios is recommended, and can be obtained [here](http://unibios.free.fr/).\r\n\r\nLastly, **romsets.xml** from the release folder must also be placed in the directory. The provided XML is for Darksoft ROMs only, you must make your own for MAME ROMs. This file describes to the core where the ROM sets are located and how to load them. **gog-romsets.xml** can be used (renamed to **romsets.xml**) for games purchased from gog.com (which also include all the needed bios files), see comments in gog-romsets.xml .\r\n\r\n## Saving and Loading\r\nIn AES mode, all saves are to the memory card only. In MVS mode, some games and UniBios save their settings to a special area of battery backed ram built into the system, while game data can still be saved to a memory card.\r\n\r\n## RAM and Game Sizes\r\nNeo Geo uses very large ROMs. About 84% of the library will fit onto a 32 megabyte SDRAM module. Another 12% will fit onto a 64 megabyte SDRAM module. The remaining 8 games require a 128 megabyte module. For more information about which games can be loaded with which sized RAM, open romsets.xml in your favorite text editor or github. The games are organized by size.\r\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-LLAPI/NeoGeo_MiSTer",
@@ -3198,6 +3244,54 @@
           "name": "NeoGeo_20220326.rbf",
           "sha": "99bf16e05ff91238701247f3877efac44728d4c7",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/NeoGeo_MiSTer/master/releases/NeoGeo_20220326.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NeoGeo_20220403.rbf",
+          "sha": "0924f60cf471621b8fa3e8f1e9196edb72b1552f",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/NeoGeo_MiSTer/master/releases/NeoGeo_20220403.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NeoGeo_20221109.rbf",
+          "sha": "e81626cfffa5395fe6177a7d6d13f0a5ce5aea21",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/NeoGeo_MiSTer/master/releases/NeoGeo_20221109.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NeoGeo_20221224.rbf",
+          "sha": "f03a3c838c349cdaba6dcca2b8abfb5bd39f17af",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/NeoGeo_MiSTer/master/releases/NeoGeo_20221224.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NeoGeo_20230122.rbf",
+          "sha": "5c91b02815a4980635bad7133f8495e6754bc001",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/NeoGeo_MiSTer/master/releases/NeoGeo_20230122.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NeoGeo_20230223.rbf",
+          "sha": "f1bddcffef102bb4ec58ff0561a638fc818a8c0d",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/NeoGeo_MiSTer/master/releases/NeoGeo_20230223.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NeoGeo_20230703.rbf",
+          "sha": "3ea1134e17ce2293bf54ca8740bd07d3e8cede48",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/NeoGeo_MiSTer/master/releases/NeoGeo_20230703.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NeoGeo_20230803.rbf",
+          "sha": "e8eb625cf0097b26f8f051c5b45715e27bd96ee0",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/NeoGeo_MiSTer/master/releases/NeoGeo_20230803.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NeoGeo_20231204.rbf",
+          "sha": "e9383743fc73ab2e3fafd07828b34ef5f17c3e50",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/NeoGeo_MiSTer/master/releases/NeoGeo_20231204.rbf",
           "type": "RBF"
         },
         {
@@ -3339,6 +3433,12 @@
           "type": "RBF"
         },
         {
+          "name": "NeoGeo_LLAPI_20240301.rbf",
+          "sha": "ea6c13462c40987e5b035daa2d9ef685e63fb161",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/NeoGeo_MiSTer/master/releases/NeoGeo_LLAPI_20240301.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "README.md",
           "sha": "91abd5fd1fe831e59d750a409d3f9b19393d5849",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/NeoGeo_MiSTer/master/releases/README.md",
@@ -3358,7 +3458,7 @@
         },
         {
           "name": "romsets.xml",
-          "sha": "1f43df1830d6ded29cf64b920217a2c2a9953d7f",
+          "sha": "a36f19507285462f8ce084cbea5ed50b885dcf57",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/NeoGeo_MiSTer/master/releases/romsets.xml",
           "type": "OTHER"
         }
@@ -3775,6 +3875,12 @@
           "sha": "9b40ce1fdeebb74a931775f5e2813acc1f39e580",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/S32X_MiSTer/main/releases/S32X_LLAPI_20230423.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "S32X_LLAPI_20240226.rbf",
+          "sha": "4079db6393ccd06a39b5cdacc2cf62fa06c0d33e",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/S32X_MiSTer/main/releases/S32X_LLAPI_20240226.rbf",
+          "type": "RBF"
         }
       ]
     },
@@ -4076,6 +4182,12 @@
           "type": "RBF"
         },
         {
+          "name": "SMS_LLAPI_20240226.rbf",
+          "sha": "4e9ef704cc6cf618274f1d44c3592d7226823b9b",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SMS_MiSTer/master/releases/SMS_LLAPI_20240226.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Slap Shooter.mra",
           "sha": "13b2ff4ac0ccfad8a6257af16734f09cda62fb83",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SMS_MiSTer/master/releases/Slap%20Shooter.mra",
@@ -4305,6 +4417,36 @@
           "type": "RBF"
         },
         {
+          "name": "SNES_20220712.rbf",
+          "sha": "261329af2c928d0f4494d2d6ff087b0961bda828",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SNES_MiSTer/master/releases/SNES_20220712.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_20220909.rbf",
+          "sha": "c9e2cceae6e64b7f4364d2bdc45589cfd9c8d32c",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SNES_MiSTer/master/releases/SNES_20220909.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_20230223.rbf",
+          "sha": "9bc5022d0b401f219256da3a6faf9995a6dd4433",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SNES_MiSTer/master/releases/SNES_20230223.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_20230803.rbf",
+          "sha": "e7e01b52793f023c45a4d490b702da74684ea9bb",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SNES_MiSTer/master/releases/SNES_20230803.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_20231204.rbf",
+          "sha": "a0c60f6cd43c5784f9858f2e7baaf18fac9120c5",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SNES_MiSTer/master/releases/SNES_20231204.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "SNES_LLAPI_20191019.rbf",
           "sha": "7c3759eb5d11edabbc51473d02a5952f77d54807",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SNES_MiSTer/master/releases/SNES_LLAPI_20191019.rbf",
@@ -4482,6 +4624,12 @@
           "name": "SNES_LLAPI_20240221.rbf",
           "sha": "ffb21c3d5f9e5ee6dbf00eec7c5e6e64a6723ee6",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SNES_MiSTer/master/releases/SNES_LLAPI_20240221.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_LLAPI_20240303.rbf",
+          "sha": "884a44dba555cca197df7d4e8de7b9328a1ad53d",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SNES_MiSTer/master/releases/SNES_LLAPI_20240303.rbf",
           "type": "RBF"
         }
       ]
