@@ -1960,9 +1960,21 @@
           "type": "RBF"
         },
         {
+          "name": "AtariLynx_20230303.rbf",
+          "sha": "70ab57ec0e713dad6cf66548c1cae84d25ce7c5d",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/AtariLynx_MiSTer/main/releases/AtariLynx_20230303.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "AtariLynx_LLAPI_20221127.rbf",
           "sha": "a7885ac384211ed9b8a57b2d314bdb8527312e36",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/AtariLynx_MiSTer/main/releases/AtariLynx_LLAPI_20221127.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "AtariLynx_LLAPI_20240312.rbf",
+          "sha": "98ec6cc5e69f555955cbd3b16e5038098107dc75",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/AtariLynx_MiSTer/main/releases/AtariLynx_LLAPI_20240312.rbf",
           "type": "RBF"
         }
       ]
@@ -1970,7 +1982,7 @@
     {
       "name": "Gameboy_MiSTer",
       "description": "Gameboy for MiSTer",
-      "readme": "# [Gameboy](https://en.wikipedia.org/wiki/Game_Boy)  / [Gameboy Color](https://en.wikipedia.org/wiki/Game_Boy_Color) port to [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\r\n\r\nThis is port of [Gameboy for MiST](https://github.com/mist-devel/gameboy)\r\n\r\n* Place RBF file into root of SD card.\r\n* Place *.gb|*.gbc files into Gameboy folder.\r\n\r\n## Features\r\n* Original Gameboy & Gameboy Color Support\r\n* Super Gameboy Support - Borders, Palettes and Multiplayer\r\n* MegaDuck Support\r\n* Custom Borders\r\n* SaveStates\r\n* Fastforward \r\n* Rewind - Allows you to rewind up to 40 seconds of gameplay\r\n* Frameblending - Prevents flicker in some games (e.g. \"Chikyuu Kaihou Gun Zas\") \r\n* Custom Palette Loading\r\n* Real-Time Clock Support\r\n* Gameboy Link Port Support - Requires USERIO adapter\r\n* Cheats\r\n\r\n## Open Source Bootstrap roms\r\nThis now includes the open source boot ROMs from [https://github.com/LIJI32/SameBoy/](https://github.com/LIJI32/SameBoy/). For maximum compatibility/authenticity you can still place the Gameboy bios/bootroms into the Gameboy folder and load them in the menu with Misc->Load GBC/DMG/SGB boot.\r\n\r\n## Palettes\r\nThis core supports custom palettes (*.gbp) which should be placed into the Gameboy folder. Some examples are available in the palettes folder.\r\n\r\n## Custom Borders\r\nThis core supports custom borders (*.sgb) which should be placed into the Gameboy folder. Some examples are available in the borders folder.\r\n\r\n## Autoload\r\nTo autoload your favorite game at startup rename it to `boot2.rom`.\r\n\r\n## Video output\r\nThe Gameboy can disable video output at any time which causes problems with vsync_adjust=2 or analog video during screen transitions. Enabling the Stabilize video option may fix this at the cost of some increased latency.\r\n\r\n# Savestates\r\nThis core provides 4 slots to save and restore the memory state which means you can save at any point in the game. These can be saved to your SDCard or they can reside only in memory for temporary use (OSD Option). Save states can be performed with the Keyboard, a mapped button to a gamepad, or through the OSD.\r\n\r\nKeyboard Hotkeys for save states:\r\n- Alt+F1 thru Alt+F4 - save state\r\n- F1 thru F4 - restore state\r\n\r\nGamepad:\r\n- Savestatebutton+Left or Right switches the savestate slot\r\n- Savestatebutton+Start+Down saves to the selected slot\r\n- Savestatebutton+Start+Up loads from the selected slot\r\n",
+      "readme": "# [Gameboy](https://en.wikipedia.org/wiki/Game_Boy)  / [Gameboy Color](https://en.wikipedia.org/wiki/Game_Boy_Color) port to [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\r\n\r\nThis is port of [Gameboy for MiST](https://github.com/mist-devel/gameboy)\r\n\r\n* Place RBF file into root of SD card.\r\n* Place *.gb|*.gbc files into Gameboy folder.\r\n\r\n## Features\r\n* Original Gameboy & Gameboy Color Support\r\n* Super Gameboy Support - Borders, Palettes and Multiplayer\r\n* MegaDuck Support\r\n* Custom Borders\r\n* SaveStates\r\n* Fastforward \r\n* Rewind - Allows you to rewind up to 40 seconds of gameplay\r\n* Frameblending - Prevents flicker in some games (e.g. \"Chikyuu Kaihou Gun Zas\") \r\n* Custom Palette Loading\r\n* Real-Time Clock Support\r\n* Gameboy Link Port Support - Requires USERIO adapter\r\n* Cheats\r\n* Fast boot\r\n* GBA mode for GBC games\r\n\r\n## Open Source Bootstrap roms\r\nOpen source roms are included in the core, adapted from the SameBoy project [https://github.com/LIJI32/SameBoy/](https://github.com/LIJI32/SameBoy/). These roms have MiSTer-specific enhancements, allowing fast booting and GBA mode to be controlled by the on-screen display.\r\n\r\n For maximum compatibility/authenticity you can still place the Gameboy bios/bootroms into the Gameboy folder and load them in the menu with `Bootroms->Load GBC/DMG/SGB boot`. \r\n\r\nFor more information see the [BootROM README](./BootROMs/README.md)  \r\n\r\n## Palettes\r\nThis core supports custom palettes (*.gbp) which should be placed into the Gameboy folder. Some examples are available in the palettes folder.\r\n\r\n## Custom Borders\r\nThis core supports custom borders (*.sgb) which should be placed into the Gameboy folder. Some examples are available in the borders folder.\r\n\r\n## Autoload\r\nTo autoload your favorite game at startup rename it to `boot2.rom`.\r\n\r\n## Video output\r\nThe Gameboy can disable video output at any time which causes problems with vsync_adjust=2 or analog video during screen transitions. Enabling the Stabilize video option may fix this at the cost of some increased latency.\r\n\r\n# Savestates\r\nThis core provides 4 slots to save and restore the memory state which means you can save at any point in the game. These can be saved to your SDCard or they can reside only in memory for temporary use (OSD Option). Save states can be performed with the Keyboard, a mapped button to a gamepad, or through the OSD.\r\n\r\nKeyboard Hotkeys for save states:\r\n- Alt+F1 thru Alt+F4 - save state\r\n- F1 thru F4 - restore state\r\n\r\nGamepad:\r\n- Savestatebutton+Left or Right switches the savestate slot\r\n- Savestatebutton+Start+Down saves to the selected slot\r\n- Savestatebutton+Start+Up loads from the selected slot\r\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-LLAPI/Gameboy_MiSTer",
@@ -1979,6 +1991,12 @@
           "name": "Game Boy Color.mgl",
           "sha": "b26986ad03808e4b3a48ebf36e0a6d0376281e21",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Gameboy_MiSTer/master/releases/Game%20Boy%20Color.mgl",
+          "type": "OTHER"
+        },
+        {
+          "name": "GameboyColor.mgl",
+          "sha": "97e4308978ec4c8f4cd260d87ed073ff4e0dd5f3",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Gameboy_MiSTer/master/releases/GameboyColor.mgl",
           "type": "OTHER"
         },
         {
@@ -2108,6 +2126,42 @@
           "type": "RBF"
         },
         {
+          "name": "Gameboy_20220429.rbf",
+          "sha": "40eebbbd4a153f47522d480989e97ad64632cc6c",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Gameboy_MiSTer/master/releases/Gameboy_20220429.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20220806.rbf",
+          "sha": "0cd5559cdc396983ed0777e03165cedf9c0a7605",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Gameboy_MiSTer/master/releases/Gameboy_20220806.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20230102.rbf",
+          "sha": "6301a0f388b532c4b88e4cde1a712bc269bf7595",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Gameboy_MiSTer/master/releases/Gameboy_20230102.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20230225.rbf",
+          "sha": "a58281fa3bd3003f7199feb8337d1cfdf5ac581a",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Gameboy_MiSTer/master/releases/Gameboy_20230225.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20230501.rbf",
+          "sha": "e12f4211309a06dc49f931809ed5f49317189151",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Gameboy_MiSTer/master/releases/Gameboy_20230501.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20231211.rbf",
+          "sha": "3db7e2451036636b66dc292a06106456643ac9e3",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Gameboy_MiSTer/master/releases/Gameboy_20231211.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Gameboy_LLAPI_20190927.rbf",
           "sha": "d5ba7ee489ea767d7fd4a0672b758afca3a35d92",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Gameboy_MiSTer/master/releases/Gameboy_LLAPI_20190927.rbf",
@@ -2228,6 +2282,12 @@
           "type": "RBF"
         },
         {
+          "name": "Gameboy_LLAPI_20240312.rbf",
+          "sha": "1aeb3a8b35e04e51af9117e197e8c9f72426351f",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Gameboy_MiSTer/master/releases/Gameboy_LLAPI_20240312.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Mega Duck.mgl",
           "sha": "46182bf8d3cb712157b1b1dcc9235fe7f9c4daed",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Gameboy_MiSTer/master/releases/Mega%20Duck.mgl",
@@ -2238,7 +2298,7 @@
     {
       "name": "GBA_MiSTer",
       "description": "GBA for MiSTer",
-      "readme": "# [Gameboy Advance](https://en.wikipedia.org/wiki/Game_Boy_Advance) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\n\n# HW Requirements/Features\nThe games can run from a naked DE10-Nano with the build-in DDR-RAM.\nHowever, using SDRAM is highly recommended, as some games may slowdown or loose sync when using DDR-RAM.\n\nWhen using SDRAM, it requires 32MB SDRAM for games less than 32MB. 32MB games require either 64MB or 128MB module.\nSDRAM will be automatically used when available and size is sufficient.\n\n# Bios\nOpensource Bios from Normmatt is included, however it has issues with some games.\nOriginal GBA BIOS can be placed to GBA folder with name boot.rom\n\nPLEASE do not report errors without testing with the original BIOS\n\nHomebrew games are sometimes not supported by the official BIOS, \nbecause the BIOS checks for Nintendo Logo included in the ROM, which is protected by copyright.\nTo use these ROMs without renaming or removing the the boot.rom, \nyou can activate the \"Homebrew BIOS\" settings in OSD.\nAs the BIOS is already replaced at boot time, you must save this settings and hard reset/reload the GBA core.\n\n# Status\n~1600 games tested until ingame.\nThere is no known official game that doesn't work.\nExceptions are games that require rare extra hardware (mostly japanese).\nSome small video glitches remain, see issue list.\n\n# Features\n- saving as in GBA\n- Savestates\n- FastForward - speed up game by factor 2-4\n- CPU Turbomode - give games additional CPU power\n- Flickerblend - set to blend or 30Hz mode for games like F-Zero, Mario Kart or NES Classics to prevent flickering effects\n- Spritelimit - turn on to prevent wrong sprites for games that rely on the limit (opt-in)\n- Cheats\n- Color optimizations: shader colors and desaturate\n- Rewind: go back up to 60 seconds in time\n- Tilt: use analog stick (map stick in Mister Main before)\n- Solar Sensor: Set brightness in OSD\n- Gyro: use analog stick (map stick in Mister Main before)\n- RTC: automatically used, works with RTC board or internet connection\n- Rumble: for Drill Dozer, Wario Ware Twisted and some romhacks\n- 2x Resolution: game is rendered at 480x320 instead of 240x160 pixels\n\n# Savestates\nCore provides 4 slots to save and restore the state. \nThose can be saved to SDCard or reside only in memory for temporary use(OSD Option). \nUsage with either Keyboard, Gamepad mappable button or OSD.\n\nKeyboard Hotkeys for save states:\n- Alt-F1..F4 - save the state\n- F1...F4 - restore\n\nGamepad:\n- Savestatebutton+Left or Right switches the savestate slot\n- Savestatebutton+Start+Down saves to the selected slot\n- Savestatebutton+Start+Up loads from the selected slot\n\n# Rewind\nTo use rewind, turn on the OSD Option \"Rewind Capture\" and map the rewind button.\nYou may have to restart the game for the function to work properly.\nAttention: Rewind capture will slow down your game by about 0.5% and may lead to light audio stutter.\nRewind capture is not compatible to \"Pause when OSD is open\", so pause is disabled when Rewind capture is on.\n\n# Spritelimit\nThere are only very few games known that produce glitches without sprite pixel limit.\nThose games use the sprite pixel limit automatically.\nYou can optionally also turn this on if you notice problems.\n\n# 2x Resolution\nOnly works over HDMI, Analog output is not changed in 2x Resolution mode. \n\nImproved rendering resolution for:\n- Affine background: \"Mode7\" games, typically racing games like Mario Kart\n- Affine sprites: games that scale or rotate sprites\n\nThis rendering is experimental and can cause glitches, as not all game behavior can be supported.\nThose glitches can not be fixed without gamespecific hacks and therefore will not be fixed. \nPlease don't add bugs in such cases.\n\n# Cartridge Hardware supported games\n- RTC: Pokemon Sapphire+Ruby+Emerald, Boktai 1+2+3, Sennen Kazoku, Rockman EXE 4.5\n- Solar Sensor: Boktai 1+2+3\n- Gyro: Wario Ware Twisted\n- Tilt: Yoshi Topsy Turvy/Universal Gravitation, Koro Koro Puzzle - Happy Panechu!\n- Rumble: Wario Ware Twisted, Drill Dozer\n\nIf there is a game you want to play that also uses one of these features, but is not listed, please open a bug request.\n\nFor romhacks you can activate the option \"GPIO HACK(RTC+Rumble)\". Make sure to deactivate it for other games, otherwise you will experience crashes.\n\n# Not included\n- Multiplayer features like serial communication\n- E-Reader support\n- Gameboy Player features\n\n# Information for developers\n\nHow to simulate:\nhttps://github.com/MiSTer-devel/GBA_MiSTer/tree/master/sim\n\nHow to implement a GPIO module:\nhttps://github.com/MiSTer-devel/GBA_MiSTer/blob/master/gpio_readme.md\n",
+      "readme": "# [Gameboy Advance](https://en.wikipedia.org/wiki/Game_Boy_Advance) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\n\n# HW Requirements/Features\nThe games can run from a naked DE10-Nano with the build-in DDR-RAM.\nHowever, using SDRAM is highly recommended, as some games may slowdown or loose sync when using DDR-RAM.\n\nWhen using SDRAM, it requires 32MB SDRAM for games less than 32MB. 32MB games require either 64MB or 128MB module.\nSDRAM will be automatically used when available and size is sufficient.\n\n# Bios\nOpensource Bios from Normmatt is included, however it has issues with some games.\nOriginal GBA BIOS can be placed to GBA folder with name boot.rom\n\nPLEASE do not report errors without testing with the original BIOS\n\nHomebrew games are sometimes not supported by the official BIOS, \nbecause the BIOS checks for Nintendo Logo included in the ROM, which is protected by copyright.\nTo use these ROMs without renaming or removing the the boot.rom, \nyou can activate the \"Homebrew BIOS\" settings in OSD.\nAs the BIOS is already replaced at boot time, you must save this settings and hard reset/reload the GBA core.\n\n# Status\n~1600 games tested until ingame.\nThere is no known official game that doesn't work.\nExceptions are games that require rare extra hardware (mostly japanese).\nSome small video glitches remain, see issue list.\n\n# Features\n- saving as in GBA\n- Savestates\n- FastForward - speed up game by factor 2-4\n- CPU Turbomode - give games additional CPU power\n- Flickerblend - set to blend or 30Hz mode for games like F-Zero, Mario Kart or NES Classics to prevent flickering effects\n- Spritelimit - turn on to prevent wrong sprites for games that rely on the limit (opt-in)\n- Cheats\n- Color optimizations: shader colors and desaturate\n- Rewind: go back up to 60 seconds in time\n- Tilt: use analog stick (map stick in Mister Main before)\n- Solar Sensor: Set brightness in OSD\n- Gyro: use analog stick (map stick in Mister Main before)\n- RTC: automatically used, works with RTC board or internet connection\n- Rumble: for Drill Dozer, Wario Ware Twisted and some romhacks\n- 2x Resolution: game is rendered at 480x320 instead of 240x160 pixels\n\n# Savestates\nCore provides 4 slots to save and restore the state. \nThose can be saved to SDCard or reside only in memory for temporary use(OSD Option). \nUsage with either Keyboard, Gamepad mappable button or OSD.\n\nKeyboard Hotkeys for save states:\n- Alt-F1..F4 - save the state\n- F1...F4 - restore\n\nGamepad:\n- Savestatebutton+Left or Right switches the savestate slot\n- Savestatebutton+Down saves to the selected slot\n- Savestatebutton+Up loads from the selected slot\n\n# Rewind\nTo use rewind, turn on the OSD Option \"Rewind Capture\" and map the rewind button.\nYou may have to restart the game for the function to work properly.\nAttention: Rewind capture will slow down your game by about 0.5% and may lead to light audio stutter.\nRewind capture is not compatible to \"Pause when OSD is open\", so pause is disabled when Rewind capture is on.\n\n# Spritelimit\nThere are only very few games known that produce glitches without sprite pixel limit.\nThose games use the sprite pixel limit automatically.\nYou can optionally also turn this on if you notice problems.\n\n# 2x Resolution\nOnly works over HDMI, Analog output is not changed in 2x Resolution mode. \n\nImproved rendering resolution for:\n- Affine background: \"Mode7\" games, typically racing games like Mario Kart\n- Affine sprites: games that scale or rotate sprites\n\nThis rendering is experimental and can cause glitches, as not all game behavior can be supported.\nThose glitches can not be fixed without gamespecific hacks and therefore will not be fixed. \nPlease don't add bugs in such cases.\n\n# Cartridge Hardware supported games\n- RTC: Pokemon Sapphire+Ruby+Emerald, Boktai 1+2+3, Sennen Kazoku, Rockman EXE 4.5\n- Solar Sensor: Boktai 1+2+3\n- Gyro: Wario Ware Twisted\n- Tilt: Yoshi Topsy Turvy/Universal Gravitation, Koro Koro Puzzle - Happy Panechu!\n- Rumble: Wario Ware Twisted, Drill Dozer\n\nIf there is a game you want to play that also uses one of these features, but is not listed, please open a bug request.\n\nFor romhacks you can activate the option \"GPIO HACK(RTC+Rumble)\". Make sure to deactivate it for other games, otherwise you will experience crashes.\n\n# Not included\n- Multiplayer features like serial communication\n- E-Reader support\n- Gameboy Player features\n\n# Information for developers\n\nHow to simulate:\nhttps://github.com/MiSTer-devel/GBA_MiSTer/tree/master/sim\n\nHow to implement a GPIO module:\nhttps://github.com/MiSTer-devel/GBA_MiSTer/blob/master/gpio_readme.md\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-LLAPI/GBA_MiSTer",
@@ -2373,6 +2433,42 @@
           "name": "GBA_20220314.rbf",
           "sha": "2eb1ac4aba4a1d0c7d4e30fe1abf3a4025e80268",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/GBA_MiSTer/master/releases/GBA_20220314.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "GBA_20220417.rbf",
+          "sha": "df96783896e88d5bc4ba1662656ee872a426a421",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/GBA_MiSTer/master/releases/GBA_20220417.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "GBA_20220428.rbf",
+          "sha": "25580879845fa46de66cc5feb4d2a28bed7177ae",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/GBA_MiSTer/master/releases/GBA_20220428.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "GBA_20220812.rbf",
+          "sha": "5af5e12109fa0d89bd6555160ba6c799ea4ccef7",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/GBA_MiSTer/master/releases/GBA_20220812.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "GBA_20230225.rbf",
+          "sha": "cc7487fcaa7750a07aa8960a7c1ca34114fb914b",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/GBA_MiSTer/master/releases/GBA_20230225.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "GBA_20230806.rbf",
+          "sha": "1a64b3f0cd00c97b825c314cf7137d7811f41812",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/GBA_MiSTer/master/releases/GBA_20230806.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "GBA_20231211.rbf",
+          "sha": "1fcac21d95d5508b788d1c794ea1347d304acc0d",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/GBA_MiSTer/master/releases/GBA_20231211.rbf",
           "type": "RBF"
         },
         {
@@ -2524,6 +2620,12 @@
           "sha": "e997e54ea6dbea02fa10abe81fa9e41f214033fa",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/GBA_MiSTer/master/releases/GBA_LLAPI_20230425.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "GBA_LLAPI_20240313.rbf",
+          "sha": "b2973e0d4b018fe7776c79bc25d27e7b2447619e",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/GBA_MiSTer/master/releases/GBA_LLAPI_20240313.rbf",
+          "type": "RBF"
         }
       ]
     },
@@ -2647,6 +2749,18 @@
           "name": "Genesis_20220626.rbf",
           "sha": "65d3b0726062845717d916921fc3e8766d549212",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Genesis_MiSTer/master/releases/Genesis_20220626.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20221109.rbf",
+          "sha": "7d7ef641ba9b9fe6a230f72d3a5a2808e328d403",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Genesis_MiSTer/master/releases/Genesis_20221109.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Genesis_20230224.rbf",
+          "sha": "3a783b0843591c5afa98d95a48789df91ece64d0",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Genesis_MiSTer/master/releases/Genesis_20230224.rbf",
           "type": "RBF"
         },
         {
@@ -2792,13 +2906,19 @@
           "sha": "a49c2a2722ffe37151ef92e1f7e4678f3311a097",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Genesis_MiSTer/master/releases/Genesis_LLAPI_20230423.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "Genesis_LLAPI_20240314.rbf",
+          "sha": "beed25e5974dc58e79308d837a23f262655faaaf",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Genesis_MiSTer/master/releases/Genesis_LLAPI_20240314.rbf",
+          "type": "RBF"
         }
       ]
     },
     {
       "name": "LLAPI_folder_MiSTer",
       "description": "Binary distribution of LLAPI cores",
-      "readme": "# LLAPI Folder\n\nThis repository contains all MiSTer-LLAPI cores under the _LLAPI folder.\n\n#### List of Tags that you may use with the Downloader and the 'Custom Download Filters' feature.\n\n`arcade`, `arcade-bankpanic`, `arcade-cores`, `arcade-donkeykong`, `arcade-iremm62`, `arcade-iremm72`, `arcade-joust2`, `arcade-mcr2`, `arcade-ninjakun`, `arcade-pacman`, `arcade-segasys1`, `arcade-tecmo`, `atari7800_llapi`, `atarilynx_llapi`, `cores`, `donkeykong_llapi`, `gameboy_llapi`, `gba2p_llapi`, `gba_llapi`, `genesis_llapi`, `hbmame`, `iremm62_llapi`, `iremm72_llapi`, `llapi`, `megacd_llapi`, `megadrive_llapi`, `mra`, `neogeo_llapi`, `nes_llapi`, `ninjakun_llapi`, `pacman_llapi`, `s32x_llapi`, `segasys1_llapi`, `sgb_llapi`, `sms_llapi`, `snes_llapi`, `tecmo_llapi`, `turbografx16_llapi`",
+      "readme": "# LLAPI Folder\n\nThis repository contains all MiSTer-LLAPI cores under the _LLAPI folder.\n\n#### List of Tags that you may use with the Downloader and the 'Custom Download Filters' feature.\n\n`arcade`, `arcade-bankpanic`, `arcade-cores`, `arcade-donkeykong`, `arcade-iremm62`, `arcade-iremm72`, `arcade-joust2`, `arcade-mcr2`, `arcade-ninjakun`, `arcade-pacman`, `arcade-segasys1`, `arcade-tecmo`, `atari7800_llapi`, `atarilynx_llapi`, `cores`, `donkeykong_llapi`, `gameboy_llapi`, `gba_llapi`, `hbmame`, `iremm62_llapi`, `iremm72_llapi`, `llapi`, `megacd_llapi`, `megadrive_llapi`, `mra`, `neogeo_llapi`, `nes_llapi`, `ninjakun_llapi`, `pacman_llapi`, `psx_llapi`, `s32x_llapi`, `segasys1_llapi`, `sgb_llapi`, `sms_llapi`, `snes_llapi`, `tecmo_llapi`, `turbografx16_llapi`",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-LLAPI/LLAPI_folder_MiSTer",
@@ -3909,9 +4029,9 @@
           "type": "RBF"
         },
         {
-          "name": "PSX_LLAPI_20221011.rbf",
-          "sha": "7447dc211a4cf32332dfc248be86f22b61d00093",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/PSX_MiSTer/main/releases/PSX_LLAPI_20221011.rbf",
+          "name": "PSX_LLAPI_20240311.rbf",
+          "sha": "cd17a927c977a74a83c35c919f01036e8027873f",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/PSX_MiSTer/main/releases/PSX_LLAPI_20240311.rbf",
           "type": "RBF"
         }
       ]
@@ -3949,6 +4069,30 @@
           "type": "RBF"
         },
         {
+          "name": "S32X_20221002.rbf",
+          "sha": "498519553e3c45ce1b5ef1de2b7d24763edbafde",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/S32X_MiSTer/main/releases/S32X_20221002.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "S32X_20230224.rbf",
+          "sha": "725134905a1f52b7cf57338e46bbd48f7ab2b044",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/S32X_MiSTer/main/releases/S32X_20230224.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "S32X_20230501.rbf",
+          "sha": "7adc420ce6a46b4e194b67daad530a96a5657bf3",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/S32X_MiSTer/main/releases/S32X_20230501.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "S32X_20231204.rbf",
+          "sha": "7e83ba2f0926884813958ed48b5ee54499b6ceba",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/S32X_MiSTer/main/releases/S32X_20231204.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "S32X_LLAPI_20220523.rbf",
           "sha": "40f431ce786bdf2aba65120c3653cd69792f70d3",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/S32X_MiSTer/main/releases/S32X_LLAPI_20220523.rbf",
@@ -3982,6 +4126,58 @@
           "name": "S32X_LLAPI_20240226.rbf",
           "sha": "4079db6393ccd06a39b5cdacc2cf62fa06c0d33e",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/S32X_MiSTer/main/releases/S32X_LLAPI_20240226.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "S32X_LLAPI_20240312.rbf",
+          "sha": "647c5cc03a3a99364fab55efa800691df2604e87",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/S32X_MiSTer/main/releases/S32X_LLAPI_20240312.rbf",
+          "type": "RBF"
+        }
+      ]
+    },
+    {
+      "name": "SGB_MiSTer",
+      "description": null,
+      "readme": "# [Super Game Boy](https://en.wikipedia.org/wiki/Super_Game_Boy) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n \nBased on the [SNES core](https://github.com/MiSTer-devel/SNES_MiSTer) written by [srg320](https://github.com/srg320)\n\n## Installing\nCopy the `.RBF` to the root of your SD card. Put some ROMs (`*.GBC`, `*.GB`) and the SGB BIOS (`*.SFC`) into SGB folder.\n\n## Features\n* MSU-1 Support\n* SGB1, SGB2, and SNES clock speed toggle.\n* Cheat engine.\n* Save/Load Backup Game Boy RAM.\n\n## Usage\nLoad your SGB BIOS from the OSD and load your Game Boy or Game Boy Color game. Here is a list of the [Super Game Boy enhanced games](https://en.wikipedia.org/wiki/List_of_Super_Game_Boy_games) that were released for reference.\n\nThe \"SGB Speed\" option in the OSD allows you to change the clock speed:\n* SGB1 = 4.295 MHz (2.4% faster than a real Game Boy)\n* SGB2 = 4.194 MHz (The same as an original Game Boy)\n* SNES = 4.220 MHz (Brings it close to the SNES's refresh rate of 60.09Hz to reduce stutter)\n\nPress L+R at the same time to enter the Super Game Boy boot rom's menu. If you'd like to manually start the animated screensaver for the alternate borders built into the Super Game Boy, then press L, L, L, L, R in order. You will hear a ding if the border supports the screensaver animations.\n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/MiSTer-LLAPI/SGB_MiSTer",
+      "releases": [
+        {
+          "name": "SGB_20220716.rbf",
+          "sha": "7d07cc750f0022d77d630da53952a22b0cc54a41",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SGB_MiSTer/main/releases/SGB_20220716.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SGB_20220809.rbf",
+          "sha": "ffa0801e479b09fbc9e91ae984c2f351b86b2db5",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SGB_MiSTer/main/releases/SGB_20220809.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SGB_20221012.rbf",
+          "sha": "fc0f744091c68585494f9ac0e40a76e17dbce5ce",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SGB_MiSTer/main/releases/SGB_20221012.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SGB_20230226.rbf",
+          "sha": "1af2a7b41ab3d33784a165a109f90f3d3d20e6ac",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SGB_MiSTer/main/releases/SGB_20230226.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SGB_20230717.rbf",
+          "sha": "2bed931f61d2f22def4aefc734d1b7b15d28bce2",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SGB_MiSTer/main/releases/SGB_20230717.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SGB_LLAPI_20240313.rbf",
+          "sha": "a910cef57b76826d4aca58e2a9f02aff685f5774",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SGB_MiSTer/main/releases/SGB_LLAPI_20240313.rbf",
           "type": "RBF"
         }
       ]
@@ -4019,6 +4215,12 @@
               "fantzn2.zip"
             ]
           }
+        },
+        {
+          "name": "Game Gear.mgl",
+          "sha": "4a0f18f760e37403b11f18fbeab409c0720fe1f6",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SMS_MiSTer/master/releases/Game%20Gear.mgl",
+          "type": "OTHER"
         },
         {
           "name": "Hang On Jr.mra",
@@ -4176,6 +4378,24 @@
           "type": "RBF"
         },
         {
+          "name": "SMS_20221014.rbf",
+          "sha": "bc21702a448abeb3d41836ad81e295742f7b3a6f",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SMS_MiSTer/master/releases/SMS_20221014.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SMS_20230225.rbf",
+          "sha": "d619690a4012dbf1d91d799d02d1e36824eefb6d",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SMS_MiSTer/master/releases/SMS_20230225.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SMS_20231204.rbf",
+          "sha": "c68aa871fa8af613f246f869570816923628fde0",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SMS_MiSTer/master/releases/SMS_20231204.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "SMS_LLAPI_20191002.rbf",
           "sha": "0c2fe55cd9624d7336b3eb1267f5f67a544abfb8",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SMS_MiSTer/master/releases/SMS_LLAPI_20191002.rbf",
@@ -4287,6 +4507,12 @@
           "name": "SMS_LLAPI_20240226.rbf",
           "sha": "4e9ef704cc6cf618274f1d44c3592d7226823b9b",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SMS_MiSTer/master/releases/SMS_LLAPI_20240226.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SMS_LLAPI_20240312.rbf",
+          "sha": "5428ebb86a10769231a73dd350b4df8763aae2bd",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SMS_MiSTer/master/releases/SMS_LLAPI_20240312.rbf",
           "type": "RBF"
         },
         {
