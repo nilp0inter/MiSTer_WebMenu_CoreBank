@@ -225,9 +225,27 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-IremM62_20230226.rbf",
+          "sha": "94b6231a35eae77d13b41dcb573fb752ee4c924b",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM62_MiSTer/master/releases/Arcade-IremM62_20230226.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-IremM62_20231218.rbf",
+          "sha": "d75ce30b742d12c5f22bb29a3fed80c47e6a1dd3",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM62_MiSTer/master/releases/Arcade-IremM62_20231218.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Arcade-IremM62_LLAPI_20220107.rbf",
           "sha": "131331ff601fdb166dbd8e1a5172994561445986",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM62_MiSTer/master/releases/Arcade-IremM62_LLAPI_20220107.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-IremM62_LLAPI_20240320.rbf",
+          "sha": "62127ea3481462c7eca33b5ed3e572bb0e78e8d9",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM62_MiSTer/master/releases/Arcade-IremM62_LLAPI_20240320.rbf",
           "type": "RBF"
         },
         {
@@ -385,7 +403,7 @@
       "releases": [
         {
           "name": "Air Duel (Japan, M72 hardware).mra",
-          "sha": "0f10c76dce9ba061baf5cdbee0c74e5aa96433d3",
+          "sha": "795d979715787c4e6a471dd384606fb21fd43836",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/Air%20Duel%20(Japan%2C%20M72%20hardware).mra",
           "type": "MRA",
           "extra": {
@@ -398,7 +416,7 @@
         },
         {
           "name": "Air Duel (World, M72 hardware).mra",
-          "sha": "9a61b4c313eecb7689d5c28cd6f02eb7ad735a85",
+          "sha": "36b78f1dfd14d898e11efb8e173ac3943095a1bd",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/Air%20Duel%20(World%2C%20M72%20hardware).mra",
           "type": "MRA",
           "extra": {
@@ -440,8 +458,32 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-IremM72_20221210.rbf",
+          "sha": "248e6f42777ff9d65326d6c4e894d0e13c087eb4",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/Arcade-IremM72_20221210.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-IremM72_20230227.rbf",
+          "sha": "18752ee683372190fad143bc6bf7ae35d8f71603",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/Arcade-IremM72_20230227.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-IremM72_LLAPI_20221008.rbf",
+          "sha": "f6c5467ec32cd9bd6fbda0913396da9632f8a998",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/Arcade-IremM72_LLAPI_20221008.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-IremM72_LLAPI_20240320.rbf",
+          "sha": "473f505dd295fb6462b30f9b665bcfade0404166",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/Arcade-IremM72_LLAPI_20240320.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Daiku no Gensan (Japan, M72 hardware).mra",
-          "sha": "1845c28a2fec08411a09a93a9bb32e38838b6c4a",
+          "sha": "bb812c11ca73fa39a58e5d9c8149bec330b2dab4",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/Daiku%20no%20Gensan%20(Japan%2C%20M72%20hardware).mra",
           "type": "MRA",
           "extra": {
@@ -454,7 +496,7 @@
         },
         {
           "name": "Daiku no Gensan (Japan, M84 hardware).mra",
-          "sha": "4b3d4f75b2498dd4951bd9c210fd2135cdfcd67e",
+          "sha": "8b9debf1c1ea169f3f119ef9a5436827bcb2d1a5",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/Daiku%20no%20Gensan%20(Japan%2C%20M84%20hardware).mra",
           "type": "MRA",
           "extra": {
@@ -467,7 +509,7 @@
         },
         {
           "name": "Dragon Breed (Japan, M72 hardware).mra",
-          "sha": "7d0943bb4826fb2f47831140621590819cae5858",
+          "sha": "15f9d452394b836cc369ab3d086e25be0e7a6d6e",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/Dragon%20Breed%20(Japan%2C%20M72%20hardware).mra",
           "type": "MRA",
           "extra": {
@@ -480,7 +522,7 @@
         },
         {
           "name": "Gallop - Armed Police Unit (Japan, M72 hardware).mra",
-          "sha": "29c33f04a8ad69e21b75b4527240313430064e69",
+          "sha": "21f393c345225503c27e983afe3cd86563785442",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/Gallop%20-%20Armed%20Police%20Unit%20(Japan%2C%20M72%20hardware).mra",
           "type": "MRA",
           "extra": {
@@ -493,7 +535,7 @@
         },
         {
           "name": "Hammerin' Harry (US, M84 hardware).mra",
-          "sha": "8744a27b6fedd8bd2b875f50f6e5ba8a68e15e15",
+          "sha": "f06faa5f963c980b271e56387b7f230030f6ec9e",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/Hammerin'%20Harry%20(US%2C%20M84%20hardware).mra",
           "type": "MRA",
           "extra": {
@@ -506,7 +548,7 @@
         },
         {
           "name": "Image Fight (Japan).mra",
-          "sha": "25523c16c9be26f05670aef38a98e194e39f451d",
+          "sha": "38fb1a690e34aba53480faa386f539daa76c1e36",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/Image%20Fight%20(Japan).mra",
           "type": "MRA",
           "extra": {
@@ -519,7 +561,7 @@
         },
         {
           "name": "Image Fight (World).mra",
-          "sha": "cf82ef97b93956699e92c5f4d5ff1df3fa963aa4",
+          "sha": "97ebe131c6907d0c147411c396e2ded25d135c25",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/Image%20Fight%20(World).mra",
           "type": "MRA",
           "extra": {
@@ -531,14 +573,8 @@
           }
         },
         {
-          "name": "IremM72_LLAPI_20221008.rbf",
-          "sha": "f6c5467ec32cd9bd6fbda0913396da9632f8a998",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/IremM72_LLAPI_20221008.rbf",
-          "type": "RBF"
-        },
-        {
           "name": "Legend of Hero Tonma (Japan).mra",
-          "sha": "ff8ec8c6d59618049d67da26f49f239280ff0aaa",
+          "sha": "359f24976f8b4faea589766d4d1e538c3150ffc7",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/Legend%20of%20Hero%20Tonma%20(Japan).mra",
           "type": "MRA",
           "extra": {
@@ -551,7 +587,7 @@
         },
         {
           "name": "Mr. HELI no Daibouken (Japan).mra",
-          "sha": "d596f60292e0fbbd5099aa61376cbd7ea1773eb1",
+          "sha": "3f24df916315e126344eca67f81ea8437c3723c9",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/Mr.%20HELI%20no%20Daibouken%20(Japan).mra",
           "type": "MRA",
           "extra": {
@@ -564,7 +600,7 @@
         },
         {
           "name": "Ninja Spirit (Japan).mra",
-          "sha": "732e2217504a1a4e0fb1883d5ea5d49b1a9cdc70",
+          "sha": "e35f8f86d9bf3838655ba79ddda32b57ba87f5f6",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/Ninja%20Spirit%20(Japan).mra",
           "type": "MRA",
           "extra": {
@@ -577,7 +613,7 @@
         },
         {
           "name": "R-Type (Japan).mra",
-          "sha": "615f8e24bf7000b6b6c5a89c6cd12695f8330929",
+          "sha": "5ffa03cc3b036053b0096506bfc2826e8f50dc25",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/R-Type%20(Japan).mra",
           "type": "MRA",
           "extra": {
@@ -590,7 +626,7 @@
         },
         {
           "name": "R-Type (World).mra",
-          "sha": "0b8ffc8d2d8043085752804edf60309e5bbce8e5",
+          "sha": "27f8799d71388fa7d6a0fa868f305ef05c236a51",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/R-Type%20(World).mra",
           "type": "MRA",
           "extra": {
@@ -603,7 +639,7 @@
         },
         {
           "name": "R-Type II (Japan).mra",
-          "sha": "dabfecfb160734d07716e061881c673dba69e214",
+          "sha": "a458503a2d02e15376f602e5960a990cf56867ef",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/R-Type%20II%20(Japan).mra",
           "type": "MRA",
           "extra": {
@@ -616,7 +652,7 @@
         },
         {
           "name": "R-Type II (World).mra",
-          "sha": "242361600379a846eb66a9ab1f3681717141a6e7",
+          "sha": "83c33c6f69e24e10f039c3b455244253058f3b2c",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/R-Type%20II%20(World).mra",
           "type": "MRA",
           "extra": {
@@ -629,7 +665,7 @@
         },
         {
           "name": "X Multiply (Japan, M72 hardware).mra",
-          "sha": "953526c53e24c7f3cda8e93eb116f6bf9eaadf65",
+          "sha": "333672c2db9361d2c44a48f8f1e3d1d8b2ad3966",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/X%20Multiply%20(Japan%2C%20M72%20hardware).mra",
           "type": "MRA",
           "extra": {
@@ -642,7 +678,7 @@
         },
         {
           "name": "R-Type (Japan prototype).mra",
-          "sha": "d521f45e82453114947a049955f19b4e235bfdb5",
+          "sha": "1f74a1fa584dcc99092627c053c469f736ce2900",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/_alternatives/R-Type%20(Japan%20prototype).mra",
           "type": "MRA",
           "extra": {
@@ -655,7 +691,7 @@
         },
         {
           "name": "R-Type (US).mra",
-          "sha": "77b9c04c7d3de2d3d89e12d6fc9ab91d33493252",
+          "sha": "6fac61e14b212fdb3e5f8831b28a652935551c2b",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/_alternatives/R-Type%20(US).mra",
           "type": "MRA",
           "extra": {
@@ -668,7 +704,7 @@
         },
         {
           "name": "R-Type (World bootleg).mra",
-          "sha": "76066995ababa4771d3b01661332a460b85c8ad4",
+          "sha": "10a4aaa0946d279561a70827d8454ae3ef8e888d",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/_alternatives/R-Type%20(World%20bootleg).mra",
           "type": "MRA",
           "extra": {
@@ -681,7 +717,7 @@
         },
         {
           "name": "R-Type II (Japan, revision C).mra",
-          "sha": "207a05a993258deecb458c0827f61d6a80b9d6f7",
+          "sha": "d29a4609fd6325c89db01262a50ea8b1e125e7b9",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/_alternatives/R-Type%20II%20(Japan%2C%20revision%20C).mra",
           "type": "MRA",
           "extra": {
@@ -694,7 +730,7 @@
         },
         {
           "name": "R-Type II (inv) (World).mra",
-          "sha": "8a3ab01c9e8763c0013b24944f823d6fb3df581d",
+          "sha": "595fa82089cfdf42e829d47df32836af678824a6",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/_alternatives/R-Type%20II%20(inv)%20(World).mra",
           "type": "MRA",
           "extra": {
@@ -707,7 +743,7 @@
         },
         {
           "name": "X Multiply (Inv) (Japan, M72 hardware).mra",
-          "sha": "7b248410c8368c51524530625fb2c80381ef9bd2",
+          "sha": "bd87d59496274054733353597244827b0b3a2389",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/_alternatives/X%20Multiply%20(Inv)%20(Japan%2C%20M72%20hardware).mra",
           "type": "MRA",
           "extra": {
@@ -715,6 +751,418 @@
             "rbf": "IremM72",
             "zips": [
               "xmultiplm72.zip|xmultipl.zip"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Arcade-IremM92_MiSTer",
+      "description": null,
+      "readme": "# Irem M92 Core\n\n![](docs/header-small.png)\n\nThis is the MiSTer FPGA core for the Irem M92 arcade system (http://www.system16.com/hardware.php?id=747). The Irem M92 system is known for its high-quality graphics and sound, and this core brings these games to the MiSTer platform for arcade enthusiasts to enjoy.\n\nThe Irem M92 core includes numerous games that have not been ported elsewhere, providing a unique and authentic arcade experience. Some of the popular games available in this core are:\n\n- In the Hunt\n- Gunforce\n- R-Type Leo\n- Hook\n- Blade Master\n- Mystic Riders\n- Undercover Cops\n- Ninja Baseball Batman\n\n## Controls\nAll of the games use standard 8-way input with two buttons with the exception of *Superior Soldiers* which uses six button input. Several of the games support 3 or 4 players but you will need to change a DIP switch in the DIP switch menu to enable that. By default the button buttons are mapped to the MiSTers SNES-like layout as `B,A,X,Y,L,R`. The `Coin` and `Start` buttons are mapped to Select and Start. There are two additional buttons that can be mapped that are not mapped by default. `P2 Start` maps the the second players start button. The only purpose this serves is for accessing the service menu with a single controller since most games require pressing P1 and P2 start to access it. The second unmapped button is `Pause` which pauses the core.\n\nStandard MAME keyboard controls are also supported for up to 4-players.\n\n\n## Thanks\nMany people, knowingly or not, contributed to this work.\n- Mark, for his R-Type Leo PCB and his support through the years.\n- @sorgelig, for developing and maintaining MiSTer.\n- @RobertPeip, for the v30mz cpu I am using as the basis for the v33 & v35.\n- @jotego, for the YM2151 implementation and analog adjustment module.\n- @ArtemioUrbina, for their support building [MDfourier](https://junkerhq.net/MDFourier/) tests.\n- @zakk4223, for hiscore support.\n- @birdybro, @Toryalai1 & @wwark for MRA help.\n- Sanborn, for help with the docs.\n- The people from PLD Archive collecting and archiving PAL information https://wiki.pldarchive.co.uk/index.php?title=Category:Irem_M92\n- The MiSTer FPGA discord server for support, advice and testing.\n\n\n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/MiSTer-LLAPI/Arcade-IremM92_MiSTer",
+      "releases": [
+        {
+          "name": "Arcade-IremM92_20230414.rbf",
+          "sha": "4797c7e53d9e4e76d41faa4d014ccca7aa1d9943",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM92_MiSTer/main/releases/Arcade-IremM92_20230414.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-IremM92_20230422.rbf",
+          "sha": "fc90524c9ae7385ac2b4a8aa83f7c7bc769d6d44",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM92_MiSTer/main/releases/Arcade-IremM92_20230422.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-IremM92_20230510.rbf",
+          "sha": "c7ca8fd5127e54758551678437c236a485f0a951",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM92_MiSTer/main/releases/Arcade-IremM92_20230510.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-IremM92_LLAPI_20240320.rbf",
+          "sha": "0873f04b304d74adf12185bc9292250855577dc2",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM92_MiSTer/main/releases/Arcade-IremM92_LLAPI_20240320.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Blade Master (World).mra",
+          "sha": "acb87af4d7e5f14e5ceb7cbeee4d19fdb8f76726",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM92_MiSTer/main/releases/Blade%20Master%20(World).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Blade Master (World)",
+            "rbf": "IremM92",
+            "zips": [
+              "bmaster.zip"
+            ]
+          }
+        },
+        {
+          "name": "Dream Soccer '94 (Japan, M92 hardware).mra",
+          "sha": "67aa912dad84300a9449ce312c3177331bff2c73",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM92_MiSTer/main/releases/Dream%20Soccer%20'94%20(Japan%2C%20M92%20hardware).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Dream Soccer '94 (Japan, M92 hardware)",
+            "rbf": "IremM92",
+            "zips": [
+              "dsoccr94.zip|dsoccr94j.zip"
+            ]
+          }
+        },
+        {
+          "name": "Gun Force II (US).mra",
+          "sha": "e6174d8fabefae74c8f9197009ea9d8df1ccf1e6",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM92_MiSTer/main/releases/Gun%20Force%20II%20(US).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Gun Force II (US)",
+            "rbf": "IremM92",
+            "zips": [
+              "gunforc2.zip"
+            ]
+          }
+        },
+        {
+          "name": "Gunforce - Battle Fire Engulfed Terror Island (World).mra",
+          "sha": "1a4fc54878fd70adbba43d1444c448c62762fa52",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM92_MiSTer/main/releases/Gunforce%20-%20Battle%20Fire%20Engulfed%20Terror%20Island%20(World).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Gunforce - Battle Fire Engulfed Terror Island (World)",
+            "rbf": "IremM92",
+            "zips": [
+              "gunforce.zip"
+            ]
+          }
+        },
+        {
+          "name": "Hook (World).mra",
+          "sha": "8df2f9ff566c42930b5dff3d0bf7fe99ab6c62d0",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM92_MiSTer/main/releases/Hook%20(World).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Hook (World)",
+            "rbf": "IremM92",
+            "zips": [
+              "hook.zip"
+            ]
+          }
+        },
+        {
+          "name": "In The Hunt (World).mra",
+          "sha": "5b4f92f1c76b96a4d8316db8e2b1b175cc5aef3d",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM92_MiSTer/main/releases/In%20The%20Hunt%20(World).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "In The Hunt (World)",
+            "rbf": "IremM92",
+            "zips": [
+              "inthunt.zip"
+            ]
+          }
+        },
+        {
+          "name": "Lethal Thunder (World).mra",
+          "sha": "5cfc397c8b92b79112db8f756cf93e3fcf22bed6",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM92_MiSTer/main/releases/Lethal%20Thunder%20(World).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Lethal Thunder (World)",
+            "rbf": "IremM92",
+            "zips": [
+              "lethalth.zip"
+            ]
+          }
+        },
+        {
+          "name": "Major Title 2 (World, set 1).mra",
+          "sha": "4c26beafb1f2599adf905426d2bbd3f3039728ac",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM92_MiSTer/main/releases/Major%20Title%202%20(World%2C%20set%201).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Major Title 2 (World, set 1)",
+            "rbf": "IremM92",
+            "zips": [
+              "majtitl2.zip",
+              "majtitl2.zip"
+            ]
+          }
+        },
+        {
+          "name": "Mystic Riders (World).mra",
+          "sha": "7500bdb6391a82b3ad9102d2d8cec8cebac24a72",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM92_MiSTer/main/releases/Mystic%20Riders%20(World).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Mystic Riders (World)",
+            "rbf": "IremM92",
+            "zips": [
+              "mysticri.zip"
+            ]
+          }
+        },
+        {
+          "name": "Ninja Baseball Bat Man (World).mra",
+          "sha": "2e7a7fcb92fd844809660af1a8d383796ab2b5b8",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM92_MiSTer/main/releases/Ninja%20Baseball%20Bat%20Man%20(World).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Ninja Baseball Bat Man (World)",
+            "rbf": "IremM92",
+            "zips": [
+              "nbbatman.zip"
+            ]
+          }
+        },
+        {
+          "name": "R-Type Leo (World).mra",
+          "sha": "ebabba6b0183f5459d72a0a004c6f8ffbb7d7107",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM92_MiSTer/main/releases/R-Type%20Leo%20(World).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "R-Type Leo (World)",
+            "rbf": "IremM92",
+            "zips": [
+              "rtypeleo.zip"
+            ]
+          }
+        },
+        {
+          "name": "Superior Soldiers (US).mra",
+          "sha": "b82623dbef2ec9e855c26e5d64cd99f64ca61c05",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM92_MiSTer/main/releases/Superior%20Soldiers%20(US).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Superior Soldiers (US)",
+            "rbf": "IremM92",
+            "zips": [
+              "ssoldier.zip"
+            ]
+          }
+        },
+        {
+          "name": "Undercover Cops (World).mra",
+          "sha": "6b3b2439d50cbce4b52291ec4b691277c7e1fd7d",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM92_MiSTer/main/releases/Undercover%20Cops%20(World).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Undercover Cops (World)",
+            "rbf": "IremM92",
+            "zips": [
+              "uccops.zip"
+            ]
+          }
+        },
+        {
+          "name": "Cross Blades! (Japan).mra",
+          "sha": "22330856b705256de6087e6849fda888c735a833",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM92_MiSTer/main/releases/_alternatives/_Blade%20Master/Cross%20Blades!%20(Japan).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Cross Blades! (Japan)",
+            "rbf": "IremM92",
+            "zips": [
+              "crossbld.zip|bmaster.zip"
+            ]
+          }
+        },
+        {
+          "name": "Geo Storm (Japan).mra",
+          "sha": "a15f309e45c339407c7d35c5992bb67749dcbc5e",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM92_MiSTer/main/releases/_alternatives/_Gun%20Force%20II/Geo%20Storm%20(Japan).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Geo Storm (Japan)",
+            "rbf": "IremM92",
+            "zips": [
+              "geostorm.zip|gunforc2.zip"
+            ]
+          }
+        },
+        {
+          "name": "Gunforce - Battle Fire Engulfed Terror Island (Japan).mra",
+          "sha": "5e552037c9d901fbb0866efff187112ac65bc7c5",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM92_MiSTer/main/releases/_alternatives/_Gunforce%20-%20Battle%20Fire%20Engulfed%20Terror%20Island/Gunforce%20-%20Battle%20Fire%20Engulfed%20Terror%20Island%20(Japan).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Gunforce - Battle Fire Engulfed Terror Island (Japan)",
+            "rbf": "IremM92",
+            "zips": [
+              "gunforcej.zip|gunforce.zip"
+            ]
+          }
+        },
+        {
+          "name": "Gunforce - Battle Fire Engulfed Terror Island (USA).mra",
+          "sha": "e5bb7ed510770ee5021ccddad7a6cac2ebf70f90",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM92_MiSTer/main/releases/_alternatives/_Gunforce%20-%20Battle%20Fire%20Engulfed%20Terror%20Island/Gunforce%20-%20Battle%20Fire%20Engulfed%20Terror%20Island%20(USA).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Gunforce - Battle Fire Engulfed Terror Island (USA)",
+            "rbf": "IremM92",
+            "zips": [
+              "gunforce.zip|gunforceu.zip"
+            ]
+          }
+        },
+        {
+          "name": "Hook (Japan).mra",
+          "sha": "87c328bcbc70514582bc9bde309014e65e2f01c1",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM92_MiSTer/main/releases/_alternatives/_Hook/Hook%20(Japan).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Hook (Japan)",
+            "rbf": "IremM92",
+            "zips": [
+              "hookj.zip|hook.zip"
+            ]
+          }
+        },
+        {
+          "name": "In The Hunt (US).mra",
+          "sha": "eae934c476efa3c2757f4079b8142233c0d7d6ca",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM92_MiSTer/main/releases/_alternatives/_In%20The%20Hunt/In%20The%20Hunt%20(US).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "In The Hunt (US)",
+            "rbf": "IremM92",
+            "zips": [
+              "inthunt.zip|inthuntu.zip"
+            ]
+          }
+        },
+        {
+          "name": "Kaitei Daisensou (Japan).mra",
+          "sha": "dbcc8cae254b58dd35bcc919af5b8882b122c1d5",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM92_MiSTer/main/releases/_alternatives/_In%20The%20Hunt/Kaitei%20Daisensou%20(Japan).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Kaitei Daisensou (Japan)",
+            "rbf": "IremM92",
+            "zips": [
+              "kaiteids.zip|inthunt.zip"
+            ]
+          }
+        },
+        {
+          "name": "Thunder Blaster (Japan).mra",
+          "sha": "c22ed44fe43fe020e0bc5b41b6ff76cba4fb2b7f",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM92_MiSTer/main/releases/_alternatives/_Lethal%20Thunder/Thunder%20Blaster%20(Japan).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Thunder Blaster (Japan)",
+            "rbf": "IremM92",
+            "zips": [
+              "thndblst.zip|lethalth.zip"
+            ]
+          }
+        },
+        {
+          "name": "Mahou Keibitai Gun Hohki (Japan).mra",
+          "sha": "0516d360cc79f4bd58316c223fa6839adb7bc850",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM92_MiSTer/main/releases/_alternatives/_Mystic%20Riders/Mahou%20Keibitai%20Gun%20Hohki%20(Japan).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Mahou Keibitai Gun Hohki (Japan)",
+            "rbf": "IremM92",
+            "zips": [
+              "gunhohki.zip|mysticri.zip"
+            ]
+          }
+        },
+        {
+          "name": "Ninja Baseball Bat Man (US).mra",
+          "sha": "6b6a31c714de0ea96e201bc9ae833ccb6fd59d19",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM92_MiSTer/main/releases/_alternatives/_Ninja%20Baseball%20Bat%20Man/Ninja%20Baseball%20Bat%20Man%20(US).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Ninja Baseball Bat Man (World)",
+            "rbf": "IremM92",
+            "zips": [
+              "nbbatman.zip|nbbatmanu.zip"
+            ]
+          }
+        },
+        {
+          "name": "Yakyuu Kakutou League-Man (Japan).mra",
+          "sha": "4a524fecccc0105a9439daa9f023aeb03d22b812",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM92_MiSTer/main/releases/_alternatives/_Ninja%20Baseball%20Bat%20Man/Yakyuu%20Kakutou%20League-Man%20(Japan).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Yakyuu Kakutou League-Man (Japan)",
+            "rbf": "IremM92",
+            "zips": [
+              "nbbatman.zip|leaguemn.zip"
+            ]
+          }
+        },
+        {
+          "name": "R-Type Leo (Japan).mra",
+          "sha": "8d46aaba994b8952930849a21c7b4ab42d7ac871",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM92_MiSTer/main/releases/_alternatives/_R-Type%20Leo/R-Type%20Leo%20(Japan).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "R-Type Leo (Japan)",
+            "rbf": "IremM92",
+            "zips": [
+              "rtypeleoj.zip|rtypeleo.zip"
+            ]
+          }
+        },
+        {
+          "name": "Undercover Cops (Japan).mra",
+          "sha": "e574d26c45accf4d7f9ad1c5dda770aacdafc8d5",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM92_MiSTer/main/releases/_alternatives/_Undercover%20Cops/Undercover%20Cops%20(Japan).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Undercover Cops (Japan)",
+            "rbf": "IremM92",
+            "zips": [
+              "uccopsj.zip|uccops.zip"
+            ]
+          }
+        },
+        {
+          "name": "Undercover Cops (US).mra",
+          "sha": "57ebe0436f3e03ae27466501492629534796418c",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM92_MiSTer/main/releases/_alternatives/_Undercover%20Cops/Undercover%20Cops%20(US).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Undercover Cops (US)",
+            "rbf": "IremM92",
+            "zips": [
+              "uccops.zip|uccopsu.zip"
+            ]
+          }
+        },
+        {
+          "name": "Undercover Cops - Alpha Renewal Version (US).mra",
+          "sha": "e4673e3a12751fc4db489ed4d37915c3ca863d53",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM92_MiSTer/main/releases/_alternatives/_Undercover%20Cops/Undercover%20Cops%20-%20Alpha%20Renewal%20Version%20(US).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Undercover Cops - Alpha Renewal Version (US)",
+            "rbf": "IremM92",
+            "zips": [
+              "uccops.zip|uccopsaru.zip"
+            ]
+          }
+        },
+        {
+          "name": "Undercover Cops - Alpha Renewal Version (World).mra",
+          "sha": "e9eef55f4944997e1c4c5a6d7990e8ad2c6784d5",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM92_MiSTer/main/releases/_alternatives/_Undercover%20Cops/Undercover%20Cops%20-%20Alpha%20Renewal%20Version%20(World).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Undercover Cops - Alpha Renewal Version (World)",
+            "rbf": "IremM92",
+            "zips": [
+              "uccops.zip|uccopsar.zip"
             ]
           }
         }
@@ -1531,9 +1979,21 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-SEGASYS1_20230315.rbf",
+          "sha": "62c68dc66dcaae6fad09ee89a98f828be67e0c46",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-SEGASYS1_MiSTer/main/releases/Arcade-SEGASYS1_20230315.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Arcade-SEGASYS1_LLAPI_20220125.rbf",
           "sha": "13d71d210e8806fb541de0128c85174d3cc473f1",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-SEGASYS1_MiSTer/main/releases/Arcade-SEGASYS1_LLAPI_20220125.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-SEGASYS1_LLAPI_20240320.rbf",
+          "sha": "679e0f694406637dc0e127844cb8e18b7a04056c",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-SEGASYS1_MiSTer/main/releases/Arcade-SEGASYS1_LLAPI_20240320.rbf",
           "type": "RBF"
         },
         {
@@ -1966,6 +2426,12 @@
           "type": "RBF"
         },
         {
+          "name": "AtariLynx_20240317.rbf",
+          "sha": "7be33c371d85dfd8337091b3bcee97133bd538f9",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/AtariLynx_MiSTer/main/releases/AtariLynx_20240317.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "AtariLynx_LLAPI_20221127.rbf",
           "sha": "a7885ac384211ed9b8a57b2d314bdb8527312e36",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/AtariLynx_MiSTer/main/releases/AtariLynx_LLAPI_20221127.rbf",
@@ -1975,6 +2441,12 @@
           "name": "AtariLynx_LLAPI_20240312.rbf",
           "sha": "98ec6cc5e69f555955cbd3b16e5038098107dc75",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/AtariLynx_MiSTer/main/releases/AtariLynx_LLAPI_20240312.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "AtariLynx_LLAPI_20240319.rbf",
+          "sha": "3ac8d5daedc34ca9b55568abaf1bd7e332791ba5",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/AtariLynx_MiSTer/main/releases/AtariLynx_LLAPI_20240319.rbf",
           "type": "RBF"
         }
       ]
@@ -2472,6 +2944,12 @@
           "type": "RBF"
         },
         {
+          "name": "GBA_20240317.rbf",
+          "sha": "2e40066e8f1fb4f2ba423fd1213eafdb585c6118",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/GBA_MiSTer/master/releases/GBA_20240317.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "GBA_LLAPI_20191124.rbf",
           "sha": "98569a37c897641588b01b35f502d8953bf08925",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/GBA_MiSTer/master/releases/GBA_LLAPI_20191124.rbf",
@@ -2625,6 +3103,12 @@
           "name": "GBA_LLAPI_20240313.rbf",
           "sha": "b2973e0d4b018fe7776c79bc25d27e7b2447619e",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/GBA_MiSTer/master/releases/GBA_LLAPI_20240313.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "GBA_LLAPI_20240319.rbf",
+          "sha": "fa766a8f4fdc7b114093d902c0f83dc9ebe01bd8",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/GBA_MiSTer/master/releases/GBA_LLAPI_20240319.rbf",
           "type": "RBF"
         }
       ]
@@ -2918,7 +3402,7 @@
     {
       "name": "LLAPI_folder_MiSTer",
       "description": "Binary distribution of LLAPI cores",
-      "readme": "# LLAPI Folder\n\nThis repository contains all MiSTer-LLAPI cores under the _LLAPI folder.\n\n#### List of Tags that you may use with the Downloader and the 'Custom Download Filters' feature.\n\n`arcade`, `arcade-bankpanic`, `arcade-cores`, `arcade-donkeykong`, `arcade-iremm62`, `arcade-iremm72`, `arcade-joust2`, `arcade-mcr2`, `arcade-ninjakun`, `arcade-pacman`, `arcade-segasys1`, `arcade-tecmo`, `atari7800_llapi`, `atarilynx_llapi`, `cores`, `donkeykong_llapi`, `gameboy_llapi`, `gba_llapi`, `hbmame`, `iremm62_llapi`, `iremm72_llapi`, `llapi`, `megacd_llapi`, `megadrive_llapi`, `mra`, `neogeo_llapi`, `nes_llapi`, `ninjakun_llapi`, `pacman_llapi`, `psx_llapi`, `s32x_llapi`, `segasys1_llapi`, `sgb_llapi`, `sms_llapi`, `snes_llapi`, `tecmo_llapi`, `turbografx16_llapi`",
+      "readme": "# LLAPI Folder\n\nThis repository contains all MiSTer-LLAPI cores under the _LLAPI folder.\n\n#### List of Tags that you may use with the Downloader and the 'Custom Download Filters' feature.\n\n`arcade`, `arcade-cores`, `arcade-iremm62`, `arcade-iremm72`, `arcade-iremm92`, `arcade-segasys1`, `atari7800_llapi`, `atarilynx_llapi`, `cores`, `gameboy_llapi`, `gba_llapi`, `iremm62_llapi`, `iremm72_llapi`, `iremm92_llapi`, `llapi`, `megacd_llapi`, `megadrive_llapi`, `mra`, `n64_llapi`, `neogeo_llapi`, `nes_llapi`, `psx_llapi`, `s32x_llapi`, `saturn_llapi`, `segasys1_llapi`, `sgb_llapi`, `sms_llapi`, `snes_llapi`, `turbografx16_llapi`",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-LLAPI/LLAPI_folder_MiSTer",
@@ -3270,6 +3754,22 @@
           "name": "MegaDrive_LLAPI_20240308.rbf",
           "sha": "6c611f68e7695e23c972adac99c4c5e21805dfaf",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/MegaDrive_MiSTer/main/releases/MegaDrive_LLAPI_20240308.rbf",
+          "type": "RBF"
+        }
+      ]
+    },
+    {
+      "name": "N64_MiSTer",
+      "description": "wip",
+      "readme": "\n## Hardware Requirements\nSDRAM of any size is required.\n32Mbyte SDRAM can only be used for games up to 16Mbyte in size.\n\n## Bios\nRename your PIF ROM file (e.g. `pif.ntsc.rom` ) and place it in the `./games/N64/` folder as `boot.rom`\n\n## Error messages\n\nIf there is a recognized problem, an overlay is displayed, showing which error has occured.\nErrors are hex encoded by bits, so the error code can represent more than 1 error.\n\nList of Errors:\n- Bit 0 - Memory access to unmapped area\n- Bit 1 - CPU Instruction not implemented, currently used for cache command only\n- Bit 2 - CPU stall timeout\n- Bit 3 - DDR3 timeout    \n- Bit 4 - FPU internal exception    \n- Bit 5 - PI error\n- Bit 6 - critical Exception occurred (heuristic, typically games crash when that happens, but can be false positive)\n- Bit 7 - PIF used up all 64 bytes for external communication or EEPROM command have unusual length\n- Bit 8 - RSP Instruction not implemented\n- Bit 9 - RSP stall timeout\n- Bit 10 - RDP command not implemented\n- Bit 11 - RDP combine mode not implemented\n- Bit 12 - RDP combine alpha functionality not implemented\n- Bit 13 - SDRAM Mux timeout\n- Bit 14 - not implemented texture mode is used\n- Bit 15 - not implemented render mode (2 pass or copy) is used\n- Bit 16 - RSP read Fifo overflow\n- Bit 17 - DDR3 - RSP write Fifo overflow\n- Bit 18 - RSP IMEM/DMEM write/read address collision detected\n- Bit 19 - One fo the DDR3 requesters wants to write or read outside of RDRAM \n- Bit 20 - RSP DMA wants to write outside of RDRAM \n- Bit 21 - RDP pixel writeback wants to write outside of RDRAM\n- Bit 22 - RDP Z writeback wants to write outside of RDRAM\n- Bit 23 - RSP PC is modified by register access while RSP runs\n- Bit 24 - VI line processing wasn't able to complete in time\n- Bit 25 - RDP Mux missed request\n- Bit 26 - CPU Writefifo full (should never happen, internal CPU logic bug)\n- Bit 27 - TLB access from multiple sources in parallel (should never happen, internal CPU logic bug)\n- Bit 28 - PI DMA wants to write outside of RDRAM\n  \n## Status\n\nwork in progress",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/MiSTer-LLAPI/N64_MiSTer",
+      "releases": [
+        {
+          "name": "N64_LLAPI_20240318.rbf",
+          "sha": "a16d8c44581f388b458b6341765be10499be8be4",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/N64_MiSTer/main/releases/N64_LLAPI_20240318.rbf",
           "type": "RBF"
         }
       ]
@@ -4029,9 +4529,21 @@
           "type": "RBF"
         },
         {
+          "name": "PSX_20240318.rbf",
+          "sha": "43bc274d8fcc1e2779175ecbfef4e188c5decbb1",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/PSX_MiSTer/main/releases/PSX_20240318.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "PSX_LLAPI_20240311.rbf",
           "sha": "cd17a927c977a74a83c35c919f01036e8027873f",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/PSX_MiSTer/main/releases/PSX_LLAPI_20240311.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "PSX_LLAPI_20240318.rbf",
+          "sha": "0a1b2f38fef74333132413fab8f7ef652265921d",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/PSX_MiSTer/main/releases/PSX_LLAPI_20240318.rbf",
           "type": "RBF"
         }
       ]
@@ -4132,6 +4644,46 @@
           "name": "S32X_LLAPI_20240312.rbf",
           "sha": "647c5cc03a3a99364fab55efa800691df2604e87",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/S32X_MiSTer/main/releases/S32X_LLAPI_20240312.rbf",
+          "type": "RBF"
+        }
+      ]
+    },
+    {
+      "name": "Saturn_MiSTer",
+      "description": "Sega Saturn for MiSTer",
+      "readme": "# [Sega Saturn](https://en.wikipedia.org/wiki/Sega_Saturn) for MiSTer\n\n## Hardware Requirements\n\n- 128 MB SDRAM Module (Primary)\n- SDRAM Module of any size (32MB-128MB) (Secondary)\n\n> **Note:** Dual SDRAM modules is recommended for better compatibility.\n\n## Status\n\nCurrent status is WIP/Beta\n\nKnown issues:\n\n- 3D Baseball - minor graphic gliches\n- BattleSport - minor graphic gliches\n- Galaxy Fight - minor graphic gliches (VDP2 screen in hires mode)\n- Robo Pit - minor graphic gliches (gouroud shadow)\n- Space Jam - freeze in demo\n- Tenchi Muyou! Rensa Hitsuyou (JP) - graphic gliches (VDP2 screen)\n- Thunder Force V (JP) - graphic gliches (VDP2 screen in hires mode)\n- X-Men vs. Street Fighter (JP) - freeze\n- Battle Monsters (EU) - graphic gliches\n- Dragon Ball Z (EU) - freeze\n\nA lot of games have sound issues.\n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/MiSTer-LLAPI/Saturn_MiSTer",
+      "releases": [
+        {
+          "name": "Saturn_20231010.rbf",
+          "sha": "5db313a4cfe017edcc81a999cde9c3aa71dbc096",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main/releases/Saturn_20231010.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Saturn_20231018.rbf",
+          "sha": "8dc94d7c26e004205941e15bf74becae3a2cbfea",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main/releases/Saturn_20231018.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Saturn_20240323.rbf",
+          "sha": "cca090de4f7fb2373d457fbfa726f211da5b2167",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main/releases/Saturn_20240323.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Saturn_LLAPI_20240321.rbf",
+          "sha": "eea0297d01f617ae2dd6d9100547c79e13e22184",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main/releases/Saturn_LLAPI_20240321.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Saturn_LLAPI_20240323.rbf",
+          "sha": "462c55d303c9528fd674563269f69de1722bba87",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main/releases/Saturn_LLAPI_20240323.rbf",
           "type": "RBF"
         }
       ]
