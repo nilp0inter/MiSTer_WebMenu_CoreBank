@@ -3760,16 +3760,34 @@
     },
     {
       "name": "N64_MiSTer",
-      "description": "wip",
-      "readme": "\n## Hardware Requirements\nSDRAM of any size is required.\n32Mbyte SDRAM can only be used for games up to 16Mbyte in size.\n\n## Bios\nRename your PIF ROM file (e.g. `pif.ntsc.rom` ) and place it in the `./games/N64/` folder as `boot.rom`\n\n## Error messages\n\nIf there is a recognized problem, an overlay is displayed, showing which error has occured.\nErrors are hex encoded by bits, so the error code can represent more than 1 error.\n\nList of Errors:\n- Bit 0 - Memory access to unmapped area\n- Bit 1 - CPU Instruction not implemented, currently used for cache command only\n- Bit 2 - CPU stall timeout\n- Bit 3 - DDR3 timeout    \n- Bit 4 - FPU internal exception    \n- Bit 5 - PI error\n- Bit 6 - critical Exception occurred (heuristic, typically games crash when that happens, but can be false positive)\n- Bit 7 - PIF used up all 64 bytes for external communication or EEPROM command have unusual length\n- Bit 8 - RSP Instruction not implemented\n- Bit 9 - RSP stall timeout\n- Bit 10 - RDP command not implemented\n- Bit 11 - RDP combine mode not implemented\n- Bit 12 - RDP combine alpha functionality not implemented\n- Bit 13 - SDRAM Mux timeout\n- Bit 14 - not implemented texture mode is used\n- Bit 15 - not implemented render mode (2 pass or copy) is used\n- Bit 16 - RSP read Fifo overflow\n- Bit 17 - DDR3 - RSP write Fifo overflow\n- Bit 18 - RSP IMEM/DMEM write/read address collision detected\n- Bit 19 - One fo the DDR3 requesters wants to write or read outside of RDRAM \n- Bit 20 - RSP DMA wants to write outside of RDRAM \n- Bit 21 - RDP pixel writeback wants to write outside of RDRAM\n- Bit 22 - RDP Z writeback wants to write outside of RDRAM\n- Bit 23 - RSP PC is modified by register access while RSP runs\n- Bit 24 - VI line processing wasn't able to complete in time\n- Bit 25 - RDP Mux missed request\n- Bit 26 - CPU Writefifo full (should never happen, internal CPU logic bug)\n- Bit 27 - TLB access from multiple sources in parallel (should never happen, internal CPU logic bug)\n- Bit 28 - PI DMA wants to write outside of RDRAM\n  \n## Status\n\nwork in progress",
+      "description": null,
+      "readme": "\n## Hardware Requirements\nSDRAM of any size is required.\n32Mbyte SDRAM can only be used for games up to 16Mbyte in size.\n\n## Bios\nRename your PIF ROM file (e.g. `pif.ntsc.rom` ) and place it in the `./games/N64/` folder as `boot.rom`\n\n## Error messages\n\nIf there is a recognized problem, an overlay is displayed, showing which error has occured.\nErrors are hex encoded by bits, so the error code can represent more than 1 error.\n\nList of Errors:\n- Bit 0 - Memory access to unmapped area\n- Bit 1 - CPU Instruction not implemented, currently used for cache command only\n- Bit 2 - CPU stall timeout\n- Bit 3 - DDR3 timeout    \n- Bit 4 - FPU internal exception    \n- Bit 5 - PI error\n- Bit 6 - critical Exception occurred (heuristic, typically games crash when that happens, but can be false positive)\n- Bit 7 - PIF used up all 64 bytes for external communication or EEPROM command have unusual length\n- Bit 8 - RSP Instruction not implemented\n- Bit 9 - RSP stall timeout\n- Bit 10 - RDP command not implemented\n- Bit 11 - RDP combine mode not implemented\n- Bit 12 - RDP combine alpha functionality not implemented\n- Bit 13 - SDRAM Mux timeout\n- Bit 14 - not implemented texture mode is used\n- Bit 15 - not implemented render mode (2 pass or copy) is used\n- Bit 16 - RSP read Fifo overflow\n- Bit 17 - DDR3 - RSP write Fifo overflow\n- Bit 18 - RSP IMEM/DMEM write/read address collision detected\n- Bit 19 - One fo the DDR3 requesters wants to write or read outside of RDRAM \n- Bit 20 - RSP DMA wants to write outside of RDRAM \n- Bit 21 - RDP pixel writeback wants to write outside of RDRAM\n- Bit 22 - RDP Z writeback wants to write outside of RDRAM\n- Bit 23 - RSP PC is modified by register access while RSP runs\n- Bit 24 - VI line processing wasn't able to complete in time\n- Bit 25 - RDP Mux missed request\n- Bit 26 - CPU Writefifo full (should never happen, internal CPU logic bug)\n- Bit 27 - TLB access from multiple sources in parallel (should never happen, internal CPU logic bug)\n- Bit 28 - PI DMA wants to write outside of RDRAM",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-LLAPI/N64_MiSTer",
       "releases": [
         {
+          "name": "N64_20240322.rbf",
+          "sha": "012786d8c96e2115ab65e3b499e69796a549fd61",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/N64_MiSTer/main/releases/N64_20240322.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "N64_80MHz_20240323.rbf",
+          "sha": "9090f4282b2a429d1b307f66fd91aabea3fae121",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/N64_MiSTer/main/releases/N64_80MHz_20240323.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "N64_LLAPI_20240318.rbf",
           "sha": "a16d8c44581f388b458b6341765be10499be8be4",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/N64_MiSTer/main/releases/N64_LLAPI_20240318.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "N64_LLAPI_20240403.rbf",
+          "sha": "325d8a0b59b0d4f1dd03a78a5ca8178d2a84ac2b",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/N64_MiSTer/main/releases/N64_LLAPI_20240403.rbf",
           "type": "RBF"
         }
       ]
@@ -4684,6 +4702,12 @@
           "name": "Saturn_LLAPI_20240323.rbf",
           "sha": "462c55d303c9528fd674563269f69de1722bba87",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main/releases/Saturn_LLAPI_20240323.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Saturn_LLAPI_20240403.rbf",
+          "sha": "bc8bbe827c093cb67ace34b7caa12bed658d22d1",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main/releases/Saturn_LLAPI_20240403.rbf",
           "type": "RBF"
         }
       ]
@@ -5892,6 +5916,12 @@
           "name": "TurboGrafx16_LLAPI_20240308.rbf",
           "sha": "34c04728591db1d7ffc0b6d90f409a58b4dde4b0",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/TurboGrafx16_MiSTer/master/releases/TurboGrafx16_LLAPI_20240308.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "TurboGrafx16_LLAPI_20240403.rbf",
+          "sha": "7a5e810cd570ec06da40af216278765500f31c1d",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/TurboGrafx16_MiSTer/master/releases/TurboGrafx16_LLAPI_20240403.rbf",
           "type": "RBF"
         }
       ]
