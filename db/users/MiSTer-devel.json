@@ -731,6 +731,12 @@
           "type": "RBF"
         },
         {
+          "name": "ao486_20240409.rbf",
+          "sha": "b0aeac8d20f001db67cbbb0525b38ba6bf4e3735",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/ao486_MiSTer/master/releases/ao486_20240409.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "boot0.rom",
           "sha": "b336b9a9bfb856062e0f15edec6a426b001054d0",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/ao486_MiSTer/master/releases/boot0.rom",
@@ -1394,7 +1400,7 @@
     {
       "name": "Arcade-Atari-system1_MiSTer",
       "description": "Atari System-1",
-      "readme": "# Atari System-1 FPGA Arcade  \n\n## About  \nFPGA implementation of Atari's System 1 (LSI version) arcade platform from 1984.  \nBased primarily on the SP-280, SP-286 schematics with additional support from SP-277, SP-298  \n\nSystem-1 supported game cartridges according to MAME  \n* Marble Madness (1984)  \n* Peter Pack Rat (1985)  \n* Road Runner (1985)  \n* Indiana Jones and the Temple of Doom (1985)  \n* RoadBlasters (1987)  \n\n## Known Issues\nThe following mra files don't work as expected.\n* Indiana Jones (cocktail).mra graphics tiles incorrectly offset, directional controls not working.\n* Indiana Jones (set 3).mra upside down corrupt or missing graphics, text is OK.\n\n## Building  \nThe project files are setup for Quartus 17  \n",
+      "readme": "# Atari System-1 FPGA Arcade  \n\n## About  \nFPGA implementation of Atari's System 1 (LSI version) arcade platform from 1984.  \nBased primarily on the SP-280, SP-286 schematics with additional support from SP-277, SP-298  \n\nSystem-1 supported game cartridges according to MAME  \n* Marble Madness (1984)  \n* Peter Pack Rat (1985)  \n* Road Runner (1985)  \n* Indiana Jones and the Temple of Doom (1985)  \n* RoadBlasters (1987)  \n\n## Known Issues  \nThe following mra files don't work as expected.\n* Indiana Jones (cocktail).mra graphics tiles incorrectly offset, directional controls not working.\n* Indiana Jones (set 3).mra upside down corrupt or missing graphics, text is OK.\n\n## Building  \nThe project files are setup for Quartus 17  \n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/Arcade-Atari-system1_MiSTer",
@@ -1409,6 +1415,12 @@
           "name": "Arcade-atarisys1_20231212.rbf",
           "sha": "ac4f496a78a143566c46d74ac04caa0f0cd7293d",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Atari-system1_MiSTer/main/releases/Arcade-atarisys1_20231212.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-atarisys1_20240410.rbf",
+          "sha": "f9c0a021bcf0847278d7e9bfb5373e9db2be3637",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Atari-system1_MiSTer/main/releases/Arcade-atarisys1_20240410.rbf",
           "type": "RBF"
         },
         {
@@ -4681,14 +4693,14 @@
       "url": "https://github.com/MiSTer-devel/Arcade-Exidy2_MiSTer",
       "releases": [
         {
-          "name": "Arcade-Exidy2_20240217.rbf",
-          "sha": "12bc52caeb35cdc57c279649ee35f2e743d12fe7",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Exidy2_MiSTer/main/releases/Arcade-Exidy2_20240217.rbf",
+          "name": "Arcade-Exidy2_20240414.rbf",
+          "sha": "aa5f9d6eb0bb8c831b63e9fba36488d392500617",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Exidy2_MiSTer/main/releases/Arcade-Exidy2_20240414.rbf",
           "type": "RBF"
         },
         {
           "name": "Hard Hat.mra",
-          "sha": "09c3eba2aa98e171a89d0dcb949bec611455c74b",
+          "sha": "3b3014c0cc3a5fd3dc40400d31c2cba7828a4fbe",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Exidy2_MiSTer/main/releases/Hard%20Hat.mra",
           "type": "MRA",
           "extra": {
@@ -4701,7 +4713,7 @@
         },
         {
           "name": "Mouse Trap.mra",
-          "sha": "221bb8cbee7e25dcd94efa2e7302a34cc2ee9bdb",
+          "sha": "e819e94bbab0180783479f1c010efce9a927af2f",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Exidy2_MiSTer/main/releases/Mouse%20Trap.mra",
           "type": "MRA",
           "extra": {
@@ -4714,7 +4726,7 @@
         },
         {
           "name": "Pepper II.mra",
-          "sha": "d326b304640e44d4b76e6e14d836ab4614a18531",
+          "sha": "195f522874a32c4faae0d0391b48599b84feb415",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Exidy2_MiSTer/main/releases/Pepper%20II.mra",
           "type": "MRA",
           "extra": {
@@ -4727,7 +4739,7 @@
         },
         {
           "name": "Spectar.mra",
-          "sha": "c58b7bc773d6a297e5770e1636e7410342c59b86",
+          "sha": "2047e7772ed4efcc0f032a10ab069e913de053f2",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Exidy2_MiSTer/main/releases/Spectar.mra",
           "type": "MRA",
           "extra": {
@@ -4740,7 +4752,7 @@
         },
         {
           "name": "TARG.mra",
-          "sha": "9edf20cc6ec47898af49129a10ab7f10b233ff7b",
+          "sha": "bc6cd03cf0ee510e32a583db0207464790a9fcf4",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Exidy2_MiSTer/main/releases/TARG.mra",
           "type": "MRA",
           "extra": {
@@ -4753,7 +4765,7 @@
         },
         {
           "name": "Venture Revision 5.mra",
-          "sha": "c497a5c00a94ccca7f9f0bf80d2754bfecf8efcb",
+          "sha": "aca8eff0323f684d103ba4d1a25fcc851867162e",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Exidy2_MiSTer/main/releases/Venture%20Revision%205.mra",
           "type": "MRA",
           "extra": {
@@ -5671,21 +5683,15 @@
       "url": "https://github.com/MiSTer-devel/Arcade-Gauntlet_MiSTer",
       "releases": [
         {
-          "name": "Arcade-Gauntlet_20221123.rbf",
-          "sha": "d36b094a5970c17985b7f1d44df898e4ff388592",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Gauntlet_MiSTer/main/releases/Arcade-Gauntlet_20221123.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Arcade-Gauntlet_20230226.rbf",
-          "sha": "a18841f5241aa7925016ff901da74196fe8976b6",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Gauntlet_MiSTer/main/releases/Arcade-Gauntlet_20230226.rbf",
-          "type": "RBF"
-        },
-        {
           "name": "Arcade-Gauntlet_20230906.rbf",
           "sha": "a33e98a7fd922c4cd0c4a284e7646093894c79d5",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Gauntlet_MiSTer/main/releases/Arcade-Gauntlet_20230906.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Gauntlet_20240409.rbf",
+          "sha": "2d2b6bb4b095c9cdd5e36e306aa9567f2eb8a209",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Gauntlet_MiSTer/main/releases/Arcade-Gauntlet_20240409.rbf",
           "type": "RBF"
         },
         {
@@ -5724,6 +5730,331 @@
             "rbf": "gauntlet",
             "zips": [
               "vindctr2.zip"
+            ]
+          }
+        },
+        {
+          "name": "Gauntlet II (2 Players, German).mra",
+          "sha": "df88cd22b69c6ba766ed770d88d5bb01d92861d9",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Gauntlet_MiSTer/main/releases/_alternatives/_Gauntlet%20II/Gauntlet%20II%20(2%20Players%2C%20German).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Gauntlet II",
+            "rbf": "gauntlet",
+            "zips": [
+              "gaunt2.zip|gaunt22pg.zip"
+            ]
+          }
+        },
+        {
+          "name": "Gauntlet II (2 Players, rev 1).mra",
+          "sha": "c1241a14aaadbfdcc316377894a80dfeb3edd23c",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Gauntlet_MiSTer/main/releases/_alternatives/_Gauntlet%20II/Gauntlet%20II%20(2%20Players%2C%20rev%201).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Gauntlet II",
+            "rbf": "gauntlet",
+            "zips": [
+              "gaunt2.zip|gaunt22p1.zip"
+            ]
+          }
+        },
+        {
+          "name": "Gauntlet II (2 Players, rev 2).mra",
+          "sha": "f34cddba890210c46433f72a46208b315ebcd998",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Gauntlet_MiSTer/main/releases/_alternatives/_Gauntlet%20II/Gauntlet%20II%20(2%20Players%2C%20rev%202).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Gauntlet II",
+            "rbf": "gauntlet",
+            "zips": [
+              "gaunt2.zip|gaunt22p.zip"
+            ]
+          }
+        },
+        {
+          "name": "Gauntlet II (German).mra",
+          "sha": "7c29f2311d9550d98607bcd7eb12a021bd6b40fd",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Gauntlet_MiSTer/main/releases/_alternatives/_Gauntlet%20II/Gauntlet%20II%20(German).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Gauntlet II",
+            "rbf": "gauntlet",
+            "zips": [
+              "gaunt2.zip|gaunt2g.zip"
+            ]
+          }
+        },
+        {
+          "name": "Gauntlet (2 Players, German, rev 1).mra",
+          "sha": "ed03333e8461ad0c9ffe22b17eb88fe49d68154a",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Gauntlet_MiSTer/main/releases/_alternatives/_Gauntlet/Gauntlet%20(2%20Players%2C%20German%2C%20rev%201).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Gauntlet",
+            "rbf": "gauntlet",
+            "zips": [
+              "gauntlet.zip|gauntlet2pg1.zip"
+            ]
+          }
+        },
+        {
+          "name": "Gauntlet (2 Players, German, rev 4).mra",
+          "sha": "4d82a3056de8c7fc783dfeff058f407aa33e9fe0",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Gauntlet_MiSTer/main/releases/_alternatives/_Gauntlet/Gauntlet%20(2%20Players%2C%20German%2C%20rev%204).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Gauntlet",
+            "rbf": "gauntlet",
+            "zips": [
+              "gauntlet.zip|gauntlet2pg.zip"
+            ]
+          }
+        },
+        {
+          "name": "Gauntlet (2 Players, Japanese, rev 2).mra",
+          "sha": "16f30746adfac777f851692bb88801dbbf5698f5",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Gauntlet_MiSTer/main/releases/_alternatives/_Gauntlet/Gauntlet%20(2%20Players%2C%20Japanese%2C%20rev%202).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Gauntlet",
+            "rbf": "gauntlet",
+            "zips": [
+              "gauntlet.zip|gauntlet2pj2.zip"
+            ]
+          }
+        },
+        {
+          "name": "Gauntlet (2 Players, Japanese, rev 5).mra",
+          "sha": "8fe7a1a4359fb3cf2f2c3f90098b72e7422ba953",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Gauntlet_MiSTer/main/releases/_alternatives/_Gauntlet/Gauntlet%20(2%20Players%2C%20Japanese%2C%20rev%205).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Gauntlet",
+            "rbf": "gauntlet",
+            "zips": [
+              "gauntlet.zip|gauntlet2pj.zip"
+            ]
+          }
+        },
+        {
+          "name": "Gauntlet (2 Players, rev 3).mra",
+          "sha": "1e53bb507cbb226a5b1a14124e5fca41c67a6dfa",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Gauntlet_MiSTer/main/releases/_alternatives/_Gauntlet/Gauntlet%20(2%20Players%2C%20rev%203).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Gauntlet",
+            "rbf": "gauntlet",
+            "zips": [
+              "gauntlet.zip|gauntlet2pr3.zip"
+            ]
+          }
+        },
+        {
+          "name": "Gauntlet (2 Players, rev 6).mra",
+          "sha": "720a315ad2a84418185832922f1487065eb448a9",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Gauntlet_MiSTer/main/releases/_alternatives/_Gauntlet/Gauntlet%20(2%20Players%2C%20rev%206).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Gauntlet",
+            "rbf": "gauntlet",
+            "zips": [
+              "gauntlet.zip|gauntlet2p.zip"
+            ]
+          }
+        },
+        {
+          "name": "Gauntlet (German, rev 10).mra",
+          "sha": "c82f501571b44ebc6182cfd1472856d06aa934a9",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Gauntlet_MiSTer/main/releases/_alternatives/_Gauntlet/Gauntlet%20(German%2C%20rev%2010).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Gauntlet",
+            "rbf": "gauntlet",
+            "zips": [
+              "gauntlet.zip|gauntletg.zip"
+            ]
+          }
+        },
+        {
+          "name": "Gauntlet (German, rev 3).mra",
+          "sha": "131f60f9d5dc3ee3618e4b0c2a8e719873974f1d",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Gauntlet_MiSTer/main/releases/_alternatives/_Gauntlet/Gauntlet%20(German%2C%20rev%203).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Gauntlet",
+            "rbf": "gauntlet",
+            "zips": [
+              "gauntlet.zip|gauntletgr3.zip"
+            ]
+          }
+        },
+        {
+          "name": "Gauntlet (German, rev 6).mra",
+          "sha": "e47715ccba82b12e8e4d9905258b92b1aa1e676f",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Gauntlet_MiSTer/main/releases/_alternatives/_Gauntlet/Gauntlet%20(German%2C%20rev%206).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Gauntlet",
+            "rbf": "gauntlet",
+            "zips": [
+              "gauntlet.zip|gauntletgr6.zip"
+            ]
+          }
+        },
+        {
+          "name": "Gauntlet (German, rev 8).mra",
+          "sha": "8c7e2b81081a2b2cf0d69c41308c5cddd42d756e",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Gauntlet_MiSTer/main/releases/_alternatives/_Gauntlet/Gauntlet%20(German%2C%20rev%208).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Gauntlet",
+            "rbf": "gauntlet",
+            "zips": [
+              "gauntlet.zip|gauntletgr8.zip"
+            ]
+          }
+        },
+        {
+          "name": "Gauntlet (Japanese, rev 12).mra",
+          "sha": "584a4f07bc464cee5c8bf0eb638746382f63ef4d",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Gauntlet_MiSTer/main/releases/_alternatives/_Gauntlet/Gauntlet%20(Japanese%2C%20rev%2012).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Gauntlet",
+            "rbf": "gauntlet",
+            "zips": [
+              "gauntlet.zip|gauntletj12.zip"
+            ]
+          }
+        },
+        {
+          "name": "Gauntlet (Japanese, rev 13).mra",
+          "sha": "73eca2882b2d1a14b42670097042cd8cfd552fec",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Gauntlet_MiSTer/main/releases/_alternatives/_Gauntlet/Gauntlet%20(Japanese%2C%20rev%2013).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Gauntlet",
+            "rbf": "gauntlet",
+            "zips": [
+              "gauntlet.zip|gauntletj.zip"
+            ]
+          }
+        },
+        {
+          "name": "Gauntlet (Spanish, rev 15).mra",
+          "sha": "15ee8941b0df30e0216d3d002e5e3a01b184b204",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Gauntlet_MiSTer/main/releases/_alternatives/_Gauntlet/Gauntlet%20(Spanish%2C%20rev%2015).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Gauntlet",
+            "rbf": "gauntlet",
+            "zips": [
+              "gauntlet.zip|gauntlets.zip"
+            ]
+          }
+        },
+        {
+          "name": "Gauntlet (rev 1).mra",
+          "sha": "de65653e078fb53fd737ca545203ccfd15245dbd",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Gauntlet_MiSTer/main/releases/_alternatives/_Gauntlet/Gauntlet%20(rev%201).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Gauntlet",
+            "rbf": "gauntlet",
+            "zips": [
+              "gauntlet.zip|gauntletr1.zip"
+            ]
+          }
+        },
+        {
+          "name": "Gauntlet (rev 2).mra",
+          "sha": "c60bbfda2730d851a3557f7ae6ff33a1de152a53",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Gauntlet_MiSTer/main/releases/_alternatives/_Gauntlet/Gauntlet%20(rev%202).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Gauntlet",
+            "rbf": "gauntlet",
+            "zips": [
+              "gauntlet.zip|gauntletr2.zip"
+            ]
+          }
+        },
+        {
+          "name": "Gauntlet (rev 4).mra",
+          "sha": "4e10404ba44faf00a3a953225932a280c7c07022",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Gauntlet_MiSTer/main/releases/_alternatives/_Gauntlet/Gauntlet%20(rev%204).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Gauntlet",
+            "rbf": "gauntlet",
+            "zips": [
+              "gauntlet.zip|gauntletr4.zip"
+            ]
+          }
+        },
+        {
+          "name": "Gauntlet (rev 5).mra",
+          "sha": "41c13c6330f8bf75496157adb4960f39ac5772b1",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Gauntlet_MiSTer/main/releases/_alternatives/_Gauntlet/Gauntlet%20(rev%205).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Gauntlet",
+            "rbf": "gauntlet",
+            "zips": [
+              "gauntlet.zip|gauntletr5.zip"
+            ]
+          }
+        },
+        {
+          "name": "Gauntlet (rev 7).mra",
+          "sha": "4e14665595b8bdb8f48b574162f022f13224abe3",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Gauntlet_MiSTer/main/releases/_alternatives/_Gauntlet/Gauntlet%20(rev%207).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Gauntlet",
+            "rbf": "gauntlet",
+            "zips": [
+              "gauntlet.zip|gauntletr7.zip"
+            ]
+          }
+        },
+        {
+          "name": "Gauntlet (rev 9).mra",
+          "sha": "cb161d0b720a7e9b52966b44990d2ee7e98db724",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Gauntlet_MiSTer/main/releases/_alternatives/_Gauntlet/Gauntlet%20(rev%209).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Gauntlet",
+            "rbf": "gauntlet",
+            "zips": [
+              "gauntlet.zip|gauntletr9.zip"
+            ]
+          }
+        },
+        {
+          "name": "Vindicators Part II (rev 1).mra",
+          "sha": "3242539cced05e9c51b26a5029d41eaa2354de65",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Gauntlet_MiSTer/main/releases/_alternatives/_Vindicators%20part%20II/Vindicators%20Part%20II%20(rev%201).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Vindicators Part II",
+            "rbf": "gauntlet",
+            "zips": [
+              "vindctr2.zip|vindctr2r1.zip"
+            ]
+          }
+        },
+        {
+          "name": "Vindicators Part II (rev 2).mra",
+          "sha": "670a8bdd24118a1e4c2928a210e0a8c2bbb1be86",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Gauntlet_MiSTer/main/releases/_alternatives/_Vindicators%20part%20II/Vindicators%20Part%20II%20(rev%202).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Vindicators Part II",
+            "rbf": "gauntlet",
+            "zips": [
+              "vindctr2.zip|vindctr2r2.zip"
             ]
           }
         }
@@ -5907,6 +6238,12 @@
           "name": "Arcade-Inferno_20240317.rbf",
           "sha": "9f62d80b32d5c0be6d8a0c30b2310e757e182bd6",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Inferno_MiSTer/master/releases/Arcade-Inferno_20240317.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Inferno_20240410.rbf",
+          "sha": "d33f57e6b8e4ca05e4c631702ac672c4d13cf72d",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Inferno_MiSTer/master/releases/Arcade-Inferno_20240410.rbf",
           "type": "RBF"
         },
         {
@@ -7179,6 +7516,12 @@
           "name": "Arcade-Joust2_20240317.rbf",
           "sha": "86f3f320816a9b5ea93f46b6691b94c4dd296f7c",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Joust2_MiSTer/master/releases/Arcade-Joust2_20240317.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Joust2_20240410.rbf",
+          "sha": "523e010d2919d631be04ec3d3d3ac7695f95b009",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Joust2_MiSTer/master/releases/Arcade-Joust2_20240410.rbf",
           "type": "RBF"
         },
         {
@@ -8577,6 +8920,12 @@
           "name": "Arcade-MysticMarathon_20240317.rbf",
           "sha": "7664b30e5801b0a38df139ad081791233250f8b6",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MysticMarathon_MiSTer/master/releases/Arcade-MysticMarathon_20240317.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-MysticMarathon_20240410.rbf",
+          "sha": "61ecdd59a46f2ce45aef6ea8423105ce3f109761",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MysticMarathon_MiSTer/master/releases/Arcade-MysticMarathon_20240410.rbf",
           "type": "RBF"
         },
         {
@@ -12814,6 +13163,12 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-TropicalAngel_20240410.rbf",
+          "sha": "8657722bbfd433c1d524492935397ad51abcc050",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TropicalAngel_MiSTer/master/releases/Arcade-TropicalAngel_20240410.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Tropical Angel.mra",
           "sha": "950dd75f69366d5d3ce7c6fbea80149df74c337d",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TropicalAngel_MiSTer/master/releases/Tropical%20Angel.mra",
@@ -12895,6 +13250,12 @@
           "name": "Arcade-TurkeyShoot_20240317.rbf",
           "sha": "ebaa0fcd9b034d48fe17162506e41c9a6d521e20",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TurkeyShoot_MiSTer/main/releases/Arcade-TurkeyShoot_20240317.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-TurkeyShoot_20240410.rbf",
+          "sha": "2aef995f9e159301084334537ce444f0d5dbbf81",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TurkeyShoot_MiSTer/main/releases/Arcade-TurkeyShoot_20240410.rbf",
           "type": "RBF"
         },
         {
@@ -14038,6 +14399,12 @@
           "name": "AtariLynx_20240317.rbf",
           "sha": "7be33c371d85dfd8337091b3bcee97133bd538f9",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/AtariLynx_MiSTer/main/releases/AtariLynx_20240317.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "AtariLynx_20240410.rbf",
+          "sha": "a2f59f6e9eebdb060eb5b427603b30bf3a2144c7",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/AtariLynx_MiSTer/main/releases/AtariLynx_20240410.rbf",
           "type": "RBF"
         }
       ]
@@ -15296,6 +15663,12 @@
           "sha": "68927b56f88d05c73983c10386424024ed532ea7",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Chess_MiSTer/master/releases/Chess_20240317.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "Chess_20240410.rbf",
+          "sha": "973ef256adc8153057a10098ac50b2c46610deac",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Chess_MiSTer/master/releases/Chess_20240410.rbf",
+          "type": "RBF"
         }
       ]
     },
@@ -15674,7 +16047,7 @@
     {
       "name": "Distribution_MiSTer",
       "description": "This repository contains all the files that you'll want in your MiSTer",
-      "readme": "# MiSTer Distribution\n\nThis repository contains all the files that you'll want in your MiSTer.\n\nYou may download all of them at once as a zip through the [following link](https://github.com/MiSTer-devel/Distribution_MiSTer/archive/refs/heads/main.zip). Once you have them, place them as-is in your [properly initialised SD card](https://github.com/MiSTer-devel/mr-fusion), and everything should work out of the box.\n\n### MiSTer Project\n\nIf you want to check more about the MiSTer project, please check [this wiki](https://github.com/MiSTer-devel/Wiki_MiSTer/wiki).\n\n### MiSTer Downloader\n\nFor downloading all of these files directly from your MiSTer, use the [MiSTer Downloader](https://github.com/MiSTer-devel/Downloader_MiSTer).\n\n#### Tags that you may use with 'Download Filters' feature\n\nRead about how to use them [here](https://github.com/MiSTer-devel/Downloader_MiSTer/blob/main/docs/download-filters.md).\n\n##### List:\n\n`.config`, `acornatom`, `acornelectron`, `adam`, `adctest`, `adventurevision`, `alicemc10`, `all_filters`, `altair8800`, `alternatives`, `amiga`, `amstrad`, `amstrad-pcw`, `amstradpcw`, `ao486`, `apogee`, `apple-i`, `apple-ii`, `aquarius`, `arcade`, `arcade-arkanoid`, `arcade-asteroids`, `arcade-asteroidsdeluxe`, `arcade-astrocade`, `arcade-atarisys1`, `arcade-ataritetris`, `arcade-athena`, `arcade-athena_mister`, `arcade-bagman`, `arcade-bankpanic`, `arcade-battlezone`, `arcade-berzerk`, `arcade-blackwidow`, `arcade-blockade`, `arcade-bombjack`, `arcade-bosconian`, `arcade-breakout`, `arcade-burgertime`, `arcade-burningrubber`, `arcade-canyonbomber`, `arcade-cave`, `arcade-centipede`, `arcade-chameleon`, `arcade-computerspace`, `arcade-congobongo`, `arcade-cores`, `arcade-cosmic`, `arcade-cosmicguerilla`, `arcade-crazyballoon`, `arcade-crazyclimber`, `arcade-crazykong`, `arcade-crystalcastles`, `arcade-defender`, `arcade-digdug`, `arcade-dominos`, `arcade-donkeykong`, `arcade-donkeykong3`, `arcade-donkeykongjunior`, `arcade-dorodon`, `arcade-dottorikun`, `arcade-druaga`, `arcade-exerion`, `arcade-exidy2`, `arcade-expressraider`, `arcade-finalizer`, `arcade-foodfight`, `arcade-freeze`, `arcade-frenzy`, `arcade-galaga`, `arcade-galaxian`, `arcade-galivan`, `arcade-gaplus`, `arcade-gauntlet`, `arcade-gyruss`, `arcade-ikariwarriors`, `arcade-inferno`, `arcade-iremm62`, `arcade-iremm72`, `arcade-iremm92`, `arcade-ironhorse`, `arcade-jackal`, `arcade-jailbreak`, `arcade-joust2`, `arcade-kickandrun`, `arcade-ladybug`, `arcade-lunarlander`, `arcade-mariobros`, `arcade-mcr1`, `arcade-mcr2`, `arcade-mcr3`, `arcade-mcr3mono`, `arcade-mcr3scroll`, `arcade-missilecommand`, `arcade-moonpatrol`, `arcade-mrdo`, `arcade-mrjong`, `arcade-mysticmarathon`, `arcade-ninjakun`, `arcade-pacman`, `arcade-pengo`, `arcade-penguinkunwars`, `arcade-performan`, `arcade-phoenix`, `arcade-pleiads`, `arcade-polyplay`, `arcade-pong`, `arcade-pooyan`, `arcade-popeye`, `arcade-qbert`, `arcade-rallyx`, `arcade-riverpatrol`, `arcade-robotron`, `arcade-rshnatk`, `arcade-scootershooter`, `arcade-scramble`, `arcade-segasys1`, `arcade-segavicz80`, `arcade-silverland`, `arcade-slapfight`, `arcade-sms`, `arcade-snk_triplez80`, `arcade-solomonskey`, `arcade-sonson`, `arcade-spaceinvaders`, `arcade-spacerace`, `arcade-sprint1`, `arcade-sprint2`, `arcade-subs`, `arcade-superbreakout`, `arcade-taitosj`, `arcade-tankbattalion`, `arcade-tecmo`, `arcade-tiamc1`, `arcade-timepilot`, `arcade-timepilot84`, `arcade-tnkiii`, `arcade-traverseusa`, `arcade-tropicalangel`, `arcade-turkeyshoot`, `arcade-ultratank`, `arcade-vball`, `arcade-xevious`, `arcade-xsleenacore`, `arcade-zaxxon`, `arcade-zigzag`, `arcadelpf`, `arcadia`, `archie`, `arduboy`, `astrocade`, `atari2600`, `atari5200`, `atari7800`, `atari800`, `atarilynx`, `atarist`, `avision`, `ay-3-8500`, `bbcbridgecompanion`, `bbcmicro`, `bios`, `bk0011m`, `c128`, `c16`, `c64`, `casio_pv-1000`, `casio_pv-2000`, `channelf`, `cheats`, `chess`, `chip8`, `coco2`, `coco3`, `coleco`, `colecoadam`, `colecovision`, `complexmultichromatic`, `computer`, `computer-cores`, `console`, `console-cores`, `contrast_boost`, `cores`, `corespecific`, `creativision`, `crt-simulation`, `displayspecific`, `docs`, `downloader`, `downloaderlatest`, `drv`, `edsac`, `eg2000`, `epochgalaxyii`, `essential`, `extra-utilities`, `famicom`, `filters`, `filters_audio`, `filters_video`, `flappy`, `flappybird`, `font`, `galaksija`, `gamate`, `gameboy`, `gameboy2p`, `gameboyadvance`, `gameboycolor`, `gamecontrollerdb`, `gamegear`, `gamenwatch`, `gameoflife`, `games`, `gamma`, `gb`, `gba`, `gba2p`, `gbc`, `gbmidi`, `generalhardware`, `generallpf`, `genesis`, `gnw`, `handheld2p`, `hbmame`, `homelab`, `inputtest`, `intellivision`, `interact`, `jupiter`, `laser`, `laser310`, `lcd-general`, `lcd-integeronly`, `linux`, `lynx48`, `macplus`, `mame`, `mastersystem`, `megacd`, `megadrive`, `megaduck`, `memte`, `memtest`, `menu`, `mgl`, `minimig`, `misterfirmware`, `misterlaggy`, `mra`, `msx`, `msx1`, `multicomp`, `myvision`, `n64`, `neogeo`, `nes`, `nintendo`, `odyssey2`, `old`, `ondra_spo186`, `orao`, `oric`, `other`, `other-cores`, `overlays`, `palettes`, `pc88`, `pc8801`, `pcengine`, `pcenginecd`, `pcxt`, `pdp1`, `pet2001`, `pmd85`, `pocketchallengev2`, `pokemonmini`, `poly_gamma`, `presets`, `psx`, `pure_gamma`, `ql`, `readme`, `rx78`, `s32x`, `samcoupe`, `saturn`, `scanlines-adaptive`, `scanlines-brighter`, `scanlines-standard`, `scripts`, `segacd`, `segamark3`, `service-cores`, `sgb`, `shadow_masks`, `sharpmz`, `simplemonochrome`, `slugcross`, `sms`, `snes`, `sordm5`, `specialist`, `spectrum`, `spmx`, `sufami`, `super_vision_8000`, `superfamicom`, `supergameboy`, `supernes`, `supernintendo`, `supervision`, `supervision8000`, `svi328`, `tatungeinstein`, `tgfx16`, `tgfx16-cd`, `tgfx16cd`, `ti-99_4a`, `ti994a`, `tomyscramble`, `tomytutor`, `trs-80`, `tsconf`, `turbografx`, `turbografx16`, `turbografx16cd`, `turbografxcd`, `uk101`, `upscaling-lanczosbicubicetc`, `upscaling-recommended`, `upscaling-sharpbilinear`, `utility`, `vc4000`, `vector-06c`, `vector06`, `vector06c`, `vectrex`, `vic20`, `wonderswan`, `wonderswancolor`, `x68000`, `yctxt`, `zx-spectrum`, `zx81`, `zxnext`, `zxspectrum`\n\n##### Some relevant tag descriptions:\n\n- `arcade-cores` / `arcade`: All arcade cores and MRA files.\n- `computer-cores` / `computer`: All computer cores and related folders.\n- `console-cores` / `console`: All console cores and related folders.\n- `other-cores` / `other`: All cores from the top folder Other with their related folders.\n- `service-cores` / `utility`: All utility cores and related folders.\n- `cores`: All cores (RBF files).\n- `mra`: All MRA files & folders.\n- `alternatives`: All MRA Alternatives\n- `hbmame`: All files & folders linked to the HBMame collection.\n- `handheld2p`: All 2 Player versions for Handheld cores.\n- `filters_video`: All video filters (`gamma` & `filters` & `shadow_masks`).\n- `all_filters`: All video & audio filters (`filters_video` & `filters_audio`).\n- `essential`: Menu core & MiSTer firmware.\n- `readme`: All README files.\n- `docs`: All documentation files & folders, including README files.\n- `extra-utilities`: All extra utilities that are installed in games folders of some computer cores.\n- `bios`: All bioses that are installed in the games folders for some computer & console cores.\n- `cheats`: All cheat files & folders.\n\n### Contributing\n\nYou are more than welcome to contribute to the [MiSTer-devel Organization](https://github.com/MiSTer-devel). But you can't do it by openening PRs to the main branch of this repository. This repository is only for file distribution. Whatever content shows up here depends on the other repositories of this organization, so you should target your PRs there.\n\nThere is a development branch in this repository for the content collection. Is fine to send PRs there but they should only modify the content collection scripts that are being used by the workflows.\n",
+      "readme": "# MiSTer Distribution\n\nThis repository contains all the files that you'll want in your MiSTer.\n\nYou may download all of them at once as a zip through the [following link](https://github.com/MiSTer-devel/Distribution_MiSTer/archive/refs/heads/main.zip). Once you have them, place them as-is in your [properly initialised SD card](https://github.com/MiSTer-devel/mr-fusion), and everything should work out of the box.\n\n### MiSTer Project\n\nIf you want to check more about the MiSTer project, please check [this wiki](https://github.com/MiSTer-devel/Wiki_MiSTer/wiki).\n\n### MiSTer Downloader\n\nFor downloading all of these files directly from your MiSTer, use the [MiSTer Downloader](https://github.com/MiSTer-devel/Downloader_MiSTer).\n\n#### Tags that you may use with 'Download Filters' feature\n\nRead about how to use them [here](https://github.com/MiSTer-devel/Downloader_MiSTer/blob/main/docs/download-filters.md).\n\n##### List:\n\n`.config`, `acornatom`, `acornelectron`, `adam`, `adctest`, `adventurevision`, `alicemc10`, `all_filters`, `altair8800`, `alternatives`, `amiga`, `amstrad`, `amstrad-pcw`, `amstradpcw`, `ao486`, `apogee`, `apple-i`, `apple-ii`, `aquarius`, `arcade`, `arcade-arkanoid`, `arcade-asteroids`, `arcade-asteroidsdeluxe`, `arcade-astrocade`, `arcade-atarisys1`, `arcade-ataritetris`, `arcade-athena`, `arcade-athena_mister`, `arcade-bagman`, `arcade-bankpanic`, `arcade-battlezone`, `arcade-berzerk`, `arcade-blackwidow`, `arcade-blockade`, `arcade-bombjack`, `arcade-bosconian`, `arcade-breakout`, `arcade-burgertime`, `arcade-burningrubber`, `arcade-canyonbomber`, `arcade-cave`, `arcade-centipede`, `arcade-chameleon`, `arcade-computerspace`, `arcade-congobongo`, `arcade-cores`, `arcade-cosmic`, `arcade-cosmicguerilla`, `arcade-crazyballoon`, `arcade-crazyclimber`, `arcade-crazykong`, `arcade-crystalcastles`, `arcade-defender`, `arcade-digdug`, `arcade-dominos`, `arcade-donkeykong`, `arcade-donkeykong3`, `arcade-donkeykongjunior`, `arcade-dorodon`, `arcade-dottorikun`, `arcade-druaga`, `arcade-exerion`, `arcade-exidy2`, `arcade-expressraider`, `arcade-finalizer`, `arcade-foodfight`, `arcade-freeze`, `arcade-frenzy`, `arcade-galaga`, `arcade-galaxian`, `arcade-galivan`, `arcade-gaplus`, `arcade-gauntlet`, `arcade-gyruss`, `arcade-ikariwarriors`, `arcade-inferno`, `arcade-iremm62`, `arcade-iremm72`, `arcade-iremm92`, `arcade-ironhorse`, `arcade-jackal`, `arcade-jailbreak`, `arcade-joust2`, `arcade-kickandrun`, `arcade-ladybug`, `arcade-lunarlander`, `arcade-mariobros`, `arcade-mcr1`, `arcade-mcr2`, `arcade-mcr3`, `arcade-mcr3mono`, `arcade-mcr3scroll`, `arcade-missilecommand`, `arcade-moonpatrol`, `arcade-mrdo`, `arcade-mrjong`, `arcade-mysticmarathon`, `arcade-ninjakun`, `arcade-pacman`, `arcade-pengo`, `arcade-penguinkunwars`, `arcade-performan`, `arcade-phoenix`, `arcade-pleiads`, `arcade-polyplay`, `arcade-pong`, `arcade-pooyan`, `arcade-popeye`, `arcade-qbert`, `arcade-rallyx`, `arcade-riverpatrol`, `arcade-robotron`, `arcade-rshnatk`, `arcade-scootershooter`, `arcade-scramble`, `arcade-segasys1`, `arcade-segavicz80`, `arcade-silverland`, `arcade-slapfight`, `arcade-sms`, `arcade-snk_triplez80`, `arcade-solomonskey`, `arcade-sonson`, `arcade-spaceinvaders`, `arcade-spacerace`, `arcade-sprint1`, `arcade-sprint2`, `arcade-subs`, `arcade-superbreakout`, `arcade-taitosj`, `arcade-tankbattalion`, `arcade-tecmo`, `arcade-tiamc1`, `arcade-timepilot`, `arcade-timepilot84`, `arcade-tnkiii`, `arcade-traverseusa`, `arcade-tropicalangel`, `arcade-turkeyshoot`, `arcade-ultratank`, `arcade-vball`, `arcade-xevious`, `arcade-xsleenacore`, `arcade-zaxxon`, `arcade-zigzag`, `arcadelpf`, `arcadia`, `archie`, `arduboy`, `astrocade`, `atari2600`, `atari5200`, `atari7800`, `atari800`, `atarilynx`, `atarist`, `avision`, `ay-3-8500`, `bbcbridgecompanion`, `bbcmicro`, `bios`, `bk0011m`, `c128`, `c16`, `c64`, `casio_pv-1000`, `casio_pv-2000`, `channelf`, `cheats`, `chess`, `chip8`, `coco2`, `coco3`, `coleco`, `colecoadam`, `colecovision`, `complexmultichromatic`, `computer`, `computer-cores`, `console`, `console-cores`, `contrast_boost`, `cores`, `corespecific`, `creativision`, `crt-simulation`, `displayspecific`, `docs`, `downloader`, `downloaderlatest`, `drv`, `edsac`, `eg2000`, `epochgalaxyii`, `essential`, `extra-utilities`, `famicom`, `filters`, `filters_audio`, `filters_video`, `flappy`, `flappybird`, `font`, `galaksija`, `gamate`, `gameboy`, `gameboy2p`, `gameboyadvance`, `gameboycolor`, `gamecontrollerdb`, `gamegear`, `gamenwatch`, `gameoflife`, `games`, `gamma`, `gb`, `gba`, `gba2p`, `gbc`, `gbmidi`, `generalhardware`, `generallpf`, `genesis`, `genesis-core`, `gnw`, `handheld2p`, `hbmame`, `homelab`, `inputtest`, `intellivision`, `interact`, `jupiter`, `laser`, `laser310`, `lcd-general`, `lcd-integeronly`, `linux`, `lynx48`, `macplus`, `mame`, `mastersystem`, `megacd`, `megadrive`, `megadrive-core`, `megaduck`, `memte`, `memtest`, `menu`, `mgl`, `minimig`, `misterfirmware`, `misterlaggy`, `mra`, `msx`, `msx1`, `multicomp`, `myvision`, `n64`, `neogeo`, `nes`, `nintendo`, `odyssey2`, `old`, `ondra_spo186`, `orao`, `oric`, `other`, `other-cores`, `overlays`, `palettes`, `pc88`, `pc8801`, `pcengine`, `pcenginecd`, `pcxt`, `pdp1`, `pet2001`, `pmd85`, `pocketchallengev2`, `pokemonmini`, `poly_gamma`, `presets`, `psx`, `pure_gamma`, `ql`, `readme`, `rx78`, `s32x`, `samcoupe`, `saturn`, `scanlines-adaptive`, `scanlines-brighter`, `scanlines-standard`, `scripts`, `segacd`, `segamark3`, `service-cores`, `sgb`, `shadow_masks`, `sharpmz`, `simplemonochrome`, `slugcross`, `sms`, `snes`, `sordm5`, `specialist`, `spectrum`, `spmx`, `sufami`, `super_vision_8000`, `superfamicom`, `supergameboy`, `supernes`, `supernintendo`, `supervision`, `supervision8000`, `svi328`, `tatungeinstein`, `tgfx16`, `tgfx16-cd`, `tgfx16cd`, `ti-99_4a`, `ti994a`, `tomyscramble`, `tomytutor`, `trs-80`, `tsconf`, `turbografx`, `turbografx16`, `turbografx16cd`, `turbografxcd`, `uk101`, `upscaling-lanczosbicubicetc`, `upscaling-recommended`, `upscaling-sharpbilinear`, `utility`, `vc4000`, `vector-06c`, `vector06`, `vector06c`, `vectrex`, `vic20`, `wonderswan`, `wonderswancolor`, `x68000`, `yctxt`, `zx-spectrum`, `zx81`, `zxnext`, `zxspectrum`\n\n##### Some relevant tag descriptions:\n\n- `arcade-cores` / `arcade`: All arcade cores and MRA files.\n- `computer-cores` / `computer`: All computer cores and related folders.\n- `console-cores` / `console`: All console cores and related folders.\n- `other-cores` / `other`: All cores from the top folder Other with their related folders.\n- `service-cores` / `utility`: All utility cores and related folders.\n- `cores`: All cores (RBF files).\n- `mra`: All MRA files & folders.\n- `alternatives`: All MRA Alternatives\n- `hbmame`: All files & folders linked to the HBMame collection.\n- `handheld2p`: All 2 Player versions for Handheld cores.\n- `filters_video`: All video filters (`gamma` & `filters` & `shadow_masks`).\n- `all_filters`: All video & audio filters (`filters_video` & `filters_audio`).\n- `essential`: Menu core & MiSTer firmware.\n- `readme`: All README files.\n- `docs`: All documentation files & folders, including README files.\n- `extra-utilities`: All extra utilities that are installed in games folders of some computer cores.\n- `bios`: All bioses that are installed in the games folders for some computer & console cores.\n- `cheats`: All cheat files & folders.\n\n### Contributing\n\nYou are more than welcome to contribute to the [MiSTer-devel Organization](https://github.com/MiSTer-devel). But you can't do it by openening PRs to the main branch of this repository. This repository is only for file distribution. Whatever content shows up here depends on the other repositories of this organization, so you should target your PRs there.\n\nThere is a development branch in this repository for the content collection. Is fine to send PRs there but they should only modify the content collection scripts that are being used by the workflows.\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/Distribution_MiSTer",
@@ -16393,6 +16766,12 @@
           "name": "GBA_20240317.rbf",
           "sha": "2e40066e8f1fb4f2ba423fd1213eafdb585c6118",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/GBA_MiSTer/master/releases/GBA_20240317.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "GBA_20240410.rbf",
+          "sha": "baa315b409a04c3335f744c527f6af55caae6a15",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/GBA_MiSTer/master/releases/GBA_20240410.rbf",
           "type": "RBF"
         }
       ]
@@ -18356,6 +18735,12 @@
           "sha": "46e547f72ac100ec9f5a0abf6df05f91679df7b8",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/MegaCD_MiSTer/master/releases/MegaCD_20231204.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "MegaCD_20240408.rbf",
+          "sha": "54652940c7e42075c5dbf3951f5cfa10b4960b49",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/MegaCD_MiSTer/master/releases/MegaCD_20240408.rbf",
+          "type": "RBF"
         }
       ]
     },
@@ -18395,6 +18780,12 @@
           "name": "MegaDrive_20231204.rbf",
           "sha": "2bf823c45eb3609daa2056b3244aba54e2d51f38",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/MegaDrive_MiSTer/main/releases/MegaDrive_20231204.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "MegaDrive_20240408.rbf",
+          "sha": "d7ef76a59e76610ed53f83571a507b77e5cc9b74",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/MegaDrive_MiSTer/main/releases/MegaDrive_20240408.rbf",
           "type": "RBF"
         }
       ]
@@ -18763,6 +19154,12 @@
           "name": "menu_20240321.rbf",
           "sha": "c8f1baf61b08880e79f0a0cf18e5414e862024f0",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Menu_MiSTer/master/releases/menu_20240321.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "menu_20240408.rbf",
+          "sha": "75c470708263a1082e1255967bd1eb4d8da925e2",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Menu_MiSTer/master/releases/menu_20240408.rbf",
           "type": "RBF"
         }
       ]
@@ -19184,6 +19581,12 @@
           "name": "Minimig_20231204.rbf",
           "sha": "a3024c37cd12493a5610b9f3f3fba40745199344",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Minimig-AGA_MiSTer/MiSTer/releases/Minimig_20231204.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Minimig_20240409.rbf",
+          "sha": "95c2f712f79af79a15faf1dfb354a7ad605a1814",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Minimig-AGA_MiSTer/MiSTer/releases/Minimig_20240409.rbf",
           "type": "RBF"
         },
         {
@@ -20054,6 +20457,12 @@
           "sha": "3535488b9b89dcbc1222ce9f67f332c8f206a435",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/NES_MiSTer/master/releases/NES_20231204.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "NES_20240408.rbf",
+          "sha": "5b3b8da3f315b2ae7367069b0ca03ffbfbf43776",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/NES_MiSTer/master/releases/NES_20240408.rbf",
+          "type": "RBF"
         }
       ]
     },
@@ -20860,6 +21269,12 @@
           "name": "PSX_20240318.rbf",
           "sha": "43bc274d8fcc1e2779175ecbfef4e188c5decbb1",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/PSX_MiSTer/main/releases/PSX_20240318.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "PSX_20240410.rbf",
+          "sha": "1ff2a287c14124b3aff26c00e15986fb58644ae0",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/PSX_MiSTer/main/releases/PSX_20240410.rbf",
           "type": "RBF"
         }
       ]
@@ -22198,6 +22613,12 @@
           "name": "SNES_20231204.rbf",
           "sha": "a0c60f6cd43c5784f9858f2e7baaf18fac9120c5",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/SNES_MiSTer/master/releases/SNES_20231204.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_20240408.rbf",
+          "sha": "3e5b437a38636c7e15c593171149bd8436956a45",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/SNES_MiSTer/master/releases/SNES_20240408.rbf",
           "type": "RBF"
         }
       ]
@@ -23620,6 +24041,12 @@
           "name": "WonderSwan_20240317.rbf",
           "sha": "06b2bae6d4fa9a7548463785b2026fa438e98ca2",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/WonderSwan_MiSTer/main/releases/WonderSwan_20240317.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "WonderSwan_20240410.rbf",
+          "sha": "c05390efd3781a062b751b6f9e3802976bf8123b",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/WonderSwan_MiSTer/main/releases/WonderSwan_20240410.rbf",
           "type": "RBF"
         }
       ]
