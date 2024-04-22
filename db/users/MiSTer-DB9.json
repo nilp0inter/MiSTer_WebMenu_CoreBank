@@ -466,6 +466,12 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Astrocade_20240419.rbf",
+          "sha": "5974582fdf062eb1d8e317b020ef9cc8e838799a",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Astrocade_MiSTer/master/releases/Arcade-Astrocade_20240419.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Extra Bases.mra",
           "sha": "bf2a59786bcf11b93b45925d25c9cf3cb4d7ed73",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Astrocade_MiSTer/master/releases/Extra%20Bases.mra",
@@ -480,7 +486,7 @@
         },
         {
           "name": "Gorf (Program 1).mra",
-          "sha": "1f34a2d7e24c3b0d1d061e75b8f6ddd01f8c2c0e",
+          "sha": "dd699e0da99e40e3b38ce8df810d5f4414128b1d",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Astrocade_MiSTer/master/releases/Gorf%20(Program%201).mra",
           "type": "MRA",
           "extra": {
@@ -493,7 +499,7 @@
         },
         {
           "name": "Gorf (Speech).mra",
-          "sha": "d58922e0f488225391d3d00e17fe0e1cb587a741",
+          "sha": "63afc672b5032ea4ed84bbc81a4a8b3a358b70b0",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Astrocade_MiSTer/master/releases/Gorf%20(Speech).mra",
           "type": "MRA",
           "extra": {
@@ -506,7 +512,7 @@
         },
         {
           "name": "Gorf.mra",
-          "sha": "83e29f31a0891408d336f3f6a7b0c7e216342c22",
+          "sha": "14c50642ea4e46f10157deda336b57f1dac1da61",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Astrocade_MiSTer/master/releases/Gorf.mra",
           "type": "MRA",
           "extra": {
@@ -3512,12 +3518,6 @@
           "type": "RBF"
         },
         {
-          "name": "Arcade-Gauntlet_20221123.rbf",
-          "sha": "d36b094a5970c17985b7f1d44df898e4ff388592",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Gauntlet_MiSTer/main/releases/Arcade-Gauntlet_20221123.rbf",
-          "type": "RBF"
-        },
-        {
           "name": "Arcade-Gauntlet_20221124.rbf",
           "sha": "ba1410932a00dc0df633b397631feb2130bc0ca7",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Gauntlet_MiSTer/main/releases/Arcade-Gauntlet_20221124.rbf",
@@ -3533,6 +3533,18 @@
           "name": "Arcade-Gauntlet_20230906.rbf",
           "sha": "2c4ee8c80363e4791d925c214f2672f06b48324d",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Gauntlet_MiSTer/main/releases/Arcade-Gauntlet_20230906.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Gauntlet_20240409.rbf",
+          "sha": "2d2b6bb4b095c9cdd5e36e306aa9567f2eb8a209",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Gauntlet_MiSTer/main/releases/Arcade-Gauntlet_20240409.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Gauntlet_20240419.rbf",
+          "sha": "28624ce98405b4c8d32da068ef86a4e8d9c874b0",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Gauntlet_MiSTer/main/releases/Arcade-Gauntlet_20240419.rbf",
           "type": "RBF"
         },
         {
@@ -3571,6 +3583,331 @@
             "rbf": "gauntlet",
             "zips": [
               "vindctr2.zip"
+            ]
+          }
+        },
+        {
+          "name": "Gauntlet II (2 Players, German).mra",
+          "sha": "df88cd22b69c6ba766ed770d88d5bb01d92861d9",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Gauntlet_MiSTer/main/releases/_alternatives/_Gauntlet%20II/Gauntlet%20II%20(2%20Players%2C%20German).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Gauntlet II",
+            "rbf": "gauntlet",
+            "zips": [
+              "gaunt2.zip|gaunt22pg.zip"
+            ]
+          }
+        },
+        {
+          "name": "Gauntlet II (2 Players, rev 1).mra",
+          "sha": "c1241a14aaadbfdcc316377894a80dfeb3edd23c",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Gauntlet_MiSTer/main/releases/_alternatives/_Gauntlet%20II/Gauntlet%20II%20(2%20Players%2C%20rev%201).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Gauntlet II",
+            "rbf": "gauntlet",
+            "zips": [
+              "gaunt2.zip|gaunt22p1.zip"
+            ]
+          }
+        },
+        {
+          "name": "Gauntlet II (2 Players, rev 2).mra",
+          "sha": "f34cddba890210c46433f72a46208b315ebcd998",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Gauntlet_MiSTer/main/releases/_alternatives/_Gauntlet%20II/Gauntlet%20II%20(2%20Players%2C%20rev%202).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Gauntlet II",
+            "rbf": "gauntlet",
+            "zips": [
+              "gaunt2.zip|gaunt22p.zip"
+            ]
+          }
+        },
+        {
+          "name": "Gauntlet II (German).mra",
+          "sha": "7c29f2311d9550d98607bcd7eb12a021bd6b40fd",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Gauntlet_MiSTer/main/releases/_alternatives/_Gauntlet%20II/Gauntlet%20II%20(German).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Gauntlet II",
+            "rbf": "gauntlet",
+            "zips": [
+              "gaunt2.zip|gaunt2g.zip"
+            ]
+          }
+        },
+        {
+          "name": "Gauntlet (2 Players, German, rev 1).mra",
+          "sha": "ed03333e8461ad0c9ffe22b17eb88fe49d68154a",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Gauntlet_MiSTer/main/releases/_alternatives/_Gauntlet/Gauntlet%20(2%20Players%2C%20German%2C%20rev%201).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Gauntlet",
+            "rbf": "gauntlet",
+            "zips": [
+              "gauntlet.zip|gauntlet2pg1.zip"
+            ]
+          }
+        },
+        {
+          "name": "Gauntlet (2 Players, German, rev 4).mra",
+          "sha": "4d82a3056de8c7fc783dfeff058f407aa33e9fe0",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Gauntlet_MiSTer/main/releases/_alternatives/_Gauntlet/Gauntlet%20(2%20Players%2C%20German%2C%20rev%204).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Gauntlet",
+            "rbf": "gauntlet",
+            "zips": [
+              "gauntlet.zip|gauntlet2pg.zip"
+            ]
+          }
+        },
+        {
+          "name": "Gauntlet (2 Players, Japanese, rev 2).mra",
+          "sha": "16f30746adfac777f851692bb88801dbbf5698f5",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Gauntlet_MiSTer/main/releases/_alternatives/_Gauntlet/Gauntlet%20(2%20Players%2C%20Japanese%2C%20rev%202).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Gauntlet",
+            "rbf": "gauntlet",
+            "zips": [
+              "gauntlet.zip|gauntlet2pj2.zip"
+            ]
+          }
+        },
+        {
+          "name": "Gauntlet (2 Players, Japanese, rev 5).mra",
+          "sha": "8fe7a1a4359fb3cf2f2c3f90098b72e7422ba953",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Gauntlet_MiSTer/main/releases/_alternatives/_Gauntlet/Gauntlet%20(2%20Players%2C%20Japanese%2C%20rev%205).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Gauntlet",
+            "rbf": "gauntlet",
+            "zips": [
+              "gauntlet.zip|gauntlet2pj.zip"
+            ]
+          }
+        },
+        {
+          "name": "Gauntlet (2 Players, rev 3).mra",
+          "sha": "1e53bb507cbb226a5b1a14124e5fca41c67a6dfa",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Gauntlet_MiSTer/main/releases/_alternatives/_Gauntlet/Gauntlet%20(2%20Players%2C%20rev%203).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Gauntlet",
+            "rbf": "gauntlet",
+            "zips": [
+              "gauntlet.zip|gauntlet2pr3.zip"
+            ]
+          }
+        },
+        {
+          "name": "Gauntlet (2 Players, rev 6).mra",
+          "sha": "720a315ad2a84418185832922f1487065eb448a9",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Gauntlet_MiSTer/main/releases/_alternatives/_Gauntlet/Gauntlet%20(2%20Players%2C%20rev%206).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Gauntlet",
+            "rbf": "gauntlet",
+            "zips": [
+              "gauntlet.zip|gauntlet2p.zip"
+            ]
+          }
+        },
+        {
+          "name": "Gauntlet (German, rev 10).mra",
+          "sha": "c82f501571b44ebc6182cfd1472856d06aa934a9",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Gauntlet_MiSTer/main/releases/_alternatives/_Gauntlet/Gauntlet%20(German%2C%20rev%2010).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Gauntlet",
+            "rbf": "gauntlet",
+            "zips": [
+              "gauntlet.zip|gauntletg.zip"
+            ]
+          }
+        },
+        {
+          "name": "Gauntlet (German, rev 3).mra",
+          "sha": "131f60f9d5dc3ee3618e4b0c2a8e719873974f1d",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Gauntlet_MiSTer/main/releases/_alternatives/_Gauntlet/Gauntlet%20(German%2C%20rev%203).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Gauntlet",
+            "rbf": "gauntlet",
+            "zips": [
+              "gauntlet.zip|gauntletgr3.zip"
+            ]
+          }
+        },
+        {
+          "name": "Gauntlet (German, rev 6).mra",
+          "sha": "e47715ccba82b12e8e4d9905258b92b1aa1e676f",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Gauntlet_MiSTer/main/releases/_alternatives/_Gauntlet/Gauntlet%20(German%2C%20rev%206).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Gauntlet",
+            "rbf": "gauntlet",
+            "zips": [
+              "gauntlet.zip|gauntletgr6.zip"
+            ]
+          }
+        },
+        {
+          "name": "Gauntlet (German, rev 8).mra",
+          "sha": "8c7e2b81081a2b2cf0d69c41308c5cddd42d756e",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Gauntlet_MiSTer/main/releases/_alternatives/_Gauntlet/Gauntlet%20(German%2C%20rev%208).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Gauntlet",
+            "rbf": "gauntlet",
+            "zips": [
+              "gauntlet.zip|gauntletgr8.zip"
+            ]
+          }
+        },
+        {
+          "name": "Gauntlet (Japanese, rev 12).mra",
+          "sha": "584a4f07bc464cee5c8bf0eb638746382f63ef4d",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Gauntlet_MiSTer/main/releases/_alternatives/_Gauntlet/Gauntlet%20(Japanese%2C%20rev%2012).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Gauntlet",
+            "rbf": "gauntlet",
+            "zips": [
+              "gauntlet.zip|gauntletj12.zip"
+            ]
+          }
+        },
+        {
+          "name": "Gauntlet (Japanese, rev 13).mra",
+          "sha": "73eca2882b2d1a14b42670097042cd8cfd552fec",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Gauntlet_MiSTer/main/releases/_alternatives/_Gauntlet/Gauntlet%20(Japanese%2C%20rev%2013).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Gauntlet",
+            "rbf": "gauntlet",
+            "zips": [
+              "gauntlet.zip|gauntletj.zip"
+            ]
+          }
+        },
+        {
+          "name": "Gauntlet (Spanish, rev 15).mra",
+          "sha": "15ee8941b0df30e0216d3d002e5e3a01b184b204",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Gauntlet_MiSTer/main/releases/_alternatives/_Gauntlet/Gauntlet%20(Spanish%2C%20rev%2015).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Gauntlet",
+            "rbf": "gauntlet",
+            "zips": [
+              "gauntlet.zip|gauntlets.zip"
+            ]
+          }
+        },
+        {
+          "name": "Gauntlet (rev 1).mra",
+          "sha": "de65653e078fb53fd737ca545203ccfd15245dbd",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Gauntlet_MiSTer/main/releases/_alternatives/_Gauntlet/Gauntlet%20(rev%201).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Gauntlet",
+            "rbf": "gauntlet",
+            "zips": [
+              "gauntlet.zip|gauntletr1.zip"
+            ]
+          }
+        },
+        {
+          "name": "Gauntlet (rev 2).mra",
+          "sha": "c60bbfda2730d851a3557f7ae6ff33a1de152a53",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Gauntlet_MiSTer/main/releases/_alternatives/_Gauntlet/Gauntlet%20(rev%202).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Gauntlet",
+            "rbf": "gauntlet",
+            "zips": [
+              "gauntlet.zip|gauntletr2.zip"
+            ]
+          }
+        },
+        {
+          "name": "Gauntlet (rev 4).mra",
+          "sha": "4e10404ba44faf00a3a953225932a280c7c07022",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Gauntlet_MiSTer/main/releases/_alternatives/_Gauntlet/Gauntlet%20(rev%204).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Gauntlet",
+            "rbf": "gauntlet",
+            "zips": [
+              "gauntlet.zip|gauntletr4.zip"
+            ]
+          }
+        },
+        {
+          "name": "Gauntlet (rev 5).mra",
+          "sha": "41c13c6330f8bf75496157adb4960f39ac5772b1",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Gauntlet_MiSTer/main/releases/_alternatives/_Gauntlet/Gauntlet%20(rev%205).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Gauntlet",
+            "rbf": "gauntlet",
+            "zips": [
+              "gauntlet.zip|gauntletr5.zip"
+            ]
+          }
+        },
+        {
+          "name": "Gauntlet (rev 7).mra",
+          "sha": "4e14665595b8bdb8f48b574162f022f13224abe3",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Gauntlet_MiSTer/main/releases/_alternatives/_Gauntlet/Gauntlet%20(rev%207).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Gauntlet",
+            "rbf": "gauntlet",
+            "zips": [
+              "gauntlet.zip|gauntletr7.zip"
+            ]
+          }
+        },
+        {
+          "name": "Gauntlet (rev 9).mra",
+          "sha": "cb161d0b720a7e9b52966b44990d2ee7e98db724",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Gauntlet_MiSTer/main/releases/_alternatives/_Gauntlet/Gauntlet%20(rev%209).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Gauntlet",
+            "rbf": "gauntlet",
+            "zips": [
+              "gauntlet.zip|gauntletr9.zip"
+            ]
+          }
+        },
+        {
+          "name": "Vindicators Part II (rev 1).mra",
+          "sha": "3242539cced05e9c51b26a5029d41eaa2354de65",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Gauntlet_MiSTer/main/releases/_alternatives/_Vindicators%20part%20II/Vindicators%20Part%20II%20(rev%201).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Vindicators Part II",
+            "rbf": "gauntlet",
+            "zips": [
+              "vindctr2.zip|vindctr2r1.zip"
+            ]
+          }
+        },
+        {
+          "name": "Vindicators Part II (rev 2).mra",
+          "sha": "670a8bdd24118a1e4c2928a210e0a8c2bbb1be86",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Gauntlet_MiSTer/main/releases/_alternatives/_Vindicators%20part%20II/Vindicators%20Part%20II%20(rev%202).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Vindicators Part II",
+            "rbf": "gauntlet",
+            "zips": [
+              "vindctr2.zip|vindctr2r2.zip"
             ]
           }
         }
@@ -7048,6 +7385,12 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Robotron_20240123.rbf",
+          "sha": "9e8162c475c111615e56ea3a3b6f43ef5bba2693",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Robotron_MiSTer/master/releases/Arcade-Robotron_20240123.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Bubbles.mra",
           "sha": "855282bc2c6bb92431a63a45f09deaf4f8fe0c61",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Robotron_MiSTer/master/releases/Bubbles.mra",
@@ -8543,10 +8886,16 @@
         },
         {
           "name": "Polaris.mra",
-          "sha": "6922ef7a50b0eb6653bb09fec7d7a95012c652f0",
+          "sha": "394299a5a49f34b62e6bcc17b9103a2d9a7f19ef",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SpaceInvaders_MiSTer/master/releases/Polaris.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Polaris (latest version)",
+            "rbf": "spaceinvaders",
+            "zips": [
+              "polaris.zip"
+            ]
+          }
         },
         {
           "name": "Sea Wolf (Set 1).mra",
@@ -10424,6 +10773,18 @@
           "sha": "46f38ae6b9acec15c1b97b711c01c167d723da6c",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/C16_MiSTer/master/releases/C16_20231208.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "C16_20240418.rbf",
+          "sha": "68853b7d2c0b5193fb23f5811fbb105621c4b98d",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/C16_MiSTer/master/releases/C16_20240418.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "C16_20240419.rbf",
+          "sha": "5ced60de219fcb322052bc94bde2612eb753eb78",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/C16_MiSTer/master/releases/C16_20240419.rbf",
+          "type": "RBF"
         }
       ]
     },
@@ -10865,6 +11226,24 @@
           "name": "C64_20231208.rbf",
           "sha": "c7126df9bada7077f9e5a7cb01b1e0bdfbf42484",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/C64_MiSTer/master/releases/C64_20231208.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "C64_20240110.rbf",
+          "sha": "a8a7085e8c25bbcb47d8bd8374ec2d5f3b314391",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/C64_MiSTer/master/releases/C64_20240110.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "C64_20240418.rbf",
+          "sha": "8b883ce3e35bbdfb92ecdde1c934027cdb5c02bf",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/C64_MiSTer/master/releases/C64_20240418.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "C64_20240419.rbf",
+          "sha": "980a890eca611a1d908fa075809b878055fa7291",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/C64_MiSTer/master/releases/C64_20240419.rbf",
           "type": "RBF"
         },
         {
@@ -11850,6 +12229,18 @@
           "sha": "2254c93d87b79f4d6cb1e8ae445acb58f3c813c3",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Main_MiSTer/master/releases/MiSTer_20231019",
           "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20240110",
+          "sha": "0c807b4e041d8a962d9c4afeba93d1da5426b444",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Main_MiSTer/master/releases/MiSTer_20240110",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20240419",
+          "sha": "4cd9d7c763118c44db0390336d09b627ed5eb223",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Main_MiSTer/master/releases/MiSTer_20240419",
+          "type": "OTHER"
         }
       ]
     },
@@ -12046,6 +12437,18 @@
           "sha": "2bf48b87d2c26c61c8ce902e7d6f3a3d3ac4304b",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/MegaCD_MiSTer/master/releases/MegaCD_20231204.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "MegaCD_20240408.rbf",
+          "sha": "54652940c7e42075c5dbf3951f5cfa10b4960b49",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/MegaCD_MiSTer/master/releases/MegaCD_20240408.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "MegaCD_20240419.rbf",
+          "sha": "0db2fc6facd890e7670e709b947c8198722ec0b4",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/MegaCD_MiSTer/master/releases/MegaCD_20240419.rbf",
+          "type": "RBF"
         }
       ]
     },
@@ -12086,7 +12489,7 @@
     {
       "name": "Menu_MiSTer",
       "description": null,
-      "readme": "# Startup core for MiSTer\r\n\r\n* **ESC** - switch to options\r\n* **F1** - switch the background\r\n* **F9** - Go to Linux terminal (F12 - back)\r\n\r\n## Notes:\r\n* Core supports sub-folders started with _ character.\r\n* Regardless the place of RBF file, boot rom/vhd should be placed into either root of SD card or core's dedicated folder (should be created in root of SD card).\r\n* Joystick (including emulation by keyboard) buttons defined in this core is default map for all cores unless defined in particalar core.\r\n\r\n## Artwork\r\n* Place menu.png or menu.jpg to the root of SD card to have it as background on HDMI (you can use vga_scaler=1 if you want it on VGA).\r\n",
+      "readme": "# Startup core for MiSTer\r\n\r\n* **ESC** - Back/Options\r\n* **Enter** - OK\r\n* **F1** - Cycle Background/Wallpaper\r\n* **F9** - Go to Linux terminal (F12 - back)\r\n* **F11** - Bluetooth Pairing Script\r\n* **F12** - Recent Cores\r\n\r\n## Notes:\r\n* Core supports sub-folders started with _ character.\r\n* Regardless the place of RBF file, boot rom/vhd should be placed into either root of SD card or core's dedicated folder (should be created in root of SD card).\r\n* Joystick (including emulation by keyboard) buttons defined in this core is default map for all cores unless defined in particalar core.\r\n\r\n## Wallpaper\r\n* Place menu.png or menu.jpg to the root of SD card to have it as background on HDMI (you can use vga_scaler=1 if you want it on VGA).\r\n* Create \"wallpapers\" folder and place multiple .jpg or .png to it. Use **F1** to cycle between standard MiSTer backgrounds and wallpapers in folder.\r\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-DB9/Menu_MiSTer",
@@ -12180,13 +12583,43 @@
           "sha": "e11aec8b33de6c5ef758bfb9ec80b74807d600b0",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Menu_MiSTer/master/releases/menu_20230223.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "menu_20240313.rbf",
+          "sha": "dbf0391f2ac091301350c3a35174566111b2bc46",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Menu_MiSTer/master/releases/menu_20240313.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "menu_20240320.rbf",
+          "sha": "85885e42020eec4dc4cc41cd66e83544f752afc9",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Menu_MiSTer/master/releases/menu_20240320.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "menu_20240321.rbf",
+          "sha": "c8f1baf61b08880e79f0a0cf18e5414e862024f0",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Menu_MiSTer/master/releases/menu_20240321.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "menu_20240408.rbf",
+          "sha": "75c470708263a1082e1255967bd1eb4d8da925e2",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Menu_MiSTer/master/releases/menu_20240408.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "menu_20240419.rbf",
+          "sha": "7fd633bad1deacc12731c25b2ec674930495b462",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Menu_MiSTer/master/releases/menu_20240419.rbf",
+          "type": "RBF"
         }
       ]
     },
     {
       "name": "Minimig-AGA_MiSTer",
       "description": null,
-      "readme": "\n# Minimig-AGA_MiSTer\n\nThis is a port of the minimig core to the [MiSTer board](https://github.com/MiSTer-devel).\n\n[minimig](http://en.wikipedia.org/wiki/Minimig) (short for Mini Amiga) is an open source re-implementation of an Amiga using a field-programmable gate array (FPGA). Original minimig author is Dennis van Weeren.\n\n[Amiga](http://en.wikipedia.org/wiki/Amiga_500) was - in my opinion - an amazing personal computer, announced around 1984, which - at the time - far surpassed any other personal computer on the market, with advanced graphic & sound capabilities, not to mention its great OS with preemptive multitasking capabilities.\n\nThe minimig-MiSTer variant in this repository has been upgraded with [AGA chipset](http://en.wikipedia.org/wiki/Amiga_Advanced_Graphics_Architecture) capabilites, which allows it to emulate the latest Amiga models ([Amiga 1200](http://en.wikipedia.org/wiki/Amiga_1200)) and (partially) [Amiga CD32](http://en.wikipedia.org/wiki/Amiga_CD32)). Ofcourse it also supports previous OCS/ECS Amigas like [Amiga 500](http://en.wikipedia.org/wiki/Amiga_500), [Amiga 600](http://en.wikipedia.org/wiki/Amiga_600) etc.\n\n\n## Core features supported\n\n* chipset variants : OCS, ECS, AGA\n* chipRAM : 0.5MB - 2.0MB\n* slowRAM : 0.0MB - 1.5MB\n* fastRAM : 0.0MB - 384MB\n* CPU core : 68000, 68020\n* kickstart : 1.2 - 3.1 (256kB, 512kB & 1MB kickstart ROMs currently supported)\n* HRTmon with custom registers mirror\n* floppy disks : 1-4 floppies (supports ADF floppy image format), with normal & turbo speeds\n* Up to 4 IDE devices\n* CDROM\n* video standard : PAL / NTSC\n* supports almost all OCS/ECS/AGA custom resolutions\n* RTG with up to 1920x1080 and 1600x1200 resolutions\n* peripherals : USB keyboards, USB mice, USB gamepads\n* serial connection to Linux with ability to connect to internet.\n* shared folder for rapid file exchange between Linux and Amiga.\n* MIDI: both MiSTer internal emulation and external through USER_IO port (MT32-pi and generic MIDI device)\n* Akiko chunk to planar implementation\n* Mouse with wheel.\n\n## Usage\n\n### Screen adjustment\nAdjustment is initiated from OSD menu. Keyboard control:\n* Cursor keys - top/left corner.\n* ALT+Cursor keys - bottom/right corner.\n* Enter - finish and store position.\n* Backspace - reset do default.\n* Esc - cancel and finish.\n\nPositions are saved in the configuration file. Up to 64 different resolutions can be adjusted.\n\n### Shared folder\n\nAll required files (and sources) are in extra/MiSTer_share.lha\n\nAmiga driver is based on Niklas Ekstr\u00f6m [a314](https://github.com/niklasekstrom/a314) driver.\n\nOn Amiga:\n- copy dummy.device to DEVS:\n- copy MountList to DEVS: (or add content from MountList to existing file)\n- copy MiSTerFileSystem to L:\n- open CLI and type there: mount share:\n- MiSTer drive will appear on main WB screen. If it will work, then you can add this command into user-startup file, and it will be mounted at every boot.\n\nOn Linux side the folder is \"shared\" inside Amiga folder.\n\n### RTG\n\n* install [Picasso96.lha](http://aminet.net/package/driver/video/Picasso96) Choose uaegfx while installing.\n* remove uaegfx (or whatever driver you choose in install) from SYS:Devs/Monitors\n* extract [MiSTer_RTG.lha](https://github.com/MiSTer-devel/Minimig-AGA_MiSTer/raw/MiSTer/extra/rtg_driver/MiSTer_RTG.lha) and copy content to SYS:\n* reboot\n\nNew video modes will appear in ScreenMode preference. For more screen modes use Picasso96Mode preference (attn: it has awkward interface!)\n\n**Note: RTG outputs to HDMI primarily as it uses scaler.**\nIf you want to see RTG video on VGA output, then set vga_scaler=1 in MiSTer.ini.\nRTG is available only for 68020 CPU.\n\n### IDE and CDROM\nBy default up to 2 IDE devices are supported. For Secondary Master/Slave devices, you have to install either IDEFix97 (shareware, WB3.1/3.9) or AtapiMagic (freeware, WB 3.1.4/3.2).\nRemovable/CD mode allows to hot swap CDs. Currently audio portion of CD isn't implemented (although playback commands should be accepted).\n\n### How to make a new HDF (HDD Image)\n1) Create an empty HDF file of required size on PC (ideally fill it by 0 if possible).\n2) Copy it to MiSTer\n3) Mount it as HDF on OSD, and also mount some adf with HDToolBox (for example install3.2.adf from OS3.2)\n4) Boot that ADF\n5) go to HDToolBox, then Change Drive Type -> Define New -> Read Configuration. Then Ok, Ok. Then Save Changes to Drive.\n6) Press Partition Drive. Optionally delete MDH1 partition, expand MDH0 to full drive. Rename MDH0 to standard DH0 name, mark it as Bootable. Then OK, then Save Changes to Drive.\n7) Exit, reboot.\n8) After booting you will see DH0:Uninitialized. Format it from Workbench menu. You can use Quick format option.\n9) Install required OS.\n\n\n### MIDI\nSupported internal MiSTer emulation and external devices such as MT32-pi or generic MIDI though USER_IO.\nFor MIDI-IN support through USER_IO set UART mode to None in OSD settings.\n\n### Akiko\nChunk to planar engine of Akiko is supported. It requires SetAkiko util (from releases/WheelDriverAkiko.adf) to be executed.\n\n### Mouse Wheel\nTo enable wheel support both WheelDriver and FreeWheel must be run from releases/WheelDriverAkiko.adf\n\n### Software\nTo use the core, you will need a Kickstart ROM image file, which you can obtain by copying Kickstart ROM IC from your actual Amiga, or by buying an [Amiga Forever](http://www.amigaforever.com/) software pack. The Kickstart image should be placed on the root of the SD card with the name KICK.ROM. Minimig also supports the [AROS](http://aros.sourceforge.net/) kickstart ROM replacement.\n\nThe minimig can read any ADF floppy images you place on the SD card. I recommend at least Workbench 1.3 or 3.1 (AmigaOS), some of the Amigas great games (I recommend Ruff'n'Tumble) or some of the amazing demos from the vast Amiga demoscene (like State of the Art from Spaceballs).\n\nThe minimig can also use HDF harddisk images, which can be created with [WinUAE](http://www.winuae.net/).\n\n### Recommended minimig config\n\n* for ECS games / demos : CPU = 68000, Turbo=NONE, Chipset=ECS, chipRAM=0.5MB, slowRAM=0.5MB, Kickstart 1.3\n* for AGA games / demos : CPU = 68020, Turbo=NONE, Chipset=AGA, chipRAM=2MB, slowRAM=0MB, fastRAM=24MB, Kickstart 3.1\n\n### Controlling minimig\n\nKeyboard special keys:\n\n* F12         - OSD menu\n* F11         - start monitor (HRTmon) if HRTmon is enabled in OSD menu (otherwise F11 is the Amiga HELP key)\n* ScrollLock  - toggle keyoard only / mouse / joystick 1 / joystick 2 emulation on the keyboard (direction keys + LCTRL)\n\n\n## Sources\n\nThis sourcecode is based on Rok Krajnc project ([minimig-de1](https://github.com/rkrajnc/minimig-de1)).\n\nOriginal minimig sources from Dennis van Weeren with updates by Jakub Bednarski are published on [Google Code](http://code.google.com/p/minimig/).\n\nSome minimig updates are published on the [Minimig Discussion Forum](http://www.minimig.net/), done by Sascha Boing.\n\nARM firmware updates and minimig-tc64 port changes by Christian Vogelsang ([minimig_tc64](https://github.com/cnvogelg/minimig_tc64)) and A.M. Robinson ([minimig_tc64](https://github.com/robinsonb5/minimig_tc64)).\n\nMiSTer project by Sorgelig ([MiSTer](https://github.com/MiSTer-devel)).\n\nTG68K.C core by Tobias Gubener.\n\n\n## Links & more info\n\nMy page [somuch.guru](http://somuch.guru/).\n\nFurther info about minimig can be found on the [Minimig Discussion Forum](http://www.minimig.net/).\n\nMiSTer board support & other cores on the [MiSTer Project Page](https://github.com/MiSTer-devel).\n\n\n## License\n\nCopyright \u00a9 2011 - 2016 Rok Krajnc (rok.krajnc@gmail.com)\n\nCopyright \u00a9 2005 - 2015 Dennis van Weeren, Jakub Bednarski, Sascha Boing, A.M. Robinson, Tobias Gubener, Till Harbaum\n\nCopyright \u00a9 2017 - 2020 Sorgelig (mister.devel@gmail.com)\n\nThis program is free software: you can redistribute it and/or modify\nit under the terms of the GNU General Public License as published by\nthe Free Software Foundation, either version 3 of the License, or\n(at your option) any later version.\n\nThis program is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License\nalong with this program.  If not, see <http://www.gnu.org/licenses/>.\n",
+      "readme": "# Minimig-AGA_MiSTer\n\nThis is a port of the minimig core to the [MiSTer board](https://github.com/MiSTer-devel).\n\n[Minimig](http://en.wikipedia.org/wiki/Minimig) (short for Mini Amiga) is an open source re-implementation of an Amiga using a field-programmable gate array (FPGA). Original Minimig author is Dennis van Weeren.\n\n[Amiga](http://en.wikipedia.org/wiki/Amiga_500) was - in my opinion - an amazing personal computer, announced around 1984, which - at the time - far surpassed any other personal computer on the market, with advanced graphic & sound capabilities, not to mention its great OS with preemptive multitasking capabilities.\n\nThe Minimig-MiSTer variant in this repository has been upgraded with [AGA chipset](http://en.wikipedia.org/wiki/Amiga_Advanced_Graphics_Architecture) capabilites, which allows it to emulate the latest Amiga models ([Amiga 1200](http://en.wikipedia.org/wiki/Amiga_1200)) and (partially) [Amiga CD32](http://en.wikipedia.org/wiki/Amiga_CD32)). Of course it also supports previous OCS/ECS Amigas like [Amiga 500](http://en.wikipedia.org/wiki/Amiga_500), [Amiga 600](http://en.wikipedia.org/wiki/Amiga_600) etc.\n\n\n## Core features supported\n\n* Chipset variants : OCS, ECS, AGA\n* ChipRAM : 0.5MB - 2.0MB\n* SlowRAM : 0.0MB - 1.5MB\n* FastRAM : 0.0MB - 384MB\n* CPU core : 68000, 68020\n* Kickstart : 1.2, 1.3, 2.0, 3.0, 3.1, 3.1.4, 3.2 (256kB, 512kB & 1MB kickstart ROMs currently supported)\n* HRTmon with custom registers mirror\n* Floppy drives : 1-4 floppies (supports ADF floppy image format), with normal & turbo speeds\n* Up to 4 IDE devices\n* CDROM\n* Video standard : PAL / NTSC\n* Supports almost all OCS/ECS/AGA custom resolutions\n* RTG with up to 1920x1080 and 1600x1200 resolutions\n* Peripherals : USB keyboards, USB mice, USB gamepads\n* Serial connection to Linux with ability to connect to Internet.\n* Shared folder for rapid file exchange between Linux and Amiga.\n* MIDI: both MiSTer internal emulation and external through USER_IO port (MT32-pi and generic MIDI device)\n* Akiko chunk to planar implementation\n* Mouse with wheel.\n\n## Usage\n\n### Screen adjustment\nAdjustment is initiated from OSD menu. \nKeyboard control:\n* Cursor keys - top/left corner.\n* ALT+Cursor keys - bottom/right corner.\n* Enter - finish and store position.\n* Backspace - reset do default.\n* Esc - cancel and finish.\n\nPositions are saved in the configuration file. Up to 64 different resolutions can be adjusted.\n\n### Shared folder\n\nAll required files (and sources) are in extra/MiSTer_share.lha\n\nAmiga driver is based on Niklas Ekstr\u00f6m [a314](https://github.com/niklasekstrom/a314) driver.\n\nOn Amiga:\n- copy dummy.device to DEVS:\n- copy MountList to DEVS: (or add content from MountList to existing file)\n- copy MiSTerFileSystem to L:\n- open CLI and type there: mount share:\n- MiSTer drive will appear on main WB screen. If it will work, then you can add this command into user-startup file, and it will be mounted at every boot.\n\nOn Linux side the folder is \"shared\" inside Amiga folder.\n\n### RTG\n\n* install [Picasso96.lha](http://aminet.net/package/driver/video/Picasso96) Choose uaegfx while installing.\n* remove uaegfx (or whatever driver you choose in install) from SYS:Devs/Monitors\n* extract [MiSTer_RTG.lha](https://github.com/MiSTer-devel/Minimig-AGA_MiSTer/raw/MiSTer/extra/rtg_driver/MiSTer_RTG.lha) and copy content to SYS:\n* reboot\n\nNew video modes will appear in ScreenMode preference. For more screen modes use Picasso96Mode preference (attn: it has awkward interface!)\n\n**Note: RTG outputs to HDMI primarily as it uses scaler.**\nIf you want to see RTG video on VGA output, then set vga_scaler=1 in MiSTer.ini.\nRTG is available only for 68020 CPU.\n\n### IDE and CDROM\nBy default up to 2 IDE devices are supported. For Secondary Master/Slave devices, you have to install either IDEFix97 (shareware, WB3.1/3.9) or AtapiMagic (freeware, WB 3.1.4/3.2).\nRemovable/CD mode allows to hot swap CDs. Currently audio portion of CD isn't implemented (although playback commands should be accepted).\n\n### How to make a new HDF (HDD Image)\n1) Create an empty HDF file of required size on PC (ideally fill it by 0 if possible).\n2) Copy it to MiSTer\n3) Mount it as HDF on OSD, and also mount some adf with HDToolBox (for example install3.2.adf from OS3.2)\n4) Boot that ADF\n5) go to HDToolBox, then Change Drive Type -> Define New -> Read Configuration. Then Ok, Ok. Then Save Changes to Drive.\n6) Press Partition Drive. Optionally delete MDH1 partition, expand MDH0 to full drive. Rename MDH0 to standard DH0 name, mark it as Bootable. Then OK, then Save Changes to Drive.\n7) Exit, reboot.\n8) After booting you will see DH0:Uninitialized. Format it from Workbench menu. You can use Quick format option.\n9) Install required OS.\n\n\n### MIDI\nSupported internal MiSTer emulation and external devices such as MT32-pi or generic MIDI though USER_IO.\nFor MIDI-IN support through USER_IO set UART mode to None in OSD settings.\n\n### Akiko\nChunk to planar engine of Akiko is supported. It requires SetAkiko util (from releases/WheelDriverAkiko.adf) to be executed.\n\n### Mouse Wheel\nTo enable wheel support both WheelDriver and FreeWheel must be run from releases/WheelDriverAkiko.adf\n\n### Software\nTo use the core, you will need a Kickstart ROM image file, which you can obtain by copying Kickstart ROM IC from your actual Amiga, or by buying an [Amiga Forever](http://www.amigaforever.com/) software pack. The Kickstart image should be placed on the root of the SD card with the name KICK.ROM. Minimig also supports the [AROS](http://aros.sourceforge.net/) Kickstart ROM replacement.\n\nThe Minimig can read any ADF floppy images you place on the SD card. I recommend at least Workbench 1.3 or 3.1 (AmigaOS), some of the Amigas great games (I recommend Ruff'n'Tumble) or some of the amazing demos from the vast Amiga demoscene (like State of the Art from Spaceballs).\n\nThe Minimig can also use HDF harddisk images, which can be created with [WinUAE](http://www.winuae.net/).\n\n### Recommended minimig config\n\n* for ECS games / demos : CPU = 68000, Turbo=NONE, Chipset=ECS, ChipRAM=0.5MB, slowRAM=0.5MB, Kickstart 1.3\n* for AGA games / demos : CPU = 68020, Turbo=NONE, Chipset=AGA, ChipRAM=2MB, SlowRAM=0MB, FastRAM=384MB, Kickstart 3.1\n\n### Controlling minimig\n\nKeyboard special keys:\n\n* F12         - OSD menu\n* F11         - start monitor (HRTmon) if HRTmon is enabled in OSD menu (otherwise F11 is the Amiga HELP key)\n* ScrollLock  - toggle keyoard only / mouse / joystick 1 / joystick 2 emulation on the keyboard (direction keys + LCTRL)\n\n\n## Sources\n\nThis sourcecode is based on Rok Krajnc project ([minimig-de1](https://github.com/rkrajnc/minimig-de1)).\n\nOriginal Minimig sources from Dennis van Weeren with updates by Jakub Bednarski are published on [Google Code](http://code.google.com/p/minimig/).\n\nSome Minimig updates are published on the [Minimig Discussion Forum](http://www.minimig.net/), done by Sascha Boing.\n\nARM firmware updates and Minimig-tc64 port changes by Christian Vogelsang ([minimig_tc64](https://github.com/cnvogelg/minimig_tc64)) and A.M. Robinson ([minimig_tc64](https://github.com/robinsonb5/minimig_tc64)).\n\nMiSTer project by Sorgelig ([MiSTer](https://github.com/MiSTer-devel)).\n\nTG68K.C core by Tobias Gubener.\n\n\n## Links & more info\n\nMy page [somuch.guru](http://somuch.guru/).\n\nFurther info about Minimig can be found on the [Minimig Discussion Forum](http://www.minimig.net/).\n\nMiSTer board support & other cores on the [MiSTer Project Page](https://github.com/MiSTer-devel).\n\n\n## License\n\nCopyright \u00a9 2011 - 2016 Rok Krajnc (rok.krajnc@gmail.com)\n\nCopyright \u00a9 2005 - 2015 Dennis van Weeren, Jakub Bednarski, Sascha Boing, A.M. Robinson, Tobias Gubener, Till Harbaum\n\nCopyright \u00a9 2017 - 2020 Sorgelig (mister.devel@gmail.com)\n\nThis program is free software: you can redistribute it and/or modify\nit under the terms of the GNU General Public License as published by\nthe Free Software Foundation, either version 3 of the License, or\n(at your option) any later version.\n\nThis program is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License\nalong with this program.  If not, see <http://www.gnu.org/licenses/>.\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-DB9/Minimig-AGA_MiSTer",
@@ -12285,6 +12718,18 @@
           "name": "Minimig_20231204.rbf",
           "sha": "1fe4d7aa61555e21b69e64c7ae4d504988b0c7f7",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Minimig-AGA_MiSTer/MiSTer/releases/Minimig_20231204.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Minimig_20240409.rbf",
+          "sha": "95c2f712f79af79a15faf1dfb354a7ad605a1814",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Minimig-AGA_MiSTer/MiSTer/releases/Minimig_20240409.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Minimig_20240419.rbf",
+          "sha": "dcbeb32d528eb6030435bb8c9836b61006afb7a0",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Minimig-AGA_MiSTer/MiSTer/releases/Minimig_20240419.rbf",
           "type": "RBF"
         },
         {
@@ -12688,6 +13133,18 @@
           "type": "RBF"
         },
         {
+          "name": "NeoGeo_20240418.rbf",
+          "sha": "a7f970067526e3c3beb69f60866ce2b7540e5f01",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/NeoGeo_MiSTer/master/releases/NeoGeo_20240418.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NeoGeo_20240419.rbf",
+          "sha": "11a0ff7ecb5125589789f3025b9d3af2c3cb1b86",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/NeoGeo_MiSTer/master/releases/NeoGeo_20240419.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "README.md",
           "sha": "91abd5fd1fe831e59d750a409d3f9b19393d5849",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/NeoGeo_MiSTer/master/releases/README.md",
@@ -12984,6 +13441,18 @@
           "sha": "75fa7021fa45321a4df12aec684c9b4449d7a85f",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/NES_MiSTer/master/releases/NES_20231204.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "NES_20240408.rbf",
+          "sha": "5b3b8da3f315b2ae7367069b0ca03ffbfbf43776",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/NES_MiSTer/master/releases/NES_20240408.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NES_20240419.rbf",
+          "sha": "2104969feaeee5afe0c060f8cd0f1d3f76c5fce4",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/NES_MiSTer/master/releases/NES_20240419.rbf",
+          "type": "RBF"
         }
       ]
     },
@@ -13218,6 +13687,18 @@
           "sha": "84e419754e724fd0a428b3acf332da7e2b8b3486",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/S32X_MiSTer/main/releases/S32X_20231204.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "S32X_20240418.rbf",
+          "sha": "208b771b03e6e0012140049a0fb72cc7ace3e190",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/S32X_MiSTer/main/releases/S32X_20240418.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "S32X_20240419.rbf",
+          "sha": "5b544c1e2ab35ca6f3f79d2be9d4cb3beba33a73",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/S32X_MiSTer/main/releases/S32X_20240419.rbf",
+          "type": "RBF"
         }
       ]
     },
@@ -13310,7 +13791,7 @@
     {
       "name": "Saturn_MiSTer",
       "description": "Sega Saturn for MiSTer",
-      "readme": "# [Sega Saturn](https://en.wikipedia.org/wiki/Sega_Saturn) for MiSTer\n\n## Hardware Requirements\n\n- 128 MB SDRAM Module (Primary)\n- SDRAM Module of any size (32MB-128MB) (Secondary)\n\n> **Note:** Dual SDRAM modules is recommended for better compatibility.\n\n## Status\n\nCurrent status is WIP/Beta\n\nKnown issues:\n\n- 3D Baseball - minor graphic gliches\n- BattleSport - minor graphic gliches\n- Galaxy Fight - minor graphic gliches (VDP2 screen in hires mode)\n- Robo Pit - minor graphic gliches (gouroud shadow)\n- Space Jam - freeze in demo\n- Tenchi Muyou! Rensa Hitsuyou (JP) - graphic gliches (VDP2 screen)\n- Thunder Force V (JP) - graphic gliches (VDP2 screen in hires mode)\n- X-Men vs. Street Fighter (JP) - freeze\n- Battle Monsters (EU) - graphic gliches\n- Dragon Ball Z (EU) - freeze\n\nA lot of games have sound issues.\n",
+      "readme": "# [Sega Saturn](https://en.wikipedia.org/wiki/Sega_Saturn) for MiSTer\n\n## Hardware Requirements\n\n- 128 MB SDRAM Module (Primary)\n- SDRAM Module of any size (32MB-128MB) (Secondary)\n\n> **Note:** Dual SDRAM modules is recommended for better compatibility.\n\n## Status\n\nCurrent status is WIP/Beta\n\nKnown issues:\n\n- 3D Baseball - minor graphic gliches\n- Galaxy Fight - minor graphic gliches (VDP2 screen in hires mode)\n- Space Jam - freeze in demo\n- Tenchi Muyou! Rensa Hitsuyou (JP) - graphic gliches (VDP2 screen)\n- Battle Monsters (EU) - graphic gliches\n- Dragon Ball Z (EU) - freeze\n\nA lot of games have sound issues.\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-DB9/Saturn_MiSTer",
@@ -13624,6 +14105,18 @@
           "name": "SMS_20231204.rbf",
           "sha": "aa91ca73bf4e70dbd201af1d1843878fd54f9dde",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/SMS_MiSTer/master/releases/SMS_20231204.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SMS_20240418.rbf",
+          "sha": "c0945be7468ae811e0a8f3e4742b7c2c4bf703ed",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/SMS_MiSTer/master/releases/SMS_20240418.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SMS_20240419.rbf",
+          "sha": "78a8e17fe07277fc2aa6fe30d0743e20a1e360ed",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/SMS_MiSTer/master/releases/SMS_20240419.rbf",
           "type": "RBF"
         },
         {
@@ -13956,6 +14449,18 @@
           "sha": "845c840a1800a3e365bfa6699f3ff366d78ffadc",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/SNES_MiSTer/master/releases/SNES_20231204.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "SNES_20240408.rbf",
+          "sha": "3e5b437a38636c7e15c593171149bd8436956a45",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/SNES_MiSTer/master/releases/SNES_20240408.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_20240419.rbf",
+          "sha": "9ba4405653f1d9ba0d3a5b24e359b9aa3b710c80",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/SNES_MiSTer/master/releases/SNES_20240419.rbf",
+          "type": "RBF"
         }
       ]
     },
@@ -14194,7 +14699,7 @@
     {
       "name": "TurboGrafx16_MiSTer",
       "description": "TurboGrafx 16 / PC Engine for MiSTer",
-      "readme": "# [TurboGrafx 16 / PC Engine](https://en.wikipedia.org/wiki/TurboGrafx-16) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki) \r\n\r\n### This is the port of Gregory Estrade's [FPGAPCE](https://github.com/Torlus/FPGAPCE)\r\n\r\n## Features\r\n * SuperGrafx mode\r\n * saves\r\n * Completely rewritten CPU and VDC for cycle accuracy\r\n * Uses DDR3 and SDRAM for cartridge's ROM (SDRAM is recommended for accuracy)\r\n * 6(8)-buttons joystick\r\n * XE-1AP analog controller\r\n * Turbotap(multiple joysticks)\r\n * Mouse\r\n * Pachinko controller\r\n * Memory Base 128 storage unit\r\n * Street Fighter II and Populous mappers\r\n * CD-ROM / Super CD-ROM\r\n * Arcade Card\r\n * Cheat engine\r\n * CHD Support\r\n\r\n## Installation:\r\nCopy the *.rbf file at the root of the SD card. Copy roms (*PCE,*BIN) to **TGFX16** folder. You may rename ROM of your favorite game to **boot.rom** - it will be automatically loaded upon core loading.\r\nUse SGX file extension for SuperGrafx games.\r\n\r\n## CD-ROM games\r\nCD-ROM images must be in BIN/CUE or CHD format, and must be located in the **TGFX16-CD** folder. Each CD-ROM image must have its own folder.\r\n**cd_bios.rom** must be placed in the same TGFX16-CD folder as the images mentioned above. **Japanese Super CD-ROM v3.00 is recomended for maximum compatibility**. \r\nAdditionally you can use a different bios for specific games (for example from Games Express) by placing cd_bios.rom inside the game image's folder.\r\n\r\n**Do not zip CD-ROM images! It won't work correctly.**\r\n\r\n**Attention about US BIOS:** MiSTer requires original dump of US BIOS to work properly. It needs to be of 262144 bytes.\r\nIf you can read copyright string at the end of US BIOS file, then it's not correct dump! It's already pre-swapped for emulators.\r\nWhile it will work on MiSTer, some CD games will refuse to start. **Correct US BIOS file is when copyright string is not readable.**\r\n\r\n## Cheat engine\r\nStandard cheats location is supported for HuCard games. For CD-ROM game all cheats must be zipped into a single zip file and placed inside game's CD-ROM folder.\r\n\r\n## Joystick\r\nBoth Turbotap and 6-button joysticks are supported.\r\nXE-1AP analog joystick is supported for the 4 games which are supported (After Burner II, Forgotten Worlds, Operation Wolf, Outrun)\r\nDo not enable these features for games not supporting it, otherwise game will work incorrectly.\r\n\r\n## Mouse\r\nMouse is supported.\r\nDo not enable this feature for games not supporting it, otherwise game will work incorrectly.\r\n\r\n## Pachinko\r\nPachinko controller is supported through either paddle or analog joystick Y axis.\r\n\r\n## Reset\r\nHold down Run button then press Select. Some games require to keep both buttons pressed longer to reset. The PC Engine/Turbografx-16 did not have a hardware reset button, and instead relies on this button combination. With this method, in-game options will remain if you have changed them, whereas the MiSTer OSD reset will revert them.\r\n(Note: this reset method is suppressed in a small number of games)\r\n\r\n## SDRAM\r\nThis core may work without SDRAM (using on-board DDR3), but it may have different kinds of issues/glitches due to high latency of DDR3 memory. Thus SDRAM module is highly recommended for maximum accuracy.\r\n\r\n### Notes:\r\n* Both headerless ROMs and ROMs with header (512b) are supported and automatically distinguished by file size.\r\n\r\n## Download precompiled binaries\r\nGo to [releases](https://github.com/MiSTer-devel/TurboGrafx16_MiSTer/tree/master/releases) folder. \r\n",
+      "readme": "# [TurboGrafx 16 / PC Engine](https://en.wikipedia.org/wiki/TurboGrafx-16) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki) \r\n\r\n### This is the port of Gregory Estrade's [FPGAPCE](https://github.com/Torlus/FPGAPCE)\r\n\r\n## Features\r\n * SuperGrafx mode\r\n * saves\r\n * Completely rewritten CPU and VDC for cycle accuracy\r\n * Uses DDR3 and SDRAM for cartridge's ROM (SDRAM is recommended for accuracy)\r\n * 2-button, 2-button 'turbo', and 6-button joystick support\r\n * XE-1AP analog controller\r\n * Turbotap(multiple joysticks)\r\n * Mouse\r\n * Pachinko controller\r\n * Memory Base 128 storage unit\r\n * Street Fighter II and Populous mappers\r\n * CD-ROM / Super CD-ROM\r\n * Arcade Card\r\n * Cheat engine\r\n * CHD Support\r\n\r\n## Installation:\r\nCopy the *.rbf file at the root of the SD card. Copy roms (*PCE,*BIN) to **TGFX16** folder. You may rename ROM of your favorite game to **boot.rom** - it will be automatically loaded upon core loading.\r\nUse SGX file extension for SuperGrafx games.\r\n\r\n## CD-ROM games\r\nCD-ROM images must be in BIN/CUE or CHD format, and must be located in the **TGFX16-CD** folder. Each CD-ROM image must have its own folder.\r\n**cd_bios.rom** must be placed in the same TGFX16-CD folder as the images mentioned above. **Japanese Super CD-ROM v3.00 is recomended for maximum compatibility**. \r\nAdditionally you can use a different bios for specific games (for example from Games Express) by placing cd_bios.rom inside the game image's folder.\r\n\r\n**Do not zip CD-ROM images! It won't work correctly.**\r\n\r\n**Attention about US BIOS:** MiSTer requires original dump of US BIOS to work properly. It needs to be of 262144 bytes.\r\nIf you can read copyright string at the end of US BIOS file, then it's not correct dump! It's already pre-swapped for emulators.\r\nWhile it will work on MiSTer, some CD games will refuse to start. **Correct US BIOS file is when copyright string is not readable.**\r\n\r\n## Cheat engine\r\nStandard cheats location is supported for HuCard games. For CD-ROM game all cheats must be zipped into a single zip file and placed inside game's CD-ROM folder.\r\n\r\n## Joystick\r\nBoth Turbotap and 6-button joysticks are supported.\r\nXE-1AP analog joystick is supported for the 4 games which are supported (After Burner II, Forgotten Worlds, Operation Wolf, Outrun)\r\nDo not enable the above features for games not supporting it, otherwise game will work incorrectly.\r\nFor 2-button 'turbo' joypad (sync'd as in original system), turbo fire is provided by alternate buttons : A, B (normal), X, Y (turbo 1 level), and L, R (turbo 2 level)\r\n\r\n## Mouse\r\nMouse is supported.\r\nDo not enable this feature for games not supporting it, otherwise game will work incorrectly.\r\n\r\n## Pachinko\r\nPachinko controller is supported through either paddle or analog joystick Y axis.\r\n\r\n## Reset\r\nHold down Run button then press Select. Some games require to keep both buttons pressed longer to reset. The PC Engine/Turbografx-16 did not have a hardware reset button, and instead relies on this button combination. With this method, in-game options will remain if you have changed them, whereas the MiSTer OSD reset will revert them.\r\n(Note: this reset method is suppressed in a small number of games)\r\n\r\n## SDRAM\r\nThis core may work without SDRAM (using on-board DDR3), but it may have different kinds of issues/glitches due to high latency of DDR3 memory. Thus SDRAM module is highly recommended for maximum accuracy.\r\n\r\n### Notes:\r\n* Both headerless ROMs and ROMs with header (512b) are supported and automatically distinguished by file size.\r\n\r\n## Download precompiled binaries\r\nGo to [releases](https://github.com/MiSTer-devel/TurboGrafx16_MiSTer/tree/master/releases) folder. \r\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-DB9/TurboGrafx16_MiSTer",
@@ -14425,6 +14930,18 @@
           "name": "TurboGrafx16_20231204.rbf",
           "sha": "5e0dba4b7745a36bd5136b11a9d10c670369f48f",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/TurboGrafx16_MiSTer/master/releases/TurboGrafx16_20231204.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "TurboGrafx16_20240418.rbf",
+          "sha": "aeedbabb9b0190afce18020ba47e45eb0a87cde3",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/TurboGrafx16_MiSTer/master/releases/TurboGrafx16_20240418.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "TurboGrafx16_20240419.rbf",
+          "sha": "32a0c0889488b12128a72a0f5f545d509a07764e",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/TurboGrafx16_MiSTer/master/releases/TurboGrafx16_20240419.rbf",
           "type": "RBF"
         }
       ]
@@ -14710,6 +15227,18 @@
           "name": "VIC20_20231208.rbf",
           "sha": "48721e9e7fbeb7f6a76fe9b30b8c7f768f04ed2a",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/VIC20_MiSTer/master/releases/VIC20_20231208.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "VIC20_20240418.rbf",
+          "sha": "897cfa814339e914ff3d24a0799134833ec3eaf1",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/VIC20_MiSTer/master/releases/VIC20_20240418.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "VIC20_20240419.rbf",
+          "sha": "ff6bcb95cc4f91dc68e0258bcb06ffc99462bc79",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/VIC20_MiSTer/master/releases/VIC20_20240419.rbf",
           "type": "RBF"
         }
       ]
