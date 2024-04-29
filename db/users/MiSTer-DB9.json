@@ -159,6 +159,18 @@
           "type": "RBF"
         },
         {
+          "name": "Amstrad_20240421.rbf",
+          "sha": "26082f6d5cae407c631d534c213756e93470df5d",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Amstrad_MiSTer/master/releases/Amstrad_20240421.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Amstrad_20240422.rbf",
+          "sha": "47b4ac2f47738c4021d224a82b3c61d3f8a40a99",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Amstrad_MiSTer/master/releases/Amstrad_20240422.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "boot.rom",
           "sha": "a702ffd300628e4e926f2189dc5ec29b5408b822",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Amstrad_MiSTer/master/releases/boot.rom",
@@ -259,6 +271,18 @@
           "type": "RBF"
         },
         {
+          "name": "Apple-II_20240423.rbf",
+          "sha": "8b1071fc3ba05b093983c8574fbef5925d5184fa",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Apple-II_MiSTer/master/releases/Apple-II_20240423.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Apple-II_20240425.rbf",
+          "sha": "b1c71a384164943d48d1896868cb4a0b9d235286",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Apple-II_MiSTer/master/releases/Apple-II_20240425.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Dummy",
           "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Apple-II_MiSTer/master/releases/Dummy",
@@ -322,7 +346,7 @@
     {
       "name": "Arcade-Astrocade_MiSTer",
       "description": "Arcade games on Bally Astrocade Hardware",
-      "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade version of Astrocade for MiSTer - Mike Coates\n--\n-- V 1.0 30/03/2020\n-- V 1.1 06/04/2020\n-- V 1.2 03/05/2020\n-- V 1.3 13/09/2020 - Memory changes for Cabinet version\n--                  - Sound chip now matches documentation (and sounds better)\n-- V 1.4 18/10/2020 - WOW Speech added - Reggs\n-- V 1.5 24/10/2020 - Gorf Program 1 added as an option (includes speech) - Reggs\n-- V 1.6 16/02/2022 - Add Gorf audio option for cabinet or screens\n-- V 1.7 27/04/2022 - Tidy up audio mixing, fix glitch on gorf cabinet mode\n-- V 1.8 06/07/2023 - Colour pallette changed to 24 bit \n--                    Sparkle circuit changed (removed all custom colour hacks)\n--                    Add lamp support for cabinet mode              \n--                    Fix missing word (near) in Gorf program 1\n--                    Fix samples in DDRAM error\n-- V 1.9 13/07/2023   Fix star positions to match PCB\n--                    Make sparkle look more like real PCB\n--                    Fix missing word (annihilate) in Gorf program 1\n------------------------------------------------------------------------------------\n-- From FPGA implementation of the Bally Astrocade based on a project by MikeJ et al\n------------------------------------------------------------------------------------\n--\n-- Important info regarding Frame Buffer (FB)\n--\n-- Depending upon the setting of FB when this core is built, the samples (for Seawolf II, \n-- Gorf with speech and Wizard of Wor with speech) will use DDRAM or SDRAM. \n--\n-- If FB is not defined, then the games will work on a bare DE10-Nano as they do not \n-- need SDRAM for any purpose but the screen will not rotate - this only affects Gorf\n--\n-- IF FB is defined then the DDRAM is used for the screen rotation for HDMI otuput so \n-- the samples will use SDRAM instead.\n--\n------------------------------------------------------------------------------------\n--\n-- Notes (on what does and doesn't work!)\n--\n-- Overall\n--\n-- P2 controls not tested for anything\n--\n-- Extra Bases\n-- -----------\n-- This usually uses a trackball, but at the moment it is set up to use an analogue \n-- joystick for player 1 only. \n--\n-- Seawolf II\n-- ----------\n-- This normally uses two periscopes which send their position to the game, again this\n-- is setup to use an analogue joystick for player one. You can turn the sight for\n-- player two on and off via a fake dip switch setting. \n--\n-- Sound uses samples, originally from mame but modified to closer match the hardware\n-- \n-- Space Zap\n-- ---------\n-- Player one controls are setup using up/down/left/right - the real hardware uses \n-- buttons for these, not joystick controls, but should be playable.\n--\n-- Wizard of Wor\n-- -------------\n-- Controls are setup in two ways as the game has a unique joystick with two leaves\n-- in each direction, so if you move it a little way, the player turns to face and shoot\n-- that way. If you move it further, then the player moves that way.\n--\n-- n.b. fake dipswitch settings to select Digital or Analogue controls\n-- digital is implemented as directions and two fire buttons. (as per Mame)\n-- analogue should work the same as the real game.\n--\n-- SC-01A speech implemented using full sentences recorded as samples\n--\n-- Robby Roto\n-- ----------\n-- setup using digital joystick\n--\n-- Gorf\n-- ----\n-- SC-01A speech implemented using words recorded as samples\n-- Sound options \n--      Stereo will play voice samples on both channels\n--      Cabinet will play one channel through top speaker, other channel or voice samples\n--          through bottom speaker. (as per original hardware) \n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
+      "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade version of Astrocade for MiSTer - Mike Coates\n--\n-- V 1.0 30/03/2020\n-- V 1.1 06/04/2020\n-- V 1.2 03/05/2020\n-- V 1.3 13/09/2020 - Memory changes for Cabinet version\n--                  - Sound chip now matches documentation (and sounds better)\n-- V 1.4 18/10/2020 - WOW Speech added - Reggs\n-- V 1.5 24/10/2020 - Gorf Program 1 added as an option (includes speech) - Reggs\n-- V 1.6 16/02/2022 - Add Gorf audio option for cabinet or screens\n-- V 1.7 27/04/2022 - Tidy up audio mixing, fix glitch on gorf cabinet mode\n-- V 1.8 06/07/2023 - Colour pallette changed to 24 bit \n--                    Sparkle circuit changed (removed all custom colour hacks)\n--                    Add lamp support for cabinet mode              \n--                    Fix missing word (near) in Gorf program 1\n--                    Fix samples in DDRAM error\n-- V 1.9 13/07/2023   Fix star positions to match PCB\n--                    Make sparkle look more like real PCB\n--                    Fix missing word (annihilate) in Gorf program 1\n-- V 2.0 24/04/2024   Add Freeplay for Space Zap\n--                    Improve sound mixing\n--\n------------------------------------------------------------------------------------\n-- From FPGA implementation of the Bally Astrocade based on a project by MikeJ et al\n------------------------------------------------------------------------------------\n--\n-- Important info regarding Frame Buffer (FB)\n--\n-- Depending upon the setting of FB when this core is built, the samples (for Seawolf II, \n-- Gorf with speech and Wizard of Wor with speech) will use DDRAM or SDRAM. \n--\n-- If FB is not defined, then the games will work on a bare DE10-Nano as they do not \n-- need SDRAM for any purpose but the screen will not rotate - this only affects Gorf\n--\n-- IF FB is defined then the DDRAM is used for the screen rotation for HDMI otuput so \n-- the samples will use SDRAM instead.\n--\n------------------------------------------------------------------------------------\n--\n-- Notes (on what does and doesn't work!)\n--\n-- Overall\n--\n-- P2 controls not tested for anything\n--\n-- Extra Bases\n-- -----------\n-- This usually uses a trackball, but at the moment it is set up to use an analogue \n-- joystick for player 1 only. \n--\n-- Seawolf II\n-- ----------\n-- This normally uses two periscopes which send their position to the game, again this\n-- is setup to use an analogue joystick for player one. You can turn the sight for\n-- player two on and off via a fake dip switch setting. \n--\n-- Sound uses samples, originally from mame but modified to closer match the hardware\n-- \n-- Space Zap\n-- ---------\n-- Player one controls are setup using up/down/left/right - the real hardware uses \n-- buttons for these, not joystick controls, but should be playable.\n--\n-- Wizard of Wor\n-- -------------\n-- Controls are setup in two ways as the game has a unique joystick with two leaves\n-- in each direction, so if you move it a little way, the player turns to face and shoot\n-- that way. If you move it further, then the player moves that way.\n--\n-- n.b. fake dipswitch settings to select Digital or Analogue controls\n-- digital is implemented as directions and two fire buttons. (as per Mame)\n-- analogue should work the same as the real game.\n--\n-- SC-01A speech implemented using full sentences recorded as samples\n--\n-- Robby Roto\n-- ----------\n-- setup using digital joystick\n--\n-- Gorf\n-- ----\n-- SC-01A speech implemented using words recorded as samples\n-- Sound options \n--      Stereo will play voice samples on both channels\n--      Cabinet will play one channel through top speaker, other channel or voice samples\n--          through bottom speaker. (as per original hardware) \n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-DB9/Arcade-Astrocade_MiSTer",
@@ -472,6 +496,18 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Astrocade_20240424.rbf",
+          "sha": "8c1a22a9739693b16f09ef9f64bb95fdc18bd85c",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Astrocade_MiSTer/master/releases/Arcade-Astrocade_20240424.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Astrocade_20240426.rbf",
+          "sha": "f379e34fbfe40d2e12ecc02d23662f17579ea873",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Astrocade_MiSTer/master/releases/Arcade-Astrocade_20240426.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Extra Bases.mra",
           "sha": "bf2a59786bcf11b93b45925d25c9cf3cb4d7ed73",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Astrocade_MiSTer/master/releases/Extra%20Bases.mra",
@@ -486,7 +522,7 @@
         },
         {
           "name": "Gorf (Program 1).mra",
-          "sha": "dd699e0da99e40e3b38ce8df810d5f4414128b1d",
+          "sha": "83343b88b5d0bcb84dd2bfb008b7c2a80faf9635",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Astrocade_MiSTer/master/releases/Gorf%20(Program%201).mra",
           "type": "MRA",
           "extra": {
@@ -498,21 +534,8 @@
           }
         },
         {
-          "name": "Gorf (Speech).mra",
-          "sha": "63afc672b5032ea4ed84bbc81a4a8b3a358b70b0",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Astrocade_MiSTer/master/releases/Gorf%20(Speech).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Gorf",
-            "rbf": "astrocade",
-            "zips": [
-              "gorf.zip"
-            ]
-          }
-        },
-        {
           "name": "Gorf.mra",
-          "sha": "14c50642ea4e46f10157deda336b57f1dac1da61",
+          "sha": "a0e2c3493936b3e60d64ad05c2442b52de467774",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Astrocade_MiSTer/master/releases/Gorf.mra",
           "type": "MRA",
           "extra": {
@@ -538,7 +561,7 @@
         },
         {
           "name": "Space Zap.mra",
-          "sha": "21106d1967ccd1da58dcfac81d146e35945b2cfa",
+          "sha": "57d60b8be0e8a7f34614408a0f1e418861f960b2",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Astrocade_MiSTer/master/releases/Space%20Zap.mra",
           "type": "MRA",
           "extra": {
@@ -10281,7 +10304,7 @@
     {
       "name": "Atari7800_MiSTer",
       "description": "Atari 7800 for MiSTer",
-      "readme": "# Atari7800 for MiSTer.\n\n## Features\n- Runs complete Atari 7800 retail library.\n- Supports NTSC and PAL regions.\n- Supports High Score Cart saving.\n- Supports Light Guns, Trakballs, Mice, Quadtari, and Paddles.\n- XEGS Keyboard support via POKEY at $450 or $4000.\n- Dual Pokey audio.\n- YM2151 Audio using Jotego's JT51.\n- Supports Covox.\n- Support for XM and XBoard modules.\n- Supports Activision, Absolute, Souper, and Supergame mappers up to 1mb.\n- Choice of Cool, Warm, or Hot system temperature color output.\n\n## Setup\nNot much setup is required, but you may optionally put a system bios as `boot0.rom` in your Atari7800 ROMs folder to use before loading a game. It may increase compatibility in some rare cases if used. This core does rely on properly configured Atari7800 headers as detailed [here](http://7800.8bitdev.org/index.php/A78_Header_Specification). Using Trebors 7800 ROM PROPack is recommended as this is a reliable source of correctly headered ROMs.\n\n## 2600 Support\nMost 2600 games are supported including most bankswitching schemes, with a few exceptions. ARM based mappers, such as DPC+ require a 70mhz ARM cpu, which would be either very difficult, or impossible, to have run properly on the cyclone V that MiSTer FPGA uses. To make the experience better, an Out of Order screen will be shown when one of these games using modern hardware is loaded. A few more eccentric peripherals are also not supported simply due to lack of any practical purpose, but anyone is welcome to add them someday if there's some need. This includes the Compumate and the Gameline peripherals. That said, the following bankswitching is supported: F8, F6, FE, E0, 3F, F4, P2, FA, CV, 2K, UA, E7, F0, 32, AR, 3E, SB, WD (8k dump), and EF. Bankswitching will now auto-detect the correct type, and does not require special extensions.\n\n## Paddles\nThe paddle peripheral is mostly used in 2600 games and has special handling surrounding it because of its unusual 2-paddles-per-port configuration. Three types of inputs are supported for paddles: analog sticks, mice, and mr. spinner compatible joystick adapters. It's important to note that PADDLES HAVE A DEDICATED FIRE BUTTON in this core, and it must be set in order to use the paddles properly. Because there are four paddles and two controllers ports, and a myriad of input devices, paddles are assigned independently of joysticks. Every time a game is cold reset, paddles are re-assigned. The core will assign paddles in order, when a port has paddles enabled. The various devices are recognised under these conditions:\n\n- Mice when you click the left button.\n- Analog sticks when you move either the Y axis or X axis to an extreme (make sure to assign analog x/y in the main mapping).\n- Mr. Spinner devices when they are moved to an extreme position.\n\nPlease note that some games do not use paddle 1A for their input, some exceptions are:\n\n- Astroblast: Uses 1B.\n- Tac Scan: Uses 2B.\n- Demons to Diamonds: Uses 1B.\n\nTo make dealing with this easier, there is an option to swap paddles A and B of either port, so that 1A will become 1B and vice versa. Additionally, if the input type is set to \"auto\" with 2600 games, pressing the fire button will toggle the input into Joystick mode, and pressing the paddle button will toggle the input into Paddle mode, for convenience.\n\n## Joystick Adapters\nOver the years several Atari joystick to USB adapters have been created for 2600 and 7800 peripherals. Some of these do not split paddle operations into two distinct devices. For this scenario, a special option has been added in the periphal configuration section of the menu that allows multiple paddles to be on the same controller. When this mode is enabled, the first axis on a controller seen will be mapped as the first paddle, and the second axis moved will be mapped as the second. The first paddle button will be the assigned \"Paddle\" button, and the second paddle button will be the Fire II button. This is not a good user experience and I apologize for this, but there is nothing further that can be done on the matter without the framework properly splitting the paddles into two distinct devices. Also worth noting is both paddles MUST BE MAPPED AS AXIS AND BUTTONS ON THE MAIN MENU before they will work in the core.\n\n## Keyboard shortcuts\n- F1 Select\n- F2 Start\n- F3 B/W toggle switch\n- F4 Difficulty Left toggle switch A/B\n- F5 Difficulty Right toggle switch A/B\n- F6 Pause\n\n## Additional Notes\nSome games use the [difficulty switches](https://atariage.com/forums/topic/235913-atari-7800-difficulty-switches-guide/) to control their behavior, most notably Tower Toppler, which will continue to skip levels if the switches are in the \"low\" position. For 2600 games it is important to refer to the game manual for switch positions as some games will not behave correctly if the switches are in the wrong position, and there is no pair of positions that is correct for all 2600 games. Tower Toppler also relies on composite blending artifacts to draw correctly, so it may be worthwhile to enable that for this game. The 7800 had issues with color consistency depending on the temperature of the system. Not all games may look ideal with the warm palette, so you may have to experiment per game to find the ideal colors.\n\n## Known Bugs\n- Expansion ram of XM module is not fully implemented because I couldnt find anything that used it.\n- BupChip music chip is not implemented because it runs on a modern microcontroller.\n\n## Special Thanks\n- Mike Saarna for his enormous knowledge of the system and patient help.\n- Osman Celimli for his DMA timing traces and experience.\n- Robert Tuccitto for the extensive palette information.\n- Remowilliams for testing a zillion games for me on real hardware.\n- Alan Steremberg for getting access to valuable documentation.\n",
+      "readme": "# Atari7800 for MiSTer.\n\n## Features\n- Runs complete Atari 7800 retail library.\n- Supports NTSC and PAL regions.\n- Supports High Score Cart saving.\n- Supports Light Guns, Trakballs, Mice, Quadtari, and Paddles.\n- XEGS Keyboard support via POKEY at $450 or $4000.\n- Dual Pokey audio.\n- YM2151 Audio using Jotego's JT51.\n- Supports Covox.\n- Support for XM and XBoard modules.\n- Supports Activision, Absolute, Bankset, Souper, and Supergame mappers up to 1mb.\n- Choice of Cool, Warm, or Hot system temperature color output.\n\n## Setup\nNot much setup is required, but you may optionally put a system bios as `boot0.rom` in your Atari7800 ROMs folder to use before loading a game. It may increase compatibility in some rare cases if used. This core does rely on properly configured Atari7800 headers as detailed [here](http://7800.8bitdev.org/index.php/A78_Header_Specification). Using Trebors 7800 ROM PROPack is recommended as this is a reliable source of correctly headered ROMs.\n\n## 2600 Support\nMost 2600 games are supported including most bankswitching schemes, with a few exceptions. ARM based mappers, such as DPC+ require a 70mhz ARM cpu, which would be either very difficult, or impossible, to have run properly on the cyclone V that MiSTer FPGA uses. To make the experience better, an Out of Order screen will be shown when one of these games using modern hardware is loaded. A few more eccentric peripherals are also not supported simply due to lack of any practical purpose, but anyone is welcome to add them someday if there's some need. This includes the Compumate and the Gameline peripherals. That said, the following bankswitching is supported: F8, F6, FE, E0, 3F, F4, P2, FA, CV, 2K, UA, E7, F0, 32, AR, 3E, SB, WD (8k dump), and EF. Bankswitching will now auto-detect the correct type, and does not require special extensions.\n\n## Paddles\nThe paddle peripheral is mostly used in 2600 games and has special handling surrounding it because of its unusual 2-paddles-per-port configuration. Three types of inputs are supported for paddles: analog sticks, mice, and mr. spinner compatible joystick adapters. It's important to note that PADDLES HAVE A DEDICATED FIRE BUTTON in this core, and it must be set in order to use the paddles properly. Because there are four paddles and two controllers ports, and a myriad of input devices, paddles are assigned independently of joysticks. Every time a game is cold reset, paddles are re-assigned. The core will assign paddles in order, when a port has paddles enabled. The various devices are recognised under these conditions:\n\n- Mice when you click the left button.\n- Analog sticks when you move either the Y axis or X axis to an extreme (make sure to assign analog x/y in the main mapping).\n- Mr. Spinner devices when they are moved to an extreme position.\n\nPlease note that some games do not use paddle 1A for their input, some exceptions are:\n\n- Astroblast: Uses 1B.\n- Tac Scan: Uses 2B.\n- Demons to Diamonds: Uses 1B.\n\nTo make dealing with this easier, there is an option to swap paddles A and B of either port, so that 1A will become 1B and vice versa. Additionally, if the input type is set to \"auto\" with 2600 games, pressing the fire button will toggle the input into Joystick mode, and pressing the paddle button will toggle the input into Paddle mode, for convenience.\n\n## Joystick Adapters\nOver the years several Atari joystick to USB adapters have been created for 2600 and 7800 peripherals. Some of these do not split paddle operations into two distinct devices. For this scenario, a special option has been added in the periphal configuration section of the menu that allows multiple paddles to be on the same controller. When this mode is enabled, the first axis on a controller seen will be mapped as the first paddle, and the second axis moved will be mapped as the second. The first paddle button will be the assigned \"Paddle\" button, and the second paddle button will be the Fire II button. This is not a good user experience and I apologize for this, but there is nothing further that can be done on the matter without the framework properly splitting the paddles into two distinct devices. Also worth noting is both paddles MUST BE MAPPED AS AXIS AND BUTTONS ON THE MAIN MENU before they will work in the core.\n\n## Keyboard shortcuts\n- F1 Select\n- F2 Start\n- F3 B/W toggle switch\n- F4 Difficulty Left toggle switch A/B\n- F5 Difficulty Right toggle switch A/B\n- F6 Pause\n\n## Additional Notes\nSome games use the [difficulty switches](https://atariage.com/forums/topic/235913-atari-7800-difficulty-switches-guide/) to control their behavior, most notably Tower Toppler, which will continue to skip levels if the switches are in the \"low\" position. For 2600 games it is important to refer to the game manual for switch positions as some games will not behave correctly if the switches are in the wrong position, and there is no pair of positions that is correct for all 2600 games. Tower Toppler also relies on composite blending artifacts to draw correctly, so it may be worthwhile to enable that for this game. The 7800 had issues with color consistency depending on the temperature of the system. Not all games may look ideal with the warm palette, so you may have to experiment per game to find the ideal colors.\n\n## Known Bugs\n- Expansion ram of XM module is not fully implemented because I couldnt find anything that used it.\n- BupChip music chip is not implemented because it runs on a modern microcontroller.\n\n## Special Thanks\n- Mike Saarna for his enormous knowledge of the system and patient help.\n- Osman Celimli for his DMA timing traces and experience.\n- Robert Tuccitto for the extensive palette information.\n- Remowilliams for testing a zillion games for me on real hardware.\n- Alan Steremberg for getting access to valuable documentation.\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-DB9/Atari7800_MiSTer",
@@ -10308,6 +10331,18 @@
           "name": "Atari7800_20221227.rbf",
           "sha": "91ce02e0571ec876d641c1ab93b59efc03d25a7e",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Atari7800_MiSTer/master/releases/Atari7800_20221227.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Atari7800_20230423.rbf",
+          "sha": "8522d49654419b3911340c742dc02ad3cffdbd7d",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Atari7800_MiSTer/master/releases/Atari7800_20230423.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Atari7800_20240425.rbf",
+          "sha": "539b973a8fafa7fece5aa3cd99e3485ca55b7e09",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Atari7800_MiSTer/master/releases/Atari7800_20240425.rbf",
           "type": "RBF"
         }
       ]
@@ -10417,6 +10452,18 @@
           "type": "RBF"
         },
         {
+          "name": "Atari5200_20240423.rbf",
+          "sha": "e457dc8899faf90f8c49a5409162a134a7bb5b8b",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Atari800_MiSTer/master/releases/Atari5200_20240423.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Atari5200_20240425.rbf",
+          "sha": "08ae3519542289075251c401a3dff23aa59a99c0",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Atari800_MiSTer/master/releases/Atari5200_20240425.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Atari800_20200225.rbf",
           "sha": "9e8e80b551f70cb89d612aacc8aa4db08b131e60",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Atari800_MiSTer/master/releases/Atari800_20200225.rbf",
@@ -10517,6 +10564,18 @@
           "sha": "6416a685d77e5f30ece24114162da2d2297a5142",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Atari800_MiSTer/master/releases/Atari800_20231208.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "Atari800_20240423.rbf",
+          "sha": "c944a2ad48d4c56e375b544b740f3f64514d2411",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Atari800_MiSTer/master/releases/Atari800_20240423.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Atari800_20240425.rbf",
+          "sha": "7e82ab6fe799a5c3e9da70871b2a93ff710d53f4",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Atari800_MiSTer/master/releases/Atari800_20240425.rbf",
+          "type": "RBF"
         }
       ]
     },
@@ -10580,6 +10639,18 @@
           "name": "AtariST_20231208.rbf",
           "sha": "2e7aa94063ef376b72118a2570099657854424cf",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/AtariST_MiSTer/master/releases/AtariST_20231208.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "AtariST_20240423.rbf",
+          "sha": "deee671e6a341a66ee78c6b8735a124d967eea43",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/AtariST_MiSTer/master/releases/AtariST_20240423.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "AtariST_20240425.rbf",
+          "sha": "83922986bff74c1f6cbb5ce0a71f317781299cb1",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/AtariST_MiSTer/master/releases/AtariST_20240425.rbf",
           "type": "RBF"
         }
       ]
@@ -13134,7 +13205,7 @@
         },
         {
           "name": "NeoGeo_20240418.rbf",
-          "sha": "a7f970067526e3c3beb69f60866ce2b7540e5f01",
+          "sha": "6d980e34710fe8991ad34baca3838633e3850738",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/NeoGeo_MiSTer/master/releases/NeoGeo_20240418.rbf",
           "type": "RBF"
         },
@@ -13164,7 +13235,7 @@
         },
         {
           "name": "romsets.xml",
-          "sha": "a36f19507285462f8ce084cbea5ed50b885dcf57",
+          "sha": "4b2212917fa1dd786a9ca893a1252b98f1315297",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/NeoGeo_MiSTer/master/releases/romsets.xml",
           "type": "OTHER"
         }
@@ -13785,6 +13856,18 @@
           "sha": "58ec66a86550db01e6c333067a83a5d5a12bb62b",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/SAM-Coupe_MiSTer/master/releases/SAMCoupe_20231208.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "SAMCoupe_20240421.rbf",
+          "sha": "9452d9afa10ce4ff7006042b3be4527267b045b8",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/SAM-Coupe_MiSTer/master/releases/SAMCoupe_20240421.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SAMCoupe_20240422.rbf",
+          "sha": "066789c83d86488b2f2c0481ba94347e25bcaaaf",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/SAM-Coupe_MiSTer/master/releases/SAMCoupe_20240422.rbf",
+          "type": "RBF"
         }
       ]
     },
@@ -13818,6 +13901,12 @@
           "name": "Saturn_20240414.rbf",
           "sha": "480e09b432924204c8e3499bfc938dc3c85e0eaf",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Saturn_MiSTer/main/releases/Saturn_20240414.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Saturn_20240423.rbf",
+          "sha": "522d66ec05cb22abdb0a3049fb9bc0dd627f0d8c",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Saturn_MiSTer/main/releases/Saturn_20240423.rbf",
           "type": "RBF"
         }
       ]
@@ -14689,6 +14778,18 @@
           "type": "RBF"
         },
         {
+          "name": "TSConf_20240421.rbf",
+          "sha": "b44b4b6d01a14797e880dc9e3af04922804551f0",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/TSConf_MiSTer/master/releases/TSConf_20240421.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "TSConf_20240422.rbf",
+          "sha": "440e4263556cc2de5c661a08abc5d7fd1122d504",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/TSConf_MiSTer/master/releases/TSConf_20240422.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "alt_roms.zip",
           "sha": "f4387be49e1c6d87cd6f206d5e28b516848c1456",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/TSConf_MiSTer/master/releases/alt_roms.zip",
@@ -15309,6 +15410,18 @@
           "name": "ZX81_20231208.rbf",
           "sha": "205b325a430815391447ecfb7de754464a9ef766",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/ZX81_MiSTer/master/releases/ZX81_20231208.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "ZX81_20240421.rbf",
+          "sha": "b828a35dc88e90e60c48b2522ca9e27458301a8e",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/ZX81_MiSTer/master/releases/ZX81_20240421.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "ZX81_20240422.rbf",
+          "sha": "38a3430fd95d8f4986d1156c8253d8ba3a6f6edd",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/ZX81_MiSTer/master/releases/ZX81_20240422.rbf",
           "type": "RBF"
         }
       ]
