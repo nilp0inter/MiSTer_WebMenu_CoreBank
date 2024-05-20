@@ -296,6 +296,11 @@ url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IkariWarriors_MiSTe
 output = "_Arcade/cores/IkariWarriors_20220806.rbf"
 
 
+# IremM107
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM107_MiSTer/main/releases/Arcade-IremM107_20240513.rbf"
+output = "_Arcade/cores/IremM107_20240513.rbf"
+
+
 # IremM62
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM62_MiSTer/master/releases/Arcade-IremM62_20231218.rbf"
 output = "_Arcade/cores/IremM62_20231218.rbf"
@@ -712,8 +717,8 @@ output = "_Others/CoCo2_20230224.rbf"
 
 
 # CoCo3
-url = "https://raw.githubusercontent.com/MiSTer-devel/CoCo3_MiSTer/master/releases/CoCo3_20240318.rbf"
-output = "_Others/CoCo3_20240318.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/CoCo3_MiSTer/master/releases/CoCo3_20240514.rbf"
+output = "_Others/CoCo3_20240514.rbf"
 
 
 # ColecoAdam
@@ -2081,9 +2086,24 @@ url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IkariWarriors_MiSTe
 output = "_Arcade/Dogou Souken.mra"
 
 
-# Air Assault (World, M107 hardware).mra
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM107_MiSTer/main/releases/Air%20Assault%20(World%2C%20M107%20hardware).mra"
-output = "_Arcade/Air Assault (World, M107 hardware).mra"
+# Air Assault (World).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM107_MiSTer/main/releases/Air%20Assault%20(World).mra"
+output = "_Arcade/Air Assault (World).mra"
+
+
+# Dream Soccer '94 (World, M107 hardware).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM107_MiSTer/main/releases/Dream%20Soccer%20'94%20(World%2C%20M107%20hardware).mra"
+output = "_Arcade/Dream Soccer '94 (World, M107 hardware).mra"
+
+
+# Fire Barrel (Japan).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM107_MiSTer/main/releases/_alternatives/_Air%20Assault/Fire%20Barrel%20(Japan).mra"
+output = "_Arcade/Fire Barrel (Japan).mra"
+
+
+# Dream Soccer '94 (Korea, M107 hardware).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM107_MiSTer/main/releases/_alternatives/_Dream%20Soccer%20'94/Dream%20Soccer%20'94%20(Korea%2C%20M107%20hardware).mra"
+output = "_Arcade/Dream Soccer '94 (Korea, M107 hardware).mra"
 
 
 # Horizon (Irem).mra
