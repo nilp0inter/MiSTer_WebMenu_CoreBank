@@ -2039,6 +2039,12 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-SEGASYS1_20240602.rbf",
+          "sha": "df9b5e6e5cfd2a6cfad840f4d57908dc0de96289",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-SEGASYS1_MiSTer/main/releases/Arcade-SEGASYS1_20240602.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Arcade-SEGASYS1_LLAPI_20220125.rbf",
           "sha": "13d71d210e8806fb541de0128c85174d3cc473f1",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-SEGASYS1_MiSTer/main/releases/Arcade-SEGASYS1_LLAPI_20220125.rbf",
@@ -2048,6 +2054,12 @@
           "name": "Arcade-SEGASYS1_LLAPI_20240320.rbf",
           "sha": "679e0f694406637dc0e127844cb8e18b7a04056c",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-SEGASYS1_MiSTer/main/releases/Arcade-SEGASYS1_LLAPI_20240320.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-SEGASYS1_LLAPI_20240609.rbf",
+          "sha": "7cd54d295451d54f577b0d7c41cc8d63f4f27abd",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-SEGASYS1_MiSTer/main/releases/Arcade-SEGASYS1_LLAPI_20240609.rbf",
           "type": "RBF"
         },
         {
@@ -3199,6 +3211,12 @@
           "name": "GBA_LLAPI_20240602.rbf",
           "sha": "4b3d5e61d921841c8e1a5302f7104c511bce0d4d",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/GBA_MiSTer/master/releases/GBA_LLAPI_20240602.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "GBA_LLAPI_20240607.rbf",
+          "sha": "447ee38484a0111292b2bfba1ce7cd5be77d4bfa",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/GBA_MiSTer/master/releases/GBA_LLAPI_20240607.rbf",
           "type": "RBF"
         }
       ]
@@ -5745,7 +5763,7 @@
     {
       "name": "TurboGrafx16_MiSTer",
       "description": "TurboGrafx 16 / PC Engine for MiSTer",
-      "readme": "# [TurboGrafx 16 / PC Engine](https://en.wikipedia.org/wiki/TurboGrafx-16) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki) \r\n\r\n### This is the port of Gregory Estrade's [FPGAPCE](https://github.com/Torlus/FPGAPCE)\r\n\r\n## Features\r\n * SuperGrafx mode\r\n * saves\r\n * Completely rewritten CPU and VDC for cycle accuracy\r\n * Uses DDR3 and SDRAM for cartridge's ROM (SDRAM is recommended for accuracy)\r\n * 2-button, 2-button 'turbo', and 6-button joystick support\r\n * XE-1AP analog controller\r\n * Turbotap(multiple joysticks)\r\n * Mouse\r\n * Pachinko controller\r\n * Memory Base 128 storage unit\r\n * Street Fighter II and Populous mappers\r\n * CD-ROM / Super CD-ROM\r\n * Arcade Card\r\n * Cheat engine\r\n * CHD Support\r\n\r\n## Installation:\r\nCopy the *.rbf file at the root of the SD card. Copy roms (*PCE,*BIN) to **TGFX16** folder. You may rename ROM of your favorite game to **boot.rom** - it will be automatically loaded upon core loading.\r\nUse SGX file extension for SuperGrafx games.\r\n\r\n## CD-ROM games\r\nCD-ROM images must be in BIN/CUE or CHD format, and must be located in the **TGFX16-CD** folder. Each CD-ROM image must have its own folder.\r\n**cd_bios.rom** must be placed in the same TGFX16-CD folder as the images mentioned above. **Japanese Super CD-ROM v3.00 is recomended for maximum compatibility**. \r\nAdditionally you can use a different bios for specific games (for example from Games Express) by placing cd_bios.rom inside the game image's folder.\r\n\r\n**Do not zip CD-ROM images! It won't work correctly.**\r\n\r\n**Attention about US BIOS:** MiSTer requires original dump of US BIOS to work properly. It needs to be of 262144 bytes.\r\nIf you can read copyright string at the end of US BIOS file, then it's not correct dump! It's already pre-swapped for emulators.\r\nWhile it will work on MiSTer, some CD games will refuse to start. **Correct US BIOS file is when copyright string is not readable.**\r\n\r\n## Cheat engine\r\nStandard cheats location is supported for HuCard games. For CD-ROM game all cheats must be zipped into a single zip file and placed inside game's CD-ROM folder.\r\n\r\n## Joystick\r\nBoth Turbotap and 6-button joysticks are supported.\r\nXE-1AP analog joystick is supported for the 4 games which are supported (After Burner II, Forgotten Worlds, Operation Wolf, Outrun)\r\nDo not enable the above features for games not supporting it, otherwise game will work incorrectly.\r\nFor 2-button 'turbo' joypad (sync'd as in original system), turbo fire is provided by alternate buttons : A, B (normal), X, Y (turbo 1 level), and L, R (turbo 2 level)\r\n\r\n## Mouse\r\nMouse is supported.\r\nDo not enable this feature for games not supporting it, otherwise game will work incorrectly.\r\n\r\n## Pachinko\r\nPachinko controller is supported through either paddle or analog joystick Y axis.\r\n\r\n## Reset\r\nHold down Run button then press Select. Some games require to keep both buttons pressed longer to reset. The PC Engine/Turbografx-16 did not have a hardware reset button, and instead relies on this button combination. With this method, in-game options will remain if you have changed them, whereas the MiSTer OSD reset will revert them.\r\n(Note: this reset method is suppressed in a small number of games)\r\n\r\n## SDRAM\r\nThis core may work without SDRAM (using on-board DDR3), but it may have different kinds of issues/glitches due to high latency of DDR3 memory. Thus SDRAM module is highly recommended for maximum accuracy.\r\n\r\n### Notes:\r\n* Both headerless ROMs and ROMs with header (512b) are supported and automatically distinguished by file size.\r\n\r\n## Download precompiled binaries\r\nGo to [releases](https://github.com/MiSTer-devel/TurboGrafx16_MiSTer/tree/master/releases) folder. \r\n",
+      "readme": "# [TurboGrafx 16 / PC Engine](https://en.wikipedia.org/wiki/TurboGrafx-16) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki) \r\n\r\n### This is the port of Gregory Estrade's [FPGAPCE](https://github.com/Torlus/FPGAPCE)\r\n\r\nPort to MiSTer, Arcade card, DDR3, mappers and other tweaks [Sorgelig](https://github.com/sorgelig)\r\n\r\nTweaks and CD Support added by [srg320](https://github.com/srg320)\r\n\r\nAdditional bug fixes by [greyrogue](https://github.com/greyrogue)\r\n\r\nPalettes & audio filters by [Kitrinx](https://github.com/Kitrinx)\r\n\r\nFurther refinements and maintanance by [dshadoff](https://github.com/dshadoff)\r\n\r\n## Features\r\n * SuperGrafx mode\r\n * saves\r\n * Completely rewritten CPU and VDC for cycle accuracy\r\n * Uses DDR3 and SDRAM for cartridge's ROM (SDRAM is recommended for accuracy)\r\n * 2-button, 2-button 'turbo', and 6-button joystick support\r\n * XE-1AP analog controller\r\n * Turbotap(multiple joysticks)\r\n * Mouse\r\n * Pachinko controller\r\n * Memory Base 128 storage unit\r\n * Street Fighter II and Populous mappers\r\n * CD-ROM / Super CD-ROM\r\n * Arcade Card\r\n * Cheat engine\r\n * CHD Support\r\n\r\n## Installation:\r\nCopy the *.rbf file at the root of the SD card. Copy roms (*PCE,*BIN) to **TGFX16** folder. You may rename ROM of your favorite game to **boot.rom** - it will be automatically loaded upon core loading.\r\nUse SGX file extension for SuperGrafx games.\r\n\r\n## CD-ROM games\r\nCD-ROM images must be in BIN/CUE or CHD format, and must be located in the **TGFX16-CD** folder. Each CD-ROM image must have its own folder.\r\n**cd_bios.rom** must be placed in the same TGFX16-CD folder as the images mentioned above. **Japanese Super CD-ROM v3.00 is recomended for maximum compatibility**. \r\nAdditionally you can use a different bios for specific games (for example from Games Express) by placing cd_bios.rom inside the game image's folder.\r\n\r\n**Do not zip CD-ROM images! It won't work correctly.**\r\n\r\n**Attention about US BIOS:** MiSTer requires original dump of US BIOS to work properly. It needs to be of 262144 bytes.\r\nIf you can read copyright string at the end of US BIOS file, then it's not correct dump! It's already pre-swapped for emulators.\r\nWhile it will work on MiSTer, some CD games will refuse to start. **Correct US BIOS file is when copyright string is not readable.**\r\n\r\n## Cheat engine\r\nStandard cheats location is supported for HuCard games. For CD-ROM game all cheats must be zipped into a single zip file and placed inside game's CD-ROM folder.\r\n\r\n## Joystick\r\nBoth Turbotap and 6-button joysticks are supported.\r\nXE-1AP analog joystick is supported for the 4 games which are supported (After Burner II, Forgotten Worlds, Operation Wolf, Outrun)\r\nDo not enable the above features for games not supporting it, otherwise game will work incorrectly.\r\nFor 2-button 'turbo' joypad (sync'd as in original system), turbo fire is provided by alternate buttons : A, B (normal), X, Y (turbo 1 level), and L, R (turbo 2 level)\r\n\r\n## Mouse\r\nMouse is supported.\r\nDo not enable this feature for games not supporting it, otherwise game will work incorrectly.\r\n\r\n## Pachinko\r\nPachinko controller is supported through either paddle or analog joystick Y axis.\r\n\r\n## Palettes\r\nThe 'Original' palette is based on reverse engineering work of the VDP by [furrtek](https://github.com/furrtek). An RGB to YUV lookup table was discovered that translates the colors to their intended values with the composite output of the console. Further work was done by [ArtemioUrbina](https://github.com/ArtemioUrbina) to verify the color output. [Kitrinx](https://github.com/Kitrinx) created a tool to generate the resulting [palette](https://github.com/Kitrinx/TG16_Palette).\r\n\r\n## Reset\r\nHold down Run button then press Select. Some games require to keep both buttons pressed longer to reset. The PC Engine/Turbografx-16 did not have a hardware reset button, and instead relies on this button combination. With this method, in-game options will remain if you have changed them, whereas the MiSTer OSD reset will revert them.\r\n(Note: this reset method is suppressed in a small number of games)\r\n\r\n## SDRAM\r\nThis core may work without SDRAM (using on-board DDR3), but it may have different kinds of issues/glitches due to high latency of DDR3 memory. Thus SDRAM module is highly recommended for maximum accuracy.\r\n\r\n### Notes:\r\n* Both headerless ROMs and ROMs with header (512b) are supported and automatically distinguished by file size.\r\n\r\n## Download precompiled binaries\r\nGo to [releases](https://github.com/MiSTer-devel/TurboGrafx16_MiSTer/tree/master/releases) folder. \r\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-LLAPI/TurboGrafx16_MiSTer",
@@ -6132,6 +6150,12 @@
           "name": "TurboGrafx16_LLAPI_20240531.rbf",
           "sha": "12707fc9db5daa4899adbfdfe60104980f72f979",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/TurboGrafx16_MiSTer/master/releases/TurboGrafx16_LLAPI_20240531.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "TurboGrafx16_LLAPI_20240604.rbf",
+          "sha": "6427454549a3e71f30023e6a87c6b407fcb779b8",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/TurboGrafx16_MiSTer/master/releases/TurboGrafx16_LLAPI_20240604.rbf",
           "type": "RBF"
         }
       ]
