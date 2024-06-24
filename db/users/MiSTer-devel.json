@@ -767,6 +767,12 @@
           "type": "RBF"
         },
         {
+          "name": "ao486_20240616.rbf",
+          "sha": "e42ab4f7e3d2d72ba15e15c72e956bad465f4a97",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/ao486_MiSTer/master/releases/ao486_20240616.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "boot0.rom",
           "sha": "b336b9a9bfb856062e0f15edec6a426b001054d0",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/ao486_MiSTer/master/releases/boot0.rom",
@@ -22532,7 +22538,7 @@
     {
       "name": "Saturn_MiSTer",
       "description": "Sega Saturn for MiSTer",
-      "readme": "# [Sega Saturn](https://en.wikipedia.org/wiki/Sega_Saturn) for MiSTer\n\n## Hardware Requirements\n\n- 128 MB SDRAM Module (Primary)\n- SDRAM Module of any size (32MB-128MB) (Secondary)\n\n> **Note:** Dual SDRAM modules is recommended for better compatibility.\n\n## Status\n\nCurrent status is WIP/Beta\n\nKnown issues:\n\n- 3D Baseball - minor graphic gliches\n- Space Jam - freeze in demo\n- Battle Monsters (EU) - graphic gliches\n- Dragon Ball Z (EU) - freeze\n\nA lot of games have sound issues.\n",
+      "readme": "# [Sega Saturn](https://en.wikipedia.org/wiki/Sega_Saturn) for MiSTer\n\n## Hardware Requirements\n\n- 128 MB SDRAM Module (Primary)\n- SDRAM Module of any size (32MB-128MB) (Secondary)\n\n> **Note:** Dual SDRAM modules is recommended for better compatibility.\n\n## Status\n\nCurrent status is WIP/Beta\n\nKnown issues:\n\n- Space Jam - freeze in demo\n- Battle Monsters (EU) - graphic gliches\n- Dragon Ball Z (EU) - freeze\n\nA lot of games have sound issues.\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/Saturn_MiSTer",
@@ -22663,6 +22669,12 @@
           "name": "SGB_20230717.rbf",
           "sha": "2bed931f61d2f22def4aefc734d1b7b15d28bce2",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/SGB_MiSTer/main/releases/SGB_20230717.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SGB_20240617.rbf",
+          "sha": "612b2f175acb27809785fc4ae2b524328306eada",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/SGB_MiSTer/main/releases/SGB_20240617.rbf",
           "type": "RBF"
         }
       ]
