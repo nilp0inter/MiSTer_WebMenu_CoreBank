@@ -14702,7 +14702,7 @@
     {
       "name": "Saturn_MiSTer",
       "description": "Sega Saturn for MiSTer",
-      "readme": "# [Sega Saturn](https://en.wikipedia.org/wiki/Sega_Saturn) for MiSTer\n\n## Hardware Requirements\n\n- 128 MB SDRAM Module (Primary)\n- SDRAM Module of any size (32MB-128MB) (Secondary)\n\n> **Note:** Dual SDRAM modules is recommended for better compatibility.\n\n## Status\n\nCurrent status is WIP/Beta\n\nKnown issues:\n\n- 3D Baseball - minor graphic gliches\n- Galaxy Fight - minor graphic gliches (VDP2 screen in hires mode)\n- Space Jam - freeze in demo\n- Tenchi Muyou! Rensa Hitsuyou (JP) - graphic gliches (VDP2 screen)\n- Battle Monsters (EU) - graphic gliches\n- Dragon Ball Z (EU) - freeze\n\nA lot of games have sound issues.\n",
+      "readme": "# [Sega Saturn](https://en.wikipedia.org/wiki/Sega_Saturn) for MiSTer\n\n## Hardware Requirements\n\n- 128 MB SDRAM Module (Primary)\n- SDRAM Module of any size (32MB-128MB) (Secondary)\n\n> **Note:** Dual SDRAM modules is recommended for better compatibility.\n\n## Status\n\nCurrent status is WIP/Beta\n\nKnown issues:\n\n- Space Jam - freeze in demo\n- Battle Monsters (EU) - graphic gliches\n- Dragon Ball Z (EU) - freeze\n\nA lot of games have sound issues.\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-DB9/Saturn_MiSTer",
@@ -14732,9 +14732,15 @@
           "type": "RBF"
         },
         {
-          "name": "Saturn_20240423.rbf",
-          "sha": "522d66ec05cb22abdb0a3049fb9bc0dd627f0d8c",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Saturn_MiSTer/main/releases/Saturn_20240423.rbf",
+          "name": "Saturn_20240628.rbf",
+          "sha": "6edd1806addeb0d5baa5991e69541189c41f0b1b",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Saturn_MiSTer/main/releases/Saturn_20240628.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Saturn_20240629.rbf",
+          "sha": "a4adc16a8267937ed9546afb120c8946eda9a945",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Saturn_MiSTer/main/releases/Saturn_20240629.rbf",
           "type": "RBF"
         }
       ]
