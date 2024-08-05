@@ -8024,6 +8024,12 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-KickAndRun_20240730.rbf",
+          "sha": "fff339501a8126ee8fc93c40997a9ca128332765",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-KickAndRun_MiSTer/master/releases/Arcade-KickAndRun_20240730.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Kick And Run.mra",
           "sha": "a094598ff864bf20f5a433fc0687867aebd9bed0",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-KickAndRun_MiSTer/master/releases/Kick%20And%20Run.mra",
@@ -21514,6 +21520,12 @@
           "sha": "0b08ac05e665152d502ce7b40da2643878a269c6",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Orao_MiSTer/master/releases/ORAO_20200309.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "ORAO_20240729.rbf",
+          "sha": "a7d1646e5084787890839fe1378f96b43be31efe",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Orao_MiSTer/master/releases/ORAO_20240729.rbf",
+          "type": "RBF"
         }
       ]
     },
@@ -21590,7 +21602,7 @@
     {
       "name": "PC88_MiSTer",
       "description": "NEC PC8801 MKII SR For MiSTer ",
-      "readme": "# [NEC PC8801](https://en.wikipedia.org/wiki/PC88) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\r\n\r\nThis is the port of the [PC8801 MKII SR](http://fpga8801.seesaa.net/category/21233167-1.html) core by Puu-san.\r\n\r\n- Thanks to Puu-san for the core\r\n- Thanks to Yosinda\r\n- Thanks for the help of Alanswx and Kitrinx\r\n- Thanks to Sorgelig\r\n\r\n## Features\r\n* Modes N, N88V1L, N88V1H, N88V2\r\n* CPU Speeds (4MHz and 8MHz)\r\n* 2 Floppy Drives using D88 format\r\n* Sound chip YM2603 by default and ADPCM\r\n* Mouse support (Changed between Mouse and Joypad on the OSD)\r\n\r\n## Installation\r\nCopy the PC88_\\*.rbf file to the root of the SD card. Create a **PC8801** folder on the root/games of the card, and place PC8801 floppies (\\*.D88) inside this folder. \r\n- boot.rom = PC8801 MKII SR BIOS file.  Required to start the core.\r\n\r\n## How to build the boot.rom\r\n\r\n- 00000 ~ N88BASIC (32ko) mk2sr_n88.rom A0FC0473\r\n- 08000- N-BASIC (32ko) mk2sr_n80.rom 27E1857D\r\n- 10000 ~ N88 4th-0 (8ko) mk2sr_n88_0.rom 710A63EC\r\n- 12000 ~ N88 4th-1 (8ko) n88_1.rom C0BD2AA6\r\n- 14000 ~ N88 4th-2 (8ko) n88_2.rom AF2B6EFA\r\n- 16000 ~ N88 4th-3 (8ko) n88_3.rom 7713C519\r\n- 18000 ~ FONT (8x16) (2ko) + (2ko blank) font.rom 56653188\r\n- 19000- Simple graphics font (attached Font / graphfont.bin) (4ko) graphfont.bin CDD1BE6B\r\n- 1a000 ~ DISK ROM (8ko) + (16ko blank) mh_disk.rom A222ECF0\r\n- 20000 ~ KANJI1 (128ko) kanji1.rom 6178BD43\r\n- 40000 ~ KANJI2 (128ko) kanji2.rom 154803CC\r\n\r\ncopy /b mk2sr_n88.rom+mk2sr_n80.rom+mk2sr_n88_0.rom+n88_1.rom+n88_2.rom+n88_3.rom+font.rom+2KO_BLANK_00.ROM+graphfont.bin+mh_disk.rom+8KO_BLANK_00.ROM+8KO_BLANK_00.ROM+kanji1.rom+kanji2.rom boot.rom\r\n\r\n## Known Issues\r\n- Timing issues\r\n- Gamma correction doesn't seem to change anything (?)\r\n\r\n## TODO\r\n- Update T80 cpu\r\n- Add choice Sound YM2203 or YM2603 on the OSD\r\n- Add Audio Mix\r\n- Add support of multi-resolution\r\n- Add support of tapes\r\n- Add support of other models like PC8801MC\r\n- ...\r\n",
+      "readme": "# [NEC PC8801](https://en.wikipedia.org/wiki/PC88) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\r\n\r\nThis is the port of the [PC8801 MKII SR](http://fpga8801.seesaa.net/category/21233167-1.html) core by Puu-san.\r\n\r\n- Thanks to Puu-san for the core\r\n- Thanks to Yosinda\r\n- Thanks for the help of Alanswx and Kitrinx\r\n- Thanks to Sorgelig\r\n\r\n## Features\r\n* Modes N, N88V1L, N88V1H, N88V2\r\n* CPU Speeds (4MHz and 8MHz)\r\n* 2 Floppy Drives using D88 format\r\n* Sound chip YM2603 by default and ADPCM\r\n* Mouse support (Changed between Mouse and Joypad on the OSD)\r\n\r\n## Installation\r\nCopy the PC88_\\*.rbf file to the root of the SD card. Create a **PC8801** folder on the root/games of the card, and place PC8801 floppies (\\*.D88) inside this folder. \r\n- boot.rom = PC8801 MKII SR BIOS file.  Required to start the core.\r\n\r\n## How to build the boot.rom\r\n\r\n- 00000 ~ N88BASIC (32ko) mk2sr_n88.rom A0FC0473\r\n- 08000- N-BASIC (32ko) mk2sr_n80.rom 27E1857D\r\n- 10000 ~ N88 4th-0 (8ko) mk2sr_n88_0.rom 710A63EC\r\n- 12000 ~ N88 4th-1 (8ko) n88_1.rom C0BD2AA6\r\n- 14000 ~ N88 4th-2 (8ko) n88_2.rom AF2B6EFA\r\n- 16000 ~ N88 4th-3 (8ko) n88_3.rom 7713C519\r\n- 18000 ~ FONT (8x16) (2ko) + (2ko blank) font.rom 56653188\r\n- 19000- Simple graphics font (attached Font / graphfont.bin) (4ko) graphfont.bin CDD1BE6B\r\n- 1a000 ~ DISK ROM (8ko) + (16ko blank) mh_disk.rom A222ECF0\r\n- 20000 ~ KANJI1 (128ko) kanji1.rom 6178BD43\r\n- 40000 ~ KANJI2 (128ko) kanji2.rom 154803CC\r\n\r\ncopy /b mk2sr_n88.rom+mk2sr_n80.rom+mk2sr_n88_0.rom+n88_1.rom+n88_2.rom+n88_3.rom+font.rom+2KO_BLANK_00.ROM+graphfont.bin+mh_disk.rom+8KO_BLANK_00.ROM+8KO_BLANK_00.ROM+kanji1.rom+kanji2.rom boot.rom\r\n\r\n## Special key assignments are as follows:\r\n\r\n### (PC88->PS/2)\r\n- STOP -> End\r\n- CLR -> Home\r\n- HELP -> F11\r\n- GRPH -> Alt\r\n- COPY -> Print Screen\r\n- PC -> Scroll Lock\r\n\r\n## Known Issues\r\n- Timing issues\r\n- Gamma correction doesn't seem to change anything (?)\r\n\r\n## TODO\r\n- Update T80 cpu\r\n- Add choice Sound YM2203 or YM2603 on the OSD\r\n- Add Audio Mix\r\n- Add support of multi-resolution\r\n- Add support of tapes\r\n- Add support of other models like PC8801MC\r\n- ...\r\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/PC88_MiSTer",
