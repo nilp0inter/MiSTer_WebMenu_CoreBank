@@ -4921,15 +4921,9 @@
       "url": "https://github.com/MiSTer-devel/Arcade-Exerion_MiSTer",
       "releases": [
         {
-          "name": "Arcade-Exerion_20231011.rbf",
-          "sha": "348cb9eb76dd7bb91a093e09299573c5a90c0583",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Exerion_MiSTer/main/releases/Arcade-Exerion_20231011.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Arcade-Exerion_20240526.rbf",
-          "sha": "1c3e5d5a71f35d73ee0de4424a332c43d0421a48",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Exerion_MiSTer/main/releases/Arcade-Exerion_20240526.rbf",
+          "name": "Arcade-Exerion_20240914.rbf",
+          "sha": "695c621f0fb41cf51271d99de4c846bdc7e7bc3c",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Exerion_MiSTer/main/releases/Arcade-Exerion_20240914.rbf",
           "type": "RBF"
         },
         {
@@ -17573,6 +17567,12 @@
           "type": "RBF"
         },
         {
+          "name": "Gameboy_20240912.rbf",
+          "sha": "739908f42fad7787324d786b8494771f058e048f",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Gameboy_MiSTer/master/releases/Gameboy_20240912.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Mega Duck.mgl",
           "sha": "46182bf8d3cb712157b1b1dcc9235fe7f9c4daed",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Gameboy_MiSTer/master/releases/Mega%20Duck.mgl",
@@ -17583,7 +17583,7 @@
     {
       "name": "Gamecontrollerdb_MiSTer",
       "description": null,
-      "readme": "## Game controller database for MiSTer\n\nGame controller default mappings derived from https://github.com/gabomdq/SDL_GameControllerDB. \n\nNon-Linux platform entries are removed and some MiSTer specific entries are added.\n\n\n### MiSTer specific extensions to gamecontrollerdb format\n\n- platform 'MiSTer' added. In the event of conflict the MiSTer platform takes priority over 'Linux'.\n- buttons 'menuok' and 'menuesc' are mappable. If these entries do not exist in the mapping 'a' and 'b' buttons are mapped to these functions.\n- Core based matching. 'mistercore:<corename>' limits the mapping entry to only the named core. Wildcards are supported. A database linecan have multiple mistercore entries. \n\n",
+      "readme": "## Game controller database for MiSTer\n\nGame controller default mappings derived from https://github.com/mdqinc/SDL_GameControllerDB. \n\nNon-Linux platform entries are removed and some MiSTer specific entries are added.\n\n\n### MiSTer specific extensions to gamecontrollerdb format\n\n- platform 'MiSTer' added. In the event of conflict the MiSTer platform takes priority over 'Linux'.\n- buttons 'menuok' and 'menuesc' are mappable. If these entries do not exist in the mapping 'a' and 'b' buttons are mapped to these functions.\n- Core based matching. 'mistercore:<corename>' limits the mapping entry to only the named core. Wildcards are supported. A database linecan have multiple mistercore entries. \n\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/Gamecontrollerdb_MiSTer",
@@ -19606,6 +19606,12 @@
           "sha": "8286d6563f8cb46fa98d79904544020e3b878399",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Main_MiSTer/master/releases/MiSTer_20240505",
           "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20240912",
+          "sha": "5296ab3c84889541f3116cbdb544aa573b54c6ab",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Main_MiSTer/master/releases/MiSTer_20240912",
+          "type": "OTHER"
         }
       ]
     },
@@ -20633,6 +20639,12 @@
           "type": "RBF"
         },
         {
+          "name": "Minimig_20240912.rbf",
+          "sha": "2178b5e4b8652e8749707d53be71f3624656b43e",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Minimig-AGA_MiSTer/MiSTer/releases/Minimig_20240912.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "WheelDriverAkiko.adf",
           "sha": "ce7a6acedf8f613f10d59dd29d5287ed7991ce42",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Minimig-AGA_MiSTer/MiSTer/releases/WheelDriverAkiko.adf",
@@ -21523,6 +21535,12 @@
           "name": "NES_20240408.rbf",
           "sha": "5b3b8da3f315b2ae7367069b0ca03ffbfbf43776",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/NES_MiSTer/master/releases/NES_20240408.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NES_20240912.rbf",
+          "sha": "f61ef0c5d205badf69d0830258257c12921ff384",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/NES_MiSTer/master/releases/NES_20240912.rbf",
           "type": "RBF"
         }
       ]
