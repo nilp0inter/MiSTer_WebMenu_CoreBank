@@ -4854,7 +4854,7 @@
         },
         {
           "name": "Pac & Pal.mra",
-          "sha": "a88d8f2bc788d338e3e1b5a9a89d052362d3043a",
+          "sha": "f699f12b5ed164e476982947f3e20049d54751a8",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Druaga_MiSTer/master/releases/Pac%20%26%20Pal.mra",
           "type": "MRA",
           "extra": {
@@ -4867,7 +4867,7 @@
         },
         {
           "name": "Pac-Man & Chomp Chomp.mra",
-          "sha": "1d1006f44ad3cb603ad039183221682d58ae80ac",
+          "sha": "e21dd5bfdbf03c20519c5d2371506d4e7ce477be",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Druaga_MiSTer/master/releases/Pac-Man%20%26%20Chomp%20Chomp.mra",
           "type": "MRA",
           "extra": {
@@ -4880,7 +4880,7 @@
         },
         {
           "name": "Super Pac-Man.mra",
-          "sha": "27165ed2f04e47f7370928195ef45d7e2541ef66",
+          "sha": "a233913df23616db71fe858098fe95ac7976d406",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Druaga_MiSTer/master/releases/Super%20Pac-Man.mra",
           "type": "MRA",
           "extra": {
@@ -9969,14 +9969,14 @@
         },
         {
           "name": "Pac-Man Plus.mra",
-          "sha": "d714b779e966bdedef88ac4446cfad9d29189195",
+          "sha": "49928b24105c3f7017e8267e5c0d298a8c269af7",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pacman_MiSTer/master/releases/Pac-Man%20Plus.mra",
           "type": "MRA",
           "extra": {
             "name": "Pac-Man Plus",
             "rbf": "pacman",
             "zips": [
-              "/hbmame/puckman.zip"
+              "pacplus.zip"
             ]
           }
         },
@@ -10866,6 +10866,19 @@
           "sha": "904c07858747a98e5cade1b8b72057a87a85b9b9",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-QBert_MiSTer/master/releases/Arcade-QBert_20240602.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "Faster, Harder, More Challenging Q`Bert (prototype).mra",
+          "sha": "0b0a27f9db4dd111325885c2d406275ddfc44cdc",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-QBert_MiSTer/master/releases/Faster%2C%20Harder%2C%20More%20Challenging%20Q%60Bert%20(prototype).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Faster, Harder, More Challenging Q*bert",
+            "rbf": "qbert",
+            "zips": [
+              "sqbert.zip"
+            ]
+          }
         },
         {
           "name": "Mad Planets.mra",
