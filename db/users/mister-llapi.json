@@ -5,48 +5,6 @@
   "type": "Organization",
   "repos": [
     {
-      "name": "Arcade-BankPanic_MiSTer",
-      "description": "BankPanic FPGA core for MiSTer with LLAPI support",
-      "readme": "# BankPanic for MiSTerFPGA\r\n\r\n## General description\r\nThis is the port of Bank Panic for MiSTerFPGA by Pierco (Pierre Cornier). I tried to reproduce the PCB as much as possible so it should be very close to the original hardware.\r\n\r\nI would like to give special thanks to Mark Haysman from RetroClinic for sharing the equations of the PAL 315-5075, and to David Shadoff, Alan Steremberg & Chockichoc for their support and friendship!\r\n\r\n## Patreon contributors!\r\nAdrian Vargerson\r\nAlan Steremberg\r\nAllen Tipper\r\nAmosfear\r\nAndreas Micklei\r\nbirdybro\r\nChristopher Garland\r\nCory Stargel\r\nCyrille Jouineau\r\nDarren Chell\r\nDarren Newman\r\nDave Ely\r\nDavide Lorigliola\r\nDimitris Zongas\r\nFrancois P\r\nFunkycochise\r\nGentlemen's Pixel Club\r\nGrumpy Old Gamer\r\nHerbert Krammer\r\nHiddenbyleaves\r\nHolger Lagerfeldt\r\nHumanoide70\r\nJ BG\r\nJohan Sj\u00f6strand\r\nJohn Stringer\r\nJos\u00e9 L\u00f3pez Navarrete\r\nJuan Carlos Pastor (Denymetanol)\r\nMatt Hargett\r\nMax\r\nMichael Packard\r\nMike Holzinger\r\nMike S\r\nMiSTerFPGA.co.uk\r\nNicolas VAILLANT\r\nPhilip Lawson\r\nPons Cremator\r\nRaspberryAlpine\r\nRune P\r\nSamuel Giroux\r\nSwedishGojira\r\nTonton Kaloun\r\nwwark\r\n",
-      "archived": false,
-      "fork": true,
-      "url": "https://github.com/MiSTer-LLAPI/Arcade-BankPanic_MiSTer",
-      "releases": [
-        {
-          "name": "BankPanic.mra",
-          "sha": "15577bafd5812c76dd927422e00c6b450ff2f50e",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-BankPanic_MiSTer/master/releases/BankPanic.mra",
-          "type": "MRA",
-          "extra": {
-            "name": "BankPanic",
-            "rbf": "bankpanic",
-            "zips": [
-              "bankp.zip"
-            ]
-          }
-        },
-        {
-          "name": "BankPanic_20221010.rbf",
-          "sha": "062061e1d804079c035616a42c0f7d4d73c6b9d5",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-BankPanic_MiSTer/master/releases/BankPanic_20221010.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Combat Hawk.mra",
-          "sha": "6952ffb776b350bc7890dd182a17041c36ba9558",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-BankPanic_MiSTer/master/releases/Combat%20Hawk.mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Combat Hawk",
-            "rbf": "bankpanic",
-            "zips": [
-              "combh.zip"
-            ]
-          }
-        }
-      ]
-    },
-    {
       "name": "Arcade-DonkeyKong_MiSTer",
       "description": "Arcade: Donkey Kong for MiSTer",
       "readme": "LLAPI Note : \r\n\r\n1. Place the rbf core file in a folder named _LLAPI/cores/\r\n2. Place the MRAs files in _LLAPI/_Arcade/\r\n3. Dont forget to enable LLAPI in the core OSD (this has to be done for each MRA for now)\r\n4. Play !\r\n\r\nIn order to play with 2 players you need to insert 2 coins at least and press START2P button.\r\nThis button has been mapped to the LEFT shoulder button (SNES controller used as a reference)\r\n\r\n---------------------------------------------------------------------------------\r\n-- \r\n-- Arcade: Donkey Kong port to MiSTer by Sorgelig\r\n-- 18 April 2018\r\n-- \r\n---------------------------------------------------------------------------------\r\n-- \r\n-- dkong Copyright (c) 2003 - 2004 Katsumi Degawa\r\n-- T80   Copyright (c) 2001-2002 Daniel Wallner (jesus@opencores.org) All rights reserved\r\n-- T48   Copyright (c) 2004, Arnim Laeuger (arniml@opencores.org) All rights reserved\r\n-- \r\n---------------------------------------------------------------------------------\r\n-- \r\n-- Support screen and controls rotation on HDMI output.\r\n-- Only controls are rotated on VGA output.\r\n-- \r\n-- \r\n-- Keyboard inputs :\r\n--\r\n--   F1          : Coin + Start 1P\r\n--   F2          : Coin + Start 2P\r\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\r\n--   SPACE       : Jump\r\n--\r\n-- Joystick support.\r\n-- \r\n-- High score save/load - To save your scores use the 'Save Settings' option in the OSD.\r\n-- * Warning: For Donkey Kong 3 (bootleg) Scores are only loaded when core starts, using reset will return scores to factory settings *\r\n--\r\n---------------------------------------------------------------------------------\r\n\r\n                                *** Attention ***\r\n\r\nROMs are not included. In order to use this arcade, you need to provide the\r\ncorrect ROMs.\r\n\r\nTo simplify the process .mra files are provided in the releases folder, that\r\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\r\ncorresponding file of the M.A.M.E. project.\r\n\r\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\r\ninformation on how to setup and use the environment.\r\n\r\nQuickreference for folders and file placement:\r\n\r\n/_Arcade/<game name>.mra\r\n/_Arcade/cores/<game rbf>.rbf\r\n/_Arcade/mame/<mame rom>.zip\r\n/_Arcade/hbmame/<hbmame rom>.zip\r\n",
@@ -1223,48 +1181,6 @@
       ]
     },
     {
-      "name": "Arcade-Joust2_MiSTer",
-      "description": "Joust2 by darfpga ported to MiSTer",
-      "readme": "# [Arcade: Joust 2](https://en.wikipedia.org/wiki/Joust_2:_Survival_of_the_Fittest) for [MiSTer](https://mister-devel.github.io/MkDocs_MiSTer/)\r\n\r\n![Joust 2 Logo](doc/Joust2Logo.png)\r\n\r\nOriginal core developed by [darfpga](https://github.com/darfpga)\r\n\r\nPorted to MiSTer by [birdybro](https://github.com/birdybro)\r\n\r\n## Description\r\n\r\nThis is a simulation model of the **Joust 2: Survival of the Fittest** hardware.\r\n\r\nOriginal source is located in `doc/`\r\n\r\n## Controls\r\n\r\n![Joust 2 Controls](doc/controls.jpg)\r\n\r\n| Name  | Description         |\r\n| ----- | ------------------- |\r\n| Flap  | You flap your wings |\r\n| Left  | You go left         |\r\n| Right | You go right        |\r\n| Coin  | Put in a coin       |\r\n\r\nThere is a 1P Start and a 2P Start. These are also called \"Transform\" in-game.\r\n\r\n## Service Menu\r\n\r\nJoust 2 had a peculiar system of DIPs. See the manual in `doc/` for the original source of the information.\r\n\r\nWhen you press the \"Advance\" button in the OSD, this enables you to access the bookkeeping totals by then pressing \"Auto Up\" in the OSD. Currently the data in here is not saved to the MiSTer but that may come at a later time. \r\n\r\nIf you want to change any options, then press \"Auto Up\" again to see the Game Adjustments menu. Here you use Player 1 right and left to move to whatever option you want to change and then use the Player 2 right and left inputs to modify the desired setting.\r\n\r\nIf you press \"Advance\" again, it will return to it's original state, but \"Auto Up\" now will cycle through various test programs that the arcade board used to have.\r\n\r\nHigh Score reset is another internal button, and it makes the game pause for a second until the high score resets.\r\n\r\n## Status\r\n\r\n* Both revisions of Joust 2: Survival of the Fittest load and play fine.\r\n* Regular sound effects play fine.\r\n* 2 Player controls work.\r\n\r\n## To-Do\r\n\r\n* No Speech synthesis or Music yet.\r\n* Pause not implemented.\r\n* HiScore saving not implemented yet.\r\n* MiSTer DIP system not implemented yet (DIPS are defined away as CPU behavior currently in the PIA due to them not being a standard DIP system)\r\n* Adjust video output for HDMI, it is up and to the right a line or two.\r\n\r\n## ROM Files Instructions\r\n\r\nROMs are not included! In order to use this arcade core, you will need to provide the correct ROM file yourself.\r\n\r\nTo simplify the process .mra files are provided in the releases folder, that specify the required ROMs with their checksums. The ROMs .zip filename refers to the corresponding file from the MAME project.\r\n\r\nPlease refer to [https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms-and-MRA-files](https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms-and-MRA-files) for information on how to setup and use the environment.\r\n\r\nQuick reference for folders and file placement:\r\n\r\n```\r\n/_Arcade/<game name>.mra  \r\n/_Arcade/cores/<game rbf>.rbf  \r\n/_Arcade/mame/<mame rom>.zip  \r\n/_Arcade/hbmame/<hbmame rom>.zip  \r\n```\r\n",
-      "archived": false,
-      "fork": true,
-      "url": "https://github.com/MiSTer-LLAPI/Arcade-Joust2_MiSTer",
-      "releases": [
-        {
-          "name": "Joust 2 - Survival of the Fittest (revision 2).mra",
-          "sha": "daecdd3ce0d356c8aa127e24d3c4f9baa220aa90",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Joust2_MiSTer/master/releases/Joust%202%20-%20Survival%20of%20the%20Fittest%20(revision%202).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Joust 2 - Survival of the Fittest (revision 2)",
-            "rbf": "joust2",
-            "zips": [
-              "joust2.zip"
-            ]
-          }
-        },
-        {
-          "name": "Joust2_LLAPI_221009.rbf",
-          "sha": "04bd203e979c3416baa5e43690713ef7dfdddf82",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Joust2_MiSTer/master/releases/Joust2_LLAPI_221009.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Joust 2 - Survival of the Fittest (revision 1).mra",
-          "sha": "2c4174d9ae2de99ae5a350763281cb5f148f64ae",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Joust2_MiSTer/master/releases/_alternatives/_Joust%202/Joust%202%20-%20Survival%20of%20the%20Fittest%20(revision%201).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Joust 2 - Survival of the Fittest (revision 1)",
-            "rbf": "joust2",
-            "zips": [
-              "joust2.zip|joust2r1.zip"
-            ]
-          }
-        }
-      ]
-    },
-    {
       "name": "Arcade-MCR2_MiSTer",
       "description": null,
       "readme": "# Midway MCR2 port for MiSTer\n\n[Original readme](README_orig.txt) (mostly irrelevant to MiSTer)\n\n# Keyboard inputs :\n```\n   ESC    : Coin 1\n   UP,DOWN,LEFT,RIGHT arrows : Player 1\n   LCtrl  : Fire A\n   LAlt   : Fire B\n   Space  : Fire C   \n   LShift : Fire D\n   Z      : Fire E\n   X      : Fire F \n\n   MAME/IPAC/JPAC Style Keyboard inputs:\n     1           : Start 1 Player\n     2           : Start 2 Player\n\t 5           : Coin 1\n     6           : Coin 2\n     R,F,D,G     : Player 2\n     A           : Fire2 A\n     S           : Fire2 B \n     Q           : Fire2 C\n     W           : Fire2 D\n     I           : Fire2 E\n     K           : Fire2 F\n\t\n Joystick support. \n```\n# Games\n\n### Domino Man\nUp to 2 players. \n* Up/Down/Left/Right - movements \n* A - Swat \n\n### Kozmik Krooz'r\nUp to 2 players.\n* Up/Down/Left/Right - movements\n* A - Fire\n* B - Shield\nSupports 2 control modes: Joystick/Spinner\nSpinner - Rotate Right,Rotate Left\n \n### Satan's Hollow\nUp to 2 players.\n* Left/Right - movements\n* A - Fire\n\n### Tron\nUp to 2 players.\n* Up/Down/Left/Right - movements\n* A - Fire\nSupports 2 control modes: Joystick/Spinner\nSpinner - Rotate Right,Rotate Left\n\n### Two Tigers\nUp to 2 players.\n* Left/Right - movements\n* A - Shoot\n* B - Bomb\n* C - DogFight\nSupports 2 control modes: Joystick/Spinner\nSpinner - Rotate Right,Rotate Left\n\n### Wacko\nUp to 2 players.\n* Up/Down/Left/Right - movements\n* A - Zap Right\n* B - Zap Down\n* C - Zap Up\n* D - Zap Left\nSupports 2 control modes: Joystick/Trackball\nTrackball - Up/Down/Left/Right\n \n# ROMs\n```\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n\n```\n\nLaunch game using the appropriate .MRA\n",
@@ -1440,11 +1356,35 @@
     {
       "name": "Arcade-NinjaKun_MiSTer",
       "description": "Ninja-Kun for MiSter",
-      "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: Ninja-Kun  port to MiSTer by MiSTer-X\n-- 23 October 2019\n-- https://github.com/MrX-8B/MiSTer-Arcade-NinjaKun\n-- \n---------------------------------------------------------------------------------\n-- FPGA Ninja-Kun for Spartan-6\n------------------------------------------------\n-- Copyright (c) 2011 MiSTer-X\n---------------------------------------------------------------------------------\n-- T80/T80s - Version : 0242\n-----------------------------\n-- Z80 compatible microprocessor core\n-- Copyright (c) 2001-2002 Daniel Wallner (jesus@opencores.org)\n---------------------------------------------------------------------------------\n-- YM2149 (AY-3-8910)\n-- Copyright (c) MikeJ - Jan 2005\n---------------------------------------------------------------------------------\n-- \n-- \n-- Keyboard inputs :\n--\n--   F2          : Coin + Start 2 players\n--   F1          : Coin + Start 1 player\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--   SPACE       : Shot\n--   CTRL        : Jump\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   R,F,D,G     : Player 2 Movements\n--   A           : Player 2 Shot\n--   S           : Player 2 Jump\n--\n-- Joystick support.\n--\n--\n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
+      "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: Ninja-Kun  port to MiSTer by MiSTer-X\n-- 23 October 2019\n-- https://github.com/MrX-8B/MiSTer-Arcade-NinjaKun\n-- \n-- Added support for Raiders5, Nova 2001 from MiST by Mike S\n---------------------------------------------------------------------------------\n-- FPGA Ninja-Kun for Spartan-6\n------------------------------------------------\n-- Copyright (c) 2011 MiSTer-X\n---------------------------------------------------------------------------------\n-- T80/T80s - Version : 0242\n-----------------------------\n-- Z80 compatible microprocessor core\n-- Copyright (c) 2001-2002 Daniel Wallner (jesus@opencores.org)\n---------------------------------------------------------------------------------\n-- YM2149 (AY-3-8910)\n-- Copyright (c) MikeJ - Jan 2005\n---------------------------------------------------------------------------------\n-- \n-- \n-- Keyboard inputs :\n--\n--   F2          : Coin + Start 2 players\n--   F1          : Coin + Start 1 player\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--   SPACE       : Shot\n--   CTRL        : Jump\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   R,F,D,G     : Player 2 Movements\n--   A           : Player 2 Shot\n--   S           : Player 2 Jump\n--\n-- Joystick support.\n--\n--\n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n\nNote for Nova 2001 (From Mame)\n\n- nova2001 is very sensitive to coin inputs, if the coin isn't held down long\n  enough, or is held down too long the game will reset, likewise if coins are\n  inserted too quickly. This only happens in nova2001 and not in nova2001u.\n  (the nova2001h set seems to be an unofficial fix for this issue, presumably\n   it's so sensitive it would reset sometimes in the original cabinet?)\n- nova2001h MRA was added to address the original cabinet issue.\n\n\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-LLAPI/Arcade-NinjaKun_MiSTer",
       "releases": [
+        {
+          "name": "Arcade-NinjaKun_20221117.rbf",
+          "sha": "c08b17fb416a0abe4659189198d3a55087d7bde5",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-NinjaKun_MiSTer/master/releases/Arcade-NinjaKun_20221117.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-NinjaKun_20230314.rbf",
+          "sha": "bbb9364f909b290194d57f4cc3985345a15f618a",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-NinjaKun_MiSTer/master/releases/Arcade-NinjaKun_20230314.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-NinjaKun_20240530.rbf",
+          "sha": "470073633bbe4655378212d20bf762d74f15a45d",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-NinjaKun_MiSTer/master/releases/Arcade-NinjaKun_20240530.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-NinjaKun_LLAPI_20241018.rbf",
+          "sha": "8555727c6f5b7aa990a2718df26b007f506fea44",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-NinjaKun_MiSTer/master/releases/Arcade-NinjaKun_LLAPI_20241018.rbf",
+          "type": "RBF"
+        },
         {
           "name": "NinjaKun_LLAPI_20221010.rbf",
           "sha": "79c189f1b8e503f1f5ca9ea70b4cbcff46f9339b",
@@ -2337,9 +2277,27 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Tecmo_20231030.rbf",
+          "sha": "30008587a8acf7596bea3ac12a86d8681174847e",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Tecmo_MiSTer/master/releases/Arcade-Tecmo_20231030.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Tecmo_20240525.rbf",
+          "sha": "91734bbeeffcadd39cda85e6ee6e56bd4f16d3ca",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Tecmo_MiSTer/master/releases/Arcade-Tecmo_20240525.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Arcade-Tecmo_LLAPI_20220409.rbf",
           "sha": "86ec5b660272bea0ddec6caaaad27875e670524c",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Tecmo_MiSTer/master/releases/Arcade-Tecmo_LLAPI_20220409.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Tecmo_LLAPI_20241018.rbf",
+          "sha": "ff57170d270fdc7bb6483ccdf0de883ab57841a8",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Tecmo_MiSTer/master/releases/Arcade-Tecmo_LLAPI_20241018.rbf",
           "type": "RBF"
         },
         {
@@ -2431,6 +2389,12 @@
           "name": "Atari7800_LLAPI_20240309.rbf",
           "sha": "cbcae5481329b7fe287d9691d4c7ebd61ab96add",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Atari7800_MiSTer/master/releases/Atari7800_LLAPI_20240309.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Atari7800_LLAPI_20241015.rbf",
+          "sha": "21683fa7fca156cf1a79d21925150a3826729ac0",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Atari7800_MiSTer/master/releases/Atari7800_LLAPI_20241015.rbf",
           "type": "RBF"
         }
       ]
@@ -3522,7 +3486,7 @@
     {
       "name": "LLAPI_folder_MiSTer",
       "description": "Binary distribution of LLAPI cores",
-      "readme": "# LLAPI Folder\n\nThis repository contains all MiSTer-LLAPI cores under the _LLAPI folder.\n\n#### List of Tags that you may use with the Downloader and the 'Custom Download Filters' feature.\n\n`arcade`, `arcade-cores`, `arcade-iremm62`, `arcade-iremm72`, `arcade-iremm92`, `arcade-segasys1`, `atari7800_llapi`, `atarilynx_llapi`, `cores`, `gameboy_llapi`, `gba_llapi`, `iremm62_llapi`, `iremm72_llapi`, `iremm92_llapi`, `llapi`, `megacd_llapi`, `megadrive_llapi`, `mra`, `n64_80mhz_llapi`, `n64_llapi`, `neogeo_llapi`, `nes_llapi`, `psx_llapi`, `s32x_llapi`, `saturn_llapi`, `segasys1_llapi`, `sgb_llapi`, `sms_llapi`, `snes_llapi`, `turbografx16_llapi`",
+      "readme": "# LLAPI Folder\n\nThis repository contains all MiSTer-LLAPI cores under the _LLAPI folder.\n\n#### List of Tags that you may use with the Downloader and the 'Custom Download Filters' feature.\n\n`arcade`, `arcade-cores`, `arcade-iremm62`, `arcade-iremm72`, `arcade-iremm92`, `arcade-ninjakun`, `arcade-segasys1`, `arcade-tecmo`, `atari7800_llapi`, `atarilynx_llapi`, `cores`, `gameboy_llapi`, `gba_llapi`, `iremm62_llapi`, `iremm72_llapi`, `iremm92_llapi`, `llapi`, `megacd_llapi`, `megadrive_llapi`, `mra`, `n64_80mhz_llapi`, `n64_llapi`, `neogeo_llapi`, `nes_llapi`, `ninjakun_llapi`, `psx_llapi`, `s32x_llapi`, `saturn_llapi`, `segasys1_llapi`, `sgb_llapi`, `sms_llapi`, `snes_llapi`, `tecmo_llapi`, `turbografx16_llapi`",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-LLAPI/LLAPI_folder_MiSTer",
@@ -5021,6 +4985,12 @@
           "sha": "8183b6b13bca0444c3341b657222806d1a4f4e33",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main/releases/Saturn_LLAPI_20240919.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "Saturn_LLAPI_20241015.rbf",
+          "sha": "ec239c4368daf443228a8362ebe3a702901b32c2",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main/releases/Saturn_LLAPI_20241015.rbf",
+          "type": "RBF"
         }
       ]
     },
@@ -5693,6 +5663,12 @@
           "type": "RBF"
         },
         {
+          "name": "SNES_20240919.rbf",
+          "sha": "286f60d8141029bb6512cdd1f9921deafb904e9f",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SNES_MiSTer/master/releases/SNES_20240919.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "SNES_LLAPI_20191019.rbf",
           "sha": "7c3759eb5d11edabbc51473d02a5952f77d54807",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SNES_MiSTer/master/releases/SNES_LLAPI_20191019.rbf",
@@ -5888,6 +5864,12 @@
           "name": "SNES_LLAPI_20240531.rbf",
           "sha": "62944f9f863135f7c66dfe3cd1903611a5c6cf50",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SNES_MiSTer/master/releases/SNES_LLAPI_20240531.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_LLAPI_20241015.rbf",
+          "sha": "ebf625ae2b560613aa14aaba8683fd2e10c82ab5",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SNES_MiSTer/master/releases/SNES_LLAPI_20241015.rbf",
           "type": "RBF"
         }
       ]
