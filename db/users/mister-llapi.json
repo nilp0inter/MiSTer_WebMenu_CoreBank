@@ -73,9 +73,57 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-DonkeyKong_20220429.rbf",
+          "sha": "1dec35cc8fe1eb95ae6d24fd5be031281d5c46c1",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-DonkeyKong_MiSTer/master/releases/Arcade-DonkeyKong_20220429.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-DonkeyKong_20220501.rbf",
+          "sha": "334e3c27c7e7b3270a8362fd1a124e137d504b0f",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-DonkeyKong_MiSTer/master/releases/Arcade-DonkeyKong_20220501.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-DonkeyKong_20220502.rbf",
+          "sha": "0a5f217bd6f6dedbb373f07b01e5f2f1296e493b",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-DonkeyKong_MiSTer/master/releases/Arcade-DonkeyKong_20220502.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-DonkeyKong_20221120.rbf",
+          "sha": "35265320b5dd4c2f03eff11ee73ae94ec23052db",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-DonkeyKong_MiSTer/master/releases/Arcade-DonkeyKong_20221120.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-DonkeyKong_20230314.rbf",
+          "sha": "e79dd02192dc02aac260d5d9171786c1ff9a15e7",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-DonkeyKong_MiSTer/master/releases/Arcade-DonkeyKong_20230314.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-DonkeyKong_20240122.rbf",
+          "sha": "65f0a11d1112928bd406eb9018d3eb69aca7d2fe",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-DonkeyKong_MiSTer/master/releases/Arcade-DonkeyKong_20240122.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-DonkeyKong_20240526.rbf",
+          "sha": "93f0f00cf10738a16a88a6632ba884477e52628e",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-DonkeyKong_MiSTer/master/releases/Arcade-DonkeyKong_20240526.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Arcade-DonkeyKong_LLAPI_20211214.rbf",
           "sha": "115bda4091cc5674967517f695e505128ae187d3",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-DonkeyKong_MiSTer/master/releases/Arcade-DonkeyKong_LLAPI_20211214.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-DonkeyKong_LLAPI_20241024.rbf",
+          "sha": "13ac8f4f0cdefd4761b29aef08d0b9513cd99ff0",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-DonkeyKong_MiSTer/master/releases/Arcade-DonkeyKong_LLAPI_20241024.rbf",
           "type": "RBF"
         },
         {
@@ -1181,179 +1229,6 @@
       ]
     },
     {
-      "name": "Arcade-MCR2_MiSTer",
-      "description": null,
-      "readme": "# Midway MCR2 port for MiSTer\n\n[Original readme](README_orig.txt) (mostly irrelevant to MiSTer)\n\n# Keyboard inputs :\n```\n   ESC    : Coin 1\n   UP,DOWN,LEFT,RIGHT arrows : Player 1\n   LCtrl  : Fire A\n   LAlt   : Fire B\n   Space  : Fire C   \n   LShift : Fire D\n   Z      : Fire E\n   X      : Fire F \n\n   MAME/IPAC/JPAC Style Keyboard inputs:\n     1           : Start 1 Player\n     2           : Start 2 Player\n\t 5           : Coin 1\n     6           : Coin 2\n     R,F,D,G     : Player 2\n     A           : Fire2 A\n     S           : Fire2 B \n     Q           : Fire2 C\n     W           : Fire2 D\n     I           : Fire2 E\n     K           : Fire2 F\n\t\n Joystick support. \n```\n# Games\n\n### Domino Man\nUp to 2 players. \n* Up/Down/Left/Right - movements \n* A - Swat \n\n### Kozmik Krooz'r\nUp to 2 players.\n* Up/Down/Left/Right - movements\n* A - Fire\n* B - Shield\nSupports 2 control modes: Joystick/Spinner\nSpinner - Rotate Right,Rotate Left\n \n### Satan's Hollow\nUp to 2 players.\n* Left/Right - movements\n* A - Fire\n\n### Tron\nUp to 2 players.\n* Up/Down/Left/Right - movements\n* A - Fire\nSupports 2 control modes: Joystick/Spinner\nSpinner - Rotate Right,Rotate Left\n\n### Two Tigers\nUp to 2 players.\n* Left/Right - movements\n* A - Shoot\n* B - Bomb\n* C - DogFight\nSupports 2 control modes: Joystick/Spinner\nSpinner - Rotate Right,Rotate Left\n\n### Wacko\nUp to 2 players.\n* Up/Down/Left/Right - movements\n* A - Zap Right\n* B - Zap Down\n* C - Zap Up\n* D - Zap Left\nSupports 2 control modes: Joystick/Trackball\nTrackball - Up/Down/Left/Right\n \n# ROMs\n```\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n\n```\n\nLaunch game using the appropriate .MRA\n",
-      "archived": false,
-      "fork": true,
-      "url": "https://github.com/MiSTer-LLAPI/Arcade-MCR2_MiSTer",
-      "releases": [
-        {
-          "name": "Arcade-MCR2_20200124.rbf",
-          "sha": "829535d41f375bbbe74d9e7a1c148a9f5e6ace6c",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-MCR2_MiSTer/master/releases/Arcade-MCR2_20200124.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Arcade-MCR2_20200127.rbf",
-          "sha": "26ae4db8212618dd9aed123d021a1f649725f468",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-MCR2_MiSTer/master/releases/Arcade-MCR2_20200127.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Arcade-MCR2_20200204.rbf",
-          "sha": "ef62665f471761f6858b10a4e4ebf8e96dab27bb",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-MCR2_MiSTer/master/releases/Arcade-MCR2_20200204.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Arcade-MCR2_20200206.rbf",
-          "sha": "7ba34c88e48f70cf29d9bdef19b0dd2d35363cea",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-MCR2_MiSTer/master/releases/Arcade-MCR2_20200206.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Arcade-MCR2_20200211.rbf",
-          "sha": "0a21debf7b3b4173fe86ccd78cc4ce05f072f493",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-MCR2_MiSTer/master/releases/Arcade-MCR2_20200211.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Arcade-MCR2_20200216.rbf",
-          "sha": "8a7ec4114c2f8ec6ea44aa20d135eadc19627982",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-MCR2_MiSTer/master/releases/Arcade-MCR2_20200216.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Arcade-MCR2_20200223.rbf",
-          "sha": "7d170d9ec128152485d7bb7fd3be9c59bb2f1148",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-MCR2_MiSTer/master/releases/Arcade-MCR2_20200223.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Arcade-MCR2_20200302.rbf",
-          "sha": "6d4880a84e4f3eaba8dd7ee8986a7790eaba6538",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-MCR2_MiSTer/master/releases/Arcade-MCR2_20200302.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Arcade-MCR2_20200521.rbf",
-          "sha": "16685c01830532ba8d5cf112152a84d93cf2a918",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-MCR2_MiSTer/master/releases/Arcade-MCR2_20200521.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Arcade-MCR2_20201213.rbf",
-          "sha": "1a03e9547ce83dd54da4d61193523a3ae7898cd1",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-MCR2_MiSTer/master/releases/Arcade-MCR2_20201213.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Arcade-MCR2_20201215.rbf",
-          "sha": "afe86b3d5820537e3f0e3342a37a99a566d2c6e8",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-MCR2_MiSTer/master/releases/Arcade-MCR2_20201215.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Arcade-MCR2_20201216.rbf",
-          "sha": "5e37525e44e2c103d764420af6e8f2c19ddb367c",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-MCR2_MiSTer/master/releases/Arcade-MCR2_20201216.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Arcade-MCR2_20210114.rbf",
-          "sha": "c48d03971ed06bf9bdfb6c36e898e7c1a91ceb8d",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-MCR2_MiSTer/master/releases/Arcade-MCR2_20210114.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Arcade-MCR2_20221010.rbf",
-          "sha": "0bc9a118589d97b1e151363b1e9b163d045f8209",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-MCR2_MiSTer/master/releases/Arcade-MCR2_20221010.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Domino Man.mra",
-          "sha": "198513c8a30eaf5f149bbe39a68d0e1737558cda",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-MCR2_MiSTer/master/releases/Domino%20Man.mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Domino Man",
-            "rbf": "mcr2",
-            "zips": [
-              "domino.zip"
-            ]
-          }
-        },
-        {
-          "name": "Kozmik Krooz'r.mra",
-          "sha": "6101e35dc87c33157ae85b0c9a8bf4752078ce05",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-MCR2_MiSTer/master/releases/Kozmik%20Krooz'r.mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Kozmik Krooz'r",
-            "rbf": "mcr2",
-            "zips": [
-              "kroozr.zip"
-            ]
-          }
-        },
-        {
-          "name": "Satan's Hollow (Set 1).mra",
-          "sha": "1cf86b6e16eb5320b3d5dd04992aee4ffeed77b4",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-MCR2_MiSTer/master/releases/Satan's%20Hollow%20(Set%201).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Satan's Hollow",
-            "rbf": "mcr2",
-            "zips": [
-              "shollow.zip"
-            ]
-          }
-        },
-        {
-          "name": "Tron.mra",
-          "sha": "1340b58fffa95b8edda36293198e84c70437d493",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-MCR2_MiSTer/master/releases/Tron.mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Tron",
-            "rbf": "mcr2",
-            "zips": [
-              "tron.zip"
-            ]
-          }
-        },
-        {
-          "name": "Two Tigers (Tron Conversion).mra",
-          "sha": "c5d0e0e391a3032a3720bd2f76594f7f0e1ff51c",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-MCR2_MiSTer/master/releases/Two%20Tigers%20(Tron%20Conversion).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Two Tigers",
-            "rbf": "mcr2",
-            "zips": [
-              "twotiger.zip",
-              "twotigerc.zip"
-            ]
-          }
-        },
-        {
-          "name": "Wacko.mra",
-          "sha": "715bc7408ba5fab978d891ab7a101bae300480d9",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-MCR2_MiSTer/master/releases/Wacko.mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Wacko",
-            "rbf": "mcr2",
-            "zips": [
-              "wacko.zip"
-            ]
-          }
-        }
-      ]
-    },
-    {
       "name": "Arcade-NinjaKun_MiSTer",
       "description": "Ninja-Kun for MiSter",
       "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: Ninja-Kun  port to MiSTer by MiSTer-X\n-- 23 October 2019\n-- https://github.com/MrX-8B/MiSTer-Arcade-NinjaKun\n-- \n-- Added support for Raiders5, Nova 2001 from MiST by Mike S\n---------------------------------------------------------------------------------\n-- FPGA Ninja-Kun for Spartan-6\n------------------------------------------------\n-- Copyright (c) 2011 MiSTer-X\n---------------------------------------------------------------------------------\n-- T80/T80s - Version : 0242\n-----------------------------\n-- Z80 compatible microprocessor core\n-- Copyright (c) 2001-2002 Daniel Wallner (jesus@opencores.org)\n---------------------------------------------------------------------------------\n-- YM2149 (AY-3-8910)\n-- Copyright (c) MikeJ - Jan 2005\n---------------------------------------------------------------------------------\n-- \n-- \n-- Keyboard inputs :\n--\n--   F2          : Coin + Start 2 players\n--   F1          : Coin + Start 1 player\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--   SPACE       : Shot\n--   CTRL        : Jump\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   R,F,D,G     : Player 2 Movements\n--   A           : Player 2 Shot\n--   S           : Player 2 Jump\n--\n-- Joystick support.\n--\n--\n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n\nNote for Nova 2001 (From Mame)\n\n- nova2001 is very sensitive to coin inputs, if the coin isn't held down long\n  enough, or is held down too long the game will reset, likewise if coins are\n  inserted too quickly. This only happens in nova2001 and not in nova2001u.\n  (the nova2001h set seems to be an unofficial fix for this issue, presumably\n   it's so sensitive it would reset sometimes in the original cabinet?)\n- nova2001h MRA was added to address the original cabinet issue.\n\n\n",
@@ -1593,6 +1468,18 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Pacman_20230314.rbf",
+          "sha": "b48ac6a62811a9d789a5a1f1a3a229102f28c2f0",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer/master/releases/Arcade-Pacman_20230314.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Pacman_20240530.rbf",
+          "sha": "c35a456fb6e252f695c757a48bbe6aabdd3144cd",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer/master/releases/Arcade-Pacman_20240530.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Arcade-Pacman_LLAPI_20191125.rbf",
           "sha": "af220fc0153301546680552761c8e321ef7ecb97",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer/master/releases/Arcade-Pacman_LLAPI_20191125.rbf",
@@ -1602,6 +1489,12 @@
           "name": "Arcade-Pacman_LLAPI_20220206.rbf",
           "sha": "84687f5c0ba7b52eb01edf0289e25736e8362bf1",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer/master/releases/Arcade-Pacman_LLAPI_20220206.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Pacman_LLAPI_20241024.rbf",
+          "sha": "2c2af3a08d84dcd76182a5da17ba69d89e8e9d78",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer/master/releases/Arcade-Pacman_LLAPI_20241024.rbf",
           "type": "RBF"
         },
         {
@@ -1801,14 +1694,14 @@
         },
         {
           "name": "Pac-Man Plus.mra",
-          "sha": "d714b779e966bdedef88ac4446cfad9d29189195",
+          "sha": "49928b24105c3f7017e8267e5c0d298a8c269af7",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer/master/releases/Pac-Man%20Plus.mra",
           "type": "MRA",
           "extra": {
             "name": "Pac-Man Plus",
             "rbf": "pacman",
             "zips": [
-              "/hbmame/puckman.zip"
+              "pacplus.zip"
             ]
           }
         },
@@ -2489,6 +2382,148 @@
           "name": "AtariLynx_LLAPI_20240602.rbf",
           "sha": "5ad7233fac5c14837564acdbaf26031ecd784dc3",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/AtariLynx_MiSTer/main/releases/AtariLynx_LLAPI_20240602.rbf",
+          "type": "RBF"
+        }
+      ]
+    },
+    {
+      "name": "ColecoVision_MiSTer",
+      "description": "ColecoVision for MiSTer",
+      "readme": "# [Colecovision](https://en.wikipedia.org/wiki/ColecoVision) and [Sega SG-1000](https://en.wikipedia.org/wiki/SG-1000) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\n### Installation\n* Copy the *.rbf file to the root of the system SD card.\n* Place ROMs into Coleco folder\n\n### Supported Filetypes\n * .col/.bin/.rom files for Coleco system\n * .sg files for SG-1000 system\n\nOriginal core https://github.com/wsoltys/mist-cores/tree/master/fpga_colecovision\n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/MiSTer-LLAPI/ColecoVision_MiSTer",
+      "releases": [
+        {
+          "name": "ColecoVision_20171105.rbf",
+          "sha": "581e0a942bf93152d99b0aa39d404b1c747cb6fb",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/ColecoVision_MiSTer/master/releases/ColecoVision_20171105.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "ColecoVision_20180305.rbf",
+          "sha": "ff3429af31249a9102d472b766c0abbcdee5519e",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/ColecoVision_MiSTer/master/releases/ColecoVision_20180305.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "ColecoVision_20180315.rbf",
+          "sha": "2af113bbe374f130cb648e2e12a90a6d9d50723f",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/ColecoVision_MiSTer/master/releases/ColecoVision_20180315.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "ColecoVision_20181128.rbf",
+          "sha": "4b4bbe8a431589cc7c6cfd1a1ffd1a3906b8bd81",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/ColecoVision_MiSTer/master/releases/ColecoVision_20181128.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "ColecoVision_20181130.rbf",
+          "sha": "b50a011e06399aacb340e85d61ae5f23970bdb0c",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/ColecoVision_MiSTer/master/releases/ColecoVision_20181130.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "ColecoVision_20190106.rbf",
+          "sha": "44bd28593385486d7277599a004db8dc13628139",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/ColecoVision_MiSTer/master/releases/ColecoVision_20190106.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "ColecoVision_20190107.rbf",
+          "sha": "edde69d5fe9ad73aa3fcf30c6a566bd22a61e9af",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/ColecoVision_MiSTer/master/releases/ColecoVision_20190107.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "ColecoVision_20190307.rbf",
+          "sha": "ec35d19e21446786a3c91a2a9d3bae0519259a01",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/ColecoVision_MiSTer/master/releases/ColecoVision_20190307.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "ColecoVision_20190318.rbf",
+          "sha": "2b49ae075410dd81b369a88b6fe60cd7230fe93a",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/ColecoVision_MiSTer/master/releases/ColecoVision_20190318.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "ColecoVision_20190711.rbf",
+          "sha": "331e29bf7554d4af61930ff640a457bc7fc3c31a",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/ColecoVision_MiSTer/master/releases/ColecoVision_20190711.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "ColecoVision_20190927.rbf",
+          "sha": "5389a2eb2f2f10b29892480e2f3f189a44d2059d",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/ColecoVision_MiSTer/master/releases/ColecoVision_20190927.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "ColecoVision_20200510.rbf",
+          "sha": "995e9578929a3d47ae9f3caea3c90847f16aea7d",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/ColecoVision_MiSTer/master/releases/ColecoVision_20200510.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "ColecoVision_20210112.rbf",
+          "sha": "56c28b280fec9aa641aee57c883cf5e7f2da9af1",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/ColecoVision_MiSTer/master/releases/ColecoVision_20210112.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "ColecoVision_20210211.rbf",
+          "sha": "42f7262417f105bd637b4821ee3f666155fd3555",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/ColecoVision_MiSTer/master/releases/ColecoVision_20210211.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "ColecoVision_20210222.rbf",
+          "sha": "784cc06daa0ac926bd29ed6d0d1ea24be2fcacce",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/ColecoVision_MiSTer/master/releases/ColecoVision_20210222.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "ColecoVision_20210225.rbf",
+          "sha": "47429383a58834af58562ccbdd7dee8a0c378875",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/ColecoVision_MiSTer/master/releases/ColecoVision_20210225.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "ColecoVision_20220214.rbf",
+          "sha": "8f85d7233a3c78d127bf809c47ba8afa601ec147",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/ColecoVision_MiSTer/master/releases/ColecoVision_20220214.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "ColecoVision_20220524.rbf",
+          "sha": "7f09e40e2ac92ce888ead01d24df5ad4ea0ec9c4",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/ColecoVision_MiSTer/master/releases/ColecoVision_20220524.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "ColecoVision_20221109.rbf",
+          "sha": "d11f919211359709559bb56b27b7e51dfc2b260a",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/ColecoVision_MiSTer/master/releases/ColecoVision_20221109.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "ColecoVision_20230227.rbf",
+          "sha": "c3a078bd8267bf48adb2f312a16c2b579c076693",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/ColecoVision_MiSTer/master/releases/ColecoVision_20230227.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "ColecoVision_20231211.rbf",
+          "sha": "c587add73ce98d979c84a52b25912f85108a8dd7",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/ColecoVision_MiSTer/master/releases/ColecoVision_20231211.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "ColecoVision_20240502.rbf",
+          "sha": "5f7a52f4077f918a7229565855c328a58727421e",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/ColecoVision_MiSTer/master/releases/ColecoVision_20240502.rbf",
           "type": "RBF"
         }
       ]
@@ -3486,7 +3521,7 @@
     {
       "name": "LLAPI_folder_MiSTer",
       "description": "Binary distribution of LLAPI cores",
-      "readme": "# LLAPI Folder\n\nThis repository contains all MiSTer-LLAPI cores under the _LLAPI folder.\n\n#### List of Tags that you may use with the Downloader and the 'Custom Download Filters' feature.\n\n`arcade`, `arcade-cores`, `arcade-iremm62`, `arcade-iremm72`, `arcade-iremm92`, `arcade-ninjakun`, `arcade-segasys1`, `arcade-tecmo`, `atari7800_llapi`, `atarilynx_llapi`, `cores`, `gameboy_llapi`, `gba_llapi`, `iremm62_llapi`, `iremm72_llapi`, `iremm92_llapi`, `llapi`, `megacd_llapi`, `megadrive_llapi`, `mra`, `n64_80mhz_llapi`, `n64_llapi`, `neogeo_llapi`, `nes_llapi`, `ninjakun_llapi`, `psx_llapi`, `s32x_llapi`, `saturn_llapi`, `segasys1_llapi`, `sgb_llapi`, `sms_llapi`, `snes_llapi`, `tecmo_llapi`, `turbografx16_llapi`",
+      "readme": "# LLAPI Folder\n\nThis repository contains all MiSTer-LLAPI cores under the _LLAPI folder.\n\n#### List of Tags that you may use with the Downloader and the 'Custom Download Filters' feature.\n\n`arcade`, `arcade-cores`, `arcade-donkeykong`, `arcade-iremm62`, `arcade-iremm72`, `arcade-iremm92`, `arcade-ninjakun`, `arcade-pacman`, `arcade-segasys1`, `arcade-tecmo`, `atari7800_llapi`, `atarilynx_llapi`, `cores`, `donkeykong_llapi`, `gameboy_llapi`, `gba_llapi`, `iremm62_llapi`, `iremm72_llapi`, `iremm92_llapi`, `llapi`, `megacd_llapi`, `megadrive_llapi`, `mra`, `n64_80mhz_llapi`, `n64_llapi`, `neogeo_llapi`, `nes_llapi`, `ninjakun_llapi`, `pacman_llapi`, `psx_llapi`, `s32x_llapi`, `saturn_llapi`, `segasys1_llapi`, `sgb_llapi`, `sms_llapi`, `snes_llapi`, `tecmo_llapi`, `turbografx16_llapi`",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-LLAPI/LLAPI_folder_MiSTer",

@@ -491,6 +491,11 @@ url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-RushnAttack_MiSTer/
 output = "_Arcade/cores/RshnAtk_20240602.rbf"
 
 
+# Salamander
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Salamander_MiSTer/main/releases/Arcade-Salamander_20240912.rbf"
+output = "_Arcade/cores/Salamander_20240912.rbf"
+
+
 # ScooterShooter
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-ScooterShooter_MiSTer/main/releases/Arcade-ScooterShooter_20240602.rbf"
 output = "_Arcade/cores/ScooterShooter_20240602.rbf"
@@ -996,14 +1001,9 @@ url = "https://raw.githubusercontent.com/MiSTer-devel/Specialist_MiSTer/master/r
 output = "_Computer/Specialist_20240524.rbf"
 
 
-# SVi328
-url = "https://raw.githubusercontent.com/MiSTer-devel/SVI328_MiSTer/main/releases/SVi328_20241016.rbf"
-output = "_Others/SVi328_20241016.rbf"
-
-
 # Svi328
-url = "https://raw.githubusercontent.com/MiSTer-devel/SVI328_MiSTer/main/releases/Svi328_20230224.rbf"
-output = "_Others/Svi328_20230224.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/SVI328_MiSTer/main/releases/Svi328_20241016.rbf"
+output = "_Others/Svi328_20241016.rbf"
 
 
 # TatungEinstein
@@ -1022,8 +1022,8 @@ output = "_Others/TomyScramble_20200724.rbf"
 
 
 # TomyTutor
-url = "https://raw.githubusercontent.com/MiSTer-devel/TomyTutor_MiSTer/main/releases/TomyTutor_20221217.rbf"
-output = "_Others/TomyTutor_20221217.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/TomyTutor_MiSTer/main/releases/TomyTutor_20241024.rbf"
+output = "_Others/TomyTutor_20241024.rbf"
 
 
 # TRS-80
@@ -2994,6 +2994,26 @@ output = "_Arcade/Mr. Goemon.mra"
 # Rush'n Attack (US).mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-RushnAttack_MiSTer/master/releases/Rush'n%20Attack%20(US).mra"
 output = "_Arcade/Rush'n Attack (US).mra"
+
+
+# Lifeforce (Japan).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Salamander_MiSTer/main/releases/Lifeforce%20(Japan).mra"
+output = "_Arcade/Lifeforce (Japan).mra"
+
+
+# Lifeforce (US).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Salamander_MiSTer/main/releases/Lifeforce%20(US).mra"
+output = "_Arcade/Lifeforce (US).mra"
+
+
+# Salamander (version D).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Salamander_MiSTer/main/releases/Salamander%20(version%20D).mra"
+output = "_Arcade/Salamander (version D).mra"
+
+
+# Salamander (version J).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Salamander_MiSTer/main/releases/Salamander%20(version%20J).mra"
+output = "_Arcade/Salamander (version J).mra"
 
 
 # Scooter Shooter.mra
