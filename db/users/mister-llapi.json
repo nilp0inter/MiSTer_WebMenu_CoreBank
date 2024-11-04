@@ -2289,6 +2289,12 @@
           "sha": "21683fa7fca156cf1a79d21925150a3826729ac0",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Atari7800_MiSTer/master/releases/Atari7800_LLAPI_20241015.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "Atari7800_LLAPI_20241029.rbf",
+          "sha": "23c00d3a85824a773f25080274374290fbd883a1",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Atari7800_MiSTer/master/releases/Atari7800_LLAPI_20241029.rbf",
+          "type": "RBF"
         }
       ]
     },
@@ -2389,7 +2395,7 @@
     {
       "name": "ColecoVision_MiSTer",
       "description": "ColecoVision for MiSTer",
-      "readme": "# [Colecovision](https://en.wikipedia.org/wiki/ColecoVision) and [Sega SG-1000](https://en.wikipedia.org/wiki/SG-1000) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\n### Installation\n* Copy the *.rbf file to the root of the system SD card.\n* Place ROMs into Coleco folder\n\n### Supported Filetypes\n * .col/.bin/.rom files for Coleco system\n * .sg files for SG-1000 system\n\nOriginal core https://github.com/wsoltys/mist-cores/tree/master/fpga_colecovision\n",
+      "readme": "# [Colecovision](https://en.wikipedia.org/wiki/ColecoVision) and [Sega SG-1000](https://en.wikipedia.org/wiki/SG-1000) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\n### LLAPI Note\n#### Atari 5800 Controller\n\nIf directions dont work for your Atari5800 controller, please report as the stick on this controller is analogic with a problematic deadzone. The LLAPI implementation translates it into digital directions (U,D,L,R) based on limits that will vary from one controller to the other.\nThis can be tweaked in the source code to accomodate most controllers and cover a large range of cases but we need feedbacks for this.\n\n#### Coleco + SAC controller\n\nIf your Coleco controller is not detected, press RIGHT trigger or PURPLE button (SAC) while connecting the controller or resetting the BliSTer port\n\n### Installation\n* Copy the *.rbf file to the root of the system SD card.\n* Place ROMs into Coleco folder\n\n### Supported Filetypes\n * .col/.bin/.rom files for Coleco system\n * .sg files for SG-1000 system\n\nOriginal core https://github.com/wsoltys/mist-cores/tree/master/fpga_colecovision\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-LLAPI/ColecoVision_MiSTer",
@@ -2524,6 +2530,18 @@
           "name": "ColecoVision_20240502.rbf",
           "sha": "5f7a52f4077f918a7229565855c328a58727421e",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/ColecoVision_MiSTer/master/releases/ColecoVision_20240502.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "ColecoVision_LLAPI_20241029.rbf",
+          "sha": "75479e05e70d2772557eff96c6610cd2eb82f0de",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/ColecoVision_MiSTer/master/releases/ColecoVision_LLAPI_20241029.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "ColecoVision_LLAPI_20241031.rbf",
+          "sha": "bb29f17701d1486004c4d4ddf3ba2367fa29955b",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/ColecoVision_MiSTer/master/releases/ColecoVision_LLAPI_20241031.rbf",
           "type": "RBF"
         }
       ]
@@ -3521,7 +3539,7 @@
     {
       "name": "LLAPI_folder_MiSTer",
       "description": "Binary distribution of LLAPI cores",
-      "readme": "# LLAPI Folder\n\nThis repository contains all MiSTer-LLAPI cores under the _LLAPI folder.\n\n#### List of Tags that you may use with the Downloader and the 'Custom Download Filters' feature.\n\n`arcade`, `arcade-cores`, `arcade-donkeykong`, `arcade-iremm62`, `arcade-iremm72`, `arcade-iremm92`, `arcade-ninjakun`, `arcade-pacman`, `arcade-segasys1`, `arcade-tecmo`, `atari7800_llapi`, `atarilynx_llapi`, `cores`, `donkeykong_llapi`, `gameboy_llapi`, `gba_llapi`, `iremm62_llapi`, `iremm72_llapi`, `iremm92_llapi`, `llapi`, `megacd_llapi`, `megadrive_llapi`, `mra`, `n64_80mhz_llapi`, `n64_llapi`, `neogeo_llapi`, `nes_llapi`, `ninjakun_llapi`, `pacman_llapi`, `psx_llapi`, `s32x_llapi`, `saturn_llapi`, `segasys1_llapi`, `sgb_llapi`, `sms_llapi`, `snes_llapi`, `tecmo_llapi`, `turbografx16_llapi`",
+      "readme": "# LLAPI Folder\n\nThis repository contains all MiSTer-LLAPI cores under the _LLAPI folder.\n\n#### List of Tags that you may use with the Downloader and the 'Custom Download Filters' feature.\n\n`arcade`, `arcade-cores`, `arcade-donkeykong`, `arcade-iremm62`, `arcade-iremm72`, `arcade-iremm92`, `arcade-ninjakun`, `arcade-pacman`, `arcade-segasys1`, `arcade-tecmo`, `atari7800_llapi`, `atarilynx_llapi`, `colecovision_llapi`, `cores`, `donkeykong_llapi`, `gameboy_llapi`, `gba_llapi`, `iremm62_llapi`, `iremm72_llapi`, `iremm92_llapi`, `llapi`, `megacd_llapi`, `megadrive_llapi`, `mra`, `n64_80mhz_llapi`, `n64_llapi`, `neogeo_llapi`, `nes_llapi`, `ninjakun_llapi`, `pacman_llapi`, `psx_llapi`, `s32x_llapi`, `saturn_llapi`, `segasys1_llapi`, `sgb_llapi`, `sms_llapi`, `snes_llapi`, `tecmo_llapi`, `turbografx16_llapi`",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-LLAPI/LLAPI_folder_MiSTer",

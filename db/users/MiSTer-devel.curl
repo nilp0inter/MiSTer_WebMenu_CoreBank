@@ -492,8 +492,8 @@ output = "_Arcade/cores/RshnAtk_20240602.rbf"
 
 
 # Salamander
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Salamander_MiSTer/main/releases/Arcade-Salamander_20240912.rbf"
-output = "_Arcade/cores/Salamander_20240912.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Salamander_MiSTer/main/releases/Arcade-Salamander_20241101.rbf"
+output = "_Arcade/cores/Salamander_20241101.rbf"
 
 
 # ScooterShooter
@@ -852,8 +852,8 @@ output = "_Utils/memtest_20210130.rbf"
 
 
 # menu
-url = "https://raw.githubusercontent.com/MiSTer-devel/Menu_MiSTer/master/releases/menu_20240408.rbf"
-output = "_Utils/menu_20240408.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Menu_MiSTer/master/releases/menu_20241031.rbf"
+output = "_Utils/menu_20241031.rbf"
 
 
 # Minimig
@@ -877,8 +877,8 @@ output = "_Computer/MSX_20240524.rbf"
 
 
 # MultiComp
-url = "https://raw.githubusercontent.com/MiSTer-devel/MultiComp_MiSTer/master/releases/MultiComp_20210113.rbf"
-output = "_Computer/MultiComp_20210113.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/MultiComp_MiSTer/master/releases/MultiComp_20241101.rbf"
+output = "_Computer/MultiComp_20241101.rbf"
 
 
 # MyVision
@@ -3001,19 +3001,29 @@ url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Salamander_MiSTer/m
 output = "_Arcade/Lifeforce (Japan).mra"
 
 
-# Lifeforce (US).mra
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Salamander_MiSTer/main/releases/Lifeforce%20(US).mra"
-output = "_Arcade/Lifeforce (US).mra"
-
-
-# Salamander (version D).mra
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Salamander_MiSTer/main/releases/Salamander%20(version%20D).mra"
-output = "_Arcade/Salamander (version D).mra"
-
-
 # Salamander (version J).mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Salamander_MiSTer/main/releases/Salamander%20(version%20J).mra"
 output = "_Arcade/Salamander (version J).mra"
+
+
+# Lifeforce (US).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Salamander_MiSTer/main/releases/_alternatives/Lifeforce%20(US).mra"
+output = "_Arcade/Lifeforce (US).mra"
+
+
+# Salamander (SP version old).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Salamander_MiSTer/main/releases/_alternatives/Salamander%20(SP%20version%20old).mra"
+output = "_Arcade/Salamander (SP version old).mra"
+
+
+# Salamander (SP version).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Salamander_MiSTer/main/releases/_alternatives/Salamander%20(SP%20version).mra"
+output = "_Arcade/Salamander (SP version).mra"
+
+
+# Salamander (version D).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Salamander_MiSTer/main/releases/_alternatives/Salamander%20(version%20D).mra"
+output = "_Arcade/Salamander (version D).mra"
 
 
 # Scooter Shooter.mra
