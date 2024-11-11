@@ -2543,6 +2543,12 @@
           "sha": "bb29f17701d1486004c4d4ddf3ba2367fa29955b",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/ColecoVision_MiSTer/master/releases/ColecoVision_LLAPI_20241031.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "ColecoVision_LLAPI_20241104.rbf",
+          "sha": "fa2f0daaabb00873cd8df166e7dfb7e29565637f",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/ColecoVision_MiSTer/master/releases/ColecoVision_LLAPI_20241104.rbf",
+          "type": "RBF"
         }
       ]
     },
@@ -4938,7 +4944,7 @@
     {
       "name": "Saturn_MiSTer",
       "description": "Sega Saturn for MiSTer",
-      "readme": "# [Sega Saturn](https://en.wikipedia.org/wiki/Sega_Saturn) for MiSTer\n\n## Hardware Requirements\n\n- 128 MB SDRAM Module (Primary)\n- SDRAM Module of any size (32MB-128MB) (Secondary)\n\n> **Note:** Dual SDRAM modules is recommended for better compatibility.\n\n## Status\n\nCurrent status is WIP/Beta\n\nKnown issues:\n\n- Space Jam - freeze in demo\n- Battle Monsters (EU) - graphic gliches\n- Dragon Ball Z (EU) - freeze\n\nA lot of games have sound issues.\n",
+      "readme": "# [Sega Saturn](https://en.wikipedia.org/wiki/Sega_Saturn) for MiSTer\n\n## Hardware Requirements\n\n- 128 MB SDRAM Module (Primary)\n- SDRAM Module of any size (32MB-128MB) (Secondary)\n\n> **Note:** Dual SDRAM modules is recommended for better compatibility.\n\n## Status\n\nCurrent status is WIP/Beta\n\nKnown issues:\n- Space Jam - freeze, graphic gliches in demo\n\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-LLAPI/Saturn_MiSTer",
@@ -5923,6 +5929,12 @@
           "name": "SNES_LLAPI_20241015.rbf",
           "sha": "ebf625ae2b560613aa14aaba8683fd2e10c82ab5",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SNES_MiSTer/master/releases/SNES_LLAPI_20241015.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_LLAPI_20241110.rbf",
+          "sha": "fd52c0e7121e21479861d566b921a6c0996b8a40",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SNES_MiSTer/master/releases/SNES_LLAPI_20241110.rbf",
           "type": "RBF"
         }
       ]
