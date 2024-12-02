@@ -4980,13 +4980,19 @@
           "sha": "b84eef1b44db4edfb9bc48385f25c1aed140c6d3",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/S32X_MiSTer/main/releases/S32X_LLAPI_20240915.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "S32X_LLAPI_20241127.rbf",
+          "sha": "bfd346ebfba19f41ac10d76db3478977ad448603",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/S32X_MiSTer/main/releases/S32X_LLAPI_20241127.rbf",
+          "type": "RBF"
         }
       ]
     },
     {
       "name": "Saturn_MiSTer",
       "description": "Sega Saturn for MiSTer",
-      "readme": "# [Sega Saturn](https://en.wikipedia.org/wiki/Sega_Saturn) for MiSTer\n\n## Hardware Requirements\n\n- 128 MB SDRAM Module (Primary)\n- SDRAM Module of any size (32MB-128MB) (Secondary)\n\n> **Note:** Dual SDRAM modules is recommended for better compatibility.\n\n## Status\n\nCurrent status is WIP/Beta\n\nKnown issues:\n- Space Jam - freeze, graphic gliches in demo\n\n",
+      "readme": "# [Sega Saturn](https://en.wikipedia.org/wiki/Sega_Saturn) for MiSTer\n\n## Hardware Requirements\n\n- 128 MB SDRAM Module (Primary)\n- SDRAM Module of any size (32MB-128MB) (Secondary)\n\n> **Note:** Dual SDRAM modules is recommended for better compatibility.\n\n## Status\n\nCurrent status is WIP/Beta\n\nKnown issues:\n\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-LLAPI/Saturn_MiSTer",
@@ -5092,6 +5098,12 @@
           "sha": "ec239c4368daf443228a8362ebe3a702901b32c2",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main/releases/Saturn_LLAPI_20241015.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "Saturn_LLAPI_20241201.rbf",
+          "sha": "ebcd900b468459999b83c693dfbc178e42025a00",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main/releases/Saturn_LLAPI_20241201.rbf",
+          "type": "RBF"
         }
       ]
     },
@@ -5140,6 +5152,12 @@
           "type": "RBF"
         },
         {
+          "name": "SGB_20241127.rbf",
+          "sha": "413a2ae0adee0f34eebfc17c98df4d72e56d04b9",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SGB_MiSTer/main/releases/SGB_20241127.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "SGB_LLAPI_20240313.rbf",
           "sha": "a910cef57b76826d4aca58e2a9f02aff685f5774",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SGB_MiSTer/main/releases/SGB_LLAPI_20240313.rbf",
@@ -5149,6 +5167,12 @@
           "name": "SGB_LLAPI_20240627.rbf",
           "sha": "9e975174fdc5039053f0b2ba2958991521cabbe3",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SGB_MiSTer/main/releases/SGB_LLAPI_20240627.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SGB_LLAPI_20241129.rbf",
+          "sha": "8d82cb8c2ee7dda1b2da21b4222e6c56beb17871",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SGB_MiSTer/main/releases/SGB_LLAPI_20241129.rbf",
           "type": "RBF"
         }
       ]
@@ -6395,6 +6419,12 @@
           "name": "TurboGrafx16_LLAPI_20241111.rbf",
           "sha": "301dad1f8017c28904ed1f0225a0b2e5a950876d",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/TurboGrafx16_MiSTer/master/releases/TurboGrafx16_LLAPI_20241111.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "TurboGrafx16_LLAPI_20241128.rbf",
+          "sha": "043624e4dd1e3a474303c15ff840bcb75f33f5f5",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/TurboGrafx16_MiSTer/master/releases/TurboGrafx16_LLAPI_20241128.rbf",
           "type": "RBF"
         }
       ]
