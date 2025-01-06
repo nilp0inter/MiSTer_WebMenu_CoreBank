@@ -1055,6 +1055,12 @@
           "sha": "8b1071fc3ba05b093983c8574fbef5925d5184fa",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Apple-II_MiSTer/master/releases/Apple-II_20240423.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "Apple-II_20241226.rbf",
+          "sha": "2b8ddc9b9f8e308dc987086c9496acb62b33f506",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Apple-II_MiSTer/master/releases/Apple-II_20241226.rbf",
+          "type": "RBF"
         }
       ]
     },
@@ -2543,6 +2549,12 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Blockade_20250105.rbf",
+          "sha": "3a6e0aa74fac1d8cbff5ae1d8fc43eddccdb5e3c",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Blockade_MiSTer/main/releases/Arcade-Blockade_20250105.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Blasto.mra",
           "sha": "00129c323d43e5bcf244f2988d12339f0117cc08",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Blockade_MiSTer/main/releases/Blasto.mra",
@@ -3852,6 +3864,12 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-CrazyBalloon_20241230.rbf",
+          "sha": "61626d52c349e8e74722a9eeb27e396a8e0ba7b8",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-CrazyBalloon_MiSTer/master/releases/Arcade-CrazyBalloon_20241230.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Crazy Balloon.mra",
           "sha": "74de1be31364c10ca2862994adeab1e44ed134c5",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-CrazyBalloon_MiSTer/master/releases/Crazy%20Balloon.mra",
@@ -4701,6 +4719,12 @@
           "name": "Arcade-DottoriKun_20240526.rbf",
           "sha": "83fe18e2ef870f8445c8747058d80769b28b6664",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-DottoriKun_MiSTer/main/releases/Arcade-DottoriKun_20240526.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-DottoriKun_20250105.rbf",
+          "sha": "4d0393fc45ea89c631a26ab52c16a9eb2a121bcc",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-DottoriKun_MiSTer/main/releases/Arcade-DottoriKun_20250105.rbf",
           "type": "RBF"
         },
         {
@@ -15748,7 +15772,7 @@
     {
       "name": "BBCBridgeCompanion_MiSTer",
       "description": "BBC Bridge Companion for MiSTer",
-      "readme": "# BBC Bridge Companion for [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\nAn FPGA implementation of the BBC Bridge Companion - a console designed solely to teach the game of bridge!\n\n## Credits\n- [__JimmyStones__](https://github.com/JimmyStones): Core design and implementation\n- [__Heber Ltd__](http://www.heber.co.uk/): Original designer and manufacturer of the BBC Bridge Companion!\n- [__Arnim Laeuger__](arnim.laeuger@gmx.net): VDP18 module (TMS9129-compatible video processor), Verilog conversion by [__Frank Bruno__](fbruno@asicsolutions.com)\n- [__NibblesLab__](https://github.com/NibblesLab): z8420 module (partial Z80 PIO support)\n\n## FPGA implementation\n- Built entirely in simulation using original schematics and information from MAME, logic has been simplified where possible\n- Functionally verified against a real BBC Bridge Companion (Bridge Builder cartridge only)\n- All firmware and official cartridge ROMs are built-in with permission of Heber Ltd, no additional files required\n\n## Software\nThis core supports all official software cartridges:\n- Advanced Bidding\n- Advanced Defence\n- Bridge Builder\n- Club Play 1\n- Club Play 2\n- Club Play 3\n- Conventions 1\n- Duplicate 1\n- Master Play 1\n\nUse the 'Cartridge' option in the OSD to select an official cartridge.\n\nTo load unofficial software set the 'Cartridge' option to 'Empty' and use the 'Load custom cartridge' option.\n\n## Controls\n### Keyboard\n- A - Pass\n- S - NT\n- D - Dbl\n- F - Rdbl\n- Z - Spades\n- X - Hearts/Up\n- C - Diamonds / Down\n- V - Clubs\n- 1 - Start\n- Backspace - Back\n- Left Control - Play / Yes\n- Left Alt - Play / No\n\n## History\n\nThe BBC Bridge Companion system was designed and created by Heber Ltd. The original hardware developer was Bob Powell (the owner of Heber Ltd. when it was set up in 1984).\n\nIt was the first product Heber developed, started in 1983 during the final days of Marion Electronics (Heber's predecessor at the same site), then completed as Heber Ltd. in 1984.\n\nA licencing deal was negotiated with BBC Enterprises Ltd. to use the logo by Tony Reynolds (another of the original founders of Heber). Tony also had the industrial design of the enclosure commissioned and made as Heber's first injection mould tooling, quite a risk and cost for a start-up with its first product in 1984.\n\nThe electronics, cartridges and embedded firmware were also all developed by Heber Ltd at the time.\n\n## Known issues / to-do\n- The 2nd menu option is selected on game load, instead of the 1st.  Possibly an issue with the Z80 PIO implementation?\n- If the Forced Scandoubler INI option is active then a reset / game load on FPGA will occasionally cause graphical oddities.  Reset/re-load until the issue goes away!\n\n## Original schematic\n![BBC_BRIDGE_Original_Schematic_1984_A](/resources/BBC_BRIDGE_Original_Schematic_1984_A.png \"Original BBC Bridge schematic\")\n\n## License\nThis program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.\n",
+      "readme": "# BBC Bridge Companion for [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\nAn FPGA implementation of the BBC Bridge Companion - a console designed solely to teach the game of bridge!\n\n## Credits\n- [__JimmyStones__](https://github.com/JimmyStones): Core design and implementation\n- [__Heber Ltd__](http://www.heber.co.uk/): Original designer and manufacturer of the BBC Bridge Companion!\n- [__Arnim Laeuger__](arnim.laeuger@gmx.net): VDP18 module (TMS9129-compatible video processor), Verilog conversion by [__Frank Bruno__](fbruno@asicsolutions.com)\n- [__NibblesLab__](https://github.com/NibblesLab): z8420 module (partial Z80 PIO support)\n\n## FPGA implementation\n- Built entirely in simulation using original schematics and information from MAME, logic has been simplified where possible\n- Functionally verified against a real BBC Bridge Companion (Bridge Builder cartridge only)\n- All firmware and official cartridge ROMs are built-in with permission of Heber Ltd, no additional files required\n\n## Software\nThis core supports all official software cartridges:\n- Advanced Bidding\n- Advanced Defence\n- Bridge Builder\n- Club Play 1\n- Club Play 2\n- Club Play 3\n- Conventions 1\n- Duplicate 1\n- Master Play 1\n\nUse the 'Cartridge' option in the OSD to select an official cartridge.\n\nTo load unofficial software set the 'Cartridge' option to 'Empty' and use the 'Load custom cartridge' option.\n\n## Controls\n| Action | Keyboard | Joypad default |\n| --- | --- | --- |\n| Pass | A | X |\n| NT | S | Y |\n| Dbl | D | A |\n| Rdbl | F | B |\n| Spades | Z | Left |\n| Hearts / Up | X | Up |\n| Diamonds / Down | C | Down |\n| Clubs | V | Right |\n| Start | 1 | R |\n| Back | Backspace | L |\n| Play / Yes | Left Control | Z |\n| Play / No | Left Alt | C |\n\n## History\n\nThe BBC Bridge Companion system was designed and created by Heber Ltd. The original hardware developer was Bob Powell (the owner of Heber Ltd. when it was set up in 1984).\n\nIt was the first product Heber developed, started in 1983 during the final days of Marion Electronics (Heber's predecessor at the same site), then completed as Heber Ltd. in 1984.\n\nA licencing deal was negotiated with BBC Enterprises Ltd. to use the logo by Tony Reynolds (another of the original founders of Heber). Tony also had the industrial design of the enclosure commissioned and made as Heber's first injection mould tooling, quite a risk and cost for a start-up with its first product in 1984.\n\nThe electronics, cartridges and embedded firmware were also all developed by Heber Ltd at the time.\n\n## Known issues / to-do\n- The 2nd menu option is selected on game load, instead of the 1st.  Possibly an issue with the Z80 PIO implementation?\n- If the Forced Scandoubler INI option is active then a reset / game load on FPGA will occasionally cause graphical oddities.  Reset/re-load until the issue goes away!\n\n## Original schematic\n![BBC_BRIDGE_Original_Schematic_1984_A](/resources/BBC_BRIDGE_Original_Schematic_1984_A.png \"Original BBC Bridge schematic\")\n\n## License\nThis program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/BBCBridgeCompanion_MiSTer",
@@ -15769,6 +15793,12 @@
           "name": "BBCBridgeCompanion_20230228.rbf",
           "sha": "b6ccc31624d0193c641fd963bde9239a7c26815a",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/BBCBridgeCompanion_MiSTer/main/releases/BBCBridgeCompanion_20230228.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "BBCBridgeCompanion_20250101.rbf",
+          "sha": "b6797c89adeea530904185dd7eb4e88afd1bd577",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/BBCBridgeCompanion_MiSTer/main/releases/BBCBridgeCompanion_20250101.rbf",
           "type": "RBF"
         }
       ]
@@ -16977,9 +17007,9 @@
           "type": "RBF"
         },
         {
-          "name": "CoCo2_20241228.rbf",
-          "sha": "d5243f0cd67701d3058c22fc39908e2cdeec38d4",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/CoCo2_MiSTer/master/releases/CoCo2_20241228.rbf",
+          "name": "CoCo2_20241230.rbf",
+          "sha": "ecafd79f94a6e29097ae91a0f587a875c85b6dd8",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/CoCo2_MiSTer/master/releases/CoCo2_20241230.rbf",
           "type": "RBF"
         }
       ]
@@ -21475,6 +21505,12 @@
           "type": "RBF"
         },
         {
+          "name": "NeoGeo_20250105.rbf",
+          "sha": "e7f7d59e85db22d9961dadeba97c92d4a763bbc7",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/NeoGeo_MiSTer/master/releases/NeoGeo_20250105.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "README.md",
           "sha": "91abd5fd1fe831e59d750a409d3f9b19393d5849",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/NeoGeo_MiSTer/master/releases/README.md",
@@ -23684,7 +23720,7 @@
     {
       "name": "SNES_MiSTer",
       "description": "SNES for MiSTer",
-      "readme": "# [Super Nintendo Entertainment System](https://en.wikipedia.org/wiki/Super_Nintendo_Entertainment_System) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\nWritten by [srg320](https://github.com/srg320)\n\n## Installing\ncopy \\*.rbf to root of SD card. Put some ROMs (\\*.SFC, \\*.SMC, \\*.BIN) into SNES folder\n\n## Features\n* Cycle accurate SNES replica.\n* Supports LoROM, HiROM, ExHiROM.\n* Supports additional chips: DSP-1/2/3/4, ST010, CX4, SDD1, SuperFX(GSU-1/2), SA1, OBC1, SPC7110, S-RTC.\n* MSU-1 Support\n* Cheat engine.\n* Save/Load Backup RAM.\n* Supports mouse.\n* Light gun support via Wiimote, mouse or analog stick.\n* [SuperFX Turbo and CPU Turbo.](https://github.com/MiSTer-devel/SNES_MiSTer/blob/master/SNES_Turbo.md)\n\n### BSX BIOS\nPlace bsx_bios.rom in game's folder.\n",
+      "readme": "# [Super Nintendo Entertainment System](https://en.wikipedia.org/wiki/Super_Nintendo_Entertainment_System) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\nWritten by [srg320](https://github.com/srg320)\n\n## Installing\ncopy \\*.rbf to root of SD card. Put some ROMs (\\*.SFC, \\*.SMC, \\*.BIN) into SNES folder\n\n## Features\n* Cycle accurate SNES replica.\n* Supports LoROM, HiROM, ExHiROM.\n* Supports additional chips: DSP-1/2/3/4, ST010, CX4, SDD1, SuperFX(GSU-1/2), SA1, OBC1, SPC7110, S-RTC, Sufami Turbo.\n* MSU-1 Support\n* Cheat engine.\n* Save/Load Backup RAM.\n* Supports mouse.\n* Light gun support via Wiimote, mouse or analog stick.\n* [SuperFX Turbo and CPU Turbo.](https://github.com/MiSTer-devel/SNES_MiSTer/blob/master/SNES_Turbo.md)\n\n### BSX BIOS\nPlace bsx_bios.rom in game's folder.\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/SNES_MiSTer",
