@@ -577,8 +577,8 @@ output = "_Arcade/cores/TankBattalion_20240525.rbf"
 
 
 # Tecmo
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Tecmo_MiSTer/master/releases/Arcade-Tecmo_20240525.rbf"
-output = "_Arcade/cores/Tecmo_20240525.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Tecmo_MiSTer/master/releases/Arcade-Tecmo_20250205.rbf"
+output = "_Arcade/cores/Tecmo_20250205.rbf"
 
 
 # TIAMC1
@@ -727,8 +727,8 @@ output = "_Others/Chip8_20221106.rbf"
 
 
 # CoCo2
-url = "https://raw.githubusercontent.com/MiSTer-devel/CoCo2_MiSTer/master/releases/CoCo2_20250121.rbf"
-output = "_Others/CoCo2_20250121.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/CoCo2_MiSTer/master/releases/CoCo2_20250207.rbf"
+output = "_Others/CoCo2_20250207.rbf"
 
 
 # CoCo3
@@ -2306,6 +2306,11 @@ url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM90_MiSTer/main
 output = "_Arcade/Bomber Man World - New Dyna Blaster - Global Quest.mra"
 
 
+# Risky Challenge.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM90_MiSTer/main/releases/Risky%20Challenge.mra"
+output = "_Arcade/Risky Challenge.mra"
+
+
 # Bomber Man World (Japan).mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM90_MiSTer/main/releases/_alternatives/_Bomber%20Man%20World/Bomber%20Man%20World%20(Japan).mra"
 output = "_Arcade/Bomber Man World (Japan).mra"
@@ -2329,6 +2334,11 @@ output = "_Arcade/Atomic Punk (US).mra"
 # Bomber Man (Japan).mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM90_MiSTer/main/releases/_alternatives/_Bomber%20Man/Bomber%20Man%20(Japan).mra"
 output = "_Arcade/Bomber Man (Japan).mra"
+
+
+# Gussun Oyoyo (Japan).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM90_MiSTer/main/releases/_alternatives/_Risky%20Challenge/Gussun%20Oyoyo%20(Japan).mra"
+output = "_Arcade/Gussun Oyoyo (Japan).mra"
 
 
 # Blade Master (World).mra
@@ -3544,6 +3554,11 @@ output = "_Arcade/Kick Start Wheelie King.mra"
 # TankBattalion.mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TankBattalion_MiSTer/main/releases/TankBattalion.mra"
 output = "_Arcade/TankBattalion.mra"
+
+
+# Argus no senshi (Japan).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Tecmo_MiSTer/master/releases/Argus%20no%20senshi%20(Japan).mra"
+output = "_Arcade/Argus no senshi (Japan).mra"
 
 
 # Gemini Wing.mra
