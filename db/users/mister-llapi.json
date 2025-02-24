@@ -5118,7 +5118,7 @@
     {
       "name": "Saturn_MiSTer",
       "description": "Sega Saturn for MiSTer",
-      "readme": "# [Sega Saturn](https://en.wikipedia.org/wiki/Sega_Saturn) for MiSTer\n\n## Hardware Requirements\n\n- 128 MB SDRAM Module (Primary)\n- SDRAM Module of any size (32MB-128MB) (Secondary)\n\n> **Note:** Dual SDRAM modules is recommended for better compatibility.\n\n## Status\n\nCurrent status is WIP/Beta\n\nKnown issues:\n\n",
+      "readme": "# [Sega Saturn](https://en.wikipedia.org/wiki/Sega_Saturn) for MiSTer\n\n## LLAPI notes\n\nLLAPI core is kept in sync with main MiSTer Saturn branch but with following limitations due to FPGA space:\t\t\n- STV not supported\n- Lightgun not supported\n- Composite blend, cropping features not supported\n\n3D controller is supported.\n\n## Hardware Requirements\n\n- 128 MB SDRAM Module (Primary)\n- SDRAM Module of any size (32MB-128MB) (Secondary)\n\n> **Note:** Dual SDRAM modules is recommended for better compatibility.\n\n## Status\n\nCurrent status is WIP/Beta\n\nKnown issues:\n\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-LLAPI/Saturn_MiSTer",
@@ -5307,6 +5307,24 @@
           "name": "Saturn_LLAPI_20250214.rbf",
           "sha": "c2b92fce5cbcdc0192a68e48926854b85c3cbabd",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/Saturn_LLAPI_20250214.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Saturn_LLAPI_20250219.rbf",
+          "sha": "53476ce9b9fea7f7e0bbf6b4deee7392c6a35172",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/Saturn_LLAPI_20250219.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Saturn_LLAPI_20250222.rbf",
+          "sha": "2ce838994efb679291422c92cdcd5b0b172395d3",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/Saturn_LLAPI_20250222.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Saturn_LLAPI_20250223.rbf",
+          "sha": "83b1d65e3605efbc89e2b7822d0447358cd006bf",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/Saturn_LLAPI_20250223.rbf",
           "type": "RBF"
         }
       ]
