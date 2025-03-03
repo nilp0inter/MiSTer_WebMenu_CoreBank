@@ -1255,6 +1255,12 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-BombJack_20250227.rbf",
+          "sha": "fbf1d0b12d6c640cce9fbdb1d8ea5d3eb919da47",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-BombJack_MiSTer/master/releases/Arcade-BombJack_20250227.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Bomb Jack.mra",
           "sha": "6b15bbc3c4c48127670839734e0652ef4805b3a2",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-BombJack_MiSTer/master/releases/Bomb%20Jack.mra",
@@ -9462,6 +9468,18 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-SpaceInvaders_20250215.rbf",
+          "sha": "9c43e809984e2bbf357cbd70d309089dd1153d38",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SpaceInvaders_MiSTer/master/releases/Arcade-SpaceInvaders_20250215.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-SpaceInvaders_20250225.rbf",
+          "sha": "8e7c19b8906bca868e5e63ebf8d9deba6b65816c",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SpaceInvaders_MiSTer/master/releases/Arcade-SpaceInvaders_20250225.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Attack Force.mra",
           "sha": "f8e0b23b27b43b0d275cf08d551807791523fd8c",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-SpaceInvaders_MiSTer/master/releases/Attack%20Force.mra",
@@ -10238,13 +10256,32 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Tecmo_20250205.rbf",
+          "sha": "a96e3f2ddd7de5ac502ebb7ddb5c8367461440e2",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Tecmo_MiSTer/master/releases/Arcade-Tecmo_20250205.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Argus no senshi (Japan).mra",
+          "sha": "30396182c7c48d59d2098d9c1eeeb7f7fffe040a",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Tecmo_MiSTer/master/releases/Argus%20no%20senshi%20(Japan).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Argus no senshi (Japan)",
+            "rbf": "tecmo",
+            "zips": [
+              "rygar.zip"
+            ]
+          }
+        },
+        {
           "name": "Gemini Wing.mra",
-          "sha": "646b7857c9c75e254fa1090e07e3e48c4841b9af",
+          "sha": "c47c9fcccefa3aab45353a136e8cb13d0d34fa0f",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Tecmo_MiSTer/master/releases/Gemini%20Wing.mra",
           "type": "MRA",
           "extra": {
             "name": "Gemini Wing",
-            "rbf": "tecmo",
+            "rbf": "Tecmo",
             "zips": [
               "gemini.zip"
             ]
@@ -10252,7 +10289,7 @@
         },
         {
           "name": "Rygar.mra",
-          "sha": "9b58bce8bc8de209071ade60acc9bf2585c2b904",
+          "sha": "b526645490ba8cefa513183b10879d26332fbd2a",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Tecmo_MiSTer/master/releases/Rygar.mra",
           "type": "MRA",
           "extra": {
@@ -10265,12 +10302,12 @@
         },
         {
           "name": "Silkworm.mra",
-          "sha": "7eb0534207b477709583cba953414e10fd1abd00",
+          "sha": "f3c4fe2021504b6a84b160f5f36f38c27919a23a",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Tecmo_MiSTer/master/releases/Silkworm.mra",
           "type": "MRA",
           "extra": {
             "name": "Silkworm",
-            "rbf": "tecmo",
+            "rbf": "Tecmo",
             "zips": [
               "silkworm.zip"
             ]
@@ -14199,7 +14236,7 @@
         },
         {
           "name": "romsets.xml",
-          "sha": "4d2bffa7f85bad7de07e8bc3d0659d21b38d00be",
+          "sha": "7b2af7ab59b698bedf2fdae8615398159d61232e",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/NeoGeo_MiSTer/master/releases/romsets.xml",
           "type": "OTHER"
         }
@@ -14868,7 +14905,7 @@
     {
       "name": "Saturn_MiSTer",
       "description": "Sega Saturn for MiSTer",
-      "readme": "# [Sega Saturn](https://en.wikipedia.org/wiki/Sega_Saturn) for MiSTer\n\n## Hardware Requirements\n\n- 128 MB SDRAM Module (Primary)\n- SDRAM Module of any size (32MB-128MB) (Secondary)\n\n> **Note:** Dual SDRAM modules is recommended for better compatibility.\n\n## Status\n\nCurrent status is WIP/Beta\n\nKnown issues:\n\n- Space Jam - freeze in demo\n- Battle Monsters (EU) - graphic gliches\n- Dragon Ball Z (EU) - freeze\n\nA lot of games have sound issues.\n",
+      "readme": "# [Sega Saturn](https://en.wikipedia.org/wiki/Sega_Saturn) for MiSTer\n\n## Hardware Requirements\n\n- 128 MB SDRAM Module (Primary)\n- SDRAM Module of any size (32MB-128MB) (Secondary)\n\n> **Note:** Dual SDRAM modules is recommended for better compatibility.\n\n## Status\n\nCurrent status is WIP/Beta\n\nKnown issues:\n\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-DB9/Saturn_MiSTer",
@@ -14907,6 +14944,18 @@
           "name": "Saturn_20240629.rbf",
           "sha": "a4adc16a8267937ed9546afb120c8946eda9a945",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Saturn_MiSTer/main/releases/Saturn_20240629.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Saturn_20250113.rbf",
+          "sha": "9696a709c3115e55ec0cc40acc4f679c54774848",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Saturn_MiSTer/main/releases/Saturn_20250113.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Saturn_20250225.rbf",
+          "sha": "f5ab761a59e18c0a1b8e7cdc4da4c093bd788384",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Saturn_MiSTer/main/releases/Saturn_20250225.rbf",
           "type": "RBF"
         }
       ]
