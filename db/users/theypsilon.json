@@ -213,6 +213,24 @@
       "releases": []
     },
     {
+      "name": "Distribution_MiSTer",
+      "description": "This repository contains all the files that you'll want in your MiSTer",
+      "readme": "# MiSTer Distribution\n\nThis repository contains all the files that you'll want in your MiSTer.\n\nYou may download all of them at once as a zip through the [following link](https://github.com/MiSTer-devel/Distribution_MiSTer/archive/refs/heads/main.zip). Once you have them, place them as-is in your [properly initialised SD card](https://github.com/MiSTer-devel/mr-fusion), and everything should work out of the box.\n\n### MiSTer Project\n\nIf you want to check more about the MiSTer project, please check [this wiki](https://github.com/MiSTer-devel/Wiki_MiSTer/wiki).\n\n### MiSTer Downloader\n\nFor downloading all of these files directly from your MiSTer, use the [MiSTer Downloader](https://github.com/MiSTer-devel/Downloader_MiSTer).\n\n#### Tags that you may use with 'Download Filters' feature\n\nRead about how to use them [here](https://github.com/MiSTer-devel/Downloader_MiSTer/blob/main/docs/download-filters.md).\n\n##### List:\n\n`.config`, `acornatom`, `acornelectron`, `adam`, `adctest`, `adventurevision`, `alicemc10`, `all_filters`, `altair8800`, `alternatives`, `amiga`, `amstrad`, `amstrad-pcw`, `amstradpcw`, `ao486`, `apogee`, `apple-i`, `apple-ii`, `aquarius`, `arcade`, `arcade-arkanoid`, `arcade-asteroids`, `arcade-asteroidsdeluxe`, `arcade-astrocade`, `arcade-atarisys1`, `arcade-ataritetris`, `arcade-athena`, `arcade-bagman`, `arcade-bankpanic`, `arcade-battlezone`, `arcade-berzerk`, `arcade-blackwidow`, `arcade-blockade`, `arcade-bombjack`, `arcade-bosconian`, `arcade-breakout`, `arcade-bubsys`, `arcade-bubsysrom`, `arcade-burgertime`, `arcade-burningrubber`, `arcade-canyonbomber`, `arcade-cave`, `arcade-centipede`, `arcade-chameleon`, `arcade-computerspace`, `arcade-congobongo`, `arcade-cores`, `arcade-cosmic`, `arcade-cosmicguerilla`, `arcade-crazyballoon`, `arcade-crazyclimber`, `arcade-crazykong`, `arcade-crystalcastles`, `arcade-defender`, `arcade-digdug`, `arcade-dominos`, `arcade-donkeykong`, `arcade-donkeykong3`, `arcade-donkeykongjunior`, `arcade-dorodon`, `arcade-dottorikun`, `arcade-druaga`, `arcade-exerion`, `arcade-exidy2`, `arcade-expressraider`, `arcade-finalizer`, `arcade-foodfight`, `arcade-freeze`, `arcade-frenzy`, `arcade-galaga`, `arcade-galaxian`, `arcade-galivan`, `arcade-gaplus`, `arcade-gauntlet`, `arcade-gyruss`, `arcade-ikariwarriors`, `arcade-inferno`, `arcade-iremm107`, `arcade-iremm62`, `arcade-iremm72`, `arcade-iremm90`, `arcade-iremm92`, `arcade-ironhorse`, `arcade-jackal`, `arcade-jailbreak`, `arcade-joust2`, `arcade-kickandrun`, `arcade-ladybug`, `arcade-lunarlander`, `arcade-mariobros`, `arcade-mcr1`, `arcade-mcr2`, `arcade-mcr3`, `arcade-mcr3mono`, `arcade-mcr3scroll`, `arcade-missilecommand`, `arcade-moonpatrol`, `arcade-mrdo`, `arcade-mrjong`, `arcade-mysticmarathon`, `arcade-ninjakun`, `arcade-pacman`, `arcade-pengo`, `arcade-penguinkunwars`, `arcade-performan`, `arcade-phoenix`, `arcade-pleiads`, `arcade-polyplay`, `arcade-pong`, `arcade-pooyan`, `arcade-popeye`, `arcade-psychic5`, `arcade-qbert`, `arcade-rallyx`, `arcade-riverpatrol`, `arcade-robotron`, `arcade-rshnatk`, `arcade-salamander`, `arcade-scootershooter`, `arcade-scramble`, `arcade-segasys1`, `arcade-segavicz80`, `arcade-silverland`, `arcade-slapfight`, `arcade-sms`, `arcade-snk_triplez80`, `arcade-solomonskey`, `arcade-sonson`, `arcade-spaceinvaders`, `arcade-spacerace`, `arcade-sprint1`, `arcade-sprint2`, `arcade-subs`, `arcade-superbreakout`, `arcade-suprloco`, `arcade-taitosj`, `arcade-tankbattalion`, `arcade-tecmo`, `arcade-tiamc1`, `arcade-timepilot`, `arcade-timepilot84`, `arcade-tnkiii`, `arcade-traverseusa`, `arcade-tropicalangel`, `arcade-turkeyshoot`, `arcade-ultratank`, `arcade-vball`, `arcade-xevious`, `arcade-xsleena`, `arcade-zaxxon`, `arcade-zigzag`, `arcadelpf`, `arcadia`, `archie`, `arduboy`, `astrocade`, `atari2600`, `atari5200`, `atari7800`, `atari800`, `atarilynx`, `atarist`, `avision`, `ay-3-8500`, `bbcbridgecompanion`, `bbcmicro`, `bios`, `bk0011m`, `c128`, `c16`, `c64`, `casio_pv-1000`, `casio_pv-2000`, `channelf`, `cheats`, `chess`, `chip8`, `coco2`, `coco3`, `coleco`, `colecoadam`, `colecovision`, `complexmultichromatic`, `computer`, `computer-cores`, `console`, `console-cores`, `contrast_boost`, `cores`, `corespecific`, `creativision`, `crt-simulation`, `displayspecific`, `docs`, `donut`, `downloader`, `downloaderlatest`, `drv`, `edsac`, `eg2000`, `epochgalaxyii`, `essential`, `extra-utilities`, `famicom`, `filters`, `filters_audio`, `filters_video`, `flappy`, `flappybird`, `font`, `galaksija`, `gamate`, `gameboy`, `gameboy2p`, `gameboyadvance`, `gameboycolor`, `gamegear`, `gamenwatch`, `gameoflife`, `games`, `gamma`, `gb`, `gba`, `gba2p`, `gbc`, `gbmidi`, `generalhardware`, `generallpf`, `genesis`, `genesis-core`, `genmidi`, `gnw`, `handheld2p`, `hbmame`, `homelab`, `inputtest`, `intellivision`, `interact`, `jupiter`, `laser`, `laser310`, `lcd-general`, `lcd-integeronly`, `linux`, `lynx48`, `macplus`, `mame`, `mastersystem`, `megacd`, `megadrive`, `megadrive-core`, `megaduck`, `memte`, `memtest`, `menu`, `mgl`, `minimig`, `misterfirmware`, `misterlaggy`, `mra`, `msx`, `msx1`, `multicomp`, `myvision`, `n64`, `neogeo`, `neogeo-cd`, `nes`, `nintendo`, `odyssey2`, `old`, `ondra_spo186`, `orao`, `oric`, `other`, `other-cores`, `overlays`, `palettes`, `pc88`, `pc8801`, `pcengine`, `pcenginecd`, `pcxt`, `pdp1`, `pet2001`, `pmd85`, `pocketchallengev2`, `pokemonmini`, `poly_gamma`, `presets`, `psx`, `pure_gamma`, `ql`, `readme`, `rx78`, `s32x`, `samcoupe`, `saturn`, `scanlines-adaptive`, `scanlines-brighter`, `scanlines-standard`, `scripts`, `segacd`, `segamark3`, `service-cores`, `sgb`, `shadow_masks`, `sharpmz`, `simplemonochrome`, `slugcross`, `sms`, `snes`, `sordm5`, `specialist`, `spectrum`, `spmx`, `sufami`, `super_vision_8000`, `superfamicom`, `supergameboy`, `supernes`, `supernintendo`, `supervision`, `supervision8000`, `svi328`, `tatungeinstein`, `tgfx16`, `tgfx16-cd`, `tgfx16cd`, `ti-99_4a`, `ti994a`, `tomyscramble`, `tomytutor`, `trs-80`, `tsconf`, `turbografx`, `turbografx16`, `turbografx16cd`, `turbografxcd`, `uk101`, `upscaling-lanczosbicubicetc`, `upscaling-recommended`, `upscaling-sharpbilinear`, `utility`, `vc4000`, `vector-06c`, `vector06`, `vector06c`, `vectrex`, `vic20`, `vt52`, `wonderswan`, `wonderswancolor`, `x68000`, `yctxt`, `zx-spectrum`, `zx81`, `zxnext`, `zxspectrum`\n\n##### Some relevant tag descriptions:\n\n- `arcade-cores` / `arcade`: All arcade cores and MRA files.\n- `computer-cores` / `computer`: All computer cores and related folders.\n- `console-cores` / `console`: All console cores and related folders.\n- `other-cores` / `other`: All cores from the top folder Other with their related folders.\n- `service-cores` / `utility`: All utility cores and related folders.\n- `cores`: All cores (RBF files).\n- `mra`: All MRA files & folders.\n- `alternatives`: All MRA Alternatives\n- `hbmame`: All files & folders linked to the HBMame collection.\n- `handheld2p`: All 2 Player versions for Handheld cores.\n- `filters_video`: All video filters (`gamma` & `filters` & `shadow_masks`).\n- `all_filters`: All video & audio filters (`filters_video` & `filters_audio`).\n- `essential`: Menu core & MiSTer firmware.\n- `readme`: All README files.\n- `docs`: All documentation files & folders, including README files.\n- `extra-utilities`: All extra utilities that are installed in games folders of some computer cores.\n- `bios`: All bioses that are installed in the games folders for some computer & console cores.\n- `cheats`: All cheat files & folders.\n\n### Contributing\n\nYou are more than welcome to contribute to the [MiSTer-devel Organization](https://github.com/MiSTer-devel). But you can't do it by openening PRs to the main branch of this repository. This repository is only for file distribution. Whatever content shows up here depends on the other repositories of this organization, so you should target your PRs there.\n\nThere is a development branch in this repository for the content collection. Is fine to send PRs there but they should only modify the content collection scripts that are being used by the workflows.\n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/theypsilon/Distribution_MiSTer",
+      "releases": []
+    },
+    {
+      "name": "Downloader_MiSTer",
+      "description": "Tool for installing and updating MiSTer cores and other files",
+      "readme": "# MiSTer Downloader\n\nThis tool installs and **updates all the cores** and other extra files for your *MiSTer*. It also updates the menu core, the MiSTer firmware and the Linux system. The source for all downloads is the [MiSTer Distribution](https://github.com/MiSTer-devel/Distribution_MiSTer) repository.\n\n### Setup and Usage\n\nDownload this [ZIP file](https://github.com/MiSTer-devel/Downloader_MiSTer/releases/download/latest/MiSTer_Downloader.zip) and extract `downloader.sh` to your `/Scripts` folder on your primary SD card (create that folder if it doesn't exist). You only need to perform this operation once, since this tool self-updates itself.\n\nTo use it, on your MiSTer main menu, go to the *Scripts* screen, and select `downloader`.\n\n### Options\n\nYou may create a `/media/fat/downloader.ini` file to tweak some parameters.\n\nHere you can see the default parameters and the options that you may change:\n\n```ini\n[MiSTer]\n; storage_priority defines how this tool will use external storage during the installation\n;         of files that are designed for external locations (usually games & docs files).\n;         \n;         * Examples of external storage are USB Drives or CIFS partitions detected by MiSTer.\n;\n;         * When you have more than one external storage, the one used will be determined\n;           by the first path match following the path priority described here:\n;             https://mister-devel.github.io/MkDocs_MiSTer/cores/paths/\n;\n; Options:\n;   'prefer_sd' -> This tool will install new files on a external location if a parent folder\n;                  is present. (Parent folder examples: games/NES, docs/AO486)\n;\n;   'prefer_external' -> This tool will always install new files on a external location\n;                        even if no parent folders are present.\n;\n;   'off' -> Disables this feature. Affected files will always be installed in your SD.\nstorage_priority = 'prefer_sd'\n\n; update_linux options:\n;   true -> Updates Linux when there is a new update (very recommended).\n;   false -> Doesn't update Linux.\nupdate_linux = true\n\n; allow_reboot options:\n;   0 -> Don't allow this tool to ever reboot automatically.\n;   1 -> Allow this tool to reboot the system after any system file has been updated.\n;   2 -> Allow this tool to reboot the system only after Linux has been updated.\nallow_reboot = 1\n\n; allow_delete options:\n;   0 -> Don't allow this tool to delete anything at all.\n;   1 -> Allow this tool to delete any old file from previous updates.\n;   2 -> Allow this tool to delete only old cores that receive a new version.\nallow_delete = 1\n\n; minimum_system_free_space_mb: Fee space needed to install files with Downloader\n;   This minimum applies solely to the system partition (SD card).\n;   Reducing this value is not advised.\nminimum_system_free_space_mb = 512\n\n; minimum_external_free_space_mb: Free space needed to install files in external storages\n;   This minimum applies to all external storages (USBs & CIFS).\n;   Reducing this value is not advised.\nminimum_external_free_space_mb = 128\n\n; downloader_timeout: Can be tweaked to increase the timeout time in seconds\n;   It is useful to increase this value for users with slow connections.\ndownloader_timeout = 300\n\n; downloader_retries: Can be tweaked to increase the retries per failed download\n;   It is useful to increase this value for users with very unstable connections.\ndownloader_retries = 3\n\n; verbose: when true, will make Downloader output to display additional debug information\n;   This is also necessary to be active to display benchmark information.\nverbose = false\n```\n\n### Feature Roadmap\n\n- [x] Initial Release\n- [x] [Cheats](https://gamehacking.org/mister/) fetching\n- [x] First-run optimisations\n- [x] Configurable custom download filters\n- [x] Storage Priority Resolution for automatically detecting connected drives\n- [x] Free space checks\n- [ ] Opt-in parameter to bypass strict file checks\n- [ ] Fast check for update availability (without triggering an actual update)\n- [ ] HTTP cookie support\n- [ ] Uninstall database feature\n- [ ] Firmware integration\n\nCheck the [CHANGELOG](CHANGELOG.md) for more information about past releases.\n\n### PC Launcher (for Windows, Mac, and Linux)\n\nWith this different launcher you'll be able to install all MiSTer files without using a MiSTer. This is especially useful if your MiSTer can't access the internet.\n\nLearn how to use the *PC Launcher* [here](docs/pc-launcher.md). \n\n### Custom Download Filters\n\nWith download filters, users will be able to opt-out from installing files that they don't want in their system, like for example, cheats or readme files.\n\nExample:\n\n<p align=\"center\">\n  <img src=\"https://user-images.githubusercontent.com/852246/149844707-fcbe0ce2-d4b2-4f15-96a5-74ec01d8d3de.png\" /> \n</p>\n<p align=\"center\"><i>This filter will only install console cores, while avoiding all related cheats and documentation files.</i></p>\n\nMore information about *Download Filters* [here](docs/download-filters.md).\n\n### Custom Databases\n\n*Custom Databases* give users the ability to download [more file collections](docs/custom-databases.md).\n\nNOTE: If you manually add custom databases, you might want to make sure that you also have a [distribution_mister] section. That way you'll still be downloading the content from [MiSTer Distribution](https://github.com/MiSTer-devel/Distribution_MiSTer) together with the content from the custom database/s that you introduced.\n\n### Custom INI file\n\nYou can use a different INI file by renaming the launcher `downloader.sh` to your preferred name. After renaming the launcher, it will use an INI file with the same name but with the .ini extension. For instance, if you rename the launcher to `/media/fat/Scripts/my_custom_name.sh`, it will use the INI file `/media/fat/my_custom_name.ini` instead of `/media/fat/downloader.ini`.\n\nThis flexibility allows for various use cases, such as running a specific database in isolation.\n\n### How to avoid executing remote code altogether\n\nIf you're concerned about executing a build that the launcher fetches from the web, you can avoid this by manually installing the latest version of Downloader's build. Just get [this file](https://github.com/MiSTer-devel/Downloader_MiSTer/releases/download/latest/dont_download.zip) and save it at `/media/fat/Scripts/.config/downloader/downloader_latest.zip` (remember to rename the file as instructed). You can verify the file's integrity using the provided MD5 checksum [here](https://github.com/MiSTer-devel/Downloader_MiSTer/releases/download/latest/dont_download.zip.md5).\n\nIf not done manually, the launcher will automatically install that build on its first run. This auto-installation occurs only once and is designed to be secure.\n\n### Supporters+ shout-out!\n\nThomas Williams and Wayne Booker\n\nThank you so much for supporting this project! If you would like to show up here, join us as **Supporter+** on Patreon:\n\n<p align=\"center\">\n<a href=\"https://www.patreon.com/bePatron?u=37499475\"><img src=\"https://slrowland.com/wp-content/uploads/2018/02/patreonsupport.png\"></img></a>\n</p>\n\n### Powered by\n[![PyCharm logo](https://resources.jetbrains.com/storage/products/company/brand/logos/PyCharm.svg)](https://jb.gg/OpenSourceSupport)\n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/theypsilon/Downloader_MiSTer",
+      "releases": []
+    },
+    {
       "name": "Incomplete_MAD_DB_Generator_MiSTer",
       "description": null,
       "readme": "# Incomplete MAD Database Generator for MiSTer and the Arcade Organizer\n\nThis project generates the mad files at: https://github.com/theypsilon/MAD_Database_MiSTer\n\nThey don't cover all the fields from the schema. The generated files are only meant to be used as a template for new maintainers to write their own MAD DBs.\n\nIf you want to become a MAD DB maintainer, follow the instructions from the linked repository above.\n",
@@ -386,45 +404,15 @@
           "type": "OTHER"
         },
         {
-          "name": "MiSTer_20200517",
-          "sha": "81bc7113e982ac2bf632ac1d95480246a1f66d1f",
-          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20200517",
-          "type": "OTHER"
-        },
-        {
           "name": "MiSTer_20200519",
           "sha": "a26003357d4998cd3d075fa7a012b885786a5712",
           "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20200519",
           "type": "OTHER"
         },
         {
-          "name": "MiSTer_20200526",
-          "sha": "3021fb95e6ae88ea2c31958212843011ae914920",
-          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20200526",
-          "type": "OTHER"
-        },
-        {
           "name": "MiSTer_20200529",
           "sha": "8c21cda16f0fdd0f1855deb0e5a2976a0b487f33",
           "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20200529",
-          "type": "OTHER"
-        },
-        {
-          "name": "MiSTer_20200601",
-          "sha": "3693c9c8b4b0314d729c1ed363fb79aa0e049915",
-          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20200601",
-          "type": "OTHER"
-        },
-        {
-          "name": "MiSTer_20200602",
-          "sha": "890728d379bd71d4405737d49af0e83056c2bb18",
-          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20200602",
-          "type": "OTHER"
-        },
-        {
-          "name": "MiSTer_20200606",
-          "sha": "a3dcaf11cab4c660b2dd30129262aebfd0b964af",
-          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20200606",
           "type": "OTHER"
         },
         {
@@ -440,27 +428,9 @@
           "type": "OTHER"
         },
         {
-          "name": "MiSTer_20200622",
-          "sha": "360c2c5c89f479c4dfd192fc02481bb0ab94f37a",
-          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20200622",
-          "type": "OTHER"
-        },
-        {
           "name": "MiSTer_20200629",
           "sha": "57d5f2b465706e6786d070496ff207fd44545cae",
           "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20200629",
-          "type": "OTHER"
-        },
-        {
-          "name": "MiSTer_20200701",
-          "sha": "5cdb9aeb3a2410ff6735f12b57547692a292c798",
-          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20200701",
-          "type": "OTHER"
-        },
-        {
-          "name": "MiSTer_20200703",
-          "sha": "c5082e52cc707ee0f5a754546db974aa976a2af9",
-          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20200703",
           "type": "OTHER"
         },
         {
@@ -488,18 +458,6 @@
           "type": "OTHER"
         },
         {
-          "name": "MiSTer_20200917",
-          "sha": "666d118882e908187b4705681400c88e0af54bba",
-          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20200917",
-          "type": "OTHER"
-        },
-        {
-          "name": "MiSTer_20200922",
-          "sha": "64be340c9624e3d29076deeffdec7b41a9537bf0",
-          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20200922",
-          "type": "OTHER"
-        },
-        {
           "name": "MiSTer_20200928",
           "sha": "df30b8f86d867646248f2e9a7564c8b6842f329a",
           "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20200928",
@@ -524,30 +482,6 @@
           "type": "OTHER"
         },
         {
-          "name": "MiSTer_20201101",
-          "sha": "ef0be94909692aec58bb005ab96d4a9eef580951",
-          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20201101",
-          "type": "OTHER"
-        },
-        {
-          "name": "MiSTer_20201106",
-          "sha": "9298730d42a64192b9f6e44ef669f507e965b4f6",
-          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20201106",
-          "type": "OTHER"
-        },
-        {
-          "name": "MiSTer_20201114",
-          "sha": "bac796e1286b2abeecc12b19d16fdffc63577fc9",
-          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20201114",
-          "type": "OTHER"
-        },
-        {
-          "name": "MiSTer_20201116",
-          "sha": "df1c9ca8ef8ce6b0c045487262b91722d90a8ac5",
-          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20201116",
-          "type": "OTHER"
-        },
-        {
           "name": "MiSTer_20201117",
           "sha": "cab3dedbffdae2fb9644fb8c7b5eae379fc825b0",
           "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20201117",
@@ -563,12 +497,6 @@
           "name": "MiSTer_20201213",
           "sha": "07981697b2e39a84575f0a7c7969bc10f5f1f46d",
           "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20201213",
-          "type": "OTHER"
-        },
-        {
-          "name": "MiSTer_20210103",
-          "sha": "328254218186c846fb2ac33a4aacac3ef12dfa16",
-          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20210103",
           "type": "OTHER"
         },
         {
@@ -590,27 +518,9 @@
           "type": "OTHER"
         },
         {
-          "name": "MiSTer_20210224",
-          "sha": "0da04433b1d1082f2347f96092b562fdd6a8bcad",
-          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20210224",
-          "type": "OTHER"
-        },
-        {
-          "name": "MiSTer_20210225",
-          "sha": "a700794081684d43593ef3d77fa676e8b592efe4",
-          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20210225",
-          "type": "OTHER"
-        },
-        {
           "name": "MiSTer_20210226",
           "sha": "1251150502c2158d4ba06b32750bd27eb9328fa9",
           "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20210226",
-          "type": "OTHER"
-        },
-        {
-          "name": "MiSTer_20210302",
-          "sha": "5da7770dac8517337b4f8d50fdd5c63fd314592f",
-          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20210302",
           "type": "OTHER"
         },
         {
@@ -623,12 +533,6 @@
           "name": "MiSTer_20210329",
           "sha": "ba8d8b939c032154160cda0d5e5be0429229090f",
           "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20210329",
-          "type": "OTHER"
-        },
-        {
-          "name": "MiSTer_20210403",
-          "sha": "23d147d987f31d736b141153742f0d91491cd4ab",
-          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20210403",
           "type": "OTHER"
         },
         {
@@ -656,18 +560,6 @@
           "type": "OTHER"
         },
         {
-          "name": "MiSTer_20210604",
-          "sha": "59e359b68cd52e1f3c32920e08ec0a9cf6a54ce3",
-          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20210604",
-          "type": "OTHER"
-        },
-        {
-          "name": "MiSTer_20210605",
-          "sha": "cb4f2c4f23b2328e0441f8a1cc80c355e1c313b9",
-          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20210605",
-          "type": "OTHER"
-        },
-        {
           "name": "MiSTer_20210617",
           "sha": "29fb5d3548deed171022a4b21c56b345c767accd",
           "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20210617",
@@ -680,27 +572,9 @@
           "type": "OTHER"
         },
         {
-          "name": "MiSTer_20210705",
-          "sha": "7f27a196dedd617ddd7043a9abc8b8f2ade37f16",
-          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20210705",
-          "type": "OTHER"
-        },
-        {
-          "name": "MiSTer_20210707",
-          "sha": "9cea3826cbd0fac52d34975281432f0204ed243f",
-          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20210707",
-          "type": "OTHER"
-        },
-        {
           "name": "MiSTer_20210711",
           "sha": "40e535d112bbe4df2a04dccf8aeeb8d2446ed13c",
           "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20210711",
-          "type": "OTHER"
-        },
-        {
-          "name": "MiSTer_20210719",
-          "sha": "84433aee266460b0e122dad3fd15de9911a2988d",
-          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20210719",
           "type": "OTHER"
         },
         {
@@ -713,12 +587,6 @@
           "name": "MiSTer_20210803",
           "sha": "6ce49927092eaeced018378bfe22ac303f7abd21",
           "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20210803",
-          "type": "OTHER"
-        },
-        {
-          "name": "MiSTer_20210825",
-          "sha": "65a4daff1c480d4ef32ce28529c9f806dc904edb",
-          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20210825",
           "type": "OTHER"
         },
         {
@@ -740,27 +608,9 @@
           "type": "OTHER"
         },
         {
-          "name": "MiSTer_20211004",
-          "sha": "62713e2b12dd29bd0204f4900764311430d32547",
-          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20211004",
-          "type": "OTHER"
-        },
-        {
-          "name": "MiSTer_20211010",
-          "sha": "7d4927ef0da5d372244aa0b64203ddae9124c10e",
-          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20211010",
-          "type": "OTHER"
-        },
-        {
           "name": "MiSTer_20211112",
           "sha": "59a53bf8c4b04a3e3e0899e88a6c6952a822f9bf",
           "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20211112",
-          "type": "OTHER"
-        },
-        {
-          "name": "MiSTer_20211126",
-          "sha": "519ee0a60e7362efd68fe5c6d661c01f86b204db",
-          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20211126",
           "type": "OTHER"
         },
         {
@@ -776,12 +626,6 @@
           "type": "OTHER"
         },
         {
-          "name": "MiSTer_20220105",
-          "sha": "3e667a60ff94a1410eeef265a6b3eaf71046ae4c",
-          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20220105",
-          "type": "OTHER"
-        },
-        {
           "name": "MiSTer_20220108",
           "sha": "a4b14c42bc4283ec04f4c161dcc275a785eefbd8",
           "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20220108",
@@ -791,12 +635,6 @@
           "name": "MiSTer_20220131",
           "sha": "b4a3f131dd9b245a36779b13136826f2465d8191",
           "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20220131",
-          "type": "OTHER"
-        },
-        {
-          "name": "MiSTer_20220206",
-          "sha": "7d616354e86732da469817a3af6f3c88ce14b87f",
-          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20220206",
           "type": "OTHER"
         },
         {
@@ -821,12 +659,6 @@
           "name": "MiSTer_20220413",
           "sha": "fbf3f002c46704c8fa924e25570e0afe475d2b3b",
           "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20220413",
-          "type": "OTHER"
-        },
-        {
-          "name": "MiSTer_20220511",
-          "sha": "e3eac1ad7dc0969f00174b93467f09f14d6e2beb",
-          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20220511",
           "type": "OTHER"
         },
         {
@@ -857,12 +689,6 @@
           "name": "MiSTer_20220819",
           "sha": "fb867a5d2a7f8b5242ed68588556e8e119429222",
           "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20220819",
-          "type": "OTHER"
-        },
-        {
-          "name": "MiSTer_20221007",
-          "sha": "87e5c82a9a64a507e98762be7cb7ddec90ad62db",
-          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20221007",
           "type": "OTHER"
         },
         {
@@ -905,6 +731,72 @@
           "name": "MiSTer_20230526",
           "sha": "6befb5ae66b84166395837b8b6a20bcf7925f7d8",
           "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20230526",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20230703",
+          "sha": "87e0c71e8310f7c3d60f3e0ac645107ae42830c5",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20230703",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20230716",
+          "sha": "0af2820391507de7fec067ef587a908944f70a3d",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20230716",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20230803",
+          "sha": "dc1dd406c1d517430729f4f692956f8bfa211b4b",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20230803",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20230816",
+          "sha": "059adba8a16da0758dbac9f9358436f76b437330",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20230816",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20230915",
+          "sha": "3502daa9066b104b99f0c928db255db92f5a097e",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20230915",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20231018",
+          "sha": "80488b28c66b50685e41cfbf946b3788f36fc62c",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20231018",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20240110",
+          "sha": "0c807b4e041d8a962d9c4afeba93d1da5426b444",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20240110",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20240505",
+          "sha": "8286d6563f8cb46fa98d79904544020e3b878399",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20240505",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20240912",
+          "sha": "5296ab3c84889541f3116cbdb544aa573b54c6ab",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20240912",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20241227",
+          "sha": "bc52b21556f559cc833e7fcacdffe7faa06f3487",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20241227",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20250305",
+          "sha": "a7604b6680b3f86f64e76259fd06a5f23e972c9b",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20250305",
           "type": "OTHER"
         }
       ]
@@ -993,7 +885,7 @@
     {
       "name": "Update_All_MiSTer",
       "description": "All-in-one script for updating your MiSTer",
-      "readme": "# Update All ![ViewCount](https://views.whatilearened.today/views/github/theypsilon/Update_All_MiSTer.svg) ![GitHub all releases](https://img.shields.io/github/downloads/theypsilon/Update_All_MiSTer/total) ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/theypsilon/Update_All_MiSTer/build.yml?branch=master) <span class=\"badge-patreon\"><a href=\"https://patreon.com/theypsilon\" title=\"Donate to this project using Patreon\"><img src=\"https://img.shields.io/badge/patreon-donate-yellow.svg\" alt=\"Patreon donate button\" /></a></span> [![Twitter](https://img.shields.io/twitter/url/https/twitter.com/josembarroso.svg?style=social&label=Follow%20%40josembarroso)](https://twitter.com/josembarroso)\nAll-in-one script for keeping up-to-date with the [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki) ecosystem.\n\nThis script runs the [__MiSTer Downloader__](https://github.com/MiSTer-devel/Downloader_MiSTer/) under the hood. It expands it by selecting additional downloader databases.\n\nUpdate All has a Settings Screen that allows you to configure which databases and tools you want to use. In said screen the menu includes:\n1. __Main Distribution__. Downloads most essential files, including cores and firmware. You are able to select between two versions:\n    * The [official MiSTer Distribution](https://github.com/MiSTer-devel/Distribution_MiSTer) in the [MiSTer-devel](https://github.com/MiSTer-devel) organization. **[Default option]**\n    * The [DB9 Fork MiSTer Distribution](https://github.com/MiSTer-DB9/Distribution_MiSTer) with [Extended Native Controller Compatibility](https://github.com/theypsilon/Update_All_MiSTer/wiki#extended-native-controller-compatibility) for Genesis and NeoGeo/Supergun controllers. *Requires [SNAC8](https://github.com/theypsilon/Update_All_MiSTer/wiki#snac8) compatible adapter.*\n2. [JTCORES for MiSTer](https://github.com/jotego/jtcores_mister). Downloads many cores made by [Jotego Team](https://github.com/jotego). **[Default option]** \n    * You may additionally enable patreon-only cores.\n3. [Coin-Op Collection](https://github.com/Coin-OpCollection/Distribution-MiSTerFPGA). Downloads cores developed by [the Coin-Op Collection organization](https://github.com/Coin-OpCollection). **[Default option]**\n4. **Other Cores**. A selection of curated databases that provide unofficial cores, including:\n    * [Arcade Offset](https://github.com/toryalai1/Arcade_Offset). Downloads patched arcade games curated by [Toya](https://github.com/toryalai1). **[Disabled by default]**\n    * [LLAPI Forks Folder](https://github.com/MiSTer-LLAPI/LLAPI_folder_MiSTer). Downloads [LLAPI cores](https://github.com/MiSTer-LLAPI/Updater_script_MiSTer/wiki) which are compatible with BlisSTer and [LLAMA](https://github.com/bootsector/LLAMA). **[Disabled by default]**\n    * And more...\n5. **Other Tools & Scripts**. Additional tools & scripts.\n    * [Arcade Organizer](https://github.com/theypsilon/_arcade-organizer). Creates a folder structure under `_Arcade/_Organized` for easy navigation to all the MRA files. **[Default option]**\n    * [Names TXT](https://github.com/ThreepwoodLeBrush/Names_MiSTer). Downloads a complete names.txt file curated by [Threepwood](https://github.com/ThreepwoodLeBrush) that enables better core names in the menus. **[Disabled by default]**\n    * And more...\n6. **Extra Content**. A selection of curated databases that provide extra content.\n    * [BIOS Database](https://github.com/BigDendy/BiosDB_MiSTer). Downloads bios from https://archive.org/ for your installed systems. **[Disabled by default]**\n    * [Arcade ROMs Database](https://github.com/zakk4223/ArcadeROMsDB_MiSTer). Downloads arcade roms from https://archive.org/ that are compatible with MRAs. **[Disabled by default]**\n    * And more...\n7. **Analogue Pocket**. Tools to connect your MiSTer with your Analogue Pocket.\n8. **Patron Menu**. A menu with exclusive contents for members of my Patreon community.\n\n## Setup\n\nDownload this [ZIP file](https://github.com/theypsilon/Update_All_MiSTer/releases/latest/download/update_all.zip) and extract `update_all.sh` to your `/Scripts` folder on your primary SD card.\n\nThen turn on your __MiSTer__, go to the _Scripts_ menu and run this script from there.\n\nIt will take around 15 minutes the first time you run it, but later runs should take much less time.\n\n\n## Accessing the Settings Screen\n\n![settings screen](https://github.com/theypsilon/Update_All_MiSTer/raw/master/setups/menu-2-1.jpg \"Settings Screen\")\n\nThe Settings screen will show up if you press UP in your controller or keyboard during the countdown showing up right after starting `update_all.sh` in your MiSTer. Please, don't forget to select `SAVE` to keep all the changes you have done before leaving.\n\n\n\n## PC Launcher (for Windows, Mac, and Linux)\n\nCheck [MiSTer Downloader's PC Launcher](https://github.com/MiSTer-devel/Downloader_MiSTer/blob/main/docs/pc-launcher.md) to download all MiSTer files on your PC.\nUseful if you can't connect your MiSTer to the internet.\n\nTo install the same files that you get with Update All, use the same `downloader.ini` file that you have in your MiSTer at the root of the SD card. Keep in mind that Update All writes into that file every time you change something in the Settings Screen.\n\n\n## Funding\n\nConsider funding [Alexey Melnikov \"Sorgelig\"](https://www.patreon.com/FPGAMiSTer) for his invaluable work on the [MiSTer project](https://github.com/MiSTer-devel/Main_MiSTer/wiki).\n\nCheck also other core developers that you might want to support:\n* [Sergey Dvodnenko \"srg320\"](https://www.patreon.com/srg320)\n* [Jos\u00e9 Tejada \"jotego\"](https://www.patreon.com/jotego)\n* [Robert Peip \"FPGAzumSpass\"](https://www.patreon.com/FPGAzumSpass)\n* [Josh Bassett \"nullobject\"](https://www.patreon.com/nullobject)\n* [MiSTer-X](https://www.patreon.com/MrX_8B)\n* [furrtek](https://www.patreon.com/furrtek)\n* [Ace](https://ko-fi.com/ace9921)\n* [Blackwine](https://www.patreon.com/blackwine)\n* [atrac17](https://www.patreon.com/atrac17)\n* [Darren](https://ko-fi.com/darreno)\n\nAnd finally, if you would like to support my work, you may also subscribe to my patreon here: https://www.patreon.com/bePatron?u=37499475\n\n\n## Supporters+ shout-out!\n\nBlum Chillins, Daniel Tarsky, Koala Koa, Tony Escobar, turbochop3300 and Wayne Booker\n\nThank you so much for supporting this project on [Patreon](https://www.patreon.com/bePatron?u=37499475)! You'll show up here if you become a **Supporter+**!\n\nSpecial thanks to [Locutus73](https://github.com/Locutus73) for all his great work on the older [__Updater script__](https://github.com/MiSTer-devel/Updater_script_MiSTer). That __Updater script__ is no longer used by __Update All__ but it was an amazing source of inspiration.\n\n## License\n\nCopyright \u00a9 2020-2024, [Jos\u00e9 Manuel Barroso Galindo](https://twitter.com/josembarroso). \nReleased under the [GPL v3 License](LICENSE).\n\n\n\n## Warning\n\nMiSTer Scripts are run with root access in a pretty powerful device that has internet access. Be careful and do proper research before running any script on your device.\n",
+      "readme": "# Update All ![ViewCount](https://views.whatilearened.today/views/github/theypsilon/Update_All_MiSTer.svg) ![GitHub all releases](https://img.shields.io/github/downloads/theypsilon/Update_All_MiSTer/total) ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/theypsilon/Update_All_MiSTer/build.yml?branch=master) <span class=\"badge-patreon\"><a href=\"https://patreon.com/theypsilon\" title=\"Donate to this project using Patreon\"><img src=\"https://img.shields.io/badge/patreon-donate-yellow.svg\" alt=\"Patreon donate button\" /></a></span> [![Twitter](https://img.shields.io/twitter/url/https/twitter.com/josembarroso.svg?style=social&label=Follow%20%40josembarroso)](https://twitter.com/josembarroso)\nAll-in-one script for keeping up-to-date with the [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki) ecosystem.\n\nThis script runs the [__MiSTer Downloader__](https://github.com/MiSTer-devel/Downloader_MiSTer/) under the hood. It expands it by selecting additional downloader databases.\n\nUpdate All has a Settings Screen that allows you to configure which databases and tools you want to use. In said screen the menu includes:\n1. __Main Distribution__. Downloads most essential files, including cores and firmware. You are able to select between two versions:\n    * The [official MiSTer Distribution](https://github.com/MiSTer-devel/Distribution_MiSTer) in the [MiSTer-devel](https://github.com/MiSTer-devel) organization. **[Default option]**\n    * The [DB9 Fork MiSTer Distribution](https://github.com/MiSTer-DB9/Distribution_MiSTer) with [Extended Native Controller Compatibility](https://github.com/theypsilon/Update_All_MiSTer/wiki#extended-native-controller-compatibility) for Genesis and NeoGeo/Supergun controllers. *Requires [SNAC8](https://github.com/theypsilon/Update_All_MiSTer/wiki#snac8) compatible adapter.*\n2. [JTCORES for MiSTer](https://github.com/jotego/jtcores_mister). Downloads many cores made by [Jotego Team](https://github.com/jotego). **[Default option]** \n    * You may additionally enable patreon-only cores.\n3. [Coin-Op Collection](https://github.com/Coin-OpCollection/Distribution-MiSTerFPGA). Downloads cores developed by [the Coin-Op Collection organization](https://github.com/Coin-OpCollection). **[Default option]**\n4. **Other Cores**. A selection of curated databases that provide unofficial cores, including:\n    * [Arcade Offset](https://github.com/toryalai1/Arcade_Offset). Downloads patched arcade games curated by [Toya](https://github.com/toryalai1). **[Disabled by default]**\n    * [LLAPI Forks Folder](https://github.com/MiSTer-LLAPI/LLAPI_folder_MiSTer). Downloads [LLAPI cores](https://github.com/MiSTer-LLAPI/Updater_script_MiSTer/wiki) which are compatible with BlisSTer and [LLAMA](https://github.com/bootsector/LLAMA). **[Disabled by default]**\n    * And more...\n5. **Other Tools & Scripts**. Additional tools & scripts.\n    * [Arcade Organizer](https://github.com/theypsilon/_arcade-organizer). Creates a folder structure under `_Arcade/_Organized` for easy navigation to all the MRA files. **[Default option]**\n    * [Names TXT](https://github.com/ThreepwoodLeBrush/Names_MiSTer). Downloads a complete names.txt file curated by [Threepwood](https://github.com/ThreepwoodLeBrush) that enables better core names in the menus. **[Disabled by default]**\n    * And more...\n6. **Extra Content**. A selection of curated databases that provide extra content.\n    * [BIOS Database](https://github.com/BigDendy/BiosDB_MiSTer). Downloads bios from https://archive.org/ for your installed systems. **[Disabled by default]**\n    * [Arcade ROMs Database](https://github.com/zakk4223/ArcadeROMsDB_MiSTer). Downloads arcade roms from https://archive.org/ that are compatible with MRAs. **[Disabled by default]**\n    * And more...\n7. **Analogue Pocket**. Tools to connect your MiSTer with your Analogue Pocket.\n8. **Patron Menu**. A menu with exclusive contents for members of my Patreon community.\n\n## Setup\n\nDownload this [ZIP file](https://github.com/theypsilon/Update_All_MiSTer/releases/latest/download/update_all.zip) and extract `update_all.sh` to your `/Scripts` folder on your primary SD card.\n\nThen turn on your __MiSTer__, go to the _Scripts_ menu and run this script from there.\n\nIt will take around 15 minutes the first time you run it, but later runs should take much less time.\n\n\n## Accessing the Settings Screen\n\n![settings screen](https://github.com/theypsilon/Update_All_MiSTer/raw/master/setups/menu-2-1.jpg \"Settings Screen\")\n\nThe Settings screen will show up if you press UP in your controller or keyboard during the countdown showing up right after starting `update_all.sh` in your MiSTer. Please, don't forget to select `SAVE` to keep all the changes you have done before leaving.\n\n\n\n## PC Launcher (for Windows, Mac, and Linux)\n\nCheck [MiSTer Downloader's PC Launcher](https://github.com/MiSTer-devel/Downloader_MiSTer/blob/main/docs/pc-launcher.md) to download all MiSTer files on your PC.\nUseful if you can't connect your MiSTer to the internet.\n\nTo install the same files that you get with Update All, use the same `downloader.ini` file that you have in your MiSTer at the root of the SD card. Keep in mind that Update All writes into that file every time you change something in the Settings Screen.\n\n\n## Funding\n\nConsider funding [Alexey Melnikov \"Sorgelig\"](https://www.patreon.com/FPGAMiSTer) for his invaluable work on the [MiSTer project](https://github.com/MiSTer-devel/Main_MiSTer/wiki).\n\nCheck also other core developers that you might want to support:\n* [Sergey Dvodnenko \"srg320\"](https://www.patreon.com/srg320)\n* [Jos\u00e9 Tejada \"jotego\"](https://www.patreon.com/jotego)\n* [Robert Peip \"FPGAzumSpass\"](https://www.patreon.com/FPGAzumSpass)\n* [Josh Bassett \"nullobject\"](https://www.patreon.com/nullobject)\n* [MiSTer-X](https://www.patreon.com/MrX_8B)\n* [furrtek](https://www.patreon.com/furrtek)\n* [Ace](https://ko-fi.com/ace9921)\n* [Blackwine](https://www.patreon.com/blackwine)\n* [atrac17](https://www.patreon.com/atrac17)\n* [Darren](https://ko-fi.com/darreno)\n\nAnd finally, if you would like to support my work, you may also subscribe to my patreon here: https://www.patreon.com/bePatron?u=37499475\n\n\n## Supporters+ shout-out!\n\nThomas Williams and Wayne Booker\n\nThank you so much for supporting this project on [Patreon](https://www.patreon.com/bePatron?u=37499475)! You'll show up here if you become a **Supporter+**!\n\nSpecial thanks to [Locutus73](https://github.com/Locutus73) for all his great work on the older [__Updater script__](https://github.com/MiSTer-devel/Updater_script_MiSTer). That __Updater script__ is no longer used by __Update All__ but it was an amazing source of inspiration.\n\n## License\n\nCopyright \u00a9 2020-2024, [Jos\u00e9 Manuel Barroso Galindo](https://twitter.com/josembarroso). \nReleased under the [GPL v3 License](LICENSE).\n\n\n\n## Warning\n\nMiSTer Scripts are run with root access in a pretty powerful device that has internet access. Be careful and do proper research before running any script on your device.\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/theypsilon/Update_All_MiSTer",
