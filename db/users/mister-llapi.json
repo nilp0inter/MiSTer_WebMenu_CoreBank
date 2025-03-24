@@ -789,7 +789,7 @@
     {
       "name": "Arcade-IremM92_MiSTer",
       "description": null,
-      "readme": "# Irem M92 Core\n\n![](docs/header-small.png)\n\nThis is the MiSTer FPGA core for the Irem M92 arcade system (http://www.system16.com/hardware.php?id=747). The Irem M92 system is known for its high-quality graphics and sound, and this core brings these games to the MiSTer platform for arcade enthusiasts to enjoy.\n\nThe Irem M92 core includes numerous games that have not been ported elsewhere, providing a unique and authentic arcade experience. Some of the popular games available in this core are:\n\n- In the Hunt\n- Gunforce\n- R-Type Leo\n- Hook\n- Blade Master\n- Mystic Riders\n- Undercover Cops\n- Ninja Baseball Batman\n\n## Controls\nAll of the games use standard 8-way input with two buttons with the exception of *Superior Soldiers* which uses six button input. Several of the games support 3 or 4 players but you will need to change a DIP switch in the DIP switch menu to enable that. By default the button buttons are mapped to the MiSTers SNES-like layout as `B,A,X,Y,L,R`. The `Coin` and `Start` buttons are mapped to Select and Start. There are two additional buttons that can be mapped that are not mapped by default. `P2 Start` maps the the second players start button. The only purpose this serves is for accessing the service menu with a single controller since most games require pressing P1 and P2 start to access it. The second unmapped button is `Pause` which pauses the core.\n\nStandard MAME keyboard controls are also supported for up to 4-players.\n\n\n## Thanks\nMany people, knowingly or not, contributed to this work.\n- Mark, for his R-Type Leo PCB and his support through the years.\n- @sorgelig, for developing and maintaining MiSTer.\n- @RobertPeip, for the v30mz cpu I am using as the basis for the v33 & v35.\n- @jotego, for the YM2151 implementation and analog adjustment module.\n- @ArtemioUrbina, for their support building [MDfourier](https://junkerhq.net/MDFourier/) tests.\n- @zakk4223, for hiscore support.\n- @birdybro, @Toryalai1 & @wwark for MRA help.\n- Sanborn, for help with the docs.\n- The people from PLD Archive collecting and archiving PAL information https://wiki.pldarchive.co.uk/index.php?title=Category:Irem_M92\n- The MiSTer FPGA discord server for support, advice and testing.\n\n\n",
+      "readme": "# Irem M92 Core\n\n![](docs/header-small.png)\n\nThis is the MiSTer FPGA core for the Irem M92 arcade system (http://www.system16.com/hardware.php?id=747). The Irem M92 system is known for its high-quality graphics and sound, and this core brings these games to the MiSTer platform for arcade enthusiasts to enjoy.\n\nThe Irem M92 core includes numerous games that have not been ported elsewhere, providing a unique and authentic arcade experience. Some of the popular games available in this core are:\n\n- In the Hunt\n- Gunforce\n- R-Type Leo\n- Hook\n- Blade Master\n- Mystic Riders\n- Undercover Cops\n- Ninja Baseball Batman\n\n## Controls\nAll of the games use standard 8-way input with two buttons with the exception of *Superior Soldiers* which uses six button input. Several of the games support 3 or 4 players but you will need to change a DIP switch in the DIP switch menu to enable that. By default the button buttons are mapped to the MiSTers SNES-like layout as `B,A,X,Y,L,R`. The `Coin` and `Start` buttons are mapped to Select and Start. There are two additional buttons that can be mapped that are not mapped by default. `P2 Start` maps the the second players start button. The only purpose this serves is for accessing the service menu with a single controller since most games require pressing P1 and P2 start to access it. The second unmapped button is `Pause` which pauses the core.\n\nStandard MAME keyboard controls are also supported for up to 4-players.\n\n\n## Cheats\nCheats are defined in the MRA files within the `<cheats>` block. Each cheat is made up of one or more 16-byte codes, similar to game genie codes. They are broken up into four, big-endian, 4-byte sections: `Flags`, `Addr`, `Comp` and `Data`. When the CPU reads the memory address specified by `Addr` it will override the data store there with the value specified in `Data`. If the `Compare` flag is set to `1` then it will only override the value if the value in the `Comp` field matches what is currently in memory. The `Size` field in the `Flags` specifies how large the `Comp` and `Data` values are. The `Addr` must be aligned to that size. The `Method` flag specifies how the memory is overridden. It can completely replace the value, be OR'd with the memory value or AND'd with it.\n\n```\n     Flags     Addr     Comp     Data\n    00000021 000E0002 00001000 00001234\n         |||\n         ||+-- Compare: 0 = always override, 1 = only if compare matches\n         |+--- Size:    1, 2 or 4\n         +---- Method:  0 = replace memory with Data, 1 = OR with Data, 2 = AND with Data\n```\nThe above cheat code would return `0x1234` when reading from memory address `0xE0002` if the value `0x1000` was currently stored at that address.\n\n\nCheats don't write to memory, they replace the memory values as they are being read. So when a cheat is disabled the modifications disappear. Be aware that if you have cheats enabled during startup then the game will almost certainly fail its RAM and/or ROM startup tests.\n\nThe initial cheats are all converted from [Pugsy's Cheats](https://www.mamecheat.co.uk/).\n\n## Thanks\nMany people, knowingly or not, contributed to this work.\n- Mark, for his R-Type Leo PCB and his support through the years.\n- @sorgelig, for developing and maintaining MiSTer.\n- @RobertPeip, for the v30mz cpu I am using as the basis for the v33 & v35.\n- @jotego, for the YM2151 implementation and analog adjustment module.\n- @ArtemioUrbina, for their support building [MDfourier](https://junkerhq.net/MDFourier/) tests.\n- @zakk4223, for hiscore support.\n- @birdybro, @Toryalai1 & @wwark for MRA help.\n- Sanborn, for help with the docs.\n- The people from PLD Archive collecting and archiving PAL information https://wiki.pldarchive.co.uk/index.php?title=Category:Irem_M92\n- [Pugsy's Cheats](https://www.mamecheat.co.uk/) for maintaining an excellent selection of cheats.\n- The MiSTer FPGA discord server for support, advice and testing.\n\n\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-LLAPI/Arcade-IremM92_MiSTer",
@@ -831,6 +831,12 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-IremM92_20250222.rbf",
+          "sha": "92d18c8d70f3d9a901e73ef8c28435f4d0ed84a1",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM92_MiSTer/main/releases/Arcade-IremM92_20250222.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Arcade-IremM92_LLAPI_20240320.rbf",
           "sha": "0873f04b304d74adf12185bc9292250855577dc2",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM92_MiSTer/main/releases/Arcade-IremM92_LLAPI_20240320.rbf",
@@ -849,8 +855,14 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-IremM92_LLAPI_20250321.rbf",
+          "sha": "c1d347d1de2c63aaee292ea977adadc45d2557ce",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM92_MiSTer/main/releases/Arcade-IremM92_LLAPI_20250321.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Blade Master (World).mra",
-          "sha": "8e28a828352b493cb6075ed77f0c417026a1297a",
+          "sha": "c9bdade45f4746ede706e4185b29e19658ea0ea7",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM92_MiSTer/main/releases/Blade%20Master%20(World).mra",
           "type": "MRA",
           "extra": {
@@ -876,7 +888,7 @@
         },
         {
           "name": "Gun Force II (US).mra",
-          "sha": "6f36e2031a8751fabed37b6ea08170a1aec13d18",
+          "sha": "f53f2a3de277c25c3ed525720fcecaa3939fcf62",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM92_MiSTer/main/releases/Gun%20Force%20II%20(US).mra",
           "type": "MRA",
           "extra": {
@@ -889,7 +901,7 @@
         },
         {
           "name": "Gunforce - Battle Fire Engulfed Terror Island (World).mra",
-          "sha": "6a352a0f30dd43cd88f0581b9fa4e60a223f07cb",
+          "sha": "4b8f055756dc9419b0cb402bbb5401748df12da1",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM92_MiSTer/main/releases/Gunforce%20-%20Battle%20Fire%20Engulfed%20Terror%20Island%20(World).mra",
           "type": "MRA",
           "extra": {
@@ -902,7 +914,7 @@
         },
         {
           "name": "Hook (World).mra",
-          "sha": "35043e18267c2a92313f597bed1e8f7290db6715",
+          "sha": "c991e42ef599a2741ec1f640e975ce662b32684f",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM92_MiSTer/main/releases/Hook%20(World).mra",
           "type": "MRA",
           "extra": {
@@ -915,7 +927,7 @@
         },
         {
           "name": "In The Hunt (World).mra",
-          "sha": "2c8404790bf65708d3a6758967f5601b0c4a2a2d",
+          "sha": "87df3b971ef05be0c62fcb55ce8f82c78f27e5b9",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM92_MiSTer/main/releases/In%20The%20Hunt%20(World).mra",
           "type": "MRA",
           "extra": {
@@ -928,7 +940,7 @@
         },
         {
           "name": "Lethal Thunder (World).mra",
-          "sha": "6aa123a9934bfed13a56a8052d868981ae7d99f2",
+          "sha": "4cd5690f269f62e7841e0ac9382cdf20fd0d8535",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM92_MiSTer/main/releases/Lethal%20Thunder%20(World).mra",
           "type": "MRA",
           "extra": {
@@ -941,7 +953,7 @@
         },
         {
           "name": "Major Title 2 (World, set 1).mra",
-          "sha": "5949d876a034684a029dde537d804d2449419eeb",
+          "sha": "897e58ea98ecd0688b1371f361e1580b16fd4a90",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM92_MiSTer/main/releases/Major%20Title%202%20(World%2C%20set%201).mra",
           "type": "MRA",
           "extra": {
@@ -955,7 +967,7 @@
         },
         {
           "name": "Mystic Riders (World).mra",
-          "sha": "4a401cf1fb33600968fb552a726daf44753cf3e6",
+          "sha": "8304e1cea3b3d00a45be11b58a833213efca4558",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM92_MiSTer/main/releases/Mystic%20Riders%20(World).mra",
           "type": "MRA",
           "extra": {
@@ -968,7 +980,7 @@
         },
         {
           "name": "Ninja Baseball Bat Man (World).mra",
-          "sha": "98519add044c0c870e4734a6e669634ce35d403f",
+          "sha": "20261433be8e8214a291b8bcaa132a1030d1e53d",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM92_MiSTer/main/releases/Ninja%20Baseball%20Bat%20Man%20(World).mra",
           "type": "MRA",
           "extra": {
@@ -981,7 +993,7 @@
         },
         {
           "name": "R-Type Leo (World).mra",
-          "sha": "31cf6d92a48dec74931ffa6d85ac1375636f2215",
+          "sha": "2cbee57fe5bb80d8ac42f35b05f1a345e34337df",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM92_MiSTer/main/releases/R-Type%20Leo%20(World).mra",
           "type": "MRA",
           "extra": {
@@ -994,7 +1006,7 @@
         },
         {
           "name": "Superior Soldiers (US).mra",
-          "sha": "51acbae752731202694fc0cbdf050d0e8526cb51",
+          "sha": "ef756be3b05082808ecad267353544f5c030e21a",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM92_MiSTer/main/releases/Superior%20Soldiers%20(US).mra",
           "type": "MRA",
           "extra": {
@@ -1007,7 +1019,7 @@
         },
         {
           "name": "Undercover Cops (World).mra",
-          "sha": "ffd0229416bec6e8786f3a740b313c46ecef861d",
+          "sha": "7e989f13d5735805d2baa8941f21b5e42a786cec",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM92_MiSTer/main/releases/Undercover%20Cops%20(World).mra",
           "type": "MRA",
           "extra": {
@@ -1020,7 +1032,7 @@
         },
         {
           "name": "Cross Blades! (Japan).mra",
-          "sha": "e76a95c63f703bec78bb8aa340579fc2ea91e796",
+          "sha": "5481a2ade59600f27bc89d6cd1b4a028e4bc2d2e",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM92_MiSTer/main/releases/_alternatives/_Blade%20Master/Cross%20Blades!%20(Japan).mra",
           "type": "MRA",
           "extra": {
@@ -1033,7 +1045,7 @@
         },
         {
           "name": "Geo Storm (Japan).mra",
-          "sha": "61a4ee5ca50bbfe4f848525c33ac521d6f75a106",
+          "sha": "d17965dee4ea7ac1ee5560eea691fc051792a2b9",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM92_MiSTer/main/releases/_alternatives/_Gun%20Force%20II/Geo%20Storm%20(Japan).mra",
           "type": "MRA",
           "extra": {
@@ -1046,7 +1058,7 @@
         },
         {
           "name": "Gunforce - Battle Fire Engulfed Terror Island (Japan).mra",
-          "sha": "d930146a7f29b2bdc7e00dcd0c6e314a2aa43dc6",
+          "sha": "285c8911f6948a2556b03ae11d8347782037158d",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM92_MiSTer/main/releases/_alternatives/_Gunforce%20-%20Battle%20Fire%20Engulfed%20Terror%20Island/Gunforce%20-%20Battle%20Fire%20Engulfed%20Terror%20Island%20(Japan).mra",
           "type": "MRA",
           "extra": {
@@ -1059,7 +1071,7 @@
         },
         {
           "name": "Gunforce - Battle Fire Engulfed Terror Island (USA).mra",
-          "sha": "ef79feb6a04b0d14ae988e4a21afeafd2ed5ccad",
+          "sha": "8d10295b5b9193cc6a66ead8f7fced81b7d08b98",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM92_MiSTer/main/releases/_alternatives/_Gunforce%20-%20Battle%20Fire%20Engulfed%20Terror%20Island/Gunforce%20-%20Battle%20Fire%20Engulfed%20Terror%20Island%20(USA).mra",
           "type": "MRA",
           "extra": {
@@ -1072,7 +1084,7 @@
         },
         {
           "name": "Hook (Japan).mra",
-          "sha": "76269184a384f61883297c34f213542d98fb45d7",
+          "sha": "a9fab9b2287ecb574b60ce8d4bcd1115cf9b72b4",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM92_MiSTer/main/releases/_alternatives/_Hook/Hook%20(Japan).mra",
           "type": "MRA",
           "extra": {
@@ -1085,7 +1097,7 @@
         },
         {
           "name": "In The Hunt (US).mra",
-          "sha": "29b183574ffe6c2c2b32ecfaa60960cbd982974c",
+          "sha": "789a7fcf1de1d89764d7e124bc7834cd4d523958",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM92_MiSTer/main/releases/_alternatives/_In%20The%20Hunt/In%20The%20Hunt%20(US).mra",
           "type": "MRA",
           "extra": {
@@ -1098,7 +1110,7 @@
         },
         {
           "name": "Kaitei Daisensou (Japan).mra",
-          "sha": "58acc030de5f408540bae9bdfd3d82c9103c799c",
+          "sha": "8e5ddae3f4ef78dd49d633a8aeba015f50b576d9",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM92_MiSTer/main/releases/_alternatives/_In%20The%20Hunt/Kaitei%20Daisensou%20(Japan).mra",
           "type": "MRA",
           "extra": {
@@ -1111,7 +1123,7 @@
         },
         {
           "name": "Thunder Blaster (Japan).mra",
-          "sha": "b6167aad661b2d901010c10a501c4480c0db4f94",
+          "sha": "7aeb90236daa18ad7b1832b77d2d3b1cdee2f6b6",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM92_MiSTer/main/releases/_alternatives/_Lethal%20Thunder/Thunder%20Blaster%20(Japan).mra",
           "type": "MRA",
           "extra": {
@@ -1124,7 +1136,7 @@
         },
         {
           "name": "Mahou Keibitai Gun Hohki (Japan).mra",
-          "sha": "fc876cbdf6e1c2a83aaaf87d2419e9c578cb8e38",
+          "sha": "763dee7573d1a9e6d8514dd105bfc53d684c47c8",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM92_MiSTer/main/releases/_alternatives/_Mystic%20Riders/Mahou%20Keibitai%20Gun%20Hohki%20(Japan).mra",
           "type": "MRA",
           "extra": {
@@ -1137,7 +1149,7 @@
         },
         {
           "name": "Ninja Baseball Bat Man (US).mra",
-          "sha": "f71bfd10082a71d97311c45c6ea03ae207287439",
+          "sha": "1352e1a9d0a08149c46e2d5e69d8efd25ca6627c",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM92_MiSTer/main/releases/_alternatives/_Ninja%20Baseball%20Bat%20Man/Ninja%20Baseball%20Bat%20Man%20(US).mra",
           "type": "MRA",
           "extra": {
@@ -1150,7 +1162,7 @@
         },
         {
           "name": "Yakyuu Kakutou League-Man (Japan).mra",
-          "sha": "a09a5ba61b82f4d4130c6dc1a375af78700dc232",
+          "sha": "f4d4a852f01f3bdcb0825ea79da56a50d5be503f",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM92_MiSTer/main/releases/_alternatives/_Ninja%20Baseball%20Bat%20Man/Yakyuu%20Kakutou%20League-Man%20(Japan).mra",
           "type": "MRA",
           "extra": {
@@ -1163,7 +1175,7 @@
         },
         {
           "name": "R-Type Leo (Japan).mra",
-          "sha": "7b76f1ffd6be2851829130c197ac7cd474336b91",
+          "sha": "159fb249fe91ab745ead848102876b9f9fe1b714",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM92_MiSTer/main/releases/_alternatives/_R-Type%20Leo/R-Type%20Leo%20(Japan).mra",
           "type": "MRA",
           "extra": {
@@ -1176,7 +1188,7 @@
         },
         {
           "name": "Undercover Cops (Japan).mra",
-          "sha": "021efd18db1851285953952ed7d3cca0f65f6780",
+          "sha": "6b4cf7fbcd1aeec0135e6c31300965acbb4fa518",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM92_MiSTer/main/releases/_alternatives/_Undercover%20Cops/Undercover%20Cops%20(Japan).mra",
           "type": "MRA",
           "extra": {
@@ -1189,7 +1201,7 @@
         },
         {
           "name": "Undercover Cops (US).mra",
-          "sha": "c02e1c043e279bc8714619a9dbdf46de5f0032fe",
+          "sha": "da56ade70d1e137e2b05bd3152458eaa42e44af3",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM92_MiSTer/main/releases/_alternatives/_Undercover%20Cops/Undercover%20Cops%20(US).mra",
           "type": "MRA",
           "extra": {
@@ -1202,7 +1214,7 @@
         },
         {
           "name": "Undercover Cops - Alpha Renewal Version (US).mra",
-          "sha": "d5b91b5730f977cdfdb14de253f18e34818a7d35",
+          "sha": "76bf9e7d5c4d3d5c9282e30e9656d35c92b50c04",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM92_MiSTer/main/releases/_alternatives/_Undercover%20Cops/Undercover%20Cops%20-%20Alpha%20Renewal%20Version%20(US).mra",
           "type": "MRA",
           "extra": {
@@ -1215,7 +1227,7 @@
         },
         {
           "name": "Undercover Cops - Alpha Renewal Version (World).mra",
-          "sha": "fcbb8c772c8fa4004e11a8212904a37120d4be54",
+          "sha": "bf78fbf38cc4d186c162e67a726b97579baf2856",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM92_MiSTer/main/releases/_alternatives/_Undercover%20Cops/Undercover%20Cops%20-%20Alpha%20Renewal%20Version%20(World).mra",
           "type": "MRA",
           "extra": {
@@ -5404,6 +5416,12 @@
           "sha": "39387b292872c1cc4750fd627476e42429761432",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/Saturn_LLAPI_20250305.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "Saturn_LLAPI_20250319.rbf",
+          "sha": "52d217c69d3cc85c30c0ea61f81f3bf988cb2f9f",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/Saturn_LLAPI_20250319.rbf",
+          "type": "RBF"
         }
       ]
     },
@@ -6791,6 +6809,12 @@
           "name": "TurboGrafx16_LLAPI_20250227.rbf",
           "sha": "efec5efa93743153ebb5d1af281d06b42f9fda82",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/TurboGrafx16_MiSTer/master/releases/TurboGrafx16_LLAPI_20250227.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "TurboGrafx16_LLAPI_20250319.rbf",
+          "sha": "37d4ee0174a40565890ad348b2e4e1d7824c1183",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/TurboGrafx16_MiSTer/master/releases/TurboGrafx16_LLAPI_20250319.rbf",
           "type": "RBF"
         }
       ]

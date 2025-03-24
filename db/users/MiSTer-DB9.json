@@ -14903,64 +14903,6 @@
       ]
     },
     {
-      "name": "Saturn_MiSTer",
-      "description": "Sega Saturn for MiSTer",
-      "readme": "# [Sega Saturn](https://en.wikipedia.org/wiki/Sega_Saturn) for MiSTer\n\n## Hardware Requirements\n\n- 128 MB SDRAM Module (Primary)\n- SDRAM Module of any size (32MB-128MB) (Secondary)\n\n> **Note:** Dual SDRAM modules is recommended for better compatibility.\n\n## Status\n\nCurrent status is WIP/Beta\n\nKnown issues:\n\n",
-      "archived": false,
-      "fork": true,
-      "url": "https://github.com/MiSTer-DB9/Saturn_MiSTer",
-      "releases": [
-        {
-          "name": "Saturn_20231010.rbf",
-          "sha": "5db313a4cfe017edcc81a999cde9c3aa71dbc096",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Saturn_MiSTer/main/releases/Saturn_20231010.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Saturn_20231018.rbf",
-          "sha": "8dc94d7c26e004205941e15bf74becae3a2cbfea",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Saturn_MiSTer/main/releases/Saturn_20231018.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Saturn_20240323.rbf",
-          "sha": "cca090de4f7fb2373d457fbfa726f211da5b2167",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Saturn_MiSTer/main/releases/Saturn_20240323.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Saturn_20240414.rbf",
-          "sha": "480e09b432924204c8e3499bfc938dc3c85e0eaf",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Saturn_MiSTer/main/releases/Saturn_20240414.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Saturn_20240628.rbf",
-          "sha": "6edd1806addeb0d5baa5991e69541189c41f0b1b",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Saturn_MiSTer/main/releases/Saturn_20240628.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Saturn_20240629.rbf",
-          "sha": "a4adc16a8267937ed9546afb120c8946eda9a945",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Saturn_MiSTer/main/releases/Saturn_20240629.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Saturn_20250113.rbf",
-          "sha": "9696a709c3115e55ec0cc40acc4f679c54774848",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Saturn_MiSTer/main/releases/Saturn_20250113.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Saturn_20250225.rbf",
-          "sha": "f5ab761a59e18c0a1b8e7cdc4da4c093bd788384",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Saturn_MiSTer/main/releases/Saturn_20250225.rbf",
-          "type": "RBF"
-        }
-      ]
-    },
-    {
       "name": "SMS_MiSTer",
       "description": "Sega Master System for MiSTer",
       "readme": "# [Sega Master System](https://en.wikipedia.org/wiki/Master_System)/[Game Gear](https://en.wikipedia.org/wiki/Game_Gear) for [MiSTer FPGA](https://mister-devel.github.io/MkDocs_MiSTer/) and [MiST](https://github.com/mist-devel/mist-board/wiki)\n\nThis core is a port of Ben's Sega Master System implementation for the Papilio. See [http://fpga-hacks.blogspot.de/](http://fpga-hacks.blogspot.de/).\n\n## Features\n\n* Sega Master System, Game Gear and [SG-1000](https://en.wikipedia.org/wiki/SG-1000) Support\n* [Sega System E arcade hardware](https://segaretro.org/Sega_System_E) Support\n* NTSC & PAL Support\n* Hide Borders Option - Allows you to fill the screen vertically without black borders.\n* FM Audio Support\n* Extra Sprites Option\n* Cheats\n* Extended Game Gear Resolution Option\n* Z80 Turbo Option\n* Lightgun, Paddle controls, and Multitap Support\n\n## Where to Download\n\n* For MiSTer, go to [releases](https://github.com/MiSTer-devel/SMS_MISTer/tree/master/releases).\n* For MiST, go to [mist-binaries](https://github.com/mist-devel/mist-binaries/tree/master/cores/sms).\n\n### Installation\n\n* Copy the *.rbf file at the root of the SD card.\n* Copy *.SMS ROMs into SMS folder.\n\n## Notes\n\n* Some games come in .gg format but are in fact SMS games. Rename the .gg extention to .sms or .bin to fix them. These games are mostly listed in this page [SMSpower-SMS-GG list](http://www.smspower.org/Tags/SMS-GG).\n* The \"Aspect ratio\" doesn't do much in PAL mode, that's normal.\n* The \"Region\" parameter toggle some hardware features that are specific to the different console models. Some localized games need these modifications to work properly. If a game doesn't work right, try to toggle this setting and reset the game in order to troubleshoot.\n* Each game cartridge comes with a specific mapper, which description is not included in the .gg ou .sms file. The core has a special logic to automatically determine which mapper needs to be used, but some games make a good effort to make this logic fail. The \"Disable mappers\" parameter permits to force the usage of the most used sega mapper.\n* The \"Masked left column\" option controls behaviour of left column when hidden by system (usually during horizontal scrolling). \"BG\" sets it to the background/overscan colour, as on original hardware. \"Black\" makes it black, which may look better on non full-screen settings as the column will blend in with surrounding black area. \"Cut\" will remove the column from the active image, so the horizontal resolution becomes 248 instead of 256. This will distort the image when scaled, particularly on integer scaling settings, but will use more of the screen. When \"Border\" is set to \"Yes\" the left column is always shown as part of the border, so \"Masked left column\" is disabled.\n",
@@ -15862,6 +15804,12 @@
           "name": "TRS-80_20250310.rbf",
           "sha": "a89c89cbd64ea784352dadf038a0ae81f1743738",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/TRS-80_MiSTer/master/releases/TRS-80_20250310.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "TRS-80_20250315.rbf",
+          "sha": "41c4d63a0772dce280a83f984f7699df789b32b4",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/TRS-80_MiSTer/master/releases/TRS-80_20250315.rbf",
           "type": "RBF"
         },
         {
