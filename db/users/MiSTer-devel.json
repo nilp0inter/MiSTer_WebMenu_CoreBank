@@ -9787,6 +9787,53 @@
       ]
     },
     {
+      "name": "Arcade-NaughtyBoy_MiSTer",
+      "description": null,
+      "readme": "---------------------------------------------------------------------------------\n---------------------------------------------------------------------------------\n-- Naughty Boy FPGA - DAR - 2025 - WIP\n-- http://darfpga.blogspot.fr\n-- darfpga : GitHub, sourceforge\n---------------------------------------------------------------------------------\n-- \n-- Support screen and controls rotation on HDMI output.\n-- Only controls are rotated on VGA output.\n-- \n-- \n-- Keyboard inputs :\n--\n--   F3          : Add coin\n--   F2          : Start 2 players\n--   F1          : Start 1 player\n--   SPACE       : Fire  \n--   UP/RIGHT    : Move up \n--   DOWN/LEFT   : Move down\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   D,G     : Player 2 Movements\n--   A           : Player 2 Fire\n--\n-- Joystick support.\n-- \n-- \n----------------------------------------------\n\nHiscore save/load: TODO\n\nSave and load of hiscores is supported for this core:\n\nTo save your hiscores manually, press the 'Save Settings' option in the OSD.  Hiscores will be automatically loaded when the core is started.\n\nTo enable automatic saving of hiscores, turn on the 'Autosave Hiscores' option, press the 'Save Settings' option in the OSD, and reload the core.  Hiscores will then be automatically saved (if they have changed) any time the OSD is opened.\n\nHiscore data is stored in /media/fat/config/nvram/ as ```<mra filename>.nvm```\n\n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
+      "archived": false,
+      "fork": false,
+      "url": "https://github.com/MiSTer-devel/Arcade-NaughtyBoy_MiSTer",
+      "releases": [
+        {
+          "name": "Naughty Boy (Jaleco).mra",
+          "sha": "22f7b0f7b6fd82f1f3baa792352f97693d3e945f",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-NaughtyBoy_MiSTer/main/releases/Naughty%20Boy%20(Jaleco).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Naughty Boy",
+            "rbf": "naughtyboy",
+            "zips": [
+              "naughtyb.zip"
+            ]
+          }
+        },
+        {
+          "name": "NaughtyBoy_20250316.rbf",
+          "sha": "a4557116b1fb1f7a69730fdae756d9b14ef3bc9e",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-NaughtyBoy_MiSTer/main/releases/NaughtyBoy_20250316.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NaughtyBoy_20250424.rbf",
+          "sha": "a7654054191aad47a5cc9ee4daeed2a1f5551406",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-NaughtyBoy_MiSTer/main/releases/NaughtyBoy_20250424.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NaughtyBoy_20250426.rbf",
+          "sha": "48c50bdbc3f80cdb2f1e87e1ea10d499a0d64280",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-NaughtyBoy_MiSTer/main/releases/NaughtyBoy_20250426.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NaughtyBoy_20250428.rbf",
+          "sha": "2a2fd4a96a04c81b1266c500c94b80ed98387f19",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-NaughtyBoy_MiSTer/main/releases/NaughtyBoy_20250428.rbf",
+          "type": "RBF"
+        }
+      ]
+    },
+    {
       "name": "Arcade-NinjaKun_MiSTer",
       "description": "Ninja-Kun for MiSter",
       "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: Ninja-Kun  port to MiSTer by MiSTer-X\n-- 23 October 2019\n-- https://github.com/MrX-8B/MiSTer-Arcade-NinjaKun\n-- \n-- Added support for Raiders5, Nova 2001 from MiST by Mike S\n---------------------------------------------------------------------------------\n-- FPGA Ninja-Kun for Spartan-6\n------------------------------------------------\n-- Copyright (c) 2011 MiSTer-X\n---------------------------------------------------------------------------------\n-- T80/T80s - Version : 0242\n-----------------------------\n-- Z80 compatible microprocessor core\n-- Copyright (c) 2001-2002 Daniel Wallner (jesus@opencores.org)\n---------------------------------------------------------------------------------\n-- YM2149 (AY-3-8910)\n-- Copyright (c) MikeJ - Jan 2005\n---------------------------------------------------------------------------------\n-- \n-- \n-- Keyboard inputs :\n--\n--   F2          : Coin + Start 2 players\n--   F1          : Coin + Start 1 player\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--   SPACE       : Shot\n--   CTRL        : Jump\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   R,F,D,G     : Player 2 Movements\n--   A           : Player 2 Shot\n--   S           : Player 2 Jump\n--\n-- Joystick support.\n--\n--\n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n\nNote for Nova 2001 (From Mame)\n\n- nova2001 is very sensitive to coin inputs, if the coin isn't held down long\n  enough, or is held down too long the game will reset, likewise if coins are\n  inserted too quickly. This only happens in nova2001 and not in nova2001u.\n  (the nova2001h set seems to be an unofficial fix for this issue, presumably\n   it's so sensitive it would reset sometimes in the original cabinet?)\n- nova2001h MRA was added to address the original cabinet issue.\n\n\n",
