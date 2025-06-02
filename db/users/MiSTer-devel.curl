@@ -571,6 +571,11 @@ url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SuperBreakout_MiSTe
 output = "_Arcade/cores/SuperBreakout_20240525.rbf"
 
 
+# TaitoF2
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/Arcade-TaitoF2_20250529.rbf"
+output = "_Arcade/cores/TaitoF2_20250529.rbf"
+
+
 # TaitoSJ
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/Arcade-TaitoSJ_20240525.rbf"
 output = "_Arcade/cores/TaitoSJ_20240525.rbf"
@@ -1014,6 +1019,11 @@ output = "_Others/SordM5_20230622.rbf"
 # Specialist
 url = "https://raw.githubusercontent.com/MiSTer-devel/Specialist_MiSTer/master/releases/Specialist_20240524.rbf"
 output = "_Computer/Specialist_20240524.rbf"
+
+
+# SCV
+url = "https://raw.githubusercontent.com/MiSTer-devel/SuperCassetteVision_MiSTer/main/releases/SCV_20250131.rbf"
+output = "_Others/SCV_20250131.rbf"
 
 
 # Svi328
@@ -3504,6 +3514,211 @@ output = "_Arcade/Subs.mra"
 # Super Breakout (Rev 04).mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SuperBreakout_MiSTer/master/releases/Super%20Breakout%20(Rev%2004).mra"
 output = "_Arcade/Super Breakout (Rev 04).mra"
+
+
+# Cameltry (World, YM2610).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/Cameltry%20(World%2C%20YM2610).mra"
+output = "_Arcade/Cameltry (World, YM2610).mra"
+
+
+# Dino Rex (World).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/Dino%20Rex%20(World).mra"
+output = "_Arcade/Dino Rex (World).mra"
+
+
+# Don Doko Don (World, rev 1).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/Don%20Doko%20Don%20(World%2C%20rev%201).mra"
+output = "_Arcade/Don Doko Don (World, rev 1).mra"
+
+
+# Drift Out (Europe).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/Drift%20Out%20(Europe).mra"
+output = "_Arcade/Drift Out (Europe).mra"
+
+
+# Final Blow (World).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/Final%20Blow%20(World).mra"
+output = "_Arcade/Final Blow (World).mra"
+
+
+# Growl (World, Rev 1).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/Growl%20(World%2C%20Rev%201).mra"
+output = "_Arcade/Growl (World, Rev 1).mra"
+
+
+# Gun & Frontier (World).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/Gun%20%26%20Frontier%20(World).mra"
+output = "_Arcade/Gun & Frontier (World).mra"
+
+
+# Liquid Kids (World).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/Liquid%20Kids%20(World).mra"
+output = "_Arcade/Liquid Kids (World).mra"
+
+
+# Mega Blast (World).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/Mega%20Blast%20(World).mra"
+output = "_Arcade/Mega Blast (World).mra"
+
+
+# PuLiRuLa (World, dual PCB).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/PuLiRuLa%20(World%2C%20dual%20PCB).mra"
+output = "_Arcade/PuLiRuLa (World, dual PCB).mra"
+
+
+# Solitary Fighter (World).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/Solitary%20Fighter%20(World).mra"
+output = "_Arcade/Solitary Fighter (World).mra"
+
+
+# Super Space Invaders '91 (World, revised code, Rev 1).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/Super%20Space%20Invaders%20'91%20(World%2C%20revised%20code%2C%20Rev%201).mra"
+output = "_Arcade/Super Space Invaders '91 (World, revised code, Rev 1).mra"
+
+
+# The Ninja Kids (World).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/The%20Ninja%20Kids%20(World).mra"
+output = "_Arcade/The Ninja Kids (World).mra"
+
+
+# Cameltry (Japan, YM2610).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/_alternatives/_Cameltry/Cameltry%20(Japan%2C%20YM2610).mra"
+output = "_Arcade/Cameltry (Japan, YM2610).mra"
+
+
+# Cameltry (US, YM2610).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/_alternatives/_Cameltry/Cameltry%20(US%2C%20YM2610).mra"
+output = "_Arcade/Cameltry (US, YM2610).mra"
+
+
+# Dino Rex (Japan).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/_alternatives/_Dino%20Rex/Dino%20Rex%20(Japan).mra"
+output = "_Arcade/Dino Rex (Japan).mra"
+
+
+# Dino Rex (US).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/_alternatives/_Dino%20Rex/Dino%20Rex%20(US).mra"
+output = "_Arcade/Dino Rex (US).mra"
+
+
+# Don Doko Don (Japan, rev 1).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/_alternatives/_Don%20Doko%20Don/Don%20Doko%20Don%20(Japan%2C%20rev%201).mra"
+output = "_Arcade/Don Doko Don (Japan, rev 1).mra"
+
+
+# Don Doko Don (US, rev 1).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/_alternatives/_Don%20Doko%20Don/Don%20Doko%20Don%20(US%2C%20rev%201).mra"
+output = "_Arcade/Don Doko Don (US, rev 1).mra"
+
+
+# Drift Out (Japan).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/_alternatives/_Drift%20Out/Drift%20Out%20(Japan).mra"
+output = "_Arcade/Drift Out (Japan).mra"
+
+
+# Final Blow (Japan).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/_alternatives/_Final%20Blow/Final%20Blow%20(Japan).mra"
+output = "_Arcade/Final Blow (Japan).mra"
+
+
+# Final Blow (US, rev 1).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/_alternatives/_Final%20Blow/Final%20Blow%20(US%2C%20rev%201).mra"
+output = "_Arcade/Final Blow (US, rev 1).mra"
+
+
+# Growl (US).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/_alternatives/_Growl/Growl%20(US).mra"
+output = "_Arcade/Growl (US).mra"
+
+
+# Growl (World).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/_alternatives/_Growl/Growl%20(World).mra"
+output = "_Arcade/Growl (World).mra"
+
+
+# Growl (World, prototype).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/_alternatives/_Growl/Growl%20(World%2C%20prototype).mra"
+output = "_Arcade/Growl (World, prototype).mra"
+
+
+# Runark (Japan).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/_alternatives/_Growl/Runark%20(Japan).mra"
+output = "_Arcade/Runark (Japan).mra"
+
+
+# Gun Frontier (Japan).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/_alternatives/_Gun%20Frontier/Gun%20Frontier%20(Japan).mra"
+output = "_Arcade/Gun Frontier (Japan).mra"
+
+
+# Liquid Kids (US).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/_alternatives/_Liquid%20Kids/Liquid%20Kids%20(US).mra"
+output = "_Arcade/Liquid Kids (US).mra"
+
+
+# Mizubaku Daibouken (Japan).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/_alternatives/_Liquid%20Kids/Mizubaku%20Daibouken%20(Japan).mra"
+output = "_Arcade/Mizubaku Daibouken (Japan).mra"
+
+
+# Mega Blast (Japan).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/_alternatives/_Mega%20Blast/Mega%20Blast%20(Japan).mra"
+output = "_Arcade/Mega Blast (Japan).mra"
+
+
+# Mega Blast (US).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/_alternatives/_Mega%20Blast/Mega%20Blast%20(US).mra"
+output = "_Arcade/Mega Blast (US).mra"
+
+
+# PuLiRuLa (Japan).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/_alternatives/_PuLiRuLa/PuLiRuLa%20(Japan).mra"
+output = "_Arcade/PuLiRuLa (Japan).mra"
+
+
+# PuLiRuLa (World, single PCB).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/_alternatives/_PuLiRuLa/PuLiRuLa%20(World%2C%20single%20PCB).mra"
+output = "_Arcade/PuLiRuLa (World, single PCB).mra"
+
+
+# Majestic Twelve - The Space Invaders Part IV (Japan).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/_alternatives/_Super%20Space%20Invaders%20'91/Majestic%20Twelve%20-%20The%20Space%20Invaders%20Part%20IV%20(Japan).mra"
+output = "_Arcade/Majestic Twelve - The Space Invaders Part IV (Japan).mra"
+
+
+# Majestic Twelve - The Space Invaders Part IV (US, earlier code base).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/_alternatives/_Super%20Space%20Invaders%20'91/Majestic%20Twelve%20-%20The%20Space%20Invaders%20Part%20IV%20(US%2C%20earlier%20code%20base).mra"
+output = "_Arcade/Majestic Twelve - The Space Invaders Part IV (US, earlier code base).mra"
+
+
+# Majestic Twelve - The Space Invaders Part IV (US, revised code).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/_alternatives/_Super%20Space%20Invaders%20'91/Majestic%20Twelve%20-%20The%20Space%20Invaders%20Part%20IV%20(US%2C%20revised%20code).mra"
+output = "_Arcade/Majestic Twelve - The Space Invaders Part IV (US, revised code).mra"
+
+
+# Majestic Twelve - The Space Invaders Part IV (US, revised code, Rev 1).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/_alternatives/_Super%20Space%20Invaders%20'91/Majestic%20Twelve%20-%20The%20Space%20Invaders%20Part%20IV%20(US%2C%20revised%20code%2C%20Rev%201).mra"
+output = "_Arcade/Majestic Twelve - The Space Invaders Part IV (US, revised code, Rev 1).mra"
+
+
+# Super Space Invaders '91 (World, earlier code base).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/_alternatives/_Super%20Space%20Invaders%20'91/Super%20Space%20Invaders%20'91%20(World%2C%20earlier%20code%20base).mra"
+output = "_Arcade/Super Space Invaders '91 (World, earlier code base).mra"
+
+
+# Super Space Invaders '91 (World, revised code).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/_alternatives/_Super%20Space%20Invaders%20'91/Super%20Space%20Invaders%20'91%20(World%2C%20revised%20code).mra"
+output = "_Arcade/Super Space Invaders '91 (World, revised code).mra"
+
+
+# The Ninja Kids (Japan).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/_alternatives/_The%20Ninja%20Kids/The%20Ninja%20Kids%20(Japan).mra"
+output = "_Arcade/The Ninja Kids (Japan).mra"
+
+
+# The Ninja Kids (US).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/_alternatives/_The%20Ninja%20Kids/The%20Ninja%20Kids%20(US).mra"
+output = "_Arcade/The Ninja Kids (US).mra"
 
 
 # Alpine Ski.mra
