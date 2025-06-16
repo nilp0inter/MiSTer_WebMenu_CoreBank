@@ -838,6 +838,58 @@
       "releases": []
     },
     {
+      "name": "Saturn_MiSTer",
+      "description": "Sega Saturn for MiSTer",
+      "readme": "# [Sega Saturn](https://en.wikipedia.org/wiki/Sega_Saturn) for MiSTer\n\n## Hardware Requirements\n\n- 128 MB SDRAM Module (Primary)\n- SDRAM Module of any size (32MB-128MB) (Secondary)\n\n> **Note:** Dual SDRAM modules is recommended for better compatibility.\n\n## Status\n\nCurrent status is WIP/Beta\n\nKnown issues:\n\n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/theypsilon/Saturn_MiSTer",
+      "releases": [
+        {
+          "name": "Arcade-ST-V_20250612.rbf",
+          "sha": "6451b0558c199ac3e469f1b4b19ee91f88099c5d",
+          "url": "https://raw.githubusercontent.com/theypsilon/Saturn_MiSTer/main/releases/Arcade-ST-V_20250612.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Saturn_20231010.rbf",
+          "sha": "5db313a4cfe017edcc81a999cde9c3aa71dbc096",
+          "url": "https://raw.githubusercontent.com/theypsilon/Saturn_MiSTer/main/releases/Saturn_20231010.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Saturn_20231018.rbf",
+          "sha": "8dc94d7c26e004205941e15bf74becae3a2cbfea",
+          "url": "https://raw.githubusercontent.com/theypsilon/Saturn_MiSTer/main/releases/Saturn_20231018.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Saturn_20240323.rbf",
+          "sha": "cca090de4f7fb2373d457fbfa726f211da5b2167",
+          "url": "https://raw.githubusercontent.com/theypsilon/Saturn_MiSTer/main/releases/Saturn_20240323.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Saturn_20240628.rbf",
+          "sha": "6edd1806addeb0d5baa5991e69541189c41f0b1b",
+          "url": "https://raw.githubusercontent.com/theypsilon/Saturn_MiSTer/main/releases/Saturn_20240628.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Saturn_20250113.rbf",
+          "sha": "9696a709c3115e55ec0cc40acc4f679c54774848",
+          "url": "https://raw.githubusercontent.com/theypsilon/Saturn_MiSTer/main/releases/Saturn_20250113.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Saturn_20250612.rbf",
+          "sha": "5528f0ef08bfb35eaae2c6b5524e42e8f6fc47d4",
+          "url": "https://raw.githubusercontent.com/theypsilon/Saturn_MiSTer/main/releases/Saturn_20250612.rbf",
+          "type": "RBF"
+        }
+      ]
+    },
+    {
       "name": "Unofficial_Distribution_MiSTer",
       "description": null,
       "readme": "# theypsilon Unofficial Distribution\n\nThis repository contains some unofficial MiSTer cores. No new cores will be added.\n\n#### List of Tags that you may use with the Downloader and the 'Custom Download Filters' feature.\n\n`alternatives`, `arcade`, `arcade-cores`, `arcade-nemesis`, `computer`, `computer-cores`, `cores`, `docs`, `games`, `hbmame`, `mame`, `mra`, `readme`, `zx48`",

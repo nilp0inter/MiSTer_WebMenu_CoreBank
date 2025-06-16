@@ -721,6 +721,11 @@ url = "https://raw.githubusercontent.com/MiSTer-devel/C64_MiSTer/master/releases
 output = "_Computer/C64_20240418.rbf"
 
 
+# CDi
+url = "https://raw.githubusercontent.com/MiSTer-devel/CDi_MiSTer/main/releases/CDi_20250614.rbf"
+output = "_Others/CDi_20250614.rbf"
+
+
 # ChannelF
 url = "https://raw.githubusercontent.com/MiSTer-devel/ChannelF_MiSTer/master/releases/ChannelF_20221229.rbf"
 output = "_Others/ChannelF_20221229.rbf"
@@ -986,9 +991,14 @@ url = "https://raw.githubusercontent.com/MiSTer-devel/SAM-Coupe_MiSTer/master/re
 output = "_Computer/SAMCoupe_20240421.rbf"
 
 
+# ST-V
+url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/Arcade-ST-V_20250612.rbf"
+output = "_Arcade/cores/ST-V_20250612.rbf"
+
+
 # Saturn
-url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/Saturn_20250113.rbf"
-output = "_Others/Saturn_20250113.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/Saturn_20250613.rbf"
+output = "_Others/Saturn_20250613.rbf"
 
 
 # SGB
@@ -1007,8 +1017,8 @@ output = "_Console/SMS_20240418.rbf"
 
 
 # SNES
-url = "https://raw.githubusercontent.com/MiSTer-devel/SNES_MiSTer/master/releases/SNES_20250525.rbf"
-output = "_Console/SNES_20250525.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/SNES_MiSTer/master/releases/SNES_20250605.rbf"
+output = "_Console/SNES_20250605.rbf"
 
 
 # SordM5
@@ -3934,6 +3944,316 @@ output = "_Arcade/Zaxxon (Set 1, Rev D).mra"
 # Zig Zag (Dig Dug Conversion) [bl].mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-ZigZag_MiSTer/master/releases/Zig%20Zag%20(Dig%20Dug%20Conversion)%20%5Bbl%5D.mra"
 output = "_Arcade/Zig Zag (Dig Dug Conversion) [bl].mra"
+
+
+# Astra SuperStars (J 980514 V1.002).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Astra%20SuperStars%20(J%20980514%20V1.002).mra"
+output = "_Arcade/Astra SuperStars (J 980514 V1.002).mra"
+
+
+# Baku Baku Animal (J 950407 V1.000).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Baku%20Baku%20Animal%20(J%20950407%20V1.000).mra"
+output = "_Arcade/Baku Baku Animal (J 950407 V1.000).mra"
+
+
+# Batman Forever (JUE 960507 V1.000).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Batman%20Forever%20(JUE%20960507%20V1.000).mra"
+output = "_Arcade/Batman Forever (JUE 960507 V1.000).mra"
+
+
+# Columns '97 (JET 961209 V1.000).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Columns%20'97%20(JET%20961209%20V1.000).mra"
+output = "_Arcade/Columns '97 (JET 961209 V1.000).mra"
+
+
+# Cotton 2 (JUET 970902 V1.000).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Cotton%202%20(JUET%20970902%20V1.000).mra"
+output = "_Arcade/Cotton 2 (JUET 970902 V1.000).mra"
+
+
+# Cotton Boomerang (JUET 980709 V1.000).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Cotton%20Boomerang%20(JUET%20980709%20V1.000).mra"
+output = "_Arcade/Cotton Boomerang (JUET 980709 V1.000).mra"
+
+
+# Critter Crusher (EA 951204 V1.000).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Critter%20Crusher%20(EA%20951204%20V1.000).mra"
+output = "_Arcade/Critter Crusher (EA 951204 V1.000).mra"
+
+
+# DaeJeon! SanJeon SuJeon (AJTUE 990412 V1.000).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/DaeJeon!%20SanJeon%20SuJeon%20(AJTUE%20990412%20V1.000).mra"
+output = "_Arcade/DaeJeon! SanJeon SuJeon (AJTUE 990412 V1.000).mra"
+
+
+# Danchi de Hanafuda (J 990607 V1.400).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Danchi%20de%20Hanafuda%20(J%20990607%20V1.400).mra"
+output = "_Arcade/Danchi de Hanafuda (J 990607 V1.400).mra"
+
+
+# Danchi de Quiz Okusan Yontaku Desuyo! (J 001128 V1.200).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Danchi%20de%20Quiz%20Okusan%20Yontaku%20Desuyo!%20(J%20001128%20V1.200).mra"
+output = "_Arcade/Danchi de Quiz Okusan Yontaku Desuyo! (J 001128 V1.200).mra"
+
+
+# Decathlete (JUET 960424 V1.000).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Decathlete%20(JUET%20960424%20V1.000).mra"
+output = "_Arcade/Decathlete (JUET 960424 V1.000).mra"
+
+
+# Decathlete (JUET 960709 V1.001).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Decathlete%20(JUET%20960709%20V1.001).mra"
+output = "_Arcade/Decathlete (JUET 960709 V1.001).mra"
+
+
+# Die Hard Arcade (UET 960515 V1.000).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Die%20Hard%20Arcade%20(UET%20960515%20V1.000).mra"
+output = "_Arcade/Die Hard Arcade (UET 960515 V1.000).mra"
+
+
+# Dynamite Deka (J 960515 V1.000).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Dynamite%20Deka%20(J%20960515%20V1.000).mra"
+output = "_Arcade/Dynamite Deka (J 960515 V1.000).mra"
+
+
+# Ejihon Tantei Jimusyo (J 950613 V1.000).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Ejihon%20Tantei%20Jimusyo%20(J%20950613%20V1.000).mra"
+output = "_Arcade/Ejihon Tantei Jimusyo (J 950613 V1.000).mra"
+
+
+# Final Arch (J 950714 V1.001).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Final%20Arch%20(J%20950714%20V1.001).mra"
+output = "_Arcade/Final Arch (J 950714 V1.001).mra"
+
+
+# Final Fight Revenge - Final Revenge (JUET 990714 V1.000).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Final%20Fight%20Revenge%20-%20Final%20Revenge%20(JUET%20990714%20V1.000).mra"
+output = "_Arcade/Final Fight Revenge - Final Revenge (JUET 990714 V1.000).mra"
+
+
+# Final Fight Revenge - Final Revenge (JUET 990930 V1.100).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Final%20Fight%20Revenge%20-%20Final%20Revenge%20(JUET%20990930%20V1.100).mra"
+output = "_Arcade/Final Fight Revenge - Final Revenge (JUET 990930 V1.100).mra"
+
+
+# Find Love (J 971212 V1.000).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Find%20Love%20(J%20971212%20V1.000).mra"
+output = "_Arcade/Find Love (J 971212 V1.000).mra"
+
+
+# Funky Head Boxers (JUETBKAL 951218 V1.000).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Funky%20Head%20Boxers%20(JUETBKAL%20951218%20V1.000).mra"
+output = "_Arcade/Funky Head Boxers (JUETBKAL 951218 V1.000).mra"
+
+
+# Golden Axe - The Duel (JUETL 950117 V1.000).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Golden%20Axe%20-%20The%20Duel%20(JUETL%20950117%20V1.000).mra"
+output = "_Arcade/Golden Axe - The Duel (JUETL 950117 V1.000).mra"
+
+
+# Groove on Fight - Gouketsuji Ichizoku 3 (J 970416 V1.001).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Groove%20on%20Fight%20-%20Gouketsuji%20Ichizoku%203%20(J%20970416%20V1.001).mra"
+output = "_Arcade/Groove on Fight - Gouketsuji Ichizoku 3 (J 970416 V1.001).mra"
+
+
+# Guardian Force (JUET 980318 V0.105).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Guardian%20Force%20(JUET%20980318%20V0.105).mra"
+output = "_Arcade/Guardian Force (JUET 980318 V0.105).mra"
+
+
+# Hanagumi Taisen Columns - Sakura Wars (J 971007 V1.010).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Hanagumi%20Taisen%20Columns%20-%20Sakura%20Wars%20(J%20971007%20V1.010).mra"
+output = "_Arcade/Hanagumi Taisen Columns - Sakura Wars (J 971007 V1.010).mra"
+
+
+# Karaoke Quiz Intro Don Don! (J 960213 V1.000).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Karaoke%20Quiz%20Intro%20Don%20Don!%20(J%20960213%20V1.000).mra"
+output = "_Arcade/Karaoke Quiz Intro Don Don! (J 960213 V1.000).mra"
+
+
+# Magical Zunou Power (J 961031 V1.000).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Magical%20Zunou%20Power%20(J%20961031%20V1.000).mra"
+output = "_Arcade/Magical Zunou Power (J 961031 V1.000).mra"
+
+
+# Maru-Chan de Goo! (J 971216 V1.000).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Maru-Chan%20de%20Goo!%20(J%20971216%20V1.000).mra"
+output = "_Arcade/Maru-Chan de Goo! (J 971216 V1.000).mra"
+
+
+# Mausuke no Ojama the World (J 960314 V1.000).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Mausuke%20no%20Ojama%20the%20World%20(J%20960314%20V1.000).mra"
+output = "_Arcade/Mausuke no Ojama the World (J 960314 V1.000).mra"
+
+
+# Microman Battle Charge (J 990326 V1.000).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Microman%20Battle%20Charge%20(J%20990326%20V1.000).mra"
+output = "_Arcade/Microman Battle Charge (J 990326 V1.000).mra"
+
+
+# Name Club Disney (J 980614 V1.000).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Name%20Club%20Disney%20(J%20980614%20V1.000).mra"
+output = "_Arcade/Name Club Disney (J 980614 V1.000).mra"
+
+
+# Name Club Ver.3 (J 970723 V1.000).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Name%20Club%20Ver.3%20(J%20970723%20V1.000).mra"
+output = "_Arcade/Name Club Ver.3 (J 970723 V1.000).mra"
+
+
+# Othello Shiyouyo (J 980423 V1.002).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Othello%20Shiyouyo%20(J%20980423%20V1.002).mra"
+output = "_Arcade/Othello Shiyouyo (J 980423 V1.002).mra"
+
+
+# Pebble Beach - The Great Shot (JUE 950913 V0.990).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Pebble%20Beach%20-%20The%20Great%20Shot%20(JUE%20950913%20V0.990).mra"
+output = "_Arcade/Pebble Beach - The Great Shot (JUE 950913 V0.990).mra"
+
+
+# Princess Clara Daisakusen (J 960910 V1.000).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Princess%20Clara%20Daisakusen%20(J%20960910%20V1.000).mra"
+output = "_Arcade/Princess Clara Daisakusen (J 960910 V1.000).mra"
+
+
+# Print Club 2 (U 970921 V1.000).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Print%20Club%202%20(U%20970921%20V1.000).mra"
+output = "_Arcade/Print Club 2 (U 970921 V1.000).mra"
+
+
+# Print Club 2 Vol. 3 (U 990310 V1.000).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Print%20Club%202%20Vol.%203%20(U%20990310%20V1.000).mra"
+output = "_Arcade/Print Club 2 Vol. 3 (U 990310 V1.000).mra"
+
+
+# Print Club Pokemon B (U 991126 V1.000).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Print%20Club%20Pokemon%20B%20(U%20991126%20V1.000).mra"
+output = "_Arcade/Print Club Pokemon B (U 991126 V1.000).mra"
+
+
+# Pro Mahjong Kiwame S (J 951020 V1.208).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Pro%20Mahjong%20Kiwame%20S%20(J%20951020%20V1.208).mra"
+output = "_Arcade/Pro Mahjong Kiwame S (J 951020 V1.208).mra"
+
+
+# Puyo Puyo Sun (J 961115 V0.001).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Puyo%20Puyo%20Sun%20(J%20961115%20V0.001).mra"
+output = "_Arcade/Puyo Puyo Sun (J 961115 V0.001).mra"
+
+
+# Puzzle & Action- BoMulEul Chajara (JUET 970125 V2.00K).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Puzzle%20%26%20Action-%20BoMulEul%20Chajara%20(JUET%20970125%20V2.00K).mra"
+output = "_Arcade/Puzzle & Action- BoMulEul Chajara (JUET 970125 V2.00K).mra"
+
+
+# Puzzle & Action- Sando-R (J 951114 V1.000).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Puzzle%20%26%20Action-%20Sando-R%20(J%20951114%20V1.000).mra"
+output = "_Arcade/Puzzle & Action- Sando-R (J 951114 V1.000).mra"
+
+
+# Puzzle & Action- Treasure Hunt (JUET 970901 V2.00E).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Puzzle%20%26%20Action-%20Treasure%20Hunt%20(JUET%20970901%20V2.00E).mra"
+output = "_Arcade/Puzzle & Action- Treasure Hunt (JUET 970901 V2.00E).mra"
+
+
+# Radiant Silvergun (JUET 980523 V1.000).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Radiant%20Silvergun%20(JUET%20980523%20V1.000).mra"
+output = "_Arcade/Radiant Silvergun (JUET 980523 V1.000).mra"
+
+
+# Sea Bass Fishing (JUET 971110 V0.001).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Sea%20Bass%20Fishing%20(JUET%20971110%20V0.001).mra"
+output = "_Arcade/Sea Bass Fishing (JUET 971110 V0.001).mra"
+
+
+# Shanghai - The Great Wall - Shanghai Triple Threat (JUE 950623 V1.005).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Shanghai%20-%20The%20Great%20Wall%20-%20Shanghai%20Triple%20Threat%20(JUE%20950623%20V1.005).mra"
+output = "_Arcade/Shanghai - The Great Wall - Shanghai Triple Threat (JUE 950623 V1.005).mra"
+
+
+# Shienryu (JUET 961226 V1.000).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Shienryu%20(JUET%20961226%20V1.000).mra"
+output = "_Arcade/Shienryu (JUET 961226 V1.000).mra"
+
+
+# Soukyugurentai - Terra Diver (JUET 960821 V1.000).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Soukyugurentai%20-%20Terra%20Diver%20(JUET%20960821%20V1.000).mra"
+output = "_Arcade/Soukyugurentai - Terra Diver (JUET 960821 V1.000).mra"
+
+
+# Steep Slope Sliders (JUET 981110 V1.000).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Steep%20Slope%20Sliders%20(JUET%20981110%20V1.000).mra"
+output = "_Arcade/Steep Slope Sliders (JUET 981110 V1.000).mra"
+
+
+# Stress Busters (J 981020 V1.000).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Stress%20Busters%20(J%20981020%20V1.000).mra"
+output = "_Arcade/Stress Busters (J 981020 V1.000).mra"
+
+
+# Suikoenbu - Outlaws of the Lost Dynasty (JUETL 950314 V2.001).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Suikoenbu%20-%20Outlaws%20of%20the%20Lost%20Dynasty%20(JUETL%20950314%20V2.001).mra"
+output = "_Arcade/Suikoenbu - Outlaws of the Lost Dynasty (JUETL 950314 V2.001).mra"
+
+
+# Super Major League (U 960108 V1.000).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Super%20Major%20League%20(U%20960108%20V1.000).mra"
+output = "_Arcade/Super Major League (U 960108 V1.000).mra"
+
+
+# Taisen Tanto-R Sashissu!! (J 980216 V1.000).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Taisen%20Tanto-R%20Sashissu!!%20(J%20980216%20V1.000).mra"
+output = "_Arcade/Taisen Tanto-R Sashissu!! (J 980216 V1.000).mra"
+
+
+# Technical Bowling (J 971212 V1.000).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Technical%20Bowling%20(J%20971212%20V1.000).mra"
+output = "_Arcade/Technical Bowling (J 971212 V1.000).mra"
+
+
+# Tecmo World Cup '98 (JUET 980410 V1.000).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Tecmo%20World%20Cup%20'98%20(JUET%20980410%20V1.000).mra"
+output = "_Arcade/Tecmo World Cup '98 (JUET 980410 V1.000).mra"
+
+
+# Tecmo World Soccer '98 (JUET 980410 V1.000).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Tecmo%20World%20Soccer%20'98%20(JUET%20980410%20V1.000).mra"
+output = "_Arcade/Tecmo World Soccer '98 (JUET 980410 V1.000).mra"
+
+
+# Touryuu Densetsu Elan-Doree - Elan Doree - Legend of Dragoon (JUET 980922 V1.006).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Touryuu%20Densetsu%20Elan-Doree%20-%20Elan%20Doree%20-%20Legend%20of%20Dragoon%20(JUET%20980922%20V1.006).mra"
+output = "_Arcade/Touryuu Densetsu Elan-Doree - Elan Doree - Legend of Dragoon (JUET 980922 V1.006).mra"
+
+
+# Virtua Fighter Kids (JUET 960319 V0.000).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Virtua%20Fighter%20Kids%20(JUET%20960319%20V0.000).mra"
+output = "_Arcade/Virtua Fighter Kids (JUET 960319 V0.000).mra"
+
+
+# Virtua Fighter Remix (JUETBKAL 950428 V1.000).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Virtua%20Fighter%20Remix%20(JUETBKAL%20950428%20V1.000).mra"
+output = "_Arcade/Virtua Fighter Remix (JUETBKAL 950428 V1.000).mra"
+
+
+# Virtual Mahjong (J 961214 V1.000).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Virtual%20Mahjong%20(J%20961214%20V1.000).mra"
+output = "_Arcade/Virtual Mahjong (J 961214 V1.000).mra"
+
+
+# Virtual Mahjong 2 - My Fair Lady (J 980608 V1.000).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Virtual%20Mahjong%202%20-%20My%20Fair%20Lady%20(J%20980608%20V1.000).mra"
+output = "_Arcade/Virtual Mahjong 2 - My Fair Lady (J 980608 V1.000).mra"
+
+
+# Winter Heat (JUET 971012 V1.000).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Winter%20Heat%20(JUET%20971012%20V1.000).mra"
+output = "_Arcade/Winter Heat (JUET 971012 V1.000).mra"
+
+
+# Zen Nippon Pro-Wrestling Featuring Virtua (J 971123 V1.000).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Zen%20Nippon%20Pro-Wrestling%20Featuring%20Virtua%20(J%20971123%20V1.000).mra"
+output = "_Arcade/Zen Nippon Pro-Wrestling Featuring Virtua (J 971123 V1.000).mra"
 
 
 # Astro Flash (Japan).mra

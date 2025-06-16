@@ -15637,7 +15637,7 @@
     {
       "name": "ArcadeDatabase_MiSTer",
       "description": "Database for arcade organizer",
-      "readme": "# Arcade Database for MiSTer\n\nThe ArcadeDatabase_[MiSTer](https://github.com/MiSTer-devel/Wiki_MiSTer/wiki) repo contains files and lists about the different arcade core MRAs that are available for MiSTer.\n\nAnything missing in the database or have a suggestion? Create an issue ticket or submit a pull request.\n\n# Naming convention\nSince it is important to know exactly what version of the game you play, I've decided to go for the following naming convention:  \nGame Name (Country, Version) [bl/hb].  \nCountry should follow the [Alpha-2](https://www.iban.com/country-codes) country code.  \n[bl] means Bootleg  \n[hb] means Homebrew\n\n# Preferred version\nAs you might've noticed, there are different versions/clones of the same game. Sometimes the preferred version is documented, and sometimes it is not. Basic rule of thumb is the following (from MAME doc):\n\n```\n- Prefer latest release version\n- Prefer English language\n- Prefer most widespread release\n- Prefer most complete version\n- Prefer versions that are uncensored, and have story/cutscenes intact\n- Prefer versions that keep the original gameplay balance\n- Prefer releases from original developers/publishers rather than licensees\n- Prefer releases without region-specific notices or warnings\n```\n",
+      "readme": "\n# Arcade Database for MiSTer\n\n  \n\nThe ArcadeDatabase_[MiSTer](https://github.com/MiSTer-devel/Wiki_MiSTer/wiki) repo contains files and lists about the different arcade core MRAs that are available for MiSTer.\n\n  \n\n# How to contribute\n\nTo make it easier for users to contribute, we now have automation.\n\nIf you want to add or update entries in the database, follow these simple steps:\n\n  \n\n1. Download the current CSV file from the repository.\n\n  \n\n2. Edit it locally with your changes (you can import it to excel if you want to, just note the delimiter we use is comma).\n\n  \n\n3. Upload your modified CSV file to the ArcadeDatabase_CSV folder and make a pull request.\n\n  \n\n4. Once your CSV file is uploaded and the pull request is merged, the automation script will process it and update the database accordingly.\n\n  \n\n# Naming convention\n\nSince it is important to know exactly what version of the game you play, I've decided to go for the following naming convention:\n\nGame Name (Country, Version) [bl/hb].\n\nCountry should follow the [Alpha-2](https://www.iban.com/country-codes) country code.\n\n[bl] means Bootleg\n\n[hb] means Homebrew\n\n  \n\n# Preferred version\n\nAs you might've noticed, there are different versions/clones of the same game. Sometimes the preferred version is documented, and sometimes it is not. Basic rule of thumb is the following (from MAME doc):\n\n  \n\n```\n\n- Prefer latest release version\n\n- Prefer English language\n\n- Prefer most widespread release\n\n- Prefer most complete version\n\n- Prefer versions that are uncensored, and have story/cutscenes intact\n\n- Prefer versions that keep the original gameplay balance\n\n- Prefer releases from original developers/publishers rather than licensees\n\n- Prefer releases without region-specific notices or warnings\n\n```",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/ArcadeDatabase_MiSTer",
@@ -17617,6 +17617,52 @@
       ]
     },
     {
+      "name": "CDi_MiSTer",
+      "description": "A repo dedicated to create an FPGA implementation of the Philips CD-i",
+      "readme": "# CDi_MiSTer\n\nA project dedicated to create an FPGA implementation of the Philips CD-i to be usable for the MiSTer FPGA project.\nAs every Philips CD-i player has a different hardware, this project focuses on reverse engineering the \"Mono I\" PCB.\nThis mainboard is used in models like the 210/00, 210/05 or 220/20.\n\nMost games which only utilize the hardware of a CD-i should work as expected.\nTitles which require the Digital Video Cartridge will **NOT** work as the required hardware doesn't exist yet.\nThe RAM expansion of the DVC is included and will enhance some games.\n\n## Usage\n\nPlace `cdi200.rom` as `boot0.rom` in `/media/fat/games/CD-i`.\nPlace `zx405042p__cdi_slave_2.0__b43t__zzmk9213.mc68hc705c8a_withtestrom.7206` as `boot1.rom` next to it.\n\nThis core is tested with these files and their respective md5sum:\n\n    2969341396aa61e0143dc2351aaa6ef6  cdi200.rom\n    3d20cf7550f1b723158b42a1fd5bac62  zx405042p__cdi_slave_2.0__b43t__zzmk9213.mc68hc705c8a_withtestrom.7206\n\nDue to legal reasons, these files must be sourced separately.\n\nSave files are stored inside an 8K NvRAM. MiSTer will create one save file per CD.\nWhenever the NvRAM state changes, the \"User\" LED will light up, indicating\na change is queued to store. When the OSD is opened, the NvRAM will be flushed to SD card.\n\nThe save files containing the NvRAM are compatible with the CD-i emulation of MAME.\n\nDigital gamepads, analog gamepads and mice are supported for use with this core.\nTo play a title, load a CD and press on the play button at the start screen.\nCD images can be stored as CHD or CUE/BIN format.\n\n## Troubleshooting\n\n* My NTSC CRT television set is not getting a stable image\n  *  Please switch the core to NTSC and reset via OSD. This should fix the problem.\n\n## Status\n\nCore Utilization:\n\n    Logic utilization (in ALMs)  13,513 / 41,910 ( 32 % )\n    Total registers              15630\n    Total block memory bits      630,471 / 5,662,720 ( 11 % )\n    Total DSP Blocks             66 / 112 ( 59 % )\n\n### TODOs in order of priority\n\n* Find a better solution for reducing CPU speed\n* Find a better solution for CD data stalling (take a screenshot or plug in a USB device)\n    * PSX core seems to halt the whole machine to avoid this situation\n* Fix regression: Audio hiccups during Philips Logo in Burn:Cycle\n    * A workaround is CPU overclocking\n* Investigate input responsiveness (skipped events?)\n* Investigate screeching sound effect in the menu of \"Golf Tips\"\n* Fix hang on audio track stop or change in media player\n* Cheat support?\n* Digital Video Cartridge MPEG Decoder\n* Investigate \"Gray border glitch\" at the top of \"Myst\" gameplay (seems to be only one plane)\n* Fix reset behaviour (Core is sometimes hanging after reset)\n* Investigate desaturated colors / low contrast in \"Photo CD Sample Disc\"\n    * Probably fixable with 16-235 to 0-255 scaling\n    * More investigation needed\n* Find a solution for the video mode reset during system resets\n    * The ST flag is the issue here, causing a video mode change\n* Add SNAC support (IR remote + wired controller)\n    * RC5 support is added. A test using real hardware is required.\n* CD+G\n* Possibly adding support for other PCBs (like Mono II)\n* Refurbish I2C for the front display and show the content as picture in picture during changes?\n    * It might not even be required at all.\n\n### Issues with external dependencies\n\n* A dump of the SLAVE 3.2 ROM is required to fix some hacks\n    * I2C front panel data is not correctly handled (e.g. Play button)\n\n## Simulation\n\nEven so, the [sim](sim) folder seems to be the correct one, it is deprecated.\nIt was used for mixed language simulation with the free version of ModelSim when the project has started.\n\nThe [sim2](sim2) folder is the current one, used for most development and makes use of Verilator for improved performance.\n\n## Used resources\n\nThis MiSTer core would've probably never been possible without the reverse engineering efforts of certain people.\nThanks to [CD-i Fan](https://www.cdiemu.org/) for the insights into his closed source CD-i Emulator.\nAlso Thanks to MooglyGuy, which took on the task of implementing a CD-i emulator into MAME, which I used to analyse\nthe program flow of the CD-i boot process.\n\n* https://github.com/TobiFlex/TG68K.C\n* https://opencores.org/projects/68hc05\n* https://github.com/cdifan/cdichips\n* http://www.icdia.co.uk/microware/index.html\n* https://github.com/Stovent/CeDImu/blob/master/src/CDI/OS9/SystemCalls.hpp\n* playcdi (by CD-i Fan) (auto play for Mono I PCB)\n\n## FAQ, Issues and Quirks\n\nThe production quality of the CD-i hardware and the software running on it is sometimes questionable.\nFor this reason, I've created a small list of some known quirks, someone might suspect of being caused\nby emulation errors but are also present on the real machine.\n\n* Is the \"Digital Video Cartridge\" supported?\n    * No! Please stop asking!\n    * Potential development on the DVC might only start after everything works without bugs on the base machine.\n* The map of \"Zelda - Wand of Gamelon\" has micro jitter during scrolling\n    * This also happens on real 210/05 hardware\n* \"Hotel Mario\" seems to have the first samples of every ingame song repeated\n    * You have good ears as it is barely noticeable. This also happens on real hardware.\n* Some earlier CD-i titles have both stereo channels swapped\n    * Yes, according to an [internal memo from Philips](http://icdia.co.uk/docs/mono2status.zip) there\n      were manufacturing issues and some early players have the left and right channel swapped.\n      This might explain discrepancies.\n    * One known quirk is inverted stereo on the \"Philips Logo Jingle\" of \"Zelda - Wand of Gamelon\"\n* During the rotating transition in \"Myst\" there are glitched lines at the bottom\n    * This also happens to some extent on a real 210/05 hardware and is caused by a misplaced Video IRQ\n      The video data is changed while it is displayed.\n* When I load a save game in \"Burn:Cycle\" it plays a short and unclean loop of noise until I do something\n    * I thought that was a bug in the core at first too. However, it is actually like this on a real CD-i too.\n* The music of Burn:Cycle sometimes has \"pops\" and \"clicks\"\n    * This game is special. It doesn't play music from CD like most games for this system would do.\n    * Small loops of sampled music are loaded from CD, stored in memory and randomly concatenated together\n      to create the background music. These samples are sometimes not very \"loopable\" creating a pop at looping points.\n    * This issue is reproducible on a real 210/05 as well\n* The music during the Philips Logo animation of Burn:Cycle has broken audio\n    * This issue is reproducible on a real 210/05 as well\n    * For some reason, it seems to be absent on other models with different hardware, like the 450/00\n    * The problem can be fixed by overclocking the CPU\n* Burn:Cycle - Random flickery animated text in front of the \"Psychic Roulette\" credit card terminal\n    * This actually happens on the real machine. I also thought this might be a CPU speed issue, considering that\n      the flickering disappears if the CPU is slightly overclocked.\n* Flashback: The audio and video during the intro are asynchronous\n    * This curiously happens on the real machine as well and doesn't even depend on 50 or 60 Hz\n    * It seems to be an oversight by the developers when the game was ported to CD-i\n* When dying in \"Zelda's Adventure\" the accompanying sound effect doesn't match the audio data on CD\n    * Good catch! This is a programming error which can be reproduced on a real CD-i 210/05 as well,\n      which causes the audio playback to start one sector too late.\n    * The same phenomenon exists in the \"Help cutscene\" of \"Zelda - Wand of Gamelon\"\n        * It is not audible in that game, because of silence in the beginning\n* The intro music of Zenith is played only on the left audio channel\n  * Yes, this happens on a real 210/05 too. To be sure, I've tested it as well\n    on a 450/00. It seems to be an oversight by the developers.\n* During the cinematic intro of Kether, the screen flickers to black on some frames during the fading slideshows\n  * This curiously happens on a real 210/05 too.\n* If I mash the buttons really hard when booting up Tetris, I get a colorful glitched screen instead of the Philips Logo\n  * Congratulations for this obscure finding. This happens on a real 210/05 too!\n* During the intro of \"Zombie Dinos vom Planeten Zeltoid\", the title text looks like the last row of pixels is missing during the scaling effect\n  * Yes, an oversight it seems. The scaling operation is broken, even on the real machine.\n* QuizMania - Missing animation graphics during intro and alignment issues during video playback in menu\n  * This game seems to have problems with 60Hz/NTSC mode. Both issues can be reproduced using real 210/05 hardware\n  * I assume that this was a local production for the italian market and no testing was performed on NTSC machines\n\n\n",
+      "archived": false,
+      "fork": false,
+      "url": "https://github.com/MiSTer-devel/CDi_MiSTer",
+      "releases": [
+        {
+          "name": "CDi_20250214.rbf",
+          "sha": "5d3a3a9c64f320499a7e460cd69efa80a88ae5ea",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/CDi_MiSTer/main/releases/CDi_20250214.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "CDi_20250223.rbf",
+          "sha": "1e23cd7a3524eb304e592dafcef14f42e18b1ab8",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/CDi_MiSTer/main/releases/CDi_20250223.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "CDi_20250320.rbf",
+          "sha": "5dd67a0ce00592750569120407f0e977445b6705",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/CDi_MiSTer/main/releases/CDi_20250320.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "CDi_20250329.rbf",
+          "sha": "8d290b635d976f7170061d985471b07b02b3451f",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/CDi_MiSTer/main/releases/CDi_20250329.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "CDi_20250422.rbf",
+          "sha": "1961df4f7baa542026202dd0b5d1a471c6d765fc",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/CDi_MiSTer/main/releases/CDi_20250422.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "CDi_20250614.rbf",
+          "sha": "2299830e2d6fca0b12ce7684e8ba14c31173e1e0",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/CDi_MiSTer/main/releases/CDi_20250614.rbf",
+          "type": "RBF"
+        }
+      ]
+    },
+    {
       "name": "ChannelF_MiSTer",
       "description": "Fairchild Channel F core for MiSTer",
       "readme": "# ChannelF_MiSTer\n\nControls\nChannelF uses two joysticks that can be moved in 4 directions, they can also be pushed, pulled and the knob can be turned left or right.\n\nThere are 5 buttons on the Channel F unit :\n    RESET\n    (1) TIME  / 2 min / HOCKEY\n    (2) MODE  / 5 min / TENNIS\n    (3) HOLD  / 10 min / GAME 3\n    (4) START / 20 min / GAME 4\n\nThere are 2 games in ROM : Hockey and Tennis which can be run without loading any cartridge.\n\n1) Press RESET\nG? : The console asks which game shall be started\n     - Press 1 for Hockey\n     - Press 2 for Tennis\nS? : The console waits before starting the game\n     - Press 1 to select a time limit\n       T? : Set time limit\n          - Press 1..4 for the time limit\n     - Press 2 to select game speed\n       M? : Set speed\n          - Press 1..4 for the speed\n     - Press 4 to start play\n    \n",
@@ -18122,7 +18168,7 @@
     {
       "name": "Distribution_MiSTer",
       "description": "This repository contains all the files that you'll want in your MiSTer",
-      "readme": "# MiSTer Distribution\n\nThis repository contains all the files that you'll want in your MiSTer.\n\nYou may download all of them at once as a zip through the [following link](https://github.com/MiSTer-devel/Distribution_MiSTer/archive/refs/heads/main.zip). Once you have them, place them as-is in your [properly initialised SD card](https://github.com/MiSTer-devel/mr-fusion), and everything should work out of the box.\n\n### MiSTer Project\n\nIf you want to check more about the MiSTer project, please check [this wiki](https://github.com/MiSTer-devel/Wiki_MiSTer/wiki).\n\n### MiSTer Downloader\n\nFor downloading all of these files directly from your MiSTer, use the [MiSTer Downloader](https://github.com/MiSTer-devel/Downloader_MiSTer).\n\n#### Tags that you may use with 'Download Filters' feature\n\nRead about how to use them [here](https://github.com/MiSTer-devel/Downloader_MiSTer/blob/main/docs/download-filters.md).\n\n##### List:\n\n`acornatom`, `acornelectron`, `adam`, `adctest`, `adventurevision`, `alicemc10`, `all_filters`, `altair8800`, `alternatives`, `amiga`, `amstrad`, `amstrad-pcw`, `amstradpcw`, `ao486`, `apogee`, `apple-i`, `apple-ii`, `aquarius`, `arcade`, `arcade-arkanoid`, `arcade-asteroids`, `arcade-asteroidsdeluxe`, `arcade-astrocade`, `arcade-atarisys1`, `arcade-ataritetris`, `arcade-athena`, `arcade-bagman`, `arcade-bankpanic`, `arcade-battlezone`, `arcade-berzerk`, `arcade-blackwidow`, `arcade-blockade`, `arcade-bombjack`, `arcade-bosconian`, `arcade-breakout`, `arcade-bubsys`, `arcade-bubsysrom`, `arcade-burgertime`, `arcade-burningrubber`, `arcade-canyonbomber`, `arcade-cave`, `arcade-centipede`, `arcade-chameleon`, `arcade-computerspace`, `arcade-congobongo`, `arcade-cores`, `arcade-cores-without-mras`, `arcade-cosmic`, `arcade-cosmicguerilla`, `arcade-crazyballoon`, `arcade-crazyclimber`, `arcade-crazykong`, `arcade-crystalcastles`, `arcade-defender`, `arcade-digdug`, `arcade-dominos`, `arcade-donkeykong`, `arcade-donkeykong3`, `arcade-donkeykongjunior`, `arcade-dorodon`, `arcade-dottorikun`, `arcade-druaga`, `arcade-exerion`, `arcade-exidy2`, `arcade-expressraider`, `arcade-finalizer`, `arcade-foodfight`, `arcade-freeze`, `arcade-frenzy`, `arcade-galaga`, `arcade-galaxian`, `arcade-galivan`, `arcade-gaplus`, `arcade-gauntlet`, `arcade-gyruss`, `arcade-ikariwarriors`, `arcade-inferno`, `arcade-iremm107`, `arcade-iremm62`, `arcade-iremm72`, `arcade-iremm90`, `arcade-iremm92`, `arcade-ironhorse`, `arcade-jackal`, `arcade-jailbreak`, `arcade-joust2`, `arcade-kickandrun`, `arcade-ladybug`, `arcade-lunarlander`, `arcade-mariobros`, `arcade-mcr1`, `arcade-mcr2`, `arcade-mcr3`, `arcade-mcr3mono`, `arcade-mcr3scroll`, `arcade-missilecommand`, `arcade-moonpatrol`, `arcade-mrdo`, `arcade-mrjong`, `arcade-mysticmarathon`, `arcade-naughtyboy`, `arcade-ninjakun`, `arcade-pacman`, `arcade-pengo`, `arcade-penguinkunwars`, `arcade-performan`, `arcade-phoenix`, `arcade-pleiads`, `arcade-polyplay`, `arcade-pong`, `arcade-pooyan`, `arcade-popeye`, `arcade-psychic5`, `arcade-qbert`, `arcade-rallyx`, `arcade-riverpatrol`, `arcade-robotron`, `arcade-rshnatk`, `arcade-salamander`, `arcade-scootershooter`, `arcade-scramble`, `arcade-segasys1`, `arcade-segavicz80`, `arcade-silverland`, `arcade-slapfight`, `arcade-sms`, `arcade-snk_triplez80`, `arcade-solomonskey`, `arcade-sonson`, `arcade-spaceinvaders`, `arcade-spacerace`, `arcade-sprint1`, `arcade-sprint2`, `arcade-subs`, `arcade-superbreakout`, `arcade-suprloco`, `arcade-taitof2`, `arcade-taitosj`, `arcade-tankbattalion`, `arcade-tecmo`, `arcade-tiamc1`, `arcade-timepilot`, `arcade-timepilot84`, `arcade-tnkiii`, `arcade-traverseusa`, `arcade-tropicalangel`, `arcade-turkeyshoot`, `arcade-ultratank`, `arcade-vball`, `arcade-xevious`, `arcade-xsleena`, `arcade-zaxxon`, `arcade-zigzag`, `arcadelpf`, `arcadia`, `archie`, `arduboy`, `astrocade`, `atari2600`, `atari5200`, `atari7800`, `atari800`, `atarilynx`, `atarist`, `avision`, `ay-3-8500`, `bbcbridgecompanion`, `bbcmicro`, `bios`, `bk0011m`, `c128`, `c16`, `c64`, `cacert`, `casio_pv-1000`, `casio_pv-2000`, `channelf`, `cheats`, `chess`, `chip8`, `coco2`, `coco3`, `coleco`, `colecoadam`, `colecovision`, `complexmultichromatic`, `computer`, `computer-cores`, `console`, `console-cores`, `contrast_boost`, `controls_1_button`, `controls_2_buttons`, `controls_2_players`, `controls_3_buttons`, `controls_3_players`, `controls_4_buttons`, `controls_4_players`, `controls_5_buttons`, `controls_6_buttons`, `controls_dial`, `controls_move_2-way`, `controls_move_4-way`, `controls_move_8-way`, `controls_paddle`, `controls_spinner`, `controls_trackball`, `cores`, `corespecific`, `creativision`, `crt-simulation`, `displayspecific`, `docs`, `donut`, `downloader`, `downloader_bin`, `downloader_latest`, `drv`, `edsac`, `eg2000`, `epochgalaxyii`, `essential`, `extra-utilities`, `famicom`, `fast_usb_polling`, `filters`, `filters_audio`, `filters_video`, `flappy`, `flappybird`, `font`, `galaksija`, `gamate`, `gameboy`, `gameboy2p`, `gameboyadvance`, `gameboycolor`, `gamecontrollerdb`, `gamegear`, `gamenwatch`, `gameoflife`, `games`, `gamma`, `gb`, `gba`, `gba2p`, `gbc`, `gbmidi`, `generalhardware`, `generallpf`, `genesis`, `genesis-core`, `genmidi`, `gnw`, `handheld2p`, `hbmame`, `homelab`, `ini_settings`, `inputtest`, `intellivision`, `interact`, `jupiter`, `laser`, `laser310`, `lcd-general`, `lcd-integeronly`, `linux`, `lynx48`, `macplus`, `mame`, `mastersystem`, `megacd`, `megadrive`, `megadrive-core`, `megaduck`, `memtest`, `memtest_060mhz`, `memtest_100mhz`, `memtest_110mhz`, `memtest_120mhz`, `memtest_130mhz`, `memtest_140mhz`, `memtest_150mhz`, `memtest_160mhz`, `memtest_167mhz`, `menu`, `mgl`, `minimig`, `misterfirmware`, `misterlaggy`, `mra`, `msx`, `msx1`, `multicomp`, `myvision`, `n64`, `neogeo`, `neogeo-cd`, `nes`, `nintendo`, `odyssey2`, `old`, `ondra_spo186`, `orao`, `oric`, `other`, `other-cores`, `overlays`, `palettes`, `pc88`, `pc8801`, `pcengine`, `pcenginecd`, `pcxt`, `pdp1`, `pet2001`, `pmd85`, `pocketchallengev2`, `pokemonmini`, `poly_gamma`, `presets`, `psx`, `pure_gamma`, `ql`, `readme`, `rtc`, `rx78`, `s32x`, `samba_on`, `samcoupe`, `saturn`, `scanlines-adaptive`, `scanlines-brighter`, `scanlines-standard`, `screen_horizontal_scan_rate_15khz`, `screen_horizontal_scan_rate_31khz`, `screen_no_tate`, `screen_rotation_horizontal`, `screen_rotation_vertical_ccw`, `screen_rotation_vertical_cw`, `screen_tate_ccw`, `screen_tate_cw`, `scripts`, `scv`, `segacd`, `segamark3`, `service-cores`, `sgb`, `shadow_masks`, `sharpmz`, `simplemonochrome`, `slugcross`, `sms`, `snes`, `sordm5`, `specialist`, `spectrum`, `spmx`, `sufami`, `super_vision_8000`, `superfamicom`, `supergameboy`, `supernes`, `supernintendo`, `supervision`, `supervision8000`, `svi328`, `tatungeinstein`, `tgfx16`, `tgfx16-cd`, `tgfx16cd`, `ti-99_4a`, `ti994a`, `timezone`, `tomyscramble`, `tomytutor`, `trs-80`, `tsconf`, `turbografx`, `turbografx16`, `turbografx16cd`, `turbografxcd`, `uk101`, `unlicensed_games`, `upscaling-lanczosbicubicetc`, `upscaling-recommended`, `upscaling-sharpbilinear`, `utility`, `vc4000`, `vector-06c`, `vector06`, `vector06c`, `vectrex`, `vic20`, `vt52`, `wifi`, `wonderswan`, `wonderswancolor`, `x68000`, `yctxt`, `zx-spectrum`, `zx81`, `zxnext`, `zxspectrum`\n\n##### Some relevant tag descriptions:\n\n- `arcade-cores` / `arcade`: All arcade cores and MRA files.\n- `computer-cores` / `computer`: All computer cores and related folders.\n- `console-cores` / `console`: All console cores and related folders.\n- `other-cores` / `other`: All cores from the top folder Other with their related folders.\n- `service-cores` / `utility`: All utility cores and related folders.\n- `cores`: All cores (RBF files).\n- `mra`: All MRA files & folders.\n- `alternatives`: All MRA Alternatives\n- `hbmame`: All files & folders linked to the HBMame collection.\n- `handheld2p`: All 2 Player versions for Handheld cores.\n- `filters_video`: All video filters (`gamma` & `filters` & `shadow_masks`).\n- `all_filters`: All video & audio filters (`filters_video` & `filters_audio`).\n- `essential`: Menu core & MiSTer firmware.\n- `readme`: All README files.\n- `docs`: All documentation files & folders, including README files.\n- `extra-utilities`: All extra utilities that are installed in games folders of some computer cores.\n- `bios`: All bioses that are installed in the games folders for some computer & console cores.\n- `cheats`: All cheat files & folders.\n\n##### Tags based on the Arcade Database:\n\nThe following tags are calculated with the information contained in the [MiSTer Arcade Database](https://github.com/MiSTer-devel/ArcadeDatabase_MiSTer):\n\n- `unlicensed_games`: All arcade bootlegs, hacks or homebrew games\n- `controls_1_button`: All arcade games that use exactly 1 button.\n- `controls_2_buttons`: All arcade games that use exactly 2 buttons.\n- `controls_3_buttons`: All arcade games that use exactly 3 buttons.\n- `controls_4_buttons`: All arcade games that use exactly 4 buttons.\n- `controls_5_buttons`: All arcade games that use exactly 5 buttons.\n- `controls_6_buttons`: All arcade games that use exactly 6 buttons.\n- `controls_spinner`: All arcade games that require a spinner.\n- `controls_paddle`: All arcade games that require a paddle.\n- `controls_dial`: All arcade games that require a dial.\n- `controls_trackball`: All arcade games that require a trackball.\n- `controls_move_2-way`: All arcade games with 2-way directional movement (left-right or up-down).\n- `controls_move_4-way`: All arcade games with 4-way directional movement.\n- `controls_move_8-way`: All arcade games with 8-way omnidirectional movement.\n- `controls_2_players`: All arcade games that support up to two simultaneous players.\n- `controls_3_players`: All arcade games that support up to three simultaneous players.\n- `controls_4_players`: All arcade games that support up to four simultaneous players.\n- `screen_rotation_horizontal` / `screen_no_tate`: All arcade games designed for horizontal screens.\n- `screen_rotation_vertical_cw` / `screen_tate_cw`: All arcade games designed for clock-wise vertical screens.  Including counter clock-wise with a flip option.\n- `screen_rotation_vertical_ccw` / `screen_tate_ccw`: All arcade games designed for counter clock-wise vertical screens. Including clock-wise with a flip option.\n- `screen_horizontal_scan_rate_15khz`: All arcade games only supported by 15kHz CRT screens.\n- `screen_horizontal_scan_rate_31khz`: All arcade games only supported by 31kHz CRT screens.\n\nIf there is any mismatch between one of the previous terms and the game, please report it in that Arcade Database repository.\n\n### Contributing\n\nYou are more than welcome to contribute to the [MiSTer-devel Organization](https://github.com/MiSTer-devel). But you can't do it by openening PRs to the main branch of this repository. This repository is only for file distribution. Whatever content shows up here depends on the other repositories of this organization, so you should target your PRs there.\n\nThere is a development branch in this repository for the content collection. Is fine to send PRs there but they should only modify the content collection scripts that are being used by the workflows.\n",
+      "readme": "# MiSTer Distribution\n\nThis repository contains all the files that you'll want in your MiSTer.\n\nYou may download all of them at once as a zip through the [following link](https://github.com/MiSTer-devel/Distribution_MiSTer/archive/refs/heads/main.zip). Once you have them, place them as-is in your [properly initialised SD card](https://github.com/MiSTer-devel/mr-fusion), and everything should work out of the box.\n\n### MiSTer Project\n\nIf you want to check more about the MiSTer project, please check [this wiki](https://github.com/MiSTer-devel/Wiki_MiSTer/wiki).\n\n### MiSTer Downloader\n\nFor downloading all of these files directly from your MiSTer, use the [MiSTer Downloader](https://github.com/MiSTer-devel/Downloader_MiSTer).\n\n#### Tags that you may use with 'Download Filters' feature\n\nRead about how to use them [here](https://github.com/MiSTer-devel/Downloader_MiSTer/blob/main/docs/download-filters.md).\n\n##### List:\n\n`acornatom`, `acornelectron`, `adam`, `adctest`, `adventurevision`, `alicemc10`, `all_filters`, `altair8800`, `alternatives`, `amiga`, `amstrad`, `amstrad-pcw`, `amstradpcw`, `ao486`, `apogee`, `apple-i`, `apple-ii`, `aquarius`, `arcade`, `arcade-arkanoid`, `arcade-asteroids`, `arcade-asteroidsdeluxe`, `arcade-astrocade`, `arcade-atarisys1`, `arcade-ataritetris`, `arcade-athena`, `arcade-bagman`, `arcade-bankpanic`, `arcade-battlezone`, `arcade-berzerk`, `arcade-blackwidow`, `arcade-blockade`, `arcade-bombjack`, `arcade-bosconian`, `arcade-breakout`, `arcade-bubsys`, `arcade-bubsysrom`, `arcade-burgertime`, `arcade-burningrubber`, `arcade-canyonbomber`, `arcade-cave`, `arcade-centipede`, `arcade-chameleon`, `arcade-computerspace`, `arcade-congobongo`, `arcade-cores`, `arcade-cosmic`, `arcade-cosmicguerilla`, `arcade-crazyballoon`, `arcade-crazyclimber`, `arcade-crazykong`, `arcade-crystalcastles`, `arcade-defender`, `arcade-digdug`, `arcade-dominos`, `arcade-donkeykong`, `arcade-donkeykong3`, `arcade-donkeykongjunior`, `arcade-dorodon`, `arcade-dottorikun`, `arcade-druaga`, `arcade-exerion`, `arcade-exidy2`, `arcade-expressraider`, `arcade-finalizer`, `arcade-foodfight`, `arcade-freeze`, `arcade-frenzy`, `arcade-galaga`, `arcade-galaxian`, `arcade-galivan`, `arcade-gaplus`, `arcade-gauntlet`, `arcade-gyruss`, `arcade-ikariwarriors`, `arcade-inferno`, `arcade-iremm107`, `arcade-iremm62`, `arcade-iremm72`, `arcade-iremm90`, `arcade-iremm92`, `arcade-ironhorse`, `arcade-jackal`, `arcade-jailbreak`, `arcade-joust2`, `arcade-kickandrun`, `arcade-ladybug`, `arcade-lunarlander`, `arcade-mariobros`, `arcade-mcr1`, `arcade-mcr2`, `arcade-mcr3`, `arcade-mcr3mono`, `arcade-mcr3scroll`, `arcade-missilecommand`, `arcade-moonpatrol`, `arcade-mrdo`, `arcade-mrjong`, `arcade-mysticmarathon`, `arcade-naughtyboy`, `arcade-ninjakun`, `arcade-pacman`, `arcade-pengo`, `arcade-penguinkunwars`, `arcade-performan`, `arcade-phoenix`, `arcade-pleiads`, `arcade-polyplay`, `arcade-pong`, `arcade-pooyan`, `arcade-popeye`, `arcade-psychic5`, `arcade-qbert`, `arcade-rallyx`, `arcade-rbfs-only`, `arcade-riverpatrol`, `arcade-robotron`, `arcade-rshnatk`, `arcade-salamander`, `arcade-scootershooter`, `arcade-scramble`, `arcade-segasys1`, `arcade-segavicz80`, `arcade-silverland`, `arcade-slapfight`, `arcade-sms`, `arcade-snk_triplez80`, `arcade-solomonskey`, `arcade-sonson`, `arcade-spaceinvaders`, `arcade-spacerace`, `arcade-sprint1`, `arcade-sprint2`, `arcade-st-v`, `arcade-subs`, `arcade-superbreakout`, `arcade-suprloco`, `arcade-taitof2`, `arcade-taitosj`, `arcade-tankbattalion`, `arcade-tecmo`, `arcade-tiamc1`, `arcade-timepilot`, `arcade-timepilot84`, `arcade-tnkiii`, `arcade-traverseusa`, `arcade-tropicalangel`, `arcade-turkeyshoot`, `arcade-ultratank`, `arcade-vball`, `arcade-xevious`, `arcade-xsleena`, `arcade-zaxxon`, `arcade-zigzag`, `arcadelpf`, `arcadia`, `archie`, `arduboy`, `astrocade`, `atari2600`, `atari5200`, `atari7800`, `atari800`, `atarilynx`, `atarist`, `avision`, `ay-3-8500`, `bbcbridgecompanion`, `bbcmicro`, `bios`, `bk0011m`, `c128`, `c16`, `c64`, `cacert`, `casio_pv-1000`, `casio_pv-2000`, `cd-i`, `cdi`, `channelf`, `cheats`, `chess`, `chip8`, `coco2`, `coco3`, `coleco`, `colecoadam`, `colecovision`, `complexmultichromatic`, `computer`, `computer-cores`, `console`, `console-cores`, `contrast_boost`, `controls_1_button`, `controls_2_buttons`, `controls_2_players`, `controls_3_buttons`, `controls_3_players`, `controls_4_buttons`, `controls_4_players`, `controls_5_buttons`, `controls_6_buttons`, `controls_dial`, `controls_move_2-way`, `controls_move_4-way`, `controls_move_8-way`, `controls_paddle`, `controls_spinner`, `controls_trackball`, `cores`, `corespecific`, `creativision`, `crt-simulation`, `displayspecific`, `docs`, `donut`, `downloader`, `downloader_bin`, `downloader_latest`, `drv`, `edsac`, `eg2000`, `epochgalaxyii`, `essential`, `extra-utilities`, `famicom`, `fast_usb_polling`, `filters`, `filters_audio`, `filters_video`, `flappy`, `flappybird`, `font`, `galaksija`, `gamate`, `gameboy`, `gameboy2p`, `gameboyadvance`, `gameboycolor`, `gamecontrollerdb`, `gamegear`, `gamenwatch`, `gameoflife`, `games`, `gamma`, `gb`, `gba`, `gba2p`, `gbc`, `gbmidi`, `generalhardware`, `generallpf`, `genesis`, `genesis-core`, `genmidi`, `gnw`, `handheld2p`, `hbmame`, `homelab`, `ini_settings`, `inputtest`, `intellivision`, `interact`, `jupiter`, `laser`, `laser310`, `lcd-general`, `lcd-integeronly`, `linux`, `lynx48`, `macplus`, `mame`, `mastersystem`, `megacd`, `megadrive`, `megadrive-core`, `megaduck`, `memtest`, `memtest_060mhz`, `memtest_100mhz`, `memtest_110mhz`, `memtest_120mhz`, `memtest_130mhz`, `memtest_140mhz`, `memtest_150mhz`, `memtest_160mhz`, `memtest_167mhz`, `menu`, `mgl`, `minimig`, `misterfirmware`, `misterlaggy`, `mra`, `msx`, `msx1`, `multicomp`, `myvision`, `n64`, `neogeo`, `neogeo-cd`, `nes`, `nintendo`, `no-mad-entry-mra`, `no-setname-mra`, `odyssey2`, `old`, `ondra_spo186`, `orao`, `oric`, `other`, `other-cores`, `overlays`, `palettes`, `pc88`, `pc8801`, `pcengine`, `pcenginecd`, `pcxt`, `pdp1`, `pet2001`, `pmd85`, `pocketchallengev2`, `pokemonmini`, `poly_gamma`, `presets`, `psx`, `pure_gamma`, `ql`, `readme`, `rtc`, `rx78`, `s32x`, `samba_on`, `samcoupe`, `saturn`, `scanlines-adaptive`, `scanlines-brighter`, `scanlines-standard`, `screen_horizontal_scan_rate_15khz`, `screen_horizontal_scan_rate_31khz`, `screen_no_tate`, `screen_rotation_flip`, `screen_rotation_horizontal`, `screen_rotation_vertical_ccw`, `screen_rotation_vertical_ccw_no_flip`, `screen_rotation_vertical_cw`, `screen_rotation_vertical_cw_no_flip`, `screen_tate_ccw`, `screen_tate_ccw_no_flip`, `screen_tate_cw`, `screen_tate_cw_no_flip`, `screen_tate_flip`, `scripts`, `scv`, `segacd`, `segamark3`, `service-cores`, `sgb`, `shadow_masks`, `sharpmz`, `simplemonochrome`, `slugcross`, `sms`, `snes`, `sordm5`, `specialist`, `spectrum`, `spmx`, `sufami`, `super_vision_8000`, `superfamicom`, `supergameboy`, `supernes`, `supernintendo`, `supervision`, `supervision8000`, `svi328`, `tatungeinstein`, `tgfx16`, `tgfx16-cd`, `tgfx16cd`, `ti-99_4a`, `ti994a`, `timezone`, `tomyscramble`, `tomytutor`, `trs-80`, `tsconf`, `turbografx`, `turbografx16`, `turbografx16cd`, `turbografxcd`, `uk101`, `unlicensed_games`, `upscaling-lanczosbicubicetc`, `upscaling-recommended`, `upscaling-sharpbilinear`, `utility`, `vc4000`, `vector-06c`, `vector06`, `vector06c`, `vectrex`, `vic20`, `vt52`, `wifi`, `wonderswan`, `wonderswancolor`, `x68000`, `yctxt`, `zx-spectrum`, `zx81`, `zxnext`, `zxspectrum`\n\n##### Some relevant tag descriptions:\n\n- `arcade-cores` / `arcade`: All arcade cores and related files (MRA files).\n- `computer-cores` / `computer`: All computer cores and related folders.\n- `console-cores` / `console`: All console cores and related folders.\n- `other-cores` / `other`: All cores from the top folder Other with their related folders.\n- `service-cores` / `utility`: All utility cores and related folders.\n- `cores`: All cores (RBF files).\n- `mra`: All MRA files & folders.\n- `arcade-rbfs-only`: All arcade cores (RBF files) without related files.\n- `alternatives`: All MRA Alternatives & MRAs linked to the HBMame collection.\n- `handheld2p`: All 2 Player versions for Handheld cores.\n- `filters_video`: All video filters (`gamma` & `filters` & `shadow_masks`).\n- `all_filters`: All video & audio filters (`filters_video` & `filters_audio`).\n- `essential`: Menu core & MiSTer firmware.\n- `readme`: All README files.\n- `docs`: All documentation files & folders, including README files.\n- `extra-utilities`: All extra utilities that are installed in games folders of some computer cores.\n- `bios`: All bioses that are installed in the games folders for some computer & console cores.\n- `cheats`: All cheat files & folders.\n\n##### Tags based on the Arcade Database:\n\nThe following tags are calculated with the information contained in the [MiSTer Arcade Database](https://github.com/MiSTer-devel/ArcadeDatabase_MiSTer):\n\n- `unlicensed_games`: All arcade bootlegs, hacks or homebrew games\n- `controls_1_button`: All arcade games that use exactly 1 button.\n- `controls_2_buttons`: All arcade games that use exactly 2 buttons.\n- `controls_3_buttons`: All arcade games that use exactly 3 buttons.\n- `controls_4_buttons`: All arcade games that use exactly 4 buttons.\n- `controls_5_buttons`: All arcade games that use exactly 5 buttons.\n- `controls_6_buttons`: All arcade games that use exactly 6 buttons.\n- `controls_spinner`: All arcade games that require a spinner.\n- `controls_paddle`: All arcade games that require a paddle.\n- `controls_dial`: All arcade games that require a dial.\n- `controls_trackball`: All arcade games that require a trackball.\n- `controls_move_2-way`: All arcade games with 2-way directional movement (left-right or up-down).\n- `controls_move_4-way`: All arcade games with 4-way directional movement.\n- `controls_move_8-way`: All arcade games with 8-way omnidirectional movement.\n- `controls_2_players`: All arcade games that support up to two simultaneous players.\n- `controls_3_players`: All arcade games that support up to three simultaneous players.\n- `controls_4_players`: All arcade games that support up to four simultaneous players.\n- `screen_rotation_horizontal` / `screen_no_tate`: All arcade games designed for horizontal screens.\n- `screen_rotation_vertical_cw` / `screen_tate_cw`: All arcade games designed for clock-wise vertical screens. Including counter clock-wise with a flip option.\n- `screen_rotation_vertical_ccw` / `screen_tate_ccw`: All arcade games designed for counter clock-wise vertical screens. Including clock-wise with a flip option.\n- `screen_rotation_vertical_cw_no_flip` / `screen_tate_cw_no_flip`: All arcade games designed for clock-wise vertical screens without a flip option.\n- `screen_rotation_vertical_ccw_no_flip` / `screen_tate_ccw_no_flip`: All arcade games designed for counter clock-wise vertical screens without a flip option.\n- `screen_horizontal_scan_rate_15khz`: All arcade games only supported by 15kHz CRT screens.\n- `screen_horizontal_scan_rate_31khz`: All arcade games only supported by 31kHz CRT screens.\n\nIf there is any mismatch between one of the previous terms and the game, please report it in that Arcade Database repository.\n\n### Contributing\n\nYou are more than welcome to contribute to the [MiSTer-devel Organization](https://github.com/MiSTer-devel). But you can't do it by openening PRs to the main branch of this repository. This repository is only for file distribution. Whatever content shows up here depends on the other repositories of this organization, so you should target your PRs there.\n\nThere is a development branch in this repository for the content collection. Is fine to send PRs there but they should only modify the content collection scripts that are being used by the workflows.\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/Distribution_MiSTer",
@@ -24044,6 +24090,12 @@
       "url": "https://github.com/MiSTer-devel/Saturn_MiSTer",
       "releases": [
         {
+          "name": "Arcade-ST-V_20250612.rbf",
+          "sha": "6451b0558c199ac3e469f1b4b19ee91f88099c5d",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/Arcade-ST-V_20250612.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Saturn_20231010.rbf",
           "sha": "5db313a4cfe017edcc81a999cde9c3aa71dbc096",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/Saturn_20231010.rbf",
@@ -24072,6 +24124,942 @@
           "sha": "9696a709c3115e55ec0cc40acc4f679c54774848",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/Saturn_20250113.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "Saturn_20250613.rbf",
+          "sha": "e12f11fd85acc6f44b65845951630f4dcda8c079",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/Saturn_20250613.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Astra SuperStars (J 980514 V1.002).mra",
+          "sha": "f7eb642a05e189ac198e7313ce703f748eda4cd9",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Astra%20SuperStars%20(J%20980514%20V1.002).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "astrass.zip",
+              "stvbios.zip",
+              "astrass.zip"
+            ]
+          }
+        },
+        {
+          "name": "Baku Baku Animal (J 950407 V1.000).mra",
+          "sha": "65bcbe6f196289e331190163082ae47c2c12a63b",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Baku%20Baku%20Animal%20(J%20950407%20V1.000).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "bakubaku.zip",
+              "stvbios.zip",
+              "bakubaku.zip"
+            ]
+          }
+        },
+        {
+          "name": "Batman Forever (JUE 960507 V1.000).mra",
+          "sha": "ab4bfcb2ed5d4c41aa448a4c4342da187cbe5bc3",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Batman%20Forever%20(JUE%20960507%20V1.000).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "batmanfr.zip",
+              "stvbios.zip",
+              "batmanfr.zip"
+            ]
+          }
+        },
+        {
+          "name": "Columns '97 (JET 961209 V1.000).mra",
+          "sha": "765e6e66719293b2f6a3f02b09ce5c6c3328e042",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Columns%20'97%20(JET%20961209%20V1.000).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "colmns97.zip",
+              "stvbios.zip",
+              "colmns97.zip"
+            ]
+          }
+        },
+        {
+          "name": "Cotton 2 (JUET 970902 V1.000).mra",
+          "sha": "5d674bd7f313abf9bd2e515378558cc94a64e63f",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Cotton%202%20(JUET%20970902%20V1.000).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "cotton2.zip",
+              "stvbios.zip",
+              "cotton2.zip"
+            ]
+          }
+        },
+        {
+          "name": "Cotton Boomerang (JUET 980709 V1.000).mra",
+          "sha": "42eef3a984d476497ef3d65247ed06ab244ff145",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Cotton%20Boomerang%20(JUET%20980709%20V1.000).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "cottonbm.zip",
+              "stvbios.zip",
+              "cottonbm.zip"
+            ]
+          }
+        },
+        {
+          "name": "Critter Crusher (EA 951204 V1.000).mra",
+          "sha": "9523574be38e2ea99b62da1cab4e11ae377ac88c",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Critter%20Crusher%20(EA%20951204%20V1.000).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "critcrsh.zip",
+              "stvbios.zip",
+              "critcrsh.zip"
+            ]
+          }
+        },
+        {
+          "name": "DaeJeon! SanJeon SuJeon (AJTUE 990412 V1.000).mra",
+          "sha": "c3f1724b2905e266eb95247c1f5d25b29ee81596",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/DaeJeon!%20SanJeon%20SuJeon%20(AJTUE%20990412%20V1.000).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "sanjeon.zip|sasissu.zip",
+              "stvbios.zip",
+              "sanjeon.zip|sasissu.zip"
+            ]
+          }
+        },
+        {
+          "name": "Danchi de Hanafuda (J 990607 V1.400).mra",
+          "sha": "dbf21404381dac29a09cc70f0e5a2195c5b0205f",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Danchi%20de%20Hanafuda%20(J%20990607%20V1.400).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "danchih.zip",
+              "stvbios.zip",
+              "danchih.zip"
+            ]
+          }
+        },
+        {
+          "name": "Danchi de Quiz Okusan Yontaku Desuyo! (J 001128 V1.200).mra",
+          "sha": "46c118e769eb2610c07dc7e4bea375e5fcc91caa",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Danchi%20de%20Quiz%20Okusan%20Yontaku%20Desuyo!%20(J%20001128%20V1.200).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "danchiq.zip",
+              "stvbios.zip",
+              "danchiq.zip"
+            ]
+          }
+        },
+        {
+          "name": "Decathlete (JUET 960424 V1.000).mra",
+          "sha": "58da06308b3b15a8c66dd33297ce30a93644cc27",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Decathlete%20(JUET%20960424%20V1.000).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "decathlto.zip|decathlt.zip",
+              "stvbios.zip",
+              "decathlto.zip|decathlt.zip"
+            ]
+          }
+        },
+        {
+          "name": "Decathlete (JUET 960709 V1.001).mra",
+          "sha": "ffd54e403a4e1b76ba5cd8421573c8f256bb9b7a",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Decathlete%20(JUET%20960709%20V1.001).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "decathlt.zip",
+              "stvbios.zip",
+              "decathlt.zip"
+            ]
+          }
+        },
+        {
+          "name": "Die Hard Arcade (UET 960515 V1.000).mra",
+          "sha": "a1ea65386a77759cf5c757eb5e84ed984f818998",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Die%20Hard%20Arcade%20(UET%20960515%20V1.000).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "diehard.zip",
+              "stvbios.zip",
+              "diehard.zip"
+            ]
+          }
+        },
+        {
+          "name": "Dynamite Deka (J 960515 V1.000).mra",
+          "sha": "83e066de47cecaafeb9f671c20ac5e76fc1ceb4c",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Dynamite%20Deka%20(J%20960515%20V1.000).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "dnmtdeka.zip|diehard.zip",
+              "stvbios.zip",
+              "dnmtdeka.zip|diehard.zip"
+            ]
+          }
+        },
+        {
+          "name": "Ejihon Tantei Jimusyo (J 950613 V1.000).mra",
+          "sha": "44c96d5d7c4f29646dc539139ed1a91a02d9657e",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Ejihon%20Tantei%20Jimusyo%20(J%20950613%20V1.000).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "ejihon.zip",
+              "stvbios.zip",
+              "ejihon.zip"
+            ]
+          }
+        },
+        {
+          "name": "Final Arch (J 950714 V1.001).mra",
+          "sha": "b3d7232c15f8d39acbe04181f943653924be9e9d",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Final%20Arch%20(J%20950714%20V1.001).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "finlarch.zip|smleague.zip",
+              "stvbios.zip",
+              "finlarch.zip|smleague.zip"
+            ]
+          }
+        },
+        {
+          "name": "Final Fight Revenge - Final Revenge (JUET 990714 V1.000).mra",
+          "sha": "02090a6a03dedc5d0f47fcb36aa6357cab781fe8",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Final%20Fight%20Revenge%20-%20Final%20Revenge%20(JUET%20990714%20V1.000).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "ffrevng10.zip|ffreveng.zip",
+              "stvbios.zip",
+              "ffrevng10.zip|ffreveng.zip"
+            ]
+          }
+        },
+        {
+          "name": "Final Fight Revenge - Final Revenge (JUET 990930 V1.100).mra",
+          "sha": "82ace33af0f90958be90d5a0a17f37319a9feb37",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Final%20Fight%20Revenge%20-%20Final%20Revenge%20(JUET%20990930%20V1.100).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "ffreveng.zip",
+              "stvbios.zip",
+              "ffreveng.zip"
+            ]
+          }
+        },
+        {
+          "name": "Find Love (J 971212 V1.000).mra",
+          "sha": "4c712f74073f50e4345ab7648cd51c2388692bdc",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Find%20Love%20(J%20971212%20V1.000).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "findlove.zip",
+              "stvbios.zip",
+              "findlove.zip"
+            ]
+          }
+        },
+        {
+          "name": "Funky Head Boxers (JUETBKAL 951218 V1.000).mra",
+          "sha": "88b1dba2bf9958bb2f211fe49d9f729995838146",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Funky%20Head%20Boxers%20(JUETBKAL%20951218%20V1.000).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "fhboxers.zip",
+              "stvbios.zip",
+              "fhboxers.zip"
+            ]
+          }
+        },
+        {
+          "name": "Golden Axe - The Duel (JUETL 950117 V1.000).mra",
+          "sha": "a801d8a13bb1b1f03d7b270d05a896f52da78755",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Golden%20Axe%20-%20The%20Duel%20(JUETL%20950117%20V1.000).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "gaxeduel.zip",
+              "stvbios.zip",
+              "gaxeduel.zip"
+            ]
+          }
+        },
+        {
+          "name": "Groove on Fight - Gouketsuji Ichizoku 3 (J 970416 V1.001).mra",
+          "sha": "f995d7044b7a3679c62235f61543bac53d04c501",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Groove%20on%20Fight%20-%20Gouketsuji%20Ichizoku%203%20(J%20970416%20V1.001).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "groovef.zip",
+              "stvbios.zip",
+              "groovef.zip"
+            ]
+          }
+        },
+        {
+          "name": "Guardian Force (JUET 980318 V0.105).mra",
+          "sha": "c62d9400caf173dc6542d0a947c1b714f37b3c52",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Guardian%20Force%20(JUET%20980318%20V0.105).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "grdforce.zip",
+              "stvbios.zip",
+              "grdforce.zip"
+            ]
+          }
+        },
+        {
+          "name": "Hanagumi Taisen Columns - Sakura Wars (J 971007 V1.010).mra",
+          "sha": "550a8f61920d34759d21c6590a5cecbbbcfe22b6",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Hanagumi%20Taisen%20Columns%20-%20Sakura%20Wars%20(J%20971007%20V1.010).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "hanagumi.zip",
+              "stvbios.zip",
+              "hanagumi.zip"
+            ]
+          }
+        },
+        {
+          "name": "Karaoke Quiz Intro Don Don! (J 960213 V1.000).mra",
+          "sha": "745ff3b9710e9e4be7a95ff1f338d0ca051886af",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Karaoke%20Quiz%20Intro%20Don%20Don!%20(J%20960213%20V1.000).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "introdon.zip",
+              "stvbios.zip",
+              "introdon.zip"
+            ]
+          }
+        },
+        {
+          "name": "Magical Zunou Power (J 961031 V1.000).mra",
+          "sha": "52ba35720bb87b8f6113cf7e20bdb22ad8bc5444",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Magical%20Zunou%20Power%20(J%20961031%20V1.000).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "magzun.zip",
+              "stvbios.zip",
+              "magzun.zip"
+            ]
+          }
+        },
+        {
+          "name": "Maru-Chan de Goo! (J 971216 V1.000).mra",
+          "sha": "3881921d3bbb2e92447a9ec8b3ea786648fbe502",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Maru-Chan%20de%20Goo!%20(J%20971216%20V1.000).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "maruchan.zip",
+              "stvbios.zip",
+              "maruchan.zip"
+            ]
+          }
+        },
+        {
+          "name": "Mausuke no Ojama the World (J 960314 V1.000).mra",
+          "sha": "dff01a20f66816767658d7c8fcb3e3bde658f427",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Mausuke%20no%20Ojama%20the%20World%20(J%20960314%20V1.000).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "mausuke.zip",
+              "stvbios.zip",
+              "mausuke.zip"
+            ]
+          }
+        },
+        {
+          "name": "Microman Battle Charge (J 990326 V1.000).mra",
+          "sha": "361ec3f197f1706b4f6c28a4984c6e32ac586c5d",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Microman%20Battle%20Charge%20(J%20990326%20V1.000).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "micrombc.zip",
+              "stvbios.zip",
+              "micrombc.zip"
+            ]
+          }
+        },
+        {
+          "name": "Name Club Disney (J 980614 V1.000).mra",
+          "sha": "387ad398f1d4457e26702c5a0b500606d5525b6a",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Name%20Club%20Disney%20(J%20980614%20V1.000).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "nclubdis.zip",
+              "stvbios.zip",
+              "nclubdis.zip"
+            ]
+          }
+        },
+        {
+          "name": "Name Club Ver.3 (J 970723 V1.000).mra",
+          "sha": "0a621e4db8899738cc1ec267670059bc51191acf",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Name%20Club%20Ver.3%20(J%20970723%20V1.000).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "nclubv3.zip",
+              "stvbios.zip",
+              "nclubv3.zip"
+            ]
+          }
+        },
+        {
+          "name": "Othello Shiyouyo (J 980423 V1.002).mra",
+          "sha": "935fbd4604300546eb471a2b67f3ecd0cf8b6215",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Othello%20Shiyouyo%20(J%20980423%20V1.002).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "othellos.zip",
+              "stvbios.zip",
+              "othellos.zip"
+            ]
+          }
+        },
+        {
+          "name": "Pebble Beach - The Great Shot (JUE 950913 V0.990).mra",
+          "sha": "74546b98949a48174a840a8d81e2bf59ed04e9da",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Pebble%20Beach%20-%20The%20Great%20Shot%20(JUE%20950913%20V0.990).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "pblbeach.zip",
+              "stvbios.zip",
+              "pblbeach.zip"
+            ]
+          }
+        },
+        {
+          "name": "Princess Clara Daisakusen (J 960910 V1.000).mra",
+          "sha": "91afdda4d95b182bd05a987123901427e2665fb6",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Princess%20Clara%20Daisakusen%20(J%20960910%20V1.000).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "prikura.zip",
+              "stvbios.zip",
+              "prikura.zip"
+            ]
+          }
+        },
+        {
+          "name": "Print Club 2 (U 970921 V1.000).mra",
+          "sha": "86272f65a59042e1553ccc767956785819fa04d9",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Print%20Club%202%20(U%20970921%20V1.000).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "pclub2.zip",
+              "stvbios.zip",
+              "pclub2.zip"
+            ]
+          }
+        },
+        {
+          "name": "Print Club 2 Vol. 3 (U 990310 V1.000).mra",
+          "sha": "fcc7d5fa4965891a334a42dc3479dc515be10a16",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Print%20Club%202%20Vol.%203%20(U%20990310%20V1.000).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "pclub2v3.zip|pclub2.zip",
+              "stvbios.zip",
+              "pclub2v3.zip|pclub2.zip"
+            ]
+          }
+        },
+        {
+          "name": "Print Club Pokemon B (U 991126 V1.000).mra",
+          "sha": "da064d41ac3d05c1de57e76ddf2c3ae6a713e24f",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Print%20Club%20Pokemon%20B%20(U%20991126%20V1.000).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "pclubpok.zip",
+              "stvbios.zip",
+              "pclubpok.zip"
+            ]
+          }
+        },
+        {
+          "name": "Pro Mahjong Kiwame S (J 951020 V1.208).mra",
+          "sha": "ede3e320bb3479ce754ace0f3972829cbb63feff",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Pro%20Mahjong%20Kiwame%20S%20(J%20951020%20V1.208).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "kiwames.zip",
+              "stvbios.zip",
+              "kiwames.zip"
+            ]
+          }
+        },
+        {
+          "name": "Puyo Puyo Sun (J 961115 V0.001).mra",
+          "sha": "22409463a4f08d8ae48131a8922f49bab2399b9c",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Puyo%20Puyo%20Sun%20(J%20961115%20V0.001).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "puyosun.zip",
+              "stvbios.zip",
+              "puyosun.zip"
+            ]
+          }
+        },
+        {
+          "name": "Puzzle & Action- BoMulEul Chajara (JUET 970125 V2.00K).mra",
+          "sha": "7e280bf8119da71eb8c21ce78e1276f9d949dbb5",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Puzzle%20%26%20Action-%20BoMulEul%20Chajara%20(JUET%20970125%20V2.00K).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "thuntk.zip|sandor.zip",
+              "stvbios.zip",
+              "thuntk.zip|sandor.zip"
+            ]
+          }
+        },
+        {
+          "name": "Puzzle & Action- Sando-R (J 951114 V1.000).mra",
+          "sha": "5acd8074ac0f732458f26dda168e6aad3b842880",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Puzzle%20%26%20Action-%20Sando-R%20(J%20951114%20V1.000).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "sandor.zip",
+              "stvbios.zip",
+              "sandor.zip"
+            ]
+          }
+        },
+        {
+          "name": "Puzzle & Action- Treasure Hunt (JUET 970901 V2.00E).mra",
+          "sha": "f59d4e1f38b8ead902357474fd886cc6d7ec3433",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Puzzle%20%26%20Action-%20Treasure%20Hunt%20(JUET%20970901%20V2.00E).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "thunt.zip|sandor.zip",
+              "stvbios.zip",
+              "thunt.zip|sandor.zip"
+            ]
+          }
+        },
+        {
+          "name": "Radiant Silvergun (JUET 980523 V1.000).mra",
+          "sha": "a83c591c62245b33a4abbe999760ffc3eb6d5833",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Radiant%20Silvergun%20(JUET%20980523%20V1.000).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "rsgun.zip",
+              "stvbios.zip",
+              "rsgun.zip"
+            ]
+          }
+        },
+        {
+          "name": "Sea Bass Fishing (JUET 971110 V0.001).mra",
+          "sha": "033cfdf64c216f01d1a0696e608a7921cdffd3eb",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Sea%20Bass%20Fishing%20(JUET%20971110%20V0.001).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "seabass.zip",
+              "stvbios.zip",
+              "seabass.zip"
+            ]
+          }
+        },
+        {
+          "name": "Shanghai - The Great Wall - Shanghai Triple Threat (JUE 950623 V1.005).mra",
+          "sha": "9809e518f97b3364133072980134ead94cab9aae",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Shanghai%20-%20The%20Great%20Wall%20-%20Shanghai%20Triple%20Threat%20(JUE%20950623%20V1.005).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "shanhigw.zip",
+              "stvbios.zip",
+              "shanhigw.zip"
+            ]
+          }
+        },
+        {
+          "name": "Shienryu (JUET 961226 V1.000).mra",
+          "sha": "32430d9c1b14412b23b7e6e4f7afffb1231de0b3",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Shienryu%20(JUET%20961226%20V1.000).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "shienryu.zip",
+              "stvbios.zip",
+              "shienryu.zip"
+            ]
+          }
+        },
+        {
+          "name": "Soukyugurentai - Terra Diver (JUET 960821 V1.000).mra",
+          "sha": "77bf86004377bb543831387ba60957215f1947d3",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Soukyugurentai%20-%20Terra%20Diver%20(JUET%20960821%20V1.000).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "sokyugrt.zip",
+              "stvbios.zip",
+              "sokyugrt.zip"
+            ]
+          }
+        },
+        {
+          "name": "Steep Slope Sliders (JUET 981110 V1.000).mra",
+          "sha": "d392c1725559be0b168e0752738f017f33e899ad",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Steep%20Slope%20Sliders%20(JUET%20981110%20V1.000).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "sss.zip",
+              "stvbios.zip",
+              "sss.zip"
+            ]
+          }
+        },
+        {
+          "name": "Stress Busters (J 981020 V1.000).mra",
+          "sha": "388a896c17258c0e8afa9e0b368d32b924b359ed",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Stress%20Busters%20(J%20981020%20V1.000).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "stress.zip",
+              "stvbios.zip",
+              "stress.zip"
+            ]
+          }
+        },
+        {
+          "name": "Suikoenbu - Outlaws of the Lost Dynasty (JUETL 950314 V2.001).mra",
+          "sha": "b0aa98742ab942208aad5f8443950fc780ec82c7",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Suikoenbu%20-%20Outlaws%20of%20the%20Lost%20Dynasty%20(JUETL%20950314%20V2.001).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "suikoenb.zip",
+              "stvbios.zip",
+              "suikoenb.zip"
+            ]
+          }
+        },
+        {
+          "name": "Super Major League (U 960108 V1.000).mra",
+          "sha": "88ffa853a345a8543cba52c6f90b36ec9e1a269c",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Super%20Major%20League%20(U%20960108%20V1.000).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "smleague.zip",
+              "stvbios.zip",
+              "smleague.zip"
+            ]
+          }
+        },
+        {
+          "name": "Taisen Tanto-R Sashissu!! (J 980216 V1.000).mra",
+          "sha": "f66c31b441c65e754135cf140d3735d0885b6734",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Taisen%20Tanto-R%20Sashissu!!%20(J%20980216%20V1.000).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "sasissu.zip",
+              "stvbios.zip",
+              "sasissu.zip"
+            ]
+          }
+        },
+        {
+          "name": "Technical Bowling (J 971212 V1.000).mra",
+          "sha": "e9fe57ad92e79837be15bcda32afe007e2c732cf",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Technical%20Bowling%20(J%20971212%20V1.000).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "techbowl.zip",
+              "stvbios.zip",
+              "techbowl.zip"
+            ]
+          }
+        },
+        {
+          "name": "Tecmo World Cup '98 (JUET 980410 V1.000).mra",
+          "sha": "15c950ea3ffefbdd1b45c5cae8e4b767a4b5d0e1",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Tecmo%20World%20Cup%20'98%20(JUET%20980410%20V1.000).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "twcup98.zip",
+              "stvbios.zip",
+              "twcup98.zip"
+            ]
+          }
+        },
+        {
+          "name": "Tecmo World Soccer '98 (JUET 980410 V1.000).mra",
+          "sha": "754213933bea9a1f1151a870ec6ed2ef41df9a4a",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Tecmo%20World%20Soccer%20'98%20(JUET%20980410%20V1.000).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "twsoc98.zip|twcup98.zip",
+              "stvbios.zip",
+              "twsoc98.zip|twcup98.zip"
+            ]
+          }
+        },
+        {
+          "name": "Touryuu Densetsu Elan-Doree - Elan Doree - Legend of Dragoon (JUET 980922 V1.006).mra",
+          "sha": "c86059390d332e05a7170b16316856aa136dfee0",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Touryuu%20Densetsu%20Elan-Doree%20-%20Elan%20Doree%20-%20Legend%20of%20Dragoon%20(JUET%20980922%20V1.006).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "elandore.zip",
+              "stvbios.zip",
+              "elandore.zip"
+            ]
+          }
+        },
+        {
+          "name": "Virtua Fighter Kids (JUET 960319 V0.000).mra",
+          "sha": "37c8c0e8f43c3498f7f95827d8c509d5e8559878",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Virtua%20Fighter%20Kids%20(JUET%20960319%20V0.000).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "vfkids.zip",
+              "stvbios.zip",
+              "vfkids.zip"
+            ]
+          }
+        },
+        {
+          "name": "Virtua Fighter Remix (JUETBKAL 950428 V1.000).mra",
+          "sha": "74939f1afbfdbe269ab6c1598594ba9b813413f1",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Virtua%20Fighter%20Remix%20(JUETBKAL%20950428%20V1.000).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "vfremix.zip",
+              "stvbios.zip",
+              "vfremix.zip"
+            ]
+          }
+        },
+        {
+          "name": "Virtual Mahjong (J 961214 V1.000).mra",
+          "sha": "821053a9caeb30b7c04fdf312aeb95a2fe2efdc1",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Virtual%20Mahjong%20(J%20961214%20V1.000).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "vmahjong.zip",
+              "stvbios.zip",
+              "vmahjong.zip"
+            ]
+          }
+        },
+        {
+          "name": "Virtual Mahjong 2 - My Fair Lady (J 980608 V1.000).mra",
+          "sha": "7371a41af0bac1615f58f80b6706cda492d2f5c3",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Virtual%20Mahjong%202%20-%20My%20Fair%20Lady%20(J%20980608%20V1.000).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "myfairld.zip",
+              "stvbios.zip",
+              "myfairld.zip"
+            ]
+          }
+        },
+        {
+          "name": "Winter Heat (JUET 971012 V1.000).mra",
+          "sha": "4e6b159dbecc5247128ee87a85fc6d8ed5bb1655",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Winter%20Heat%20(JUET%20971012%20V1.000).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "winterht.zip",
+              "stvbios.zip",
+              "winterht.zip"
+            ]
+          }
+        },
+        {
+          "name": "Zen Nippon Pro-Wrestling Featuring Virtua (J 971123 V1.000).mra",
+          "sha": "19ac75e2884a68c293efde9b54992fffa3c3f756",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Zen%20Nippon%20Pro-Wrestling%20Featuring%20Virtua%20(J%20971123%20V1.000).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "znpwfv.zip",
+              "stvbios.zip",
+              "znpwfv.zip"
+            ]
+          }
         }
       ]
     },
@@ -25075,6 +26063,12 @@
           "sha": "ee7c6ea903bdb66a664a3cdf8991bd35b7900aee",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/SNES_MiSTer/master/releases/SNES_20250525.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "SNES_20250605.rbf",
+          "sha": "ac4be61a8475b04fd20c282f64486059fc47b433",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/SNES_MiSTer/master/releases/SNES_20250605.rbf",
+          "type": "RBF"
         }
       ]
     },
@@ -25762,7 +26756,7 @@
     {
       "name": "TurboGrafx16_MiSTer",
       "description": "TurboGrafx-16 CD / PC Engine CD for MiSTer",
-      "readme": "# [TurboGrafx 16 / PC Engine](https://en.wikipedia.org/wiki/TurboGrafx-16) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki) \r\n\r\n### This is the port of Gregory Estrade's [FPGAPCE](https://github.com/Torlus/FPGAPCE)\r\n\r\nPort to MiSTer, Arcade card, DDR3, mappers and other tweaks [Sorgelig](https://github.com/sorgelig)\r\n\r\nTweaks and CD Support added by [srg320](https://github.com/srg320)\r\n\r\nAdditional bug fixes by [greyrogue](https://github.com/greyrogue)\r\n\r\nPalettes & audio filters by [Kitrinx](https://github.com/Kitrinx)\r\n\r\nFurther refinements and maintanance by [dshadoff](https://github.com/dshadoff)\r\n\r\n## Features\r\n * SuperGrafx mode\r\n * saves\r\n * Completely rewritten CPU and VDC for cycle accuracy\r\n * Uses DDR3 and SDRAM for cartridge's ROM (SDRAM is recommended for accuracy)\r\n * 2-button, 2-button 'turbo', and 6-button joystick support\r\n * XE-1AP analog controller\r\n * Turbotap(multiple joysticks)\r\n * Mouse\r\n * Pachinko controller\r\n * Memory Base 128 storage unit\r\n * Street Fighter II and Populous mappers\r\n * CD-ROM / Super CD-ROM\r\n * Arcade Card\r\n * Cheat engine\r\n * CHD Support\r\n\r\n## Installation:\r\nCopy the *.rbf file at the root of the SD card. Copy roms (*PCE,*BIN) to **TGFX16** folder. You may rename ROM of your favorite game to **boot.rom** - it will be automatically loaded upon core loading.\r\nUse SGX file extension for SuperGrafx games.\r\n\r\n## CD-ROM games\r\nCD-ROM images must be in BIN/CUE or CHD format, and must be located in the **TGFX16-CD** folder. Each CD-ROM image must have its own folder.\r\n**cd_bios.rom** must be placed in the same TGFX16-CD folder as the images mentioned above. **Japanese Super CD-ROM v3.00 is recomended for maximum compatibility**. \r\nAdditionally you can use a different bios for specific games (for example from Games Express) by placing cd_bios.rom inside the game image's folder.\r\n\r\n**Do not zip CD-ROM images! It won't work correctly.**\r\n\r\n**Attention about US BIOS:** MiSTer requires original dump of US BIOS to work properly. It needs to be of 262144 bytes.\r\nIf you can read copyright string at the end of US BIOS file, then it's not correct dump! It's already pre-swapped for emulators.\r\nWhile it will work on MiSTer, some CD games will refuse to start. **Correct US BIOS file is when copyright string is not readable.**\r\n\r\n## Cheat engine\r\nStandard cheats location is supported for HuCard games. For CD-ROM game all cheats must be zipped into a single zip file and placed inside game's CD-ROM folder.\r\n\r\n## Joystick\r\nBoth Turbotap and 6-button joysticks are supported.\r\nXE-1AP analog joystick is supported for the 4 games which are supported (After Burner II, Forgotten Worlds, Operation Wolf, Outrun)\r\nDo not enable the above features for games not supporting it, otherwise game will work incorrectly.\r\nFor 2-button 'turbo' joypad (sync'd as in original system), turbo fire is provided by alternate buttons : A, B (normal), X, Y (turbo 1 level), and L, R (turbo 2 level)\r\n\r\n## Mouse\r\nMouse is supported.\r\nDo not enable this feature for games not supporting it, otherwise game will work incorrectly.\r\n\r\n## Pachinko\r\nPachinko controller is supported through either paddle or analog joystick Y axis.\r\n\r\n## Palettes\r\nThe 'Original' palette is based on reverse engineering work of the VDP by [furrtek](https://github.com/furrtek). An RGB to YUV lookup table was discovered that translates the colors to their intended values with the composite output of the console. Further work was done by [ArtemioUrbina](https://github.com/ArtemioUrbina) to verify the color output. [Kitrinx](https://github.com/Kitrinx) created a tool to generate the resulting [palette](https://github.com/Kitrinx/TG16_Palette).\r\n\r\n## Reset\r\nHold down Run button then press Select. Some games require to keep both buttons pressed longer to reset. The PC Engine/Turbografx-16 did not have a hardware reset button, and instead relies on this button combination. With this method, in-game options will remain if you have changed them, whereas the MiSTer OSD reset will revert them.\r\n(Note: this reset method is suppressed in a small number of games)\r\n\r\n## SDRAM\r\nThis core may work without SDRAM (using on-board DDR3), but it may have different kinds of issues/glitches due to high latency of DDR3 memory. Thus SDRAM module is highly recommended for maximum accuracy.\r\n\r\n### Notes:\r\n* Both headerless ROMs and ROMs with header (512b) are supported and automatically distinguished by file size.\r\n\r\n## Download precompiled binaries\r\nGo to [releases](https://github.com/MiSTer-devel/TurboGrafx16_MiSTer/tree/master/releases) folder. \r\n",
+      "readme": "# [TurboGrafx 16 / PC Engine](https://en.wikipedia.org/wiki/TurboGrafx-16) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki) \r\n\r\n### This is the port of Gregory Estrade's [FPGAPCE](https://github.com/Torlus/FPGAPCE)\r\n\r\nPort to MiSTer, Arcade card, DDR3, mappers and other tweaks [Sorgelig](https://github.com/sorgelig)\r\n\r\nTweaks and CD Support added by [srg320](https://github.com/srg320)\r\n\r\nAdditional bug fixes by [greyrogue](https://github.com/greyrogue)\r\n\r\nPalettes & audio filters by [Kitrinx](https://github.com/Kitrinx)\r\n\r\nFurther refinements and maintanance by [dshadoff](https://github.com/dshadoff)\r\n\r\n## Features\r\n * Completely rewritten CPU and VDC for cycle accuracy\r\n * Uses DDR3 and SDRAM for cartridge's ROM (SDRAM is recommended for accuracy)\r\n * Overall Machine Support:\r\n   - CD-ROM / Super CD-ROM\r\n   - CD+G support\r\n   - Arcade Card\r\n   - SuperGrafx mode\r\n   - Backup Memory Saves\r\n * Controllers:\r\n   - Turbotap(multiple joysticks)\r\n   - 2-button, 2-button 'turbo', and 6-button joystick support\r\n   - Mouse\r\n   - Pachinko controller\r\n   - XE-1AP analog controller\r\n * Additional functionality:\r\n   - Street Fighter II and Populous mappers\r\n   - Memory Base 128 storage unit\r\n   - Cheat engine\r\n   - CHD Support\r\n\r\n## Installation:\r\nCopy the *.rbf file at the root of the SD card. Copy roms (*PCE,*BIN) to **TGFX16** folder. You may rename ROM of your favorite game to **boot.rom** - it will be automatically loaded upon core loading.\r\nUse SGX file extension for SuperGrafx games.\r\n\r\n## SDRAM\r\nThis core may work without SDRAM (using on-board DDR3), but it may have different kinds of issues/glitches due to high latency of DDR3 memory. Thus SDRAM module is highly recommended for maximum accuracy.\r\n\r\n### Notes:\r\n* Both headerless ROMs and ROMs with header (512b) are supported and automatically distinguished by file size.\r\n\r\n## Cheat engine\r\nStandard cheats location is supported for HuCard games. For CD-ROM game all cheats must be zipped into a single zip file and placed inside game's CD-ROM folder.\r\n\r\n## Reset\r\nHold down Run button then press Select. Some games require to keep both buttons pressed longer to reset. The PC Engine/Turbografx-16 did not have a hardware reset button, and instead relies on this button combination. With this method, in-game options will remain if you have changed them, whereas the MiSTer OSD reset will revert them.\r\n(Note: This is a soft-reset method, and is suppressed in a small number of games)\r\n\r\n## CD-ROM games\r\nCD-ROM images must be in BIN/CUE or CHD format, and must be located in the **TGFX16-CD** folder. Each CD-ROM image must have its own folder.\r\n**cd_bios.rom** must be placed in the same TGFX16-CD folder as the images mentioned above. **Japanese Super CD-ROM v3.00 is recomended for maximum compatibility**. \r\nAdditionally you can use a different bios for specific games (for example from Games Express) by placing cd_bios.rom inside the game image's folder.\r\n\r\n**Do not zip CD-ROM images! It won't work correctly.**\r\n\r\n**Attention about US BIOS:** MiSTer requires original dump of US BIOS to work properly. It needs to be of 262144 bytes.\r\nIf you can read copyright string at the end of US BIOS file, then it's not correct dump! It's already pre-swapped for emulators.\r\nWhile it will work on MiSTer, some CD games will refuse to start. **Correct US BIOS file is when copyright string is not readable.**\r\n\r\n## CD+G (CD Graphic) Support\r\nCD+G support works only for games in CloneCD format (which can also be ripped by freeware \"CD Manipulator\"). This format creates cue, img, and sub files - the subcode \"sub\" file contains\r\nthe CD+G subcode information. This must exist with the same name as the \"img\" (audio portion) of the file, together in the same folder. The CD+G player is available as the \"GRAPHICS\"\r\nbutton in the CD player on the system card (versions 2.0, 2.1, or 3.0).  CHD is not supported for CD+G.\r\n\r\n## Joystick\r\nBoth Turbotap and 6-button joysticks are supported.\r\nFor 2-button 'turbo' joypad (sync'd as in original system), turbo fire is provided by alternate buttons : A, B (normal), X, Y (turbo 1 level), and L, R (turbo 2 level)\r\n * Games Supporting 6-button:\r\n   - Street Fighter II\r\n   - Advanced Variable Geo\r\n   - Battlefield '94 in Tokyo Dome\r\n   - Emerald Dragon\r\n   - Fire Pro Jyoshi - Dome Choujyo Taisen\r\n   - Flash Hiders\r\n   - Garou Densetsu II - Aratanaru Tatakai\r\n   - Garou Densetsu Special\r\n   - Kakutou Haou Densetsu Algunos\r\n   - Linda Cube\r\n   - Mahjong Sword Princess Quest Gaiden\r\n   - Martial Champions\r\n   - Princess Maker 2\r\n   - Ryuuko no Ken\r\n   - Sotsugyou II - Neo Generation\r\n   - Super Real Mahjong P II - P III Custom\r\n   - Super Real Mahjong P V Custom\r\n   - Tengai Makyo - Kabuki Itouryodan\r\n   - World Heroes 2\r\n   - Ys IV\r\n * XE-1AP analog joystick is supported for the 4 games which are supported:\r\n   - After Burner II\r\n   - Forgotten Worlds\r\n   - Operation Wolf\r\n   - Outrun\r\n\r\nDo not enable the above features for games not supporting it, otherwise game will work incorrectly (for example, 6-button is only supported on a very small list of games).\r\n\r\n## Mouse\r\nMouse is supported.  Supported games:\r\n * 1552 Tenka Tairan\r\n * A. III - Takin' the A Train\r\n * Atlas Renaissance Voyage\r\n * Brandish\r\n * Dennou Tenshi Digital Angel\r\n * Doukyuusei\r\n * Eikan ha Kimini - Koukou Yakyuu Zenkoku Taikai\r\n * Hatsukoi Monogatari\r\n * Jantei Monogatari III - Saver Angels\r\n * Lemmings\r\n * Metal Angel\r\n * Nemurenumori no Chiisana Ohanashi\r\n * Power Golf 2 Golfer\r\n * Princess Maker 2\r\n * Tokimeki Memorial\r\n * Vasteel 2\r\n\r\nDo not enable this feature for games not supporting it, otherwise game will work incorrectly.\r\n\r\n## Pachinko\r\nPachinko controller is supported through either paddle or analog joystick Y axis.\r\n\r\n## Palettes\r\nThe 'Original' palette is based on reverse engineering work of the VDP by [furrtek](https://github.com/furrtek). An RGB to YUV lookup table was discovered that translates the colors to their intended values with the composite output of the console. Further work was done by [ArtemioUrbina](https://github.com/ArtemioUrbina) to verify the color output. [Kitrinx](https://github.com/Kitrinx) created a tool to generate the resulting [palette](https://github.com/Kitrinx/TG16_Palette).\r\n\r\n## Memory Base 128 / Save-kun\r\nThis was an external save-game mechanism used by a small number of games, late in the PC Engine's life, particularly for complex simulations like the KOEI games.\r\nEnabling this should not interfere with normal operation of games, but will only provide additional storage on a small number of games:\r\n * A. III - Takin' the A Train\r\n * Atlas Renaissance Voyage\r\n * Bishoujo Senshi Sailor Moon Collection\r\n * Brandish\r\n * Eikan ha Kimini - Koukou Yakyuu Zenkoku Taikai\r\n * Emerald Dragon\r\n * Fire Pro Jyoshi - Dome Choujyo Taisen\r\n * Ganchouhishi - Aoki Ookami to Shiroki Mejika\r\n * Linda Cube\r\n * Magicoal\r\n * Mahjong Sword Princess Quest Gaiden\r\n * Nobunaga no Yabou - Bushou Fuuunroku\r\n * Nobunaga no Yabou Zenkokuban\r\n * Popful Mail\r\n * Princess Maker 2\r\n * Private Eye Dol\r\n * Sankokushi III\r\n * Shin Megami Tensei\r\n * Super Mahjong Taikai\r\n * Super Real Mahjong P II - P III Custom\r\n * Super Real Mahjong P V Custom\r\n * Tadaima Yuusha Boshuuchuu\r\n * Vasteel 2\r\n\r\n## Download precompiled binaries\r\nGo to [releases](https://github.com/MiSTer-devel/TurboGrafx16_MiSTer/tree/master/releases) folder. \r\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/TurboGrafx16_MiSTer",
