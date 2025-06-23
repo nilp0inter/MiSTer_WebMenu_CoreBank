@@ -12,8 +12,8 @@ output = "_Others/AcornElectron_20230224.rbf"
 
 
 # ADCTest
-url = "https://raw.githubusercontent.com/MiSTer-devel/ADCTest_MiSTer/main/releases/ADCTest_20240610.rbf"
-output = "_Others/ADCTest_20240610.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/ADCTest_MiSTer/main/releases/ADCTest_20250619.rbf"
+output = "_Others/ADCTest_20250619.rbf"
 
 
 # AliceMC10
@@ -572,8 +572,8 @@ output = "_Arcade/cores/SuperBreakout_20240525.rbf"
 
 
 # TaitoF2
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/Arcade-TaitoF2_20250529.rbf"
-output = "_Arcade/cores/TaitoF2_20250529.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/Arcade-TaitoF2_20250619.rbf"
+output = "_Arcade/cores/TaitoF2_20250619.rbf"
 
 
 # TaitoSJ
@@ -797,13 +797,13 @@ output = "_Others/Gamate_20220613.rbf"
 
 
 # Gameboy
-url = "https://raw.githubusercontent.com/MiSTer-devel/Gameboy_MiSTer/master/releases/Gameboy_20240912.rbf"
-output = "_Console/Gameboy_20240912.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Gameboy_MiSTer/master/releases/Gameboy_20250618.rbf"
+output = "_Console/Gameboy_20250618.rbf"
 
 
 # GBA
-url = "https://raw.githubusercontent.com/MiSTer-devel/GBA_MiSTer/master/releases/GBA_20240410.rbf"
-output = "_Console/GBA_20240410.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/GBA_MiSTer/master/releases/GBA_20250621.rbf"
+output = "_Console/GBA_20250621.rbf"
 
 
 # Genesis
@@ -882,8 +882,8 @@ output = "_Utils/menu_20241031.rbf"
 
 
 # Minimig
-url = "https://raw.githubusercontent.com/MiSTer-devel/Minimig-AGA_MiSTer/MiSTer/releases/Minimig_20250119.rbf"
-output = "_Computer/Minimig_20250119.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Minimig-AGA_MiSTer/MiSTer/releases/Minimig_20250621.rbf"
+output = "_Computer/Minimig_20250621.rbf"
 
 
 # MiSTerLaggy
@@ -907,8 +907,8 @@ output = "_Computer/MultiComp_20250106.rbf"
 
 
 # MyVision
-url = "https://raw.githubusercontent.com/MiSTer-devel/MyVision_MiSTer/main/releases/MyVision_20230410.rbf"
-output = "_Others/MyVision_20230410.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/MyVision_MiSTer/main/releases/MyVision_20250622.rbf"
+output = "_Others/MyVision_20250622.rbf"
 
 
 # N64
@@ -922,8 +922,8 @@ output = "_Console/NeoGeo_20250105.rbf"
 
 
 # NES
-url = "https://raw.githubusercontent.com/MiSTer-devel/NES_MiSTer/master/releases/NES_20240912.rbf"
-output = "_Console/NES_20240912.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/NES_MiSTer/master/releases/NES_20250618.rbf"
+output = "_Console/NES_20250618.rbf"
 
 
 # Odyssey2
@@ -1057,8 +1057,8 @@ output = "_Others/TomyScramble_20200724.rbf"
 
 
 # TomyTutor
-url = "https://raw.githubusercontent.com/MiSTer-devel/TomyTutor_MiSTer/main/releases/TomyTutor_20241024.rbf"
-output = "_Others/TomyTutor_20241024.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/TomyTutor_MiSTer/main/releases/TomyTutor_20250622.rbf"
+output = "_Others/TomyTutor_20250622.rbf"
 
 
 # TRS-80
@@ -3591,6 +3591,11 @@ url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main
 output = "_Arcade/The Ninja Kids (World).mra"
 
 
+# Thunder Fox (World, rev 1).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/Thunder%20Fox%20(World%2C%20rev%201).mra"
+output = "_Arcade/Thunder Fox (World, rev 1).mra"
+
+
 # Cameltry (Japan, YM2610).mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/_alternatives/_Cameltry/Cameltry%20(Japan%2C%20YM2610).mra"
 output = "_Arcade/Cameltry (Japan, YM2610).mra"
@@ -3729,6 +3734,16 @@ output = "_Arcade/The Ninja Kids (Japan).mra"
 # The Ninja Kids (US).mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/_alternatives/_The%20Ninja%20Kids/The%20Ninja%20Kids%20(US).mra"
 output = "_Arcade/The Ninja Kids (US).mra"
+
+
+# Thunder Fox (Japan, rev 1).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/_alternatives/_Thunder%20Fox/Thunder%20Fox%20(Japan%2C%20rev%201).mra"
+output = "_Arcade/Thunder Fox (Japan, rev 1).mra"
+
+
+# Thunder Fox (US, rev 1).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/_alternatives/_Thunder%20Fox/Thunder%20Fox%20(US%2C%20rev%201).mra"
+output = "_Arcade/Thunder Fox (US, rev 1).mra"
 
 
 # Alpine Ski.mra
@@ -3976,11 +3991,6 @@ url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/release
 output = "_Arcade/Cotton Boomerang (JUET 980709 V1.000).mra"
 
 
-# Critter Crusher (EA 951204 V1.000).mra
-url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Critter%20Crusher%20(EA%20951204%20V1.000).mra"
-output = "_Arcade/Critter Crusher (EA 951204 V1.000).mra"
-
-
 # DaeJeon! SanJeon SuJeon (AJTUE 990412 V1.000).mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/DaeJeon!%20SanJeon%20SuJeon%20(AJTUE%20990412%20V1.000).mra"
 output = "_Arcade/DaeJeon! SanJeon SuJeon (AJTUE 990412 V1.000).mra"
@@ -3994,11 +4004,6 @@ output = "_Arcade/Danchi de Hanafuda (J 990607 V1.400).mra"
 # Danchi de Quiz Okusan Yontaku Desuyo! (J 001128 V1.200).mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Danchi%20de%20Quiz%20Okusan%20Yontaku%20Desuyo!%20(J%20001128%20V1.200).mra"
 output = "_Arcade/Danchi de Quiz Okusan Yontaku Desuyo! (J 001128 V1.200).mra"
-
-
-# Decathlete (JUET 960424 V1.000).mra
-url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Decathlete%20(JUET%20960424%20V1.000).mra"
-output = "_Arcade/Decathlete (JUET 960424 V1.000).mra"
 
 
 # Decathlete (JUET 960709 V1.001).mra
@@ -4024,11 +4029,6 @@ output = "_Arcade/Ejihon Tantei Jimusyo (J 950613 V1.000).mra"
 # Final Arch (J 950714 V1.001).mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Final%20Arch%20(J%20950714%20V1.001).mra"
 output = "_Arcade/Final Arch (J 950714 V1.001).mra"
-
-
-# Final Fight Revenge - Final Revenge (JUET 990714 V1.000).mra
-url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Final%20Fight%20Revenge%20-%20Final%20Revenge%20(JUET%20990714%20V1.000).mra"
-output = "_Arcade/Final Fight Revenge - Final Revenge (JUET 990714 V1.000).mra"
 
 
 # Final Fight Revenge - Final Revenge (JUET 990930 V1.100).mra
@@ -4071,11 +4071,6 @@ url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/release
 output = "_Arcade/Karaoke Quiz Intro Don Don! (J 960213 V1.000).mra"
 
 
-# Magical Zunou Power (J 961031 V1.000).mra
-url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Magical%20Zunou%20Power%20(J%20961031%20V1.000).mra"
-output = "_Arcade/Magical Zunou Power (J 961031 V1.000).mra"
-
-
 # Maru-Chan de Goo! (J 971216 V1.000).mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Maru-Chan%20de%20Goo!%20(J%20971216%20V1.000).mra"
 output = "_Arcade/Maru-Chan de Goo! (J 971216 V1.000).mra"
@@ -4084,21 +4079,6 @@ output = "_Arcade/Maru-Chan de Goo! (J 971216 V1.000).mra"
 # Mausuke no Ojama the World (J 960314 V1.000).mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Mausuke%20no%20Ojama%20the%20World%20(J%20960314%20V1.000).mra"
 output = "_Arcade/Mausuke no Ojama the World (J 960314 V1.000).mra"
-
-
-# Microman Battle Charge (J 990326 V1.000).mra
-url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Microman%20Battle%20Charge%20(J%20990326%20V1.000).mra"
-output = "_Arcade/Microman Battle Charge (J 990326 V1.000).mra"
-
-
-# Name Club Disney (J 980614 V1.000).mra
-url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Name%20Club%20Disney%20(J%20980614%20V1.000).mra"
-output = "_Arcade/Name Club Disney (J 980614 V1.000).mra"
-
-
-# Name Club Ver.3 (J 970723 V1.000).mra
-url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Name%20Club%20Ver.3%20(J%20970723%20V1.000).mra"
-output = "_Arcade/Name Club Ver.3 (J 970723 V1.000).mra"
 
 
 # Othello Shiyouyo (J 980423 V1.002).mra
@@ -4114,21 +4094,6 @@ output = "_Arcade/Pebble Beach - The Great Shot (JUE 950913 V0.990).mra"
 # Princess Clara Daisakusen (J 960910 V1.000).mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Princess%20Clara%20Daisakusen%20(J%20960910%20V1.000).mra"
 output = "_Arcade/Princess Clara Daisakusen (J 960910 V1.000).mra"
-
-
-# Print Club 2 (U 970921 V1.000).mra
-url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Print%20Club%202%20(U%20970921%20V1.000).mra"
-output = "_Arcade/Print Club 2 (U 970921 V1.000).mra"
-
-
-# Print Club 2 Vol. 3 (U 990310 V1.000).mra
-url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Print%20Club%202%20Vol.%203%20(U%20990310%20V1.000).mra"
-output = "_Arcade/Print Club 2 Vol. 3 (U 990310 V1.000).mra"
-
-
-# Print Club Pokemon B (U 991126 V1.000).mra
-url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Print%20Club%20Pokemon%20B%20(U%20991126%20V1.000).mra"
-output = "_Arcade/Print Club Pokemon B (U 991126 V1.000).mra"
 
 
 # Pro Mahjong Kiwame S (J 951020 V1.208).mra
@@ -4186,11 +4151,6 @@ url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/release
 output = "_Arcade/Steep Slope Sliders (JUET 981110 V1.000).mra"
 
 
-# Stress Busters (J 981020 V1.000).mra
-url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Stress%20Busters%20(J%20981020%20V1.000).mra"
-output = "_Arcade/Stress Busters (J 981020 V1.000).mra"
-
-
 # Suikoenbu - Outlaws of the Lost Dynasty (JUETL 950314 V2.001).mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Suikoenbu%20-%20Outlaws%20of%20the%20Lost%20Dynasty%20(JUETL%20950314%20V2.001).mra"
 output = "_Arcade/Suikoenbu - Outlaws of the Lost Dynasty (JUETL 950314 V2.001).mra"
@@ -4204,11 +4164,6 @@ output = "_Arcade/Super Major League (U 960108 V1.000).mra"
 # Taisen Tanto-R Sashissu!! (J 980216 V1.000).mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Taisen%20Tanto-R%20Sashissu!!%20(J%20980216%20V1.000).mra"
 output = "_Arcade/Taisen Tanto-R Sashissu!! (J 980216 V1.000).mra"
-
-
-# Technical Bowling (J 971212 V1.000).mra
-url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Technical%20Bowling%20(J%20971212%20V1.000).mra"
-output = "_Arcade/Technical Bowling (J 971212 V1.000).mra"
 
 
 # Tecmo World Cup '98 (JUET 980410 V1.000).mra
@@ -4234,11 +4189,6 @@ output = "_Arcade/Virtua Fighter Kids (JUET 960319 V0.000).mra"
 # Virtua Fighter Remix (JUETBKAL 950428 V1.000).mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Virtua%20Fighter%20Remix%20(JUETBKAL%20950428%20V1.000).mra"
 output = "_Arcade/Virtua Fighter Remix (JUETBKAL 950428 V1.000).mra"
-
-
-# Virtual Mahjong (J 961214 V1.000).mra
-url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Virtual%20Mahjong%20(J%20961214%20V1.000).mra"
-output = "_Arcade/Virtual Mahjong (J 961214 V1.000).mra"
 
 
 # Virtual Mahjong 2 - My Fair Lady (J 980608 V1.000).mra

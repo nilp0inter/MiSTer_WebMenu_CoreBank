@@ -115,6 +115,12 @@
           "sha": "2e0ad904c903b0c12cf571fcb9648ddbbaac2542",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/ADCTest_MiSTer/main/releases/ADCTest_20240610.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "ADCTest_20250619.rbf",
+          "sha": "2f15f09be4c38380ef0e68c7a61fa3ba3d634ab0",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/ADCTest_MiSTer/main/releases/ADCTest_20250619.rbf",
+          "type": "RBF"
         }
       ]
     },
@@ -13765,7 +13771,7 @@
     {
       "name": "Arcade-TaitoF2_MiSTer",
       "description": null,
-      "readme": "# Taito F2 System MiSTer Core\r\n\r\nThis is an FPGA implementation of the Taito F2 arcade system for the MiSTer platform. The Taito F2 system was used for arcade games from the late 1980s to early 1990s and featured advanced graphics capabilities including sprite scaling, multiple scroll layers, rotation, zoom and ADPCM sample playback.\r\n\r\nThe [F1](https://www.system16.com/hardware.php?id=662) and [F2](https://www.system16.com/hardware.php?id=661) System 16 pages both cover this hardware. It's unclear what the distinction is between them or where the naming comes from since the PCBs do not contain any markings with either name.\r\n\r\n## Supported Games\r\n\r\nThe following games are currently supported by this core:\r\n\r\n### Fully Implemented\r\n- **Cameltry** (1989) - Unique ball-rolling puzzle game with rotatable mazes\r\n- **Dino Rex** (1992) - Prehistoric fighting game with large dinosaur sprites\r\n- **Don Doko Don** (1989) - Platform action game featuring hammer-wielding characters\r\n- **Drift Out** (1991) - Rally racing game with overhead perspective\r\n- **Final Blow** (1989) - Boxing game with detailed fighter animations\r\n- **Growl** (1990) - Beat-em-up action game set in an African safari\r\n- **Gun Frontier** (1990) - Vertical scrolling shoot-em-up\r\n- **Liquid Kids** (1990) - Platform game featuring water-based gameplay mechanics\r\n- **Mega Blast** (1989) - Space shooter with scaling sprite effects\r\n- **The Ninja Kids** (1990) - Action platformer with ninja characters\r\n- **PuLiRuLa** (1991) - Quirky action game with magical transformations\r\n- **Solitary Fighter** (1991) - One-on-one fighting game\r\n- **Super Space Invaders '91** (1990) - Enhanced remake of the classic Space Invaders\r\n\r\n## System Components\r\n\r\n### CPU Architecture\r\n- **Main CPU**: Motorola 68000 running at 12MHz\r\n- **Audio CPU**: Zilog Z80 for sound processing\r\n- **Sound Chips**: Yamaha YM2610 (OPNB) for FM synthesis and ADPCM playback\r\n\r\n### Graphics Subsystem\r\n- **TC0100SCN**: Tilemapping\r\n- **TC0200OBJ**: Sprite rendering with scaling capabilities\r\n- **TC0110PCR**: Two input priority and palette\r\n- **TC0360PRI**: Three input priority mixer with blending support\r\n- **TC0260DAR**: Palette and DAC\r\n- **TC0430GRW**: Tilemapping with rotation and scaling\r\n\r\n### Audio Processing\r\n- **TC0140SYT**: Sound communication interface between CPUs\r\n- **YM2610**: 4-channel FM + 6-channel ADPCM-A + 1-channel ADPCM-B\r\n\r\n## Credits\r\n\r\nMany people, knowingly or not, contributed to this work.\r\n\r\n- MAME project and all those who contributed to the F2 driver: David Graves, Bryan McPhail, Brad Oliver, Andrew Prime, Brian Troha, Nicola Salmoria\r\n- @sorgelig, for developing and maintaining MiSTer.\r\n- @jotego, for the YM2610 implementation, various utility modules and lots of examples of 68000 usage.\r\n- @ArtemioUrbina, for their support building MDfourier tests.\r\n- The MiSTer FPGA discord server for support, advice and testing.\r\n\r\n",
+      "readme": "# Taito F2 System MiSTer Core\r\n\r\nThis is an FPGA implementation of the Taito F2 arcade system for the MiSTer platform. The Taito F2 system was used for arcade games from the late 1980s to early 1990s and featured advanced graphics capabilities including sprite scaling, multiple scroll layers, rotation, zoom and ADPCM sample playback.\r\n\r\nThe [F1](https://www.system16.com/hardware.php?id=662) and [F2](https://www.system16.com/hardware.php?id=661) System 16 pages both cover this hardware. It's unclear what the distinction is between them or where the naming comes from since the PCBs do not contain any markings with either name.\r\n\r\n## Supported Games\r\n\r\nThe following games are currently supported by this core:\r\n\r\n### Fully Implemented\r\n- **Cameltry** (1989) - Unique ball-rolling puzzle game with rotatable mazes\r\n- **Dino Rex** (1992) - Prehistoric fighting game with large dinosaur sprites\r\n- **Don Doko Don** (1989) - Platform action game featuring hammer-wielding characters\r\n- **Thunder Fox** (1990) - Side scrolling run and gun\r\n- **Drift Out** (1991) - Rally racing game with overhead perspective\r\n- **Final Blow** (1989) - Boxing game with detailed fighter animations\r\n- **Growl** (1990) - Beat-em-up action game set in an African safari\r\n- **Gun Frontier** (1990) - Vertical scrolling shoot-em-up\r\n- **Liquid Kids** (1990) - Platform game featuring water-based gameplay mechanics\r\n- **Mega Blast** (1989) - Space shooter with scaling sprite effects\r\n- **The Ninja Kids** (1990) - Action platformer with ninja characters\r\n- **PuLiRuLa** (1991) - Quirky action game with magical transformations\r\n- **Solitary Fighter** (1991) - One-on-one fighting game\r\n- **Super Space Invaders '91** (1990) - Enhanced remake of the classic Space Invaders\r\n\r\n## System Components\r\n\r\n### CPU Architecture\r\n- **Main CPU**: Motorola 68000 running at 12MHz\r\n- **Audio CPU**: Zilog Z80 for sound processing\r\n- **Sound Chips**: Yamaha YM2610 (OPNB) for FM synthesis and ADPCM playback\r\n\r\n### Graphics Subsystem\r\n- **TC0100SCN**: Tilemapping\r\n- **TC0200OBJ**: Sprite rendering with scaling capabilities\r\n- **TC0110PCR**: Two input priority and palette\r\n- **TC0360PRI**: Three input priority mixer with blending support\r\n- **TC0260DAR**: Palette and DAC\r\n- **TC0430GRW**: Tilemapping with rotation and scaling\r\n\r\n### Audio Processing\r\n- **TC0140SYT**: Sound communication interface between CPUs\r\n- **YM2610**: 4-channel FM + 6-channel ADPCM-A + 1-channel ADPCM-B\r\n\r\n## Credits\r\n\r\nMany people, knowingly or not, contributed to this work.\r\n\r\n- MAME project and all those who contributed to the F2 driver: David Graves, Bryan McPhail, Brad Oliver, Andrew Prime, Brian Troha, Nicola Salmoria\r\n- @sorgelig, for developing and maintaining MiSTer.\r\n- @jotego, for the YM2610 implementation, various utility modules and lots of examples of 68000 usage.\r\n- @ArtemioUrbina, for their support building MDfourier tests.\r\n- The MiSTer FPGA discord server for support, advice and testing.\r\n\r\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/Arcade-TaitoF2_MiSTer",
@@ -13774,6 +13780,12 @@
           "name": "Arcade-TaitoF2_20250529.rbf",
           "sha": "21dd2f281237d7c6518fcf622857180f44f69910",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/Arcade-TaitoF2_20250529.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-TaitoF2_20250619.rbf",
+          "sha": "4087dc9706b1cd5e783416ba229ebd68a04836b9",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/Arcade-TaitoF2_20250619.rbf",
           "type": "RBF"
         },
         {
@@ -13942,6 +13954,19 @@
             "rbf": "TaitoF2",
             "zips": [
               "ninjak.zip"
+            ]
+          }
+        },
+        {
+          "name": "Thunder Fox (World, rev 1).mra",
+          "sha": "6a3afbcdadb9829b8de7eed6f3f91894a15f15f3",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/Thunder%20Fox%20(World%2C%20rev%201).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Thunder Fox (World, rev 1)",
+            "rbf": "TaitoF2",
+            "zips": [
+              "thundfox.zip"
             ]
           }
         },
@@ -14306,6 +14331,32 @@
             "rbf": "TaitoF2",
             "zips": [
               "ninjaku.zip|ninjak.zip"
+            ]
+          }
+        },
+        {
+          "name": "Thunder Fox (Japan, rev 1).mra",
+          "sha": "8192807f0b9d0a12827f866179bf2148069dc848",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/_alternatives/_Thunder%20Fox/Thunder%20Fox%20(Japan%2C%20rev%201).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Thunder Fox (Japan, rev 1)",
+            "rbf": "TaitoF2",
+            "zips": [
+              "thundfoxj.zip|thundfox.zip"
+            ]
+          }
+        },
+        {
+          "name": "Thunder Fox (US, rev 1).mra",
+          "sha": "3d23d376b4f8494acf2cacc5cee099a6a295102c",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/_alternatives/_Thunder%20Fox/Thunder%20Fox%20(US%2C%20rev%201).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Thunder Fox (US, rev 1)",
+            "rbf": "TaitoF2",
+            "zips": [
+              "thundfoxu.zip|thundfox.zip"
             ]
           }
         }
@@ -16047,7 +16098,7 @@
     {
       "name": "Atari800_MiSTer",
       "description": "Atari 800XL/65XE/130XE for MiSTer",
-      "readme": "# Atari [5200](https://en.wikipedia.org/wiki/Atari_5200) and [Atari 800/800XL/65XE/130XE](https://en.wikipedia.org/wiki/Atari_8-bit_family) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\n### This is the port of [Atari 800XL core by Mark Watson](http://www.64kib.com/redmine/projects/eclairexl)\n\n### Installation\n* Copy the *.rbf file to the root of the system SD card.\n* Copy the files to Atari800/Atari5200 folder\n\n## Usage notes\n\n### System ROM\nYou can supply other A800 OS ROM as Atari800/boot.rom. \nAlternative Basic ROM can be placed to Atari800/boot1.rom. \n\nIntegrated 800XL ROM includes SIO turbo patch (fast disk loading).\n\nTurbo ROM has hot keys to control the turbo mode:\n* SHIFT+CONTROL+N    Disable highspeed SIO (normal speed)\n* SHIFT+CONTROL+H    Enable highspeed SIO \n  \nAdditionally, you can control the speed of turbo loading in OSD menu.\n\n### Disks\nA800: After mounting the disk, press F10 to boot.\nSome games don't like the Basic ROM. Keep F8(Option) pressed while pressing F10 to skip the Basic.\n\n### Differences from original version\n* Joystick/Paddle mode switched by joystick. Press **Paddle1/2** to switch to paddle mode (analog X/Y). Press **Fire** to switch to joystick mode (digital X/Y).\n* Use ` key as a **Brake** on reduced keyboards.\n* Cursor keys are mapped to Atari cursor keys.\n* PAL/NTSC mode switch in settings menu (A800)\n* Video aspect ratio switch in settings menu\n* Some optimizations and tweaks in file selector and settings menu navigation.\n* Standard OSD menu for cartridge/disk selection.\n* Mouse emulates analog joystick(Atari 5200) and paddles(Atari 800).\n* Fire 2 and Fire 3 on joystick.\n\n### Disable Basic ROM by Joystick.\nFire 2 on joystick acts as an OPTION key while reboot. It's valid only 2 seconds after reboot. After that Fire 2 doesn't affect the OPTION key.\n\n### More info\nSee more info in original [instructions](https://github.com/MiSTer-devel/Atari800_MiSTer/tree/master/instructions.txt)\nand original [manual](https://github.com/MiSTer-devel/Atari800_MiSTer/tree/master/manual.pdf).\n\n## Download precompiled binaries\nGo to [releases](https://github.com/MiSTer-devel/Atari800_MiSTer/tree/master/releases) folder.\n",
+      "readme": "# Atari [5200](https://en.wikipedia.org/wiki/Atari_5200) and [Atari 800/800XL/65XE/130XE](https://en.wikipedia.org/wiki/Atari_8-bit_family) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\n### This is the port of [Atari 800XL core by Mark Watson](http://www.64kib.com/redmine/projects/eclairexl)\n\n### Installation\n* Copy the *.rbf file to the root of the system SD card.\n* Copy the files to Atari800/Atari5200 folder\n\n## Usage notes\n\n### System ROM\nYou can supply other A800 XL OS ROM as games/ATARI800/boot.rom. \nAlternative Basic ROM can be placed to games/ATARI800/boot1.rom. \nAlternative A800 OS-A ROM as games/ATARI800/boot2.rom.\nAlternative A800 OS-B ROM as games/ATARI800/boot3.rom.\n\nIntegrated OS ROMs include SIO turbo patch (fast disk loading). Note that the single fact that this patch is present can break some titles, especially the timing sensitive ATX disk based ones.\n\nTurbo ROM has hot keys to control the turbo mode:\n* SHIFT+CONTROL+N    Disable highspeed SIO (normal speed)\n* SHIFT+CONTROL+H    Enable highspeed SIO \n\nAnother alternative is to load and set the ROM files from the OSD menu, they will become permanent (use Backspace when loading to clear them), but only if there are no alternative boot.rom files, otherwise those will take precedence. Yet, there is an option to change that behaviour too (that is, keep the boot.rom files on the SD card, but have the ROM data loaded from the OSD selected files on core initialisation).\n\nAdditionally, you can control the speed of turbo loading in OSD menu.\n\n### Disks\nA800: After mounting the disk, press F10 to boot.\nSome games don't like the Basic ROM. Keep F8(Option) pressed while pressing F10 to skip the Basic.\nYou can also boot a disk directly from the D1: drive using the first menu entry, the F10 Reset and F8 Option keys are applied automatically, any mounted carts are unmounted.\nFor ATX disk titles that are timing sensitive, you may also want to try to change the emulated drive timing between the older 810 disk drive, and the XL line 1050 one (this does not apply at all to non-ATX titles, the option has no effect). Moreover, some ATX titles will only load on the PAL or NTSC machine only, depending on which system they were designed for.\n\n### Executable files\nA800: There is an entry to directly load the Atari OS executable files (the so called XEX files) using a high-speed direct memory access loader.\nIf a title does not load, you may want to try to switch the loader location in Atari memory (Standard - it sits at 0x700, Stack - it is located at the bottom of the stack area at 0x100).\n\n### Classic Atari 800 mode\nWhen selecting OS-B in the Machine/BIOS menu option, the core works in the classic Atari 800 mode (reset required to take effect), and different memory layouts are available / activated. Note that the 52KB memory layout is not compatible with the core built-in 800 OS-A/B system, it freezes the boot process. This is not a core bug, but an Atari 800 legacy. To remedy this you have to use / load the genuine OS-A/B rom file.\nAdditionally, in the classic 800 mode there are 4 controllers available to the Atari (as the original hardware had it), 4 controllers are also available in the 5200 core.\n\n### Cartridges\nWith the newer version of the core the database of supported cartridge types have been extended and the ability to \"stack\" cartridges have been added. The stacking is only working or is useful when the first cartridge is a pass-thru type, these are the different kinds of Sparta DOS X cartridges. Moreover, now the selected distributions of SDX provided by the Sparta DOS X project are supported, you can use the rom files for Ultimate 1MB or Super Cart directly with the core. When stacking the size of both cartridges is limited to 1MB (this is only partly checked) when normally cartridges up to 2MB in size are supported. This, however, is not an actual limitation as all SDX releases are under 1MB and so are any useful to stack programming language cartridges, like MAC/65 or Action!. In the classic 800 mode, see above, the stacked cartridge slot doubles as the right cartridge slot of Atari 800 and the actual stacking for SDX is not supported.\n\n### PBI BIOS\n\nThe PBI BIOS enables accessing ATR images in a fast DMA-based fashion (works only with \"friendly\" images), provides an OS independent HSIO implementation, and provides basic support for HDD image emulation for SpartaDOSX. No in-depth explanations of how SDX deals with hard drives or the general mechanics of PBI are given here, plenty of resources for this out there, but just some details particular to this PBI implementation. The splash options will make the Atari OS flash the PBI information during system boot, this is a non-interactive, information only screen (good as a reminder that PBI is turned on). The boot drive option essentially tells SDX where to end up after boot (currently selected drive) and where to search for the CONFIG.SYS and AUTOEXEC.BAT files. In the drives menu you can select how each particular emulated drive should behave against PBI probing, but there are internal overriding exceptions to this, for example, PBI mode is always on for XEX files mounted as disk drives, or ATX files are always handled as Stock/OS. Moreover, regardless of the drive settings, if an HDD partition is mounted at a particular drive it is always handled with PBI/DMA (obviously). For HDD images, only raw IMG files are supported (so no VHD, fixed size or otherwise) and there can be be only one image mounted (so only one HDD device is emulated), regardless of whether the image is mounted through D3: or D4:. Effectively, these two slots have a double function (this is due to the core already using the maximum allowed number of MiSTer mount slots), and once you use either of the slots to mount the image, you cannot mount a regular disk image (well, you can, but the HDD as a whole will disappear) on that slot (but you can still do it on the other slot). This should not be a problem in most cases, as the D3: alt. D4: drives are usually taken up by an HDD partition nevertheless to serve the SDX C: drive. Finally, the PBI driver does not support dynamic partition or FAT hosted ATR files mounting, the PBI BIOS ID is fixed to 0, and the implementation also assumes there would be no other PBI devices in the system (rather impossible on a MiSTer), this allows to speed up some \"PBI decisions\" as well. Really final note - some Atari titles may not like this PBI BIOS implementation, so far the Rewind 2 demo is known to crash mid way when the PBI BIOS is activated.\n\nPractically, to use an HDD image with SDX you would first turn on the PBI, set the PBI boot drive to APT, then mount the HDD image file on D3:, and then load the SDX Ultimate 1MB ROM image as a cart, this should boot the Atari into SDX with the HDD. To create an empty HDD image you can get into the Linux console, find the games/ATARI800 folder, and run `dd if=/dev/zero of=sdx_hdd.img bs=1M count=X` where X is your desired image size in MB. Finally, note that if you want to use an image created earlier on a PC and mounted in Altirra and formatted with an SDX running there you may get skewed up partition geometry (due to a bug / feature in Altirra, it would be already skewed there, problem reported to the author).\n\n### Differences from original version\n* Joystick/Paddle mode switched by joystick. Press **Paddle1/2** to switch to paddle mode (analog X/Y). Press **Fire** to switch to joystick mode (digital X/Y).\n* Use ` key as a **Brake** on reduced keyboards.\n* Cursor keys are mapped to Atari cursor keys.\n* PAL/NTSC mode switch in settings menu (A800)\n* Video aspect ratio switch in settings menu\n* Switchable side clipping of the video output to hide the GTIA \"garbage\". \n* An option to turn off the hi-res Antic extension from the original core, which brakes some titles.\n* Some optimizations and tweaks in file selector and settings menu navigation.\n* Standard OSD menu for cartridge/disk selection.\n* Mouse emulates analog joystick(Atari 5200) and paddles(Atari 800).\n* Fire 2 and Fire 3 on joystick.\n\n### Disable Basic ROM by Joystick.\nFire 2 on joystick acts as an OPTION key while reboot. It's valid only 2 seconds after reboot. After that Fire 2 doesn't affect the OPTION key.\n\n### More info\nSee more info in original [instructions](https://github.com/MiSTer-devel/Atari800_MiSTer/tree/master/instructions.txt)\nand original [manual](https://github.com/MiSTer-devel/Atari800_MiSTer/tree/master/manual.pdf).\n\n## Download precompiled binaries\nGo to [releases](https://github.com/MiSTer-devel/Atari800_MiSTer/tree/master/releases) folder.\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/Atari800_MiSTer",
@@ -17073,7 +17124,7 @@
     {
       "name": "C64_MiSTer",
       "description": null,
-      "readme": "# C64 for [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\nBased on FPGA64 by Peter Wendrich with heavy later modifications by different people.\n\n## Features\n- C64 and C64GS modes.\n- C1541 read/write/format support in raw GCR mode (*.D64, *.G64)\n- C1581 read/write support (*.D81)\n- Parallel C1541 port for faster (~20x) loading time using DolphinDOS.\n- External IEC through USER_IO port.\n- Amost all cartridge formats (*.CRT)\n- Direct file injection (*.PRG)\n- Dual SID with several degree of mixing 6581/8580 from stereo to mono.\n- Similar to 6581 and 8580 SID filters.\n- REU 16MB and GeoRAM 4MB memory expanders.\n- OPL2 sound expander.\n- Pause option when OSD is opened.\n- 4 joysticks mode.\n- RS232 with VIC-1011 and UP9600 modes either internal or through USER_IO.\n- Loadable Kernal/C1541 ROMs.\n- Special reduced border mode for 16:9 display.\n- C128/Smart Turbo mode up to 4x.\n- Real-time clock\n\n## Installation\nCopy the *.rbf to the root of the SD card. Copy disks/carts to C64 folder.\n\n## Usage\n\n### Keyboard\n* F2,F4,F6,F8,Left/Up keys automatically activate Shift key.\n* F9 - arrow-up key.\n* F10 - = key.\n* F11 - restore key. Also special key in AR/FC carts.\n* Alt,Tab - C= key.\n* PgUp - Tape play/pause\n\n![keyboard-mapping](https://github.com/mister-devel/C64_MiSTer/blob/master/keymap.gif)\n\n### Using without keyboard\nIf your joystick/gamepad has more than 4 buttons then you can have some limited usage of keybiard.\nJoystick buttons **Mod1** and **Mod2** adds 12 frequently used keys to skip the intros and start the game.\nConsidering default button maps RLDU,Fire1,Fire2,Fire3,Paddle Btn, following keys are possible to enter:\n* With holding **Mod1**: Cursor RLDU, Enter, Space, Esc, Alt+ESC(LOAD\"*\" then RUN)\n* With holding **Mod2**: 1,2,3,4,5,0,Y,N\n* With holding **Mod1+Mod2**: F1,F2,F3,F4,F5,F6,F7,F8\n\nWith maps above and using Dolphin DOS you can issue **F7** to list the files on disk, then move cursor to required file, then issue **Alt+ESC** to load it and run.\n\n### Loadable ROM\nAlternative ROM can loaded from OSD: Hardware->Load System ROM.\nFormat is simple concatenation of BASIC + Kernal.rom + C1541.rom\n\nTo create the ROM in DOS or Windows, gather your files in one place and use the following command from the DOS prompt. \nThe easiest place to acquire the ROM files is from the VICE distribution. BASIC and KERNAL are in the C64 directory,\nand dos1541 is in the Drives directory.\n\n`COPY BASIC + KERNAL + dos1541 MYOWN.ROM /B`\n\nTo use JiffyDOS or another alternative kernel, replace the filenames with the name of your ROM or BIN file.  (Note, you muse use the 1541-II ROM. The ROM for the original 1541 only covers half the drive ROM and does not work with emulators.)\n\n`COPY /B BASIC.bin +JiffyDOS_C64.bin +JiffyDOS_1541-II.bin MYOWN.ROM`\n\nTo confirm you have the correct image, the BOOT.ROM created must be exactly 32768 or 49152(in case of 32KB C1541 ROM) bytes long. \n\nThere are 2 loadable ROM sets are provided: **DolphinDOS v2.0** and **SpeedDOS v2.7**. Both ROMs support parallel Disk Port. DolphinDOS is fastest one.\n\nFor **C1581** you can use separate ROM with size up to 32768 bytes.\n\n### Autoload the cartridge\nIn OSD->Hardware page you can choose Boot Cartridge, so everytime core loaded, this cartridge will be loaded too.\n\n### Parallel port for disks.\nAre you tired from long loading times and fast loaders aren't really fast when comparing to other systems? \n\nHere is the solution:\nIn OSD->System page choose **Expansion: Fast Disks**. Then load [DolphinDOS_2.0.rom](releases/DolphinDOS_2.0.rom). You will get about **20x times faster** loading from disks!\n\n### Turbo modes\n\n**C128 mode:** this is C128 compatible turbo mode available in C64 mode on Commodore 128 and can be controlled from software, so games written with this turbo mode support will take advantage of this.\n\n**Smart mode:** In this mode any access to disk will disable turbo mode for short time enough to finish disk operations, thus you will have turbo mode without loosing disk operations.\n\n### RS232\n\nPrimary function of RS232 is emulated dial-up connection to old-fashioned BBS. **CCGMS Ultimate** is recommended (Don't use CCGMS 2021 - it's buggy version). It supports both standard 2400 VIC-1011 and more advanced UP9600 modes.\n\n**Note:** DolphinDOS and SpeedDOS kernals have no RS232 routines so most RS232 software don't work with these kernals!\n\n### GeoRAM\nSupported up to 4MB of memory. GeoRAM is connected if no other cart is loaded. It's automatically disabled when cart is loaded, then enabled when cart unloaded.\n\n### REU\nSupported standard 512KB, expanded 2MB with wrapping inside 512KB blocks (for compatibility) and linear 16MB size with full 16MB counter wrap.\nSupport for REU files.\n\nGeoRAM and REU don't conflict each other and can be both enabled.\n\n### USER_IO pins\n\n| USER_IO | USB 3.0 name | Signal name |\n|:-------:|:-------------|:------------|\n|   0     |    D+        | RS232 RX    |\n|   1     |    D-        | RS232 TX    |\n|   2     |    TX-       | IEC /CLK    |\n|   3     |    GND_d     | IEC /RESET  |\n|   4     |    RX+       | IEC /DATA   |\n|   5     |    RX-       | IEC /ATN    |\n\nAll signals are 3.3V LVTTL and must be properly converted to required levels!\n\n### Real-time clock\n\nRTC is PCF8583 connected to tape port.\nTo get real time in GEOS, copy CP-CLOCK64-1.3 from supplied [disk](https://github.com/mister-devel/C64_MiSTer/blob/master/releases/CP-ClockF83_1.3.D64) to GEOS system disk.\n\n### Raw GCR mode\n\nC1541 implementation works in raw GCR mode (D64 format is converted to GCR and then back when saved), so some non-standard tracks are supported if G64 file format is used. Support formatting and some copiers using raw track copy. Speed zones aren't supported (yet), but system follows the speed setting, so variable speed within a track should work.\nProtected disk in most cases won't work yet and still require further tuning of access times to comply with different protections.\n\n",
+      "readme": "# C64 for [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\nBased on FPGA64 by Peter Wendrich with heavy later modifications by different people.\n\n## Features\n- C64 and C64GS modes\n- C1541 read/write/format support in raw GCR mode (*.D64, *.G64)\n- C1581 read/write support (*.D81)\n- Parallel C1541 port for faster (~20x) loading time using DolphinDOS\n- External IEC through USER_IO port\n- Almost all cartridge formats (*.CRT)\n- Direct file injection (*.PRG)\n- Dual SID with several degrees of mixing 6581/8580 from stereo to mono\n- Similar to 6581 and 8580 SID filters\n- REU 16MB and GeoRAM 4MB memory expanders\n- OPL2 sound expander\n- Pause option when OSD is opened\n- 4 joysticks mode\n- RS232 with VIC-1011 and UP9600 modes either internal or through USER_IO\n- Loadable Kernal/C1541 ROMs\n- Special reduced border mode for 16:9 display\n- C128/Smart Turbo mode up to 4x\n- Real-time clock\n\n## Installation\nCopy the *.rbf to the root of the SD card. Copy disks/carts to C64 folder.\n\n## Usage\n\n### Keyboard\nNote: F2, F4, F6, F8, Left/Up keys automatically activate Shift key.\n\n| Key       | Function                                     |\n|:---------:|----------------------------------------------|\n| F9        | Arrow-up key                                 |\n| F10       | = key                                        |\n| F11       | Restore key. Also special key in AR/FC carts |\n| Alt, Tab  | C= key                                       |\n| PgUp      | Tape play/pause                              |\n<br>\n\n![keyboard-mapping](https://github.com/mister-devel/C64_MiSTer/blob/master/keymap.gif)\n\n### Using without keyboard\nIf your controller has more than four buttons then you can map a couple of buttons to **Mod1** and **Mod2** to add twelve frequently used keys; for example, to skip the intros and start the game.\n\n|                       | \u2192           | \u2193           | \u2190           | \u2191           | Fire1    | Fire2   | Fire3   | Paddle                      |\n|:---------------------:|:-----------:|:-----------:|:-----------:|:-----------:|:--------:|:-------:|:-------:|:---------------------------:|\n| **Mod1**              | Cursor<br>\u2192 | Cursor<br>\u2193 | Cursor<br>\u2190 | Cursor<br>\u2191 | Enter    | Space   | Esc     | Alt+ESC (LOAD\"*\" then RUN)  |\n| **Mod2**              | 1           | 2           | 3           | 4           | 5        | 0       | Y       | N                           |\n| **Mod1 + Mod2**       | F1          | F2          | F3          | F4          | F5       | F6      | F7      | F8                          |\n\nWith maps above and using Dolphin DOS you can issue **F7** to list the files on disk, then move cursor to required file, then issue **Alt+ESC** to load it and run.\n\n### Loadable ROM\nAlternative ROM can be loaded from OSD: Hardware->Load System ROM.\nFormat is simple concatenation of BASIC + Kernal.rom + C1541.rom\n\nTo create the ROM in DOS or Windows, gather your files in one place and use the following command from the DOS prompt. \nThe easiest place to acquire the ROM files is from the VICE distribution. BASIC and KERNAL are in the C64 directory,\nand dos1541 is in the Drives directory.\n\n`COPY BASIC + KERNAL + dos1541 MYOWN.ROM /B`\n\nTo use JiffyDOS or another alternative kernel, replace the filenames with the name of your ROM or BIN file. (Note, you must use the 1541-II ROM. The ROM for the original 1541 only covers half the drive ROM and does not work with emulators.)\n\n`COPY /B BASIC.bin +JiffyDOS_C64.bin +JiffyDOS_1541-II.bin MYOWN.ROM`\n\nTo confirm you have the correct image, the BOOT.ROM created must be exactly 32768 or 49152 (in case of 32KB C1541 ROM) bytes long. \n\nTwo loadable ROM sets are provided: **DolphinDOS v2.0** and **SpeedDOS v2.7**. Both ROMs support parallel Disk Port. DolphinDOS is the faster of the two.\n\nFor **C1581** you can use separate ROM with size up to 32768 bytes.\n\n### Autoload the cartridge\nIn OSD->Hardware page you can choose Boot Cartridge, so every time a core is loaded, this cartridge will be loaded too.\n\n### Parallel port for disks.\nAre you tired of long loading times and fast loaders aren't really fast when comparing to other systems? \nIn OSD->System choose **Expansion: Fast Disks**. Then load [DolphinDOS_2.0.rom](releases/DolphinDOS_2.0.rom). You will get about **20x times faster** loading from disks!\n\n### Turbo modes\n\n**C128 mode:** this is C128 compatible turbo mode available in C64 mode on Commodore 128 and can be controlled from software, so games written with this turbo mode support will take advantage of this.\n\n**Smart mode:** In this mode any access to disk will disable turbo mode for short time enough to finish disk operations, thus you will have turbo mode without losing disk operations.\n\n### RS232\n\nPrimary function of RS232 is emulated dial-up connection to old-fashioned BBS. **CCGMS Ultimate** is recommended (Don't use CCGMS 2021 - it's buggy version). It supports both standard 2400 VIC-1011 and more advanced UP9600 modes.\n\n**Note:** DolphinDOS and SpeedDOS kernals have no RS232 routines so most RS232 software doesn't work with these kernals!\n\n### GeoRAM\nSupported up to 4MB of memory. GeoRAM is connected if no other cart is loaded. It's automatically disabled when cart is loaded, then enabled when cart unloaded.\n\n### REU\nSupported standard 512KB, expanded 2MB with wrapping inside 512KB blocks (for compatibility) and linear 16MB size with full 16MB counter wrap.\nSupport for REU files.\n\nGeoRAM and REU don't conflict each other and can be both enabled.\n\n### USER_IO pins\n\n| USER_IO | USB 3.0 name | Signal name |\n|:-------:|:-------------|:------------|\n|   0     |    D+        | RS232 RX    |\n|   1     |    D-        | RS232 TX    |\n|   2     |    TX-       | IEC /CLK    |\n|   3     |    GND_d     | IEC /RESET  |\n|   4     |    RX+       | IEC /DATA   |\n|   5     |    RX-       | IEC /ATN    |\n\nAll signals are 3.3V LVTTL and must be properly converted to required levels!\n\n### Real-time clock\n\nRTC is PCF8583 connected to tape port.\nTo get real time in GEOS, copy CP-CLOCK64-1.3 from supplied [disk](https://github.com/mister-devel/C64_MiSTer/blob/master/releases/CP-ClockF83_1.3.D64) to GEOS system disk.\n\n### Raw GCR mode\n\nC1541 implementation works in raw GCR mode (D64 format is converted to GCR and then back when saved), so some non-standard tracks are supported if G64 file format is used. Support formatting and some copiers using raw track copy. Speed zones aren't supported (yet), but system follows the speed setting, so variable speed within a track should work.\nProtected disk in most cases won't work yet and still require further tuning of access times to comply with different protections.\n\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/C64_MiSTer",
@@ -17591,6 +17642,12 @@
           "sha": "02a5445feec1f4c79101effb3da6307b2ab0e5aa",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Casio_PV-1000_MiSTer/main/releases/Casio_PV-1000_20241024.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "Casio_PV-1000_20250622.rbf",
+          "sha": "2930bf409360535a67fc1712836600c41be3c6c7",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Casio_PV-1000_MiSTer/main/releases/Casio_PV-1000_20250622.rbf",
+          "type": "RBF"
         }
       ]
     },
@@ -17612,6 +17669,12 @@
           "name": "Casio_PV-2000_20241019.rbf",
           "sha": "d6cf9701d242b9f95d1f3468a1e77e21d3956201",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Casio_PV-2000_MiSTer/main/releases/Casio_PV-2000_20241019.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Casio_PV-2000_20250622.rbf",
+          "sha": "ecb3d05055bd2c64f6bddc41dd59774fbd4dd5cb",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Casio_PV-2000_MiSTer/main/releases/Casio_PV-2000_20250622.rbf",
           "type": "RBF"
         }
       ]
@@ -18419,7 +18482,7 @@
     {
       "name": "Gameboy_MiSTer",
       "description": "Gameboy for MiSTer",
-      "readme": "# [Gameboy](https://en.wikipedia.org/wiki/Game_Boy)  / [Gameboy Color](https://en.wikipedia.org/wiki/Game_Boy_Color) port to [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\r\n\r\nThis is port of [Gameboy for MiST](https://github.com/mist-devel/gameboy)\r\n\r\n* Place RBF file into root of SD card.\r\n* Place *.gb|*.gbc files into Gameboy folder.\r\n\r\n## Features\r\n* Original Gameboy & Gameboy Color Support\r\n* Super Gameboy Support - Borders, Palettes and Multiplayer\r\n* MegaDuck Support\r\n* Custom Borders\r\n* SaveStates\r\n* Fastforward \r\n* Rewind - Allows you to rewind up to 40 seconds of gameplay\r\n* Frameblending - Prevents flicker in some games (e.g. \"Chikyuu Kaihou Gun Zas\") \r\n* Custom Palette Loading\r\n* Real-Time Clock Support\r\n* Gameboy Link Port Support - Requires USERIO adapter\r\n* Cheats\r\n* Fast boot\r\n* GBA mode for GBC games\r\n\r\n## Open Source Bootstrap roms\r\nOpen source roms are included in the core, adapted from the SameBoy project [https://github.com/LIJI32/SameBoy/](https://github.com/LIJI32/SameBoy/). These roms have MiSTer-specific enhancements, allowing fast booting and GBA mode to be controlled by the on-screen display.\r\n\r\n For maximum compatibility/authenticity you can still place the Gameboy bios/bootroms into the Gameboy folder and load them in the menu with `Bootroms->Load GBC/DMG/SGB boot`. \r\n\r\nFor more information see the [BootROM README](./BootROMs/README.md)  \r\n\r\n## Palettes\r\nThis core supports custom palettes (*.gbp) which should be placed into the Gameboy folder. Some examples are available in the palettes folder.\r\n\r\n## Custom Borders\r\nThis core supports custom borders (*.sgb) which should be placed into the Gameboy folder. Some examples are available in the borders folder.\r\n\r\n## Autoload\r\nTo autoload your favorite game at startup rename it to `boot2.rom`.\r\n\r\n## Video output\r\nThe Gameboy can disable video output at any time which causes problems with vsync_adjust=2 or analog video during screen transitions. Enabling the Stabilize video option may fix this at the cost of some increased latency.\r\n\r\n# Savestates\r\nThis core provides 4 slots to save and restore the memory state which means you can save at any point in the game. These can be saved to your SDCard or they can reside only in memory for temporary use (OSD Option). Save states can be performed with the Keyboard, a mapped button to a gamepad, or through the OSD.\r\n\r\nKeyboard Hotkeys for save states:\r\n- Alt+F1 thru Alt+F4 - save state\r\n- F1 thru F4 - restore state\r\n\r\nGamepad:\r\n- Savestatebutton+Left or Right switches the savestate slot\r\n- Savestatebutton+Start+Down saves to the selected slot\r\n- Savestatebutton+Start+Up loads from the selected slot\r\n",
+      "readme": "# [Gameboy](https://en.wikipedia.org/wiki/Game_Boy)  / [Gameboy Color](https://en.wikipedia.org/wiki/Game_Boy_Color) port to [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\r\n\r\n_This is a port of [Gameboy for MiST](https://github.com/mist-devel/gameboy)_\r\n\r\n* Place RBF file into root of SD card.\r\n* Place \\*.gb|*.gbc files into Gameboy folder.\r\n\r\n## Features\r\n* Original Gameboy & Gameboy Color Support\r\n* Super Gameboy Support - Borders, Palettes and Multiplayer\r\n* MegaDuck Support\r\n* Custom Borders\r\n* SaveStates\r\n* Fastforward \r\n* Rewind - Allows you to rewind up to 40 seconds of gameplay\r\n* Frameblending - Prevents flicker in some games (e.g. \"Chikyuu Kaihou Gun Zas\") \r\n* Custom Palette Loading\r\n* Real-Time Clock Support\r\n* Gameboy Link Port Support - Requires USERIO adapter\r\n* Cheats\r\n* Fast boot\r\n* GBA mode for GBC games\r\n\r\n## Open Source Bootstrap roms\r\nOpen source roms are included in the core, adapted from the SameBoy project [https://github.com/LIJI32/SameBoy/](https://github.com/LIJI32/SameBoy/). These roms have MiSTer-specific enhancements, allowing fast booting and GBA mode to be controlled by the on-screen display.\r\n\r\n For maximum compatibility/authenticity you can still place the Gameboy bios/bootroms into the Gameboy folder and load them in the menu with `Bootroms->Load GBC/DMG/SGB boot`. \r\n\r\nFor more information see the [BootROM README](./BootROMs/README.md)  \r\n\r\n## Palettes\r\nThis core supports custom palettes (*.gbp) which should be placed into the Gameboy folder. Some examples are available in the palettes folder.\r\n\r\n## Custom Borders\r\nThis core supports custom borders (*.sgb) which should be placed into the Gameboy folder. Some examples are available in the borders folder.\r\n\r\n## Autoload\r\nTo autoload your favorite game at startup rename it to `boot2.rom`.\r\n\r\n## Video output\r\nThe Gameboy can disable video output at any time which causes problems with vsync_adjust=2 or analog video during screen transitions. Enabling the Stabilize video option may fix this at the cost of some increased latency.\r\n\r\n## Savestates\r\nThis core provides 4 slots to save and restore the memory state which means you can save at any point in the game. These can be saved to your SD Card or they can reside only in memory for temporary use (OSD Option). Save states can be performed with the Keyboard, a mapped button to a gamepad, or through the OSD.\r\n\r\nKeyboard Hotkeys for save states:\r\n- <kbd>ALT</kbd>+<kbd>F1</kbd>/<kbd>F2</kbd>/<kbd>F3</kbd>/<kbd>F4</kbd> \u2013 save state  \r\n- <kbd>F1</kbd>/<kbd>F2</kbd>/<kbd>F3</kbd>/<kbd>F4</kbd> \u2013 restore state\r\n\r\n\r\nGamepad:\r\n\r\n- <kbd>SAVESTATEBUTTON</kbd>+<kbd>LEFT</kbd>/<kbd>RIGHT</kbd> prev/next savestate slot\r\n- <kbd>SAVESTATEBUTTON</kbd>+<kbd>START</kbd>+<kbd>DOWN</kbd> saves to the selected slot\r\n- <kbd>SAVESTATEBUTTON</kbd>+<kbd>START</kbd>+<kbd>UP</kbd> loads from the selected slot\r\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/Gameboy_MiSTer",
@@ -18719,6 +18782,12 @@
           "type": "RBF"
         },
         {
+          "name": "Gameboy_20250618.rbf",
+          "sha": "b656584b13cb5d71f2696a4c9af40a8e62dd548a",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Gameboy_MiSTer/master/releases/Gameboy_20250618.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Mega Duck.mgl",
           "sha": "46182bf8d3cb712157b1b1dcc9235fe7f9c4daed",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Gameboy_MiSTer/master/releases/Mega%20Duck.mgl",
@@ -18738,7 +18807,7 @@
     {
       "name": "GBA_MiSTer",
       "description": "GBA for MiSTer",
-      "readme": "# [Gameboy Advance](https://en.wikipedia.org/wiki/Game_Boy_Advance) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\n\n# HW Requirements/Features\nThe games can run from a naked DE10-Nano with the build-in DDR-RAM.\nHowever, using SDRAM is highly recommended, as some games may slowdown or loose sync when using DDR-RAM.\n\nWhen using SDRAM, it requires 32MB SDRAM for games less than 32MB. 32MB games require either 64MB or 128MB module.\nSDRAM will be automatically used when available and size is sufficient.\n\n# Bios\nOpensource Bios from Normmatt is included, however it has issues with some games.\nOriginal GBA BIOS can be placed to GBA folder with name boot.rom\n\nPLEASE do not report errors without testing with the original BIOS\n\nHomebrew games are sometimes not supported by the official BIOS, \nbecause the BIOS checks for Nintendo Logo included in the ROM, which is protected by copyright.\nTo use these ROMs without renaming or removing the the boot.rom, \nyou can activate the \"Homebrew BIOS\" settings in OSD.\nAs the BIOS is already replaced at boot time, you must save this settings and hard reset/reload the GBA core.\n\n# Status\n~1600 games tested until ingame.\nThere is no known official game that doesn't work.\nExceptions are games that require rare extra hardware (mostly japanese).\nSome small video glitches remain, see issue list.\n\n# Features\n- saving as in GBA\n- Savestates\n- FastForward - speed up game by factor 2-4\n- CPU Turbomode - give games additional CPU power\n- Flickerblend - set to blend or 30Hz mode for games like F-Zero, Mario Kart or NES Classics to prevent flickering effects\n- Spritelimit - turn on to prevent wrong sprites for games that rely on the limit (opt-in)\n- Cheats\n- Color optimizations: shader colors and desaturate\n- Rewind: go back up to 60 seconds in time\n- Tilt: use analog stick (map stick in Mister Main before)\n- Solar Sensor: Set brightness in OSD\n- Gyro: use analog stick (map stick in Mister Main before)\n- RTC: automatically used, works with RTC board or internet connection\n- Rumble: for Drill Dozer, Wario Ware Twisted and some romhacks\n- 2x Resolution: game is rendered at 480x320 instead of 240x160 pixels\n\n# Savestates\nCore provides 4 slots to save and restore the state. \nThose can be saved to SDCard or reside only in memory for temporary use(OSD Option). \nUsage with either Keyboard, Gamepad mappable button or OSD.\n\nKeyboard Hotkeys for save states:\n- Alt-F1..F4 - save the state\n- F1...F4 - restore\n\nGamepad:\n- Savestatebutton+Left or Right switches the savestate slot\n- Savestatebutton+Down saves to the selected slot\n- Savestatebutton+Up loads from the selected slot\n\n# Rewind\nTo use rewind, turn on the OSD Option \"Rewind Capture\" and map the rewind button.\nYou may have to restart the game for the function to work properly.\nAttention: Rewind capture will slow down your game by about 0.5% and may lead to light audio stutter.\nRewind capture is not compatible to \"Pause when OSD is open\", so pause is disabled when Rewind capture is on.\n\n# Spritelimit\nThere are only very few games known that produce glitches without sprite pixel limit.\nThose games use the sprite pixel limit automatically.\nYou can optionally also turn this on if you notice problems.\n\n# 2x Resolution\nOnly works over HDMI, Analog output is not changed in 2x Resolution mode. \n\nImproved rendering resolution for:\n- Affine background: \"Mode7\" games, typically racing games like Mario Kart\n- Affine sprites: games that scale or rotate sprites\n\nThis rendering is experimental and can cause glitches, as not all game behavior can be supported.\nThose glitches can not be fixed without gamespecific hacks and therefore will not be fixed. \nPlease don't add bugs in such cases.\n\n# Cartridge Hardware supported games\n- RTC: Pokemon Sapphire+Ruby+Emerald, Boktai 1+2+3, Sennen Kazoku, Rockman EXE 4.5\n- Solar Sensor: Boktai 1+2+3\n- Gyro: Wario Ware Twisted\n- Tilt: Yoshi Topsy Turvy/Universal Gravitation, Koro Koro Puzzle - Happy Panechu!\n- Rumble: Wario Ware Twisted, Drill Dozer\n\nIf there is a game you want to play that also uses one of these features, but is not listed, please open a bug request.\n\nFor romhacks you can activate the option \"GPIO HACK(RTC+Rumble)\". Make sure to deactivate it for other games, otherwise you will experience crashes.\n\n# Not included\n- Multiplayer features like serial communication\n- E-Reader support\n- Gameboy Player features\n\n# Information for developers\n\nHow to simulate:\nhttps://github.com/MiSTer-devel/GBA_MiSTer/tree/master/sim\n\nHow to implement a GPIO module:\nhttps://github.com/MiSTer-devel/GBA_MiSTer/blob/master/gpio_readme.md\n",
+      "readme": "# [Gameboy Advance](https://en.wikipedia.org/wiki/Game_Boy_Advance) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\n\n## HW Requirements/Features\nThe games can run from a naked DE10-Nano with the built-in DDR-RAM.\nHowever, using SDRAM is highly recommended, as some games may slowdown or lose sync when using DDR-RAM.\n\nWhen using SDRAM, it requires 32MB SDRAM for games less than 32MB. 32MB games require either 64MB or 128MB module.\nSDRAM will be automatically used when available and size is sufficient.\n\n## Bios\nOpensource Bios from Normmatt is included, however it has issues with some games.\nOriginal GBA BIOS can be placed to GBA folder with name boot.rom\n\nPLEASE do not report errors without testing with the original BIOS\n\nHomebrew games are sometimes not supported by the official BIOS, \nbecause the BIOS checks for Nintendo Logo included in the ROM, which is protected by copyright.\nTo use these ROMs without renaming or removing the boot.rom, \nyou can activate the \"Homebrew BIOS\" settings in OSD.\nAs the BIOS is already replaced at boot time, you must save this setting and hard reset/reload the GBA core.\n\n## Status\n~1600 games tested until ingame.\nThere is no known official game that doesn't work.\nExceptions are games that require rare extra hardware (mostly japanese).\nSome small video glitches remain, see issue list.\n\n## Features\n- Saving as in GBA\n- Savestates\n- FastForward - speed up game by factor 2-4\n- CPU Turbomode - give games additional CPU power\n- Flickerblend - set to blend or 30Hz mode for games like F-Zero, Mario Kart or NES Classics to prevent flickering effects\n- Spritelimit - turn on to prevent wrong sprites for games that rely on the limit (opt-in)\n- Cheats\n- Color optimizations: shader colors and desaturate\n- Rewind: go back up to 60 seconds in time\n- Tilt: use analog stick (map stick in Mister Main before)\n- Solar Sensor: Set brightness in OSD\n- Gyro: use analog stick (map stick in Mister Main before)\n- RTC: automatically used, works with RTC board or internet connection\n- Rumble: for Drill Dozer, Wario Ware Twisted and some romhacks\n- 2x Resolution: game is rendered at 480x320 instead of 240x160 pixels\n\n## Savestates\nCore provides 4 slots to save and restore the state. \nThose can be saved to SD Card or reside only in memory for temporary use(OSD Option). \nUsage with either Keyboard, Gamepad mappable button or OSD.\n\nKeyboard Hotkeys for save states:\n- <kbd>ALT</kbd>+<kbd>F1</kbd>/<kbd>F2</kbd>/<kbd>F3</kbd>/<kbd>F4</kbd> \u2013 save state  \n- <kbd>F1</kbd>/<kbd>F2</kbd>/<kbd>F3</kbd>/<kbd>F4</kbd> \u2013 restore state\n\nGamepad:\n- <kbd>SAVESTATEBUTTON</kbd>+<kbd>LEFT</kbd>/<kbd>RIGHT</kbd> prev/next savestate slot\n- <kbd>SAVESTATEBUTTON</kbd>+<kbd>START</kbd>+<kbd>DOWN</kbd> saves to the selected slot\n- <kbd>SAVESTATEBUTTON</kbd>+<kbd>START</kbd>+<kbd>UP</kbd> loads from the selected slot\n\n## Rewind\nTo use rewind, turn on the OSD Option \"Rewind Capture\" and map the rewind button.\nYou may have to restart the game for the function to work properly.\nAttention: Rewind capture will slow down your game by about 0.5% and may lead to light audio stutter.\nRewind capture is not compatible with \"Pause when OSD is open\", so pause is disabled when Rewind capture is on.\n\n## Spritelimit\nThere are only very few games known that produce glitches without sprite pixel limit.\nThose games use the sprite pixel limit automatically.\nYou can optionally also turn this on if you notice problems.\n\n## 2x Resolution\nOnly works over HDMI, Analog output is not changed in 2x Resolution mode. \n\nImproved rendering resolution for:\n- Affine background: \"Mode7\" games, typically racing games like Mario Kart\n- Affine sprites: games that scale or rotate sprites\n\nThis rendering is experimental and can cause glitches, as not all game behavior can be supported.\nThose glitches can not be fixed without gamespecific hacks and therefore will not be fixed. \nPlease don't add bugs in such cases.\n\n## Cartridge Hardware supported games\n- RTC: Pokemon Sapphire+Ruby+Emerald, Boktai 1+2+3, Sennen Kazoku, Rockman EXE 4.5\n- Solar Sensor: Boktai 1+2+3\n- Gyro: Wario Ware Twisted\n- Tilt: Yoshi Topsy Turvy/Universal Gravitation, Koro Koro Puzzle - Happy Panechu!\n- Rumble: Wario Ware Twisted, Drill Dozer\n\nIf there is a game you want to play that also uses one of these features, but is not listed, please open a bug request.\n\nFor romhacks you can activate the option \"GPIO HACK(RTC+Rumble)\". Make sure to deactivate it for other games, otherwise you will experience crashes.\n\n## Not included\n- Multiplayer features like serial communication\n- E-Reader support\n- Gameboy Player features\n\n## Information for developers\n\nHow to simulate:\nhttps://github.com/MiSTer-devel/GBA_MiSTer/tree/master/sim\n\nHow to implement a GPIO module:\nhttps://github.com/MiSTer-devel/GBA_MiSTer/blob/master/gpio_readme.md\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/GBA_MiSTer",
@@ -18921,6 +18990,12 @@
           "name": "GBA_20240410.rbf",
           "sha": "baa315b409a04c3335f744c527f6af55caae6a15",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/GBA_MiSTer/master/releases/GBA_20240410.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "GBA_20250621.rbf",
+          "sha": "0f428072dfe6cf6b69f5bbf5dacef76c9787476d",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/GBA_MiSTer/master/releases/GBA_20250621.rbf",
           "type": "RBF"
         }
       ]
@@ -21833,6 +21908,12 @@
           "type": "RBF"
         },
         {
+          "name": "Minimig_20250621.rbf",
+          "sha": "208a4e0f788da4fbe41fc0a7bff5bf3ebc35b0a4",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Minimig-AGA_MiSTer/MiSTer/releases/Minimig_20250621.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "WheelDriverAkiko.adf",
           "sha": "ce7a6acedf8f613f10d59dd29d5287ed7991ce42",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Minimig-AGA_MiSTer/MiSTer/releases/WheelDriverAkiko.adf",
@@ -22148,6 +22229,12 @@
           "sha": "ced62b29ad0f37d27138a83400e5ec96673cb7cd",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/MyVision_MiSTer/main/releases/MyVision_20230410.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "MyVision_20250622.rbf",
+          "sha": "41d4ace15fc0d7e7af31704768efaaaf5d325474",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/MyVision_MiSTer/main/releases/MyVision_20250622.rbf",
+          "type": "RBF"
         }
       ]
     },
@@ -22450,7 +22537,7 @@
     {
       "name": "NES_MiSTer",
       "description": null,
-      "readme": "# [Nintendo Entertainment System](https://en.wikipedia.org/wiki/Nintendo_Entertainment_System) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\nThis is an FPGA implementation of the NES/Famicom based on [FPGANES](https://github.com/strigeus/fpganes) by Ludvig Strigeus and ported to MiSTer.\n\n## Features\n * Supports saves for most games\n * Savestates\n * Supports NTSC, PAL, and Dendy system types\n * FDS Support with expansion audio\n * Multiple Palette options\n * Zapper, Powerpad, Microphone, and Miracle Piano support\n * Supports four players\n * Setting for increasing sprite per line by 8\n * Supports up to 32 cheat codes\n * Supports NSF Player\n * Supports expansion audio from mappers including VRC6 & 7, MMC5, Namco 163 and Sunsoft 5b\n * Supports many popular mappers including VRC1-7, MMC0-5, and many more (see below)\n * Supports large games such as Legend of Link and Rockman Minus Infinity\n\n## Installation\nCopy the NES_\\*.rbf file to the directory or subdirectory of `/media/fat/`. Create a `games/NES/` directory on the root of the SD card (`/media/fat/games/NES/`), and place NES roms (\\*.nes) inside this NES directory. The ROMs must have an iNES or NES2.0 header, which most already do. NES2.0 headers are preferred for the best accuracy. To have an NES or FDS game ROM load automatically upon starting the core, place it in the NES directory named as boot1.rom or boot2.rom, respectively.\n- `boot0.rom` = FDS BIOS file.  Will be used for any FDS images loaded\n- `boot1.rom` = NES Cart file.  Can be used with boot0.rom (BIOS) in place\n- `boot2.rom` = FDS image file.  Requires boot0.rom (BIOS).  Use a blank FDS (header only) to boot the FDS BIOS without a disk image.\n- `boot3.rom` = PAL file. It can be used to set your default custom palette. Save the menu option on \"Custom\" to apply immediately.\n\n## Famicom Disk System Usage\nBefore loading \\*.FDS files, you must first load the official, unpatched FDS BIOS. The BIOS file should be renamed to boot0.rom and placed in the same folder as the ROMs (NES).  Alternatively, it can be loaded from the OSD if boot0.rom doesn't exist. After loading the core and the bios you may select an FDS image. By default, the NES core will swap disk sides for you automatically. To suppress this behavior, hold the FDS button on the player 1 controller. The \"Disk Swap\" OSD option manually controls the disk side.  Each button press increments the disk side.  Press and hold the fds button to eject and increment the disk side in this mode.  Some games only work correctly in manual disk swap mode, and require holding the FDS button for up to a few seconds (Gall Force,...).\n\n## Extra Sprites\nThis feature will double the number of sprites drawn per scanlines, decreasing the flickering sprites that NES is known for. Some games relied on the 8 sprite behavior to work correctly, such as Simon's Quest swamps. Other mappers may be impacted by using extra sprites. While it works well in most games, glitches may occur with this enabled.\n\n## Saving and Loading\nThe battery backed RAM (Save RAM) for the NES does not write to disk automatically. After saving in your game, you must then write the RAM to the SD card by selecting **Save Backup RAM** from the menu. If you do not save your RAM to disk, the contents will be lost next time you restart the core or switch games. Alternatively you can enable to Autosave option from the OSD menu, and if you do your games will be recorded to disk every time you open the OSD menu. FDS saving uses the same method as for cartridge RAM saves. Save RAM is stored as a .sav file based on the NES/FDS filename in `/media/fat/saves/NES/`.  Examples:  \n`Metroid (Japan) (Rev 3).fds` -> `Metroid (Japan) (Rev 3).sav`  \n`Legend of Zelda, The (USA) (Rev 1).nes` -> `Legend of Zelda, The (USA) (Rev 1).sav`\n\n# Savestates\nCore provides 4 slots to save and restore the state.\nThose can be saved to SDCard or reside only in memory for temporary use(OSD Option). \nUsage with either Keyboard, Gamepad mappable button or OSD. Save states are stored as .ss files in `/media/fat/savestates/NES/`, with an underscore and the save slot number (1,2,3,4) preceding `.ss`. Example (save slot 1): `Metroid (USA).nes` -> `Metroid (USA)_1.ss`\n\nKeyboard Hotkeys for save states:\n- Alt-F1..F4 - save the state\n- F1...F4 - restore\n\nGamepad:\n- Savestatebutton+Left or Right switches the savestate slot\n- Savestatebutton+Start+Down saves to the selected slot\n- Savestatebutton+Start+Up loads from the selected slot\n\n## Zapper Support\nThe \"Zapper\" (aka Light Gun) can be used via two methods. You can select Peripheral: Zapper(Mouse) to use your mouse to aim and shoot with the left button. This mode uses relative mouse motion, so devices that rely on absolute coordinates will not work via this method. Alternatively, you can choose Zapper(Joy) to use the Analog stick to aim, and the defined Trigger button to fire. Guns such as Aimtrak have joystick modes which may be compatible with this method.\n\n## Miracle Piano Support\nThe Miracle Piano is a MIDI keyboard compatible with the Miracle Piano Education System cart.  To use it with SNAC, no further settings are needed.  To use it with midilink, in the System Settings, set the UART connection to use MIDI.  The piano will then be connected on controller port 1 as expected.  The primary controller will automatically be assigned to port 2 as the cart expects.  The header for the ROM file should be set to NES 2.0 with controller type (0xF) set to the Miracle Piano (0x19).\n\n## Supported Mappers\n\n|#||||||||||||||||\n|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|\n|**0**|**1**|**2**|**3**|**4**|**5**||**7**||**9**|**10**|**11**|~~12~~|13||15|\n|**16**||**18**|**19**|**FDS**|**21**|**22**|**23**|**24**|**25**|**26**|**27**|**28**||**30**|31|\n|**32**|**33**|**34**|**35**|**36**|**37**|**38**|**39**|~~40~~|41|42|~~43~~|**44**|~~45~~|**46**|**47**|\n|**48**|~~49~~|~~50~~|~~51~~|~~52~~|~~53~~|~~54~~|~~55~~|~~56~~|~~57~~|~~58~~|~~59~~|~~60~~|~~61~~|~~62~~|~~63~~|\n|**64**|**65**|**66**|**67**|**68**|**69**|**70**|**71**|**72**|**73**|**74**|**75**|**76**|**77**|**78**|**79**|\n|**80**|~~81~~|**82**|83|~~84~~|85|**86**|**87**|**88**|**89**|**90**|91|**92**|**93**|**94**|**95**|\n|~~96~~|**97**||~~99~~|~~100~~|**101**|||~~104~~|105||107|~~108~~|~~109~~|~~110~~|**111**|\n|**112**|**113**|~~114~~|~~115~~|~~116~~|~~117~~|**118**|**119**|~~120~~||~~122~~|~~123~~||~~125~~|~~126~~|~~127~~|\n|~~128~~|~~129~~|~~130~~|~~131~~|**132**|**133**|~~134~~|~~135~~|**136**|**137**|**138**|**139**|**140**|**141**|~~142~~|**143**|\n|~~144~~|**145**|**146**|**147**|**148**|**149**|**150**|~~151~~|**152**|**153**|**154**|**155**|**156**|~~157~~|**158**|**159**|\n|~~160~~|~~161~~|162|163|164|165|~~166~~|~~167~~|~~168~~|~~169~~||**171**|**172**|**173**|||\n|||||**180**|~~181~~|~~182~~|~~183~~|**184**|**185**|~~186~~|~~187~~|~~188~~|**189**|**190**|**191**|\n|**192**|~~193~~|**194**|**195**|**196**||~~198~~|~~199~~|~~200~~|~~201~~|~~202~~|~~203~~|~~204~~|**205**|**206**|**207**|\n|**208**|**209**|**210**|**211**|~~212~~|~~213~~|~~214~~|~~215~~|~~216~~|~~217~~|**218**||||~~222~~||\n|~~224~~|**225**|~~226~~|227|228|~~229~~|~~230~~|~~231~~|**232**|~~233~~|234|~~235~~|~~236~~|~~237~~|||\n|~~240~~|~~241~~|~~242~~|**243**|~~244~~|~~245~~|246||~~248~~|~~249~~|~~250~~|~~251~~|~~252~~||~~254~~|255|\n|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|\n|**268**|413|**547**|---|---|---|---|---|---|---|---|---|---|---|---|---|\n\nKey: **Supported+Save state**, Supported, ~~Not Supported~~. Mappers that are not existent or not useful are blank.\n\n",
+      "readme": "# [Nintendo Entertainment System](https://en.wikipedia.org/wiki/Nintendo_Entertainment_System) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\nThis is an FPGA implementation of the NES/Famicom based on [FPGANES](https://github.com/strigeus/fpganes) by Ludvig Strigeus and ported to MiSTer.\n\n## Features\n * Supports saves for most games\n * Savestates\n * Supports NTSC, PAL, and Dendy system types\n * FDS Support with expansion audio\n * Multiple Palette options\n * Zapper, Powerpad, Microphone, and Miracle Piano support\n * Supports four players\n * Setting for increasing sprites per line by 8\n * Supports up to 32 cheat codes\n * Supports NSF Player\n * Supports expansion audio from mappers including VRC6 & 7, MMC5, Namco 163 and Sunsoft 5b\n * Supports many popular mappers including VRC1-7, MMC0-5, and many more (see below)\n * Supports large games such as Legend of Link and Rockman Minus Infinity\n\n## Installation\nCopy the NES_\\*.rbf file to the directory or subdirectory of `/media/fat/`. Create a `games/NES/` directory on the root of the SD card (`/media/fat/games/NES/`), and place NES roms (\\*.nes) inside this NES directory. The ROMs must have an iNES or NES2.0 header, which most already do. NES2.0 headers are preferred for the best accuracy. To have an NES or FDS game ROM load automatically upon starting the core, place it in the NES directory named as boot1.rom or boot2.rom, respectively.\n- `boot0.rom` = FDS BIOS file.  Will be used for any FDS images loaded\n- `boot1.rom` = NES Cart file.  Can be used with boot0.rom (BIOS) in place\n- `boot2.rom` = FDS image file.  Requires boot0.rom (BIOS).  Use a blank FDS (header only) to boot the FDS BIOS without a disk image.\n- `boot3.rom` = PAL file. It can be used to set your default custom palette. Save the menu option on \"Custom\" to apply immediately.\n\n## Famicom Disk System Usage\nBefore loading \\*.FDS files, you must first load the official, unpatched FDS BIOS. The BIOS file should be renamed to boot0.rom and placed in the same folder as the ROMs (NES).  Alternatively, it can be loaded from the OSD if boot0.rom doesn't exist. After loading the core and the bios you may select an FDS image. By default, the NES core will swap disk sides for you automatically. To suppress this behavior, hold the FDS button on the player 1 controller. The \"Disk Swap\" OSD option manually controls the disk side.  Each button press increments the disk side.  Press and hold the fds button to eject and increment the disk side in this mode.  Some games only work correctly in manual disk swap mode, and require holding the FDS button for up to a few seconds (Gall Force,...).\n\n## Extra Sprites\nThis feature will double the number of sprites drawn per scanlines, decreasing the flickering sprites that NES is known for. Some games relied on the 8 sprite behavior to work correctly, such as Simon's Quest swamps. Other mappers may be impacted by using extra sprites. While it works well in most games, glitches may occur with this enabled.\n\n## Saving and Loading\nThe battery backed RAM (Save RAM) for the NES does not write to disk automatically. After saving in your game, you must then write the RAM to the SD card by selecting **Save Backup RAM** from the menu. If you do not save your RAM to disk, the contents will be lost next time you restart the core or switch games. Alternatively you can enable to Autosave option from the OSD menu, and if you do your games will be recorded to disk every time you open the OSD menu. FDS saving uses the same method as for cartridge RAM saves. Save RAM is stored as a .sav file based on the NES/FDS filename in `/media/fat/saves/NES/`.  Examples:  \n`Metroid (Japan) (Rev 3).fds` -> `Metroid (Japan) (Rev 3).sav`  \n`Legend of Zelda, The (USA) (Rev 1).nes` -> `Legend of Zelda, The (USA) (Rev 1).sav`\n\n## Savestates\nCore provides 4 slots to save and restore the state.\nThose can be saved to SD Card or reside only in memory for temporary use (OSD Option). \nUsage with either Keyboard, Gamepad mappable button, or OSD. Save states are stored as .ss files in `/media/fat/savestates/NES/`, with an underscore and the save slot number (1,2,3,4) preceding `.ss`. Example (save slot 1): `Metroid (USA).nes` -> `Metroid (USA)_1.ss`\n\nKeyboard Hotkeys for save states:\n- <kbd>ALT</kbd>+<kbd>F1</kbd>/<kbd>F2</kbd>/<kbd>F3</kbd>/<kbd>F4</kbd> \u2013 save state  \n- <kbd>F1</kbd>/<kbd>F2</kbd>/<kbd>F3</kbd>/<kbd>F4</kbd> \u2013 restore state\n\nGamepad:\n- <kbd>SAVESTATEBUTTON</kbd>+<kbd>LEFT</kbd>/<kbd>RIGHT</kbd> prev/next savestate slot\n- <kbd>SAVESTATEBUTTON</kbd>+<kbd>START</kbd>+<kbd>DOWN</kbd> saves to the selected slot\n- <kbd>SAVESTATEBUTTON</kbd>+<kbd>START</kbd>+<kbd>UP</kbd> loads from the selected slot\n\n## Zapper Support\nThe \"Zapper\" (aka Light Gun) can be used via two methods. You can select Peripheral: Zapper(Mouse) to use your mouse to aim and shoot with the left button. This mode uses relative mouse motion, so devices that rely on absolute coordinates will not work via this method. Alternatively, you can choose Zapper(Joy) to use the Analog stick to aim, and the defined Trigger button to fire. Guns such as Aimtrak have joystick modes which may be compatible with this method.\n\n## Miracle Piano Support\nThe Miracle Piano is a MIDI keyboard compatible with the Miracle Piano Education System cart.  To use it with SNAC, no further settings are needed.  To use it with midilink, in the System Settings, set the UART connection to use MIDI.  The piano will then be connected on controller port 1 as expected.  The primary controller will automatically be assigned to port 2 as the cart expects.  The header for the ROM file should be set to NES 2.0 with controller type (0xF) set to the Miracle Piano (0x19).\n\n## Supported Mappers\n\n|#||||||||||||||||\n|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|\n|**0**|**1**|**2**|**3**|**4**|**5**||**7**||**9**|**10**|**11**|~~12~~|13||15|\n|**16**||**18**|**19**|**FDS**|**21**|**22**|**23**|**24**|**25**|**26**|**27**|**28**||**30**|31|\n|**32**|**33**|**34**|**35**|**36**|**37**|**38**|**39**|~~40~~|41|42|~~43~~|**44**|~~45~~|**46**|**47**|\n|**48**|~~49~~|~~50~~|~~51~~|~~52~~|~~53~~|~~54~~|~~55~~|~~56~~|~~57~~|~~58~~|~~59~~|~~60~~|~~61~~|~~62~~|~~63~~|\n|**64**|**65**|**66**|**67**|**68**|**69**|**70**|**71**|**72**|**73**|**74**|**75**|**76**|**77**|**78**|**79**|\n|**80**|~~81~~|**82**|83|~~84~~|85|**86**|**87**|**88**|**89**|**90**|91|**92**|**93**|**94**|**95**|\n|~~96~~|**97**||~~99~~|~~100~~|**101**|||~~104~~|105||107|~~108~~|~~109~~|~~110~~|**111**|\n|**112**|**113**|~~114~~|~~115~~|~~116~~|~~117~~|**118**|**119**|~~120~~||~~122~~|~~123~~||~~125~~|~~126~~|~~127~~|\n|~~128~~|~~129~~|~~130~~|~~131~~|**132**|**133**|~~134~~|~~135~~|**136**|**137**|**138**|**139**|**140**|**141**|~~142~~|**143**|\n|~~144~~|**145**|**146**|**147**|**148**|**149**|**150**|~~151~~|**152**|**153**|**154**|**155**|**156**|~~157~~|**158**|**159**|\n|~~160~~|~~161~~|162|163|164|165|~~166~~|~~167~~|~~168~~|~~169~~||**171**|**172**|**173**|||\n|||||**180**|~~181~~|~~182~~|~~183~~|**184**|**185**|~~186~~|~~187~~|~~188~~|**189**|**190**|**191**|\n|**192**|~~193~~|**194**|**195**|**196**||~~198~~|~~199~~|~~200~~|~~201~~|~~202~~|~~203~~|~~204~~|**205**|**206**|**207**|\n|**208**|**209**|**210**|**211**|~~212~~|~~213~~|~~214~~|~~215~~|~~216~~|~~217~~|**218**||||~~222~~||\n|~~224~~|**225**|~~226~~|227|228|~~229~~|~~230~~|~~231~~|**232**|~~233~~|234|~~235~~|~~236~~|~~237~~|||\n|~~240~~|~~241~~|~~242~~|**243**|~~244~~|~~245~~|246||~~248~~|~~249~~|~~250~~|~~251~~|~~252~~||~~254~~|255|\n|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|\n|**268**|413|**547**|---|---|---|---|---|---|---|---|---|---|---|---|---|\n\nKey: **Supported+Save state**, Supported, ~~Not Supported~~. Mappers that are not existent or not useful are blank.\n\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/NES_MiSTer",
@@ -22819,6 +22906,12 @@
           "name": "NES_20240912.rbf",
           "sha": "f61ef0c5d205badf69d0830258257c12921ff384",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/NES_MiSTer/master/releases/NES_20240912.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NES_20250618.rbf",
+          "sha": "674c7b1e757ea60f145cc83befc0eecdb0c07d92",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/NES_MiSTer/master/releases/NES_20250618.rbf",
           "type": "RBF"
         }
       ]
@@ -24133,7 +24226,7 @@
         },
         {
           "name": "Astra SuperStars (J 980514 V1.002).mra",
-          "sha": "f7eb642a05e189ac198e7313ce703f748eda4cd9",
+          "sha": "72dda84490ce975d5aa58242155a396f98b5b9c7",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Astra%20SuperStars%20(J%20980514%20V1.002).mra",
           "type": "MRA",
           "extra": {
@@ -24148,7 +24241,7 @@
         },
         {
           "name": "Baku Baku Animal (J 950407 V1.000).mra",
-          "sha": "65bcbe6f196289e331190163082ae47c2c12a63b",
+          "sha": "4bdc3bdbc02ffbef8a496ab2ec95f402ce5146df",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Baku%20Baku%20Animal%20(J%20950407%20V1.000).mra",
           "type": "MRA",
           "extra": {
@@ -24163,7 +24256,7 @@
         },
         {
           "name": "Batman Forever (JUE 960507 V1.000).mra",
-          "sha": "ab4bfcb2ed5d4c41aa448a4c4342da187cbe5bc3",
+          "sha": "350d4855b25167dce33078c98e1945ab9833acde",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Batman%20Forever%20(JUE%20960507%20V1.000).mra",
           "type": "MRA",
           "extra": {
@@ -24178,7 +24271,7 @@
         },
         {
           "name": "Columns '97 (JET 961209 V1.000).mra",
-          "sha": "765e6e66719293b2f6a3f02b09ce5c6c3328e042",
+          "sha": "914a5b70579c52c36fcd57c0da7b0d0c7f052633",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Columns%20'97%20(JET%20961209%20V1.000).mra",
           "type": "MRA",
           "extra": {
@@ -24193,7 +24286,7 @@
         },
         {
           "name": "Cotton 2 (JUET 970902 V1.000).mra",
-          "sha": "5d674bd7f313abf9bd2e515378558cc94a64e63f",
+          "sha": "bcc307a267639a2fc7b4e33bf0ad041fcfb0870f",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Cotton%202%20(JUET%20970902%20V1.000).mra",
           "type": "MRA",
           "extra": {
@@ -24208,7 +24301,7 @@
         },
         {
           "name": "Cotton Boomerang (JUET 980709 V1.000).mra",
-          "sha": "42eef3a984d476497ef3d65247ed06ab244ff145",
+          "sha": "4c91ccf32e10f08e01966fcdcc98b0057881fb25",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Cotton%20Boomerang%20(JUET%20980709%20V1.000).mra",
           "type": "MRA",
           "extra": {
@@ -24222,23 +24315,8 @@
           }
         },
         {
-          "name": "Critter Crusher (EA 951204 V1.000).mra",
-          "sha": "9523574be38e2ea99b62da1cab4e11ae377ac88c",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Critter%20Crusher%20(EA%20951204%20V1.000).mra",
-          "type": "MRA",
-          "extra": {
-            "name": null,
-            "rbf": "ST-V",
-            "zips": [
-              "critcrsh.zip",
-              "stvbios.zip",
-              "critcrsh.zip"
-            ]
-          }
-        },
-        {
           "name": "DaeJeon! SanJeon SuJeon (AJTUE 990412 V1.000).mra",
-          "sha": "c3f1724b2905e266eb95247c1f5d25b29ee81596",
+          "sha": "5834ba70773a496e182aee175539e04544f94700",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/DaeJeon!%20SanJeon%20SuJeon%20(AJTUE%20990412%20V1.000).mra",
           "type": "MRA",
           "extra": {
@@ -24253,7 +24331,7 @@
         },
         {
           "name": "Danchi de Hanafuda (J 990607 V1.400).mra",
-          "sha": "dbf21404381dac29a09cc70f0e5a2195c5b0205f",
+          "sha": "b15f82b77c3d8e4df4afc420c576cce00207039a",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Danchi%20de%20Hanafuda%20(J%20990607%20V1.400).mra",
           "type": "MRA",
           "extra": {
@@ -24268,7 +24346,7 @@
         },
         {
           "name": "Danchi de Quiz Okusan Yontaku Desuyo! (J 001128 V1.200).mra",
-          "sha": "46c118e769eb2610c07dc7e4bea375e5fcc91caa",
+          "sha": "d54545212d1d5dcb539ea72a5a1e8ecef99edecd",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Danchi%20de%20Quiz%20Okusan%20Yontaku%20Desuyo!%20(J%20001128%20V1.200).mra",
           "type": "MRA",
           "extra": {
@@ -24282,23 +24360,8 @@
           }
         },
         {
-          "name": "Decathlete (JUET 960424 V1.000).mra",
-          "sha": "58da06308b3b15a8c66dd33297ce30a93644cc27",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Decathlete%20(JUET%20960424%20V1.000).mra",
-          "type": "MRA",
-          "extra": {
-            "name": null,
-            "rbf": "ST-V",
-            "zips": [
-              "decathlto.zip|decathlt.zip",
-              "stvbios.zip",
-              "decathlto.zip|decathlt.zip"
-            ]
-          }
-        },
-        {
           "name": "Decathlete (JUET 960709 V1.001).mra",
-          "sha": "ffd54e403a4e1b76ba5cd8421573c8f256bb9b7a",
+          "sha": "fb63d975392b2b52908d22c4647fdd67fe78a7fa",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Decathlete%20(JUET%20960709%20V1.001).mra",
           "type": "MRA",
           "extra": {
@@ -24313,7 +24376,7 @@
         },
         {
           "name": "Die Hard Arcade (UET 960515 V1.000).mra",
-          "sha": "a1ea65386a77759cf5c757eb5e84ed984f818998",
+          "sha": "18c7ec4f71bd8c27da0c7bb26a985a63fd2b4975",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Die%20Hard%20Arcade%20(UET%20960515%20V1.000).mra",
           "type": "MRA",
           "extra": {
@@ -24328,7 +24391,7 @@
         },
         {
           "name": "Dynamite Deka (J 960515 V1.000).mra",
-          "sha": "83e066de47cecaafeb9f671c20ac5e76fc1ceb4c",
+          "sha": "e0139ba0d964e69629d79962d7ae01d9c2e155c4",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Dynamite%20Deka%20(J%20960515%20V1.000).mra",
           "type": "MRA",
           "extra": {
@@ -24343,7 +24406,7 @@
         },
         {
           "name": "Ejihon Tantei Jimusyo (J 950613 V1.000).mra",
-          "sha": "44c96d5d7c4f29646dc539139ed1a91a02d9657e",
+          "sha": "4829d40f184f0d4f7678f4b0082c05442c194eb5",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Ejihon%20Tantei%20Jimusyo%20(J%20950613%20V1.000).mra",
           "type": "MRA",
           "extra": {
@@ -24358,7 +24421,7 @@
         },
         {
           "name": "Final Arch (J 950714 V1.001).mra",
-          "sha": "b3d7232c15f8d39acbe04181f943653924be9e9d",
+          "sha": "7d18beed625e8c3029768dda9983094a6b5a76df",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Final%20Arch%20(J%20950714%20V1.001).mra",
           "type": "MRA",
           "extra": {
@@ -24372,23 +24435,8 @@
           }
         },
         {
-          "name": "Final Fight Revenge - Final Revenge (JUET 990714 V1.000).mra",
-          "sha": "02090a6a03dedc5d0f47fcb36aa6357cab781fe8",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Final%20Fight%20Revenge%20-%20Final%20Revenge%20(JUET%20990714%20V1.000).mra",
-          "type": "MRA",
-          "extra": {
-            "name": null,
-            "rbf": "ST-V",
-            "zips": [
-              "ffrevng10.zip|ffreveng.zip",
-              "stvbios.zip",
-              "ffrevng10.zip|ffreveng.zip"
-            ]
-          }
-        },
-        {
           "name": "Final Fight Revenge - Final Revenge (JUET 990930 V1.100).mra",
-          "sha": "82ace33af0f90958be90d5a0a17f37319a9feb37",
+          "sha": "388b9b81f4fa274fbc050cf519953dd8f8cad3b0",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Final%20Fight%20Revenge%20-%20Final%20Revenge%20(JUET%20990930%20V1.100).mra",
           "type": "MRA",
           "extra": {
@@ -24403,7 +24451,7 @@
         },
         {
           "name": "Find Love (J 971212 V1.000).mra",
-          "sha": "4c712f74073f50e4345ab7648cd51c2388692bdc",
+          "sha": "2885257b85a6c8961853b200a189e6801333d86d",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Find%20Love%20(J%20971212%20V1.000).mra",
           "type": "MRA",
           "extra": {
@@ -24418,7 +24466,7 @@
         },
         {
           "name": "Funky Head Boxers (JUETBKAL 951218 V1.000).mra",
-          "sha": "88b1dba2bf9958bb2f211fe49d9f729995838146",
+          "sha": "e3e63e57199d48733c7024cb699f018f8aaa26cf",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Funky%20Head%20Boxers%20(JUETBKAL%20951218%20V1.000).mra",
           "type": "MRA",
           "extra": {
@@ -24433,7 +24481,7 @@
         },
         {
           "name": "Golden Axe - The Duel (JUETL 950117 V1.000).mra",
-          "sha": "a801d8a13bb1b1f03d7b270d05a896f52da78755",
+          "sha": "501d20f329f449506e62bd5b772c0e8ee3a393da",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Golden%20Axe%20-%20The%20Duel%20(JUETL%20950117%20V1.000).mra",
           "type": "MRA",
           "extra": {
@@ -24448,7 +24496,7 @@
         },
         {
           "name": "Groove on Fight - Gouketsuji Ichizoku 3 (J 970416 V1.001).mra",
-          "sha": "f995d7044b7a3679c62235f61543bac53d04c501",
+          "sha": "1a994b16aec907a7f640ba31bf9e6ca44503b6b2",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Groove%20on%20Fight%20-%20Gouketsuji%20Ichizoku%203%20(J%20970416%20V1.001).mra",
           "type": "MRA",
           "extra": {
@@ -24463,7 +24511,7 @@
         },
         {
           "name": "Guardian Force (JUET 980318 V0.105).mra",
-          "sha": "c62d9400caf173dc6542d0a947c1b714f37b3c52",
+          "sha": "3fb2576e81b541bc440f86c59084bee0f59c65a3",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Guardian%20Force%20(JUET%20980318%20V0.105).mra",
           "type": "MRA",
           "extra": {
@@ -24478,7 +24526,7 @@
         },
         {
           "name": "Hanagumi Taisen Columns - Sakura Wars (J 971007 V1.010).mra",
-          "sha": "550a8f61920d34759d21c6590a5cecbbbcfe22b6",
+          "sha": "78fa86396d016779cdce2347648fe390ec0864ed",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Hanagumi%20Taisen%20Columns%20-%20Sakura%20Wars%20(J%20971007%20V1.010).mra",
           "type": "MRA",
           "extra": {
@@ -24493,7 +24541,7 @@
         },
         {
           "name": "Karaoke Quiz Intro Don Don! (J 960213 V1.000).mra",
-          "sha": "745ff3b9710e9e4be7a95ff1f338d0ca051886af",
+          "sha": "350692821d821cfa32084acc2727d8b1cfe1f07f",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Karaoke%20Quiz%20Intro%20Don%20Don!%20(J%20960213%20V1.000).mra",
           "type": "MRA",
           "extra": {
@@ -24507,23 +24555,8 @@
           }
         },
         {
-          "name": "Magical Zunou Power (J 961031 V1.000).mra",
-          "sha": "52ba35720bb87b8f6113cf7e20bdb22ad8bc5444",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Magical%20Zunou%20Power%20(J%20961031%20V1.000).mra",
-          "type": "MRA",
-          "extra": {
-            "name": null,
-            "rbf": "ST-V",
-            "zips": [
-              "magzun.zip",
-              "stvbios.zip",
-              "magzun.zip"
-            ]
-          }
-        },
-        {
           "name": "Maru-Chan de Goo! (J 971216 V1.000).mra",
-          "sha": "3881921d3bbb2e92447a9ec8b3ea786648fbe502",
+          "sha": "13f964876376492f2afccfb11445a0bc65ca906e",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Maru-Chan%20de%20Goo!%20(J%20971216%20V1.000).mra",
           "type": "MRA",
           "extra": {
@@ -24538,7 +24571,7 @@
         },
         {
           "name": "Mausuke no Ojama the World (J 960314 V1.000).mra",
-          "sha": "dff01a20f66816767658d7c8fcb3e3bde658f427",
+          "sha": "3bc2eb3f5b7f07023bbf8ba60d305c6da0f7a8c4",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Mausuke%20no%20Ojama%20the%20World%20(J%20960314%20V1.000).mra",
           "type": "MRA",
           "extra": {
@@ -24552,53 +24585,8 @@
           }
         },
         {
-          "name": "Microman Battle Charge (J 990326 V1.000).mra",
-          "sha": "361ec3f197f1706b4f6c28a4984c6e32ac586c5d",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Microman%20Battle%20Charge%20(J%20990326%20V1.000).mra",
-          "type": "MRA",
-          "extra": {
-            "name": null,
-            "rbf": "ST-V",
-            "zips": [
-              "micrombc.zip",
-              "stvbios.zip",
-              "micrombc.zip"
-            ]
-          }
-        },
-        {
-          "name": "Name Club Disney (J 980614 V1.000).mra",
-          "sha": "387ad398f1d4457e26702c5a0b500606d5525b6a",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Name%20Club%20Disney%20(J%20980614%20V1.000).mra",
-          "type": "MRA",
-          "extra": {
-            "name": null,
-            "rbf": "ST-V",
-            "zips": [
-              "nclubdis.zip",
-              "stvbios.zip",
-              "nclubdis.zip"
-            ]
-          }
-        },
-        {
-          "name": "Name Club Ver.3 (J 970723 V1.000).mra",
-          "sha": "0a621e4db8899738cc1ec267670059bc51191acf",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Name%20Club%20Ver.3%20(J%20970723%20V1.000).mra",
-          "type": "MRA",
-          "extra": {
-            "name": null,
-            "rbf": "ST-V",
-            "zips": [
-              "nclubv3.zip",
-              "stvbios.zip",
-              "nclubv3.zip"
-            ]
-          }
-        },
-        {
           "name": "Othello Shiyouyo (J 980423 V1.002).mra",
-          "sha": "935fbd4604300546eb471a2b67f3ecd0cf8b6215",
+          "sha": "6093eea7bb7d7ee1761ee2a80410011968b22764",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Othello%20Shiyouyo%20(J%20980423%20V1.002).mra",
           "type": "MRA",
           "extra": {
@@ -24613,7 +24601,7 @@
         },
         {
           "name": "Pebble Beach - The Great Shot (JUE 950913 V0.990).mra",
-          "sha": "74546b98949a48174a840a8d81e2bf59ed04e9da",
+          "sha": "2753b06a6475fe2f8768094d4db54e45621ff6fd",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Pebble%20Beach%20-%20The%20Great%20Shot%20(JUE%20950913%20V0.990).mra",
           "type": "MRA",
           "extra": {
@@ -24628,7 +24616,7 @@
         },
         {
           "name": "Princess Clara Daisakusen (J 960910 V1.000).mra",
-          "sha": "91afdda4d95b182bd05a987123901427e2665fb6",
+          "sha": "2b1f92ae6cfa24499e9f21f60eb83b5739af13c3",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Princess%20Clara%20Daisakusen%20(J%20960910%20V1.000).mra",
           "type": "MRA",
           "extra": {
@@ -24642,53 +24630,8 @@
           }
         },
         {
-          "name": "Print Club 2 (U 970921 V1.000).mra",
-          "sha": "86272f65a59042e1553ccc767956785819fa04d9",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Print%20Club%202%20(U%20970921%20V1.000).mra",
-          "type": "MRA",
-          "extra": {
-            "name": null,
-            "rbf": "ST-V",
-            "zips": [
-              "pclub2.zip",
-              "stvbios.zip",
-              "pclub2.zip"
-            ]
-          }
-        },
-        {
-          "name": "Print Club 2 Vol. 3 (U 990310 V1.000).mra",
-          "sha": "fcc7d5fa4965891a334a42dc3479dc515be10a16",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Print%20Club%202%20Vol.%203%20(U%20990310%20V1.000).mra",
-          "type": "MRA",
-          "extra": {
-            "name": null,
-            "rbf": "ST-V",
-            "zips": [
-              "pclub2v3.zip|pclub2.zip",
-              "stvbios.zip",
-              "pclub2v3.zip|pclub2.zip"
-            ]
-          }
-        },
-        {
-          "name": "Print Club Pokemon B (U 991126 V1.000).mra",
-          "sha": "da064d41ac3d05c1de57e76ddf2c3ae6a713e24f",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Print%20Club%20Pokemon%20B%20(U%20991126%20V1.000).mra",
-          "type": "MRA",
-          "extra": {
-            "name": null,
-            "rbf": "ST-V",
-            "zips": [
-              "pclubpok.zip",
-              "stvbios.zip",
-              "pclubpok.zip"
-            ]
-          }
-        },
-        {
           "name": "Pro Mahjong Kiwame S (J 951020 V1.208).mra",
-          "sha": "ede3e320bb3479ce754ace0f3972829cbb63feff",
+          "sha": "ae35ca050cf8aa5c52b26509eae6c5b84571fa0e",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Pro%20Mahjong%20Kiwame%20S%20(J%20951020%20V1.208).mra",
           "type": "MRA",
           "extra": {
@@ -24703,7 +24646,7 @@
         },
         {
           "name": "Puyo Puyo Sun (J 961115 V0.001).mra",
-          "sha": "22409463a4f08d8ae48131a8922f49bab2399b9c",
+          "sha": "1c9a215b0e2f0d2a812aff35a7cb07c5781dd8d7",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Puyo%20Puyo%20Sun%20(J%20961115%20V0.001).mra",
           "type": "MRA",
           "extra": {
@@ -24718,7 +24661,7 @@
         },
         {
           "name": "Puzzle & Action- BoMulEul Chajara (JUET 970125 V2.00K).mra",
-          "sha": "7e280bf8119da71eb8c21ce78e1276f9d949dbb5",
+          "sha": "f895afc188ca3a8c3ce58d57cfadbc6c58d382f6",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Puzzle%20%26%20Action-%20BoMulEul%20Chajara%20(JUET%20970125%20V2.00K).mra",
           "type": "MRA",
           "extra": {
@@ -24733,7 +24676,7 @@
         },
         {
           "name": "Puzzle & Action- Sando-R (J 951114 V1.000).mra",
-          "sha": "5acd8074ac0f732458f26dda168e6aad3b842880",
+          "sha": "88db1423d887809c2e0e24d8ffa04f67b8c19909",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Puzzle%20%26%20Action-%20Sando-R%20(J%20951114%20V1.000).mra",
           "type": "MRA",
           "extra": {
@@ -24748,7 +24691,7 @@
         },
         {
           "name": "Puzzle & Action- Treasure Hunt (JUET 970901 V2.00E).mra",
-          "sha": "f59d4e1f38b8ead902357474fd886cc6d7ec3433",
+          "sha": "f4fd72cc16109b6ed5c15567a392198177a621ae",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Puzzle%20%26%20Action-%20Treasure%20Hunt%20(JUET%20970901%20V2.00E).mra",
           "type": "MRA",
           "extra": {
@@ -24763,7 +24706,7 @@
         },
         {
           "name": "Radiant Silvergun (JUET 980523 V1.000).mra",
-          "sha": "a83c591c62245b33a4abbe999760ffc3eb6d5833",
+          "sha": "f97dd1a502653bb198ff551ee1f85042a211c405",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Radiant%20Silvergun%20(JUET%20980523%20V1.000).mra",
           "type": "MRA",
           "extra": {
@@ -24778,7 +24721,7 @@
         },
         {
           "name": "Sea Bass Fishing (JUET 971110 V0.001).mra",
-          "sha": "033cfdf64c216f01d1a0696e608a7921cdffd3eb",
+          "sha": "1347ead3a98bae512e5cea0eac1acddf7f3a7002",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Sea%20Bass%20Fishing%20(JUET%20971110%20V0.001).mra",
           "type": "MRA",
           "extra": {
@@ -24793,7 +24736,7 @@
         },
         {
           "name": "Shanghai - The Great Wall - Shanghai Triple Threat (JUE 950623 V1.005).mra",
-          "sha": "9809e518f97b3364133072980134ead94cab9aae",
+          "sha": "70e77b03202f18a65abba49b51a76d210cd41947",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Shanghai%20-%20The%20Great%20Wall%20-%20Shanghai%20Triple%20Threat%20(JUE%20950623%20V1.005).mra",
           "type": "MRA",
           "extra": {
@@ -24808,7 +24751,7 @@
         },
         {
           "name": "Shienryu (JUET 961226 V1.000).mra",
-          "sha": "32430d9c1b14412b23b7e6e4f7afffb1231de0b3",
+          "sha": "1026ea59704f44b91893c60b3cf5d6bc2c28e1f5",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Shienryu%20(JUET%20961226%20V1.000).mra",
           "type": "MRA",
           "extra": {
@@ -24823,7 +24766,7 @@
         },
         {
           "name": "Soukyugurentai - Terra Diver (JUET 960821 V1.000).mra",
-          "sha": "77bf86004377bb543831387ba60957215f1947d3",
+          "sha": "f1348a8af1f78a839414ca29802bb0cc4c51424c",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Soukyugurentai%20-%20Terra%20Diver%20(JUET%20960821%20V1.000).mra",
           "type": "MRA",
           "extra": {
@@ -24838,7 +24781,7 @@
         },
         {
           "name": "Steep Slope Sliders (JUET 981110 V1.000).mra",
-          "sha": "d392c1725559be0b168e0752738f017f33e899ad",
+          "sha": "7052de8219b744e2db951065366197c17f98ccf5",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Steep%20Slope%20Sliders%20(JUET%20981110%20V1.000).mra",
           "type": "MRA",
           "extra": {
@@ -24852,23 +24795,8 @@
           }
         },
         {
-          "name": "Stress Busters (J 981020 V1.000).mra",
-          "sha": "388a896c17258c0e8afa9e0b368d32b924b359ed",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Stress%20Busters%20(J%20981020%20V1.000).mra",
-          "type": "MRA",
-          "extra": {
-            "name": null,
-            "rbf": "ST-V",
-            "zips": [
-              "stress.zip",
-              "stvbios.zip",
-              "stress.zip"
-            ]
-          }
-        },
-        {
           "name": "Suikoenbu - Outlaws of the Lost Dynasty (JUETL 950314 V2.001).mra",
-          "sha": "b0aa98742ab942208aad5f8443950fc780ec82c7",
+          "sha": "81dd8cd350a6fe2a9ba473d2e9f2c5f2daaeb73e",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Suikoenbu%20-%20Outlaws%20of%20the%20Lost%20Dynasty%20(JUETL%20950314%20V2.001).mra",
           "type": "MRA",
           "extra": {
@@ -24883,7 +24811,7 @@
         },
         {
           "name": "Super Major League (U 960108 V1.000).mra",
-          "sha": "88ffa853a345a8543cba52c6f90b36ec9e1a269c",
+          "sha": "a22ca7550d2c114febfec9f0afc203f96df5bc26",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Super%20Major%20League%20(U%20960108%20V1.000).mra",
           "type": "MRA",
           "extra": {
@@ -24898,7 +24826,7 @@
         },
         {
           "name": "Taisen Tanto-R Sashissu!! (J 980216 V1.000).mra",
-          "sha": "f66c31b441c65e754135cf140d3735d0885b6734",
+          "sha": "d349097481eced827f5366b365b58f1ef8af9032",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Taisen%20Tanto-R%20Sashissu!!%20(J%20980216%20V1.000).mra",
           "type": "MRA",
           "extra": {
@@ -24912,23 +24840,8 @@
           }
         },
         {
-          "name": "Technical Bowling (J 971212 V1.000).mra",
-          "sha": "e9fe57ad92e79837be15bcda32afe007e2c732cf",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Technical%20Bowling%20(J%20971212%20V1.000).mra",
-          "type": "MRA",
-          "extra": {
-            "name": null,
-            "rbf": "ST-V",
-            "zips": [
-              "techbowl.zip",
-              "stvbios.zip",
-              "techbowl.zip"
-            ]
-          }
-        },
-        {
           "name": "Tecmo World Cup '98 (JUET 980410 V1.000).mra",
-          "sha": "15c950ea3ffefbdd1b45c5cae8e4b767a4b5d0e1",
+          "sha": "92d68a714e95c0b0955a31a089486893d5c010a7",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Tecmo%20World%20Cup%20'98%20(JUET%20980410%20V1.000).mra",
           "type": "MRA",
           "extra": {
@@ -24943,7 +24856,7 @@
         },
         {
           "name": "Tecmo World Soccer '98 (JUET 980410 V1.000).mra",
-          "sha": "754213933bea9a1f1151a870ec6ed2ef41df9a4a",
+          "sha": "dac0a383a316fe35dd37d5e2be65ecd1baca8be9",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Tecmo%20World%20Soccer%20'98%20(JUET%20980410%20V1.000).mra",
           "type": "MRA",
           "extra": {
@@ -24958,7 +24871,7 @@
         },
         {
           "name": "Touryuu Densetsu Elan-Doree - Elan Doree - Legend of Dragoon (JUET 980922 V1.006).mra",
-          "sha": "c86059390d332e05a7170b16316856aa136dfee0",
+          "sha": "cafa752475476207bb02ba6bc98e73728d785184",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Touryuu%20Densetsu%20Elan-Doree%20-%20Elan%20Doree%20-%20Legend%20of%20Dragoon%20(JUET%20980922%20V1.006).mra",
           "type": "MRA",
           "extra": {
@@ -24973,7 +24886,7 @@
         },
         {
           "name": "Virtua Fighter Kids (JUET 960319 V0.000).mra",
-          "sha": "37c8c0e8f43c3498f7f95827d8c509d5e8559878",
+          "sha": "b74182e63efc44618aa572bc515cbf08ffd5f867",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Virtua%20Fighter%20Kids%20(JUET%20960319%20V0.000).mra",
           "type": "MRA",
           "extra": {
@@ -24988,7 +24901,7 @@
         },
         {
           "name": "Virtua Fighter Remix (JUETBKAL 950428 V1.000).mra",
-          "sha": "74939f1afbfdbe269ab6c1598594ba9b813413f1",
+          "sha": "8bf609ef1fe3d55a59ed1299826a8d7b4bf2b538",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Virtua%20Fighter%20Remix%20(JUETBKAL%20950428%20V1.000).mra",
           "type": "MRA",
           "extra": {
@@ -25002,23 +24915,8 @@
           }
         },
         {
-          "name": "Virtual Mahjong (J 961214 V1.000).mra",
-          "sha": "821053a9caeb30b7c04fdf312aeb95a2fe2efdc1",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Virtual%20Mahjong%20(J%20961214%20V1.000).mra",
-          "type": "MRA",
-          "extra": {
-            "name": null,
-            "rbf": "ST-V",
-            "zips": [
-              "vmahjong.zip",
-              "stvbios.zip",
-              "vmahjong.zip"
-            ]
-          }
-        },
-        {
           "name": "Virtual Mahjong 2 - My Fair Lady (J 980608 V1.000).mra",
-          "sha": "7371a41af0bac1615f58f80b6706cda492d2f5c3",
+          "sha": "ef984ca30a80ea5dc1ddcb2dc08bebdd9efcdf22",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Virtual%20Mahjong%202%20-%20My%20Fair%20Lady%20(J%20980608%20V1.000).mra",
           "type": "MRA",
           "extra": {
@@ -25033,7 +24931,7 @@
         },
         {
           "name": "Winter Heat (JUET 971012 V1.000).mra",
-          "sha": "4e6b159dbecc5247128ee87a85fc6d8ed5bb1655",
+          "sha": "1f955668be9f06fb0767205e8903dabb6264f4e6",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Winter%20Heat%20(JUET%20971012%20V1.000).mra",
           "type": "MRA",
           "extra": {
@@ -25048,7 +24946,7 @@
         },
         {
           "name": "Zen Nippon Pro-Wrestling Featuring Virtua (J 971123 V1.000).mra",
-          "sha": "19ac75e2884a68c293efde9b54992fffa3c3f756",
+          "sha": "1f7c8207807b47625b0c72769f650be7bd2f2167",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Zen%20Nippon%20Pro-Wrestling%20Featuring%20Virtua%20(J%20971123%20V1.000).mra",
           "type": "MRA",
           "extra": {
@@ -26251,6 +26149,12 @@
           "sha": "cbc6969308170d93adf8f1d8cc9594541fa250b0",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Super_Vision_8000_MiSTer/main/releases/Super_Vision_8000_20230411.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "Super_Vision_8000_20250622.rbf",
+          "sha": "dd671b3877b4af8f1a2216d0bea4d78f3a1787d9",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Super_Vision_8000_MiSTer/main/releases/Super_Vision_8000_20250622.rbf",
+          "type": "RBF"
         }
       ]
     },
@@ -26471,6 +26375,12 @@
           "name": "TomyTutor_20241024.rbf",
           "sha": "da1703b05a3f2110977c8b89edf3cade757746f6",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/TomyTutor_MiSTer/main/releases/TomyTutor_20241024.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "TomyTutor_20250622.rbf",
+          "sha": "5e6e31383dd1c606debfc7c3be5c82ccd87134ec",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/TomyTutor_MiSTer/main/releases/TomyTutor_20250622.rbf",
           "type": "RBF"
         }
       ]
