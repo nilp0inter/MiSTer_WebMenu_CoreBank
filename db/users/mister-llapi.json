@@ -2585,7 +2585,7 @@
     {
       "name": "Gameboy_MiSTer",
       "description": "Gameboy for MiSTer",
-      "readme": "# [Gameboy](https://en.wikipedia.org/wiki/Game_Boy)  / [Gameboy Color](https://en.wikipedia.org/wiki/Game_Boy_Color) port to [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\r\n\r\nThis is port of [Gameboy for MiST](https://github.com/mist-devel/gameboy)\r\n\r\n* Place RBF file into root of SD card.\r\n* Place *.gb|*.gbc files into Gameboy folder.\r\n\r\n## Features\r\n* Original Gameboy & Gameboy Color Support\r\n* Super Gameboy Support - Borders, Palettes and Multiplayer\r\n* MegaDuck Support\r\n* Custom Borders\r\n* SaveStates\r\n* Fastforward \r\n* Rewind - Allows you to rewind up to 40 seconds of gameplay\r\n* Frameblending - Prevents flicker in some games (e.g. \"Chikyuu Kaihou Gun Zas\") \r\n* Custom Palette Loading\r\n* Real-Time Clock Support\r\n* Gameboy Link Port Support - Requires USERIO adapter\r\n* Cheats\r\n* Fast boot\r\n* GBA mode for GBC games\r\n\r\n## Open Source Bootstrap roms\r\nOpen source roms are included in the core, adapted from the SameBoy project [https://github.com/LIJI32/SameBoy/](https://github.com/LIJI32/SameBoy/). These roms have MiSTer-specific enhancements, allowing fast booting and GBA mode to be controlled by the on-screen display.\r\n\r\n For maximum compatibility/authenticity you can still place the Gameboy bios/bootroms into the Gameboy folder and load them in the menu with `Bootroms->Load GBC/DMG/SGB boot`. \r\n\r\nFor more information see the [BootROM README](./BootROMs/README.md)  \r\n\r\n## Palettes\r\nThis core supports custom palettes (*.gbp) which should be placed into the Gameboy folder. Some examples are available in the palettes folder.\r\n\r\n## Custom Borders\r\nThis core supports custom borders (*.sgb) which should be placed into the Gameboy folder. Some examples are available in the borders folder.\r\n\r\n## Autoload\r\nTo autoload your favorite game at startup rename it to `boot2.rom`.\r\n\r\n## Video output\r\nThe Gameboy can disable video output at any time which causes problems with vsync_adjust=2 or analog video during screen transitions. Enabling the Stabilize video option may fix this at the cost of some increased latency.\r\n\r\n# Savestates\r\nThis core provides 4 slots to save and restore the memory state which means you can save at any point in the game. These can be saved to your SDCard or they can reside only in memory for temporary use (OSD Option). Save states can be performed with the Keyboard, a mapped button to a gamepad, or through the OSD.\r\n\r\nKeyboard Hotkeys for save states:\r\n- Alt+F1 thru Alt+F4 - save state\r\n- F1 thru F4 - restore state\r\n\r\nGamepad:\r\n- Savestatebutton+Left or Right switches the savestate slot\r\n- Savestatebutton+Start+Down saves to the selected slot\r\n- Savestatebutton+Start+Up loads from the selected slot\r\n",
+      "readme": "# [Gameboy](https://en.wikipedia.org/wiki/Game_Boy)  / [Gameboy Color](https://en.wikipedia.org/wiki/Game_Boy_Color) port to [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\r\n\r\n_This is a port of [Gameboy for MiST](https://github.com/mist-devel/gameboy)_\r\n\r\n* Place RBF file into root of SD card.\r\n* Place \\*.gb|*.gbc files into Gameboy folder.\r\n\r\n## Features\r\n* Original Gameboy & Gameboy Color Support\r\n* Super Gameboy Support - Borders, Palettes and Multiplayer\r\n* MegaDuck Support\r\n* Custom Borders\r\n* SaveStates\r\n* Fastforward \r\n* Rewind - Allows you to rewind up to 40 seconds of gameplay\r\n* Frameblending - Prevents flicker in some games (e.g. \"Chikyuu Kaihou Gun Zas\") \r\n* Custom Palette Loading\r\n* Real-Time Clock Support\r\n* Gameboy Link Port Support - Requires USERIO adapter\r\n* Cheats\r\n* Fast boot\r\n* GBA mode for GBC games\r\n\r\n## Open Source Bootstrap roms\r\nOpen source roms are included in the core, adapted from the SameBoy project [https://github.com/LIJI32/SameBoy/](https://github.com/LIJI32/SameBoy/). These roms have MiSTer-specific enhancements, allowing fast booting and GBA mode to be controlled by the on-screen display.\r\n\r\n For maximum compatibility/authenticity you can still place the Gameboy bios/bootroms into the Gameboy folder and load them in the menu with `Bootroms->Load GBC/DMG/SGB boot`. \r\n\r\nFor more information see the [BootROM README](./BootROMs/README.md)  \r\n\r\n## Palettes\r\nThis core supports custom palettes (*.gbp) which should be placed into the Gameboy folder. Some examples are available in the palettes folder.\r\n\r\n## Custom Borders\r\nThis core supports custom borders (*.sgb) which should be placed into the Gameboy folder. Some examples are available in the borders folder.\r\n\r\n## Autoload\r\nTo autoload your favorite game at startup rename it to `boot2.rom`.\r\n\r\n## Video output\r\nThe Gameboy can disable video output at any time which causes problems with vsync_adjust=2 or analog video during screen transitions. Enabling the Stabilize video option may fix this at the cost of some increased latency.\r\n\r\n## Savestates\r\nThis core provides 4 slots to save and restore the memory state which means you can save at any point in the game. These can be saved to your SD Card or they can reside only in memory for temporary use (OSD Option). Save states can be performed with the Keyboard, a mapped button to a gamepad, or through the OSD.\r\n\r\nKeyboard Hotkeys for save states:\r\n- <kbd>ALT</kbd>+<kbd>F1</kbd>/<kbd>F2</kbd>/<kbd>F3</kbd>/<kbd>F4</kbd> \u2013 save state  \r\n- <kbd>F1</kbd>/<kbd>F2</kbd>/<kbd>F3</kbd>/<kbd>F4</kbd> \u2013 restore state\r\n\r\n\r\nGamepad:\r\n\r\n- <kbd>SAVESTATEBUTTON</kbd>+<kbd>LEFT</kbd>/<kbd>RIGHT</kbd> prev/next savestate slot\r\n- <kbd>SAVESTATEBUTTON</kbd>+<kbd>START</kbd>+<kbd>DOWN</kbd> saves to the selected slot\r\n- <kbd>SAVESTATEBUTTON</kbd>+<kbd>START</kbd>+<kbd>UP</kbd> loads from the selected slot\r\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-LLAPI/Gameboy_MiSTer",
@@ -2777,6 +2777,12 @@
           "type": "RBF"
         },
         {
+          "name": "Gameboy_20250618.rbf",
+          "sha": "b656584b13cb5d71f2696a4c9af40a8e62dd548a",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Gameboy_MiSTer/master/releases/Gameboy_20250618.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Gameboy_LLAPI_20190927.rbf",
           "sha": "d5ba7ee489ea767d7fd4a0672b758afca3a35d92",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Gameboy_MiSTer/master/releases/Gameboy_LLAPI_20190927.rbf",
@@ -2939,6 +2945,12 @@
           "type": "RBF"
         },
         {
+          "name": "Gameboy_LLAPI_20250711.rbf",
+          "sha": "e7660b39314701ac8b15e1b92f244c88cf4d0327",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Gameboy_MiSTer/master/releases/Gameboy_LLAPI_20250711.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Mega Duck.mgl",
           "sha": "46182bf8d3cb712157b1b1dcc9235fe7f9c4daed",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Gameboy_MiSTer/master/releases/Mega%20Duck.mgl",
@@ -2949,7 +2961,7 @@
     {
       "name": "GBA_MiSTer",
       "description": "GBA for MiSTer",
-      "readme": "# [Gameboy Advance](https://en.wikipedia.org/wiki/Game_Boy_Advance) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\n\n# HW Requirements/Features\nThe games can run from a naked DE10-Nano with the build-in DDR-RAM.\nHowever, using SDRAM is highly recommended, as some games may slowdown or loose sync when using DDR-RAM.\n\nWhen using SDRAM, it requires 32MB SDRAM for games less than 32MB. 32MB games require either 64MB or 128MB module.\nSDRAM will be automatically used when available and size is sufficient.\n\n# Bios\nOpensource Bios from Normmatt is included, however it has issues with some games.\nOriginal GBA BIOS can be placed to GBA folder with name boot.rom\n\nPLEASE do not report errors without testing with the original BIOS\n\nHomebrew games are sometimes not supported by the official BIOS, \nbecause the BIOS checks for Nintendo Logo included in the ROM, which is protected by copyright.\nTo use these ROMs without renaming or removing the the boot.rom, \nyou can activate the \"Homebrew BIOS\" settings in OSD.\nAs the BIOS is already replaced at boot time, you must save this settings and hard reset/reload the GBA core.\n\n# Status\n~1600 games tested until ingame.\nThere is no known official game that doesn't work.\nExceptions are games that require rare extra hardware (mostly japanese).\nSome small video glitches remain, see issue list.\n\n# Features\n- saving as in GBA\n- Savestates\n- FastForward - speed up game by factor 2-4\n- CPU Turbomode - give games additional CPU power\n- Flickerblend - set to blend or 30Hz mode for games like F-Zero, Mario Kart or NES Classics to prevent flickering effects\n- Spritelimit - turn on to prevent wrong sprites for games that rely on the limit (opt-in)\n- Cheats\n- Color optimizations: shader colors and desaturate\n- Rewind: go back up to 60 seconds in time\n- Tilt: use analog stick (map stick in Mister Main before)\n- Solar Sensor: Set brightness in OSD\n- Gyro: use analog stick (map stick in Mister Main before)\n- RTC: automatically used, works with RTC board or internet connection\n- Rumble: for Drill Dozer, Wario Ware Twisted and some romhacks\n- 2x Resolution: game is rendered at 480x320 instead of 240x160 pixels\n\n# Savestates\nCore provides 4 slots to save and restore the state. \nThose can be saved to SDCard or reside only in memory for temporary use(OSD Option). \nUsage with either Keyboard, Gamepad mappable button or OSD.\n\nKeyboard Hotkeys for save states:\n- Alt-F1..F4 - save the state\n- F1...F4 - restore\n\nGamepad:\n- Savestatebutton+Left or Right switches the savestate slot\n- Savestatebutton+Down saves to the selected slot\n- Savestatebutton+Up loads from the selected slot\n\n# Rewind\nTo use rewind, turn on the OSD Option \"Rewind Capture\" and map the rewind button.\nYou may have to restart the game for the function to work properly.\nAttention: Rewind capture will slow down your game by about 0.5% and may lead to light audio stutter.\nRewind capture is not compatible to \"Pause when OSD is open\", so pause is disabled when Rewind capture is on.\n\n# Spritelimit\nThere are only very few games known that produce glitches without sprite pixel limit.\nThose games use the sprite pixel limit automatically.\nYou can optionally also turn this on if you notice problems.\n\n# 2x Resolution\nOnly works over HDMI, Analog output is not changed in 2x Resolution mode. \n\nImproved rendering resolution for:\n- Affine background: \"Mode7\" games, typically racing games like Mario Kart\n- Affine sprites: games that scale or rotate sprites\n\nThis rendering is experimental and can cause glitches, as not all game behavior can be supported.\nThose glitches can not be fixed without gamespecific hacks and therefore will not be fixed. \nPlease don't add bugs in such cases.\n\n# Cartridge Hardware supported games\n- RTC: Pokemon Sapphire+Ruby+Emerald, Boktai 1+2+3, Sennen Kazoku, Rockman EXE 4.5\n- Solar Sensor: Boktai 1+2+3\n- Gyro: Wario Ware Twisted\n- Tilt: Yoshi Topsy Turvy/Universal Gravitation, Koro Koro Puzzle - Happy Panechu!\n- Rumble: Wario Ware Twisted, Drill Dozer\n\nIf there is a game you want to play that also uses one of these features, but is not listed, please open a bug request.\n\nFor romhacks you can activate the option \"GPIO HACK(RTC+Rumble)\". Make sure to deactivate it for other games, otherwise you will experience crashes.\n\n# Not included\n- Multiplayer features like serial communication\n- E-Reader support\n- Gameboy Player features\n\n# Information for developers\n\nHow to simulate:\nhttps://github.com/MiSTer-devel/GBA_MiSTer/tree/master/sim\n\nHow to implement a GPIO module:\nhttps://github.com/MiSTer-devel/GBA_MiSTer/blob/master/gpio_readme.md\n",
+      "readme": "# [Gameboy Advance](https://en.wikipedia.org/wiki/Game_Boy_Advance) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\n\n## HW Requirements/Features\nThe games can run from a naked DE10-Nano with the built-in DDR-RAM.\nHowever, using SDRAM is highly recommended, as some games may slowdown or lose sync when using DDR-RAM.\n\nWhen using SDRAM, it requires 32MB SDRAM for games less than 32MB. 32MB games require either 64MB or 128MB module.\nSDRAM will be automatically used when available and size is sufficient.\n\n## Bios\nOpensource Bios from Normmatt is included, however it has issues with some games.\nOriginal GBA BIOS can be placed to GBA folder with name boot.rom\n\nPLEASE do not report errors without testing with the original BIOS\n\nHomebrew games are sometimes not supported by the official BIOS, \nbecause the BIOS checks for Nintendo Logo included in the ROM, which is protected by copyright.\nTo use these ROMs without renaming or removing the boot.rom, \nyou can activate the \"Homebrew BIOS\" settings in OSD.\nAs the BIOS is already replaced at boot time, you must save this setting and hard reset/reload the GBA core.\n\n## Status\n~1600 games tested until ingame.\nThere is no known official game that doesn't work.\nExceptions are games that require rare extra hardware (mostly japanese).\nSome small video glitches remain, see issue list.\n\n## Features\n- Saving as in GBA\n- Savestates\n- FastForward - speed up game by factor 2-4\n- CPU Turbomode - give games additional CPU power\n- Flickerblend - set to blend or 30Hz mode for games like F-Zero, Mario Kart or NES Classics to prevent flickering effects\n- Spritelimit - turn on to prevent wrong sprites for games that rely on the limit (opt-in)\n- Cheats\n- Color optimizations: shader colors and desaturate\n- Rewind: go back up to 60 seconds in time\n- Tilt: use analog stick (map stick in Mister Main before)\n- Solar Sensor: Set brightness in OSD\n- Gyro: use analog stick (map stick in Mister Main before)\n- RTC: automatically used, works with RTC board or internet connection\n- Rumble: for Drill Dozer, Wario Ware Twisted and some romhacks\n- 2x Resolution: game is rendered at 480x320 instead of 240x160 pixels\n\n## Savestates\nCore provides 4 slots to save and restore the state. \nThose can be saved to SD Card or reside only in memory for temporary use(OSD Option). \nUsage with either Keyboard, Gamepad mappable button or OSD.\n\nKeyboard Hotkeys for save states:\n- <kbd>ALT</kbd>+<kbd>F1</kbd>/<kbd>F2</kbd>/<kbd>F3</kbd>/<kbd>F4</kbd> \u2013 save state  \n- <kbd>F1</kbd>/<kbd>F2</kbd>/<kbd>F3</kbd>/<kbd>F4</kbd> \u2013 restore state\n\nGamepad:\n- <kbd>SAVESTATEBUTTON</kbd>+<kbd>LEFT</kbd>/<kbd>RIGHT</kbd> prev/next savestate slot\n- <kbd>SAVESTATEBUTTON</kbd>+<kbd>START</kbd>+<kbd>DOWN</kbd> saves to the selected slot\n- <kbd>SAVESTATEBUTTON</kbd>+<kbd>START</kbd>+<kbd>UP</kbd> loads from the selected slot\n\n## Rewind\nTo use rewind, turn on the OSD Option \"Rewind Capture\" and map the rewind button.\nYou may have to restart the game for the function to work properly.\nAttention: Rewind capture will slow down your game by about 0.5% and may lead to light audio stutter.\nRewind capture is not compatible with \"Pause when OSD is open\", so pause is disabled when Rewind capture is on.\n\n## Spritelimit\nThere are only very few games known that produce glitches without sprite pixel limit.\nThose games use the sprite pixel limit automatically.\nYou can optionally also turn this on if you notice problems.\n\n## 2x Resolution\nOnly works over HDMI, Analog output is not changed in 2x Resolution mode. \n\nImproved rendering resolution for:\n- Affine background: \"Mode7\" games, typically racing games like Mario Kart\n- Affine sprites: games that scale or rotate sprites\n\nThis rendering is experimental and can cause glitches, as not all game behavior can be supported.\nThose glitches can not be fixed without gamespecific hacks and therefore will not be fixed. \nPlease don't add bugs in such cases.\n\n## Cartridge Hardware supported games\n- RTC: Pokemon Sapphire+Ruby+Emerald, Boktai 1+2+3, Sennen Kazoku, Rockman EXE 4.5\n- Solar Sensor: Boktai 1+2+3\n- Gyro: Wario Ware Twisted\n- Tilt: Yoshi Topsy Turvy/Universal Gravitation, Koro Koro Puzzle - Happy Panechu!\n- Rumble: Wario Ware Twisted, Drill Dozer\n\nIf there is a game you want to play that also uses one of these features, but is not listed, please open a bug request.\n\nFor romhacks you can activate the option \"GPIO HACK(RTC+Rumble)\". Make sure to deactivate it for other games, otherwise you will experience crashes.\n\n## Not included\n- Multiplayer features like serial communication\n- E-Reader support\n- Gameboy Player features\n\n## Information for developers\n\nHow to simulate:\nhttps://github.com/MiSTer-devel/GBA_MiSTer/tree/master/sim\n\nHow to implement a GPIO module:\nhttps://github.com/MiSTer-devel/GBA_MiSTer/blob/master/gpio_readme.md\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-LLAPI/GBA_MiSTer",
@@ -3132,6 +3144,18 @@
           "name": "GBA_20240410.rbf",
           "sha": "baa315b409a04c3335f744c527f6af55caae6a15",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/GBA_MiSTer/master/releases/GBA_20240410.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "GBA_20250621.rbf",
+          "sha": "0f428072dfe6cf6b69f5bbf5dacef76c9787476d",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/GBA_MiSTer/master/releases/GBA_20250621.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "GBA_20250705.rbf",
+          "sha": "eadbe452b224df7492c888c88774266e10e1457d",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/GBA_MiSTer/master/releases/GBA_20250705.rbf",
           "type": "RBF"
         },
         {
@@ -3324,6 +3348,12 @@
           "name": "GBA_LLAPI_20250306.rbf",
           "sha": "0f6da3bab7e4fd7f3fbd2a84a9506569b5d1d653",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/GBA_MiSTer/master/releases/GBA_LLAPI_20250306.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "GBA_LLAPI_20250712.rbf",
+          "sha": "e3b1d5b4da4f766aeb20c394716927bd78da0399",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/GBA_MiSTer/master/releases/GBA_LLAPI_20250712.rbf",
           "type": "RBF"
         }
       ]
@@ -3942,6 +3972,12 @@
           "sha": "eed667a947894d1675383896831c964d0ac9bdb4",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/MegaCD_MiSTer/master/releases/MegaCD_LLAPI_20250228.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "MegaCD_LLAPI_20250712.rbf",
+          "sha": "9c0ae6daee0885881da601095cc2aeda9cba9360",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/MegaCD_MiSTer/master/releases/MegaCD_LLAPI_20250712.rbf",
+          "type": "RBF"
         }
       ]
     },
@@ -3990,6 +4026,12 @@
           "type": "RBF"
         },
         {
+          "name": "MegaDrive_20250707.rbf",
+          "sha": "e3612169c48cd3763dcc073866073f2b5b4c9770",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/MegaDrive_MiSTer/main/releases/MegaDrive_20250707.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "MegaDrive_LLAPI_20240302.rbf",
           "sha": "74b43d581df6f07b43847a79d6ee485cd4f63225",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/MegaDrive_MiSTer/main/releases/MegaDrive_LLAPI_20240302.rbf",
@@ -4035,6 +4077,12 @@
           "name": "MegaDrive_LLAPI_20250226.rbf",
           "sha": "1d48652ce259ad3091ff4ef39950abec1d61124c",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/MegaDrive_MiSTer/main/releases/MegaDrive_LLAPI_20250226.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "MegaDrive_LLAPI_20250711.rbf",
+          "sha": "169b2afaeedded7dde30648e553a6c90c651a134",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/MegaDrive_MiSTer/main/releases/MegaDrive_LLAPI_20250711.rbf",
           "type": "RBF"
         }
       ]
@@ -4515,7 +4563,7 @@
         },
         {
           "name": "romsets.xml",
-          "sha": "7b2af7ab59b698bedf2fdae8615398159d61232e",
+          "sha": "61d4a78474f00c550acb7a33009e8f592772d9eb",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/NeoGeo_MiSTer/master/releases/romsets.xml",
           "type": "OTHER"
         }
@@ -4524,7 +4572,7 @@
     {
       "name": "NES_MiSTer",
       "description": null,
-      "readme": "# [Nintendo Entertainment System](https://en.wikipedia.org/wiki/Nintendo_Entertainment_System) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\nThis is an FPGA implementation of the NES/Famicom based on [FPGANES](https://github.com/strigeus/fpganes) by Ludvig Strigeus and ported to MiSTer.\n\n## Features\n * Supports saves for most games\n * Savestates\n * Supports NTSC, PAL, and Dendy system types\n * FDS Support with expansion audio\n * Multiple Palette options\n * Zapper, Powerpad, Microphone, and Miracle Piano support\n * Supports four players\n * Setting for increasing sprite per line by 8\n * Supports up to 32 cheat codes\n * Supports NSF Player\n * Supports expansion audio from mappers including VRC6 & 7, MMC5, Namco 163 and Sunsoft 5b\n * Supports many popular mappers including VRC1-7, MMC0-5, and many more (see below)\n * Supports large games such as Legend of Link and Rockman Minus Infinity\n\n## Installation\nCopy the NES_\\*.rbf file to the directory or subdirectory of `/media/fat/`. Create a `games/NES/` directory on the root of the SD card (`/media/fat/games/NES/`), and place NES roms (\\*.nes) inside this NES directory. The ROMs must have an iNES or NES2.0 header, which most already do. NES2.0 headers are preferred for the best accuracy. To have an NES or FDS game ROM load automatically upon starting the core, place it in the NES directory named as boot1.rom or boot2.rom, respectively.\n- `boot0.rom` = FDS BIOS file.  Will be used for any FDS images loaded\n- `boot1.rom` = NES Cart file.  Can be used with boot0.rom (BIOS) in place\n- `boot2.rom` = FDS image file.  Requires boot0.rom (BIOS).  Use a blank FDS (header only) to boot the FDS BIOS without a disk image.\n- `boot3.rom` = PAL file. It can be used to set your default custom palette. Save the menu option on \"Custom\" to apply immediately.\n\n## Famicom Disk System Usage\nBefore loading \\*.FDS files, you must first load the official, unpatched FDS BIOS. The BIOS file should be renamed to boot0.rom and placed in the same folder as the ROMs (NES).  Alternatively, it can be loaded from the OSD if boot0.rom doesn't exist. After loading the core and the bios you may select an FDS image. By default, the NES core will swap disk sides for you automatically. To suppress this behavior, hold the FDS button on the player 1 controller. The \"Disk Swap\" OSD option manually controls the disk side.  Each button press increments the disk side.  Press and hold the fds button to eject and increment the disk side in this mode.  Some games only work correctly in manual disk swap mode, and require holding the FDS button for up to a few seconds (Gall Force,...).\n\n## Extra Sprites\nThis feature will double the number of sprites drawn per scanlines, decreasing the flickering sprites that NES is known for. Some games relied on the 8 sprite behavior to work correctly, such as Simon's Quest swamps. Other mappers may be impacted by using extra sprites. While it works well in most games, glitches may occur with this enabled.\n\n## Saving and Loading\nThe battery backed RAM (Save RAM) for the NES does not write to disk automatically. After saving in your game, you must then write the RAM to the SD card by selecting **Save Backup RAM** from the menu. If you do not save your RAM to disk, the contents will be lost next time you restart the core or switch games. Alternatively you can enable to Autosave option from the OSD menu, and if you do your games will be recorded to disk every time you open the OSD menu. FDS saving uses the same method as for cartridge RAM saves. Save RAM is stored as a .sav file based on the NES/FDS filename in `/media/fat/saves/NES/`.  Examples:  \n`Metroid (Japan) (Rev 3).fds` -> `Metroid (Japan) (Rev 3).sav`  \n`Legend of Zelda, The (USA) (Rev 1).nes` -> `Legend of Zelda, The (USA) (Rev 1).sav`\n\n# Savestates\nCore provides 4 slots to save and restore the state.\nThose can be saved to SDCard or reside only in memory for temporary use(OSD Option). \nUsage with either Keyboard, Gamepad mappable button or OSD. Save states are stored as .ss files in `/media/fat/savestates/NES/`, with an underscore and the save slot number (1,2,3,4) preceding `.ss`. Example (save slot 1): `Metroid (USA).nes` -> `Metroid (USA)_1.ss`\n\nKeyboard Hotkeys for save states:\n- Alt-F1..F4 - save the state\n- F1...F4 - restore\n\nGamepad:\n- Savestatebutton+Left or Right switches the savestate slot\n- Savestatebutton+Start+Down saves to the selected slot\n- Savestatebutton+Start+Up loads from the selected slot\n\n## Zapper Support\nThe \"Zapper\" (aka Light Gun) can be used via two methods. You can select Peripheral: Zapper(Mouse) to use your mouse to aim and shoot with the left button. This mode uses relative mouse motion, so devices that rely on absolute coordinates will not work via this method. Alternatively, you can choose Zapper(Joy) to use the Analog stick to aim, and the defined Trigger button to fire. Guns such as Aimtrak have joystick modes which may be compatible with this method.\n\n## Miracle Piano Support\nThe Miracle Piano is a MIDI keyboard compatible with the Miracle Piano Education System cart.  To use it with SNAC, no further settings are needed.  To use it with midilink, in the System Settings, set the UART connection to use MIDI.  The piano will then be connected on controller port 1 as expected.  The primary controller will automatically be assigned to port 2 as the cart expects.  The header for the ROM file should be set to NES 2.0 with controller type (0xF) set to the Miracle Piano (0x19).\n\n## Supported Mappers\n\n|#||||||||||||||||\n|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|\n|**0**|**1**|**2**|**3**|**4**|**5**||**7**||**9**|**10**|**11**|~~12~~|13||15|\n|**16**||**18**|**19**|**FDS**|**21**|**22**|**23**|**24**|**25**|**26**|**27**|**28**||**30**|31|\n|**32**|**33**|**34**|**35**|**36**|**37**|**38**|**39**|~~40~~|41|42|~~43~~|**44**|~~45~~|**46**|**47**|\n|**48**|~~49~~|~~50~~|~~51~~|~~52~~|~~53~~|~~54~~|~~55~~|~~56~~|~~57~~|~~58~~|~~59~~|~~60~~|~~61~~|~~62~~|~~63~~|\n|**64**|**65**|**66**|**67**|**68**|**69**|**70**|**71**|**72**|**73**|**74**|**75**|**76**|**77**|**78**|**79**|\n|**80**|~~81~~|**82**|83|~~84~~|85|**86**|**87**|**88**|**89**|**90**|91|**92**|**93**|**94**|**95**|\n|~~96~~|**97**||~~99~~|~~100~~|**101**|||~~104~~|105||107|~~108~~|~~109~~|~~110~~|**111**|\n|**112**|**113**|~~114~~|~~115~~|~~116~~|~~117~~|**118**|**119**|~~120~~||~~122~~|~~123~~||~~125~~|~~126~~|~~127~~|\n|~~128~~|~~129~~|~~130~~|~~131~~|**132**|**133**|~~134~~|~~135~~|**136**|**137**|**138**|**139**|**140**|**141**|~~142~~|**143**|\n|~~144~~|**145**|**146**|**147**|**148**|**149**|**150**|~~151~~|**152**|**153**|**154**|**155**|**156**|~~157~~|**158**|**159**|\n|~~160~~|~~161~~|162|163|164|165|~~166~~|~~167~~|~~168~~|~~169~~||**171**|**172**|**173**|||\n|||||**180**|~~181~~|~~182~~|~~183~~|**184**|**185**|~~186~~|~~187~~|~~188~~|**189**|**190**|**191**|\n|**192**|~~193~~|**194**|**195**|**196**||~~198~~|~~199~~|~~200~~|~~201~~|~~202~~|~~203~~|~~204~~|**205**|**206**|**207**|\n|**208**|**209**|**210**|**211**|~~212~~|~~213~~|~~214~~|~~215~~|~~216~~|~~217~~|**218**||||~~222~~||\n|~~224~~|**225**|~~226~~|227|228|~~229~~|~~230~~|~~231~~|**232**|~~233~~|234|~~235~~|~~236~~|~~237~~|||\n|~~240~~|~~241~~|~~242~~|**243**|~~244~~|~~245~~|246||~~248~~|~~249~~|~~250~~|~~251~~|~~252~~||~~254~~|255|\n|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|\n|**268**|413|**547**|---|---|---|---|---|---|---|---|---|---|---|---|---|\n\nKey: **Supported+Save state**, Supported, ~~Not Supported~~. Mappers that are not existent or not useful are blank.\n\n",
+      "readme": "# [Nintendo Entertainment System](https://en.wikipedia.org/wiki/Nintendo_Entertainment_System) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\nThis is an FPGA implementation of the NES/Famicom based on [FPGANES](https://github.com/strigeus/fpganes) by Ludvig Strigeus and ported to MiSTer.\n\n## Features\n * Supports saves for most games\n * Savestates\n * Supports NTSC, PAL, and Dendy system types\n * FDS Support with expansion audio\n * Multiple Palette options\n * Zapper, Powerpad, Microphone, and Miracle Piano support\n * Supports four players\n * Setting for increasing sprites per line by 8\n * Supports up to 32 cheat codes\n * Supports NSF Player\n * Supports expansion audio from mappers including VRC6 & 7, MMC5, Namco 163 and Sunsoft 5b\n * Supports many popular mappers including VRC1-7, MMC0-5, and many more (see below)\n * Supports large games such as Legend of Link and Rockman Minus Infinity\n\n## Installation\nCopy the NES_\\*.rbf file to the directory or subdirectory of `/media/fat/`. Create a `games/NES/` directory on the root of the SD card (`/media/fat/games/NES/`), and place NES roms (\\*.nes) inside this NES directory. The ROMs must have an iNES or NES2.0 header, which most already do. NES2.0 headers are preferred for the best accuracy. To have an NES or FDS game ROM load automatically upon starting the core, place it in the NES directory named as boot1.rom or boot2.rom, respectively.\n- `boot0.rom` = FDS BIOS file.  Will be used for any FDS images loaded\n- `boot1.rom` = NES Cart file.  Can be used with boot0.rom (BIOS) in place\n- `boot2.rom` = FDS image file.  Requires boot0.rom (BIOS).  Use a blank FDS (header only) to boot the FDS BIOS without a disk image.\n- `boot3.rom` = PAL file. It can be used to set your default custom palette. Save the menu option on \"Custom\" to apply immediately.\n\n## Famicom Disk System Usage\nBefore loading \\*.FDS files, you must first load the official, unpatched FDS BIOS. The BIOS file should be renamed to boot0.rom and placed in the same folder as the ROMs (NES).  Alternatively, it can be loaded from the OSD if boot0.rom doesn't exist. After loading the core and the bios you may select an FDS image. By default, the NES core will swap disk sides for you automatically. To suppress this behavior, hold the FDS button on the player 1 controller. The \"Disk Swap\" OSD option manually controls the disk side.  Each button press increments the disk side.  Press and hold the fds button to eject and increment the disk side in this mode.  Some games only work correctly in manual disk swap mode, and require holding the FDS button for up to a few seconds (Gall Force,...).\n\n## Extra Sprites\nThis feature will double the number of sprites drawn per scanlines, decreasing the flickering sprites that NES is known for. Some games relied on the 8 sprite behavior to work correctly, such as Simon's Quest swamps. Other mappers may be impacted by using extra sprites. While it works well in most games, glitches may occur with this enabled.\n\n## Saving and Loading\nThe battery backed RAM (Save RAM) for the NES does not write to disk automatically. After saving in your game, you must then write the RAM to the SD card by selecting **Save Backup RAM** from the menu. If you do not save your RAM to disk, the contents will be lost next time you restart the core or switch games. Alternatively you can enable to Autosave option from the OSD menu, and if you do your games will be recorded to disk every time you open the OSD menu. FDS saving uses the same method as for cartridge RAM saves. Save RAM is stored as a .sav file based on the NES/FDS filename in `/media/fat/saves/NES/`.  Examples:  \n`Metroid (Japan) (Rev 3).fds` -> `Metroid (Japan) (Rev 3).sav`  \n`Legend of Zelda, The (USA) (Rev 1).nes` -> `Legend of Zelda, The (USA) (Rev 1).sav`\n\n## Savestates\nCore provides 4 slots to save and restore the state.\nThose can be saved to SD Card or reside only in memory for temporary use (OSD Option). \nUsage with either Keyboard, Gamepad mappable button, or OSD. Save states are stored as .ss files in `/media/fat/savestates/NES/`, with an underscore and the save slot number (1,2,3,4) preceding `.ss`. Example (save slot 1): `Metroid (USA).nes` -> `Metroid (USA)_1.ss`\n\nKeyboard Hotkeys for save states:\n- <kbd>ALT</kbd>+<kbd>F1</kbd>/<kbd>F2</kbd>/<kbd>F3</kbd>/<kbd>F4</kbd> \u2013 save state  \n- <kbd>F1</kbd>/<kbd>F2</kbd>/<kbd>F3</kbd>/<kbd>F4</kbd> \u2013 restore state\n\nGamepad:\n- <kbd>SAVESTATEBUTTON</kbd>+<kbd>LEFT</kbd>/<kbd>RIGHT</kbd> prev/next savestate slot\n- <kbd>SAVESTATEBUTTON</kbd>+<kbd>START</kbd>+<kbd>DOWN</kbd> saves to the selected slot\n- <kbd>SAVESTATEBUTTON</kbd>+<kbd>START</kbd>+<kbd>UP</kbd> loads from the selected slot\n\n## Zapper Support\nThe \"Zapper\" (aka Light Gun) can be used via two methods. You can select Peripheral: Zapper(Mouse) to use your mouse to aim and shoot with the left button. This mode uses relative mouse motion, so devices that rely on absolute coordinates will not work via this method. Alternatively, you can choose Zapper(Joy) to use the Analog stick to aim, and the defined Trigger button to fire. Guns such as Aimtrak have joystick modes which may be compatible with this method.\n\n## Miracle Piano Support\nThe Miracle Piano is a MIDI keyboard compatible with the Miracle Piano Education System cart.  To use it with SNAC, no further settings are needed.  To use it with midilink, in the System Settings, set the UART connection to use MIDI.  The piano will then be connected on controller port 1 as expected.  The primary controller will automatically be assigned to port 2 as the cart expects.  The header for the ROM file should be set to NES 2.0 with controller type (0xF) set to the Miracle Piano (0x19).\n\n## Supported Mappers\n\n|#||||||||||||||||\n|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|\n|**0**|**1**|**2**|**3**|**4**|**5**||**7**||**9**|**10**|**11**|~~12~~|13||15|\n|**16**||**18**|**19**|**FDS**|**21**|**22**|**23**|**24**|**25**|**26**|**27**|**28**||**30**|31|\n|**32**|**33**|**34**|**35**|**36**|**37**|**38**|**39**|~~40~~|41|42|~~43~~|**44**|~~45~~|**46**|**47**|\n|**48**|~~49~~|~~50~~|~~51~~|~~52~~|~~53~~|~~54~~|~~55~~|~~56~~|~~57~~|~~58~~|~~59~~|~~60~~|~~61~~|~~62~~|~~63~~|\n|**64**|**65**|**66**|**67**|**68**|**69**|**70**|**71**|**72**|**73**|**74**|**75**|**76**|**77**|**78**|**79**|\n|**80**|~~81~~|**82**|83|~~84~~|85|**86**|**87**|**88**|**89**|**90**|91|**92**|**93**|**94**|**95**|\n|~~96~~|**97**||~~99~~|~~100~~|**101**|||~~104~~|105||107|~~108~~|~~109~~|~~110~~|**111**|\n|**112**|**113**|~~114~~|~~115~~|~~116~~|~~117~~|**118**|**119**|~~120~~||~~122~~|~~123~~||~~125~~|~~126~~|~~127~~|\n|~~128~~|~~129~~|~~130~~|~~131~~|**132**|**133**|~~134~~|~~135~~|**136**|**137**|**138**|**139**|**140**|**141**|~~142~~|**143**|\n|~~144~~|**145**|**146**|**147**|**148**|**149**|**150**|~~151~~|**152**|**153**|**154**|**155**|**156**|~~157~~|**158**|**159**|\n|~~160~~|~~161~~|162|163|164|165|~~166~~|~~167~~|~~168~~|~~169~~||**171**|**172**|**173**|||\n|||||**180**|~~181~~|~~182~~|~~183~~|**184**|**185**|~~186~~|~~187~~|~~188~~|**189**|**190**|**191**|\n|**192**|~~193~~|**194**|**195**|**196**||~~198~~|~~199~~|~~200~~|~~201~~|~~202~~|~~203~~|~~204~~|**205**|**206**|**207**|\n|**208**|**209**|**210**|**211**|~~212~~|~~213~~|~~214~~|~~215~~|~~216~~|~~217~~|**218**||||~~222~~||\n|~~224~~|**225**|~~226~~|227|228|~~229~~|~~230~~|~~231~~|**232**|~~233~~|234|~~235~~|~~236~~|~~237~~|||\n|~~240~~|~~241~~|~~242~~|**243**|~~244~~|~~245~~|246||~~248~~|~~249~~|~~250~~|~~251~~|~~252~~||~~254~~|255|\n|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|\n|**268**|413|**547**|---|---|---|---|---|---|---|---|---|---|---|---|---|\n\nKey: **Supported+Save state**, Supported, ~~Not Supported~~. Mappers that are not existent or not useful are blank.\n\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-LLAPI/NES_MiSTer",
@@ -4719,6 +4767,12 @@
           "name": "NES_20240912.rbf",
           "sha": "f61ef0c5d205badf69d0830258257c12921ff384",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/NES_MiSTer/master/releases/NES_20240912.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NES_20250618.rbf",
+          "sha": "674c7b1e757ea60f145cc83befc0eecdb0c07d92",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/NES_MiSTer/master/releases/NES_20250618.rbf",
           "type": "RBF"
         },
         {
@@ -4924,6 +4978,12 @@
           "sha": "625a48459d807b5942e79d91a0fa68216f9a6ac7",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/NES_MiSTer/master/releases/NES_LLAPI_20250226.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "NES_LLAPI_20250712.rbf",
+          "sha": "b008c305f5f9906d3580f20905d7291220232795",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/NES_MiSTer/master/releases/NES_LLAPI_20250712.rbf",
+          "type": "RBF"
         }
       ]
     },
@@ -4993,6 +5053,12 @@
           "name": "PSX_20240922.rbf",
           "sha": "c6e10b5ccaec8437b211e47ed4de71f0a47a6161",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/PSX_MiSTer/main/releases/PSX_20240922.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "PSX_20250706.rbf",
+          "sha": "df97d7e575cd81c9b9edb580ee1786319d62aabb",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/PSX_MiSTer/main/releases/PSX_20250706.rbf",
           "type": "RBF"
         },
         {
@@ -5190,6 +5256,12 @@
           "sha": "c380c0b3f1733e174a29d9042a5ae3f67e6d4636",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/S32X_MiSTer/main/releases/S32X_LLAPI_20250228.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "S32X_LLAPI_20250711.rbf",
+          "sha": "0349728a82663b5576df17d815d1741f4f18c53a",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/S32X_MiSTer/main/releases/S32X_LLAPI_20250711.rbf",
+          "type": "RBF"
         }
       ]
     },
@@ -5201,6 +5273,12 @@
       "fork": true,
       "url": "https://github.com/MiSTer-LLAPI/Saturn_MiSTer",
       "releases": [
+        {
+          "name": "ST-V_20250612.rbf",
+          "sha": "6451b0558c199ac3e469f1b4b19ee91f88099c5d",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/ST-V_20250612.rbf",
+          "type": "RBF"
+        },
         {
           "name": "Saturn_20231010.rbf",
           "sha": "5db313a4cfe017edcc81a999cde9c3aa71dbc096",
@@ -5229,6 +5307,12 @@
           "name": "Saturn_20250113.rbf",
           "sha": "9696a709c3115e55ec0cc40acc4f679c54774848",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/Saturn_20250113.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Saturn_20250613.rbf",
+          "sha": "e12f11fd85acc6f44b65845951630f4dcda8c079",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/Saturn_20250613.rbf",
           "type": "RBF"
         },
         {
@@ -5433,6 +5517,12 @@
           "name": "Saturn_LLAPI_20250531.rbf",
           "sha": "c7dbbbb9b49e1e44d0987a4e9334f72d8e9be704",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/Saturn_LLAPI_20250531.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Saturn_LLAPI_20250713.rbf",
+          "sha": "f6fbb3d132f4ab426c1c2e5c814e33f083f011cb",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/Saturn_LLAPI_20250713.rbf",
           "type": "RBF"
         }
       ]
@@ -6142,6 +6232,18 @@
           "type": "RBF"
         },
         {
+          "name": "SNES_20250525.rbf",
+          "sha": "ee7c6ea903bdb66a664a3cdf8991bd35b7900aee",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SNES_MiSTer/master/releases/SNES_20250525.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_20250605.rbf",
+          "sha": "ac4be61a8475b04fd20c282f64486059fc47b433",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SNES_MiSTer/master/releases/SNES_20250605.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "SNES_LLAPI_20191019.rbf",
           "sha": "7c3759eb5d11edabbc51473d02a5952f77d54807",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SNES_MiSTer/master/releases/SNES_LLAPI_20191019.rbf",
@@ -6386,13 +6488,25 @@
           "sha": "7e893f575a3350c962eb03e91d871cfa8f966fc6",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SNES_MiSTer/master/releases/SNES_LLAPI_20250505.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "SNES_LLAPI_20250712.rbf",
+          "sha": "71032f1677daad2ac49a48ab9a18ba95bfa7050d",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SNES_MiSTer/master/releases/SNES_LLAPI_20250712.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "boot1.rom",
+          "sha": "d899af9bcd3bfd8c51fe5ba5dc5d71c858063d54",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SNES_MiSTer/master/releases/boot1.rom",
+          "type": "OTHER"
         }
       ]
     },
     {
       "name": "TurboGrafx16_MiSTer",
       "description": "TurboGrafx 16 / PC Engine for MiSTer",
-      "readme": "# [TurboGrafx 16 / PC Engine](https://en.wikipedia.org/wiki/TurboGrafx-16) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki) \r\n\r\n### This is the port of Gregory Estrade's [FPGAPCE](https://github.com/Torlus/FPGAPCE)\r\n\r\nPort to MiSTer, Arcade card, DDR3, mappers and other tweaks [Sorgelig](https://github.com/sorgelig)\r\n\r\nTweaks and CD Support added by [srg320](https://github.com/srg320)\r\n\r\nAdditional bug fixes by [greyrogue](https://github.com/greyrogue)\r\n\r\nPalettes & audio filters by [Kitrinx](https://github.com/Kitrinx)\r\n\r\nFurther refinements and maintanance by [dshadoff](https://github.com/dshadoff)\r\n\r\n## Features\r\n * SuperGrafx mode\r\n * saves\r\n * Completely rewritten CPU and VDC for cycle accuracy\r\n * Uses DDR3 and SDRAM for cartridge's ROM (SDRAM is recommended for accuracy)\r\n * 2-button, 2-button 'turbo', and 6-button joystick support\r\n * XE-1AP analog controller\r\n * Turbotap(multiple joysticks)\r\n * Mouse\r\n * Pachinko controller\r\n * Memory Base 128 storage unit\r\n * Street Fighter II and Populous mappers\r\n * CD-ROM / Super CD-ROM\r\n * Arcade Card\r\n * Cheat engine\r\n * CHD Support\r\n\r\n## Installation:\r\nCopy the *.rbf file at the root of the SD card. Copy roms (*PCE,*BIN) to **TGFX16** folder. You may rename ROM of your favorite game to **boot.rom** - it will be automatically loaded upon core loading.\r\nUse SGX file extension for SuperGrafx games.\r\n\r\n## CD-ROM games\r\nCD-ROM images must be in BIN/CUE or CHD format, and must be located in the **TGFX16-CD** folder. Each CD-ROM image must have its own folder.\r\n**cd_bios.rom** must be placed in the same TGFX16-CD folder as the images mentioned above. **Japanese Super CD-ROM v3.00 is recomended for maximum compatibility**. \r\nAdditionally you can use a different bios for specific games (for example from Games Express) by placing cd_bios.rom inside the game image's folder.\r\n\r\n**Do not zip CD-ROM images! It won't work correctly.**\r\n\r\n**Attention about US BIOS:** MiSTer requires original dump of US BIOS to work properly. It needs to be of 262144 bytes.\r\nIf you can read copyright string at the end of US BIOS file, then it's not correct dump! It's already pre-swapped for emulators.\r\nWhile it will work on MiSTer, some CD games will refuse to start. **Correct US BIOS file is when copyright string is not readable.**\r\n\r\n## Cheat engine\r\nStandard cheats location is supported for HuCard games. For CD-ROM game all cheats must be zipped into a single zip file and placed inside game's CD-ROM folder.\r\n\r\n## Joystick\r\nBoth Turbotap and 6-button joysticks are supported.\r\nXE-1AP analog joystick is supported for the 4 games which are supported (After Burner II, Forgotten Worlds, Operation Wolf, Outrun)\r\nDo not enable the above features for games not supporting it, otherwise game will work incorrectly.\r\nFor 2-button 'turbo' joypad (sync'd as in original system), turbo fire is provided by alternate buttons : A, B (normal), X, Y (turbo 1 level), and L, R (turbo 2 level)\r\n\r\n## Mouse\r\nMouse is supported.\r\nDo not enable this feature for games not supporting it, otherwise game will work incorrectly.\r\n\r\n## Pachinko\r\nPachinko controller is supported through either paddle or analog joystick Y axis.\r\n\r\n## Palettes\r\nThe 'Original' palette is based on reverse engineering work of the VDP by [furrtek](https://github.com/furrtek). An RGB to YUV lookup table was discovered that translates the colors to their intended values with the composite output of the console. Further work was done by [ArtemioUrbina](https://github.com/ArtemioUrbina) to verify the color output. [Kitrinx](https://github.com/Kitrinx) created a tool to generate the resulting [palette](https://github.com/Kitrinx/TG16_Palette).\r\n\r\n## Reset\r\nHold down Run button then press Select. Some games require to keep both buttons pressed longer to reset. The PC Engine/Turbografx-16 did not have a hardware reset button, and instead relies on this button combination. With this method, in-game options will remain if you have changed them, whereas the MiSTer OSD reset will revert them.\r\n(Note: this reset method is suppressed in a small number of games)\r\n\r\n## SDRAM\r\nThis core may work without SDRAM (using on-board DDR3), but it may have different kinds of issues/glitches due to high latency of DDR3 memory. Thus SDRAM module is highly recommended for maximum accuracy.\r\n\r\n### Notes:\r\n* Both headerless ROMs and ROMs with header (512b) are supported and automatically distinguished by file size.\r\n\r\n## Download precompiled binaries\r\nGo to [releases](https://github.com/MiSTer-devel/TurboGrafx16_MiSTer/tree/master/releases) folder. \r\n",
+      "readme": "# [TurboGrafx 16 / PC Engine](https://en.wikipedia.org/wiki/TurboGrafx-16) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki) \r\n\r\n### This is the port of Gregory Estrade's [FPGAPCE](https://github.com/Torlus/FPGAPCE)\r\n\r\nPort to MiSTer, Arcade card, DDR3, mappers and other tweaks [Sorgelig](https://github.com/sorgelig)\r\n\r\nTweaks and CD Support added by [srg320](https://github.com/srg320)\r\n\r\nAdditional bug fixes by [greyrogue](https://github.com/greyrogue)\r\n\r\nPalettes & audio filters by [Kitrinx](https://github.com/Kitrinx)\r\n\r\nFurther refinements and maintanance by [dshadoff](https://github.com/dshadoff)\r\n\r\n## Features\r\n * Completely rewritten CPU and VDC for cycle accuracy\r\n * Uses DDR3 and SDRAM for cartridge's ROM (SDRAM is recommended for accuracy)\r\n * Overall Machine Support:\r\n   - CD-ROM / Super CD-ROM\r\n   - CD+G support\r\n   - Arcade Card\r\n   - SuperGrafx mode\r\n   - Backup Memory Saves\r\n * Controllers:\r\n   - Turbotap(multiple joysticks)\r\n   - 2-button, 2-button 'turbo', and 6-button joystick support\r\n   - Mouse\r\n   - Pachinko controller\r\n   - XE-1AP analog controller\r\n * Additional functionality:\r\n   - Street Fighter II and Populous mappers\r\n   - Memory Base 128 storage unit\r\n   - Cheat engine\r\n   - CHD Support\r\n\r\n## Installation:\r\nCopy the *.rbf file at the root of the SD card. Copy roms (*PCE,*BIN) to **TGFX16** folder. You may rename ROM of your favorite game to **boot.rom** - it will be automatically loaded upon core loading.\r\nUse SGX file extension for SuperGrafx games.\r\n\r\n## SDRAM\r\nThis core may work without SDRAM (using on-board DDR3), but it may have different kinds of issues/glitches due to high latency of DDR3 memory. Thus SDRAM module is highly recommended for maximum accuracy.\r\n\r\n### Notes:\r\n* Both headerless ROMs and ROMs with header (512b) are supported and automatically distinguished by file size.\r\n\r\n## Cheat engine\r\nStandard cheats location is supported for HuCard games. For CD-ROM game all cheats must be zipped into a single zip file and placed inside game's CD-ROM folder.\r\n\r\n## Reset\r\nHold down Run button then press Select. Some games require to keep both buttons pressed longer to reset. The PC Engine/Turbografx-16 did not have a hardware reset button, and instead relies on this button combination. With this method, in-game options will remain if you have changed them, whereas the MiSTer OSD reset will revert them.\r\n(Note: This is a soft-reset method, and is suppressed in a small number of games)\r\n\r\n## CD-ROM games\r\nCD-ROM images must be in BIN/CUE or CHD format, and must be located in the **TGFX16-CD** folder. Each CD-ROM image must have its own folder.\r\n**cd_bios.rom** must be placed in the same TGFX16-CD folder as the images mentioned above. **Japanese Super CD-ROM v3.00 is recomended for maximum compatibility**. \r\nAdditionally you can use a different bios for specific games (for example from Games Express) by placing cd_bios.rom inside the game image's folder.\r\n\r\n**Do not zip CD-ROM images! It won't work correctly.**\r\n\r\n**Attention about US BIOS:** MiSTer requires original dump of US BIOS to work properly. It needs to be of 262144 bytes.\r\nIf you can read copyright string at the end of US BIOS file, then it's not correct dump! It's already pre-swapped for emulators.\r\nWhile it will work on MiSTer, some CD games will refuse to start. **Correct US BIOS file is when copyright string is not readable.**\r\n\r\n## CD+G (CD Graphic) Support\r\nCD+G support works only for games in CloneCD format (which can also be ripped by freeware \"CD Manipulator\"). This format creates cue, img, and sub files - the subcode \"sub\" file contains\r\nthe CD+G subcode information. This must exist with the same name as the \"img\" (audio portion) of the file, together in the same folder. The CD+G player is available as the \"GRAPHICS\"\r\nbutton in the CD player on the system card (versions 2.0, 2.1, or 3.0).  CHD is not supported for CD+G.\r\n\r\n## Joystick\r\nBoth Turbotap and 6-button joysticks are supported.\r\nFor 2-button 'turbo' joypad (sync'd as in original system), turbo fire is provided by alternate buttons : A, B (normal), X, Y (turbo 1 level), and L, R (turbo 2 level)\r\n * Games Supporting 6-button:\r\n   - Street Fighter II\r\n   - Advanced Variable Geo\r\n   - Battlefield '94 in Tokyo Dome\r\n   - Emerald Dragon\r\n   - Fire Pro Jyoshi - Dome Choujyo Taisen\r\n   - Flash Hiders\r\n   - Garou Densetsu II - Aratanaru Tatakai\r\n   - Garou Densetsu Special\r\n   - Kakutou Haou Densetsu Algunos\r\n   - Linda Cube\r\n   - Mahjong Sword Princess Quest Gaiden\r\n   - Martial Champions\r\n   - Princess Maker 2\r\n   - Ryuuko no Ken\r\n   - Sotsugyou II - Neo Generation\r\n   - Super Real Mahjong P II - P III Custom\r\n   - Super Real Mahjong P V Custom\r\n   - Tengai Makyo - Kabuki Itouryodan\r\n   - World Heroes 2\r\n   - Ys IV\r\n * XE-1AP analog joystick is supported for the 4 games which are supported:\r\n   - After Burner II\r\n   - Forgotten Worlds\r\n   - Operation Wolf\r\n   - Outrun\r\n\r\nDo not enable the above features for games not supporting it, otherwise game will work incorrectly (for example, 6-button is only supported on a very small list of games).\r\n\r\n## Mouse\r\nMouse is supported.  Supported games:\r\n * 1552 Tenka Tairan\r\n * A. III - Takin' the A Train\r\n * Atlas Renaissance Voyage\r\n * Brandish\r\n * Dennou Tenshi Digital Angel\r\n * Doukyuusei\r\n * Eikan ha Kimini - Koukou Yakyuu Zenkoku Taikai\r\n * Hatsukoi Monogatari\r\n * Jantei Monogatari III - Saver Angels\r\n * Lemmings\r\n * Metal Angel\r\n * Nemurenumori no Chiisana Ohanashi\r\n * Power Golf 2 Golfer\r\n * Princess Maker 2\r\n * Tokimeki Memorial\r\n * Vasteel 2\r\n\r\nDo not enable this feature for games not supporting it, otherwise game will work incorrectly.\r\n\r\n## Pachinko\r\nPachinko controller is supported through either paddle or analog joystick Y axis.\r\n\r\n## Palettes\r\nThe 'Original' palette is based on reverse engineering work of the VDP by [furrtek](https://github.com/furrtek). An RGB to YUV lookup table was discovered that translates the colors to their intended values with the composite output of the console. Further work was done by [ArtemioUrbina](https://github.com/ArtemioUrbina) to verify the color output. [Kitrinx](https://github.com/Kitrinx) created a tool to generate the resulting [palette](https://github.com/Kitrinx/TG16_Palette).\r\n\r\n## Memory Base 128 / Save-kun\r\nThis was an external save-game mechanism used by a small number of games, late in the PC Engine's life, particularly for complex simulations like the KOEI games.\r\nEnabling this should not interfere with normal operation of games, but will only provide additional storage on a small number of games:\r\n * A. III - Takin' the A Train\r\n * Atlas Renaissance Voyage\r\n * Bishoujo Senshi Sailor Moon Collection\r\n * Brandish\r\n * Eikan ha Kimini - Koukou Yakyuu Zenkoku Taikai\r\n * Emerald Dragon\r\n * Fire Pro Jyoshi - Dome Choujyo Taisen\r\n * Ganchouhishi - Aoki Ookami to Shiroki Mejika\r\n * Linda Cube\r\n * Magicoal\r\n * Mahjong Sword Princess Quest Gaiden\r\n * Nobunaga no Yabou - Bushou Fuuunroku\r\n * Nobunaga no Yabou Zenkokuban\r\n * Popful Mail\r\n * Princess Maker 2\r\n * Private Eye Dol\r\n * Sankokushi III\r\n * Shin Megami Tensei\r\n * Super Mahjong Taikai\r\n * Super Real Mahjong P II - P III Custom\r\n * Super Real Mahjong P V Custom\r\n * Tadaima Yuusha Boshuuchuu\r\n * Vasteel 2\r\n\r\n## Download precompiled binaries\r\nGo to [releases](https://github.com/MiSTer-devel/TurboGrafx16_MiSTer/tree/master/releases) folder. \r\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-LLAPI/TurboGrafx16_MiSTer",
@@ -6851,6 +6965,12 @@
           "name": "TurboGrafx16_LLAPI_20250531.rbf",
           "sha": "eba29f8dfdfdb9c23e234f4c9bc5f6f9949fc96e",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/TurboGrafx16_MiSTer/master/releases/TurboGrafx16_LLAPI_20250531.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "TurboGrafx16_LLAPI_20250711.rbf",
+          "sha": "e2a83529c74cf254671f7082611603ac5d510dd3",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/TurboGrafx16_MiSTer/master/releases/TurboGrafx16_LLAPI_20250711.rbf",
           "type": "RBF"
         }
       ]
