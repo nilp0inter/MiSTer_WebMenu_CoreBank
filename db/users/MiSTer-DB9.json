@@ -41,7 +41,7 @@
     {
       "name": "Amstrad-PCW_MiSTer",
       "description": "Amstrad PCW MiSTer core",
-      "readme": "# Amstrad PCW MiSTer Core\n<img src=\"./docs/images/gnome.jpg\" alt=\"Gnome Ranger\" width=\"400\" height=\"300\">\n\nGnome Ranger running on the Amstrad PCW core by [steddyman](https://twitter.com/steddyman)\n## Overview\nThe Amstrad PCW was a line of computers released by Amstrad UK in the mid 1980's to provide a cheaper alternative to owning an IBM PC for word processing and simple office type applications.  It was supplied with a detachable keyboard, printer, a disk drive and a high resolution monitor.  This monitor allowed the PCW to display sharp monochrome graphics at a resolution of 720 x 256.\n\nDespite the intended market being business applications and home office users, the computer sold over 8 million units and quite a number of games were also developed for the machine as well as  third party addons such as sound cards, joystick adapters and mice.  The Amstrad PCW was also sold as the Schneider Joyce in Europe.\n\nThe PCW came with 256k or 512k and was expandable upto 2MB of memory.  The high resolution display and large amount of memory for the time, makes the PCW the perfect CP/M machine and an ideal system for playing early text and graphic adventures.\n\n## Features\n* Amstrad PCW with Z80 CPU operating at 4Mhz\n* Turbo support to 8Mhz (2x), 16 Mhz(4x) or 32 Mhz (8x)\n* Expanded memory support to a maximum of 2MB\n* 3\" and 3.5\" Disk Drives with read and write support\n* Compatible with standard emulator DSK format\n* PAL (720x256) or NTSC (720x200) resolution support\n* Full PC Keyboard mapping\n* Joystick support for the following types of joystick:\n  * Kempston Joystick\n  * Spectravideo Joystick\n  * Cascade Joystick\n  * DKTronics Joystick\n* Mouse support for the following types of mice:\n  * AMX Mouse\n  * Kempston Mouse\n  * Keymouse\n* Regular PCW Beeper sound and DKTronics Sound Generator (AY-3-8912) support\n* Configurable colour mode\n \n\n## Using the core\n\nUnlike many home comptuters of the mid 80's, the Amstrad PCW always included a disk drive and monitor and all PCW software is supplied in disk format only.  The emulator supports the standard DSK format images used by the two main PCW emulators, Joyce by John Elliot and CPM/Box by Habisoft.\n\nThe PCW also doesn't have a BOOT ROM but instead streams a small boot routine from the keyboard controller at power-up time.  The PCW core recreates this boot sequence and does not require any external ROM files to boot.  Just place your DSK images in the **/Games/Amstrad PCW/** directory in the root of the SD card.\n\nGames are usually supplied on two disks, normally the first disk is a CP/M boot disk.  Insert this boot disk into the A: drive using the Menu, then select **RESET** from the OSD menu to load the disk. Once the boot disk has finished booting, you will be prompted by the PCW change the disk to the second disk and press return.\n\n![](./docs/images/change_disk.jpg)\n\nThe main operating system the PCW used was called CP/M which was developed by Digital Research and was one of the worlds first cross platform operating systems.   More infomation about CP/M and some common commands available are documented on [The CP/M Wiki article](https://en.wikipedia.org/wiki/CP/M)\n\n## PCW Models\n\nThe PCW core emulates two different models of the PCW:\n* **PCW8256/8512** - Drive A 3\" 180k (CF2), Drive B 3\" 720k (CF2DD)\n* **PCW9256/9512+** - Both drives 3.5\" 720k (MF2DD)\n\nThese two different models of the PCW require different boot disks.  This is because each model has a different bootrom, which looks for different checksums on the boot sector of the disk.  If you get the wrong one it will just beep three times indicating the disk is not recognized.\n\n## Fake colour mode\n\nLike the CP/M Box and Joyce emulators and a couple of add-on boards, this core now supports colour modes.  Unlike on those emulators, this does not have to encompass the entire screen, and it is configurable from software should authors of new games wish to make use of it.\n\n<img src=\"./docs/images/worm.jpg\" alt=\"Gnome Ranger\" width=\"400\" height=\"300\">\n\nMany PCW adventure games contain graphics at the top, with a text interface before.  Once Fake Colour mode is enabled, you can use the following keys to control it:\n\n* **F9** - Move colour line enable line up\n* **F10** - Move colour line enable line down\n* **F11** - Toggle full screen colour mode on/off\n\nThe mode also comes with three different CGA palettes to select from.\n\n## Current issue\n* SymbOS does not work correctly\n* PSI-5 Trading Company - Requires SCAN_EQUAL disk command which is not implemented\n\n# Changes from previous release\n* Support for PCW9512+ Mode and 3.5\" drives\n* Support for two disk drives\n* SDRAM support to provide upto 2MB memory\n* Colour mode with configurable starting point\n* CPC paging mode. Fixes issues with various games (e.g. Abadia, Head over Heels)\n* Mouse movement improvements\n* Daisywheel port emulation to allow PCW915+ CPM to boot\n* Fixed issues with disk corruption and boot errors\n* Fixed corruption issue with RAMtest\n* F2/F4/F6/F8 no longer require you to press shift\n\nAll the new features are demonstrated in the following video:\n[![Watch the video](https://img.youtube.com/vi/z-IoDr81xjE/hqdefault.jpg)](https://youtu.be/z-IoDr81xjE)\n\n## Upcoming features\nThe following features are coming shortly\n* Support for SymbOS\n\n## Game Notes\n* Blagger - Will move left unless Joystick is set to Cascade\n\n## Thanks\nSpecial thanks to the following people:\n* John Elliott for the fantastic [PCW Hardware guide](https://www.seasip.info/Unix/Joyce/hardware.pdf), the [Joyce emulator](https://www.seasip.info/Unix/Joyce/) and for answering my emails\n* Javier Chocano from Habisoft for the [CP/M Box emulator](http://www.habisoft.com/pcw/) and early guidance\n* [@zigazou](https://twitter.com/zigazou) for his detailed [wiki article](https://github.com/Zigazou/amstrad-pcw-technical-info/tree/master/video-memory) on the PCW screen memory structure\n* [@asicguy](https://github.com/asicguy), [@alanswx](https://github.com/alanswx) and [@dshadoff](https://github.com/dshadoff) for the help, eoncouragment and support developing the core\n* [@sorgelig](https://github.com/sorgelig) for the fantastic MiSTer project and work\n\n",
+      "readme": "# Amstrad PCW MiSTer Core\n<img src=\"./docs/images/gnome.jpg\" alt=\"Gnome Ranger\" width=\"400\" height=\"300\">\n\nGnome Ranger running on the Amstrad PCW core by [steddyman](https://twitter.com/steddyman)\n## Overview\nThe Amstrad PCW was a line of computers released by Amstrad UK in the mid 1980's to provide a cheaper alternative to owning an IBM PC for word processing and simple office type applications.  It was supplied with a detachable keyboard, printer, a disk drive and a high resolution monitor.  This monitor allowed the PCW to display sharp monochrome graphics at a resolution of 720 x 256.\n\nDespite the intended market being business applications and home office users, the computer sold over 8 million units and quite a number of games were also developed for the machine as well as  third party addons such as sound cards, joystick adapters and mice.  The Amstrad PCW was also sold as the Schneider Joyce in Europe.\n\nThe PCW came with 256k or 512k and was expandable upto 2MB of memory.  The high resolution display and large amount of memory for the time, makes the PCW the perfect CP/M machine and an ideal system for playing early text and graphic adventures.\n\n## Features\n* Amstrad PCW with Z80 CPU operating at 4Mhz\n* Turbo support to 8Mhz (2x), 16 Mhz(4x) or 32 Mhz (8x)\n* Expanded memory support to a maximum of 2MB\n* 3\" and 3.5\" Disk Drives with read and write support\n* Compatible with standard emulator DSK format\n* PAL (720x256) or NTSC (720x200) resolution support\n* Full PC Keyboard mapping\n* Joystick support for the following types of joystick:\n  * Kempston Joystick\n  * Spectravideo Joystick\n  * Cascade Joystick\n  * DKTronics Joystick\n* Mouse support for the following types of mice:\n  * AMX Mouse\n  * Kempston Mouse\n  * Keymouse\n* Regular PCW Beeper sound and DKTronics Sound Generator (AY-3-8912) support\n* Configurable colour mode\n \n\n## Using the core\n\nUnlike many home comptuters of the mid 80's, the Amstrad PCW always included a disk drive and monitor and all PCW software is supplied in disk format only.  The emulator supports the standard DSK format images used by the two main PCW emulators, Joyce by John Elliot and CPM/Box by Habisoft.\n\nThe PCW also doesn't have a BOOT ROM but instead streams a small boot routine from the keyboard controller at power-up time.  The PCW core recreates this boot sequence and does not require any external ROM files to boot.  Just place your DSK images in the **/Games/Amstrad PCW/** directory in the root of the SD card.\n\nGames are usually supplied on two disks, normally the first disk is a CP/M boot disk.  Insert this boot disk into the A: drive using the Menu, then select **RESET** from the OSD menu to load the disk. Once the boot disk has finished booting, you will be prompted by the PCW change the disk to the second disk and press return.\n\n![](./docs/images/change_disk.jpg)\n\nThe main operating system the PCW used was called CP/M which was developed by Digital Research and was one of the worlds first cross platform operating systems.   More infomation about CP/M and some common commands available are documented on [The CP/M Wiki article](https://en.wikipedia.org/wiki/CP/M)\n\n## PCW Models\n\nThe PCW core emulates two different models of the PCW:\n* **PCW8256/8512** - Drive A 3\" 180k (CF2), Drive B 3\" 720k (CF2DD)\n* **PCW9256/9512+** - Both drives 3.5\" 720k (MF2DD)\n\nThese two different models of the PCW require different boot disks.  This is because each model has a different bootrom, which looks for different checksums on the boot sector of the disk.  If you get the wrong one it will just beep three times indicating the disk is not recognized.\n\n## Fake colour mode\n\nLike the CP/M Box and Joyce emulators and a couple of add-on boards, this core now supports colour modes.  Unlike on those emulators, this does not have to encompass the entire screen, and it is configurable from software should authors of new games wish to make use of it.\n\n<img src=\"./docs/images/worm.jpg\" alt=\"Gnome Ranger\" width=\"400\" height=\"300\">\n\nMany PCW adventure games contain graphics at the top, with a text interface before.  Once Fake Colour mode is enabled, you can use the following keys to control it:\n\n* **F9** - Move colour line enable line up\n* **F10** - Move colour line enable line down\n* **F11** - Toggle full screen colour mode on/off\n\nThe mode allows loading 4-bit colour palettes, in the same format as the Gameboy core (GBP) or select PCWPlus support modes 1,2 and 3  in games that allow this colour modes.\nPCWPlus mode need to be activate before a compatible game load.\n\n## Current issue\n* SymbOS does not work correctly\n* PSI-5 Trading Company - Requires SCAN_EQUAL disk command which is not implemented\n* APPLE JACK not working\n\n# Changes from previous release\n* Support for PCW9512+ Mode and 3.5\" drives\n* Support for two disk drives\n* SDRAM support to provide upto 2MB memory\n* Colour mode with configurable starting point\n* CPC paging mode. Fixes issues with various games (e.g. Abadia, Head over Heels)\n* Mouse movement improvements\n* Daisywheel port emulation to allow PCW915+ CPM to boot\n* Fixed issues with disk corruption and boot errors\n* Fixed corruption issue with RAMtest\n* F2/F4/F6/F8 no longer require you to press shift\n\nAll the new features are demonstrated in the following video:\n[![Watch the video](https://img.youtube.com/vi/z-IoDr81xjE/hqdefault.jpg)](https://youtu.be/z-IoDr81xjE)\n\n## Upcoming features\nThe following features are coming shortly\n* Support for SymbOS\n\n## Game Notes\n* Blagger - Will move left unless Joystick is set to Cascade\n\n## Thanks\nSpecial thanks to the following people:\n* John Elliott for the fantastic [PCW Hardware guide](https://www.seasip.info/Unix/Joyce/hardware.pdf), the [Joyce emulator](https://www.seasip.info/Unix/Joyce/) and for answering my emails\n* Javier Chocano from Habisoft for the [CP/M Box emulator](http://www.habisoft.com/pcw/) and early guidance , and PCWPlus modes\n* [@zigazou](https://twitter.com/zigazou) for his detailed [wiki article](https://github.com/Zigazou/amstrad-pcw-technical-info/tree/master/video-memory) on the PCW screen memory structure\n* [@asicguy](https://github.com/asicguy), [@alanswx](https://github.com/alanswx) and [@dshadoff](https://github.com/dshadoff) for the help, eoncouragment and support developing the core\n* [@sorgelig](https://github.com/sorgelig) for the fantastic MiSTer project and work\n\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-DB9/Amstrad-PCW_MiSTer",
@@ -56,6 +56,18 @@
           "name": "Amstrad-PCW_20200831.rbf",
           "sha": "8a06b769465cce363adce5d3b579fe3a664aaa87",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Amstrad-PCW_MiSTer/master/releases/Amstrad-PCW_20200831.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Amstrad-PCW_20250621.rbf",
+          "sha": "728f0860d3e717a4ce464448ca040c15b872e912",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Amstrad-PCW_MiSTer/master/releases/Amstrad-PCW_20250621.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Amstrad-PCW_20250726.rbf",
+          "sha": "4c840fca111cf95d976e86bd50a9191a80553e24",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Amstrad-PCW_MiSTer/master/releases/Amstrad-PCW_20250726.rbf",
           "type": "RBF"
         }
       ]
@@ -3475,7 +3487,7 @@
         },
         {
           "name": "Arcade-Galaxian_20240526.rbf",
-          "sha": "73aad9cea3d4732071a9b2528b2e52a8a5dcd00c",
+          "sha": "c1eaf7ab690dbeff4cc1bfedeb055c4f9b4f6890",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaxian_MiSTer/master/releases/Arcade-Galaxian_20240526.rbf",
           "type": "RBF"
         },
@@ -3562,19 +3574,6 @@
           }
         },
         {
-          "name": "King and Balloon (Japan).mra",
-          "sha": "d404825d43a5b4111b656ade5d8183cfa381b17e",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaxian_MiSTer/master/releases/King%20and%20Balloon%20(Japan).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "King and Balloon",
-            "rbf": "galaxian",
-            "zips": [
-              "kingball.zip|kingballj.zip"
-            ]
-          }
-        },
-        {
           "name": "King and Balloon (US).mra",
           "sha": "e831457ae1123ef84631679085bf60783f5ebfa8",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaxian_MiSTer/master/releases/King%20and%20Balloon%20(US).mra",
@@ -3615,7 +3614,7 @@
         },
         {
           "name": "Moon Quasar.mra",
-          "sha": "4acfc20f680525b81179804eb89431df0510d465",
+          "sha": "75c733a61051b12c3286fbd4d5b0e62f063a03c4",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaxian_MiSTer/master/releases/Moon%20Quasar.mra",
           "type": "MRA",
           "extra": {
@@ -3677,12 +3676,12 @@
           }
         },
         {
-          "name": "Portman (Galaxian Hardware).mra",
-          "sha": "ba0a3564f60444ec2ee321a2a27c9af9732bfb0b",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaxian_MiSTer/master/releases/Portman%20(Galaxian%20Hardware).mra",
+          "name": "Port Man (bootleg on Moon Cresta hardware).mra",
+          "sha": "a9f6afd2c9309770ceb9936756cc6e6c30c63e93",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Galaxian_MiSTer/master/releases/Port%20Man%20(bootleg%20on%20Moon%20Cresta%20hardware).mra",
           "type": "MRA",
           "extra": {
-            "name": "Portman",
+            "name": "Port Man (bootleg on Moon Cresta hardware)",
             "rbf": "galaxian",
             "zips": [
               "porter.zip|dockman.zip"
@@ -3788,7 +3787,7 @@
         },
         {
           "name": "Arcade-Gaplus_20240526.rbf",
-          "sha": "0682e627fd18841c87d32cd1a3faf1f2b4e2fe9b",
+          "sha": "49729ca5355899209e9bee3d4a9d5f4a9916badf",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Gaplus_MiSTer/master/releases/Arcade-Gaplus_20240526.rbf",
           "type": "RBF"
         },
@@ -3799,22 +3798,9 @@
           "type": "RBF"
         },
         {
-          "name": "Galaga 3 (GP3 Rev D).mra",
-          "sha": "d1451748c3428df5b0b69ff3eb40cc01b02b9aaa",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Gaplus_MiSTer/master/releases/Galaga%203%20(GP3%20Rev%20D).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Galaga 3",
-            "rbf": "gaplus",
-            "zips": [
-              "gaplus.zip|galaga3.zip"
-            ]
-          }
-        },
-        {
-          "name": "Gaplus (GP2 Rev B).mra",
+          "name": "Galaga 3 - Gaplus (GP2 Rev B).mra",
           "sha": "d0e6e6ef863e0e4af4f7fc5808445fe175934db3",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Gaplus_MiSTer/master/releases/Gaplus%20(GP2%20Rev%20B).mra",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Gaplus_MiSTer/master/releases/Galaga%203%20-%20Gaplus%20(GP2%20Rev%20B).mra",
           "type": "MRA",
           "extra": {
             "name": "Gaplus",
@@ -4592,19 +4578,6 @@
       "url": "https://github.com/MiSTer-DB9/Arcade-IremM72_MiSTer",
       "releases": [
         {
-          "name": "Air Duel (Japan, M72 hardware).mra",
-          "sha": "795d979715787c4e6a471dd384606fb21fd43836",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IremM72_MiSTer/main/releases/Air%20Duel%20(Japan%2C%20M72%20hardware).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Air Duel (Japan, M72 hardware)",
-            "rbf": "IremM72",
-            "zips": [
-              "airdueljm72.zip|airduel.zip"
-            ]
-          }
-        },
-        {
           "name": "Air Duel (World, M72 hardware).mra",
           "sha": "36b78f1dfd14d898e11efb8e173ac3943095a1bd",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IremM72_MiSTer/main/releases/Air%20Duel%20(World%2C%20M72%20hardware).mra",
@@ -4673,7 +4646,7 @@
         },
         {
           "name": "Arcade-IremM72_20240525.rbf",
-          "sha": "41583defda4390128c8814971fbcf4508f6ada97",
+          "sha": "4035fa2087de4d78c2d123714f407e6fb3427191",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IremM72_MiSTer/main/releases/Arcade-IremM72_20240525.rbf",
           "type": "RBF"
         },
@@ -4682,32 +4655,6 @@
           "sha": "290965eec0f06425159f4ba13bf53c1e0760bd1f",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IremM72_MiSTer/main/releases/Arcade-IremM72_20240527.rbf",
           "type": "RBF"
-        },
-        {
-          "name": "Daiku no Gensan (Japan, M72 hardware).mra",
-          "sha": "bb812c11ca73fa39a58e5d9c8149bec330b2dab4",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IremM72_MiSTer/main/releases/Daiku%20no%20Gensan%20(Japan%2C%20M72%20hardware).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Daiku no Gensan (Japan, M72 hardware)",
-            "rbf": "IremM72",
-            "zips": [
-              "dkgensanm72.zip|hharry.zip"
-            ]
-          }
-        },
-        {
-          "name": "Daiku no Gensan (Japan, M84 hardware).mra",
-          "sha": "8b9debf1c1ea169f3f119ef9a5436827bcb2d1a5",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IremM72_MiSTer/main/releases/Daiku%20no%20Gensan%20(Japan%2C%20M84%20hardware).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Daiku no Gensan (Japan, M84 hardware)",
-            "rbf": "IremM72",
-            "zips": [
-              "dkgensan.zip|hharry.zip"
-            ]
-          }
         },
         {
           "name": "Dragon Breed (Japan, M72 hardware).mra",
@@ -4745,19 +4692,6 @@
             "rbf": "IremM72",
             "zips": [
               "hharryu.zip|hharry.zip"
-            ]
-          }
-        },
-        {
-          "name": "Image Fight (Japan).mra",
-          "sha": "38fb1a690e34aba53480faa386f539daa76c1e36",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IremM72_MiSTer/main/releases/Image%20Fight%20(Japan).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Image Fight (Japan)",
-            "rbf": "IremM72",
-            "zips": [
-              "imgfightj.zip|imgfight.zip"
             ]
           }
         },
@@ -4814,19 +4748,6 @@
           }
         },
         {
-          "name": "R-Type (Japan).mra",
-          "sha": "5ffa03cc3b036053b0096506bfc2826e8f50dc25",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IremM72_MiSTer/main/releases/R-Type%20(Japan).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "R-Type (Japan)",
-            "rbf": "IremM72",
-            "zips": [
-              "rtype.zip|rtypej.zip"
-            ]
-          }
-        },
-        {
           "name": "R-Type (World).mra",
           "sha": "27f8799d71388fa7d6a0fa868f305ef05c236a51",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IremM72_MiSTer/main/releases/R-Type%20(World).mra",
@@ -4836,19 +4757,6 @@
             "rbf": "IremM72",
             "zips": [
               "rtype.zip"
-            ]
-          }
-        },
-        {
-          "name": "R-Type II (Japan).mra",
-          "sha": "a458503a2d02e15376f602e5960a990cf56867ef",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IremM72_MiSTer/main/releases/R-Type%20II%20(Japan).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "R-Type II (Japan)",
-            "rbf": "IremM72",
-            "zips": [
-              "rtype2.zip|rtype2j.zip"
             ]
           }
         },
@@ -4879,48 +4787,74 @@
           }
         },
         {
-          "name": "R-Type (Japan prototype).mra",
-          "sha": "1f74a1fa584dcc99092627c053c469f736ce2900",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IremM72_MiSTer/main/releases/_alternatives/R-Type%20(Japan%20prototype).mra",
+          "name": "Air Duel (Japan, M72 hardware).mra",
+          "sha": "795d979715787c4e6a471dd384606fb21fd43836",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IremM72_MiSTer/main/releases/_alternatives/_Air%20Duel/Air%20Duel%20(Japan%2C%20M72%20hardware).mra",
           "type": "MRA",
           "extra": {
-            "name": "R-Type (Japan prototype)",
+            "name": "Air Duel (Japan, M72 hardware)",
             "rbf": "IremM72",
             "zips": [
-              "rtype.zip|rtypejp.zip"
+              "airdueljm72.zip|airduel.zip"
             ]
           }
         },
         {
-          "name": "R-Type (US).mra",
-          "sha": "6fac61e14b212fdb3e5f8831b28a652935551c2b",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IremM72_MiSTer/main/releases/_alternatives/R-Type%20(US).mra",
+          "name": "Daiku no Gensan (Japan, M72 hardware).mra",
+          "sha": "bb812c11ca73fa39a58e5d9c8149bec330b2dab4",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IremM72_MiSTer/main/releases/_alternatives/_Hammerin'%20Harry/Daiku%20no%20Gensan%20(Japan%2C%20M72%20hardware).mra",
           "type": "MRA",
           "extra": {
-            "name": "R-Type (US)",
+            "name": "Daiku no Gensan (Japan, M72 hardware)",
             "rbf": "IremM72",
             "zips": [
-              "rtype.zip|rtypeu.zip"
+              "dkgensanm72.zip|hharry.zip"
             ]
           }
         },
         {
-          "name": "R-Type (World bootleg).mra",
-          "sha": "10a4aaa0946d279561a70827d8454ae3ef8e888d",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IremM72_MiSTer/main/releases/_alternatives/R-Type%20(World%20bootleg).mra",
+          "name": "Daiku no Gensan (Japan, M84 hardware).mra",
+          "sha": "8b9debf1c1ea169f3f119ef9a5436827bcb2d1a5",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IremM72_MiSTer/main/releases/_alternatives/_Hammerin'%20Harry/Daiku%20no%20Gensan%20(Japan%2C%20M84%20hardware).mra",
           "type": "MRA",
           "extra": {
-            "name": "R-Type (World bootleg)",
+            "name": "Daiku no Gensan (Japan, M84 hardware)",
             "rbf": "IremM72",
             "zips": [
-              "rtype.zip|rtypeb.zip"
+              "dkgensan.zip|hharry.zip"
+            ]
+          }
+        },
+        {
+          "name": "Image Fight (Japan).mra",
+          "sha": "38fb1a690e34aba53480faa386f539daa76c1e36",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IremM72_MiSTer/main/releases/_alternatives/_Image%20Fight/Image%20Fight%20(Japan).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Image Fight (Japan)",
+            "rbf": "IremM72",
+            "zips": [
+              "imgfightj.zip|imgfight.zip"
+            ]
+          }
+        },
+        {
+          "name": "R-Type II (Japan).mra",
+          "sha": "a458503a2d02e15376f602e5960a990cf56867ef",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IremM72_MiSTer/main/releases/_alternatives/_R-Type%20II/R-Type%20II%20(Japan).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "R-Type II (Japan)",
+            "rbf": "IremM72",
+            "zips": [
+              "rtype2.zip|rtype2j.zip"
             ]
           }
         },
         {
           "name": "R-Type II (Japan, revision C).mra",
           "sha": "d29a4609fd6325c89db01262a50ea8b1e125e7b9",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IremM72_MiSTer/main/releases/_alternatives/R-Type%20II%20(Japan%2C%20revision%20C).mra",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IremM72_MiSTer/main/releases/_alternatives/_R-Type%20II/R-Type%20II%20(Japan%2C%20revision%20C).mra",
           "type": "MRA",
           "extra": {
             "name": "R-Type II (Japan, revision C)",
@@ -4933,7 +4867,7 @@
         {
           "name": "R-Type II (inv) (World).mra",
           "sha": "595fa82089cfdf42e829d47df32836af678824a6",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IremM72_MiSTer/main/releases/_alternatives/R-Type%20II%20(inv)%20(World).mra",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IremM72_MiSTer/main/releases/_alternatives/_R-Type%20II/R-Type%20II%20(inv)%20(World).mra",
           "type": "MRA",
           "extra": {
             "name": "R-Type II (Inv) (World)",
@@ -4944,9 +4878,61 @@
           }
         },
         {
+          "name": "R-Type (Japan prototype).mra",
+          "sha": "1f74a1fa584dcc99092627c053c469f736ce2900",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IremM72_MiSTer/main/releases/_alternatives/_R-Type/R-Type%20(Japan%20prototype).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "R-Type (Japan prototype)",
+            "rbf": "IremM72",
+            "zips": [
+              "rtype.zip|rtypejp.zip"
+            ]
+          }
+        },
+        {
+          "name": "R-Type (Japan).mra",
+          "sha": "5ffa03cc3b036053b0096506bfc2826e8f50dc25",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IremM72_MiSTer/main/releases/_alternatives/_R-Type/R-Type%20(Japan).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "R-Type (Japan)",
+            "rbf": "IremM72",
+            "zips": [
+              "rtype.zip|rtypej.zip"
+            ]
+          }
+        },
+        {
+          "name": "R-Type (US).mra",
+          "sha": "6fac61e14b212fdb3e5f8831b28a652935551c2b",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IremM72_MiSTer/main/releases/_alternatives/_R-Type/R-Type%20(US).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "R-Type (US)",
+            "rbf": "IremM72",
+            "zips": [
+              "rtype.zip|rtypeu.zip"
+            ]
+          }
+        },
+        {
+          "name": "R-Type (World bootleg).mra",
+          "sha": "10a4aaa0946d279561a70827d8454ae3ef8e888d",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IremM72_MiSTer/main/releases/_alternatives/_R-Type/R-Type%20(World%20bootleg).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "R-Type (World bootleg)",
+            "rbf": "IremM72",
+            "zips": [
+              "rtype.zip|rtypeb.zip"
+            ]
+          }
+        },
+        {
           "name": "X Multiply (Inv) (Japan, M72 hardware).mra",
           "sha": "bd87d59496274054733353597244827b0b3a2389",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IremM72_MiSTer/main/releases/_alternatives/X%20Multiply%20(Inv)%20(Japan%2C%20M72%20hardware).mra",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IremM72_MiSTer/main/releases/_alternatives/_X%20Multiply/X%20Multiply%20(Inv)%20(Japan%2C%20M72%20hardware).mra",
           "type": "MRA",
           "extra": {
             "name": "X Multiply (Inv) (Japan, M72 hardware)",
@@ -6814,19 +6800,6 @@
           "type": "RBF"
         },
         {
-          "name": "Beastie Feastie (Pac-Man Conversion).mra",
-          "sha": "5d527e8bac5d5957d99da490460dfb5ce4171ce3",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Beastie%20Feastie%20(Pac-Man%20Conversion).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Beastie Feastie",
-            "rbf": "pacman",
-            "zips": [
-              "suprglob.zip|beastfp.zip"
-            ]
-          }
-        },
-        {
           "name": "Birdiy.mra",
           "sha": "bd6c219395309796a18efc29fb851a30b0c1c6c2",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Birdiy.mra",
@@ -6905,19 +6878,6 @@
           }
         },
         {
-          "name": "Gorkans.mra",
-          "sha": "55c0cb85edce714009989e31110af2653d8c1bfd",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Gorkans.mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Gorkans",
-            "rbf": "pacman",
-            "zips": [
-              "mrtnt.zip|gorkans.zip"
-            ]
-          }
-        },
-        {
           "name": "Jump Shot.mra",
           "sha": "98aa8b86edea67a4175b6ac8d12740c822190aea",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Jump%20Shot.mra",
@@ -6983,15 +6943,15 @@
           }
         },
         {
-          "name": "Pac-Man (Midway).mra",
-          "sha": "647fb00e12997cca59da032f15fc1af5663e31a3",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Pac-Man%20(Midway).mra",
+          "name": "Pac-Man - Puck Man (JP, Set 1).mra",
+          "sha": "e05d13561ae0f6fc1407d75adf77524984096483",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Pac-Man%20-%20Puck%20Man%20(JP%2C%20Set%201).mra",
           "type": "MRA",
           "extra": {
-            "name": "Pac-Man",
+            "name": "Puck Man",
             "rbf": "pacman",
             "zips": [
-              "puckman.zip|pacman.zip"
+              "puckman.zip"
             ]
           }
         },
@@ -7046,19 +7006,6 @@
           }
         },
         {
-          "name": "Puck Man (JP, Set 1).mra",
-          "sha": "e05d13561ae0f6fc1407d75adf77524984096483",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Puck%20Man%20(JP%2C%20Set%201).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Puck Man",
-            "rbf": "pacman",
-            "zips": [
-              "puckman.zip"
-            ]
-          }
-        },
-        {
           "name": "Super Glob (Pac-Man, German) [bl].mra",
           "sha": "58582e7794168df2fde51b3ddb78432e058665bc",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/Super%20Glob%20(Pac-Man%2C%20German)%20%5Bbl%5D.mra",
@@ -7068,19 +7015,6 @@
             "rbf": "pacman",
             "zips": [
               "suprglob.zip|sprglbpg.zip"
-            ]
-          }
-        },
-        {
-          "name": "The Glob (Pac-Man Hardware).mra",
-          "sha": "0d38b3f32d16503cf082d53906a81d1781b6f91a",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Pacman_MiSTer/master/releases/The%20Glob%20(Pac-Man%20Hardware).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "The Glob",
-            "rbf": "pacman",
-            "zips": [
-              "suprglob.zip|theglobp.zip"
             ]
           }
         },
@@ -8254,19 +8188,6 @@
           "type": "RBF"
         },
         {
-          "name": "Green Beret.mra",
-          "sha": "1e1cbbd528a447286ab8296953f0c93830ea3f97",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-RushnAttack_MiSTer/master/releases/Green%20Beret.mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Green Beret",
-            "rbf": "rshnatk",
-            "zips": [
-              "gberet.zip"
-            ]
-          }
-        },
-        {
           "name": "Mr. Goemon.mra",
           "sha": "0b066072a54567ee1db1233a7a706de98bf584f5",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-RushnAttack_MiSTer/master/releases/Mr.%20Goemon.mra",
@@ -8280,15 +8201,15 @@
           }
         },
         {
-          "name": "Rush'n Attack (US).mra",
-          "sha": "fb96f8054f0566b8f8e0e87abe266c67349deabf",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-RushnAttack_MiSTer/master/releases/Rush'n%20Attack%20(US).mra",
+          "name": "Rush'n Attack - Green Beret.mra",
+          "sha": "1e1cbbd528a447286ab8296953f0c93830ea3f97",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-RushnAttack_MiSTer/master/releases/Rush'n%20Attack%20-%20Green%20Beret.mra",
           "type": "MRA",
           "extra": {
-            "name": "Rush'n Attack",
+            "name": "Green Beret",
             "rbf": "rshnatk",
             "zips": [
-              "gberet.zip|rushatck.zip"
+              "gberet.zip"
             ]
           }
         },
@@ -8503,7 +8424,7 @@
         },
         {
           "name": "Arcade-Scramble_20240602.rbf",
-          "sha": "7597358583f5f70d80a7bd9090e8f35d516af451",
+          "sha": "0d5c489fd8a3e81222a2ada740b10f83f80f732b",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Scramble_MiSTer/master/releases/Arcade-Scramble_20240602.rbf",
           "type": "RBF"
         },
@@ -8553,21 +8474,8 @@
           }
         },
         {
-          "name": "Dark Planet (no bkg).mra",
-          "sha": "68305bcc2c24364d2fa3f27cfba692cad212de2c",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Scramble_MiSTer/master/releases/Dark%20Planet%20(no%20bkg).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Dark Planet",
-            "rbf": "scramble",
-            "zips": [
-              "darkplnt.zip"
-            ]
-          }
-        },
-        {
           "name": "Dark Planet.mra",
-          "sha": "33f12b60ee73a742aa335a24ba37950f261271d2",
+          "sha": "68305bcc2c24364d2fa3f27cfba692cad212de2c",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Scramble_MiSTer/master/releases/Dark%20Planet.mra",
           "type": "MRA",
           "extra": {
@@ -8582,19 +8490,6 @@
           "name": "Frogger (Konami Bugfixed).mra",
           "sha": "de2574a5d47a9f3e1b7623bd0c6eb95137838203",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Scramble_MiSTer/master/releases/Frogger%20(Konami%20Bugfixed).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Frogger",
-            "rbf": "scramble",
-            "zips": [
-              "frogger.zip|froggers2.zip"
-            ]
-          }
-        },
-        {
-          "name": "Frogger (Sega, Set 2).mra",
-          "sha": "7b5e2abedb0d67f8188ff45fe6cee17e1eb8268d",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Scramble_MiSTer/master/releases/Frogger%20(Sega%2C%20Set%202).mra",
           "type": "MRA",
           "extra": {
             "name": "Frogger",
@@ -8744,19 +8639,6 @@
             "rbf": "scramble",
             "zips": [
               "tazmania.zip"
-            ]
-          }
-        },
-        {
-          "name": "The End (bkg).mra",
-          "sha": "bb7fad13983163d04b4e9064d5c47279899345f3",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Scramble_MiSTer/master/releases/The%20End%20(bkg).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "The End",
-            "rbf": "scramble",
-            "zips": [
-              "theend.zip"
             ]
           }
         },
@@ -11228,7 +11110,7 @@
     {
       "name": "Atari800_MiSTer",
       "description": "Atari 800XL/65XE/130XE for MiSTer",
-      "readme": "# Atari [5200](https://en.wikipedia.org/wiki/Atari_5200) and [Atari 800/800XL/65XE/130XE](https://en.wikipedia.org/wiki/Atari_8-bit_family) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\n### This is the port of [Atari 800XL core by Mark Watson](http://www.64kib.com/redmine/projects/eclairexl)\n\n### Installation\n* Copy the *.rbf file to the root of the system SD card.\n* Copy the files to Atari800/Atari5200 folder\n\n## Usage notes\n\n### System ROM\nYou can supply other A800 OS ROM as Atari800/boot.rom. \nAlternative Basic ROM can be placed to Atari800/boot1.rom. \n\nIntegrated 800XL ROM includes SIO turbo patch (fast disk loading).\n\nTurbo ROM has hot keys to control the turbo mode:\n* SHIFT+CONTROL+N    Disable highspeed SIO (normal speed)\n* SHIFT+CONTROL+H    Enable highspeed SIO \n  \nAdditionally, you can control the speed of turbo loading in OSD menu.\n\n### Disks\nA800: After mounting the disk, press F10 to boot.\nSome games don't like the Basic ROM. Keep F8(Option) pressed while pressing F10 to skip the Basic.\n\n### Differences from original version\n* Joystick/Paddle mode switched by joystick. Press **Paddle1/2** to switch to paddle mode (analog X/Y). Press **Fire** to switch to joystick mode (digital X/Y).\n* Use ` key as a **Brake** on reduced keyboards.\n* Cursor keys are mapped to Atari cursor keys.\n* PAL/NTSC mode switch in settings menu (A800)\n* Video aspect ratio switch in settings menu\n* Some optimizations and tweaks in file selector and settings menu navigation.\n* Standard OSD menu for cartridge/disk selection.\n* Mouse emulates analog joystick(Atari 5200) and paddles(Atari 800).\n* Fire 2 and Fire 3 on joystick.\n\n### Disable Basic ROM by Joystick.\nFire 2 on joystick acts as an OPTION key while reboot. It's valid only 2 seconds after reboot. After that Fire 2 doesn't affect the OPTION key.\n\n### More info\nSee more info in original [instructions](https://github.com/MiSTer-devel/Atari800_MiSTer/tree/master/instructions.txt)\nand original [manual](https://github.com/MiSTer-devel/Atari800_MiSTer/tree/master/manual.pdf).\n\n## Download precompiled binaries\nGo to [releases](https://github.com/MiSTer-devel/Atari800_MiSTer/tree/master/releases) folder.\n",
+      "readme": "# Atari [5200](https://en.wikipedia.org/wiki/Atari_5200) and [Atari 800/800XL/65XE/130XE](https://en.wikipedia.org/wiki/Atari_8-bit_family) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\n### This is the port of [Atari 800XL core by Mark Watson](http://www.64kib.com/redmine/projects/eclairexl)\n\n### Installation\n* Copy the *.rbf file to the root of the system SD card.\n* Copy the files to Atari800/Atari5200 folder\n\n## Usage notes\n\n### System ROM\nYou can supply other A800 XL OS ROM as games/ATARI800/boot.rom. \nAlternative Basic ROM can be placed to games/ATARI800/boot1.rom. \nAlternative A800 OS-A ROM as games/ATARI800/boot2.rom.\nAlternative A800 OS-B ROM as games/ATARI800/boot3.rom.\n\nIntegrated OS ROMs include SIO turbo patch (fast disk loading). Note that the single fact that this patch is present can break some titles, especially the timing sensitive ATX disk based ones.\n\nTurbo ROM has hot keys to control the turbo mode:\n* SHIFT+CONTROL+N    Disable highspeed SIO (normal speed)\n* SHIFT+CONTROL+H    Enable highspeed SIO \n\nAnother alternative is to load and set the ROM files from the OSD menu, they will become permanent (use Backspace when loading to clear them), but only if there are no alternative boot.rom files, otherwise those will take precedence. Yet, there is an option to change that behaviour too (that is, keep the boot.rom files on the SD card, but have the ROM data loaded from the OSD selected files on core initialisation).\n\nAdditionally, you can control the speed of turbo loading in OSD menu.\n\n### Disks\nA800: After mounting the disk, press F10 to boot.\nSome games don't like the Basic ROM. Keep F8(Option) pressed while pressing F10 to skip the Basic.\nYou can also boot a disk directly from the D1: drive using the first menu entry, the F10 Reset and F8 Option keys are applied automatically, any mounted carts are unmounted.\nFor ATX disk titles that are timing sensitive, you may also want to try to change the emulated drive timing between the older 810 disk drive, and the XL line 1050 one (this does not apply at all to non-ATX titles, the option has no effect). Moreover, some ATX titles will only load on the PAL or NTSC machine only, depending on which system they were designed for.\n\n### Executable files\nA800: There is an entry to directly load the Atari OS executable files (the so called XEX files) using a high-speed direct memory access loader.\nIf a title does not load, you may want to try to switch the loader location in Atari memory (Standard - it sits at 0x700, Stack - it is located at the bottom of the stack area at 0x100).\n\n### Classic Atari 800 mode\nWhen selecting OS-B in the Machine/BIOS menu option, the core works in the classic Atari 800 mode (reset required to take effect), and different memory layouts are available / activated. Note that the 52KB memory layout is not compatible with the core built-in 800 OS-A/B system, it freezes the boot process. This is not a core bug, but an Atari 800 legacy. To remedy this you have to use / load the genuine OS-A/B rom file.\nAdditionally, in the classic 800 mode there are 4 controllers available to the Atari (as the original hardware had it), 4 controllers are also available in the 5200 core.\n\n### Cartridges\nWith the newer version of the core the database of supported cartridge types have been extended and the ability to \"stack\" cartridges have been added. The stacking is only working or is useful when the first cartridge is a pass-thru type, these are the different kinds of Sparta DOS X cartridges. Moreover, now the selected distributions of SDX provided by the Sparta DOS X project are supported, you can use the rom files for Ultimate 1MB or Super Cart directly with the core. When stacking the size of both cartridges is limited to 1MB (this is only partly checked) when normally cartridges up to 2MB in size are supported. This, however, is not an actual limitation as all SDX releases are under 1MB and so are any useful to stack programming language cartridges, like MAC/65 or Action!. In the classic 800 mode, see above, the stacked cartridge slot doubles as the right cartridge slot of Atari 800 and the actual stacking for SDX is not supported.\n\n### PBI BIOS\n\nThe PBI BIOS enables accessing ATR images in a fast DMA-based fashion (works only with \"friendly\" images), provides an OS independent HSIO implementation, and provides basic support for HDD image emulation for SpartaDOSX. No in-depth explanations of how SDX deals with hard drives or the general mechanics of PBI are given here, plenty of resources for this out there, but just some details particular to this PBI implementation. The splash options will make the Atari OS flash the PBI information during system boot, this is a non-interactive, information only screen (good as a reminder that PBI is turned on). The boot drive option essentially tells SDX where to end up after boot (currently selected drive) and where to search for the CONFIG.SYS and AUTOEXEC.BAT files. In the drives menu you can select how each particular emulated drive should behave against PBI probing, but there are internal overriding exceptions to this, for example, PBI mode is always on for XEX files mounted as disk drives, or ATX files are always handled as Stock/OS. Moreover, regardless of the drive settings, if an HDD partition is mounted at a particular drive it is always handled with PBI/DMA (obviously). For HDD images, only raw IMG files are supported (so no VHD, fixed size or otherwise) and there can be be only one image mounted (so only one HDD device is emulated), regardless of whether the image is mounted through D3: or D4:. Effectively, these two slots have a double function (this is due to the core already using the maximum allowed number of MiSTer mount slots), and once you use either of the slots to mount the image, you cannot mount a regular disk image (well, you can, but the HDD as a whole will disappear) on that slot (but you can still do it on the other slot). This should not be a problem in most cases, as the D3: alt. D4: drives are usually taken up by an HDD partition nevertheless to serve the SDX C: drive. Finally, the PBI driver does not support dynamic partition or FAT hosted ATR files mounting, the PBI BIOS ID is fixed to 0, and the implementation also assumes there would be no other PBI devices in the system (rather impossible on a MiSTer), this allows to speed up some \"PBI decisions\" as well. Really final note - some Atari titles may not like this PBI BIOS implementation, so far the Rewind 2 demo is known to crash mid way when the PBI BIOS is activated.\n\nPractically, to use an HDD image with SDX you would first turn on the PBI, set the PBI boot drive to APT, then mount the HDD image file on D3:, and then load the SDX Ultimate 1MB ROM image as a cart, this should boot the Atari into SDX with the HDD. To create an empty HDD image you can get into the Linux console, find the games/ATARI800 folder, and run `dd if=/dev/zero of=sdx_hdd.img bs=1M count=X` where X is your desired image size in MB. Finally, note that if you want to use an image created earlier on a PC and mounted in Altirra and formatted with an SDX running there you may get skewed up partition geometry (due to a bug / feature in Altirra, it would be already skewed there, problem reported to the author).\n\n### Differences from original version\n* Joystick/Paddle mode switched by joystick. Press **Paddle1/2** to switch to paddle mode (analog X/Y). Press **Fire** to switch to joystick mode (digital X/Y).\n* Use ` key as a **Brake** on reduced keyboards.\n* Cursor keys are mapped to Atari cursor keys.\n* PAL/NTSC mode switch in settings menu (A800)\n* Video aspect ratio switch in settings menu\n* Switchable side clipping of the video output to hide the GTIA \"garbage\". \n* An option to turn off the hi-res Antic extension from the original core, which brakes some titles.\n* Some optimizations and tweaks in file selector and settings menu navigation.\n* Standard OSD menu for cartridge/disk selection.\n* Mouse emulates analog joystick(Atari 5200) and paddles(Atari 800).\n* Fire 2 and Fire 3 on joystick.\n\n### Disable Basic ROM by Joystick.\nFire 2 on joystick acts as an OPTION key while reboot. It's valid only 2 seconds after reboot. After that Fire 2 doesn't affect the OPTION key.\n\n### More info\nSee more info in original [instructions](https://github.com/MiSTer-devel/Atari800_MiSTer/tree/master/instructions.txt)\nand original [manual](https://github.com/MiSTer-devel/Atari800_MiSTer/tree/master/manual.pdf).\n\n## Download precompiled binaries\nGo to [releases](https://github.com/MiSTer-devel/Atari800_MiSTer/tree/master/releases) folder.\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-DB9/Atari800_MiSTer",
@@ -11339,6 +11221,18 @@
           "name": "Atari5200_20240425.rbf",
           "sha": "08ae3519542289075251c401a3dff23aa59a99c0",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Atari800_MiSTer/master/releases/Atari5200_20240425.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Atari5200_20250710.rbf",
+          "sha": "eaa3c565f260a2590df2d32716598d1c5530f4c9",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Atari800_MiSTer/master/releases/Atari5200_20250710.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Atari5200_20250726.rbf",
+          "sha": "0231658e4a15c1e67fdb0e61ef895f011309848e",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Atari800_MiSTer/master/releases/Atari5200_20250726.rbf",
           "type": "RBF"
         },
         {
@@ -11453,6 +11347,18 @@
           "name": "Atari800_20240425.rbf",
           "sha": "7e82ab6fe799a5c3e9da70871b2a93ff710d53f4",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Atari800_MiSTer/master/releases/Atari800_20240425.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Atari800_20250710.rbf",
+          "sha": "8cc220613a1b46d7d7555f2d772128d2ac84274c",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Atari800_MiSTer/master/releases/Atari800_20250710.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Atari800_20250726.rbf",
+          "sha": "a542a30a742eec5aa4fe9d3d637f9e51f0a4f50e",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Atari800_MiSTer/master/releases/Atari800_20250726.rbf",
           "type": "RBF"
         }
       ]
@@ -12366,7 +12272,7 @@
     {
       "name": "Distribution_MiSTer",
       "description": null,
-      "readme": "# MiSTer Distribution DB9\n\nThis repository contains all the files that you'll want in your MiSTer.\n\nYou may download all of them at once as a zip through the [following link](https://github.com/MiSTer-DB9/Distribution_MiSTer/archive/refs/heads/main.zip). Once you have them, place them as-is in your SD card, and everything should work out of the box.\n\n### MiSTer Project\n\nIf you want to check more about the MiSTer project, please check [this wiki](https://github.com/MiSTer-devel/Main_MiSTer/wiki).\n\n### Downloader script\n\nFor downloading all of these files in an automatic fashion, use [this tool](https://github.com/MiSTer-devel/Downloader_MiSTer).\n\n#### List of Tags that you may use with the Downloader Filters:\n\n`acornatom`, `acornelectron`, `adam`, `adctest`, `adventurevision`, `alicemc10`, `all_filters`, `altair8800`, `alternatives`, `amiga`, `amstrad`, `amstrad-pcw`, `amstradpcw`, `ao486`, `apogee`, `apple-i`, `apple-ii`, `aquarius`, `arcade`, `arcade-arkanoid`, `arcade-asteroids`, `arcade-asteroidsdeluxe`, `arcade-astrocade`, `arcade-atarisys1`, `arcade-ataritetris`, `arcade-athena`, `arcade-bagman`, `arcade-bankpanic`, `arcade-battlezone`, `arcade-berzerk`, `arcade-blackwidow`, `arcade-blockade`, `arcade-bombjack`, `arcade-bosconian`, `arcade-breakout`, `arcade-bubsys`, `arcade-bubsysrom`, `arcade-burgertime`, `arcade-burningrubber`, `arcade-canyonbomber`, `arcade-cave`, `arcade-centipede`, `arcade-chameleon`, `arcade-computerspace`, `arcade-congobongo`, `arcade-cores`, `arcade-cosmic`, `arcade-cosmicguerilla`, `arcade-crazyballoon`, `arcade-crazyclimber`, `arcade-crazykong`, `arcade-crystalcastles`, `arcade-defender`, `arcade-digdug`, `arcade-dominos`, `arcade-donkeykong`, `arcade-donkeykong3`, `arcade-donkeykongjunior`, `arcade-dorodon`, `arcade-dottorikun`, `arcade-druaga`, `arcade-exerion`, `arcade-exidy2`, `arcade-expressraider`, `arcade-finalizer`, `arcade-foodfight`, `arcade-freeze`, `arcade-frenzy`, `arcade-galaga`, `arcade-galaxian`, `arcade-galivan`, `arcade-gaplus`, `arcade-gauntlet`, `arcade-gyruss`, `arcade-ikariwarriors`, `arcade-inferno`, `arcade-iremm107`, `arcade-iremm62`, `arcade-iremm72`, `arcade-iremm90`, `arcade-iremm92`, `arcade-ironhorse`, `arcade-jackal`, `arcade-jailbreak`, `arcade-joust2`, `arcade-kickandrun`, `arcade-ladybug`, `arcade-lunarlander`, `arcade-mariobros`, `arcade-mcr1`, `arcade-mcr2`, `arcade-mcr3`, `arcade-mcr3mono`, `arcade-mcr3scroll`, `arcade-missilecommand`, `arcade-moonpatrol`, `arcade-mrdo`, `arcade-mrjong`, `arcade-mysticmarathon`, `arcade-naughtyboy`, `arcade-ninjakun`, `arcade-pacman`, `arcade-pengo`, `arcade-penguinkunwars`, `arcade-performan`, `arcade-phoenix`, `arcade-pleiads`, `arcade-polyplay`, `arcade-pong`, `arcade-pooyan`, `arcade-popeye`, `arcade-psychic5`, `arcade-qbert`, `arcade-rallyx`, `arcade-rbfs-only`, `arcade-riverpatrol`, `arcade-robotron`, `arcade-rshnatk`, `arcade-salamander`, `arcade-scootershooter`, `arcade-scramble`, `arcade-segasys1`, `arcade-segavicz80`, `arcade-silverland`, `arcade-slapfight`, `arcade-sms`, `arcade-snk_triplez80`, `arcade-solomonskey`, `arcade-sonson`, `arcade-spaceinvaders`, `arcade-spacerace`, `arcade-sprint1`, `arcade-sprint2`, `arcade-st-v`, `arcade-subs`, `arcade-superbreakout`, `arcade-suprloco`, `arcade-taitof2`, `arcade-taitosj`, `arcade-tankbattalion`, `arcade-tecmo`, `arcade-tiamc1`, `arcade-timepilot`, `arcade-timepilot84`, `arcade-tnkiii`, `arcade-traverseusa`, `arcade-tropicalangel`, `arcade-turkeyshoot`, `arcade-ultratank`, `arcade-vball`, `arcade-xevious`, `arcade-xsleena`, `arcade-zaxxon`, `arcade-zigzag`, `arcadelpf`, `arcadia`, `archie`, `arduboy`, `astrocade`, `atari2600`, `atari5200`, `atari7800`, `atari800`, `atarilynx`, `atarist`, `avision`, `ay-3-8500`, `bbcbridgecompanion`, `bbcmicro`, `bios`, `bk0011m`, `c128`, `c16`, `c64`, `cacert`, `casio_pv-1000`, `casio_pv-2000`, `cd-i`, `cdi`, `channelf`, `cheats`, `chess`, `chip8`, `coco2`, `coco3`, `coleco`, `colecoadam`, `colecovision`, `complexmultichromatic`, `computer`, `computer-cores`, `console`, `console-cores`, `contrast_boost`, `controls_1_button`, `controls_2_buttons`, `controls_2_players`, `controls_3_buttons`, `controls_3_players`, `controls_4_buttons`, `controls_4_players`, `controls_5_buttons`, `controls_6_buttons`, `controls_dial`, `controls_move_2-way`, `controls_move_4-way`, `controls_move_8-way`, `controls_paddle`, `controls_spinner`, `controls_trackball`, `cores`, `corespecific`, `creativision`, `crt-simulation`, `displayspecific`, `docs`, `donut`, `downloader`, `downloader_bin`, `downloader_latest`, `drv`, `edsac`, `eg2000`, `epochgalaxyii`, `essential`, `extra-utilities`, `famicom`, `fast_usb_polling`, `filters`, `filters_audio`, `filters_video`, `flappy`, `flappybird`, `font`, `galaksija`, `gamate`, `gameboy`, `gameboy2p`, `gameboyadvance`, `gameboycolor`, `gamecontrollerdb`, `gamegear`, `gamenwatch`, `gameoflife`, `games`, `gamma`, `gb`, `gba`, `gba2p`, `gbc`, `gbmidi`, `generalhardware`, `generallpf`, `genesis`, `genesis-core`, `genmidi`, `gnw`, `handheld2p`, `hbmame`, `homelab`, `ini_settings`, `inputtest`, `intellivision`, `interact`, `jupiter`, `laser`, `laser310`, `lcd-general`, `lcd-integeronly`, `linux`, `lynx48`, `macplus`, `mame`, `mastersystem`, `megacd`, `megadrive`, `megadrive-core`, `megaduck`, `memtest`, `memtest_060mhz`, `memtest_100mhz`, `memtest_110mhz`, `memtest_120mhz`, `memtest_130mhz`, `memtest_140mhz`, `memtest_150mhz`, `memtest_160mhz`, `memtest_167mhz`, `menu`, `mgl`, `minimig`, `minimigdb9`, `minimigrgb8`, `misterfirmware`, `misterlaggy`, `mra`, `msx`, `msx1`, `multicomp`, `myvision`, `n64`, `neogeo`, `neogeo-cd`, `nes`, `nintendo`, `no-mad-entry-mra`, `no-setname-mra`, `odyssey2`, `old`, `ondra_spo186`, `orao`, `oric`, `other`, `other-cores`, `overlays`, `palettes`, `pc88`, `pc8801`, `pcengine`, `pcenginecd`, `pcxt`, `pdp1`, `pet2001`, `pmd85`, `pocketchallengev2`, `pokemonmini`, `poly_gamma`, `presets`, `psx`, `pure_gamma`, `ql`, `readme`, `rtc`, `rx78`, `s32x`, `samba_on`, `samcoupe`, `saturn`, `scanlines-adaptive`, `scanlines-brighter`, `scanlines-standard`, `screen_horizontal_scan_rate_15khz`, `screen_horizontal_scan_rate_31khz`, `screen_no_tate`, `screen_rotation_flip`, `screen_rotation_horizontal`, `screen_rotation_vertical_ccw`, `screen_rotation_vertical_ccw_no_flip`, `screen_rotation_vertical_cw`, `screen_rotation_vertical_cw_no_flip`, `screen_tate_ccw`, `screen_tate_ccw_no_flip`, `screen_tate_cw`, `screen_tate_cw_no_flip`, `screen_tate_flip`, `scripts`, `scv`, `segacd`, `segamark3`, `service-cores`, `sgb`, `shadow_masks`, `sharpmz`, `simplemonochrome`, `slugcross`, `sms`, `snes`, `sordm5`, `specialist`, `spectrum`, `spmx`, `sufami`, `super_vision_8000`, `superfamicom`, `supergameboy`, `supernes`, `supernintendo`, `supervision`, `supervision8000`, `svi328`, `tatungeinstein`, `tgfx16`, `tgfx16-cd`, `tgfx16cd`, `ti-99_4a`, `ti994a`, `timezone`, `tomyscramble`, `tomytutor`, `trs-80`, `tsconf`, `turbografx`, `turbografx16`, `turbografx16cd`, `turbografxcd`, `uk101`, `unlicensed_games`, `upscaling-lanczosbicubicetc`, `upscaling-recommended`, `upscaling-sharpbilinear`, `utility`, `vc4000`, `vector-06c`, `vector06`, `vector06c`, `vectrex`, `vic20`, `vt52`, `wifi`, `wonderswan`, `wonderswancolor`, `x68000`, `yctxt`, `zx-spectrum`, `zx81`, `zxnext`, `zxspectrum`\n",
+      "readme": "# MiSTer Distribution DB9\n\nThis repository contains all the files that you'll want in your MiSTer.\n\nYou may download all of them at once as a zip through the [following link](https://github.com/MiSTer-DB9/Distribution_MiSTer/archive/refs/heads/main.zip). Once you have them, place them as-is in your SD card, and everything should work out of the box.\n\n### MiSTer Project\n\nIf you want to check more about the MiSTer project, please check [this wiki](https://github.com/MiSTer-devel/Main_MiSTer/wiki).\n\n### Downloader script\n\nFor downloading all of these files in an automatic fashion, use [this tool](https://github.com/MiSTer-devel/Downloader_MiSTer).\n\n#### List of Tags that you may use with the Downloader Filters:\n\n`acornatom`, `acornelectron`, `adam`, `adctest`, `adventurevision`, `alicemc10`, `all_filters`, `altair8800`, `alternatives`, `amiga`, `amstrad`, `amstrad-pcw`, `amstradpcw`, `ao486`, `apogee`, `apple-i`, `apple-ii`, `aquarius`, `arcade`, `arcade-arkanoid`, `arcade-asteroids`, `arcade-asteroidsdeluxe`, `arcade-astrocade`, `arcade-atarisys1`, `arcade-ataritetris`, `arcade-athena`, `arcade-bagman`, `arcade-bankpanic`, `arcade-battlezone`, `arcade-berzerk`, `arcade-blackwidow`, `arcade-blockade`, `arcade-bombjack`, `arcade-bosconian`, `arcade-breakout`, `arcade-bubsys`, `arcade-bubsysrom`, `arcade-burgertime`, `arcade-burningrubber`, `arcade-canyonbomber`, `arcade-cave`, `arcade-centipede`, `arcade-chameleon`, `arcade-computerspace`, `arcade-congobongo`, `arcade-cores`, `arcade-cosmic`, `arcade-cosmicguerilla`, `arcade-crazyballoon`, `arcade-crazyclimber`, `arcade-crazykong`, `arcade-crystalcastles`, `arcade-defender`, `arcade-digdug`, `arcade-dominos`, `arcade-donkeykong`, `arcade-donkeykong3`, `arcade-donkeykongjunior`, `arcade-dorodon`, `arcade-dottorikun`, `arcade-druaga`, `arcade-exerion`, `arcade-exidy2`, `arcade-expressraider`, `arcade-finalizer`, `arcade-foodfight`, `arcade-freeze`, `arcade-frenzy`, `arcade-galaga`, `arcade-galaxian`, `arcade-galivan`, `arcade-gaplus`, `arcade-gauntlet`, `arcade-gyruss`, `arcade-ikariwarriors`, `arcade-inferno`, `arcade-iremm107`, `arcade-iremm62`, `arcade-iremm72`, `arcade-iremm90`, `arcade-iremm92`, `arcade-ironhorse`, `arcade-jackal`, `arcade-jailbreak`, `arcade-joust2`, `arcade-kickandrun`, `arcade-ladybug`, `arcade-lunarlander`, `arcade-mariobros`, `arcade-mcr1`, `arcade-mcr2`, `arcade-mcr3`, `arcade-mcr3mono`, `arcade-mcr3scroll`, `arcade-missilecommand`, `arcade-moonpatrol`, `arcade-mrdo`, `arcade-mrjong`, `arcade-mysticmarathon`, `arcade-naughtyboy`, `arcade-ninjakun`, `arcade-pacman`, `arcade-pengo`, `arcade-penguinkunwars`, `arcade-performan`, `arcade-phoenix`, `arcade-pleiads`, `arcade-polyplay`, `arcade-pong`, `arcade-pooyan`, `arcade-popeye`, `arcade-psychic5`, `arcade-qbert`, `arcade-rallyx`, `arcade-rbfs-only`, `arcade-riverpatrol`, `arcade-robotron`, `arcade-rshnatk`, `arcade-salamander`, `arcade-scootershooter`, `arcade-scramble`, `arcade-segasys1`, `arcade-segavicz80`, `arcade-silverland`, `arcade-slapfight`, `arcade-sms`, `arcade-snk_triplez80`, `arcade-solomonskey`, `arcade-sonson`, `arcade-spaceinvaders`, `arcade-spacerace`, `arcade-sprint1`, `arcade-sprint2`, `arcade-st-v`, `arcade-subs`, `arcade-superbreakout`, `arcade-suprloco`, `arcade-taitof2`, `arcade-taitosj`, `arcade-tankbattalion`, `arcade-tecmo`, `arcade-tiamc1`, `arcade-timepilot`, `arcade-timepilot84`, `arcade-tnkiii`, `arcade-traverseusa`, `arcade-tropicalangel`, `arcade-turkeyshoot`, `arcade-ultratank`, `arcade-vball`, `arcade-xevious`, `arcade-xsleena`, `arcade-zaxxon`, `arcade-zigzag`, `arcadelpf`, `arcadia`, `archie`, `arduboy`, `astrocade`, `atari2600`, `atari5200`, `atari7800`, `atari800`, `atarilynx`, `atarist`, `avision`, `ay-3-8500`, `bbcbridgecompanion`, `bbcmicro`, `bios`, `bk0011m`, `c128`, `c16`, `c64`, `cacert`, `casio_pv-1000`, `casio_pv-2000`, `cd-i`, `cdi`, `channelf`, `cheats`, `chess`, `chip8`, `coco2`, `coco3`, `coleco`, `colecoadam`, `colecovision`, `complexmultichromatic`, `computer`, `computer-cores`, `console`, `console-cores`, `contrast_boost`, `controls_1_button`, `controls_2_buttons`, `controls_2_players`, `controls_3_buttons`, `controls_3_players`, `controls_4_buttons`, `controls_4_players`, `controls_5_buttons`, `controls_6_buttons`, `controls_dial`, `controls_move_2-way`, `controls_move_4-way`, `controls_move_8-way`, `controls_paddle`, `controls_spinner`, `controls_trackball`, `cores`, `corespecific`, `creativision`, `crt-simulation`, `displayspecific`, `docs`, `donut`, `downloader`, `downloader_bin`, `downloader_latest`, `drv`, `edsac`, `eg2000`, `epochgalaxyii`, `essential`, `extra-utilities`, `famicom`, `fast_usb_polling`, `filters`, `filters_audio`, `filters_video`, `flappy`, `flappybird`, `font`, `galaksija`, `gamate`, `gameboy`, `gameboy2p`, `gameboyadvance`, `gameboycolor`, `gamecontrollerdb`, `gamegear`, `gamenwatch`, `gameoflife`, `games`, `gamma`, `gb`, `gba`, `gba2p`, `gbc`, `gbmidi`, `generalhardware`, `generallpf`, `genesis`, `genesis-core`, `genmidi`, `gnw`, `gnw20250717`, `handheld2p`, `hbmame`, `homelab`, `ini_settings`, `inputtest`, `intellivision`, `interact`, `jupiter`, `laser`, `laser310`, `lcd-general`, `lcd-integeronly`, `linux`, `lynx48`, `macplus`, `mame`, `mastersystem`, `megacd`, `megadrive`, `megadrive-core`, `megaduck`, `memtest`, `memtest_060mhz`, `memtest_100mhz`, `memtest_110mhz`, `memtest_120mhz`, `memtest_130mhz`, `memtest_140mhz`, `memtest_150mhz`, `memtest_160mhz`, `memtest_167mhz`, `menu`, `mgl`, `minimig`, `minimigdb9`, `minimigrgb8`, `misterfirmware`, `misterlaggy`, `mra`, `msx`, `msx1`, `multicomp`, `myvision`, `n64`, `neogeo`, `neogeo-cd`, `nes`, `nintendo`, `no-mad-entry-mra`, `no-setname-mra`, `odyssey2`, `old`, `ondra_spo186`, `orao`, `oric`, `other`, `other-cores`, `overlays`, `palettes`, `pc88`, `pc8801`, `pcengine`, `pcenginecd`, `pcxt`, `pdp1`, `pet2001`, `pmd85`, `pocketchallengev2`, `pokemonmini`, `poly_gamma`, `presets`, `psx`, `pure_gamma`, `ql`, `readme`, `rtc`, `rx78`, `s32x`, `samba_on`, `samcoupe`, `saturn`, `scanlines-adaptive`, `scanlines-brighter`, `scanlines-standard`, `screen_horizontal_scan_rate_15khz`, `screen_horizontal_scan_rate_31khz`, `screen_no_tate`, `screen_rotation_flip`, `screen_rotation_horizontal`, `screen_rotation_vertical_ccw`, `screen_rotation_vertical_ccw_no_flip`, `screen_rotation_vertical_cw`, `screen_rotation_vertical_cw_no_flip`, `screen_tate_ccw`, `screen_tate_ccw_no_flip`, `screen_tate_cw`, `screen_tate_cw_no_flip`, `screen_tate_flip`, `scripts`, `scv`, `segacd`, `segamark3`, `service-cores`, `sgb`, `shadow_masks`, `sharpmz`, `simplemonochrome`, `slugcross`, `sms`, `snes`, `sordm5`, `specialist`, `spectrum`, `spmx`, `sufami`, `super_vision_8000`, `superfamicom`, `supergameboy`, `supernes`, `supernintendo`, `supervision`, `supervision8000`, `svi328`, `tatungeinstein`, `tgfx16`, `tgfx16-cd`, `tgfx16cd`, `ti-99_4a`, `ti994a`, `timezone`, `tomyscramble`, `tomytutor`, `trs-80`, `tsconf`, `turbografx`, `turbografx16`, `turbografx16cd`, `turbografxcd`, `uk101`, `unlicensed_games`, `upscaling-lanczosbicubicetc`, `upscaling-recommended`, `upscaling-sharpbilinear`, `utility`, `vc4000`, `vector-06c`, `vector06`, `vector06c`, `vectrex`, `vic20`, `vt52`, `wifi`, `wonderswan`, `wonderswancolor`, `x68000`, `yctxt`, `zx-spectrum`, `zx81`, `zxnext`, `zxspectrum`\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-DB9/Distribution_MiSTer",
@@ -12393,6 +12299,18 @@
           "type": "RBF"
         },
         {
+          "name": "EpochGalaxyII_20250717.rbf",
+          "sha": "6a91d4aa6ac54028e6b8369341e5915c8a8d6952",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/EpochGalaxy2_MiSTer/master/releases/EpochGalaxyII_20250717.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "EpochGalaxyII_20250726.rbf",
+          "sha": "36d018f3dec7d24fe78e7e4ace940eeab710a34c",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/EpochGalaxy2_MiSTer/master/releases/EpochGalaxyII_20250726.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "boot.rom",
           "sha": "5818ed76e8dae57a69f9781292c09cbd8f5b2ac2",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/EpochGalaxy2_MiSTer/master/releases/boot.rom",
@@ -12403,7 +12321,7 @@
     {
       "name": "FlappyBird_MiSTer",
       "description": "Flappy Bird written entirely in discreet logic for MiSTer",
-      "readme": "# Flappy Bird\n\nPorted from original project [here](https://github.com/themaxaboy/Flappy-Bird-Verilog/).\n\nThis core is written entirely in discreet logic, apparently. Not reccomended as a reference example.\n\n## Instructions\n- Press Flap\n- When you die, press reset.",
+      "readme": "# Flappy Bird\n\nPorted from original project [here](https://github.com/themaxaboy/Flappy-Bird-Verilog/).\n\nThis core is written entirely in discrete logic, apparently. Not recommended as a reference example.\n\n## Instructions\n- Press Flap\n- When you die, press reset.\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-DB9/FlappyBird_MiSTer",
@@ -12412,6 +12330,18 @@
           "name": "FlappyBird_20200510.rbf",
           "sha": "26bc2487e24a1d6ccd585be65155a0b46e636645",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/FlappyBird_MiSTer/master/releases/FlappyBird_20200510.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "FlappyBird_20250708.rbf",
+          "sha": "b7193f96c65615aaf1d6b8a4d4c3e55e3eb342a2",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/FlappyBird_MiSTer/master/releases/FlappyBird_20250708.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "FlappyBird_20250726.rbf",
+          "sha": "4da3b1296897c9ce1e79b2dce9d7ff376314a0a7",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/FlappyBird_MiSTer/master/releases/FlappyBird_20250726.rbf",
           "type": "RBF"
         }
       ]
@@ -12862,6 +12792,12 @@
       "url": "https://github.com/MiSTer-DB9/GnW_MiSTer",
       "releases": [
         {
+          "name": "GnW20250717.rbf",
+          "sha": "ca5f7d48bd0e9e2c64de37fc9980f1bebe097b3b",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/GnW_MiSTer/master/releases/GnW20250717.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "GnW_20220603.rbf",
           "sha": "608e5b8551a58dace86ab18376c61506eaf0c24c",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/GnW_MiSTer/master/releases/GnW_20220603.rbf",
@@ -12883,6 +12819,12 @@
           "name": "GnW_20220628.rbf",
           "sha": "7b8ea99d2b965e9e4b2e93af7bfa6d0da1c11d7c",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/GnW_MiSTer/master/releases/GnW_20220628.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "GnW_20250726.rbf",
+          "sha": "ab5045c361ed283154a7de54472220d8c70be961",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/GnW_MiSTer/master/releases/GnW_20250726.rbf",
           "type": "RBF"
         }
       ]
@@ -15613,6 +15555,18 @@
           "sha": "bc41e2f081e408c90fdff350fe40f33a34890fdf",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/SNES_MiSTer/master/releases/SNES_20250605.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "SNES_20250726.rbf",
+          "sha": "a8c27e846ea0fb06d2151ead04535fb8e7d6fcfa",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/SNES_MiSTer/master/releases/SNES_20250726.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "boot1.rom",
+          "sha": "d899af9bcd3bfd8c51fe5ba5dc5d71c858063d54",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/SNES_MiSTer/master/releases/boot1.rom",
+          "type": "OTHER"
         }
       ]
     },

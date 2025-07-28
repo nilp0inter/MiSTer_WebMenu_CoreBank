@@ -1394,19 +1394,6 @@
           }
         },
         {
-          "name": "Gorf (Program 1).mra",
-          "sha": "83343b88b5d0bcb84dd2bfb008b7c2a80faf9635",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Astrocade_MiSTer/master/releases/Gorf%20(Program%201).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Gorf",
-            "rbf": "astrocade",
-            "zips": [
-              "gorf.zip|gorfpgm1.zip "
-            ]
-          }
-        },
-        {
           "name": "Gorf.mra",
           "sha": "95099573a4c57738efd82031499ab0ffcffbcc73",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Astrocade_MiSTer/master/releases/Gorf.mra",
@@ -1455,19 +1442,6 @@
             "rbf": "astrocade",
             "zips": [
               "robby.zip"
-            ]
-          }
-        },
-        {
-          "name": "Wizard of Wor (Speech).mra",
-          "sha": "09d42fb386eae63ea937fb8964c4d84be04e2503",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Astrocade_MiSTer/master/releases/Wizard%20of%20Wor%20(Speech).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Wizard of Wor",
-            "rbf": "astrocade",
-            "zips": [
-              "wow.zip"
             ]
           }
         },
@@ -2276,22 +2250,9 @@
           "type": "RBF"
         },
         {
-          "name": "Battle Zone rev 1.mra",
-          "sha": "bd7cd7c4e8cb9ce13501b4222cf01459407fc933",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-BattleZone_MiSTer/master/releases/Battle%20Zone%20rev%201.mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Battle Zone (rev 1)",
-            "rbf": "BattleZone",
-            "zips": [
-              "bzone.zip|bzonea.zip"
-            ]
-          }
-        },
-        {
-          "name": "Battle Zone.mra",
+          "name": "Battle Zone rev 2.mra",
           "sha": "71ee90deaf38b8fb473e957b089c318ef09616d6",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-BattleZone_MiSTer/master/releases/Battle%20Zone.mra",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-BattleZone_MiSTer/master/releases/Battle%20Zone%20rev%202.mra",
           "type": "MRA",
           "extra": {
             "name": "Battle Zone (rev 2)",
@@ -2311,19 +2272,6 @@
             "rbf": "BattleZone",
             "zips": [
               "bradley.zip"
-            ]
-          }
-        },
-        {
-          "name": "Red Baron (Revised Hardware).mra",
-          "sha": "12d3c276d3260dbd146ab30f5cf2396ce0964e39",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-BattleZone_MiSTer/master/releases/Red%20Baron%20(Revised%20Hardware).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Red Baron (Revised Hardware)",
-            "rbf": "BattleZone",
-            "zips": [
-              "redbaron.zip"
             ]
           }
         },
@@ -2758,19 +2706,6 @@
           "sha": "7caccc70a9d71ee61a0ffd8c21be9d9db32cc641",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Bosconian_MiSTer/master/releases/Arcade-Bosconian_20240525.rbf",
           "type": "RBF"
-        },
-        {
-          "name": "Bosconian - Star Destroyer (Midway, new version).mra",
-          "sha": "6656873b6e52aa4e8544241cfb403a14257cd1c8",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Bosconian_MiSTer/master/releases/Bosconian%20-%20Star%20Destroyer%20(Midway%2C%20new%20version).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Bosconian - Star Destroyer",
-            "rbf": "bosconian",
-            "zips": [
-              "bosco.zip|boscomd.zip|namco50.zip|namco51.zip|namco52.zip|namco54.zip"
-            ]
-          }
         },
         {
           "name": "Bosconian - Star Destroyer (new version).mra",
@@ -3252,58 +3187,6 @@
           "type": "RBF"
         },
         {
-          "name": "Dangun Feveron.mra",
-          "sha": "26d6455b3ebf3d8525ea7ee7ae03e9c17554abc0",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cave_MiSTer/main/releases/Dangun%20Feveron.mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Dangun Feveron",
-            "rbf": "cave",
-            "zips": [
-              "dfeveron.zip|feversos.zip"
-            ]
-          }
-        },
-        {
-          "name": "DoDonPachi (Arrange).mra",
-          "sha": "ff4024450a9dce6bab51733b97cc28882227eb45",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cave_MiSTer/main/releases/DoDonPachi%20(Arrange).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "DoDonPachi (20120212 Arrange Ver. 1.1)",
-            "rbf": "cave",
-            "zips": [
-              "ddonpach.zip|ddonpacha.zip"
-            ]
-          }
-        },
-        {
-          "name": "DoDonPachi (Japan).mra",
-          "sha": "42fb26dc9d5eb863c8710d45b226cbf11549dd60",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cave_MiSTer/main/releases/DoDonPachi%20(Japan).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "DoDonPachi (Japan)",
-            "rbf": "cave",
-            "zips": [
-              "ddonpach.zip|ddonpachj.zip"
-            ]
-          }
-        },
-        {
-          "name": "DoDonPachi Trainer (Japan).mra",
-          "sha": "94be7e7130f0b597c48d7b014c86ded1c8f17c46",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cave_MiSTer/main/releases/DoDonPachi%20Trainer%20(Japan).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "DoDonPachi Trainer (Japan)",
-            "rbf": "cave",
-            "zips": [
-              "ddonpach.zip|ddonpachj.zip"
-            ]
-          }
-        },
-        {
           "name": "DoDonPachi.mra",
           "sha": "3fd65aba72ba64e150ae6c913dc4f6ad4cb858d2",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cave_MiSTer/main/releases/DoDonPachi.mra",
@@ -3317,19 +3200,6 @@
           }
         },
         {
-          "name": "DonPachi (Japan).mra",
-          "sha": "e0738e203a465696efa3bc290740ff275a4a759a",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cave_MiSTer/main/releases/DonPachi%20(Japan).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "DonPachi (Japan)",
-            "rbf": "cave",
-            "zips": [
-              "donpachi.zip|donpachij.zip"
-            ]
-          }
-        },
-        {
           "name": "DonPachi.mra",
           "sha": "c9f78ec7b8c10b208e6cd53a6f50c97a1bbb9621",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cave_MiSTer/main/releases/DonPachi.mra",
@@ -3339,19 +3209,6 @@
             "rbf": "cave",
             "zips": [
               "donpachi.zip"
-            ]
-          }
-        },
-        {
-          "name": "ESP Ra.De. (Japan).mra",
-          "sha": "e5184b41279d386332195ca7c950d8f6c97b8d6e",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cave_MiSTer/main/releases/ESP%20Ra.De.%20(Japan).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "ESP Ra.De. (Japan)",
-            "rbf": "cave",
-            "zips": [
-              "espradej.zip|esprade.zip"
             ]
           }
         },
@@ -3370,7 +3227,7 @@
         },
         {
           "name": "Fever SOS.mra",
-          "sha": "b9ff8c670d24aff794bc762b75ecc83c0778abd5",
+          "sha": "b3e0145b00318efa05bb2939ee10953b59325314",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cave_MiSTer/main/releases/Fever%20SOS.mra",
           "type": "MRA",
           "extra": {
@@ -3395,19 +3252,6 @@
           }
         },
         {
-          "name": "Guwange (Special).mra",
-          "sha": "6f2f0cfba988e011363278084df8058495259fa5",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cave_MiSTer/main/releases/Guwange%20(Special).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Guwange (Special)",
-            "rbf": "cave",
-            "zips": [
-              "guwanges.zip|guwange.zip"
-            ]
-          }
-        },
-        {
           "name": "Guwange.mra",
           "sha": "800f3768fe7759ac04e0a9fccb6b107175c029ee",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cave_MiSTer/main/releases/Guwange.mra",
@@ -3417,19 +3261,6 @@
             "rbf": "cave",
             "zips": [
               "guwange.zip"
-            ]
-          }
-        },
-        {
-          "name": "Puzzle Uo Poko (Japan).mra",
-          "sha": "77c3363a8a466b4c1b000c374957fb14b232816d",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cave_MiSTer/main/releases/Puzzle%20Uo%20Poko%20(Japan).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Puzzle Uo Poko (Japan)",
-            "rbf": "cave",
-            "zips": [
-              "uopokoj.zip|uopoko.zip"
             ]
           }
         },
@@ -3552,19 +3383,6 @@
           "sha": "8a476fa33ec3132b66d0d953215f7a58ed4688e6",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Centipede_MiSTer/master/releases/Arcade-Centipede_20240525.rbf",
           "type": "RBF"
-        },
-        {
-          "name": "Centipede (Rev 3).mra",
-          "sha": "0ca45f53be356073556aa60a82bb68fb611d588d",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Centipede_MiSTer/master/releases/Centipede%20(Rev%203).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Centipede",
-            "rbf": "centipede",
-            "zips": [
-              "centiped.zip|centiped3.zip"
-            ]
-          }
         },
         {
           "name": "Centipede (Rev 4).mra",
@@ -4114,19 +3932,6 @@
           "type": "RBF"
         },
         {
-          "name": "Big Kong.mra",
-          "sha": "8902cdca926bb534cddd026a1cca4b1d3647edc3",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-CrazyKong_MiSTer/master/releases/Big%20Kong.mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Big Kong",
-            "rbf": "crazykong",
-            "zips": [
-              "ckong.zip|bigkong.zip|ckongo.zip"
-            ]
-          }
-        },
-        {
           "name": "Crazy Kong (Kyoei).mra",
           "sha": "58805cba69173ee679d0d5b3be44ad942cde75fd",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-CrazyKong_MiSTer/master/releases/Crazy%20Kong%20(Kyoei).mra",
@@ -4140,19 +3945,6 @@
           }
         },
         {
-          "name": "Crazy Kong (Orca bootleg).mra",
-          "sha": "6d8425dc75f7a57dd4d38346b2bd533989877934",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-CrazyKong_MiSTer/master/releases/Crazy%20Kong%20(Orca%20bootleg).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Crazy Kong (Orca bootleg)",
-            "rbf": "CrazyKong",
-            "zips": [
-              "ckong.zip|ckongo.zip|bigkong.zip"
-            ]
-          }
-        },
-        {
           "name": "Crazy Kong Part II (Set 1).mra",
           "sha": "d3ee1491ebcf3286df391855745885e48430b983",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-CrazyKong_MiSTer/master/releases/Crazy%20Kong%20Part%20II%20(Set%201).mra",
@@ -4162,32 +3954,6 @@
             "rbf": "crazykong",
             "zips": [
               "ckongpt2.zip"
-            ]
-          }
-        },
-        {
-          "name": "Crazy Kong Part II (alternative levels).mra",
-          "sha": "0f245ec7420a4a0edac6f3c403af75f2628ff278",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-CrazyKong_MiSTer/master/releases/Crazy%20Kong%20Part%20II%20(alternative%20levels).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Crazy Kong Part II (alternative levels)",
-            "rbf": "crazykong",
-            "zips": [
-              "ckongpt2.zip"
-            ]
-          }
-        },
-        {
-          "name": "Donkey Kong (Spanish Crazy Kong bootleg).mra",
-          "sha": "7f8f33f7ef2f8abe8731581cd38035865839673f",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-CrazyKong_MiSTer/master/releases/Donkey%20Kong%20(Spanish%20Crazy%20Kong%20bootleg).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Donkey Kong (Spanish Crazy Kong bootleg)",
-            "rbf": "CrazyKong",
-            "zips": [
-              "ckong.zip|ckongdks.zip"
             ]
           }
         }
@@ -4770,19 +4536,6 @@
           }
         },
         {
-          "name": "Pest Place.mra",
-          "sha": "df1c7ab570733d9c35ab4b1f84486b8df7173a6d",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-DonkeyKong_MiSTer/master/releases/Pest%20Place.mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Pest Place",
-            "rbf": "DonkeyKong",
-            "zips": [
-              "mario.zip|pestplce.zip"
-            ]
-          }
-        },
-        {
           "name": "Radar Scope (rev. D).mra",
           "sha": "c4ccacc3d31f0ac487a85d51457ba44b2e743c03",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-DonkeyKong_MiSTer/master/releases/Radar%20Scope%20(rev.%20D).mra",
@@ -4842,32 +4595,6 @@
           "type": "MRA",
           "extra": {
             "name": "Dottori-Kun",
-            "rbf": "DottoriKun",
-            "zips": [
-              "dotrikun.zip"
-            ]
-          }
-        },
-        {
-          "name": "Dottori-Kun (old).mra",
-          "sha": "ff603caf4fa1f99e16e45d88d3fbf7ed14696a7e",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-DottoriKun_MiSTer/main/releases/Dottori-Kun%20(old).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Dottori-Kun",
-            "rbf": "DottoriKun",
-            "zips": [
-              "dotrikun.zip"
-            ]
-          }
-        },
-        {
-          "name": "Dottori-Man Jr.mra",
-          "sha": "58a8e2f8b146f6a37cf987e6f6a3fd901bd96ab7",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-DottoriKun_MiSTer/main/releases/Dottori-Man%20Jr.mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Dottori-Man Jr",
             "rbf": "DottoriKun",
             "zips": [
               "dotrikun.zip"
@@ -5009,19 +4736,6 @@
           "type": "MRA",
           "extra": {
             "name": "Pac & Pal",
-            "rbf": "druaga",
-            "zips": [
-              "pacnpal.zip"
-            ]
-          }
-        },
-        {
-          "name": "Pac-Man & Chomp Chomp.mra",
-          "sha": "e21dd5bfdbf03c20519c5d2371506d4e7ce477be",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Druaga_MiSTer/master/releases/Pac-Man%20%26%20Chomp%20Chomp.mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Pac-Man & Chomp Chomp",
             "rbf": "druaga",
             "zips": [
               "pacnpal.zip"
@@ -5823,19 +5537,6 @@
           }
         },
         {
-          "name": "King and Balloon (Japan).mra",
-          "sha": "d404825d43a5b4111b656ade5d8183cfa381b17e",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Galaxian_MiSTer/master/releases/King%20and%20Balloon%20(Japan).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "King and Balloon",
-            "rbf": "galaxian",
-            "zips": [
-              "kingball.zip|kingballj.zip"
-            ]
-          }
-        },
-        {
           "name": "King and Balloon (US).mra",
           "sha": "e831457ae1123ef84631679085bf60783f5ebfa8",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Galaxian_MiSTer/master/releases/King%20and%20Balloon%20(US).mra",
@@ -5876,7 +5577,7 @@
         },
         {
           "name": "Moon Quasar.mra",
-          "sha": "4acfc20f680525b81179804eb89431df0510d465",
+          "sha": "75c733a61051b12c3286fbd4d5b0e62f063a03c4",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Galaxian_MiSTer/master/releases/Moon%20Quasar.mra",
           "type": "MRA",
           "extra": {
@@ -5938,12 +5639,12 @@
           }
         },
         {
-          "name": "Portman (Galaxian Hardware).mra",
-          "sha": "ba0a3564f60444ec2ee321a2a27c9af9732bfb0b",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Galaxian_MiSTer/master/releases/Portman%20(Galaxian%20Hardware).mra",
+          "name": "Port Man (bootleg on Moon Cresta hardware).mra",
+          "sha": "a9f6afd2c9309770ceb9936756cc6e6c30c63e93",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Galaxian_MiSTer/master/releases/Port%20Man%20(bootleg%20on%20Moon%20Cresta%20hardware).mra",
           "type": "MRA",
           "extra": {
-            "name": "Portman",
+            "name": "Port Man (bootleg on Moon Cresta hardware)",
             "rbf": "galaxian",
             "zips": [
               "porter.zip|dockman.zip"
@@ -6108,22 +5809,9 @@
           "type": "RBF"
         },
         {
-          "name": "Galaga 3 (GP3 Rev D).mra",
-          "sha": "d1451748c3428df5b0b69ff3eb40cc01b02b9aaa",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Gaplus_MiSTer/master/releases/Galaga%203%20(GP3%20Rev%20D).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Galaga 3",
-            "rbf": "gaplus",
-            "zips": [
-              "gaplus.zip|galaga3.zip"
-            ]
-          }
-        },
-        {
-          "name": "Gaplus (GP2 Rev B).mra",
+          "name": "Galaga 3 - Gaplus (GP2 Rev B).mra",
           "sha": "d0e6e6ef863e0e4af4f7fc5808445fe175934db3",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Gaplus_MiSTer/master/releases/Gaplus%20(GP2%20Rev%20B).mra",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Gaplus_MiSTer/master/releases/Galaga%203%20-%20Gaplus%20(GP2%20Rev%20B).mra",
           "type": "MRA",
           "extra": {
             "name": "Gaplus",
@@ -7042,19 +6730,6 @@
       "url": "https://github.com/MiSTer-devel/Arcade-IremM72_MiSTer",
       "releases": [
         {
-          "name": "Air Duel (Japan, M72 hardware).mra",
-          "sha": "795d979715787c4e6a471dd384606fb21fd43836",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM72_MiSTer/main/releases/Air%20Duel%20(Japan%2C%20M72%20hardware).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Air Duel (Japan, M72 hardware)",
-            "rbf": "IremM72",
-            "zips": [
-              "airdueljm72.zip|airduel.zip"
-            ]
-          }
-        },
-        {
           "name": "Air Duel (World, M72 hardware).mra",
           "sha": "36b78f1dfd14d898e11efb8e173ac3943095a1bd",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM72_MiSTer/main/releases/Air%20Duel%20(World%2C%20M72%20hardware).mra",
@@ -7116,32 +6791,6 @@
           "type": "RBF"
         },
         {
-          "name": "Daiku no Gensan (Japan, M72 hardware).mra",
-          "sha": "bb812c11ca73fa39a58e5d9c8149bec330b2dab4",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM72_MiSTer/main/releases/Daiku%20no%20Gensan%20(Japan%2C%20M72%20hardware).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Daiku no Gensan (Japan, M72 hardware)",
-            "rbf": "IremM72",
-            "zips": [
-              "dkgensanm72.zip|hharry.zip"
-            ]
-          }
-        },
-        {
-          "name": "Daiku no Gensan (Japan, M84 hardware).mra",
-          "sha": "8b9debf1c1ea169f3f119ef9a5436827bcb2d1a5",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM72_MiSTer/main/releases/Daiku%20no%20Gensan%20(Japan%2C%20M84%20hardware).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Daiku no Gensan (Japan, M84 hardware)",
-            "rbf": "IremM72",
-            "zips": [
-              "dkgensan.zip|hharry.zip"
-            ]
-          }
-        },
-        {
           "name": "Dragon Breed (Japan, M72 hardware).mra",
           "sha": "15f9d452394b836cc369ab3d086e25be0e7a6d6e",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM72_MiSTer/main/releases/Dragon%20Breed%20(Japan%2C%20M72%20hardware).mra",
@@ -7177,19 +6826,6 @@
             "rbf": "IremM72",
             "zips": [
               "hharryu.zip|hharry.zip"
-            ]
-          }
-        },
-        {
-          "name": "Image Fight (Japan).mra",
-          "sha": "38fb1a690e34aba53480faa386f539daa76c1e36",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM72_MiSTer/main/releases/Image%20Fight%20(Japan).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Image Fight (Japan)",
-            "rbf": "IremM72",
-            "zips": [
-              "imgfightj.zip|imgfight.zip"
             ]
           }
         },
@@ -7246,19 +6882,6 @@
           }
         },
         {
-          "name": "R-Type (Japan).mra",
-          "sha": "5ffa03cc3b036053b0096506bfc2826e8f50dc25",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM72_MiSTer/main/releases/R-Type%20(Japan).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "R-Type (Japan)",
-            "rbf": "IremM72",
-            "zips": [
-              "rtype.zip|rtypej.zip"
-            ]
-          }
-        },
-        {
           "name": "R-Type (World).mra",
           "sha": "27f8799d71388fa7d6a0fa868f305ef05c236a51",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM72_MiSTer/main/releases/R-Type%20(World).mra",
@@ -7268,19 +6891,6 @@
             "rbf": "IremM72",
             "zips": [
               "rtype.zip"
-            ]
-          }
-        },
-        {
-          "name": "R-Type II (Japan).mra",
-          "sha": "a458503a2d02e15376f602e5960a990cf56867ef",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM72_MiSTer/main/releases/R-Type%20II%20(Japan).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "R-Type II (Japan)",
-            "rbf": "IremM72",
-            "zips": [
-              "rtype2.zip|rtype2j.zip"
             ]
           }
         },
@@ -7311,48 +6921,74 @@
           }
         },
         {
-          "name": "R-Type (Japan prototype).mra",
-          "sha": "1f74a1fa584dcc99092627c053c469f736ce2900",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM72_MiSTer/main/releases/_alternatives/R-Type%20(Japan%20prototype).mra",
+          "name": "Air Duel (Japan, M72 hardware).mra",
+          "sha": "795d979715787c4e6a471dd384606fb21fd43836",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM72_MiSTer/main/releases/_alternatives/_Air%20Duel/Air%20Duel%20(Japan%2C%20M72%20hardware).mra",
           "type": "MRA",
           "extra": {
-            "name": "R-Type (Japan prototype)",
+            "name": "Air Duel (Japan, M72 hardware)",
             "rbf": "IremM72",
             "zips": [
-              "rtype.zip|rtypejp.zip"
+              "airdueljm72.zip|airduel.zip"
             ]
           }
         },
         {
-          "name": "R-Type (US).mra",
-          "sha": "6fac61e14b212fdb3e5f8831b28a652935551c2b",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM72_MiSTer/main/releases/_alternatives/R-Type%20(US).mra",
+          "name": "Daiku no Gensan (Japan, M72 hardware).mra",
+          "sha": "bb812c11ca73fa39a58e5d9c8149bec330b2dab4",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM72_MiSTer/main/releases/_alternatives/_Hammerin'%20Harry/Daiku%20no%20Gensan%20(Japan%2C%20M72%20hardware).mra",
           "type": "MRA",
           "extra": {
-            "name": "R-Type (US)",
+            "name": "Daiku no Gensan (Japan, M72 hardware)",
             "rbf": "IremM72",
             "zips": [
-              "rtype.zip|rtypeu.zip"
+              "dkgensanm72.zip|hharry.zip"
             ]
           }
         },
         {
-          "name": "R-Type (World bootleg).mra",
-          "sha": "10a4aaa0946d279561a70827d8454ae3ef8e888d",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM72_MiSTer/main/releases/_alternatives/R-Type%20(World%20bootleg).mra",
+          "name": "Daiku no Gensan (Japan, M84 hardware).mra",
+          "sha": "8b9debf1c1ea169f3f119ef9a5436827bcb2d1a5",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM72_MiSTer/main/releases/_alternatives/_Hammerin'%20Harry/Daiku%20no%20Gensan%20(Japan%2C%20M84%20hardware).mra",
           "type": "MRA",
           "extra": {
-            "name": "R-Type (World bootleg)",
+            "name": "Daiku no Gensan (Japan, M84 hardware)",
             "rbf": "IremM72",
             "zips": [
-              "rtype.zip|rtypeb.zip"
+              "dkgensan.zip|hharry.zip"
+            ]
+          }
+        },
+        {
+          "name": "Image Fight (Japan).mra",
+          "sha": "38fb1a690e34aba53480faa386f539daa76c1e36",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM72_MiSTer/main/releases/_alternatives/_Image%20Fight/Image%20Fight%20(Japan).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Image Fight (Japan)",
+            "rbf": "IremM72",
+            "zips": [
+              "imgfightj.zip|imgfight.zip"
+            ]
+          }
+        },
+        {
+          "name": "R-Type II (Japan).mra",
+          "sha": "a458503a2d02e15376f602e5960a990cf56867ef",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM72_MiSTer/main/releases/_alternatives/_R-Type%20II/R-Type%20II%20(Japan).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "R-Type II (Japan)",
+            "rbf": "IremM72",
+            "zips": [
+              "rtype2.zip|rtype2j.zip"
             ]
           }
         },
         {
           "name": "R-Type II (Japan, revision C).mra",
           "sha": "d29a4609fd6325c89db01262a50ea8b1e125e7b9",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM72_MiSTer/main/releases/_alternatives/R-Type%20II%20(Japan%2C%20revision%20C).mra",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM72_MiSTer/main/releases/_alternatives/_R-Type%20II/R-Type%20II%20(Japan%2C%20revision%20C).mra",
           "type": "MRA",
           "extra": {
             "name": "R-Type II (Japan, revision C)",
@@ -7365,7 +7001,7 @@
         {
           "name": "R-Type II (inv) (World).mra",
           "sha": "595fa82089cfdf42e829d47df32836af678824a6",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM72_MiSTer/main/releases/_alternatives/R-Type%20II%20(inv)%20(World).mra",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM72_MiSTer/main/releases/_alternatives/_R-Type%20II/R-Type%20II%20(inv)%20(World).mra",
           "type": "MRA",
           "extra": {
             "name": "R-Type II (Inv) (World)",
@@ -7376,9 +7012,61 @@
           }
         },
         {
+          "name": "R-Type (Japan prototype).mra",
+          "sha": "1f74a1fa584dcc99092627c053c469f736ce2900",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM72_MiSTer/main/releases/_alternatives/_R-Type/R-Type%20(Japan%20prototype).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "R-Type (Japan prototype)",
+            "rbf": "IremM72",
+            "zips": [
+              "rtype.zip|rtypejp.zip"
+            ]
+          }
+        },
+        {
+          "name": "R-Type (Japan).mra",
+          "sha": "5ffa03cc3b036053b0096506bfc2826e8f50dc25",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM72_MiSTer/main/releases/_alternatives/_R-Type/R-Type%20(Japan).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "R-Type (Japan)",
+            "rbf": "IremM72",
+            "zips": [
+              "rtype.zip|rtypej.zip"
+            ]
+          }
+        },
+        {
+          "name": "R-Type (US).mra",
+          "sha": "6fac61e14b212fdb3e5f8831b28a652935551c2b",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM72_MiSTer/main/releases/_alternatives/_R-Type/R-Type%20(US).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "R-Type (US)",
+            "rbf": "IremM72",
+            "zips": [
+              "rtype.zip|rtypeu.zip"
+            ]
+          }
+        },
+        {
+          "name": "R-Type (World bootleg).mra",
+          "sha": "10a4aaa0946d279561a70827d8454ae3ef8e888d",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM72_MiSTer/main/releases/_alternatives/_R-Type/R-Type%20(World%20bootleg).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "R-Type (World bootleg)",
+            "rbf": "IremM72",
+            "zips": [
+              "rtype.zip|rtypeb.zip"
+            ]
+          }
+        },
+        {
           "name": "X Multiply (Inv) (Japan, M72 hardware).mra",
           "sha": "bd87d59496274054733353597244827b0b3a2389",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM72_MiSTer/main/releases/_alternatives/X%20Multiply%20(Inv)%20(Japan%2C%20M72%20hardware).mra",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM72_MiSTer/main/releases/_alternatives/_X%20Multiply/X%20Multiply%20(Inv)%20(Japan%2C%20M72%20hardware).mra",
           "type": "MRA",
           "extra": {
             "name": "X Multiply (Inv) (Japan, M72 hardware)",
@@ -7593,19 +7281,6 @@
           }
         },
         {
-          "name": "Dream Soccer '94 (Japan, M92 hardware).mra",
-          "sha": "891cb433fa658e47f73a9e4de679212538ae7a42",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM92_MiSTer/main/releases/Dream%20Soccer%20'94%20(Japan%2C%20M92%20hardware).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Dream Soccer '94 (Japan, M92 hardware)",
-            "rbf": "IremM92",
-            "zips": [
-              "dsoccr94.zip|dsoccr94j.zip"
-            ]
-          }
-        },
-        {
           "name": "Gun Force II (US).mra",
           "sha": "f53f2a3de277c25c3ed525720fcecaa3939fcf62",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM92_MiSTer/main/releases/Gun%20Force%20II%20(US).mra",
@@ -7759,6 +7434,19 @@
             "rbf": "IremM92",
             "zips": [
               "crossbld.zip|bmaster.zip"
+            ]
+          }
+        },
+        {
+          "name": "Dream Soccer '94 (Japan, M92 hardware).mra",
+          "sha": "891cb433fa658e47f73a9e4de679212538ae7a42",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IremM92_MiSTer/main/releases/_alternatives/_Dream%20Soccer%20'94/Dream%20Soccer%20'94%20(Japan%2C%20M92%20hardware).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Dream Soccer '94 (Japan, M92 hardware)",
+            "rbf": "IremM92",
+            "zips": [
+              "dsoccr94.zip|dsoccr94j.zip"
             ]
           }
         },
@@ -8199,7 +7887,7 @@
     {
       "name": "Arcade-Joust2_MiSTer",
       "description": "Joust2 by darfpga ported to MiSTer",
-      "readme": "# [Arcade: Joust 2](https://en.wikipedia.org/wiki/Joust_2:_Survival_of_the_Fittest) for [MiSTer](https://mister-devel.github.io/MkDocs_MiSTer/)\r\n\r\n![Joust 2 Logo](doc/Joust2Logo.png)\r\n\r\nOriginal core developed by [darfpga](https://github.com/darfpga)\r\n\r\nPorted to MiSTer by [birdybro](https://github.com/birdybro)\r\n\r\n## Description\r\n\r\nThis is a simulation model of the **Joust 2: Survival of the Fittest** hardware.\r\n\r\nOriginal source is located in `doc/`\r\n\r\n## Controls\r\n\r\n![Joust 2 Controls](doc/controls.jpg)\r\n\r\n| Name  | Description         |\r\n| ----- | ------------------- |\r\n| Flap  | You flap your wings |\r\n| Left  | You go left         |\r\n| Right | You go right        |\r\n| Coin  | Put in a coin       |\r\n\r\nThere is a 1P Start and a 2P Start. These are also called \"Transform\" in-game.\r\n\r\n## Service Menu\r\n\r\nJoust 2 had a peculiar system of DIPs. See the manual in `doc/` for the original source of the information.\r\n\r\nWhen you press the \"Advance\" button in the OSD, this enables you to access the bookkeeping totals by then pressing \"Auto Up\" in the OSD. Currently the data in here is not saved to the MiSTer but that may come at a later time. \r\n\r\nIf you want to change any options, then press \"Auto Up\" again to see the Game Adjustments menu. Here you use Player 1 right and left to move to whatever option you want to change and then use the Player 2 right and left inputs to modify the desired setting.\r\n\r\nIf you press \"Advance\" again, it will return to it's original state, but \"Auto Up\" now will cycle through various test programs that the arcade board used to have.\r\n\r\nHigh Score reset is another internal button, and it makes the game pause for a second until the high score resets.\r\n\r\n## Status\r\n\r\n* Both revisions of Joust 2: Survival of the Fittest load and play fine.\r\n* Regular sound effects play fine.\r\n* 2 Player controls work.\r\n\r\n## To-Do\r\n\r\n* No Speech synthesis or Music yet.\r\n* Pause not implemented.\r\n* HiScore saving not implemented yet.\r\n* MiSTer DIP system not implemented yet (DIPS are defined away as CPU behavior currently in the PIA due to them not being a standard DIP system)\r\n* Adjust video output for HDMI, it is up and to the right a line or two.\r\n\r\n## ROM Files Instructions\r\n\r\nROMs are not included! In order to use this arcade core, you will need to provide the correct ROM file yourself.\r\n\r\nTo simplify the process .mra files are provided in the releases folder, that specify the required ROMs with their checksums. The ROMs .zip filename refers to the corresponding file from the MAME project.\r\n\r\nPlease refer to [https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms-and-MRA-files](https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms-and-MRA-files) for information on how to setup and use the environment.\r\n\r\nQuick reference for folders and file placement:\r\n\r\n```\r\n/_Arcade/<game name>.mra  \r\n/_Arcade/cores/<game rbf>.rbf  \r\n/_Arcade/mame/<mame rom>.zip  \r\n/_Arcade/hbmame/<hbmame rom>.zip  \r\n```\r\n",
+      "readme": "# [Arcade: Joust 2](https://en.wikipedia.org/wiki/Joust_2:_Survival_of_the_Fittest) for [MiSTer](https://mister-devel.github.io/MkDocs_MiSTer/)\r\n\r\n![Joust 2 Logo](doc/Joust2Logo.png)\r\n\r\nOriginal core developed by [darfpga](https://github.com/darfpga)\r\n\r\nPorted to MiSTer by [birdybro](https://github.com/birdybro)\r\n\r\n## Description\r\n\r\nThis is a simulation model of the **Joust 2: Survival of the Fittest** hardware.\r\n\r\nOriginal source is located in `doc/`\r\n\r\n## Controls\r\n\r\n![Joust 2 Controls](doc/controls.jpg)\r\n\r\n| Name  | Description         |\r\n| ----- | ------------------- |\r\n| Flap  | You flap your wings |\r\n| Left  | You go left         |\r\n| Right | You go right        |\r\n| Coin  | Put in a coin       |\r\n\r\nThere is a 1P Start and a 2P Start. These are also called \"Transform\" in-game.\r\n\r\nThe OSD menu includes a \"Swap Joysticks\" option to reverse Player 1 and Player 2 controls.\r\n\r\n## Service Menu\r\n\r\nJoust 2 had a peculiar system of DIPs. See the manual in `doc/` for the original source of the information.\r\n\r\nWhen you press the \"Advance\" button in the OSD, this enables you to access the bookkeeping totals by then pressing \"Auto Up\" in the OSD. Currently the data in here is not saved to the MiSTer but that may come at a later time. \r\n\r\nIf you want to change any options, then press \"Auto Up\" again to see the Game Adjustments menu. Here you use Player 1 right and left to move to whatever option you want to change and then use the Player 2 right and left inputs to modify the desired setting.\r\n\r\nIf you press \"Advance\" again, it will return to it's original state, but \"Auto Up\" now will cycle through various test programs that the arcade board used to have.\r\n\r\nHigh Score reset is another internal button, and it makes the game pause for a second until the high score resets.\r\n\r\n## Status\r\n\r\n* Both revisions of Joust 2: Survival of the Fittest load and play fine.\r\n* Regular sound effects play fine.\r\n* 2 Player controls work.\r\n* Pause functionality implemented with video dimming support.\r\n* NVRAM autosave support for high scores and game settings.\r\n\r\n## To-Do\r\n\r\n* Savestates not implemented yet.\r\n* Arcade cheats not implemented yet.\r\n\r\n## ROM Files Instructions\r\n\r\nROMs are not included! In order to use this arcade core, you will need to provide the correct ROM file yourself.\r\n\r\nTo simplify the process .mra files are provided in the releases folder, that specify the required ROMs with their checksums. The ROMs .zip filename refers to the corresponding file from the MAME project.\r\n\r\nPlease refer to [https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms-and-MRA-files](https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms-and-MRA-files) for information on how to setup and use the environment.\r\n\r\nQuick reference for folders and file placement:\r\n\r\n```\r\n/_Arcade/<game name>.mra  \r\n/_Arcade/cores/<game rbf>.rbf  \r\n/_Arcade/mame/<mame rom>.zip  \r\n/_Arcade/hbmame/<hbmame rom>.zip  \r\n```\r\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/Arcade-Joust2_MiSTer",
@@ -8283,8 +7971,20 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Joust2_20250724.rbf",
+          "sha": "9849b8d13b4bf3c032cb57900e7797fa9cf2f2b5",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Joust2_MiSTer/master/releases/Arcade-Joust2_20250724.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Joust2_20250726.rbf",
+          "sha": "6972a2931a507b31ddb22204da9625844c36df28",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Joust2_MiSTer/master/releases/Arcade-Joust2_20250726.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Joust 2 - Survival of the Fittest (revision 2).mra",
-          "sha": "d3e627d29c79e3d7ea7d08cf6c234ccd1b185151",
+          "sha": "ea4e8d28100dbc9b6e9abb9538b6572b989c676e",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Joust2_MiSTer/master/releases/Joust%202%20-%20Survival%20of%20the%20Fittest%20(revision%202).mra",
           "type": "MRA",
           "extra": {
@@ -8297,7 +7997,7 @@
         },
         {
           "name": "Joust 2 - Survival of the Fittest (revision 1).mra",
-          "sha": "2c4174d9ae2de99ae5a350763281cb5f148f64ae",
+          "sha": "e626873735d418df279b3671cbb03aad5271adfb",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Joust2_MiSTer/master/releases/_alternatives/_Joust%202/Joust%202%20-%20Survival%20of%20the%20Fittest%20(revision%201).mra",
           "type": "MRA",
           "extra": {
@@ -8680,19 +8380,6 @@
           "sha": "ec6f3fe095d4bc667ffe5520a534133b4c6fd01c",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MCR1_MiSTer/master/releases/Arcade-MCR1_20240525.rbf",
           "type": "RBF"
-        },
-        {
-          "name": "Kick-Man.mra",
-          "sha": "ad2f879821e68606ae23a5c1c0622d636f99614b",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MCR1_MiSTer/master/releases/Kick-Man.mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Kick-Man",
-            "rbf": "mcr1",
-            "zips": [
-              "kick.zip|kickman.zip"
-            ]
-          }
         },
         {
           "name": "Kick.mra",
@@ -9380,32 +9067,6 @@
           "type": "RBF"
         },
         {
-          "name": "Missile Command (rev 1).mra",
-          "sha": "c27b7512a8e6ecef3d824e216118c0d2aee7a0d6",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MissileCommand_MiSTer/main/releases/Missile%20Command%20(rev%201).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Missile Command (rev 1)",
-            "rbf": "MissileCommand",
-            "zips": [
-              "missile.zip|missile1.zip"
-            ]
-          }
-        },
-        {
-          "name": "Missile Command (rev 2).mra",
-          "sha": "c1b0a112ab3d20db4b7e49e14ac5d0e76f462a06",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MissileCommand_MiSTer/main/releases/Missile%20Command%20(rev%202).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Missile Command (rev 2)",
-            "rbf": "MissileCommand",
-            "zips": [
-              "missile.zip|missile2.zip"
-            ]
-          }
-        },
-        {
           "name": "Missile Command (rev 3).mra",
           "sha": "5880a29dae3edf0913b98d592e445afb633fed73",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MissileCommand_MiSTer/main/releases/Missile%20Command%20(rev%203).mra",
@@ -9600,19 +9261,6 @@
           "sha": "c5fbeebdf5a6c080dd5f8bb2db8bf9154c10ddde",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MrDo_MiSTer/main/releases/Arcade-MrDo_20240530.rbf",
           "type": "RBF"
-        },
-        {
-          "name": "Mr. Do! Fixed.mra",
-          "sha": "b1da3717e827099b55f345921ac05364d7f33b19",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MrDo_MiSTer/main/releases/Mr.%20Do!%20Fixed.mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Mr. Do! Fixed",
-            "rbf": "mrdo",
-            "zips": [
-              "mrdofix.zip|mrdo.zip"
-            ]
-          }
         },
         {
           "name": "Mr. Do!.mra",
@@ -9934,19 +9582,6 @@
           }
         },
         {
-          "name": "Nova 2001 (Hack).mra",
-          "sha": "71bec453c6f2cf09642899e721837fc3c83cf765",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-NinjaKun_MiSTer/master/releases/Nova%202001%20(Hack).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Nova 2001",
-            "rbf": "ninjakun",
-            "zips": [
-              "nova2001h.zip|nova2001u.zip|nova2001.zip"
-            ]
-          }
-        },
-        {
           "name": "Nova 2001.mra",
           "sha": "c4489f9c27f8423c9c6802f842f7f8ba1c1887d8",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-NinjaKun_MiSTer/master/releases/Nova%202001.mra",
@@ -10134,19 +9769,6 @@
           "type": "RBF"
         },
         {
-          "name": "Beastie Feastie (Pac-Man Conversion).mra",
-          "sha": "5d527e8bac5d5957d99da490460dfb5ce4171ce3",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pacman_MiSTer/master/releases/Beastie%20Feastie%20(Pac-Man%20Conversion).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Beastie Feastie",
-            "rbf": "pacman",
-            "zips": [
-              "suprglob.zip|beastfp.zip"
-            ]
-          }
-        },
-        {
           "name": "Birdiy.mra",
           "sha": "bd6c219395309796a18efc29fb851a30b0c1c6c2",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pacman_MiSTer/master/releases/Birdiy.mra",
@@ -10225,19 +9847,6 @@
           }
         },
         {
-          "name": "Gorkans.mra",
-          "sha": "55c0cb85edce714009989e31110af2653d8c1bfd",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pacman_MiSTer/master/releases/Gorkans.mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Gorkans",
-            "rbf": "pacman",
-            "zips": [
-              "mrtnt.zip|gorkans.zip"
-            ]
-          }
-        },
-        {
           "name": "Jump Shot.mra",
           "sha": "98aa8b86edea67a4175b6ac8d12740c822190aea",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pacman_MiSTer/master/releases/Jump%20Shot.mra",
@@ -10303,15 +9912,15 @@
           }
         },
         {
-          "name": "Pac-Man (Midway).mra",
-          "sha": "647fb00e12997cca59da032f15fc1af5663e31a3",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pacman_MiSTer/master/releases/Pac-Man%20(Midway).mra",
+          "name": "Pac-Man - Puck Man (JP, Set 1).mra",
+          "sha": "e05d13561ae0f6fc1407d75adf77524984096483",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pacman_MiSTer/master/releases/Pac-Man%20-%20Puck%20Man%20(JP%2C%20Set%201).mra",
           "type": "MRA",
           "extra": {
-            "name": "Pac-Man",
+            "name": "Puck Man",
             "rbf": "pacman",
             "zips": [
-              "puckman.zip|pacman.zip"
+              "puckman.zip"
             ]
           }
         },
@@ -10366,19 +9975,6 @@
           }
         },
         {
-          "name": "Puck Man (JP, Set 1).mra",
-          "sha": "e05d13561ae0f6fc1407d75adf77524984096483",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pacman_MiSTer/master/releases/Puck%20Man%20(JP%2C%20Set%201).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Puck Man",
-            "rbf": "pacman",
-            "zips": [
-              "puckman.zip"
-            ]
-          }
-        },
-        {
           "name": "Super Glob (Pac-Man, German) [bl].mra",
           "sha": "58582e7794168df2fde51b3ddb78432e058665bc",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pacman_MiSTer/master/releases/Super%20Glob%20(Pac-Man%2C%20German)%20%5Bbl%5D.mra",
@@ -10388,19 +9984,6 @@
             "rbf": "pacman",
             "zips": [
               "suprglob.zip|sprglbpg.zip"
-            ]
-          }
-        },
-        {
-          "name": "The Glob (Pac-Man Hardware).mra",
-          "sha": "0d38b3f32d16503cf082d53906a81d1781b6f91a",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pacman_MiSTer/master/releases/The%20Glob%20(Pac-Man%20Hardware).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "The Glob",
-            "rbf": "pacman",
-            "zips": [
-              "suprglob.zip|theglobp.zip"
             ]
           }
         },
@@ -10542,28 +10125,15 @@
           "type": "RBF"
         },
         {
-          "name": "Penguin-Kun_Wars.mra",
+          "name": "Penguin-Kun Wars.mra",
           "sha": "7747e7330c1e1c5464e4be2a8341e7f77b69c37c",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-PenguinKunWars_MiSTer/main/releases/Penguin-Kun_Wars.mra",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-PenguinKunWars_MiSTer/main/releases/Penguin-Kun%20Wars.mra",
           "type": "MRA",
           "extra": {
             "name": "Penguin-Kun Wars (US)",
             "rbf": "PenguinKunWars",
             "zips": [
               "pkunwar.zip"
-            ]
-          }
-        },
-        {
-          "name": "Penguin-Kun_Wars_Japan.mra",
-          "sha": "8fecc6bbe6129628257c31246830881a73a80628",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-PenguinKunWars_MiSTer/main/releases/Penguin-Kun_Wars_Japan.mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Penguin-Kun Wars (Japan)",
-            "rbf": "PenguinKunWars",
-            "zips": [
-              "pkunwar.zip|pkunwarj.zip"
             ]
           }
         }
@@ -10872,19 +10442,6 @@
           "type": "MRA",
           "extra": {
             "name": "Poly Play 2",
-            "rbf": "polyplay",
-            "zips": [
-              "polyplay2.zip"
-            ]
-          }
-        },
-        {
-          "name": "Poly Play 2c.mra",
-          "sha": "f4650f37516a7122ec5e4f4ed495ca1df7213ce7",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-PolyPlay_MiSTer/main/releases/Poly%20Play%202c.mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Poly Play 2c",
             "rbf": "polyplay",
             "zips": [
               "polyplay2.zip"
@@ -11704,19 +11261,6 @@
           "type": "RBF"
         },
         {
-          "name": "Green Beret.mra",
-          "sha": "1e1cbbd528a447286ab8296953f0c93830ea3f97",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-RushnAttack_MiSTer/master/releases/Green%20Beret.mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Green Beret",
-            "rbf": "rshnatk",
-            "zips": [
-              "gberet.zip"
-            ]
-          }
-        },
-        {
           "name": "Mr. Goemon.mra",
           "sha": "0b066072a54567ee1db1233a7a706de98bf584f5",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-RushnAttack_MiSTer/master/releases/Mr.%20Goemon.mra",
@@ -11730,15 +11274,15 @@
           }
         },
         {
-          "name": "Rush'n Attack (US).mra",
-          "sha": "fb96f8054f0566b8f8e0e87abe266c67349deabf",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-RushnAttack_MiSTer/master/releases/Rush'n%20Attack%20(US).mra",
+          "name": "Rush'n Attack - Green Beret.mra",
+          "sha": "1e1cbbd528a447286ab8296953f0c93830ea3f97",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-RushnAttack_MiSTer/master/releases/Rush'n%20Attack%20-%20Green%20Beret.mra",
           "type": "MRA",
           "extra": {
-            "name": "Rush'n Attack",
+            "name": "Green Beret",
             "rbf": "rshnatk",
             "zips": [
-              "gberet.zip|rushatck.zip"
+              "gberet.zip"
             ]
           }
         },
@@ -12094,21 +11638,8 @@
           }
         },
         {
-          "name": "Dark Planet (no bkg).mra",
-          "sha": "68305bcc2c24364d2fa3f27cfba692cad212de2c",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Scramble_MiSTer/master/releases/Dark%20Planet%20(no%20bkg).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Dark Planet",
-            "rbf": "scramble",
-            "zips": [
-              "darkplnt.zip"
-            ]
-          }
-        },
-        {
           "name": "Dark Planet.mra",
-          "sha": "33f12b60ee73a742aa335a24ba37950f261271d2",
+          "sha": "68305bcc2c24364d2fa3f27cfba692cad212de2c",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Scramble_MiSTer/master/releases/Dark%20Planet.mra",
           "type": "MRA",
           "extra": {
@@ -12123,19 +11654,6 @@
           "name": "Frogger (Konami Bugfixed).mra",
           "sha": "de2574a5d47a9f3e1b7623bd0c6eb95137838203",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Scramble_MiSTer/master/releases/Frogger%20(Konami%20Bugfixed).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Frogger",
-            "rbf": "scramble",
-            "zips": [
-              "frogger.zip|froggers2.zip"
-            ]
-          }
-        },
-        {
-          "name": "Frogger (Sega, Set 2).mra",
-          "sha": "7b5e2abedb0d67f8188ff45fe6cee17e1eb8268d",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Scramble_MiSTer/master/releases/Frogger%20(Sega%2C%20Set%202).mra",
           "type": "MRA",
           "extra": {
             "name": "Frogger",
@@ -12285,19 +11803,6 @@
             "rbf": "scramble",
             "zips": [
               "tazmania.zip"
-            ]
-          }
-        },
-        {
-          "name": "The End (bkg).mra",
-          "sha": "bb7fad13983163d04b4e9064d5c47279899345f3",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Scramble_MiSTer/master/releases/The%20End%20(bkg).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "The End",
-            "rbf": "scramble",
-            "zips": [
-              "theend.zip"
             ]
           }
         },
@@ -12550,19 +12055,6 @@
             "rbf": "segasys1",
             "zips": [
               "spatter.zip"
-            ]
-          }
-        },
-        {
-          "name": "Star Jacker (alt).mra",
-          "sha": "95888fcdc5590097e9690afd7acfe693913d7f33",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SEGASYS1_MiSTer/main/releases/Star%20Jacker%20(alt).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Star Jacker",
-            "rbf": "segasys1",
-            "zips": [
-              "starjack.zip"
             ]
           }
         },
@@ -12955,19 +12447,6 @@
           "type": "RBF"
         },
         {
-          "name": "Solomon no Kagi (JP).mra",
-          "sha": "fb5257238dd3b023ca029bb037ae3f6c867fc872",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SolomonsKey_MiSTer/master/releases/Solomon%20no%20Kagi%20(JP).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Solomon no Kagi",
-            "rbf": "solomonskey",
-            "zips": [
-              "solomon.zip|solomonj.zip"
-            ]
-          }
-        },
-        {
           "name": "Solomon's Key.mra",
           "sha": "90cd600dbe5d8aed37ed131882587abd488acae8",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SolomonsKey_MiSTer/master/releases/Solomon's%20Key.mra",
@@ -13340,19 +12819,6 @@
             "rbf": "spaceinvaders",
             "zips": [
               "spcenctr.zip"
-            ]
-          }
-        },
-        {
-          "name": "Space Invaders (Samples).mra",
-          "sha": "b413b6cc00f193a3e55f1521d615a3e257a1368f",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SpaceInvaders_MiSTer/master/releases/Space%20Invaders%20(Samples).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Space Invaders",
-            "rbf": "spaceinvaders",
-            "zips": [
-              "invaders.zip"
             ]
           }
         },
@@ -14657,19 +14123,6 @@
           "type": "RBF"
         },
         {
-          "name": "Argus no senshi (Japan).mra",
-          "sha": "30396182c7c48d59d2098d9c1eeeb7f7fffe040a",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Tecmo_MiSTer/master/releases/Argus%20no%20senshi%20(Japan).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Argus no senshi (Japan)",
-            "rbf": "tecmo",
-            "zips": [
-              "rygar.zip"
-            ]
-          }
-        },
-        {
           "name": "Gemini Wing.mra",
           "sha": "c47c9fcccefa3aab45353a136e8cb13d0d34fa0f",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Tecmo_MiSTer/master/releases/Gemini%20Wing.mra",
@@ -15332,20 +14785,6 @@
           "type": "RBF"
         },
         {
-          "name": "V'Ball (US) [bl].mra",
-          "sha": "702b8456b61c4df357314b55479708d3d1a98242",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-VBall_MiSTer/master/releases/V'Ball%20(US)%20%5Bbl%5D.mra",
-          "type": "MRA",
-          "extra": {
-            "name": "U.S. Championship V'ball",
-            "rbf": "vball",
-            "zips": [
-              "vball.zip|vballb.zip",
-              "vballb.zip"
-            ]
-          }
-        },
-        {
           "name": "V'Ball (US).mra",
           "sha": "c3b363707a03ec851e979d30772ea6601a02b773",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-VBall_MiSTer/master/releases/V'Ball%20(US).mra",
@@ -15499,19 +14938,6 @@
             "rbf": "XSleena",
             "zips": [
               "xsleena.zip|xsleenaba.zip"
-            ]
-          }
-        },
-        {
-          "name": "Xain'd Sleena (bootleg, set 1).mra",
-          "sha": "fd4a3d5dbec224628cbd1bb2adfe5cfac9ba29b5",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-XSleena_MiSTer/main/releases/Xain'd%20Sleena%20(bootleg%2C%20set%201).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Xaind Sleena (Bootleg B)",
-            "rbf": "XSleena",
-            "zips": [
-              "xsleena.zip|xsleenab.zip"
             ]
           }
         }
@@ -25319,19 +24745,6 @@
             "rbf": "SMS",
             "zips": [
               "megrescu.zip"
-            ]
-          }
-        },
-        {
-          "name": "Opa Opa (Rev A, unprotected).mra",
-          "sha": "a313e9fa63df3b92f1ab16e622fd95bf477428f6",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/SMS_MiSTer/master/releases/Opa%20Opa%20(Rev%20A%2C%20unprotected).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Opa Opa (Rev A, unprotected)",
-            "rbf": "SMS",
-            "zips": [
-              "opaopa.zip"
             ]
           }
         },
