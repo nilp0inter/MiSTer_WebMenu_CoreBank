@@ -15999,6 +15999,12 @@
           "sha": "23ca008991ac4b3e9b7e807b21fa25d09ba4dc1d",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/AY-3-8500-MiSTer/master/releases/AY-3-8500_20220301.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "AY-3-8500_20250903.rbf",
+          "sha": "4e5190e544d0df55a4a285245bfb84a05988c41d",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/AY-3-8500-MiSTer/master/releases/AY-3-8500_20250903.rbf",
+          "type": "RBF"
         }
       ]
     },
@@ -17244,6 +17250,12 @@
           "sha": "23a210ceaf67f345aa2cef16a494f5a37f4a0989",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Chip8_MiSTer/master/releases/Chip8_20221106.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "Chip8_20250905.rbf",
+          "sha": "eaee3b43faa47660e95c615437ada78a3a136b68",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Chip8_MiSTer/master/releases/Chip8_20250905.rbf",
+          "type": "RBF"
         }
       ]
     },
@@ -17715,6 +17727,12 @@
           "name": "EDSAC_20200513.rbf",
           "sha": "9c9f0f43eff3a8aaebc353cbef9edbf62dc8830e",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/EDSAC_MiSTer/master/releases/EDSAC_20200513.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "EDSAC_20250904.rbf",
+          "sha": "50f5efe990aeecc996647e9d87d6f5b90240e2fc",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/EDSAC_MiSTer/master/releases/EDSAC_20250904.rbf",
           "type": "RBF"
         }
       ]
@@ -19475,6 +19493,12 @@
           "name": "Intellivision_20250325.rbf",
           "sha": "8c4e1efb9f6ebfda9e48a4fda017bf6079d983db",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Intv_MiSTer/master/releases/Intellivision_20250325.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Intellivision_20250903.rbf",
+          "sha": "43ccae318391c42063531bcaa6c8317ba4fdcd89",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Intv_MiSTer/master/releases/Intellivision_20250903.rbf",
           "type": "RBF"
         }
       ]
@@ -23166,6 +23190,12 @@
           "sha": "af218936b2268c6902ee40f6cabfcf93e85e9038",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/PokemonMini_MiSTer/main/releases/PokemonMini_20231006.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "PokemonMini_20250903.rbf",
+          "sha": "9d6125fbd074f898fb08c6251cf4199f58f81f79",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/PokemonMini_MiSTer/main/releases/PokemonMini_20250903.rbf",
+          "type": "RBF"
         }
       ]
     },
@@ -25411,6 +25441,12 @@
           "sha": "f27a09ceaeeef7094d81cc4cb34ec0b537dbf241",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/SordM5_MiSTer/main/releases/SordM5_20230622.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "SordM5_20250903.rbf",
+          "sha": "ab1c2e1b13ab30cf6ca845fcee15f80790c118a8",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/SordM5_MiSTer/main/releases/SordM5_20250903.rbf",
+          "type": "RBF"
         }
       ]
     },
@@ -25505,17 +25541,11 @@
     {
       "name": "SuperCassetteVision_MiSTer",
       "description": null,
-      "readme": "# [Epoch Super Cassette Vision](https://en.wikipedia.org/wiki/Super_Cassette_Vision) core for [MISTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\r\n\r\nThis is an emulator of the Epoch Super Cassette Vision.\r\n\r\n## Development status\r\n\r\n### Phase 1\r\n\r\nThe best documentation I could find is embodied in the [MAME](https://www.mamedev.org) SCV emulator. Takeda-san's [eSCV](http://takeda-toshiya.my.coocan.jp/scv/index.html) and related documents were also very helpful. NEC data sheets of the uCOM-87 microcontroller series were found around the 'net and provided instruction opcodes, cycle timings and other details. The gaps (and there are many) were filled with educated guesses and prior art from building emulators for MOS6502-based machines and the SNES.\r\n\r\nThe audio processor (NEC uPD1771C-017) was reverse-engineered from a die shot, a transistor-level [JavaScript simulator](http://reverendgumby.gitlab.io/visuald1771c) of the same, and the [original LSI design docs](https://oura.oguchi-rd.com). The processor is actually a specialized 8-bit CPU with internal RAM and ROM. The -017 mask ROM is required.\r\n\r\n### Phase 2 (current)\r\n\r\nA Japanese console has been acquired. It is currently being examined (nicely) and its detailed behavior documented. The goal is to learn how the video chip (Epoch TV-1) performs rendering.\r\n\r\n\r\n## Features\r\n- Cycle-accurate CPU (NEC uPD7801G)\r\n- Logic-accurate audio processor (NEC uPD1771C)\r\n- Video processor (Epoch TV-1 (NTSC))\r\n- Cartridge mapper support for all known released cartridges\r\n\r\n## Installation\r\n- Copy the latest *.rbf from releases/ to the root of the SD card\r\n- Build boot.rom (see below)\r\n- Create a folder on the SD card named \"SCV\" and copy boot.rom to it\r\n\r\n### How to build boot.rom\r\nAcquire these three files:\r\n- upd7801g.s01 (MD5 sum 635a978fd40db9a18ee44eff449fc126)\r\n- epochtv.chr (MD5 sum 929617bc739e58e550fe9025cae4158b)\r\n- upd1771c-017.s03 (MD5 sum 9b03b66c6dc89de9a11d5cd908538ac3)\r\n\r\nConcatenate the files to create boot.rom. Windows example:\r\n\r\n`COPY /B upd7801g.s01 +epochtv.chr upd1771c-017.s03 boot.rom`\r\n\r\nNote: upd1771c-017.s03 is in little-endian order (ROM low byte first).\r\n\r\n\r\n## Usage\r\n\r\n### Keyboard\r\nThe console has a numeric keypad called **SELECT**, and a hard **PAUSE** button.\r\n\r\n* 0-9 - SELECT numbered keys\r\n* Backspace, numpad ./Del - SELECT **CL** key\r\n* Enter - SELECT **EN** key\r\n* F1 - PAUSE button\r\n\r\n### Joysticks\r\nUp to two digital joysticks are mapped to the two controllers. Each controller has two **Trig** buttons.\r\n\r\nThe most common **SELECT** buttons -- 1 to 4 and **EN** -- can also be configured as joystick buttons.\r\n\r\nMost games refer to a **START** button. This means to press both **Trig** buttons.\r\n\r\n### Cartridge ROMs\r\n\r\nROM images must:\r\n- Have a file extension .ROM or .BIN\r\n- Be strictly the ROM contents (no headers)\r\n\r\nCartridges had 8K - 128K of ROM, and some had RAM. Two heuristics are used to identify the cartridge -- ROM size and checksum -- and map the memories appropriately. The OSD has an option to manually select a mapper.\r\n\r\n#### Special cases\r\nTwo cartridges had a mix of ROM sizes. No special mappers exist for them (yet). Create a 64K .BIN file for them as follows:\r\n\r\n##### Kung Fu Road\r\n32K ROM + (first 24K [24,576 bytes] of 32K ROM) + 8K ROM --> 64K .BIN\r\n\r\n##### Star Speeder\r\n32K ROM + (first 24K [24,576 bytes] of 32K ROM) + 8K ROM --> 64K .BIN\r\n\r\n\r\n## Known issues\r\n- Boulder Dash: some playfield objects flicker. Does not happen on actual hardware.\r\n\r\n## TODOs\r\n- Cartridges\r\n  - Save and restore battery-backed RAM\r\n  - Make mappers for special cases\r\n",
+      "readme": "# [Epoch Super Cassette Vision](https://en.wikipedia.org/wiki/Super_Cassette_Vision) core for [MISTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\r\n\r\nThis is an emulator of the Epoch Super Cassette Vision.\r\n\r\n## Development status\r\n\r\n### Phase 1 (done)\r\n\r\nThe best documentation I could find is embodied in the [MAME](https://www.mamedev.org) SCV emulator. Takeda-san's [eSCV](http://takeda-toshiya.my.coocan.jp/scv/index.html) and related documents were also very helpful. NEC data sheets of the uCOM-87 microcontroller series were found around the 'net and provided instruction opcodes, cycle timings and other details. The gaps (and there are many) were filled with educated guesses and prior art from building emulators for MOS6502-based machines and the SNES.\r\n\r\nThe audio processor (NEC uPD1771C-017) was reverse-engineered from a die shot, a transistor-level [JavaScript simulator](http://reverendgumby.gitlab.io/visuald1771c) of the same, and the [original LSI design docs](https://oura.oguchi-rd.com). The processor is actually a specialized 8-bit CPU with internal RAM and ROM. The -017 mask ROM is required.\r\n\r\n### Phase 2 (current)\r\n\r\nA Japanese console has been acquired. It is currently being examined (nicely) and its detailed behavior documented.\r\n\r\n#### Epoch TV-1 video processor (done)\r\n\r\nI have completed my deep dive into reverse-engineering the Epoch TV-1.  Numerous test ROMs were written to measure timing, explore corner cases and unusual behaviors, and understand observed differences from actual HW behavior.  Findings were detailed in 'doc/epochtv1.txt' and then used to refine the core.\r\n\r\nI'm positive that I have figured out how rendering happens internally.  The core now produces VRAM (sprite pattern) bus address patterns that match those measured on actual HW.  Graphical glitches seen in some games are also reproduced with high accuracy: for example, portions of sprites drop out when the CPU accesses VRAM during sprite rendering.\r\n\r\nAll known display issues are now resolved.\r\n\r\n\r\n## Features\r\n- Cycle-accurate CPU (NEC uPD7801G)\r\n- Logic-accurate audio processor (NEC uPD1771C)\r\n- Behaviorally-accurate video processor (Epoch TV-1 (NTSC))\r\n- Cartridge mapper support for all known released cartridges\r\n\r\n## Installation\r\n- Copy the latest *.rbf from releases/ to the root of the SD card\r\n- Build boot.rom (see below)\r\n- Create a folder on the SD card named \"SCV\" and copy boot.rom to it\r\n\r\n### How to build boot.rom\r\nAcquire these three files:\r\n- upd7801g.s01 (MD5 sum 635a978fd40db9a18ee44eff449fc126)\r\n- epochtv.chr.s02 (MD5 sum 929617bc739e58e550fe9025cae4158b)\r\n- upd1771c-017.s03 (MD5 sum 9b03b66c6dc89de9a11d5cd908538ac3)\r\n\r\nConcatenate the files to create boot.rom. Windows example:\r\n\r\n`COPY /B upd7801g.s01 +epochtv.chr upd1771c-017.s03 boot.rom`\r\n\r\nNote: upd1771c-017.s03 is in little-endian order (ROM low byte first).\r\n\r\n\r\n## Usage\r\n\r\n### Keyboard\r\nThe console has a numeric keypad called **SELECT**, and a hard **PAUSE** button.\r\n\r\n* 0-9 - SELECT numbered keys\r\n* Backspace, numpad ./Del - SELECT **CL** key\r\n* Enter - SELECT **EN** key\r\n* F1 - PAUSE button\r\n\r\n### Joysticks\r\nUp to two digital joysticks are mapped to the two controllers. Each controller has two **Trig** buttons.\r\n\r\nThe most common **SELECT** buttons -- 1 to 4 and **EN** -- can also be configured as joystick buttons.\r\n\r\nMost games refer to a **START** button. This means to press both **Trig** buttons.\r\n\r\n### Cartridge ROMs\r\n\r\nROM images must:\r\n- Have a file extension .ROM or .BIN\r\n- Be strictly the ROM contents (no headers)\r\n\r\nCartridges had 8K - 128K of ROM, and some had RAM. Two heuristics are used to identify the cartridge -- ROM size and checksum -- and map the memories appropriately. The OSD has an option to manually select a mapper.\r\n\r\n#### Special cases\r\nTwo cartridges had a mix of ROM sizes. No special mappers exist for them (yet). Create a 64K .BIN file for them as follows:\r\n\r\n##### Kung Fu Road\r\n32K ROM + (first 24K [24,576 bytes] of 32K ROM) + 8K ROM --> 64K .BIN\r\n\r\n##### Star Speeder\r\n32K ROM + (first 24K [24,576 bytes] of 32K ROM) + 8K ROM --> 64K .BIN\r\n\r\n\r\n## Known issues\r\n\r\n\r\n## TODOs\r\n- Audio (uPD1771C)\r\n  - Actual HW is lot more \"buzzy\" at low volumes. Bug or feature?\r\n- Cartridges\r\n  - Save and restore battery-backed RAM\r\n  - Make mappers for special cases\r\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/SuperCassetteVision_MiSTer",
       "releases": [
-        {
-          "name": "SCV_20241124.rbf",
-          "sha": "592a61c1acc96abe9788e4b48a4d955c8bce9c30",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/SuperCassetteVision_MiSTer/main/releases/SCV_20241124.rbf",
-          "type": "RBF"
-        },
         {
           "name": "SCV_20241231.rbf",
           "sha": "f08018eea81a50cd2b4fcefc2172b6e4d739f8be",
@@ -25526,6 +25556,12 @@
           "name": "SCV_20250131.rbf",
           "sha": "724df17f1c0900da85c09650432ac3f0cccc4a19",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/SuperCassetteVision_MiSTer/main/releases/SCV_20250131.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SCV_20250906.rbf",
+          "sha": "61c675d838755c57e57513f3c9d05415e878f613",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/SuperCassetteVision_MiSTer/main/releases/SCV_20250906.rbf",
           "type": "RBF"
         }
       ]
@@ -25729,6 +25765,12 @@
           "name": "Ti994a_20220220.rbf",
           "sha": "ff15fda36e5619abe5aba8a8b837715b0326a8c7",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/TI-99_4A_MiSTer/master/releases/Ti994a_20220220.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Ti994a_20250903.rbf",
+          "sha": "66c3501860c69f8ff4c25d12ef18a40a54cc3de7",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/TI-99_4A_MiSTer/master/releases/Ti994a_20250903.rbf",
           "type": "RBF"
         }
       ]
@@ -27077,7 +27119,7 @@
     {
       "name": "X68000_MiSTer",
       "description": "Sharp X68000 for MiSTer",
-      "readme": "# [Sharp X68000](https://en.wikipedia.org/wiki/X68000) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\r\n\r\nThis is the port of the [Sharp X68000](http://fpga8801.seesaa.net/category/24786679-1.html) core by Puu-san.\r\n\r\n## Work in progress...\r\n\r\n### Supported storage\r\n* FDD *.d88 images\r\n* SASI HDD *.hdf images\r\n\r\n### Additional info\r\n- Supported MT32-pi over USER I/O port.\r\n\r\n### Installation\r\nCopy *.rbf to SD card. Copy boot.rom and boot3.vhd to Games/X68000 folder.\r\nYou can use BLANK_disk_X68000.D88 if you need to make a new FDD image (or for saves).\r\n\r\n### Keyboard Layouts\r\nThere is an OSD option to choose different keyboard layouts.\r\nEach layout are described on this excel sheet [Keyboard Layouts Excel Sheet](Doc/keymap.xlsx) from Puu-San, there is also this PDF file [Keyboard Layouts PDF](Doc/keymap.pdf) from Tonton that you can deployed on your MiSTer at this directory /media/fat/docs/X68000. You could opened this PDF on the core by selecting System -> Help on the OSD.\r\n",
+      "readme": "# [Sharp X68000](https://en.wikipedia.org/wiki/X68000) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\r\n\r\nThis is the port of the [Sharp X68000](http://fpga8801.seesaa.net/category/24786679-1.html) core by Puu-san.\r\n\r\n## Work in progress...\r\n\r\n### Supported storage\r\n* FDD *.d88 images\r\n* SASI HDD *.hdf images\r\n\r\n### Supported Controller Types - [Check here for a game compatibility list](controllers.md)\r\n* 2-button controller (Standard)\r\n* 2-button controller with turbo (SNES buttons B-Y-L and A-X-R for faster repeats)\r\n* 3-button Megadrive\r\n* 6-button Magical (included with Garou Densetsu 2)\r\n* 6-button Capcom (adapter included with some Street Fighter 2 games)\r\n* Double D-pad (Libble Rabble/Crazy Clinber)\r\n* CyberStick/XE-1AP\r\n\r\n### Additional info\r\n- Supported MT32-pi over USER I/O port.\r\n\r\n### Installation\r\nCopy *.rbf to SD card. Copy boot.rom and boot3.vhd to Games/X68000 folder.\r\nYou can use BLANK_disk_X68000.D88 if you need to make a new FDD image (or for saves).\r\n\r\n### Keyboard Layouts\r\nThere is an OSD option to choose different keyboard layouts.\r\nEach layout are described on this excel sheet [Keyboard Layouts Excel Sheet](Doc/keymap.xlsx) from Puu-San, there is also this PDF file [Keyboard Layouts PDF](Doc/keymap.pdf) from Tonton that you can deployed on your MiSTer at this directory /media/fat/docs/X68000. You could opened this PDF on the core by selecting System -> Help on the OSD.\r\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/X68000_MiSTer",
