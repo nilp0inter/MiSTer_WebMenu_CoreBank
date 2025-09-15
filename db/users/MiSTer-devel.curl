@@ -572,8 +572,8 @@ output = "_Arcade/cores/SuperBreakout_20240525.rbf"
 
 
 # TaitoF2
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/Arcade-TaitoF2_20250619.rbf"
-output = "_Arcade/cores/TaitoF2_20250619.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/Arcade-TaitoF2_20250910.rbf"
+output = "_Arcade/cores/TaitoF2_20250910.rbf"
 
 
 # TaitoSJ
@@ -652,8 +652,8 @@ output = "_Arcade/cores/ZigZag_20240525.rbf"
 
 
 # Arcadia
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcadia_MiSTer/main/releases/Arcadia_20211026.rbf"
-output = "_Others/Arcadia_20211026.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcadia_MiSTer/main/releases/Arcadia_20250907.rbf"
+output = "_Others/Arcadia_20250907.rbf"
 
 
 # Archie
@@ -752,8 +752,8 @@ output = "_Others/CoCo3_20240514.rbf"
 
 
 # ColecoAdam
-url = "https://raw.githubusercontent.com/MiSTer-devel/ColecoAdam_MiSTer/master/releases/ColecoAdam_20230224.rbf"
-output = "_Others/ColecoAdam_20230224.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/ColecoAdam_MiSTer/master/releases/ColecoAdam_20250905.rbf"
+output = "_Others/ColecoAdam_20250905.rbf"
 
 
 # ColecoVision
@@ -769,6 +769,11 @@ output = "_Others/Donut_20250217.rbf"
 # EDSAC
 url = "https://raw.githubusercontent.com/MiSTer-devel/EDSAC_MiSTer/master/releases/EDSAC_20250904.rbf"
 output = "_Computer/EDSAC_20250904.rbf"
+
+
+# EG2000
+url = "https://raw.githubusercontent.com/MiSTer-devel/EG2000_MiSTer/main/releases/EG2000_20250906.rbf"
+output = "_Others/EG2000_20250906.rbf"
 
 
 # eg2000
@@ -817,8 +822,8 @@ output = "_Others/GnW_20250717.rbf"
 
 
 # Homelab
-url = "https://raw.githubusercontent.com/MiSTer-devel/Homelab-MiSTer/main/releases/Homelab_20221216.rbf"
-output = "_Others/Homelab_20221216.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Homelab-MiSTer/main/releases/Homelab_20250906.rbf"
+output = "_Others/Homelab_20250906.rbf"
 
 
 # InputTest
@@ -842,8 +847,8 @@ output = "_Computer/Jupiter_20230301.rbf"
 
 
 # Laser310
-url = "https://raw.githubusercontent.com/MiSTer-devel/Laser310_MiSTer/master/releases/Laser310_20230224.rbf"
-output = "_Others/Laser310_20230224.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Laser310_MiSTer/master/releases/Laser310_20250907.rbf"
+output = "_Others/Laser310_20250907.rbf"
 
 
 # GameOfLife
@@ -852,8 +857,8 @@ output = "_Others/GameOfLife_20200430.rbf"
 
 
 # Lynx48
-url = "https://raw.githubusercontent.com/MiSTer-devel/Lynx48_MiSTer/master/releases/Lynx48_20230225.rbf"
-output = "_Others/Lynx48_20230225.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Lynx48_MiSTer/master/releases/Lynx48_20250907.rbf"
+output = "_Others/Lynx48_20250907.rbf"
 
 
 # MacPlus
@@ -917,8 +922,8 @@ output = "_Others/N64_20250812.rbf"
 
 
 # NeoGeo
-url = "https://raw.githubusercontent.com/MiSTer-devel/NeoGeo_MiSTer/master/releases/NeoGeo_20250105.rbf"
-output = "_Console/NeoGeo_20250105.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/NeoGeo_MiSTer/master/releases/NeoGeo_20250909.rbf"
+output = "_Console/NeoGeo_20250909.rbf"
 
 
 # NES
@@ -1042,8 +1047,8 @@ output = "_Others/Svi328_20241016.rbf"
 
 
 # TatungEinstein
-url = "https://raw.githubusercontent.com/MiSTer-devel/TatungEinstein_MiSTer/master/releases/TatungEinstein_20220128.rbf"
-output = "_Others/TatungEinstein_20220128.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/TatungEinstein_MiSTer/master/releases/TatungEinstein_20250907.rbf"
+output = "_Others/TatungEinstein_20250907.rbf"
 
 
 # Ti994a
@@ -1062,8 +1067,8 @@ output = "_Others/TomyTutor_20250622.rbf"
 
 
 # TRS-80
-url = "https://raw.githubusercontent.com/MiSTer-devel/TRS-80_MiSTer/master/releases/TRS-80_20250315.rbf"
-output = "_Computer/TRS-80_20250315.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/TRS-80_MiSTer/master/releases/TRS-80_20250907.rbf"
+output = "_Computer/TRS-80_20250907.rbf"
 
 
 # TSConf
@@ -3316,6 +3321,11 @@ url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main
 output = "_Arcade/Cameltry (World, YM2610).mra"
 
 
+# Dead Connection (World).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/Dead%20Connection%20(World).mra"
+output = "_Arcade/Dead Connection (World).mra"
+
+
 # Dino Rex (World).mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/Dino%20Rex%20(World).mra"
 output = "_Arcade/Dino Rex (World).mra"
@@ -3356,6 +3366,11 @@ url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main
 output = "_Arcade/Mega Blast (World).mra"
 
 
+# Metal Black (World).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/Metal%20Black%20(World).mra"
+output = "_Arcade/Metal Black (World).mra"
+
+
 # PuLiRuLa (World, dual PCB).mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/PuLiRuLa%20(World%2C%20dual%20PCB).mra"
 output = "_Arcade/PuLiRuLa (World, dual PCB).mra"
@@ -3391,6 +3406,11 @@ url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main
 output = "_Arcade/Cameltry (US, YM2610).mra"
 
 
+# Dead Connection (Japan).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/_alternatives/_Dead%20Connection/Dead%20Connection%20(Japan).mra"
+output = "_Arcade/Dead Connection (Japan).mra"
+
+
 # Dino Rex (Japan).mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/_alternatives/_Dino%20Rex/Dino%20Rex%20(Japan).mra"
 output = "_Arcade/Dino Rex (Japan).mra"
@@ -3409,6 +3429,11 @@ output = "_Arcade/Don Doko Don (Japan, rev 1).mra"
 # Don Doko Don (US, rev 1).mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/_alternatives/_Don%20Doko%20Don/Don%20Doko%20Don%20(US%2C%20rev%201).mra"
 output = "_Arcade/Don Doko Don (US, rev 1).mra"
+
+
+# Drift Out (Europe, Cameltry conversion).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/_alternatives/_Drift%20Out/Drift%20Out%20(Europe%2C%20Cameltry%20conversion).mra"
+output = "_Arcade/Drift Out (Europe, Cameltry conversion).mra"
 
 
 # Drift Out (Japan).mra
@@ -3469,6 +3494,16 @@ output = "_Arcade/Mega Blast (Japan).mra"
 # Mega Blast (US).mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/_alternatives/_Mega%20Blast/Mega%20Blast%20(US).mra"
 output = "_Arcade/Mega Blast (US).mra"
+
+
+# Metal Black (Japan).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/_alternatives/_Metal%20Black/Metal%20Black%20(Japan).mra"
+output = "_Arcade/Metal Black (Japan).mra"
+
+
+# Metal Black (World, single PCB).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/_alternatives/_Metal%20Black/Metal%20Black%20(World%2C%20single%20PCB).mra"
+output = "_Arcade/Metal Black (World, single PCB).mra"
 
 
 # PuLiRuLa (Japan).mra

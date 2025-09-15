@@ -13228,6 +13228,12 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-TaitoF2_20250910.rbf",
+          "sha": "5c4f702ad7200bc056701a1ebbeea23d5539bcff",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/Arcade-TaitoF2_20250910.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Cameltry (World, YM2610).mra",
           "sha": "2d2c9f772dc531f4055a69fa0c21b29720f3092c",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/Cameltry%20(World%2C%20YM2610).mra",
@@ -13237,6 +13243,19 @@
             "rbf": "TaitoF2",
             "zips": [
               "cameltry.zip"
+            ]
+          }
+        },
+        {
+          "name": "Dead Connection (World).mra",
+          "sha": "4281d34036a2b0eb73b542a0fbd05fc822e19737",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/Dead%20Connection%20(World).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Dead Connection (World)",
+            "rbf": "TaitoF2",
+            "zips": [
+              "deadconx.zip"
             ]
           }
         },
@@ -13333,7 +13352,7 @@
         },
         {
           "name": "Mega Blast (World).mra",
-          "sha": "f453f76332e3648346b7896ebd0ca9b504ca10c9",
+          "sha": "360ef5078a92ffdc61c943e791c8b6f1abef03e3",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/Mega%20Blast%20(World).mra",
           "type": "MRA",
           "extra": {
@@ -13341,6 +13360,19 @@
             "rbf": "TaitoF2",
             "zips": [
               "megablst.zip"
+            ]
+          }
+        },
+        {
+          "name": "Metal Black (World).mra",
+          "sha": "0ee63193269d0d604d9643eb5e6aaf258cce14f4",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/Metal%20Black%20(World).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Metal Black (World)",
+            "rbf": "TaitoF2",
+            "zips": [
+              "metalb.zip"
             ]
           }
         },
@@ -13398,7 +13430,7 @@
         },
         {
           "name": "Thunder Fox (World, rev 1).mra",
-          "sha": "6a3afbcdadb9829b8de7eed6f3f91894a15f15f3",
+          "sha": "31b1a30a8102fc995162237c11e58fda5d1223d4",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/Thunder%20Fox%20(World%2C%20rev%201).mra",
           "type": "MRA",
           "extra": {
@@ -13432,6 +13464,19 @@
             "rbf": "TaitoF2",
             "zips": [
               "cameltryu.zip|cameltry.zip"
+            ]
+          }
+        },
+        {
+          "name": "Dead Connection (Japan).mra",
+          "sha": "7dc0509a4edba5b813cfce023595c2407e5d346d",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/_alternatives/_Dead%20Connection/Dead%20Connection%20(Japan).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Dead Connection (Japan)",
+            "rbf": "TaitoF2",
+            "zips": [
+              "deadconxj.zip|deadconx.zip"
             ]
           }
         },
@@ -13484,6 +13529,19 @@
             "rbf": "TaitoF2",
             "zips": [
               "dondokodu.zip|dondokod.zip"
+            ]
+          }
+        },
+        {
+          "name": "Drift Out (Europe, Cameltry conversion).mra",
+          "sha": "a04c44648c827aa971d7b79bd99da6d242c67d41",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/_alternatives/_Drift%20Out/Drift%20Out%20(Europe%2C%20Cameltry%20conversion).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Drift Out (Europe, Cameltry conversion)",
+            "rbf": "TaitoF2",
+            "zips": [
+              "driftoutct.zip|driftout.zip"
             ]
           }
         },
@@ -13619,7 +13677,7 @@
         },
         {
           "name": "Mega Blast (Japan).mra",
-          "sha": "473f99d03d63e4bf24859080f03c6855bf054a34",
+          "sha": "c3c1ce58372a029d353f2bc1fb1a9e89ba3246b2",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/_alternatives/_Mega%20Blast/Mega%20Blast%20(Japan).mra",
           "type": "MRA",
           "extra": {
@@ -13632,7 +13690,7 @@
         },
         {
           "name": "Mega Blast (US).mra",
-          "sha": "927e903d9ecb6b25ca8ad718bfc2207706dc5519",
+          "sha": "50851498c503096e7b6bb0f9cc2ebe8a6bf5518c",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/_alternatives/_Mega%20Blast/Mega%20Blast%20(US).mra",
           "type": "MRA",
           "extra": {
@@ -13640,6 +13698,32 @@
             "rbf": "TaitoF2",
             "zips": [
               "megablstu.zip|megablst.zip"
+            ]
+          }
+        },
+        {
+          "name": "Metal Black (Japan).mra",
+          "sha": "80a7f1cac44d95c4ee83f995a70cb19c7532575e",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/_alternatives/_Metal%20Black/Metal%20Black%20(Japan).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Metal Black (Japan)",
+            "rbf": "TaitoF2",
+            "zips": [
+              "metalbj.zip|metalb.zip"
+            ]
+          }
+        },
+        {
+          "name": "Metal Black (World, single PCB).mra",
+          "sha": "a960208c205a432ba3ba6ff93cf2780cd945cc15",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/_alternatives/_Metal%20Black/Metal%20Black%20(World%2C%20single%20PCB).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Metal Black (World, single PCB)",
+            "rbf": "TaitoF2",
+            "zips": [
+              "metalba.zip|metalb.zip"
             ]
           }
         },
@@ -13775,7 +13859,7 @@
         },
         {
           "name": "Thunder Fox (Japan, rev 1).mra",
-          "sha": "8192807f0b9d0a12827f866179bf2148069dc848",
+          "sha": "def34732c5e2527e0fd1b7279715a3e2edd16414",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/_alternatives/_Thunder%20Fox/Thunder%20Fox%20(Japan%2C%20rev%201).mra",
           "type": "MRA",
           "extra": {
@@ -13788,7 +13872,7 @@
         },
         {
           "name": "Thunder Fox (US, rev 1).mra",
-          "sha": "3d23d376b4f8494acf2cacc5cee099a6a295102c",
+          "sha": "68948127051814423ba45a2adee366d782735a5d",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/_alternatives/_Thunder%20Fox/Thunder%20Fox%20(US%2C%20rev%201).mra",
           "type": "MRA",
           "extra": {
@@ -15105,6 +15189,12 @@
           "name": "Arcadia_20211026.rbf",
           "sha": "776beb3161c56c42fc7eb432e37fcfd99dd9c600",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcadia_MiSTer/main/releases/Arcadia_20211026.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcadia_20250907.rbf",
+          "sha": "9292961220058ba056c7aa876273af7125b43540",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcadia_MiSTer/main/releases/Arcadia_20250907.rbf",
           "type": "RBF"
         }
       ]
@@ -17508,6 +17598,12 @@
           "sha": "9b504bd5c9353a2bacd3d441e8d533eaa999f0e4",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/ColecoAdam_MiSTer/master/releases/ColecoAdam_20230224.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "ColecoAdam_20250905.rbf",
+          "sha": "40dec11f35bf3d737863e8a1d7078823d58a8227",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/ColecoAdam_MiSTer/master/releases/ColecoAdam_20250905.rbf",
+          "type": "RBF"
         }
       ]
     },
@@ -17745,6 +17841,12 @@
       "fork": false,
       "url": "https://github.com/MiSTer-devel/EG2000_MiSTer",
       "releases": [
+        {
+          "name": "EG2000_20250906.rbf",
+          "sha": "9e2cdbf9f3ebc976f0287ec3bd6c18bd7fa5980a",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/EG2000_MiSTer/main/releases/EG2000_20250906.rbf",
+          "type": "RBF"
+        },
         {
           "name": "eg2000_20220923.rbf",
           "sha": "171352cf2895c6ab334e3957c165f49e275e0e2e",
@@ -19365,6 +19467,12 @@
           "sha": "0626e8433fce5e05069e7c808ad9c40599feb239",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Homelab-MiSTer/main/releases/Homelab_20221216.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "Homelab_20250906.rbf",
+          "sha": "dbdf077553fc3b50cb49bd023fe8b6ffabbdd07e",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Homelab-MiSTer/main/releases/Homelab_20250906.rbf",
+          "type": "RBF"
         }
       ]
     },
@@ -19607,6 +19715,12 @@
           "sha": "8dea4141aca37d262fc10ef5b65ca7af21ed94a5",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Laser310_MiSTer/master/releases/Laser310_20230224.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "Laser310_20250907.rbf",
+          "sha": "062e1260eac09dd3098e188e36cc8fbca17b104a",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Laser310_MiSTer/master/releases/Laser310_20250907.rbf",
+          "type": "RBF"
         }
       ]
     },
@@ -19677,6 +19791,12 @@
           "name": "Lynx48_20230225.rbf",
           "sha": "75b293b193f8dc61a21c363835307a6525b3f77e",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Lynx48_MiSTer/master/releases/Lynx48_20230225.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Lynx48_20250907.rbf",
+          "sha": "2ed77b5cddf750a5e4a99d312853ad7c0fa9f27b",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Lynx48_MiSTer/master/releases/Lynx48_20250907.rbf",
           "type": "RBF"
         }
       ]
@@ -22016,6 +22136,12 @@
           "type": "RBF"
         },
         {
+          "name": "NeoGeo_20250909.rbf",
+          "sha": "33fadadc11f5dad72cb68cdfe482e808126405b7",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/NeoGeo_MiSTer/master/releases/NeoGeo_20250909.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "README.md",
           "sha": "91abd5fd1fe831e59d750a409d3f9b19393d5849",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/NeoGeo_MiSTer/master/releases/README.md",
@@ -22044,7 +22170,7 @@
     {
       "name": "NES_MiSTer",
       "description": null,
-      "readme": "# [Nintendo Entertainment System](https://en.wikipedia.org/wiki/Nintendo_Entertainment_System) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\nThis is an FPGA implementation of the NES/Famicom based on [FPGANES](https://github.com/strigeus/fpganes) by Ludvig Strigeus and ported to MiSTer.\n\n## Features\n * Supports saves for most games\n * Savestates\n * Supports NTSC, PAL, and Dendy system types\n * FDS Support with expansion audio\n * Multiple Palette options\n * Zapper, Powerpad, Microphone, and Miracle Piano support\n * Supports four players\n * Setting for increasing sprites per line by 8\n * Supports up to 32 cheat codes\n * Supports NSF Player\n * Supports expansion audio from mappers including VRC6 & 7, MMC5, Namco 163 and Sunsoft 5b\n * Supports many popular mappers including VRC1-7, MMC0-5, and many more (see below)\n * Supports large games such as Legend of Link and Rockman Minus Infinity\n\n## Installation\nCopy the NES_\\*.rbf file to the directory or subdirectory of `/media/fat/`. Create a `games/NES/` directory on the root of the SD card (`/media/fat/games/NES/`), and place NES roms (\\*.nes) inside this NES directory. The ROMs must have an iNES or NES2.0 header, which most already do. NES2.0 headers are preferred for the best accuracy. To have an NES or FDS game ROM load automatically upon starting the core, place it in the NES directory named as boot1.rom or boot2.rom, respectively.\n- `boot0.rom` = FDS BIOS file.  Will be used for any FDS images loaded\n- `boot1.rom` = NES Cart file.  Can be used with boot0.rom (BIOS) in place\n- `boot2.rom` = FDS image file.  Requires boot0.rom (BIOS).  Use a blank FDS (header only) to boot the FDS BIOS without a disk image.\n- `boot3.rom` = PAL file. It can be used to set your default custom palette. Save the menu option on \"Custom\" to apply immediately.\n\n## Famicom Disk System Usage\nBefore loading \\*.FDS files, you must first load the official, unpatched FDS BIOS. The BIOS file should be renamed to boot0.rom and placed in the same folder as the ROMs (NES).  Alternatively, it can be loaded from the OSD if boot0.rom doesn't exist. After loading the core and the bios you may select an FDS image. By default, the NES core will swap disk sides for you automatically. To suppress this behavior, hold the FDS button on the player 1 controller. The \"Disk Swap\" OSD option manually controls the disk side.  Each button press increments the disk side.  Press and hold the fds button to eject and increment the disk side in this mode.  Some games only work correctly in manual disk swap mode, and require holding the FDS button for up to a few seconds (Gall Force,...).\n\n## Extra Sprites\nThis feature will double the number of sprites drawn per scanlines, decreasing the flickering sprites that NES is known for. Some games relied on the 8 sprite behavior to work correctly, such as Simon's Quest swamps. Other mappers may be impacted by using extra sprites. While it works well in most games, glitches may occur with this enabled.\n\n## Saving and Loading\nThe battery backed RAM (Save RAM) for the NES does not write to disk automatically. After saving in your game, you must then write the RAM to the SD card by selecting **Save Backup RAM** from the menu. If you do not save your RAM to disk, the contents will be lost next time you restart the core or switch games. Alternatively you can enable to Autosave option from the OSD menu, and if you do your games will be recorded to disk every time you open the OSD menu. FDS saving uses the same method as for cartridge RAM saves. Save RAM is stored as a .sav file based on the NES/FDS filename in `/media/fat/saves/NES/`.  Examples:  \n`Metroid (Japan) (Rev 3).fds` -> `Metroid (Japan) (Rev 3).sav`  \n`Legend of Zelda, The (USA) (Rev 1).nes` -> `Legend of Zelda, The (USA) (Rev 1).sav`\n\n## Savestates\nCore provides 4 slots to save and restore the state.\nThose can be saved to SD Card or reside only in memory for temporary use (OSD Option). \nUsage with either Keyboard, Gamepad mappable button, or OSD. Save states are stored as .ss files in `/media/fat/savestates/NES/`, with an underscore and the save slot number (1,2,3,4) preceding `.ss`. Example (save slot 1): `Metroid (USA).nes` -> `Metroid (USA)_1.ss`\n\nKeyboard Hotkeys for save states:\n- <kbd>ALT</kbd>+<kbd>F1</kbd>/<kbd>F2</kbd>/<kbd>F3</kbd>/<kbd>F4</kbd> \u2013 save state  \n- <kbd>F1</kbd>/<kbd>F2</kbd>/<kbd>F3</kbd>/<kbd>F4</kbd> \u2013 restore state\n\nGamepad:\n- <kbd>SAVESTATEBUTTON</kbd>+<kbd>LEFT</kbd>/<kbd>RIGHT</kbd> prev/next savestate slot\n- <kbd>SAVESTATEBUTTON</kbd>+<kbd>START</kbd>+<kbd>DOWN</kbd> saves to the selected slot\n- <kbd>SAVESTATEBUTTON</kbd>+<kbd>START</kbd>+<kbd>UP</kbd> loads from the selected slot\n\n## Zapper Support\nThe \"Zapper\" (aka Light Gun) can be used via two methods. You can select Peripheral: Zapper(Mouse) to use your mouse to aim and shoot with the left button. This mode uses relative mouse motion, so devices that rely on absolute coordinates will not work via this method. Alternatively, you can choose Zapper(Joy) to use the Analog stick to aim, and the defined Trigger button to fire. Guns such as Aimtrak have joystick modes which may be compatible with this method.\n\n## Miracle Piano Support\nThe Miracle Piano is a MIDI keyboard compatible with the Miracle Piano Education System cart.  To use it with SNAC, no further settings are needed.  To use it with midilink, in the System Settings, set the UART connection to use MIDI.  The piano will then be connected on controller port 1 as expected.  The primary controller will automatically be assigned to port 2 as the cart expects.  The header for the ROM file should be set to NES 2.0 with controller type (0xF) set to the Miracle Piano (0x19).\n\n## Supported Mappers\n\n|#||||||||||||||||\n|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|\n|**0**|**1**|**2**|**3**|**4**|**5**||**7**||**9**|**10**|**11**|~~12~~|13||15|\n|**16**||**18**|**19**|**FDS**|**21**|**22**|**23**|**24**|**25**|**26**|**27**|**28**||**30**|31|\n|**32**|**33**|**34**|**35**|**36**|**37**|**38**|**39**|~~40~~|41|42|~~43~~|**44**|~~45~~|**46**|**47**|\n|**48**|~~49~~|~~50~~|~~51~~|~~52~~|~~53~~|~~54~~|~~55~~|~~56~~|~~57~~|~~58~~|~~59~~|~~60~~|~~61~~|~~62~~|~~63~~|\n|**64**|**65**|**66**|**67**|**68**|**69**|**70**|**71**|**72**|**73**|**74**|**75**|**76**|**77**|**78**|**79**|\n|**80**|~~81~~|**82**|83|~~84~~|85|**86**|**87**|**88**|**89**|**90**|91|**92**|**93**|**94**|**95**|\n|~~96~~|**97**||~~99~~|~~100~~|**101**|||~~104~~|105||107|~~108~~|~~109~~|~~110~~|**111**|\n|**112**|**113**|~~114~~|~~115~~|~~116~~|~~117~~|**118**|**119**|~~120~~||~~122~~|~~123~~||~~125~~|~~126~~|~~127~~|\n|~~128~~|~~129~~|~~130~~|~~131~~|**132**|**133**|~~134~~|~~135~~|**136**|**137**|**138**|**139**|**140**|**141**|~~142~~|**143**|\n|~~144~~|**145**|**146**|**147**|**148**|**149**|**150**|~~151~~|**152**|**153**|**154**|**155**|**156**|~~157~~|**158**|**159**|\n|~~160~~|~~161~~|162|163|164|165|~~166~~|~~167~~|~~168~~|~~169~~||**171**|**172**|**173**|||\n|||||**180**|~~181~~|~~182~~|~~183~~|**184**|**185**|~~186~~|~~187~~|~~188~~|**189**|**190**|**191**|\n|**192**|~~193~~|**194**|**195**|**196**||~~198~~|~~199~~|~~200~~|~~201~~|~~202~~|~~203~~|~~204~~|**205**|**206**|**207**|\n|**208**|**209**|**210**|**211**|~~212~~|~~213~~|~~214~~|~~215~~|~~216~~|~~217~~|**218**||||~~222~~||\n|~~224~~|**225**|~~226~~|227|228|~~229~~|~~230~~|~~231~~|**232**|~~233~~|234|~~235~~|~~236~~|~~237~~|||\n|~~240~~|~~241~~|~~242~~|**243**|~~244~~|~~245~~|246||~~248~~|~~249~~|~~250~~|~~251~~|~~252~~||~~254~~|255|\n|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|\n|**268**|413|**547**|---|---|---|---|---|---|---|---|---|---|---|---|---|\n\nKey: **Supported+Save state**, Supported, ~~Not Supported~~. Mappers that are not existent or not useful are blank.\n\n",
+      "readme": "# [Nintendo Entertainment System](https://en.wikipedia.org/wiki/Nintendo_Entertainment_System) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\nThis is an FPGA implementation of the NES/Famicom based on [FPGANES](https://github.com/strigeus/fpganes) by Ludvig Strigeus and ported to MiSTer.\n\n## Features\n * Supports saves for most games\n * Savestates\n * Supports NTSC, PAL, and Dendy system types\n * FDS Support with expansion audio\n * Multiple Palette options\n * Zapper, Powerpad, Microphone, and Miracle Piano support\n * Supports four players\n * Setting for increasing sprites per line by 8\n * Supports up to 32 cheat codes\n * Supports NSF Player\n * Supports expansion audio from mappers including VRC6 & 7, MMC5, Namco 163 and Sunsoft 5b\n * Supports many popular mappers including VRC1-7, MMC0-5, and many more (see below)\n * Supports large games such as Legend of Link and Rockman Minus Infinity\n\n## Installation\nCopy the NES_\\*.rbf file to the directory or subdirectory of `/media/fat/`. Create a `games/NES/` directory on the root of the SD card (`/media/fat/games/NES/`), and place NES roms (\\*.nes) inside this NES directory. The ROMs must have an iNES or NES2.0 header, which most already do. NES2.0 headers are preferred for the best accuracy. To have an NES or FDS game ROM load automatically upon starting the core, place it in the NES directory named as boot1.rom or boot2.rom, respectively.\n- `boot0.rom` = FDS BIOS file.  Will be used for any FDS images loaded\n- `boot1.rom` = NES Cart file.  Can be used with boot0.rom (BIOS) in place\n- `boot2.rom` = FDS image file.  Requires boot0.rom (BIOS).  Use a blank FDS (header only) to boot the FDS BIOS without a disk image.\n- `boot3.rom` = PAL file. It can be used to set your default custom palette. Save the menu option on \"Custom\" to apply immediately.\n\n## Famicom Disk System Usage\nBefore loading \\*.FDS files, you must first load the official, unpatched FDS BIOS. The BIOS file should be renamed to boot0.rom and placed in the same folder as the ROMs (NES).  Alternatively, it can be loaded from the OSD if boot0.rom doesn't exist. After loading the core and the bios you may select an FDS image. By default, the NES core will swap disk sides for you automatically. To suppress this behavior, hold the FDS button on the player 1 controller. The \"Disk Swap\" OSD option manually controls the disk side.  Each button press increments the disk side.  Press and hold the fds button to eject and increment the disk side in this mode.  Some games only work correctly in manual disk swap mode, and require holding the FDS button for up to a few seconds (Gall Force,...).\n\n## Extra Sprites\nThis feature will double the number of sprites drawn per scanlines, decreasing the flickering sprites that NES is known for. Some games relied on the 8 sprite behavior to work correctly, such as Simon's Quest swamps. Other mappers may be impacted by using extra sprites. While it works well in most games, glitches may occur with this enabled.\n\n## Saving and Loading\nThe battery backed RAM (Save RAM) for the NES does not write to disk automatically. After saving in your game, you must then write the RAM to the SD card by selecting **Save Backup RAM** from the menu. If you do not save your RAM to disk, the contents will be lost next time you restart the core or switch games. Alternatively you can enable to Autosave option from the OSD menu, and if you do your games will be recorded to disk every time you open the OSD menu. FDS saving uses the same method as for cartridge RAM saves. Save RAM is stored as a .sav file based on the NES/FDS filename in `/media/fat/saves/NES/`.  Examples:  \n`Metroid (Japan) (Rev 3).fds` -> `Metroid (Japan) (Rev 3).sav`  \n`Legend of Zelda, The (USA) (Rev 1).nes` -> `Legend of Zelda, The (USA) (Rev 1).sav`\n\n## Savestates\nCore provides 4 slots to save and restore the state.\nThose can be saved to SD Card or reside only in memory for temporary use (OSD Option). \nUsage with either Keyboard, Gamepad mappable button, or OSD. Save states are stored as .ss files in `/media/fat/savestates/NES/`, with an underscore and the save slot number (1,2,3,4) preceding `.ss`. Example (save slot 1): `Metroid (USA).nes` -> `Metroid (USA)_1.ss`\n\nKeyboard Hotkeys for save states:\n- <kbd>ALT</kbd>+<kbd>F1</kbd>/<kbd>F2</kbd>/<kbd>F3</kbd>/<kbd>F4</kbd> \u2013 save state  \n- <kbd>F1</kbd>/<kbd>F2</kbd>/<kbd>F3</kbd>/<kbd>F4</kbd> \u2013 restore state\n\nGamepad:\n- <kbd>SAVESTATEBUTTON</kbd>+<kbd>LEFT</kbd>/<kbd>RIGHT</kbd> prev/next savestate slot\n- <kbd>SAVESTATEBUTTON</kbd>+<kbd>START</kbd>+<kbd>DOWN</kbd> saves to the selected slot\n- <kbd>SAVESTATEBUTTON</kbd>+<kbd>START</kbd>+<kbd>UP</kbd> loads from the selected slot\n\n## Zapper Support\nThe \"Zapper\" (aka Light Gun) can be used via two methods. You can select Peripheral: Zapper(Mouse) to use your mouse to aim and shoot with the left button. This mode uses relative mouse motion, so devices that rely on absolute coordinates will not work via this method. Alternatively, you can choose Zapper(Joy) to use the Analog stick to aim, and the defined Trigger button to fire. Guns such as Aimtrak have joystick modes which may be compatible with this method.\n\n## Miracle Piano Support\nThe Miracle Piano is a MIDI keyboard compatible with the Miracle Piano Education System cart.  To use it with SNAC, no further settings are needed.  To use it with midilink, in the System Settings, set the UART connection to use MIDI.  The piano will then be connected on controller port 1 as expected.  The primary controller will automatically be assigned to port 2 as the cart expects.  The header for the ROM file should be set to NES 2.0 with controller type (0xF) set to the Miracle Piano (0x19).\n\n## Supported Mappers\n\n|#||||||||||||||||\n|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|\n|**0**|**1**|**2**|**3**|**4**|**5**||**7**||**9**|**10**|**11**|~~12~~|13||15|\n|**16**||**18**|**19**|**FDS**|**21**|**22**|**23**|**24**|**25**|**26**|**27**|**28**||**30**|31|\n|**32**|**33**|**34**|**35**|**36**|**37**|**38**|**39**|40|41|42|~~43~~|**44**|~~45~~|**46**|**47**|\n|**48**|~~49~~|~~50~~|~~51~~|~~52~~|~~53~~|~~54~~|~~55~~|~~56~~|~~57~~|~~58~~|~~59~~|~~60~~|~~61~~|~~62~~|~~63~~|\n|**64**|**65**|**66**|**67**|**68**|**69**|**70**|**71**|**72**|**73**|**74**|**75**|**76**|**77**|**78**|**79**|\n|**80**|~~81~~|**82**|83|~~84~~|85|**86**|**87**|**88**|**89**|**90**|91|**92**|**93**|**94**|**95**|\n|~~96~~|**97**||~~99~~|~~100~~|**101**|||~~104~~|105||107|~~108~~|~~109~~|~~110~~|**111**|\n|**112**|**113**|~~114~~|~~115~~|~~116~~|~~117~~|**118**|**119**|~~120~~||~~122~~|~~123~~||~~125~~|~~126~~|~~127~~|\n|~~128~~|~~129~~|~~130~~|~~131~~|**132**|**133**|~~134~~|~~135~~|**136**|**137**|**138**|**139**|**140**|**141**|142|**143**|\n|**144**|**145**|**146**|**147**|**148**|**149**|**150**|~~151~~|**152**|**153**|**154**|**155**|**156**|~~157~~|**158**|**159**|\n|~~160~~|~~161~~|162|163|164|165|~~166~~|~~167~~|~~168~~|~~169~~||**171**|**172**|**173**|||\n|||||**180**|~~181~~|~~182~~|~~183~~|**184**|**185**|~~186~~|~~187~~|~~188~~|**189**|**190**|**191**|\n|**192**|~~193~~|**194**|**195**|**196**||~~198~~|~~199~~|~~200~~|~~201~~|~~202~~|~~203~~|~~204~~|**205**|**206**|**207**|\n|**208**|**209**|**210**|**211**|~~212~~|~~213~~|~~214~~|~~215~~|~~216~~|~~217~~|**218**||||~~222~~||\n|~~224~~|**225**|~~226~~|227|228|~~229~~|~~230~~|~~231~~|**232**|~~233~~|234|~~235~~|~~236~~|~~237~~|||\n|~~240~~|~~241~~|~~242~~|**243**|~~244~~|~~245~~|246||~~248~~|~~249~~|~~250~~|~~251~~|~~252~~||~~254~~|255|\n|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|\n|**268**|413|**547**|---|---|---|---|---|---|---|---|---|---|---|---|---|\n\nKey: **Supported+Save state**, Supported, ~~Not Supported~~. Mappers that are not existent or not useful are blank.\n\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/NES_MiSTer",
@@ -23769,7 +23895,7 @@
         },
         {
           "name": "Astra SuperStars (J 980514 V1.002).mra",
-          "sha": "72dda84490ce975d5aa58242155a396f98b5b9c7",
+          "sha": "14d942b8e81ab1bcef53d0844b9cc9602202fdf2",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Astra%20SuperStars%20(J%20980514%20V1.002).mra",
           "type": "MRA",
           "extra": {
@@ -23784,7 +23910,7 @@
         },
         {
           "name": "Baku Baku Animal (J 950407 V1.000).mra",
-          "sha": "4bdc3bdbc02ffbef8a496ab2ec95f402ce5146df",
+          "sha": "08aa0087de500f229ea45ee8560a489526fb9ee4",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Baku%20Baku%20Animal%20(J%20950407%20V1.000).mra",
           "type": "MRA",
           "extra": {
@@ -23799,7 +23925,7 @@
         },
         {
           "name": "Batman Forever (JUE 960507 V1.000).mra",
-          "sha": "350d4855b25167dce33078c98e1945ab9833acde",
+          "sha": "f920f1d446cd57cda8ca47d0791d5f398701c453",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Batman%20Forever%20(JUE%20960507%20V1.000).mra",
           "type": "MRA",
           "extra": {
@@ -23814,7 +23940,7 @@
         },
         {
           "name": "Columns '97 (JET 961209 V1.000).mra",
-          "sha": "914a5b70579c52c36fcd57c0da7b0d0c7f052633",
+          "sha": "d58db1d45b16644b6f41c7f43204e5b54996d7ba",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Columns%20'97%20(JET%20961209%20V1.000).mra",
           "type": "MRA",
           "extra": {
@@ -23889,7 +24015,7 @@
         },
         {
           "name": "Decathlete (JUET 960709 V1.001).mra",
-          "sha": "fb63d975392b2b52908d22c4647fdd67fe78a7fa",
+          "sha": "19302d4226c0134d68fff4847eb6e2c6a28b6a2b",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Decathlete%20(JUET%20960709%20V1.001).mra",
           "type": "MRA",
           "extra": {
@@ -23904,7 +24030,7 @@
         },
         {
           "name": "Die Hard Arcade (UET 960515 V1.000).mra",
-          "sha": "18c7ec4f71bd8c27da0c7bb26a985a63fd2b4975",
+          "sha": "41f53bc9ee02a9be87db3251cf6a04c626d31a28",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Die%20Hard%20Arcade%20(UET%20960515%20V1.000).mra",
           "type": "MRA",
           "extra": {
@@ -23919,7 +24045,7 @@
         },
         {
           "name": "Ejihon Tantei Jimusyo (J 950613 V1.000).mra",
-          "sha": "4829d40f184f0d4f7678f4b0082c05442c194eb5",
+          "sha": "2b7b12209aed65c72923f1c4b872ae0127ce49b1",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Ejihon%20Tantei%20Jimusyo%20(J%20950613%20V1.000).mra",
           "type": "MRA",
           "extra": {
@@ -23934,7 +24060,7 @@
         },
         {
           "name": "Final Fight Revenge - Final Revenge (JUET 990930 V1.100).mra",
-          "sha": "388b9b81f4fa274fbc050cf519953dd8f8cad3b0",
+          "sha": "55ebe0bfc6548295f30f39843ab679d6a21f11fa",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Final%20Fight%20Revenge%20-%20Final%20Revenge%20(JUET%20990930%20V1.100).mra",
           "type": "MRA",
           "extra": {
@@ -23949,7 +24075,7 @@
         },
         {
           "name": "Find Love (J 971212 V1.000).mra",
-          "sha": "2885257b85a6c8961853b200a189e6801333d86d",
+          "sha": "11624380f1fa9730ffb956a75656f61d78938ebc",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Find%20Love%20(J%20971212%20V1.000).mra",
           "type": "MRA",
           "extra": {
@@ -23964,7 +24090,7 @@
         },
         {
           "name": "Funky Head Boxers (JUETBKAL 951218 V1.000).mra",
-          "sha": "e3e63e57199d48733c7024cb699f018f8aaa26cf",
+          "sha": "81e558cf6ef836bdf12e91954c00c9d99ffafab0",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Funky%20Head%20Boxers%20(JUETBKAL%20951218%20V1.000).mra",
           "type": "MRA",
           "extra": {
@@ -23979,7 +24105,7 @@
         },
         {
           "name": "Golden Axe - The Duel (JUETL 950117 V1.000).mra",
-          "sha": "501d20f329f449506e62bd5b772c0e8ee3a393da",
+          "sha": "56f83ed6588ca428280407de72561e0d8605d156",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Golden%20Axe%20-%20The%20Duel%20(JUETL%20950117%20V1.000).mra",
           "type": "MRA",
           "extra": {
@@ -24039,7 +24165,7 @@
         },
         {
           "name": "Karaoke Quiz Intro Don Don! (J 960213 V1.000).mra",
-          "sha": "350692821d821cfa32084acc2727d8b1cfe1f07f",
+          "sha": "bb1f80134a567cd1c9e59ee2a9bd5b1adb2b23dc",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Karaoke%20Quiz%20Intro%20Don%20Don!%20(J%20960213%20V1.000).mra",
           "type": "MRA",
           "extra": {
@@ -24054,7 +24180,7 @@
         },
         {
           "name": "Maru-Chan de Goo! (J 971216 V1.000).mra",
-          "sha": "13f964876376492f2afccfb11445a0bc65ca906e",
+          "sha": "ff6f04c88639da35a881efbc04730a207fdab392",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Maru-Chan%20de%20Goo!%20(J%20971216%20V1.000).mra",
           "type": "MRA",
           "extra": {
@@ -24069,7 +24195,7 @@
         },
         {
           "name": "Mausuke no Ojama the World (J 960314 V1.000).mra",
-          "sha": "3bc2eb3f5b7f07023bbf8ba60d305c6da0f7a8c4",
+          "sha": "aedf4e5f9de48a86727d3ee25ed37e7ece1831a5",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Mausuke%20no%20Ojama%20the%20World%20(J%20960314%20V1.000).mra",
           "type": "MRA",
           "extra": {
@@ -24099,7 +24225,7 @@
         },
         {
           "name": "Pebble Beach - The Great Shot (JUE 950913 V0.990).mra",
-          "sha": "2753b06a6475fe2f8768094d4db54e45621ff6fd",
+          "sha": "397fcc180d9e78530c547db0d073e221fca62edf",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Pebble%20Beach%20-%20The%20Great%20Shot%20(JUE%20950913%20V0.990).mra",
           "type": "MRA",
           "extra": {
@@ -24129,7 +24255,7 @@
         },
         {
           "name": "Pro Mahjong Kiwame S (J 951020 V1.208).mra",
-          "sha": "ae35ca050cf8aa5c52b26509eae6c5b84571fa0e",
+          "sha": "b2a528d7c46931210984cd75f4cb6b5ebcaa47b2",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Pro%20Mahjong%20Kiwame%20S%20(J%20951020%20V1.208).mra",
           "type": "MRA",
           "extra": {
@@ -24144,7 +24270,7 @@
         },
         {
           "name": "Puyo Puyo Sun (J 961115 V0.001).mra",
-          "sha": "1c9a215b0e2f0d2a812aff35a7cb07c5781dd8d7",
+          "sha": "b05593ac0299f3bae3e69e8bee6b0b952ddaa838",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Puyo%20Puyo%20Sun%20(J%20961115%20V0.001).mra",
           "type": "MRA",
           "extra": {
@@ -24159,7 +24285,7 @@
         },
         {
           "name": "Puzzle & Action- Sando-R (J 951114 V1.000).mra",
-          "sha": "88db1423d887809c2e0e24d8ffa04f67b8c19909",
+          "sha": "6cb01c1cea123327763a94282e1133c56f017c89",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Puzzle%20%26%20Action-%20Sando-R%20(J%20951114%20V1.000).mra",
           "type": "MRA",
           "extra": {
@@ -24189,7 +24315,7 @@
         },
         {
           "name": "Sea Bass Fishing (JUET 971110 V0.001).mra",
-          "sha": "1347ead3a98bae512e5cea0eac1acddf7f3a7002",
+          "sha": "8be3bbdbbf53ee463729a3c5b3da529247a4092c",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Sea%20Bass%20Fishing%20(JUET%20971110%20V0.001).mra",
           "type": "MRA",
           "extra": {
@@ -24234,7 +24360,7 @@
         },
         {
           "name": "Soukyugurentai - Terra Diver (JUET 960821 V1.000).mra",
-          "sha": "f1348a8af1f78a839414ca29802bb0cc4c51424c",
+          "sha": "2673c58b0c0c6931e929617e1c9d8c3e88f1426e",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Soukyugurentai%20-%20Terra%20Diver%20(JUET%20960821%20V1.000).mra",
           "type": "MRA",
           "extra": {
@@ -24249,7 +24375,7 @@
         },
         {
           "name": "Steep Slope Sliders (JUET 981110 V1.000).mra",
-          "sha": "7052de8219b744e2db951065366197c17f98ccf5",
+          "sha": "892a7723e394cec15fd75cca87b6aa02eaabd70d",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Steep%20Slope%20Sliders%20(JUET%20981110%20V1.000).mra",
           "type": "MRA",
           "extra": {
@@ -24264,7 +24390,7 @@
         },
         {
           "name": "Suikoenbu - Outlaws of the Lost Dynasty (JUETL 950314 V2.001).mra",
-          "sha": "81dd8cd350a6fe2a9ba473d2e9f2c5f2daaeb73e",
+          "sha": "98d178e16034ea4b197254c89a789c8fbefc6263",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Suikoenbu%20-%20Outlaws%20of%20the%20Lost%20Dynasty%20(JUETL%20950314%20V2.001).mra",
           "type": "MRA",
           "extra": {
@@ -24279,7 +24405,7 @@
         },
         {
           "name": "Super Major League (U 960108 V1.000).mra",
-          "sha": "a22ca7550d2c114febfec9f0afc203f96df5bc26",
+          "sha": "0c92d560f45be766813d1d8bad82439b86b727ed",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Super%20Major%20League%20(U%20960108%20V1.000).mra",
           "type": "MRA",
           "extra": {
@@ -24294,7 +24420,7 @@
         },
         {
           "name": "Taisen Tanto-R Sashissu!! (J 980216 V1.000).mra",
-          "sha": "d349097481eced827f5366b365b58f1ef8af9032",
+          "sha": "247618d51ea06ab833230ee0d586f57f0a34261a",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Taisen%20Tanto-R%20Sashissu!!%20(J%20980216%20V1.000).mra",
           "type": "MRA",
           "extra": {
@@ -24309,7 +24435,7 @@
         },
         {
           "name": "Tecmo World Cup '98 (JUET 980410 V1.000).mra",
-          "sha": "92d68a714e95c0b0955a31a089486893d5c010a7",
+          "sha": "1fcd705f4d0d543bc7497259507a221132165b3a",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Tecmo%20World%20Cup%20'98%20(JUET%20980410%20V1.000).mra",
           "type": "MRA",
           "extra": {
@@ -24339,7 +24465,7 @@
         },
         {
           "name": "Virtua Fighter Kids (JUET 960319 V0.000).mra",
-          "sha": "b74182e63efc44618aa572bc515cbf08ffd5f867",
+          "sha": "002dcd7ae84e6e0e081b492fe070d3a6119df1fe",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Virtua%20Fighter%20Kids%20(JUET%20960319%20V0.000).mra",
           "type": "MRA",
           "extra": {
@@ -24354,7 +24480,7 @@
         },
         {
           "name": "Virtua Fighter Remix (JUETBKAL 950428 V1.000).mra",
-          "sha": "8bf609ef1fe3d55a59ed1299826a8d7b4bf2b538",
+          "sha": "8f419054c0c608d37e699ab7d89f84be7d45f7b5",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Virtua%20Fighter%20Remix%20(JUETBKAL%20950428%20V1.000).mra",
           "type": "MRA",
           "extra": {
@@ -24384,7 +24510,7 @@
         },
         {
           "name": "Winter Heat (JUET 971012 V1.000).mra",
-          "sha": "1f955668be9f06fb0767205e8903dabb6264f4e6",
+          "sha": "2c419d725844901694d213e7343dba0c0a969af1",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Winter%20Heat%20(JUET%20971012%20V1.000).mra",
           "type": "MRA",
           "extra": {
@@ -24399,7 +24525,7 @@
         },
         {
           "name": "Zen Nippon Pro-Wrestling Featuring Virtua (J 971123 V1.000).mra",
-          "sha": "1f7c8207807b47625b0c72769f650be7bd2f2167",
+          "sha": "7dd5b66ea4759537ff11c56bba85fc4f660664ea",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/mra/Zen%20Nippon%20Pro-Wrestling%20Featuring%20Virtua%20(J%20971123%20V1.000).mra",
           "type": "MRA",
           "extra": {
@@ -25681,6 +25807,12 @@
           "sha": "6c59f99ea764a973d3816d3191a40730467bf27e",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/TatungEinstein_MiSTer/master/releases/TatungEinstein_20220128.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "TatungEinstein_20250907.rbf",
+          "sha": "47edc96da8267f2573072412dd0cfdfe954b0939",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/TatungEinstein_MiSTer/master/releases/TatungEinstein_20250907.rbf",
+          "type": "RBF"
         }
       ]
     },
@@ -25999,6 +26131,12 @@
           "name": "TRS-80_20250315.rbf",
           "sha": "fc990e766635c397baf78173e11b02be6968e281",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/TRS-80_MiSTer/master/releases/TRS-80_20250315.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "TRS-80_20250907.rbf",
+          "sha": "a7bdf90ff2c4ec1fad05a443c967488671ebcc54",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/TRS-80_MiSTer/master/releases/TRS-80_20250907.rbf",
           "type": "RBF"
         },
         {
