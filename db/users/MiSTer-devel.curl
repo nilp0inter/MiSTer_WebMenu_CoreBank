@@ -2,13 +2,13 @@ insecure
 create-dirs
 
 # AcornAtom
-url = "https://raw.githubusercontent.com/MiSTer-devel/AcornAtom_MiSTer/main/releases/AcornAtom_20230224.rbf"
-output = "_Others/AcornAtom_20230224.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/AcornAtom_MiSTer/main/releases/AcornAtom_20251001.rbf"
+output = "_Others/AcornAtom_20251001.rbf"
 
 
 # AcornElectron
-url = "https://raw.githubusercontent.com/MiSTer-devel/AcornElectron_MiSTer/master/releases/AcornElectron_20230224.rbf"
-output = "_Others/AcornElectron_20230224.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/AcornElectron_MiSTer/master/releases/AcornElectron_20250930.rbf"
+output = "_Others/AcornElectron_20250930.rbf"
 
 
 # ADCTest
@@ -47,8 +47,8 @@ output = "_Computer/Apple-II_20241226.rbf"
 
 
 # Apple-I
-url = "https://raw.githubusercontent.com/MiSTer-devel/Apple-I_MiSTer/master/releases/Apple-I_20220309.rbf"
-output = "_Computer/Apple-I_20220309.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Apple-I_MiSTer/master/releases/Apple-I_20251001.rbf"
+output = "_Computer/Apple-I_20251001.rbf"
 
 
 # AsteroidsDeluxe
@@ -572,8 +572,8 @@ output = "_Arcade/cores/SuperBreakout_20240525.rbf"
 
 
 # TaitoF2
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/Arcade-TaitoF2_20250916.rbf"
-output = "_Arcade/cores/TaitoF2_20250916.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/Arcade-TaitoF2_20250929.rbf"
+output = "_Arcade/cores/TaitoF2_20250929.rbf"
 
 
 # TaitoSJ
@@ -842,8 +842,8 @@ output = "_Others/Intellivision_20250903.rbf"
 
 
 # Jupiter
-url = "https://raw.githubusercontent.com/MiSTer-devel/Jupiter_MiSTer/master/releases/Jupiter_20230301.rbf"
-output = "_Computer/Jupiter_20230301.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Jupiter_MiSTer/master/releases/Jupiter_20251001.rbf"
+output = "_Computer/Jupiter_20251001.rbf"
 
 
 # Laser310
@@ -997,13 +997,13 @@ output = "_Computer/SAMCoupe_20240421.rbf"
 
 
 # ST-V
-url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/Arcade-ST-V_20250612.rbf"
-output = "_Arcade/cores/ST-V_20250612.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/Arcade-ST-V_20251003.rbf"
+output = "_Arcade/cores/ST-V_20251003.rbf"
 
 
 # Saturn
-url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/Saturn_20250613.rbf"
-output = "_Others/Saturn_20250613.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Saturn_MiSTer/main/releases/Saturn_20251003.rbf"
+output = "_Others/Saturn_20251003.rbf"
 
 
 # SGB
@@ -3316,6 +3316,11 @@ url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SuperBreakout_MiSTe
 output = "_Arcade/Super Breakout (Rev 04).mra"
 
 
+# Ah Eikou no Koshien (Japan).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/Ah%20Eikou%20no%20Koshien%20(Japan).mra"
+output = "_Arcade/Ah Eikou no Koshien (Japan).mra"
+
+
 # Cameltry (World, YM2610).mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/Cameltry%20(World%2C%20YM2610).mra"
 output = "_Arcade/Cameltry (World, YM2610).mra"
@@ -3344,6 +3349,11 @@ output = "_Arcade/Drift Out (Europe).mra"
 # Final Blow (World).mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/Final%20Blow%20(World).mra"
 output = "_Arcade/Final Blow (World).mra"
+
+
+# Football Champ - Euro Football Champ (World).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/Football%20Champ%20-%20Euro%20Football%20Champ%20(World).mra"
+output = "_Arcade/Football Champ - Euro Football Champ (World).mra"
 
 
 # Growl (World, Rev 1).mra
@@ -3449,6 +3459,16 @@ output = "_Arcade/Final Blow (Japan).mra"
 # Final Blow (US, rev 1).mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/_alternatives/_Final%20Blow/Final%20Blow%20(US%2C%20rev%201).mra"
 output = "_Arcade/Final Blow (US, rev 1).mra"
+
+
+# Hat Trick Hero (Japan).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/_alternatives/_Football%20Champ/Hat%20Trick%20Hero%20(Japan).mra"
+output = "_Arcade/Hat Trick Hero (Japan).mra"
+
+
+# Hat Trick Hero (US).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/_alternatives/_Football%20Champ/Hat%20Trick%20Hero%20(US).mra"
+output = "_Arcade/Hat Trick Hero (US).mra"
 
 
 # Growl (US).mra
@@ -3629,6 +3649,11 @@ output = "_Arcade/Elevator Action.mra"
 # Kick Start Wheelie King.mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/_TaitoSystemSJ/non%20working/Kick%20Start%20Wheelie%20King.mra"
 output = "_Arcade/Kick Start Wheelie King.mra"
+
+
+# Sea Fighter Poseidon.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/_TaitoSystemSJ/non%20working/Sea%20Fighter%20Poseidon.mra"
+output = "_Arcade/Sea Fighter Poseidon.mra"
 
 
 # TankBattalion.mra
