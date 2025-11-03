@@ -572,8 +572,8 @@ output = "_Arcade/cores/SuperBreakout_20240525.rbf"
 
 
 # TaitoF2
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/Arcade-TaitoF2_20251010.rbf"
-output = "_Arcade/cores/TaitoF2_20251010.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/Arcade-TaitoF2_20251027.rbf"
+output = "_Arcade/cores/TaitoF2_20251027.rbf"
 
 
 # TaitoSJ
@@ -3326,6 +3326,11 @@ url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main
 output = "_Arcade/Cameltry (World, YM2610).mra"
 
 
+# Crayon Shinchan Orato Asobo (Japan).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/Crayon%20Shinchan%20Orato%20Asobo%20(Japan).mra"
+output = "_Arcade/Crayon Shinchan Orato Asobo (Japan).mra"
+
+
 # Dead Connection (World).mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/Dead%20Connection%20(World).mra"
 output = "_Arcade/Dead Connection (World).mra"
@@ -3389,6 +3394,36 @@ output = "_Arcade/Metal Black (World).mra"
 # PuLiRuLa (World, dual PCB).mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/PuLiRuLa%20(World%2C%20dual%20PCB).mra"
 output = "_Arcade/PuLiRuLa (World, dual PCB).mra"
+
+
+# Quiz Chikyu Bouei Gun (Japan).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/Quiz%20Chikyu%20Bouei%20Gun%20(Japan).mra"
+output = "_Arcade/Quiz Chikyu Bouei Gun (Japan).mra"
+
+
+# Quiz Crayon Shinchan (Japan).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/Quiz%20Crayon%20Shinchan%20(Japan).mra"
+output = "_Arcade/Quiz Crayon Shinchan (Japan).mra"
+
+
+# Quiz H.Q. (Japan).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/Quiz%20H.Q.%20(Japan).mra"
+output = "_Arcade/Quiz H.Q. (Japan).mra"
+
+
+# Quiz Jinsei Gekijoh (Japan).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/Quiz%20Jinsei%20Gekijoh%20(Japan).mra"
+output = "_Arcade/Quiz Jinsei Gekijoh (Japan).mra"
+
+
+# Quiz Quest - Hime to Yuusha no Monogatari (Japan).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/Quiz%20Quest%20-%20Hime%20to%20Yuusha%20no%20Monogatari%20(Japan).mra"
+output = "_Arcade/Quiz Quest - Hime to Yuusha no Monogatari (Japan).mra"
+
+
+# Quiz Torimonochou (Japan).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main/releases/Quiz%20Torimonochou%20(Japan).mra"
+output = "_Arcade/Quiz Torimonochou (Japan).mra"
 
 
 # Solitary Fighter (World).mra
