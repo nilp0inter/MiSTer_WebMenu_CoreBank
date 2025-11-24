@@ -80,6 +80,122 @@
       ]
     },
     {
+      "name": "Arcade-QBert_MiSTer",
+      "description": "Q*Bert core for MiSTer",
+      "readme": "![QBert Character](./qbert.png) MiSTer Q*Bert\r\n=============================================\r\n\r\nQ*Bert arcade core for MiSTer FPGA by Pierco. It's a reproduction of the original PCBs rather than a reinterpretation but with some dual port RAM exceptions.\r\n\r\nAdditional details\r\n------------------\r\n\r\n**Audio board MA216:**\r\n\r\n- SC01 is not implemented. Waiting for brave people to do it.\r\n\r\n**NVRAM:**\r\n\r\n- Not implemented - NVRAM should be C5/C6 on schematics.\r\n\r\n**Ports:**\r\n\r\n- IP17-10: input port for test buttons, coins and player 1/2.\r\n- IP47-40: input port for joystick.\r\n- OP27-20: output port for sound interface\r\n- OP33-37: output port for knocker and coin meter.\r\n\r\nGame Compatibility List\r\n-----------------------\r\n\r\nWorking:\r\n\r\n- QBert: 100% compatible.\r\n- QBert Qubes: 100% compatible.\r\n- Mad Planets: 100% compatible.\r\n\r\nNot working yet:\r\n\r\n- Curve Ball: dip switch order is weird, no sound.\r\n- Insector: 100% compatible, dip switch problems, controller inverted & no test mode(?).\r\n- Tyls: 100% compatible - dip switches inverted.\r\n\r\nKnown Bugs\r\n----------\r\n\r\n- QBert Qubes: \"Supreme Nosers\" screen works only after a reset.\r\n- Problem with vertical position register E1-2. When a new object is falling from the top of the screen (ball), it appears briefly at the bottom of the screen.\r\n- High Scores screen: the big three letters of player's name are not displayed correctly. It works well after a few resets (is it a problem with bus sharing logic which sends zeros to simulate high impedance for ORing outputs?). I don't have the PCB so it's difficult to know the original behavior.\r\n- Votrax chip is cruelly missing, QBert needs his @!#?@! voice!!!\r\n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/theypsilon/Arcade-QBert_MiSTer",
+      "releases": [
+        {
+          "name": "Arcade-QBert_20210206.rbf",
+          "sha": "f799abb30c1d748e4064aa69475aefcc207e36ce",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-QBert_MiSTer/master/releases/Arcade-QBert_20210206.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-QBert_20210207.rbf",
+          "sha": "f8169b4a5487a64e13eb0ded45074cfc7dd4bdf5",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-QBert_MiSTer/master/releases/Arcade-QBert_20210207.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-QBert_20210214.rbf",
+          "sha": "7c6e27d9ba53562e270f27cb19be84cebca5b283",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-QBert_MiSTer/master/releases/Arcade-QBert_20210214.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-QBert_20210215.rbf",
+          "sha": "db98fcc249f806b3e837f564cc38481dee6e3b3b",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-QBert_MiSTer/master/releases/Arcade-QBert_20210215.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-QBert_20210308.rbf",
+          "sha": "60013b502622a558f26062a704f0119f3fbcf0a3",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-QBert_MiSTer/master/releases/Arcade-QBert_20210308.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-QBert_20210916.rbf",
+          "sha": "105ca3e7e2553b997d1920b85ef5ee06667cc224",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-QBert_MiSTer/master/releases/Arcade-QBert_20210916.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-QBert_20210923.rbf",
+          "sha": "286d9a54b70ec39dc677bc2b0f154a1383e8d472",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-QBert_MiSTer/master/releases/Arcade-QBert_20210923.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-QBert_20230315.rbf",
+          "sha": "00f254e3ab0b8fe082c27c53b350bb21db0f3cde",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-QBert_MiSTer/master/releases/Arcade-QBert_20230315.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-QBert_20240602.rbf",
+          "sha": "904c07858747a98e5cade1b8b72057a87a85b9b9",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-QBert_MiSTer/master/releases/Arcade-QBert_20240602.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Faster, Harder, More Challenging Q`Bert (prototype).mra",
+          "sha": "0b0a27f9db4dd111325885c2d406275ddfc44cdc",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-QBert_MiSTer/master/releases/Faster%2C%20Harder%2C%20More%20Challenging%20Q%60Bert%20(prototype).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Faster, Harder, More Challenging Q*bert",
+            "rbf": "qbert",
+            "zips": [
+              "sqbert.zip"
+            ]
+          }
+        },
+        {
+          "name": "Mad Planets.mra",
+          "sha": "0fc6e520e738df563ad5bfb706dcd647f7c6c800",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-QBert_MiSTer/master/releases/Mad%20Planets.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Mad Planets",
+            "rbf": "qbert",
+            "zips": [
+              "mplanets.zip"
+            ]
+          }
+        },
+        {
+          "name": "Q'bert (US, Set 1).mra",
+          "sha": "3d4af0312d552b806b8c61dc8def9771aacb5cb8",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-QBert_MiSTer/master/releases/Q'bert%20(US%2C%20Set%201).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Q*bert",
+            "rbf": "qbert",
+            "zips": [
+              "qbert.zip"
+            ]
+          }
+        },
+        {
+          "name": "QBert Qubes.mra",
+          "sha": "db692fcaaaf4559586e1706999a9a994db39b4fe",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-QBert_MiSTer/master/releases/QBert%20Qubes.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Q*bert Qubes",
+            "rbf": "qbert",
+            "zips": [
+              "qbertqub.zip"
+            ]
+          }
+        }
+      ]
+    },
+    {
       "name": "Arcade-TMNT_MiSTer",
       "description": "Konami's Teenage Mutant Ninja Turtles for the MiSTer FPGA platform",
       "readme": "# TMNT\r\n\r\nKonami's Teenage Mutant Ninja Turtles for the MiSTer FPGA platform.\r\n\r\nBefore reporting a bug please check the **issues** tab, some are already known.\r\n\r\nAll the video and the 007232 sound chip logic was extracted from custom chips by [reverse-engineering their silicon](https://github.com/furrtek/VGChips/tree/master/Konami).\r\n\r\nSupports the `tmnt` and `mia` romsets.\r\n\r\n# Thanks\r\n\r\n@Jotego for his support and his great work on JT51 and JT7759.\r\n\r\nAll my patrons on [Patreon](https://www.patreon.com/furrtek) for their encouraging messages and their financial support:\r\n\r\n8bitworkshop, ack, Adam Davis, Adrian, Adrian Nabarro, AHMAD ALHAMLI, Alan Steremberg, albconde, Alex K, Alex Limi, Alex Painemilla Carre\u00f1o, Alex Schuetz, Allen Tipper, Allister Fiend, amdrgn, Andrea Chiavazza, Andy Palmer, Andyways, Ange Albertini, Anonymous, Anthony Catalano, Anton Gale, Antonio Bellotta, ARCADEAGES, Arjan de Lang, Arkade_UK, Armando Doval-Lopez, Arnaud Jacquemin, arobotbitme ., Artemio Urbina, Arthur Carra, Aubrey Graves, AvramCE, Balthasar Schopman, BeardMonsterGames, Ben Phegan, Benjamin C. Wiley Sittler, Benjamin Leggett, Beretta Vex\u00e9e, Bigly Sevensix, Billy, birdybro, Bit2018, Bitmap Bureau, blastar, Boogermann, Brad, Brandon Ptacnik, Brandon Thomas, brian burney, Brian Hamburg, brian Yu, Bryan Evans, cacophony, Cam Gregory, Carl Hagstr\u00f6m, CastleMania Ryan, Chris Angelini, Chris Jardine, Chris Mawman, Chris Tar, Chris Thompson, Christian, Christian Meath, Christoph Helms, Christopher Feldman, Christopher Gelatt, Christopher Harvey, Christopher rumford, Christopher Tuckwell, Cody E, cognitivegears, Coin Retro, Colin Johnson, Cory Stargel, Count Duckula, Craig Bender, Craig Somerfield, Cristiano Moreira Carvalho, Curt Younkin, CyberpunkDre, Cyrille Jouineau, Dacide, Dan Doyle, Daniel Bauza, Daniel Hochman, Danielle (thegirlg33k), DarkStar7, Darren Wootton, Dashie, Dave Powell, Dave Wray, David Alegre, David Alvarado, David Dietrich, David Filskov, David Moylan, Dean Rymer, Dean Strey, DextersTechLab, Dillon Nichols, Douglas Alves, Dylan Lipsitz, Ed Mandy, ElectronAsh, Elio Berrios, emceebois, Emmanuel Vadot, Enrique Lopez, Eoin Gibney, Eric S, Erik O'Neill, Evan Clarke, F. Bennett Pearce, Jr., Fabio, Faye Salwin, Felix Michaux, Flygon, foo1138, Francois P, Frank Rosario, Frank Tenace, Fredrik Berglind, Fredrik Carlsson, GadgetUK164, Garrett Kapp, Gavin, giom, Grant King, Grant McNaught, gros75, grovdata, Guilherme Colombelli, Guillermo Izard, Guillermo Tunon, h1ghjuce, HardGay, Henry Colorado, Henry R, Hentai Joe, hicom150, ian Latta, Ichigo, Indo Jimbo, infebark, Infinite, Infinite NES Lives LLC, Isaac Totz, ItsACerealWow, ItsBobDudes, J Z, Jacek (Jack), Jake Lancaster, Jake Magee, Jan Kretschmer, Jan Paul, Jason, Jasper Soleymanzadeh, Jeffrey Haas, Jeffrey Skube, Jer!, Jeremy Hopkins, Jerrod Putman, Jerry Langwell, JFT, Jim Drewry, Jim Gregory, Jim Knowler, jklax, Jo, Joe Drilling, Joel Krueger, Johan Sj\u00f6strand, John Fletcher, John Kelley, John Klimek, John Laird, John McMaster, John P, John Rademan, John Stringer, Johnny Davies, Jon, Jon Van Dalen, Jonas, Jonathon Rau, Joost Peters, Jootec from Mars, Jose BG, Joseph Milazzo, Josh, Josh Emery, Josh O'Roake, Josh Yates-Walker, Josiah Freep, JOTEGO, Juan Diego, Kaiosten, Kasil, Kawika Pacheco, Kebulator, Keith F. Kelly, Keith Gordon, Kevin Igoe, kigf, kl3mousse, Klaus Wolf, Kristopher, krivx, Kuromi Bunny, Lecloclo, Lee F, loloC2C, Lukas Schaper, Mack H, Magnus Kvevlander, magus424, Manksalot, Manuel, Manuel Antoni, Manuel Gomez Grande, Marco Tavian, Mark Dell, Mark DeRidder, Mark Mahoney, Martin Ansin, Martin Birkeldh, Martin Donlon, Martin Hernandez, Marvin Blauth, Matt Clawson, Matt Elder, Matt Gibson, Matt McCarthy, Matthew Caron, mattsoft, Maude Tarvox, Maxime Mouflard, mbalders, mic _, Michael Irvine, Michael Lessard, Michael Packard, Michael Stegen, Michael Thompson, Michael Tontimonia, Michael's Workshop, Michal, Mike Dean, Mike G, Mike Holzinger, Mike Puelinckx, Mike S, Mike Strobel, Mike V., Mingus, Mitchell Mebane, Monte Greene, mpong, MrX-8B, Muramasa, Murray Melvin, N, Negativeions, NegativeStraw, NeoHomeBrew, Nesfreak, Nick Bartle, Nick Gamewell, Nick K, Nihar Bhatt, Niko, Nikolay Ivanchev, Nils Lundquist, Noah Evans, Nolan, Noyman29, Nuno Sousa, octamin, ojwales, Olivier Cahagne, Osnyg, Owlnonymous, pagetable.com, Paolo Pisati, ParkNangJung, patreoner, Paul, Paul, Paul Alvarez II, Paul Harris, Peter Brown, Peter Kooiman, Peter McQuillan, Phil Stevenson, Philip Lawson, Philippe Depre, philpem, Pierrick Grillet, Pirloui, Pons Cremator, Porkchop Express, prince_rakeem, QcRetro, Quentin Sykes, R, Rasmus Bonnedal, RaspberryAlpine, Raul3D, RavenX-1, Ray Commend, RayceARoni, Raziel, Reed Kennedy, remowilliams, RetroRGB, RetroShop.pt, RGBsince92, Ricardo Engel, Richard S, Richard Simpson, RichFX, Rob Young, Robert Brodie, Robert Dickenson, Robert MacLean, robert rodgers, Roberto, Roberto Lari, Rodrigo Augusto de Moraes Louren\u00e7o, rok, Roland, Rom1, Roman Buser, Ronald Dean, Ruben Johnson, Rune P, Ryan Costello, Rysha, Sam Hall, Samuli Tuomola, Sanc Coulors, Scott Dowdle, Scott Rising, Sean Hancock, Shane Gleeson, Shane Lynch, Shogun7, ShootTheCore, Sigmund68k, Silvio Samadelli, simon van den bon, Sipan Calli, SJohansson, Smarthuman, Spiff, SteelRush, Stefan Nordkvist, Stephane Tremblay, Stephen Marshall, Stephen Stalcup, Steve Randall, Steven A Rodriguez, Steven Hansen, Steven Hertz, Stuart Dunfield, Super Nicktendo, Sylver, TaylorBat, Thomas Gooddy, Thorias, Tianfeng, Tim, ToastCrust, Todd Gill, Tom Salvo, Tony Shadwick, Trifle, type78, Tyrone Cheng, Ulf Skutnabba, Victor, V\u00edctor Gomariz Ladr\u00f3n de Guevara, Victor Lindo, Victor Pando, Wes Brown, Will Green, Woof, Xtro, Zoltan Kovacs, ZooKneeKnow, zzBadnusty.\r\n",
