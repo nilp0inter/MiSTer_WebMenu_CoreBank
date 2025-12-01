@@ -781,6 +781,11 @@ url = "https://raw.githubusercontent.com/MiSTer-devel/EG2000_MiSTer/main/release
 output = "_Others/eg2000_20220930.rbf"
 
 
+# Enterprise
+url = "https://raw.githubusercontent.com/MiSTer-devel/Enterprise_MiSTer/main/releases/Enterprise_20251125.rbf"
+output = "_Others/Enterprise_20251125.rbf"
+
+
 # EpochGalaxyII
 url = "https://raw.githubusercontent.com/MiSTer-devel/EpochGalaxy2_MiSTer/master/releases/EpochGalaxyII_20250717.rbf"
 output = "_Others/EpochGalaxyII_20250717.rbf"
@@ -1054,6 +1059,11 @@ output = "_Others/TatungEinstein_20250907.rbf"
 # Ti994a
 url = "https://raw.githubusercontent.com/MiSTer-devel/TI-99_4A_MiSTer/master/releases/Ti994a_20250903.rbf"
 output = "_Computer/Ti994a_20250903.rbf"
+
+
+# TK2000
+url = "https://raw.githubusercontent.com/MiSTer-devel/TK2000_MiSTer/main/releases/TK2000_20251124.rbf"
+output = "_Others/TK2000_20251124.rbf"
 
 
 # TomyScramble
@@ -2786,14 +2796,9 @@ url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Phoenix_MiSTer/mast
 output = "_Arcade/Pleiads (Tehkan).mra"
 
 
-# Pleiads (Centuri).mra
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pleiads_MiSTer/master/releases/Pleiads%20(Centuri).mra"
-output = "_Arcade/Pleiads (Centuri).mra"
-
-
-# Pleiads.mra
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pleiads_MiSTer/master/releases/Pleiads.mra"
-output = "_Arcade/Pleiads.mra"
+# Pleiads (Tehkan).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pleiads_MiSTer/master/releases/Pleiads%20(Tehkan).mra"
+output = "_Arcade/Pleiads (Tehkan).mra"
 
 
 # Poly Play 2.mra
