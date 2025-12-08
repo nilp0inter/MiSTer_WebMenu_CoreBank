@@ -7,7 +7,7 @@
     {
       "name": "Arcade-DonkeyKong_MiSTer",
       "description": "Arcade: Donkey Kong for MiSTer",
-      "readme": "LLAPI Note : \r\n\r\n1. Place the rbf core file in a folder named _LLAPI/cores/\r\n2. Place the MRAs files in _LLAPI/_Arcade/\r\n3. Dont forget to enable LLAPI in the core OSD (this has to be done for each MRA for now)\r\n4. Play !\r\n\r\nIn order to play with 2 players you need to insert 2 coins at least and press START2P button.\r\nThis button has been mapped to the LEFT shoulder button (SNES controller used as a reference)\r\n\r\n---------------------------------------------------------------------------------\r\n-- \r\n-- Arcade: Donkey Kong port to MiSTer by Sorgelig\r\n-- 18 April 2018\r\n-- \r\n---------------------------------------------------------------------------------\r\n-- \r\n-- dkong Copyright (c) 2003 - 2004 Katsumi Degawa\r\n-- T80   Copyright (c) 2001-2002 Daniel Wallner (jesus@opencores.org) All rights reserved\r\n-- T48   Copyright (c) 2004, Arnim Laeuger (arniml@opencores.org) All rights reserved\r\n-- \r\n---------------------------------------------------------------------------------\r\n-- \r\n-- Support screen and controls rotation on HDMI output.\r\n-- Only controls are rotated on VGA output.\r\n-- \r\n-- \r\n-- Keyboard inputs :\r\n--\r\n--   F1          : Coin + Start 1P\r\n--   F2          : Coin + Start 2P\r\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\r\n--   SPACE       : Jump\r\n--\r\n-- Joystick support.\r\n-- \r\n-- High score save/load - To save your scores use the 'Save Settings' option in the OSD.\r\n-- * Warning: For Donkey Kong 3 (bootleg) Scores are only loaded when core starts, using reset will return scores to factory settings *\r\n--\r\n---------------------------------------------------------------------------------\r\n\r\n                                *** Attention ***\r\n\r\nROMs are not included. In order to use this arcade, you need to provide the\r\ncorrect ROMs.\r\n\r\nTo simplify the process .mra files are provided in the releases folder, that\r\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\r\ncorresponding file of the M.A.M.E. project.\r\n\r\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\r\ninformation on how to setup and use the environment.\r\n\r\nQuickreference for folders and file placement:\r\n\r\n/_Arcade/<game name>.mra\r\n/_Arcade/cores/<game rbf>.rbf\r\n/_Arcade/mame/<mame rom>.zip\r\n/_Arcade/hbmame/<hbmame rom>.zip\r\n",
+      "readme": "LLAPI Note : \r\n\r\n1. Place the rbf core file in a folder named _LLAPI/cores/\r\n2. Place the MRAs files in _LLAPI/_Arcade/\r\n3. Play !\r\n\r\nIn order to play with 2 players you need to insert 2 coins at least and press START2P button.\r\nThis button has been mapped to the LEFT shoulder button (SNES controller used as a reference)\r\n\r\n---------------------------------------------------------------------------------\r\n-- \r\n-- Arcade: Donkey Kong port to MiSTer by Sorgelig\r\n-- 18 April 2018\r\n-- \r\n---------------------------------------------------------------------------------\r\n-- \r\n-- dkong Copyright (c) 2003 - 2004 Katsumi Degawa\r\n-- T80   Copyright (c) 2001-2002 Daniel Wallner (jesus@opencores.org) All rights reserved\r\n-- T48   Copyright (c) 2004, Arnim Laeuger (arniml@opencores.org) All rights reserved\r\n-- \r\n---------------------------------------------------------------------------------\r\n-- \r\n-- Support screen and controls rotation on HDMI output.\r\n-- Only controls are rotated on VGA output.\r\n-- \r\n-- \r\n-- Keyboard inputs :\r\n--\r\n--   F1          : Coin + Start 1P\r\n--   F2          : Coin + Start 2P\r\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\r\n--   SPACE       : Jump\r\n--\r\n-- Joystick support.\r\n-- \r\n-- High score save/load - To save your scores use the 'Save Settings' option in the OSD.\r\n-- * Warning: For Donkey Kong 3 (bootleg) Scores are only loaded when core starts, using reset will return scores to factory settings *\r\n--\r\n---------------------------------------------------------------------------------\r\n\r\n                                *** Attention ***\r\n\r\nROMs are not included. In order to use this arcade, you need to provide the\r\ncorrect ROMs.\r\n\r\nTo simplify the process .mra files are provided in the releases folder, that\r\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\r\ncorresponding file of the M.A.M.E. project.\r\n\r\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\r\ninformation on how to setup and use the environment.\r\n\r\nQuickreference for folders and file placement:\r\n\r\n/_Arcade/<game name>.mra\r\n/_Arcade/cores/<game rbf>.rbf\r\n/_Arcade/mame/<mame rom>.zip\r\n/_Arcade/hbmame/<hbmame rom>.zip\r\n\r\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-LLAPI/Arcade-DonkeyKong_MiSTer",
@@ -140,19 +140,6 @@
           }
         },
         {
-          "name": "Pest Place.mra",
-          "sha": "df1c7ab570733d9c35ab4b1f84486b8df7173a6d",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-DonkeyKong_MiSTer/master/releases/Pest%20Place.mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Pest Place",
-            "rbf": "DonkeyKong",
-            "zips": [
-              "mario.zip|pestplce.zip"
-            ]
-          }
-        },
-        {
           "name": "Radar Scope (rev. D).mra",
           "sha": "c4ccacc3d31f0ac487a85d51457ba44b2e743c03",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-DonkeyKong_MiSTer/master/releases/Radar%20Scope%20(rev.%20D).mra",
@@ -183,7 +170,7 @@
     {
       "name": "Arcade-IremM62_MiSTer",
       "description": "Irem62 from pace, and mist including Lode Runner, etc",
-      "readme": "LLAPI Note : \n\n1. Place the rbf core file in a folder named _LLAPI/cores/\n2. Place the MRAs files in _LLAPI/_Arcade/\n3. Dont forget to enable LLAPI in the core OSD (this has to be done for each MRA for now)\n4. Play !\n\nIn order to play with 2 players you need to insert 2 coins at least and press START2P button.\nThis button has been mapped to the LEFT shoulder button (SNES controller used as a reference)\n\nIrem M62 Hardware\n=================\n\nBased on old PACE code by Mark McDougall(tcdev), enhanced by Gyorgy Szombathelyi in March 2020.\n\nGames supported:\n- Lode Runner 1-4\n- Kung Fu Master\n- Horizon\n- Battle Road\n- Spelunker 1-2\n- Kid Niki\n- Youjyudn\n\n# Keyboard inputs :\n```\n\n   MAME/IPAC/JPAC Style Keyboard inputs:\n     1           : Start 1 Player\n     2           : Start 2 Player\n     5           : Coin 1\n     6           : Coin 2\n     R,F,D,G     : Player 2\n     A           : Fire2 A\n     S           : Fire2 B \n\t\n Joystick support. \n```\n\n# Known Bugs\n\n- Kung-Fu Master has a sprite color problem\n- Lot Lot isn't fully implemented\n\n\n# ROMs\n```\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n\n```\n\nLaunch game using the appropriate .MRA\n\n",
+      "readme": "LLAPI Note : \n\n1. Place the rbf core file in a folder named _LLAPI/cores/\n2. Place the MRAs files in _LLAPI/_Arcade/\n3. Play !\n\nIn order to play with 2 players you need to insert 2 coins at least and press START2P button.\nThis button has been mapped to the LEFT shoulder button (SNES controller used as a reference)\n\nIrem M62 Hardware\n=================\n\nBased on old PACE code by Mark McDougall(tcdev), enhanced by Gyorgy Szombathelyi in March 2020.\n\nGames supported:\n- Lode Runner 1-4\n- Kung Fu Master\n- Horizon\n- Battle Road\n- Spelunker 1-2\n- Kid Niki\n- Youjyudn\n\n# Keyboard inputs :\n```\n\n   MAME/IPAC/JPAC Style Keyboard inputs:\n     1           : Start 1 Player\n     2           : Start 2 Player\n     5           : Coin 1\n     6           : Coin 2\n     R,F,D,G     : Player 2\n     A           : Fire2 A\n     S           : Fire2 B \n\t\n Joystick support. \n```\n\n# Known Bugs\n\n- Kung-Fu Master has a sprite color problem\n- Lot Lot isn't fully implemented\n\n\n# ROMs\n```\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n\n```\n\nLaunch game using the appropriate .MRA\n\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-LLAPI/Arcade-IremM62_MiSTer",
@@ -414,24 +401,11 @@
     {
       "name": "Arcade-IremM72_MiSTer",
       "description": "BlisSTer support",
-      "readme": "# Irem M72 Core\n\n![](docs/header_small.png)\n\nImplemention of the Irem M72 & M84 arcade hardware (https://www.system16.com/hardware.php?id=738) for the MiSTer FPGA platform.\n\n## Supported Games\n\n|Name|Region|Notes|\n|---|---|---|\n|[R-Type](https://en.wikipedia.org/wiki/R-Type)|Japan, US, World||\n|[Ninja Spirit](https://en.wikipedia.org/wiki/Ninja_Spirit)|Japan||\n|[Image Fight](https://en.wikipedia.org/wiki/Image_Fight)|Japan, World||\n|[Gallop - Armed Police Unit](https://en.wikipedia.org/wiki/Armed_Police_Unit_Gallop)|Japan|Emulated MCU.|\n|[Legend of Hero Tonma](https://en.wikipedia.org/wiki/Legend_of_Hero_Tonma)|Japan||\n|[Mr. HELI no Daibouken](https://en.wikipedia.org/wiki/Mr._Heli)|Japan||\n|[Air Duel](https://en.wikipedia.org/wiki/Air_Duel)|Japan, World|Conversion from M81 hardware.|\n|[Dragon Breed](https://en.wikipedia.org/wiki/Dragon_Breed)|Japan|Conversion from M81 hardware.|\n|[X-Multiply](https://en.wikipedia.org/wiki/X_Multiply)|Japan|Conversion from M81 hardware.|\n|[Daiku no Gensan](https://en.wikipedia.org/wiki/Hammerin%27_Harry)|Japan|Conversion from M81 hardware. Emulated MCU.|\n|[Hammerin' Harry](https://en.wikipedia.org/wiki/Hammerin%27_Harry)|US, Japan|M84 Hardware.|\n|[R-Type II](https://en.wikipedia.org/wiki/R-Type_II)|Japan,World|M84 hardware.|\n\n## Video Modes\nAll of these games output a 256 line signal at 55.02hz, that can be difficult for some consumer CRTs to sync too and the refresh rate can cause irregular scrolling on some digital displays. The core offers three additional refresh rates: 50hz, 57hz and 60hz. These will slow down or speed up gameplay, but sound playback will remain uneffected.\n\n## Pause\nThe core implements pause functionality. You can bind a pause button and/or enable the \"OSD Pause\" option in the OSD, which will pause the game whenever the OSD is open. Pause is not something the original hardware supported and certain parts of the graphics state need to be saved and replayed during the paused frame. This may cause slight graphical issues when paused in some situations.\n\n## Thanks\nMany people, knowingly or not, contributed to this work.\n- @ElectronAsh for the initial verilator version and help with the various KNA ICs\n- @furrtek for the KNA70H015(11) reverse engineering https://github.com/furrtek/VGChips/tree/master/Nanao/KNA70H015(11)\n- @jotego for the YM2151 implementation and analog adjustment module\n- @Ace9921 because I used a lot of his TimePilot'84 code as an example for hooking up inputs and dipswitches\n- The people from PLD Archive and https://www.jammarcade.net/ for collecting and archiving schematics and PAL information http://wiki.pldarchive.co.uk/index.php?title=R-Type_(M72)\n- @sorgelig for developing and maintaining MiSTer\n- @RobertPeip for the v30mz cpu I am using as the basis for the v30\n- @sentientsixp for encouraging me to do this\n- @atrac17 for schematics and MRAs\n- @tdlabac for help with MCU emulation\n- @_ShootTheCore for providing audio captures from original M72 hardware\n- @gyurco for fixes, optimizations and Hammerin' Harry support.\n- The MiSTer FPGA discord server for the helpful advice and support\n\n\n",
+      "readme": "# LLAPI Note\n\n1. Place the rbf core file in a folder named _LLAPI/cores/\n2. Place the MRAs files in _LLAPI/_Arcade/\n3. Play !\n\n# Irem M72 Core\n\n![](docs/header_small.png)\n\nImplemention of the Irem M72 & M84 arcade hardware (https://www.system16.com/hardware.php?id=738) for the MiSTer FPGA platform.\n\n## Supported Games\n\n|Name|Region|Notes|\n|---|---|---|\n|[R-Type](https://en.wikipedia.org/wiki/R-Type)|Japan, US, World||\n|[Ninja Spirit](https://en.wikipedia.org/wiki/Ninja_Spirit)|Japan||\n|[Image Fight](https://en.wikipedia.org/wiki/Image_Fight)|Japan, World||\n|[Gallop - Armed Police Unit](https://en.wikipedia.org/wiki/Armed_Police_Unit_Gallop)|Japan|Emulated MCU.|\n|[Legend of Hero Tonma](https://en.wikipedia.org/wiki/Legend_of_Hero_Tonma)|Japan||\n|[Mr. HELI no Daibouken](https://en.wikipedia.org/wiki/Mr._Heli)|Japan||\n|[Air Duel](https://en.wikipedia.org/wiki/Air_Duel)|Japan, World|Conversion from M81 hardware.|\n|[Dragon Breed](https://en.wikipedia.org/wiki/Dragon_Breed)|Japan|Conversion from M81 hardware.|\n|[X-Multiply](https://en.wikipedia.org/wiki/X_Multiply)|Japan|Conversion from M81 hardware.|\n|[Daiku no Gensan](https://en.wikipedia.org/wiki/Hammerin%27_Harry)|Japan|Conversion from M81 hardware. Emulated MCU.|\n|[Hammerin' Harry](https://en.wikipedia.org/wiki/Hammerin%27_Harry)|US, Japan|M84 Hardware.|\n|[R-Type II](https://en.wikipedia.org/wiki/R-Type_II)|Japan,World|M84 hardware.|\n\n## Video Modes\nAll of these games output a 256 line signal at 55.02hz, that can be difficult for some consumer CRTs to sync too and the refresh rate can cause irregular scrolling on some digital displays. The core offers three additional refresh rates: 50hz, 57hz and 60hz. These will slow down or speed up gameplay, but sound playback will remain uneffected.\n\n## Pause\nThe core implements pause functionality. You can bind a pause button and/or enable the \"OSD Pause\" option in the OSD, which will pause the game whenever the OSD is open. Pause is not something the original hardware supported and certain parts of the graphics state need to be saved and replayed during the paused frame. This may cause slight graphical issues when paused in some situations.\n\n## Thanks\nMany people, knowingly or not, contributed to this work.\n- @ElectronAsh for the initial verilator version and help with the various KNA ICs\n- @furrtek for the KNA70H015(11) reverse engineering https://github.com/furrtek/VGChips/tree/master/Nanao/KNA70H015(11)\n- @jotego for the YM2151 implementation and analog adjustment module\n- @Ace9921 because I used a lot of his TimePilot'84 code as an example for hooking up inputs and dipswitches\n- The people from PLD Archive and https://www.jammarcade.net/ for collecting and archiving schematics and PAL information http://wiki.pldarchive.co.uk/index.php?title=R-Type_(M72)\n- @sorgelig for developing and maintaining MiSTer\n- @RobertPeip for the v30mz cpu I am using as the basis for the v30\n- @sentientsixp for encouraging me to do this\n- @atrac17 for schematics and MRAs\n- @tdlabac for help with MCU emulation\n- @_ShootTheCore for providing audio captures from original M72 hardware\n- @gyurco for fixes, optimizations and Hammerin' Harry support.\n- The MiSTer FPGA discord server for the helpful advice and support\n\n\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer",
       "releases": [
-        {
-          "name": "Air Duel (Japan, M72 hardware).mra",
-          "sha": "795d979715787c4e6a471dd384606fb21fd43836",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/Air%20Duel%20(Japan%2C%20M72%20hardware).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Air Duel (Japan, M72 hardware)",
-            "rbf": "IremM72",
-            "zips": [
-              "airdueljm72.zip|airduel.zip"
-            ]
-          }
-        },
         {
           "name": "Air Duel (World, M72 hardware).mra",
           "sha": "36b78f1dfd14d898e11efb8e173ac3943095a1bd",
@@ -512,32 +486,6 @@
           "type": "RBF"
         },
         {
-          "name": "Daiku no Gensan (Japan, M72 hardware).mra",
-          "sha": "bb812c11ca73fa39a58e5d9c8149bec330b2dab4",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/Daiku%20no%20Gensan%20(Japan%2C%20M72%20hardware).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Daiku no Gensan (Japan, M72 hardware)",
-            "rbf": "IremM72",
-            "zips": [
-              "dkgensanm72.zip|hharry.zip"
-            ]
-          }
-        },
-        {
-          "name": "Daiku no Gensan (Japan, M84 hardware).mra",
-          "sha": "8b9debf1c1ea169f3f119ef9a5436827bcb2d1a5",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/Daiku%20no%20Gensan%20(Japan%2C%20M84%20hardware).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Daiku no Gensan (Japan, M84 hardware)",
-            "rbf": "IremM72",
-            "zips": [
-              "dkgensan.zip|hharry.zip"
-            ]
-          }
-        },
-        {
           "name": "Dragon Breed (Japan, M72 hardware).mra",
           "sha": "15f9d452394b836cc369ab3d086e25be0e7a6d6e",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/Dragon%20Breed%20(Japan%2C%20M72%20hardware).mra",
@@ -573,19 +521,6 @@
             "rbf": "IremM72",
             "zips": [
               "hharryu.zip|hharry.zip"
-            ]
-          }
-        },
-        {
-          "name": "Image Fight (Japan).mra",
-          "sha": "38fb1a690e34aba53480faa386f539daa76c1e36",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/Image%20Fight%20(Japan).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Image Fight (Japan)",
-            "rbf": "IremM72",
-            "zips": [
-              "imgfightj.zip|imgfight.zip"
             ]
           }
         },
@@ -642,19 +577,6 @@
           }
         },
         {
-          "name": "R-Type (Japan).mra",
-          "sha": "5ffa03cc3b036053b0096506bfc2826e8f50dc25",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/R-Type%20(Japan).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "R-Type (Japan)",
-            "rbf": "IremM72",
-            "zips": [
-              "rtype.zip|rtypej.zip"
-            ]
-          }
-        },
-        {
           "name": "R-Type (World).mra",
           "sha": "27f8799d71388fa7d6a0fa868f305ef05c236a51",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/R-Type%20(World).mra",
@@ -664,19 +586,6 @@
             "rbf": "IremM72",
             "zips": [
               "rtype.zip"
-            ]
-          }
-        },
-        {
-          "name": "R-Type II (Japan).mra",
-          "sha": "a458503a2d02e15376f602e5960a990cf56867ef",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/R-Type%20II%20(Japan).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "R-Type II (Japan)",
-            "rbf": "IremM72",
-            "zips": [
-              "rtype2.zip|rtype2j.zip"
             ]
           }
         },
@@ -707,48 +616,74 @@
           }
         },
         {
-          "name": "R-Type (Japan prototype).mra",
-          "sha": "1f74a1fa584dcc99092627c053c469f736ce2900",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/_alternatives/R-Type%20(Japan%20prototype).mra",
+          "name": "Air Duel (Japan, M72 hardware).mra",
+          "sha": "795d979715787c4e6a471dd384606fb21fd43836",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/_alternatives/_Air%20Duel/Air%20Duel%20(Japan%2C%20M72%20hardware).mra",
           "type": "MRA",
           "extra": {
-            "name": "R-Type (Japan prototype)",
+            "name": "Air Duel (Japan, M72 hardware)",
             "rbf": "IremM72",
             "zips": [
-              "rtype.zip|rtypejp.zip"
+              "airdueljm72.zip|airduel.zip"
             ]
           }
         },
         {
-          "name": "R-Type (US).mra",
-          "sha": "6fac61e14b212fdb3e5f8831b28a652935551c2b",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/_alternatives/R-Type%20(US).mra",
+          "name": "Daiku no Gensan (Japan, M72 hardware).mra",
+          "sha": "bb812c11ca73fa39a58e5d9c8149bec330b2dab4",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/_alternatives/_Hammerin'%20Harry/Daiku%20no%20Gensan%20(Japan%2C%20M72%20hardware).mra",
           "type": "MRA",
           "extra": {
-            "name": "R-Type (US)",
+            "name": "Daiku no Gensan (Japan, M72 hardware)",
             "rbf": "IremM72",
             "zips": [
-              "rtype.zip|rtypeu.zip"
+              "dkgensanm72.zip|hharry.zip"
             ]
           }
         },
         {
-          "name": "R-Type (World bootleg).mra",
-          "sha": "10a4aaa0946d279561a70827d8454ae3ef8e888d",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/_alternatives/R-Type%20(World%20bootleg).mra",
+          "name": "Daiku no Gensan (Japan, M84 hardware).mra",
+          "sha": "8b9debf1c1ea169f3f119ef9a5436827bcb2d1a5",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/_alternatives/_Hammerin'%20Harry/Daiku%20no%20Gensan%20(Japan%2C%20M84%20hardware).mra",
           "type": "MRA",
           "extra": {
-            "name": "R-Type (World bootleg)",
+            "name": "Daiku no Gensan (Japan, M84 hardware)",
             "rbf": "IremM72",
             "zips": [
-              "rtype.zip|rtypeb.zip"
+              "dkgensan.zip|hharry.zip"
+            ]
+          }
+        },
+        {
+          "name": "Image Fight (Japan).mra",
+          "sha": "38fb1a690e34aba53480faa386f539daa76c1e36",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/_alternatives/_Image%20Fight/Image%20Fight%20(Japan).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Image Fight (Japan)",
+            "rbf": "IremM72",
+            "zips": [
+              "imgfightj.zip|imgfight.zip"
+            ]
+          }
+        },
+        {
+          "name": "R-Type II (Japan).mra",
+          "sha": "a458503a2d02e15376f602e5960a990cf56867ef",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/_alternatives/_R-Type%20II/R-Type%20II%20(Japan).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "R-Type II (Japan)",
+            "rbf": "IremM72",
+            "zips": [
+              "rtype2.zip|rtype2j.zip"
             ]
           }
         },
         {
           "name": "R-Type II (Japan, revision C).mra",
           "sha": "d29a4609fd6325c89db01262a50ea8b1e125e7b9",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/_alternatives/R-Type%20II%20(Japan%2C%20revision%20C).mra",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/_alternatives/_R-Type%20II/R-Type%20II%20(Japan%2C%20revision%20C).mra",
           "type": "MRA",
           "extra": {
             "name": "R-Type II (Japan, revision C)",
@@ -761,7 +696,7 @@
         {
           "name": "R-Type II (inv) (World).mra",
           "sha": "595fa82089cfdf42e829d47df32836af678824a6",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/_alternatives/R-Type%20II%20(inv)%20(World).mra",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/_alternatives/_R-Type%20II/R-Type%20II%20(inv)%20(World).mra",
           "type": "MRA",
           "extra": {
             "name": "R-Type II (Inv) (World)",
@@ -772,9 +707,61 @@
           }
         },
         {
+          "name": "R-Type (Japan prototype).mra",
+          "sha": "1f74a1fa584dcc99092627c053c469f736ce2900",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/_alternatives/_R-Type/R-Type%20(Japan%20prototype).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "R-Type (Japan prototype)",
+            "rbf": "IremM72",
+            "zips": [
+              "rtype.zip|rtypejp.zip"
+            ]
+          }
+        },
+        {
+          "name": "R-Type (Japan).mra",
+          "sha": "5ffa03cc3b036053b0096506bfc2826e8f50dc25",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/_alternatives/_R-Type/R-Type%20(Japan).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "R-Type (Japan)",
+            "rbf": "IremM72",
+            "zips": [
+              "rtype.zip|rtypej.zip"
+            ]
+          }
+        },
+        {
+          "name": "R-Type (US).mra",
+          "sha": "6fac61e14b212fdb3e5f8831b28a652935551c2b",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/_alternatives/_R-Type/R-Type%20(US).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "R-Type (US)",
+            "rbf": "IremM72",
+            "zips": [
+              "rtype.zip|rtypeu.zip"
+            ]
+          }
+        },
+        {
+          "name": "R-Type (World bootleg).mra",
+          "sha": "10a4aaa0946d279561a70827d8454ae3ef8e888d",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/_alternatives/_R-Type/R-Type%20(World%20bootleg).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "R-Type (World bootleg)",
+            "rbf": "IremM72",
+            "zips": [
+              "rtype.zip|rtypeb.zip"
+            ]
+          }
+        },
+        {
           "name": "X Multiply (Inv) (Japan, M72 hardware).mra",
           "sha": "bd87d59496274054733353597244827b0b3a2389",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/_alternatives/X%20Multiply%20(Inv)%20(Japan%2C%20M72%20hardware).mra",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM72_MiSTer/main/releases/_alternatives/_X%20Multiply/X%20Multiply%20(Inv)%20(Japan%2C%20M72%20hardware).mra",
           "type": "MRA",
           "extra": {
             "name": "X Multiply (Inv) (Japan, M72 hardware)",
@@ -789,7 +776,7 @@
     {
       "name": "Arcade-IremM92_MiSTer",
       "description": null,
-      "readme": "# Irem M92 Core\n\n![](docs/header-small.png)\n\nThis is the MiSTer FPGA core for the Irem M92 arcade system (http://www.system16.com/hardware.php?id=747). The Irem M92 system is known for its high-quality graphics and sound, and this core brings these games to the MiSTer platform for arcade enthusiasts to enjoy.\n\nThe Irem M92 core includes numerous games that have not been ported elsewhere, providing a unique and authentic arcade experience. Some of the popular games available in this core are:\n\n- In the Hunt\n- Gunforce\n- R-Type Leo\n- Hook\n- Blade Master\n- Mystic Riders\n- Undercover Cops\n- Ninja Baseball Batman\n\n## Controls\nAll of the games use standard 8-way input with two buttons with the exception of *Superior Soldiers* which uses six button input. Several of the games support 3 or 4 players but you will need to change a DIP switch in the DIP switch menu to enable that. By default the button buttons are mapped to the MiSTers SNES-like layout as `B,A,X,Y,L,R`. The `Coin` and `Start` buttons are mapped to Select and Start. There are two additional buttons that can be mapped that are not mapped by default. `P2 Start` maps the the second players start button. The only purpose this serves is for accessing the service menu with a single controller since most games require pressing P1 and P2 start to access it. The second unmapped button is `Pause` which pauses the core.\n\nStandard MAME keyboard controls are also supported for up to 4-players.\n\n\n## Cheats\nCheats are defined in the MRA files within the `<cheats>` block. Each cheat is made up of one or more 16-byte codes, similar to game genie codes. They are broken up into four, big-endian, 4-byte sections: `Flags`, `Addr`, `Comp` and `Data`. When the CPU reads the memory address specified by `Addr` it will override the data store there with the value specified in `Data`. If the `Compare` flag is set to `1` then it will only override the value if the value in the `Comp` field matches what is currently in memory. The `Size` field in the `Flags` specifies how large the `Comp` and `Data` values are. The `Addr` must be aligned to that size. The `Method` flag specifies how the memory is overridden. It can completely replace the value, be OR'd with the memory value or AND'd with it.\n\n```\n     Flags     Addr     Comp     Data\n    00000021 000E0002 00001000 00001234\n         |||\n         ||+-- Compare: 0 = always override, 1 = only if compare matches\n         |+--- Size:    1, 2 or 4\n         +---- Method:  0 = replace memory with Data, 1 = OR with Data, 2 = AND with Data\n```\nThe above cheat code would return `0x1234` when reading from memory address `0xE0002` if the value `0x1000` was currently stored at that address.\n\n\nCheats don't write to memory, they replace the memory values as they are being read. So when a cheat is disabled the modifications disappear. Be aware that if you have cheats enabled during startup then the game will almost certainly fail its RAM and/or ROM startup tests.\n\nThe initial cheats are all converted from [Pugsy's Cheats](https://www.mamecheat.co.uk/).\n\n## Thanks\nMany people, knowingly or not, contributed to this work.\n- Mark, for his R-Type Leo PCB and his support through the years.\n- @sorgelig, for developing and maintaining MiSTer.\n- @RobertPeip, for the v30mz cpu I am using as the basis for the v33 & v35.\n- @jotego, for the YM2151 implementation and analog adjustment module.\n- @ArtemioUrbina, for their support building [MDfourier](https://junkerhq.net/MDFourier/) tests.\n- @zakk4223, for hiscore support.\n- @birdybro, @Toryalai1 & @wwark for MRA help.\n- Sanborn, for help with the docs.\n- The people from PLD Archive collecting and archiving PAL information https://wiki.pldarchive.co.uk/index.php?title=Category:Irem_M92\n- [Pugsy's Cheats](https://www.mamecheat.co.uk/) for maintaining an excellent selection of cheats.\n- The MiSTer FPGA discord server for support, advice and testing.\n\n\n",
+      "readme": "# LLAPI Note\n\n1. Place the rbf core file in a folder named _LLAPI/cores/\n2. Place the MRAs files in _LLAPI/_Arcade/\n3. Play !\n\n# Irem M92 Core\n\n![](docs/header-small.png)\n\nThis is the MiSTer FPGA core for the Irem M92 arcade system (http://www.system16.com/hardware.php?id=747). The Irem M92 system is known for its high-quality graphics and sound, and this core brings these games to the MiSTer platform for arcade enthusiasts to enjoy.\n\nThe Irem M92 core includes numerous games that have not been ported elsewhere, providing a unique and authentic arcade experience. Some of the popular games available in this core are:\n\n- In the Hunt\n- Gunforce\n- R-Type Leo\n- Hook\n- Blade Master\n- Mystic Riders\n- Undercover Cops\n- Ninja Baseball Batman\n\n## Controls\nAll of the games use standard 8-way input with two buttons with the exception of *Superior Soldiers* which uses six button input. Several of the games support 3 or 4 players but you will need to change a DIP switch in the DIP switch menu to enable that. By default the button buttons are mapped to the MiSTers SNES-like layout as `B,A,X,Y,L,R`. The `Coin` and `Start` buttons are mapped to Select and Start. There are two additional buttons that can be mapped that are not mapped by default. `P2 Start` maps the the second players start button. The only purpose this serves is for accessing the service menu with a single controller since most games require pressing P1 and P2 start to access it. The second unmapped button is `Pause` which pauses the core.\n\nStandard MAME keyboard controls are also supported for up to 4-players.\n\n\n## Cheats\nCheats are defined in the MRA files within the `<cheats>` block. Each cheat is made up of one or more 16-byte codes, similar to game genie codes. They are broken up into four, big-endian, 4-byte sections: `Flags`, `Addr`, `Comp` and `Data`. When the CPU reads the memory address specified by `Addr` it will override the data store there with the value specified in `Data`. If the `Compare` flag is set to `1` then it will only override the value if the value in the `Comp` field matches what is currently in memory. The `Size` field in the `Flags` specifies how large the `Comp` and `Data` values are. The `Addr` must be aligned to that size. The `Method` flag specifies how the memory is overridden. It can completely replace the value, be OR'd with the memory value or AND'd with it.\n\n```\n     Flags     Addr     Comp     Data\n    00000021 000E0002 00001000 00001234\n         |||\n         ||+-- Compare: 0 = always override, 1 = only if compare matches\n         |+--- Size:    1, 2 or 4\n         +---- Method:  0 = replace memory with Data, 1 = OR with Data, 2 = AND with Data\n```\nThe above cheat code would return `0x1234` when reading from memory address `0xE0002` if the value `0x1000` was currently stored at that address.\n\n\nCheats don't write to memory, they replace the memory values as they are being read. So when a cheat is disabled the modifications disappear. Be aware that if you have cheats enabled during startup then the game will almost certainly fail its RAM and/or ROM startup tests.\n\nThe initial cheats are all converted from [Pugsy's Cheats](https://www.mamecheat.co.uk/).\n\n## Thanks\nMany people, knowingly or not, contributed to this work.\n- Mark, for his R-Type Leo PCB and his support through the years.\n- @sorgelig, for developing and maintaining MiSTer.\n- @RobertPeip, for the v30mz cpu I am using as the basis for the v33 & v35.\n- @jotego, for the YM2151 implementation and analog adjustment module.\n- @ArtemioUrbina, for their support building [MDfourier](https://junkerhq.net/MDFourier/) tests.\n- @zakk4223, for hiscore support.\n- @birdybro, @Toryalai1 & @wwark for MRA help.\n- Sanborn, for help with the docs.\n- The people from PLD Archive collecting and archiving PAL information https://wiki.pldarchive.co.uk/index.php?title=Category:Irem_M92\n- [Pugsy's Cheats](https://www.mamecheat.co.uk/) for maintaining an excellent selection of cheats.\n- The MiSTer FPGA discord server for support, advice and testing.\n\n\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-LLAPI/Arcade-IremM92_MiSTer",
@@ -870,19 +857,6 @@
             "rbf": "IremM92",
             "zips": [
               "bmaster.zip"
-            ]
-          }
-        },
-        {
-          "name": "Dream Soccer '94 (Japan, M92 hardware).mra",
-          "sha": "891cb433fa658e47f73a9e4de679212538ae7a42",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM92_MiSTer/main/releases/Dream%20Soccer%20'94%20(Japan%2C%20M92%20hardware).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Dream Soccer '94 (Japan, M92 hardware)",
-            "rbf": "IremM92",
-            "zips": [
-              "dsoccr94.zip|dsoccr94j.zip"
             ]
           }
         },
@@ -1040,6 +1014,19 @@
             "rbf": "IremM92",
             "zips": [
               "crossbld.zip|bmaster.zip"
+            ]
+          }
+        },
+        {
+          "name": "Dream Soccer '94 (Japan, M92 hardware).mra",
+          "sha": "891cb433fa658e47f73a9e4de679212538ae7a42",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-IremM92_MiSTer/main/releases/_alternatives/_Dream%20Soccer%20'94/Dream%20Soccer%20'94%20(Japan%2C%20M92%20hardware).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Dream Soccer '94 (Japan, M92 hardware)",
+            "rbf": "IremM92",
+            "zips": [
+              "dsoccr94.zip|dsoccr94j.zip"
             ]
           }
         },
@@ -1243,7 +1230,7 @@
     {
       "name": "Arcade-NinjaKun_MiSTer",
       "description": "Ninja-Kun for MiSter",
-      "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: Ninja-Kun  port to MiSTer by MiSTer-X\n-- 23 October 2019\n-- https://github.com/MrX-8B/MiSTer-Arcade-NinjaKun\n-- \n-- Added support for Raiders5, Nova 2001 from MiST by Mike S\n---------------------------------------------------------------------------------\n-- FPGA Ninja-Kun for Spartan-6\n------------------------------------------------\n-- Copyright (c) 2011 MiSTer-X\n---------------------------------------------------------------------------------\n-- T80/T80s - Version : 0242\n-----------------------------\n-- Z80 compatible microprocessor core\n-- Copyright (c) 2001-2002 Daniel Wallner (jesus@opencores.org)\n---------------------------------------------------------------------------------\n-- YM2149 (AY-3-8910)\n-- Copyright (c) MikeJ - Jan 2005\n---------------------------------------------------------------------------------\n-- \n-- \n-- Keyboard inputs :\n--\n--   F2          : Coin + Start 2 players\n--   F1          : Coin + Start 1 player\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--   SPACE       : Shot\n--   CTRL        : Jump\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   R,F,D,G     : Player 2 Movements\n--   A           : Player 2 Shot\n--   S           : Player 2 Jump\n--\n-- Joystick support.\n--\n--\n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n\nNote for Nova 2001 (From Mame)\n\n- nova2001 is very sensitive to coin inputs, if the coin isn't held down long\n  enough, or is held down too long the game will reset, likewise if coins are\n  inserted too quickly. This only happens in nova2001 and not in nova2001u.\n  (the nova2001h set seems to be an unofficial fix for this issue, presumably\n   it's so sensitive it would reset sometimes in the original cabinet?)\n- nova2001h MRA was added to address the original cabinet issue.\n\n\n",
+      "readme": "LLAPI Note : \n\n1. Place the rbf core file in a folder named _LLAPI/cores/\n2. Place the MRAs files in _LLAPI/_Arcade/\n3. Play !\n---------------------------------------------------------------------------------\n-- \n-- Arcade: Ninja-Kun  port to MiSTer by MiSTer-X\n-- 23 October 2019\n-- https://github.com/MrX-8B/MiSTer-Arcade-NinjaKun\n-- \n-- Added support for Raiders5, Nova 2001 from MiST by Mike S\n---------------------------------------------------------------------------------\n-- FPGA Ninja-Kun for Spartan-6\n------------------------------------------------\n-- Copyright (c) 2011 MiSTer-X\n---------------------------------------------------------------------------------\n-- T80/T80s - Version : 0242\n-----------------------------\n-- Z80 compatible microprocessor core\n-- Copyright (c) 2001-2002 Daniel Wallner (jesus@opencores.org)\n---------------------------------------------------------------------------------\n-- YM2149 (AY-3-8910)\n-- Copyright (c) MikeJ - Jan 2005\n---------------------------------------------------------------------------------\n-- \n-- \n-- Keyboard inputs :\n--\n--   F2          : Coin + Start 2 players\n--   F1          : Coin + Start 1 player\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--   SPACE       : Shot\n--   CTRL        : Jump\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   R,F,D,G     : Player 2 Movements\n--   A           : Player 2 Shot\n--   S           : Player 2 Jump\n--\n-- Joystick support.\n--\n--\n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n\nNote for Nova 2001 (From Mame)\n\n- nova2001 is very sensitive to coin inputs, if the coin isn't held down long\n  enough, or is held down too long the game will reset, likewise if coins are\n  inserted too quickly. This only happens in nova2001 and not in nova2001u.\n  (the nova2001h set seems to be an unofficial fix for this issue, presumably\n   it's so sensitive it would reset sometimes in the original cabinet?)\n- nova2001h MRA was added to address the original cabinet issue.\n\n\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-LLAPI/Arcade-NinjaKun_MiSTer",
@@ -1292,21 +1279,8 @@
           }
         },
         {
-          "name": "Nova 2001 (Hack).mra",
-          "sha": "9dbd9d591623c7c5c6fcc2932ac4eb0a573e2e0e",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-NinjaKun_MiSTer/master/releases/Nova%202001%20(Hack).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Nova 2001",
-            "rbf": "ninjakun",
-            "zips": [
-              "nova2001h.zip"
-            ]
-          }
-        },
-        {
           "name": "Nova 2001.mra",
-          "sha": "28e66588df81fd8ba13f776a0333187aa04502e6",
+          "sha": "c4489f9c27f8423c9c6802f842f7f8ba1c1887d8",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-NinjaKun_MiSTer/master/releases/Nova%202001.mra",
           "type": "MRA",
           "extra": {
@@ -1319,7 +1293,7 @@
         },
         {
           "name": "Raiders5.mra",
-          "sha": "8faa1671c300d462a9c870e51ef11a7f1ca1b508",
+          "sha": "ab90af86834dd81ce00b0954806c1aad1122480d",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-NinjaKun_MiSTer/master/releases/Raiders5.mra",
           "type": "MRA",
           "extra": {
@@ -1341,7 +1315,7 @@
     {
       "name": "Arcade-Pacman_MiSTer",
       "description": "Arcade: Pacman for MiSTer",
-      "readme": "LLAPI Note : \n\n1. Place the rbf core file in a folder named _LLAPI/cores/\n2. Place the MRAs files in _LLAPI/_Arcade/\n3. Dont forget to enable LLAPI in the core OSD (this has to be done for each MRA for now)\n4. Play !\n\nIn order to play with 2 players you need to insert 2 coins at least and press START2P button.\nThis button has been mapped to the LEFT shoulder button (SNES controller used as a reference)\n\n---------------------------------------------------------------------------------\n-- \n-- Arcade: Pacman port to MiSTer by Sorgelig\n-- 09 November 2017\n-- \n---------------------------------------------------------------------------------\n-- A simulation model of Pacman hardware\n-- Copyright (c) MikeJ - January 2006\n---------------------------------------------------------------------------------\n-- \n-- Support screen and controls rotation on HDMI output.\n-- Only controls are rotated on VGA output.\n-- \n-- \n-- Keyboard inputs :\n--\n--   F1          : Start Player 1\n--   F2          : Start Player 2\n--   F3\t\t : Coin Player 1\n--   F5          : Skip to next level\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   R,F,D,G     : Player 2 Movements\n--\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--\n-- Joystick support.\n-- \n----------------------------------------------\n\nHiscore save/load:\n\nSave and load of hiscores is supported for the following games on this core:\n - Alibaba 40 Thieves\n - Crush Roller\n - Dream Shopper\n - Eggor\n - Gorkans\n - Lizard Wizard\n - Mr. TNT\n - Ms. Pacman\n - Pac-Man (Midway)\n - Pacman Club\n - Pacman Plus\n - Ponpoko\n - Puck Man\n - Woodpecker\n\nTo save your hiscores manually, press the 'Save Settings' option in the OSD.  Hiscores will be automatically loaded when the core is started.\n\nTo enable automatic saving of hiscores, turn on the 'Autosave Hiscores' option and press the 'Save Settings' option in the OSD.  Hiscores will then be automatically saved (if they have changed) any time the OSD is opened.\n\nHiscore data is stored in /media/fat/config/nvram/ as ```<mra filename>.nvm```\n\n---------------------------------------------------------------------------------\n\n                                 *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
+      "readme": "LLAPI Note : \n\n1. Place the rbf core file in a folder named _LLAPI/cores/\n2. Place the MRAs files in _LLAPI/_Arcade/\n3. Play !\n\nIn order to play with 2 players you need to insert 2 coins at least and press START2P button.\nThis button has been mapped to the LEFT shoulder button (SNES controller used as a reference)\n\n---------------------------------------------------------------------------------\n-- \n-- Arcade: Pacman port to MiSTer by Sorgelig\n-- 09 November 2017\n-- \n---------------------------------------------------------------------------------\n-- A simulation model of Pacman hardware\n-- Copyright (c) MikeJ - January 2006\n---------------------------------------------------------------------------------\n-- \n-- Support screen and controls rotation on HDMI output.\n-- Only controls are rotated on VGA output.\n-- \n-- \n-- Keyboard inputs :\n--\n--   F1          : Start Player 1\n--   F2          : Start Player 2\n--   F3\t\t : Coin Player 1\n--   F5          : Skip to next level\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   R,F,D,G     : Player 2 Movements\n--\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--\n-- Joystick support.\n-- \n----------------------------------------------\n\nHiscore save/load:\n\nSave and load of hiscores is supported for the following games on this core:\n - Alibaba 40 Thieves\n - Crush Roller\n - Dream Shopper\n - Eggor\n - Gorkans\n - Lizard Wizard\n - Mr. TNT\n - Ms. Pacman\n - Pac-Man (Midway)\n - Pacman Club\n - Pacman Plus\n - Ponpoko\n - Puck Man\n - Woodpecker\n\nTo save your hiscores manually, press the 'Save Settings' option in the OSD.  Hiscores will be automatically loaded when the core is started.\n\nTo enable automatic saving of hiscores, turn on the 'Autosave Hiscores' option and press the 'Save Settings' option in the OSD.  Hiscores will then be automatically saved (if they have changed) any time the OSD is opened.\n\nHiscore data is stored in /media/fat/config/nvram/ as ```<mra filename>.nvm```\n\n---------------------------------------------------------------------------------\n\n                                 *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer",
@@ -1510,19 +1484,6 @@
           "type": "RBF"
         },
         {
-          "name": "Beastie Feastie (Pac-Man Conversion).mra",
-          "sha": "5d527e8bac5d5957d99da490460dfb5ce4171ce3",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer/master/releases/Beastie%20Feastie%20(Pac-Man%20Conversion).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Beastie Feastie",
-            "rbf": "pacman",
-            "zips": [
-              "suprglob.zip|beastfp.zip"
-            ]
-          }
-        },
-        {
           "name": "Birdiy.mra",
           "sha": "bd6c219395309796a18efc29fb851a30b0c1c6c2",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer/master/releases/Birdiy.mra",
@@ -1601,19 +1562,6 @@
           }
         },
         {
-          "name": "Gorkans.mra",
-          "sha": "55c0cb85edce714009989e31110af2653d8c1bfd",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer/master/releases/Gorkans.mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Gorkans",
-            "rbf": "pacman",
-            "zips": [
-              "mrtnt.zip|gorkans.zip"
-            ]
-          }
-        },
-        {
           "name": "Jump Shot.mra",
           "sha": "98aa8b86edea67a4175b6ac8d12740c822190aea",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer/master/releases/Jump%20Shot.mra",
@@ -1679,15 +1627,15 @@
           }
         },
         {
-          "name": "Pac-Man (Midway).mra",
-          "sha": "647fb00e12997cca59da032f15fc1af5663e31a3",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer/master/releases/Pac-Man%20(Midway).mra",
+          "name": "Pac-Man - Puck Man (JP, Set 1).mra",
+          "sha": "e05d13561ae0f6fc1407d75adf77524984096483",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer/master/releases/Pac-Man%20-%20Puck%20Man%20(JP%2C%20Set%201).mra",
           "type": "MRA",
           "extra": {
-            "name": "Pac-Man",
+            "name": "Puck Man",
             "rbf": "pacman",
             "zips": [
-              "puckman.zip|pacman.zip"
+              "puckman.zip"
             ]
           }
         },
@@ -1742,19 +1690,6 @@
           }
         },
         {
-          "name": "Puck Man (JP, Set 1).mra",
-          "sha": "e05d13561ae0f6fc1407d75adf77524984096483",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer/master/releases/Puck%20Man%20(JP%2C%20Set%201).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Puck Man",
-            "rbf": "pacman",
-            "zips": [
-              "puckman.zip"
-            ]
-          }
-        },
-        {
           "name": "Super Glob (Pac-Man, German) [bl].mra",
           "sha": "58582e7794168df2fde51b3ddb78432e058665bc",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer/master/releases/Super%20Glob%20(Pac-Man%2C%20German)%20%5Bbl%5D.mra",
@@ -1764,19 +1699,6 @@
             "rbf": "pacman",
             "zips": [
               "suprglob.zip|sprglbpg.zip"
-            ]
-          }
-        },
-        {
-          "name": "The Glob (Pac-Man Hardware).mra",
-          "sha": "0d38b3f32d16503cf082d53906a81d1781b6f91a",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Pacman_MiSTer/master/releases/The%20Glob%20(Pac-Man%20Hardware).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "The Glob",
-            "rbf": "pacman",
-            "zips": [
-              "suprglob.zip|theglobp.zip"
             ]
           }
         },
@@ -1811,7 +1733,7 @@
     {
       "name": "Arcade-SEGASYS1_MiSTer",
       "description": "Sega System 1 for MiSTer",
-      "readme": "LLAPI Note : \n\n1. Place the rbf core file in a folder named _LLAPI/cores/\n2. Place the MRAs files in _LLAPI/_Arcade/\n3. Dont forget to enable LLAPI in the core OSD (this has to be done for each MRA for now)\n4. Play !\n\nIn order to play with 2 players you need to insert 2 coins at least and press START2P button.\nThis button has been mapped to the LEFT shoulder button (SNES controller used as a reference)\n\n# [Arcade: SEGA System 1](https://www.system16.com/hardware.php?id=693) for [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki) \n\nby [MiSTer-X](https://twitter.com/mrx_8b)\n\n## Specifications\n\n* T80/T80s - Version : 0242\n* Z80 compatible microprocessor core - Copyright (c) 2001-2002 Daniel Wallner (jesus@opencores.org)\n* 2020/01/08  Impl. Trigger 3  (for SEGA Ninja)\n\n## Supported Games\n\nCurrently implemented:\n\n* 4-D Warriors\n* Block Gal\n* Bullfight\n* Flicky\n* I'm Sorry\n* Mister Viking\n* My Hero\n* Pitfall II\n* Rafflesia\n* Regulus\n* Sega Ninja\n* Spatter\n* Star Jacker\n* Swat\n* TeddyBoy Blues\n* Up'n Down\n* Water Match\n* Wonder Boy\n\nSega System 1 games currently **not yet** implemented:\n\n* Choplifter\n* Gardia\n* Noboranka / Zippy Bug\n\n## High score save/load\n\n* To save your scores use the 'Save Settings' option in the OSD\n* All games supported except Water Match and Wonder Boy\n\n## ROM Files Instructions\n\n**ROMs are not included!** In order to use this arcade core, you will need to provide the correct ROM file yourself.\n\nFind this zip file somewhere. You need to find the file exactly as required. Check the .mra file in a text editor for more information.  \nDo not rename other zip files even if they also represent the same game - they are not compatible!  \nThe name of zip is taken from M.A.M.E. project, so you can get more info about hashes and contained files there.\n\nHow to install:\n1. Update MiSTer binary to v200106 or later\n2. copy releases/*.mra to /media/fat/_Arcade\n3. copy releases/*.rbf to /media/fat/_Arcade/cores\n4. copy ROM zip files  to /media/fat/_Arcade/mame\n\nBe sure to use the MRA file in \"releases\" of this repository.  \nIt does not guarantee the operation when using other MRA files.\n",
+      "readme": "LLAPI Note : \n\n1. Place the rbf core file in a folder named _LLAPI/cores/\n2. Place the MRAs files in _LLAPI/_Arcade/\n3. Play !\n\nIn order to play with 2 players you need to insert 2 coins at least and press START2P button.\nThis button has been mapped to the LEFT shoulder button (SNES controller used as a reference)\n\n# [Arcade: SEGA System 1](https://www.system16.com/hardware.php?id=693) for [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki) \n\nby [MiSTer-X](https://twitter.com/mrx_8b)\n\n## Specifications\n\n* T80/T80s - Version : 0242\n* Z80 compatible microprocessor core - Copyright (c) 2001-2002 Daniel Wallner (jesus@opencores.org)\n* 2020/01/08  Impl. Trigger 3  (for SEGA Ninja)\n\n## Supported Games\n\nCurrently implemented:\n\n* 4-D Warriors\n* Block Gal\n* Bullfight\n* Flicky\n* I'm Sorry\n* Mister Viking\n* My Hero\n* Pitfall II\n* Rafflesia\n* Regulus\n* Sega Ninja\n* Spatter\n* Star Jacker\n* Swat\n* TeddyBoy Blues\n* Up'n Down\n* Water Match\n* Wonder Boy\n\nSega System 1 games currently **not yet** implemented:\n\n* Choplifter\n* Gardia\n* Noboranka / Zippy Bug\n\n## High score save/load\n\n* To save your scores use the 'Save Settings' option in the OSD\n* All games supported except Water Match and Wonder Boy\n\n## ROM Files Instructions\n\n**ROMs are not included!** In order to use this arcade core, you will need to provide the correct ROM file yourself.\n\nFind this zip file somewhere. You need to find the file exactly as required. Check the .mra file in a text editor for more information.  \nDo not rename other zip files even if they also represent the same game - they are not compatible!  \nThe name of zip is taken from M.A.M.E. project, so you can get more info about hashes and contained files there.\n\nHow to install:\n1. Update MiSTer binary to v200106 or later\n2. copy releases/*.mra to /media/fat/_Arcade\n3. copy releases/*.rbf to /media/fat/_Arcade/cores\n4. copy ROM zip files  to /media/fat/_Arcade/mame\n\nBe sure to use the MRA file in \"releases\" of this repository.  \nIt does not guarantee the operation when using other MRA files.\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-LLAPI/Arcade-SEGASYS1_MiSTer",
@@ -2051,19 +1973,6 @@
           }
         },
         {
-          "name": "Star Jacker (alt).mra",
-          "sha": "95888fcdc5590097e9690afd7acfe693913d7f33",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-SEGASYS1_MiSTer/main/releases/Star%20Jacker%20(alt).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Star Jacker",
-            "rbf": "segasys1",
-            "zips": [
-              "starjack.zip"
-            ]
-          }
-        },
-        {
           "name": "Star Jacker.mra",
           "sha": "58f41cfc9477edf9ed6d1c1543f444f8db74f282",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-SEGASYS1_MiSTer/main/releases/Star%20Jacker.mra",
@@ -2146,7 +2055,7 @@
     {
       "name": "Arcade-Tecmo_MiSTer",
       "description": "MiSTer arcade core for Tecmo arcade classics: Rygar (1986), Gemini Wing (1987), and Silkworm (1988).",
-      "readme": "# Tecmo\n\nTecmo was a Japanese video game company founded in 1967, who like many other game companies of the era, had their roots outside the amusement business. In Tecmo's case, they were originally a supplier of cleaning equipment.\n\nNevertheless, they went on to create some classic arcade games during the 80s and 90s. Many of which saw later releases on consoles like Nintendo Entertainment System, Sega Master System, Commodore 64, Atari Lynx, etc.\n\nThis core currently supports three games: Rygar (1986), Gemini Wing (1987), and Silkworm (1988).\n\n## Getting Started\n\nPlace the MRA, RBF, and the MAME ROM files in the following locations:\n\n```\n_Arcade/Rygar.mra\n_Arcade/Gemini Wing.mra\n_Arcade/Silkworm.mra\n_Arcade/cores/tecmo.rbf\n_Arcade/mame/rygar.zip\n_Arcade/mame/gemini.zip\n_Arcade/mame/silkworm.zip\n```\n\nFor more information on using MRA files with MiSTer, please refer to the [wiki](https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms).\n\n## Controls\n\nKeyboard inputs:\n\n| name     | key                   |\n| ---      | ---                   |\n| Coin 1   | 5                     |\n| Coin 2   | 6                     |\n| Start 1  | 1                     |\n| Start 2  | 1                     |\n| Button 1 | CTRL                  |\n| Button 2 | ALT                   |\n| Button 3 | SPACE                 |\n| Movement | UP, DOWN, LEFT, RIGHT |\n\nJoystick inputs:\n\n| name     | button                |\n| ---      | ---                   |\n| Coin     | L                     |\n| Start    | R                     |\n| Pause    | START                 |\n| Button 1 | A                     |\n| Button 2 | B                     |\n| Button 3 | X                     |\n| Movement | UP, DOWN, LEFT, RIGHT |\n\n## Credits\n\nMade with :heart: by [Josh Bassett](https://twitter.com/nullobject), 2020.\n\nI would also like to give a massive shout out to all my [Patreon](https://www.patreon.com/nullobject) supporters. Your support keeps me working on these games, and helps bring them to everybody.\n\nSpecial thanks to:\n\n<table>\n  <tr>\n    <td><img src=\"https://github.com/MiSTer-devel/Arcade-Tecmo_MiSTer/raw/master/doc/avatar.png\" width=\"100px;\" /></td>\n    <td>Alex Painemilla Carre\u00f1o</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://github.com/MiSTer-devel/Arcade-Tecmo_MiSTer/raw/master/doc/amineko-stone.jpeg\" width=\"100px;\" /></td>\n    <td>Amineko Stone</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://github.com/MiSTer-devel/Arcade-Tecmo_MiSTer/raw/master/doc/andrew-boudreau.jpg\" width=\"100px;\" /></td>\n    <td>Andrew Boudreau</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://github.com/MiSTer-devel/Arcade-Tecmo_MiSTer/raw/master/doc/avatar.png\" width=\"100px;\" /></td>\n    <td>Arjan de Lang</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://github.com/MiSTer-devel/Arcade-Tecmo_MiSTer/raw/master/doc/avatar.png\" width=\"100px;\" /></td>\n    <td>Benjamin Walker</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://github.com/MiSTer-devel/Arcade-Tecmo_MiSTer/raw/master/doc/christopher-gelatt.png\" width=\"100px;\" /></td>\n    <td>Christopher Gelatt</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://github.com/MiSTer-devel/Arcade-Tecmo_MiSTer/raw/master/doc/christopher-tuckwell.jpeg\" width=\"100px;\" /></td>\n    <td>Christopher Tuckwell</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://github.com/MiSTer-devel/Arcade-Tecmo_MiSTer/raw/master/doc/hard-rich.jpeg\" width=\"100px;\" /></td>\n    <td>Hard Rich</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://github.com/MiSTer-devel/Arcade-Tecmo_MiSTer/raw/master/doc/avatar.png\" width=\"100px;\" /></td>\n    <td>iker</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://github.com/MiSTer-devel/Arcade-Tecmo_MiSTer/raw/master/doc/lakeside.jpeg\" width=\"100px;\" /></td>\n    <td>Lakeside</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://github.com/MiSTer-devel/Arcade-Tecmo_MiSTer/raw/master/doc/avatar.png\" width=\"100px;\" /></td>\n    <td>Matt Postema</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://github.com/MiSTer-devel/Arcade-Tecmo_MiSTer/raw/master/doc/ordigdug.png\" width=\"100px;\" /></td>\n    <td>ordigdug</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://github.com/MiSTer-devel/Arcade-Tecmo_MiSTer/raw/master/doc/scralings.png\" width=\"100px;\" /></td>\n    <td>Scralings</td>\n  </tr>\n</table>\n\nThanks to:\n\nAdrian Longland, Akai Futari, Allen Tipper, Amosfear, Andrew Francomb, Antonio Bellotta, Benjamin Leggett, Charles Sagett, Chris B, Darren Newman, David Filskov, David Jones, Devon Nelson, Filip Kindt, Funkycochise, George Stravopodis, Herbert Krammer, Humanoide70, Jim Wehrfritz, John Perry, John Stringer, Jordan Retterer, JPS (RetroFPGA), Juan Jose Velez Ramirez, Keith Kelly, Leslie Welch, Ludovic Germaneau, Mahendra, Manuel Antoni, Mark Fulton, Mark Paterson, Mat Azel, Matthew, Matthias Penkert-Hennig, Max L Schultz, Max Sch\u00fctz, Michael Fuerst, Michael Yount, Miguel Candelario, Mike Parks, Monokrom, MrX-8B, Naku aka Ben, Octavio Bernacer Sempere, olivier bernhard, Oscar Laguna Garcia, Per Sweden, Phillip McMahon, Porkchop Express, RetroDriven, Ross Jolet, Shane Lynch, Shaneus, SpearZ, Tony Peters, toolb0x, Victor Bly, V\u00edctor Gomariz Ladr\u00f3n de Guevara, Xzarian, Zichio\n\n...and the rest of my supporters :sparkling_heart:\n\n## Development\n\nCompile the core:\n\n    $ make build\n\nProgram the DE10-Nano:\n\n    $ make program\n\n## Licence\n\nThis project is licensed under the MIT licence. See the LICENCE file for more details.\n",
+      "readme": "# LLAPI Note\n\n1. Place the rbf core file in a folder named _LLAPI/cores/\n2. Place the MRAs files in _LLAPI/_Arcade/\n3. Play !\n\n# Tecmo\n\nTecmo was a Japanese video game company founded in 1967, who like many other game companies of the era, had their roots outside the amusement business. In Tecmo's case, they were originally a supplier of cleaning equipment.\n\nNevertheless, they went on to create some classic arcade games during the 80s and 90s. Many of which saw later releases on consoles like Nintendo Entertainment System, Sega Master System, Commodore 64, Atari Lynx, etc.\n\nThis core currently supports three games: Rygar (1986), Gemini Wing (1987), and Silkworm (1988).\n\n## Getting Started\n\nPlace the MRA, RBF, and the MAME ROM files in the following locations:\n\n```\n_Arcade/Rygar.mra\n_Arcade/Gemini Wing.mra\n_Arcade/Silkworm.mra\n_Arcade/cores/tecmo.rbf\n_Arcade/mame/rygar.zip\n_Arcade/mame/gemini.zip\n_Arcade/mame/silkworm.zip\n```\n\nFor more information on using MRA files with MiSTer, please refer to the [wiki](https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms).\n\n## Controls\n\nKeyboard inputs:\n\n| name     | key                   |\n| ---      | ---                   |\n| Coin 1   | 5                     |\n| Coin 2   | 6                     |\n| Start 1  | 1                     |\n| Start 2  | 1                     |\n| Button 1 | CTRL                  |\n| Button 2 | ALT                   |\n| Button 3 | SPACE                 |\n| Movement | UP, DOWN, LEFT, RIGHT |\n\nJoystick inputs:\n\n| name     | button                |\n| ---      | ---                   |\n| Coin     | L                     |\n| Start    | R                     |\n| Pause    | START                 |\n| Button 1 | A                     |\n| Button 2 | B                     |\n| Button 3 | X                     |\n| Movement | UP, DOWN, LEFT, RIGHT |\n\n## Credits\n\nMade with :heart: by [Josh Bassett](https://twitter.com/nullobject), 2020.\n\nI would also like to give a massive shout out to all my [Patreon](https://www.patreon.com/nullobject) supporters. Your support keeps me working on these games, and helps bring them to everybody.\n\nSpecial thanks to:\n\n<table>\n  <tr>\n    <td><img src=\"https://github.com/MiSTer-devel/Arcade-Tecmo_MiSTer/raw/master/doc/avatar.png\" width=\"100px;\" /></td>\n    <td>Alex Painemilla Carre\u00f1o</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://github.com/MiSTer-devel/Arcade-Tecmo_MiSTer/raw/master/doc/amineko-stone.jpeg\" width=\"100px;\" /></td>\n    <td>Amineko Stone</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://github.com/MiSTer-devel/Arcade-Tecmo_MiSTer/raw/master/doc/andrew-boudreau.jpg\" width=\"100px;\" /></td>\n    <td>Andrew Boudreau</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://github.com/MiSTer-devel/Arcade-Tecmo_MiSTer/raw/master/doc/avatar.png\" width=\"100px;\" /></td>\n    <td>Arjan de Lang</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://github.com/MiSTer-devel/Arcade-Tecmo_MiSTer/raw/master/doc/avatar.png\" width=\"100px;\" /></td>\n    <td>Benjamin Walker</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://github.com/MiSTer-devel/Arcade-Tecmo_MiSTer/raw/master/doc/christopher-gelatt.png\" width=\"100px;\" /></td>\n    <td>Christopher Gelatt</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://github.com/MiSTer-devel/Arcade-Tecmo_MiSTer/raw/master/doc/christopher-tuckwell.jpeg\" width=\"100px;\" /></td>\n    <td>Christopher Tuckwell</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://github.com/MiSTer-devel/Arcade-Tecmo_MiSTer/raw/master/doc/hard-rich.jpeg\" width=\"100px;\" /></td>\n    <td>Hard Rich</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://github.com/MiSTer-devel/Arcade-Tecmo_MiSTer/raw/master/doc/avatar.png\" width=\"100px;\" /></td>\n    <td>iker</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://github.com/MiSTer-devel/Arcade-Tecmo_MiSTer/raw/master/doc/lakeside.jpeg\" width=\"100px;\" /></td>\n    <td>Lakeside</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://github.com/MiSTer-devel/Arcade-Tecmo_MiSTer/raw/master/doc/avatar.png\" width=\"100px;\" /></td>\n    <td>Matt Postema</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://github.com/MiSTer-devel/Arcade-Tecmo_MiSTer/raw/master/doc/ordigdug.png\" width=\"100px;\" /></td>\n    <td>ordigdug</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://github.com/MiSTer-devel/Arcade-Tecmo_MiSTer/raw/master/doc/scralings.png\" width=\"100px;\" /></td>\n    <td>Scralings</td>\n  </tr>\n</table>\n\nThanks to:\n\nAdrian Longland, Akai Futari, Allen Tipper, Amosfear, Andrew Francomb, Antonio Bellotta, Benjamin Leggett, Charles Sagett, Chris B, Darren Newman, David Filskov, David Jones, Devon Nelson, Filip Kindt, Funkycochise, George Stravopodis, Herbert Krammer, Humanoide70, Jim Wehrfritz, John Perry, John Stringer, Jordan Retterer, JPS (RetroFPGA), Juan Jose Velez Ramirez, Keith Kelly, Leslie Welch, Ludovic Germaneau, Mahendra, Manuel Antoni, Mark Fulton, Mark Paterson, Mat Azel, Matthew, Matthias Penkert-Hennig, Max L Schultz, Max Sch\u00fctz, Michael Fuerst, Michael Yount, Miguel Candelario, Mike Parks, Monokrom, MrX-8B, Naku aka Ben, Octavio Bernacer Sempere, olivier bernhard, Oscar Laguna Garcia, Per Sweden, Phillip McMahon, Porkchop Express, RetroDriven, Ross Jolet, Shane Lynch, Shaneus, SpearZ, Tony Peters, toolb0x, Victor Bly, V\u00edctor Gomariz Ladr\u00f3n de Guevara, Xzarian, Zichio\n\n...and the rest of my supporters :sparkling_heart:\n\n## Development\n\nCompile the core:\n\n    $ make build\n\nProgram the DE10-Nano:\n\n    $ make program\n\n## Licence\n\nThis project is licensed under the MIT licence. See the LICENCE file for more details.\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-LLAPI/Arcade-Tecmo_MiSTer",
@@ -2194,6 +2103,12 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Tecmo_20250205.rbf",
+          "sha": "a96e3f2ddd7de5ac502ebb7ddb5c8367461440e2",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Tecmo_MiSTer/master/releases/Arcade-Tecmo_20250205.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Arcade-Tecmo_LLAPI_20220409.rbf",
           "sha": "86ec5b660272bea0ddec6caaaad27875e670524c",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Tecmo_MiSTer/master/releases/Arcade-Tecmo_LLAPI_20220409.rbf",
@@ -2206,13 +2121,25 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Tecmo_LLAPI_20251204.rbf",
+          "sha": "62d614378b3a4ced505e5f13be1fb30aa426ca8a",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Tecmo_MiSTer/master/releases/Arcade-Tecmo_LLAPI_20251204.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Tecmo_LLAPI_20251205.rbf",
+          "sha": "e91578340f42640b2affd228f6e9c8533ba2bb7f",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Tecmo_MiSTer/master/releases/Arcade-Tecmo_LLAPI_20251205.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Gemini Wing.mra",
-          "sha": "646b7857c9c75e254fa1090e07e3e48c4841b9af",
+          "sha": "c47c9fcccefa3aab45353a136e8cb13d0d34fa0f",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Tecmo_MiSTer/master/releases/Gemini%20Wing.mra",
           "type": "MRA",
           "extra": {
             "name": "Gemini Wing",
-            "rbf": "tecmo",
+            "rbf": "Tecmo",
             "zips": [
               "gemini.zip"
             ]
@@ -2220,7 +2147,7 @@
         },
         {
           "name": "Rygar.mra",
-          "sha": "9b58bce8bc8de209071ade60acc9bf2585c2b904",
+          "sha": "b526645490ba8cefa513183b10879d26332fbd2a",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Tecmo_MiSTer/master/releases/Rygar.mra",
           "type": "MRA",
           "extra": {
@@ -2233,12 +2160,12 @@
         },
         {
           "name": "Silkworm.mra",
-          "sha": "7eb0534207b477709583cba953414e10fd1abd00",
+          "sha": "f3c4fe2021504b6a84b160f5f36f38c27919a23a",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Arcade-Tecmo_MiSTer/master/releases/Silkworm.mra",
           "type": "MRA",
           "extra": {
             "name": "Silkworm",
-            "rbf": "tecmo",
+            "rbf": "Tecmo",
             "zips": [
               "silkworm.zip"
             ]
@@ -2951,6 +2878,12 @@
           "type": "RBF"
         },
         {
+          "name": "Gameboy_LLAPI_20251204.rbf",
+          "sha": "25ceb7b3ca407781df4cf21ba20a73352c53ceb8",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Gameboy_MiSTer/master/releases/Gameboy_LLAPI_20251204.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Mega Duck.mgl",
           "sha": "46182bf8d3cb712157b1b1dcc9235fe7f9c4daed",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Gameboy_MiSTer/master/releases/Mega%20Duck.mgl",
@@ -3354,6 +3287,12 @@
           "name": "GBA_LLAPI_20250712.rbf",
           "sha": "e3b1d5b4da4f766aeb20c394716927bd78da0399",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/GBA_MiSTer/master/releases/GBA_LLAPI_20250712.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "GBA_LLAPI_20251205.rbf",
+          "sha": "e21f35312633131f3da374eb1f7783f4ba9789d0",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/GBA_MiSTer/master/releases/GBA_LLAPI_20251205.rbf",
           "type": "RBF"
         }
       ]
@@ -3830,6 +3769,12 @@
           "type": "RBF"
         },
         {
+          "name": "MegaCD_20251015.rbf",
+          "sha": "3abd3b5eef9af326adbdfbdd4deda4e37be2c6fb",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/MegaCD_MiSTer/master/releases/MegaCD_20251015.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "MegaCD_LLAPI_20191205.rbf",
           "sha": "531169db09fe9b7f8e447776a892d48c4a540973",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/MegaCD_MiSTer/master/releases/MegaCD_LLAPI_20191205.rbf",
@@ -3978,6 +3923,12 @@
           "sha": "9c0ae6daee0885881da601095cc2aeda9cba9360",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/MegaCD_MiSTer/master/releases/MegaCD_LLAPI_20250712.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "MegaCD_LLAPI_20251205.rbf",
+          "sha": "765cf54341afa7008014fe486f95f655880b3684",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/MegaCD_MiSTer/master/releases/MegaCD_LLAPI_20251205.rbf",
+          "type": "RBF"
         }
       ]
     },
@@ -4120,6 +4071,12 @@
           "type": "RBF"
         },
         {
+          "name": "N64_20250812.rbf",
+          "sha": "abeca1eeaa312e39886c9e4fa09f903d11840d4a",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/N64_MiSTer/main/releases/N64_20250812.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "N64_LLAPI_20240318.rbf",
           "sha": "a16d8c44581f388b458b6341765be10499be8be4",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/N64_MiSTer/main/releases/N64_LLAPI_20240318.rbf",
@@ -4171,6 +4128,12 @@
           "name": "N64_LLAPI_20250226.rbf",
           "sha": "26d4f6a130e276c8e3159b97302253e69bae4185",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/N64_MiSTer/main/releases/N64_LLAPI_20250226.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "N64_LLAPI_20251207.rbf",
+          "sha": "b0e1c2f7e345456f28abcb73a55909ccc5dbd62e",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/N64_MiSTer/main/releases/N64_LLAPI_20251207.rbf",
           "type": "RBF"
         }
       ]
@@ -4364,6 +4327,12 @@
           "type": "RBF"
         },
         {
+          "name": "NeoGeo_20250909.rbf",
+          "sha": "33fadadc11f5dad72cb68cdfe482e808126405b7",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/NeoGeo_MiSTer/master/releases/NeoGeo_20250909.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "NeoGeo_LLAPI_20191117.rbf",
           "sha": "801c9b9e1a53edc480d376b67b92ad7e42b80824",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/NeoGeo_MiSTer/master/releases/NeoGeo_LLAPI_20191117.rbf",
@@ -4544,6 +4513,12 @@
           "type": "RBF"
         },
         {
+          "name": "NeoGeo_LLAPI_20251206.rbf",
+          "sha": "c192a34896bde5a567a0acf76c8eea29b6336062",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/NeoGeo_MiSTer/master/releases/NeoGeo_LLAPI_20251206.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "README.md",
           "sha": "91abd5fd1fe831e59d750a409d3f9b19393d5849",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/NeoGeo_MiSTer/master/releases/README.md",
@@ -4563,7 +4538,7 @@
         },
         {
           "name": "romsets.xml",
-          "sha": "61d4a78474f00c550acb7a33009e8f592772d9eb",
+          "sha": "d0a19e45ad5c062f670739ccec49f6c2e4c1d79e",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/NeoGeo_MiSTer/master/releases/romsets.xml",
           "type": "OTHER"
         }
@@ -4572,7 +4547,7 @@
     {
       "name": "NES_MiSTer",
       "description": null,
-      "readme": "# [Nintendo Entertainment System](https://en.wikipedia.org/wiki/Nintendo_Entertainment_System) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\nThis is an FPGA implementation of the NES/Famicom based on [FPGANES](https://github.com/strigeus/fpganes) by Ludvig Strigeus and ported to MiSTer.\n\n## Features\n * Supports saves for most games\n * Savestates\n * Supports NTSC, PAL, and Dendy system types\n * FDS Support with expansion audio\n * Multiple Palette options\n * Zapper, Powerpad, Microphone, and Miracle Piano support\n * Supports four players\n * Setting for increasing sprites per line by 8\n * Supports up to 32 cheat codes\n * Supports NSF Player\n * Supports expansion audio from mappers including VRC6 & 7, MMC5, Namco 163 and Sunsoft 5b\n * Supports many popular mappers including VRC1-7, MMC0-5, and many more (see below)\n * Supports large games such as Legend of Link and Rockman Minus Infinity\n\n## Installation\nCopy the NES_\\*.rbf file to the directory or subdirectory of `/media/fat/`. Create a `games/NES/` directory on the root of the SD card (`/media/fat/games/NES/`), and place NES roms (\\*.nes) inside this NES directory. The ROMs must have an iNES or NES2.0 header, which most already do. NES2.0 headers are preferred for the best accuracy. To have an NES or FDS game ROM load automatically upon starting the core, place it in the NES directory named as boot1.rom or boot2.rom, respectively.\n- `boot0.rom` = FDS BIOS file.  Will be used for any FDS images loaded\n- `boot1.rom` = NES Cart file.  Can be used with boot0.rom (BIOS) in place\n- `boot2.rom` = FDS image file.  Requires boot0.rom (BIOS).  Use a blank FDS (header only) to boot the FDS BIOS without a disk image.\n- `boot3.rom` = PAL file. It can be used to set your default custom palette. Save the menu option on \"Custom\" to apply immediately.\n\n## Famicom Disk System Usage\nBefore loading \\*.FDS files, you must first load the official, unpatched FDS BIOS. The BIOS file should be renamed to boot0.rom and placed in the same folder as the ROMs (NES).  Alternatively, it can be loaded from the OSD if boot0.rom doesn't exist. After loading the core and the bios you may select an FDS image. By default, the NES core will swap disk sides for you automatically. To suppress this behavior, hold the FDS button on the player 1 controller. The \"Disk Swap\" OSD option manually controls the disk side.  Each button press increments the disk side.  Press and hold the fds button to eject and increment the disk side in this mode.  Some games only work correctly in manual disk swap mode, and require holding the FDS button for up to a few seconds (Gall Force,...).\n\n## Extra Sprites\nThis feature will double the number of sprites drawn per scanlines, decreasing the flickering sprites that NES is known for. Some games relied on the 8 sprite behavior to work correctly, such as Simon's Quest swamps. Other mappers may be impacted by using extra sprites. While it works well in most games, glitches may occur with this enabled.\n\n## Saving and Loading\nThe battery backed RAM (Save RAM) for the NES does not write to disk automatically. After saving in your game, you must then write the RAM to the SD card by selecting **Save Backup RAM** from the menu. If you do not save your RAM to disk, the contents will be lost next time you restart the core or switch games. Alternatively you can enable to Autosave option from the OSD menu, and if you do your games will be recorded to disk every time you open the OSD menu. FDS saving uses the same method as for cartridge RAM saves. Save RAM is stored as a .sav file based on the NES/FDS filename in `/media/fat/saves/NES/`.  Examples:  \n`Metroid (Japan) (Rev 3).fds` -> `Metroid (Japan) (Rev 3).sav`  \n`Legend of Zelda, The (USA) (Rev 1).nes` -> `Legend of Zelda, The (USA) (Rev 1).sav`\n\n## Savestates\nCore provides 4 slots to save and restore the state.\nThose can be saved to SD Card or reside only in memory for temporary use (OSD Option). \nUsage with either Keyboard, Gamepad mappable button, or OSD. Save states are stored as .ss files in `/media/fat/savestates/NES/`, with an underscore and the save slot number (1,2,3,4) preceding `.ss`. Example (save slot 1): `Metroid (USA).nes` -> `Metroid (USA)_1.ss`\n\nKeyboard Hotkeys for save states:\n- <kbd>ALT</kbd>+<kbd>F1</kbd>/<kbd>F2</kbd>/<kbd>F3</kbd>/<kbd>F4</kbd> \u2013 save state  \n- <kbd>F1</kbd>/<kbd>F2</kbd>/<kbd>F3</kbd>/<kbd>F4</kbd> \u2013 restore state\n\nGamepad:\n- <kbd>SAVESTATEBUTTON</kbd>+<kbd>LEFT</kbd>/<kbd>RIGHT</kbd> prev/next savestate slot\n- <kbd>SAVESTATEBUTTON</kbd>+<kbd>START</kbd>+<kbd>DOWN</kbd> saves to the selected slot\n- <kbd>SAVESTATEBUTTON</kbd>+<kbd>START</kbd>+<kbd>UP</kbd> loads from the selected slot\n\n## Zapper Support\nThe \"Zapper\" (aka Light Gun) can be used via two methods. You can select Peripheral: Zapper(Mouse) to use your mouse to aim and shoot with the left button. This mode uses relative mouse motion, so devices that rely on absolute coordinates will not work via this method. Alternatively, you can choose Zapper(Joy) to use the Analog stick to aim, and the defined Trigger button to fire. Guns such as Aimtrak have joystick modes which may be compatible with this method.\n\n## Miracle Piano Support\nThe Miracle Piano is a MIDI keyboard compatible with the Miracle Piano Education System cart.  To use it with SNAC, no further settings are needed.  To use it with midilink, in the System Settings, set the UART connection to use MIDI.  The piano will then be connected on controller port 1 as expected.  The primary controller will automatically be assigned to port 2 as the cart expects.  The header for the ROM file should be set to NES 2.0 with controller type (0xF) set to the Miracle Piano (0x19).\n\n## Supported Mappers\n\n|#||||||||||||||||\n|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|\n|**0**|**1**|**2**|**3**|**4**|**5**||**7**||**9**|**10**|**11**|~~12~~|13||15|\n|**16**||**18**|**19**|**FDS**|**21**|**22**|**23**|**24**|**25**|**26**|**27**|**28**||**30**|31|\n|**32**|**33**|**34**|**35**|**36**|**37**|**38**|**39**|~~40~~|41|42|~~43~~|**44**|~~45~~|**46**|**47**|\n|**48**|~~49~~|~~50~~|~~51~~|~~52~~|~~53~~|~~54~~|~~55~~|~~56~~|~~57~~|~~58~~|~~59~~|~~60~~|~~61~~|~~62~~|~~63~~|\n|**64**|**65**|**66**|**67**|**68**|**69**|**70**|**71**|**72**|**73**|**74**|**75**|**76**|**77**|**78**|**79**|\n|**80**|~~81~~|**82**|83|~~84~~|85|**86**|**87**|**88**|**89**|**90**|91|**92**|**93**|**94**|**95**|\n|~~96~~|**97**||~~99~~|~~100~~|**101**|||~~104~~|105||107|~~108~~|~~109~~|~~110~~|**111**|\n|**112**|**113**|~~114~~|~~115~~|~~116~~|~~117~~|**118**|**119**|~~120~~||~~122~~|~~123~~||~~125~~|~~126~~|~~127~~|\n|~~128~~|~~129~~|~~130~~|~~131~~|**132**|**133**|~~134~~|~~135~~|**136**|**137**|**138**|**139**|**140**|**141**|~~142~~|**143**|\n|~~144~~|**145**|**146**|**147**|**148**|**149**|**150**|~~151~~|**152**|**153**|**154**|**155**|**156**|~~157~~|**158**|**159**|\n|~~160~~|~~161~~|162|163|164|165|~~166~~|~~167~~|~~168~~|~~169~~||**171**|**172**|**173**|||\n|||||**180**|~~181~~|~~182~~|~~183~~|**184**|**185**|~~186~~|~~187~~|~~188~~|**189**|**190**|**191**|\n|**192**|~~193~~|**194**|**195**|**196**||~~198~~|~~199~~|~~200~~|~~201~~|~~202~~|~~203~~|~~204~~|**205**|**206**|**207**|\n|**208**|**209**|**210**|**211**|~~212~~|~~213~~|~~214~~|~~215~~|~~216~~|~~217~~|**218**||||~~222~~||\n|~~224~~|**225**|~~226~~|227|228|~~229~~|~~230~~|~~231~~|**232**|~~233~~|234|~~235~~|~~236~~|~~237~~|||\n|~~240~~|~~241~~|~~242~~|**243**|~~244~~|~~245~~|246||~~248~~|~~249~~|~~250~~|~~251~~|~~252~~||~~254~~|255|\n|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|\n|**268**|413|**547**|---|---|---|---|---|---|---|---|---|---|---|---|---|\n\nKey: **Supported+Save state**, Supported, ~~Not Supported~~. Mappers that are not existent or not useful are blank.\n\n",
+      "readme": "# [Nintendo Entertainment System](https://en.wikipedia.org/wiki/Nintendo_Entertainment_System) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\nThis is an FPGA implementation of the NES/Famicom based on [FPGANES](https://github.com/strigeus/fpganes) by Ludvig Strigeus and ported to MiSTer.\n\n## Features\n * Supports saves for most games\n * Savestates\n * Supports NTSC, PAL, and Dendy system types\n * FDS Support with expansion audio\n * Multiple Palette options\n * Zapper, Powerpad, Microphone, and Miracle Piano support\n * Supports four players\n * Setting for increasing sprites per line by 8\n * Supports up to 32 cheat codes\n * Supports NSF Player\n * Supports expansion audio from mappers including VRC6 & 7, MMC5, Namco 163 and Sunsoft 5b\n * Supports many popular mappers including VRC1-7, MMC0-5, and many more (see below)\n * Supports large games such as Legend of Link and Rockman Minus Infinity\n\n## Installation\nCopy the NES_\\*.rbf file to the directory or subdirectory of `/media/fat/`. Create a `games/NES/` directory on the root of the SD card (`/media/fat/games/NES/`), and place NES roms (\\*.nes) inside this NES directory. The ROMs must have an iNES or NES2.0 header, which most already do. NES2.0 headers are preferred for the best accuracy. To have an NES or FDS game ROM load automatically upon starting the core, place it in the NES directory named as boot1.rom or boot2.rom, respectively.\n- `boot0.rom` = FDS BIOS file.  Will be used for any FDS images loaded\n- `boot1.rom` = NES Cart file.  Can be used with boot0.rom (BIOS) in place\n- `boot2.rom` = FDS image file.  Requires boot0.rom (BIOS).  Use a blank FDS (header only) to boot the FDS BIOS without a disk image.\n- `boot3.rom` = PAL file. It can be used to set your default custom palette. Save the menu option on \"Custom\" to apply immediately.\n\n## Famicom Disk System Usage\nBefore loading \\*.FDS files, you must first load the official, unpatched FDS BIOS. The BIOS file should be renamed to boot0.rom and placed in the same folder as the ROMs (NES).  Alternatively, it can be loaded from the OSD if boot0.rom doesn't exist. After loading the core and the bios you may select an FDS image. By default, the NES core will swap disk sides for you automatically. To suppress this behavior, hold the FDS button on the player 1 controller. The \"Disk Swap\" OSD option manually controls the disk side.  Each button press increments the disk side.  Press and hold the fds button to eject and increment the disk side in this mode.  Some games only work correctly in manual disk swap mode, and require holding the FDS button for up to a few seconds (Gall Force,...).\n\n## Extra Sprites\nThis feature will double the number of sprites drawn per scanlines, decreasing the flickering sprites that NES is known for. Some games relied on the 8 sprite behavior to work correctly, such as Simon's Quest swamps. Other mappers may be impacted by using extra sprites. While it works well in most games, glitches may occur with this enabled.\n\n## Saving and Loading\nThe battery backed RAM (Save RAM) for the NES does not write to disk automatically. After saving in your game, you must then write the RAM to the SD card by selecting **Save Backup RAM** from the menu. If you do not save your RAM to disk, the contents will be lost next time you restart the core or switch games. Alternatively you can enable to Autosave option from the OSD menu, and if you do your games will be recorded to disk every time you open the OSD menu. FDS saving uses the same method as for cartridge RAM saves. Save RAM is stored as a .sav file based on the NES/FDS filename in `/media/fat/saves/NES/`.  Examples:  \n`Metroid (Japan) (Rev 3).fds` -> `Metroid (Japan) (Rev 3).sav`  \n`Legend of Zelda, The (USA) (Rev 1).nes` -> `Legend of Zelda, The (USA) (Rev 1).sav`\n\n## Savestates\nCore provides 4 slots to save and restore the state.\nThose can be saved to SD Card or reside only in memory for temporary use (OSD Option). \nUsage with either Keyboard, Gamepad mappable button, or OSD. Save states are stored as .ss files in `/media/fat/savestates/NES/`, with an underscore and the save slot number (1,2,3,4) preceding `.ss`. Example (save slot 1): `Metroid (USA).nes` -> `Metroid (USA)_1.ss`\n\nKeyboard Hotkeys for save states:\n- <kbd>ALT</kbd>+<kbd>F1</kbd>/<kbd>F2</kbd>/<kbd>F3</kbd>/<kbd>F4</kbd> \u2013 save state  \n- <kbd>F1</kbd>/<kbd>F2</kbd>/<kbd>F3</kbd>/<kbd>F4</kbd> \u2013 restore state\n\nGamepad:\n- <kbd>SAVESTATEBUTTON</kbd>+<kbd>LEFT</kbd>/<kbd>RIGHT</kbd> prev/next savestate slot\n- <kbd>SAVESTATEBUTTON</kbd>+<kbd>START</kbd>+<kbd>DOWN</kbd> saves to the selected slot\n- <kbd>SAVESTATEBUTTON</kbd>+<kbd>START</kbd>+<kbd>UP</kbd> loads from the selected slot\n\n## Zapper Support\nThe \"Zapper\" (aka Light Gun) can be used via two methods. You can select Peripheral: Zapper(Mouse) to use your mouse to aim and shoot with the left button. This mode uses relative mouse motion, so devices that rely on absolute coordinates will not work via this method. Alternatively, you can choose Zapper(Joy) to use the Analog stick to aim, and the defined Trigger button to fire. Guns such as Aimtrak have joystick modes which may be compatible with this method.\n\n## Miracle Piano Support\nThe Miracle Piano is a MIDI keyboard compatible with the Miracle Piano Education System cart.  To use it with SNAC, no further settings are needed.  To use it with midilink, in the System Settings, set the UART connection to use MIDI.  The piano will then be connected on controller port 1 as expected.  The primary controller will automatically be assigned to port 2 as the cart expects.  The header for the ROM file should be set to NES 2.0 with controller type (0xF) set to the Miracle Piano (0x19).\n\n## Supported Mappers\n\n|#||||||||||||||||\n|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|\n|**0**|**1**|**2**|**3**|**4**|**5**||**7**||**9**|**10**|**11**|~~12~~|13||15|\n|**16**||**18**|**19**|**FDS**|**21**|**22**|**23**|**24**|**25**|**26**|**27**|**28**||**30**|31|\n|**32**|**33**|**34**|**35**|**36**|**37**|**38**|**39**|40|41|42|~~43~~|**44**|~~45~~|**46**|**47**|\n|**48**|~~49~~|~~50~~|~~51~~|~~52~~|~~53~~|~~54~~|~~55~~|~~56~~|~~57~~|~~58~~|~~59~~|~~60~~|~~61~~|~~62~~|~~63~~|\n|**64**|**65**|**66**|**67**|**68**|**69**|**70**|**71**|**72**|**73**|**74**|**75**|**76**|**77**|**78**|**79**|\n|**80**|**81**|**82**|83|~~84~~|85|**86**|**87**|**88**|**89**|**90**|91|**92**|**93**|**94**|**95**|\n|~~96~~|**97**||~~99~~|~~100~~|**101**|||~~104~~|105||107|~~108~~|~~109~~|~~110~~|**111**|\n|**112**|**113**|~~114~~|~~115~~|~~116~~|~~117~~|**118**|**119**|~~120~~||~~122~~|~~123~~||~~125~~|~~126~~|~~127~~|\n|~~128~~|~~129~~|~~130~~|~~131~~|**132**|**133**|~~134~~|~~135~~|**136**|**137**|**138**|**139**|**140**|**141**|142|**143**|\n|**144**|**145**|**146**|**147**|**148**|**149**|**150**|~~151~~|**152**|**153**|**154**|**155**|**156**|~~157~~|**158**|**159**|\n|~~160~~|~~161~~|162|163|164|165|~~166~~|~~167~~|~~168~~|~~169~~||**171**|**172**|**173**|||\n|||||**180**|~~181~~|~~182~~|~~183~~|**184**|**185**|~~186~~|~~187~~|~~188~~|**189**|**190**|**191**|\n|**192**|~~193~~|**194**|**195**|**196**||~~198~~|~~199~~|~~200~~|~~201~~|~~202~~|~~203~~|~~204~~|**205**|**206**|**207**|\n|**208**|**209**|**210**|**211**|~~212~~|~~213~~|~~214~~|~~215~~|~~216~~|~~217~~|**218**||||~~222~~||\n|~~224~~|**225**|~~226~~|227|228|~~229~~|~~230~~|~~231~~|**232**|~~233~~|234|~~235~~|~~236~~|~~237~~|||\n|~~240~~|~~241~~|~~242~~|**243**|~~244~~|~~245~~|246||~~248~~|~~249~~|~~250~~|~~251~~|~~252~~||~~254~~|255|\n|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|\n|**268**|413|**547**|---|---|---|---|---|---|---|---|---|---|---|---|---|\n\nKey: **Supported+Save state**, Supported, ~~Not Supported~~. Mappers that are not existent or not useful are blank.\n\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-LLAPI/NES_MiSTer",
@@ -4773,6 +4748,18 @@
           "name": "NES_20250618.rbf",
           "sha": "674c7b1e757ea60f145cc83befc0eecdb0c07d92",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/NES_MiSTer/master/releases/NES_20250618.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NES_20251011.rbf",
+          "sha": "282683138ef3ca2832a9044c1c6f4e871cec5d79",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/NES_MiSTer/master/releases/NES_20251011.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "NES_20251013.rbf",
+          "sha": "9272eb534323d386c3c13f497670d69ea7d0c113",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/NES_MiSTer/master/releases/NES_20251013.rbf",
           "type": "RBF"
         },
         {
@@ -4984,6 +4971,12 @@
           "sha": "b008c305f5f9906d3580f20905d7291220232795",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/NES_MiSTer/master/releases/NES_LLAPI_20250712.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "NES_LLAPI_20251206.rbf",
+          "sha": "343d5318698ac93a08b703d6fe13b02003f35dfa",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/NES_MiSTer/master/releases/NES_LLAPI_20251206.rbf",
+          "type": "RBF"
         }
       ]
     },
@@ -5062,6 +5055,18 @@
           "type": "RBF"
         },
         {
+          "name": "PSX_20250710.rbf",
+          "sha": "03929fa77591ae05964a05667ee9a07d56105014",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/PSX_MiSTer/main/releases/PSX_20250710.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "PSX_20250825.rbf",
+          "sha": "f20525eaf08443b9a591842536adcf4b776e28d6",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/PSX_MiSTer/main/releases/PSX_20250825.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "PSX_LLAPI_20240311.rbf",
           "sha": "cd17a927c977a74a83c35c919f01036e8027873f",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/PSX_MiSTer/main/releases/PSX_LLAPI_20240311.rbf",
@@ -5113,6 +5118,12 @@
           "name": "PSX_LLAPI_20250226.rbf",
           "sha": "0b4050d1c0bc127bb1e97f348e2d3940b5c22cd0",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/PSX_MiSTer/main/releases/PSX_LLAPI_20250226.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "PSX_LLAPI_20251206.rbf",
+          "sha": "9c7da53b31657261972c95c3d986300047b9d260",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/PSX_MiSTer/main/releases/PSX_LLAPI_20251206.rbf",
           "type": "RBF"
         }
       ]
@@ -5267,6 +5278,12 @@
           "name": "S32X_LLAPI_20250909.rbf",
           "sha": "4e8260d6321083acc67764be9c065e0ce622f7e1",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/S32X_MiSTer/main/releases/S32X_LLAPI_20250909.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "S32X_LLAPI_20251206.rbf",
+          "sha": "d5501039dae788a31daa098c9d34c8c8a653c2c1",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/S32X_MiSTer/main/releases/S32X_LLAPI_20251206.rbf",
           "type": "RBF"
         }
       ]
@@ -5987,6 +6004,715 @@
       ]
     },
     {
+      "name": "Saturn_MiSTer_new",
+      "description": "Sega Saturn for MiSTer",
+      "readme": "# [Sega Saturn](https://en.wikipedia.org/wiki/Sega_Saturn) for MiSTer\n\n## Hardware Requirements\n\n- 128 MB SDRAM Module (Primary)\n- SDRAM Module of any size (32MB-128MB) (Secondary)\n\n> **Note:** Dual SDRAM modules is recommended for better compatibility.\n\n## Status\n\nCurrent status is WIP/Beta\n\nKnown issues:\n\n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/MiSTer-LLAPI/Saturn_MiSTer_new",
+      "releases": [
+        {
+          "name": "Arcade-ST-V_20250612.rbf",
+          "sha": "6451b0558c199ac3e469f1b4b19ee91f88099c5d",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/Arcade-ST-V_20250612.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-ST-V_20251003.rbf",
+          "sha": "d763f5694b5529cadf96d4d624b51e8bc660188f",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/Arcade-ST-V_20251003.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Saturn_20231010.rbf",
+          "sha": "5db313a4cfe017edcc81a999cde9c3aa71dbc096",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/Saturn_20231010.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Saturn_20231018.rbf",
+          "sha": "8dc94d7c26e004205941e15bf74becae3a2cbfea",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/Saturn_20231018.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Saturn_20240323.rbf",
+          "sha": "cca090de4f7fb2373d457fbfa726f211da5b2167",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/Saturn_20240323.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Saturn_20240628.rbf",
+          "sha": "6edd1806addeb0d5baa5991e69541189c41f0b1b",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/Saturn_20240628.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Saturn_20250113.rbf",
+          "sha": "9696a709c3115e55ec0cc40acc4f679c54774848",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/Saturn_20250113.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Saturn_20250613.rbf",
+          "sha": "e12f11fd85acc6f44b65845951630f4dcda8c079",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/Saturn_20250613.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Saturn_20251003.rbf",
+          "sha": "faa1a6fcbfbd7e26cb4c50cea31c215fec8e5c55",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/Saturn_20251003.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Astra SuperStars (J 980514 V1.002).mra",
+          "sha": "14d942b8e81ab1bcef53d0844b9cc9602202fdf2",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Astra%20SuperStars%20(J%20980514%20V1.002).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "astrass.zip",
+              "stvbios.zip",
+              "astrass.zip"
+            ]
+          }
+        },
+        {
+          "name": "Baku Baku Animal (J 950407 V1.000).mra",
+          "sha": "08aa0087de500f229ea45ee8560a489526fb9ee4",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Baku%20Baku%20Animal%20(J%20950407%20V1.000).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "bakubaku.zip",
+              "stvbios.zip",
+              "bakubaku.zip"
+            ]
+          }
+        },
+        {
+          "name": "Batman Forever (JUE 960507 V1.000).mra",
+          "sha": "f920f1d446cd57cda8ca47d0791d5f398701c453",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Batman%20Forever%20(JUE%20960507%20V1.000).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "batmanfr.zip",
+              "stvbios.zip",
+              "batmanfr.zip"
+            ]
+          }
+        },
+        {
+          "name": "Columns '97 (JET 961209 V1.000).mra",
+          "sha": "d58db1d45b16644b6f41c7f43204e5b54996d7ba",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Columns%20'97%20(JET%20961209%20V1.000).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "colmns97.zip",
+              "stvbios.zip",
+              "colmns97.zip"
+            ]
+          }
+        },
+        {
+          "name": "Cotton 2 (JUET 970902 V1.000).mra",
+          "sha": "bcc307a267639a2fc7b4e33bf0ad041fcfb0870f",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Cotton%202%20(JUET%20970902%20V1.000).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "cotton2.zip",
+              "stvbios.zip",
+              "cotton2.zip"
+            ]
+          }
+        },
+        {
+          "name": "Cotton Boomerang (JUET 980709 V1.000).mra",
+          "sha": "4c91ccf32e10f08e01966fcdcc98b0057881fb25",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Cotton%20Boomerang%20(JUET%20980709%20V1.000).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "cottonbm.zip",
+              "stvbios.zip",
+              "cottonbm.zip"
+            ]
+          }
+        },
+        {
+          "name": "Danchi de Hanafuda (J 990607 V1.400).mra",
+          "sha": "b15f82b77c3d8e4df4afc420c576cce00207039a",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Danchi%20de%20Hanafuda%20(J%20990607%20V1.400).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "danchih.zip",
+              "stvbios.zip",
+              "danchih.zip"
+            ]
+          }
+        },
+        {
+          "name": "Danchi de Quiz Okusan Yontaku Desuyo! (J 001128 V1.200).mra",
+          "sha": "d54545212d1d5dcb539ea72a5a1e8ecef99edecd",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Danchi%20de%20Quiz%20Okusan%20Yontaku%20Desuyo!%20(J%20001128%20V1.200).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "danchiq.zip",
+              "stvbios.zip",
+              "danchiq.zip"
+            ]
+          }
+        },
+        {
+          "name": "Decathlete (JUET 960709 V1.001).mra",
+          "sha": "19302d4226c0134d68fff4847eb6e2c6a28b6a2b",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Decathlete%20(JUET%20960709%20V1.001).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "decathlt.zip",
+              "stvbios.zip",
+              "decathlt.zip"
+            ]
+          }
+        },
+        {
+          "name": "Die Hard Arcade (UET 960515 V1.000).mra",
+          "sha": "41f53bc9ee02a9be87db3251cf6a04c626d31a28",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Die%20Hard%20Arcade%20(UET%20960515%20V1.000).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "diehard.zip",
+              "stvbios.zip",
+              "diehard.zip"
+            ]
+          }
+        },
+        {
+          "name": "Ejihon Tantei Jimusyo (J 950613 V1.000).mra",
+          "sha": "2b7b12209aed65c72923f1c4b872ae0127ce49b1",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Ejihon%20Tantei%20Jimusyo%20(J%20950613%20V1.000).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "ejihon.zip",
+              "stvbios.zip",
+              "ejihon.zip"
+            ]
+          }
+        },
+        {
+          "name": "Final Fight Revenge - Final Revenge (JUET 990930 V1.100).mra",
+          "sha": "55ebe0bfc6548295f30f39843ab679d6a21f11fa",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Final%20Fight%20Revenge%20-%20Final%20Revenge%20(JUET%20990930%20V1.100).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "ffreveng.zip",
+              "stvbios.zip",
+              "ffreveng.zip"
+            ]
+          }
+        },
+        {
+          "name": "Find Love (J 971212 V1.000).mra",
+          "sha": "11624380f1fa9730ffb956a75656f61d78938ebc",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Find%20Love%20(J%20971212%20V1.000).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "findlove.zip",
+              "stvbios.zip",
+              "findlove.zip"
+            ]
+          }
+        },
+        {
+          "name": "Funky Head Boxers (JUETBKAL 951218 V1.000).mra",
+          "sha": "81e558cf6ef836bdf12e91954c00c9d99ffafab0",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Funky%20Head%20Boxers%20(JUETBKAL%20951218%20V1.000).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "fhboxers.zip",
+              "stvbios.zip",
+              "fhboxers.zip"
+            ]
+          }
+        },
+        {
+          "name": "Golden Axe - The Duel (JUETL 950117 V1.000).mra",
+          "sha": "56f83ed6588ca428280407de72561e0d8605d156",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Golden%20Axe%20-%20The%20Duel%20(JUETL%20950117%20V1.000).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "gaxeduel.zip",
+              "stvbios.zip",
+              "gaxeduel.zip"
+            ]
+          }
+        },
+        {
+          "name": "Groove on Fight - Gouketsuji Ichizoku 3 (J 970416 V1.001).mra",
+          "sha": "1a994b16aec907a7f640ba31bf9e6ca44503b6b2",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Groove%20on%20Fight%20-%20Gouketsuji%20Ichizoku%203%20(J%20970416%20V1.001).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "groovef.zip",
+              "stvbios.zip",
+              "groovef.zip"
+            ]
+          }
+        },
+        {
+          "name": "Guardian Force (JUET 980318 V0.105).mra",
+          "sha": "3fb2576e81b541bc440f86c59084bee0f59c65a3",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Guardian%20Force%20(JUET%20980318%20V0.105).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "grdforce.zip",
+              "stvbios.zip",
+              "grdforce.zip"
+            ]
+          }
+        },
+        {
+          "name": "Hanagumi Taisen Columns - Sakura Wars (J 971007 V1.010).mra",
+          "sha": "78fa86396d016779cdce2347648fe390ec0864ed",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Hanagumi%20Taisen%20Columns%20-%20Sakura%20Wars%20(J%20971007%20V1.010).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "hanagumi.zip",
+              "stvbios.zip",
+              "hanagumi.zip"
+            ]
+          }
+        },
+        {
+          "name": "Karaoke Quiz Intro Don Don! (J 960213 V1.000).mra",
+          "sha": "bb1f80134a567cd1c9e59ee2a9bd5b1adb2b23dc",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Karaoke%20Quiz%20Intro%20Don%20Don!%20(J%20960213%20V1.000).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "introdon.zip",
+              "stvbios.zip",
+              "introdon.zip"
+            ]
+          }
+        },
+        {
+          "name": "Maru-Chan de Goo! (J 971216 V1.000).mra",
+          "sha": "ff6f04c88639da35a881efbc04730a207fdab392",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Maru-Chan%20de%20Goo!%20(J%20971216%20V1.000).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "maruchan.zip",
+              "stvbios.zip",
+              "maruchan.zip"
+            ]
+          }
+        },
+        {
+          "name": "Mausuke no Ojama the World (J 960314 V1.000).mra",
+          "sha": "aedf4e5f9de48a86727d3ee25ed37e7ece1831a5",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Mausuke%20no%20Ojama%20the%20World%20(J%20960314%20V1.000).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "mausuke.zip",
+              "stvbios.zip",
+              "mausuke.zip"
+            ]
+          }
+        },
+        {
+          "name": "Othello Shiyouyo (J 980423 V1.002).mra",
+          "sha": "6093eea7bb7d7ee1761ee2a80410011968b22764",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Othello%20Shiyouyo%20(J%20980423%20V1.002).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "othellos.zip",
+              "stvbios.zip",
+              "othellos.zip"
+            ]
+          }
+        },
+        {
+          "name": "Pebble Beach - The Great Shot (JUE 950913 V0.990).mra",
+          "sha": "397fcc180d9e78530c547db0d073e221fca62edf",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Pebble%20Beach%20-%20The%20Great%20Shot%20(JUE%20950913%20V0.990).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "pblbeach.zip",
+              "stvbios.zip",
+              "pblbeach.zip"
+            ]
+          }
+        },
+        {
+          "name": "Princess Clara Daisakusen (J 960910 V1.000).mra",
+          "sha": "2b1f92ae6cfa24499e9f21f60eb83b5739af13c3",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Princess%20Clara%20Daisakusen%20(J%20960910%20V1.000).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "prikura.zip",
+              "stvbios.zip",
+              "prikura.zip"
+            ]
+          }
+        },
+        {
+          "name": "Pro Mahjong Kiwame S (J 951020 V1.208).mra",
+          "sha": "b2a528d7c46931210984cd75f4cb6b5ebcaa47b2",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Pro%20Mahjong%20Kiwame%20S%20(J%20951020%20V1.208).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "kiwames.zip",
+              "stvbios.zip",
+              "kiwames.zip"
+            ]
+          }
+        },
+        {
+          "name": "Puyo Puyo Sun (J 961115 V0.001).mra",
+          "sha": "b05593ac0299f3bae3e69e8bee6b0b952ddaa838",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Puyo%20Puyo%20Sun%20(J%20961115%20V0.001).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "puyosun.zip",
+              "stvbios.zip",
+              "puyosun.zip"
+            ]
+          }
+        },
+        {
+          "name": "Puzzle & Action- Sando-R (J 951114 V1.000).mra",
+          "sha": "6cb01c1cea123327763a94282e1133c56f017c89",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Puzzle%20%26%20Action-%20Sando-R%20(J%20951114%20V1.000).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "sandor.zip",
+              "stvbios.zip",
+              "sandor.zip"
+            ]
+          }
+        },
+        {
+          "name": "Radiant Silvergun (JUET 980523 V1.000).mra",
+          "sha": "f97dd1a502653bb198ff551ee1f85042a211c405",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Radiant%20Silvergun%20(JUET%20980523%20V1.000).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "rsgun.zip",
+              "stvbios.zip",
+              "rsgun.zip"
+            ]
+          }
+        },
+        {
+          "name": "Sea Bass Fishing (JUET 971110 V0.001).mra",
+          "sha": "8be3bbdbbf53ee463729a3c5b3da529247a4092c",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Sea%20Bass%20Fishing%20(JUET%20971110%20V0.001).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "seabass.zip",
+              "stvbios.zip",
+              "seabass.zip"
+            ]
+          }
+        },
+        {
+          "name": "Shanghai - The Great Wall - Shanghai Triple Threat (JUE 950623 V1.005).mra",
+          "sha": "70e77b03202f18a65abba49b51a76d210cd41947",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Shanghai%20-%20The%20Great%20Wall%20-%20Shanghai%20Triple%20Threat%20(JUE%20950623%20V1.005).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "shanhigw.zip",
+              "stvbios.zip",
+              "shanhigw.zip"
+            ]
+          }
+        },
+        {
+          "name": "Shienryu (JUET 961226 V1.000).mra",
+          "sha": "1026ea59704f44b91893c60b3cf5d6bc2c28e1f5",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Shienryu%20(JUET%20961226%20V1.000).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "shienryu.zip",
+              "stvbios.zip",
+              "shienryu.zip"
+            ]
+          }
+        },
+        {
+          "name": "Soukyugurentai - Terra Diver (JUET 960821 V1.000).mra",
+          "sha": "2673c58b0c0c6931e929617e1c9d8c3e88f1426e",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Soukyugurentai%20-%20Terra%20Diver%20(JUET%20960821%20V1.000).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "sokyugrt.zip",
+              "stvbios.zip",
+              "sokyugrt.zip"
+            ]
+          }
+        },
+        {
+          "name": "Steep Slope Sliders (JUET 981110 V1.000).mra",
+          "sha": "892a7723e394cec15fd75cca87b6aa02eaabd70d",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Steep%20Slope%20Sliders%20(JUET%20981110%20V1.000).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "sss.zip",
+              "stvbios.zip",
+              "sss.zip"
+            ]
+          }
+        },
+        {
+          "name": "Suikoenbu - Outlaws of the Lost Dynasty (JUETL 950314 V2.001).mra",
+          "sha": "98d178e16034ea4b197254c89a789c8fbefc6263",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Suikoenbu%20-%20Outlaws%20of%20the%20Lost%20Dynasty%20(JUETL%20950314%20V2.001).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "suikoenb.zip",
+              "stvbios.zip",
+              "suikoenb.zip"
+            ]
+          }
+        },
+        {
+          "name": "Super Major League (U 960108 V1.000).mra",
+          "sha": "0c92d560f45be766813d1d8bad82439b86b727ed",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Super%20Major%20League%20(U%20960108%20V1.000).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "smleague.zip",
+              "stvbios.zip",
+              "smleague.zip"
+            ]
+          }
+        },
+        {
+          "name": "Taisen Tanto-R Sashissu!! (J 980216 V1.000).mra",
+          "sha": "247618d51ea06ab833230ee0d586f57f0a34261a",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Taisen%20Tanto-R%20Sashissu!!%20(J%20980216%20V1.000).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "sasissu.zip",
+              "stvbios.zip",
+              "sasissu.zip"
+            ]
+          }
+        },
+        {
+          "name": "Tecmo World Cup '98 (JUET 980410 V1.000).mra",
+          "sha": "1fcd705f4d0d543bc7497259507a221132165b3a",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Tecmo%20World%20Cup%20'98%20(JUET%20980410%20V1.000).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "twcup98.zip",
+              "stvbios.zip",
+              "twcup98.zip"
+            ]
+          }
+        },
+        {
+          "name": "Touryuu Densetsu Elan-Doree - Elan Doree - Legend of Dragoon (JUET 980922 V1.006).mra",
+          "sha": "cafa752475476207bb02ba6bc98e73728d785184",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Touryuu%20Densetsu%20Elan-Doree%20-%20Elan%20Doree%20-%20Legend%20of%20Dragoon%20(JUET%20980922%20V1.006).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "elandore.zip",
+              "stvbios.zip",
+              "elandore.zip"
+            ]
+          }
+        },
+        {
+          "name": "Virtua Fighter Kids (JUET 960319 V0.000).mra",
+          "sha": "002dcd7ae84e6e0e081b492fe070d3a6119df1fe",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Virtua%20Fighter%20Kids%20(JUET%20960319%20V0.000).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "vfkids.zip",
+              "stvbios.zip",
+              "vfkids.zip"
+            ]
+          }
+        },
+        {
+          "name": "Virtua Fighter Remix (JUETBKAL 950428 V1.000).mra",
+          "sha": "8f419054c0c608d37e699ab7d89f84be7d45f7b5",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Virtua%20Fighter%20Remix%20(JUETBKAL%20950428%20V1.000).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "vfremix.zip",
+              "stvbios.zip",
+              "vfremix.zip"
+            ]
+          }
+        },
+        {
+          "name": "Virtual Mahjong 2 - My Fair Lady (J 980608 V1.000).mra",
+          "sha": "ef984ca30a80ea5dc1ddcb2dc08bebdd9efcdf22",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Virtual%20Mahjong%202%20-%20My%20Fair%20Lady%20(J%20980608%20V1.000).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "myfairld.zip",
+              "stvbios.zip",
+              "myfairld.zip"
+            ]
+          }
+        },
+        {
+          "name": "Winter Heat (JUET 971012 V1.000).mra",
+          "sha": "2c419d725844901694d213e7343dba0c0a969af1",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Winter%20Heat%20(JUET%20971012%20V1.000).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "winterht.zip",
+              "stvbios.zip",
+              "winterht.zip"
+            ]
+          }
+        },
+        {
+          "name": "Zen Nippon Pro-Wrestling Featuring Virtua (J 971123 V1.000).mra",
+          "sha": "7dd5b66ea4759537ff11c56bba85fc4f660664ea",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Zen%20Nippon%20Pro-Wrestling%20Featuring%20Virtua%20(J%20971123%20V1.000).mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "ST-V",
+            "zips": [
+              "znpwfv.zip",
+              "stvbios.zip",
+              "znpwfv.zip"
+            ]
+          }
+        }
+      ]
+    },
+    {
       "name": "SGB_MiSTer",
       "description": null,
       "readme": "# [Super Game Boy](https://en.wikipedia.org/wiki/Super_Game_Boy) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n \nBased on the [SNES core](https://github.com/MiSTer-devel/SNES_MiSTer) written by [srg320](https://github.com/srg320)\n\n## Installing\nCopy the `.RBF` to the root of your SD card. Put some ROMs (`*.GBC`, `*.GB`) and the SGB BIOS (`*.SFC`) into SGB folder.\n\n## Features\n* MSU-1 Support\n* SGB1, SGB2, and SNES clock speed toggle.\n* Cheat engine.\n* Save/Load Backup Game Boy RAM.\n\n## Usage\nLoad your SGB BIOS from the OSD and load your Game Boy or Game Boy Color game. Here is a list of the [Super Game Boy enhanced games](https://en.wikipedia.org/wiki/List_of_Super_Game_Boy_games) that were released for reference.\n\nThe \"SGB Speed\" option in the OSD allows you to change the clock speed:\n* SGB1 = 4.295 MHz (2.4% faster than a real Game Boy)\n* SGB2 = 4.194 MHz (The same as an original Game Boy)\n* SNES = 4.220 MHz (Brings it close to the SNES's refresh rate of 60.09Hz to reduce stutter)\n\nPress L+R at the same time to enter the Super Game Boy boot rom's menu. If you'd like to manually start the animated screensaver for the alternate borders built into the Super Game Boy, then press L, L, L, L, R in order. You will hear a ding if the border supports the screensaver animations.\n",
@@ -6125,19 +6851,6 @@
             "rbf": "SMS",
             "zips": [
               "megrescu.zip"
-            ]
-          }
-        },
-        {
-          "name": "Opa Opa (Rev A, unprotected).mra",
-          "sha": "a313e9fa63df3b92f1ab16e622fd95bf477428f6",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SMS_MiSTer/master/releases/Opa%20Opa%20(Rev%20A%2C%20unprotected).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Opa Opa (Rev A, unprotected)",
-            "rbf": "SMS",
-            "zips": [
-              "opaopa.zip"
             ]
           }
         },
@@ -6961,6 +7674,12 @@
           "type": "RBF"
         },
         {
+          "name": "SNES_LLAPI_20251204.rbf",
+          "sha": "c5f59db276f1db3ac3f9f9eeb5ead65ed06dd14b",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SNES_MiSTer/master/releases/SNES_LLAPI_20251204.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "boot1.rom",
           "sha": "d899af9bcd3bfd8c51fe5ba5dc5d71c858063d54",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/SNES_MiSTer/master/releases/boot1.rom",
@@ -7184,6 +7903,12 @@
           "name": "TurboGrafx16_20250526.rbf",
           "sha": "41f513fa643c7b2103ff3f511c10ee9bf8e31b36",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/TurboGrafx16_MiSTer/master/releases/TurboGrafx16_20250526.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "TurboGrafx16_20250830.rbf",
+          "sha": "94396b582f7c2b206e9b824d599544e6e7ac7ac3",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/TurboGrafx16_MiSTer/master/releases/TurboGrafx16_20250830.rbf",
           "type": "RBF"
         },
         {
@@ -7436,6 +8161,12 @@
           "name": "TurboGrafx16_LLAPI_20250711.rbf",
           "sha": "e2a83529c74cf254671f7082611603ac5d510dd3",
           "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/TurboGrafx16_MiSTer/master/releases/TurboGrafx16_LLAPI_20250711.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "TurboGrafx16_LLAPI_20251204.rbf",
+          "sha": "603ac482842c377f619fccdda152c3b9883bcb8f",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/TurboGrafx16_MiSTer/master/releases/TurboGrafx16_LLAPI_20251204.rbf",
           "type": "RBF"
         }
       ]

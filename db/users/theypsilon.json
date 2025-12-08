@@ -196,6 +196,103 @@
       ]
     },
     {
+      "name": "Arcade-Tecmo_MiSTer",
+      "description": "MiSTer arcade core for Tecmo arcade classics: Rygar (1986), Gemini Wing (1987), and Silkworm (1988).",
+      "readme": "# Tecmo\n\nTecmo was a Japanese video game company founded in 1967, who like many other game companies of the era, had their roots outside the amusement business. In Tecmo's case, they were originally a supplier of cleaning equipment.\n\nNevertheless, they went on to create some classic arcade games during the 80s and 90s. Many of which saw later releases on consoles like Nintendo Entertainment System, Sega Master System, Commodore 64, Atari Lynx, etc.\n\nThis core currently supports three games: Rygar (1986), Gemini Wing (1987), and Silkworm (1988).\n\n## Getting Started\n\nPlace the MRA, RBF, and the MAME ROM files in the following locations:\n\n```\n_Arcade/Rygar.mra\n_Arcade/Gemini Wing.mra\n_Arcade/Silkworm.mra\n_Arcade/cores/tecmo.rbf\n_Arcade/mame/rygar.zip\n_Arcade/mame/gemini.zip\n_Arcade/mame/silkworm.zip\n```\n\nFor more information on using MRA files with MiSTer, please refer to the [wiki](https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms).\n\n## Controls\n\nKeyboard inputs:\n\n| name     | key                   |\n| ---      | ---                   |\n| Coin 1   | 5                     |\n| Coin 2   | 6                     |\n| Start 1  | 1                     |\n| Start 2  | 1                     |\n| Button 1 | CTRL                  |\n| Button 2 | ALT                   |\n| Button 3 | SPACE                 |\n| Movement | UP, DOWN, LEFT, RIGHT |\n\nJoystick inputs:\n\n| name     | button                |\n| ---      | ---                   |\n| Coin     | L                     |\n| Start    | R                     |\n| Pause    | START                 |\n| Button 1 | A                     |\n| Button 2 | B                     |\n| Button 3 | X                     |\n| Movement | UP, DOWN, LEFT, RIGHT |\n\n## Credits\n\nMade with :heart: by [Josh Bassett](https://twitter.com/nullobject), 2020.\n\nI would also like to give a massive shout out to all my [Patreon](https://www.patreon.com/nullobject) supporters. Your support keeps me working on these games, and helps bring them to everybody.\n\nSpecial thanks to:\n\n<table>\n  <tr>\n    <td><img src=\"https://github.com/MiSTer-devel/Arcade-Tecmo_MiSTer/raw/master/doc/avatar.png\" width=\"100px;\" /></td>\n    <td>Alex Painemilla Carre\u00f1o</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://github.com/MiSTer-devel/Arcade-Tecmo_MiSTer/raw/master/doc/amineko-stone.jpeg\" width=\"100px;\" /></td>\n    <td>Amineko Stone</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://github.com/MiSTer-devel/Arcade-Tecmo_MiSTer/raw/master/doc/andrew-boudreau.jpg\" width=\"100px;\" /></td>\n    <td>Andrew Boudreau</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://github.com/MiSTer-devel/Arcade-Tecmo_MiSTer/raw/master/doc/avatar.png\" width=\"100px;\" /></td>\n    <td>Arjan de Lang</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://github.com/MiSTer-devel/Arcade-Tecmo_MiSTer/raw/master/doc/avatar.png\" width=\"100px;\" /></td>\n    <td>Benjamin Walker</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://github.com/MiSTer-devel/Arcade-Tecmo_MiSTer/raw/master/doc/christopher-gelatt.png\" width=\"100px;\" /></td>\n    <td>Christopher Gelatt</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://github.com/MiSTer-devel/Arcade-Tecmo_MiSTer/raw/master/doc/christopher-tuckwell.jpeg\" width=\"100px;\" /></td>\n    <td>Christopher Tuckwell</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://github.com/MiSTer-devel/Arcade-Tecmo_MiSTer/raw/master/doc/hard-rich.jpeg\" width=\"100px;\" /></td>\n    <td>Hard Rich</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://github.com/MiSTer-devel/Arcade-Tecmo_MiSTer/raw/master/doc/avatar.png\" width=\"100px;\" /></td>\n    <td>iker</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://github.com/MiSTer-devel/Arcade-Tecmo_MiSTer/raw/master/doc/lakeside.jpeg\" width=\"100px;\" /></td>\n    <td>Lakeside</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://github.com/MiSTer-devel/Arcade-Tecmo_MiSTer/raw/master/doc/avatar.png\" width=\"100px;\" /></td>\n    <td>Matt Postema</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://github.com/MiSTer-devel/Arcade-Tecmo_MiSTer/raw/master/doc/ordigdug.png\" width=\"100px;\" /></td>\n    <td>ordigdug</td>\n  </tr>\n  <tr>\n    <td><img src=\"https://github.com/MiSTer-devel/Arcade-Tecmo_MiSTer/raw/master/doc/scralings.png\" width=\"100px;\" /></td>\n    <td>Scralings</td>\n  </tr>\n</table>\n\nThanks to:\n\nAdrian Longland, Akai Futari, Allen Tipper, Amosfear, Andrew Francomb, Antonio Bellotta, Benjamin Leggett, Charles Sagett, Chris B, Darren Newman, David Filskov, David Jones, Devon Nelson, Filip Kindt, Funkycochise, George Stravopodis, Herbert Krammer, Humanoide70, Jim Wehrfritz, John Perry, John Stringer, Jordan Retterer, JPS (RetroFPGA), Juan Jose Velez Ramirez, Keith Kelly, Leslie Welch, Ludovic Germaneau, Mahendra, Manuel Antoni, Mark Fulton, Mark Paterson, Mat Azel, Matthew, Matthias Penkert-Hennig, Max L Schultz, Max Sch\u00fctz, Michael Fuerst, Michael Yount, Miguel Candelario, Mike Parks, Monokrom, MrX-8B, Naku aka Ben, Octavio Bernacer Sempere, olivier bernhard, Oscar Laguna Garcia, Per Sweden, Phillip McMahon, Porkchop Express, RetroDriven, Ross Jolet, Shane Lynch, Shaneus, SpearZ, Tony Peters, toolb0x, Victor Bly, V\u00edctor Gomariz Ladr\u00f3n de Guevara, Xzarian, Zichio\n\n...and the rest of my supporters :sparkling_heart:\n\n## Development\n\nCompile the core:\n\n    $ make build\n\nProgram the DE10-Nano:\n\n    $ make program\n\n## Licence\n\nThis project is licensed under the MIT licence. See the LICENCE file for more details.\n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/theypsilon/Arcade-Tecmo_MiSTer",
+      "releases": [
+        {
+          "name": "Arcade-Tecmo_20200615.rbf",
+          "sha": "425387b532866dddf03dd0dd49dc240c185e9773",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-Tecmo_MiSTer/master/releases/Arcade-Tecmo_20200615.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Tecmo_20200616.rbf",
+          "sha": "a4d7f2304947949284b3239710c8219eaface38e",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-Tecmo_MiSTer/master/releases/Arcade-Tecmo_20200616.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Tecmo_20200620.rbf",
+          "sha": "3a303a9351e9081e2e8f3ca164cab1663867c780",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-Tecmo_MiSTer/master/releases/Arcade-Tecmo_20200620.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Tecmo_20200728.rbf",
+          "sha": "3d465c2fda8a379e4770c7160316eff5ebed3440",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-Tecmo_MiSTer/master/releases/Arcade-Tecmo_20200728.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Tecmo_20200810.rbf",
+          "sha": "a01f895a9fb80266dd8e31240e88017c0e4a8e04",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-Tecmo_MiSTer/master/releases/Arcade-Tecmo_20200810.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Tecmo_20231030.rbf",
+          "sha": "30008587a8acf7596bea3ac12a86d8681174847e",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-Tecmo_MiSTer/master/releases/Arcade-Tecmo_20231030.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Tecmo_20240525.rbf",
+          "sha": "91734bbeeffcadd39cda85e6ee6e56bd4f16d3ca",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-Tecmo_MiSTer/master/releases/Arcade-Tecmo_20240525.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-Tecmo_20250205.rbf",
+          "sha": "a96e3f2ddd7de5ac502ebb7ddb5c8367461440e2",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-Tecmo_MiSTer/master/releases/Arcade-Tecmo_20250205.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gemini Wing.mra",
+          "sha": "c47c9fcccefa3aab45353a136e8cb13d0d34fa0f",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-Tecmo_MiSTer/master/releases/Gemini%20Wing.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Gemini Wing",
+            "rbf": "Tecmo",
+            "zips": [
+              "gemini.zip"
+            ]
+          }
+        },
+        {
+          "name": "Rygar.mra",
+          "sha": "b526645490ba8cefa513183b10879d26332fbd2a",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-Tecmo_MiSTer/master/releases/Rygar.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Rygar",
+            "rbf": "tecmo",
+            "zips": [
+              "rygar.zip"
+            ]
+          }
+        },
+        {
+          "name": "Silkworm.mra",
+          "sha": "f3c4fe2021504b6a84b160f5f36f38c27919a23a",
+          "url": "https://raw.githubusercontent.com/theypsilon/Arcade-Tecmo_MiSTer/master/releases/Silkworm.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Silkworm",
+            "rbf": "Tecmo",
+            "zips": [
+              "silkworm.zip"
+            ]
+          }
+        }
+      ]
+    },
+    {
       "name": "Arcade-TMNT_MiSTer",
       "description": "Konami's Teenage Mutant Ninja Turtles for the MiSTer FPGA platform",
       "readme": "# TMNT\r\n\r\nKonami's Teenage Mutant Ninja Turtles for the MiSTer FPGA platform.\r\n\r\nBefore reporting a bug please check the **issues** tab, some are already known.\r\n\r\nAll the video and the 007232 sound chip logic was extracted from custom chips by [reverse-engineering their silicon](https://github.com/furrtek/VGChips/tree/master/Konami).\r\n\r\nSupports the `tmnt` and `mia` romsets.\r\n\r\n# Thanks\r\n\r\n@Jotego for his support and his great work on JT51 and JT7759.\r\n\r\nAll my patrons on [Patreon](https://www.patreon.com/furrtek) for their encouraging messages and their financial support:\r\n\r\n8bitworkshop, ack, Adam Davis, Adrian, Adrian Nabarro, AHMAD ALHAMLI, Alan Steremberg, albconde, Alex K, Alex Limi, Alex Painemilla Carre\u00f1o, Alex Schuetz, Allen Tipper, Allister Fiend, amdrgn, Andrea Chiavazza, Andy Palmer, Andyways, Ange Albertini, Anonymous, Anthony Catalano, Anton Gale, Antonio Bellotta, ARCADEAGES, Arjan de Lang, Arkade_UK, Armando Doval-Lopez, Arnaud Jacquemin, arobotbitme ., Artemio Urbina, Arthur Carra, Aubrey Graves, AvramCE, Balthasar Schopman, BeardMonsterGames, Ben Phegan, Benjamin C. Wiley Sittler, Benjamin Leggett, Beretta Vex\u00e9e, Bigly Sevensix, Billy, birdybro, Bit2018, Bitmap Bureau, blastar, Boogermann, Brad, Brandon Ptacnik, Brandon Thomas, brian burney, Brian Hamburg, brian Yu, Bryan Evans, cacophony, Cam Gregory, Carl Hagstr\u00f6m, CastleMania Ryan, Chris Angelini, Chris Jardine, Chris Mawman, Chris Tar, Chris Thompson, Christian, Christian Meath, Christoph Helms, Christopher Feldman, Christopher Gelatt, Christopher Harvey, Christopher rumford, Christopher Tuckwell, Cody E, cognitivegears, Coin Retro, Colin Johnson, Cory Stargel, Count Duckula, Craig Bender, Craig Somerfield, Cristiano Moreira Carvalho, Curt Younkin, CyberpunkDre, Cyrille Jouineau, Dacide, Dan Doyle, Daniel Bauza, Daniel Hochman, Danielle (thegirlg33k), DarkStar7, Darren Wootton, Dashie, Dave Powell, Dave Wray, David Alegre, David Alvarado, David Dietrich, David Filskov, David Moylan, Dean Rymer, Dean Strey, DextersTechLab, Dillon Nichols, Douglas Alves, Dylan Lipsitz, Ed Mandy, ElectronAsh, Elio Berrios, emceebois, Emmanuel Vadot, Enrique Lopez, Eoin Gibney, Eric S, Erik O'Neill, Evan Clarke, F. Bennett Pearce, Jr., Fabio, Faye Salwin, Felix Michaux, Flygon, foo1138, Francois P, Frank Rosario, Frank Tenace, Fredrik Berglind, Fredrik Carlsson, GadgetUK164, Garrett Kapp, Gavin, giom, Grant King, Grant McNaught, gros75, grovdata, Guilherme Colombelli, Guillermo Izard, Guillermo Tunon, h1ghjuce, HardGay, Henry Colorado, Henry R, Hentai Joe, hicom150, ian Latta, Ichigo, Indo Jimbo, infebark, Infinite, Infinite NES Lives LLC, Isaac Totz, ItsACerealWow, ItsBobDudes, J Z, Jacek (Jack), Jake Lancaster, Jake Magee, Jan Kretschmer, Jan Paul, Jason, Jasper Soleymanzadeh, Jeffrey Haas, Jeffrey Skube, Jer!, Jeremy Hopkins, Jerrod Putman, Jerry Langwell, JFT, Jim Drewry, Jim Gregory, Jim Knowler, jklax, Jo, Joe Drilling, Joel Krueger, Johan Sj\u00f6strand, John Fletcher, John Kelley, John Klimek, John Laird, John McMaster, John P, John Rademan, John Stringer, Johnny Davies, Jon, Jon Van Dalen, Jonas, Jonathon Rau, Joost Peters, Jootec from Mars, Jose BG, Joseph Milazzo, Josh, Josh Emery, Josh O'Roake, Josh Yates-Walker, Josiah Freep, JOTEGO, Juan Diego, Kaiosten, Kasil, Kawika Pacheco, Kebulator, Keith F. Kelly, Keith Gordon, Kevin Igoe, kigf, kl3mousse, Klaus Wolf, Kristopher, krivx, Kuromi Bunny, Lecloclo, Lee F, loloC2C, Lukas Schaper, Mack H, Magnus Kvevlander, magus424, Manksalot, Manuel, Manuel Antoni, Manuel Gomez Grande, Marco Tavian, Mark Dell, Mark DeRidder, Mark Mahoney, Martin Ansin, Martin Birkeldh, Martin Donlon, Martin Hernandez, Marvin Blauth, Matt Clawson, Matt Elder, Matt Gibson, Matt McCarthy, Matthew Caron, mattsoft, Maude Tarvox, Maxime Mouflard, mbalders, mic _, Michael Irvine, Michael Lessard, Michael Packard, Michael Stegen, Michael Thompson, Michael Tontimonia, Michael's Workshop, Michal, Mike Dean, Mike G, Mike Holzinger, Mike Puelinckx, Mike S, Mike Strobel, Mike V., Mingus, Mitchell Mebane, Monte Greene, mpong, MrX-8B, Muramasa, Murray Melvin, N, Negativeions, NegativeStraw, NeoHomeBrew, Nesfreak, Nick Bartle, Nick Gamewell, Nick K, Nihar Bhatt, Niko, Nikolay Ivanchev, Nils Lundquist, Noah Evans, Nolan, Noyman29, Nuno Sousa, octamin, ojwales, Olivier Cahagne, Osnyg, Owlnonymous, pagetable.com, Paolo Pisati, ParkNangJung, patreoner, Paul, Paul, Paul Alvarez II, Paul Harris, Peter Brown, Peter Kooiman, Peter McQuillan, Phil Stevenson, Philip Lawson, Philippe Depre, philpem, Pierrick Grillet, Pirloui, Pons Cremator, Porkchop Express, prince_rakeem, QcRetro, Quentin Sykes, R, Rasmus Bonnedal, RaspberryAlpine, Raul3D, RavenX-1, Ray Commend, RayceARoni, Raziel, Reed Kennedy, remowilliams, RetroRGB, RetroShop.pt, RGBsince92, Ricardo Engel, Richard S, Richard Simpson, RichFX, Rob Young, Robert Brodie, Robert Dickenson, Robert MacLean, robert rodgers, Roberto, Roberto Lari, Rodrigo Augusto de Moraes Louren\u00e7o, rok, Roland, Rom1, Roman Buser, Ronald Dean, Ruben Johnson, Rune P, Ryan Costello, Rysha, Sam Hall, Samuli Tuomola, Sanc Coulors, Scott Dowdle, Scott Rising, Sean Hancock, Shane Gleeson, Shane Lynch, Shogun7, ShootTheCore, Sigmund68k, Silvio Samadelli, simon van den bon, Sipan Calli, SJohansson, Smarthuman, Spiff, SteelRush, Stefan Nordkvist, Stephane Tremblay, Stephen Marshall, Stephen Stalcup, Steve Randall, Steven A Rodriguez, Steven Hansen, Steven Hertz, Stuart Dunfield, Super Nicktendo, Sylver, TaylorBat, Thomas Gooddy, Thorias, Tianfeng, Tim, ToastCrust, Todd Gill, Tom Salvo, Tony Shadwick, Trifle, type78, Tyrone Cheng, Ulf Skutnabba, Victor, V\u00edctor Gomariz Ladr\u00f3n de Guevara, Victor Lindo, Victor Pando, Wes Brown, Will Green, Woof, Xtro, Zoltan Kovacs, ZooKneeKnow, zzBadnusty.\r\n",
@@ -345,6 +442,524 @@
       "fork": true,
       "url": "https://github.com/theypsilon/Downloader_MiSTer",
       "releases": []
+    },
+    {
+      "name": "Gameboy_MiSTer",
+      "description": "Gameboy for MiSTer",
+      "readme": "# [Gameboy](https://en.wikipedia.org/wiki/Game_Boy)  / [Gameboy Color](https://en.wikipedia.org/wiki/Game_Boy_Color) port to [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\r\n\r\n_This is a port of [Gameboy for MiST](https://github.com/mist-devel/gameboy)_\r\n\r\n* Place RBF file into root of SD card.\r\n* Place \\*.gb|*.gbc files into Gameboy folder.\r\n\r\n## Features\r\n* Original Gameboy & Gameboy Color Support\r\n* Super Gameboy Support - Borders, Palettes and Multiplayer\r\n* MegaDuck Support\r\n* Custom Borders\r\n* SaveStates\r\n* Fastforward \r\n* Rewind - Allows you to rewind up to 40 seconds of gameplay\r\n* Frameblending - Prevents flicker in some games (e.g. \"Chikyuu Kaihou Gun Zas\") \r\n* Custom Palette Loading\r\n* Real-Time Clock Support\r\n* Gameboy Link Port Support - Requires USERIO adapter\r\n* Cheats\r\n* Fast boot\r\n* GBA mode for GBC games\r\n\r\n## Open Source Bootstrap roms\r\nOpen source roms are included in the core, adapted from the SameBoy project [https://github.com/LIJI32/SameBoy/](https://github.com/LIJI32/SameBoy/). These roms have MiSTer-specific enhancements, allowing fast booting and GBA mode to be controlled by the on-screen display.\r\n\r\n For maximum compatibility/authenticity you can still place the Gameboy bios/bootroms into the Gameboy folder and load them in the menu with `Bootroms->Load GBC/DMG/SGB boot`. \r\n\r\nFor more information see the [BootROM README](./BootROMs/README.md)  \r\n\r\n## Palettes\r\nThis core supports custom palettes (*.gbp) which should be placed into the Gameboy folder. Some examples are available in the palettes folder.\r\n\r\n## Custom Borders\r\nThis core supports custom borders (*.sgb) which should be placed into the Gameboy folder. Some examples are available in the borders folder.\r\n\r\n## Autoload\r\nTo autoload your favorite game at startup rename it to `boot2.rom`.\r\n\r\n## Video output\r\nThe Gameboy can disable video output at any time which causes problems with vsync_adjust=2 or analog video during screen transitions. Enabling the Stabilize video option may fix this at the cost of some increased latency.\r\n\r\n## Savestates\r\nThis core provides 4 slots to save and restore the memory state which means you can save at any point in the game. These can be saved to your SD Card or they can reside only in memory for temporary use (OSD Option). Save states can be performed with the Keyboard, a mapped button to a gamepad, or through the OSD.\r\n\r\nKeyboard Hotkeys for save states:\r\n- <kbd>ALT</kbd>+<kbd>F1</kbd>/<kbd>F2</kbd>/<kbd>F3</kbd>/<kbd>F4</kbd> \u2013 save state  \r\n- <kbd>F1</kbd>/<kbd>F2</kbd>/<kbd>F3</kbd>/<kbd>F4</kbd> \u2013 restore state\r\n\r\n\r\nGamepad:\r\n\r\n- <kbd>SAVESTATEBUTTON</kbd>+<kbd>LEFT</kbd>/<kbd>RIGHT</kbd> prev/next savestate slot\r\n- <kbd>SAVESTATEBUTTON</kbd>+<kbd>START</kbd>+<kbd>DOWN</kbd> saves to the selected slot\r\n- <kbd>SAVESTATEBUTTON</kbd>+<kbd>START</kbd>+<kbd>UP</kbd> loads from the selected slot\r\n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/theypsilon/Gameboy_MiSTer",
+      "releases": [
+        {
+          "name": "GameboyColor.mgl",
+          "sha": "97e4308978ec4c8f4cd260d87ed073ff4e0dd5f3",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/GameboyColor.mgl",
+          "type": "OTHER"
+        },
+        {
+          "name": "Gameboy_20171203.rbf",
+          "sha": "0782a9fe8ad4b42710cae6cf5a669e329f46269b",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20171203.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20180306.rbf",
+          "sha": "0f656f68960b940ef08b8deab08eb3bf4bc8f0bd",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20180306.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20181118.rbf",
+          "sha": "7036ecdb9e073bd08f9b99f7e5ae68b405c02d0b",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20181118.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20181130.rbf",
+          "sha": "aa8bb256802e093054576c763f2409d14241225b",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20181130.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20181202.rbf",
+          "sha": "7d7cab2fd0400b2e43a2277cedaf08885694e53a",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20181202.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20181208.rbf",
+          "sha": "5b64dfd56398b2c887764e9bdd24d5c4553b256c",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20181208.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20181211.rbf",
+          "sha": "9fd85ebed0960bfd99ed8dc07366cdcae2c0c38e",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20181211.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20181229.rbf",
+          "sha": "0c4bf832ab0381d38678dc157eba4409211fd14b",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20181229.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20181231.rbf",
+          "sha": "dacdd9ab4862f4db3fd7c972cea72e8186e22134",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20181231.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20190110.rbf",
+          "sha": "a7c5f5c7032e9e23c8afa57a37dc0f30a19f3a5b",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20190110.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20190121.rbf",
+          "sha": "9833fb37e8135d49ba2af0fadb1944dcd7e9c3aa",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20190121.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20190213.rbf",
+          "sha": "23632e7a572061978b359d0d11fba05382d5d406",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20190213.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20190307.rbf",
+          "sha": "8463c1e82a5402aee2162f633c8b5ce51bf29d96",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20190307.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20190425.rbf",
+          "sha": "15b3f8a03ce5f4cfa29500def229433adf586ce6",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20190425.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20190511.rbf",
+          "sha": "152ebb0e4aa248979e36e1ff22c899a7de109897",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20190511.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20190627.rbf",
+          "sha": "2d1e4c211f3dc245a4badff1baddc90d8fd64a1b",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20190627.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20190711.rbf",
+          "sha": "c4feacef29ec18d7e91b3a09b31223fd9ced725c",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20190711.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20190928.rbf",
+          "sha": "9f54c097a2601f0ce9fb547e1006bdb0041dedd3",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20190928.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20190929.rbf",
+          "sha": "ebe304d8398af44e0500669c207e18b6cdb3f59f",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20190929.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20191218.rbf",
+          "sha": "2250c157d007d53d834b37b82d6478c91153d83c",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20191218.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20200331.rbf",
+          "sha": "27eed51101492f3d3fe08160c5ea23a164a60315",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20200331.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20200510.rbf",
+          "sha": "e6b9c8b9604f84510836a7bc3b5459f58180c6fe",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20200510.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20200622.rbf",
+          "sha": "f498ddb1c5f2dd219bffaecdb8b1381bcf5b597a",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20200622.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20200701.rbf",
+          "sha": "0eefadeb3a79f138ae15e27f22cd969102c4e51d",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20200701.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20200819.rbf",
+          "sha": "0333b9dc58ae21de6cfb750fa21d0378852f726e",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20200819.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20201204.rbf",
+          "sha": "f8fd55bcb7e799ce85c67bab7cf0be8090ce0c55",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20201204.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20210103.rbf",
+          "sha": "948083aa4c0d2ee858445035e2d9ec57c9c445db",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20210103.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20210108.rbf",
+          "sha": "f4816456604650a82e9db2299928f239c7adcd06",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20210108.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20210109.rbf",
+          "sha": "0055fae4f0f323bac8ae7483725864577d4ad2c8",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20210109.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20210124.rbf",
+          "sha": "128b38297072d575abfa04b661858da10f1fe4f1",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20210124.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20210130.rbf",
+          "sha": "5ef2d030fbf908a61ee09ace5293590eb7dbfae8",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20210130.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20210227.rbf",
+          "sha": "af9ef1a7b0c890b30d58d66549feb37059a44494",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20210227.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20210329.rbf",
+          "sha": "806c53b0f56f05a4bafb973e7bef6bd67b0454bc",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20210329.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20210508.rbf",
+          "sha": "7b106ef8ae58e9e7384474de256ec1fe6fc03e45",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20210508.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20210930.rbf",
+          "sha": "f4076d1a4332fbd9cc70d1c6ba2273a6072bae10",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20210930.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20211107.rbf",
+          "sha": "91ad7bc442c5559f9bf3590f8078a224a54c3efc",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20211107.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20211121.rbf",
+          "sha": "d38cd23c316ee9ec1926dcf5e3939640eabd1271",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20211121.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20220131.rbf",
+          "sha": "d0d7352f54977867835caa40e99cad1590fcff03",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20220131.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20220214.rbf",
+          "sha": "d71cccc08e228e890d81edeed6ea06dfff26a284",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20220214.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20220326.rbf",
+          "sha": "ba28c48c1f3302902ef7fc1115cebac265344733",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20220326.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20220429.rbf",
+          "sha": "40eebbbd4a153f47522d480989e97ad64632cc6c",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20220429.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20220806.rbf",
+          "sha": "0cd5559cdc396983ed0777e03165cedf9c0a7605",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20220806.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20230102.rbf",
+          "sha": "6301a0f388b532c4b88e4cde1a712bc269bf7595",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20230102.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20230225.rbf",
+          "sha": "a58281fa3bd3003f7199feb8337d1cfdf5ac581a",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20230225.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20230501.rbf",
+          "sha": "e12f4211309a06dc49f931809ed5f49317189151",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20230501.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20231211.rbf",
+          "sha": "3db7e2451036636b66dc292a06106456643ac9e3",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20231211.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20240502.rbf",
+          "sha": "5fda71aee675e7efa176f0cc64e1e494f55892a5",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20240502.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20240912.rbf",
+          "sha": "739908f42fad7787324d786b8494771f058e048f",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20240912.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gameboy_20250618.rbf",
+          "sha": "b656584b13cb5d71f2696a4c9af40a8e62dd548a",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Gameboy_20250618.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Mega Duck.mgl",
+          "sha": "46182bf8d3cb712157b1b1dcc9235fe7f9c4daed",
+          "url": "https://raw.githubusercontent.com/theypsilon/Gameboy_MiSTer/master/releases/Mega%20Duck.mgl",
+          "type": "OTHER"
+        }
+      ]
+    },
+    {
+      "name": "GBA_MiSTer",
+      "description": "GBA for MiSTer",
+      "readme": "# [Gameboy Advance](https://en.wikipedia.org/wiki/Game_Boy_Advance) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\n\n## HW Requirements/Features\nThe games can run from a naked DE10-Nano with the built-in DDR-RAM.\nHowever, using SDRAM is highly recommended, as some games may slowdown or lose sync when using DDR-RAM.\n\nWhen using SDRAM, it requires 32MB SDRAM for games less than 32MB. 32MB games require either 64MB or 128MB module.\nSDRAM will be automatically used when available and size is sufficient.\n\n## Bios\nOpensource Bios from Normmatt is included, however it has issues with some games.\nOriginal GBA BIOS can be placed to GBA folder with name boot.rom\n\nPLEASE do not report errors without testing with the original BIOS\n\nHomebrew games are sometimes not supported by the official BIOS, \nbecause the BIOS checks for Nintendo Logo included in the ROM, which is protected by copyright.\nTo use these ROMs without renaming or removing the boot.rom, \nyou can activate the \"Homebrew BIOS\" settings in OSD.\nAs the BIOS is already replaced at boot time, you must save this setting and hard reset/reload the GBA core.\n\n## Status\n~1600 games tested until ingame.\nThere is no known official game that doesn't work.\nExceptions are games that require rare extra hardware (mostly japanese).\nSome small video glitches remain, see issue list.\n\n## Features\n- Saving as in GBA\n- Savestates\n- FastForward - speed up game by factor 2-4\n- CPU Turbomode - give games additional CPU power\n- Flickerblend - set to blend or 30Hz mode for games like F-Zero, Mario Kart or NES Classics to prevent flickering effects\n- Spritelimit - turn on to prevent wrong sprites for games that rely on the limit (opt-in)\n- Cheats\n- Color optimizations: shader colors and desaturate\n- Rewind: go back up to 60 seconds in time\n- Tilt: use analog stick (map stick in Mister Main before)\n- Solar Sensor: Set brightness in OSD\n- Gyro: use analog stick (map stick in Mister Main before)\n- RTC: automatically used, works with RTC board or internet connection\n- Rumble: for Drill Dozer, Wario Ware Twisted and some romhacks\n- 2x Resolution: game is rendered at 480x320 instead of 240x160 pixels\n\n## Savestates\nCore provides 4 slots to save and restore the state. \nThose can be saved to SD Card or reside only in memory for temporary use(OSD Option). \nUsage with either Keyboard, Gamepad mappable button or OSD.\n\nKeyboard Hotkeys for save states:\n- <kbd>ALT</kbd>+<kbd>F1</kbd>/<kbd>F2</kbd>/<kbd>F3</kbd>/<kbd>F4</kbd> \u2013 save state  \n- <kbd>F1</kbd>/<kbd>F2</kbd>/<kbd>F3</kbd>/<kbd>F4</kbd> \u2013 restore state\n\nGamepad:\n- <kbd>SAVESTATEBUTTON</kbd>+<kbd>LEFT</kbd>/<kbd>RIGHT</kbd> prev/next savestate slot\n- <kbd>SAVESTATEBUTTON</kbd>+<kbd>START</kbd>+<kbd>DOWN</kbd> saves to the selected slot\n- <kbd>SAVESTATEBUTTON</kbd>+<kbd>START</kbd>+<kbd>UP</kbd> loads from the selected slot\n\n## Rewind\nTo use rewind, turn on the OSD Option \"Rewind Capture\" and map the rewind button.\nYou may have to restart the game for the function to work properly.\nAttention: Rewind capture will slow down your game by about 0.5% and may lead to light audio stutter.\nRewind capture is not compatible with \"Pause when OSD is open\", so pause is disabled when Rewind capture is on.\n\n## Spritelimit\nThere are only very few games known that produce glitches without sprite pixel limit.\nThose games use the sprite pixel limit automatically.\nYou can optionally also turn this on if you notice problems.\n\n## 2x Resolution\nOnly works over HDMI, Analog output is not changed in 2x Resolution mode. \n\nImproved rendering resolution for:\n- Affine background: \"Mode7\" games, typically racing games like Mario Kart\n- Affine sprites: games that scale or rotate sprites\n\nThis rendering is experimental and can cause glitches, as not all game behavior can be supported.\nThose glitches can not be fixed without gamespecific hacks and therefore will not be fixed. \nPlease don't add bugs in such cases.\n\n## Cartridge Hardware supported games\n- RTC: Pokemon Sapphire+Ruby+Emerald, Boktai 1+2+3, Sennen Kazoku, Rockman EXE 4.5\n- Solar Sensor: Boktai 1+2+3\n- Gyro: Wario Ware Twisted\n- Tilt: Yoshi Topsy Turvy/Universal Gravitation, Koro Koro Puzzle - Happy Panechu!\n- Rumble: Wario Ware Twisted, Drill Dozer\n\nIf there is a game you want to play that also uses one of these features, but is not listed, please open a bug request.\n\nFor romhacks you can activate the option \"GPIO HACK(RTC+Rumble)\". Make sure to deactivate it for other games, otherwise you will experience crashes.\n\n## Not included\n- Multiplayer features like serial communication\n- E-Reader support\n- Gameboy Player features\n\n## Information for developers\n\nHow to simulate:\nhttps://github.com/MiSTer-devel/GBA_MiSTer/tree/master/sim\n\nHow to implement a GPIO module:\nhttps://github.com/MiSTer-devel/GBA_MiSTer/blob/master/gpio_readme.md\n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/theypsilon/GBA_MiSTer",
+      "releases": [
+        {
+          "name": "GBA_20191124.rbf",
+          "sha": "aec287a7c5a919bda33ea0c2ec9e906ea964f867",
+          "url": "https://raw.githubusercontent.com/theypsilon/GBA_MiSTer/master/releases/GBA_20191124.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "GBA_20191125.rbf",
+          "sha": "ed8102dde301d2935d06725547e3129b5ac1a03e",
+          "url": "https://raw.githubusercontent.com/theypsilon/GBA_MiSTer/master/releases/GBA_20191125.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "GBA_20191204.rbf",
+          "sha": "f2e1612d2738135be095b8f27e91873f35f205db",
+          "url": "https://raw.githubusercontent.com/theypsilon/GBA_MiSTer/master/releases/GBA_20191204.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "GBA_20191218.rbf",
+          "sha": "a935fd8c56e1ef5ff84987a8f5825609ddfb0d75",
+          "url": "https://raw.githubusercontent.com/theypsilon/GBA_MiSTer/master/releases/GBA_20191218.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "GBA_20200101.rbf",
+          "sha": "a6fb4a8586de83bb170bf00a6de0351f2a4f3ce2",
+          "url": "https://raw.githubusercontent.com/theypsilon/GBA_MiSTer/master/releases/GBA_20200101.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "GBA_20200119.rbf",
+          "sha": "9cbe0c4d36b30e2d8996580d6cd4750ec4f50464",
+          "url": "https://raw.githubusercontent.com/theypsilon/GBA_MiSTer/master/releases/GBA_20200119.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "GBA_20200129.rbf",
+          "sha": "bd2b5b9c904e3d19d5aed39c6e2c2f18429b0994",
+          "url": "https://raw.githubusercontent.com/theypsilon/GBA_MiSTer/master/releases/GBA_20200129.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "GBA_20200222.rbf",
+          "sha": "065d91e85ec4e8c487060fe42af29235211b57bf",
+          "url": "https://raw.githubusercontent.com/theypsilon/GBA_MiSTer/master/releases/GBA_20200222.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "GBA_20200323.rbf",
+          "sha": "dc8a403fc37cbf1522ef8378372f8a9823f204ce",
+          "url": "https://raw.githubusercontent.com/theypsilon/GBA_MiSTer/master/releases/GBA_20200323.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "GBA_20200409.rbf",
+          "sha": "c23043022874be3b3034acda14f1a3357736a015",
+          "url": "https://raw.githubusercontent.com/theypsilon/GBA_MiSTer/master/releases/GBA_20200409.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "GBA_20200513.rbf",
+          "sha": "0700db5ec2d0bb17158c3361ad6fae65893db9a9",
+          "url": "https://raw.githubusercontent.com/theypsilon/GBA_MiSTer/master/releases/GBA_20200513.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "GBA_20200617.rbf",
+          "sha": "9d8f92b4b3510e77b627a82964966d5b3f3879de",
+          "url": "https://raw.githubusercontent.com/theypsilon/GBA_MiSTer/master/releases/GBA_20200617.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "GBA_20201110.rbf",
+          "sha": "9c3f99a4b703c361ef02772afe1b842fe5680390",
+          "url": "https://raw.githubusercontent.com/theypsilon/GBA_MiSTer/master/releases/GBA_20201110.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "GBA_20201120.rbf",
+          "sha": "f95c002f304f132a8e6fad3df11ef3742eaa90af",
+          "url": "https://raw.githubusercontent.com/theypsilon/GBA_MiSTer/master/releases/GBA_20201120.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "GBA_20210227.rbf",
+          "sha": "079af32f13518f57ec9074c18b257b30363295e5",
+          "url": "https://raw.githubusercontent.com/theypsilon/GBA_MiSTer/master/releases/GBA_20210227.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "GBA_20210415.rbf",
+          "sha": "cc61d94315c6be93e3d29265c40dc97437143a08",
+          "url": "https://raw.githubusercontent.com/theypsilon/GBA_MiSTer/master/releases/GBA_20210415.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "GBA_20210629.rbf",
+          "sha": "bd027d8cf0bd5517b452f56e1d86e7dc2ac00667",
+          "url": "https://raw.githubusercontent.com/theypsilon/GBA_MiSTer/master/releases/GBA_20210629.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "GBA_20210718.rbf",
+          "sha": "dae03501dc8a7d53f71939b9e54ea7e0e12cc4eb",
+          "url": "https://raw.githubusercontent.com/theypsilon/GBA_MiSTer/master/releases/GBA_20210718.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "GBA_20211201.rbf",
+          "sha": "b728137155c66a728f2b13af46ddfc4206bd9825",
+          "url": "https://raw.githubusercontent.com/theypsilon/GBA_MiSTer/master/releases/GBA_20211201.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "GBA_20220202.rbf",
+          "sha": "e949877c91bed28f5e62a1edd09a791ec4a9ae4b",
+          "url": "https://raw.githubusercontent.com/theypsilon/GBA_MiSTer/master/releases/GBA_20220202.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "GBA_20220214.rbf",
+          "sha": "4d59d7277d8c6d14260bc55f53114a71dff46ca6",
+          "url": "https://raw.githubusercontent.com/theypsilon/GBA_MiSTer/master/releases/GBA_20220214.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "GBA_20220314.rbf",
+          "sha": "2eb1ac4aba4a1d0c7d4e30fe1abf3a4025e80268",
+          "url": "https://raw.githubusercontent.com/theypsilon/GBA_MiSTer/master/releases/GBA_20220314.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "GBA_20220417.rbf",
+          "sha": "df96783896e88d5bc4ba1662656ee872a426a421",
+          "url": "https://raw.githubusercontent.com/theypsilon/GBA_MiSTer/master/releases/GBA_20220417.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "GBA_20220428.rbf",
+          "sha": "25580879845fa46de66cc5feb4d2a28bed7177ae",
+          "url": "https://raw.githubusercontent.com/theypsilon/GBA_MiSTer/master/releases/GBA_20220428.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "GBA_20220812.rbf",
+          "sha": "5af5e12109fa0d89bd6555160ba6c799ea4ccef7",
+          "url": "https://raw.githubusercontent.com/theypsilon/GBA_MiSTer/master/releases/GBA_20220812.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "GBA_20230225.rbf",
+          "sha": "cc7487fcaa7750a07aa8960a7c1ca34114fb914b",
+          "url": "https://raw.githubusercontent.com/theypsilon/GBA_MiSTer/master/releases/GBA_20230225.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "GBA_20230806.rbf",
+          "sha": "1a64b3f0cd00c97b825c314cf7137d7811f41812",
+          "url": "https://raw.githubusercontent.com/theypsilon/GBA_MiSTer/master/releases/GBA_20230806.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "GBA_20231211.rbf",
+          "sha": "1fcac21d95d5508b788d1c794ea1347d304acc0d",
+          "url": "https://raw.githubusercontent.com/theypsilon/GBA_MiSTer/master/releases/GBA_20231211.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "GBA_20240317.rbf",
+          "sha": "2e40066e8f1fb4f2ba423fd1213eafdb585c6118",
+          "url": "https://raw.githubusercontent.com/theypsilon/GBA_MiSTer/master/releases/GBA_20240317.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "GBA_20240410.rbf",
+          "sha": "baa315b409a04c3335f744c527f6af55caae6a15",
+          "url": "https://raw.githubusercontent.com/theypsilon/GBA_MiSTer/master/releases/GBA_20240410.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "GBA_20250621.rbf",
+          "sha": "0f428072dfe6cf6b69f5bbf5dacef76c9787476d",
+          "url": "https://raw.githubusercontent.com/theypsilon/GBA_MiSTer/master/releases/GBA_20250621.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "GBA_20250705.rbf",
+          "sha": "eadbe452b224df7492c888c88774266e10e1457d",
+          "url": "https://raw.githubusercontent.com/theypsilon/GBA_MiSTer/master/releases/GBA_20250705.rbf",
+          "type": "RBF"
+        }
+      ]
     },
     {
       "name": "Incomplete_MAD_DB_Generator_MiSTer",
