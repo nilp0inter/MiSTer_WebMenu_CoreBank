@@ -5291,784 +5291,111 @@
     {
       "name": "Saturn_MiSTer",
       "description": "Sega Saturn for MiSTer",
-      "readme": "# [Sega Saturn](https://en.wikipedia.org/wiki/Sega_Saturn) for MiSTer\n\n## LLAPI notes\n\nLLAPI core is kept in sync with main MiSTer Saturn branch but with following limitations due to FPGA space:\t\t\n- STV not supported\n- Lightgun not supported\n- Composite blend, cropping features not supported\n\n3D controller is supported.\n\n## Hardware Requirements\n\n- 128 MB SDRAM Module (Primary)\n- SDRAM Module of any size (32MB-128MB) (Secondary)\n\n> **Note:** Dual SDRAM modules is recommended for better compatibility.\n\n## Status\n\nCurrent status is WIP/Beta\n\nKnown issues:\n\n",
+      "readme": "# [Sega Saturn](https://en.wikipedia.org/wiki/Sega_Saturn) for MiSTer\n\n## LLAPI notes\n\nOG Digital and 3D controllers are supported.\n\nLimitations due to FPGA space:\t\t\n- Lightgun not supported\n- Mouse not supported\n- Steering wheel not supported\n- Dual Mission not supported\n\nfiles.qip and rtl/hps2pad.sv have been modified to remove support for the above controllers and make the LLAPI implementation fit in the core.\n\n## Hardware Requirements\n\n- 128 MB SDRAM Module (Primary)\n- SDRAM Module of any size (32MB-128MB) (Secondary)\n\n> **Note:** Dual SDRAM modules is recommended for better compatibility.\n\n## Status\n\nCurrent status is WIP/Beta\n\nKnown issues:\n\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-LLAPI/Saturn_MiSTer",
       "releases": [
         {
-          "name": "ST-V_20250612.rbf",
-          "sha": "6451b0558c199ac3e469f1b4b19ee91f88099c5d",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/ST-V_20250612.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Saturn_20231010.rbf",
-          "sha": "5db313a4cfe017edcc81a999cde9c3aa71dbc096",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/Saturn_20231010.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Saturn_20231018.rbf",
-          "sha": "8dc94d7c26e004205941e15bf74becae3a2cbfea",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/Saturn_20231018.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Saturn_20240323.rbf",
-          "sha": "cca090de4f7fb2373d457fbfa726f211da5b2167",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/Saturn_20240323.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Saturn_20240628.rbf",
-          "sha": "6edd1806addeb0d5baa5991e69541189c41f0b1b",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/Saturn_20240628.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Saturn_20250113.rbf",
-          "sha": "9696a709c3115e55ec0cc40acc4f679c54774848",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/Saturn_20250113.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Saturn_20250613.rbf",
-          "sha": "e12f11fd85acc6f44b65845951630f4dcda8c079",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/Saturn_20250613.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Saturn_LLAPI_20240321.rbf",
-          "sha": "eea0297d01f617ae2dd6d9100547c79e13e22184",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/Saturn_LLAPI_20240321.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Saturn_LLAPI_20240323.rbf",
-          "sha": "462c55d303c9528fd674563269f69de1722bba87",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/Saturn_LLAPI_20240323.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Saturn_LLAPI_20240403.rbf",
-          "sha": "bc8bbe827c093cb67ace34b7caa12bed658d22d1",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/Saturn_LLAPI_20240403.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Saturn_LLAPI_20240513.rbf",
-          "sha": "78a43fba86ae38ab338c44b512ad716ba7780c6c",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/Saturn_LLAPI_20240513.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Saturn_LLAPI_20240602.rbf",
-          "sha": "7d3dce0f4ca7a54ae40a471f9aa76d4d0601eb1f",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/Saturn_LLAPI_20240602.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Saturn_LLAPI_20240627.rbf",
-          "sha": "8c95ad2737be0da64b37dfd6dd6e39529a8a97b0",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/Saturn_LLAPI_20240627.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Saturn_LLAPI_20240628.rbf",
-          "sha": "fc2931dea828123386baaebacbff1ee16c34899d",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/Saturn_LLAPI_20240628.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Saturn_LLAPI_20240707.rbf",
-          "sha": "b9fa9ed62fe38434c0fe7287b0710059e1029949",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/Saturn_LLAPI_20240707.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Saturn_LLAPI_20240822.rbf",
-          "sha": "4a3d3474b8244365c5331d3309a234c2ce2b7d50",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/Saturn_LLAPI_20240822.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Saturn_LLAPI_20240826.rbf",
-          "sha": "b5ba59d56d3f17934a4f02bed3e69ee71e13f3b7",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/Saturn_LLAPI_20240826.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Saturn_LLAPI_20240918.rbf",
-          "sha": "923e9a5b71c1e05d8469db24af08125470626e6a",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/Saturn_LLAPI_20240918.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Saturn_LLAPI_20240919.rbf",
-          "sha": "8183b6b13bca0444c3341b657222806d1a4f4e33",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/Saturn_LLAPI_20240919.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Saturn_LLAPI_20241015.rbf",
-          "sha": "ec239c4368daf443228a8362ebe3a702901b32c2",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/Saturn_LLAPI_20241015.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Saturn_LLAPI_20241201.rbf",
-          "sha": "ebcd900b468459999b83c693dfbc178e42025a00",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/Saturn_LLAPI_20241201.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Saturn_LLAPI_20241208.rbf",
-          "sha": "49c5d82e53997b521c54f3648f2dbbb937592cd7",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/Saturn_LLAPI_20241208.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Saturn_LLAPI_20241220.rbf",
-          "sha": "e39eb718c0034f407ed5b6babc52771163560461",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/Saturn_LLAPI_20241220.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Saturn_LLAPI_20250106.rbf",
-          "sha": "88683c625dd7f143120d80087e588a4390959566",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/Saturn_LLAPI_20250106.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Saturn_LLAPI_20250112.rbf",
-          "sha": "f8fec8d0ab882a89ec6b0b6d1ddf26e500b8cdcd",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/Saturn_LLAPI_20250112.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Saturn_LLAPI_20250113.rbf",
-          "sha": "9b609abdf3c1b906328774f2702a87cc8947f8f3",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/Saturn_LLAPI_20250113.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Saturn_LLAPI_20250124.rbf",
-          "sha": "560481ab761647368a842b1321d7315f304ba7f0",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/Saturn_LLAPI_20250124.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Saturn_LLAPI_20250127.rbf",
-          "sha": "e6ba7702c40328a8c3c7612bd86fd73b20fb05d8",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/Saturn_LLAPI_20250127.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Saturn_LLAPI_20250201.rbf",
-          "sha": "6df4ed5342cc54bf64a42f18f002d0f7d895dc13",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/Saturn_LLAPI_20250201.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Saturn_LLAPI_20250202.rbf",
-          "sha": "c2f3a1a7547bbfdf79d6a9b0b7911a4f012fd380",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/Saturn_LLAPI_20250202.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Saturn_LLAPI_20250208.rbf",
-          "sha": "c3b659f3ff4f7e28586c55fbfc8fc37b67204cf2",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/Saturn_LLAPI_20250208.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Saturn_LLAPI_20250209.rbf",
-          "sha": "1cfb78cba04b1e0dd41949190152e661c302696a",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/Saturn_LLAPI_20250209.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Saturn_LLAPI_20250214.rbf",
-          "sha": "c2b92fce5cbcdc0192a68e48926854b85c3cbabd",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/Saturn_LLAPI_20250214.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Saturn_LLAPI_20250219.rbf",
-          "sha": "53476ce9b9fea7f7e0bbf6b4deee7392c6a35172",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/Saturn_LLAPI_20250219.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Saturn_LLAPI_20250222.rbf",
-          "sha": "2ce838994efb679291422c92cdcd5b0b172395d3",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/Saturn_LLAPI_20250222.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Saturn_LLAPI_20250223.rbf",
-          "sha": "83b1d65e3605efbc89e2b7822d0447358cd006bf",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/Saturn_LLAPI_20250223.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Saturn_LLAPI_20250225.rbf",
-          "sha": "aa0b15694f43e71376f19c2c57e660b8aa03237b",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/Saturn_LLAPI_20250225.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Saturn_LLAPI_20250305.rbf",
-          "sha": "39387b292872c1cc4750fd627476e42429761432",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/Saturn_LLAPI_20250305.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Saturn_LLAPI_20250319.rbf",
-          "sha": "52d217c69d3cc85c30c0ea61f81f3bf988cb2f9f",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/Saturn_LLAPI_20250319.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Saturn_LLAPI_20250504.rbf",
-          "sha": "71367a83190ccaec6b93b5e9eb07b5d7aa4488b7",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/Saturn_LLAPI_20250504.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Saturn_LLAPI_20250531.rbf",
-          "sha": "c7dbbbb9b49e1e44d0987a4e9334f72d8e9be704",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/Saturn_LLAPI_20250531.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Saturn_LLAPI_20250713.rbf",
-          "sha": "f6fbb3d132f4ab426c1c2e5c814e33f083f011cb",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/Saturn_LLAPI_20250713.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Saturn_LLAPI_20250909.rbf",
-          "sha": "04b5f2a49ef1df8816233539df01f4c477f3038a",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/Saturn_LLAPI_20250909.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Saturn_LLAPI_20250911.rbf",
-          "sha": "ca0d5139042179c9895e288e0c8b7840b085c8f5",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/Saturn_LLAPI_20250911.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Saturn_LLAPI_20250917.rbf",
-          "sha": "9541f5274a575a3b8df4c2a41941a898453ff39b",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/Saturn_LLAPI_20250917.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Astra SuperStars (J 980514 V1.002).mra",
-          "sha": "14d942b8e81ab1bcef53d0844b9cc9602202fdf2",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/mra/Astra%20SuperStars%20(J%20980514%20V1.002).mra",
-          "type": "MRA",
-          "extra": {
-            "name": null,
-            "rbf": "ST-V",
-            "zips": [
-              "astrass.zip",
-              "stvbios.zip",
-              "astrass.zip"
-            ]
-          }
-        },
-        {
-          "name": "Baku Baku Animal (J 950407 V1.000).mra",
-          "sha": "08aa0087de500f229ea45ee8560a489526fb9ee4",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/mra/Baku%20Baku%20Animal%20(J%20950407%20V1.000).mra",
-          "type": "MRA",
-          "extra": {
-            "name": null,
-            "rbf": "ST-V",
-            "zips": [
-              "bakubaku.zip",
-              "stvbios.zip",
-              "bakubaku.zip"
-            ]
-          }
-        },
-        {
-          "name": "Batman Forever (JUE 960507 V1.000).mra",
-          "sha": "f920f1d446cd57cda8ca47d0791d5f398701c453",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/mra/Batman%20Forever%20(JUE%20960507%20V1.000).mra",
-          "type": "MRA",
-          "extra": {
-            "name": null,
-            "rbf": "ST-V",
-            "zips": [
-              "batmanfr.zip",
-              "stvbios.zip",
-              "batmanfr.zip"
-            ]
-          }
-        },
-        {
-          "name": "Columns '97 (JET 961209 V1.000).mra",
-          "sha": "d58db1d45b16644b6f41c7f43204e5b54996d7ba",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/mra/Columns%20'97%20(JET%20961209%20V1.000).mra",
-          "type": "MRA",
-          "extra": {
-            "name": null,
-            "rbf": "ST-V",
-            "zips": [
-              "colmns97.zip",
-              "stvbios.zip",
-              "colmns97.zip"
-            ]
-          }
-        },
-        {
-          "name": "Decathlete (JUET 960709 V1.001).mra",
-          "sha": "19302d4226c0134d68fff4847eb6e2c6a28b6a2b",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/mra/Decathlete%20(JUET%20960709%20V1.001).mra",
-          "type": "MRA",
-          "extra": {
-            "name": null,
-            "rbf": "ST-V",
-            "zips": [
-              "decathlt.zip",
-              "stvbios.zip",
-              "decathlt.zip"
-            ]
-          }
-        },
-        {
-          "name": "Die Hard Arcade (UET 960515 V1.000).mra",
-          "sha": "41f53bc9ee02a9be87db3251cf6a04c626d31a28",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/mra/Die%20Hard%20Arcade%20(UET%20960515%20V1.000).mra",
-          "type": "MRA",
-          "extra": {
-            "name": null,
-            "rbf": "ST-V",
-            "zips": [
-              "diehard.zip",
-              "stvbios.zip",
-              "diehard.zip"
-            ]
-          }
-        },
-        {
-          "name": "Ejihon Tantei Jimusyo (J 950613 V1.000).mra",
-          "sha": "2b7b12209aed65c72923f1c4b872ae0127ce49b1",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/mra/Ejihon%20Tantei%20Jimusyo%20(J%20950613%20V1.000).mra",
-          "type": "MRA",
-          "extra": {
-            "name": null,
-            "rbf": "ST-V",
-            "zips": [
-              "ejihon.zip",
-              "stvbios.zip",
-              "ejihon.zip"
-            ]
-          }
-        },
-        {
-          "name": "Final Fight Revenge - Final Revenge (JUET 990930 V1.100).mra",
-          "sha": "55ebe0bfc6548295f30f39843ab679d6a21f11fa",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/mra/Final%20Fight%20Revenge%20-%20Final%20Revenge%20(JUET%20990930%20V1.100).mra",
-          "type": "MRA",
-          "extra": {
-            "name": null,
-            "rbf": "ST-V",
-            "zips": [
-              "ffreveng.zip",
-              "stvbios.zip",
-              "ffreveng.zip"
-            ]
-          }
-        },
-        {
-          "name": "Find Love (J 971212 V1.000).mra",
-          "sha": "11624380f1fa9730ffb956a75656f61d78938ebc",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/mra/Find%20Love%20(J%20971212%20V1.000).mra",
-          "type": "MRA",
-          "extra": {
-            "name": null,
-            "rbf": "ST-V",
-            "zips": [
-              "findlove.zip",
-              "stvbios.zip",
-              "findlove.zip"
-            ]
-          }
-        },
-        {
-          "name": "Funky Head Boxers (JUETBKAL 951218 V1.000).mra",
-          "sha": "81e558cf6ef836bdf12e91954c00c9d99ffafab0",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/mra/Funky%20Head%20Boxers%20(JUETBKAL%20951218%20V1.000).mra",
-          "type": "MRA",
-          "extra": {
-            "name": null,
-            "rbf": "ST-V",
-            "zips": [
-              "fhboxers.zip",
-              "stvbios.zip",
-              "fhboxers.zip"
-            ]
-          }
-        },
-        {
-          "name": "Golden Axe - The Duel (JUETL 950117 V1.000).mra",
-          "sha": "56f83ed6588ca428280407de72561e0d8605d156",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/mra/Golden%20Axe%20-%20The%20Duel%20(JUETL%20950117%20V1.000).mra",
-          "type": "MRA",
-          "extra": {
-            "name": null,
-            "rbf": "ST-V",
-            "zips": [
-              "gaxeduel.zip",
-              "stvbios.zip",
-              "gaxeduel.zip"
-            ]
-          }
-        },
-        {
-          "name": "Karaoke Quiz Intro Don Don! (J 960213 V1.000).mra",
-          "sha": "bb1f80134a567cd1c9e59ee2a9bd5b1adb2b23dc",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/mra/Karaoke%20Quiz%20Intro%20Don%20Don!%20(J%20960213%20V1.000).mra",
-          "type": "MRA",
-          "extra": {
-            "name": null,
-            "rbf": "ST-V",
-            "zips": [
-              "introdon.zip",
-              "stvbios.zip",
-              "introdon.zip"
-            ]
-          }
-        },
-        {
-          "name": "Maru-Chan de Goo! (J 971216 V1.000).mra",
-          "sha": "ff6f04c88639da35a881efbc04730a207fdab392",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/mra/Maru-Chan%20de%20Goo!%20(J%20971216%20V1.000).mra",
-          "type": "MRA",
-          "extra": {
-            "name": null,
-            "rbf": "ST-V",
-            "zips": [
-              "maruchan.zip",
-              "stvbios.zip",
-              "maruchan.zip"
-            ]
-          }
-        },
-        {
-          "name": "Mausuke no Ojama the World (J 960314 V1.000).mra",
-          "sha": "aedf4e5f9de48a86727d3ee25ed37e7ece1831a5",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/mra/Mausuke%20no%20Ojama%20the%20World%20(J%20960314%20V1.000).mra",
-          "type": "MRA",
-          "extra": {
-            "name": null,
-            "rbf": "ST-V",
-            "zips": [
-              "mausuke.zip",
-              "stvbios.zip",
-              "mausuke.zip"
-            ]
-          }
-        },
-        {
-          "name": "Pebble Beach - The Great Shot (JUE 950913 V0.990).mra",
-          "sha": "397fcc180d9e78530c547db0d073e221fca62edf",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/mra/Pebble%20Beach%20-%20The%20Great%20Shot%20(JUE%20950913%20V0.990).mra",
-          "type": "MRA",
-          "extra": {
-            "name": null,
-            "rbf": "ST-V",
-            "zips": [
-              "pblbeach.zip",
-              "stvbios.zip",
-              "pblbeach.zip"
-            ]
-          }
-        },
-        {
-          "name": "Pro Mahjong Kiwame S (J 951020 V1.208).mra",
-          "sha": "b2a528d7c46931210984cd75f4cb6b5ebcaa47b2",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/mra/Pro%20Mahjong%20Kiwame%20S%20(J%20951020%20V1.208).mra",
-          "type": "MRA",
-          "extra": {
-            "name": null,
-            "rbf": "ST-V",
-            "zips": [
-              "kiwames.zip",
-              "stvbios.zip",
-              "kiwames.zip"
-            ]
-          }
-        },
-        {
-          "name": "Puyo Puyo Sun (J 961115 V0.001).mra",
-          "sha": "b05593ac0299f3bae3e69e8bee6b0b952ddaa838",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/mra/Puyo%20Puyo%20Sun%20(J%20961115%20V0.001).mra",
-          "type": "MRA",
-          "extra": {
-            "name": null,
-            "rbf": "ST-V",
-            "zips": [
-              "puyosun.zip",
-              "stvbios.zip",
-              "puyosun.zip"
-            ]
-          }
-        },
-        {
-          "name": "Puzzle & Action- Sando-R (J 951114 V1.000).mra",
-          "sha": "6cb01c1cea123327763a94282e1133c56f017c89",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/mra/Puzzle%20%26%20Action-%20Sando-R%20(J%20951114%20V1.000).mra",
-          "type": "MRA",
-          "extra": {
-            "name": null,
-            "rbf": "ST-V",
-            "zips": [
-              "sandor.zip",
-              "stvbios.zip",
-              "sandor.zip"
-            ]
-          }
-        },
-        {
-          "name": "Sea Bass Fishing (JUET 971110 V0.001).mra",
-          "sha": "8be3bbdbbf53ee463729a3c5b3da529247a4092c",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/mra/Sea%20Bass%20Fishing%20(JUET%20971110%20V0.001).mra",
-          "type": "MRA",
-          "extra": {
-            "name": null,
-            "rbf": "ST-V",
-            "zips": [
-              "seabass.zip",
-              "stvbios.zip",
-              "seabass.zip"
-            ]
-          }
-        },
-        {
-          "name": "Soukyugurentai - Terra Diver (JUET 960821 V1.000).mra",
-          "sha": "2673c58b0c0c6931e929617e1c9d8c3e88f1426e",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/mra/Soukyugurentai%20-%20Terra%20Diver%20(JUET%20960821%20V1.000).mra",
-          "type": "MRA",
-          "extra": {
-            "name": null,
-            "rbf": "ST-V",
-            "zips": [
-              "sokyugrt.zip",
-              "stvbios.zip",
-              "sokyugrt.zip"
-            ]
-          }
-        },
-        {
-          "name": "Steep Slope Sliders (JUET 981110 V1.000).mra",
-          "sha": "892a7723e394cec15fd75cca87b6aa02eaabd70d",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/mra/Steep%20Slope%20Sliders%20(JUET%20981110%20V1.000).mra",
-          "type": "MRA",
-          "extra": {
-            "name": null,
-            "rbf": "ST-V",
-            "zips": [
-              "sss.zip",
-              "stvbios.zip",
-              "sss.zip"
-            ]
-          }
-        },
-        {
-          "name": "Suikoenbu - Outlaws of the Lost Dynasty (JUETL 950314 V2.001).mra",
-          "sha": "98d178e16034ea4b197254c89a789c8fbefc6263",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/mra/Suikoenbu%20-%20Outlaws%20of%20the%20Lost%20Dynasty%20(JUETL%20950314%20V2.001).mra",
-          "type": "MRA",
-          "extra": {
-            "name": null,
-            "rbf": "ST-V",
-            "zips": [
-              "suikoenb.zip",
-              "stvbios.zip",
-              "suikoenb.zip"
-            ]
-          }
-        },
-        {
-          "name": "Super Major League (U 960108 V1.000).mra",
-          "sha": "0c92d560f45be766813d1d8bad82439b86b727ed",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/mra/Super%20Major%20League%20(U%20960108%20V1.000).mra",
-          "type": "MRA",
-          "extra": {
-            "name": null,
-            "rbf": "ST-V",
-            "zips": [
-              "smleague.zip",
-              "stvbios.zip",
-              "smleague.zip"
-            ]
-          }
-        },
-        {
-          "name": "Taisen Tanto-R Sashissu!! (J 980216 V1.000).mra",
-          "sha": "247618d51ea06ab833230ee0d586f57f0a34261a",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/mra/Taisen%20Tanto-R%20Sashissu!!%20(J%20980216%20V1.000).mra",
-          "type": "MRA",
-          "extra": {
-            "name": null,
-            "rbf": "ST-V",
-            "zips": [
-              "sasissu.zip",
-              "stvbios.zip",
-              "sasissu.zip"
-            ]
-          }
-        },
-        {
-          "name": "Tecmo World Cup '98 (JUET 980410 V1.000).mra",
-          "sha": "1fcd705f4d0d543bc7497259507a221132165b3a",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/mra/Tecmo%20World%20Cup%20'98%20(JUET%20980410%20V1.000).mra",
-          "type": "MRA",
-          "extra": {
-            "name": null,
-            "rbf": "ST-V",
-            "zips": [
-              "twcup98.zip",
-              "stvbios.zip",
-              "twcup98.zip"
-            ]
-          }
-        },
-        {
-          "name": "Virtua Fighter Kids (JUET 960319 V0.000).mra",
-          "sha": "002dcd7ae84e6e0e081b492fe070d3a6119df1fe",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/mra/Virtua%20Fighter%20Kids%20(JUET%20960319%20V0.000).mra",
-          "type": "MRA",
-          "extra": {
-            "name": null,
-            "rbf": "ST-V",
-            "zips": [
-              "vfkids.zip",
-              "stvbios.zip",
-              "vfkids.zip"
-            ]
-          }
-        },
-        {
-          "name": "Virtua Fighter Remix (JUETBKAL 950428 V1.000).mra",
-          "sha": "8f419054c0c608d37e699ab7d89f84be7d45f7b5",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/mra/Virtua%20Fighter%20Remix%20(JUETBKAL%20950428%20V1.000).mra",
-          "type": "MRA",
-          "extra": {
-            "name": null,
-            "rbf": "ST-V",
-            "zips": [
-              "vfremix.zip",
-              "stvbios.zip",
-              "vfremix.zip"
-            ]
-          }
-        },
-        {
-          "name": "Winter Heat (JUET 971012 V1.000).mra",
-          "sha": "2c419d725844901694d213e7343dba0c0a969af1",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/mra/Winter%20Heat%20(JUET%20971012%20V1.000).mra",
-          "type": "MRA",
-          "extra": {
-            "name": null,
-            "rbf": "ST-V",
-            "zips": [
-              "winterht.zip",
-              "stvbios.zip",
-              "winterht.zip"
-            ]
-          }
-        },
-        {
-          "name": "Zen Nippon Pro-Wrestling Featuring Virtua (J 971123 V1.000).mra",
-          "sha": "7dd5b66ea4759537ff11c56bba85fc4f660664ea",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main_llapi/releases/mra/Zen%20Nippon%20Pro-Wrestling%20Featuring%20Virtua%20(J%20971123%20V1.000).mra",
-          "type": "MRA",
-          "extra": {
-            "name": null,
-            "rbf": "ST-V",
-            "zips": [
-              "znpwfv.zip",
-              "stvbios.zip",
-              "znpwfv.zip"
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "name": "Saturn_MiSTer_new",
-      "description": "Sega Saturn for MiSTer",
-      "readme": "# [Sega Saturn](https://en.wikipedia.org/wiki/Sega_Saturn) for MiSTer\n\n## Hardware Requirements\n\n- 128 MB SDRAM Module (Primary)\n- SDRAM Module of any size (32MB-128MB) (Secondary)\n\n> **Note:** Dual SDRAM modules is recommended for better compatibility.\n\n## Status\n\nCurrent status is WIP/Beta\n\nKnown issues:\n\n",
-      "archived": false,
-      "fork": true,
-      "url": "https://github.com/MiSTer-LLAPI/Saturn_MiSTer_new",
-      "releases": [
-        {
           "name": "Arcade-ST-V_20250612.rbf",
           "sha": "6451b0558c199ac3e469f1b4b19ee91f88099c5d",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/Arcade-ST-V_20250612.rbf",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main/releases/Arcade-ST-V_20250612.rbf",
           "type": "RBF"
         },
         {
           "name": "Arcade-ST-V_20251003.rbf",
           "sha": "d763f5694b5529cadf96d4d624b51e8bc660188f",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/Arcade-ST-V_20251003.rbf",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main/releases/Arcade-ST-V_20251003.rbf",
           "type": "RBF"
         },
         {
           "name": "Saturn_20231010.rbf",
           "sha": "5db313a4cfe017edcc81a999cde9c3aa71dbc096",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/Saturn_20231010.rbf",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main/releases/Saturn_20231010.rbf",
           "type": "RBF"
         },
         {
           "name": "Saturn_20231018.rbf",
           "sha": "8dc94d7c26e004205941e15bf74becae3a2cbfea",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/Saturn_20231018.rbf",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main/releases/Saturn_20231018.rbf",
           "type": "RBF"
         },
         {
           "name": "Saturn_20240323.rbf",
           "sha": "cca090de4f7fb2373d457fbfa726f211da5b2167",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/Saturn_20240323.rbf",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main/releases/Saturn_20240323.rbf",
           "type": "RBF"
         },
         {
           "name": "Saturn_20240628.rbf",
           "sha": "6edd1806addeb0d5baa5991e69541189c41f0b1b",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/Saturn_20240628.rbf",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main/releases/Saturn_20240628.rbf",
           "type": "RBF"
         },
         {
           "name": "Saturn_20250113.rbf",
           "sha": "9696a709c3115e55ec0cc40acc4f679c54774848",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/Saturn_20250113.rbf",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main/releases/Saturn_20250113.rbf",
           "type": "RBF"
         },
         {
           "name": "Saturn_20250613.rbf",
           "sha": "e12f11fd85acc6f44b65845951630f4dcda8c079",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/Saturn_20250613.rbf",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main/releases/Saturn_20250613.rbf",
           "type": "RBF"
         },
         {
           "name": "Saturn_20251003.rbf",
           "sha": "faa1a6fcbfbd7e26cb4c50cea31c215fec8e5c55",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/Saturn_20251003.rbf",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main/releases/Saturn_20251003.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Saturn_LLAPI_20250531.rbf",
+          "sha": "c7dbbbb9b49e1e44d0987a4e9334f72d8e9be704",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main/releases/Saturn_LLAPI_20250531.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Saturn_LLAPI_20250713.rbf",
+          "sha": "f6fbb3d132f4ab426c1c2e5c814e33f083f011cb",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main/releases/Saturn_LLAPI_20250713.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Saturn_LLAPI_20250909.rbf",
+          "sha": "04b5f2a49ef1df8816233539df01f4c477f3038a",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main/releases/Saturn_LLAPI_20250909.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Saturn_LLAPI_20250911.rbf",
+          "sha": "ca0d5139042179c9895e288e0c8b7840b085c8f5",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main/releases/Saturn_LLAPI_20250911.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Saturn_LLAPI_20250917.rbf",
+          "sha": "9541f5274a575a3b8df4c2a41941a898453ff39b",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main/releases/Saturn_LLAPI_20250917.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Saturn_LLAPI_20251208.rbf",
+          "sha": "448bda51a540ff4ce4b8bdc060715f246cd0cdb5",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main/releases/Saturn_LLAPI_20251208.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Saturn_LLAPI_20251209.rbf",
+          "sha": "b9bd0aae4522da3e9fbf874f38a7a958890b33a5",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main/releases/Saturn_LLAPI_20251209.rbf",
           "type": "RBF"
         },
         {
           "name": "Astra SuperStars (J 980514 V1.002).mra",
           "sha": "14d942b8e81ab1bcef53d0844b9cc9602202fdf2",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Astra%20SuperStars%20(J%20980514%20V1.002).mra",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main/releases/mra/Astra%20SuperStars%20(J%20980514%20V1.002).mra",
           "type": "MRA",
           "extra": {
             "name": null,
@@ -6083,7 +5410,7 @@
         {
           "name": "Baku Baku Animal (J 950407 V1.000).mra",
           "sha": "08aa0087de500f229ea45ee8560a489526fb9ee4",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Baku%20Baku%20Animal%20(J%20950407%20V1.000).mra",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main/releases/mra/Baku%20Baku%20Animal%20(J%20950407%20V1.000).mra",
           "type": "MRA",
           "extra": {
             "name": null,
@@ -6098,7 +5425,7 @@
         {
           "name": "Batman Forever (JUE 960507 V1.000).mra",
           "sha": "f920f1d446cd57cda8ca47d0791d5f398701c453",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Batman%20Forever%20(JUE%20960507%20V1.000).mra",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main/releases/mra/Batman%20Forever%20(JUE%20960507%20V1.000).mra",
           "type": "MRA",
           "extra": {
             "name": null,
@@ -6113,7 +5440,7 @@
         {
           "name": "Columns '97 (JET 961209 V1.000).mra",
           "sha": "d58db1d45b16644b6f41c7f43204e5b54996d7ba",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Columns%20'97%20(JET%20961209%20V1.000).mra",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main/releases/mra/Columns%20'97%20(JET%20961209%20V1.000).mra",
           "type": "MRA",
           "extra": {
             "name": null,
@@ -6128,7 +5455,7 @@
         {
           "name": "Cotton 2 (JUET 970902 V1.000).mra",
           "sha": "bcc307a267639a2fc7b4e33bf0ad041fcfb0870f",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Cotton%202%20(JUET%20970902%20V1.000).mra",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main/releases/mra/Cotton%202%20(JUET%20970902%20V1.000).mra",
           "type": "MRA",
           "extra": {
             "name": null,
@@ -6143,7 +5470,7 @@
         {
           "name": "Cotton Boomerang (JUET 980709 V1.000).mra",
           "sha": "4c91ccf32e10f08e01966fcdcc98b0057881fb25",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Cotton%20Boomerang%20(JUET%20980709%20V1.000).mra",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main/releases/mra/Cotton%20Boomerang%20(JUET%20980709%20V1.000).mra",
           "type": "MRA",
           "extra": {
             "name": null,
@@ -6158,7 +5485,7 @@
         {
           "name": "Danchi de Hanafuda (J 990607 V1.400).mra",
           "sha": "b15f82b77c3d8e4df4afc420c576cce00207039a",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Danchi%20de%20Hanafuda%20(J%20990607%20V1.400).mra",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main/releases/mra/Danchi%20de%20Hanafuda%20(J%20990607%20V1.400).mra",
           "type": "MRA",
           "extra": {
             "name": null,
@@ -6173,7 +5500,7 @@
         {
           "name": "Danchi de Quiz Okusan Yontaku Desuyo! (J 001128 V1.200).mra",
           "sha": "d54545212d1d5dcb539ea72a5a1e8ecef99edecd",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Danchi%20de%20Quiz%20Okusan%20Yontaku%20Desuyo!%20(J%20001128%20V1.200).mra",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main/releases/mra/Danchi%20de%20Quiz%20Okusan%20Yontaku%20Desuyo!%20(J%20001128%20V1.200).mra",
           "type": "MRA",
           "extra": {
             "name": null,
@@ -6188,7 +5515,7 @@
         {
           "name": "Decathlete (JUET 960709 V1.001).mra",
           "sha": "19302d4226c0134d68fff4847eb6e2c6a28b6a2b",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Decathlete%20(JUET%20960709%20V1.001).mra",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main/releases/mra/Decathlete%20(JUET%20960709%20V1.001).mra",
           "type": "MRA",
           "extra": {
             "name": null,
@@ -6203,7 +5530,7 @@
         {
           "name": "Die Hard Arcade (UET 960515 V1.000).mra",
           "sha": "41f53bc9ee02a9be87db3251cf6a04c626d31a28",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Die%20Hard%20Arcade%20(UET%20960515%20V1.000).mra",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main/releases/mra/Die%20Hard%20Arcade%20(UET%20960515%20V1.000).mra",
           "type": "MRA",
           "extra": {
             "name": null,
@@ -6218,7 +5545,7 @@
         {
           "name": "Ejihon Tantei Jimusyo (J 950613 V1.000).mra",
           "sha": "2b7b12209aed65c72923f1c4b872ae0127ce49b1",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Ejihon%20Tantei%20Jimusyo%20(J%20950613%20V1.000).mra",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main/releases/mra/Ejihon%20Tantei%20Jimusyo%20(J%20950613%20V1.000).mra",
           "type": "MRA",
           "extra": {
             "name": null,
@@ -6233,7 +5560,7 @@
         {
           "name": "Final Fight Revenge - Final Revenge (JUET 990930 V1.100).mra",
           "sha": "55ebe0bfc6548295f30f39843ab679d6a21f11fa",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Final%20Fight%20Revenge%20-%20Final%20Revenge%20(JUET%20990930%20V1.100).mra",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main/releases/mra/Final%20Fight%20Revenge%20-%20Final%20Revenge%20(JUET%20990930%20V1.100).mra",
           "type": "MRA",
           "extra": {
             "name": null,
@@ -6248,7 +5575,7 @@
         {
           "name": "Find Love (J 971212 V1.000).mra",
           "sha": "11624380f1fa9730ffb956a75656f61d78938ebc",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Find%20Love%20(J%20971212%20V1.000).mra",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main/releases/mra/Find%20Love%20(J%20971212%20V1.000).mra",
           "type": "MRA",
           "extra": {
             "name": null,
@@ -6263,7 +5590,7 @@
         {
           "name": "Funky Head Boxers (JUETBKAL 951218 V1.000).mra",
           "sha": "81e558cf6ef836bdf12e91954c00c9d99ffafab0",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Funky%20Head%20Boxers%20(JUETBKAL%20951218%20V1.000).mra",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main/releases/mra/Funky%20Head%20Boxers%20(JUETBKAL%20951218%20V1.000).mra",
           "type": "MRA",
           "extra": {
             "name": null,
@@ -6278,7 +5605,7 @@
         {
           "name": "Golden Axe - The Duel (JUETL 950117 V1.000).mra",
           "sha": "56f83ed6588ca428280407de72561e0d8605d156",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Golden%20Axe%20-%20The%20Duel%20(JUETL%20950117%20V1.000).mra",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main/releases/mra/Golden%20Axe%20-%20The%20Duel%20(JUETL%20950117%20V1.000).mra",
           "type": "MRA",
           "extra": {
             "name": null,
@@ -6293,7 +5620,7 @@
         {
           "name": "Groove on Fight - Gouketsuji Ichizoku 3 (J 970416 V1.001).mra",
           "sha": "1a994b16aec907a7f640ba31bf9e6ca44503b6b2",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Groove%20on%20Fight%20-%20Gouketsuji%20Ichizoku%203%20(J%20970416%20V1.001).mra",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main/releases/mra/Groove%20on%20Fight%20-%20Gouketsuji%20Ichizoku%203%20(J%20970416%20V1.001).mra",
           "type": "MRA",
           "extra": {
             "name": null,
@@ -6308,7 +5635,7 @@
         {
           "name": "Guardian Force (JUET 980318 V0.105).mra",
           "sha": "3fb2576e81b541bc440f86c59084bee0f59c65a3",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Guardian%20Force%20(JUET%20980318%20V0.105).mra",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main/releases/mra/Guardian%20Force%20(JUET%20980318%20V0.105).mra",
           "type": "MRA",
           "extra": {
             "name": null,
@@ -6323,7 +5650,7 @@
         {
           "name": "Hanagumi Taisen Columns - Sakura Wars (J 971007 V1.010).mra",
           "sha": "78fa86396d016779cdce2347648fe390ec0864ed",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Hanagumi%20Taisen%20Columns%20-%20Sakura%20Wars%20(J%20971007%20V1.010).mra",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main/releases/mra/Hanagumi%20Taisen%20Columns%20-%20Sakura%20Wars%20(J%20971007%20V1.010).mra",
           "type": "MRA",
           "extra": {
             "name": null,
@@ -6338,7 +5665,7 @@
         {
           "name": "Karaoke Quiz Intro Don Don! (J 960213 V1.000).mra",
           "sha": "bb1f80134a567cd1c9e59ee2a9bd5b1adb2b23dc",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Karaoke%20Quiz%20Intro%20Don%20Don!%20(J%20960213%20V1.000).mra",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main/releases/mra/Karaoke%20Quiz%20Intro%20Don%20Don!%20(J%20960213%20V1.000).mra",
           "type": "MRA",
           "extra": {
             "name": null,
@@ -6353,7 +5680,7 @@
         {
           "name": "Maru-Chan de Goo! (J 971216 V1.000).mra",
           "sha": "ff6f04c88639da35a881efbc04730a207fdab392",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Maru-Chan%20de%20Goo!%20(J%20971216%20V1.000).mra",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main/releases/mra/Maru-Chan%20de%20Goo!%20(J%20971216%20V1.000).mra",
           "type": "MRA",
           "extra": {
             "name": null,
@@ -6368,7 +5695,7 @@
         {
           "name": "Mausuke no Ojama the World (J 960314 V1.000).mra",
           "sha": "aedf4e5f9de48a86727d3ee25ed37e7ece1831a5",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Mausuke%20no%20Ojama%20the%20World%20(J%20960314%20V1.000).mra",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main/releases/mra/Mausuke%20no%20Ojama%20the%20World%20(J%20960314%20V1.000).mra",
           "type": "MRA",
           "extra": {
             "name": null,
@@ -6383,7 +5710,7 @@
         {
           "name": "Othello Shiyouyo (J 980423 V1.002).mra",
           "sha": "6093eea7bb7d7ee1761ee2a80410011968b22764",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Othello%20Shiyouyo%20(J%20980423%20V1.002).mra",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main/releases/mra/Othello%20Shiyouyo%20(J%20980423%20V1.002).mra",
           "type": "MRA",
           "extra": {
             "name": null,
@@ -6398,7 +5725,7 @@
         {
           "name": "Pebble Beach - The Great Shot (JUE 950913 V0.990).mra",
           "sha": "397fcc180d9e78530c547db0d073e221fca62edf",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Pebble%20Beach%20-%20The%20Great%20Shot%20(JUE%20950913%20V0.990).mra",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main/releases/mra/Pebble%20Beach%20-%20The%20Great%20Shot%20(JUE%20950913%20V0.990).mra",
           "type": "MRA",
           "extra": {
             "name": null,
@@ -6413,7 +5740,7 @@
         {
           "name": "Princess Clara Daisakusen (J 960910 V1.000).mra",
           "sha": "2b1f92ae6cfa24499e9f21f60eb83b5739af13c3",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Princess%20Clara%20Daisakusen%20(J%20960910%20V1.000).mra",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main/releases/mra/Princess%20Clara%20Daisakusen%20(J%20960910%20V1.000).mra",
           "type": "MRA",
           "extra": {
             "name": null,
@@ -6428,7 +5755,7 @@
         {
           "name": "Pro Mahjong Kiwame S (J 951020 V1.208).mra",
           "sha": "b2a528d7c46931210984cd75f4cb6b5ebcaa47b2",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Pro%20Mahjong%20Kiwame%20S%20(J%20951020%20V1.208).mra",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main/releases/mra/Pro%20Mahjong%20Kiwame%20S%20(J%20951020%20V1.208).mra",
           "type": "MRA",
           "extra": {
             "name": null,
@@ -6443,7 +5770,7 @@
         {
           "name": "Puyo Puyo Sun (J 961115 V0.001).mra",
           "sha": "b05593ac0299f3bae3e69e8bee6b0b952ddaa838",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Puyo%20Puyo%20Sun%20(J%20961115%20V0.001).mra",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main/releases/mra/Puyo%20Puyo%20Sun%20(J%20961115%20V0.001).mra",
           "type": "MRA",
           "extra": {
             "name": null,
@@ -6458,7 +5785,7 @@
         {
           "name": "Puzzle & Action- Sando-R (J 951114 V1.000).mra",
           "sha": "6cb01c1cea123327763a94282e1133c56f017c89",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Puzzle%20%26%20Action-%20Sando-R%20(J%20951114%20V1.000).mra",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main/releases/mra/Puzzle%20%26%20Action-%20Sando-R%20(J%20951114%20V1.000).mra",
           "type": "MRA",
           "extra": {
             "name": null,
@@ -6473,7 +5800,7 @@
         {
           "name": "Radiant Silvergun (JUET 980523 V1.000).mra",
           "sha": "f97dd1a502653bb198ff551ee1f85042a211c405",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Radiant%20Silvergun%20(JUET%20980523%20V1.000).mra",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main/releases/mra/Radiant%20Silvergun%20(JUET%20980523%20V1.000).mra",
           "type": "MRA",
           "extra": {
             "name": null,
@@ -6488,7 +5815,7 @@
         {
           "name": "Sea Bass Fishing (JUET 971110 V0.001).mra",
           "sha": "8be3bbdbbf53ee463729a3c5b3da529247a4092c",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Sea%20Bass%20Fishing%20(JUET%20971110%20V0.001).mra",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main/releases/mra/Sea%20Bass%20Fishing%20(JUET%20971110%20V0.001).mra",
           "type": "MRA",
           "extra": {
             "name": null,
@@ -6503,7 +5830,7 @@
         {
           "name": "Shanghai - The Great Wall - Shanghai Triple Threat (JUE 950623 V1.005).mra",
           "sha": "70e77b03202f18a65abba49b51a76d210cd41947",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Shanghai%20-%20The%20Great%20Wall%20-%20Shanghai%20Triple%20Threat%20(JUE%20950623%20V1.005).mra",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main/releases/mra/Shanghai%20-%20The%20Great%20Wall%20-%20Shanghai%20Triple%20Threat%20(JUE%20950623%20V1.005).mra",
           "type": "MRA",
           "extra": {
             "name": null,
@@ -6518,7 +5845,7 @@
         {
           "name": "Shienryu (JUET 961226 V1.000).mra",
           "sha": "1026ea59704f44b91893c60b3cf5d6bc2c28e1f5",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Shienryu%20(JUET%20961226%20V1.000).mra",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main/releases/mra/Shienryu%20(JUET%20961226%20V1.000).mra",
           "type": "MRA",
           "extra": {
             "name": null,
@@ -6533,7 +5860,7 @@
         {
           "name": "Soukyugurentai - Terra Diver (JUET 960821 V1.000).mra",
           "sha": "2673c58b0c0c6931e929617e1c9d8c3e88f1426e",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Soukyugurentai%20-%20Terra%20Diver%20(JUET%20960821%20V1.000).mra",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main/releases/mra/Soukyugurentai%20-%20Terra%20Diver%20(JUET%20960821%20V1.000).mra",
           "type": "MRA",
           "extra": {
             "name": null,
@@ -6548,7 +5875,7 @@
         {
           "name": "Steep Slope Sliders (JUET 981110 V1.000).mra",
           "sha": "892a7723e394cec15fd75cca87b6aa02eaabd70d",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Steep%20Slope%20Sliders%20(JUET%20981110%20V1.000).mra",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main/releases/mra/Steep%20Slope%20Sliders%20(JUET%20981110%20V1.000).mra",
           "type": "MRA",
           "extra": {
             "name": null,
@@ -6563,7 +5890,7 @@
         {
           "name": "Suikoenbu - Outlaws of the Lost Dynasty (JUETL 950314 V2.001).mra",
           "sha": "98d178e16034ea4b197254c89a789c8fbefc6263",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Suikoenbu%20-%20Outlaws%20of%20the%20Lost%20Dynasty%20(JUETL%20950314%20V2.001).mra",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main/releases/mra/Suikoenbu%20-%20Outlaws%20of%20the%20Lost%20Dynasty%20(JUETL%20950314%20V2.001).mra",
           "type": "MRA",
           "extra": {
             "name": null,
@@ -6578,7 +5905,7 @@
         {
           "name": "Super Major League (U 960108 V1.000).mra",
           "sha": "0c92d560f45be766813d1d8bad82439b86b727ed",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Super%20Major%20League%20(U%20960108%20V1.000).mra",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main/releases/mra/Super%20Major%20League%20(U%20960108%20V1.000).mra",
           "type": "MRA",
           "extra": {
             "name": null,
@@ -6593,7 +5920,7 @@
         {
           "name": "Taisen Tanto-R Sashissu!! (J 980216 V1.000).mra",
           "sha": "247618d51ea06ab833230ee0d586f57f0a34261a",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Taisen%20Tanto-R%20Sashissu!!%20(J%20980216%20V1.000).mra",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main/releases/mra/Taisen%20Tanto-R%20Sashissu!!%20(J%20980216%20V1.000).mra",
           "type": "MRA",
           "extra": {
             "name": null,
@@ -6608,7 +5935,7 @@
         {
           "name": "Tecmo World Cup '98 (JUET 980410 V1.000).mra",
           "sha": "1fcd705f4d0d543bc7497259507a221132165b3a",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Tecmo%20World%20Cup%20'98%20(JUET%20980410%20V1.000).mra",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main/releases/mra/Tecmo%20World%20Cup%20'98%20(JUET%20980410%20V1.000).mra",
           "type": "MRA",
           "extra": {
             "name": null,
@@ -6623,7 +5950,7 @@
         {
           "name": "Touryuu Densetsu Elan-Doree - Elan Doree - Legend of Dragoon (JUET 980922 V1.006).mra",
           "sha": "cafa752475476207bb02ba6bc98e73728d785184",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Touryuu%20Densetsu%20Elan-Doree%20-%20Elan%20Doree%20-%20Legend%20of%20Dragoon%20(JUET%20980922%20V1.006).mra",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main/releases/mra/Touryuu%20Densetsu%20Elan-Doree%20-%20Elan%20Doree%20-%20Legend%20of%20Dragoon%20(JUET%20980922%20V1.006).mra",
           "type": "MRA",
           "extra": {
             "name": null,
@@ -6638,7 +5965,7 @@
         {
           "name": "Virtua Fighter Kids (JUET 960319 V0.000).mra",
           "sha": "002dcd7ae84e6e0e081b492fe070d3a6119df1fe",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Virtua%20Fighter%20Kids%20(JUET%20960319%20V0.000).mra",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main/releases/mra/Virtua%20Fighter%20Kids%20(JUET%20960319%20V0.000).mra",
           "type": "MRA",
           "extra": {
             "name": null,
@@ -6653,7 +5980,7 @@
         {
           "name": "Virtua Fighter Remix (JUETBKAL 950428 V1.000).mra",
           "sha": "8f419054c0c608d37e699ab7d89f84be7d45f7b5",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Virtua%20Fighter%20Remix%20(JUETBKAL%20950428%20V1.000).mra",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main/releases/mra/Virtua%20Fighter%20Remix%20(JUETBKAL%20950428%20V1.000).mra",
           "type": "MRA",
           "extra": {
             "name": null,
@@ -6668,7 +5995,7 @@
         {
           "name": "Virtual Mahjong 2 - My Fair Lady (J 980608 V1.000).mra",
           "sha": "ef984ca30a80ea5dc1ddcb2dc08bebdd9efcdf22",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Virtual%20Mahjong%202%20-%20My%20Fair%20Lady%20(J%20980608%20V1.000).mra",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main/releases/mra/Virtual%20Mahjong%202%20-%20My%20Fair%20Lady%20(J%20980608%20V1.000).mra",
           "type": "MRA",
           "extra": {
             "name": null,
@@ -6683,7 +6010,7 @@
         {
           "name": "Winter Heat (JUET 971012 V1.000).mra",
           "sha": "2c419d725844901694d213e7343dba0c0a969af1",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Winter%20Heat%20(JUET%20971012%20V1.000).mra",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main/releases/mra/Winter%20Heat%20(JUET%20971012%20V1.000).mra",
           "type": "MRA",
           "extra": {
             "name": null,
@@ -6698,7 +6025,7 @@
         {
           "name": "Zen Nippon Pro-Wrestling Featuring Virtua (J 971123 V1.000).mra",
           "sha": "7dd5b66ea4759537ff11c56bba85fc4f660664ea",
-          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer_new/main/releases/mra/Zen%20Nippon%20Pro-Wrestling%20Featuring%20Virtua%20(J%20971123%20V1.000).mra",
+          "url": "https://raw.githubusercontent.com/MiSTer-LLAPI/Saturn_MiSTer/main/releases/mra/Zen%20Nippon%20Pro-Wrestling%20Featuring%20Virtua%20(J%20971123%20V1.000).mra",
           "type": "MRA",
           "extra": {
             "name": null,

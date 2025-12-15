@@ -3613,6 +3613,12 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-CosmicGuerilla_20251127.rbf",
+          "sha": "240cceb3c1d1a0c94587148f1c70b37a491d90e4",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-CosmicGuerilla_MiSTer/main/releases/Arcade-CosmicGuerilla_20251127.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Cosmic Guerilla.mra",
           "sha": "7c25f40334b32110fab7bdca9b6ea6b8a7ae99b2",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-CosmicGuerilla_MiSTer/main/releases/Cosmic%20Guerilla.mra",
@@ -3798,6 +3804,12 @@
           "name": "Arcade-CrazyBalloon_20241230.rbf",
           "sha": "61626d52c349e8e74722a9eeb27e396a8e0ba7b8",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-CrazyBalloon_MiSTer/master/releases/Arcade-CrazyBalloon_20241230.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-CrazyBalloon_20251127.rbf",
+          "sha": "f0201135ca2124d9a84b7cde741dbd856324665c",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-CrazyBalloon_MiSTer/master/releases/Arcade-CrazyBalloon_20251127.rbf",
           "type": "RBF"
         },
         {
@@ -12243,7 +12255,7 @@
     {
       "name": "Arcade-SlapFight_MiSTer",
       "description": "Slap Fight MiSTer FPGA Core",
-      "readme": "<h1># SLAP FIGHT / ALCON</H1>\nA big thank you to Neil Ward for providing a set of preliminary schematics and a diagnostic ROM.\n\nThank you to the following members of the MiSTer community: Boogermann, misterretrowolf, Sorgelig, Jotego, JimmyStones, Kitrinx & BirdyBro.\n\nSlap Fight was developed by Toaplan and released by Taito in 1986. Slap Fight was known as ALCON (Alien League Of Cosmic Nations)\n\n<h2>Compatible Platforms</h2>\n<li>MiSTer FPGA</li>\n\n<h2>Compatible Games</h2>\n<blockquote>\n<p dir=\"auto\"><strong>ROMs NOT INCLUDED:</strong> By using this core you agree to provide your own roms.</p>\n</blockquote>\n\n<li>Slap Fight</li>\n<li>Tiger Heli</li>\n<li>Get Star</li>\n\n<h2>Partially Working</h2>\n<li>Performan</li>\n\n<h2>Game Instructions:</h2>\n\n\tThe year is 2059.  Aliens have overrun the planet.  The Allied League of Cosmic Nations, commonly called ALCON, have convened to combat this menace to the world.  ALCON has determined that a sole, experienced pilot, flying the experimental SW475 aircraft, must defend the world against certain destruction.\n\n\tYOU are the pilot that must fly the SW475 aircraft and defeat the aliens.\n\n<h2>Maneuvers:</h2>\n\n\tUse the joystick to fly the SW475 over the terrain.\n\tUse 'Fire' button to shoot at enemies.\n\tUse 'Weapon Select' button to choose your weapons.\n\tThe 'Weapon's Gauge' on the bottom of the screen shows which weapons can be used (the wording on the weapons turn yellow).\n\tPick up starts to advance 'Weapon's Gauge'\n\n<h2>Weapons available on the SW475:</h2>\n\n\tSPEED  - This will increase you flying speed\n\tSHOT   - Normal forward fire\n\tSIDE   - Right and Left fire\n\tWING   - Double, Triple and Quadruple fire power\n\tBOMB   - Wide range fire\n\tLASER  - Long range fire\n\tH. MIS - Homing missiles\n\tSHIELD - Indestructible against three hits\n\n<h2>DIP Switch Settings:</h2>\n\n\tCabinet Type       - Up-Right* ,Table\n\tScreen\t\t\t   - Normal*, Invert\n\tMode\t\t\t   - Normal Game*, Screen Test Mode\n\tDemo Sounds\t\t   - ON*, OFF \n\tCoinage            - 1 Coin/1 Play*, 1 Coin/2 Play, 2 Coins/1 Play, 2 Coins/3 Play\n\tDifficulty         - A, B*, C, D\n\tExtend             - 30000 Every 100000*, 50000 Every 200000, 50000 Only, 100000 Only\n\tFighter Count      - 1,2,3* & 5\n\tDip Switch Display - OFF*, ON (show dip switch configuration) \n\n\t*Factory Setting\n",
+      "readme": "<h1># SLAP FIGHT / ALCON</H1>\nA big thank you to Neil Ward for providing a set of preliminary schematics and a diagnostic ROM.\n\nThank you to the following members of the MiSTer community: Boogermann, misterretrowolf, Sorgelig, Jotego, JimmyStones, Kitrinx & BirdyBro.\n\nSlap Fight was developed by Toaplan and released by Taito in 1986. Slap Fight was known as ALCON (Alien League Of Cosmic Nations)\n\n<h2>Compatible Platforms</h2>\n<li>MiSTer FPGA</li>\n\n<h2>Compatible Games</h2>\n<blockquote>\n<p dir=\"auto\"><strong>ROMs NOT INCLUDED:</strong> By using this core you agree to provide your own roms.</p>\n</blockquote>\n\n<li>Slap Fight</li>\n<li>Tiger Heli</li>\n<li>Get Star</li>\n\n<h2>Game Instructions:</h2>\n\n\tThe year is 2059.  Aliens have overrun the planet.  The Allied League of Cosmic Nations, commonly called ALCON, have convened to combat this menace to the world.  ALCON has determined that a sole, experienced pilot, flying the experimental SW475 aircraft, must defend the world against certain destruction.\n\n\tYOU are the pilot that must fly the SW475 aircraft and defeat the aliens.\n\n<h2>Maneuvers:</h2>\n\n\tUse the joystick to fly the SW475 over the terrain.\n\tUse 'Fire' button to shoot at enemies.\n\tUse 'Weapon Select' button to choose your weapons.\n\tThe 'Weapon's Gauge' on the bottom of the screen shows which weapons can be used (the wording on the weapons turn yellow).\n\tPick up starts to advance 'Weapon's Gauge'\n\n<h2>Weapons available on the SW475:</h2>\n\n\tSPEED  - This will increase you flying speed\n\tSHOT   - Normal forward fire\n\tSIDE   - Right and Left fire\n\tWING   - Double, Triple and Quadruple fire power\n\tBOMB   - Wide range fire\n\tLASER  - Long range fire\n\tH. MIS - Homing missiles\n\tSHIELD - Indestructible against three hits\n\n<h2>DIP Switch Settings:</h2>\n\n\tCabinet Type       - Up-Right* ,Table\n\tScreen\t\t\t   - Normal*, Invert\n\tMode\t\t\t   - Normal Game*, Screen Test Mode\n\tDemo Sounds\t\t   - ON*, OFF \n\tCoinage            - 1 Coin/1 Play*, 1 Coin/2 Play, 2 Coins/1 Play, 2 Coins/3 Play\n\tDifficulty         - A, B*, C, D\n\tExtend             - 30000 Every 100000*, 50000 Every 200000, 50000 Only, 100000 Only\n\tFighter Count      - 1,2,3* & 5\n\tDip Switch Display - OFF*, ON (show dip switch configuration) \n\n\t*Factory Setting\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/Arcade-SlapFight_MiSTer",
@@ -12262,15 +12274,9 @@
           }
         },
         {
-          "name": "Arcade-SlapFight_20220322.rbf",
-          "sha": "97a5b4356e2869630cbe2ebf437f9f6f4d0b0762",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SlapFight_MiSTer/main/releases/Arcade-SlapFight_20220322.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Arcade-SlapFight_20240603.rbf",
-          "sha": "fae3a71b22a65f9efce358e7b8ab800e830ce675",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SlapFight_MiSTer/main/releases/Arcade-SlapFight_20240603.rbf",
+          "name": "Arcade-SlapFight_20251212.rbf",
+          "sha": "8a569812f6ba52695b3a7aad5edab57e4455f1cb",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SlapFight_MiSTer/main/releases/Arcade-SlapFight_20251212.rbf",
           "type": "RBF"
         },
         {
@@ -26451,6 +26457,12 @@
           "name": "TRS-80_20250907.rbf",
           "sha": "a7bdf90ff2c4ec1fad05a443c967488671ebcc54",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/TRS-80_MiSTer/master/releases/TRS-80_20250907.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "TRS-80_20251209.rbf",
+          "sha": "94905a78df153c233ecb1b5205c16c13e47be353",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/TRS-80_MiSTer/master/releases/TRS-80_20251209.rbf",
           "type": "RBF"
         },
         {
