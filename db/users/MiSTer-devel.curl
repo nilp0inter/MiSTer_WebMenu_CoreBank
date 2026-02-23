@@ -111,6 +111,11 @@ url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Blockade_MiSTer/mai
 output = "_Arcade/cores/Blockade_20250105.rbf"
 
 
+# BluePrint
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-BluePrint_MiSTer/main/releases/BluePrint_20260222.rbf"
+output = "_Others/BluePrint_20260222.rbf"
+
+
 # BombJack
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-BombJack_MiSTer/master/releases/Arcade-BombJack_20240804.rbf"
 output = "_Arcade/cores/BombJack_20240804.rbf"
@@ -902,8 +907,8 @@ output = "_Utils/menu_20241031.rbf"
 
 
 # Minimig
-url = "https://raw.githubusercontent.com/MiSTer-devel/Minimig-AGA_MiSTer/MiSTer/releases/Minimig_20250621.rbf"
-output = "_Computer/Minimig_20250621.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Minimig-AGA_MiSTer/MiSTer/releases/Minimig_20260220.rbf"
+output = "_Computer/Minimig_20260220.rbf"
 
 
 # MiSTerLaggy
@@ -1444,6 +1449,21 @@ output = "_Arcade/CoMotion.mra"
 # Hustle.mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Blockade_MiSTer/main/releases/Hustle.mra"
 output = "_Arcade/Hustle.mra"
+
+
+# Blue Print (Midway).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-BluePrint_MiSTer/main/releases/Blue%20Print%20(Midway).mra"
+output = "_Arcade/Blue Print (Midway).mra"
+
+
+# Grasspin (Jaleco).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-BluePrint_MiSTer/main/releases/Grasspin%20(Jaleco).mra"
+output = "_Arcade/Grasspin (Jaleco).mra"
+
+
+# Saturn (Zilec).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-BluePrint_MiSTer/main/releases/Saturn%20(Zilec).mra"
+output = "_Arcade/Saturn (Zilec).mra"
 
 
 # Bomb Jack.mra
