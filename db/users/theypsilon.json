@@ -251,7 +251,7 @@
     {
       "name": "Main_MiSTer",
       "description": "Main MiSTer binary and Wiki",
-      "readme": "# Main_MiSTer Main Binary and Wiki Repo\n\nThis repo serves as the home for the MiSTer Main binaries and the Wiki.\n\nFor the purposes of getting google to crawl the wiki, here's a link to the (not for humans) [crawlable wiki](https://github-wiki-see.page/m/MiSTer-devel/Wiki_MiSTer/wiki)\n\nIf you're a human looking for the wiki, that's [here](https://github.com/MiSTer-devel/Wiki_MiSTer/wiki)\n",
+      "readme": "# Main_MiSTer Main Binary and Wiki Repo\n\nThis repo serves as the home for the MiSTer Main binaries and the Wiki.\n\nFor the purposes of getting google to crawl the wiki, here's a link to the (not for humans) [crawlable wiki](https://github-wiki-see.page/m/MiSTer-devel/Wiki_MiSTer/wiki)\n\nIf you're a human looking for the wiki, that's [here](https://github.com/MiSTer-devel/Wiki_MiSTer/wiki)\n\nTo compile this application, read more about that [here](https://mister-devel.github.io/MkDocs_MiSTer/developer/mistercompile/#general-prerequisites-for-arm-cross-compiling)\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/theypsilon/Main_MiSTer",
@@ -788,6 +788,24 @@
           "name": "MiSTer_20250305",
           "sha": "a7604b6680b3f86f64e76259fd06a5f23e972c9b",
           "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20250305",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20250525",
+          "sha": "5068d2bd4bad90d7363c981608b84f331db96212",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20250525",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20250828",
+          "sha": "269017d826f850ab7f02bd3a16f30b2105fe7e7a",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20250828",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20260220",
+          "sha": "d86f8bf81295f9d361391dfb8d6d8dbe9510b6c1",
+          "url": "https://raw.githubusercontent.com/theypsilon/Main_MiSTer/master/releases/MiSTer_20260220",
           "type": "OTHER"
         }
       ]

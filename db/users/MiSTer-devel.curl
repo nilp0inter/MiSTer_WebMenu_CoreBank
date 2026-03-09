@@ -112,8 +112,8 @@ output = "_Arcade/cores/Blockade_20250105.rbf"
 
 
 # BluePrint
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-BluePrint_MiSTer/main/releases/BluePrint_20260222.rbf"
-output = "_Others/BluePrint_20260222.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-BluePrint_MiSTer/main/releases/BluePrint_20260306.rbf"
+output = "_Others/BluePrint_20260306.rbf"
 
 
 # BombJack
@@ -639,6 +639,11 @@ output = "_Arcade/cores/Tutankham_20260213.rbf"
 # Ultratank
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Ultratank_MiSTer/master/releases/Arcade-Ultratank_20240525.rbf"
 output = "_Arcade/cores/Ultratank_20240525.rbf"
+
+
+# Vastar
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Vastar_MiSTer/main/releases/Vastar_20260306.rbf"
+output = "_Others/Vastar_20260306.rbf"
 
 
 # VBall
@@ -3844,6 +3849,16 @@ output = "_Arcade/Tutankham.mra"
 # Ultra Tank.mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Ultratank_MiSTer/master/releases/Ultra%20Tank.mra"
 output = "_Arcade/Ultra Tank.mra"
+
+
+# Planet Probe.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Vastar_MiSTer/main/releases/Planet%20Probe.mra"
+output = "_Arcade/Planet Probe.mra"
+
+
+# Vastar.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Vastar_MiSTer/main/releases/Vastar.mra"
+output = "_Arcade/Vastar.mra"
 
 
 # V'Ball (US).mra
