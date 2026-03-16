@@ -205,6 +205,18 @@
       "url": "https://github.com/MiSTer-DB9/ao486_MiSTer",
       "releases": [
         {
+          "name": "ao486USERIO2_20260309.rbf",
+          "sha": "381c91d290413e138f754660946d1e1a321fbc08",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/ao486_MiSTer/master/releases/ao486USERIO2_20260309.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "ao486USERIO2_20260310.rbf",
+          "sha": "e2ad9b5c7f2d014ffea4518ec90f530f628adc3a",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/ao486_MiSTer/master/releases/ao486USERIO2_20260310.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "ao486_20170803.rbf",
           "sha": "c4bc1ca3a061ef1f094cd7213ab2e1e26f8c5b6d",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/ao486_MiSTer/master/releases/ao486_20170803.rbf",
@@ -556,6 +568,18 @@
           "name": "ao486_20260220.rbf",
           "sha": "2c9346824ed1c1094a11318f54e615e85dc370b8",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/ao486_MiSTer/master/releases/ao486_20260220.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "ao486_20260309.rbf",
+          "sha": "292afcddccf22ae56847c7716077f2d6326e51af",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/ao486_MiSTer/master/releases/ao486_20260309.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "ao486_20260310.rbf",
+          "sha": "4cb283da7d3ecac5d483cd7899616da91b4bb1bc",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/ao486_MiSTer/master/releases/ao486_20260310.rbf",
           "type": "RBF"
         },
         {
@@ -1072,6 +1096,378 @@
             "rbf": "astrocade",
             "zips": [
               "wow.zip"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Arcade-Atari-system1_MiSTer",
+      "description": "Atari System-1",
+      "readme": "# Atari System-1 FPGA Arcade  \n\n## About  \nFPGA implementation of Atari's System 1 (LSI version) arcade platform from 1984.  \nBased primarily on the SP-280, SP-286 schematics with additional support from SP-277, SP-298  \n\nSystem-1 supported game cartridges according to MAME  \n* Marble Madness (1984)  \n* Peter Pack Rat (1985)  \n* Road Runner (1985)  \n* Indiana Jones and the Temple of Doom (1985)  \n* RoadBlasters (1987)  \n\n## Known Issues  \nThe following mra files don't work as expected.\n* Indiana Jones (cocktail).mra graphics tiles incorrectly offset, directional controls not working.\n* Indiana Jones (set 3).mra upside down corrupt or missing graphics, text is OK.\n\n## Building  \nThe project files are setup for Quartus 17  \n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/MiSTer-DB9/Arcade-Atari-system1_MiSTer",
+      "releases": [
+        {
+          "name": "Arcade-atarisys1_20231130.rbf",
+          "sha": "d3df9f197cf2158ac39d463741c330cf12089fee",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Atari-system1_MiSTer/main/releases/Arcade-atarisys1_20231130.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-atarisys1_20231212.rbf",
+          "sha": "ac4f496a78a143566c46d74ac04caa0f0cd7293d",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Atari-system1_MiSTer/main/releases/Arcade-atarisys1_20231212.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-atarisys1_20240410.rbf",
+          "sha": "f9c0a021bcf0847278d7e9bfb5373e9db2be3637",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Atari-system1_MiSTer/main/releases/Arcade-atarisys1_20240410.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-atarisys1_20260312.rbf",
+          "sha": "515f4f13d09d03dbf59305fa788682ba30a72185",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Atari-system1_MiSTer/main/releases/Arcade-atarisys1_20260312.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Indiana Jones (set 4).mra",
+          "sha": "78603fbe077bcdb12d7f113819790a0659e9ab67",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Atari-system1_MiSTer/main/releases/Indiana%20Jones%20(set%204).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Indiana Jones (set 4)",
+            "rbf": "atarisys1",
+            "zips": [
+              "indytemp.zip"
+            ]
+          }
+        },
+        {
+          "name": "Marble Madness (set 5 - LSI).mra",
+          "sha": "a7f1bd22d23778fe76cee7bb01747835d93e48b4",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Atari-system1_MiSTer/main/releases/Marble%20Madness%20(set%205%20-%20LSI).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Marble Madness (set 5 - LSI Cartridge)",
+            "rbf": "atarisys1",
+            "zips": [
+              "marble.zip"
+            ]
+          }
+        },
+        {
+          "name": "Peter Pack Rat.mra",
+          "sha": "25777e1b303704f10727168af4ac49702a563bba",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Atari-system1_MiSTer/main/releases/Peter%20Pack%20Rat.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Peter Pack Rat",
+            "rbf": "atarisys1",
+            "zips": [
+              "peterpak.zip"
+            ]
+          }
+        },
+        {
+          "name": "Road Blasters (upright, rev 4).mra",
+          "sha": "e8fffe98d1fe037de44b3169e4e90c833acd14d3",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Atari-system1_MiSTer/main/releases/Road%20Blasters%20(upright%2C%20rev%204).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Road Blasters (upright, rev 4)",
+            "rbf": "atarisys1",
+            "zips": [
+              "roadblst.zip"
+            ]
+          }
+        },
+        {
+          "name": "Road Runner (rev 2).mra",
+          "sha": "25d78de24f1c976705dcc8932e1f0e15b1063496",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Atari-system1_MiSTer/main/releases/Road%20Runner%20(rev%202).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Road Runner (rev 2)",
+            "rbf": "atarisys1",
+            "zips": [
+              "roadrunn.zip"
+            ]
+          }
+        },
+        {
+          "name": "Indiana Jones (cocktail).mra",
+          "sha": "9409ed402f44257912cc31f837067af04cab016a",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Atari-system1_MiSTer/main/releases/_alternatives/_Indiana_Jones/Indiana%20Jones%20(cocktail).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Indiana Jones (cocktail)",
+            "rbf": "atarisys1",
+            "zips": [
+              "indytemp.zip"
+            ]
+          }
+        },
+        {
+          "name": "Indiana Jones (german).mra",
+          "sha": "f14abba296e8bb633e780da668278675f37deebb",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Atari-system1_MiSTer/main/releases/_alternatives/_Indiana_Jones/Indiana%20Jones%20(german).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Indiana Jones (german)",
+            "rbf": "atarisys1",
+            "zips": [
+              "indytemp.zip"
+            ]
+          }
+        },
+        {
+          "name": "Indiana Jones (set 1).mra",
+          "sha": "2e814486aea165cad46f68ae20993276d2aa784b",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Atari-system1_MiSTer/main/releases/_alternatives/_Indiana_Jones/Indiana%20Jones%20(set%201).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Indiana Jones (set 1)",
+            "rbf": "atarisys1",
+            "zips": [
+              "indytemp.zip"
+            ]
+          }
+        },
+        {
+          "name": "Indiana Jones (set 2).mra",
+          "sha": "a546d48bae0fc9e7fa2e13af39c3eb1125eca6a7",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Atari-system1_MiSTer/main/releases/_alternatives/_Indiana_Jones/Indiana%20Jones%20(set%202).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Indiana Jones (set 2)",
+            "rbf": "atarisys1",
+            "zips": [
+              "indytemp.zip"
+            ]
+          }
+        },
+        {
+          "name": "Indiana Jones (set 3).mra",
+          "sha": "aa45c03b92c64a455a2a6af4f7b46be9276a65aa",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Atari-system1_MiSTer/main/releases/_alternatives/_Indiana_Jones/Indiana%20Jones%20(set%203).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Indiana Jones (set 3)",
+            "rbf": "atarisys1",
+            "zips": [
+              "indytemp.zip"
+            ]
+          }
+        },
+        {
+          "name": "Marble Madness (set 1).mra",
+          "sha": "a0c3d29685021ae14f803143531f5d185d40dc7c",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Atari-system1_MiSTer/main/releases/_alternatives/_Marble_Madness/Marble%20Madness%20(set%201).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Marble Madness (set 1)",
+            "rbf": "atarisys1",
+            "zips": [
+              "marble.zip"
+            ]
+          }
+        },
+        {
+          "name": "Marble Madness (set 2).mra",
+          "sha": "6d85f764542f54cb7211282bff3dc89c55681c80",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Atari-system1_MiSTer/main/releases/_alternatives/_Marble_Madness/Marble%20Madness%20(set%202).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Marble Madness (set 2)",
+            "rbf": "atarisys1",
+            "zips": [
+              "marble.zip"
+            ]
+          }
+        },
+        {
+          "name": "Marble Madness (set 3).mra",
+          "sha": "3dd958e548703d7c811252dc897c6695d3c57caa",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Atari-system1_MiSTer/main/releases/_alternatives/_Marble_Madness/Marble%20Madness%20(set%203).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Marble Madness (set 3)",
+            "rbf": "atarisys1",
+            "zips": [
+              "marble.zip"
+            ]
+          }
+        },
+        {
+          "name": "Marble Madness (set 4).mra",
+          "sha": "5238ddfce9c5f7d0479a955627199d950d62e8e4",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Atari-system1_MiSTer/main/releases/_alternatives/_Marble_Madness/Marble%20Madness%20(set%204).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Marble Madness (set 4)",
+            "rbf": "atarisys1",
+            "zips": [
+              "marble.zip"
+            ]
+          }
+        },
+        {
+          "name": "Road Blasters (cockpit, German, rev 1).mra",
+          "sha": "f020f0ffb002e0447fc8668c4c2a2769a350614b",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Atari-system1_MiSTer/main/releases/_alternatives/_Road_Blasters/Road%20Blasters%20(cockpit%2C%20German%2C%20rev%201).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Road Blasters (cockpit, German, rev 1)",
+            "rbf": "atarisys1",
+            "zips": [
+              "roadblst.zip"
+            ]
+          }
+        },
+        {
+          "name": "Road Blasters (cockpit, rev 1).mra",
+          "sha": "69b15417f4e2b70d055b0269c4f1c17f8517dbbc",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Atari-system1_MiSTer/main/releases/_alternatives/_Road_Blasters/Road%20Blasters%20(cockpit%2C%20rev%201).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Road Blasters (cockpit, rev 1)",
+            "rbf": "atarisys1",
+            "zips": [
+              "roadblst.zip"
+            ]
+          }
+        },
+        {
+          "name": "Road Blasters (cockpit, rev 2).mra",
+          "sha": "9d53c6d064ab618ad2ef558d67ab6e3f37113954",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Atari-system1_MiSTer/main/releases/_alternatives/_Road_Blasters/Road%20Blasters%20(cockpit%2C%20rev%202).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Road Blasters (cockpit, rev 2)",
+            "rbf": "atarisys1",
+            "zips": [
+              "roadblst.zip"
+            ]
+          }
+        },
+        {
+          "name": "Road Blasters (upright, German, rev 1).mra",
+          "sha": "69c78c15653ebf62f3a889c6a4213a0e0a0ed058",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Atari-system1_MiSTer/main/releases/_alternatives/_Road_Blasters/Road%20Blasters%20(upright%2C%20German%2C%20rev%201).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Road Blasters (upright, German, rev 1)",
+            "rbf": "atarisys1",
+            "zips": [
+              "roadblst.zip"
+            ]
+          }
+        },
+        {
+          "name": "Road Blasters (upright, German, rev 2).mra",
+          "sha": "a43698b1e46b6ae6ff24cb33900eabb531191b9c",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Atari-system1_MiSTer/main/releases/_alternatives/_Road_Blasters/Road%20Blasters%20(upright%2C%20German%2C%20rev%202).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Road Blasters (upright, German, rev 2)",
+            "rbf": "atarisys1",
+            "zips": [
+              "roadblst.zip"
+            ]
+          }
+        },
+        {
+          "name": "Road Blasters (upright, German, rev 3)).mra",
+          "sha": "a1b6b334b4f4f6f5fd59ebe9bf27e2ffff180a6d",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Atari-system1_MiSTer/main/releases/_alternatives/_Road_Blasters/Road%20Blasters%20(upright%2C%20German%2C%20rev%203)).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Road Blasters (upright, German, rev 3)",
+            "rbf": "atarisys1",
+            "zips": [
+              "roadblst.zip"
+            ]
+          }
+        },
+        {
+          "name": "Road Blasters (upright, German, rev X).mra",
+          "sha": "e7e4feb524fa568d08f7a9e104b938119557f9c7",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Atari-system1_MiSTer/main/releases/_alternatives/_Road_Blasters/Road%20Blasters%20(upright%2C%20German%2C%20rev%20X).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Road Blasters (upright, German, rev ?)",
+            "rbf": "atarisys1",
+            "zips": [
+              "roadblst.zip"
+            ]
+          }
+        },
+        {
+          "name": "Road Blasters (upright, rev 1).mra",
+          "sha": "152fc0953cd5376046dc2240bfc5b07610af3f58",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Atari-system1_MiSTer/main/releases/_alternatives/_Road_Blasters/Road%20Blasters%20(upright%2C%20rev%201).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Road Blasters (upright, rev 1)",
+            "rbf": "atarisys1",
+            "zips": [
+              "roadblst.zip"
+            ]
+          }
+        },
+        {
+          "name": "Road Blasters (upright, rev 2).mra",
+          "sha": "1f29498bae9f452d13586f35dd5a56b1e29f0382",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Atari-system1_MiSTer/main/releases/_alternatives/_Road_Blasters/Road%20Blasters%20(upright%2C%20rev%202).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Road Blasters (upright, rev 2)",
+            "rbf": "atarisys1",
+            "zips": [
+              "roadblst.zip"
+            ]
+          }
+        },
+        {
+          "name": "Road Blasters (upright, rev 3)).mra",
+          "sha": "c0d411dd65b0d641d68dbe10a1c2b16d6a75fea6",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Atari-system1_MiSTer/main/releases/_alternatives/_Road_Blasters/Road%20Blasters%20(upright%2C%20rev%203)).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Road Blasters (upright, rev 3)",
+            "rbf": "atarisys1",
+            "zips": [
+              "roadblst.zip"
+            ]
+          }
+        },
+        {
+          "name": "Road Runner (rev 1).mra",
+          "sha": "07959abb5d6af85b2fc82404887ccf75d217097b",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Atari-system1_MiSTer/main/releases/_alternatives/_Road_Runner/Road%20Runner%20(rev%201).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Road Runner (rev 1)",
+            "rbf": "atarisys1",
+            "zips": [
+              "roadrunn.zip"
+            ]
+          }
+        },
+        {
+          "name": "Road Runner (rev 1p).mra",
+          "sha": "a136d8d71937dffa7eab74710c4f1f99c748ba67",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Atari-system1_MiSTer/main/releases/_alternatives/_Road_Runner/Road%20Runner%20(rev%201p).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Road Runner (rev 1+)",
+            "rbf": "atarisys1",
+            "zips": [
+              "roadrunn.zip"
             ]
           }
         }
@@ -2978,6 +3374,136 @@
             "rbf": "dominos",
             "zips": [
               "dominos.zip"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Arcade-DonkeyKong3_MiSTer",
+      "description": null,
+      "readme": "---------------------------------------------------------------------------------\n-- \n-- *** WORK IN PROGRESS VERSION ***\n--\n-- Arcade: Donkey Kong 3 for MiSTer by gaz68 (https://github.com/gaz68)\n-- July 2020 \n-- \n-- Original Donkey Kong port to MiSTer by Sorgelig\n-- 18 April 2018\n-- \n---------------------------------------------------------------------------------\n-- \n-- dkong Copyright (c) 2003 - 2004 Katsumi Degawa\n-- T80   Copyright (c) 2001-2002 Daniel Wallner (jesus@opencores.org) All rights reserved\n-- T65   Copyright (c) 2002-2015 Daniel Wallner, Mike Johnson, Wolfgang Scherr, Morten Leikvoll\n-- NES APU taken from the NES for MiSTer project\n--\n---------------------------------------------------------------------------------\n-- \n-- Keyboard inputs :\n--\n--   F2          : Start 2 players\n--   F1          : Start 1 player\n--   SPACE       : Fire\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   R,F,D,G     : Player 2 Movements (Cocktail mode only)\n--   A           : Player 2 Fire\n--   T           : Test mode (hold down for several seconds).\n--\n--\n-- Joystick support.\n--  \n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROM is not included. In order to use this arcade, you need to provide a correct ROM file.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n\n\n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/MiSTer-DB9/Arcade-DonkeyKong3_MiSTer",
+      "releases": [
+        {
+          "name": "Arcade-DonkeyKong3_20210127.rbf",
+          "sha": "025eedf77e98591fd2111292eb909d6f049bc4f5",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-DonkeyKong3_MiSTer/master/releases/Arcade-DonkeyKong3_20210127.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-DonkeyKong3_20210312.rbf",
+          "sha": "263176179d7ed95cf3b4af86b68679b7747554e3",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-DonkeyKong3_MiSTer/master/releases/Arcade-DonkeyKong3_20210312.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-DonkeyKong3_20221111.rbf",
+          "sha": "fddcd7e708ab6814a3969d4cb660c16301aa5178",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-DonkeyKong3_MiSTer/master/releases/Arcade-DonkeyKong3_20221111.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-DonkeyKong3_20230227.rbf",
+          "sha": "0ae4a5da189bb3d70ad0f3279f8457c56feb1176",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-DonkeyKong3_MiSTer/master/releases/Arcade-DonkeyKong3_20230227.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-DonkeyKong3_20240526.rbf",
+          "sha": "ac340a15720131140639d60461cbd1529be0261a",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-DonkeyKong3_MiSTer/master/releases/Arcade-DonkeyKong3_20240526.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-DonkeyKong3_20260312.rbf",
+          "sha": "32375530c8d60808752ff3fa751c52be2435314e",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-DonkeyKong3_MiSTer/master/releases/Arcade-DonkeyKong3_20260312.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Donkey Kong 3 (US).mra",
+          "sha": "27a19a12c2b7e89e923e03b83fcd3c8f8f823937",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-DonkeyKong3_MiSTer/master/releases/Donkey%20Kong%203%20(US).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Donkey Kong 3",
+            "rbf": "donkeykong3",
+            "zips": [
+              "dkong3.zip"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Arcade-DonkeyKongJunior_MiSTer",
+      "description": "Donkey Kong Junior",
+      "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: Donkey Kong Junior port to MiSTer by gaz68 (https://github.com/gaz68)\n-- 12 October 2019\n-- \n-- Original Donkey Kong port to MiSTer by Sorgelig\n-- 18 April 2018\n-- \n---------------------------------------------------------------------------------\n-- \n-- dkong Copyright (c) 2003 - 2004 Katsumi Degawa\n-- T80   Copyright (c) 2001-2002 Daniel Wallner (jesus@opencores.org) All rights reserved\n-- T48   Copyright (c) 2004, Arnim Laeuger (arniml@opencores.org) All rights reserved\n-- \n---------------------------------------------------------------------------------\n-- \n-- Support screen and controls rotation on HDMI output.\n-- Only controls are rotated on VGA output.\n-- \n--\n-- Keyboard inputs :\n--\n--   F2          : Coin + Start 2 players\n--   F1          : Coin + Start 1 player\n--   SPACE       : Jump\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--\n-- MAME/IPAC/JPAC Style Keyboard inputs:\n--   5           : Coin 1\n--   6           : Coin 2\n--   1           : Start 1 Player\n--   2           : Start 2 Players\n--   R,F,D,G     : Player 2 Movements (Cocktail mode only)\n--   A           : Player 2 Fire (Cocktail mode only)\n--\n--\n-- Joystick support.\n--  \n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROM is not included. In order to use this arcade, you need to provide a correct ROM file.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/MiSTer-DB9/Arcade-DonkeyKongJunior_MiSTer",
+      "releases": [
+        {
+          "name": "Arcade-DonkeyKongJunior_20200618.rbf",
+          "sha": "e155ff5e87857216847cbff5786a9cc020a6883a",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-DonkeyKongJunior_MiSTer/master/releases/Arcade-DonkeyKongJunior_20200618.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-DonkeyKongJunior_20201218.rbf",
+          "sha": "f8ddc0ff1ac77dde7bbf1b1ac36a92d73274d36e",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-DonkeyKongJunior_MiSTer/master/releases/Arcade-DonkeyKongJunior_20201218.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-DonkeyKongJunior_20210315.rbf",
+          "sha": "b9f839fb910aed9a7c45842a8745b9d6febd343e",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-DonkeyKongJunior_MiSTer/master/releases/Arcade-DonkeyKongJunior_20210315.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-DonkeyKongJunior_20210403.rbf",
+          "sha": "6ae0bef7b6e0648d1c5eaf9148bb64793acb18ea",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-DonkeyKongJunior_MiSTer/master/releases/Arcade-DonkeyKongJunior_20210403.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-DonkeyKongJunior_20210922.rbf",
+          "sha": "a682ab0905ba8e6dcb8a8076be8d9398950d459a",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-DonkeyKongJunior_MiSTer/master/releases/Arcade-DonkeyKongJunior_20210922.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-DonkeyKongJunior_20230226.rbf",
+          "sha": "98662db4e5ef8ddf898defaeee752ba0dbda992f",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-DonkeyKongJunior_MiSTer/master/releases/Arcade-DonkeyKongJunior_20230226.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-DonkeyKongJunior_20240526.rbf",
+          "sha": "5c759b9f77995225c3f77754f6b8e63582d4777e",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-DonkeyKongJunior_MiSTer/master/releases/Arcade-DonkeyKongJunior_20240526.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-DonkeyKongJunior_20260312.rbf",
+          "sha": "9ba4ba33599988a5be974b78624af64a883ebe94",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-DonkeyKongJunior_MiSTer/master/releases/Arcade-DonkeyKongJunior_20260312.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Donkey Kong Junior (US, Set F-2).mra",
+          "sha": "6897576a8420b7c88474529abe494d46ee560d0c",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-DonkeyKongJunior_MiSTer/master/releases/Donkey%20Kong%20Junior%20(US%2C%20Set%20F-2).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Donkey Kong Junior",
+            "rbf": "donkeykongjunior",
+            "zips": [
+              "dkongjr.zip"
             ]
           }
         }
@@ -8402,7 +8928,7 @@
     {
       "name": "Arcade-QBert_MiSTer",
       "description": "Q*Bert core for MiSTer",
-      "readme": "![QBert Character](./qbert.png) MiSTer Q*Bert\r\n=============================================\r\n\r\nQ*Bert arcade core for MiSTer FPGA by Pierco. It's a reproduction of the original PCBs rather than a reinterpretation but with some dual port RAM exceptions.\r\n\r\nAdditional details\r\n------------------\r\n\r\n**Audio board MA216:**\r\n\r\n- SC01 is not implemented. Waiting for brave people to do it.\r\n\r\n**NVRAM:**\r\n\r\n- Not implemented - NVRAM should be C5/C6 on schematics.\r\n\r\n**Ports:**\r\n\r\n- IP17-10: input port for test buttons, coins and player 1/2.\r\n- IP47-40: input port for joystick.\r\n- OP27-20: output port for sound interface\r\n- OP33-37: output port for knocker and coin meter.\r\n\r\nGame Compatibility List\r\n-----------------------\r\n\r\nWorking:\r\n\r\n- QBert: 100% compatible.\r\n- QBert Qubes: 100% compatible.\r\n- Mad Planets: 100% compatible.\r\n\r\nNot working yet:\r\n\r\n- Curve Ball: dip switch order is weird, no sound.\r\n- Insector: 100% compatible, dip switch problems, controller inverted & no test mode(?).\r\n- Tyls: 100% compatible - dip switches inverted.\r\n\r\nKnown Bugs\r\n----------\r\n\r\n- QBert Qubes: \"Supreme Nosers\" screen works only after a reset.\r\n- Problem with vertical position register E1-2. When a new object is falling from the top of the screen (ball), it appears briefly at the bottom of the screen.\r\n- High Scores screen: the big three letters of player's name are not displayed correctly. It works well after a few resets (is it a problem with bus sharing logic which sends zeros to simulate high impedance for ORing outputs?). I don't have the PCB so it's difficult to know the original behavior.\r\n- Votrax chip is cruelly missing, QBert needs his @!#?@! voice!!!\r\n",
+      "readme": "![QBert Character](./qbert.png) MiSTer Q*Bert\r\n=============================================\r\n\r\nQ*Bert arcade core for MiSTer FPGA by Pierco. It's a reproduction of the original PCBs rather than a reinterpretation but with some dual port RAM exceptions.\r\n\r\nAdditional details\r\n------------------\r\n\r\n**Audio board MA216:**\r\n\r\n- SC01-A is implemented in `rtl/sc01a/` \u2014 an FPGA recreation of the Votrax SC01-A phoneme\r\n  speech synthesizer, based on the MAME simulation by Olivier Galibert (BSD-3-Clause).\r\n  Six IIR biquad filters driven by a glottal/noise source, with all coefficients pre-computed\r\n  as static ROM tables. See [rtl/sc01a/README.md](rtl/sc01a/README.md) for details.\r\n\r\n**NVRAM:**\r\n\r\n- Not implemented - NVRAM should be C5/C6 on schematics.\r\n\r\n**Ports:**\r\n\r\n- IP17-10: input port for test buttons, coins and player 1/2.\r\n- IP47-40: input port for joystick.\r\n- OP27-20: output port for sound interface\r\n- OP33-37: output port for knocker and coin meter.\r\n\r\nGame Compatibility List\r\n-----------------------\r\n\r\nWorking:\r\n\r\n- QBert: 100% compatible.\r\n- QBert Qubes: 100% compatible.\r\n- Mad Planets: 100% compatible.\r\n\r\nNot working yet:\r\n\r\n- Curve Ball: dip switch order is weird, no sound.\r\n- Insector: 100% compatible, dip switch problems, controller inverted & no test mode(?).\r\n- Tyls: 100% compatible - dip switches inverted.\r\n\r\nKnown Bugs\r\n----------\r\n\r\n- QBert Qubes: \"Supreme Nosers\" screen works only after a reset.\r\n- Problem with vertical position register E1-2. When a new object is falling from the top of the screen (ball), it appears briefly at the bottom of the screen.\r\n- High Scores screen: the big three letters of player's name are not displayed correctly. It works well after a few resets (is it a problem with bus sharing logic which sends zeros to simulate high impedance for ORing outputs?). I don't have the PCB so it's difficult to know the original behavior.\r\n- Votrax SC01-A is now implemented \u2014 Q*Bert has his @!#?@! voice!\r\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-DB9/Arcade-QBert_MiSTer",
@@ -8477,6 +9003,12 @@
           "name": "Arcade-QBert_20240604.rbf",
           "sha": "96f9966844900a8182900e8a22a567e014d17901",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-QBert_MiSTer/master/releases/Arcade-QBert_20240604.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-QBert_20260309.rbf",
+          "sha": "8fd6349eeda81ed8c1f5bc46eb7c4874c7e4eae5",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-QBert_MiSTer/master/releases/Arcade-QBert_20260309.rbf",
           "type": "RBF"
         },
         {
@@ -11019,8 +11551,14 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Tecmo_20260307.rbf",
+          "sha": "cb219e3a5255659f540f0cfadfe5743a83b240f3",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Tecmo_MiSTer/master/releases/Arcade-Tecmo_20260307.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Back Fire (Tecmo).mra",
-          "sha": "2ae1cb2b94fc2eb22fa4e3be8d40b18ac4bb0d95",
+          "sha": "37fd2a5ab8c39b30215c0bb618e81471f5d145cb",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Tecmo_MiSTer/master/releases/Back%20Fire%20(Tecmo).mra",
           "type": "MRA",
           "extra": {
@@ -12335,6 +12873,12 @@
       "url": "https://github.com/MiSTer-DB9/AtariST_MiSTer",
       "releases": [
         {
+          "name": "AtariSTUSERIO2_20260310.rbf",
+          "sha": "e305995af390c7d98c91bc116a86c13ddc1e4270",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/AtariST_MiSTer/master/releases/AtariSTUSERIO2_20260310.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "AtariST_20210621.rbf",
           "sha": "edd8c81907e202abd5cb321320d4e24e933d18bd",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/AtariST_MiSTer/master/releases/AtariST_20210621.rbf",
@@ -12398,6 +12942,12 @@
           "name": "AtariST_20240425.rbf",
           "sha": "83922986bff74c1f6cbb5ce0a71f317781299cb1",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/AtariST_MiSTer/master/releases/AtariST_20240425.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "AtariST_20260310.rbf",
+          "sha": "90f77def5ce6d94a235417e2ceb65a243bb58ba3",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/AtariST_MiSTer/master/releases/AtariST_20260310.rbf",
           "type": "RBF"
         }
       ]
@@ -13263,6 +13813,64 @@
       ]
     },
     {
+      "name": "CDi_MiSTer",
+      "description": "A repo dedicated to create an FPGA implementation of the Philips CD-i",
+      "readme": "# CDi_MiSTer\n\nA project dedicated to create an FPGA implementation of the Philips CD-i to be usable for the MiSTer FPGA project.\nAs every Philips CD-i player has a different hardware, this project focuses on reverse engineering the \"Mono I\" PCB.\nThis mainboard is used in models like the 210/00, 210/05 or 220/20.\n\nMost games which only utilize the hardware of a base CD-i, should work as expected.\nTitles which require the Digital Video Cartridge will **NOT** work as the required\nhardware doesn't exist yet. The RAM expansion of the DVC is included and will enhance some games.\n\n## Usage\n\nPlace `cdi200.rom` as `boot0.rom` in `/media/fat/games/CD-i`.\nPlace `zx405042p__cdi_slave_2.0__b43t__zzmk9213.mc68hc705c8a_withtestrom.7206` as `boot1.rom` next to it.\n\nThis core is tested against these files and their respective md5sum:\n\n    2969341396aa61e0143dc2351aaa6ef6  cdi200.rom\n    3d20cf7550f1b723158b42a1fd5bac62  zx405042p__cdi_slave_2.0__b43t__zzmk9213.mc68hc705c8a_withtestrom.7206\n\nDue to legal reasons, they must be sourced separately.\n\nSave files are stored inside an 8K NvRAM. MiSTer will create one save file per CD.\nWhenever the NvRAM state changes, the \"User\" LED will light up, indicating\na change is queued to store. When the OSD is opened, the NvRAM will be flushed to SD card.\n\nThe save files containing the NvRAM are compatible with the CD-i emulation of MAME.\n\nDigital gamepads, analog gamepads and mice are supported for use with this core.\nTo play a title, load a CD and press on the play button at the start screen.\nCD images can be stored as CHD or CUE/BIN format.\n\n## Troubleshooting\n\n* My NTSC CRT television set is not getting a stable image\n  *  Please switch the core to NTSC and reset via OSD. This should fix the problem.\n  *  This can be performed blind with: OSD, Down, Action, 5x Down, Action\n\n## Status\n\nCore Utilization:\n\n    Logic utilization (in ALMs)  13,856 / 41,910 ( 33 % )\n    Total registers              16295\n    Total block memory bits      630,471 / 5,662,720 ( 11 % )\n    Total DSP Blocks             66 / 112 ( 59 % )\n\n### TODOs\n\n* Find a better solution for reducing CPU speed\n* Black flicker during intro of Ultimate Noah's Ark in 60 Hz mode\n    * A workaround is CPU overclocking. Problem not visible on real machine.\n* Give a signal to the user when CPU data stalling occured\n* Find a better solution for CD data stalling (take a screenshot or plug in a USB device)\n    * PSX core seems to halt the whole machine to avoid this situation\n* Fix regression: Audio hiccups during Philips Logo in Burn:Cycle\n    * A workaround is CPU overclocking\n* Add missing MCD212 features\n    * Pixel Hold\n* Investigate input responsiveness (skipped events?)\n* Investigate screeching sound effect in the menu of \"Golf Tips\"\n* Fix hang on audio track stop or change in media player\n* Cheat support?\n* Digital Video Cartridge MPEG Decoder\n* Investigate \"Gray border glitch\" at the top of \"Myst\" gameplay (seems to be only one plane)\n* Fix reset behaviour (Core is sometimes hanging after reset)\n* Investigate desaturated colors / low contrast in \"Photo CD Sample Disc\"\n    * Probably fixable with 16-235 to 0-255 scaling\n    * More investigation needed\n* Find a solution for the video mode reset during system resets\n    * The ST flag is the issue here, causing a video mode change\n* Add SNAC support (IR remote + wired controller)\n    * RC5 support is added. A test using real hardware is required.\n* Add 2 player support\n* CD+G\n* Possibly adding support for other PCBs (like Mono II)\n* Refurbish I2C for the front display and show the content as picture in picture during changes?\n    * It might not even be required at all.\n\n### Issues with external dependencies\n\n* A dump of the SLAVE 3.2 ROM is required to fix some hacks\n    * I2C front panel data is not correctly handled (e.g. Play button)\n    * The IR codes from the Remote have the same issue when media control buttons are used.\n\n## Simulation\n\nEven so, the [sim](sim) folder seems to be the correct one, it is deprecated.\nIt was used for mixed language simulation with the free version of ModelSim when the project has started.\n\nThe [sim2](sim2) folder is the current one, used for most development and makes use of Verilator for improved performance.\n\n## Used resources\n\nThis MiSTer core would've probably never been possible without the reverse engineering efforts of certain people.\nThanks to [CD-i Fan](https://www.cdiemu.org/) for the insights into his closed source CD-i Emulator.\nAlso Thanks to MooglyGuy, which took on the task of implementing a CD-i emulator into MAME, which I used to analyse\nthe program flow of the CD-i boot process.\n\n* https://github.com/TobiFlex/TG68K.C\n* https://opencores.org/projects/68hc05\n* https://github.com/cdifan/cdichips\n* http://www.icdia.co.uk/microware/index.html\n* https://github.com/Stovent/CeDImu/blob/master/src/CDI/OS9/SystemCalls.hpp\n* playcdi (by CD-i Fan) (auto play for Mono I PCB)\n\n## FAQ, Issues and Quirks\n\nThe production quality of the CD-i hardware and the software running on it is sometimes questionable.\nFor this reason, I've created a small list of some known quirks, someone might suspect of being caused\nby emulation errors but are also present on the real machine.\n\n* Is the \"Digital Video Cartridge\" supported?\n    * No! Please stop asking!\n    * Potential development on the DVC might only start after everything works without bugs on the base machine.\n* The map of \"Zelda - Wand of Gamelon\" has micro jitter during scrolling\n    * This also happens on real 210/05 hardware\n* \"Hotel Mario\" seems to have the first samples of every ingame song repeated\n    * You have good ears as it is barely noticeable. This also happens on real hardware.\n* Some earlier CD-i titles have both stereo channels swapped\n    * Yes, according to an [internal memo from Philips](http://icdia.co.uk/docs/mono2status.zip) there\n      were manufacturing issues and some early players have the left and right channel swapped.\n      This might explain discrepancies.\n    * One known quirk is inverted stereo on the \"Philips Logo Jingle\" of \"Zelda - Wand of Gamelon\"\n* During the rotating transition in \"Myst\" there are glitched lines at the bottom\n    * This also happens to some extent on a real 210/05 hardware and is caused by a misplaced Video IRQ\n      The video data is changed while it is displayed.\n* When I load a save game in \"Burn:Cycle\" it plays a short and unclean loop of noise until I do something\n    * I thought that was a bug in the core at first too. However, it is actually like this on a real CD-i too.\n* The music of Burn:Cycle sometimes has \"pops\" and \"clicks\"\n    * This game is special. It doesn't play music from CD like most games for this system would do.\n    * Small loops of sampled music are loaded from CD, stored in memory and randomly concatenated together\n      to create the background music. These samples are sometimes not very \"loopable\" creating a pop at looping points.\n    * This issue is reproducible on a real 210/05 as well\n* The music during the Philips Logo animation of Burn:Cycle has broken audio\n    * This issue is reproducible on a real 210/05 as well\n    * For some reason, it seems to be absent on other models with different hardware, like the 450/00\n    * The problem can be fixed by overclocking the CPU\n* Burn:Cycle - Random flickery animated text in front of the \"Psychic Roulette\" credit card terminal\n    * This actually happens on the real machine. I also thought this might be a CPU speed issue, considering that\n      the flickering disappears if the CPU is slightly overclocked.\n* Flashback: The audio and video during the intro are asynchronous\n    * This curiously happens on the real machine as well and doesn't even depend on 50 or 60 Hz\n    * It seems to be an oversight by the developers when the game was ported to CD-i\n* When dying in \"Zelda's Adventure\" the accompanying sound effect doesn't match the audio data on CD\n    * Good catch! This is a programming error which can be reproduced on a real CD-i 210/05 as well,\n      which causes the audio playback to start one sector too late.\n    * The same phenomenon exists in the \"Help cutscene\" of \"Zelda - Wand of Gamelon\"\n        * It is not audible in that game, because of silence in the beginning\n* The intro music of Zenith is played only on the left audio channel\n  * Yes, this happens on a real 210/05 too. To be sure, I've tested it as well\n    on a 450/00. It seems to be an oversight by the developers.\n* During the cinematic intro of Kether, the screen flickers to black on some frames during the fading slideshows\n  * This curiously happens on a real 210/05 too.\n* If I mash the buttons really hard when booting up Tetris, I get a colorful glitched screen instead of the Philips Logo\n  * Congratulations for this obscure finding. This happens on a real 210/05 too!\n* During the intro of \"Zombie Dinos vom Planeten Zeltoid\", the title text looks like the last row of pixels is missing during the scaling effect\n  * Yes, an oversight it seems. The scaling operation is broken, even on the real machine.\n* QuizMania - Missing animation graphics during intro and alignment issues during video playback in menu\n  * This game seems to have problems with 60Hz/NTSC mode. Both issues can be reproduced using real 210/05 hardware\n  * I assume that this was a local production for the italian market and no testing was performed on NTSC machines\n* Inside the settings menu on the start screen, there are purple glitch pixels on the right edge of the screen\n  * How could they miss this? It is also present on a real 210/05\n* Lemmings is running slow on the core when compared to the Amiga version\n  * \"Oh No!\" *Explodes* It is running as slow as on real hardware,\n    but it seems that the CPU Turbo fixes this issue and makes it behave\n    more like the Amiga version.\n\n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/MiSTer-DB9/CDi_MiSTer",
+      "releases": [
+        {
+          "name": "CDi_20250214.rbf",
+          "sha": "5d3a3a9c64f320499a7e460cd69efa80a88ae5ea",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/CDi_MiSTer/main/releases/CDi_20250214.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "CDi_20250223.rbf",
+          "sha": "1e23cd7a3524eb304e592dafcef14f42e18b1ab8",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/CDi_MiSTer/main/releases/CDi_20250223.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "CDi_20250320.rbf",
+          "sha": "5dd67a0ce00592750569120407f0e977445b6705",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/CDi_MiSTer/main/releases/CDi_20250320.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "CDi_20250329.rbf",
+          "sha": "8d290b635d976f7170061d985471b07b02b3451f",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/CDi_MiSTer/main/releases/CDi_20250329.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "CDi_20250422.rbf",
+          "sha": "1961df4f7baa542026202dd0b5d1a471c6d765fc",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/CDi_MiSTer/main/releases/CDi_20250422.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "CDi_20250614.rbf",
+          "sha": "2299830e2d6fca0b12ce7684e8ba14c31173e1e0",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/CDi_MiSTer/main/releases/CDi_20250614.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "CDi_20250626.rbf",
+          "sha": "c7830650c175bf9c1c2b7f1f0a9e47b0335975dc",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/CDi_MiSTer/main/releases/CDi_20250626.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "CDi_20260312.rbf",
+          "sha": "84dd2dd61ba17153492b667cd855a0190a8c65c7",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/CDi_MiSTer/main/releases/CDi_20260312.rbf",
+          "type": "RBF"
+        }
+      ]
+    },
+    {
       "name": "ColecoVision_MiSTer",
       "description": "ColecoVision for MiSTer",
       "readme": "# [Colecovision](https://en.wikipedia.org/wiki/ColecoVision) and [Sega SG-1000](https://en.wikipedia.org/wiki/SG-1000) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\n### Installation\n* Copy the *.rbf file to the root of the system SD card.\n* Place ROMs into Coleco folder\n\n### Supported Filetypes\n * .col/.bin/.rom files for Coleco system\n * .sg files for SG-1000 system\n\nOriginal core https://github.com/wsoltys/mist-cores/tree/master/fpga_colecovision\n",
@@ -13371,7 +13979,7 @@
     {
       "name": "Distribution_MiSTer",
       "description": null,
-      "readme": "# MiSTer Distribution DB9\n\nThis repository contains all the files that you'll want in your MiSTer.\n\nYou may download all of them at once as a zip through the [following link](https://github.com/MiSTer-DB9/Distribution_MiSTer/archive/refs/heads/main.zip). Once you have them, place them as-is in your SD card, and everything should work out of the box.\n\n### MiSTer Project\n\nIf you want to check more about the MiSTer project, please check [this wiki](https://github.com/MiSTer-devel/Main_MiSTer/wiki).\n\n### Downloader script\n\nFor downloading all of these files in an automatic fashion, use [this tool](https://github.com/MiSTer-devel/Downloader_MiSTer).\n\n#### List of Tags that you may use with the Downloader Filters:\n\n`acornatom`, `acornelectron`, `adam`, `adctest`, `adventurevision`, `alicemc10`, `all_filters`, `altair8800`, `alternatives`, `amiga`, `amstrad`, `amstrad-pcw`, `amstradpcw`, `ao486`, `apogee`, `apple-i`, `apple-ii`, `aquarius`, `arcade`, `arcade-arkanoid`, `arcade-asteroids`, `arcade-asteroidsdeluxe`, `arcade-astrocade`, `arcade-atarisys1`, `arcade-ataritetris`, `arcade-athena`, `arcade-bagman`, `arcade-bankpanic`, `arcade-battlezone`, `arcade-berzerk`, `arcade-blackwidow`, `arcade-blockade`, `arcade-blueprint`, `arcade-bombjack`, `arcade-bosconian`, `arcade-breakout`, `arcade-bubsys`, `arcade-bubsysrom`, `arcade-burgertime`, `arcade-burningrubber`, `arcade-canyonbomber`, `arcade-cave`, `arcade-centipede`, `arcade-chameleon`, `arcade-computerspace`, `arcade-congobongo`, `arcade-cores`, `arcade-cosmic`, `arcade-cosmicguerilla`, `arcade-crazyballoon`, `arcade-crazyclimber`, `arcade-crazykong`, `arcade-crystalcastles`, `arcade-defender`, `arcade-digdug`, `arcade-dominos`, `arcade-donkeykong`, `arcade-donkeykong3`, `arcade-donkeykongjunior`, `arcade-dorodon`, `arcade-dottorikun`, `arcade-druaga`, `arcade-exerion`, `arcade-exidy2`, `arcade-expressraider`, `arcade-finalizer`, `arcade-foodfight`, `arcade-freeze`, `arcade-frenzy`, `arcade-galaga`, `arcade-galaxian`, `arcade-galivan`, `arcade-gaplus`, `arcade-gauntlet`, `arcade-gyruss`, `arcade-ikariwarriors`, `arcade-inferno`, `arcade-iremm107`, `arcade-iremm62`, `arcade-iremm72`, `arcade-iremm90`, `arcade-iremm92`, `arcade-ironhorse`, `arcade-jackal`, `arcade-jailbreak`, `arcade-joust2`, `arcade-junofirst`, `arcade-kickandrun`, `arcade-ladybug`, `arcade-lunarlander`, `arcade-mariobros`, `arcade-mcr1`, `arcade-mcr2`, `arcade-mcr3`, `arcade-mcr3mono`, `arcade-mcr3scroll`, `arcade-missilecommand`, `arcade-moonpatrol`, `arcade-mrdo`, `arcade-mrjong`, `arcade-mysticmarathon`, `arcade-naughtyboy`, `arcade-ninjakun`, `arcade-pacman`, `arcade-pengo`, `arcade-penguinkunwars`, `arcade-performan`, `arcade-phoenix`, `arcade-pleiads`, `arcade-polyplay`, `arcade-pong`, `arcade-pooyan`, `arcade-popeye`, `arcade-psychic5`, `arcade-qbert`, `arcade-rallyx`, `arcade-rbfs-only`, `arcade-riverpatrol`, `arcade-robotron`, `arcade-rshnatk`, `arcade-salamander`, `arcade-scootershooter`, `arcade-scramble`, `arcade-segasys1`, `arcade-segavicz80`, `arcade-silverland`, `arcade-slapfight`, `arcade-sms`, `arcade-snk_triplez80`, `arcade-solomonskey`, `arcade-sonson`, `arcade-spaceinvaders`, `arcade-spacerace`, `arcade-sprint1`, `arcade-sprint2`, `arcade-st-v`, `arcade-subs`, `arcade-superbreakout`, `arcade-suprloco`, `arcade-taitof2`, `arcade-taitosj`, `arcade-tankbattalion`, `arcade-tecmo`, `arcade-tiamc1`, `arcade-timepilot`, `arcade-timepilot84`, `arcade-tnkiii`, `arcade-traverseusa`, `arcade-tropicalangel`, `arcade-turkeyshoot`, `arcade-tutankham`, `arcade-ultratank`, `arcade-vastar`, `arcade-vball`, `arcade-xevious`, `arcade-xsleena`, `arcade-zaxxon`, `arcade-zigzag`, `arcadelpf`, `arcadia`, `archie`, `arduboy`, `astrocade`, `atari2600`, `atari5200`, `atari7800`, `atari800`, `atarilynx`, `atarist`, `avision`, `ay-3-8500`, `bbcbridgecompanion`, `bbcmicro`, `bios`, `bk0011m`, `c128`, `c16`, `c64`, `cacert`, `casio_pv-1000`, `casio_pv-2000`, `cd-i`, `cdi`, `channelf`, `cheats`, `chess`, `chip8`, `coco2`, `coco3`, `coleco`, `colecoadam`, `colecovision`, `complexmultichromatic`, `computer`, `computer-cores`, `console`, `console-cd`, `console-cores`, `contrast_boost`, `controls_1_button`, `controls_2_buttons`, `controls_2_players`, `controls_3_buttons`, `controls_3_players`, `controls_4_buttons`, `controls_4_players`, `controls_5_buttons`, `controls_6_buttons`, `controls_dial`, `controls_move_2-way`, `controls_move_4-way`, `controls_move_8-way`, `controls_paddle`, `controls_spinner`, `controls_trackball`, `cores`, `corespecific`, `creativision`, `crt-simulation`, `displayspecific`, `docs`, `donut`, `downloader`, `downloader_bin`, `downloader_latest`, `drv`, `edsac`, `eg2000`, `enterprise`, `epochgalaxyii`, `essential`, `extra-utilities`, `famicom`, `fast_usb_polling`, `filters`, `filters_audio`, `filters_video`, `flappy`, `flappybird`, `font`, `galaksija`, `gamate`, `gameboy`, `gameboy2p`, `gameboyadvance`, `gameboycolor`, `gamecontrollerdb`, `gamegear`, `gamenwatch`, `gameoflife`, `games`, `gamma`, `gb`, `gba`, `gba2p`, `gbc`, `gbmidi`, `generalhardware`, `generallpf`, `genesis`, `genmidi`, `gnw`, `handheld2p`, `hbmame`, `homelab`, `ini_settings`, `inputtest`, `intellivision`, `interact`, `iq151`, `jaguar`, `jupiter`, `laser`, `laser310`, `lcd-general`, `lcd-integeronly`, `linux`, `lynx48`, `macplus`, `mame`, `mastersystem`, `megacd`, `megadrive`, `megadrive-core`, `megaduck`, `memtest`, `memtest_060mhz`, `memtest_100mhz`, `memtest_110mhz`, `memtest_120mhz`, `memtest_130mhz`, `memtest_140mhz`, `memtest_150mhz`, `memtest_160mhz`, `memtest_167mhz`, `menu`, `mgl`, `minimig`, `minimigdb9`, `minimigrgb8`, `minimiguserio2`, `mister_example-ini`, `misterfirmware`, `misterlaggy`, `mra`, `msx`, `msx1`, `multicomp`, `myvision`, `n64`, `neogeo`, `neogeo-cd`, `nes`, `nintendo`, `no-mad-entry-mra`, `no-setname-mra`, `odyssey2`, `old`, `ondra_spo186`, `orao`, `oric`, `other`, `other-cores`, `overlays`, `palettes`, `pc88`, `pc8801`, `pcengine`, `pcenginecd`, `pcjr`, `pcxt`, `pdp1`, `pet2001`, `pmd85`, `pocketchallengev2`, `pokemonmini`, `poly_gamma`, `presets`, `psx`, `pure_gamma`, `ql`, `readme`, `rtc`, `rx78`, `s32x`, `samba_on`, `samcoupe`, `saturn`, `scanlines-adaptive`, `scanlines-brighter`, `scanlines-standard`, `screen_horizontal_scan_rate_15khz`, `screen_horizontal_scan_rate_31khz`, `screen_no_tate`, `screen_rotation_flip`, `screen_rotation_horizontal`, `screen_rotation_vertical_ccw`, `screen_rotation_vertical_ccw_no_flip`, `screen_rotation_vertical_cw`, `screen_rotation_vertical_cw_no_flip`, `screen_tate_ccw`, `screen_tate_ccw_no_flip`, `screen_tate_cw`, `screen_tate_cw_no_flip`, `screen_tate_flip`, `scripts`, `scv`, `segacd`, `segamark3`, `service-cores`, `sgb`, `shadow_masks`, `sharpmz`, `simplemonochrome`, `slugcross`, `sms`, `snes`, `sordm5`, `specialist`, `spectrum`, `spmx`, `sufami`, `super_vision_8000`, `superfamicom`, `supergameboy`, `supernes`, `supernintendo`, `supervision`, `supervision8000`, `svi328`, `tandy1000`, `tatungeinstein`, `tgfx16`, `tgfx16-cd`, `tgfx16cd`, `ti-99_4a`, `ti994a`, `timezone`, `tk2000`, `tomyscramble`, `tomytutor`, `trs-80`, `tsconf`, `turbografx`, `turbografx16`, `turbografx16cd`, `turbografxcd`, `uk101`, `unlicensed_games`, `upscaling-lanczosbicubicetc`, `upscaling-recommended`, `upscaling-sharpbilinear`, `utility`, `vc4000`, `vector-06c`, `vector06`, `vector06c`, `vectrex`, `vic20`, `vt52`, `wifi`, `wonderswan`, `wonderswancolor`, `x68000`, `yctxt`, `zx-spectrum`, `zx81`, `zxnext`, `zxspectrum`\n",
+      "readme": "# MiSTer Distribution DB9\n\nThis repository contains all the files that you'll want in your MiSTer.\n\nYou may download all of them at once as a zip through the [following link](https://github.com/MiSTer-DB9/Distribution_MiSTer/archive/refs/heads/main.zip). Once you have them, place them as-is in your SD card, and everything should work out of the box.\n\n### MiSTer Project\n\nIf you want to check more about the MiSTer project, please check [this wiki](https://github.com/MiSTer-devel/Main_MiSTer/wiki).\n\n### Downloader script\n\nFor downloading all of these files in an automatic fashion, use [this tool](https://github.com/MiSTer-devel/Downloader_MiSTer).\n\n#### List of Tags that you may use with the Downloader Filters:\n\n`acornatom`, `acornelectron`, `adam`, `adctest`, `adventurevision`, `alicemc10`, `all_filters`, `altair8800`, `alternatives`, `amiga`, `amstrad`, `amstrad-pcw`, `amstradpcw`, `ao486`, `ao486userio2`, `apogee`, `apple-i`, `apple-ii`, `aquarius`, `arcade`, `arcade-arkanoid`, `arcade-asteroids`, `arcade-asteroidsdeluxe`, `arcade-astrocade`, `arcade-atarisys1`, `arcade-ataritetris`, `arcade-athena`, `arcade-bagman`, `arcade-bankpanic`, `arcade-battlezone`, `arcade-berzerk`, `arcade-blackwidow`, `arcade-blockade`, `arcade-blueprint`, `arcade-bombjack`, `arcade-bosconian`, `arcade-breakout`, `arcade-bubsys`, `arcade-bubsysrom`, `arcade-burgertime`, `arcade-burningrubber`, `arcade-canyonbomber`, `arcade-cave`, `arcade-centipede`, `arcade-chameleon`, `arcade-computerspace`, `arcade-congobongo`, `arcade-cores`, `arcade-cosmic`, `arcade-cosmicguerilla`, `arcade-crazyballoon`, `arcade-crazyclimber`, `arcade-crazykong`, `arcade-crystalcastles`, `arcade-defender`, `arcade-digdug`, `arcade-dominos`, `arcade-donkeykong`, `arcade-donkeykong3`, `arcade-donkeykongjunior`, `arcade-dorodon`, `arcade-dottorikun`, `arcade-druaga`, `arcade-exerion`, `arcade-exidy2`, `arcade-expressraider`, `arcade-finalizer`, `arcade-foodfight`, `arcade-freeze`, `arcade-frenzy`, `arcade-galaga`, `arcade-galaxian`, `arcade-galivan`, `arcade-gaplus`, `arcade-gauntlet`, `arcade-gyruss`, `arcade-ikariwarriors`, `arcade-inferno`, `arcade-iremm107`, `arcade-iremm62`, `arcade-iremm72`, `arcade-iremm90`, `arcade-iremm92`, `arcade-ironhorse`, `arcade-jackal`, `arcade-jailbreak`, `arcade-joust2`, `arcade-junofirst`, `arcade-kickandrun`, `arcade-ladybug`, `arcade-lunarlander`, `arcade-mariobros`, `arcade-mcr1`, `arcade-mcr2`, `arcade-mcr3`, `arcade-mcr3mono`, `arcade-mcr3scroll`, `arcade-missilecommand`, `arcade-moonpatrol`, `arcade-mrdo`, `arcade-mrjong`, `arcade-mysticmarathon`, `arcade-naughtyboy`, `arcade-ninjakun`, `arcade-pacman`, `arcade-pengo`, `arcade-penguinkunwars`, `arcade-performan`, `arcade-phoenix`, `arcade-pleiads`, `arcade-polyplay`, `arcade-pong`, `arcade-pooyan`, `arcade-popeye`, `arcade-psychic5`, `arcade-qbert`, `arcade-rallyx`, `arcade-rbfs-only`, `arcade-riverpatrol`, `arcade-robotron`, `arcade-rshnatk`, `arcade-salamander`, `arcade-scootershooter`, `arcade-scramble`, `arcade-segasys1`, `arcade-segavicz80`, `arcade-silverland`, `arcade-slapfight`, `arcade-sms`, `arcade-snk_triplez80`, `arcade-solomonskey`, `arcade-sonson`, `arcade-spaceinvaders`, `arcade-spacerace`, `arcade-sprint1`, `arcade-sprint2`, `arcade-st-v`, `arcade-subs`, `arcade-superbreakout`, `arcade-suprloco`, `arcade-taitof2`, `arcade-taitosj`, `arcade-tankbattalion`, `arcade-tecmo`, `arcade-tiamc1`, `arcade-timepilot`, `arcade-timepilot84`, `arcade-tnkiii`, `arcade-traverseusa`, `arcade-tropicalangel`, `arcade-turkeyshoot`, `arcade-tutankham`, `arcade-ultratank`, `arcade-vastar`, `arcade-vball`, `arcade-xevious`, `arcade-xsleena`, `arcade-zaxxon`, `arcade-zigzag`, `arcadelpf`, `arcadia`, `archie`, `arduboy`, `astrocade`, `atari2600`, `atari5200`, `atari7800`, `atari800`, `atarilynx`, `atarist`, `ataristuserio2`, `avision`, `ay-3-8500`, `bbcbridgecompanion`, `bbcmicro`, `bios`, `bk0011m`, `c128`, `c16`, `c64`, `cacert`, `casio_pv-1000`, `casio_pv-2000`, `cd-i`, `cdi`, `channelf`, `cheats`, `chess`, `chip8`, `coco2`, `coco3`, `coleco`, `colecoadam`, `colecovision`, `complexmultichromatic`, `computer`, `computer-cores`, `console`, `console-cd`, `console-cores`, `contrast_boost`, `controls_1_button`, `controls_2_buttons`, `controls_2_players`, `controls_3_buttons`, `controls_3_players`, `controls_4_buttons`, `controls_4_players`, `controls_5_buttons`, `controls_6_buttons`, `controls_dial`, `controls_move_2-way`, `controls_move_4-way`, `controls_move_8-way`, `controls_paddle`, `controls_spinner`, `controls_trackball`, `cores`, `corespecific`, `creativision`, `crt-simulation`, `displayspecific`, `docs`, `donut`, `downloader`, `downloader_bin`, `downloader_latest`, `drv`, `edsac`, `eg2000`, `enterprise`, `epochgalaxyii`, `essential`, `extra-utilities`, `famicom`, `fast_usb_polling`, `filters`, `filters_audio`, `filters_video`, `flappy`, `flappybird`, `font`, `galaksija`, `gamate`, `gameboy`, `gameboy2p`, `gameboyadvance`, `gameboycolor`, `gamecontrollerdb`, `gamegear`, `gamenwatch`, `gameoflife`, `games`, `gamma`, `gb`, `gba`, `gba2p`, `gbc`, `gbmidi`, `generalhardware`, `generallpf`, `genesis`, `genmidi`, `gnw`, `handheld2p`, `hbmame`, `homelab`, `ini_settings`, `inputtest`, `intellivision`, `interact`, `iq151`, `jaguar`, `jupiter`, `laser`, `laser310`, `lcd-general`, `lcd-integeronly`, `linux`, `lynx48`, `macplus`, `mame`, `mastersystem`, `megacd`, `megadrive`, `megadrive-core`, `megaduck`, `memtest`, `memtest_060mhz`, `memtest_100mhz`, `memtest_110mhz`, `memtest_120mhz`, `memtest_130mhz`, `memtest_140mhz`, `memtest_150mhz`, `memtest_160mhz`, `memtest_167mhz`, `menu`, `mgl`, `minimig`, `minimigdb9`, `minimigrgb8`, `minimiguserio2`, `mister_example-ini`, `misterfirmware`, `misterlaggy`, `mra`, `msx`, `msx1`, `multicomp`, `myvision`, `n64`, `neogeo`, `neogeo-cd`, `nes`, `nintendo`, `no-mad-entry-mra`, `no-setname-mra`, `odyssey2`, `old`, `ondra_spo186`, `orao`, `oric`, `other`, `other-cores`, `overlays`, `palettes`, `pc88`, `pc8801`, `pcengine`, `pcenginecd`, `pcjr`, `pcxt`, `pdp1`, `pet2001`, `pmd85`, `pocketchallengev2`, `pokemonmini`, `poly_gamma`, `presets`, `psx`, `pure_gamma`, `ql`, `readme`, `rtc`, `rx78`, `s32x`, `samba_on`, `samcoupe`, `saturn`, `scanlines-adaptive`, `scanlines-brighter`, `scanlines-standard`, `screen_horizontal_scan_rate_15khz`, `screen_horizontal_scan_rate_31khz`, `screen_no_tate`, `screen_rotation_flip`, `screen_rotation_horizontal`, `screen_rotation_vertical_ccw`, `screen_rotation_vertical_ccw_no_flip`, `screen_rotation_vertical_cw`, `screen_rotation_vertical_cw_no_flip`, `screen_tate_ccw`, `screen_tate_ccw_no_flip`, `screen_tate_cw`, `screen_tate_cw_no_flip`, `screen_tate_flip`, `scripts`, `scv`, `segacd`, `segamark3`, `service-cores`, `sgb`, `shadow_masks`, `sharpmz`, `simplemonochrome`, `slugcross`, `sms`, `snes`, `sordm5`, `specialist`, `spectrum`, `spmx`, `sufami`, `super_vision_8000`, `superfamicom`, `supergameboy`, `supernes`, `supernintendo`, `supervision`, `supervision8000`, `svi328`, `tandy1000`, `tatungeinstein`, `tgfx16`, `tgfx16-cd`, `tgfx16cd`, `ti-99_4a`, `ti994a`, `timezone`, `tk2000`, `tomyscramble`, `tomytutor`, `trs-80`, `tsconf`, `turbografx`, `turbografx16`, `turbografx16cd`, `turbografxcd`, `uk101`, `unlicensed_games`, `upscaling-lanczosbicubicetc`, `upscaling-recommended`, `upscaling-sharpbilinear`, `utility`, `vc4000`, `vector-06c`, `vector06`, `vector06c`, `vectrex`, `vic20`, `vt52`, `wifi`, `wonderswan`, `wonderswancolor`, `x68000`, `x68000userio2`, `yctxt`, `zx-spectrum`, `zx81`, `zxnext`, `zxspectrum`\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-DB9/Distribution_MiSTer",
@@ -14576,9 +15184,15 @@
           "type": "OTHER"
         },
         {
-          "name": "MiSTer_20260308",
-          "sha": "736d4ec90b02bf8b4ab7a772093701845bf73d3b",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Main_MiSTer/master/releases/MiSTer_20260308",
+          "name": "MiSTer_20260309",
+          "sha": "6467d91713efd76fb85c65fe6c52136230b27b0e",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Main_MiSTer/master/releases/MiSTer_20260309",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20260310",
+          "sha": "b69f6f99b38ca8c419b8065ce08eab94da3789f0",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Main_MiSTer/master/releases/MiSTer_20260310",
           "type": "OTHER"
         }
       ]
@@ -15036,6 +15650,12 @@
           "sha": "38eb15164a9cf7fdde4f913cdb48871b0271ef88",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Menu_MiSTer/master/releases/menu_20260228.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "menu_20260310.rbf",
+          "sha": "755b036dc6c35f7d13ca82f5af7faa37e18fbcc1",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Menu_MiSTer/master/releases/menu_20260310.rbf",
+          "type": "RBF"
         }
       ]
     },
@@ -15063,6 +15683,12 @@
           "name": "MinimigUSERIO2_20260309.rbf",
           "sha": "4b8259ff98e81c778c00c474a26ced1bc6cf67eb",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Minimig-AGA_MiSTer/MiSTer/releases/MinimigUSERIO2_20260309.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "MinimigUSERIO2_20260310.rbf",
+          "sha": "119ede97d45327523ec5183ac436f311d9cd7d52",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Minimig-AGA_MiSTer/MiSTer/releases/MinimigUSERIO2_20260310.rbf",
           "type": "RBF"
         },
         {
@@ -15192,6 +15818,12 @@
           "type": "RBF"
         },
         {
+          "name": "Minimig_20260310.rbf",
+          "sha": "0c2e48d334d98ac3b048dfb8d66ebfaac536c8f5",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Minimig-AGA_MiSTer/MiSTer/releases/Minimig_20260310.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "WheelDriverAkiko.adf",
           "sha": "ce7a6acedf8f613f10d59dd29d5287ed7991ce42",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Minimig-AGA_MiSTer/MiSTer/releases/WheelDriverAkiko.adf",
@@ -15207,6 +15839,12 @@
       "fork": true,
       "url": "https://github.com/MiSTer-DB9/MiSTer-Arcade-Gyruss",
       "releases": [
+        {
+          "name": "Arcade-GYRUSS_20260310.rbf",
+          "sha": "16d9d6de0facb32e84d5da3f4571b1a97830dd45",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/MiSTer-Arcade-Gyruss/master/releases/Arcade-GYRUSS_20260310.rbf",
+          "type": "RBF"
+        },
         {
           "name": "Arcade-Gyruss_20200229.rbf",
           "sha": "edfe2861978bc9b980d13b934511997bcad3ccc0",
@@ -17999,6 +18637,12 @@
           "type": "RBF"
         },
         {
+          "name": "SNES_20260311.rbf",
+          "sha": "6de7f190a88ac1c7b5948f463b3da40bf8ac42f7",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/SNES_MiSTer/master/releases/SNES_20260311.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "boot1.rom",
           "sha": "d899af9bcd3bfd8c51fe5ba5dc5d71c858063d54",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/SNES_MiSTer/master/releases/boot1.rom",
@@ -18100,6 +18744,64 @@
           "name": "scramble_20200916.rbf",
           "sha": "a7dc34810bd31b3b444f5a80e3c1fce05457b7aa",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/TomyScramble_MiSTer/master/releases/scramble_20200916.rbf",
+          "type": "RBF"
+        }
+      ]
+    },
+    {
+      "name": "TomyTutor_MiSTer",
+      "description": "Tomy Tutor/Pyuta/Pyuta Jr.  Core for MiSTer",
+      "readme": "<p align=\"center\">\n    <img src=\"assets/Tutor.gif\">\n</p>\n\n# [Tomy Tutor](https://wikipedia.org/wiki/Tomy_Tutor) for [MiSTer](https://mister-devel.github.io/MkDocs_MiSTer/)\nThis is an FPGA implementation of the Tomy Tutor, Pyuta, and Pyuta Jr. for the MiSTer FPGA platform.\n\n## Features\n- Support for Tutor, Pyuta and Pyuta Jr\n- Support for Cartridges with RAM Expansion (ex. DoorDoor, TI-Scramble)\n- Tape-In support via [ADC](https://mister-devel.github.io/MkDocs_MiSTer/basics/addons/#adc-analog-audio-input-addon-board)\n- Tape support via tape images.  (Read and Write)\n- Matthew Hagerty's F18A - With selectable 4/32 sprite limit.\n\n## Required Files - Not Included\nSystem Roms can be obtained from Mame and you can use any .rom filename you want that helps you identify each system.\n- For Tutor, from tutor.zip, combine both bin files, tutor1.bin and tutor2.bin into one.\n    - (Win/DOS) `copy /b tutor1.bin + /b tutor2.bin Tutor.rom`\n    - (Linux/MiSTer) `cat tutor1.bin tutor2.bin > Tutor.rom`\n- For Pyuta, from pyuuta.zip, rename tomy29.7 to something like Pyuta.rom\n- For PyutaJr, from pyuutajr.zip, either keep the name of ipl.rom or rename it to something like PyutaJr.rom\n\n## Joystick\n- Support for two 2-button controllers.\n- Most, if not all, games will prompt you for Ama(ture) or Pro difficulty, press :\n    - SL = Joystick Button 1 for Amature\n    - SR = Joystick Button 2 for Pro\n\n## Keyboard Mapping\nThe Keyboard layout follows the physical layout of the Tutor and the Pyuta with exception of following keys:\nPC | Tomy\n-- | ----\n<kbd>F1</kbd> | <kbd>MON</kbd>\n<kbd>F2</kbd> | <kbd>MOD</kbd>\n<kbd>]</kbd> | <kbd>[</kbd> key on Tutor\n<kbd>\\</kbd> | <kbd>]</kbd> key on Tutor\n<kbd>Backspace</kbd> | Cursor Left\n<kbd>P</kbd> | Pallet (Jr only)\n<kbd>,</kbd> | Color Select Left (Jr Only)\n<kbd>.</kbd> | Color Select Right (Jr Only)\n- All other keys follow physical layout of Tutor Keyboard.  See layouts below for each system\n\n## Hotkeys\n- F5 Stop Tape    - In rare chance the tape doesn't stop after a Load/Save is complete\n- F6 Rewind Tape  - Rewinds tape image to the beginning.\n\n## Tape Support\n- Tape in Support via ADC\n- Save/Load to tape files (.cas)\n    - Create blank files to use from 1K and up.  1K tape file is good enough for a couple of lines of basic, I suggest you start at 3-4K.  Larger if you want to have multiple saves on one \"tape\"\n        * (Linux/MiSTer) `dd if=/dev/zero of=MyBlankTape.cas count=NUMBER_OF_512_BYTE_BLOCKS`    (ex. for a 3K file: count=6)\n    - With Tape files, Reading, Writing and Stopping is automatic.  In the rare event something goes wrong and it doesn't automatically stop, you can Press the F5 key or select Stop from Tape Menu.\n    - If enabled, the Tape Status Bar will appear in the top left corner of the screen indicating how many 1K blocks the file is and which block is being currently read/written to/from.  It will also display current tape activity (Play,Record, Stopped...) and if the tape image is write protected.  Green Lock indicates the image is Write Protected, Red Lock and text indicate write protection is OFF.\n    - Once you have finished writting to a tape image and you want to protect it.  I suggest you unmount the file image and when you get the chance from MiSTer's Terminal, change the file permissions to remove the Write Permission\n        * (Linux/MiSTer) `chmod -w MyPreciousTape.cas`\n\n## Known Issues\n- Can't load from tape in Graphic/GBasic mode.\n\n## Special Credits and Thanks\n- TMOP for his help with testing and gathering carts to test.\n- [Original TMS99095 FPGA code by Paul Ruiz](https://gitlab.com/pnru/cortex/-/blob/master/tms99095.v).\n- [F18A VDP by Matthew Hagerty](https://github.com/dnotq/f18a).\n\n![Tutor Keyboard Layout](assets/TomyTutor.png)\n![Pyuta Keyboard Layout](assets/TomyPyuta.png)\n![Pyuta Jr Keyboard Layout](assets/TomyPyutaJr.png)\n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/MiSTer-DB9/TomyTutor_MiSTer",
+      "releases": [
+        {
+          "name": "BlankTape-12K.cas",
+          "sha": "909e3e3e9bcc1e7b1993f3f5abd1532a938df436",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/TomyTutor_MiSTer/main/releases/BlankTape-12K.cas",
+          "type": "OTHER"
+        },
+        {
+          "name": "BlankTape-20K.cas",
+          "sha": "abdf77bb772997135a5e594e7440db9f49b3c323",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/TomyTutor_MiSTer/main/releases/BlankTape-20K.cas",
+          "type": "OTHER"
+        },
+        {
+          "name": "BlankTape-4K.cas",
+          "sha": "08e7df176454f3ee5eeda13efa0adaa54828dfd8",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/TomyTutor_MiSTer/main/releases/BlankTape-4K.cas",
+          "type": "OTHER"
+        },
+        {
+          "name": "TomyTutor_20220716.rbf",
+          "sha": "37c085f549ed31265bcdc9a0d7dcccaf57e8d4b5",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/TomyTutor_MiSTer/main/releases/TomyTutor_20220716.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "TomyTutor_20221217.rbf",
+          "sha": "5c0ad0afd6caab0c2ebb282026b48af52f1bbaa2",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/TomyTutor_MiSTer/main/releases/TomyTutor_20221217.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "TomyTutor_20241024.rbf",
+          "sha": "da1703b05a3f2110977c8b89edf3cade757746f6",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/TomyTutor_MiSTer/main/releases/TomyTutor_20241024.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "TomyTutor_20250622.rbf",
+          "sha": "5e6e31383dd1c606debfc7c3be5c82ccd87134ec",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/TomyTutor_MiSTer/main/releases/TomyTutor_20250622.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "TomyTutor_20260312.rbf",
+          "sha": "540f7906fc1b7eb84a2c8b682b605063df9ea2da",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/TomyTutor_MiSTer/main/releases/TomyTutor_20260312.rbf",
           "type": "RBF"
         }
       ]
@@ -18980,6 +19682,12 @@
           "type": "OTHER"
         },
         {
+          "name": "X68000USERIO2_20260310.rbf",
+          "sha": "91a07e0816a52c8923e76cebf213d17dfd504c89",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/X68000_MiSTer/master/releases/X68000USERIO2_20260310.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "X68000_20171102.rbf",
           "sha": "6315dd57c9b1f488310997b6a4490d4f724b9e68",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/X68000_MiSTer/master/releases/X68000_20171102.rbf",
@@ -19037,6 +19745,12 @@
           "name": "X68000_20260309.rbf",
           "sha": "efc7fdff4bef273d8220b4b308649bb98f1ee05e",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/X68000_MiSTer/master/releases/X68000_20260309.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "X68000_20260310.rbf",
+          "sha": "d2ec3dda3ee9c8be38846e3d88fdf6ea8d24f49e",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/X68000_MiSTer/master/releases/X68000_20260310.rbf",
           "type": "RBF"
         },
         {
