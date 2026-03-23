@@ -1411,6 +1411,12 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Astrocade_20260318.rbf",
+          "sha": "83de9c24760960e6ec771e32606bf4d3d3a116bb",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Astrocade_MiSTer/master/releases/Arcade-Astrocade_20260318.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Extra Bases.mra",
           "sha": "bf2a59786bcf11b93b45925d25c9cf3cb4d7ed73",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Astrocade_MiSTer/master/releases/Extra%20Bases.mra",
@@ -1425,7 +1431,7 @@
         },
         {
           "name": "Gorf.mra",
-          "sha": "c275a6b2228498378f4099e63ddec5c5070cb09f",
+          "sha": "ffcf822e103434f34afd31ab6fcd136f448e630e",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Astrocade_MiSTer/master/releases/Gorf.mra",
           "type": "MRA",
           "extra": {
@@ -1477,7 +1483,7 @@
         },
         {
           "name": "Wizard of Wor.mra",
-          "sha": "8aacc6f3cde5c4385633bcb22bf1efc5ae394171",
+          "sha": "97d31cd67faab5802fcac081a1b6ea7a0263953d",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Astrocade_MiSTer/master/releases/Wizard%20of%20Wor.mra",
           "type": "MRA",
           "extra": {
@@ -8160,6 +8166,24 @@
           "sha": "c867d1b78abe65fffcc24ee940b6a35c008ef152",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-JunoFirst_MiSTer/main/releases/JunoFirst_20260223.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "JunoFirst_20260319.rbf",
+          "sha": "19f3ff8c5e37d58d75501d1b7b128183e83c354b",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-JunoFirst_MiSTer/main/releases/JunoFirst_20260319.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "JunoFirst_20260320.rbf",
+          "sha": "19f3ff8c5e37d58d75501d1b7b128183e83c354b",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-JunoFirst_MiSTer/main/releases/JunoFirst_20260320.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "JunoFirst_20260321.rbf",
+          "sha": "19f3ff8c5e37d58d75501d1b7b128183e83c354b",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-JunoFirst_MiSTer/main/releases/JunoFirst_20260321.rbf",
+          "type": "RBF"
         }
       ]
     },
@@ -14220,18 +14244,31 @@
     {
       "name": "Arcade-TaitoSystemSJ_MiSTer",
       "description": "Taito System SJ Arcade Core",
-      "readme": "# [Taito System SJ](https://www.system16.com/hardware.php?id=634)\n<p>Thank you to the following members of the MiSTer community: Boogermann, misterretrowolf, Sorgelig, & Jotego.</p>\n\n<p>The Taito System SJ was manufactured by Taito in 1982.   The Taito System SJ featured hardware specifications that were relatively advanced for its time and can run several games.  The most recognizable games in the collection are Elevator Action and Jungle King.  </p>\n\n<strong>Main CPU :</strong> Zilog Z80 CPU running at 4 MHz for running game logic and an AY8910 @ 1.5Mhz.  \n<strong>Audio CPU:</strong> Zilog Z80 CPU running at 3 MHz for coordinating sound effects controlling 3 additional AY8910s @ 1.5Mhz.  \n<strong>Video resolution:</strong> 256x224 @ 59.2Hz  \n<strong>Video Hardware:</strong> 3 seperate independantly scrollable tile maps and adjustable priorities, a 4th layer is dedicated to 'objects' (sprites).   \n\n<h2>Compatible Platforms</h2>\n<li>MiSTer FPGA</li>\n\n<h2>Compatible Games</h2>\n<blockquote>\n<p dir=\"auto\"><strong>ROMs NOT INCLUDED:</strong> By using this core you agree to provide your own roms.</p>\n</blockquote>\n\n<li>Alpine Ski</li>\n<li>Bio Attack</li>\n<li>Elevator Action</li>\n<li>High Way Race</li>\n<li>Jungle King</li>\n<li>Pirate Pete</li>\n<li>Space Cruiser</li>\n<li>Space Seeker</li>\n<li>Time Tunnel</li>\n<li>Water Ski</li>\n<li>Wild Western</li>\n\n<h2>Not Working</h2>\n<li>Kick Start Wheelie King</li>\n<li>Front Line</li>\n<li>Sea Fighter Poseidon</li>\n<li>The Tin Star</li>\n\n<h2>Issues</h2>\nSprite offset issue (vertical and horizontal).  NOTE: This does not affect all sprites.\n\n<h2>Coming Soon</h2>\nHigh Score Saves\n",
+      "readme": "# [Taito System SJ](https://www.system16.com/hardware.php?id=634)\n<p>Thank you to the following members of the MiSTer community: Boogermann, misterretrowolf, Sorgelig, & Jotego.</p>\n\n<p>The Taito System SJ was manufactured by Taito in 1982.   The Taito System SJ featured hardware specifications that were relatively advanced for its time and can run several games.  The most recognizable games in the collection are Elevator Action and Jungle King.  </p>\n\n<strong>Main CPU :</strong> Zilog Z80 CPU running at 4 MHz for running game logic and an AY8910 @ 1.5Mhz.  \n<strong>Audio CPU:</strong> Zilog Z80 CPU running at 3 MHz for coordinating sound effects controlling 3 additional AY8910s @ 1.5Mhz. \n<strong>MCU:</strong> 68705 MCU running @ 750Hz used for protection. \n<strong>Video resolution:</strong> 256x224 @ 59.2Hz  \n<strong>Video Hardware:</strong> 3 seperate independantly scrollable tile maps and adjustable priorities, a 4th layer is dedicated to 'objects' (sprites).   \n\n<h2>Compatible Platforms</h2>\n<li>MiSTer FPGA</li>\n\n<h2>Compatible Games</h2>\n<blockquote>\n<p dir=\"auto\"><strong>ROMs NOT INCLUDED:</strong> By using this core you agree to provide your own roms.</p>\n</blockquote>\n\n<li>Adventure Canoe</li>\n<li>Alpine Ski</li>\n<li>Bio Attack</li>\n<li>Elevator Action (MCU)</li>\n<li>Front Line (MCU)</li>\n<li>High Way Race</li>\n<li>Jungle Hunt</li>\n<li>Jungle King</li>\n<li>Pirate Pete</li>\n<li>Sea Fighter Poseidon (MCU)</li>\n<li>Space Cruiser</li>\n<li>Space Seeker</li>\n<li>The Tin Star (MCU)</li>\n<li>Time Tunnel</li>\n<li>Water Ski</li>\n<li>Wild Western</li>\n\n<h2>Not Working</h2>\n<li>Kick Start Wheelie King</li>\n\n<h2>Issues</h2>\n<li>Scroll RAM not implemented</li>",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer",
       "releases": [
         {
+          "name": "Adventure Canoe.mra",
+          "sha": "a4041ea6283b84019f34edab8ca61c23cf386c8c",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/Adventure%20Canoe.mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "TaitoSJ",
+            "zips": [
+              "adcanoe.zip"
+            ]
+          }
+        },
+        {
           "name": "Alpine Ski.mra",
-          "sha": "d6fc304db0f17ba9e323bf4cf43ad284e511aca5",
+          "sha": "4d65a2b67cc749df2b4b8181fbb93c8b644e8dcc",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/Alpine%20Ski.mra",
           "type": "MRA",
           "extra": {
-            "name": "Alpine Ski",
+            "name": null,
             "rbf": "TaitoSJ",
             "zips": [
               "alpine.zip"
@@ -14239,18 +14276,18 @@
           }
         },
         {
-          "name": "Arcade-TaitoSJ_20240525.rbf",
-          "sha": "4069d23b6ee225c6359ae51d09332ed9e27e71ea",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/Arcade-TaitoSJ_20240525.rbf",
+          "name": "Arcade-TaitoSJ_20260321.rbf",
+          "sha": "43a4f7d4ec8a9915a16ec9ff310f8c83ce845369",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/Arcade-TaitoSJ_20260321.rbf",
           "type": "RBF"
         },
         {
           "name": "Bio Attack.mra",
-          "sha": "dc1f07d8cf558fd6c4fb2dd2647bffb9e9896e98",
+          "sha": "b848f98fa9a55533cdfaf2fad59aab72547d4310",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/Bio%20Attack.mra",
           "type": "MRA",
           "extra": {
-            "name": "Bio Attack",
+            "name": null,
             "rbf": "TaitoSJ",
             "zips": [
               "bioatack.zip"
@@ -14258,25 +14295,38 @@
           }
         },
         {
-          "name": "Elevator Action Bootleg.mra",
-          "sha": "03dcdb9de73d58e36c0159865a8bd3211a010766",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/Elevator%20Action%20Bootleg.mra",
+          "name": "Elevator Action.mra",
+          "sha": "8576beeff9a6143d5c7b17c58a00e65c3f07fcb9",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/Elevator%20Action.mra",
           "type": "MRA",
           "extra": {
-            "name": "Elevator Action (bootleg)",
+            "name": null,
             "rbf": "TaitoSJ",
             "zips": [
-              "elevator.zip|elevatorb.zip"
+              "elevator.zip"
+            ]
+          }
+        },
+        {
+          "name": "Front Line.mra",
+          "sha": "a5a52ffcfb89d280aacd737e3138ed90c121dd16",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/Front%20Line.mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "TaitoSJ",
+            "zips": [
+              "frontlin.zip"
             ]
           }
         },
         {
           "name": "High Way Race.mra",
-          "sha": "6f8fdc20737024fcdf93bae1b0cf1fbd961518bf",
+          "sha": "3a1e2a0cade07314abcde22dfaabcdf95a553f30",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/High%20Way%20Race.mra",
           "type": "MRA",
           "extra": {
-            "name": "High Way Race",
+            "name": null,
             "rbf": "TaitoSJ",
             "zips": [
               "hwrace.zip"
@@ -14284,12 +14334,25 @@
           }
         },
         {
-          "name": "Jungle King.mra",
-          "sha": "015f14aa5ac5c6102e1b53399f3adeecd70d9b38",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/Jungle%20King.mra",
+          "name": "Jungle Hunt US.mra",
+          "sha": "2fe50d08391584623523b979246707cad2b14375",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/Jungle%20Hunt%20US.mra",
           "type": "MRA",
           "extra": {
-            "name": "Jungle King",
+            "name": null,
+            "rbf": "TaitoSJ",
+            "zips": [
+              "junglek.zip"
+            ]
+          }
+        },
+        {
+          "name": "Jungle King Japan.mra",
+          "sha": "4c7a6005dd9e0ff2de477c7618e14c123ba03f45",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/Jungle%20King%20Japan.mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
             "rbf": "TaitoSJ",
             "zips": [
               "junglek.zip"
@@ -14298,24 +14361,37 @@
         },
         {
           "name": "Pirate Pete.mra",
-          "sha": "9f35f1ae9d8e1f750745b8109012ae06c330f4e6",
+          "sha": "1c641c756bef2c145962d4505cb0d2ff9e50b0ea",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/Pirate%20Pete.mra",
           "type": "MRA",
           "extra": {
-            "name": "Pirate Pete",
+            "name": null,
             "rbf": "TaitoSJ",
             "zips": [
-              "piratpet.zip|junglek.zip"
+              "junglek.zip"
+            ]
+          }
+        },
+        {
+          "name": "Sea Fighter Poseidon.mra",
+          "sha": "01b2f4f5f60413cfec461101a7bae6aae7d82872",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/Sea%20Fighter%20Poseidon.mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "TaitoSJ",
+            "zips": [
+              "sfposeid.zip"
             ]
           }
         },
         {
           "name": "Space Cruiser.mra",
-          "sha": "c74c3e43d8470a91430bf868ebe0fed03d11c20f",
+          "sha": "f537881acc4aa2272deb69ef82cb54301ae22412",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/Space%20Cruiser.mra",
           "type": "MRA",
           "extra": {
-            "name": "Space Cruiser",
+            "name": null,
             "rbf": "TaitoSJ",
             "zips": [
               "spacecr.zip"
@@ -14324,11 +14400,11 @@
         },
         {
           "name": "Space Seeker.mra",
-          "sha": "f4c3967d68b95b2ade25d351a8a5e519abca87b0",
+          "sha": "f15a5e16f2052bbf39df35d0ff1941584e412b94",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/Space%20Seeker.mra",
           "type": "MRA",
           "extra": {
-            "name": "spaceskr",
+            "name": null,
             "rbf": "TaitoSJ",
             "zips": [
               "spaceskr.zip"
@@ -14336,12 +14412,25 @@
           }
         },
         {
+          "name": "The Tin Star.mra",
+          "sha": "0327525e709c12269701f89128dcd67454e75c6d",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/The%20Tin%20Star.mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "TaitoSJ",
+            "zips": [
+              "tinstar.zip"
+            ]
+          }
+        },
+        {
           "name": "Time Tunnel.mra",
-          "sha": "d86e9a6c99f9bb544ff226ae7cf91c2537363ba1",
+          "sha": "648357235876a964b4b6b753ea302469eab0355f",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/Time%20Tunnel.mra",
           "type": "MRA",
           "extra": {
-            "name": "Time Tunnel",
+            "name": null,
             "rbf": "TaitoSJ",
             "zips": [
               "timetunl.zip"
@@ -14350,11 +14439,11 @@
         },
         {
           "name": "Water Ski.mra",
-          "sha": "e0b65b5227f272edf10697e341d9a4b7a0b833de",
+          "sha": "cf0ab2895d403610b5a63c41119c2a3f4afa08d1",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/Water%20Ski.mra",
           "type": "MRA",
           "extra": {
-            "name": "Water Ski",
+            "name": null,
             "rbf": "TaitoSJ",
             "zips": [
               "waterski.zip"
@@ -14363,11 +14452,11 @@
         },
         {
           "name": "Wild Western.mra",
-          "sha": "9e7a09167e2a43f49adf8b30264daa5fe17471de",
+          "sha": "57f2efbe3c66a6c741741adce476a18443216a1a",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/Wild%20Western.mra",
           "type": "MRA",
           "extra": {
-            "name": "Wild Western",
+            "name": null,
             "rbf": "TaitoSJ",
             "zips": [
               "wwestern.zip"
@@ -14375,41 +14464,158 @@
           }
         },
         {
-          "name": "Elevator Action.mra",
-          "sha": "a60d2267d3dbbada278447743e41fa9545a3edbb",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/_TaitoSystemSJ/non%20working/Elevator%20Action.mra",
+          "name": "Elevator_Action_EA_5_PCB_version_11.mra",
+          "sha": "b234e3e7ca017041212ab962a5f23ebebef86ac2",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/_alt/Elevator_Action_EA_5_PCB_version_11.mra",
           "type": "MRA",
           "extra": {
-            "name": "Elevator Action",
+            "name": null,
             "rbf": "TaitoSJ",
             "zips": [
-              "elevator.zip|elevatora.zip"
+              "elevator.zip"
             ]
           }
         },
         {
-          "name": "Kick Start Wheelie King.mra",
-          "sha": "e88acb78772b5c81db58cb2b15c3867f26747849",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/_TaitoSystemSJ/non%20working/Kick%20Start%20Wheelie%20King.mra",
+          "name": "Elevator_Action_bootleg.mra",
+          "sha": "a00719a97aff9116057e63fff6f5b3922b705437",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/_alt/Elevator_Action_bootleg.mra",
           "type": "MRA",
           "extra": {
-            "name": "Kick Start Wheelie King",
+            "name": null,
+            "rbf": "TaitoSJ",
+            "zips": [
+              "elevator.zip"
+            ]
+          }
+        },
+        {
+          "name": "Front_Line_FL_5_PCB_version.mra",
+          "sha": "d86203b85383a0da861c4e60f584570cd3ad2822",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/_alt/Front_Line_FL_5_PCB_version.mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "TaitoSJ",
+            "zips": [
+              "frontlin.zip"
+            ]
+          }
+        },
+        {
+          "name": "Jungle_Boy_bootleg.mra",
+          "sha": "81b290cc5379929a8bd4b418372712ddb26e5cb8",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/_alt/Jungle_Boy_bootleg.mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "TaitoSJ",
+            "zips": [
+              "junglek.zip"
+            ]
+          }
+        },
+        {
+          "name": "Jungle_King_Japan_earlier.mra",
+          "sha": "630d6892dc86af385f625af7d23ece6edfafb161",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/_alt/Jungle_King_Japan_earlier.mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "TaitoSJ",
+            "zips": [
+              "junglek.zip"
+            ]
+          }
+        },
+        {
+          "name": "Jungle_King_Japan_earlier_alt.mra",
+          "sha": "b52361c6f59328a642499b641a76eba07254680f",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/_alt/Jungle_King_Japan_earlier_alt.mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "TaitoSJ",
+            "zips": [
+              "junglek.zip"
+            ]
+          }
+        },
+        {
+          "name": "Jungle_King_alternate_sound.mra",
+          "sha": "162af7bc4e25fa7c0dff7055b9dea9f3b3009b42",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/_alt/Jungle_King_alternate_sound.mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "TaitoSJ",
+            "zips": [
+              "junglek.zip"
+            ]
+          }
+        },
+        {
+          "name": "The_Tin_Star_TS_5_PCB_version.mra",
+          "sha": "e37896669ba325d0926d23ba14e08cfd293d2821",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/_alt/The_Tin_Star_TS_5_PCB_version.mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "TaitoSJ",
+            "zips": [
+              "tinstar.zip"
+            ]
+          }
+        },
+        {
+          "name": "Wild_Western_set_2.mra",
+          "sha": "b23c2e72ee45d18191fd65720fed1f4676085eeb",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/_alt/Wild_Western_set_2.mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "TaitoSJ",
+            "zips": [
+              "wwestern.zip"
+            ]
+          }
+        },
+        {
+          "name": "Alpine_Ski_set_2.mra",
+          "sha": "257e9e14b37ebfe8f805aa878cfe748aa62ef3f0",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/_non%20working/Alpine_Ski_set_2.mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "TaitoSJ",
+            "zips": [
+              "alpine.zip"
+            ]
+          }
+        },
+        {
+          "name": "Jungle_Hunt_Brazil.mra",
+          "sha": "0ad2b92d11d3c970028804b098b3e40ad1bd01b9",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/_non%20working/Jungle_Hunt_Brazil.mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "TaitoSJ",
+            "zips": [
+              "junglek.zip"
+            ]
+          }
+        },
+        {
+          "name": "Kick_Start_Wheelie_King.mra",
+          "sha": "e0377db7264a1036314b5979f03f883a1ae7692a",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/_non%20working/Kick_Start_Wheelie_King.mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
             "rbf": "TaitoSJ",
             "zips": [
               "kikstart.zip"
-            ]
-          }
-        },
-        {
-          "name": "Sea Fighter Poseidon.mra",
-          "sha": "d2a158505acef3cb3a70af1bcf457715d777914d",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/_TaitoSystemSJ/non%20working/Sea%20Fighter%20Poseidon.mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Sea Fighter Poseidon",
-            "rbf": "TaitoSJ",
-            "zips": [
-              "sfposeid.zip"
             ]
           }
         }

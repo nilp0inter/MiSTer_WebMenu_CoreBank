@@ -352,8 +352,8 @@ output = "_Arcade/cores/Joust2_20260104.rbf"
 
 
 # JunoFirst
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-JunoFirst_MiSTer/main/releases/JunoFirst_20260223.rbf"
-output = "_Others/JunoFirst_20260223.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-JunoFirst_MiSTer/main/releases/JunoFirst_20260321.rbf"
+output = "_Others/JunoFirst_20260321.rbf"
 
 
 # KickAndRun
@@ -587,8 +587,8 @@ output = "_Arcade/cores/TaitoF2_20251027.rbf"
 
 
 # TaitoSJ
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/Arcade-TaitoSJ_20240525.rbf"
-output = "_Arcade/cores/TaitoSJ_20240525.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/Arcade-TaitoSJ_20260321.rbf"
+output = "_Arcade/cores/TaitoSJ_20260321.rbf"
 
 
 # TankBattalion
@@ -3676,6 +3676,11 @@ url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoF2_MiSTer/main
 output = "_Arcade/Thunder Fox (US, rev 1).mra"
 
 
+# Adventure Canoe.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/Adventure%20Canoe.mra"
+output = "_Arcade/Adventure Canoe.mra"
+
+
 # Alpine Ski.mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/Alpine%20Ski.mra"
 output = "_Arcade/Alpine Ski.mra"
@@ -3686,9 +3691,14 @@ url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTe
 output = "_Arcade/Bio Attack.mra"
 
 
-# Elevator Action Bootleg.mra
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/Elevator%20Action%20Bootleg.mra"
-output = "_Arcade/Elevator Action Bootleg.mra"
+# Elevator Action.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/Elevator%20Action.mra"
+output = "_Arcade/Elevator Action.mra"
+
+
+# Front Line.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/Front%20Line.mra"
+output = "_Arcade/Front Line.mra"
 
 
 # High Way Race.mra
@@ -3696,14 +3706,24 @@ url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTe
 output = "_Arcade/High Way Race.mra"
 
 
-# Jungle King.mra
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/Jungle%20King.mra"
-output = "_Arcade/Jungle King.mra"
+# Jungle Hunt US.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/Jungle%20Hunt%20US.mra"
+output = "_Arcade/Jungle Hunt US.mra"
+
+
+# Jungle King Japan.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/Jungle%20King%20Japan.mra"
+output = "_Arcade/Jungle King Japan.mra"
 
 
 # Pirate Pete.mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/Pirate%20Pete.mra"
 output = "_Arcade/Pirate Pete.mra"
+
+
+# Sea Fighter Poseidon.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/Sea%20Fighter%20Poseidon.mra"
+output = "_Arcade/Sea Fighter Poseidon.mra"
 
 
 # Space Cruiser.mra
@@ -3714,6 +3734,11 @@ output = "_Arcade/Space Cruiser.mra"
 # Space Seeker.mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/Space%20Seeker.mra"
 output = "_Arcade/Space Seeker.mra"
+
+
+# The Tin Star.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/The%20Tin%20Star.mra"
+output = "_Arcade/The Tin Star.mra"
 
 
 # Time Tunnel.mra
@@ -3731,19 +3756,64 @@ url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTe
 output = "_Arcade/Wild Western.mra"
 
 
-# Elevator Action.mra
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/_TaitoSystemSJ/non%20working/Elevator%20Action.mra"
-output = "_Arcade/Elevator Action.mra"
+# Elevator_Action_EA_5_PCB_version_11.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/_alt/Elevator_Action_EA_5_PCB_version_11.mra"
+output = "_Arcade/Elevator_Action_EA_5_PCB_version_11.mra"
 
 
-# Kick Start Wheelie King.mra
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/_TaitoSystemSJ/non%20working/Kick%20Start%20Wheelie%20King.mra"
-output = "_Arcade/Kick Start Wheelie King.mra"
+# Elevator_Action_bootleg.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/_alt/Elevator_Action_bootleg.mra"
+output = "_Arcade/Elevator_Action_bootleg.mra"
 
 
-# Sea Fighter Poseidon.mra
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/_TaitoSystemSJ/non%20working/Sea%20Fighter%20Poseidon.mra"
-output = "_Arcade/Sea Fighter Poseidon.mra"
+# Front_Line_FL_5_PCB_version.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/_alt/Front_Line_FL_5_PCB_version.mra"
+output = "_Arcade/Front_Line_FL_5_PCB_version.mra"
+
+
+# Jungle_Boy_bootleg.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/_alt/Jungle_Boy_bootleg.mra"
+output = "_Arcade/Jungle_Boy_bootleg.mra"
+
+
+# Jungle_King_Japan_earlier.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/_alt/Jungle_King_Japan_earlier.mra"
+output = "_Arcade/Jungle_King_Japan_earlier.mra"
+
+
+# Jungle_King_Japan_earlier_alt.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/_alt/Jungle_King_Japan_earlier_alt.mra"
+output = "_Arcade/Jungle_King_Japan_earlier_alt.mra"
+
+
+# Jungle_King_alternate_sound.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/_alt/Jungle_King_alternate_sound.mra"
+output = "_Arcade/Jungle_King_alternate_sound.mra"
+
+
+# The_Tin_Star_TS_5_PCB_version.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/_alt/The_Tin_Star_TS_5_PCB_version.mra"
+output = "_Arcade/The_Tin_Star_TS_5_PCB_version.mra"
+
+
+# Wild_Western_set_2.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/_alt/Wild_Western_set_2.mra"
+output = "_Arcade/Wild_Western_set_2.mra"
+
+
+# Alpine_Ski_set_2.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/_non%20working/Alpine_Ski_set_2.mra"
+output = "_Arcade/Alpine_Ski_set_2.mra"
+
+
+# Jungle_Hunt_Brazil.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/_non%20working/Jungle_Hunt_Brazil.mra"
+output = "_Arcade/Jungle_Hunt_Brazil.mra"
+
+
+# Kick_Start_Wheelie_King.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TaitoSystemSJ_MiSTer/main/releases/_non%20working/Kick_Start_Wheelie_King.mra"
+output = "_Arcade/Kick_Start_Wheelie_King.mra"
 
 
 # TankBattalion.mra
