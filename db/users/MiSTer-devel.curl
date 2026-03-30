@@ -112,8 +112,8 @@ output = "_Arcade/cores/Blockade_20250105.rbf"
 
 
 # BluePrint
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-BluePrint_MiSTer/main/releases/BluePrint_20260306.rbf"
-output = "_Others/BluePrint_20260306.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-BluePrint_MiSTer/main/releases/BluePrint_20260328.rbf"
+output = "_Others/BluePrint_20260328.rbf"
 
 
 # BombJack
@@ -487,8 +487,8 @@ output = "_Arcade/cores/Popeye_20240601.rbf"
 
 
 # QBert
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-QBert_MiSTer/master/releases/Arcade-QBert_20260309.rbf"
-output = "_Arcade/cores/QBert_20260309.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-QBert_MiSTer/master/releases/Arcade-QBert_20260322.rbf"
+output = "_Arcade/cores/QBert_20260322.rbf"
 
 
 # RallyX
@@ -632,8 +632,8 @@ output = "_Arcade/cores/TurkeyShoot_20240525.rbf"
 
 
 # Tutankham
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Tutankham_MiSTer/main/releases/Arcade-Tutankham_20260213.rbf"
-output = "_Arcade/cores/Tutankham_20260213.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Tutankham_MiSTer/main/releases/Tutankham_20260328.rbf"
+output = "_Others/Tutankham_20260328.rbf"
 
 
 # Ultratank
@@ -687,13 +687,13 @@ output = "_Others/Arduboy_20250824.rbf"
 
 
 # Atari5200
-url = "https://raw.githubusercontent.com/MiSTer-devel/Atari800_MiSTer/master/releases/Atari5200_20250710.rbf"
-output = "_Console/Atari5200_20250710.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Atari800_MiSTer/master/releases/Atari5200_20260325.rbf"
+output = "_Console/Atari5200_20260325.rbf"
 
 
 # Atari800
-url = "https://raw.githubusercontent.com/MiSTer-devel/Atari800_MiSTer/master/releases/Atari800_20250710.rbf"
-output = "_Computer/Atari800_20250710.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Atari800_MiSTer/master/releases/Atari800_20260325.rbf"
+output = "_Computer/Atari800_20260325.rbf"
 
 
 # AtariLynx
@@ -1057,8 +1057,8 @@ output = "_Console/SMS_20240418.rbf"
 
 
 # SNES
-url = "https://raw.githubusercontent.com/MiSTer-devel/SNES_MiSTer/master/releases/SNES_20250605.rbf"
-output = "_Console/SNES_20250605.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/SNES_MiSTer/master/releases/SNES_20260325.rbf"
+output = "_Console/SNES_20260325.rbf"
 
 
 # SordM5
@@ -2889,6 +2889,11 @@ output = "_Arcade/Q'bert (US, Set 1).mra"
 # QBert Qubes.mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-QBert_MiSTer/master/releases/QBert%20Qubes.mra"
 output = "_Arcade/QBert Qubes.mra"
+
+
+# Reactor.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-QBert_MiSTer/master/releases/Reactor.mra"
+output = "_Arcade/Reactor.mra"
 
 
 # New Rally-X.mra

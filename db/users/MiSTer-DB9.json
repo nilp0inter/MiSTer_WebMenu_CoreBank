@@ -1578,7 +1578,7 @@
     {
       "name": "Arcade-Bagman_MiSTer",
       "description": "Arcade: Bagman for MiSTer",
-      "readme": "---------------------------------------------------------------------------------\n-- \n-- Arcade: Bagman port to MiSTer by Sorgelig\n-- 24 October 2017\n-- \n---------------------------------------------------------------------------------\n-- Bagman (STERN) FPGA - DAR - 2014\n-- http://darfpga.blogspot.fr\n---------------------------------------------------------------------------------\n-- T80/T80se - Version : 0247\n-----------------------------\n-- Z80 compatible microprocessor core\n-- Copyright (c) 2001-2002 Daniel Wallner (jesus@opencores.org)\n---------------------------------------------------------------------------------\n-- \n-- Support screen and controls rotation on HDMI output.\n-- Only controls are rotated on VGA output.\n-- \n-- \n-- Keyboard inputs :\n--\n--   F3          : Add coin (press 2 times for one credit!)\n--   F1          : Start\n--   UP,DOWN,LEFT,RIGHT arrows : Movements\n--   SPACE       : Fire  \n--\n-- Joystick support.\n-- \n-- \n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
+      "readme": null,
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-DB9/Arcade-Bagman_MiSTer",
@@ -9012,6 +9012,12 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-QBert_20260322.rbf",
+          "sha": "e8296f020ec60fdaa3752c43bda7648fcdaceb36",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-QBert_MiSTer/master/releases/Arcade-QBert_20260322.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Faster, Harder, More Challenging Q`Bert (prototype).mra",
           "sha": "0b0a27f9db4dd111325885c2d406275ddfc44cdc",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-QBert_MiSTer/master/releases/Faster%2C%20Harder%2C%20More%20Challenging%20Q%60Bert%20(prototype).mra",
@@ -9060,6 +9066,19 @@
             "rbf": "qbert",
             "zips": [
               "qbertqub.zip"
+            ]
+          }
+        },
+        {
+          "name": "Reactor.mra",
+          "sha": "a60647747ca1f2c55c8545d04bcd17917256871e",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-QBert_MiSTer/master/releases/Reactor.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Reactor",
+            "rbf": "qbert",
+            "zips": [
+              "reactor.zip"
             ]
           }
         }
@@ -15211,6 +15230,12 @@
           "name": "MiSTer_20260318",
           "sha": "570ecbe28fae04995d26f76e2b9b251ae98f5233",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Main_MiSTer/master/releases/MiSTer_20260318",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20260325",
+          "sha": "63ae33bab56f4345e8f4a087d090d15ae09457ca",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Main_MiSTer/master/releases/MiSTer_20260325",
           "type": "OTHER"
         }
       ]

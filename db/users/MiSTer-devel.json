@@ -2644,6 +2644,12 @@
           "type": "RBF"
         },
         {
+          "name": "BluePrint_20260328.rbf",
+          "sha": "00d9caadd3bb11d6cc6ae378e9ba7353d50bf002",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-BluePrint_MiSTer/main/releases/BluePrint_20260328.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Grasspin (Jaleco).mra",
           "sha": "302f924f9ac623d7e7d4d66dd827544de778f48c",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-BluePrint_MiSTer/main/releases/Grasspin%20(Jaleco).mra",
@@ -10923,6 +10929,12 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-QBert_20260322.rbf",
+          "sha": "f24355490e102bc9ee61f7135bbd8150dab8a8cc",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-QBert_MiSTer/master/releases/Arcade-QBert_20260322.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Faster, Harder, More Challenging Q`Bert (prototype).mra",
           "sha": "0b0a27f9db4dd111325885c2d406275ddfc44cdc",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-QBert_MiSTer/master/releases/Faster%2C%20Harder%2C%20More%20Challenging%20Q%60Bert%20(prototype).mra",
@@ -10971,6 +10983,19 @@
             "rbf": "qbert",
             "zips": [
               "qbertqub.zip"
+            ]
+          }
+        },
+        {
+          "name": "Reactor.mra",
+          "sha": "a60647747ca1f2c55c8545d04bcd17917256871e",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-QBert_MiSTer/master/releases/Reactor.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Reactor",
+            "rbf": "qbert",
+            "zips": [
+              "reactor.zip"
             ]
           }
         }
@@ -15287,24 +15312,6 @@
       "url": "https://github.com/MiSTer-devel/Arcade-Tutankham_MiSTer",
       "releases": [
         {
-          "name": "Arcade-Tutankham_20260209.rbf",
-          "sha": "8d7d837962af6ab858a3b92176e657c14f2aac50",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Tutankham_MiSTer/main/releases/Arcade-Tutankham_20260209.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Arcade-Tutankham_20260210.rbf",
-          "sha": "1afe91724d2eaff635237eb8788249b3eafea919",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Tutankham_MiSTer/main/releases/Arcade-Tutankham_20260210.rbf",
-          "type": "RBF"
-        },
-        {
-          "name": "Arcade-Tutankham_20260213.rbf",
-          "sha": "aa5ce76139925b735db63368ade5b43df1fab8b2",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Tutankham_MiSTer/main/releases/Arcade-Tutankham_20260213.rbf",
-          "type": "RBF"
-        },
-        {
           "name": "Tutankham.mra",
           "sha": "2d5e67086b5006ee4bf3176affd2f6eccca5353e",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Tutankham_MiSTer/main/releases/Tutankham.mra",
@@ -15317,6 +15324,30 @@
               "tutankhm.zip"
             ]
           }
+        },
+        {
+          "name": "Tutankham_20260209.rbf",
+          "sha": "8d7d837962af6ab858a3b92176e657c14f2aac50",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Tutankham_MiSTer/main/releases/Tutankham_20260209.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Tutankham_20260210.rbf",
+          "sha": "1afe91724d2eaff635237eb8788249b3eafea919",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Tutankham_MiSTer/main/releases/Tutankham_20260210.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Tutankham_20260213.rbf",
+          "sha": "aa5ce76139925b735db63368ade5b43df1fab8b2",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Tutankham_MiSTer/main/releases/Tutankham_20260213.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Tutankham_20260328.rbf",
+          "sha": "bb108d8625c6769664a8110842516c120811c639",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Tutankham_MiSTer/main/releases/Tutankham_20260328.rbf",
+          "type": "RBF"
         }
       ]
     },
@@ -16373,6 +16404,12 @@
           "type": "RBF"
         },
         {
+          "name": "Atari5200_20260325.rbf",
+          "sha": "28a3059ab87917658ea2312acd30b54b7f74e5e6",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Atari800_MiSTer/master/releases/Atari5200_20260325.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Atari800_20171008.rbf",
           "sha": "b9dc809852aac4fc5a8cb4c7eed2a8f908c0bca6",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Atari800_MiSTer/master/releases/Atari800_20171008.rbf",
@@ -16502,6 +16539,12 @@
           "name": "Atari800_20250710.rbf",
           "sha": "8cc220613a1b46d7d7555f2d772128d2ac84274c",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Atari800_MiSTer/master/releases/Atari800_20250710.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Atari800_20260325.rbf",
+          "sha": "34beafd78675e2f0e15fc76fd9f6da10997781a5",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Atari800_MiSTer/master/releases/Atari800_20260325.rbf",
           "type": "RBF"
         },
         {
@@ -18487,6 +18530,12 @@
           "name": "CreatiVision_20250708.rbf",
           "sha": "f4ace1a89c90974ae59aee4b2f4799e486ed6f51",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/CreatiVision_MiSTer/master/releases/CreatiVision_20250708.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "CreatiVision_20260303.rbf",
+          "sha": "091dcd266185ea1dbb2260be1a3b51769c6aef1b",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/CreatiVision_MiSTer/master/releases/CreatiVision_20260303.rbf",
           "type": "RBF"
         }
       ]
@@ -21253,6 +21302,12 @@
           "name": "MiSTer_20260220",
           "sha": "d86f8bf81295f9d361391dfb8d6d8dbe9510b6c1",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Main_MiSTer/master/releases/MiSTer_20260220",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20260325",
+          "sha": "b0709107906d259ea7ed798a6ffd7197e612d5ae",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Main_MiSTer/master/releases/MiSTer_20260325",
           "type": "OTHER"
         }
       ]
@@ -26520,6 +26575,12 @@
           "name": "SNES_20250605.rbf",
           "sha": "ac4be61a8475b04fd20c282f64486059fc47b433",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/SNES_MiSTer/master/releases/SNES_20250605.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_20260325.rbf",
+          "sha": "905c1f74dbd614e391be43c30b3a7f2a19f6e8ab",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/SNES_MiSTer/master/releases/SNES_20260325.rbf",
           "type": "RBF"
         },
         {
