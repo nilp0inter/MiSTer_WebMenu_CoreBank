@@ -161,6 +161,12 @@
           "sha": "5908296ab7a8d9e4dc760767c3f6b1c41e871271",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/AdventureVision_MiSTer/master/releases/AdventureVision_20250708.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "AdventureVision_20260322.rbf",
+          "sha": "4dec38b293c48da1a704a79a6f269c438875ab8b",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/AdventureVision_MiSTer/master/releases/AdventureVision_20260322.rbf",
+          "type": "RBF"
         }
       ]
     },
@@ -4130,6 +4136,87 @@
             "rbf": "CrystalCastles",
             "zips": [
               "ccastles.zip"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Arcade-Darius_MiSTer",
+      "description": "FPGA core for Darius (Taito, 1986) arcade hardware on the MiSTer platform",
+      "readme": "# Arcade-Darius_MiSTer\n\nFPGA core for **Darius** (Taito Corporation, 1986) targeting the\n[MiSTer FPGA](https://github.com/MiSTer-devel) platform (Terasic DE10-Nano).\n\nDarius is a triple-screen horizontal shoot-'em-up running on a dual\n68000 + Z80 \u00d7 2 board with two PC080SN tile layers, PC090OJ sprites,\nPC060HA master/slave communication, and YM2203 \u00d72 + MSM5205 audio.\nThis core reimplements the hardware in SystemVerilog from MAME references\nand hardware observation on original PCBs.\n\n## Status\n\nFirst public release. The core runs the full game end-to-end on all\nsupported ROM sets and has been tested on real MiSTer hardware.\n\n**Features**\n- Dual 68000 main/sub with shared RAM (FX68K core)\n- Three horizontal panels composed into the 864-pixel virtual screen\n- Sprite renderer with priority, flip, 16\u00d716 4bpp tiles\n- FG text/HUD layer with local BRAM text ROM\n- Palette with MAME-verified byte order\n- Audio: YM2203 \u00d72 (FM + PSG) + MSM5205 ADPCM with pan/volume routing\n- PC060HA main/sub communication\n- SDRAM arbitration for tile/sprite ROM and main/sub CPU fetch\n- Inputs (coin, start, 8-way joystick) and full DIP switch support\n- MiSTer OSD with video, pause and DIP options\n\n**ROM sets supported**\n- Darius (World) \u2014 reference set\n- Darius (US)\n- Darius (Japan rev 1 \u2014 dariusj)\n- Darius (Japan pure \u2014 dariuso)\n- Darius Extra Version (dariuse)\n\n**Notes**\n- Audio pole filters currently bypassed (direct DC-removed signals to mixer)\n- Analog I/O output not yet supported \u2014 use Direct Video over HDMI\n\n## Screenshots\n\n| | |\n|---|---|\n| ![Title](docs/title.png) | ![Silver Hawk attract](docs/attract_silver_hawk.png) |\n| Title screen | Attract \u2014 Silver Hawk briefing |\n| ![Zone C](docs/gameplay_zone_c.png) | ![Zone I](docs/gameplay_zone_i.png) |\n| Zone C | Zone I |\n| ![Zone S](docs/gameplay_zone_s.png) | ![Zone G](docs/gameplay_zone_g.png) |\n| Zone S | Zone G |\n\n## Hardware requirements\n\n- Terasic DE10-Nano\n- MiSTer I/O board (recommended)\n- SDRAM module (32 MB or 64 MB)\n- HDMI display or **Direct Video** for analog output (15 kHz CRT)\n\n**Note on video output**: The core works on standard HDMI displays.\nFor analog output on 15 kHz arcade monitors or CRT, enable **Direct Video**\nin the MiSTer main menu. **Do not use Direct Video on VGA monitors** (31 kHz)\n\u2014 use the normal MiSTer analog output instead. Native analog I/O board\noutput is not yet fully supported due to the non-standard 864\u00d7224 resolution.\n\n## Build from source\n\nRequires **Quartus Prime Lite 17.0.x** for Cyclone V (5CSEBA6U23I7).\n\n```bash\ncd Arcade-Darius_MiSTer\nquartus_sh --flow compile Darius -c Darius\n```\n\nOutput: `output_files/Darius.rbf` (~3.9 MB).\n\n## Running on MiSTer\n\nThe [releases/](releases/) folder contains the pre-built bitstream and\nthe parent MRA for the reference ROM set:\n\n- `Darius_YYYYMMDD.rbf` \u2014 pre-built core bitstream\n- `Darius (World).mra` \u2014 parent MRA (reference set)\n\nAlternative ROM sets are provided in [releases/alternatives/](releases/alternatives/):\n\n- `Darius (US).mra`\n- `Darius (Japan).mra`\n- `Darius (Japan, rev 1).mra`\n- `Darius Extra Version (Japan).mra`\n\nFollowing the MiSTer-devel convention, the alternative sets are also\nmirrored to the official [MRA-Alternatives_MiSTer](https://github.com/MiSTer-devel/MRA-Alternatives_MiSTer)\nrepository, where they are picked up automatically by **Update_All**.\n\nSteps:\n\n1. Copy the `.rbf` to `_Arcade/cores/` on the MiSTer SD card.\n2. Copy the desired `.mra` file(s) to `_Arcade/` on the MiSTer SD card.\n3. Provide your legally-owned Darius ROM files where each MRA expects them\n   (usually in `games/mame/`).\n4. Enable **Direct Video** in the MiSTer main menu for best HDMI output\n   (analog output is not currently supported \u2014 see Hardware requirements).\n5. In the core OSD, set **Video \u2192 Scale** to **Narrower HV-Integer** to\n   get a proper integer-scaled image on modern HDMI displays.\n\n**ROMs are NOT included in this repository.** You must provide them yourself.\n\n## Repository layout\n\n```\nArcade-Darius_MiSTer/\n\u251c\u2500\u2500 rtl/\n\u2502   \u251c\u2500\u2500 darius/       Darius-specific core RTL (Umberto Parisi)\n\u2502   \u251c\u2500\u2500 fx68k/        M68000 core (Jorge Cwik)\n\u2502   \u251c\u2500\u2500 jt12/         YM2203 FM synth (Jose Tejada)\n\u2502   \u251c\u2500\u2500 jt5205/       MSM5205 ADPCM (Jose Tejada)\n\u2502   \u251c\u2500\u2500 jtframe/      JTFRAME framework modules (Jose Tejada)\n\u2502   \u251c\u2500\u2500 t80/          Z80 core\n\u2502   \u251c\u2500\u2500 pll/          Clock PLL\n\u2502   \u2514\u2500\u2500 sdram.sv      SDRAM controller (Sorgelig)\n\u251c\u2500\u2500 sys/              MiSTer framework (Sorgelig / MiSTer-devel)\n\u251c\u2500\u2500 releases/         Pre-built .rbf + parent MRA\n\u2502   \u2514\u2500\u2500 alternatives/ MRA files for alternate ROM sets\n\u251c\u2500\u2500 docs/             Screenshots\n\u251c\u2500\u2500 Darius.qpf        Quartus project\n\u251c\u2500\u2500 Darius.qsf        Quartus assignments\n\u251c\u2500\u2500 Template.sv       Top-level wrapper\n\u251c\u2500\u2500 Template.sdc      Timing constraints\n\u251c\u2500\u2500 files.qip         HDL file list\n\u251c\u2500\u2500 build_id.v        Build version stamp\n\u251c\u2500\u2500 LICENSE           GNU GPL v3\n\u251c\u2500\u2500 AUTHORS.md        Credits and third-party licenses\n\u2514\u2500\u2500 README.md         This file\n```\n\n## License\n\nDistributed under **GNU General Public License v3 or later**.\nSee [LICENSE](LICENSE) and [AUTHORS.md](AUTHORS.md) for credits and\nthird-party licensing.\n\nGPL-3 is chosen to stay compatible with upstream GPL-3 dependencies\n(JTFRAME, FX68K, Sorgelig's sdram and sys framework).\n\n## Support this project\n\nIf you enjoy this core and want to support its development:\n\n- [Ko-fi](https://ko-fi.com/ibecerivideoludici) \u2014 one-time support\n- [Patreon](https://www.patreon.com/IBeceriVideoludici) \u2014 monthly support\n- [PayPal](https://www.paypal.me/IBeceriVideoludici) \u2014 one-time donation\n\n## Follow\n\n- [Twitch](https://twitch.tv/ibecerivideoludici) \u2014 live streams\n- [YouTube](https://www.youtube.com/c/IBeceriVideoludici/playlists) \u2014 playlists and videos\n\n## Credits\n\nBuilt on top of work by:\n\n- **Jorge Cwik** \u2014 [FX68K](https://github.com/ijor/fx68k) (M68000 core)\n- **Jose Tejada** / Jotego \u2014 [JTFRAME, JT12, JT5205](https://github.com/jotego/jtcores)\n- **Sorgelig** and the **MiSTer-devel team** \u2014 framework, SDRAM controller\n- The **MAME** project \u2014 invaluable hardware reference\n\nFull list in [AUTHORS.md](AUTHORS.md).\n\nOriginal Darius arcade hardware \u00a9 Taito Corporation, 1986.\n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/MiSTer-devel/Arcade-Darius_MiSTer",
+      "releases": [
+        {
+          "name": "Darius (World).mra",
+          "sha": "bd97e826a173b0260e0525761fb0f70fe993fdc6",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Darius_MiSTer/main/releases/Darius%20(World).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Darius (World)",
+            "rbf": "Darius",
+            "zips": [
+              "darius.zip"
+            ]
+          }
+        },
+        {
+          "name": "Darius_20260411.rbf",
+          "sha": "16a2e25a342fc795e7caef4ccebcd912dc7edcb4",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Darius_MiSTer/main/releases/Darius_20260411.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Darius (Japan).mra",
+          "sha": "1d22c0765ce5310f9fafbae366f87b8ebc5ebefd",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Darius_MiSTer/main/releases/alternatives/Darius%20(Japan).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Darius (Japan)",
+            "rbf": "Darius",
+            "zips": [
+              "darius.zip|dariuso.zip"
+            ]
+          }
+        },
+        {
+          "name": "Darius (Japan, rev 1).mra",
+          "sha": "c8a3fdc615083b870a6f031fdc4d44267f662e3c",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Darius_MiSTer/main/releases/alternatives/Darius%20(Japan%2C%20rev%201).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Darius (Japan, rev 1)",
+            "rbf": "Darius",
+            "zips": [
+              "darius.zip|dariusj.zip"
+            ]
+          }
+        },
+        {
+          "name": "Darius (US).mra",
+          "sha": "977265e83baa1d6ab27ba2e4a533ab815b25b85d",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Darius_MiSTer/main/releases/alternatives/Darius%20(US).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Darius (US)",
+            "rbf": "Darius",
+            "zips": [
+              "darius.zip|dariusu.zip"
+            ]
+          }
+        },
+        {
+          "name": "Darius Extra Version (Japan).mra",
+          "sha": "89f8bb2adff93766d3c2928d6748ba465edaa552",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Darius_MiSTer/main/releases/alternatives/Darius%20Extra%20Version%20(Japan).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Darius Extra Version (Japan)",
+            "rbf": "Darius",
+            "zips": [
+              "darius.zip|dariuse.zip"
             ]
           }
         }
@@ -11004,15 +11091,15 @@
     {
       "name": "Arcade-Qix_MiSTer",
       "description": null,
-      "readme": "<p align=\"center\">\n  <img src=\"Useful Information/Qix.png\" width=\"800\">\n</p>\n\n<h1 align=\"center\">Qix FPGA Core</h1>\n\n<p align=\"center\">\n  Arcade hardware implementation for MiSTer FPGA\n</p>\n\n---\n\n## Overview\n\nFPGA implementation of **Qix (1981)**, originally developed and released by Taito America Corporation.\n\nThis core targets MiSTer FPGA and aims for accurate gameplay behavior, video timing, and sound reproduction.\n\n---\n\n## Game Information\n\n| Field        | Value |\n|--------------|--------|\n| Title        | Qix |\n| Year         | October 1981 |\n| Developer    | Taito America Corporation |\n| Publisher    | Taito Corporation |\n| Genre        | Action / Puzzle |\n| Players      | 1\u20132 alternating |\n\n---\n\n## Controls\n\nDefault MiSTer gamepad mapping:\n\n| Input | Action |\n|-------|--------|\n| D-Pad / Joystick | Move |\n| A | Slow Draw |\n| B | Fast Draw |\n| Select | Insert Coin |\n| Start | 1 Player Start |\n| Right Shoulder | Test Advance |\n| Left Shoulder | Pause |\n\n---\n\n## Features\n\n- Arcade-accurate CPU timing\n- Sprite priority and layer handling\n- High score saving support (Will be improved)\n- MiSTer-compatible .mra provided\n- Verified ROM definitions with checksums\n\n---\n\n## ROM Requirements\n\nROM files are **not included**.\n\nTo use this arcade core, you must provide legally obtained ROM files.\n\nTo simplify setup:\n\n- `.mra` files are provided in the **Releases** section.\n- The `.mra` specifies all required ROM files along with checksums.\n- The ROM `.zip` filename corresponds to the naming convention used by the MAME project.\n\nFor setup instructions and environment configuration, refer to:\n\nMiSTer Arcade ROM guide:  \nhttps://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms\n\n---\n\n## Installation\n\n1. Copy the core `.rbf` file to your MiSTer `/_Arcade/cores` folder.\n2. Copy the `.mra` file to your MiSTer `/_Arcade` folder.\n3. Place the appropriate ROM `.zip` files in your `/games/mame` directory.\n4. Launch the core from the MiSTer Arcade menu.\n\n---\n\n## Legal Notice\n\nThis project contains **no copyrighted game data**.\n\nUsers are responsible for obtaining and using ROM files in accordance with applicable laws.\n\nDo not request ROM files in issues or discussions.\n\n---\n\n## Credits\n\nFPGA core development: RodimusFVC  \nOriginal arcade game \u00a9 1981 Taito Corporation. All rights reserved.\n\n---\n",
+      "readme": "<p align=\"center\">\n  <img src=\"Useful Information/Qix.png\" width=\"800\">\n  <img src=\"Useful Information/ComplexX.png\" width=\"800\">\n  <img src=\"Useful Information/SpaceDungeon.png\" width=\"800\">\n  <img src=\"Useful Information/Kram.png\" width=\"800\">\n</p>\n\n<h1 align=\"center\">Qix FPGA Core</h1>\n\n<p align=\"center\">\n  Arcade hardware implementation for MiSTer FPGA\n</p>\n\n---\n\n## Overview\n\nFPGA implementation of **Qix (1981)**, originally developed and released by Taito America Corporation.\n\nThis core targets MiSTer FPGA and aims for accurate gameplay behavior, video timing, and sound reproduction.\n\n---\n\n## Game Information\n\n| Field        | Value |\n|--------------|--------|\n| Title        | Qix |\n| Year         | October 1981 |\n| Developer    | Taito America Corporation |\n| Publisher    | Taito Corporation |\n| Genre        | Action / Puzzle |\n| Players      | 1\u20132 alternating |\n\n---\n\n## Controls\n\nDefault MiSTer gamepad mapping:\n\n| Input | Action |\n|-------|--------|\n| D-Pad / Joystick | Move |\n| A | Fast Draw |\n| B | Slow Draw |\n| Select | Insert Coin |\n| Start | 1 Player Start |\n| Right Shoulder | Test Advance |\n| Left Shoulder | Pause |\n\n---\n\n## Features\n\n- Arcade-accurate CPU timing\n- Sprite priority and layer handling\n- High score saving support\n- MiSTer-compatible .mra provided\n- Verified ROM definitions with checksums\n\n---\n\n## ROM Requirements\n\nROM files are **not included**.\n\nTo use this arcade core, you must provide legally obtained ROM files.\n\nTo simplify setup:\n\n- `.mra` files are provided in the **Releases** section.\n- The `.mra` specifies all required ROM files along with checksums.\n- The ROM `.zip` filename corresponds to the naming convention used by the MAME project.\n\nFor setup instructions and environment configuration, refer to:\n\nMiSTer Arcade ROM guide:  \nhttps://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms\n\n---\n\n## Installation\n\n1. Copy the core `.rbf` file to your MiSTer `/_Arcade/cores` folder.\n2. Copy the `.mra` file to your MiSTer `/_Arcade` folder.\n3. Place the appropriate ROM `.zip` files in your `/games/mame` directory.\n4. Launch the core from the MiSTer Arcade menu.\n\n---\n\n## Legal Notice\n\nThis project contains **no copyrighted game data**.\n\nUsers are responsible for obtaining and using ROM files in accordance with applicable laws.\n\nDo not request ROM files in issues or discussions.\n\n---\n\n## Credits\n\nFPGA core development: RodimusFVC  \nOriginal arcade game \u00a9 1981 Taito Corporation. All rights reserved.\n\n---\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/Arcade-Qix_MiSTer",
       "releases": [
         {
           "name": "Complex X.mra",
-          "sha": "39e42a9c71c23885258b4a26d6df74f7b288ac9d",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Qix_MiSTer/main/releases/Not%20Working%20Fully%20Yet/Complex%20X.mra",
+          "sha": "f299b75091657544d742c76379eeca5a9dc093dc",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Qix_MiSTer/main/releases/Complex%20X.mra",
           "type": "MRA",
           "extra": {
             "name": "Complex X",
@@ -11023,60 +11110,36 @@
           }
         },
         {
-          "name": "Kram (set 2).mra",
-          "sha": "98e87d221b741be4409bbcbaca6533f01cb8047c",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Qix_MiSTer/main/releases/Not%20Working%20Fully%20Yet/Kram%20(set%202).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Kram (set 2)",
-            "rbf": "Qix",
-            "zips": [
-              "kram.zip|krama.zip"
-            ]
-          }
-        },
-        {
           "name": "Kram.mra",
-          "sha": "5765334b434c4e914c4d6ad8affb8b0c264f268c",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Qix_MiSTer/main/releases/Not%20Working%20Fully%20Yet/Kram.mra",
+          "sha": "4054e26ff07dcfca7fb11c33f6ffe87a7787d091",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Qix_MiSTer/main/releases/Kram.mra",
           "type": "MRA",
           "extra": {
             "name": "Kram",
             "rbf": "Qix",
             "zips": [
+              "kram.zip",
               "kram.zip"
             ]
           }
         },
         {
-          "name": "Space Dungeon.mra",
-          "sha": "bba179024fa9ca736f0d64d5a43a1c45f84b8428",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Qix_MiSTer/main/releases/Not%20Working%20Fully%20Yet/Space%20Dungeon.mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Space Dungeon",
-            "rbf": "Qix",
-            "zips": [
-              "sdungeon.zip"
-            ]
-          }
-        },
-        {
           "name": "The Electric Yo-Yo.mra",
-          "sha": "3d8eff9b2097c7ca9060e31ee1913be917ced7b9",
+          "sha": "f4769400c40cecb4ccc0ef6ddc01a7d52ba43841",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Qix_MiSTer/main/releases/Not%20Working%20Fully%20Yet/The%20Electric%20Yo-Yo.mra",
           "type": "MRA",
           "extra": {
             "name": "The Electric Yo-Yo",
             "rbf": "Qix",
             "zips": [
+              "elecyoyo.zip",
               "elecyoyo.zip"
             ]
           }
         },
         {
           "name": "Qix (set 1).mra",
-          "sha": "efc9f0f875896881a205a282ca439d5dfdf43e82",
+          "sha": "e22e9035728adfd7141fc3a7edb67d4e7a2aa6c9",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Qix_MiSTer/main/releases/Qix%20(set%201).mra",
           "type": "MRA",
           "extra": {
@@ -11089,7 +11152,7 @@
         },
         {
           "name": "Qix II (Tournament).mra",
-          "sha": "3319cf7eb8daff35d463ba8a29880f579c1a2d50",
+          "sha": "73aafcb2626b4a8a575ac3708938c10d6d3cb2aa",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Qix_MiSTer/main/releases/Qix%20II%20(Tournament).mra",
           "type": "MRA",
           "extra": {
@@ -11111,6 +11174,38 @@
           "sha": "225ca3f0f62cf7b92ff411432a0e20932e331a80",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Qix_MiSTer/main/releases/Qix_20260412.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "Qix_20260413.rbf",
+          "sha": "7830dd5cc12f4409881e06673a73451832c1e598",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Qix_MiSTer/main/releases/Qix_20260413.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Qix_20260414.rbf",
+          "sha": "b9d4796991ba1e61bd0200a3980fc086135fe573",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Qix_MiSTer/main/releases/Qix_20260414.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Qix_20260415.rbf",
+          "sha": "4123e77a80d1ed5824aeb8965a27499685d588e4",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Qix_MiSTer/main/releases/Qix_20260415.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Space Dungeon.mra",
+          "sha": "8c2e88be9deb53e91d54a1a3938f06e1c1329fc9",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Qix_MiSTer/main/releases/Space%20Dungeon.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Space Dungeon",
+            "rbf": "Qix",
+            "zips": [
+              "sdungeon.zip",
+              "sdungeon.zip"
+            ]
+          }
         }
       ]
     },
@@ -13375,6 +13470,48 @@
             "rbf": "sprint2",
             "zips": [
               "sprint1.zip|sprint2.zip"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Arcade-StarForce_MiSTer",
+      "description": "StarForce for MiSTer FPGA",
+      "readme": "# Star Force for Mister\n\n## Supported Games\n- Star Force\n- Baluba-louk no Densetsu\n\n## Credits\nMiSTer port by Madoov\n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/MiSTer-devel/Arcade-StarForce_MiSTer",
+      "releases": [
+        {
+          "name": "Arcade-Starforce_20260414.rbf",
+          "sha": "954231a3de5e0e0df85313a2ecfb77d5dbd34129",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-StarForce_MiSTer/master/releases/Arcade-Starforce_20260414.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Baluba-louk no Densetsu (Japan).mra",
+          "sha": "c4663b17439618457f61f2192734667afea1c966",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-StarForce_MiSTer/master/releases/Baluba-louk%20no%20Densetsu%20(Japan).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Baluba-louk no Densetsu (Japan)",
+            "rbf": "starforce",
+            "zips": [
+              "baluba.zip"
+            ]
+          }
+        },
+        {
+          "name": "StarForce.mra",
+          "sha": "4ba3f964df4211ff70b1e9f3549a18abd415064a",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-StarForce_MiSTer/master/releases/StarForce.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "StarForce",
+            "rbf": "starforce",
+            "zips": [
+              "starforc.zip"
             ]
           }
         }
@@ -18681,7 +18818,7 @@
     {
       "name": "Distribution_MiSTer",
       "description": "This repository contains all the files that you'll want in your MiSTer",
-      "readme": "# MiSTer Distribution\n\nThis repository contains all the files that you'll want in your MiSTer.\n\nYou may download all of them at once as a zip through the [following link](https://github.com/MiSTer-devel/Distribution_MiSTer/archive/refs/heads/main.zip). Once you have them, place them as-is in your [properly initialised SD card](https://github.com/MiSTer-devel/mr-fusion), and everything should work out of the box.\n\n### MiSTer Project\n\nIf you want to check more about the MiSTer project, please check [this wiki](https://github.com/MiSTer-devel/Wiki_MiSTer/wiki).\n\n### MiSTer Downloader\n\nFor downloading all of these files directly from your MiSTer, use the [MiSTer Downloader](https://github.com/MiSTer-devel/Downloader_MiSTer).\n\n#### Tags that you may use with 'Download Filters' feature\n\nRead about how to use them [here](https://github.com/MiSTer-devel/Downloader_MiSTer/blob/main/docs/download-filters.md).\n\n##### List:\n\n`acornatom`, `acornelectron`, `adam`, `adctest`, `adventurevision`, `alicemc10`, `all_filters`, `altair8800`, `alternatives`, `amiga`, `amstrad`, `amstrad-pcw`, `amstradpcw`, `ao486`, `apogee`, `apple-i`, `apple-ii`, `aquarius`, `arcade`, `arcade-arkanoid`, `arcade-asteroids`, `arcade-asteroidsdeluxe`, `arcade-astrocade`, `arcade-atarisys1`, `arcade-ataritetris`, `arcade-athena`, `arcade-bagman`, `arcade-bankpanic`, `arcade-battlezone`, `arcade-berzerk`, `arcade-blackwidow`, `arcade-blockade`, `arcade-blueprint`, `arcade-bombjack`, `arcade-bosconian`, `arcade-breakout`, `arcade-bubsys`, `arcade-bubsysrom`, `arcade-burgertime`, `arcade-burningrubber`, `arcade-canyonbomber`, `arcade-cave`, `arcade-centipede`, `arcade-chameleon`, `arcade-computerspace`, `arcade-congobongo`, `arcade-cores`, `arcade-cosmic`, `arcade-cosmicguerilla`, `arcade-crazyballoon`, `arcade-crazyclimber`, `arcade-crazykong`, `arcade-crystalcastles`, `arcade-defender`, `arcade-digdug`, `arcade-dominos`, `arcade-donkeykong`, `arcade-donkeykong3`, `arcade-donkeykongjunior`, `arcade-dorodon`, `arcade-dottorikun`, `arcade-druaga`, `arcade-exerion`, `arcade-exidy2`, `arcade-expressraider`, `arcade-finalizer`, `arcade-foodfight`, `arcade-freeze`, `arcade-frenzy`, `arcade-galaga`, `arcade-galaxian`, `arcade-galivan`, `arcade-gaplus`, `arcade-gauntlet`, `arcade-gyruss`, `arcade-ikariwarriors`, `arcade-inferno`, `arcade-iremm107`, `arcade-iremm62`, `arcade-iremm72`, `arcade-iremm90`, `arcade-iremm92`, `arcade-ironhorse`, `arcade-jackal`, `arcade-jailbreak`, `arcade-joust2`, `arcade-junofirst`, `arcade-kickandrun`, `arcade-ladybug`, `arcade-lunarlander`, `arcade-mariobros`, `arcade-mcr1`, `arcade-mcr2`, `arcade-mcr3`, `arcade-mcr3mono`, `arcade-mcr3scroll`, `arcade-missilecommand`, `arcade-moonpatrol`, `arcade-mrdo`, `arcade-mrjong`, `arcade-mysticmarathon`, `arcade-naughtyboy`, `arcade-ninjakun`, `arcade-pacman`, `arcade-pengo`, `arcade-penguinkunwars`, `arcade-performan`, `arcade-phoenix`, `arcade-pleiads`, `arcade-polyplay`, `arcade-pong`, `arcade-pooyan`, `arcade-popeye`, `arcade-psychic5`, `arcade-qbert`, `arcade-qix`, `arcade-rallyx`, `arcade-rbfs-only`, `arcade-riverpatrol`, `arcade-robotron`, `arcade-rshnatk`, `arcade-salamander`, `arcade-scootershooter`, `arcade-scramble`, `arcade-segasys1`, `arcade-segavicz80`, `arcade-silverland`, `arcade-slapfight`, `arcade-sms`, `arcade-snk_triplez80`, `arcade-solomonskey`, `arcade-sonson`, `arcade-spaceinvaders`, `arcade-spacerace`, `arcade-sprint1`, `arcade-sprint2`, `arcade-st-v`, `arcade-subs`, `arcade-superbreakout`, `arcade-suprloco`, `arcade-taitof2`, `arcade-taitosj`, `arcade-tankbattalion`, `arcade-tecmo`, `arcade-tiamc1`, `arcade-timepilot`, `arcade-timepilot84`, `arcade-tnkiii`, `arcade-traverseusa`, `arcade-tropicalangel`, `arcade-turkeyshoot`, `arcade-tutankham`, `arcade-ultratank`, `arcade-vastar`, `arcade-vball`, `arcade-xevious`, `arcade-xsleena`, `arcade-zaxxon`, `arcade-zigzag`, `arcadelpf`, `arcadia`, `archie`, `arduboy`, `astrocade`, `atari2600`, `atari5200`, `atari7800`, `atari800`, `atarilynx`, `atarist`, `avision`, `ay-3-8500`, `bbcbridgecompanion`, `bbcmicro`, `bios`, `bk0011m`, `c128`, `c16`, `c64`, `cacert`, `casio_pv-1000`, `casio_pv-2000`, `cd-i`, `cdi`, `channelf`, `cheats`, `chess`, `chip8`, `coco2`, `coco3`, `coleco`, `colecoadam`, `colecovision`, `complexmultichromatic`, `computer`, `computer-cores`, `console`, `console-cd`, `console-cores`, `contrast_boost`, `controls_1_button`, `controls_2_buttons`, `controls_2_players`, `controls_3_buttons`, `controls_3_players`, `controls_4_buttons`, `controls_4_players`, `controls_5_buttons`, `controls_6_buttons`, `controls_dial`, `controls_move_2-way`, `controls_move_4-way`, `controls_move_8-way`, `controls_paddle`, `controls_spinner`, `controls_trackball`, `cores`, `corespecific`, `creativision`, `crt-simulation`, `displayspecific`, `docs`, `donut`, `downloader`, `downloader_bin`, `downloader_latest`, `drv`, `edsac`, `eg2000`, `enterprise`, `epochgalaxyii`, `essential`, `extra-utilities`, `famicom`, `fast_usb_polling`, `filters`, `filters_audio`, `filters_video`, `flappy`, `flappybird`, `font`, `galaksija`, `gamate`, `gameboy`, `gameboy2p`, `gameboyadvance`, `gameboycolor`, `gamecontrollerdb`, `gamegear`, `gamenwatch`, `gameoflife`, `games`, `gamma`, `gb`, `gba`, `gba2p`, `gbc`, `gbmidi`, `generalhardware`, `generallpf`, `genesis`, `genmidi`, `gnw`, `handheld2p`, `hbmame`, `homelab`, `ini_settings`, `inputtest`, `intellivision`, `interact`, `iq151`, `jaguar`, `jupiter`, `laser`, `laser310`, `lcd-general`, `lcd-integeronly`, `linux`, `lynx48`, `macplus`, `mame`, `mastersystem`, `megacd`, `megadrive`, `megadrive-core`, `megaduck`, `memtest`, `memtest_060mhz`, `memtest_100mhz`, `memtest_110mhz`, `memtest_120mhz`, `memtest_130mhz`, `memtest_140mhz`, `memtest_150mhz`, `memtest_160mhz`, `memtest_167mhz`, `menu`, `mgl`, `minimig`, `mister_example-ini`, `misterfirmware`, `misterlaggy`, `mra`, `msx`, `msx1`, `multicomp`, `myvision`, `n64`, `neogeo`, `neogeo-cd`, `nes`, `nintendo`, `no-mad-entry-mra`, `no-setname-mra`, `odyssey2`, `old`, `ondra_spo186`, `orao`, `oric`, `other`, `other-cores`, `overlays`, `palettes`, `pc88`, `pc8801`, `pcengine`, `pcenginecd`, `pcjr`, `pcxt`, `pdp1`, `pet2001`, `pmd85`, `pocketchallengev2`, `pokemonmini`, `poly_gamma`, `presets`, `psx`, `pure_gamma`, `ql`, `readme`, `rtc`, `rx78`, `s32x`, `samba_on`, `samcoupe`, `saturn`, `scanlines-adaptive`, `scanlines-brighter`, `scanlines-standard`, `screen_horizontal_scan_rate_15khz`, `screen_horizontal_scan_rate_31khz`, `screen_no_tate`, `screen_rotation_flip`, `screen_rotation_horizontal`, `screen_rotation_vertical_ccw`, `screen_rotation_vertical_ccw_no_flip`, `screen_rotation_vertical_cw`, `screen_rotation_vertical_cw_no_flip`, `screen_tate_ccw`, `screen_tate_ccw_no_flip`, `screen_tate_cw`, `screen_tate_cw_no_flip`, `screen_tate_flip`, `scripts`, `scv`, `segacd`, `segamark3`, `service-cores`, `sgb`, `shadow_masks`, `sharpmz`, `simplemonochrome`, `slugcross`, `sms`, `snes`, `sordm5`, `specialist`, `spectrum`, `spmx`, `sufami`, `super_vision_8000`, `superfamicom`, `supergameboy`, `supernes`, `supernintendo`, `supervision`, `supervision8000`, `svi328`, `tandy1000`, `tatungeinstein`, `tgfx16`, `tgfx16-cd`, `tgfx16cd`, `ti-99_4a`, `ti994a`, `timezone`, `tk2000`, `tomyscramble`, `tomytutor`, `trs-80`, `tsconf`, `turbografx`, `turbografx16`, `turbografx16cd`, `turbografxcd`, `uk101`, `unlicensed_games`, `upscaling-lanczosbicubicetc`, `upscaling-recommended`, `upscaling-sharpbilinear`, `utility`, `vc4000`, `vector-06c`, `vector06`, `vector06c`, `vectrex`, `vic20`, `vt52`, `wifi`, `wonderswan`, `wonderswancolor`, `x68000`, `yctxt`, `zx-spectrum`, `zx81`, `zxnext`, `zxspectrum`\n\n##### Some relevant tag descriptions:\n\n- `arcade-cores` / `arcade`: All arcade cores and related files (MRA files).\n- `computer-cores` / `computer`: All computer cores and related folders.\n- `console-cores` / `console`: All console cores and related folders.\n- `other-cores` / `other`: All cores from the top folder Other with their related folders.\n- `service-cores` / `utility`: All utility cores and related folders.\n- `cores`: All cores (RBF files).\n- `mra`: All MRA files & folders.\n- `arcade-rbfs-only`: All arcade cores (RBF files) without related files.\n- `alternatives`: All MRA Alternatives & MRAs linked to the HBMame collection.\n- `handheld2p`: All 2 Player versions for Handheld cores.\n- `filters_video`: All video filters (`gamma` & `filters` & `shadow_masks`).\n- `all_filters`: All video & audio filters (`filters_video` & `filters_audio`).\n- `essential`: Menu core & MiSTer firmware.\n- `readme`: All README files.\n- `docs`: All documentation files & folders, including README files.\n- `extra-utilities`: All extra utilities that are installed in games folders of some computer cores.\n- `bios`: All bioses that are installed in the games folders for some computer & console cores.\n- `cheats`: All cheat files & folders.\n\n##### Tags based on the Arcade Database:\n\nThe following tags are calculated with the information contained in the [MiSTer Arcade Database](https://github.com/MiSTer-devel/ArcadeDatabase_MiSTer):\n\n- `unlicensed_games`: All arcade bootlegs, hacks or homebrew games\n- `controls_1_button`: All arcade games that use exactly 1 button.\n- `controls_2_buttons`: All arcade games that use exactly 2 buttons.\n- `controls_3_buttons`: All arcade games that use exactly 3 buttons.\n- `controls_4_buttons`: All arcade games that use exactly 4 buttons.\n- `controls_5_buttons`: All arcade games that use exactly 5 buttons.\n- `controls_6_buttons`: All arcade games that use exactly 6 buttons.\n- `controls_spinner`: All arcade games that require a spinner.\n- `controls_paddle`: All arcade games that require a paddle.\n- `controls_dial`: All arcade games that require a dial.\n- `controls_trackball`: All arcade games that require a trackball.\n- `controls_move_2-way`: All arcade games with 2-way directional movement (left-right or up-down).\n- `controls_move_4-way`: All arcade games with 4-way directional movement.\n- `controls_move_8-way`: All arcade games with 8-way omnidirectional movement.\n- `controls_2_players`: All arcade games that support up to two simultaneous players.\n- `controls_3_players`: All arcade games that support up to three simultaneous players.\n- `controls_4_players`: All arcade games that support up to four simultaneous players.\n- `screen_rotation_horizontal` / `screen_no_tate`: All arcade games designed for horizontal screens.\n- `screen_rotation_vertical_cw` / `screen_tate_cw`: All arcade games designed for clock-wise vertical screens. Including counter clock-wise with a flip option.\n- `screen_rotation_vertical_ccw` / `screen_tate_ccw`: All arcade games designed for counter clock-wise vertical screens. Including clock-wise with a flip option.\n- `screen_rotation_vertical_cw_no_flip` / `screen_tate_cw_no_flip`: All arcade games designed for clock-wise vertical screens without a flip option.\n- `screen_rotation_vertical_ccw_no_flip` / `screen_tate_ccw_no_flip`: All arcade games designed for counter clock-wise vertical screens without a flip option.\n- `screen_horizontal_scan_rate_15khz`: All arcade games only supported by 15kHz CRT screens.\n- `screen_horizontal_scan_rate_31khz`: All arcade games only supported by 31kHz CRT screens.\n\nIf there is any mismatch between one of the previous terms and the game, please report it in that Arcade Database repository.\n\n### Contributing\n\nYou are more than welcome to contribute to the [MiSTer-devel Organization](https://github.com/MiSTer-devel). But you can't do it by openening PRs to the main branch of this repository. This repository is only for file distribution. Whatever content shows up here depends on the other repositories of this organization, so you should target your PRs there.\n\nThere is a development branch in this repository for the content collection. Is fine to send PRs there but they should only modify the content collection scripts that are being used by the workflows.\n",
+      "readme": "# MiSTer Distribution\n\nThis repository contains all the files that you'll want in your MiSTer.\n\nYou may download all of them at once as a zip through the [following link](https://github.com/MiSTer-devel/Distribution_MiSTer/archive/refs/heads/main.zip). Once you have them, place them as-is in your [properly initialised SD card](https://github.com/MiSTer-devel/mr-fusion), and everything should work out of the box.\n\n### MiSTer Project\n\nIf you want to check more about the MiSTer project, please check [this wiki](https://github.com/MiSTer-devel/Wiki_MiSTer/wiki).\n\n### MiSTer Downloader\n\nFor downloading all of these files directly from your MiSTer, use the [MiSTer Downloader](https://github.com/MiSTer-devel/Downloader_MiSTer).\n\n#### Tags that you may use with 'Download Filters' feature\n\nRead about how to use them [here](https://github.com/MiSTer-devel/Downloader_MiSTer/blob/main/docs/download-filters.md).\n\n##### List:\n\n`acornatom`, `acornelectron`, `adam`, `adctest`, `adventurevision`, `alicemc10`, `all_filters`, `altair8800`, `alternatives`, `amiga`, `amstrad`, `amstrad-pcw`, `amstradpcw`, `ao486`, `apogee`, `apple-i`, `apple-ii`, `aquarius`, `arcade`, `arcade-arkanoid`, `arcade-asteroids`, `arcade-asteroidsdeluxe`, `arcade-astrocade`, `arcade-atarisys1`, `arcade-ataritetris`, `arcade-athena`, `arcade-bagman`, `arcade-bankpanic`, `arcade-battlezone`, `arcade-berzerk`, `arcade-blackwidow`, `arcade-blockade`, `arcade-blueprint`, `arcade-bombjack`, `arcade-bosconian`, `arcade-breakout`, `arcade-bubsys`, `arcade-bubsysrom`, `arcade-burgertime`, `arcade-burningrubber`, `arcade-canyonbomber`, `arcade-cave`, `arcade-centipede`, `arcade-chameleon`, `arcade-computerspace`, `arcade-congobongo`, `arcade-cores`, `arcade-cosmic`, `arcade-cosmicguerilla`, `arcade-crazyballoon`, `arcade-crazyclimber`, `arcade-crazykong`, `arcade-crystalcastles`, `arcade-darius`, `arcade-defender`, `arcade-digdug`, `arcade-dominos`, `arcade-donkeykong`, `arcade-donkeykong3`, `arcade-donkeykongjunior`, `arcade-dorodon`, `arcade-dottorikun`, `arcade-druaga`, `arcade-exerion`, `arcade-exidy2`, `arcade-expressraider`, `arcade-finalizer`, `arcade-foodfight`, `arcade-freeze`, `arcade-frenzy`, `arcade-galaga`, `arcade-galaxian`, `arcade-galivan`, `arcade-gaplus`, `arcade-gauntlet`, `arcade-gyruss`, `arcade-ikariwarriors`, `arcade-inferno`, `arcade-iremm107`, `arcade-iremm62`, `arcade-iremm72`, `arcade-iremm90`, `arcade-iremm92`, `arcade-ironhorse`, `arcade-jackal`, `arcade-jailbreak`, `arcade-joust2`, `arcade-junofirst`, `arcade-kickandrun`, `arcade-ladybug`, `arcade-lunarlander`, `arcade-mariobros`, `arcade-mcr1`, `arcade-mcr2`, `arcade-mcr3`, `arcade-mcr3mono`, `arcade-mcr3scroll`, `arcade-missilecommand`, `arcade-moonpatrol`, `arcade-mrdo`, `arcade-mrjong`, `arcade-mysticmarathon`, `arcade-naughtyboy`, `arcade-ninjakun`, `arcade-pacman`, `arcade-pengo`, `arcade-penguinkunwars`, `arcade-performan`, `arcade-phoenix`, `arcade-pleiads`, `arcade-polyplay`, `arcade-pong`, `arcade-pooyan`, `arcade-popeye`, `arcade-psychic5`, `arcade-qbert`, `arcade-qix`, `arcade-rallyx`, `arcade-rbfs-only`, `arcade-riverpatrol`, `arcade-robotron`, `arcade-rshnatk`, `arcade-salamander`, `arcade-scootershooter`, `arcade-scramble`, `arcade-segasys1`, `arcade-segavicz80`, `arcade-silverland`, `arcade-slapfight`, `arcade-sms`, `arcade-snk_triplez80`, `arcade-solomonskey`, `arcade-sonson`, `arcade-spaceinvaders`, `arcade-spacerace`, `arcade-sprint1`, `arcade-sprint2`, `arcade-st-v`, `arcade-starforce`, `arcade-subs`, `arcade-superbreakout`, `arcade-suprloco`, `arcade-taitof2`, `arcade-taitosj`, `arcade-tankbattalion`, `arcade-tecmo`, `arcade-tiamc1`, `arcade-timepilot`, `arcade-timepilot84`, `arcade-tnkiii`, `arcade-traverseusa`, `arcade-tropicalangel`, `arcade-turkeyshoot`, `arcade-tutankham`, `arcade-ultratank`, `arcade-vastar`, `arcade-vball`, `arcade-xevious`, `arcade-xsleena`, `arcade-zaxxon`, `arcade-zigzag`, `arcadelpf`, `arcadia`, `archie`, `arduboy`, `astrocade`, `atari2600`, `atari5200`, `atari7800`, `atari800`, `atarilynx`, `atarist`, `avision`, `ay-3-8500`, `bbcbridgecompanion`, `bbcmicro`, `bios`, `bk0011m`, `c128`, `c16`, `c64`, `cacert`, `casio_pv-1000`, `casio_pv-2000`, `cd-i`, `cdi`, `channelf`, `cheats`, `chess`, `chip8`, `coco2`, `coco3`, `coleco`, `colecoadam`, `colecovision`, `complexmultichromatic`, `computer`, `computer-cores`, `console`, `console-cd`, `console-cores`, `contrast_boost`, `controls_1_button`, `controls_2_buttons`, `controls_2_players`, `controls_3_buttons`, `controls_3_players`, `controls_4_buttons`, `controls_4_players`, `controls_5_buttons`, `controls_6_buttons`, `controls_dial`, `controls_move_2-way`, `controls_move_4-way`, `controls_move_8-way`, `controls_paddle`, `controls_spinner`, `controls_trackball`, `cores`, `corespecific`, `creativision`, `crt-simulation`, `displayspecific`, `docs`, `donut`, `downloader`, `downloader_bin`, `downloader_latest`, `drv`, `edsac`, `eg2000`, `enterprise`, `epochgalaxyii`, `essential`, `extra-utilities`, `famicom`, `fast_usb_polling`, `filters`, `filters_audio`, `filters_video`, `flappy`, `flappybird`, `font`, `galaksija`, `gamate`, `gameboy`, `gameboy2p`, `gameboyadvance`, `gameboycolor`, `gamecontrollerdb`, `gamegear`, `gamenwatch`, `gameoflife`, `games`, `gamma`, `gb`, `gba`, `gba2p`, `gbc`, `gbmidi`, `generalhardware`, `generallpf`, `genesis`, `genmidi`, `gnw`, `handheld2p`, `hbmame`, `homelab`, `ini_settings`, `inputtest`, `intellivision`, `interact`, `iq151`, `jaguar`, `jupiter`, `laser`, `laser310`, `lcd-general`, `lcd-integeronly`, `linux`, `lynx48`, `macplus`, `mame`, `mastersystem`, `megacd`, `megadrive`, `megadrive-core`, `megaduck`, `memtest`, `memtest_060mhz`, `memtest_100mhz`, `memtest_110mhz`, `memtest_120mhz`, `memtest_130mhz`, `memtest_140mhz`, `memtest_150mhz`, `memtest_160mhz`, `memtest_167mhz`, `menu`, `mgl`, `minimig`, `mister_example-ini`, `misterfirmware`, `misterlaggy`, `mra`, `msx`, `msx1`, `multicomp`, `myvision`, `n64`, `neogeo`, `neogeo-cd`, `nes`, `nintendo`, `no-mad-entry-mra`, `no-setname-mra`, `odyssey2`, `old`, `ondra_spo186`, `orao`, `oric`, `other`, `other-cores`, `overlays`, `palettes`, `pc88`, `pc8801`, `pcengine`, `pcenginecd`, `pcjr`, `pcxt`, `pdp1`, `pet2001`, `pmd85`, `pocketchallengev2`, `pokemonmini`, `poly_gamma`, `presets`, `psx`, `pure_gamma`, `ql`, `readme`, `rtc`, `rx78`, `s32x`, `samba_on`, `samcoupe`, `saturn`, `scanlines-adaptive`, `scanlines-brighter`, `scanlines-standard`, `screen_horizontal_scan_rate_15khz`, `screen_horizontal_scan_rate_31khz`, `screen_no_tate`, `screen_rotation_flip`, `screen_rotation_horizontal`, `screen_rotation_vertical_ccw`, `screen_rotation_vertical_ccw_no_flip`, `screen_rotation_vertical_cw`, `screen_rotation_vertical_cw_no_flip`, `screen_tate_ccw`, `screen_tate_ccw_no_flip`, `screen_tate_cw`, `screen_tate_cw_no_flip`, `screen_tate_flip`, `scripts`, `scv`, `segacd`, `segamark3`, `service-cores`, `sgb`, `shadow_masks`, `sharpmz`, `simplemonochrome`, `slugcross`, `sms`, `snes`, `sordm5`, `specialist`, `spectrum`, `spmx`, `sufami`, `super_vision_8000`, `superfamicom`, `supergameboy`, `supernes`, `supernintendo`, `supervision`, `supervision8000`, `svi328`, `tandy1000`, `tatungeinstein`, `tgfx16`, `tgfx16-cd`, `tgfx16cd`, `ti-99_4a`, `ti994a`, `timezone`, `tk2000`, `tomyscramble`, `tomytutor`, `trs-80`, `tsconf`, `turbografx`, `turbografx16`, `turbografx16cd`, `turbografxcd`, `uk101`, `unlicensed_games`, `upscaling-lanczosbicubicetc`, `upscaling-recommended`, `upscaling-sharpbilinear`, `utility`, `vc4000`, `vector-06c`, `vector06`, `vector06c`, `vectrex`, `vic20`, `vt52`, `wifi`, `wonderswan`, `wonderswancolor`, `x68000`, `yctxt`, `zx-spectrum`, `zx81`, `zxnext`, `zxspectrum`\n\n##### Some relevant tag descriptions:\n\n- `arcade-cores` / `arcade`: All arcade cores and related files (MRA files).\n- `computer-cores` / `computer`: All computer cores and related folders.\n- `console-cores` / `console`: All console cores and related folders.\n- `other-cores` / `other`: All cores from the top folder Other with their related folders.\n- `service-cores` / `utility`: All utility cores and related folders.\n- `cores`: All cores (RBF files).\n- `mra`: All MRA files & folders.\n- `arcade-rbfs-only`: All arcade cores (RBF files) without related files.\n- `alternatives`: All MRA Alternatives & MRAs linked to the HBMame collection.\n- `handheld2p`: All 2 Player versions for Handheld cores.\n- `filters_video`: All video filters (`gamma` & `filters` & `shadow_masks`).\n- `all_filters`: All video & audio filters (`filters_video` & `filters_audio`).\n- `essential`: Menu core & MiSTer firmware.\n- `readme`: All README files.\n- `docs`: All documentation files & folders, including README files.\n- `extra-utilities`: All extra utilities that are installed in games folders of some computer cores.\n- `bios`: All bioses that are installed in the games folders for some computer & console cores.\n- `cheats`: All cheat files & folders.\n\n##### Tags based on the Arcade Database:\n\nThe following tags are calculated with the information contained in the [MiSTer Arcade Database](https://github.com/MiSTer-devel/ArcadeDatabase_MiSTer):\n\n- `unlicensed_games`: All arcade bootlegs, hacks or homebrew games\n- `controls_1_button`: All arcade games that use exactly 1 button.\n- `controls_2_buttons`: All arcade games that use exactly 2 buttons.\n- `controls_3_buttons`: All arcade games that use exactly 3 buttons.\n- `controls_4_buttons`: All arcade games that use exactly 4 buttons.\n- `controls_5_buttons`: All arcade games that use exactly 5 buttons.\n- `controls_6_buttons`: All arcade games that use exactly 6 buttons.\n- `controls_spinner`: All arcade games that require a spinner.\n- `controls_paddle`: All arcade games that require a paddle.\n- `controls_dial`: All arcade games that require a dial.\n- `controls_trackball`: All arcade games that require a trackball.\n- `controls_move_2-way`: All arcade games with 2-way directional movement (left-right or up-down).\n- `controls_move_4-way`: All arcade games with 4-way directional movement.\n- `controls_move_8-way`: All arcade games with 8-way omnidirectional movement.\n- `controls_2_players`: All arcade games that support up to two simultaneous players.\n- `controls_3_players`: All arcade games that support up to three simultaneous players.\n- `controls_4_players`: All arcade games that support up to four simultaneous players.\n- `screen_rotation_horizontal` / `screen_no_tate`: All arcade games designed for horizontal screens.\n- `screen_rotation_vertical_cw` / `screen_tate_cw`: All arcade games designed for clock-wise vertical screens. Including counter clock-wise with a flip option.\n- `screen_rotation_vertical_ccw` / `screen_tate_ccw`: All arcade games designed for counter clock-wise vertical screens. Including clock-wise with a flip option.\n- `screen_rotation_vertical_cw_no_flip` / `screen_tate_cw_no_flip`: All arcade games designed for clock-wise vertical screens without a flip option.\n- `screen_rotation_vertical_ccw_no_flip` / `screen_tate_ccw_no_flip`: All arcade games designed for counter clock-wise vertical screens without a flip option.\n- `screen_horizontal_scan_rate_15khz`: All arcade games only supported by 15kHz CRT screens.\n- `screen_horizontal_scan_rate_31khz`: All arcade games only supported by 31kHz CRT screens.\n\nIf there is any mismatch between one of the previous terms and the game, please report it in that Arcade Database repository.\n\n### Contributing\n\nYou are more than welcome to contribute to the [MiSTer-devel Organization](https://github.com/MiSTer-devel). But you can't do it by openening PRs to the main branch of this repository. This repository is only for file distribution. Whatever content shows up here depends on the other repositories of this organization, so you should target your PRs there.\n\nThere is a development branch in this repository for the content collection. Is fine to send PRs there but they should only modify the content collection scripts that are being used by the workflows.\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/Distribution_MiSTer",
@@ -23774,6 +23911,12 @@
           "name": "PC88_20250918.rbf",
           "sha": "7879cce42bc777158c8597e7708ed9ddaa9111c1",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/PC88_MiSTer/master/releases/PC88_20250918.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "PC88_20260415.rbf",
+          "sha": "e71c54ca197d46b2ab17b682567e0cf1dce3d85f",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/PC88_MiSTer/master/releases/PC88_20260415.rbf",
           "type": "RBF"
         }
       ]
