@@ -5,6 +5,15 @@
   "type": "Organization",
   "repos": [
     {
+      "name": "3DO_MiSTer",
+      "description": "3DO for MiSTer",
+      "readme": "# 3DO for MiSTer\n\n## Status\n\nCurrent status is WIP/Beta\n\nSome games have popping and noise.\n\n\n## Kanji ROM\nRename the kanji.bin file to kanji.rom and place it in the game folder or parent folder.\n\n## Arcade\nRename the 3do_arcade_saot.bin file to cd_bios.rom and place it in the game folder or parent folder.\n\n## Official beta \nRename the panafz1j-norsa.bin (for NTSC) or panafz1e-unencrypted.bin (for PAL) file to cd_bios.rom and place it in the game folder or parent folder.\n\n",
+      "archived": false,
+      "fork": false,
+      "url": "https://github.com/MiSTer-devel/3DO_MiSTer",
+      "releases": []
+    },
+    {
       "name": "AcornAtom_MiSTer",
       "description": null,
       "readme": "# Acorn_Atom_MiSTer\r\n\r\nAcorn Atom for MiSTer FPGA\r\n\r\n## Introduction\r\nThis is a cut down version of the fabulous [AtomFPGA by David Banks (Hoglet)](https://github.com/hoglet67/AtomFpga) and my thanks to him for his help.\r\n\r\nThe [Acorn Atom](https://en.wikipedia.org/wiki/Acorn_Atom) was the predecessor of the BBC micro based on Acorn's System computers. It was available as a kit or ready made. The Acorn had 2KB of RAM that was expandable to 12KB and 8KB of ROM that was expandable to 16KB. It could display graphics in monochrome at a resolution of 256x192 pixels, although later a colour board was made.\r\n\r\n## Features\r\n* 32KB ram\r\n* System Roms with mmc (to access the SD card)\r\n* Seven additional Roms and 1 slot of ram to download additional Rom.\r\n* Two character sets.\r\n* Tape in/out (not tested)\r\n* Selectable sound, Atom,SID,Tape,off\r\n* Black or Dark background\r\n* Atom or BBC Basic mode\r\n* Colour palette\r\n* SID sound\r\n* Turbo mode (f1,f2,f3,f4)\r\n* Four keyboards - UK(default),USA,original,game\r\n\r\n## Controls\r\nUK/US Keyboards - Shift lock is Caps, Repeat is right Alt, copy is tab - Left Alt is xtra shift key. \r\n\r\nThe original keyboard had @ and up-arrow as separate keys these have moved to a PS2 config. \r\n\r\nUp-Arrow is shift+6 so to \"shift\" this press left Alt+shift+6. \r\n\r\nThe original keyboard is as originally written ie shift+8 = ( and shift+9 = )\r\n\r\nThe game keyboard just reverses the ctrl and shift as on the original keyboard, for games like Asteroids. \r\n\r\n## Instructions\r\nYou need a boot.vhd file formatted as FAT and around 100MB. There is a blank.zip in releases. Unzip and rename to boot.vhd\r\n\r\nAttach the boot.vhd and copy software onto it.\r\n\r\nDetach the VHD and place the file in the games/AcornAtom folder on your SD card. \r\n\r\nTo auto boot the software menu Shift-Break(f10), Ctrl-Break disables the MMC Rom\r\n\r\nThe best software source is the AtomSoftwareArchive V11 zip 11.9MB\r\n\r\nThere are several sites dedicated to the atom.\r\n",
@@ -3292,6 +3301,12 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Cave_20260418.rbf",
+          "sha": "3feed9241908fc106a75560133ed816a2d2e442a",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cave_MiSTer/main/releases/Arcade-Cave_20260418.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "DoDonPachi.mra",
           "sha": "3fd65aba72ba64e150ae6c913dc4f6ad4cb858d2",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cave_MiSTer/main/releases/DoDonPachi.mra",
@@ -3366,6 +3381,19 @@
             "rbf": "cave",
             "zips": [
               "guwange.zip"
+            ]
+          }
+        },
+        {
+          "name": "Hotdog Storm.mra",
+          "sha": "7c5a1c2e43506a5a15be4c6377ac5065f9b38759",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cave_MiSTer/main/releases/Hotdog%20Storm.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Hotdog Storm (Korea)",
+            "rbf": "cave",
+            "zips": [
+              "hotdogst.zip"
             ]
           }
         },
@@ -13490,8 +13518,14 @@
           "type": "RBF"
         },
         {
+          "name": "Arcade-Starforce_20260421.rbf",
+          "sha": "9859513e6fdead02f38e3745b359f69cec881cf3",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-StarForce_MiSTer/master/releases/Arcade-Starforce_20260421.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "Baluba-louk no Densetsu (Japan).mra",
-          "sha": "c4663b17439618457f61f2192734667afea1c966",
+          "sha": "e530e25b16e2294879d84f4cb4571822627e161a",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-StarForce_MiSTer/master/releases/Baluba-louk%20no%20Densetsu%20(Japan).mra",
           "type": "MRA",
           "extra": {
@@ -13503,9 +13537,9 @@
           }
         },
         {
-          "name": "StarForce.mra",
-          "sha": "4ba3f964df4211ff70b1e9f3549a18abd415064a",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-StarForce_MiSTer/master/releases/StarForce.mra",
+          "name": "Star Force.mra",
+          "sha": "6b9f47e00001c90cccbcedee28ed90f0bf25bd89",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-StarForce_MiSTer/master/releases/Star%20Force.mra",
           "type": "MRA",
           "extra": {
             "name": "StarForce",
@@ -15735,6 +15769,12 @@
           "name": "Vastar_20260306.rbf",
           "sha": "382b7e68b3b0b5a65101209370ad8c6506798a8c",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Vastar_MiSTer/main/releases/Vastar_20260306.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Vastar_20260424.rbf",
+          "sha": "e66d615bf4687823d06eb03e08f395d90c74e1f6",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Vastar_MiSTer/main/releases/Vastar_20260424.rbf",
           "type": "RBF"
         }
       ]
@@ -23297,7 +23337,7 @@
         },
         {
           "name": "romsets.xml",
-          "sha": "d0a19e45ad5c062f670739ccec49f6c2e4c1d79e",
+          "sha": "c1e355eb87ea1a5753dd5c7c5c490deb26dc9dec",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/NeoGeo_MiSTer/master/releases/romsets.xml",
           "type": "OTHER"
         }
@@ -26409,7 +26449,7 @@
     {
       "name": "SNES_MiSTer",
       "description": "SNES for MiSTer",
-      "readme": "# [Super Nintendo Entertainment System](https://en.wikipedia.org/wiki/Super_Nintendo_Entertainment_System) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\nWritten by [srg320](https://github.com/srg320)\n\n## Installing\ncopy \\*.rbf to root of SD card. Put some ROMs (\\*.SFC, \\*.SMC, \\*.BIN) into SNES folder\n\n## Features\n* Cycle accurate SNES replica.\n* Supports LoROM, HiROM, ExHiROM.\n* Supports additional chips: DSP-1/2/3/4, ST010, CX4, SDD1, SuperFX(GSU-1/2), SA1, OBC1, SPC7110, S-RTC, Sufami Turbo.\n* MSU-1 Support\n* Cheat engine.\n* Save/Load Backup RAM.\n* Supports mouse.\n* Light gun support via Wiimote, mouse or analog stick.\n* [SuperFX Turbo and CPU Turbo.](https://github.com/MiSTer-devel/SNES_MiSTer/blob/master/SNES_Turbo.md)\n\n### BSX BIOS\nPlace bsx_bios.rom in game's folder.\n",
+      "readme": "# [Super Nintendo Entertainment System](https://en.wikipedia.org/wiki/Super_Nintendo_Entertainment_System) for [MiSTer Platform](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\nWritten by [srg320](https://github.com/srg320)\n\n## Features\n* Cycle accurate SNES replica.\n* Supports LoROM, HiROM, ExHiROM.\n* Supports additional chips: DSP-1/2/3/4, ST010, CX4, SDD1, SuperFX(GSU-1/2), SA1, OBC1, SPC7110, S-RTC, BSX, Sufami Turbo.\n* MSU-1 Support (1GB max).\n* Save states support incl chips SA1, DSP and SuperFX.\n* Cheat engine.\n* Save/Load Backup RAM.\n* Supports mouse.\n* Light gun support via Wiimote, mouse or analog stick.\n* [SuperFX Turbo and CPU Turbo.](https://github.com/MiSTer-devel/SNES_MiSTer/blob/master/SNES_Turbo.md)\n\n## Installation\n* Copy \\*.rbf to root of SD card. Put some ROMs (\\*.SFC, \\*.SMC, \\*.BIN) into games\\SNES folder.\n* Save states: Place [boot1.rom](https://github.com/MiSTer-devel/SNES_MiSTer/raw/master/releases/boot1.rom) in games\\SNES folder.\n* BSX: Place bsx_bios.rom in games\\SNES folder.\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/SNES_MiSTer",

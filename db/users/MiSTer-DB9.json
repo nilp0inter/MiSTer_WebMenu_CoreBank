@@ -15310,6 +15310,76 @@
       ]
     },
     {
+      "name": "InputTest_MiSTer",
+      "description": "Input test utility core for MiSTer",
+      "readme": "#\tMiSTer Input Tester\n\n## Overview\n\nA custom mini-system running an input test utility.  There are 4 test screens available:\n - Digital - shows joypad buttons for first two input devices\n - Analog - shows analog axes for selected input device (cycle with a/b)\n - Advanced - shows all standard HPS sourced inputs (joystick, analog, paddle, spinner, ps2 keyboard and mouse) simultaneously\n - Button test - guided button test to help detect bounce / missed inputs and test man+machine lag\n\nTo access the menu:\n- Hold (select) on the first joypad\n- Press Escape on a keyboard\n- Press the USER button\n- Use the OSD option\n\nThere are two secrets to find...\n\n## Acknowledgements\n\nCreated by JimmyStones (http://github.com/jimmystones), with thanks to:\n- alanswx (https://github.com/alanswx) for ideas, cross-platform simulation support, and the tutorial this core was based on\n- Jotego (https://github.com/jotego) for his very tidy JTFRAME modules\n- Darrin Cardani for the quality YM music\n- Porkchop Express (https://misteraddons.com/) for testing a bunch of devices I couldn't\n- M. Walrus (@WalrusFPGA) for more testing\n- Sorgelig (https://github.com/sorgelig) for testing, finding bugs and suggesting new features.  Oh, and the MiSTer project :)\n\n## Hardware\n\nThe InputTest core is based on my Aznable 'custom hardware' project.  See the main repo for hardware and software details, build instruction, etc \nhttps://github.com/JimmyStones/Aznable \n\n## License\nThis program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.\n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/MiSTer-DB9/InputTest_MiSTer",
+      "releases": [
+        {
+          "name": "InputTest_20210703.rbf",
+          "sha": "6e0fa93e5db158eadae15dcba0509fab0ee7da2a",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/InputTest_MiSTer/main/releases/InputTest_20210703.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "InputTest_20211017.rbf",
+          "sha": "56ab19d82944fcf118e9a54ea1478648cee82ceb",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/InputTest_MiSTer/main/releases/InputTest_20211017.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "InputTest_20211020.rbf",
+          "sha": "3757313b550c1cc133c921062a7be2044747f691",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/InputTest_MiSTer/main/releases/InputTest_20211020.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "InputTest_20211126.rbf",
+          "sha": "6fa21ecd05bc5f87cf0d44f98598935dbd539e50",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/InputTest_MiSTer/main/releases/InputTest_20211126.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "InputTest_20211127.rbf",
+          "sha": "ac8b9f06021d09ed9ca17d89b337acc873dbad99",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/InputTest_MiSTer/main/releases/InputTest_20211127.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "InputTest_20220212.rbf",
+          "sha": "846e1633c961a07c57dad3fc7bda74ef823afff4",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/InputTest_MiSTer/main/releases/InputTest_20220212.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "InputTest_20220825.rbf",
+          "sha": "2887248595321526569b4e94bf479330ece2c615",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/InputTest_MiSTer/main/releases/InputTest_20220825.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "InputTest_20240727.rbf",
+          "sha": "6e34f5048bba9224bfa950ac71f7e8b63f46ca9c",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/InputTest_MiSTer/main/releases/InputTest_20240727.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "InputTest_20260426.rbf",
+          "sha": "3ab60024fd850fbdd8b5abb0cf888088e67a097c",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/InputTest_MiSTer/main/releases/InputTest_20260426.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "InputTest_20260427.rbf",
+          "sha": "51b76b36f36a1f9887f1c949fb0c02e2fdecaf6f",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/InputTest_MiSTer/main/releases/InputTest_20260427.rbf",
+          "type": "RBF"
+        }
+      ]
+    },
+    {
       "name": "JAMMA_MiSTer",
       "description": null,
       "readme": "## Origin\n*  Based on inputs generated in https://github.com/misteraddons/mistercade_mappings/tree/main/config/inputs\n*  Conversion script done by https://github.com/GAsinPrieto\n\n## How to use:\n1. Download the jamma_inputs.zip file\n2. Extract into the config/inputs folder in the SD of your MiSTer\n\n## Valid for these products:\n*  https://antoniovillena.com/product/complete-misterx-jamma-1tb/\n*  https://antoniovillena.com/product/iousb-jamma/\n*  https://antoniovillena.com/product/jamma-adapter-for-mister-low-latency/\n\n",
@@ -15776,6 +15846,24 @@
           "name": "MiSTer_20260408",
           "sha": "2df38519f08adaa5ee29e6c3d3cc3f1d9d4b2220",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Main_MiSTer/master/releases/MiSTer_20260408",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20260422",
+          "sha": "3aae4f89963f90f91a38ee2b33861736c74bc381",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Main_MiSTer/master/releases/MiSTer_20260422",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20260425",
+          "sha": "a277657a2380af866a7b4991c6b83eed3ffd8cb6",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Main_MiSTer/master/releases/MiSTer_20260425",
+          "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20260426",
+          "sha": "8aee8d9946337fca89aab7206409943aa0d4f4f1",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Main_MiSTer/master/releases/MiSTer_20260426",
           "type": "OTHER"
         }
       ]
