@@ -551,6 +551,11 @@ url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SlapFight_MiSTer/ma
 output = "_Arcade/cores/SlapFight_20260127.rbf"
 
 
+# SNK6502
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SNK6502_MiSTer/main/releases/SNK6502_20260427.rbf"
+output = "_Others/SNK6502_20260427.rbf"
+
+
 # SolomonsKey
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SolomonsKey_MiSTer/master/releases/Arcade-SolomonsKey_20240527.rbf"
 output = "_Arcade/cores/SolomonsKey_20240527.rbf"
@@ -747,8 +752,8 @@ output = "_Computer/C64_20250828.rbf"
 
 
 # CDi
-url = "https://raw.githubusercontent.com/MiSTer-devel/CDi_MiSTer/main/releases/CDi_20250626.rbf"
-output = "_Others/CDi_20250626.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/CDi_MiSTer/main/releases/CDi_20260502.rbf"
+output = "_Others/CDi_20260502.rbf"
 
 
 # ChannelF
@@ -2936,6 +2941,11 @@ url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Qix_MiSTer/main/rel
 output = "_Arcade/Space Dungeon.mra"
 
 
+# Zoo Keeper.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Qix_MiSTer/main/releases/Zoo%20Keeper.mra"
+output = "_Arcade/Zoo Keeper.mra"
+
+
 # New Rally-X.mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-RallyX_MiSTer/master/releases/New%20Rally-X.mra"
 output = "_Arcade/New Rally-X.mra"
@@ -3259,6 +3269,36 @@ output = "_Arcade/SlapFight Bootleg.mra"
 # Tiger Heli Bootleg.mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SlapFight_MiSTer/main/releases/Tiger%20Heli%20Bootleg.mra"
 output = "_Arcade/Tiger Heli Bootleg.mra"
+
+
+# Fantasy.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SNK6502_MiSTer/main/releases/Fantasy.mra"
+output = "_Arcade/Fantasy.mra"
+
+
+# Nibbler (Set 9).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SNK6502_MiSTer/main/releases/Nibbler%20(Set%209).mra"
+output = "_Arcade/Nibbler (Set 9).mra"
+
+
+# Pioneer Balloon.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SNK6502_MiSTer/main/releases/Pioneer%20Balloon.mra"
+output = "_Arcade/Pioneer Balloon.mra"
+
+
+# Sasuke.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SNK6502_MiSTer/main/releases/Sasuke.mra"
+output = "_Arcade/Sasuke.mra"
+
+
+# Satan Of Saturn.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SNK6502_MiSTer/main/releases/Satan%20Of%20Saturn.mra"
+output = "_Arcade/Satan Of Saturn.mra"
+
+
+# Vanguard.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SNK6502_MiSTer/main/releases/Vanguard.mra"
+output = "_Arcade/Vanguard.mra"
 
 
 # ASO.mra
