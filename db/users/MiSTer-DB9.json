@@ -4304,7 +4304,7 @@
         },
         {
           "name": "Arcade-DonkeyKongJunior_20240526.rbf",
-          "sha": "5c759b9f77995225c3f77754f6b8e63582d4777e",
+          "sha": "e5accf6c57a2b116f93dc8c88c813068fa7d240c",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-DonkeyKongJunior_MiSTer/master/releases/Arcade-DonkeyKongJunior_20240526.rbf",
           "type": "RBF"
         },
@@ -4340,7 +4340,7 @@
         },
         {
           "name": "Donkey Kong Junior (US, Set F-2).mra",
-          "sha": "6897576a8420b7c88474529abe494d46ee560d0c",
+          "sha": "1bab1baccca7fc906e6522715fb8f051297532b6",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-DonkeyKongJunior_MiSTer/master/releases/Donkey%20Kong%20Junior%20(US%2C%20Set%20F-2).mra",
           "type": "MRA",
           "extra": {
@@ -4513,7 +4513,7 @@
         },
         {
           "name": "Arcade-DonkeyKong_20240526.rbf",
-          "sha": "93f0f00cf10738a16a88a6632ba884477e52628e",
+          "sha": "d140f8b2edd33afc97b5a46974457f9e243cdca7",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-DonkeyKong_MiSTer/master/releases/Arcade-DonkeyKong_20240526.rbf",
           "type": "RBF"
         },
@@ -4549,7 +4549,7 @@
         },
         {
           "name": "Donkey Kong (US, Set 1).mra",
-          "sha": "b9fac195bd95ab683e265083dbc6c2e691026d41",
+          "sha": "d5610e9eab6faf1a441aab385dfebf6a8efca6d1",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-DonkeyKong_MiSTer/master/releases/Donkey%20Kong%20(US%2C%20Set%201).mra",
           "type": "MRA",
           "extra": {
@@ -4561,21 +4561,8 @@
           }
         },
         {
-          "name": "Pest Place.mra",
-          "sha": "df1c7ab570733d9c35ab4b1f84486b8df7173a6d",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-DonkeyKong_MiSTer/master/releases/Pest%20Place.mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Pest Place",
-            "rbf": "DonkeyKong",
-            "zips": [
-              "mario.zip|pestplce.zip"
-            ]
-          }
-        },
-        {
           "name": "Radar Scope (rev. D).mra",
-          "sha": "c4ccacc3d31f0ac487a85d51457ba44b2e743c03",
+          "sha": "5ab97d80d2627060a4a089c1aa75cf4904d4de83",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-DonkeyKong_MiSTer/master/releases/Radar%20Scope%20(rev.%20D).mra",
           "type": "MRA",
           "extra": {
@@ -15080,6 +15067,12 @@
           "sha": "656bf65e5a21423b95e05f30b323540b075c13c1",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Atari7800_MiSTer/master/releases/Atari7800_20260503.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "Atari7800_20260504.rbf",
+          "sha": "0f435976b4e18ecd3b4d569c41fc0cf0c6acfcfb",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Atari7800_MiSTer/master/releases/Atari7800_20260504.rbf",
+          "type": "RBF"
         }
       ]
     },
@@ -15677,6 +15670,12 @@
           "name": "AY-3-8500_20260503.rbf",
           "sha": "c18a65ff9384f849599d817ba1d24e1daabd5d88",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/AY-3-8500-MiSTer/master/releases/AY-3-8500_20260503.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "AY-3-8500_20260505.rbf",
+          "sha": "3b68553dfdfb4ddb8bb1b5b20ae25bd68c198773",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/AY-3-8500-MiSTer/master/releases/AY-3-8500_20260505.rbf",
           "type": "RBF"
         }
       ]
@@ -16898,7 +16897,7 @@
     {
       "name": "Distribution_MiSTer",
       "description": null,
-      "readme": "# MiSTer Distribution DB9\n\nThis repository contains all the files that you'll want in your MiSTer.\n\nYou may download all of them at once as a zip through the [following link](https://github.com/MiSTer-DB9/Distribution_MiSTer/archive/refs/heads/main.zip). Once you have them, place them as-is in your SD card, and everything should work out of the box.\n\n### MiSTer Project\n\nIf you want to check more about the MiSTer project, please check [this wiki](https://github.com/MiSTer-devel/Main_MiSTer/wiki).\n\n### Downloader script\n\nFor downloading all of these files in an automatic fashion, use [this tool](https://github.com/MiSTer-devel/Downloader_MiSTer).\n\n#### List of Tags that you may use with the Downloader Filters:\n\n`acornatom`, `acornelectron`, `adam`, `adctest`, `adventurevision`, `alicemc10`, `all_filters`, `altair8800`, `alternatives`, `amiga`, `amstrad`, `amstrad-pcw`, `amstradpcw`, `ao486`, `ao486userio2`, `apogee`, `apple-i`, `apple-ii`, `aquarius`, `arcade`, `arcade-arkanoid`, `arcade-asteroids`, `arcade-asteroidsdeluxe`, `arcade-astrocade`, `arcade-atarisys1`, `arcade-ataritetris`, `arcade-athena`, `arcade-bagman`, `arcade-bankpanic`, `arcade-battlezone`, `arcade-berzerk`, `arcade-blackwidow`, `arcade-blockade`, `arcade-blueprint`, `arcade-bombjack`, `arcade-bosconian`, `arcade-breakout`, `arcade-bubsys`, `arcade-bubsysrom`, `arcade-burgertime`, `arcade-burningrubber`, `arcade-canyonbomber`, `arcade-cave`, `arcade-centipede`, `arcade-chameleon`, `arcade-computerspace`, `arcade-congobongo`, `arcade-cores`, `arcade-cosmic`, `arcade-cosmicguerilla`, `arcade-crazyballoon`, `arcade-crazyclimber`, `arcade-crazykong`, `arcade-crystalcastles`, `arcade-darius`, `arcade-defender`, `arcade-digdug`, `arcade-dominos`, `arcade-donkeykong`, `arcade-donkeykong3`, `arcade-donkeykongjunior`, `arcade-dorodon`, `arcade-dottorikun`, `arcade-druaga`, `arcade-exerion`, `arcade-exidy2`, `arcade-expressraider`, `arcade-finalizer`, `arcade-foodfight`, `arcade-freeze`, `arcade-frenzy`, `arcade-galaga`, `arcade-galaxian`, `arcade-galivan`, `arcade-gaplus`, `arcade-gauntlet`, `arcade-gyruss`, `arcade-ikariwarriors`, `arcade-inferno`, `arcade-iremm107`, `arcade-iremm62`, `arcade-iremm72`, `arcade-iremm90`, `arcade-iremm92`, `arcade-ironhorse`, `arcade-jackal`, `arcade-jailbreak`, `arcade-joust2`, `arcade-jt1942`, `arcade-jt1943`, `arcade-jtajax`, `arcade-jtaliens`, `arcade-jtbiocom`, `arcade-jtbtiger`, `arcade-jtbubl`, `arcade-jtcal50`, `arcade-jtcastle`, `arcade-jtcircus`, `arcade-jtcommnd`, `arcade-jtcomsc`, `arcade-jtcontra`, `arcade-jtcop`, `arcade-jtcps1`, `arcade-jtcps2`, `arcade-jtdd`, `arcade-jtdd2`, `arcade-jtexed`, `arcade-jtflane`, `arcade-jtflstory`, `arcade-jtfround`, `arcade-jtgaiden`, `arcade-jtgng`, `arcade-jtgunsmk`, `arcade-jtkarnov`, `arcade-jtkchamp`, `arcade-jtkicker`, `arcade-jtkiwi`, `arcade-jtkunio`, `arcade-jtlabrun`, `arcade-jtmidres`, `arcade-jtmikie`, `arcade-jtmx5k`, `arcade-jtngp`, `arcade-jtngpc`, `arcade-jtninja`, `arcade-jtoutrun`, `arcade-jtpaclan`, `arcade-jtpang`, `arcade-jtparoda`, `arcade-jtpinpon`, `arcade-jtrastan`, `arcade-jtriders`, `arcade-jtroadf`, `arcade-jtroc`, `arcade-jtrumble`, `arcade-jts16`, `arcade-jts16b`, `arcade-jts18`, `arcade-jtsarms`, `arcade-jtsbaskt`, `arcade-jtsectnz`, `arcade-jtsf`, `arcade-jtshanon`, `arcade-jtshouse`, `arcade-jtsimson`, `arcade-jtslyspy`, `arcade-jtthundr`, `arcade-jttmnt`, `arcade-jttoki`, `arcade-jttora`, `arcade-jttrack`, `arcade-jttrojan`, `arcade-jttwin16`, `arcade-jtvigil`, `arcade-jtwc`, `arcade-jtwwfss`, `arcade-jtyiear`, `arcade-junofirst`, `arcade-kickandrun`, `arcade-ladybug`, `arcade-lunarlander`, `arcade-mariobros`, `arcade-mcr1`, `arcade-mcr2`, `arcade-mcr3`, `arcade-mcr3mono`, `arcade-mcr3scroll`, `arcade-missilecommand`, `arcade-moonpatrol`, `arcade-mrdo`, `arcade-mrjong`, `arcade-mysticmarathon`, `arcade-naughtyboy`, `arcade-neogeopocket`, `arcade-ninjakun`, `arcade-pacman`, `arcade-pengo`, `arcade-penguinkunwars`, `arcade-performan`, `arcade-phoenix`, `arcade-pleiads`, `arcade-polyplay`, `arcade-pong`, `arcade-pooyan`, `arcade-popeye`, `arcade-prehisle`, `arcade-psychic5`, `arcade-qbert`, `arcade-qix`, `arcade-rallyx`, `arcade-rbfs-only`, `arcade-riverpatrol`, `arcade-robotron`, `arcade-rshnatk`, `arcade-salamander`, `arcade-scootershooter`, `arcade-scramble`, `arcade-segasys1`, `arcade-segavicz80`, `arcade-silverland`, `arcade-slapfight`, `arcade-sms`, `arcade-snk6502`, `arcade-snk_triplez80`, `arcade-solomonskey`, `arcade-sonson`, `arcade-spaceinvaders`, `arcade-spacerace`, `arcade-sprint1`, `arcade-sprint2`, `arcade-st-v`, `arcade-starforce`, `arcade-subs`, `arcade-superbreakout`, `arcade-suprloco`, `arcade-taitof2`, `arcade-taitosj`, `arcade-tankbattalion`, `arcade-tecmo`, `arcade-tiamc1`, `arcade-timepilot`, `arcade-timepilot84`, `arcade-tnkiii`, `arcade-traverseusa`, `arcade-tropicalangel`, `arcade-turkeyshoot`, `arcade-tutankham`, `arcade-ultratank`, `arcade-vastar`, `arcade-vball`, `arcade-xevious`, `arcade-xsleena`, `arcade-zaxxon`, `arcade-zigzag`, `arcadelpf`, `arcadia`, `archie`, `arduboy`, `astrocade`, `atari2600`, `atari5200`, `atari7800`, `atari800`, `atarilynx`, `atarist`, `ataristuserio2`, `avision`, `ay-3-8500`, `bbcbridgecompanion`, `bbcmicro`, `bios`, `bk0011m`, `c128`, `c16`, `c64`, `cacert`, `casio_pv-1000`, `casio_pv-2000`, `cd-i`, `cdi`, `channelf`, `cheats`, `chess`, `chip8`, `coco2`, `coco3`, `coleco`, `colecoadam`, `colecovision`, `complexmultichromatic`, `computer`, `computer-cores`, `console`, `console-cd`, `console-cores`, `contrast_boost`, `controls_1_button`, `controls_2_buttons`, `controls_2_players`, `controls_3_buttons`, `controls_3_players`, `controls_4_buttons`, `controls_4_players`, `controls_5_buttons`, `controls_6_buttons`, `controls_dial`, `controls_move_2-way`, `controls_move_4-way`, `controls_move_8-way`, `controls_paddle`, `controls_spinner`, `controls_trackball`, `cores`, `corespecific`, `creativision`, `crt-simulation`, `displayspecific`, `docs`, `donut`, `downloader`, `downloader_bin`, `downloader_latest`, `drv`, `edsac`, `eg2000`, `enterprise`, `epochgalaxyii`, `essential`, `extra-utilities`, `famicom`, `fast_usb_polling`, `filters`, `filters_audio`, `filters_video`, `flappy`, `flappybird`, `font`, `galaksija`, `gamate`, `gameboy`, `gameboy2p`, `gameboyadvance`, `gameboycolor`, `gamecontrollerdb`, `gamegear`, `gamenwatch`, `gameoflife`, `games`, `gamma`, `gb`, `gba`, `gba2p`, `gba_accuracy`, `gbc`, `gbmidi`, `generalhardware`, `generallpf`, `genesis`, `genmidi`, `gnw`, `handheld2p`, `hbmame`, `homelab`, `ini_settings`, `inputtest`, `intellivision`, `interact`, `iq151`, `jaguar`, `jupiter`, `laser`, `laser310`, `lcd-general`, `lcd-integeronly`, `linux`, `lynx48`, `macplus`, `mame`, `mastersystem`, `megacd`, `megadrive`, `megadrive-core`, `megaduck`, `memtest`, `memtest_060mhz`, `memtest_100mhz`, `memtest_110mhz`, `memtest_120mhz`, `memtest_130mhz`, `memtest_140mhz`, `memtest_150mhz`, `memtest_160mhz`, `memtest_167mhz`, `menu`, `mgl`, `minimig`, `minimigdb9`, `minimigrgb8`, `minimiguserio2`, `mister_example-ini`, `misterfirmware`, `misterlaggy`, `mra`, `msx`, `msx1`, `multicomp`, `myvision`, `n64`, `neogeo`, `neogeo-cd`, `neogeo_24mhz_cpu_only`, `nes`, `nintendo`, `no-mad-entry-mra`, `no-setname-mra`, `odyssey2`, `old`, `ondra_spo186`, `orao`, `oric`, `other`, `other-cores`, `overlays`, `palettes`, `pc88`, `pc8801`, `pcengine`, `pcenginecd`, `pcjr`, `pcxt`, `pdp1`, `pet2001`, `pmd85`, `pocketchallengev2`, `pokemonmini`, `poly_gamma`, `presets`, `psx`, `pure_gamma`, `ql`, `readme`, `rtc`, `rx78`, `s32x`, `samba_on`, `samcoupe`, `saturn`, `scanlines-adaptive`, `scanlines-brighter`, `scanlines-standard`, `screen_horizontal_scan_rate_15khz`, `screen_horizontal_scan_rate_31khz`, `screen_no_tate`, `screen_rotation_flip`, `screen_rotation_horizontal`, `screen_rotation_vertical_ccw`, `screen_rotation_vertical_ccw_no_flip`, `screen_rotation_vertical_cw`, `screen_rotation_vertical_cw_no_flip`, `screen_tate_ccw`, `screen_tate_ccw_no_flip`, `screen_tate_cw`, `screen_tate_cw_no_flip`, `screen_tate_flip`, `scripts`, `scv`, `segacd`, `segamark3`, `service-cores`, `sgb`, `shadow_masks`, `sharpmz`, `simplemonochrome`, `slugcross`, `sms`, `snes`, `sordm5`, `specialist`, `spectrum`, `spmx`, `sufami`, `super_vision_8000`, `superfamicom`, `supergameboy`, `supernes`, `supernintendo`, `supervision`, `supervision8000`, `svi328`, `tandy1000`, `tatungeinstein`, `tgfx16`, `tgfx16-cd`, `tgfx16cd`, `ti-99_4a`, `ti994a`, `timezone`, `tk2000`, `tomyscramble`, `tomytutor`, `trs-80`, `tsconf`, `turbografx`, `turbografx16`, `turbografx16cd`, `turbografxcd`, `uk101`, `unlicensed_games`, `upscaling-lanczosbicubicetc`, `upscaling-recommended`, `upscaling-sharpbilinear`, `utility`, `vc4000`, `vector-06c`, `vector06`, `vector06c`, `vectrex`, `vic20`, `vt52`, `wifi`, `wonderswan`, `wonderswancolor`, `x68000`, `x68000userio2`, `yctxt`, `zx-spectrum`, `zx81`, `zxnext`, `zxspectrum`\n",
+      "readme": "# MiSTer Distribution DB9\n\nThis repository contains all the files that you'll want in your MiSTer.\n\nYou may download all of them at once as a zip through the [following link](https://github.com/MiSTer-DB9/Distribution_MiSTer/archive/refs/heads/main.zip). Once you have them, place them as-is in your SD card, and everything should work out of the box.\n\n### MiSTer Project\n\nIf you want to check more about the MiSTer project, please check [this wiki](https://github.com/MiSTer-devel/Main_MiSTer/wiki).\n\n### Downloader script\n\nFor downloading all of these files in an automatic fashion, use [this tool](https://github.com/MiSTer-devel/Downloader_MiSTer).\n\n#### List of Tags that you may use with the Downloader Filters:\n\n`acornatom`, `acornelectron`, `adam`, `adctest`, `adventurevision`, `alicemc10`, `all_filters`, `altair8800`, `alternatives`, `amiga`, `amstrad`, `amstrad-pcw`, `amstradpcw`, `ao486`, `ao486userio2`, `apogee`, `apple-i`, `apple-ii`, `aquarius`, `arcade`, `arcade-arkanoid`, `arcade-asteroids`, `arcade-asteroidsdeluxe`, `arcade-astrocade`, `arcade-atarisys1`, `arcade-ataritetris`, `arcade-athena`, `arcade-bagman`, `arcade-bankpanic`, `arcade-battlezone`, `arcade-berzerk`, `arcade-blackwidow`, `arcade-blockade`, `arcade-blueprint`, `arcade-bombjack`, `arcade-bosconian`, `arcade-breakout`, `arcade-bubsys`, `arcade-bubsysrom`, `arcade-burgertime`, `arcade-burningrubber`, `arcade-canyonbomber`, `arcade-cave`, `arcade-centipede`, `arcade-chameleon`, `arcade-chinagate`, `arcade-cityconnection`, `arcade-computerspace`, `arcade-congobongo`, `arcade-cores`, `arcade-cosmic`, `arcade-cosmicguerilla`, `arcade-crazyballoon`, `arcade-crazyclimber`, `arcade-crazykong`, `arcade-crystalcastles`, `arcade-darius`, `arcade-defender`, `arcade-digdug`, `arcade-dominos`, `arcade-donkeykong`, `arcade-donkeykong3`, `arcade-donkeykongjunior`, `arcade-dorodon`, `arcade-dottorikun`, `arcade-druaga`, `arcade-exerion`, `arcade-exidy2`, `arcade-expressraider`, `arcade-finalizer`, `arcade-foodfight`, `arcade-freeze`, `arcade-frenzy`, `arcade-galaga`, `arcade-galaxian`, `arcade-galivan`, `arcade-gaplus`, `arcade-gauntlet`, `arcade-gyruss`, `arcade-ikariwarriors`, `arcade-inferno`, `arcade-iremm107`, `arcade-iremm62`, `arcade-iremm72`, `arcade-iremm90`, `arcade-iremm92`, `arcade-ironhorse`, `arcade-jackal`, `arcade-jailbreak`, `arcade-joust2`, `arcade-jt1942`, `arcade-jt1943`, `arcade-jtajax`, `arcade-jtaliens`, `arcade-jtbiocom`, `arcade-jtbtiger`, `arcade-jtbubl`, `arcade-jtcal50`, `arcade-jtcastle`, `arcade-jtcircus`, `arcade-jtcommnd`, `arcade-jtcomsc`, `arcade-jtcontra`, `arcade-jtcop`, `arcade-jtcps1`, `arcade-jtcps15`, `arcade-jtcps2`, `arcade-jtdd`, `arcade-jtdd2`, `arcade-jtexed`, `arcade-jtflane`, `arcade-jtflstory`, `arcade-jtfround`, `arcade-jtgaiden`, `arcade-jtgng`, `arcade-jtgunsmk`, `arcade-jtkarnov`, `arcade-jtkchamp`, `arcade-jtkicker`, `arcade-jtkiwi`, `arcade-jtkunio`, `arcade-jtlabrun`, `arcade-jtmidres`, `arcade-jtmikie`, `arcade-jtmx5k`, `arcade-jtngp`, `arcade-jtngpc`, `arcade-jtninja`, `arcade-jtoutrun`, `arcade-jtpaclan`, `arcade-jtpang`, `arcade-jtparoda`, `arcade-jtpinpon`, `arcade-jtrastan`, `arcade-jtriders`, `arcade-jtroadf`, `arcade-jtroc`, `arcade-jtrumble`, `arcade-jts16`, `arcade-jts16b`, `arcade-jts18`, `arcade-jtsarms`, `arcade-jtsbaskt`, `arcade-jtsectnz`, `arcade-jtsf`, `arcade-jtshanon`, `arcade-jtshouse`, `arcade-jtsimson`, `arcade-jtslyspy`, `arcade-jtthundr`, `arcade-jttmnt`, `arcade-jttoki`, `arcade-jttora`, `arcade-jttrack`, `arcade-jttrojan`, `arcade-jttwin16`, `arcade-jtvigil`, `arcade-jtwc`, `arcade-jtwwfss`, `arcade-jtyiear`, `arcade-junofirst`, `arcade-kickandrun`, `arcade-ladybug`, `arcade-lunarlander`, `arcade-mariobros`, `arcade-mcr1`, `arcade-mcr2`, `arcade-mcr3`, `arcade-mcr3mono`, `arcade-mcr3scroll`, `arcade-missilecommand`, `arcade-moonpatrol`, `arcade-mrdo`, `arcade-mrjong`, `arcade-mysticmarathon`, `arcade-naughtyboy`, `arcade-neogeopocket`, `arcade-ninjakun`, `arcade-pacman`, `arcade-pengo`, `arcade-penguinkunwars`, `arcade-performan`, `arcade-phoenix`, `arcade-pleiads`, `arcade-polyplay`, `arcade-pong`, `arcade-pooyan`, `arcade-popeye`, `arcade-prehisle`, `arcade-psychic5`, `arcade-qbert`, `arcade-qix`, `arcade-rallyx`, `arcade-rbfs-only`, `arcade-riverpatrol`, `arcade-robotron`, `arcade-rshnatk`, `arcade-salamander`, `arcade-scootershooter`, `arcade-scramble`, `arcade-segasys1`, `arcade-segavicz80`, `arcade-silverland`, `arcade-slapfight`, `arcade-sms`, `arcade-snk6502`, `arcade-snk_triplez80`, `arcade-solomonskey`, `arcade-sonson`, `arcade-spaceinvaders`, `arcade-spacerace`, `arcade-sprint1`, `arcade-sprint2`, `arcade-st-v`, `arcade-starforce`, `arcade-subs`, `arcade-superbreakout`, `arcade-suprloco`, `arcade-taitof2`, `arcade-taitosj`, `arcade-tankbattalion`, `arcade-tecmo`, `arcade-tiamc1`, `arcade-timepilot`, `arcade-timepilot84`, `arcade-tnkiii`, `arcade-traverseusa`, `arcade-tropicalangel`, `arcade-turkeyshoot`, `arcade-tutankham`, `arcade-ultratank`, `arcade-vastar`, `arcade-vball`, `arcade-xevious`, `arcade-xsleena`, `arcade-zaxxon`, `arcade-zigzag`, `arcadelpf`, `arcadia`, `archie`, `arduboy`, `astrocade`, `atari2600`, `atari5200`, `atari7800`, `atari800`, `atarilynx`, `atarist`, `ataristuserio2`, `avision`, `ay-3-8500`, `bbcbridgecompanion`, `bbcmicro`, `bios`, `bk0011m`, `c128`, `c16`, `c64`, `cacert`, `casio_pv-1000`, `casio_pv-2000`, `cd-i`, `cdi`, `channelf`, `cheats`, `chess`, `chip8`, `coco2`, `coco3`, `coleco`, `colecoadam`, `colecovision`, `complexmultichromatic`, `computer`, `computer-cores`, `console`, `console-cd`, `console-cores`, `contrast_boost`, `controls_1_button`, `controls_2_buttons`, `controls_2_players`, `controls_3_buttons`, `controls_3_players`, `controls_4_buttons`, `controls_4_players`, `controls_5_buttons`, `controls_6_buttons`, `controls_dial`, `controls_move_2-way`, `controls_move_4-way`, `controls_move_8-way`, `controls_paddle`, `controls_spinner`, `controls_trackball`, `cores`, `corespecific`, `creativision`, `crt-simulation`, `displayspecific`, `docs`, `donut`, `downloader`, `downloader_bin`, `downloader_latest`, `drv`, `edsac`, `eg2000`, `enterprise`, `epochgalaxyii`, `essential`, `extra-utilities`, `famicom`, `fast_usb_polling`, `filters`, `filters_audio`, `filters_video`, `flappy`, `flappybird`, `font`, `galaksija`, `gamate`, `gameboy`, `gameboy2p`, `gameboyadvance`, `gameboycolor`, `gamecontrollerdb`, `gamegear`, `gamenwatch`, `gameoflife`, `games`, `gamma`, `gb`, `gba`, `gba2p`, `gba_accuracy`, `gbc`, `gbmidi`, `generalhardware`, `generallpf`, `genesis`, `genmidi`, `gnw`, `handheld2p`, `hbmame`, `homelab`, `ini_settings`, `inputtest`, `intellivision`, `interact`, `iq151`, `jaguar`, `jupiter`, `laser`, `laser310`, `lcd-general`, `lcd-integeronly`, `linux`, `lynx48`, `macplus`, `mame`, `mastersystem`, `megacd`, `megadrive`, `megadrive-core`, `megaduck`, `memtest`, `memtest_060mhz`, `memtest_100mhz`, `memtest_110mhz`, `memtest_120mhz`, `memtest_130mhz`, `memtest_140mhz`, `memtest_150mhz`, `memtest_160mhz`, `memtest_167mhz`, `menu`, `mgl`, `minimig`, `minimigdb9`, `minimigrgb8`, `minimiguserio2`, `mister_example-ini`, `misterfirmware`, `misterlaggy`, `mra`, `msx`, `msx1`, `multicomp`, `myvision`, `n64`, `neogeo`, `neogeo-cd`, `neogeo_24mhz_cpu_only`, `nes`, `nintendo`, `no-mad-entry-mra`, `no-setname-mra`, `odyssey2`, `old`, `ondra_spo186`, `orao`, `oric`, `other`, `other-cores`, `overlays`, `palettes`, `pc88`, `pc8801`, `pcengine`, `pcenginecd`, `pcjr`, `pcxt`, `pdp1`, `pet2001`, `pmd85`, `pocketchallengev2`, `pokemonmini`, `poly_gamma`, `presets`, `psx`, `pure_gamma`, `ql`, `readme`, `rtc`, `rx78`, `s32x`, `samba_on`, `samcoupe`, `saturn`, `scanlines-adaptive`, `scanlines-brighter`, `scanlines-standard`, `screen_horizontal_scan_rate_15khz`, `screen_horizontal_scan_rate_31khz`, `screen_no_tate`, `screen_rotation_flip`, `screen_rotation_horizontal`, `screen_rotation_vertical_ccw`, `screen_rotation_vertical_ccw_no_flip`, `screen_rotation_vertical_cw`, `screen_rotation_vertical_cw_no_flip`, `screen_tate_ccw`, `screen_tate_ccw_no_flip`, `screen_tate_cw`, `screen_tate_cw_no_flip`, `screen_tate_flip`, `scripts`, `scv`, `segacd`, `segamark3`, `service-cores`, `sgb`, `shadow_masks`, `sharpmz`, `simplemonochrome`, `slugcross`, `sms`, `snes`, `sordm5`, `specialist`, `spectrum`, `spmx`, `sufami`, `super_vision_8000`, `superfamicom`, `supergameboy`, `supernes`, `supernintendo`, `supervision`, `supervision8000`, `svi328`, `tandy1000`, `tatungeinstein`, `tgfx16`, `tgfx16-cd`, `tgfx16cd`, `ti-99_4a`, `ti994a`, `timezone`, `tk2000`, `tomyscramble`, `tomytutor`, `trs-80`, `tsconf`, `turbografx`, `turbografx16`, `turbografx16cd`, `turbografxcd`, `uk101`, `unlicensed_games`, `upscaling-lanczosbicubicetc`, `upscaling-recommended`, `upscaling-sharpbilinear`, `utility`, `vc4000`, `vector-06c`, `vector06`, `vector06c`, `vectrex`, `vic20`, `vt52`, `wifi`, `wonderswan`, `wonderswancolor`, `x68000`, `x68000userio2`, `yctxt`, `zx-spectrum`, `zx81`, `zxnext`, `zxspectrum`\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-DB9/Distribution_MiSTer",
@@ -17728,6 +17727,12 @@
           "sha": "d7f600c5609c562aa4a1c135eef934a8bd63cd22",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Genesis_MiSTer/master/releases/Genesis_20260502.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "Genesis_20260504.rbf",
+          "sha": "700aad75ce009df0f3b39a2c905d86d3d675cf87",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Genesis_MiSTer/master/releases/Genesis_20260504.rbf",
+          "type": "RBF"
         }
       ]
     },
@@ -18423,6 +18428,12 @@
           "sha": "38c653f269d1d17da45ff0ca68a6e7d392b146a1",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Main_MiSTer/master/releases/MiSTer_20260501",
           "type": "OTHER"
+        },
+        {
+          "name": "MiSTer_20260505",
+          "sha": "c05db31c2ab6000ca1a8b658f34091d4d9e736ae",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Main_MiSTer/master/releases/MiSTer_20260505",
+          "type": "OTHER"
         }
       ]
     },
@@ -18655,6 +18666,12 @@
           "sha": "d6511e5c2e911cd656ef74955a1c2c5678ddbe84",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/MegaCD_MiSTer/master/releases/MegaCD_20260503.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "MegaCD_20260504.rbf",
+          "sha": "3288861c8abd9fcaa9103864b7cc5cf2be6a968b",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/MegaCD_MiSTer/master/releases/MegaCD_20260504.rbf",
+          "type": "RBF"
         }
       ]
     },
@@ -18748,6 +18765,18 @@
           "name": "MegaDrive_20260503.rbf",
           "sha": "19f0384925c1829a16a3cb6451cfbf7ad1b6b888",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/MegaDrive_MiSTer/main/releases/MegaDrive_20260503.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "MegaDrive_20260504.rbf",
+          "sha": "b9302be9caa6a88db51aae03c1979f2cade5a5e3",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/MegaDrive_MiSTer/main/releases/MegaDrive_20260504.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "MegaDrive_20260505.rbf",
+          "sha": "36c9188b0b80f5d3c710da74d9fa6e5c9a96910c",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/MegaDrive_MiSTer/main/releases/MegaDrive_20260505.rbf",
           "type": "RBF"
         }
       ]
@@ -20019,6 +20048,12 @@
           "sha": "b32558fc5291e91244fb67d4e5dd1a0d92eb7061",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/NES_MiSTer/master/releases/NES_20260503.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "NES_20260504.rbf",
+          "sha": "68a17cc1079fd61f75f9fa7deca8c34e0e978f93",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/NES_MiSTer/master/releases/NES_20260504.rbf",
+          "type": "RBF"
         }
       ]
     },
@@ -20425,6 +20460,12 @@
           "sha": "e3438f46dd7cfccdb42d1137a4d3f1c3ed39f441",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/PSX_MiSTer/main/releases/PSX_20260503.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "PSX_20260504.rbf",
+          "sha": "c4e6086ed5a8515425a8a7af6b0a63a6ab8f4935",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/PSX_MiSTer/main/releases/PSX_20260504.rbf",
+          "type": "RBF"
         }
       ]
     },
@@ -20637,6 +20678,12 @@
           "sha": "4343c4c2dcbc9c0823391675322bf7f2a58eb86d",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/S32X_MiSTer/main/releases/S32X_20260503.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "S32X_20260504.rbf",
+          "sha": "08337d41482639bd8ad608f44a48f5ea04b8652c",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/S32X_MiSTer/main/releases/S32X_20260504.rbf",
+          "type": "RBF"
         }
       ]
     },
@@ -20846,6 +20893,42 @@
           "name": "Saturn_20260502.rbf",
           "sha": "b34501dcce87c4b273a09ca9825c88c94de8ce00",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Saturn_MiSTer/main/releases/Saturn_20260502.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Saturn_20260504.rbf",
+          "sha": "fef1130013a50443bcb4c11ab97c738deff80d8b",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Saturn_MiSTer/main/releases/Saturn_20260504.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Saturn_20260505.rbf",
+          "sha": "f3cde0e3fa1cce2f3d47462d5699eddedcafcdfe",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Saturn_MiSTer/main/releases/Saturn_20260505.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Saturn_20260506.rbf",
+          "sha": "92245e57deda006d362ccac908b70b378e0a8cb1",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Saturn_MiSTer/main/releases/Saturn_20260506.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Saturn_20260507.rbf",
+          "sha": "4e0ba1480ed13a060c9bae87028bf8875261a3ce",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Saturn_MiSTer/main/releases/Saturn_20260507.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Saturn_20260509.rbf",
+          "sha": "04150ff96bbbbee95d2fba4b2c707b1ddc081063",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Saturn_MiSTer/main/releases/Saturn_20260509.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Saturn_20260510.rbf",
+          "sha": "9e13c09d1a7978ef4c3181d7cac5be4866713692",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Saturn_MiSTer/main/releases/Saturn_20260510.rbf",
           "type": "RBF"
         },
         {
@@ -21574,6 +21657,12 @@
           "sha": "f10fbedb2447fcdef9f99475ee43e82bd240d4c6",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/SGB_MiSTer/main/releases/SGB_20260503.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "SGB_20260504.rbf",
+          "sha": "e65be81fbb9dab7fa0ead3e7653e4b4f88fe5043",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/SGB_MiSTer/main/releases/SGB_20260504.rbf",
+          "type": "RBF"
         }
       ]
     },
@@ -21896,6 +21985,12 @@
           "name": "SMS_20260503.rbf",
           "sha": "597123a961a70b3d770f2f46129bd03a55a4b8f3",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/SMS_MiSTer/master/releases/SMS_20260503.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SMS_20260504.rbf",
+          "sha": "70d559fc7063ce9eeb77d73104803e0e0e223195",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/SMS_MiSTer/master/releases/SMS_20260504.rbf",
           "type": "RBF"
         },
         {
@@ -22308,6 +22403,18 @@
           "type": "RBF"
         },
         {
+          "name": "SNES_20260504.rbf",
+          "sha": "688221726e0957dbe42b5f4a8c93f61cd868f9a2",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/SNES_MiSTer/master/releases/SNES_20260504.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "SNES_20260505.rbf",
+          "sha": "42f4618ece375fb7a60786c2d8b8d8dfd0b619c2",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/SNES_MiSTer/master/releases/SNES_20260505.rbf",
+          "type": "RBF"
+        },
+        {
           "name": "boot1.rom",
           "sha": "d899af9bcd3bfd8c51fe5ba5dc5d71c858063d54",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/SNES_MiSTer/master/releases/boot1.rom",
@@ -22381,6 +22488,12 @@
           "name": "Ti994a_20260502.rbf",
           "sha": "f671820f27d0834825ec6a76a0714d244ee3f8cb",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/TI-99_4A_MiSTer/master/releases/Ti994a_20260502.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Ti994a_20260505.rbf",
+          "sha": "eb85e45262a8baba48625ec4d8dcb1b69ed8baaa",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/TI-99_4A_MiSTer/master/releases/Ti994a_20260505.rbf",
           "type": "RBF"
         }
       ]
@@ -23127,6 +23240,12 @@
           "name": "TurboGrafx16_20260502.rbf",
           "sha": "395b0e676f37a282ea16a59741dd7ff184ca132d",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/TurboGrafx16_MiSTer/master/releases/TurboGrafx16_20260502.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "TurboGrafx16_20260504.rbf",
+          "sha": "be56eaa03a9749126a016c80840b68d37bdd0b3b",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/TurboGrafx16_MiSTer/master/releases/TurboGrafx16_20260504.rbf",
           "type": "RBF"
         }
       ]
