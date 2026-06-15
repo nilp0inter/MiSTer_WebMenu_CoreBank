@@ -864,7 +864,7 @@
     {
       "name": "Unofficial_Distribution_MiSTer",
       "description": null,
-      "readme": "# theypsilon Unofficial Distribution\n\nThis repository contains some unofficial MiSTer cores. No new cores will be added.\n\n#### List of Tags that you may use with the Downloader and the 'Custom Download Filters' feature.\n\n`alternatives`, `arcade`, `arcade-cores`, `arcade-nemesis`, `arcade-rbfs-only`, `controls_3_buttons`, `controls_move_8-way`, `cores`, `games`, `hbmame`, `mame`, `mra`, `screen_horizontal_scan_rate_15khz`, `screen_no_tate`, `screen_rotation_horizontal`",
+      "readme": "# theypsilon Unofficial Distribution\n\nThis repository contains some unofficial MiSTer cores. No new cores will be added.\n\n#### List of Tags that you may use with the Downloader and the 'Custom Download Filters' feature.\n\n`alternatives`, `arcade`, `arcade-cores`, `arcade-nemesis`, `arcade-rbfs-only`, `bios`, `computer`, `computer-cores`, `controls_3_buttons`, `controls_move_8-way`, `cores`, `docs`, `extra-utilities`, `games`, `hbmame`, `maclc`, `mame`, `mra`, `readme`, `screen_horizontal_scan_rate_15khz`, `screen_no_tate`, `screen_rotation_horizontal`",
       "archived": false,
       "fork": false,
       "url": "https://github.com/theypsilon/Unofficial_Distribution_MiSTer",
@@ -895,6 +895,15 @@
       "archived": false,
       "fork": false,
       "url": "https://github.com/theypsilon/Update_All_MiSTer",
+      "releases": []
+    },
+    {
+      "name": "Zaparoo_MiSTer",
+      "description": null,
+      "readme": "# Zaparoo MiSTer Database\n\nMiSTer Downloader / Update All database for Zaparoo.\n\nIt installs:\n\n- `Scripts/zaparoo.sh` \u2014 Zaparoo Core for MiSTer\n- `zaparoo/frontend` \u2014 Zaparoo Frontend\n- `zaparoo/MiSTer_Zaparoo` \u2014 frontend dependency\n- `zaparoo/menu_zaparoo.rbf` \u2014 frontend dependency\n\n## Manual install\n\nAdd this to `/media/fat/downloader.ini`:\n\n```ini\n[ZaparooProject/Zaparoo_MiSTer]\ndb_url = https://raw.githubusercontent.com/ZaparooProject/Zaparoo_MiSTer/db/db.json.zip\n```\n\nThen run `downloader` or `update_all`.\n\nThere is also a drop-in config ZIP:\n\n```text\nhttps://raw.githubusercontent.com/ZaparooProject/Zaparoo_MiSTer/db/downloader_ZaparooProject_Zaparoo_MiSTer.zip\n```\n\n## Binaries\n\nThis repo does not mirror Zaparoo binaries.\n\nThe workflow builds a Downloader database that points to the official release ZIPs from:\n\n- `ZaparooProject/zaparoo-core`\n- `ZaparooProject/zaparoo-frontend`\n\nDownloader extracts the MiSTer files it needs from those ZIPs.\n\n## Maintainer notes\n\nThe database rebuilds on pushes to `main`, on a schedule, and when run manually from GitHub Actions.\n\nManual runs can target specific `zaparoo-core` or `zaparoo-frontend` release tags. Otherwise the workflow uses the latest release from each repo.\n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/theypsilon/Zaparoo_MiSTer",
       "releases": []
     }
   ]
