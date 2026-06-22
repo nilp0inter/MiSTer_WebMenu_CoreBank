@@ -1186,6 +1186,41 @@
       "releases": []
     },
     {
+      "name": "Arcade-ActFancer_MiSTer",
+      "description": null,
+      "readme": "# Arcade-ActFancer_MiSTer\n\nFPGA core for **Act-Fancer Cybernetick Hyper Weapon** (Data East, 1989)\ntargeting the [MiSTer FPGA](https://github.com/MiSTer-devel) platform\n(Terasic DE10-Nano).\n\nAct-Fancer is a **side-scrolling action platformer** running on\n**Data East DEC0 hardware**.\n\n## Status\n\n**Current version: 1.0** (June 2026).\n\nThe core runs the full game with audio and inputs.\n\n**Features**\n- HuC6280 main CPU @ 7.159 MHz (HUC6280 VHDL core)\n- M6502 sound CPU @ 1.5 MHz (T65 VHDL core)\n- YM2203 OPN + YM3812 OPL2 + OKI M6295 ADPCM, MAME-accurate clocks\n- 256\u00d7240 active video area, 57.45 Hz refresh (hardware-accurate)\n- 2 BAC06 tile layers (PF0 16\u00d716 background + PF1 8\u00d78 characters) via Jotego's `jtcop_bac06`\n- MXC06 sprite chip (16\u00d716, palette-banking, priority)\n- Per-channel audio mixer in OSD (YM2203 / YM3812 / OKI ADPCM gain, 7-bit Q4.4)\n- **Analog VGA H-Shift / V-Shift / H-Size** OSD options for fine alignment on 15 kHz CRTs\n- Pause overlay with logo + supporters scroll\n- Hardware-accurate DIP switches: Coinage, Demo Sounds, Flip Screen,\n  Cabinet, Lives, Difficulty, Bonus Life\n\n**ROM sets supported**\n- Act-Fancer (`actfancr`, World rev 3)\n- Act-Fancer (`actfancr1`, World rev 1)\n- Act-Fancer (`actfancr2`, World rev 2)\n- Act-Fancer (`actfancrj`, Japan rev 1)\n\n## Screenshots\n\n| | |\n|---|---|\n| ![Title](docs/title.png) | ![Hero intro](docs/hero_intro.png) |\n| Title screen | Hero intro |\n| ![Attract \u2014 city](docs/attract_city.png) | ![Attract \u2014 corridor](docs/attract_corridor.png) |\n| Attract mode \u2014 city | Attract mode \u2014 corridor |\n| ![Stage 1](docs/stage1_city.png) | |\n| Stage 1 \u2014 ruined city | |\n\n## Hardware emulated\n\n| Component        | Spec                                                |\n|------------------|-----------------------------------------------------|\n| Master clock     | 21.477 MHz crystal (main CPU XIN)                   |\n| Main CPU         | HuC6280 @ 7.159 MHz (21.477 / 3)                    |\n| Sound CPU        | M6502 @ 1.5 MHz                                     |\n| Sound chip 1     | Yamaha YM2203 (OPN) @ 1.5 MHz (jt03)                |\n| Sound chip 2     | Yamaha YM3812 (OPL2) @ 3.0 MHz (jtopl2)             |\n| Sound chip 3     | OKI M6295 (jt6295) @ 1.056 MHz, pin7=HIGH           |\n| Video resolution | 256\u00d7240 active                                      |\n| Pixel clock      | 6.000 MHz (96 MHz / 16)                             |\n| HTotal / VTotal  | 384 / 272                                           |\n| Refresh rate     | 57.45 Hz (6 MHz / 384 / 272, hardware-accurate)     |\n| PF0 (BG)         | 16\u00d716 4bpp tile layer (BAC06)                       |\n| PF1 (FG / chars) | 8\u00d78 4bpp tile layer (BAC06)                         |\n| Sprites          | 16\u00d716 4bpp, MXC06 sprite chip                       |\n| Palette          | xBGR_555, 1024 entries                              |\n| Tile / sprite IC | DECO BAC06 (\u00d72) + MXC06                             |\n\n## Analog VGA H-Size (analog_hsize)\n\nThe core includes a custom **Analog VGA horizontal pixel-stretch** module\n(`sys/analog_hsize.sv`) authored by the core developer and originally\nreleased as a standalone reusable module:\n\n- Repository: [MiSTer-AnalogHStretch](https://github.com/rmonic79/MiSTer-AnalogHStretch)\n\nWhat it does on the analog VGA branch only (HDMI is NOT touched):\n- Each source pixel is emitted to the DAC for the same **integer-uniform**\n  number of pixel-clock periods. Identical stretch factor on every pixel of\n  every line \u21d2 no shimmering, no blending/blur, no duplicated pixels.\n- The slight reduction in analog horizontal sync rate is absorbed by the\n  porches, well within the tolerance of 15 kHz CRTs / PVMs.\n\nControlled by the `Analog VGA H-Size` OSD entry (0 = bypass, +1..+7 =\nprogressively wider analog viewport).\n\n## Hardware requirements\n\n- Terasic DE10-Nano\n- MiSTer I/O board (recommended)\n- Works on HDMI displays and on 15 kHz CRTs via the analog video output\n\n## Building from source\n\nRequires Quartus Prime 17.0 (free Lite Edition).\n\n```\nOpen ActFancer.qpf in Quartus \u2192 Processing \u2192 Start Compilation\n```\n\nOutput bitstream is generated in `output_files/ActFancer.rbf` (~3.7 MB).\n\n## Running on MiSTer\n\nThe [releases/](releases/) folder contains the parent MRA, regional\nclones and a prebuilt RBF:\n\n- `Act-Fancer (World rev 3).mra` \u2014 parent MRA\n- `ActFancer_YYYYMMDD.rbf` \u2014 prebuilt bitstream\n- `Act-Fancer (World rev 1).mra` / `(World rev 2).mra` / `(Japan rev 1).mra` \u2014 regional clones\n\nSteps:\n\n1. Copy the `.rbf` to `_Arcade/cores/` on the MiSTer SD card.\n2. Copy the `.mra` file(s) to `_Arcade/` on the MiSTer SD card.\n3. Provide your legally-owned `actfancr.zip` (or regional variant) where\n   the MRA expects it (usually in `games/mame/`).\n\n**ROMs are NOT included in this repository.** You must provide them yourself.\n\n## Repository layout\n\n```\nArcade-ActFancer_MiSTer/\n\u251c\u2500\u2500 rtl/\n\u2502   \u251c\u2500\u2500 actfancer/    Act-Fancer-specific core RTL\n\u2502   \u251c\u2500\u2500 HUC6280/      HuC6280 main CPU (VHDL)\n\u2502   \u251c\u2500\u2500 pll/          Clock PLL\n\u2502   \u251c\u2500\u2500 sound/        Sound chip cores (jt03, jtopl, jt6295, t65)\n\u2502   \u251c\u2500\u2500 common/       Shared utilities (BRAM ROMs, DDRAM bridge)\n\u2502   \u2514\u2500\u2500 sdram.sv      SDRAM controller (Sorgelig)\n\u251c\u2500\u2500 sys/              MiSTer framework (Sorgelig / MiSTer-devel)\n\u251c\u2500\u2500 jtframe/          JTFRAME framework modules\n\u251c\u2500\u2500 logo/             Pause overlay assets (font, logo, supporter list)\n\u251c\u2500\u2500 releases/         Parent MRA + regional clones + prebuilt RBF\n\u251c\u2500\u2500 ActFancer.qpf     Quartus project\n\u251c\u2500\u2500 ActFancer.qsf     Quartus assignments\n\u251c\u2500\u2500 ActFancer.sv      Top-level wrapper\n\u251c\u2500\u2500 Template.sdc      Timing constraints\n\u251c\u2500\u2500 files.qip         HDL file list\n\u251c\u2500\u2500 build_id.v        Build version stamp\n\u2514\u2500\u2500 README.md         This file\n```\n\n## Acknowledgements\n\n- **Jose Tejada** ([@jotego](https://github.com/jotego)) for JT03 (YM2203),\n  JTOPL (YM3812), JT6295 (OKI M6295), `jtcop_bac06` (DECO tilemap) and\n  the JTFRAME framework.\n- **Daniel Wallner** for the T65 (6502) core.\n- **Mike Johnson / Wolfgang Scherr** and others for the HUC6280 VHDL core.\n- **Sorgelig** and the **MiSTer-devel team** for the framework, SDRAM\n  controller and Template.\n\n## Support this project\n\nIf you enjoy this core and want to support its development:\n\n- [Ko-fi](https://ko-fi.com/ibecerivideoludici) \u2014 one-time support\n- [Patreon](https://www.patreon.com/IBeceriVideoludici) \u2014 monthly support\n- [PayPal](https://www.paypal.me/IBeceriVideoludici) \u2014 one-time donation\n\n## Follow\n\n- [GitHub](https://github.com/rmonic79)\n- [Twitch](https://twitch.tv/ibecerivideoludici) \u2014 live streams\n- [YouTube](https://www.youtube.com/c/IBeceriVideoludici) \u2014 playlists and videos\n- [X / Twitter](https://x.com/rmonic79)\n\n## License\n\nThe RTL source code in this repository is provided as-is for educational\nand preservation purposes under **GNU GPL v3 or later**. Original ROM data\nis not included; users must provide their own legally obtained copies.\n\nOriginal *Act-Fancer Cybernetick Hyper Weapon* arcade hardware \u00a9 Data East\nCorporation, 1989.\n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/MiSTer-devel/Arcade-ActFancer_MiSTer",
+      "releases": [
+        {
+          "name": ".DS_Store",
+          "sha": "5008ddfcf53c02e82d7eee2e57c38e5672ef89f6",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-ActFancer_MiSTer/master/releases/.DS_Store",
+          "type": "OTHER"
+        },
+        {
+          "name": "Act-Fancer Cybernetick Hyper Weapon (World revision 3).mra",
+          "sha": "77d39c31e2df808b5cde39cb1c87c05a64185e59",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-ActFancer_MiSTer/master/releases/Act-Fancer%20Cybernetick%20Hyper%20Weapon%20(World%20revision%203).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Act-Fancer Cybernetick Hyper Weapon (World rev 3)",
+            "rbf": "ActFancer",
+            "zips": [
+              "actfancr.zip"
+            ]
+          }
+        },
+        {
+          "name": "ActFancer_20260615.rbf",
+          "sha": "9e7c011f045b5ccbeee13f01150d6039490d53a5",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-ActFancer_MiSTer/master/releases/ActFancer_20260615.rbf",
+          "type": "RBF"
+        }
+      ]
+    },
+    {
       "name": "Arcade-AsteroidsDeluxe_MiSTer",
       "description": "Asteroids Deluxe",
       "readme": "# [Arcade: Asteroids Deluxe](https://www.arcade-museum.com/game_detail.php?game_id=6940) for [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\nThe original source code was downloaded from: http://fpgaarcade.com/games.htm\n\n## Description\n\nThis is a simulation model of the Asteroids Deluxe hardware which is a vector graphics based arcade system that utilized a 6502 processor along with a proprietary display.\n\nThis Arcade Core only runs Asteroids Deluxe. There is a separate core for the original Asteroids arcade game: https://github.com/MiSTer-devel/Arcade-Asteroids_MiSTer\n\n## ROM Files Instructions\n\n**ROMs are not included!** In order to use this arcade core, you will need to provide the correct ROM file yourself.\n\nTo simplify the process .mra files are provided in the releases folder, that specify the required ROMs with their checksums. The ROMs .zip filename refers to the\ncorresponding file from the MAME project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for information on how to setup and use the environment.\n\nQuick reference for folders and file placement:\n\n```\n/_Arcade/<game name>.mra  \n/_Arcade/cores/<game rbf>.rbf  \n/_Arcade/mame/<mame rom>.zip  \n/_Arcade/hbmame/<hbmame rom>.zip  \n```\n",
@@ -4545,6 +4580,74 @@
       ]
     },
     {
+      "name": "Arcade-Darius2WarriorBlade_MiSTer",
+      "description": null,
+      "readme": "# Arcade-Darius2WarriorBlade_MiSTer\n\nFPGA core for the Taito **dual-screen** arcade hardware targeting the\n[MiSTer FPGA](https://github.com/MiSTer-devel) platform\n(Terasic DE10-Nano). The core runs **Darius II** (dual screen), **Sagaia**\nand **Warrior Blade \u2014 Rastan Saga Episode III**.\n\nThe board uses a single 68000 main CPU, a Z80 sound CPU with YM2610, two\nTC0100SCN tilemap chips driving two screens side by side, two TC0110PR\npalette/priority chips, and a sprite generator.\n\nThis core reimplements the hardware in SystemVerilog from MAME references\nand hardware observation.\n\n> This repository contains the full SystemVerilog source code, plus a\n> pre-built bitstream and the parent MRA files in [releases/](releases/).\n> You can also build the core yourself with Quartus (see *Building from\n> source*).\n\n## About the games\n\nTaito built a small family of \"wide\" cabinets that spread the action across\nseveral CRTs sitting side by side. The game that ties this family together is\n**Darius II** (1989): it shipped on *two different* Taito wide boards \u2014 a\n**three-screen** version (the *ninjaw* board) and the **two-screen** version\nemulated here. The three-screen Darius II is available in a separate core;\nthis one is its two-screen counterpart, with each 320-pixel panel driven by\nits own TC0100SCN tilemap chip and joined into a single 640-pixel image.\n\nThree games shipped on this dual-screen board:\n\n- **Darius II** (1989) \u2014 the horizontal shoot-'em-up with the branching\n  stage map and the giant mechanical sea-life bosses. On two screens the\n  Silver Hawk fights across a genuinely panoramic battlefield.\n- **Sagaia** \u2014 the same game in its **World** revision, retitled for markets\n  outside Japan.\n- **Warrior Blade \u2014 Rastan Saga Episode III** (1991) \u2014 a fantasy\n  beat-'em-up and the third chapter of the *Rastan* saga. Up to two players\n  pick from Rastan, Dewey or Sophia and fight across the full width of both\n  screens. Magic is cast through an allied wizard companion rather than a\n  dedicated button \u2014 a quirk faithfully reproduced here.\n\nNotably, *Darius II* and *Warrior Blade* share the very same dual-screen\nboard yet feel nothing alike \u2014 one a spaceship shooter, the other a\nsword-and-sorcery brawler \u2014 which is exactly why a single core runs both.\n\n## Status\n\n**Current version: 1.0** (2026).\n\nThe core runs all three games end-to-end and has been tested on real\nMiSTer hardware.\n\n**Planned for a future release:**\n- Savestate support (ssbus infrastructure already in place)\n\n**Features**\n- M68000 main CPU (FX68K core) \u2014 single 68000\n- Z80 sound CPU (T80) with Taito TC0140SYT main\u2194sound communication\n- Two TC0100SCN tilemap chips (MAME-accurate): BG0, BG1 with per-row scroll\n  and per-column scroll, plus the FG0 text layer\n- Two TC0110PR palette / priority chips\n- Sprite renderer with priority, flip, buffered sprite RAM\n- Audio: YM2610 (FM + SSG + ADPCM-A/B) via JT12, MSM5205 via JT5205\n- Dual-screen composition (two 320-pixel panels side by side)\n- Graphics and audio data streaming through a multi-port SDRAM controller\n- Additional graphics/audio data backed by DDR3\n- VBlank-synchronized pause (frame-aligned, no race conditions)\n- MiSTer OSD with video and DIP options\n\n**Games supported**\n- Darius II (Japan, dual screen)\n- Sagaia (World, dual screen)\n- Warrior Blade \u2014 Rastan Saga Episode III (Japan)\n\n## Screenshots\n\n### Darius II\n\n| | |\n|---|---|\n| ![Darius II logo](docs/D2_Logo.png) | ![Darius II attract](docs/D2_Attract.png) |\n| ![Darius II gameplay](docs/D2_Gameplay.png) | ![Taito logo](docs/D2_Taito_Logo.png) |\n\n### Sagaia\n\n| | |\n|---|---|\n| ![Sagaia logo](docs/Sagaia_Logo.png) | ![Sagaia attract](docs/Sagaia_Attract.png) |\n| ![Sagaia gameplay](docs/Sagaia_Gameplay.png) | |\n\n### Warrior Blade \u2014 Rastan Saga Episode III\n\n| | |\n|---|---|\n| ![Warrior Blade logo](docs/WB_Logo.png) | ![Warrior Blade character select](docs/WB_Character_Select.png) |\n| ![Warrior Blade gameplay](docs/WB_Gameplay_1.png) | ![Warrior Blade gameplay](docs/WB_Gameplay_2.png) |\n\n## Hardware emulated\n\n| Component        | Spec                                                |\n|------------------|-----------------------------------------------------|\n| Main CPU         | M68000 (FX68K)                                       |\n| Sound CPU        | Z80 (T80)                                            |\n| Sound chip       | Yamaha YM2610 (FM + SSG + ADPCM-A/B, jt12)           |\n| ADPCM            | OKI MSM5205 (jt5205)                                 |\n| Sound comm       | Taito TC0140SYT                                      |\n| Tilemaps         | TC0100SCN \u00d72 (dual screen, BG0/BG1/FG0)              |\n| Palette / prio   | TC0110PR \u00d72                                          |\n\n## Hardware requirements\n\n- Terasic DE10-Nano\n- MiSTer I/O board (recommended)\n- SDRAM module (32 MB or 64 MB)\n- DDR3 memory (built into DE10-Nano)\n- Works on HDMI displays and on CRTs via the analog video output\n\n## Building from source\n\nRequires Quartus Prime 17.0 (free Lite Edition).\n\n```\nOpen Darius2WarriorBlade.qpf in Quartus \u2192 Processing \u2192 Start Compilation\n```\n\nOutput bitstream is generated in `output_files/Darius2WarriorBlade.rbf`.\n\n## Running on MiSTer\n\nThe [releases/](releases/) folder contains the pre-built bitstream and the\nparent MRA files for all three games:\n\n- `Darius2WarriorBlade_YYYYMMDD.rbf` \u2014 pre-built core bitstream\n- `Darius II (Japan, dual screen, rev 2).mra` \u2014 Darius II parent MRA\n- `Sagaia (World, dual screen).mra` \u2014 Sagaia parent MRA\n- `Warrior Blade (Japan).mra` \u2014 Warrior Blade parent MRA\n\nAlternative ROM sets are provided in\n[releases/alternatives/](releases/alternatives/):\n\n- `Darius II (Japan, dual screen, rev 1).mra` \u2014 darius2do (earlier revision)\n\nSteps:\n\n1. Copy the `.rbf` to `_Arcade/cores/` on the MiSTer SD card.\n2. Copy the desired `.mra` file(s) to `_Arcade/` on the MiSTer SD card.\n3. Provide your legally-owned ROM files where each MRA expects them\n   (usually in `games/mame/`).\n\n**ROMs are NOT included in this repository.** You must provide them yourself.\n\n## Repository layout\n\n```\nArcade-Darius2WarriorBlade_MiSTer/\n\u251c\u2500\u2500 rtl/\n\u2502   \u251c\u2500\u2500 darius2/   Darius II / Warrior Blade core RTL (TC0100SCN, TC0110PR,\n\u2502   \u2502              TC0140SYT, sprite renderer, memory maps, audio, bridges)\n\u2502   \u251c\u2500\u2500 fx68k/     FX68K M68000 cycle-accurate core\n\u2502   \u251c\u2500\u2500 t80/       Z80 sound CPU\n\u2502   \u251c\u2500\u2500 jt12/      YM2610 / YM2203 FM + SSG + ADPCM\n\u2502   \u251c\u2500\u2500 jt5205/    MSM5205 ADPCM\n\u2502   \u251c\u2500\u2500 jtframe/   JTFRAME framework helpers\n\u2502   \u251c\u2500\u2500 pll/       Clock PLL\n\u2502   \u2514\u2500\u2500 sdram.sv   SDRAM controller (Sorgelig)\n\u251c\u2500\u2500 sys/                    MiSTer framework (Sorgelig / MiSTer-devel)\n\u251c\u2500\u2500 logo/                   Pause overlay assets\n\u251c\u2500\u2500 docs/                   Screenshots\n\u251c\u2500\u2500 releases/         Pre-built .rbf + parent MRA files (all three games)\n\u2502   \u2514\u2500\u2500 alternatives/ MRA files for alternate ROM sets (Darius II rev 1)\n\u251c\u2500\u2500 Darius2WarriorBlade.qpf Quartus project\n\u251c\u2500\u2500 Darius2WarriorBlade.qsf Quartus assignments\n\u251c\u2500\u2500 Template.sv             Top-level wrapper\n\u251c\u2500\u2500 Template.sdc            Timing constraints\n\u251c\u2500\u2500 files.qip               HDL file list\n\u2514\u2500\u2500 README.md               This file\n```\n\n## Acknowledgements\n\n- **Jose Tejada** ([@jotego](https://github.com/jotego)) for JT12 (YM2610),\n  JT5205 (MSM5205) and the JTFRAME framework.\n- **Jorge Cwik** ([ijor](https://github.com/ijor)) for the **FX68K**\n  cycle-accurate M68000 core.\n- **Martin Donlon** ([wickerwaka](https://github.com/wickerwaka)) for the\n  Taito F2 core: the TC0140SYT sound-comm chip and the savestate bus\n  layout used here come from that work, and his F2 hardware analysis was a\n  foundational reference for composing this core.\n- The **MAMEDev team** for the invaluable reference on the TC0100SCN\n  tilemaps, TC0110PR palette/priority, memory maps and timing.\n- **Sorgelig** and the **MiSTer-devel team** for the framework, SDRAM\n  controller and Template.\n\n## Support this project\n\nIf you enjoy this core and want to support its development:\n\n- [Ko-fi](https://ko-fi.com/ibecerivideoludici) \u2014 one-time support\n- [Patreon](https://www.patreon.com/IBeceriVideoludici) \u2014 monthly support\n- [PayPal](https://www.paypal.me/IBeceriVideoludici) \u2014 one-time donation\n\n## Follow\n\n- [GitHub](https://github.com/rmonic79)\n- [Twitch](https://twitch.tv/ibecerivideoludici) \u2014 live streams\n- [YouTube](https://www.youtube.com/c/IBeceriVideoludici) \u2014 playlists and videos\n- [X / Twitter](https://x.com/rmonic79)\n\n## License\n\nThe RTL source code in this repository is provided as-is for educational\nand preservation purposes under **GNU GPL v3 or later**. ROM data is not\nincluded; users must provide their own.\n\nOriginal *Darius II* / *Warrior Blade \u2014 Rastan Saga Episode III* arcade\nhardware \u00a9 Taito Corporation.\n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/MiSTer-devel/Arcade-Darius2WarriorBlade_MiSTer",
+      "releases": [
+        {
+          "name": "Darius II (Japan, dual screen, rev 2).mra",
+          "sha": "1611fe4f5ecc1633e69d91211f15d859c9320393",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Darius2WarriorBlade_MiSTer/master/releases/Darius%20II%20(Japan%2C%20dual%20screen%2C%20rev%202).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Darius II (Japan, dual screen, rev 2)",
+            "rbf": "Darius2WarriorBlade",
+            "zips": [
+              "darius2.zip"
+            ]
+          }
+        },
+        {
+          "name": "Darius2WarriorBlade_20260619.rbf",
+          "sha": "c5279a3f37f3abf1b0fae5885ad38ced149d9814",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Darius2WarriorBlade_MiSTer/master/releases/Darius2WarriorBlade_20260619.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Sagaia (World, dual screen).mra",
+          "sha": "ba2eb8ffce764db200b89d945d049277f87195c1",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Darius2WarriorBlade_MiSTer/master/releases/Sagaia%20(World%2C%20dual%20screen).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Sagaia (World, dual screen)",
+            "rbf": "Darius2WarriorBlade",
+            "zips": [
+              "sagaia.zip|darius2.zip"
+            ]
+          }
+        },
+        {
+          "name": "Warrior Blade (Japan).mra",
+          "sha": "9741c5a985d0396bca18276f55e4a0f8969ec540",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Darius2WarriorBlade_MiSTer/master/releases/Warrior%20Blade%20(Japan).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Warrior Blade - Rastan Saga Episode III (Japan)",
+            "rbf": "Darius2WarriorBlade",
+            "zips": [
+              "warriorb.zip"
+            ]
+          }
+        },
+        {
+          "name": "Darius II (Japan, dual screen, rev 1).mra",
+          "sha": "c4f9f342f2ff639a19241d8f8e119cd4b233914b",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Darius2WarriorBlade_MiSTer/master/releases/alternatives/Darius%20II%20(Japan%2C%20dual%20screen%2C%20rev%201).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Darius II (Japan, dual screen, rev 1)",
+            "rbf": "Darius2WarriorBlade",
+            "zips": [
+              "darius2do.zip|darius2.zip"
+            ]
+          }
+        }
+      ]
+    },
+    {
       "name": "Arcade-Darius_MiSTer",
       "description": "FPGA core for Darius (Taito, 1986) arcade hardware on the MiSTer platform",
       "readme": "# Arcade-Darius_MiSTer\n\nFPGA core for **Darius** (Taito Corporation, 1986) targeting the\n[MiSTer FPGA](https://github.com/MiSTer-devel) platform (Terasic DE10-Nano).\n\nDarius is a triple-screen horizontal shoot-'em-up running on a dual\n68000 + Z80 \u00d7 2 board with two PC080SN tile layers, PC090OJ sprites,\nPC060HA master/slave communication, and YM2203 \u00d72 + MSM5205 audio.\nThis core reimplements the hardware in SystemVerilog from MAME references\nand hardware observation on original PCBs.\n\n## Status\n\n**Current version: 1.1** (May 2026)\n\nThe core runs the full game end-to-end on all supported ROM sets and\nhas been tested on real MiSTer hardware.\n\n**What's new in v1.1**\n- Pause overlay with project logo, scrolling supporters list (with tier\n  colors: Bronze / Silver / Gold), and social links \u2014 your name in the\n  credits if you support the project\n- \"Clean Pause\" OSD option to bypass overlay (pause without dim/logo)\n- Scale options refactored: Narrower HV-Integer (default), V-Integer,\n  HV-Integer (Normal scaling removed \u2014 gave wrong results without\n  precise user setup)\n- HDMI_FREEZE removed (overlay rendered live, no scaler freeze)\n- SignalTap probes removed (frees ~6 M10K)\n\n**Features**\n- Dual 68000 main/sub with shared RAM (FX68K core)\n- Three horizontal panels composed into the 864-pixel virtual screen\n- Sprite renderer with priority, flip, 16\u00d716 4bpp tiles\n- FG text/HUD layer with local BRAM text ROM\n- Palette with MAME-verified byte order\n- Audio: YM2203 \u00d72 (FM + PSG) + MSM5205 ADPCM with pan/volume routing\n- PC060HA main/sub communication\n- SDRAM arbitration for tile/sprite ROM and main/sub CPU fetch\n- Inputs (coin, start, 8-way joystick) and full DIP switch support\n- MiSTer OSD with video, pause and DIP options\n- Pause overlay with supporters credits and social links\n\n**ROM sets supported**\n- Darius (World) \u2014 reference set\n- Darius (US)\n- Darius (Japan rev 1 \u2014 dariusj)\n- Darius (Japan pure \u2014 dariuso)\n- Darius Extra Version (dariuse)\n\n**Notes**\n- Audio pole filters currently bypassed (direct DC-removed signals to mixer)\n- 15 kHz CRT output is **not currently supported** (non-standard 864\u00d7224\n  resolution incompatible with the analog I/O board)\n- For HDMI use the HDMI output directly. For 31 kHz VGA monitors use an\n  HDMI\u2192VGA adapter \u2014 do **not** enable Direct Video\n\n## Screenshots\n\n| | |\n|---|---|\n| ![Title](docs/title.png) | ![Silver Hawk attract](docs/attract_silver_hawk.png) |\n| Title screen | Attract \u2014 Silver Hawk briefing |\n| ![Zone C](docs/gameplay_zone_c.png) | ![Zone I](docs/gameplay_zone_i.png) |\n| Zone C | Zone I |\n| ![Zone S](docs/gameplay_zone_s.png) | ![Zone G](docs/gameplay_zone_g.png) |\n| Zone S | Zone G |\n\n## Hardware requirements\n\n- Terasic DE10-Nano\n- MiSTer I/O board (recommended)\n- SDRAM module (32 MB or 64 MB)\n- HDMI display (recommended), or HDMI\u2192VGA adapter for 31 kHz VGA monitors\n\n**Note on video output**: The core works on standard HDMI displays.\nFor 31 kHz VGA monitors, use an HDMI\u2192VGA adapter \u2014 do **not** enable\nDirect Video. **15 kHz CRT output is not currently supported** because\nthe 864\u00d7224 triple-panel resolution is incompatible with the MiSTer\nanalog I/O board.\n\n## Build from source\n\nRequires **Quartus Prime Lite 17.0.x** for Cyclone V (5CSEBA6U23I7).\n\n```bash\ncd Arcade-Darius_MiSTer\nquartus_sh --flow compile Darius -c Darius\n```\n\nOutput: `output_files/Darius.rbf` (~3.9 MB).\n\n## Running on MiSTer\n\nThe [releases/](releases/) folder contains the pre-built bitstream and\nthe parent MRA for the reference ROM set:\n\n- `Darius_YYYYMMDD.rbf` \u2014 pre-built core bitstream\n- `Darius (World).mra` \u2014 parent MRA (reference set)\n\nAlternative ROM sets are provided in [releases/alternatives/](releases/alternatives/):\n\n- `Darius (US).mra`\n- `Darius (Japan).mra`\n- `Darius (Japan, rev 1).mra`\n- `Darius Extra Version (Japan).mra`\n\nFollowing the MiSTer-devel convention, the alternative sets are also\nmirrored to the official [MRA-Alternatives_MiSTer](https://github.com/MiSTer-devel/MRA-Alternatives_MiSTer)\nrepository, where they are picked up automatically by **Update_All**.\n\nSteps:\n\n1. Copy the `.rbf` to `_Arcade/cores/` on the MiSTer SD card.\n2. Copy the desired `.mra` file(s) to `_Arcade/` on the MiSTer SD card.\n3. Provide your legally-owned Darius ROM files where each MRA expects them\n   (usually in `games/mame/`).\n4. For HDMI displays, no special setup is required. For 31 kHz VGA\n   monitors, use an HDMI\u2192VGA adapter (do **not** enable Direct Video).\n   15 kHz CRT output is not currently supported (see Hardware requirements).\n5. The core OSD defaults to **Narrower HV-Integer** scale, which gives a\n   proper integer-scaled image on modern HDMI displays. Other Scale\n   options (V-Integer, HV-Integer) are available for custom setups.\n\n**ROMs are NOT included in this repository.** You must provide them yourself.\n\n## Repository layout\n\n```\nArcade-Darius_MiSTer/\n\u251c\u2500\u2500 rtl/\n\u2502   \u251c\u2500\u2500 darius/       Darius-specific core RTL (Umberto Parisi)\n\u2502   \u251c\u2500\u2500 fx68k/        M68000 core (Jorge Cwik)\n\u2502   \u251c\u2500\u2500 jt12/         YM2203 FM synth (Jose Tejada)\n\u2502   \u251c\u2500\u2500 jt5205/       MSM5205 ADPCM (Jose Tejada)\n\u2502   \u251c\u2500\u2500 jtframe/      JTFRAME framework modules (Jose Tejada)\n\u2502   \u251c\u2500\u2500 t80/          Z80 core\n\u2502   \u251c\u2500\u2500 pll/          Clock PLL\n\u2502   \u2514\u2500\u2500 sdram.sv      SDRAM controller (Sorgelig)\n\u251c\u2500\u2500 sys/              MiSTer framework (Sorgelig / MiSTer-devel)\n\u251c\u2500\u2500 releases/         Pre-built .rbf + parent MRA\n\u2502   \u2514\u2500\u2500 alternatives/ MRA files for alternate ROM sets\n\u251c\u2500\u2500 docs/             Screenshots\n\u251c\u2500\u2500 Darius.qpf        Quartus project\n\u251c\u2500\u2500 Darius.qsf        Quartus assignments\n\u251c\u2500\u2500 Template.sv       Top-level wrapper\n\u251c\u2500\u2500 Template.sdc      Timing constraints\n\u251c\u2500\u2500 files.qip         HDL file list\n\u251c\u2500\u2500 build_id.v        Build version stamp\n\u251c\u2500\u2500 LICENSE           GNU GPL v3\n\u251c\u2500\u2500 AUTHORS.md        Credits and third-party licenses\n\u2514\u2500\u2500 README.md         This file\n```\n\n## License\n\nDistributed under **GNU General Public License v3 or later**.\nSee [LICENSE](LICENSE) and [AUTHORS.md](AUTHORS.md) for credits and\nthird-party licensing.\n\nGPL-3 is chosen to stay compatible with upstream GPL-3 dependencies\n(JTFRAME, FX68K, Sorgelig's sdram and sys framework).\n\n## Support this project\n\nIf you enjoy this core and want to support its development:\n\n- [Ko-fi](https://ko-fi.com/ibecerivideoludici) \u2014 one-time support\n- [Patreon](https://www.patreon.com/IBeceriVideoludici) \u2014 monthly support\n- [PayPal](https://www.paypal.me/IBeceriVideoludici) \u2014 one-time donation\n\n## Follow\n\n- [Twitch](https://twitch.tv/ibecerivideoludici) \u2014 live streams\n- [YouTube](https://www.youtube.com/c/IBeceriVideoludici/playlists) \u2014 playlists and videos\n\n## Credits\n\nBuilt on top of work by:\n\n- **Jorge Cwik** \u2014 [FX68K](https://github.com/ijor/fx68k) (M68000 core)\n- **Jose Tejada** / Jotego \u2014 [JTFRAME, JT12, JT5205](https://github.com/jotego/jtcores)\n- **Sorgelig** and the **MiSTer-devel team** \u2014 framework, SDRAM controller\n- The **MAME** project \u2014 invaluable hardware reference\n\nFull list in [AUTHORS.md](AUTHORS.md).\n\nOriginal Darius arcade hardware \u00a9 Taito Corporation, 1986.\n",
@@ -5593,7 +5696,7 @@
         },
         {
           "name": "Express Raider.mra",
-          "sha": "10a7309f1efa5cd8073fbc6cd7888a7b6f99aa00",
+          "sha": "b08cc3d997a3eb6290c8bc9e5b50ae4957a701dc",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-ExpressRaider_MiSTer/master/releases/Express%20Raider.mra",
           "type": "MRA",
           "extra": {
@@ -5606,7 +5709,7 @@
         },
         {
           "name": "Western Express (Japan, rev 4).mra",
-          "sha": "e42a106e0babb61a49ea4984c4b6dd2ab718b1fa",
+          "sha": "ed4ee45e16e91de7b47f629282b747615756bb68",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-ExpressRaider_MiSTer/master/releases/Western%20Express%20(Japan%2C%20rev%204).mra",
           "type": "MRA",
           "extra": {
@@ -6967,6 +7070,1353 @@
             "rbf": "Gyruss",
             "zips": [
               "gyruss.zip"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Arcade-IGSPGM_MiSTer",
+      "description": "IGS PolyGame Master MiSTer FPGA core",
+      "readme": "# IGS PolyGame Master MiSTer FPGA core\n\nThe PolyGame Master (PGM) is an arcade system board released in 1997 by IGS. It has a lot of similarities to SNK's Neo Geo - cartridge based with multiple buses, heavily sprite focused graphics hardware, 68000 main CPU, Z80 for audio.\n\n- Main processor: Motorola 68000 @ 20 MHz\n- Sound processor: Zilog Z80 @ 8.4 MHz\n- Sound chip: Wavefront ICS2115\n- Graphics chip: IGS023\n\nGames come with several flavors of protection hardware on the cartridge. Most feature an ARM7 CPU and in later games the ARM takes on a larger portion of the game update processing.\n\n## Status\nThis core is currently BETA. Most games work, but the core needs more testing. The PGM platform features a large amount of variants and bootlegs that all require testing. If you encounter issues please report them via github. Save state files can be especially useful for tracking down and reproducing issues, so if you have some then please include them.\n\n## Core Features\n- Save States. The core supports save states for all games. It is expected that you can save and restore a save state at any point. If you encounter issues restoring save states, please report them.\n- H-Scale. The PGM video signal tends to be squashed horizontally by consumer CRTs. In the Video Settings menu there is an H-Scale option that can be enabled which allows you to scale the width of the image up and down. This only works for analog video and does not play well with the HDMI scaler.\n- NVRAM. The 128KB of main RAM on the PGM is battery backed. On the original system this is often used for bookkeeping data such as earning per game. Some games (CAVE shooters) use it for storing per-game settings. It might also be used for high score saving by some games.\n- RTC. The PGM also has a battery backed clock. As far as I know this is not used by any games, but it does get displayed at startup by the BIOS. The timer can be adjusted in the BIOS, but at startup it will always be set to the MiSTers current system time.\n\n## Supported games\n\n- Oriental Legend\n- Oriental Legend Super\n- Dragon World 3\n- Dragon World 3 EX\n- Dragon World 2001\n- The Killing Blade\n- The Killing Blade Plus\n- Photo Y2K\n- Knights of Valour Super Heroes\n- Knights of Valour 2\n- Martial Masters\n- Demon Front\n- The Gladiator\n- S.V.G. - Spectral vs Generation\n- DoDonPachi II - Bee Storm\n- DoDonPachi III / Dai-Ou-Jou\n- Ketsui: Kizuna Jigoku Tachi\n- Espgaluda\n\n## Not yet working\n\n- Knights of Valour\n- Knights of Valour Plus\n- Knights of Valour 2 Plus - Nine Dragons\n- Dragon World Pretty Chance\n- Happy 6-in-1\n\n## Sources\nMultiple different sources have been used as reference when developing this core.\n\n[MAME](https://www.mamedev.org/) - Tons of information about the PGM system and especially its protection mechanisms. Also used as the source for the initial ICS2115 implementation.\n\n[igspgm.com](https://igspgm.com/) - Motherboard images, cartridge images, archived documents. Super valuable archive of information that could easily have been lost to history.\n\n[PGMTech](https://github.com/laoo/PGMTech) - Solid documentation of PGM memory maps and system architecture\n\n[GUS GF1 Decap](https://github.com/nukeykt/LPC-GUS) - Coming from the same hardware lineage, the GF1 source was a useful reference for how things might be done inside the ICS2115\n\n[Game Bub](https://github.com/elipsitz/gamebub) - ARM7TDMI implementation\n\n\n## Special Thanks\nThanks to [James](https://www.retrohq.co.uk/) for all the additional insights he was able to provide. The stars aligned and we ended up exploring parts of the system as the same time. I hope I was able to help him half as much as he helped me.\n\nThanks to [Tim](https://igspgm.com/) for keeping valuable sources of PGM information alive on the internet over the years. It has been an invaluable source of information.\n\nlaoo, Xolod, augitesoul and everyone who has playtested, provided feedback and/or support.",
+      "archived": false,
+      "fork": false,
+      "url": "https://github.com/MiSTer-devel/Arcade-IGSPGM_MiSTer",
+      "releases": [
+        {
+          "name": "Arcade-IGSPGM_20260617.rbf",
+          "sha": "833f54b0a901888534f82d0dd5cdfbce5b4ff80e",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/Arcade-IGSPGM_20260617.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-IGSPGM_20260619.rbf",
+          "sha": "be2e83c76bbcf58581b026c9ca8bd74cc48c43c5",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/Arcade-IGSPGM_20260619.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-IGSPGM_20260621.rbf",
+          "sha": "b0b67d0cb2edfb823c24595678aa3dc7d28fb4ba",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/Arcade-IGSPGM_20260621.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Demon Front (ver. 105).mra",
+          "sha": "30eac5e49a27c380288cac7c3c7bf3a93b49a4dd",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/Demon%20Front%20(ver.%20105).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Demon Front (ver. 105)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|dmnfrnt.zip"
+            ]
+          }
+        },
+        {
+          "name": "DoDonPachi II - Bee Storm (World, ver. 102).mra",
+          "sha": "099f38de9193b5ab511a578057d2b2bc3eb987a1",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/DoDonPachi%20II%20-%20Bee%20Storm%20(World%2C%20ver.%20102).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "DoDonPachi II - Bee Storm (World, ver. 102)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|ddp2.zip"
+            ]
+          }
+        },
+        {
+          "name": "DoDonPachi III (World, 2002.05.15 Master Ver).mra",
+          "sha": "53ed2812ed9e649f0de02c009d9040375cfc93c5",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/DoDonPachi%20III%20(World%2C%202002.05.15%20Master%20Ver).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "DoDonPachi III (World, 2002.05.15 Master Ver)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|ddp3.zip",
+              "pgm.zip|ddp3.zip"
+            ]
+          }
+        },
+        {
+          "name": "Dragon World 2001 (ver. 100, Japan).mra",
+          "sha": "b0868c2c69428f3025e7035e15992b315c90343a",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/Dragon%20World%202001%20(ver.%20100%2C%20Japan).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Dragon World 2001 (ver. 100, Japan)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|dw2001.zip"
+            ]
+          }
+        },
+        {
+          "name": "Dragon World 3 (ver. 106).mra",
+          "sha": "6a1eca5816edfef78f4fe2091e3ef06a9b1f61b1",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/Dragon%20World%203%20(ver.%20106).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Dragon World 3 (ver. 106)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|drgw3.zip"
+            ]
+          }
+        },
+        {
+          "name": "Dragon World 3 EX (ver. 100).mra",
+          "sha": "b941b87ef9a02418a6eace688b426b94001c03ce",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/Dragon%20World%203%20EX%20(ver.%20100).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Dragon World 3 EX (ver. 100)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|dwex.zip"
+            ]
+          }
+        },
+        {
+          "name": "Espgaluda (2003.10.15 Master Ver).mra",
+          "sha": "5868d82430dc9b8675d7da54b79a453d0ac32a76",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/Espgaluda%20(2003.10.15%20Master%20Ver).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Espgaluda (2003.10.15 Master Ver)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|espgal.zip"
+            ]
+          }
+        },
+        {
+          "name": "Ketsui - Kizuna Jigoku Tachi (2003.01.01. Master Ver.).mra",
+          "sha": "6fd90f107af854437c51394617167d0a183053bb",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/Ketsui%20-%20Kizuna%20Jigoku%20Tachi%20(2003.01.01.%20Master%20Ver.).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Ketsui - Kizuna Jigoku Tachi (2003.01.01. Master Ver.)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|ket.zip",
+              "pgm.zip|ket.zip"
+            ]
+          }
+        },
+        {
+          "name": "Knights of Valour 2 (ver. 107).mra",
+          "sha": "2e461bf548b98276277ce7d1f16045cae784a4de",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/Knights%20of%20Valour%202%20(ver.%20107).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Knights of Valour 2 (ver. 107)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|kov2.zip"
+            ]
+          }
+        },
+        {
+          "name": "Knights of Valour Super Heroes (ver. 104, CN).mra",
+          "sha": "03d8301eb98a309cecdc4ca7d145a7fb3ee2f441",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/Knights%20of%20Valour%20Super%20Heroes%20(ver.%20104%2C%20CN).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Knights of Valour Super Heroes (ver. 104, CN)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|kovsh.zip"
+            ]
+          }
+        },
+        {
+          "name": "Martial Masters (ver. 104, 102, 102US).mra",
+          "sha": "29e3eb87660667f52f431e1f685e799d53eb8c8a",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/Martial%20Masters%20(ver.%20104%2C%20102%2C%20102US).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Martial Masters (ver. 104, 102, 102US)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|martmast.zip"
+            ]
+          }
+        },
+        {
+          "name": "Oriental Legend (ver. 126).mra",
+          "sha": "abef6ab4b077319a0e115621ab288b5bdb95828a",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/Oriental%20Legend%20(ver.%20126).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Oriental Legend (ver. 126)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|orlegend.zip"
+            ]
+          }
+        },
+        {
+          "name": "PGM (Polygame Master) System BIOS.mra",
+          "sha": "7ed02885ad3e69d85ee529e6ca973509969fc665",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/PGM%20(Polygame%20Master)%20System%20BIOS.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "PGM (Polygame Master) System BIOS",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip"
+            ]
+          }
+        },
+        {
+          "name": "Photo Y2K (ver. 105).mra",
+          "sha": "49ff16d7e0313e83ca5bee78f92c9208a5a22813",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/Photo%20Y2K%20(ver.%20105).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Photo Y2K (ver. 105)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|photoy2k.zip"
+            ]
+          }
+        },
+        {
+          "name": "S.V.G. - Spectral vs Generation (ver. 200).mra",
+          "sha": "cc8f1cff69117bde1f27d4ef77416b06a235e038",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/S.V.G.%20-%20Spectral%20vs%20Generation%20(ver.%20200).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "S.V.G. - Spectral vs Generation (ver. 200)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|svg.zip"
+            ]
+          }
+        },
+        {
+          "name": "The Gladiator (ver. 107).mra",
+          "sha": "d184364c2f26e985328ee745592039f0e52a2bdf",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/The%20Gladiator%20(ver.%20107).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "The Gladiator (ver. 107)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|theglad.zip"
+            ]
+          }
+        },
+        {
+          "name": "The Killing Blade (ver. 109, Chinese Board).mra",
+          "sha": "970ae8cb45ec7590602742b49f533f63d74dc791",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/The%20Killing%20Blade%20(ver.%20109%2C%20Chinese%20Board).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "The Killing Blade (ver. 109, Chinese Board)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|killbld.zip"
+            ]
+          }
+        },
+        {
+          "name": "The Killing Blade Plus (China, ver. 300).mra",
+          "sha": "b79241236058b3ad10fcf9024888a5c271e40151",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/The%20Killing%20Blade%20Plus%20(China%2C%20ver.%20300).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "The Killing Blade Plus (China, ver. 300)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|killbldp.zip"
+            ]
+          }
+        },
+        {
+          "name": "Xiyou Shi E Zhuan Super (ver. 103, China, Tencent) (unprotected).mra",
+          "sha": "af6c61f7e6a8d186309c83d2ceb2eeb723ef2497",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/Xiyou%20Shi%20E%20Zhuan%20Super%20(ver.%20103%2C%20China%2C%20Tencent)%20(unprotected).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Xiyou Shi E Zhuan Super (ver. 103, China, Tencent) (unprotected)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|olds.zip|olds103t.zip"
+            ]
+          }
+        },
+        {
+          "name": "Demon Front (ver. 102).mra",
+          "sha": "7ca61e1ad46c156652638cdcf28079af2c44af92",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Demon%20Front/Demon%20Front%20(ver.%20102).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Demon Front (ver. 102)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|dmnfrnt.zip|dmnfrnt102.zip"
+            ]
+          }
+        },
+        {
+          "name": "Demon Front (ver. 103).mra",
+          "sha": "4d20bf2d894d9892c708944ddd88c28f05ca5340",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Demon%20Front/Demon%20Front%20(ver.%20103).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Demon Front (ver. 103)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|dmnfrnt.zip|dmnfrnt103.zip"
+            ]
+          }
+        },
+        {
+          "name": "DoDonPachi - Feng Bao (China, ver. 100).mra",
+          "sha": "fc30a3b046138f1281fd55a481a57989417b3dd4",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_DoDonPachi%20II%20-%20Bee%20Storm/DoDonPachi%20-%20Feng%20Bao%20(China%2C%20ver.%20100).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "DoDonPachi - Feng Bao (China, ver. 100)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|ddp2.zip|ddp2100c.zip"
+            ]
+          }
+        },
+        {
+          "name": "DoDonPachi - Feng Bao (China, ver. 101).mra",
+          "sha": "0804849201493517b0b66fc4c881cce2f58f2deb",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_DoDonPachi%20II%20-%20Bee%20Storm/DoDonPachi%20-%20Feng%20Bao%20(China%2C%20ver.%20101).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "DoDonPachi - Feng Bao (China, ver. 101)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|ddp2.zip|ddp2101c.zip"
+            ]
+          }
+        },
+        {
+          "name": "DoDonPachi - Feng Bao (China, ver. 102).mra",
+          "sha": "b2d283e840d7723859cf076bad7ebb7f3f722cf8",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_DoDonPachi%20II%20-%20Bee%20Storm/DoDonPachi%20-%20Feng%20Bao%20(China%2C%20ver.%20102).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "DoDonPachi - Feng Bao (China, ver. 102)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|ddp2.zip|ddp2c.zip"
+            ]
+          }
+        },
+        {
+          "name": "DoDonPachi - Feng Bao (Taiwan, ver. 100).mra",
+          "sha": "f9174db98c5e50d92d480c70d3cd2a4e78a7657d",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_DoDonPachi%20II%20-%20Bee%20Storm/DoDonPachi%20-%20Feng%20Bao%20(Taiwan%2C%20ver.%20100).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "DoDonPachi - Feng Bao (Taiwan, ver. 100)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|ddp2.zip|ddp2100t.zip"
+            ]
+          }
+        },
+        {
+          "name": "DoDonPachi - Feng Bao (Taiwan, ver. 101).mra",
+          "sha": "ca92b4392cb005d179ffe094a72a10f8613844d2",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_DoDonPachi%20II%20-%20Bee%20Storm/DoDonPachi%20-%20Feng%20Bao%20(Taiwan%2C%20ver.%20101).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "DoDonPachi - Feng Bao (Taiwan, ver. 101)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|ddp2.zip|ddp2101t.zip"
+            ]
+          }
+        },
+        {
+          "name": "DoDonPachi - Feng Bao (Taiwan, ver. 102).mra",
+          "sha": "77bad28f1418bd4d399dfe754a73037db962656e",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_DoDonPachi%20II%20-%20Bee%20Storm/DoDonPachi%20-%20Feng%20Bao%20(Taiwan%2C%20ver.%20102).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "DoDonPachi - Feng Bao (Taiwan, ver. 102)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|ddp2.zip|ddp2t.zip"
+            ]
+          }
+        },
+        {
+          "name": "DoDonPachi II (Japan, ver. 100).mra",
+          "sha": "0533b24d726e54ec32b98a4e364b651823081320",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_DoDonPachi%20II%20-%20Bee%20Storm/DoDonPachi%20II%20(Japan%2C%20ver.%20100).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "DoDonPachi II (Japan, ver. 100)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|ddp2.zip|ddp2100j.zip"
+            ]
+          }
+        },
+        {
+          "name": "DoDonPachi II (Japan, ver. 101).mra",
+          "sha": "d8c020a32a53d453dfd7d000f5947f1f326781fa",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_DoDonPachi%20II%20-%20Bee%20Storm/DoDonPachi%20II%20(Japan%2C%20ver.%20101).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "DoDonPachi II (Japan, ver. 101)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|ddp2.zip|ddp2101j.zip"
+            ]
+          }
+        },
+        {
+          "name": "DoDonPachi II (Japan, ver. 102).mra",
+          "sha": "37a7cc644d5aa9bd37a422ddff1eba511fb44ae3",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_DoDonPachi%20II%20-%20Bee%20Storm/DoDonPachi%20II%20(Japan%2C%20ver.%20102).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "DoDonPachi II (Japan, ver. 102)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|ddp2.zip|ddp2j.zip"
+            ]
+          }
+        },
+        {
+          "name": "DoDonPachi II - Bee Storm (Korea, ver. 100).mra",
+          "sha": "3a7c39f82d748266428901ffcc48f6871f1bcf35",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_DoDonPachi%20II%20-%20Bee%20Storm/DoDonPachi%20II%20-%20Bee%20Storm%20(Korea%2C%20ver.%20100).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "DoDonPachi II - Bee Storm (Korea, ver. 100)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|ddp2.zip|ddp2100k.zip"
+            ]
+          }
+        },
+        {
+          "name": "DoDonPachi II - Bee Storm (Korea, ver. 101).mra",
+          "sha": "d1161d879d6558aa2db1c8a10488bab92079285d",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_DoDonPachi%20II%20-%20Bee%20Storm/DoDonPachi%20II%20-%20Bee%20Storm%20(Korea%2C%20ver.%20101).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "DoDonPachi II - Bee Storm (Korea, ver. 101)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|ddp2.zip|ddp2101k.zip"
+            ]
+          }
+        },
+        {
+          "name": "DoDonPachi II - Bee Storm (Korea, ver. 102).mra",
+          "sha": "f5bd8d32148062e57895e60b1ff2875d4a3351b2",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_DoDonPachi%20II%20-%20Bee%20Storm/DoDonPachi%20II%20-%20Bee%20Storm%20(Korea%2C%20ver.%20102).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "DoDonPachi II - Bee Storm (Korea, ver. 102)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|ddp2.zip|ddp2k.zip"
+            ]
+          }
+        },
+        {
+          "name": "DoDonPachi II - Bee Storm (World, ver. 100).mra",
+          "sha": "3314b9eb35e61af578d0d32e55a9fdf7f763e567",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_DoDonPachi%20II%20-%20Bee%20Storm/DoDonPachi%20II%20-%20Bee%20Storm%20(World%2C%20ver.%20100).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "DoDonPachi II - Bee Storm (World, ver. 100)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|ddp2.zip|ddp2100.zip"
+            ]
+          }
+        },
+        {
+          "name": "DoDonPachi II - Bee Storm (World, ver. 101).mra",
+          "sha": "374d10b5b03f5cfde09f10aed7483f30109a3545",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_DoDonPachi%20II%20-%20Bee%20Storm/DoDonPachi%20II%20-%20Bee%20Storm%20(World%2C%20ver.%20101).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "DoDonPachi II - Bee Storm (World, ver. 101)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|ddp2.zip|ddp2101.zip"
+            ]
+          }
+        },
+        {
+          "name": "DoDonPachi II - Fung Bou (Hong Kong, ver. 100).mra",
+          "sha": "27ad988067994dfcd7d53f72795b007990cdc35b",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_DoDonPachi%20II%20-%20Bee%20Storm/DoDonPachi%20II%20-%20Fung%20Bou%20(Hong%20Kong%2C%20ver.%20100).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "DoDonPachi II - Fung Bou (Hong Kong, ver. 100)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|ddp2.zip|ddp2100hk.zip"
+            ]
+          }
+        },
+        {
+          "name": "DoDonPachi II - Fung Bou (Hong Kong, ver. 101).mra",
+          "sha": "40f47d46ebc5b03c4afd3d11c9456a8f8338747f",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_DoDonPachi%20II%20-%20Bee%20Storm/DoDonPachi%20II%20-%20Fung%20Bou%20(Hong%20Kong%2C%20ver.%20101).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "DoDonPachi II - Fung Bou (Hong Kong, ver. 101)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|ddp2.zip|ddp2101hk.zip"
+            ]
+          }
+        },
+        {
+          "name": "DoDonPachi II - Fung Bou (Hong Kong, ver. 102).mra",
+          "sha": "2a8d657a630d73b47c682028d302aff6b45c01af",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_DoDonPachi%20II%20-%20Bee%20Storm/DoDonPachi%20II%20-%20Fung%20Bou%20(Hong%20Kong%2C%20ver.%20102).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "DoDonPachi II - Fung Bou (Hong Kong, ver. 102)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|ddp2.zip|ddp2hk.zip"
+            ]
+          }
+        },
+        {
+          "name": "DoDonPachi Dai-Ou-Jou (Japan, 2002.04.05 Master Ver).mra",
+          "sha": "49eff96a3bd49439213590634602472dd4e3e6e7",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_DoDonPachi%20III/DoDonPachi%20Dai-Ou-Jou%20(Japan%2C%202002.04.05%20Master%20Ver).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "DoDonPachi Dai-Ou-Jou (Japan, 2002.04.05 Master Ver)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|ddpdojb.zip|ddp3.zip",
+              "pgm.zip|ddpdojb.zip|ddp3.zip"
+            ]
+          }
+        },
+        {
+          "name": "DoDonPachi Dai-Ou-Jou (Japan, 2002.04.05.Master Ver, 68k Label V100).mra",
+          "sha": "e56974db4857cd1574bf80d07c5a63235d365c85",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_DoDonPachi%20III/DoDonPachi%20Dai-Ou-Jou%20(Japan%2C%202002.04.05.Master%20Ver%2C%2068k%20Label%20V100).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "DoDonPachi Dai-Ou-Jou (Japan, 2002.04.05.Master Ver, 68k Label V100)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|ddpdoja.zip|ddp3.zip",
+              "pgm.zip|ddpdoja.zip|ddp3.zip"
+            ]
+          }
+        },
+        {
+          "name": "DoDonPachi Dai-Ou-Jou (Japan, 2002.04.05.Master Ver, 68k Label V101).mra",
+          "sha": "c9db15e464781ba5c0702b8d6eb253d46cbdb12c",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_DoDonPachi%20III/DoDonPachi%20Dai-Ou-Jou%20(Japan%2C%202002.04.05.Master%20Ver%2C%2068k%20Label%20V101).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "DoDonPachi Dai-Ou-Jou (Japan, 2002.04.05.Master Ver, 68k Label V101)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|ddpdoj.zip|ddp3.zip",
+              "pgm.zip|ddpdoj.zip|ddp3.zip"
+            ]
+          }
+        },
+        {
+          "name": "DoDonPachi Dai-Ou-Jou Black Label (Japan, 2002.10.07 Black Ver).mra",
+          "sha": "9e77e17d64e94dd36fa37f62c899226e9ef92b85",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_DoDonPachi%20III/DoDonPachi%20Dai-Ou-Jou%20Black%20Label%20(Japan%2C%202002.10.07%20Black%20Ver).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "DoDonPachi Dai-Ou-Jou Black Label (Japan, 2002.10.07 Black Ver)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|ddpdojblkb.zip|ddp3.zip",
+              "pgm.zip|ddpdojblkb.zip|ddp3.zip"
+            ]
+          }
+        },
+        {
+          "name": "DoDonPachi Dai-Ou-Jou Black Label (Japan, 2002.10.07 Black Ver., bootleg Knights of Valour Super Heroes conversion).mra",
+          "sha": "54c80f5fabe351d0ed93ae0b9f743ff4c30c0db8",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_DoDonPachi%20III/DoDonPachi%20Dai-Ou-Jou%20Black%20Label%20(Japan%2C%202002.10.07%20Black%20Ver.%2C%20bootleg%20Knights%20of%20Valour%20Super%20Heroes%20conversion).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "DoDonPachi Dai-Ou-Jou Black Label (Japan, 2002.10.07 Black Ver., bootleg Knights of Valour Super Heroes conversion)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|ddpdojblkbl.zip|ddpdojblk.zip|ddp3.zip"
+            ]
+          }
+        },
+        {
+          "name": "DoDonPachi Dai-Ou-Jou Black Label (Japan, 2002.10.07.Black Ver, newer).mra",
+          "sha": "095f92a3abe9156e03f2df3968e5f405df126d8e",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_DoDonPachi%20III/DoDonPachi%20Dai-Ou-Jou%20Black%20Label%20(Japan%2C%202002.10.07.Black%20Ver%2C%20newer).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "DoDonPachi Dai-Ou-Jou Black Label (Japan, 2002.10.07.Black Ver, newer)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|ddpdojblk.zip|ddp3.zip",
+              "pgm.zip|ddpdojblk.zip|ddp3.zip"
+            ]
+          }
+        },
+        {
+          "name": "DoDonPachi Dai-Ou-Jou Black Label (Japan, 2002.10.07.Black Ver, older).mra",
+          "sha": "9f74542a7b469e735561da07285cd5e8ec2b0d65",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_DoDonPachi%20III/DoDonPachi%20Dai-Ou-Jou%20Black%20Label%20(Japan%2C%202002.10.07.Black%20Ver%2C%20older).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "DoDonPachi Dai-Ou-Jou Black Label (Japan, 2002.10.07.Black Ver, older)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|ddpdojblka.zip|ddp3.zip",
+              "pgm.zip|ddpdojblka.zip|ddp3.zip"
+            ]
+          }
+        },
+        {
+          "name": "Dragon World 3 EX (ver. 101CN).mra",
+          "sha": "b253e94a483f3f976f72a5bbc71f688836827736",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Dragon%20World%203%20EX/Dragon%20World%203%20EX%20(ver.%20101CN).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Dragon World 3 EX (ver. 101CN)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|dwex101cn.zip|dwex.zip"
+            ]
+          }
+        },
+        {
+          "name": "Chuugokuryuu 3 Special (Japan, ver. 100).mra",
+          "sha": "34d041cc2a9efbbb2ef3195cfd5dc04683419eb6",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Dragon%20World%203/Chuugokuryuu%203%20Special%20(Japan%2C%20ver.%20100).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Chuugokuryuu 3 Special (Japan, ver. 100)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|drgw3.zip|drgw3100.zip"
+            ]
+          }
+        },
+        {
+          "name": "Chuugokuryuu 3 Special (Japan, ver. 103).mra",
+          "sha": "6ac0a0b979994d925be001209ef425da88405ede",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Dragon%20World%203/Chuugokuryuu%203%20Special%20(Japan%2C%20ver.%20103).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Chuugokuryuu 3 Special (Japan, ver. 103)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|drgw3.zip|drgw3103.zip"
+            ]
+          }
+        },
+        {
+          "name": "Dragon World 3 (ver. 105).mra",
+          "sha": "f176031f7b5052151eba1bdef94b1e8b07ad218e",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Dragon%20World%203/Dragon%20World%203%20(ver.%20105).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Dragon World 3 (ver. 105)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|drgw3.zip|drgw3105.zip"
+            ]
+          }
+        },
+        {
+          "name": "Espgaluda (2003.10.15 Master Ver, bootleg cartridge conversion).mra",
+          "sha": "904315ece79392befb4873607213a8c94a014336",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Espgaluda/Espgaluda%20(2003.10.15%20Master%20Ver%2C%20bootleg%20cartridge%20conversion).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Espgaluda (2003/10/15 Master Ver, bootleg cartridge conversion)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|espgal.zip|espgalbl.zip"
+            ]
+          }
+        },
+        {
+          "name": "Ketsui - Kizuna Jigoku Tachi (2003.01.01 Master Ver).mra",
+          "sha": "a3d685dcaec2f3ad827c8048a67bffa5675dc565",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Ketsui%20-%20Kizuna%20Jigoku%20Tachi/Ketsui%20-%20Kizuna%20Jigoku%20Tachi%20(2003.01.01%20Master%20Ver).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Ketsui - Kizuna Jigoku Tachi (2003.01.01 Master Ver)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|ketb.zip|ket.zip",
+              "pgm.zip|ketb.zip|ket.zip"
+            ]
+          }
+        },
+        {
+          "name": "Ketsui - Kizuna Jigoku Tachi (2003.01.01 Master Ver.).mra",
+          "sha": "135194d538b5db0fee207f9a06da927534b8f940",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Ketsui%20-%20Kizuna%20Jigoku%20Tachi/Ketsui%20-%20Kizuna%20Jigoku%20Tachi%20(2003.01.01%20Master%20Ver.).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Ketsui - Kizuna Jigoku Tachi (2003.01.01 Master Ver.)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|keta.zip|ket.zip",
+              "pgm.zip|keta.zip|ket.zip"
+            ]
+          }
+        },
+        {
+          "name": "Ketsui - Kizuna Jigoku Tachi (2003.01.01. Master Ver.) (alt ROM fill).mra",
+          "sha": "f2fcbeaeaa9e3cefa925dc9ecb49f3de84b9fdb2",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Ketsui%20-%20Kizuna%20Jigoku%20Tachi/Ketsui%20-%20Kizuna%20Jigoku%20Tachi%20(2003.01.01.%20Master%20Ver.)%20(alt%20ROM%20fill).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Ketsui - Kizuna Jigoku Tachi (2003.01.01. Master Ver.) (alt ROM fill)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|ket1.zip|ket.zip",
+              "pgm.zip|ket1.zip|ket.zip"
+            ]
+          }
+        },
+        {
+          "name": "Ketsui - Kizuna Jigoku Tachi (2012.04.17 ARRANGE VER) (hack).mra",
+          "sha": "99d1e76e87c17f422d8cd61a95aa76cd2b804b9f",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Ketsui%20-%20Kizuna%20Jigoku%20Tachi/Ketsui%20-%20Kizuna%20Jigoku%20Tachi%20(2012.04.17%20ARRANGE%20VER)%20(hack).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Ketsui - Kizuna Jigoku Tachi (2012.04.17 ARRANGE VER) (hack)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|ketarr10.zip|ket.zip",
+              "pgm.zip|ketarr10.zip|ket.zip"
+            ]
+          }
+        },
+        {
+          "name": "Ketsui - Kizuna Jigoku Tachi (2012.04.17 FAST. VER) (hack).mra",
+          "sha": "ac63feeb2b14f40c4fc0cd510a6dc1fd96499b68",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Ketsui%20-%20Kizuna%20Jigoku%20Tachi/Ketsui%20-%20Kizuna%20Jigoku%20Tachi%20(2012.04.17%20FAST.%20VER)%20(hack).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Ketsui - Kizuna Jigoku Tachi (2012.04.17 FAST. VER) (hack)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|ketarrf.zip|ket.zip",
+              "pgm.zip|ketarrf.zip|ket.zip"
+            ]
+          }
+        },
+        {
+          "name": "Ketsui - Kizuna Jigoku Tachi (2012.06.26 ARRANGE 1.5 VER) (hack).mra",
+          "sha": "1262757294ec01be941474a3a571ed826833842e",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Ketsui%20-%20Kizuna%20Jigoku%20Tachi/Ketsui%20-%20Kizuna%20Jigoku%20Tachi%20(2012.06.26%20ARRANGE%201.5%20VER)%20(hack).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Ketsui - Kizuna Jigoku Tachi (2012.06.26 ARRANGE 1.5 VER) (hack)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|ketarr15.zip|ket.zip",
+              "pgm.zip|ketarr15.zip|ket.zip"
+            ]
+          }
+        },
+        {
+          "name": "Ketsui - Kizuna Jigoku Tachi (2012.06.26 ARRANGE 1.51 VER) (hack).mra",
+          "sha": "02c6b442856240621d9e6674594dc5fb38920bc0",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Ketsui%20-%20Kizuna%20Jigoku%20Tachi/Ketsui%20-%20Kizuna%20Jigoku%20Tachi%20(2012.06.26%20ARRANGE%201.51%20VER)%20(hack).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Ketsui - Kizuna Jigoku Tachi (2012.06.26 ARRANGE 1.51 VER) (hack)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|ketarr151.zip|ket.zip",
+              "pgm.zip|ketarr151.zip|ket.zip"
+            ]
+          }
+        },
+        {
+          "name": "Ketsui - Kizuna Jigoku Tachi (2012.06.27 MR.STOIC 1.5 VER) (hack).mra",
+          "sha": "cd85940b9a094e20825bbbbaec07c86fe91d1f04",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Ketsui%20-%20Kizuna%20Jigoku%20Tachi/Ketsui%20-%20Kizuna%20Jigoku%20Tachi%20(2012.06.27%20MR.STOIC%201.5%20VER)%20(hack).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Ketsui - Kizuna Jigoku Tachi (2012.06.27 MR.STOIC 1.5 VER) (hack)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|ketarrs15.zip|ket.zip",
+              "pgm.zip|ketarrs15.zip|ket.zip"
+            ]
+          }
+        },
+        {
+          "name": "Ketsui - Kizuna Jigoku Tachi (2012.06.27 MR.STOIC 1.51 VER) (hack).mra",
+          "sha": "ba26537951753e2f00c8bff63d45ea11f7bc0e83",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Ketsui%20-%20Kizuna%20Jigoku%20Tachi/Ketsui%20-%20Kizuna%20Jigoku%20Tachi%20(2012.06.27%20MR.STOIC%201.51%20VER)%20(hack).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Ketsui - Kizuna Jigoku Tachi (2012.06.27 MR.STOIC 1.51 VER) (hack)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|ketarrs151.zip|ket.zip",
+              "pgm.zip|ketarrs151.zip|ket.zip"
+            ]
+          }
+        },
+        {
+          "name": "Ketsui - Kizuna Jigoku Tachi (2014.07.16 ARRANGE 1.7 VER) (hack).mra",
+          "sha": "652de9c77e0a79dfaa4e775f42c670791b6b517c",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Ketsui%20-%20Kizuna%20Jigoku%20Tachi/Ketsui%20-%20Kizuna%20Jigoku%20Tachi%20(2014.07.16%20ARRANGE%201.7%20VER)%20(hack).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Ketsui - Kizuna Jigoku Tachi (2014.07.16 ARRANGE 1.7 VER) (hack)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|ketarr.zip|ket.zip",
+              "pgm.zip|ketarr.zip|ket.zip"
+            ]
+          }
+        },
+        {
+          "name": "Ketsui - Kizuna Jigoku Tachi (IKD 2007 Special - 2007 Cave Matsuri Version).mra",
+          "sha": "356db130db6d446af4129a81631e25e0a029d68a",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Ketsui%20-%20Kizuna%20Jigoku%20Tachi/Ketsui%20-%20Kizuna%20Jigoku%20Tachi%20(IKD%202007%20Special%20-%202007%20Cave%20Matsuri%20Version).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Ketsui - Kizuna Jigoku Tachi (IKD 2007 Special - 2007 Cave Matsuri Version)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|ket.zip|ketikd.zip",
+              "pgm.zip|ket.zip"
+            ]
+          }
+        },
+        {
+          "name": "Ketsui Kizuna Jigoku Tachi (2003.01.01. Master Ver., bootleg cartridge conversion).mra",
+          "sha": "97784226b5377a5f146aa1d728d41cd580088dec",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Ketsui%20-%20Kizuna%20Jigoku%20Tachi/Ketsui%20Kizuna%20Jigoku%20Tachi%20(2003.01.01.%20Master%20Ver.%2C%20bootleg%20cartridge%20conversion).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Ketsui: Kizuna Jigoku Tachi (2003/01/01. Master Ver., bootleg cartridge conversion)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|ketbl.zip|ket.zip"
+            ]
+          }
+        },
+        {
+          "name": "Knights of Valour 2 (ver. 100, 100, 100HK).mra",
+          "sha": "ba3a5960ec4f71cb4bb57f860b8bbad38db30596",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Knights%20of%20Valour%202/Knights%20of%20Valour%202%20(ver.%20100%2C%20100%2C%20100HK).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Knights of Valour 2 (ver. 100, 100, 100HK)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|kov2.zip|kov2100.zip"
+            ]
+          }
+        },
+        {
+          "name": "Knights of Valour 2 (ver. 101, 101, 100HK).mra",
+          "sha": "6ed921aebf42d93cf96a98fb5b9fac1b83855cf2",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Knights%20of%20Valour%202/Knights%20of%20Valour%202%20(ver.%20101%2C%20101%2C%20100HK).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Knights of Valour 2 (ver. 101, 101, 100HK)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|kov2.zip|kov2101.zip"
+            ]
+          }
+        },
+        {
+          "name": "Knights of Valour 2 (ver. 102, 101, 100HK).mra",
+          "sha": "a59d32094af9675a620622f03199a930b6db5729",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Knights%20of%20Valour%202/Knights%20of%20Valour%202%20(ver.%20102%2C%20101%2C%20100HK).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Knights of Valour 2 (ver. 102, 101, 100HK)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|kov2.zip|kov2102.zip"
+            ]
+          }
+        },
+        {
+          "name": "Knights of Valour 2 (ver. 102, 102, 100HK).mra",
+          "sha": "5bde42b4a961ee3f87e34d36a5d1b4066d2d0dd9",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Knights%20of%20Valour%202/Knights%20of%20Valour%202%20(ver.%20102%2C%20102%2C%20100HK).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Knights of Valour 2 (ver. 102, 102, 100HK)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|kov2.zip|kov21022.zip"
+            ]
+          }
+        },
+        {
+          "name": "Knights of Valour 2 (ver. 103, 101, 100HK).mra",
+          "sha": "3bad689f2a90b4f2623fd05fa8249fe5dc82a4e3",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Knights%20of%20Valour%202/Knights%20of%20Valour%202%20(ver.%20103%2C%20101%2C%20100HK).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Knights of Valour 2 (ver. 103, 101, 100HK)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|kov2.zip|kov2103.zip"
+            ]
+          }
+        },
+        {
+          "name": "Knights of Valour 2 (ver. 104, 102, 100HK).mra",
+          "sha": "a81ed1dde4563a3236b2c284d69014fab6d2e133",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Knights%20of%20Valour%202/Knights%20of%20Valour%202%20(ver.%20104%2C%20102%2C%20100HK).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Knights of Valour 2 (ver. 104, 102, 100HK)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|kov2.zip|kov2104.zip"
+            ]
+          }
+        },
+        {
+          "name": "Knights of Valour 2 (ver. 106, 102, 100HK).mra",
+          "sha": "70bd10251e21024b02a38a564da892ae3e9249d5",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Knights%20of%20Valour%202/Knights%20of%20Valour%202%20(ver.%20106%2C%20102%2C%20100HK).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Knights of Valour 2 (ver. 106, 102, 100HK)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|kov2.zip|kov2106.zip"
+            ]
+          }
+        },
+        {
+          "name": "Knights of Valour Super Heroes (ver. 100, CN).mra",
+          "sha": "6de6a7200c2905a895f9d05edf98bcd8ccaa17f5",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Knights%20of%20Valour%20Super%20Heroes/Knights%20of%20Valour%20Super%20Heroes%20(ver.%20100%2C%20CN).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Knights of Valour Super Heroes (ver. 100, CN)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|kovsh.zip|kovsh100.zip"
+            ]
+          }
+        },
+        {
+          "name": "Knights of Valour Super Heroes (ver. 101, CN).mra",
+          "sha": "975f79b928ede80c902870cd7ad2d5e8e3fe9493",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Knights%20of%20Valour%20Super%20Heroes/Knights%20of%20Valour%20Super%20Heroes%20(ver.%20101%2C%20CN).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Knights of Valour Super Heroes (ver. 101, CN)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|kovsh.zip|kovsh101.zip"
+            ]
+          }
+        },
+        {
+          "name": "Knights of Valour Super Heroes (ver. 102, CN).mra",
+          "sha": "30a0aa9ff0f4d4ab92ceab999a8b18bc3bbe5a98",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Knights%20of%20Valour%20Super%20Heroes/Knights%20of%20Valour%20Super%20Heroes%20(ver.%20102%2C%20CN).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Knights of Valour Super Heroes (ver. 102, CN)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|kovsh.zip|kovsh102.zip"
+            ]
+          }
+        },
+        {
+          "name": "Knights of Valour Super Heroes (ver. 103, CN).mra",
+          "sha": "8ea2c5e650acd2a7682f47fc476284e5c93aa859",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Knights%20of%20Valour%20Super%20Heroes/Knights%20of%20Valour%20Super%20Heroes%20(ver.%20103%2C%20CN).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Knights of Valour Super Heroes (ver. 103, CN)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|kovsh.zip|kovsh103.zip"
+            ]
+          }
+        },
+        {
+          "name": "Martial Masters (ver. 102, 101, 101CN).mra",
+          "sha": "86766fe38111bf2df4a55b1803f4b9b46dbeba80",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Martial%20Masters/Martial%20Masters%20(ver.%20102%2C%20101%2C%20101CN).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Martial Masters (ver. 102, 101, 101CN)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|martmast.zip|martmast102c.zip"
+            ]
+          }
+        },
+        {
+          "name": "Martial Masters (ver. 103, 102, 101CN).mra",
+          "sha": "950969d30c6c6f2d45259207c931100a87858b8b",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Martial%20Masters/Martial%20Masters%20(ver.%20103%2C%20102%2C%20101CN).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Martial Masters (ver. 103, 102, 101CN)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|martmast.zip|martmast103c.zip"
+            ]
+          }
+        },
+        {
+          "name": "Martial Masters (ver. 104, 102, 101CN).mra",
+          "sha": "8eacbf71b23ce44d02790f708c1f3b937fe541a9",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Martial%20Masters/Martial%20Masters%20(ver.%20104%2C%20102%2C%20101CN).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Martial Masters (ver. 104, 102, 101CN)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|martmast.zip|martmast104c.zip"
+            ]
+          }
+        },
+        {
+          "name": "Oriental Legend (ver. 112).mra",
+          "sha": "897e1b96eb377df8918adbfe7a1d82ed6c33d662",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Oriental%20Legend/Oriental%20Legend%20(ver.%20112).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Oriental Legend (ver. 112)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|orlegend.zip|orlegende.zip"
+            ]
+          }
+        },
+        {
+          "name": "Oriental Legend (ver. 112, Chinese Board).mra",
+          "sha": "9fb53fb7c69d6ee3e7bef5f099665940fbbd57da",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Oriental%20Legend/Oriental%20Legend%20(ver.%20112%2C%20Chinese%20Board).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Oriental Legend (ver. 112, Chinese Board)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|orlegend.zip|orlegendc.zip"
+            ]
+          }
+        },
+        {
+          "name": "Oriental Legend (ver. unk, Chinese Board).mra",
+          "sha": "98fdedab73800f454f139baee319b54698d475f1",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Oriental%20Legend/Oriental%20Legend%20(ver.%20unk%2C%20Chinese%20Board).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Oriental Legend (ver. ???, Chinese Board)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|orlegend.zip|orlegendca.zip"
+            ]
+          }
+        },
+        {
+          "name": "Photo Y2K (ver. 102, Japanese Board).mra",
+          "sha": "84783c0998dfedfd76f384eb4dffc18d29899ef4",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Photo%20Y2K/Photo%20Y2K%20(ver.%20102%2C%20Japanese%20Board).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Photo Y2K (ver. 102, Japanese Board)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|photoy2k.zip|photoy2k102j.zip"
+            ]
+          }
+        },
+        {
+          "name": "Photo Y2K (ver. 103, Japanese Board).mra",
+          "sha": "aadafda9212262d4da3f38eb41e1c2de83b8bdf8",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Photo%20Y2K/Photo%20Y2K%20(ver.%20103%2C%20Japanese%20Board).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Photo Y2K (ver. 103, Japanese Board)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|photoy2k.zip|photoy2k103j.zip"
+            ]
+          }
+        },
+        {
+          "name": "Photo Y2K (ver. 104).mra",
+          "sha": "11bb8f1c6e24a89bf44fbf956716353180a6f8aa",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Photo%20Y2K/Photo%20Y2K%20(ver.%20104).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Photo Y2K (ver. 104)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|photoy2k.zip|photoy2k104.zip"
+            ]
+          }
+        },
+        {
+          "name": "S.V.G. - Spectral vs Generation (ver. 101HK).mra",
+          "sha": "5a18b727698ed4c7dabcc341b2cecb07eb6e0008",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_S.V.G.%20-%20Spectral%20vs%20Generation/S.V.G.%20-%20Spectral%20vs%20Generation%20(ver.%20101HK).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "S.V.G. - Spectral vs Generation (ver. 101HK)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|svg.zip|svghk.zip"
+            ]
+          }
+        },
+        {
+          "name": "The Gladiator (ver. 100).mra",
+          "sha": "a2439dfa416c9a84464a55b1ceead2bc970923cf",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_The%20Gladiator/The%20Gladiator%20(ver.%20100).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "The Gladiator (ver. 100)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|theglad.zip|theglad100.zip"
+            ]
+          }
+        },
+        {
+          "name": "The Gladiator (ver. 101).mra",
+          "sha": "e3204dbb08a1d61cb00907a085af274befb0ec42",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_The%20Gladiator/The%20Gladiator%20(ver.%20101).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "The Gladiator (ver. 101)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|theglad101.zip|theglad.zip"
+            ]
+          }
+        },
+        {
+          "name": "The Gladiator (ver. 104).mra",
+          "sha": "524ee9338fd43f868f7354f96eb5456904f37410",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_The%20Gladiator/The%20Gladiator%20(ver.%20104).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "The Gladiator (ver. 104)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|theglad104.zip|theglad.zip"
+            ]
+          }
+        },
+        {
+          "name": "Chuugokuryuu Pretty Chance [Dragon World Pretty Chance] (V101, Japan).mra",
+          "sha": "5cfc55cdb7d0f465c851d47efa1794569b5e082b",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/not_working/Chuugokuryuu%20Pretty%20Chance%20%5BDragon%20World%20Pretty%20Chance%5D%20(V101%2C%20Japan).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Chuugokuryuu Pretty Chance [Dragon World Pretty Chance] (V101, Japan)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|dwpc.zip|dwpc101j.zip"
+            ]
+          }
+        },
+        {
+          "name": "Dragon World Pretty Chance (ver. 110, China).mra",
+          "sha": "51f26ce2612232ef6e8a3a0ca6074b4b22275907",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/not_working/Dragon%20World%20Pretty%20Chance%20(ver.%20110%2C%20China).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Dragon World Pretty Chance (ver. 110, China)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|dwpc.zip"
+            ]
+          }
+        },
+        {
+          "name": "Happy 6-in-1 (M68K V100, ARM V100CN).mra",
+          "sha": "4552798fa22e7993711c9cc15be2267b8cfdeb1a",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/not_working/Happy%206-in-1%20(M68K%20V100%2C%20ARM%20V100CN).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Happy 6-in-1 (M68K V100, ARM V100CN)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|happy6100cn.zip|happy6.zip"
+            ]
+          }
+        },
+        {
+          "name": "Happy 6-in-1 (M68K V100, ARM V101CN).mra",
+          "sha": "8a9386df968b8c15e99d13ae90ee1d1b101fead3",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/not_working/Happy%206-in-1%20(M68K%20V100%2C%20ARM%20V101CN).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Happy 6-in-1 (M68K V100, ARM V101CN)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|happy6101.zip|happy6.zip"
+            ]
+          }
+        },
+        {
+          "name": "Happy 6-in-1 (M68K V100HK, ARM V100HK).mra",
+          "sha": "be1897c6a55b7f7d5caf16b406016ea9590ec17b",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/not_working/Happy%206-in-1%20(M68K%20V100HK%2C%20ARM%20V100HK).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Happy 6-in-1 (M68K V100HK, ARM V100HK)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|happy6100hk.zip|happy6.zip"
+            ]
+          }
+        },
+        {
+          "name": "Happy 6-in-1 (M68K V101, ARM V102CN).mra",
+          "sha": "1dc8c90216de68fa7349b6e3220d01447b865791",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/not_working/Happy%206-in-1%20(M68K%20V101%2C%20ARM%20V102CN).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Happy 6-in-1 (M68K V101, ARM V102CN)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|happy6.zip"
+            ]
+          }
+        },
+        {
+          "name": "Knights of Valour (bootleg, ver. 112CN).mra",
+          "sha": "46387b58823b1217ef9494a4fda8fb06c5cfbd74",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/not_working/Knights%20of%20Valour%20(bootleg%2C%20ver.%20112CN).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Knights of Valour (bootleg, ver. 112CN?)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|kovbl.zip|kov.zip|kovplus.zip"
+            ]
+          }
+        },
+        {
+          "name": "Knights of Valour 2 Plus - Nine Dragons (ver. 205).mra",
+          "sha": "b7c3055be7ae05674588a5ae4a3e522e0c85d8f2",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/not_working/Knights%20of%20Valour%202%20Plus%20-%20Nine%20Dragons%20(ver.%20205).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Knights of Valour 2 Plus - Nine Dragons (ver. 205)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|kov2p.zip"
+            ]
+          }
+        },
+        {
+          "name": "Knights of Valour 2 Plus - Nine Dragons (ver. M200XX, 200, 100CN).mra",
+          "sha": "7f696a1f598c92f638a6d7cf6cfb5e01755725a9",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/not_working/Knights%20of%20Valour%202%20Plus%20-%20Nine%20Dragons%20(ver.%20M200XX%2C%20200%2C%20100CN).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Knights of Valour 2 Plus - Nine Dragons (ver. M200XX, 200, 100CN)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|kov2p.zip|kov2p200.zip"
+            ]
+          }
+        },
+        {
+          "name": "Knights of Valour 2 Plus - Nine Dragons (ver. M202XX, 200, 100CN).mra",
+          "sha": "a050847d61811ac2ae64d453321c71700c70e701",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/not_working/Knights%20of%20Valour%202%20Plus%20-%20Nine%20Dragons%20(ver.%20M202XX%2C%20200%2C%20100CN).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Knights of Valour 2 Plus - Nine Dragons (ver. M202XX, 200, 100CN)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|kov2p.zip|kov2p202.zip"
+            ]
+          }
+        },
+        {
+          "name": "Knights of Valour 2 Plus - Nine Dragons (ver. M203XX, 200, 100CN).mra",
+          "sha": "0b6b9774005eaf4bd613d3e4f4c07155ac1e738c",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/not_working/Knights%20of%20Valour%202%20Plus%20-%20Nine%20Dragons%20(ver.%20M203XX%2C%20200%2C%20100CN).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Knights of Valour 2 Plus - Nine Dragons (ver. M203XX, 200, 100CN)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|kov2p.zip|kov2p203.zip"
+            ]
+          }
+        },
+        {
+          "name": "Knights of Valour 2 Plus - Nine Dragons (ver. M204XX, 200, 100CN).mra",
+          "sha": "6ce958230fab1cf455dab8f88d269a2f6b2d6073",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/not_working/Knights%20of%20Valour%202%20Plus%20-%20Nine%20Dragons%20(ver.%20M204XX%2C%20200%2C%20100CN).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Knights of Valour 2 Plus - Nine Dragons (ver. M204XX, 200, 100CN)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|kov2p.zip|kov2p204.zip"
+            ]
+          }
+        },
+        {
+          "name": "Knights of Valour Plus (bootleg, ver. 117CN).mra",
+          "sha": "3483caf0e740d0056a1ca3b30939e0e68d0bf901",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/not_working/Knights%20of%20Valour%20Plus%20(bootleg%2C%20ver.%20117CN).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Knights of Valour Plus (bootleg, ver. 117CN?)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|kovplusbl.zip|kovplus.zip|kov.zip"
+            ]
+          }
+        },
+        {
+          "name": "S.V.G. - Spectral vs Generation (ver. 101TW).mra",
+          "sha": "dbfb585d5085b56b16ac1030892236229e5448da",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/not_working/S.V.G.%20-%20Spectral%20vs%20Generation%20(ver.%20101TW).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "S.V.G. - Spectral vs Generation (ver. 101TW)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|svg.zip|svgtw.zip"
             ]
           }
         }
@@ -8755,6 +10205,94 @@
           "name": "JunoFirst_20260531.rbf",
           "sha": "d078f0e5f0cf11e30da116f0186d4c3a783a8c4c",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-JunoFirst_MiSTer/main/releases/JunoFirst_20260531.rbf",
+          "type": "RBF"
+        }
+      ]
+    },
+    {
+      "name": "Arcade-Kangaroo_MiSTer",
+      "description": null,
+      "readme": "<p align=\"center\">\n  <img src=\"Useful Information/Kangaroo.png\" width=\"800\">\n  <img src=\"Useful Information/FunkyFish.png\" width=\"800\">\n</p>\n\n<h1 align=\"center\">Kangaroo FPGA Core</h1>\n\n<p align=\"center\">\n  Arcade hardware implementation for MiSTer FPGA\n</p>\n\n---\n\n## Overview\n\nFPGA implementation of **Kangaroo (1982)**, originally developed and released by Sun Electronics.\n\nThis core targets MiSTer FPGA and aims for accurate gameplay behavior, video timing, and sound reproduction.\n\n---\n\n## Core Information\n\n| Field        | Value |\n|--------------|--------|\n| Core Name    | Kangaroo |\n| Year         | 1982 |\n| Developer    | Sun Electronics |\n| Genre        | Platform |\n| Players      | 1\u20132 alternating |\n\n---\n\n## Controls\n\nDefault MiSTer gamepad mapping:\n\n| Kangaroo |\n| Input | Action |\n|-------|--------|\n| D-Pad / Joystick | Move |\n| A | Jump |\n| B | Punch |\n| Select | Insert Coin |\n| Start | 1 Player Start |\n| Right Shoulder | 2 Player Start |\n| Left Shoulder | Pause |\n\n| Funky Fish |\n| Input | Action |\n|-------|--------|\n| D-Pad / Joystick | Move |\n| A | Not Used |\n| B | Bubbles / Tongue |\n| Select | Insert Coin |\n| Start | 1 Player Start |\n| Right Shoulder | 2 Player Start |\n| Left Shoulder | Pause |\n\n---\n\n## Features\n\n- Arcade-accurate CPU timing\n- Sprite priority and layer handling\n- High score saving support - Loading is still broken (Working on it)\n- MiSTer-compatible .mra provided\n- Verified ROM definitions with checksums\n\n---\n\n## ROM Requirements\n\nROM files are **not included**.\n\nTo use this arcade core, you must provide legally obtained ROM files.\n\nTo simplify setup:\n\n- `.mra` files are provided in the **Releases** section.\n- The `.mra` specifies all required ROM files along with checksums.\n- The ROM `.zip` filename corresponds to the naming convention used by the MAME project.\n\nFor setup instructions and environment configuration, refer to:\n\nMiSTer Arcade ROM guide:  \nhttps://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms\n\n---\n\n## Installation\n\n1. Copy the core `.rbf` file to your MiSTer `/_Arcade/cores` folder.\n2. Copy the '.mra' file to your MiSTer '/_Arcade' folder.\n3. Place the appropriate ROM `.zip` files in your `/games/mame` directory.\n4. Launch the core from the MiSTer Arcade menu.\n\n---\n\n## Legal Notice\n\nThis project contains **no copyrighted game data**.\n\nUsers are responsible for obtaining and using ROM files in accordance with applicable laws.\n\nDo not request ROM files in issues or discussions.\n\n---\n\n## Credits\n\nFPGA core development: RodimusFVC \nOriginal arcade game \u00a9 Sun Electronics\n\n---\n",
+      "archived": false,
+      "fork": false,
+      "url": "https://github.com/MiSTer-devel/Arcade-Kangaroo_MiSTer",
+      "releases": [
+        {
+          "name": "Funky Fish.mra",
+          "sha": "fba65a724618091b99d3bc15fc785f39b86bb1a6",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Kangaroo_MiSTer/main/releases/Funky%20Fish.mra",
+          "type": "MRA",
+          "extra": {
+            "name": null,
+            "rbf": "Kangaroo",
+            "zips": [
+              "fnkyfish.zip",
+              "fnkyfish.zip",
+              "fnkyfish.zip"
+            ]
+          }
+        },
+        {
+          "name": "Kangaroo (Atari).mra",
+          "sha": "9420a2bd74ab3f72168b2efd1c7fd4c7e8eb75fc",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Kangaroo_MiSTer/main/releases/Kangaroo%20(Atari).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Kangaroo (Atari)",
+            "rbf": "Kangaroo",
+            "zips": [
+              "kangarooa.zip|kangaroo.zip",
+              "kangarooa.zip|kangaroo.zip",
+              "kangarooa.zip|kangaroo.zip"
+            ]
+          }
+        },
+        {
+          "name": "Kangaroo (Bootleg).mra",
+          "sha": "6ff32a5c46fbd579fb780a8db710c014e7e0aba0",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Kangaroo_MiSTer/main/releases/Kangaroo%20(Bootleg).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Kangaroo (bootleg)",
+            "rbf": "Kangaroo",
+            "zips": [
+              "kangaroob.zip|kangaroo.zip",
+              "kangaroob.zip|kangaroo.zip",
+              "kangaroob.zip|kangaroo.zip"
+            ]
+          }
+        },
+        {
+          "name": "Kangaroo.mra",
+          "sha": "de46a2749e4da6c9706ab1f670ea3a417f2a1f37",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Kangaroo_MiSTer/main/releases/Kangaroo.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Kangaroo",
+            "rbf": "Kangaroo",
+            "zips": [
+              "kangaroo.zip",
+              "kangaroo.zip",
+              "kangaroo.zip"
+            ]
+          }
+        },
+        {
+          "name": "Kangaroo_20260531.rbf",
+          "sha": "bd279b616da698e804f6f84c80cdf1d777bd0821",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Kangaroo_MiSTer/main/releases/Kangaroo_20260531.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Kangaroo_20260617.rbf",
+          "sha": "3e6a175fc99ad0392a9cf8464b91b063785d5515",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Kangaroo_MiSTer/main/releases/Kangaroo_20260617.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Kangaroo_20260621.rbf",
+          "sha": "ede34a29f180b9fea4474a0a6b20377e327f7667",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Kangaroo_MiSTer/main/releases/Kangaroo_20260621.rbf",
           "type": "RBF"
         }
       ]
@@ -11671,6 +13209,25 @@
           "type": "RBF"
         },
         {
+          "name": "Qix_20260616.rbf",
+          "sha": "670b073cb6ed3bb2bf710b5c06540750f16737d7",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Qix_MiSTer/main/releases/Qix_20260616.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Slither.mra",
+          "sha": "9fd4114452db36d9b974864c894a53222d8c5b26",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Qix_MiSTer/main/releases/Slither.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Slither",
+            "rbf": "Qix",
+            "zips": [
+              "slither.zip"
+            ]
+          }
+        },
+        {
           "name": "Space Dungeon.mra",
           "sha": "299d70a062be044648743e625da749da322c2667",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Qix_MiSTer/main/releases/Space%20Dungeon.mra",
@@ -13544,6 +15101,12 @@
           "name": "Arcade-SpaceFirebird_20260602.rbf",
           "sha": "c3728bd828a5b284731fd354c57b86e24549f379",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SpaceFirebird_MiSTer/main/releases/Arcade-SpaceFirebird_20260602.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-SpaceFirebird_20260617.rbf",
+          "sha": "60bc7342cdffaceabb9515b338e4fe2dcd33838c",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SpaceFirebird_MiSTer/main/releases/Arcade-SpaceFirebird_20260617.rbf",
           "type": "RBF"
         },
         {
@@ -19668,7 +21231,7 @@
     {
       "name": "Distribution_MiSTer",
       "description": "This repository contains all the files that you'll want in your MiSTer",
-      "readme": "# MiSTer Distribution\n\nThis repository contains all the files that you'll want in your MiSTer.\n\nYou may download all of them at once as a zip through the [following link](https://github.com/MiSTer-devel/Distribution_MiSTer/archive/refs/heads/main.zip). Once you have them, place them as-is in your [properly initialised SD card](https://github.com/MiSTer-devel/mr-fusion), and everything should work out of the box.\n\n### MiSTer Project\n\nIf you want to check more about the MiSTer project, please check [this wiki](https://github.com/MiSTer-devel/Wiki_MiSTer/wiki).\n\n### MiSTer Downloader\n\nFor downloading all of these files directly from your MiSTer, use the [MiSTer Downloader](https://github.com/MiSTer-devel/Downloader_MiSTer).\n\n#### Tags that you may use with 'Download Filters' feature\n\nRead about how to use them [here](https://github.com/MiSTer-devel/Downloader_MiSTer/blob/main/docs/download-filters.md).\n\n##### List:\n\n`acornatom`, `acornelectron`, `adam`, `adctest`, `adventurevision`, `alicemc10`, `all_filters`, `altair8800`, `alternatives`, `amiga`, `amstrad`, `amstrad-pcw`, `amstradpcw`, `ao486`, `apogee`, `apple-i`, `apple-ii`, `aquarius`, `arcade`, `arcade-arkanoid`, `arcade-asteroids`, `arcade-asteroidsdeluxe`, `arcade-astrocade`, `arcade-atarisys1`, `arcade-ataritetris`, `arcade-athena`, `arcade-bagman`, `arcade-bankpanic`, `arcade-battlezone`, `arcade-berzerk`, `arcade-blackwidow`, `arcade-blockade`, `arcade-bloodbros`, `arcade-blueprint`, `arcade-bombjack`, `arcade-bosconian`, `arcade-breakout`, `arcade-bubsys`, `arcade-bubsysrom`, `arcade-burgertime`, `arcade-burningrubber`, `arcade-canyonbomber`, `arcade-cave`, `arcade-cavebanpresto`, `arcade-centipede`, `arcade-chameleon`, `arcade-chinagate`, `arcade-cityconnection`, `arcade-computerspace`, `arcade-congobongo`, `arcade-cores`, `arcade-cosmic`, `arcade-cosmicguerilla`, `arcade-crazyballoon`, `arcade-crazyclimber`, `arcade-crazykong`, `arcade-crystalcastles`, `arcade-darius`, `arcade-darius2ninjawarriors`, `arcade-dcon`, `arcade-deco16`, `arcade-defender`, `arcade-digdug`, `arcade-dominos`, `arcade-donkeykong`, `arcade-donkeykong3`, `arcade-donkeykongjunior`, `arcade-dorodon`, `arcade-dottorikun`, `arcade-druaga`, `arcade-exerion`, `arcade-exidy2`, `arcade-expressraider`, `arcade-finalizer`, `arcade-foodfight`, `arcade-freeze`, `arcade-frenzy`, `arcade-galaga`, `arcade-galaxian`, `arcade-galivan`, `arcade-gaplus`, `arcade-gauntlet`, `arcade-gyruss`, `arcade-ikariwarriors`, `arcade-inferno`, `arcade-iremm107`, `arcade-iremm62`, `arcade-iremm72`, `arcade-iremm90`, `arcade-iremm92`, `arcade-ironhorse`, `arcade-jackal`, `arcade-jailbreak`, `arcade-joust2`, `arcade-junofirst`, `arcade-kickandrun`, `arcade-ladybug`, `arcade-lunarlander`, `arcade-mariobros`, `arcade-mcr1`, `arcade-mcr2`, `arcade-mcr3`, `arcade-mcr3mono`, `arcade-mcr3scroll`, `arcade-missilecommand`, `arcade-moonpatrol`, `arcade-mrdo`, `arcade-mrjong`, `arcade-mysticmarathon`, `arcade-naughtyboy`, `arcade-ninjakun`, `arcade-pacman`, `arcade-pengo`, `arcade-penguinkunwars`, `arcade-performan`, `arcade-phoenix`, `arcade-pleiads`, `arcade-polyplay`, `arcade-pong`, `arcade-pooyan`, `arcade-popeye`, `arcade-psychic5`, `arcade-qbert`, `arcade-qix`, `arcade-rallyx`, `arcade-rbfs-only`, `arcade-riverpatrol`, `arcade-robotron`, `arcade-rshnatk`, `arcade-salamander`, `arcade-scootershooter`, `arcade-scramble`, `arcade-sdgundamps`, `arcade-segasys1`, `arcade-segavicz80`, `arcade-silverland`, `arcade-skysmasher`, `arcade-slapfight`, `arcade-sms`, `arcade-snk6502`, `arcade-snk_triplez80`, `arcade-solomonskey`, `arcade-sonson`, `arcade-spaceinvaders`, `arcade-spacerace`, `arcade-sprint1`, `arcade-sprint2`, `arcade-st-v`, `arcade-starforce`, `arcade-starwars`, `arcade-subs`, `arcade-superbreakout`, `arcade-suprloco`, `arcade-taitof2`, `arcade-taitosj`, `arcade-tankbattalion`, `arcade-tecmo`, `arcade-tiamc1`, `arcade-timepilot`, `arcade-timepilot84`, `arcade-tnkiii`, `arcade-traverseusa`, `arcade-tropicalangel`, `arcade-turkeyshoot`, `arcade-tutankham`, `arcade-ultratank`, `arcade-vastar`, `arcade-vball`, `arcade-xevious`, `arcade-xsleena`, `arcade-zaxxon`, `arcade-zigzag`, `arcadelpf`, `arcadia`, `archie`, `arduboy`, `astrocade`, `atari2600`, `atari5200`, `atari7800`, `atari800`, `atarilynx`, `atarist`, `avision`, `ay-3-8500`, `bbcbridgecompanion`, `bbcmicro`, `bios`, `bk0011m`, `c128`, `c16`, `c64`, `cacert`, `casio_pv-1000`, `casio_pv-2000`, `cd-i`, `cdi`, `channelf`, `cheats`, `chess`, `chip8`, `coco2`, `coco3`, `coleco`, `colecoadam`, `colecovision`, `complexmultichromatic`, `computer`, `computer-cores`, `console`, `console-cd`, `console-cores`, `contrast_boost`, `controls_1_button`, `controls_2_buttons`, `controls_2_players`, `controls_3_buttons`, `controls_3_players`, `controls_4_buttons`, `controls_4_players`, `controls_5_buttons`, `controls_6_buttons`, `controls_dial`, `controls_move_2-way`, `controls_move_4-way`, `controls_move_8-way`, `controls_paddle`, `controls_spinner`, `controls_trackball`, `cores`, `corespecific`, `creativision`, `crt-simulation`, `displayspecific`, `docs`, `donut`, `downloader`, `downloader_bin`, `downloader_latest`, `drv`, `edsac`, `eg2000`, `enterprise`, `epochgalaxyii`, `essential`, `extra-utilities`, `famicom`, `fast_usb_polling`, `filters`, `filters_audio`, `filters_video`, `flappy`, `flappybird`, `font`, `galaksija`, `gamate`, `gameandwatch`, `gameboy`, `gameboy2p`, `gameboyadvance`, `gameboycolor`, `gamecontrollerdb`, `gamegear`, `gamegear2p`, `gamenwatch`, `gameoflife`, `games`, `gamma`, `gb`, `gba`, `gba2p`, `gbc`, `gbmidi`, `generalhardware`, `generallpf`, `genesis`, `genmidi`, `gnw`, `handheld2p`, `hbmame`, `homelab`, `ini_settings`, `inputtest`, `intellivision`, `interact`, `iq151`, `jaguar`, `jupiter`, `laser`, `laser310`, `lcd-general`, `lcd-integeronly`, `linux`, `lynx48`, `macplus`, `mame`, `mastersystem`, `megacd`, `megadrive`, `megadrive-core`, `megaduck`, `memtest`, `memtest_060mhz`, `memtest_100mhz`, `memtest_110mhz`, `memtest_120mhz`, `memtest_130mhz`, `memtest_140mhz`, `memtest_150mhz`, `memtest_160mhz`, `memtest_167mhz`, `menu`, `mgl`, `minimig`, `mister_example-ini`, `misterfirmware`, `misterlaggy`, `mra`, `msx`, `msx1`, `multicomp`, `myvision`, `n64`, `neogeo`, `neogeo-cd`, `nes`, `nintendo`, `no-mad-entry-mra`, `no-setname-mra`, `odyssey2`, `old`, `ondra_spo186`, `orao`, `oric`, `other`, `other-cores`, `overlays`, `palettes`, `pc88`, `pc8801`, `pcengine`, `pcenginecd`, `pcjr`, `pcxt`, `pdp1`, `pet2001`, `pmd85`, `pocketchallengev2`, `pokemonmini`, `poly_gamma`, `presets`, `psx`, `pure_gamma`, `ql`, `readme`, `rtc`, `rx78`, `s32x`, `samba_on`, `samcoupe`, `saturn`, `scanlines-adaptive`, `scanlines-brighter`, `scanlines-standard`, `screen_horizontal_scan_rate_15khz`, `screen_horizontal_scan_rate_31khz`, `screen_no_tate`, `screen_rotation_flip`, `screen_rotation_horizontal`, `screen_rotation_vertical_ccw`, `screen_rotation_vertical_ccw_no_flip`, `screen_rotation_vertical_cw`, `screen_rotation_vertical_cw_no_flip`, `screen_tate_ccw`, `screen_tate_ccw_no_flip`, `screen_tate_cw`, `screen_tate_cw_no_flip`, `screen_tate_flip`, `scripts`, `scv`, `segacd`, `segamark3`, `service-cores`, `sgb`, `shadow_masks`, `sharpmz`, `simplemonochrome`, `slugcross`, `sms`, `snes`, `sordm5`, `specialist`, `spectrum`, `spmx`, `sufami`, `super_vision_8000`, `superfamicom`, `supergameboy`, `supernes`, `supernintendo`, `supervision`, `supervision8000`, `svi328`, `tamagotchi`, `tandy1000`, `tatungeinstein`, `tgfx16`, `tgfx16-cd`, `tgfx16cd`, `ti-99_4a`, `ti994a`, `timezone`, `tk2000`, `tomyscramble`, `tomytutor`, `trs-80`, `tsconf`, `turbografx`, `turbografx16`, `turbografx16cd`, `turbografxcd`, `uk101`, `unlicensed_games`, `upscaling-lanczosbicubicetc`, `upscaling-recommended`, `upscaling-sharpbilinear`, `utility`, `vc4000`, `vector-06c`, `vector06`, `vector06c`, `vectrex`, `vic20`, `vt52`, `wifi`, `wonderswan`, `wonderswancolor`, `x68000`, `yctxt`, `zx-spectrum`, `zx81`, `zxnext`, `zxspectrum`\n\n##### Some relevant tag descriptions:\n\n- `arcade-cores` / `arcade`: All arcade cores and related files (MRA files).\n- `computer-cores` / `computer`: All computer cores and related folders.\n- `console-cores` / `console`: All console cores and related folders.\n- `other-cores` / `other`: All cores from the top folder Other with their related folders.\n- `service-cores` / `utility`: All utility cores and related folders.\n- `cores`: All cores (RBF files).\n- `mra`: All MRA files & folders.\n- `arcade-rbfs-only`: All arcade cores (RBF files) without related files.\n- `alternatives`: All MRA Alternatives & MRAs linked to the HBMame collection.\n- `handheld2p`: All 2 Player versions for Handheld cores.\n- `filters_video`: All video filters (`gamma` & `filters` & `shadow_masks`).\n- `all_filters`: All video & audio filters (`filters_video` & `filters_audio`).\n- `essential`: Menu core & MiSTer firmware.\n- `readme`: All README files.\n- `docs`: All documentation files & folders, including README files.\n- `extra-utilities`: All extra utilities that are installed in games folders of some computer cores.\n- `bios`: All bioses that are installed in the games folders for some computer & console cores.\n- `cheats`: All cheat files & folders.\n\n##### Tags based on the Arcade Database:\n\nThe following tags are calculated with the information contained in the [MiSTer Arcade Database](https://github.com/MiSTer-devel/ArcadeDatabase_MiSTer):\n\n- `unlicensed_games`: All arcade bootlegs, hacks or homebrew games\n- `controls_1_button`: All arcade games that use exactly 1 button.\n- `controls_2_buttons`: All arcade games that use exactly 2 buttons.\n- `controls_3_buttons`: All arcade games that use exactly 3 buttons.\n- `controls_4_buttons`: All arcade games that use exactly 4 buttons.\n- `controls_5_buttons`: All arcade games that use exactly 5 buttons.\n- `controls_6_buttons`: All arcade games that use exactly 6 buttons.\n- `controls_spinner`: All arcade games that require a spinner.\n- `controls_paddle`: All arcade games that require a paddle.\n- `controls_dial`: All arcade games that require a dial.\n- `controls_trackball`: All arcade games that require a trackball.\n- `controls_move_2-way`: All arcade games with 2-way directional movement (left-right or up-down).\n- `controls_move_4-way`: All arcade games with 4-way directional movement.\n- `controls_move_8-way`: All arcade games with 8-way omnidirectional movement.\n- `controls_2_players`: All arcade games that support up to two simultaneous players.\n- `controls_3_players`: All arcade games that support up to three simultaneous players.\n- `controls_4_players`: All arcade games that support up to four simultaneous players.\n- `screen_rotation_horizontal` / `screen_no_tate`: All arcade games designed for horizontal screens.\n- `screen_rotation_vertical_cw` / `screen_tate_cw`: All arcade games designed for clock-wise vertical screens. Including counter clock-wise with a flip option.\n- `screen_rotation_vertical_ccw` / `screen_tate_ccw`: All arcade games designed for counter clock-wise vertical screens. Including clock-wise with a flip option.\n- `screen_rotation_vertical_cw_no_flip` / `screen_tate_cw_no_flip`: All arcade games designed for clock-wise vertical screens without a flip option.\n- `screen_rotation_vertical_ccw_no_flip` / `screen_tate_ccw_no_flip`: All arcade games designed for counter clock-wise vertical screens without a flip option.\n- `screen_horizontal_scan_rate_15khz`: All arcade games only supported by 15kHz CRT screens.\n- `screen_horizontal_scan_rate_31khz`: All arcade games only supported by 31kHz CRT screens.\n\nIf there is any mismatch between one of the previous terms and the game, please report it in that Arcade Database repository.\n\n### Contributing\n\nYou are more than welcome to contribute to the [MiSTer-devel Organization](https://github.com/MiSTer-devel). But you can't do it by openening PRs to the main branch of this repository. This repository is only for file distribution. Whatever content shows up here depends on the other repositories of this organization, so you should target your PRs there.\n\nThere is a development branch in this repository for the content collection. Is fine to send PRs there but they should only modify the content collection scripts that are being used by the workflows.\n",
+      "readme": "# MiSTer Distribution\n\nThis repository contains all the files that you'll want in your MiSTer.\n\nYou may download all of them at once as a zip through the [following link](https://github.com/MiSTer-devel/Distribution_MiSTer/archive/refs/heads/main.zip). Once you have them, place them as-is in your [properly initialised SD card](https://github.com/MiSTer-devel/mr-fusion), and everything should work out of the box.\n\n### MiSTer Project\n\nIf you want to check more about the MiSTer project, please check [this wiki](https://github.com/MiSTer-devel/Wiki_MiSTer/wiki).\n\n### MiSTer Downloader\n\nFor downloading all of these files directly from your MiSTer, use the [MiSTer Downloader](https://github.com/MiSTer-devel/Downloader_MiSTer).\n\n#### Tags that you may use with 'Download Filters' feature\n\nRead about how to use them [here](https://github.com/MiSTer-devel/Downloader_MiSTer/blob/main/docs/download-filters.md).\n\n##### List:\n\n`acornatom`, `acornelectron`, `adam`, `adctest`, `adventurevision`, `alicemc10`, `all_filters`, `altair8800`, `alternatives`, `amiga`, `amstrad`, `amstrad-pcw`, `amstradpcw`, `ao486`, `apogee`, `apple-i`, `apple-ii`, `aquarius`, `arcade`, `arcade-actfancer`, `arcade-arkanoid`, `arcade-asteroids`, `arcade-asteroidsdeluxe`, `arcade-astrocade`, `arcade-atarisys1`, `arcade-ataritetris`, `arcade-athena`, `arcade-bagman`, `arcade-bankpanic`, `arcade-battlezone`, `arcade-berzerk`, `arcade-blackwidow`, `arcade-blockade`, `arcade-bloodbros`, `arcade-blueprint`, `arcade-bombjack`, `arcade-bosconian`, `arcade-breakout`, `arcade-bubsys`, `arcade-bubsysrom`, `arcade-burgertime`, `arcade-burningrubber`, `arcade-canyonbomber`, `arcade-cave`, `arcade-cavebanpresto`, `arcade-centipede`, `arcade-chameleon`, `arcade-chinagate`, `arcade-cityconnection`, `arcade-computerspace`, `arcade-congobongo`, `arcade-cores`, `arcade-cosmic`, `arcade-cosmicguerilla`, `arcade-crazyballoon`, `arcade-crazyclimber`, `arcade-crazykong`, `arcade-crystalcastles`, `arcade-darius`, `arcade-darius2ninjawarriors`, `arcade-darius2warriorblade`, `arcade-dcon`, `arcade-deco16`, `arcade-defender`, `arcade-digdug`, `arcade-dominos`, `arcade-donkeykong`, `arcade-donkeykong3`, `arcade-donkeykongjunior`, `arcade-dorodon`, `arcade-dottorikun`, `arcade-druaga`, `arcade-exerion`, `arcade-exidy2`, `arcade-expressraider`, `arcade-finalizer`, `arcade-foodfight`, `arcade-freeze`, `arcade-frenzy`, `arcade-galaga`, `arcade-galaxian`, `arcade-galivan`, `arcade-gaplus`, `arcade-gauntlet`, `arcade-gyruss`, `arcade-igspgm`, `arcade-ikariwarriors`, `arcade-inferno`, `arcade-iremm107`, `arcade-iremm62`, `arcade-iremm72`, `arcade-iremm90`, `arcade-iremm92`, `arcade-ironhorse`, `arcade-jackal`, `arcade-jailbreak`, `arcade-joust2`, `arcade-junofirst`, `arcade-kangaroo`, `arcade-kickandrun`, `arcade-ladybug`, `arcade-lunarlander`, `arcade-mariobros`, `arcade-mcr1`, `arcade-mcr2`, `arcade-mcr3`, `arcade-mcr3mono`, `arcade-mcr3scroll`, `arcade-missilecommand`, `arcade-moonpatrol`, `arcade-mrdo`, `arcade-mrjong`, `arcade-mysticmarathon`, `arcade-naughtyboy`, `arcade-ninjakun`, `arcade-pacman`, `arcade-pengo`, `arcade-penguinkunwars`, `arcade-performan`, `arcade-phoenix`, `arcade-pleiads`, `arcade-polyplay`, `arcade-pong`, `arcade-pooyan`, `arcade-popeye`, `arcade-psychic5`, `arcade-qbert`, `arcade-qix`, `arcade-rallyx`, `arcade-rbfs-only`, `arcade-riverpatrol`, `arcade-robotron`, `arcade-rshnatk`, `arcade-salamander`, `arcade-scootershooter`, `arcade-scramble`, `arcade-sdgundamps`, `arcade-segasys1`, `arcade-segavicz80`, `arcade-silverland`, `arcade-skysmasher`, `arcade-slapfight`, `arcade-sms`, `arcade-snk6502`, `arcade-snk_triplez80`, `arcade-solomonskey`, `arcade-sonson`, `arcade-spacefirebird`, `arcade-spaceinvaders`, `arcade-spacerace`, `arcade-sprint1`, `arcade-sprint2`, `arcade-st-v`, `arcade-starforce`, `arcade-starwars`, `arcade-subs`, `arcade-superbreakout`, `arcade-suprloco`, `arcade-taitof2`, `arcade-taitosj`, `arcade-tankbattalion`, `arcade-tecmo`, `arcade-tiamc1`, `arcade-timepilot`, `arcade-timepilot84`, `arcade-tnkiii`, `arcade-traverseusa`, `arcade-tropicalangel`, `arcade-turkeyshoot`, `arcade-tutankham`, `arcade-ultratank`, `arcade-vastar`, `arcade-vball`, `arcade-xevious`, `arcade-xsleena`, `arcade-zaxxon`, `arcade-zigzag`, `arcadelpf`, `arcadia`, `archie`, `arduboy`, `astrocade`, `atari2600`, `atari5200`, `atari7800`, `atari800`, `atarilynx`, `atarist`, `avision`, `ay-3-8500`, `bbcbridgecompanion`, `bbcmicro`, `bios`, `bk0011m`, `c128`, `c16`, `c64`, `cacert`, `casio_pv-1000`, `casio_pv-2000`, `cd-i`, `cdi`, `channelf`, `cheats`, `chess`, `chip8`, `coco2`, `coco3`, `coleco`, `colecoadam`, `colecovision`, `complexmultichromatic`, `computer`, `computer-cores`, `console`, `console-cd`, `console-cores`, `contrast_boost`, `controls_1_button`, `controls_2_buttons`, `controls_2_players`, `controls_3_buttons`, `controls_3_players`, `controls_4_buttons`, `controls_4_players`, `controls_5_buttons`, `controls_6_buttons`, `controls_dial`, `controls_move_2-way`, `controls_move_4-way`, `controls_move_8-way`, `controls_paddle`, `controls_spinner`, `controls_trackball`, `cores`, `corespecific`, `creativision`, `crt-simulation`, `displayspecific`, `docs`, `donut`, `downloader`, `downloader_bin`, `downloader_latest`, `drv`, `edsac`, `eg2000`, `enterprise`, `epochgalaxyii`, `essential`, `extra-utilities`, `famicom`, `fast_usb_polling`, `filters`, `filters_audio`, `filters_video`, `flappy`, `flappybird`, `font`, `galaksija`, `gamate`, `gameandwatch`, `gameboy`, `gameboy2p`, `gameboyadvance`, `gameboycolor`, `gamecontrollerdb`, `gamegear`, `gamegear2p`, `gamenwatch`, `gameoflife`, `games`, `gamma`, `gb`, `gba`, `gba2p`, `gbc`, `gbmidi`, `generalhardware`, `generallpf`, `genesis`, `genmidi`, `gnw`, `handheld2p`, `hbmame`, `homelab`, `ini_settings`, `inputtest`, `intellivision`, `interact`, `iq151`, `jaguar`, `jupiter`, `laser`, `laser310`, `lcd-general`, `lcd-integeronly`, `linux`, `lynx48`, `macplus`, `mame`, `mastersystem`, `megacd`, `megadrive`, `megadrive-core`, `megaduck`, `memtest`, `memtest_060mhz`, `memtest_100mhz`, `memtest_110mhz`, `memtest_120mhz`, `memtest_130mhz`, `memtest_140mhz`, `memtest_150mhz`, `memtest_160mhz`, `memtest_167mhz`, `menu`, `mgl`, `minimig`, `mister_example-ini`, `misterfirmware`, `misterlaggy`, `mra`, `msx`, `msx1`, `multicomp`, `myvision`, `n64`, `neogeo`, `neogeo-cd`, `nes`, `nintendo`, `no-mad-entry-mra`, `no-setname-mra`, `odyssey2`, `old`, `ondra_spo186`, `orao`, `oric`, `other`, `other-cores`, `overlays`, `palettes`, `pc88`, `pc8801`, `pcengine`, `pcenginecd`, `pcjr`, `pcxt`, `pdp1`, `pet2001`, `pmd85`, `pocketchallengev2`, `pokemonmini`, `poly_gamma`, `presets`, `psx`, `pure_gamma`, `ql`, `readme`, `rtc`, `rx78`, `s32x`, `samba_on`, `samcoupe`, `saturn`, `scanlines-adaptive`, `scanlines-brighter`, `scanlines-standard`, `screen_horizontal_scan_rate_15khz`, `screen_horizontal_scan_rate_31khz`, `screen_no_tate`, `screen_rotation_flip`, `screen_rotation_horizontal`, `screen_rotation_vertical_ccw`, `screen_rotation_vertical_ccw_no_flip`, `screen_rotation_vertical_cw`, `screen_rotation_vertical_cw_no_flip`, `screen_tate_ccw`, `screen_tate_ccw_no_flip`, `screen_tate_cw`, `screen_tate_cw_no_flip`, `screen_tate_flip`, `scripts`, `scv`, `segacd`, `segamark3`, `service-cores`, `sgb`, `shadow_masks`, `sharpmz`, `simplemonochrome`, `slugcross`, `sms`, `snes`, `sordm5`, `specialist`, `spectrum`, `spmx`, `sufami`, `super_vision_8000`, `superfamicom`, `supergameboy`, `supernes`, `supernintendo`, `supervision`, `supervision8000`, `svi328`, `tamagotchi`, `tandy1000`, `tatungeinstein`, `tgfx16`, `tgfx16-cd`, `tgfx16cd`, `ti-99_4a`, `ti994a`, `timezone`, `tk2000`, `tomyscramble`, `tomytutor`, `trs-80`, `tsconf`, `turbografx`, `turbografx16`, `turbografx16cd`, `turbografxcd`, `uk101`, `unlicensed_games`, `upscaling-lanczosbicubicetc`, `upscaling-recommended`, `upscaling-sharpbilinear`, `utility`, `vc4000`, `vector-06c`, `vector06`, `vector06c`, `vectrex`, `vic20`, `vt52`, `wifi`, `wonderswan`, `wonderswancolor`, `x68000`, `yctxt`, `zx-spectrum`, `zx81`, `zxnext`, `zxspectrum`\n\n##### Some relevant tag descriptions:\n\n- `arcade-cores` / `arcade`: All arcade cores and related files (MRA files).\n- `computer-cores` / `computer`: All computer cores and related folders.\n- `console-cores` / `console`: All console cores and related folders.\n- `other-cores` / `other`: All cores from the top folder Other with their related folders.\n- `service-cores` / `utility`: All utility cores and related folders.\n- `cores`: All cores (RBF files).\n- `mra`: All MRA files & folders.\n- `arcade-rbfs-only`: All arcade cores (RBF files) without related files.\n- `alternatives`: All MRA Alternatives & MRAs linked to the HBMame collection.\n- `handheld2p`: All 2 Player versions for Handheld cores.\n- `filters_video`: All video filters (`gamma` & `filters` & `shadow_masks`).\n- `all_filters`: All video & audio filters (`filters_video` & `filters_audio`).\n- `essential`: Menu core & MiSTer firmware.\n- `readme`: All README files.\n- `docs`: All documentation files & folders, including README files.\n- `extra-utilities`: All extra utilities that are installed in games folders of some computer cores.\n- `bios`: All bioses that are installed in the games folders for some computer & console cores.\n- `cheats`: All cheat files & folders.\n\n##### Tags based on the Arcade Database:\n\nThe following tags are calculated with the information contained in the [MiSTer Arcade Database](https://github.com/MiSTer-devel/ArcadeDatabase_MiSTer):\n\n- `unlicensed_games`: All arcade bootlegs, hacks or homebrew games\n- `controls_1_button`: All arcade games that use exactly 1 button.\n- `controls_2_buttons`: All arcade games that use exactly 2 buttons.\n- `controls_3_buttons`: All arcade games that use exactly 3 buttons.\n- `controls_4_buttons`: All arcade games that use exactly 4 buttons.\n- `controls_5_buttons`: All arcade games that use exactly 5 buttons.\n- `controls_6_buttons`: All arcade games that use exactly 6 buttons.\n- `controls_spinner`: All arcade games that require a spinner.\n- `controls_paddle`: All arcade games that require a paddle.\n- `controls_dial`: All arcade games that require a dial.\n- `controls_trackball`: All arcade games that require a trackball.\n- `controls_move_2-way`: All arcade games with 2-way directional movement (left-right or up-down).\n- `controls_move_4-way`: All arcade games with 4-way directional movement.\n- `controls_move_8-way`: All arcade games with 8-way omnidirectional movement.\n- `controls_2_players`: All arcade games that support up to two simultaneous players.\n- `controls_3_players`: All arcade games that support up to three simultaneous players.\n- `controls_4_players`: All arcade games that support up to four simultaneous players.\n- `screen_rotation_horizontal` / `screen_no_tate`: All arcade games designed for horizontal screens.\n- `screen_rotation_vertical_cw` / `screen_tate_cw`: All arcade games designed for clock-wise vertical screens. Including counter clock-wise with a flip option.\n- `screen_rotation_vertical_ccw` / `screen_tate_ccw`: All arcade games designed for counter clock-wise vertical screens. Including clock-wise with a flip option.\n- `screen_rotation_vertical_cw_no_flip` / `screen_tate_cw_no_flip`: All arcade games designed for clock-wise vertical screens without a flip option.\n- `screen_rotation_vertical_ccw_no_flip` / `screen_tate_ccw_no_flip`: All arcade games designed for counter clock-wise vertical screens without a flip option.\n- `screen_horizontal_scan_rate_15khz`: All arcade games only supported by 15kHz CRT screens.\n- `screen_horizontal_scan_rate_31khz`: All arcade games only supported by 31kHz CRT screens.\n\nIf there is any mismatch between one of the previous terms and the game, please report it in that Arcade Database repository.\n\n### Contributing\n\nYou are more than welcome to contribute to the [MiSTer-devel Organization](https://github.com/MiSTer-devel). But you can't do it by openening PRs to the main branch of this repository. This repository is only for file distribution. Whatever content shows up here depends on the other repositories of this organization, so you should target your PRs there.\n\nThere is a development branch in this repository for the content collection. Is fine to send PRs there but they should only modify the content collection scripts that are being used by the workflows.\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/Distribution_MiSTer",
@@ -23172,7 +24735,7 @@
     {
       "name": "Minimig-AGA_MiSTer",
       "description": null,
-      "readme": "# Minimig-AGA_MiSTer\n\nThis is a port of the minimig core to the [MiSTer board](https://github.com/MiSTer-devel).\n\n[Minimig](http://en.wikipedia.org/wiki/Minimig) (short for Mini Amiga) is an open source re-implementation of an Amiga using a field-programmable gate array (FPGA). Original Minimig author is Dennis van Weeren.\n\n[Amiga](http://en.wikipedia.org/wiki/Amiga_500) was - in my opinion - an amazing personal computer, announced around 1984, which - at the time - far surpassed any other personal computer on the market, with advanced graphic & sound capabilities, not to mention its great OS with preemptive multitasking capabilities.\n\nThe Minimig-MiSTer variant in this repository has been upgraded with [AGA chipset](http://en.wikipedia.org/wiki/Amiga_Advanced_Graphics_Architecture) capabilites, which allows it to emulate the latest Amiga models ([Amiga 1200](http://en.wikipedia.org/wiki/Amiga_1200)) and (partially) [Amiga CD32](http://en.wikipedia.org/wiki/Amiga_CD32)). Of course it also supports previous OCS/ECS Amigas like [Amiga 500](http://en.wikipedia.org/wiki/Amiga_500), [Amiga 600](http://en.wikipedia.org/wiki/Amiga_600) etc.\n\n\n## Core features supported\n\n* Chipset variants : OCS, ECS, AGA\n* ChipRAM : 0.5MB - 2.0MB\n* SlowRAM : 0.0MB - 1.5MB\n* FastRAM : 0.0MB - 384MB\n* CPU core : 68000, 68020\n* Kickstart : 1.2, 1.3, 2.0, 3.0, 3.1, 3.1.4, 3.2 (256kB, 512kB & 1MB kickstart ROMs currently supported)\n* HRTmon with custom registers mirror\n* Floppy drives : 1-4 floppies (supports ADF floppy image format), with normal & turbo speeds\n* Up to 4 IDE devices\n* CDROM\n* Video standard : PAL / NTSC\n* Supports almost all OCS/ECS/AGA custom resolutions\n* RTG with up to 1920x1080 and 1600x1200 resolutions\n* Peripherals : USB keyboards, USB mice, USB gamepads\n* Serial connection to Linux with ability to connect to Internet.\n* Shared folder for rapid file exchange between Linux and Amiga.\n* MIDI: both MiSTer internal emulation and external through USER_IO port (MT32-pi and generic MIDI device)\n* Akiko chunk to planar implementation\n* Mouse with wheel.\n\n## Usage\n\n### Screen adjustment\nAdjustment is initiated from OSD menu. \nKeyboard control:\n* Cursor keys - top/left corner.\n* ALT+Cursor keys - bottom/right corner.\n* Enter - finish and store position.\n* Backspace - reset do default.\n* Esc - cancel and finish.\n\nPositions are saved in the configuration file. Up to 64 different resolutions can be adjusted.\n\n### Shared folder\n\nAll required files (and sources) are in extra/MiSTer_share.lha\n\nAmiga driver is based on Niklas Ekstr\u00f6m [a314](https://github.com/niklasekstrom/a314) driver.\n\nOn Amiga:\n- copy dummy.device to DEVS:\n- copy MountList to DEVS: (or add content from MountList to existing file)\n- copy MiSTerFileSystem to L:\n- open CLI and type there: mount share:\n- MiSTer drive will appear on main WB screen. If it will work, then you can add this command into user-startup file, and it will be mounted at every boot.\n\nOn Linux side the folder is \"shared\" inside Amiga folder.\n\n### RTG\n\n* install [Picasso96.lha](http://aminet.net/package/driver/video/Picasso96) Choose uaegfx while installing.\n* remove uaegfx (or whatever driver you choose in install) from SYS:Devs/Monitors\n* extract [MiSTer_RTG.lha](https://github.com/MiSTer-devel/Minimig-AGA_MiSTer/raw/MiSTer/extra/rtg_driver/MiSTer_RTG.lha) and copy content to SYS:\n* reboot\n\nNew video modes will appear in ScreenMode preference. For more screen modes use Picasso96Mode preference (attn: it has awkward interface!)\n\n**Note: RTG outputs to HDMI primarily as it uses scaler.**\nIf you want to see RTG video on VGA output, then set vga_scaler=1 in MiSTer.ini.\nRTG is available only for 68020 CPU.\n\n### IDE and CDROM\nBy default up to 2 IDE devices are supported. For Secondary Master/Slave devices, you have to install either IDEFix97 (shareware, WB3.1/3.9) or AtapiMagic (freeware, WB 3.1.4/3.2).\nRemovable/CD mode allows to hot swap CDs. Currently audio portion of CD isn't implemented (although playback commands should be accepted).\n\n### How to make a new HDF (HDD Image)\n1) Create an empty HDF file of required size on PC (ideally fill it by 0 if possible).\n2) Copy it to MiSTer\n3) Mount it as HDF on OSD, and also mount some adf with HDToolBox (for example install3.2.adf from OS3.2)\n4) Boot that ADF\n5) go to HDToolBox, then Change Drive Type -> Define New -> Read Configuration. Then Ok, Ok. Then Save Changes to Drive.\n6) Press Partition Drive. Optionally delete MDH1 partition, expand MDH0 to full drive. Rename MDH0 to standard DH0 name, mark it as Bootable. Then OK, then Save Changes to Drive.\n7) Exit, reboot.\n8) After booting you will see DH0:Uninitialized. Format it from Workbench menu. You can use Quick format option.\n9) Install required OS.\n\n\n### MIDI\nSupported internal MiSTer emulation and external devices such as MT32-pi or generic MIDI though USER_IO.\nFor MIDI-IN support through USER_IO set UART mode to None in OSD settings.\n\n### Akiko\nChunk to planar engine of Akiko is supported. It requires SetAkiko util (from releases/WheelDriverAkiko.adf) to be executed.\n\n### Mouse Wheel\nTo enable wheel support both WheelDriver and FreeWheel must be run from releases/WheelDriverAkiko.adf\n\n### Software\nTo use the core, you will need a Kickstart ROM image file, which you can obtain by copying Kickstart ROM IC from your actual Amiga, or by buying an [Amiga Forever](http://www.amigaforever.com/) software pack. The Kickstart image should be placed on the root of the SD card with the name KICK.ROM. Minimig also supports the [AROS](http://aros.sourceforge.net/) Kickstart ROM replacement.\n\nThe Minimig can read any ADF floppy images you place on the SD card. I recommend at least Workbench 1.3 or 3.1 (AmigaOS), some of the Amigas great games (I recommend Ruff'n'Tumble) or some of the amazing demos from the vast Amiga demoscene (like State of the Art from Spaceballs).\n\nThe Minimig can also use HDF harddisk images, which can be created with [WinUAE](http://www.winuae.net/).\n\n### Recommended minimig config\n\n* for ECS games / demos : CPU = 68000, Turbo=NONE, Chipset=ECS, ChipRAM=0.5MB, slowRAM=0.5MB, Kickstart 1.3\n* for AGA games / demos : CPU = 68020, Turbo=NONE, Chipset=AGA, ChipRAM=2MB, SlowRAM=0MB, FastRAM=384MB, Kickstart 3.1\n\n### Controlling minimig\n\nKeyboard special keys:\n\n* F12         - OSD menu\n* F11         - start monitor (HRTmon) if HRTmon is enabled in OSD menu (otherwise F11 is the Amiga HELP key)\n* ScrollLock  - toggle keyoard only / mouse / joystick 1 / joystick 2 emulation on the keyboard (direction keys + LCTRL)\n\n\n## Sources\n\nThis sourcecode is based on Rok Krajnc project ([minimig-de1](https://github.com/rkrajnc/minimig-de1)).\n\nOriginal Minimig sources from Dennis van Weeren with updates by Jakub Bednarski are published on [Google Code](http://code.google.com/p/minimig/).\n\nSome Minimig updates are published on the [Minimig Discussion Forum](http://www.minimig.net/), done by Sascha Boing.\n\nARM firmware updates and Minimig-tc64 port changes by Christian Vogelsang ([minimig_tc64](https://github.com/cnvogelg/minimig_tc64)) and A.M. Robinson ([minimig_tc64](https://github.com/robinsonb5/minimig_tc64)).\n\nMiSTer project by Sorgelig ([MiSTer](https://github.com/MiSTer-devel)).\n\nTG68K.C core by Tobias Gubener.\n\n\n## Links & more info\n\nMy page [somuch.guru](http://somuch.guru/).\n\nFurther info about Minimig can be found on the [Minimig Discussion Forum](http://www.minimig.net/).\n\nMiSTer board support & other cores on the [MiSTer Project Page](https://github.com/MiSTer-devel).\n\n\n## License\n\nCopyright \u00a9 2011 - 2016 Rok Krajnc (rok.krajnc@gmail.com)\n\nCopyright \u00a9 2005 - 2015 Dennis van Weeren, Jakub Bednarski, Sascha Boing, A.M. Robinson, Tobias Gubener, Till Harbaum\n\nCopyright \u00a9 2017 - 2020 Sorgelig (mister.devel@gmail.com)\n\nThis program is free software: you can redistribute it and/or modify\nit under the terms of the GNU General Public License as published by\nthe Free Software Foundation, either version 3 of the License, or\n(at your option) any later version.\n\nThis program is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License\nalong with this program.  If not, see <http://www.gnu.org/licenses/>.\n",
+      "readme": "# Minimig-AGA_MiSTer\n\nThis is a port of the minimig core to the [MiSTer board](https://github.com/MiSTer-devel).\n\n[Minimig](http://en.wikipedia.org/wiki/Minimig) (short for Mini Amiga) is an open source re-implementation of an Amiga using a field-programmable gate array (FPGA). Original Minimig author is Dennis van Weeren.\n\n[Amiga](http://en.wikipedia.org/wiki/Amiga_500) was - in my opinion - an amazing personal computer, announced around 1984, which - at the time - far surpassed any other personal computer on the market, with advanced graphic & sound capabilities, not to mention its great OS with preemptive multitasking capabilities.\n\nThe Minimig-MiSTer variant in this repository has been upgraded with [AGA chipset](http://en.wikipedia.org/wiki/Amiga_Advanced_Graphics_Architecture) capabilites, which allows it to emulate the latest Amiga models ([Amiga 1200](http://en.wikipedia.org/wiki/Amiga_1200)) and (partially) [Amiga CD32](http://en.wikipedia.org/wiki/Amiga_CD32)). Of course it also supports previous OCS/ECS Amigas like [Amiga 500](http://en.wikipedia.org/wiki/Amiga_500), [Amiga 600](http://en.wikipedia.org/wiki/Amiga_600) etc.\n\n\n## Core features supported\n\n* Chipset variants : OCS, ECS, AGA\n* ChipRAM : 0.5MB - 2.0MB\n* SlowRAM : 0.0MB - 1.5MB\n* FastRAM : 0.0MB - 384MB\n* CPU core : 68000, 68020\n* Kickstart : 1.2, 1.3, 2.0, 3.0, 3.1, 3.1.4, 3.2 (256kB, 512kB & 1MB kickstart ROMs currently supported)\n* HRTmon with custom registers mirror\n* Floppy drives : 1-4 floppies (supports ADF floppy image format), with normal & turbo speeds\n* Up to 4 IDE devices\n* CDROM\n* Video standard : PAL / NTSC\n* Supports almost all OCS/ECS/AGA custom resolutions\n* RTG with up to 1920x1080 and 1600x1200 resolutions\n* Peripherals : USB keyboards, USB mice, USB gamepads\n* Serial connection to Linux with ability to connect to Internet.\n* Shared folder for rapid file exchange between Linux and Amiga.\n* MIDI: both MiSTer internal emulation and external through USER_IO port (MT32-pi and generic MIDI device)\n* Akiko chunk to planar implementation\n* Mouse with wheel.\n\n## Usage\n\n### Screen adjustment\nAdjustment is initiated from OSD menu. \nKeyboard control:\n* Cursor keys - top/left corner.\n* ALT+Cursor keys - bottom/right corner.\n* Enter - finish and store position.\n* Backspace - reset do default.\n* Esc - cancel and finish.\n\nPositions are saved in the configuration file. Up to 64 different resolutions can be adjusted.\n\n### Shared folder\n\nAll required files (and sources) are in extra/MiSTer_share.lha\n\nAmiga driver is based on Niklas Ekstr\u00f6m [a314](https://github.com/niklasekstrom/a314) driver.\n\nOn Amiga:\n- copy dummy.device to DEVS:\n- copy MountList to DEVS: (or add content from MountList to existing file)\n- copy MiSTerFileSystem to L:\n- open CLI and type there: mount share:\n- MiSTer drive will appear on main WB screen. If it will work, then you can add this command into user-startup file, and it will be mounted at every boot.\n\nOn Linux side the folder is \"shared\" inside Amiga folder.\n\n### RTG\n\n* install [Picasso96.lha](http://aminet.net/package/driver/video/Picasso96) Choose uaegfx while installing.\n* remove uaegfx (or whatever driver you choose in install) from SYS:Devs/Monitors\n* extract [MiSTer_RTG.lha](https://github.com/MiSTer-devel/Minimig-AGA_MiSTer/raw/MiSTer/extra/rtg_driver/MiSTer_RTG.lha) and copy content to SYS:\n* reboot\n\nNew video modes will appear in ScreenMode preference. For more screen modes use Picasso96Mode preference (attn: it has awkward interface!)\n\n**Note: RTG outputs to HDMI primarily as it uses scaler.**\nIf you want to see RTG video on VGA output, then set vga_scaler=1 in MiSTer.ini.\nRTG is available only for 68020 CPU.\n\n### IDE and CDROM\nBy default up to 2 IDE devices are supported. For Secondary Master/Slave devices, you have to install either IDEFix97 (shareware, WB3.1/3.9) or AtapiMagic (freeware, WB 3.1.4/3.2).\nRemovable/CD mode allows to hot swap CDs. Currently audio portion of CD isn't implemented (although playback commands should be accepted).\n\n### How to make a new HDF (HDD Image)\nOnly plain/raw HDF images are supported. WinUAE Dynamic HDF and Sparse File HDF formats are not supported.\n\n1) Create an empty HDF file of required size on PC (ideally fill it by 0 if possible).\n2) Copy it to MiSTer\n3) Mount it as HDF on OSD, and also mount some adf with HDToolBox (for example install3.2.adf from OS3.2)\n4) Boot that ADF\n5) go to HDToolBox, then Change Drive Type -> Define New -> Read Configuration. Then Ok, Ok. Then Save Changes to Drive.\n6) Press Partition Drive. Optionally delete MDH1 partition, expand MDH0 to full drive. Rename MDH0 to standard DH0 name, mark it as Bootable. Then OK, then Save Changes to Drive.\n7) Exit, reboot.\n8) After booting you will see DH0:Uninitialized. Format it from Workbench menu. You can use Quick format option.\n9) Install required OS.\n\n\n### MIDI\nSupported internal MiSTer emulation and external devices such as MT32-pi or generic MIDI though USER_IO.\nFor MIDI-IN support through USER_IO set UART mode to None in OSD settings.\n\n### Akiko\nChunk to planar engine of Akiko is supported. It requires SetAkiko util (from releases/WheelDriverAkiko.adf) to be executed.\n\n### Mouse Wheel\nTo enable wheel support both WheelDriver and FreeWheel must be run from releases/WheelDriverAkiko.adf\n\n### Software\nTo use the core, you will need a Kickstart ROM image file, which you can obtain by copying Kickstart ROM IC from your actual Amiga, or by buying an [Amiga Forever](http://www.amigaforever.com/) software pack. The Kickstart image should be placed on the root of the SD card with the name KICK.ROM. Minimig also supports the [AROS](http://aros.sourceforge.net/) Kickstart ROM replacement.\n\nThe Minimig can read any ADF floppy images you place on the SD card. I recommend at least Workbench 1.3 or 3.1 (AmigaOS), some of the Amigas great games (I recommend Ruff'n'Tumble) or some of the amazing demos from the vast Amiga demoscene (like State of the Art from Spaceballs).\n\nThe Minimig can also use HDF harddisk images, which can be created with [WinUAE](http://www.winuae.net/).\n\n### Recommended minimig config\n\n* for ECS games / demos : CPU = 68000, Turbo=NONE, Chipset=ECS, ChipRAM=0.5MB, slowRAM=0.5MB, Kickstart 1.3\n* for AGA games / demos : CPU = 68020, Turbo=NONE, Chipset=AGA, ChipRAM=2MB, SlowRAM=0MB, FastRAM=384MB, Kickstart 3.1\n\n### Controlling minimig\n\nKeyboard special keys:\n\n* F12         - OSD menu\n* F11         - start monitor (HRTmon) if HRTmon is enabled in OSD menu (otherwise F11 is the Amiga HELP key)\n* ScrollLock  - toggle keyoard only / mouse / joystick 1 / joystick 2 emulation on the keyboard (direction keys + LCTRL)\n\n\n## Sources\n\nThis sourcecode is based on Rok Krajnc project ([minimig-de1](https://github.com/rkrajnc/minimig-de1)).\n\nOriginal Minimig sources from Dennis van Weeren with updates by Jakub Bednarski are published on [Google Code](http://code.google.com/p/minimig/).\n\nSome Minimig updates are published on the [Minimig Discussion Forum](http://www.minimig.net/), done by Sascha Boing.\n\nARM firmware updates and Minimig-tc64 port changes by Christian Vogelsang ([minimig_tc64](https://github.com/cnvogelg/minimig_tc64)) and A.M. Robinson ([minimig_tc64](https://github.com/robinsonb5/minimig_tc64)).\n\nMiSTer project by Sorgelig ([MiSTer](https://github.com/MiSTer-devel)).\n\nTG68K.C core by Tobias Gubener.\n\n\n## Links & more info\n\nMy page [somuch.guru](http://somuch.guru/).\n\nFurther info about Minimig can be found on the [Minimig Discussion Forum](http://www.minimig.net/).\n\nMiSTer board support & other cores on the [MiSTer Project Page](https://github.com/MiSTer-devel).\n\n\n## License\n\nCopyright \u00a9 2011 - 2016 Rok Krajnc (rok.krajnc@gmail.com)\n\nCopyright \u00a9 2005 - 2015 Dennis van Weeren, Jakub Bednarski, Sascha Boing, A.M. Robinson, Tobias Gubener, Till Harbaum\n\nCopyright \u00a9 2017 - 2020 Sorgelig (mister.devel@gmail.com)\n\nThis program is free software: you can redistribute it and/or modify\nit under the terms of the GNU General Public License as published by\nthe Free Software Foundation, either version 3 of the License, or\n(at your option) any later version.\n\nThis program is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License\nalong with this program.  If not, see <http://www.gnu.org/licenses/>.\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/Minimig-AGA_MiSTer",
@@ -25355,7 +26918,7 @@
     {
       "name": "PDFViewer_MiSTer",
       "description": "PDF Viewer For MiSTer",
-      "readme": "\n# PDF Viewer \n\nThis is a framebuffer pdfviewer from:\n\nhttps://github.com/jichu4n/jfbview\n\nThat is compiled to run on MiSTer. There is a patch that adds escape, and enter to the keymapping for the viewer. This will allow it to work well with the joystick emulation.\n\n\n## JOYSTICK:\n\nThe joystick emulation maps to these keys:\n```\nright,left,up,down\nbtn1 - enter   -- next page\nbtn2 - escape  -- quit\nbtn3 - space   -- down\nbtn4 - tab     -- index view\n```\n\n\n## Glow MD Viewer\n\nWe also include the Glow Viewer: https://github.com/charmbracelet/glow/\nhttps://github.com/charmbracelet/glow/releases/download/v1.4.1/glow_1.4.1_linux_armv6.tar.gz\n\n## Less file\n\nThis creates a less key file that we use to set esc/esc or tab to exit from the less pager.\n",
+      "readme": "\n# PDF Viewer\n\nThis is a framebuffer pdfviewer:\n\nhttps://github.com/bemjo/pdfviewer\n\nforked from:\n\nhttps://github.com/jichu4n/jfbview\n\nThat is a modified version with MiSTer specific optimizations and fixes not appropriate for upstream.\nThis adds escape, and enter to the keymapping for the viewer. This will allow it to work well with the joystick emulation.\nThis add resume support which currently saves your last page in a metadata hashtable in the docs/ directory of your stored documents,\nyour USB drive, network mount, or SD card.\n\n## JOYSTICK:\n\nThe joystick emulation maps to these keys:\n```\nright,left,up,down\nbtn1 - enter   -- next page\nbtn2 - escape  -- quit\nbtn3 - space   -- down\nbtn4 - tab     -- index view\nL    - pageup  -- prev page\nR    - pagedn  -- next page\n```\n\n\n## Glow MD Viewer\n\nWe also include the Glow Viewer: https://github.com/charmbracelet/glow/\nhttps://github.com/charmbracelet/glow/releases/download/v1.4.1/glow_1.4.1_linux_armv6.tar.gz\n\n## Less file\n\nThis creates a less key file that we use to set esc/esc or tab to exit from the less pager.\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/PDFViewer_MiSTer",
@@ -25376,6 +26939,12 @@
           "name": "pdfviewer_20220207",
           "sha": "56eaccb33faff726c3c4821c3dda37b4ad204dea",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/PDFViewer_MiSTer/master/releases/pdfviewer_20220207",
+          "type": "OTHER"
+        },
+        {
+          "name": "pdfviewer_20260614",
+          "sha": "6c86fad960e5bb7c3b049f1186f4cf7b3f94302b",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/PDFViewer_MiSTer/master/releases/pdfviewer_20260614",
           "type": "OTHER"
         }
       ]
@@ -26169,7 +27738,7 @@
     {
       "name": "Saturn_MiSTer",
       "description": "Sega Saturn for MiSTer",
-      "readme": "# [Sega Saturn](https://en.wikipedia.org/wiki/Sega_Saturn) for MiSTer\n\n## Hardware Requirements\n\n- 128 MB SDRAM Module (Primary)\n- SDRAM Module of any size (32MB-128MB) (Secondary)\n\n> **Note:** Dual SDRAM modules is recommended for better compatibility.\n\n## Status\n\nCurrent status is WIP/Beta\n\nKnown issues:\n\n",
+      "readme": "# [Sega Saturn](https://en.wikipedia.org/wiki/Sega_Saturn) for MiSTer\n\n## Hardware Requirements\n\n- 128 MB SDRAM Module (Primary)\n- SDRAM Module of any size (32MB-128MB) (Secondary)\n\n> **Note:** Dual SDRAM modules is recommended for better compatibility.\n\n## Status\n\nThe core has matured substantially, with many games tested over the course of development.\n\nKnown issues and limitations are tracked in this repository's issue list rather than in a game-by-game list here.\n\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/Saturn_MiSTer",

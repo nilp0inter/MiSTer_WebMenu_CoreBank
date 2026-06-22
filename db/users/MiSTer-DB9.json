@@ -5752,14 +5752,14 @@
     {
       "name": "Arcade-IGSPGM_MiSTer",
       "description": null,
-      "readme": "# IGS PolyGame Master (PGM)\n\nWork in progress IGS PolyGame Master core for MiSTer FPGA.\n\n## Sources\nMultiple different sources have been used as reference when developing this core.\n\n[MAME](https://www.mamedev.org/) - Tons of information about the PGM system and especially its protection mechanisms. Also used as the source for the initial ICS2115 implementation.\n\n[igspgm.com](https://igspgm.com/) - Motherboard images, cartridge images, archived documents. Super valuable archive of information that could easily have been lost to history.\n\n[PGMTech](https://github.com/laoo/PGMTech) - Solid documentation of PGM memory maps and system architecture\n\n[GUS GF1 Decap](https://github.com/nukeykt/LPC-GUS) - Coming from the same hardware lineage, the GF1 source was a useful reference for how things might be done inside the ICS2115\n\n[Game Bub](https://github.com/elipsitz/gamebub) - ARM7TDMI implementation\n\n",
+      "readme": "# IGS PolyGame Master MiSTer FPGA core\n\nThe PolyGame Master (PGM) is an arcade system board released in 1997 by IGS. It has a lot of similarities to SNK's Neo Geo - cartridge based with multiple buses, heavily sprite focused graphics hardware, 68000 main CPU, Z80 for audio.\n\n- Main processor: Motorola 68000 @ 20 MHz\n- Sound processor: Zilog Z80 @ 8.4 MHz\n- Sound chip: Wavefront ICS2115\n- Graphics chip: IGS023\n\nGames come with several flavors of protection hardware on the cartridge. Most feature an ARM7 CPU and in later games the ARM takes on a larger portion of the game update processing.\n\n## Status\nThis core is currently BETA. Most games work, but the core needs more testing. The PGM platform features a large amount of variants and bootlegs that all require testing. If you encounter issues please report them via github. Save state files can be especially useful for tracking down and reproducing issues, so if you have some then please include them.\n\n## Core Features\n- Save States. The core supports save states for all games. It is expected that you can save and restore a save state at any point. If you encounter issues restoring save states, please report them.\n- H-Scale. The PGM video signal tends to be squashed horizontally by consumer CRTs. In the Video Settings menu there is an H-Scale option that can be enabled which allows you to scale the width of the image up and down. This only works for analog video and does not play well with the HDMI scaler.\n- NVRAM. The 128KB of main RAM on the PGM is battery backed. On the original system this is often used for bookkeeping data such as earning per game. Some games (CAVE shooters) use it for storing per-game settings. It might also be used for high score saving by some games.\n- RTC. The PGM also has a battery backed clock. As far as I know this is not used by any games, but it does get displayed at startup by the BIOS. The timer can be adjusted in the BIOS, but at startup it will always be set to the MiSTers current system time.\n\n## Supported games\n\n- Oriental Legend\n- Oriental Legend Super\n- Dragon World 3\n- Dragon World 3 EX\n- Dragon World 2001\n- The Killing Blade\n- The Killing Blade Plus\n- Photo Y2K\n- Knights of Valour Super Heroes\n- Knights of Valour 2\n- Martial Masters\n- Demon Front\n- The Gladiator\n- S.V.G. - Spectral vs Generation\n- DoDonPachi II - Bee Storm\n- DoDonPachi III / Dai-Ou-Jou\n- Ketsui: Kizuna Jigoku Tachi\n- Espgaluda\n\n## Not yet working\n\n- Knights of Valour\n- Knights of Valour Plus\n- Knights of Valour 2 Plus - Nine Dragons\n- Dragon World Pretty Chance\n- Happy 6-in-1\n\n## Sources\nMultiple different sources have been used as reference when developing this core.\n\n[MAME](https://www.mamedev.org/) - Tons of information about the PGM system and especially its protection mechanisms. Also used as the source for the initial ICS2115 implementation.\n\n[igspgm.com](https://igspgm.com/) - Motherboard images, cartridge images, archived documents. Super valuable archive of information that could easily have been lost to history.\n\n[PGMTech](https://github.com/laoo/PGMTech) - Solid documentation of PGM memory maps and system architecture\n\n[GUS GF1 Decap](https://github.com/nukeykt/LPC-GUS) - Coming from the same hardware lineage, the GF1 source was a useful reference for how things might be done inside the ICS2115\n\n[Game Bub](https://github.com/elipsitz/gamebub) - ARM7TDMI implementation\n\n\n## Special Thanks\nThanks to [James](https://www.retrohq.co.uk/) for all the additional insights he was able to provide. The stars aligned and we ended up exploring parts of the system as the same time. I hope I was able to help him half as much as he helped me.\n\nThanks to [Tim](https://igspgm.com/) for keeping valuable sources of PGM information alive on the internet over the years. It has been an invaluable source of information.\n\nlaoo, Xolod, augitesoul and everyone who has playtested, provided feedback and/or support.",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer",
       "releases": [
         {
           "name": "Cabal PGM.mra",
-          "sha": "2619cc4b360273ff5a21560d2fdf271f62b18c71",
+          "sha": "b30bc5da849149fb4e3d4619458b5854330b6078",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/Cabal%20PGM.mra",
           "type": "MRA",
           "extra": {
@@ -5772,7 +5772,7 @@
         },
         {
           "name": "Demon Front (ver. 105).mra",
-          "sha": "a506cb73dd7073c9e26282e52f41441b51c6dea7",
+          "sha": "c8205f3a1e036568bc55a5d0116de3622f5d2a25",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/Demon%20Front%20(ver.%20105).mra",
           "type": "MRA",
           "extra": {
@@ -5784,105 +5784,8 @@
           }
         },
         {
-          "name": "DoDonPachi Dai-Ou-Jou (Japan, 2002.04.05 Master Ver).mra",
-          "sha": "0487be0975be9501705f03ee88976aab8c060841",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/DoDonPachi%20Dai-Ou-Jou%20(Japan%2C%202002.04.05%20Master%20Ver).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "DoDonPachi Dai-Ou-Jou (Japan, 2002.04.05 Master Ver)",
-            "rbf": "IGSPGM",
-            "zips": [
-              "pgm.zip|ddpdojb.zip|ddp3.zip",
-              "pgm.zip|ddpdojb.zip|ddp3.zip"
-            ]
-          }
-        },
-        {
-          "name": "DoDonPachi Dai-Ou-Jou (Japan, 2002.04.05.Master Ver, 68k Label V100).mra",
-          "sha": "e53079b138f509529153beacf1ea740d7b174959",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/DoDonPachi%20Dai-Ou-Jou%20(Japan%2C%202002.04.05.Master%20Ver%2C%2068k%20Label%20V100).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "DoDonPachi Dai-Ou-Jou (Japan, 2002.04.05.Master Ver, 68k Label V100)",
-            "rbf": "IGSPGM",
-            "zips": [
-              "pgm.zip|ddpdoja.zip|ddp3.zip",
-              "pgm.zip|ddpdoja.zip|ddp3.zip"
-            ]
-          }
-        },
-        {
-          "name": "DoDonPachi Dai-Ou-Jou (Japan, 2002.04.05.Master Ver, 68k Label V101).mra",
-          "sha": "41db11c084610b51d94eefd133071496ea49fb39",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/DoDonPachi%20Dai-Ou-Jou%20(Japan%2C%202002.04.05.Master%20Ver%2C%2068k%20Label%20V101).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "DoDonPachi Dai-Ou-Jou (Japan, 2002.04.05.Master Ver, 68k Label V101)",
-            "rbf": "IGSPGM",
-            "zips": [
-              "pgm.zip|ddpdoj.zip|ddp3.zip",
-              "pgm.zip|ddpdoj.zip|ddp3.zip"
-            ]
-          }
-        },
-        {
-          "name": "DoDonPachi Dai-Ou-Jou Black Label (Japan, 2002.10.07 Black Ver).mra",
-          "sha": "2a31c19f46407a3d50fa3a95706861a3fb8f266b",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/DoDonPachi%20Dai-Ou-Jou%20Black%20Label%20(Japan%2C%202002.10.07%20Black%20Ver).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "DoDonPachi Dai-Ou-Jou Black Label (Japan, 2002.10.07 Black Ver)",
-            "rbf": "IGSPGM",
-            "zips": [
-              "pgm.zip|ddpdojblkb.zip|ddp3.zip",
-              "pgm.zip|ddpdojblkb.zip|ddp3.zip"
-            ]
-          }
-        },
-        {
-          "name": "DoDonPachi Dai-Ou-Jou Black Label (Japan, 2002.10.07 Black Ver., bootleg Knights of Valour Super Heroes conversion).mra",
-          "sha": "6b7288ab76c5817598ed57eede5394f3443952c7",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/DoDonPachi%20Dai-Ou-Jou%20Black%20Label%20(Japan%2C%202002.10.07%20Black%20Ver.%2C%20bootleg%20Knights%20of%20Valour%20Super%20Heroes%20conversion).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "DoDonPachi Dai-Ou-Jou Black Label (Japan, 2002.10.07 Black Ver., bootleg Knights of Valour Super Heroes conversion)",
-            "rbf": "IGSPGM",
-            "zips": [
-              "pgm.zip|ddpdojblkbl.zip|ddpdojblk.zip|ddp3.zip"
-            ]
-          }
-        },
-        {
-          "name": "DoDonPachi Dai-Ou-Jou Black Label (Japan, 2002.10.07.Black Ver, newer).mra",
-          "sha": "fff5dbcf257d7dfd9c6640134015d53a2381b17a",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/DoDonPachi%20Dai-Ou-Jou%20Black%20Label%20(Japan%2C%202002.10.07.Black%20Ver%2C%20newer).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "DoDonPachi Dai-Ou-Jou Black Label (Japan, 2002.10.07.Black Ver, newer)",
-            "rbf": "IGSPGM",
-            "zips": [
-              "pgm.zip|ddpdojblk.zip|ddp3.zip",
-              "pgm.zip|ddpdojblk.zip|ddp3.zip"
-            ]
-          }
-        },
-        {
-          "name": "DoDonPachi Dai-Ou-Jou Black Label (Japan, 2002.10.07.Black Ver, older).mra",
-          "sha": "fd5c52f69e3ffcc69c37d702bfde052abcf51248",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/DoDonPachi%20Dai-Ou-Jou%20Black%20Label%20(Japan%2C%202002.10.07.Black%20Ver%2C%20older).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "DoDonPachi Dai-Ou-Jou Black Label (Japan, 2002.10.07.Black Ver, older)",
-            "rbf": "IGSPGM",
-            "zips": [
-              "pgm.zip|ddpdojblka.zip|ddp3.zip",
-              "pgm.zip|ddpdojblka.zip|ddp3.zip"
-            ]
-          }
-        },
-        {
           "name": "DoDonPachi II - Bee Storm (World, ver. 102).mra",
-          "sha": "c4c5687e85066db1553d4ae9690a2a84da03bb07",
+          "sha": "c62f382beb4f2f8269d7191e397f71da9857b577",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/DoDonPachi%20II%20-%20Bee%20Storm%20(World%2C%20ver.%20102).mra",
           "type": "MRA",
           "extra": {
@@ -5895,7 +5798,7 @@
         },
         {
           "name": "DoDonPachi III (World, 2002.05.15 Master Ver).mra",
-          "sha": "d147634074f99bf8fe17ebd69f543a98d5720cff",
+          "sha": "bc3263d04d81bd5b9d10b28273243fae975acb7c",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/DoDonPachi%20III%20(World%2C%202002.05.15%20Master%20Ver).mra",
           "type": "MRA",
           "extra": {
@@ -5909,7 +5812,7 @@
         },
         {
           "name": "Dragon World 2001 (ver. 100, Japan).mra",
-          "sha": "510006cb701f530232c3e2a2eebc71fe1cd65a09",
+          "sha": "52587a4d71c6e9d8528fb8ea03544d7223d11ba7",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/Dragon%20World%202001%20(ver.%20100%2C%20Japan).mra",
           "type": "MRA",
           "extra": {
@@ -5922,7 +5825,7 @@
         },
         {
           "name": "Dragon World 3 (ver. 106).mra",
-          "sha": "b485ebbb75fb6472ef73b40f155c6233122f24fd",
+          "sha": "8a04796b603a055ee99b5dc5edf354298a30b477",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/Dragon%20World%203%20(ver.%20106).mra",
           "type": "MRA",
           "extra": {
@@ -5935,7 +5838,7 @@
         },
         {
           "name": "Dragon World 3 EX (ver. 100).mra",
-          "sha": "a4c1377e79bb7494daab85d170e22d391cf0d454",
+          "sha": "4b5f77f445b98553f8ab85ca5023dcaff255c6b7",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/Dragon%20World%203%20EX%20(ver.%20100).mra",
           "type": "MRA",
           "extra": {
@@ -5947,21 +5850,8 @@
           }
         },
         {
-          "name": "Dragon World 3 EX (ver. 101CN).mra",
-          "sha": "9fdad5394e605dabc7706e0d3437ee9e6c0a9e9e",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/Dragon%20World%203%20EX%20(ver.%20101CN).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Dragon World 3 EX (ver. 101CN)",
-            "rbf": "IGSPGM",
-            "zips": [
-              "pgm.zip|dwex101cn.zip|dwex.zip"
-            ]
-          }
-        },
-        {
           "name": "Espgaluda (2003.10.15 Master Ver).mra",
-          "sha": "761e497e9da09936bbedc7cbcc2eaefb8aa20ee4",
+          "sha": "f22d64dcaab13906e3ed85d08d77afd984481288",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/Espgaluda%20(2003.10.15%20Master%20Ver).mra",
           "type": "MRA",
           "extra": {
@@ -5973,69 +5863,26 @@
           }
         },
         {
-          "name": "Espgaluda (2003.10.15 Master Ver, bootleg cartridge conversion).mra",
-          "sha": "e366bd6b64c71682eec9b3c4c10843e3fe330671",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/Espgaluda%20(2003.10.15%20Master%20Ver%2C%20bootleg%20cartridge%20conversion).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Espgaluda (2003/10/15 Master Ver, bootleg cartridge conversion)",
-            "rbf": "IGSPGM",
-            "zips": [
-              "pgm.zip|espgal.zip|espgalbl.zip"
-            ]
-          }
-        },
-        {
           "name": "IGSPGM_20260613.rbf",
           "sha": "ab33bfa6fabd331e32190367b4b2244c405957aa",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/IGSPGM_20260613.rbf",
           "type": "RBF"
         },
         {
-          "name": "Ketsui - Kizuna Jigoku Tachi (2003.01.01 Master Ver).mra",
-          "sha": "e34339aefa4246052b4e1f68c6a9e87f19312081",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/Ketsui%20-%20Kizuna%20Jigoku%20Tachi%20(2003.01.01%20Master%20Ver).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Ketsui - Kizuna Jigoku Tachi (2003.01.01 Master Ver)",
-            "rbf": "IGSPGM",
-            "zips": [
-              "pgm.zip|ketb.zip|ket.zip",
-              "pgm.zip|ketb.zip|ket.zip"
-            ]
-          }
+          "name": "IGSPGM_20260614.rbf",
+          "sha": "04fd3669f97e68578e868efd396b923725a31f64",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/IGSPGM_20260614.rbf",
+          "type": "RBF"
         },
         {
-          "name": "Ketsui - Kizuna Jigoku Tachi (2003.01.01 Master Ver.).mra",
-          "sha": "aefb1fb28947c96a9489d980d1eff309d70007fe",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/Ketsui%20-%20Kizuna%20Jigoku%20Tachi%20(2003.01.01%20Master%20Ver.).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Ketsui - Kizuna Jigoku Tachi (2003.01.01 Master Ver.)",
-            "rbf": "IGSPGM",
-            "zips": [
-              "pgm.zip|keta.zip|ket.zip",
-              "pgm.zip|keta.zip|ket.zip"
-            ]
-          }
-        },
-        {
-          "name": "Ketsui - Kizuna Jigoku Tachi (2003.01.01. Master Ver.) (alt ROM fill).mra",
-          "sha": "02194bdf4beaa8b29b5cbeb5d964555d3ba1fcad",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/Ketsui%20-%20Kizuna%20Jigoku%20Tachi%20(2003.01.01.%20Master%20Ver.)%20(alt%20ROM%20fill).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Ketsui - Kizuna Jigoku Tachi (2003.01.01. Master Ver.) (alt ROM fill)",
-            "rbf": "IGSPGM",
-            "zips": [
-              "pgm.zip|ket1.zip|ket.zip",
-              "pgm.zip|ket1.zip|ket.zip"
-            ]
-          }
+          "name": "IGSPGM_20260615.rbf",
+          "sha": "bd5894b931e59ccf52c4384676010089443c685d",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/IGSPGM_20260615.rbf",
+          "type": "RBF"
         },
         {
           "name": "Ketsui - Kizuna Jigoku Tachi (2003.01.01. Master Ver.).mra",
-          "sha": "56c4738c4420eea77af2b261445ee8208f5dc22a",
+          "sha": "f377a19e746bae66ff2055a051b5c8811d409c95",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/Ketsui%20-%20Kizuna%20Jigoku%20Tachi%20(2003.01.01.%20Master%20Ver.).mra",
           "type": "MRA",
           "extra": {
@@ -6048,119 +5895,8 @@
           }
         },
         {
-          "name": "Ketsui - Kizuna Jigoku Tachi (2012.04.17 ARRANGE VER) (hack).mra",
-          "sha": "a16d3a93aad22e3efb7f2f838dafc3fcf094b919",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/Ketsui%20-%20Kizuna%20Jigoku%20Tachi%20(2012.04.17%20ARRANGE%20VER)%20(hack).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Ketsui - Kizuna Jigoku Tachi (2012.04.17 ARRANGE VER) (hack)",
-            "rbf": "IGSPGM",
-            "zips": [
-              "pgm.zip|ketarr10.zip|ket.zip",
-              "pgm.zip|ketarr10.zip|ket.zip"
-            ]
-          }
-        },
-        {
-          "name": "Ketsui - Kizuna Jigoku Tachi (2012.04.17 FAST. VER) (hack).mra",
-          "sha": "9fce046d826122addc3157d60fa4906f002e7ebd",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/Ketsui%20-%20Kizuna%20Jigoku%20Tachi%20(2012.04.17%20FAST.%20VER)%20(hack).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Ketsui - Kizuna Jigoku Tachi (2012.04.17 FAST. VER) (hack)",
-            "rbf": "IGSPGM",
-            "zips": [
-              "pgm.zip|ketarrf.zip|ket.zip",
-              "pgm.zip|ketarrf.zip|ket.zip"
-            ]
-          }
-        },
-        {
-          "name": "Ketsui - Kizuna Jigoku Tachi (2012.06.26 ARRANGE 1.5 VER) (hack).mra",
-          "sha": "2f688f72d3df694a74cf4873828d0fb0523c8fb4",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/Ketsui%20-%20Kizuna%20Jigoku%20Tachi%20(2012.06.26%20ARRANGE%201.5%20VER)%20(hack).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Ketsui - Kizuna Jigoku Tachi (2012.06.26 ARRANGE 1.5 VER) (hack)",
-            "rbf": "IGSPGM",
-            "zips": [
-              "pgm.zip|ketarr15.zip|ket.zip",
-              "pgm.zip|ketarr15.zip|ket.zip"
-            ]
-          }
-        },
-        {
-          "name": "Ketsui - Kizuna Jigoku Tachi (2012.06.26 ARRANGE 1.51 VER) (hack).mra",
-          "sha": "5c57b379fe9571ef6651468aa311595d536b384c",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/Ketsui%20-%20Kizuna%20Jigoku%20Tachi%20(2012.06.26%20ARRANGE%201.51%20VER)%20(hack).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Ketsui - Kizuna Jigoku Tachi (2012.06.26 ARRANGE 1.51 VER) (hack)",
-            "rbf": "IGSPGM",
-            "zips": [
-              "pgm.zip|ketarr151.zip|ket.zip",
-              "pgm.zip|ketarr151.zip|ket.zip"
-            ]
-          }
-        },
-        {
-          "name": "Ketsui - Kizuna Jigoku Tachi (2012.06.27 MR.STOIC 1.5 VER) (hack).mra",
-          "sha": "21c3170a64385acdb30f9777d0932ee8c2aff2be",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/Ketsui%20-%20Kizuna%20Jigoku%20Tachi%20(2012.06.27%20MR.STOIC%201.5%20VER)%20(hack).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Ketsui - Kizuna Jigoku Tachi (2012.06.27 MR.STOIC 1.5 VER) (hack)",
-            "rbf": "IGSPGM",
-            "zips": [
-              "pgm.zip|ketarrs15.zip|ket.zip",
-              "pgm.zip|ketarrs15.zip|ket.zip"
-            ]
-          }
-        },
-        {
-          "name": "Ketsui - Kizuna Jigoku Tachi (2012.06.27 MR.STOIC 1.51 VER) (hack).mra",
-          "sha": "6df107c742869aeb3cc723b23a625c359a7332fe",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/Ketsui%20-%20Kizuna%20Jigoku%20Tachi%20(2012.06.27%20MR.STOIC%201.51%20VER)%20(hack).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Ketsui - Kizuna Jigoku Tachi (2012.06.27 MR.STOIC 1.51 VER) (hack)",
-            "rbf": "IGSPGM",
-            "zips": [
-              "pgm.zip|ketarrs151.zip|ket.zip",
-              "pgm.zip|ketarrs151.zip|ket.zip"
-            ]
-          }
-        },
-        {
-          "name": "Ketsui - Kizuna Jigoku Tachi (2014.07.16 ARRANGE 1.7 VER) (hack).mra",
-          "sha": "61522b1c36bb96552a3fba555897ce7ada45941d",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/Ketsui%20-%20Kizuna%20Jigoku%20Tachi%20(2014.07.16%20ARRANGE%201.7%20VER)%20(hack).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Ketsui - Kizuna Jigoku Tachi (2014.07.16 ARRANGE 1.7 VER) (hack)",
-            "rbf": "IGSPGM",
-            "zips": [
-              "pgm.zip|ketarr.zip|ket.zip",
-              "pgm.zip|ketarr.zip|ket.zip"
-            ]
-          }
-        },
-        {
-          "name": "Ketsui Kizuna Jigoku Tachi (2003.01.01. Master Ver., bootleg cartridge conversion).mra",
-          "sha": "b6ee0c73db9da4b25c99de9c0a3a1e4b28c56e80",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/Ketsui%20Kizuna%20Jigoku%20Tachi%20(2003.01.01.%20Master%20Ver.%2C%20bootleg%20cartridge%20conversion).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Ketsui: Kizuna Jigoku Tachi (2003/01/01. Master Ver., bootleg cartridge conversion)",
-            "rbf": "IGSPGM",
-            "zips": [
-              "pgm.zip|ketbl.zip|ket.zip"
-            ]
-          }
-        },
-        {
           "name": "Knights of Valour 2 (ver. 107).mra",
-          "sha": "716811327282ee3fcef7d68402ec6a3191c208de",
+          "sha": "dfdc1db3b53ed5a4c6766038409eb6949cc387ca",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/Knights%20of%20Valour%202%20(ver.%20107).mra",
           "type": "MRA",
           "extra": {
@@ -6172,60 +5908,8 @@
           }
         },
         {
-          "name": "Knights of Valour Super Heroes (ver. 100, CN).mra",
-          "sha": "ce356fc312bae25e9a298c5970bc13421209a567",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/Knights%20of%20Valour%20Super%20Heroes%20(ver.%20100%2C%20CN).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Knights of Valour Super Heroes (ver. 100, CN)",
-            "rbf": "IGSPGM",
-            "zips": [
-              "pgm.zip|kovsh.zip|kovsh100.zip"
-            ]
-          }
-        },
-        {
-          "name": "Knights of Valour Super Heroes (ver. 101, CN).mra",
-          "sha": "f1424b7a09abee1952c711e068df7c21b973d72c",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/Knights%20of%20Valour%20Super%20Heroes%20(ver.%20101%2C%20CN).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Knights of Valour Super Heroes (ver. 101, CN)",
-            "rbf": "IGSPGM",
-            "zips": [
-              "pgm.zip|kovsh.zip|kovsh101.zip"
-            ]
-          }
-        },
-        {
-          "name": "Knights of Valour Super Heroes (ver. 102, CN).mra",
-          "sha": "1db1d22d12b8ff3407280c4f120490ba884560a3",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/Knights%20of%20Valour%20Super%20Heroes%20(ver.%20102%2C%20CN).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Knights of Valour Super Heroes (ver. 102, CN)",
-            "rbf": "IGSPGM",
-            "zips": [
-              "pgm.zip|kovsh.zip|kovsh102.zip"
-            ]
-          }
-        },
-        {
-          "name": "Knights of Valour Super Heroes (ver. 103, CN).mra",
-          "sha": "ec3ec7093cdd4900a1a577bff9fde66c092a5735",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/Knights%20of%20Valour%20Super%20Heroes%20(ver.%20103%2C%20CN).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Knights of Valour Super Heroes (ver. 103, CN)",
-            "rbf": "IGSPGM",
-            "zips": [
-              "pgm.zip|kovsh.zip|kovsh103.zip"
-            ]
-          }
-        },
-        {
           "name": "Knights of Valour Super Heroes (ver. 104, CN).mra",
-          "sha": "8b0a170a03f5a95c1eea3f142b22c15058342865",
+          "sha": "0e79f748284b8ce1d7a63a4ed507042fc9d4a35f",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/Knights%20of%20Valour%20Super%20Heroes%20(ver.%20104%2C%20CN).mra",
           "type": "MRA",
           "extra": {
@@ -6238,7 +5922,7 @@
         },
         {
           "name": "Martial Masters (ver. 104, 102, 102US).mra",
-          "sha": "eab340e93049897e4d487212d633874eb227f6cb",
+          "sha": "a96262aff554e9ff84bfd1b3fc17d04787a2bde6",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/Martial%20Masters%20(ver.%20104%2C%20102%2C%20102US).mra",
           "type": "MRA",
           "extra": {
@@ -6251,7 +5935,7 @@
         },
         {
           "name": "Oriental Legend (ver. 126).mra",
-          "sha": "e14d2012e90d60bec52ca6f50e0dae3ead245317",
+          "sha": "1ee33f82fb097d63878be2ab3000764e20bb727e",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/Oriental%20Legend%20(ver.%20126).mra",
           "type": "MRA",
           "extra": {
@@ -6264,7 +5948,7 @@
         },
         {
           "name": "PGM (Polygame Master) System BIOS.mra",
-          "sha": "c27680067404de2569bf192144b676d65155e0b3",
+          "sha": "18c84c4997b81201e6ded6beb3f4dbeeb0b34173",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/PGM%20(Polygame%20Master)%20System%20BIOS.mra",
           "type": "MRA",
           "extra": {
@@ -6276,47 +5960,8 @@
           }
         },
         {
-          "name": "Photo Y2K (ver. 102, Japanese Board).mra",
-          "sha": "3b38cd1e7295d9619176a306cebefc9963348eb3",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/Photo%20Y2K%20(ver.%20102%2C%20Japanese%20Board).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Photo Y2K (ver. 102, Japanese Board)",
-            "rbf": "IGSPGM",
-            "zips": [
-              "pgm.zip|photoy2k.zip|photoy2k102j.zip"
-            ]
-          }
-        },
-        {
-          "name": "Photo Y2K (ver. 103, Japanese Board).mra",
-          "sha": "f34c76101ce11edf5063343acdacb08afc1f6952",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/Photo%20Y2K%20(ver.%20103%2C%20Japanese%20Board).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Photo Y2K (ver. 103, Japanese Board)",
-            "rbf": "IGSPGM",
-            "zips": [
-              "pgm.zip|photoy2k.zip|photoy2k103j.zip"
-            ]
-          }
-        },
-        {
-          "name": "Photo Y2K (ver. 104).mra",
-          "sha": "326bd6a8479cec0509b8ffc5fa10640edf53bdb9",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/Photo%20Y2K%20(ver.%20104).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Photo Y2K (ver. 104)",
-            "rbf": "IGSPGM",
-            "zips": [
-              "pgm.zip|photoy2k.zip|photoy2k104.zip"
-            ]
-          }
-        },
-        {
           "name": "Photo Y2K (ver. 105).mra",
-          "sha": "1f43282372f84fc52343d6aabece103e2c77e09d",
+          "sha": "a9fa315bab77b9bbc2658896c5d4331241ab893e",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/Photo%20Y2K%20(ver.%20105).mra",
           "type": "MRA",
           "extra": {
@@ -6329,7 +5974,7 @@
         },
         {
           "name": "S.V.G. - Spectral vs Generation (ver. 200).mra",
-          "sha": "eb0da9dedc5883c0c795b6bf333e808e2654a164",
+          "sha": "e159b5fb000ec00f3dd135c6439465660b64f62a",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/S.V.G.%20-%20Spectral%20vs%20Generation%20(ver.%20200).mra",
           "type": "MRA",
           "extra": {
@@ -6341,34 +5986,8 @@
           }
         },
         {
-          "name": "The Gladiator (ver. 101).mra",
-          "sha": "beea33213d632d49287d905130da7aaf1d8741b9",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/The%20Gladiator%20(ver.%20101).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "The Gladiator (ver. 101)",
-            "rbf": "IGSPGM",
-            "zips": [
-              "pgm.zip|theglad101.zip|theglad.zip"
-            ]
-          }
-        },
-        {
-          "name": "The Gladiator (ver. 104).mra",
-          "sha": "6cf55b0c46ee00b68309cc740ff172ee3823a445",
-          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/The%20Gladiator%20(ver.%20104).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "The Gladiator (ver. 104)",
-            "rbf": "IGSPGM",
-            "zips": [
-              "pgm.zip|theglad104.zip|theglad.zip"
-            ]
-          }
-        },
-        {
           "name": "The Gladiator (ver. 107).mra",
-          "sha": "5737cd0f4a15e07d73f17517478af24e6ff30898",
+          "sha": "99693667a8f6bebe34b52b1dca52dc3a1ddc0ec1",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/The%20Gladiator%20(ver.%20107).mra",
           "type": "MRA",
           "extra": {
@@ -6381,7 +6000,7 @@
         },
         {
           "name": "The Killing Blade (ver. 109, Chinese Board).mra",
-          "sha": "483d1ef6caeaaaffcefa3e816ecfc98759ff55d6",
+          "sha": "0c709ca7e09efa98c8fbee155d031be600ea12d5",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/The%20Killing%20Blade%20(ver.%20109%2C%20Chinese%20Board).mra",
           "type": "MRA",
           "extra": {
@@ -6394,7 +6013,7 @@
         },
         {
           "name": "The Killing Blade Plus (China, ver. 300).mra",
-          "sha": "2fa8d32bc9373a2dfd5e2fed5bd32840d40df64e",
+          "sha": "6ec182ea60a4d19821bda8162293ad6cf54fb037",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/The%20Killing%20Blade%20Plus%20(China%2C%20ver.%20300).mra",
           "type": "MRA",
           "extra": {
@@ -6407,7 +6026,7 @@
         },
         {
           "name": "Xiyou Shi E Zhuan Super (ver. 103, China, Tencent) (unprotected).mra",
-          "sha": "731253d431fdc83e33b5b303fe82ab15619205a6",
+          "sha": "d1767fda963641ecb0a7b88ddfb96f237bf4867b",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/Xiyou%20Shi%20E%20Zhuan%20Super%20(ver.%20103%2C%20China%2C%20Tencent)%20(unprotected).mra",
           "type": "MRA",
           "extra": {
@@ -6415,6 +6034,907 @@
             "rbf": "IGSPGM",
             "zips": [
               "pgm.zip|olds.zip|olds103t.zip"
+            ]
+          }
+        },
+        {
+          "name": "Demon Front (ver. 102).mra",
+          "sha": "7ca61e1ad46c156652638cdcf28079af2c44af92",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Demon%20Front/Demon%20Front%20(ver.%20102).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Demon Front (ver. 102)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|dmnfrnt.zip|dmnfrnt102.zip"
+            ]
+          }
+        },
+        {
+          "name": "Demon Front (ver. 103).mra",
+          "sha": "4d20bf2d894d9892c708944ddd88c28f05ca5340",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Demon%20Front/Demon%20Front%20(ver.%20103).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Demon Front (ver. 103)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|dmnfrnt.zip|dmnfrnt103.zip"
+            ]
+          }
+        },
+        {
+          "name": "DoDonPachi - Feng Bao (China, ver. 100).mra",
+          "sha": "fc30a3b046138f1281fd55a481a57989417b3dd4",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_DoDonPachi%20II%20-%20Bee%20Storm/DoDonPachi%20-%20Feng%20Bao%20(China%2C%20ver.%20100).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "DoDonPachi - Feng Bao (China, ver. 100)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|ddp2.zip|ddp2100c.zip"
+            ]
+          }
+        },
+        {
+          "name": "DoDonPachi - Feng Bao (China, ver. 101).mra",
+          "sha": "0804849201493517b0b66fc4c881cce2f58f2deb",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_DoDonPachi%20II%20-%20Bee%20Storm/DoDonPachi%20-%20Feng%20Bao%20(China%2C%20ver.%20101).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "DoDonPachi - Feng Bao (China, ver. 101)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|ddp2.zip|ddp2101c.zip"
+            ]
+          }
+        },
+        {
+          "name": "DoDonPachi - Feng Bao (China, ver. 102).mra",
+          "sha": "b2d283e840d7723859cf076bad7ebb7f3f722cf8",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_DoDonPachi%20II%20-%20Bee%20Storm/DoDonPachi%20-%20Feng%20Bao%20(China%2C%20ver.%20102).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "DoDonPachi - Feng Bao (China, ver. 102)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|ddp2.zip|ddp2c.zip"
+            ]
+          }
+        },
+        {
+          "name": "DoDonPachi - Feng Bao (Taiwan, ver. 100).mra",
+          "sha": "f9174db98c5e50d92d480c70d3cd2a4e78a7657d",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_DoDonPachi%20II%20-%20Bee%20Storm/DoDonPachi%20-%20Feng%20Bao%20(Taiwan%2C%20ver.%20100).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "DoDonPachi - Feng Bao (Taiwan, ver. 100)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|ddp2.zip|ddp2100t.zip"
+            ]
+          }
+        },
+        {
+          "name": "DoDonPachi - Feng Bao (Taiwan, ver. 101).mra",
+          "sha": "ca92b4392cb005d179ffe094a72a10f8613844d2",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_DoDonPachi%20II%20-%20Bee%20Storm/DoDonPachi%20-%20Feng%20Bao%20(Taiwan%2C%20ver.%20101).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "DoDonPachi - Feng Bao (Taiwan, ver. 101)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|ddp2.zip|ddp2101t.zip"
+            ]
+          }
+        },
+        {
+          "name": "DoDonPachi - Feng Bao (Taiwan, ver. 102).mra",
+          "sha": "77bad28f1418bd4d399dfe754a73037db962656e",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_DoDonPachi%20II%20-%20Bee%20Storm/DoDonPachi%20-%20Feng%20Bao%20(Taiwan%2C%20ver.%20102).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "DoDonPachi - Feng Bao (Taiwan, ver. 102)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|ddp2.zip|ddp2t.zip"
+            ]
+          }
+        },
+        {
+          "name": "DoDonPachi II (Japan, ver. 100).mra",
+          "sha": "0533b24d726e54ec32b98a4e364b651823081320",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_DoDonPachi%20II%20-%20Bee%20Storm/DoDonPachi%20II%20(Japan%2C%20ver.%20100).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "DoDonPachi II (Japan, ver. 100)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|ddp2.zip|ddp2100j.zip"
+            ]
+          }
+        },
+        {
+          "name": "DoDonPachi II (Japan, ver. 101).mra",
+          "sha": "d8c020a32a53d453dfd7d000f5947f1f326781fa",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_DoDonPachi%20II%20-%20Bee%20Storm/DoDonPachi%20II%20(Japan%2C%20ver.%20101).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "DoDonPachi II (Japan, ver. 101)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|ddp2.zip|ddp2101j.zip"
+            ]
+          }
+        },
+        {
+          "name": "DoDonPachi II (Japan, ver. 102).mra",
+          "sha": "37a7cc644d5aa9bd37a422ddff1eba511fb44ae3",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_DoDonPachi%20II%20-%20Bee%20Storm/DoDonPachi%20II%20(Japan%2C%20ver.%20102).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "DoDonPachi II (Japan, ver. 102)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|ddp2.zip|ddp2j.zip"
+            ]
+          }
+        },
+        {
+          "name": "DoDonPachi II - Bee Storm (Korea, ver. 100).mra",
+          "sha": "3a7c39f82d748266428901ffcc48f6871f1bcf35",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_DoDonPachi%20II%20-%20Bee%20Storm/DoDonPachi%20II%20-%20Bee%20Storm%20(Korea%2C%20ver.%20100).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "DoDonPachi II - Bee Storm (Korea, ver. 100)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|ddp2.zip|ddp2100k.zip"
+            ]
+          }
+        },
+        {
+          "name": "DoDonPachi II - Bee Storm (Korea, ver. 101).mra",
+          "sha": "d1161d879d6558aa2db1c8a10488bab92079285d",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_DoDonPachi%20II%20-%20Bee%20Storm/DoDonPachi%20II%20-%20Bee%20Storm%20(Korea%2C%20ver.%20101).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "DoDonPachi II - Bee Storm (Korea, ver. 101)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|ddp2.zip|ddp2101k.zip"
+            ]
+          }
+        },
+        {
+          "name": "DoDonPachi II - Bee Storm (Korea, ver. 102).mra",
+          "sha": "f5bd8d32148062e57895e60b1ff2875d4a3351b2",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_DoDonPachi%20II%20-%20Bee%20Storm/DoDonPachi%20II%20-%20Bee%20Storm%20(Korea%2C%20ver.%20102).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "DoDonPachi II - Bee Storm (Korea, ver. 102)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|ddp2.zip|ddp2k.zip"
+            ]
+          }
+        },
+        {
+          "name": "DoDonPachi II - Bee Storm (World, ver. 100).mra",
+          "sha": "3314b9eb35e61af578d0d32e55a9fdf7f763e567",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_DoDonPachi%20II%20-%20Bee%20Storm/DoDonPachi%20II%20-%20Bee%20Storm%20(World%2C%20ver.%20100).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "DoDonPachi II - Bee Storm (World, ver. 100)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|ddp2.zip|ddp2100.zip"
+            ]
+          }
+        },
+        {
+          "name": "DoDonPachi II - Bee Storm (World, ver. 101).mra",
+          "sha": "374d10b5b03f5cfde09f10aed7483f30109a3545",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_DoDonPachi%20II%20-%20Bee%20Storm/DoDonPachi%20II%20-%20Bee%20Storm%20(World%2C%20ver.%20101).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "DoDonPachi II - Bee Storm (World, ver. 101)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|ddp2.zip|ddp2101.zip"
+            ]
+          }
+        },
+        {
+          "name": "DoDonPachi II - Fung Bou (Hong Kong, ver. 100).mra",
+          "sha": "27ad988067994dfcd7d53f72795b007990cdc35b",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_DoDonPachi%20II%20-%20Bee%20Storm/DoDonPachi%20II%20-%20Fung%20Bou%20(Hong%20Kong%2C%20ver.%20100).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "DoDonPachi II - Fung Bou (Hong Kong, ver. 100)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|ddp2.zip|ddp2100hk.zip"
+            ]
+          }
+        },
+        {
+          "name": "DoDonPachi II - Fung Bou (Hong Kong, ver. 101).mra",
+          "sha": "40f47d46ebc5b03c4afd3d11c9456a8f8338747f",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_DoDonPachi%20II%20-%20Bee%20Storm/DoDonPachi%20II%20-%20Fung%20Bou%20(Hong%20Kong%2C%20ver.%20101).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "DoDonPachi II - Fung Bou (Hong Kong, ver. 101)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|ddp2.zip|ddp2101hk.zip"
+            ]
+          }
+        },
+        {
+          "name": "DoDonPachi II - Fung Bou (Hong Kong, ver. 102).mra",
+          "sha": "2a8d657a630d73b47c682028d302aff6b45c01af",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_DoDonPachi%20II%20-%20Bee%20Storm/DoDonPachi%20II%20-%20Fung%20Bou%20(Hong%20Kong%2C%20ver.%20102).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "DoDonPachi II - Fung Bou (Hong Kong, ver. 102)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|ddp2.zip|ddp2hk.zip"
+            ]
+          }
+        },
+        {
+          "name": "DoDonPachi Dai-Ou-Jou (Japan, 2002.04.05 Master Ver).mra",
+          "sha": "49eff96a3bd49439213590634602472dd4e3e6e7",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_DoDonPachi%20III/DoDonPachi%20Dai-Ou-Jou%20(Japan%2C%202002.04.05%20Master%20Ver).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "DoDonPachi Dai-Ou-Jou (Japan, 2002.04.05 Master Ver)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|ddpdojb.zip|ddp3.zip",
+              "pgm.zip|ddpdojb.zip|ddp3.zip"
+            ]
+          }
+        },
+        {
+          "name": "DoDonPachi Dai-Ou-Jou (Japan, 2002.04.05.Master Ver, 68k Label V100).mra",
+          "sha": "e56974db4857cd1574bf80d07c5a63235d365c85",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_DoDonPachi%20III/DoDonPachi%20Dai-Ou-Jou%20(Japan%2C%202002.04.05.Master%20Ver%2C%2068k%20Label%20V100).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "DoDonPachi Dai-Ou-Jou (Japan, 2002.04.05.Master Ver, 68k Label V100)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|ddpdoja.zip|ddp3.zip",
+              "pgm.zip|ddpdoja.zip|ddp3.zip"
+            ]
+          }
+        },
+        {
+          "name": "DoDonPachi Dai-Ou-Jou (Japan, 2002.04.05.Master Ver, 68k Label V101).mra",
+          "sha": "c9db15e464781ba5c0702b8d6eb253d46cbdb12c",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_DoDonPachi%20III/DoDonPachi%20Dai-Ou-Jou%20(Japan%2C%202002.04.05.Master%20Ver%2C%2068k%20Label%20V101).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "DoDonPachi Dai-Ou-Jou (Japan, 2002.04.05.Master Ver, 68k Label V101)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|ddpdoj.zip|ddp3.zip",
+              "pgm.zip|ddpdoj.zip|ddp3.zip"
+            ]
+          }
+        },
+        {
+          "name": "DoDonPachi Dai-Ou-Jou Black Label (Japan, 2002.10.07 Black Ver).mra",
+          "sha": "9e77e17d64e94dd36fa37f62c899226e9ef92b85",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_DoDonPachi%20III/DoDonPachi%20Dai-Ou-Jou%20Black%20Label%20(Japan%2C%202002.10.07%20Black%20Ver).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "DoDonPachi Dai-Ou-Jou Black Label (Japan, 2002.10.07 Black Ver)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|ddpdojblkb.zip|ddp3.zip",
+              "pgm.zip|ddpdojblkb.zip|ddp3.zip"
+            ]
+          }
+        },
+        {
+          "name": "DoDonPachi Dai-Ou-Jou Black Label (Japan, 2002.10.07 Black Ver., bootleg Knights of Valour Super Heroes conversion).mra",
+          "sha": "54c80f5fabe351d0ed93ae0b9f743ff4c30c0db8",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_DoDonPachi%20III/DoDonPachi%20Dai-Ou-Jou%20Black%20Label%20(Japan%2C%202002.10.07%20Black%20Ver.%2C%20bootleg%20Knights%20of%20Valour%20Super%20Heroes%20conversion).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "DoDonPachi Dai-Ou-Jou Black Label (Japan, 2002.10.07 Black Ver., bootleg Knights of Valour Super Heroes conversion)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|ddpdojblkbl.zip|ddpdojblk.zip|ddp3.zip"
+            ]
+          }
+        },
+        {
+          "name": "DoDonPachi Dai-Ou-Jou Black Label (Japan, 2002.10.07.Black Ver, newer).mra",
+          "sha": "095f92a3abe9156e03f2df3968e5f405df126d8e",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_DoDonPachi%20III/DoDonPachi%20Dai-Ou-Jou%20Black%20Label%20(Japan%2C%202002.10.07.Black%20Ver%2C%20newer).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "DoDonPachi Dai-Ou-Jou Black Label (Japan, 2002.10.07.Black Ver, newer)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|ddpdojblk.zip|ddp3.zip",
+              "pgm.zip|ddpdojblk.zip|ddp3.zip"
+            ]
+          }
+        },
+        {
+          "name": "DoDonPachi Dai-Ou-Jou Black Label (Japan, 2002.10.07.Black Ver, older).mra",
+          "sha": "9f74542a7b469e735561da07285cd5e8ec2b0d65",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_DoDonPachi%20III/DoDonPachi%20Dai-Ou-Jou%20Black%20Label%20(Japan%2C%202002.10.07.Black%20Ver%2C%20older).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "DoDonPachi Dai-Ou-Jou Black Label (Japan, 2002.10.07.Black Ver, older)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|ddpdojblka.zip|ddp3.zip",
+              "pgm.zip|ddpdojblka.zip|ddp3.zip"
+            ]
+          }
+        },
+        {
+          "name": "Dragon World 3 EX (ver. 101CN).mra",
+          "sha": "b253e94a483f3f976f72a5bbc71f688836827736",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Dragon%20World%203%20EX/Dragon%20World%203%20EX%20(ver.%20101CN).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Dragon World 3 EX (ver. 101CN)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|dwex101cn.zip|dwex.zip"
+            ]
+          }
+        },
+        {
+          "name": "Chuugokuryuu 3 Special (Japan, ver. 100).mra",
+          "sha": "34d041cc2a9efbbb2ef3195cfd5dc04683419eb6",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Dragon%20World%203/Chuugokuryuu%203%20Special%20(Japan%2C%20ver.%20100).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Chuugokuryuu 3 Special (Japan, ver. 100)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|drgw3.zip|drgw3100.zip"
+            ]
+          }
+        },
+        {
+          "name": "Chuugokuryuu 3 Special (Japan, ver. 103).mra",
+          "sha": "6ac0a0b979994d925be001209ef425da88405ede",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Dragon%20World%203/Chuugokuryuu%203%20Special%20(Japan%2C%20ver.%20103).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Chuugokuryuu 3 Special (Japan, ver. 103)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|drgw3.zip|drgw3103.zip"
+            ]
+          }
+        },
+        {
+          "name": "Dragon World 3 (ver. 105).mra",
+          "sha": "f176031f7b5052151eba1bdef94b1e8b07ad218e",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Dragon%20World%203/Dragon%20World%203%20(ver.%20105).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Dragon World 3 (ver. 105)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|drgw3.zip|drgw3105.zip"
+            ]
+          }
+        },
+        {
+          "name": "Espgaluda (2003.10.15 Master Ver, bootleg cartridge conversion).mra",
+          "sha": "904315ece79392befb4873607213a8c94a014336",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Espgaluda/Espgaluda%20(2003.10.15%20Master%20Ver%2C%20bootleg%20cartridge%20conversion).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Espgaluda (2003/10/15 Master Ver, bootleg cartridge conversion)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|espgal.zip|espgalbl.zip"
+            ]
+          }
+        },
+        {
+          "name": "Ketsui - Kizuna Jigoku Tachi (2003.01.01 Master Ver).mra",
+          "sha": "a3d685dcaec2f3ad827c8048a67bffa5675dc565",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Ketsui%20-%20Kizuna%20Jigoku%20Tachi/Ketsui%20-%20Kizuna%20Jigoku%20Tachi%20(2003.01.01%20Master%20Ver).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Ketsui - Kizuna Jigoku Tachi (2003.01.01 Master Ver)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|ketb.zip|ket.zip",
+              "pgm.zip|ketb.zip|ket.zip"
+            ]
+          }
+        },
+        {
+          "name": "Ketsui - Kizuna Jigoku Tachi (2003.01.01 Master Ver.).mra",
+          "sha": "135194d538b5db0fee207f9a06da927534b8f940",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Ketsui%20-%20Kizuna%20Jigoku%20Tachi/Ketsui%20-%20Kizuna%20Jigoku%20Tachi%20(2003.01.01%20Master%20Ver.).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Ketsui - Kizuna Jigoku Tachi (2003.01.01 Master Ver.)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|keta.zip|ket.zip",
+              "pgm.zip|keta.zip|ket.zip"
+            ]
+          }
+        },
+        {
+          "name": "Ketsui - Kizuna Jigoku Tachi (2003.01.01. Master Ver.) (alt ROM fill).mra",
+          "sha": "f2fcbeaeaa9e3cefa925dc9ecb49f3de84b9fdb2",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Ketsui%20-%20Kizuna%20Jigoku%20Tachi/Ketsui%20-%20Kizuna%20Jigoku%20Tachi%20(2003.01.01.%20Master%20Ver.)%20(alt%20ROM%20fill).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Ketsui - Kizuna Jigoku Tachi (2003.01.01. Master Ver.) (alt ROM fill)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|ket1.zip|ket.zip",
+              "pgm.zip|ket1.zip|ket.zip"
+            ]
+          }
+        },
+        {
+          "name": "Ketsui - Kizuna Jigoku Tachi (2012.04.17 ARRANGE VER) (hack).mra",
+          "sha": "99d1e76e87c17f422d8cd61a95aa76cd2b804b9f",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Ketsui%20-%20Kizuna%20Jigoku%20Tachi/Ketsui%20-%20Kizuna%20Jigoku%20Tachi%20(2012.04.17%20ARRANGE%20VER)%20(hack).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Ketsui - Kizuna Jigoku Tachi (2012.04.17 ARRANGE VER) (hack)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|ketarr10.zip|ket.zip",
+              "pgm.zip|ketarr10.zip|ket.zip"
+            ]
+          }
+        },
+        {
+          "name": "Ketsui - Kizuna Jigoku Tachi (2012.04.17 FAST. VER) (hack).mra",
+          "sha": "ac63feeb2b14f40c4fc0cd510a6dc1fd96499b68",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Ketsui%20-%20Kizuna%20Jigoku%20Tachi/Ketsui%20-%20Kizuna%20Jigoku%20Tachi%20(2012.04.17%20FAST.%20VER)%20(hack).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Ketsui - Kizuna Jigoku Tachi (2012.04.17 FAST. VER) (hack)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|ketarrf.zip|ket.zip",
+              "pgm.zip|ketarrf.zip|ket.zip"
+            ]
+          }
+        },
+        {
+          "name": "Ketsui - Kizuna Jigoku Tachi (2012.06.26 ARRANGE 1.5 VER) (hack).mra",
+          "sha": "1262757294ec01be941474a3a571ed826833842e",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Ketsui%20-%20Kizuna%20Jigoku%20Tachi/Ketsui%20-%20Kizuna%20Jigoku%20Tachi%20(2012.06.26%20ARRANGE%201.5%20VER)%20(hack).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Ketsui - Kizuna Jigoku Tachi (2012.06.26 ARRANGE 1.5 VER) (hack)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|ketarr15.zip|ket.zip",
+              "pgm.zip|ketarr15.zip|ket.zip"
+            ]
+          }
+        },
+        {
+          "name": "Ketsui - Kizuna Jigoku Tachi (2012.06.26 ARRANGE 1.51 VER) (hack).mra",
+          "sha": "02c6b442856240621d9e6674594dc5fb38920bc0",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Ketsui%20-%20Kizuna%20Jigoku%20Tachi/Ketsui%20-%20Kizuna%20Jigoku%20Tachi%20(2012.06.26%20ARRANGE%201.51%20VER)%20(hack).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Ketsui - Kizuna Jigoku Tachi (2012.06.26 ARRANGE 1.51 VER) (hack)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|ketarr151.zip|ket.zip",
+              "pgm.zip|ketarr151.zip|ket.zip"
+            ]
+          }
+        },
+        {
+          "name": "Ketsui - Kizuna Jigoku Tachi (2012.06.27 MR.STOIC 1.5 VER) (hack).mra",
+          "sha": "cd85940b9a094e20825bbbbaec07c86fe91d1f04",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Ketsui%20-%20Kizuna%20Jigoku%20Tachi/Ketsui%20-%20Kizuna%20Jigoku%20Tachi%20(2012.06.27%20MR.STOIC%201.5%20VER)%20(hack).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Ketsui - Kizuna Jigoku Tachi (2012.06.27 MR.STOIC 1.5 VER) (hack)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|ketarrs15.zip|ket.zip",
+              "pgm.zip|ketarrs15.zip|ket.zip"
+            ]
+          }
+        },
+        {
+          "name": "Ketsui - Kizuna Jigoku Tachi (2012.06.27 MR.STOIC 1.51 VER) (hack).mra",
+          "sha": "ba26537951753e2f00c8bff63d45ea11f7bc0e83",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Ketsui%20-%20Kizuna%20Jigoku%20Tachi/Ketsui%20-%20Kizuna%20Jigoku%20Tachi%20(2012.06.27%20MR.STOIC%201.51%20VER)%20(hack).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Ketsui - Kizuna Jigoku Tachi (2012.06.27 MR.STOIC 1.51 VER) (hack)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|ketarrs151.zip|ket.zip",
+              "pgm.zip|ketarrs151.zip|ket.zip"
+            ]
+          }
+        },
+        {
+          "name": "Ketsui - Kizuna Jigoku Tachi (2014.07.16 ARRANGE 1.7 VER) (hack).mra",
+          "sha": "652de9c77e0a79dfaa4e775f42c670791b6b517c",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Ketsui%20-%20Kizuna%20Jigoku%20Tachi/Ketsui%20-%20Kizuna%20Jigoku%20Tachi%20(2014.07.16%20ARRANGE%201.7%20VER)%20(hack).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Ketsui - Kizuna Jigoku Tachi (2014.07.16 ARRANGE 1.7 VER) (hack)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|ketarr.zip|ket.zip",
+              "pgm.zip|ketarr.zip|ket.zip"
+            ]
+          }
+        },
+        {
+          "name": "Ketsui - Kizuna Jigoku Tachi (IKD 2007 Special - 2007 Cave Matsuri Version).mra",
+          "sha": "356db130db6d446af4129a81631e25e0a029d68a",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Ketsui%20-%20Kizuna%20Jigoku%20Tachi/Ketsui%20-%20Kizuna%20Jigoku%20Tachi%20(IKD%202007%20Special%20-%202007%20Cave%20Matsuri%20Version).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Ketsui - Kizuna Jigoku Tachi (IKD 2007 Special - 2007 Cave Matsuri Version)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|ket.zip|ketikd.zip",
+              "pgm.zip|ket.zip"
+            ]
+          }
+        },
+        {
+          "name": "Ketsui Kizuna Jigoku Tachi (2003.01.01. Master Ver., bootleg cartridge conversion).mra",
+          "sha": "97784226b5377a5f146aa1d728d41cd580088dec",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Ketsui%20-%20Kizuna%20Jigoku%20Tachi/Ketsui%20Kizuna%20Jigoku%20Tachi%20(2003.01.01.%20Master%20Ver.%2C%20bootleg%20cartridge%20conversion).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Ketsui: Kizuna Jigoku Tachi (2003/01/01. Master Ver., bootleg cartridge conversion)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|ketbl.zip|ket.zip"
+            ]
+          }
+        },
+        {
+          "name": "Knights of Valour 2 (ver. 100, 100, 100HK).mra",
+          "sha": "ba3a5960ec4f71cb4bb57f860b8bbad38db30596",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Knights%20of%20Valour%202/Knights%20of%20Valour%202%20(ver.%20100%2C%20100%2C%20100HK).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Knights of Valour 2 (ver. 100, 100, 100HK)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|kov2.zip|kov2100.zip"
+            ]
+          }
+        },
+        {
+          "name": "Knights of Valour 2 (ver. 101, 101, 100HK).mra",
+          "sha": "6ed921aebf42d93cf96a98fb5b9fac1b83855cf2",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Knights%20of%20Valour%202/Knights%20of%20Valour%202%20(ver.%20101%2C%20101%2C%20100HK).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Knights of Valour 2 (ver. 101, 101, 100HK)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|kov2.zip|kov2101.zip"
+            ]
+          }
+        },
+        {
+          "name": "Knights of Valour 2 (ver. 102, 101, 100HK).mra",
+          "sha": "a59d32094af9675a620622f03199a930b6db5729",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Knights%20of%20Valour%202/Knights%20of%20Valour%202%20(ver.%20102%2C%20101%2C%20100HK).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Knights of Valour 2 (ver. 102, 101, 100HK)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|kov2.zip|kov2102.zip"
+            ]
+          }
+        },
+        {
+          "name": "Knights of Valour 2 (ver. 102, 102, 100HK).mra",
+          "sha": "5bde42b4a961ee3f87e34d36a5d1b4066d2d0dd9",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Knights%20of%20Valour%202/Knights%20of%20Valour%202%20(ver.%20102%2C%20102%2C%20100HK).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Knights of Valour 2 (ver. 102, 102, 100HK)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|kov2.zip|kov21022.zip"
+            ]
+          }
+        },
+        {
+          "name": "Knights of Valour 2 (ver. 103, 101, 100HK).mra",
+          "sha": "3bad689f2a90b4f2623fd05fa8249fe5dc82a4e3",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Knights%20of%20Valour%202/Knights%20of%20Valour%202%20(ver.%20103%2C%20101%2C%20100HK).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Knights of Valour 2 (ver. 103, 101, 100HK)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|kov2.zip|kov2103.zip"
+            ]
+          }
+        },
+        {
+          "name": "Knights of Valour 2 (ver. 104, 102, 100HK).mra",
+          "sha": "a81ed1dde4563a3236b2c284d69014fab6d2e133",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Knights%20of%20Valour%202/Knights%20of%20Valour%202%20(ver.%20104%2C%20102%2C%20100HK).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Knights of Valour 2 (ver. 104, 102, 100HK)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|kov2.zip|kov2104.zip"
+            ]
+          }
+        },
+        {
+          "name": "Knights of Valour 2 (ver. 106, 102, 100HK).mra",
+          "sha": "70bd10251e21024b02a38a564da892ae3e9249d5",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Knights%20of%20Valour%202/Knights%20of%20Valour%202%20(ver.%20106%2C%20102%2C%20100HK).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Knights of Valour 2 (ver. 106, 102, 100HK)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|kov2.zip|kov2106.zip"
+            ]
+          }
+        },
+        {
+          "name": "Knights of Valour Super Heroes (ver. 100, CN).mra",
+          "sha": "6de6a7200c2905a895f9d05edf98bcd8ccaa17f5",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Knights%20of%20Valour%20Super%20Heroes/Knights%20of%20Valour%20Super%20Heroes%20(ver.%20100%2C%20CN).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Knights of Valour Super Heroes (ver. 100, CN)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|kovsh.zip|kovsh100.zip"
+            ]
+          }
+        },
+        {
+          "name": "Knights of Valour Super Heroes (ver. 101, CN).mra",
+          "sha": "975f79b928ede80c902870cd7ad2d5e8e3fe9493",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Knights%20of%20Valour%20Super%20Heroes/Knights%20of%20Valour%20Super%20Heroes%20(ver.%20101%2C%20CN).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Knights of Valour Super Heroes (ver. 101, CN)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|kovsh.zip|kovsh101.zip"
+            ]
+          }
+        },
+        {
+          "name": "Knights of Valour Super Heroes (ver. 102, CN).mra",
+          "sha": "30a0aa9ff0f4d4ab92ceab999a8b18bc3bbe5a98",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Knights%20of%20Valour%20Super%20Heroes/Knights%20of%20Valour%20Super%20Heroes%20(ver.%20102%2C%20CN).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Knights of Valour Super Heroes (ver. 102, CN)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|kovsh.zip|kovsh102.zip"
+            ]
+          }
+        },
+        {
+          "name": "Knights of Valour Super Heroes (ver. 103, CN).mra",
+          "sha": "8ea2c5e650acd2a7682f47fc476284e5c93aa859",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Knights%20of%20Valour%20Super%20Heroes/Knights%20of%20Valour%20Super%20Heroes%20(ver.%20103%2C%20CN).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Knights of Valour Super Heroes (ver. 103, CN)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|kovsh.zip|kovsh103.zip"
+            ]
+          }
+        },
+        {
+          "name": "Martial Masters (ver. 102, 101, 101CN).mra",
+          "sha": "86766fe38111bf2df4a55b1803f4b9b46dbeba80",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Martial%20Masters/Martial%20Masters%20(ver.%20102%2C%20101%2C%20101CN).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Martial Masters (ver. 102, 101, 101CN)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|martmast.zip|martmast102c.zip"
+            ]
+          }
+        },
+        {
+          "name": "Martial Masters (ver. 103, 102, 101CN).mra",
+          "sha": "950969d30c6c6f2d45259207c931100a87858b8b",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Martial%20Masters/Martial%20Masters%20(ver.%20103%2C%20102%2C%20101CN).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Martial Masters (ver. 103, 102, 101CN)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|martmast.zip|martmast103c.zip"
+            ]
+          }
+        },
+        {
+          "name": "Martial Masters (ver. 104, 102, 101CN).mra",
+          "sha": "8eacbf71b23ce44d02790f708c1f3b937fe541a9",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Martial%20Masters/Martial%20Masters%20(ver.%20104%2C%20102%2C%20101CN).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Martial Masters (ver. 104, 102, 101CN)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|martmast.zip|martmast104c.zip"
+            ]
+          }
+        },
+        {
+          "name": "Oriental Legend (ver. 112).mra",
+          "sha": "897e1b96eb377df8918adbfe7a1d82ed6c33d662",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Oriental%20Legend/Oriental%20Legend%20(ver.%20112).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Oriental Legend (ver. 112)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|orlegend.zip|orlegende.zip"
+            ]
+          }
+        },
+        {
+          "name": "Oriental Legend (ver. 112, Chinese Board).mra",
+          "sha": "9fb53fb7c69d6ee3e7bef5f099665940fbbd57da",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Oriental%20Legend/Oriental%20Legend%20(ver.%20112%2C%20Chinese%20Board).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Oriental Legend (ver. 112, Chinese Board)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|orlegend.zip|orlegendc.zip"
+            ]
+          }
+        },
+        {
+          "name": "Oriental Legend (ver. unk, Chinese Board).mra",
+          "sha": "98fdedab73800f454f139baee319b54698d475f1",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Oriental%20Legend/Oriental%20Legend%20(ver.%20unk%2C%20Chinese%20Board).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Oriental Legend (ver. ???, Chinese Board)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|orlegend.zip|orlegendca.zip"
+            ]
+          }
+        },
+        {
+          "name": "Photo Y2K (ver. 102, Japanese Board).mra",
+          "sha": "84783c0998dfedfd76f384eb4dffc18d29899ef4",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Photo%20Y2K/Photo%20Y2K%20(ver.%20102%2C%20Japanese%20Board).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Photo Y2K (ver. 102, Japanese Board)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|photoy2k.zip|photoy2k102j.zip"
+            ]
+          }
+        },
+        {
+          "name": "Photo Y2K (ver. 103, Japanese Board).mra",
+          "sha": "aadafda9212262d4da3f38eb41e1c2de83b8bdf8",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Photo%20Y2K/Photo%20Y2K%20(ver.%20103%2C%20Japanese%20Board).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Photo Y2K (ver. 103, Japanese Board)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|photoy2k.zip|photoy2k103j.zip"
+            ]
+          }
+        },
+        {
+          "name": "Photo Y2K (ver. 104).mra",
+          "sha": "11bb8f1c6e24a89bf44fbf956716353180a6f8aa",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Photo%20Y2K/Photo%20Y2K%20(ver.%20104).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Photo Y2K (ver. 104)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|photoy2k.zip|photoy2k104.zip"
+            ]
+          }
+        },
+        {
+          "name": "S.V.G. - Spectral vs Generation (ver. 101HK).mra",
+          "sha": "5a18b727698ed4c7dabcc341b2cecb07eb6e0008",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_S.V.G.%20-%20Spectral%20vs%20Generation/S.V.G.%20-%20Spectral%20vs%20Generation%20(ver.%20101HK).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "S.V.G. - Spectral vs Generation (ver. 101HK)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|svg.zip|svghk.zip"
+            ]
+          }
+        },
+        {
+          "name": "The Gladiator (ver. 100).mra",
+          "sha": "a2439dfa416c9a84464a55b1ceead2bc970923cf",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_The%20Gladiator/The%20Gladiator%20(ver.%20100).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "The Gladiator (ver. 100)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|theglad.zip|theglad100.zip"
+            ]
+          }
+        },
+        {
+          "name": "The Gladiator (ver. 101).mra",
+          "sha": "e3204dbb08a1d61cb00907a085af274befb0ec42",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_The%20Gladiator/The%20Gladiator%20(ver.%20101).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "The Gladiator (ver. 101)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|theglad101.zip|theglad.zip"
+            ]
+          }
+        },
+        {
+          "name": "The Gladiator (ver. 104).mra",
+          "sha": "524ee9338fd43f868f7354f96eb5456904f37410",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_The%20Gladiator/The%20Gladiator%20(ver.%20104).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "The Gladiator (ver. 104)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|theglad104.zip|theglad.zip"
+            ]
+          }
+        },
+        {
+          "name": "Chuugokuryuu Pretty Chance [Dragon World Pretty Chance] (V101, Japan).mra",
+          "sha": "abc86f16012562eb44b8268edd239500c96a98e5",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/not_working/Chuugokuryuu%20Pretty%20Chance%20%5BDragon%20World%20Pretty%20Chance%5D%20(V101%2C%20Japan).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Chuugokuryuu Pretty Chance [Dragon World Pretty Chance] (V101, Japan)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|dwpc.zip|dwpc101j.zip"
             ]
           }
         },
@@ -6510,6 +7030,58 @@
           }
         },
         {
+          "name": "Knights of Valour 2 Plus - Nine Dragons (ver. M200XX, 200, 100CN).mra",
+          "sha": "9bbf4c2cd39614d6cea9ea34f7de432cbba5090e",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/not_working/Knights%20of%20Valour%202%20Plus%20-%20Nine%20Dragons%20(ver.%20M200XX%2C%20200%2C%20100CN).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Knights of Valour 2 Plus - Nine Dragons (ver. M200XX, 200, 100CN)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|kov2p.zip|kov2p200.zip"
+            ]
+          }
+        },
+        {
+          "name": "Knights of Valour 2 Plus - Nine Dragons (ver. M202XX, 200, 100CN).mra",
+          "sha": "07e15a7c9f85748428791083f84b42ccac842c4b",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/not_working/Knights%20of%20Valour%202%20Plus%20-%20Nine%20Dragons%20(ver.%20M202XX%2C%20200%2C%20100CN).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Knights of Valour 2 Plus - Nine Dragons (ver. M202XX, 200, 100CN)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|kov2p.zip|kov2p202.zip"
+            ]
+          }
+        },
+        {
+          "name": "Knights of Valour 2 Plus - Nine Dragons (ver. M203XX, 200, 100CN).mra",
+          "sha": "353253316bd50a06627471a08dfe299a7e5ddf01",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/not_working/Knights%20of%20Valour%202%20Plus%20-%20Nine%20Dragons%20(ver.%20M203XX%2C%20200%2C%20100CN).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Knights of Valour 2 Plus - Nine Dragons (ver. M203XX, 200, 100CN)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|kov2p.zip|kov2p203.zip"
+            ]
+          }
+        },
+        {
+          "name": "Knights of Valour 2 Plus - Nine Dragons (ver. M204XX, 200, 100CN).mra",
+          "sha": "4138fd366816b1b1024db395f4554a2a00001e4b",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/not_working/Knights%20of%20Valour%202%20Plus%20-%20Nine%20Dragons%20(ver.%20M204XX%2C%20200%2C%20100CN).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Knights of Valour 2 Plus - Nine Dragons (ver. M204XX, 200, 100CN)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|kov2p.zip|kov2p204.zip"
+            ]
+          }
+        },
+        {
           "name": "Knights of Valour Plus (bootleg, ver. 117CN).mra",
           "sha": "c515b3fd4265dac44df28cf0a354b61ffbe6e5e9",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/not_working/Knights%20of%20Valour%20Plus%20(bootleg%2C%20ver.%20117CN).mra",
@@ -6523,8 +7095,21 @@
           }
         },
         {
+          "name": "S.V.G. - Spectral vs Generation (ver. 101TW).mra",
+          "sha": "1b49c902ebc735fac9d8b1cd25ef73348c1fea11",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/not_working/S.V.G.%20-%20Spectral%20vs%20Generation%20(ver.%20101TW).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "S.V.G. - Spectral vs Generation (ver. 101TW)",
+            "rbf": "IGSPGM",
+            "zips": [
+              "pgm.zip|svg.zip|svgtw.zip"
+            ]
+          }
+        },
+        {
           "name": "pgm_test.mra",
-          "sha": "314c1b1ee61b90208bec3e83a1b30aa24ed1b5a8",
+          "sha": "d7da14e5c77bf6e8001841116ecf4475e85ee290",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-IGSPGM_MiSTer/main/releases/pgm_test.mra",
           "type": "MRA",
           "extra": {
@@ -10751,7 +11336,7 @@
     {
       "name": "Arcade-Qix_MiSTer",
       "description": null,
-      "readme": "<p align=\"center\">\n  <img src=\"Useful Information/Qix.png\" width=\"800\">\n  <img src=\"Useful Information/ComplexX.png\" width=\"800\">\n  <img src=\"Useful Information/SpaceDungeon.png\" width=\"800\">\n  <img src=\"Useful Information/Kram.png\" width=\"800\">\n</p>\n\n<h1 align=\"center\">Qix FPGA Core</h1>\n\n<p align=\"center\">\n  Arcade hardware implementation for MiSTer FPGA\n</p>\n\n---\n\n## Overview\n\nFPGA implementation of **Qix (1981)**, originally developed and released by Taito America Corporation.\n\nThis core targets MiSTer FPGA and aims for accurate gameplay behavior, video timing, and sound reproduction.\n\n---\n\n## Game Information\n\n| Field        | Value |\n|--------------|--------|\n| Title        | Qix |\n| Year         | October 1981 |\n| Developer    | Taito America Corporation |\n| Publisher    | Taito Corporation |\n| Genre        | Action / Puzzle |\n| Players      | 1\u20132 alternating |\n\n---\n\n## Controls\n\nDefault MiSTer gamepad mapping:\n\n| Input | Action |\n|-------|--------|\n| D-Pad / Joystick | Move |\n| A | Fast Draw |\n| B | Slow Draw |\n| Select | Insert Coin |\n| Start | 1 Player Start |\n| Right Shoulder | Test Advance |\n| Left Shoulder | Pause |\n\n---\n\n## Features\n\n- Arcade-accurate CPU timing\n- Sprite priority and layer handling\n- High score saving support\n- MiSTer-compatible .mra provided\n- Verified ROM definitions with checksums\n\n---\n\n## ROM Requirements\n\nROM files are **not included**.\n\nTo use this arcade core, you must provide legally obtained ROM files.\n\nTo simplify setup:\n\n- `.mra` files are provided in the **Releases** section.\n- The `.mra` specifies all required ROM files along with checksums.\n- The ROM `.zip` filename corresponds to the naming convention used by the MAME project.\n\nFor setup instructions and environment configuration, refer to:\n\nMiSTer Arcade ROM guide:  \nhttps://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms\n\n---\n\n## Installation\n\n1. Copy the core `.rbf` file to your MiSTer `/_Arcade/cores` folder.\n2. Copy the `.mra` file to your MiSTer `/_Arcade` folder.\n3. Place the appropriate ROM `.zip` files in your `/games/mame` directory.\n4. Launch the core from the MiSTer Arcade menu.\n\n---\n\n## Legal Notice\n\nThis project contains **no copyrighted game data**.\n\nUsers are responsible for obtaining and using ROM files in accordance with applicable laws.\n\nDo not request ROM files in issues or discussions.\n\n---\n\n## Credits\n\nFPGA core development: RodimusFVC  \nOriginal arcade game \u00a9 1981 Taito Corporation. All rights reserved.\n\n---\n",
+      "readme": "<p align=\"center\">\n  <img src=\"Useful Information/Qix.png\" width=\"800\">\n  <img src=\"Useful Information/ComplexX.png\" width=\"800\">\n  <img src=\"Useful Information/SpaceDungeon.png\" width=\"800\">\n  <img src=\"Useful Information/Kram.png\" width=\"800\">\n  <img src=\"Useful Information/ZooKeeper.png\" width=\"800\">\n\n</p>\n\n<h1 align=\"center\">Qix FPGA Core</h1>\n\n<p align=\"center\">\n  Arcade hardware implementation for MiSTer FPGA\n</p>\n\n---\n\n## Overview\n\nFPGA implementation of **Qix (1981)**, originally developed and released by Taito America Corporation.\n\nThis core targets MiSTer FPGA and aims for accurate gameplay behavior, video timing, and sound reproduction.\n\n---\n\n## Game Information\n\n| Field        | Value |\n|--------------|--------|\n| Title        | Qix |\n| Year         | October 1981 |\n| Developer    | Taito America Corporation |\n| Publisher    | Taito Corporation |\n| Genre        | Action / Puzzle |\n| Players      | 1\u20132 alternating |\n\n---\n\n## Controls\n\nDefault MiSTer gamepad mapping:\n\n| Input | Action |\n|-------|--------|\n| D-Pad / Joystick | Move |\n| A | Fast Draw |\n| B | Slow Draw |\n| Select | Insert Coin |\n| Start | 1 Player Start |\n| Right Shoulder | Test Advance |\n| Left Shoulder | Pause |\n\n---\n\n## Features\n\n- Arcade-accurate CPU timing\n- Sprite priority and layer handling\n- High score saving support\n- MiSTer-compatible .mra provided\n- Verified ROM definitions with checksums\n\n---\n\n## ROM Requirements\n\nROM files are **not included**.\n\nTo use this arcade core, you must provide legally obtained ROM files.\n\nTo simplify setup:\n\n- `.mra` files are provided in the **Releases** section.\n- The `.mra` specifies all required ROM files along with checksums.\n- The ROM `.zip` filename corresponds to the naming convention used by the MAME project.\n\nFor setup instructions and environment configuration, refer to:\n\nMiSTer Arcade ROM guide:  \nhttps://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms\n\n---\n\n## Installation\n\n1. Copy the core `.rbf` file to your MiSTer `/_Arcade/cores` folder.\n2. Copy the `.mra` file to your MiSTer `/_Arcade` folder.\n3. Place the appropriate ROM `.zip` files in your `/games/mame` directory.\n4. Launch the core from the MiSTer Arcade menu.\n\n---\n\n## Legal Notice\n\nThis project contains **no copyrighted game data**.\n\nUsers are responsible for obtaining and using ROM files in accordance with applicable laws.\n\nDo not request ROM files in issues or discussions.\n\n---\n\n## Credits\n\nFPGA core development: RodimusFVC  \nOriginal arcade game \u00a9 1981 Taito Corporation. All rights reserved.\n\n---\n",
       "archived": false,
       "fork": true,
       "url": "https://github.com/MiSTer-DB9/Arcade-Qix_MiSTer",
@@ -10856,6 +11441,25 @@
           "sha": "3cd6cc1182ee8d48f8ddeacd42e565498b656b08",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Qix_MiSTer/main/releases/Qix_20260614.rbf",
           "type": "RBF"
+        },
+        {
+          "name": "Qix_20260616.rbf",
+          "sha": "670b073cb6ed3bb2bf710b5c06540750f16737d7",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Qix_MiSTer/main/releases/Qix_20260616.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Slither.mra",
+          "sha": "9fd4114452db36d9b974864c894a53222d8c5b26",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Arcade-Qix_MiSTer/main/releases/Slither.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Slither",
+            "rbf": "Qix",
+            "zips": [
+              "slither.zip"
+            ]
+          }
         },
         {
           "name": "Space Dungeon.mra",
@@ -17644,7 +18248,7 @@
     {
       "name": "Distribution_MiSTer",
       "description": null,
-      "readme": "# MiSTer Distribution DB9\n\nThis repository contains all the files that you'll want in your MiSTer.\n\nYou may download all of them at once as a zip through the [following link](https://github.com/MiSTer-DB9/Distribution_MiSTer/archive/refs/heads/main.zip). Once you have them, place them as-is in your SD card, and everything should work out of the box.\n\n### MiSTer Project\n\nIf you want to check more about the MiSTer project, please check [this wiki](https://github.com/MiSTer-devel/Main_MiSTer/wiki).\n\n### Downloader script\n\nFor downloading all of these files in an automatic fashion, use [this tool](https://github.com/MiSTer-devel/Downloader_MiSTer).\n\n#### List of Tags that you may use with the Downloader Filters:\n\n`acornatom`, `acornatom_20260611_5314b34_db9`, `acornatom_unstable_20260607_0855_fcbcb01_db9`, `acornatom_unstable_20260610_2002_fcbcb01_db9`, `acornatom_unstable_20260612_1020_fcbcb01_db9`, `acornelectron`, `acornelectron_20260611_ff03dfe_db9`, `acornelectron_unstable_20260606_2054_02addf3_db9`, `acornelectron_unstable_20260610_2003_02addf3_db9`, `acornelectron_unstable_20260612_1022_02addf3_db9`, `adam`, `adctest`, `adventurevision`, `adventurevision_20260611_b74092f_db9`, `adventurevision_unstable_20260606_2102_aaae279_db9`, `adventurevision_unstable_20260610_2003_aaae279_db9`, `adventurevision_unstable_20260612_1948_aaae279_db9`, `alicemc10`, `alicemc10_20260611_b138e70_db9`, `alicemc10_unstable_20260606_2141_b94754d_db9`, `alicemc10_unstable_20260610_2003_b94754d_db9`, `alicemc10_unstable_20260612_0950_b94754d_db9`, `all_filters`, `altair8800`, `alternatives`, `amiga`, `amstrad`, `amstrad-pcw`, `amstrad-pcw_20260611_bbcfa49_db9`, `amstrad-pcw_unstable_20260606_2116_75d4448_db9`, `amstrad-pcw_unstable_20260610_2003_75d4448_db9`, `amstrad-pcw_unstable_20260612_1948_75d4448_db9`, `amstrad_20260611_07980cb_db9`, `amstrad_unstable_20260607_0855_6c2c39b_db9`, `amstrad_unstable_20260610_2003_6c2c39b_db9`, `amstrad_unstable_20260612_1948_6c2c39b_db9`, `amstradpcw`, `ao486`, `ao486_20260611_d5bd040_db9`, `ao486_unstable_20260606_2208_e1bd767_db9`, `ao486_unstable_20260610_2050_e1bd767_db9`, `ao486_unstable_20260612_1949_e1bd767_db9`, `ao486userio2`, `ao486userio2_20260611_d5bd040_db9`, `ao486userio2_unstable_20260605_2029_e1bd767_db9`, `ao486userio2_unstable_20260610_2050_e1bd767_db9`, `ao486userio2_unstable_20260612_1949_e1bd767_db9`, `apogee`, `apple-i`, `apple-ii`, `apple-ii_20260612_5cc4754_db9`, `apple-ii_unstable_20260606_2059_79f8209_db9`, `apple-ii_unstable_20260610_2003_79f8209_db9`, `apple-ii_unstable_20260612_1948_79f8209_db9`, `aquarius`, `aquarius_20260611_86b7d20_db9`, `aquarius_unstable_20260606_2114_78a8a44_db9`, `aquarius_unstable_20260610_2003_78a8a44_db9`, `aquarius_unstable_20260612_0950_78a8a44_db9`, `arcade`, `arcade-arkanoid`, `arcade-arkanoid_20260611_5415e2b_db9`, `arcade-asteroids`, `arcade-asteroids_20260611_6bcc0e7_db9`, `arcade-asteroidsdeluxe`, `arcade-asteroidsdeluxe_20260611_61bdd3e_db9`, `arcade-astrocade`, `arcade-astrocade_20260611_3c2f3cb_db9`, `arcade-atarisys1`, `arcade-atarisys1_20260611_c70b15d_db9`, `arcade-ataritetris`, `arcade-ataritetris_20260611_f7ffff2_db9`, `arcade-athena`, `arcade-athena_20260611_cdc34f4_db9`, `arcade-bagman`, `arcade-bagman_20260611_462cf21_db9`, `arcade-bankpanic`, `arcade-bankpanic_20260611_50449bf_db9`, `arcade-battlezone`, `arcade-berzerk`, `arcade-berzerk_20260611_0343be9_db9`, `arcade-blackwidow`, `arcade-blackwidow_20260611_2410514_db9`, `arcade-blockade`, `arcade-blockade_20260611_17cf8e7_db9`, `arcade-bloodbros`, `arcade-bloodbros_20260611_d62924b_db9`, `arcade-blueprint`, `arcade-blueprint_20260611_fc05027_db9`, `arcade-bombjack`, `arcade-bombjack_20260611_5c826f7_db9`, `arcade-bosconian`, `arcade-bosconian_20260611_5db9cbc_db9`, `arcade-breakout`, `arcade-bubsys`, `arcade-bubsys_20260611_dd455fe_db9`, `arcade-bubsysrom`, `arcade-bubsysrom_20260611_46aa6ef_db9`, `arcade-burgertime`, `arcade-burgertime_20260611_25ec67d_db9`, `arcade-burningrubber`, `arcade-burningrubber_20260611_1f7bded_db9`, `arcade-canyonbomber`, `arcade-canyonbomber_20260611_f4b61cc_db9`, `arcade-cave`, `arcade-cave_20260612_3964091_db9`, `arcade-cavebanpresto`, `arcade-centipede`, `arcade-centipede_20260611_0730caa_db9`, `arcade-chameleon`, `arcade-chameleon_20260612_887f4bd_db9`, `arcade-chinagate`, `arcade-chinagate_20260611_9cd6477_db9`, `arcade-cityconnection`, `arcade-cityconnection_20260612_b03389f_db9`, `arcade-computerspace`, `arcade-computerspace_20260611_d859011_db9`, `arcade-congobongo`, `arcade-congobongo_20260612_823a031_db9`, `arcade-cores`, `arcade-cosmic`, `arcade-cosmic_20260611_5da8539_db9`, `arcade-cosmicguerilla`, `arcade-cosmicguerilla_20260611_4e35d7a_db9`, `arcade-crazyballoon`, `arcade-crazyballoon_20260611_44269e4_db9`, `arcade-crazyclimber`, `arcade-crazyclimber_20260611_b435bf5_db9`, `arcade-crazykong`, `arcade-crazykong_20260611_ed86746_db9`, `arcade-crystalcastles`, `arcade-darius`, `arcade-darius2ninjawarriors`, `arcade-darius_20260611_867bbb6_db9`, `arcade-dcon`, `arcade-dcon_20260611_f1abed9_db9`, `arcade-deco16`, `arcade-deco16_20260611_ca281b6_db9`, `arcade-defender`, `arcade-defender_20260611_b40f2a7_db9`, `arcade-digdug`, `arcade-digdug_20260611_c74c3ae_db9`, `arcade-dominos`, `arcade-dominos_20260611_13b7113_db9`, `arcade-donkeykong`, `arcade-donkeykong3`, `arcade-donkeykong3_20260611_f82f893_db9`, `arcade-donkeykong_20260611_9f63788_db9`, `arcade-donkeykongjunior`, `arcade-donkeykongjunior_20260611_49195b9_db9`, `arcade-dorodon`, `arcade-dottorikun`, `arcade-dottorikun_20260611_6e9dfdc_db9`, `arcade-druaga`, `arcade-druaga_20260611_8697309_db9`, `arcade-exerion`, `arcade-exerion_20260611_4a032a8_db9`, `arcade-exidy2`, `arcade-exidy2_20260611_9db44bb_db9`, `arcade-expressraider`, `arcade-expressraider_20260611_23fbf73_db9`, `arcade-finalizer`, `arcade-finalizer_20260611_aa97513_db9`, `arcade-foodfight`, `arcade-foodfight_20260611_3222ac1_db9`, `arcade-freeze`, `arcade-freeze_20260611_febd124_db9`, `arcade-frenzy`, `arcade-frenzy_20260611_b72a449_db9`, `arcade-galaga`, `arcade-galaga_20260611_cf806e6_db9`, `arcade-galaxian`, `arcade-galaxian_20260611_c2a564d_db9`, `arcade-galivan`, `arcade-galivan_20260611_6dd624f_db9`, `arcade-gaplus`, `arcade-gaplus_20260611_8773198_db9`, `arcade-gauntlet`, `arcade-gauntlet_20260611_5f8078d_db9`, `arcade-gyruss`, `arcade-gyruss_20260611_8733b0f_db9`, `arcade-igspgm`, `arcade-igspgm_20260614_d093f18_db9`, `arcade-ikariwarriors`, `arcade-inferno`, `arcade-inferno_20260611_5529aae_db9`, `arcade-iremm107`, `arcade-iremm107_20260611_7d7a55c_db9`, `arcade-iremm62`, `arcade-iremm62_20260611_84d8171_db9`, `arcade-iremm72`, `arcade-iremm72_20260611_077cee2_db9`, `arcade-iremm90`, `arcade-iremm90_20260611_5b3dcd6_db9`, `arcade-iremm92`, `arcade-iremm92_20260611_b5e1831_db9`, `arcade-ironhorse`, `arcade-ironhorse_20260611_cb67e42_db9`, `arcade-jackal`, `arcade-jackal_20260611_c91e318_db9`, `arcade-jailbreak`, `arcade-jailbreak_20260611_5668a88_db9`, `arcade-joust2`, `arcade-joust2_20260611_edfdd3b_db9`, `arcade-jt1942`, `arcade-jt1942_20260613_4060b50_db9`, `arcade-jt1943`, `arcade-jt1943_20260613_4060b50_db9`, `arcade-jtajax`, `arcade-jtajax_20260613_4060b50_db9`, `arcade-jtaliens`, `arcade-jtaliens_20260613_4060b50_db9`, `arcade-jtbiocom`, `arcade-jtbiocom_20260613_4060b50_db9`, `arcade-jtbtiger`, `arcade-jtbtiger_20260613_4060b50_db9`, `arcade-jtbubl`, `arcade-jtbubl_20260613_4060b50_db9`, `arcade-jtcal50`, `arcade-jtcal50_20260613_4060b50_db9`, `arcade-jtcastle`, `arcade-jtcastle_20260613_4060b50_db9`, `arcade-jtcircus`, `arcade-jtcircus_20260613_4060b50_db9`, `arcade-jtcommnd`, `arcade-jtcommnd_20260613_4060b50_db9`, `arcade-jtcomsc`, `arcade-jtcomsc_20260613_4060b50_db9`, `arcade-jtcontra`, `arcade-jtcontra_20260613_4060b50_db9`, `arcade-jtcop`, `arcade-jtcop_20260613_4060b50_db9`, `arcade-jtcps1`, `arcade-jtcps15`, `arcade-jtcps15_20260613_4060b50_db9`, `arcade-jtcps1_20260613_4060b50_db9`, `arcade-jtcps2`, `arcade-jtcps2_20260613_4060b50_db9`, `arcade-jtcps3`, `arcade-jtdd`, `arcade-jtdd2`, `arcade-jtdd2_20260613_4060b50_db9`, `arcade-jtdd_20260613_4060b50_db9`, `arcade-jtexed`, `arcade-jtexed_20260613_4060b50_db9`, `arcade-jtflane`, `arcade-jtflane_20260613_4060b50_db9`, `arcade-jtflstory`, `arcade-jtflstory_20260613_4060b50_db9`, `arcade-jtfround`, `arcade-jtfround_20260613_4060b50_db9`, `arcade-jtgaiden`, `arcade-jtgaiden_20260613_4060b50_db9`, `arcade-jtgng`, `arcade-jtgng_20260613_4060b50_db9`, `arcade-jtgrad3`, `arcade-jtgrad3_20260613_4060b50_db9`, `arcade-jtgunsmk`, `arcade-jtgunsmk_20260613_4060b50_db9`, `arcade-jtkarnov`, `arcade-jtkarnov_20260613_4060b50_db9`, `arcade-jtkchamp`, `arcade-jtkchamp_20260613_4060b50_db9`, `arcade-jtkicker`, `arcade-jtkicker_20260613_4060b50_db9`, `arcade-jtkiwi`, `arcade-jtkiwi_20260613_4060b50_db9`, `arcade-jtkunio`, `arcade-jtkunio_20260613_4060b50_db9`, `arcade-jtlabrun`, `arcade-jtlabrun_20260613_4060b50_db9`, `arcade-jtmidres`, `arcade-jtmidres_20260613_4060b50_db9`, `arcade-jtmikie`, `arcade-jtmikie_20260613_4060b50_db9`, `arcade-jtmx5k`, `arcade-jtmx5k_20260613_4060b50_db9`, `arcade-jtngp`, `arcade-jtngpc`, `arcade-jtngpc_20260613_4060b50_db9`, `arcade-jtninja`, `arcade-jtninja_20260613_4060b50_db9`, `arcade-jtoutrun`, `arcade-jtoutrun_20260613_4060b50_db9`, `arcade-jtpaclan`, `arcade-jtpaclan_20260613_4060b50_db9`, `arcade-jtpang`, `arcade-jtpang_20260613_4060b50_db9`, `arcade-jtparoda`, `arcade-jtparoda_20260613_4060b50_db9`, `arcade-jtpinpon`, `arcade-jtpinpon_20260613_4060b50_db9`, `arcade-jtprmr`, `arcade-jtrastan`, `arcade-jtrastan_20260613_4060b50_db9`, `arcade-jtriders`, `arcade-jtriders_20260613_4060b50_db9`, `arcade-jtroadf`, `arcade-jtroadf_20260613_4060b50_db9`, `arcade-jtroc`, `arcade-jtroc_20260613_4060b50_db9`, `arcade-jtrumble`, `arcade-jtrumble_20260613_4060b50_db9`, `arcade-jtrungun`, `arcade-jts16`, `arcade-jts16_20260613_4060b50_db9`, `arcade-jts16b`, `arcade-jts16b_20260613_4060b50_db9`, `arcade-jts18`, `arcade-jts18_20260613_4060b50_db9`, `arcade-jtsarms`, `arcade-jtsarms_20260613_4060b50_db9`, `arcade-jtsbaskt`, `arcade-jtsbaskt_20260613_4060b50_db9`, `arcade-jtsectnz`, `arcade-jtsectnz_20260613_4060b50_db9`, `arcade-jtsf`, `arcade-jtsf_20260613_4060b50_db9`, `arcade-jtshanon`, `arcade-jtshanon_20260613_4060b50_db9`, `arcade-jtshouse`, `arcade-jtshouse_20260613_4060b50_db9`, `arcade-jtsimson`, `arcade-jtsimson_20260613_4060b50_db9`, `arcade-jtslyspy`, `arcade-jtslyspy_20260613_4060b50_db9`, `arcade-jtthundr`, `arcade-jtthundr_20260613_4060b50_db9`, `arcade-jttmnt`, `arcade-jttmnt_20260613_4060b50_db9`, `arcade-jttoki`, `arcade-jttoki_20260613_4060b50_db9`, `arcade-jttora`, `arcade-jttora_20260613_4060b50_db9`, `arcade-jttrack`, `arcade-jttrack_20260613_4060b50_db9`, `arcade-jttrojan`, `arcade-jttrojan_20260613_4060b50_db9`, `arcade-jttwin16`, `arcade-jttwin16_20260613_4060b50_db9`, `arcade-jtvigil`, `arcade-jtvigil_20260613_4060b50_db9`, `arcade-jtwc`, `arcade-jtwc_20260613_4060b50_db9`, `arcade-jtwwfss`, `arcade-jtwwfss_20260613_4060b50_db9`, `arcade-jtxmen`, `arcade-jtyiear`, `arcade-jtyiear_20260613_4060b50_db9`, `arcade-junofirst`, `arcade-junofirst_20260611_09aab7d_db9`, `arcade-kickandrun`, `arcade-kickandrun_20260611_e0f6229_db9`, `arcade-ladybug`, `arcade-ladybug_20260611_46043a5_db9`, `arcade-lunarlander`, `arcade-lunarlander_20260611_c4ac1a9_db9`, `arcade-mariobros`, `arcade-mariobros_20260611_99da4af_db9`, `arcade-mcr1`, `arcade-mcr1_20260611_45a8bdd_db9`, `arcade-mcr2`, `arcade-mcr2_20260611_470c523_db9`, `arcade-mcr3`, `arcade-mcr3_20260611_0d872ee_db9`, `arcade-mcr3mono`, `arcade-mcr3mono_20260611_e0fee12_db9`, `arcade-mcr3scroll`, `arcade-mcr3scroll_20260611_3a4a7a2_db9`, `arcade-missilecommand`, `arcade-missilecommand_20260611_63f1e97_db9`, `arcade-moonpatrol`, `arcade-moonpatrol_20260611_1010495_db9`, `arcade-mrdo`, `arcade-mrdo_20260611_424956b_db9`, `arcade-mrjong`, `arcade-mrjong_20260611_bd33917_db9`, `arcade-mysticmarathon`, `arcade-mysticmarathon_20260611_fd8dc5c_db9`, `arcade-naughtyboy`, `arcade-naughtyboy_20260611_6f7eee9_db9`, `arcade-ninjakun`, `arcade-ninjakun_20260611_286a11a_db9`, `arcade-pacman`, `arcade-pacman_20260611_499383b_db9`, `arcade-pengo`, `arcade-pengo_20260611_c98a11f_db9`, `arcade-penguinkunwars`, `arcade-penguinkunwars_20260611_463484a_db9`, `arcade-performan`, `arcade-performan_20260611_311d53f_db9`, `arcade-phoenix`, `arcade-phoenix_20260611_3bdb489_db9`, `arcade-pleiads`, `arcade-pleiads_20260611_c9e811f_db9`, `arcade-polyplay`, `arcade-polyplay_20260611_906f8a3_db9`, `arcade-pong`, `arcade-pooyan`, `arcade-pooyan_20260611_3e5af86_db9`, `arcade-popeye`, `arcade-popeye_20260611_dc28191_db9`, `arcade-prehisle`, `arcade-prehisle_20260611_352173f_db9`, `arcade-psychic5`, `arcade-psychic5_20260611_31f2959_db9`, `arcade-qbert`, `arcade-qbert_20260611_11a3a9d_db9`, `arcade-qix`, `arcade-qix_20260614_7649a14_db9`, `arcade-rallyx`, `arcade-rallyx_20260611_f51ba6a_db9`, `arcade-rbfs-only`, `arcade-riverpatrol`, `arcade-riverpatrol_20260611_0c0031c_db9`, `arcade-robotron`, `arcade-robotron_20260611_ea8cbbf_db9`, `arcade-rshnatk`, `arcade-rshnatk_20260611_3147709_db9`, `arcade-salamander`, `arcade-salamander_20260611_0d2ee68_db9`, `arcade-scootershooter`, `arcade-scootershooter_20260611_5515a9c_db9`, `arcade-scramble`, `arcade-scramble_20260611_912e762_db9`, `arcade-sdgundamps`, `arcade-segasys1`, `arcade-segasys1_20260611_1128db3_db9`, `arcade-segavicz80`, `arcade-segavicz80_20260611_0097e8b_db9`, `arcade-silverland`, `arcade-silverland_20260611_ffcb032_db9`, `arcade-skysmasher`, `arcade-slapfight`, `arcade-slapfight_20260611_c5b9c50_db9`, `arcade-sms`, `arcade-snk6502`, `arcade-snk_triplez80`, `arcade-snk_triplez80_20260611_1b424b4_db9`, `arcade-solomonskey`, `arcade-solomonskey_20260611_0dc83ed_db9`, `arcade-sonson`, `arcade-sonson_20260611_812a34e_db9`, `arcade-spaceinvaders`, `arcade-spaceinvaders_20260611_805ab49_db9`, `arcade-spacerace`, `arcade-spacerace_20260611_85bd2eb_db9`, `arcade-sprint1`, `arcade-sprint1_20260611_4d66142_db9`, `arcade-sprint2`, `arcade-sprint2_20260611_f3edc55_db9`, `arcade-st-v`, `arcade-starforce`, `arcade-starforce_20260611_6b61fc4_db9`, `arcade-starwars`, `arcade-subs`, `arcade-superbreakout`, `arcade-superbreakout_20260611_c8b2dfb_db9`, `arcade-suprloco`, `arcade-suprloco_20260611_a473b60_db9`, `arcade-taitof2`, `arcade-taitof2_20260611_90432b5_db9`, `arcade-taitosj`, `arcade-taitosj_20260611_1f0b4c8_db9`, `arcade-tankbattalion`, `arcade-tankbattalion_20260611_bb2418f_db9`, `arcade-tecmo`, `arcade-tecmo_20260611_b13cf7a_db9`, `arcade-tiamc1`, `arcade-tiamc1_20260611_54e1d9b_db9`, `arcade-timepilot`, `arcade-timepilot84`, `arcade-timepilot84_20260611_1b86b7b_db9`, `arcade-timepilot_20260611_cf8a840_db9`, `arcade-tnkiii`, `arcade-traverseusa`, `arcade-traverseusa_20260611_723bcf0_db9`, `arcade-tropicalangel`, `arcade-tropicalangel_20260611_1bcb841_db9`, `arcade-turkeyshoot`, `arcade-turkeyshoot_20260611_4bdc9ac_db9`, `arcade-tutankham`, `arcade-tutankham_20260611_b5cfc9d_db9`, `arcade-ultratank`, `arcade-ultratank_20260611_3ba3655_db9`, `arcade-vastar`, `arcade-vastar_20260611_6d605a3_db9`, `arcade-vball`, `arcade-vball_20260611_cb12306_db9`, `arcade-xevious`, `arcade-xevious_20260612_3d56d91_db9`, `arcade-xsleena`, `arcade-xsleena_20260611_80e8446_db9`, `arcade-zaxxon`, `arcade-zaxxon_20260611_8f36660_db9`, `arcade-zigzag`, `arcade-zigzag_20260611_d33bb2f_db9`, `arcadelpf`, `arcadia`, `arcadia_20260611_2199d52_db9`, `arcadia_unstable_20260606_2051_8ed7e16_db9`, `arcadia_unstable_20260610_2003_8ed7e16_db9`, `arcadia_unstable_20260612_1948_8ed7e16_db9`, `archie`, `archie_20260611_1824760_db9`, `archie_unstable_20260606_2050_7edeed5_db9`, `archie_unstable_20260611_0958_7edeed5_db9`, `archie_unstable_20260612_1948_7edeed5_db9`, `arduboy`, `arduboy_20260611_010b94e_db9`, `arduboy_unstable_20260606_2111_d45b4c3_db9`, `arduboy_unstable_20260610_2003_d45b4c3_db9`, `arduboy_unstable_20260612_1948_d45b4c3_db9`, `astrocade`, `astrocade_20260611_d01f839_db9`, `astrocade_unstable_20260606_2100_5173e50_db9`, `astrocade_unstable_20260610_2003_5173e50_db9`, `astrocade_unstable_20260612_1948_5173e50_db9`, `atari2600`, `atari5200`, `atari5200_20260611_fa25c37_db9`, `atari5200_unstable_20260606_2057_8c41640_db9`, `atari5200_unstable_20260610_2003_8c41640_db9`, `atari5200_unstable_20260612_1948_8c41640_db9`, `atari7800`, `atari7800_20260611_c122226_db9`, `atari7800_unstable_20260607_0855_d11a976_db9`, `atari7800_unstable_20260610_2003_d11a976_db9`, `atari7800_unstable_20260612_1948_d11a976_db9`, `atari800`, `atari800_20260611_fa25c37_db9`, `atari800_unstable_20260606_2057_8c41640_db9`, `atari800_unstable_20260610_2003_8c41640_db9`, `atari800_unstable_20260612_1948_8c41640_db9`, `atarilynx`, `atarilynx_20260611_9c8fa5a_db9`, `atarilynx_unstable_20260607_0856_aff48eb_db9`, `atarilynx_unstable_20260610_2003_aff48eb_db9`, `atarilynx_unstable_20260612_1948_aff48eb_db9`, `atarist`, `atarist_20260611_91fea4d_db9`, `atarist_unstable_20260605_2040_426ef87_db9`, `atarist_unstable_20260610_2003_426ef87_db9`, `atarist_unstable_20260612_1948_426ef87_db9`, `ataristuserio2`, `ataristuserio2_20260611_91fea4d_db9`, `ataristuserio2_unstable_20260606_2051_426ef87_db9`, `ataristuserio2_unstable_20260610_2003_426ef87_db9`, `ataristuserio2_unstable_20260612_1948_426ef87_db9`, `avision`, `ay-3-8500`, `ay-3-8500_20260611_b05f7a4_db9`, `ay-3-8500_unstable_20260606_2104_7a02c15_db9`, `ay-3-8500_unstable_20260610_2003_7a02c15_db9`, `ay-3-8500_unstable_20260612_0950_7a02c15_db9`, `bbcbridgecompanion`, `bbcbridgecompanion_20260611_289f28c_db9`, `bbcbridgecompanion_unstable_20260606_2120_8a8fc95_db9`, `bbcbridgecompanion_unstable_20260610_2004_8a8fc95_db9`, `bbcbridgecompanion_unstable_20260612_1948_8a8fc95_db9`, `bbcmicro`, `bbcmicro_20260611_5508c5c_db9`, `bbcmicro_unstable_20260607_1922_c0fd125_db9`, `bbcmicro_unstable_20260610_2003_c0fd125_db9`, `bbcmicro_unstable_20260612_1948_c0fd125_db9`, `bios`, `bk0011m`, `bk0011m_20260611_f5757f0_db9`, `bk0011m_unstable_20260605_0953_015165f_db9`, `bk0011m_unstable_20260610_2003_015165f_db9`, `bk0011m_unstable_20260612_1020_015165f_db9`, `c128`, `c128_20260611_1d2f244_db9`, `c128_unstable_20260608_1054_5d15c5a_db9`, `c128_unstable_20260610_2003_5d15c5a_db9`, `c128_unstable_20260612_1949_8cb754b_db9`, `c16`, `c16_20260611_1f95e4e_db9`, `c16_unstable_20260607_0856_a47517b_db9`, `c16_unstable_20260610_2003_a47517b_db9`, `c16_unstable_20260612_1949_a47517b_db9`, `c64`, `c64_20260611_e20c3c1_db9`, `c64_unstable_20260608_1054_2f6544a_db9`, `c64_unstable_20260612_1335_2f6544a_db9`, `c64_unstable_20260612_1547_2f6544a_db9`, `cacert`, `casio_pv-1000`, `casio_pv-1000_20260611_7e3eebe_db9`, `casio_pv-1000_unstable_20260605_2046_4923f09_db9`, `casio_pv-1000_unstable_20260607_0855_4923f09_db9`, `casio_pv-1000_unstable_20260612_1308_4923f09_db9`, `casio_pv-2000`, `casio_pv-2000_20260611_bacddcb_db9`, `casio_pv-2000_unstable_20260605_2026_15ac7ae_db9`, `casio_pv-2000_unstable_20260606_2134_15ac7ae_db9`, `casio_pv-2000_unstable_20260612_1327_15ac7ae_db9`, `cd-i`, `cdi`, `cdi_20260611_20d6708_db9`, `cdi_unstable_20260604_1028_ae583cd_db9`, `cdi_unstable_20260605_0952_ae583cd_db9`, `cdi_unstable_20260612_1358_f8f10b1_db9`, `channelf`, `channelf_20260611_15c1410_db9`, `channelf_unstable_20260606_2058_34da811_db9`, `channelf_unstable_20260610_2015_34da811_db9`, `channelf_unstable_20260612_0950_34da811_db9`, `cheats`, `chess`, `chess_20260611_0f5aa09_db9`, `chess_unstable_20260601_1133_221e369_db9`, `chess_unstable_20260610_2003_221e369_db9`, `chess_unstable_20260612_1949_221e369_db9`, `chip8`, `coco2`, `coco2_20260611_9e79d22_db9`, `coco2_unstable_20260601_1133_976a83b_db9`, `coco2_unstable_20260610_2003_976a83b_db9`, `coco2_unstable_20260612_1021_976a83b_db9`, `coco3`, `coco3_20260611_a3cc1ba_db9`, `coco3_unstable_20260601_1133_0cc97c8_db9`, `coco3_unstable_20260612_1327_0cc97c8_db9`, `coleco`, `colecoadam`, `colecoadam_20260611_e1d4d0f_db9`, `colecoadam_unstable_20260606_2205_18de4aa_db9`, `colecoadam_unstable_20260610_2003_18de4aa_db9`, `colecoadam_unstable_20260612_1949_18de4aa_db9`, `colecovision`, `colecovision_20260611_66b83ff_db9`, `colecovision_unstable_20260605_2025_5e8713c_db9`, `colecovision_unstable_20260606_2146_5e8713c_db9`, `colecovision_unstable_20260612_1308_5e8713c_db9`, `complexmultichromatic`, `computer`, `computer-cores`, `console`, `console-cd`, `console-cores`, `contrast_boost`, `controls_1_button`, `controls_2_buttons`, `controls_2_players`, `controls_3_buttons`, `controls_3_players`, `controls_4_buttons`, `controls_4_players`, `controls_5_buttons`, `controls_6_buttons`, `controls_dial`, `controls_move_2-way`, `controls_move_4-way`, `controls_move_8-way`, `controls_paddle`, `controls_spinner`, `controls_trackball`, `cores`, `corespecific`, `creativision`, `creativision_20260611_fd296a2_db9`, `creativision_unstable_20260605_2024_6d1b2ff_db9`, `creativision_unstable_20260606_2113_6d1b2ff_db9`, `creativision_unstable_20260612_1308_6d1b2ff_db9`, `crt-simulation`, `displayspecific`, `docs`, `donut`, `downloader`, `downloader_bin`, `downloader_latest`, `drv`, `edsac`, `eg2000`, `eg2000_20260612_98bdb40_db9`, `eg2000_unstable_20260605_2029_0353337_db9`, `eg2000_unstable_20260606_2101_0353337_db9`, `eg2000_unstable_20260612_1347_0353337_db9`, `enterprise`, `enterprise_20260611_39000c8_db9`, `enterprise_unstable_20260605_2026_86ed4fd_db9`, `enterprise_unstable_20260607_0855_86ed4fd_db9`, `enterprise_unstable_20260612_1308_86ed4fd_db9`, `epochgalaxyii`, `epochgalaxyii_20260611_76a26b6_db9`, `epochgalaxyii_unstable_20260606_2127_c5eafaa_db9`, `epochgalaxyii_unstable_20260610_2003_c5eafaa_db9`, `epochgalaxyii_unstable_20260612_1959_c5eafaa_db9`, `essential`, `extra-utilities`, `famicom`, `fast_usb_polling`, `filters`, `filters_audio`, `filters_video`, `flappy`, `flappybird`, `flappybird_20260611_1f22818_db9`, `flappybird_unstable_20260607_0856_d4aaf8b_db9`, `flappybird_unstable_20260610_2004_d4aaf8b_db9`, `flappybird_unstable_20260612_1948_d4aaf8b_db9`, `font`, `galaksija`, `gamate`, `gamate_20260611_75a73e0_db9`, `gamate_unstable_20260606_2101_8966eaa_db9`, `gamate_unstable_20260610_2034_8966eaa_db9`, `gamate_unstable_20260612_1019_8966eaa_db9`, `gameandwatch`, `gameandwatch_20260611_70602d7_db9`, `gameandwatch_unstable_20260607_0856_ceea1cf_db9`, `gameandwatch_unstable_20260610_2003_ceea1cf_db9`, `gameandwatch_unstable_20260612_1948_ceea1cf_db9`, `gameboy`, `gameboy2p`, `gameboy2p_20260611_795ae89_db9`, `gameboy2p_unstable_20260606_2109_7391b95_db9`, `gameboy2p_unstable_20260610_2003_7391b95_db9`, `gameboy2p_unstable_20260612_1948_7391b95_db9`, `gameboy_20260612_4e33ff5_db9`, `gameboy_unstable_20260605_2024_fcc79c8_db9`, `gameboy_unstable_20260606_2117_fcc79c8_db9`, `gameboy_unstable_20260612_1308_fcc79c8_db9`, `gameboyadvance`, `gameboycolor`, `gamecontrollerdb`, `gamegear`, `gamegear2p`, `gamenwatch`, `gameoflife`, `games`, `gamma`, `gb`, `gba`, `gba2p`, `gba2p_20260611_c28e586_db9`, `gba2p_unstable_20260606_2115_30f5349_db9`, `gba2p_unstable_20260610_2018_30f5349_db9`, `gba2p_unstable_20260612_1948_30f5349_db9`, `gba_20260611_904ea7e_db9`, `gba_accuracy`, `gba_accuracy_20260611_2a76bd8_db9`, `gba_accuracy_unstable_20260607_0856_3e347de_db9`, `gba_accuracy_unstable_20260610_2004_3e347de_db9`, `gba_accuracy_unstable_20260612_1948_3e347de_db9`, `gba_unstable_20260606_2104_eb32a3f_db9`, `gba_unstable_20260610_2004_eb32a3f_db9`, `gba_unstable_20260612_1959_eb32a3f_db9`, `gbc`, `gbmidi`, `generalhardware`, `generallpf`, `genesis`, `genesis_20260611_aee36c6_db9`, `genesis_unstable_20260607_0858_adc0c42_db9`, `genesis_unstable_20260610_2004_adc0c42_db9`, `genesis_unstable_20260612_1225_adc0c42_db9`, `genmidi`, `gnw`, `gnw_20260611_4ed2780_db9`, `gnw_unstable_20260606_2128_e66b7f5_db9`, `gnw_unstable_20260611_0958_e66b7f5_db9`, `gnw_unstable_20260612_1949_e66b7f5_db9`, `handheld2p`, `hbmame`, `homelab`, `ini_settings`, `inputtest`, `inputtest_20260611_a351550_db9`, `inputtest_unstable_20260606_2128_54fb57c_db9`, `inputtest_unstable_20260610_2018_54fb57c_db9`, `inputtest_unstable_20260612_1949_54fb57c_db9`, `intellivision`, `interact`, `interact_20260612_1952020_db9`, `interact_unstable_20260601_1133_3465814_db9`, `interact_unstable_20260610_2004_3465814_db9`, `interact_unstable_20260612_1949_3465814_db9`, `iq151`, `jaguar`, `jupiter`, `jupiter_20260611_99a55cc_db9`, `jupiter_unstable_20260610_2003_7873bda_db9`, `jupiter_unstable_20260612_1019_7873bda_db9`, `jupiter_unstable_20260612_1949_7873bda_db9`, `laser`, `laser310`, `laser310_20260611_817d3a6_db9`, `laser310_unstable_20260605_2031_dab3e85_db9`, `laser310_unstable_20260607_0857_dab3e85_db9`, `laser310_unstable_20260612_1018_dab3e85_db9`, `lcd-general`, `lcd-integeronly`, `linux`, `lynx48`, `lynx48_20260611_919c960_db9`, `lynx48_unstable_20260605_2041_b3f2d1e_db9`, `lynx48_unstable_20260606_2056_b3f2d1e_db9`, `lynx48_unstable_20260612_1335_b3f2d1e_db9`, `macplus`, `mame`, `mastersystem`, `megacd`, `megacd_20260611_4af065a_db9`, `megacd_unstable_20260606_2150_b1a0f1f_db9`, `megacd_unstable_20260610_2004_b1a0f1f_db9`, `megacd_unstable_20260612_1949_b1a0f1f_db9`, `megadrive`, `megadrive_20260611_8f29e6e_db9`, `megadrive_unstable_20260607_0856_7365a13_db9`, `megadrive_unstable_20260610_2003_7365a13_db9`, `megadrive_unstable_20260612_1949_7365a13_db9`, `megaduck`, `memtest`, `memtest_060mhz`, `memtest_100mhz`, `memtest_110mhz`, `memtest_120mhz`, `memtest_130mhz`, `memtest_140mhz`, `memtest_150mhz`, `memtest_160mhz`, `memtest_167mhz`, `menu`, `menu_unstable_20260605_2043_3c3634c_db9`, `menu_unstable_20260606_2106_3c3634c_db9`, `menu_unstable_20260612_1308_3c3634c_db9`, `mgl`, `minimig`, `minimig_20260611_40bd4e4_db9`, `minimig_unstable_20260607_0856_eb7a26e_db9`, `minimig_unstable_20260610_2005_eb7a26e_db9`, `minimig_unstable_20260612_1949_eb7a26e_db9`, `minimigdb9`, `minimigrgb8`, `minimiguserio2`, `minimiguserio2_20260611_40bd4e4_db9`, `minimiguserio2_unstable_20260607_0856_eb7a26e_db9`, `minimiguserio2_unstable_20260610_2005_eb7a26e_db9`, `minimiguserio2_unstable_20260612_1949_eb7a26e_db9`, `mister`, `mister_example-ini`, `misterfirmware`, `misterlaggy`, `mra`, `msx`, `msx1`, `msx1_20260612_8f6e351_db9`, `msx1_unstable_20260607_0855_d947f4a_db9`, `msx1_unstable_20260610_2003_d947f4a_db9`, `msx1_unstable_20260612_1949_d947f4a_db9`, `msx_20260611_e34acfe_db9`, `msx_unstable_20260606_2107_bb13016_db9`, `msx_unstable_20260610_2004_bb13016_db9`, `msx_unstable_20260612_1959_bb13016_db9`, `multicomp`, `myvision`, `myvision_20260611_45a4cab_db9`, `myvision_unstable_20260606_2107_5fb039e_db9`, `myvision_unstable_20260610_2003_5fb039e_db9`, `myvision_unstable_20260612_1043_5fb039e_db9`, `n64`, `neogeo`, `neogeo-cd`, `neogeo_20260611_0129ae3_db9`, `neogeo_24mhz_cpu_only`, `neogeo_24mhz_cpu_only_20260611_0fd9084_db9`, `neogeo_24mhz_cpu_only_unstable_20260605_2028_227d4f4_db9`, `neogeo_24mhz_cpu_only_unstable_20260607_0856_227d4f4_db9`, `neogeo_24mhz_cpu_only_unstable_20260612_1308_227d4f4_db9`, `neogeo_unstable_20260606_2209_227d4f4_db9`, `neogeo_unstable_20260610_2004_227d4f4_db9`, `neogeo_unstable_20260612_1951_227d4f4_db9`, `neogeopocket`, `nes`, `nes_20260611_1b4ca09_db9`, `nes_unstable_20260608_2015_666ce66_db9`, `nes_unstable_20260610_2004_666ce66_db9`, `nes_unstable_20260612_1225_666ce66_db9`, `nintendo`, `no-mad-entry-mra`, `no-setname-mra`, `odyssey2`, `odyssey2_20260611_21139f5_db9`, `odyssey2_unstable_20260607_0856_83d9819_db9`, `odyssey2_unstable_20260610_2004_83d9819_db9`, `odyssey2_unstable_20260612_1949_83d9819_db9`, `old`, `ondra_spo186`, `ondra_spo186_20260611_2cbf1fe_db9`, `ondra_spo186_unstable_20260606_2200_5df8de8_db9`, `ondra_spo186_unstable_20260610_2005_5df8de8_db9`, `ondra_spo186_unstable_20260612_2002_5df8de8_db9`, `orao`, `oric`, `oric_20260611_fcb7433_db9`, `oric_unstable_20260610_2003_b978883_db9`, `oric_unstable_20260611_0958_c4cf449_db9`, `oric_unstable_20260612_1951_c4cf449_db9`, `other`, `other-cores`, `overlays`, `palettes`, `pc88`, `pc8801`, `pc88_20260611_c4361c9_db9`, `pc88_unstable_20260606_2114_77f2bfe_db9`, `pc88_unstable_20260610_2005_77f2bfe_db9`, `pc88_unstable_20260612_1950_77f2bfe_db9`, `pcengine`, `pcenginecd`, `pcfx`, `pcfx_unstable_20260606_2159_45e1759_db9`, `pcfx_unstable_20260610_2003_45e1759_db9`, `pcfx_unstable_20260612_1949_45e1759_db9`, `pcjr`, `pcxt`, `pdp1`, `pet2001`, `pmd85`, `pmd85_20260611_455bdad_db9`, `pocketchallengev2`, `pokemonmini`, `pokemonmini_20260611_03e42e0_db9`, `pokemonmini_unstable_20260606_2102_4c0baf3_db9`, `pokemonmini_unstable_20260610_2032_4c0baf3_db9`, `pokemonmini_unstable_20260612_1949_4c0baf3_db9`, `poly_gamma`, `presets`, `psx`, `psx_20260611_7174895_db9`, `psx_dualsdram`, `psx_dualsdram_20260611_7174895_db9`, `psx_dualsdram_unstable_20260610_2005_665c151_db9`, `psx_dualsdram_unstable_20260611_2004_d8209d3_db9`, `psx_dualsdram_unstable_20260612_1358_d8209d3_db9`, `psx_unstable_20260606_2056_665c151_db9`, `psx_unstable_20260608_2016_665c151_db9`, `psx_unstable_20260610_2005_665c151_db9`, `psxdualsdram`, `pure_gamma`, `ql`, `ql_20260611_c8bb0e4_db9`, `ql_unstable_20260606_2057_1844a2a_db9`, `ql_unstable_20260610_2005_1844a2a_db9`, `ql_unstable_20260612_1949_1844a2a_db9`, `readme`, `rtc`, `rx78`, `rx78_20260611_bfd324e_db9`, `rx78_unstable_20260601_1133_22d5b00_db9`, `rx78_unstable_20260610_2003_22d5b00_db9`, `rx78_unstable_20260612_1948_22d5b00_db9`, `s32x`, `s32x_20260611_8a0f752_db9`, `s32x_unstable_20260606_2058_f8fa83b_db9`, `s32x_unstable_20260610_2003_f8fa83b_db9`, `s32x_unstable_20260612_1018_f8fa83b_db9`, `samba_on`, `samcoupe`, `samcoupe_20260611_c9fde8e_db9`, `samcoupe_unstable_20260606_2201_9888045_db9`, `samcoupe_unstable_20260610_2005_9888045_db9`, `samcoupe_unstable_20260612_2009_9888045_db9`, `saturn`, `saturn_20260613_736907e_db9`, `saturn_dualsdram`, `saturn_dualsdram_20260613_736907e_db9`, `saturn_dualsdram_unstable_20260605_2029_87d5f4d_db9`, `saturn_dualsdram_unstable_20260610_2005_87d5f4d_db9`, `saturn_dualsdram_unstable_20260612_1950_87d5f4d_db9`, `saturn_unstable_20260606_2102_87d5f4d_db9`, `saturn_unstable_20260610_2005_87d5f4d_db9`, `saturn_unstable_20260612_1950_87d5f4d_db9`, `saturndualsdram`, `scanlines-adaptive`, `scanlines-brighter`, `scanlines-standard`, `screen_horizontal_scan_rate_15khz`, `screen_horizontal_scan_rate_31khz`, `screen_no_tate`, `screen_rotation_flip`, `screen_rotation_horizontal`, `screen_rotation_vertical_ccw`, `screen_rotation_vertical_ccw_no_flip`, `screen_rotation_vertical_cw`, `screen_rotation_vertical_cw_no_flip`, `screen_tate_ccw`, `screen_tate_ccw_no_flip`, `screen_tate_cw`, `screen_tate_cw_no_flip`, `screen_tate_flip`, `scripts`, `scv`, `scv_20260611_efda72f_db9`, `scv_unstable_20260606_2100_16e5bf7_db9`, `scv_unstable_20260610_2017_16e5bf7_db9`, `scv_unstable_20260612_1949_16e5bf7_db9`, `segacd`, `segamark3`, `service-cores`, `sgb`, `sgb_20260611_f029e0b_db9`, `sgb_unstable_20260607_0856_a5145d5_db9`, `sgb_unstable_20260610_2005_a5145d5_db9`, `sgb_unstable_20260612_1949_a5145d5_db9`, `shadow_masks`, `sharpmz`, `simplemonochrome`, `slugcross`, `slugcross_20260611_caebf00_db9`, `slugcross_unstable_20260601_1134_8e96c86_db9`, `slugcross_unstable_20260610_2016_8e96c86_db9`, `slugcross_unstable_20260612_1959_8e96c86_db9`, `sms`, `sms_20260612_4c9cff4_db9`, `sms_unstable_20260610_2004_4d36478_db9`, `sms_unstable_20260612_1950_4d36478_db9`, `sms_unstable_20260613_0842_8f3bcb2_db9`, `snes`, `snes_20260611_22baeda_db9`, `snes_unstable_20260608_2017_19d9541_db9`, `snes_unstable_20260610_2004_19d9541_db9`, `snes_unstable_20260612_2011_19d9541_db9`, `sordm5`, `sordm5_20260611_e642c70_db9`, `sordm5_unstable_20260602_2159_1d12e87_db9`, `sordm5_unstable_20260610_2004_1d12e87_db9`, `sordm5_unstable_20260612_2015_1d12e87_db9`, `specialist`, `spectrum`, `spmx`, `sufami`, `super_vision_8000`, `super_vision_8000_20260611_909b34e_db9`, `super_vision_8000_unstable_20260607_0855_0373e73_db9`, `super_vision_8000_unstable_20260610_2017_0373e73_db9`, `super_vision_8000_unstable_20260612_2004_0373e73_db9`, `superfamicom`, `supergameboy`, `supernes`, `supernintendo`, `supervision`, `supervision8000`, `supervision_20260611_f7b64c7_db9`, `supervision_unstable_20260606_2111_1f02b7b_db9`, `supervision_unstable_20260610_2003_1f02b7b_db9`, `supervision_unstable_20260612_1949_1f02b7b_db9`, `svi328`, `svi328_20260611_eb26231_db9`, `svi328_unstable_20260606_2119_cdc4bcf_db9`, `svi328_unstable_20260610_2005_cdc4bcf_db9`, `svi328_unstable_20260612_1950_cdc4bcf_db9`, `tamagotchi`, `tamagotchi_20260611_cf87a59_db9`, `tamagotchi_unstable_20260606_2104_693ba3c_db9`, `tamagotchi_unstable_20260610_2003_693ba3c_db9`, `tamagotchi_unstable_20260612_1020_693ba3c_db9`, `tandy1000`, `tatungeinstein`, `tatungeinstein_20260611_73c1684_db9`, `tatungeinstein_unstable_20260606_2105_7ffb972_db9`, `tatungeinstein_unstable_20260610_2040_7ffb972_db9`, `tatungeinstein_unstable_20260612_1949_7ffb972_db9`, `tgfx16`, `tgfx16-cd`, `tgfx16cd`, `ti-99_4a`, `ti994a`, `ti994a_20260611_e5d18bc_db9`, `ti994a_unstable_20260607_0856_b25e6f4_db9`, `ti994a_unstable_20260610_2003_b25e6f4_db9`, `ti994a_unstable_20260612_2036_b25e6f4_db9`, `timezone`, `tk2000`, `tk2000_20260611_3e03156_db9`, `tk2000_unstable_20260607_0855_d6e3a6e_db9`, `tk2000_unstable_20260610_2004_d6e3a6e_db9`, `tk2000_unstable_20260612_2003_d6e3a6e_db9`, `tomyscramble`, `tomyscramble_20260611_ffabc02_db9`, `tomyscramble_unstable_20260606_2114_9c49044_db9`, `tomyscramble_unstable_20260610_2018_9c49044_db9`, `tomyscramble_unstable_20260612_1948_9c49044_db9`, `tomytutor`, `tomytutor_20260611_b6af830_db9`, `tomytutor_unstable_20260605_2045_62907aa_db9`, `tomytutor_unstable_20260607_0903_62907aa_db9`, `tomytutor_unstable_20260612_1308_62907aa_db9`, `trs-80`, `trs-80_20260611_d9c4f6c_db9`, `trs-80_unstable_20260606_2107_bec5f72_db9`, `trs-80_unstable_20260610_2004_bec5f72_db9`, `trs-80_unstable_20260612_2020_bec5f72_db9`, `tsconf`, `tsconf_20260611_0ccf52d_db9`, `tsconf_unstable_20260606_2154_5c47afa_db9`, `tsconf_unstable_20260610_2006_5c47afa_db9`, `tsconf_unstable_20260612_2000_5c47afa_db9`, `turbografx`, `turbografx16`, `turbografx16_20260611_0f1c2d6_db9`, `turbografx16_unstable_20260606_2110_9e13306_db9`, `turbografx16_unstable_20260610_2004_9e13306_db9`, `turbografx16_unstable_20260612_1949_9e13306_db9`, `turbografx16cd`, `turbografxcd`, `uk101`, `unlicensed_games`, `unstable`, `upscaling-lanczosbicubicetc`, `upscaling-recommended`, `upscaling-sharpbilinear`, `utility`, `vc4000`, `vc4000_20260611_e32e4af_db9`, `vc4000_unstable_20260605_2028_2d12fc0_db9`, `vc4000_unstable_20260606_2112_2d12fc0_db9`, `vc4000_unstable_20260612_1020_2d12fc0_db9`, `vector-06c`, `vector-06c_20260611_c57eb60_db9`, `vector-06c_unstable_20260607_0855_e88a52f_db9`, `vector-06c_unstable_20260610_2017_e88a52f_db9`, `vector-06c_unstable_20260612_1949_e88a52f_db9`, `vector06`, `vector06c`, `vectrex`, `vectrex_20260611_cacabfb_db9`, `vectrex_unstable_20260606_2103_945088b_db9`, `vectrex_unstable_20260610_2044_945088b_db9`, `vectrex_unstable_20260612_2025_945088b_db9`, `vic20`, `vic20_20260611_c857560_db9`, `vic20_unstable_20260606_2154_4386b36_db9`, `vic20_unstable_20260610_2005_4386b36_db9`, `vic20_unstable_20260612_2018_4386b36_db9`, `vt52`, `wifi`, `wonderswan`, `wonderswan_20260611_5e28f98_db9`, `wonderswan_unstable_20260606_2127_8f7a4d6_db9`, `wonderswan_unstable_20260610_2034_8f7a4d6_db9`, `wonderswan_unstable_20260612_1959_8f7a4d6_db9`, `wonderswancolor`, `x68000`, `x68000_20260611_7776f23_db9`, `x68000_unstable_20260605_2045_cf9a0c4_db9`, `x68000_unstable_20260610_2006_cf9a0c4_db9`, `x68000_unstable_20260612_2003_cf9a0c4_db9`, `x68000userio2`, `x68000userio2_unstable_20260605_2045_cf9a0c4_db9`, `x68000userio2_unstable_20260606_2104_cf9a0c4_db9`, `x68000userio2_unstable_20260612_2003_cf9a0c4_db9`, `yctxt`, `zx-spectrum`, `zx-spectrum_20260611_b453b69_db9`, `zx-spectrum_unstable_20260607_0903_effb939_db9`, `zx-spectrum_unstable_20260610_2017_effb939_db9`, `zx-spectrum_unstable_20260612_1949_effb939_db9`, `zx81`, `zx81_20260611_fde51e1_db9`, `zx81_unstable_20260606_2105_9b24af6_db9`, `zx81_unstable_20260610_2014_9b24af6_db9`, `zx81_unstable_20260612_1951_9b24af6_db9`, `zxnext`, `zxnext_20260611_bd63eeb_db9`, `zxnext_unstable_20260601_1134_7e7e6e0_db9`, `zxnext_unstable_20260605_1013_1c7db86_db9`, `zxspectrum`\n\n### Stable builds\n\nFor each fork enrolled in the stable channel, the distribution overlays per-core stable RBFs straight from each fork repo's GitHub Releases page on top of whatever the upstream MiSTer-devel pass placed in the category dir. Stable releases use the canonical GitHub model: **one annotated tag per build commit, one Release per tag** \u2014 not a single rolling tag with a stack of historical assets crammed inside. Tag format is `stable/<MAIN_BRANCH>/<YYYYMMDD>-<sha7>` (e.g. `stable/master/20260512-abc1234`); per-variant prefix means multi-variant forks like GBA (master / GBA2P / accuracy) and X68000 (master / USERIO2) each get an independent latest pointer. The downloader pages through `/repos/<owner>/<repo>/releases?per_page=100`, filters by tag prefix for the section's `MAIN_BRANCH`, picks the newest by `created_at`, and downloads its single RBF asset (`<Core>_<YYYYMMDD>_<sha7>.<ext>`) into the same category dir upstream would have used. Stable files inherit upstream's tag set \u2014 `filter = console` keeps working as expected.\n\nTo browse the history of any stable build for a given core, open the fork repo's Releases page (e.g. `https://github.com/MiSTer-DB9/NES_MiSTer/releases`); stable builds are retained indefinitely unless a workflow explicitly opts back into a positive `RETENTION` cap.\n\n### Unstable builds\n\nAlongside the regular (stable) RBFs, the distribution can ship per-core **unstable** builds compiled from upstream MiSTer-devel HEAD with DB9 / SNAC / Saturn-key-gate patches applied on top. Unstable files land in a separate top-level folder, `_Unstable/`, with one subdir per core variant: `_Unstable/_<Core>/<Core>_unstable_<YYYYMMDD>_<HHMM>_<sha7>.rbf` (e.g. `_Unstable/_NES/NES_unstable_20260512_0211_14ed3d5.rbf`, `_Unstable/_GBA2P/GBA2P_unstable_...rbf`). Up to the last 7 builds per core are mirrored from each fork repo's `unstable-builds` GitHub Release straight onto the SD card, so rollback after a bad build is a one-step local file swap \u2014 no GitHub browsing required.\n\nUnstable files carry **only** two tags: `unstable` (channel) and `unstable-<core_slug>` (per-fork). They deliberately do NOT inherit `console` / `computer` / `<core>` path tags, so a generic `filter = console` does not silently pull them in.\n\nFilter recipes for `/media/fat/downloader.ini`:\n\n```ini\n[mister]\n# default: stable + unstable for every supported core\nfilter =\n\n# stable only (recommended unless you want to test in-development upstream changes)\nfilter = !unstable\n\n# unstable only for specific cores (mix freely):\nfilter = !unstable unstable-saturn unstable-nes\nfilter = !unstable unstable-gba2p              # the GBA 2-player variant\nfilter = !unstable unstable-ataristuserio2     # the AtariST USERIO2 variant\n\n# stable consoles only \u2014 unstable is NOT included because it carries no `console` tag\nfilter = console !unstable\n```\n\n**Rolling back a bad unstable RBF.** Up to the last 7 builds for each core are already on your SD card under `_Unstable/_<Core>/` once that core has accumulated multiple unstable builds \u2014 pick the one you want from the OSD, or delete the newest file in that subdir and load whichever older RBF you prefer. To keep the downloader from re-fetching what you removed on its next run, add `!unstable-<slug>` to your `filter`; the matching subdir will then stop being mirrored. As a deeper-history fallback, each fork's `unstable-builds` GitHub Release (e.g. `https://github.com/MiSTer-DB9/Saturn_MiSTer/releases/tag/unstable-builds`) holds the same retained asset set.\n",
+      "readme": "# MiSTer Distribution DB9\n\nThis repository contains all the files that you'll want in your MiSTer.\n\nYou may download all of them at once as a zip through the [following link](https://github.com/MiSTer-DB9/Distribution_MiSTer/archive/refs/heads/main.zip). Once you have them, place them as-is in your SD card, and everything should work out of the box.\n\n### MiSTer Project\n\nIf you want to check more about the MiSTer project, please check [this wiki](https://github.com/MiSTer-devel/Main_MiSTer/wiki).\n\n### Downloader script\n\nFor downloading all of these files in an automatic fashion, use [this tool](https://github.com/MiSTer-devel/Downloader_MiSTer).\n\n#### List of Tags that you may use with the Downloader Filters:\n\n`acornatom`, `acornatom_20260611_5314b34_db9`, `acornatom_unstable_20260607_0855_fcbcb01_db9`, `acornatom_unstable_20260610_2002_fcbcb01_db9`, `acornatom_unstable_20260612_1020_fcbcb01_db9`, `acornelectron`, `acornelectron_20260611_ff03dfe_db9`, `acornelectron_unstable_20260606_2054_02addf3_db9`, `acornelectron_unstable_20260610_2003_02addf3_db9`, `acornelectron_unstable_20260612_1022_02addf3_db9`, `adam`, `adctest`, `adventurevision`, `adventurevision_20260611_b74092f_db9`, `adventurevision_unstable_20260606_2102_aaae279_db9`, `adventurevision_unstable_20260610_2003_aaae279_db9`, `adventurevision_unstable_20260612_1948_aaae279_db9`, `alicemc10`, `alicemc10_20260611_b138e70_db9`, `alicemc10_unstable_20260606_2141_b94754d_db9`, `alicemc10_unstable_20260610_2003_b94754d_db9`, `alicemc10_unstable_20260612_0950_b94754d_db9`, `all_filters`, `altair8800`, `alternatives`, `amiga`, `amstrad`, `amstrad-pcw`, `amstrad-pcw_20260611_bbcfa49_db9`, `amstrad-pcw_unstable_20260606_2116_75d4448_db9`, `amstrad-pcw_unstable_20260610_2003_75d4448_db9`, `amstrad-pcw_unstable_20260612_1948_75d4448_db9`, `amstrad_20260611_07980cb_db9`, `amstrad_unstable_20260607_0855_6c2c39b_db9`, `amstrad_unstable_20260610_2003_6c2c39b_db9`, `amstrad_unstable_20260612_1948_6c2c39b_db9`, `amstradpcw`, `ao486`, `ao486_20260611_d5bd040_db9`, `ao486_unstable_20260606_2208_e1bd767_db9`, `ao486_unstable_20260610_2050_e1bd767_db9`, `ao486_unstable_20260612_1949_e1bd767_db9`, `ao486userio2`, `ao486userio2_20260611_d5bd040_db9`, `ao486userio2_unstable_20260605_2029_e1bd767_db9`, `ao486userio2_unstable_20260610_2050_e1bd767_db9`, `ao486userio2_unstable_20260612_1949_e1bd767_db9`, `apogee`, `apple-i`, `apple-ii`, `apple-ii_20260612_5cc4754_db9`, `apple-ii_unstable_20260606_2059_79f8209_db9`, `apple-ii_unstable_20260610_2003_79f8209_db9`, `apple-ii_unstable_20260612_1948_79f8209_db9`, `aquarius`, `aquarius_20260611_86b7d20_db9`, `aquarius_unstable_20260606_2114_78a8a44_db9`, `aquarius_unstable_20260610_2003_78a8a44_db9`, `aquarius_unstable_20260612_0950_78a8a44_db9`, `arcade`, `arcade-actfancer`, `arcade-arkanoid`, `arcade-arkanoid_20260611_5415e2b_db9`, `arcade-asteroids`, `arcade-asteroids_20260611_6bcc0e7_db9`, `arcade-asteroidsdeluxe`, `arcade-asteroidsdeluxe_20260611_61bdd3e_db9`, `arcade-astrocade`, `arcade-astrocade_20260611_3c2f3cb_db9`, `arcade-atarisys1`, `arcade-atarisys1_20260611_c70b15d_db9`, `arcade-ataritetris`, `arcade-ataritetris_20260611_f7ffff2_db9`, `arcade-athena`, `arcade-athena_20260611_cdc34f4_db9`, `arcade-bagman`, `arcade-bagman_20260611_462cf21_db9`, `arcade-bankpanic`, `arcade-bankpanic_20260611_50449bf_db9`, `arcade-battlezone`, `arcade-berzerk`, `arcade-berzerk_20260611_0343be9_db9`, `arcade-blackwidow`, `arcade-blackwidow_20260611_2410514_db9`, `arcade-blockade`, `arcade-blockade_20260611_17cf8e7_db9`, `arcade-bloodbros`, `arcade-bloodbros_20260611_d62924b_db9`, `arcade-blueprint`, `arcade-blueprint_20260611_fc05027_db9`, `arcade-bombjack`, `arcade-bombjack_20260611_5c826f7_db9`, `arcade-bosconian`, `arcade-bosconian_20260611_5db9cbc_db9`, `arcade-breakout`, `arcade-bubsys`, `arcade-bubsys_20260611_dd455fe_db9`, `arcade-bubsysrom`, `arcade-bubsysrom_20260611_46aa6ef_db9`, `arcade-burgertime`, `arcade-burgertime_20260611_25ec67d_db9`, `arcade-burningrubber`, `arcade-burningrubber_20260611_1f7bded_db9`, `arcade-canyonbomber`, `arcade-canyonbomber_20260611_f4b61cc_db9`, `arcade-cave`, `arcade-cave_20260612_3964091_db9`, `arcade-cavebanpresto`, `arcade-centipede`, `arcade-centipede_20260611_0730caa_db9`, `arcade-chameleon`, `arcade-chameleon_20260612_887f4bd_db9`, `arcade-chinagate`, `arcade-chinagate_20260611_9cd6477_db9`, `arcade-cityconnection`, `arcade-cityconnection_20260612_b03389f_db9`, `arcade-computerspace`, `arcade-computerspace_20260611_d859011_db9`, `arcade-congobongo`, `arcade-congobongo_20260612_823a031_db9`, `arcade-cores`, `arcade-cosmic`, `arcade-cosmic_20260611_5da8539_db9`, `arcade-cosmicguerilla`, `arcade-cosmicguerilla_20260611_4e35d7a_db9`, `arcade-crazyballoon`, `arcade-crazyballoon_20260611_44269e4_db9`, `arcade-crazyclimber`, `arcade-crazyclimber_20260611_b435bf5_db9`, `arcade-crazykong`, `arcade-crazykong_20260611_ed86746_db9`, `arcade-crystalcastles`, `arcade-darius`, `arcade-darius2ninjawarriors`, `arcade-darius2warriorblade`, `arcade-darius_20260611_867bbb6_db9`, `arcade-dcon`, `arcade-dcon_20260611_f1abed9_db9`, `arcade-deco16`, `arcade-deco16_20260620_4b5912a_db9`, `arcade-defender`, `arcade-defender_20260611_b40f2a7_db9`, `arcade-digdug`, `arcade-digdug_20260611_c74c3ae_db9`, `arcade-dominos`, `arcade-dominos_20260611_13b7113_db9`, `arcade-donkeykong`, `arcade-donkeykong3`, `arcade-donkeykong3_20260611_f82f893_db9`, `arcade-donkeykong_20260611_9f63788_db9`, `arcade-donkeykongjunior`, `arcade-donkeykongjunior_20260611_49195b9_db9`, `arcade-dorodon`, `arcade-dottorikun`, `arcade-dottorikun_20260611_6e9dfdc_db9`, `arcade-druaga`, `arcade-druaga_20260611_8697309_db9`, `arcade-exerion`, `arcade-exerion_20260611_4a032a8_db9`, `arcade-exidy2`, `arcade-exidy2_20260611_9db44bb_db9`, `arcade-expressraider`, `arcade-expressraider_20260611_23fbf73_db9`, `arcade-finalizer`, `arcade-finalizer_20260611_aa97513_db9`, `arcade-foodfight`, `arcade-foodfight_20260611_3222ac1_db9`, `arcade-freeze`, `arcade-freeze_20260611_febd124_db9`, `arcade-frenzy`, `arcade-frenzy_20260611_b72a449_db9`, `arcade-galaga`, `arcade-galaga_20260611_cf806e6_db9`, `arcade-galaxian`, `arcade-galaxian_20260611_c2a564d_db9`, `arcade-galivan`, `arcade-galivan_20260611_6dd624f_db9`, `arcade-gaplus`, `arcade-gaplus_20260611_8773198_db9`, `arcade-gauntlet`, `arcade-gauntlet_20260611_5f8078d_db9`, `arcade-gyruss`, `arcade-gyruss_20260611_8733b0f_db9`, `arcade-igspgm`, `arcade-igspgm_20260618_0cedb18_db9`, `arcade-ikariwarriors`, `arcade-inferno`, `arcade-inferno_20260611_5529aae_db9`, `arcade-iremm107`, `arcade-iremm107_20260611_7d7a55c_db9`, `arcade-iremm62`, `arcade-iremm62_20260611_84d8171_db9`, `arcade-iremm72`, `arcade-iremm72_20260611_077cee2_db9`, `arcade-iremm90`, `arcade-iremm90_20260611_5b3dcd6_db9`, `arcade-iremm92`, `arcade-iremm92_20260611_b5e1831_db9`, `arcade-ironhorse`, `arcade-ironhorse_20260611_cb67e42_db9`, `arcade-jackal`, `arcade-jackal_20260611_c91e318_db9`, `arcade-jailbreak`, `arcade-jailbreak_20260611_5668a88_db9`, `arcade-joust2`, `arcade-joust2_20260611_edfdd3b_db9`, `arcade-jt1942`, `arcade-jt1942_20260613_4060b50_db9`, `arcade-jt1943`, `arcade-jt1943_20260613_4060b50_db9`, `arcade-jtajax`, `arcade-jtajax_20260613_4060b50_db9`, `arcade-jtaliens`, `arcade-jtaliens_20260613_4060b50_db9`, `arcade-jtbiocom`, `arcade-jtbiocom_20260613_4060b50_db9`, `arcade-jtbtiger`, `arcade-jtbtiger_20260613_4060b50_db9`, `arcade-jtbubl`, `arcade-jtbubl_20260613_4060b50_db9`, `arcade-jtcal50`, `arcade-jtcal50_20260613_4060b50_db9`, `arcade-jtcastle`, `arcade-jtcastle_20260613_4060b50_db9`, `arcade-jtcircus`, `arcade-jtcircus_20260613_4060b50_db9`, `arcade-jtcommnd`, `arcade-jtcommnd_20260613_4060b50_db9`, `arcade-jtcomsc`, `arcade-jtcomsc_20260613_4060b50_db9`, `arcade-jtcontra`, `arcade-jtcontra_20260613_4060b50_db9`, `arcade-jtcop`, `arcade-jtcop_20260613_4060b50_db9`, `arcade-jtcps1`, `arcade-jtcps15`, `arcade-jtcps15_20260613_4060b50_db9`, `arcade-jtcps1_20260613_4060b50_db9`, `arcade-jtcps2`, `arcade-jtcps2_20260613_4060b50_db9`, `arcade-jtcps3`, `arcade-jtdd`, `arcade-jtdd2`, `arcade-jtdd2_20260613_4060b50_db9`, `arcade-jtdd_20260613_4060b50_db9`, `arcade-jtexed`, `arcade-jtexed_20260613_4060b50_db9`, `arcade-jtflane`, `arcade-jtflane_20260613_4060b50_db9`, `arcade-jtflstory`, `arcade-jtflstory_20260613_4060b50_db9`, `arcade-jtfround`, `arcade-jtfround_20260613_4060b50_db9`, `arcade-jtgaiden`, `arcade-jtgaiden_20260613_4060b50_db9`, `arcade-jtgng`, `arcade-jtgng_20260613_4060b50_db9`, `arcade-jtgrad3`, `arcade-jtgrad3_20260613_4060b50_db9`, `arcade-jtgunsmk`, `arcade-jtgunsmk_20260613_4060b50_db9`, `arcade-jtkarnov`, `arcade-jtkarnov_20260613_4060b50_db9`, `arcade-jtkchamp`, `arcade-jtkchamp_20260613_4060b50_db9`, `arcade-jtkicker`, `arcade-jtkicker_20260613_4060b50_db9`, `arcade-jtkiwi`, `arcade-jtkiwi_20260613_4060b50_db9`, `arcade-jtkunio`, `arcade-jtkunio_20260613_4060b50_db9`, `arcade-jtlabrun`, `arcade-jtlabrun_20260613_4060b50_db9`, `arcade-jtmidres`, `arcade-jtmidres_20260613_4060b50_db9`, `arcade-jtmikie`, `arcade-jtmikie_20260613_4060b50_db9`, `arcade-jtmx5k`, `arcade-jtmx5k_20260613_4060b50_db9`, `arcade-jtngp`, `arcade-jtngpc`, `arcade-jtngpc_20260613_4060b50_db9`, `arcade-jtninja`, `arcade-jtninja_20260613_4060b50_db9`, `arcade-jtoutrun`, `arcade-jtoutrun_20260613_4060b50_db9`, `arcade-jtpaclan`, `arcade-jtpaclan_20260613_4060b50_db9`, `arcade-jtpang`, `arcade-jtpang_20260613_4060b50_db9`, `arcade-jtparoda`, `arcade-jtparoda_20260613_4060b50_db9`, `arcade-jtpinpon`, `arcade-jtpinpon_20260613_4060b50_db9`, `arcade-jtprmr`, `arcade-jtrastan`, `arcade-jtrastan_20260613_4060b50_db9`, `arcade-jtriders`, `arcade-jtriders_20260613_4060b50_db9`, `arcade-jtroadf`, `arcade-jtroadf_20260613_4060b50_db9`, `arcade-jtroc`, `arcade-jtroc_20260613_4060b50_db9`, `arcade-jtrumble`, `arcade-jtrumble_20260613_4060b50_db9`, `arcade-jtrungun`, `arcade-jts16`, `arcade-jts16_20260613_4060b50_db9`, `arcade-jts16b`, `arcade-jts16b_20260613_4060b50_db9`, `arcade-jts18`, `arcade-jts18_20260613_4060b50_db9`, `arcade-jtsarms`, `arcade-jtsarms_20260613_4060b50_db9`, `arcade-jtsbaskt`, `arcade-jtsbaskt_20260613_4060b50_db9`, `arcade-jtsectnz`, `arcade-jtsectnz_20260613_4060b50_db9`, `arcade-jtsf`, `arcade-jtsf_20260613_4060b50_db9`, `arcade-jtshanon`, `arcade-jtshanon_20260613_4060b50_db9`, `arcade-jtshouse`, `arcade-jtshouse_20260613_4060b50_db9`, `arcade-jtsimson`, `arcade-jtsimson_20260613_4060b50_db9`, `arcade-jtslyspy`, `arcade-jtslyspy_20260613_4060b50_db9`, `arcade-jtthundr`, `arcade-jtthundr_20260613_4060b50_db9`, `arcade-jttmnt`, `arcade-jttmnt_20260613_4060b50_db9`, `arcade-jttoki`, `arcade-jttoki_20260613_4060b50_db9`, `arcade-jttora`, `arcade-jttora_20260613_4060b50_db9`, `arcade-jttrack`, `arcade-jttrack_20260613_4060b50_db9`, `arcade-jttrojan`, `arcade-jttrojan_20260613_4060b50_db9`, `arcade-jttwin16`, `arcade-jttwin16_20260613_4060b50_db9`, `arcade-jtvigil`, `arcade-jtvigil_20260613_4060b50_db9`, `arcade-jtwc`, `arcade-jtwc_20260613_4060b50_db9`, `arcade-jtwwfss`, `arcade-jtwwfss_20260613_4060b50_db9`, `arcade-jtxmen`, `arcade-jtyiear`, `arcade-jtyiear_20260613_4060b50_db9`, `arcade-junofirst`, `arcade-junofirst_20260611_09aab7d_db9`, `arcade-kangaroo`, `arcade-kickandrun`, `arcade-kickandrun_20260611_e0f6229_db9`, `arcade-ladybug`, `arcade-ladybug_20260611_46043a5_db9`, `arcade-lunarlander`, `arcade-lunarlander_20260611_c4ac1a9_db9`, `arcade-mariobros`, `arcade-mariobros_20260611_99da4af_db9`, `arcade-mcr1`, `arcade-mcr1_20260611_45a8bdd_db9`, `arcade-mcr2`, `arcade-mcr2_20260611_470c523_db9`, `arcade-mcr3`, `arcade-mcr3_20260611_0d872ee_db9`, `arcade-mcr3mono`, `arcade-mcr3mono_20260611_e0fee12_db9`, `arcade-mcr3scroll`, `arcade-mcr3scroll_20260611_3a4a7a2_db9`, `arcade-missilecommand`, `arcade-missilecommand_20260611_63f1e97_db9`, `arcade-moonpatrol`, `arcade-moonpatrol_20260611_1010495_db9`, `arcade-mrdo`, `arcade-mrdo_20260611_424956b_db9`, `arcade-mrjong`, `arcade-mrjong_20260611_bd33917_db9`, `arcade-mysticmarathon`, `arcade-mysticmarathon_20260611_fd8dc5c_db9`, `arcade-naughtyboy`, `arcade-naughtyboy_20260611_6f7eee9_db9`, `arcade-ninjakun`, `arcade-ninjakun_20260611_286a11a_db9`, `arcade-pacman`, `arcade-pacman_20260611_499383b_db9`, `arcade-pengo`, `arcade-pengo_20260611_c98a11f_db9`, `arcade-penguinkunwars`, `arcade-penguinkunwars_20260611_463484a_db9`, `arcade-performan`, `arcade-performan_20260611_311d53f_db9`, `arcade-phoenix`, `arcade-phoenix_20260611_3bdb489_db9`, `arcade-pleiads`, `arcade-pleiads_20260611_c9e811f_db9`, `arcade-polyplay`, `arcade-polyplay_20260611_906f8a3_db9`, `arcade-pong`, `arcade-pooyan`, `arcade-pooyan_20260611_3e5af86_db9`, `arcade-popeye`, `arcade-popeye_20260611_dc28191_db9`, `arcade-prehisle`, `arcade-prehisle_20260611_352173f_db9`, `arcade-psychic5`, `arcade-psychic5_20260611_31f2959_db9`, `arcade-qbert`, `arcade-qbert_20260611_11a3a9d_db9`, `arcade-qix`, `arcade-qix_20260617_aaa0112_db9`, `arcade-rallyx`, `arcade-rallyx_20260611_f51ba6a_db9`, `arcade-rbfs-only`, `arcade-riverpatrol`, `arcade-riverpatrol_20260611_0c0031c_db9`, `arcade-robotron`, `arcade-robotron_20260611_ea8cbbf_db9`, `arcade-rshnatk`, `arcade-rshnatk_20260611_3147709_db9`, `arcade-salamander`, `arcade-salamander_20260611_0d2ee68_db9`, `arcade-scootershooter`, `arcade-scootershooter_20260611_5515a9c_db9`, `arcade-scramble`, `arcade-scramble_20260611_912e762_db9`, `arcade-sdgundamps`, `arcade-segasys1`, `arcade-segasys1_20260611_1128db3_db9`, `arcade-segavicz80`, `arcade-segavicz80_20260611_0097e8b_db9`, `arcade-silverland`, `arcade-silverland_20260611_ffcb032_db9`, `arcade-skysmasher`, `arcade-slapfight`, `arcade-slapfight_20260611_c5b9c50_db9`, `arcade-sms`, `arcade-snk6502`, `arcade-snk_triplez80`, `arcade-snk_triplez80_20260611_1b424b4_db9`, `arcade-solomonskey`, `arcade-solomonskey_20260611_0dc83ed_db9`, `arcade-sonson`, `arcade-sonson_20260611_812a34e_db9`, `arcade-spacefirebird`, `arcade-spaceinvaders`, `arcade-spaceinvaders_20260611_805ab49_db9`, `arcade-spacerace`, `arcade-spacerace_20260611_85bd2eb_db9`, `arcade-sprint1`, `arcade-sprint1_20260611_4d66142_db9`, `arcade-sprint2`, `arcade-sprint2_20260611_f3edc55_db9`, `arcade-st-v`, `arcade-starforce`, `arcade-starforce_20260611_6b61fc4_db9`, `arcade-starwars`, `arcade-subs`, `arcade-superbreakout`, `arcade-superbreakout_20260611_c8b2dfb_db9`, `arcade-suprloco`, `arcade-suprloco_20260611_a473b60_db9`, `arcade-taitof2`, `arcade-taitof2_20260611_90432b5_db9`, `arcade-taitosj`, `arcade-taitosj_20260611_1f0b4c8_db9`, `arcade-tankbattalion`, `arcade-tankbattalion_20260611_bb2418f_db9`, `arcade-tecmo`, `arcade-tecmo_20260611_b13cf7a_db9`, `arcade-tiamc1`, `arcade-tiamc1_20260611_54e1d9b_db9`, `arcade-timepilot`, `arcade-timepilot84`, `arcade-timepilot84_20260611_1b86b7b_db9`, `arcade-timepilot_20260611_cf8a840_db9`, `arcade-tnkiii`, `arcade-traverseusa`, `arcade-traverseusa_20260611_723bcf0_db9`, `arcade-tropicalangel`, `arcade-tropicalangel_20260611_1bcb841_db9`, `arcade-turkeyshoot`, `arcade-turkeyshoot_20260611_4bdc9ac_db9`, `arcade-tutankham`, `arcade-tutankham_20260611_b5cfc9d_db9`, `arcade-ultratank`, `arcade-ultratank_20260611_3ba3655_db9`, `arcade-vastar`, `arcade-vastar_20260611_6d605a3_db9`, `arcade-vball`, `arcade-vball_20260611_cb12306_db9`, `arcade-xevious`, `arcade-xevious_20260612_3d56d91_db9`, `arcade-xsleena`, `arcade-xsleena_20260611_80e8446_db9`, `arcade-zaxxon`, `arcade-zaxxon_20260611_8f36660_db9`, `arcade-zigzag`, `arcade-zigzag_20260611_d33bb2f_db9`, `arcadelpf`, `arcadia`, `arcadia_20260611_2199d52_db9`, `arcadia_unstable_20260606_2051_8ed7e16_db9`, `arcadia_unstable_20260610_2003_8ed7e16_db9`, `arcadia_unstable_20260612_1948_8ed7e16_db9`, `archie`, `archie_20260611_1824760_db9`, `archie_unstable_20260606_2050_7edeed5_db9`, `archie_unstable_20260611_0958_7edeed5_db9`, `archie_unstable_20260612_1948_7edeed5_db9`, `arduboy`, `arduboy_20260611_010b94e_db9`, `arduboy_unstable_20260606_2111_d45b4c3_db9`, `arduboy_unstable_20260610_2003_d45b4c3_db9`, `arduboy_unstable_20260612_1948_d45b4c3_db9`, `astrocade`, `astrocade_20260611_d01f839_db9`, `astrocade_unstable_20260606_2100_5173e50_db9`, `astrocade_unstable_20260610_2003_5173e50_db9`, `astrocade_unstable_20260612_1948_5173e50_db9`, `atari2600`, `atari5200`, `atari5200_20260611_fa25c37_db9`, `atari5200_unstable_20260606_2057_8c41640_db9`, `atari5200_unstable_20260610_2003_8c41640_db9`, `atari5200_unstable_20260612_1948_8c41640_db9`, `atari7800`, `atari7800_20260611_c122226_db9`, `atari7800_unstable_20260607_0855_d11a976_db9`, `atari7800_unstable_20260610_2003_d11a976_db9`, `atari7800_unstable_20260612_1948_d11a976_db9`, `atari800`, `atari800_20260611_fa25c37_db9`, `atari800_unstable_20260606_2057_8c41640_db9`, `atari800_unstable_20260610_2003_8c41640_db9`, `atari800_unstable_20260612_1948_8c41640_db9`, `atarilynx`, `atarilynx_20260611_9c8fa5a_db9`, `atarilynx_unstable_20260607_0856_aff48eb_db9`, `atarilynx_unstable_20260610_2003_aff48eb_db9`, `atarilynx_unstable_20260612_1948_aff48eb_db9`, `atarist`, `atarist_20260611_91fea4d_db9`, `atarist_unstable_20260605_2040_426ef87_db9`, `atarist_unstable_20260610_2003_426ef87_db9`, `atarist_unstable_20260612_1948_426ef87_db9`, `ataristuserio2`, `ataristuserio2_20260611_91fea4d_db9`, `ataristuserio2_unstable_20260606_2051_426ef87_db9`, `ataristuserio2_unstable_20260610_2003_426ef87_db9`, `ataristuserio2_unstable_20260612_1948_426ef87_db9`, `avision`, `ay-3-8500`, `ay-3-8500_20260611_b05f7a4_db9`, `ay-3-8500_unstable_20260606_2104_7a02c15_db9`, `ay-3-8500_unstable_20260610_2003_7a02c15_db9`, `ay-3-8500_unstable_20260612_0950_7a02c15_db9`, `bbcbridgecompanion`, `bbcbridgecompanion_20260611_289f28c_db9`, `bbcbridgecompanion_unstable_20260606_2120_8a8fc95_db9`, `bbcbridgecompanion_unstable_20260610_2004_8a8fc95_db9`, `bbcbridgecompanion_unstable_20260612_1948_8a8fc95_db9`, `bbcmicro`, `bbcmicro_20260611_5508c5c_db9`, `bbcmicro_unstable_20260607_1922_c0fd125_db9`, `bbcmicro_unstable_20260610_2003_c0fd125_db9`, `bbcmicro_unstable_20260612_1948_c0fd125_db9`, `bios`, `bk0011m`, `bk0011m_20260611_f5757f0_db9`, `bk0011m_unstable_20260605_0953_015165f_db9`, `bk0011m_unstable_20260610_2003_015165f_db9`, `bk0011m_unstable_20260612_1020_015165f_db9`, `c128`, `c128_20260611_1d2f244_db9`, `c128_unstable_20260608_1054_5d15c5a_db9`, `c128_unstable_20260610_2003_5d15c5a_db9`, `c128_unstable_20260612_1949_8cb754b_db9`, `c16`, `c16_20260611_1f95e4e_db9`, `c16_unstable_20260607_0856_a47517b_db9`, `c16_unstable_20260610_2003_a47517b_db9`, `c16_unstable_20260612_1949_a47517b_db9`, `c64`, `c64_20260611_e20c3c1_db9`, `c64_unstable_20260612_1335_2f6544a_db9`, `c64_unstable_20260612_1547_2f6544a_db9`, `c64_unstable_20260617_1021_a569b93_db9`, `cacert`, `casio_pv-1000`, `casio_pv-1000_20260611_7e3eebe_db9`, `casio_pv-1000_unstable_20260605_2046_4923f09_db9`, `casio_pv-1000_unstable_20260607_0855_4923f09_db9`, `casio_pv-1000_unstable_20260612_1308_4923f09_db9`, `casio_pv-2000`, `casio_pv-2000_20260611_bacddcb_db9`, `casio_pv-2000_unstable_20260605_2026_15ac7ae_db9`, `casio_pv-2000_unstable_20260606_2134_15ac7ae_db9`, `casio_pv-2000_unstable_20260612_1327_15ac7ae_db9`, `cd-i`, `cdi`, `cdi_20260611_20d6708_db9`, `cdi_unstable_20260604_1028_ae583cd_db9`, `cdi_unstable_20260605_0952_ae583cd_db9`, `cdi_unstable_20260612_1358_f8f10b1_db9`, `channelf`, `channelf_20260611_15c1410_db9`, `channelf_unstable_20260606_2058_34da811_db9`, `channelf_unstable_20260610_2015_34da811_db9`, `channelf_unstable_20260612_0950_34da811_db9`, `cheats`, `chess`, `chess_20260611_0f5aa09_db9`, `chess_unstable_20260601_1133_221e369_db9`, `chess_unstable_20260610_2003_221e369_db9`, `chess_unstable_20260612_1949_221e369_db9`, `chip8`, `coco2`, `coco2_20260611_9e79d22_db9`, `coco2_unstable_20260601_1133_976a83b_db9`, `coco2_unstable_20260610_2003_976a83b_db9`, `coco2_unstable_20260612_1021_976a83b_db9`, `coco3`, `coco3_20260611_a3cc1ba_db9`, `coco3_unstable_20260601_1133_0cc97c8_db9`, `coco3_unstable_20260612_1327_0cc97c8_db9`, `coleco`, `colecoadam`, `colecoadam_20260611_e1d4d0f_db9`, `colecoadam_unstable_20260606_2205_18de4aa_db9`, `colecoadam_unstable_20260610_2003_18de4aa_db9`, `colecoadam_unstable_20260612_1949_18de4aa_db9`, `colecovision`, `colecovision_20260611_66b83ff_db9`, `colecovision_unstable_20260605_2025_5e8713c_db9`, `colecovision_unstable_20260606_2146_5e8713c_db9`, `colecovision_unstable_20260612_1308_5e8713c_db9`, `complexmultichromatic`, `computer`, `computer-cores`, `console`, `console-cd`, `console-cores`, `contrast_boost`, `controls_1_button`, `controls_2_buttons`, `controls_2_players`, `controls_3_buttons`, `controls_3_players`, `controls_4_buttons`, `controls_4_players`, `controls_5_buttons`, `controls_6_buttons`, `controls_dial`, `controls_move_2-way`, `controls_move_4-way`, `controls_move_8-way`, `controls_paddle`, `controls_spinner`, `controls_trackball`, `cores`, `corespecific`, `creativision`, `creativision_20260611_fd296a2_db9`, `creativision_unstable_20260605_2024_6d1b2ff_db9`, `creativision_unstable_20260606_2113_6d1b2ff_db9`, `creativision_unstable_20260612_1308_6d1b2ff_db9`, `crt-simulation`, `displayspecific`, `docs`, `donut`, `downloader`, `downloader_bin`, `downloader_latest`, `drv`, `edsac`, `eg2000`, `eg2000_20260612_98bdb40_db9`, `eg2000_unstable_20260605_2029_0353337_db9`, `eg2000_unstable_20260606_2101_0353337_db9`, `eg2000_unstable_20260612_1347_0353337_db9`, `enterprise`, `enterprise_20260611_39000c8_db9`, `enterprise_unstable_20260605_2026_86ed4fd_db9`, `enterprise_unstable_20260607_0855_86ed4fd_db9`, `enterprise_unstable_20260612_1308_86ed4fd_db9`, `epochgalaxyii`, `epochgalaxyii_20260611_76a26b6_db9`, `epochgalaxyii_unstable_20260606_2127_c5eafaa_db9`, `epochgalaxyii_unstable_20260610_2003_c5eafaa_db9`, `epochgalaxyii_unstable_20260612_1959_c5eafaa_db9`, `essential`, `extra-utilities`, `famicom`, `fast_usb_polling`, `filters`, `filters_audio`, `filters_video`, `flappy`, `flappybird`, `flappybird_20260611_1f22818_db9`, `flappybird_unstable_20260607_0856_d4aaf8b_db9`, `flappybird_unstable_20260610_2004_d4aaf8b_db9`, `flappybird_unstable_20260612_1948_d4aaf8b_db9`, `font`, `galaksija`, `gamate`, `gamate_20260611_75a73e0_db9`, `gamate_unstable_20260606_2101_8966eaa_db9`, `gamate_unstable_20260610_2034_8966eaa_db9`, `gamate_unstable_20260612_1019_8966eaa_db9`, `gameandwatch`, `gameandwatch_20260611_70602d7_db9`, `gameandwatch_unstable_20260607_0856_ceea1cf_db9`, `gameandwatch_unstable_20260610_2003_ceea1cf_db9`, `gameandwatch_unstable_20260612_1948_ceea1cf_db9`, `gameboy`, `gameboy2p`, `gameboy2p_20260611_795ae89_db9`, `gameboy2p_unstable_20260606_2109_7391b95_db9`, `gameboy2p_unstable_20260610_2003_7391b95_db9`, `gameboy2p_unstable_20260612_1948_7391b95_db9`, `gameboy_20260612_4e33ff5_db9`, `gameboy_unstable_20260605_2024_fcc79c8_db9`, `gameboy_unstable_20260606_2117_fcc79c8_db9`, `gameboy_unstable_20260612_1308_fcc79c8_db9`, `gameboyadvance`, `gameboycolor`, `gamecontrollerdb`, `gamegear`, `gamegear2p`, `gamenwatch`, `gameoflife`, `games`, `gamma`, `gb`, `gba`, `gba2p`, `gba2p_20260611_c28e586_db9`, `gba2p_unstable_20260606_2115_30f5349_db9`, `gba2p_unstable_20260610_2018_30f5349_db9`, `gba2p_unstable_20260612_1948_30f5349_db9`, `gba_20260611_904ea7e_db9`, `gba_accuracy`, `gba_accuracy_20260611_2a76bd8_db9`, `gba_accuracy_unstable_20260607_0856_3e347de_db9`, `gba_accuracy_unstable_20260610_2004_3e347de_db9`, `gba_accuracy_unstable_20260612_1948_3e347de_db9`, `gba_unstable_20260606_2104_eb32a3f_db9`, `gba_unstable_20260610_2004_eb32a3f_db9`, `gba_unstable_20260612_1959_eb32a3f_db9`, `gbc`, `gbmidi`, `generalhardware`, `generallpf`, `genesis`, `genesis_20260611_aee36c6_db9`, `genesis_unstable_20260607_0858_adc0c42_db9`, `genesis_unstable_20260610_2004_adc0c42_db9`, `genesis_unstable_20260612_1225_adc0c42_db9`, `genmidi`, `gnw`, `gnw_20260611_4ed2780_db9`, `gnw_unstable_20260606_2128_e66b7f5_db9`, `gnw_unstable_20260611_0958_e66b7f5_db9`, `gnw_unstable_20260612_1949_e66b7f5_db9`, `handheld2p`, `hbmame`, `homelab`, `ini_settings`, `inputtest`, `inputtest_20260611_a351550_db9`, `inputtest_unstable_20260606_2128_54fb57c_db9`, `inputtest_unstable_20260610_2018_54fb57c_db9`, `inputtest_unstable_20260612_1949_54fb57c_db9`, `intellivision`, `interact`, `interact_20260612_1952020_db9`, `interact_unstable_20260601_1133_3465814_db9`, `interact_unstable_20260610_2004_3465814_db9`, `interact_unstable_20260612_1949_3465814_db9`, `iq151`, `jaguar`, `jupiter`, `jupiter_20260611_99a55cc_db9`, `jupiter_unstable_20260610_2003_7873bda_db9`, `jupiter_unstable_20260612_1019_7873bda_db9`, `jupiter_unstable_20260612_1949_7873bda_db9`, `laser`, `laser310`, `laser310_20260611_817d3a6_db9`, `laser310_unstable_20260605_2031_dab3e85_db9`, `laser310_unstable_20260607_0857_dab3e85_db9`, `laser310_unstable_20260612_1018_dab3e85_db9`, `lcd-general`, `lcd-integeronly`, `linux`, `lynx48`, `lynx48_20260611_919c960_db9`, `lynx48_unstable_20260605_2041_b3f2d1e_db9`, `lynx48_unstable_20260606_2056_b3f2d1e_db9`, `lynx48_unstable_20260612_1335_b3f2d1e_db9`, `macplus`, `mame`, `mastersystem`, `megacd`, `megacd_20260611_4af065a_db9`, `megacd_unstable_20260606_2150_b1a0f1f_db9`, `megacd_unstable_20260610_2004_b1a0f1f_db9`, `megacd_unstable_20260612_1949_b1a0f1f_db9`, `megadrive`, `megadrive_20260611_8f29e6e_db9`, `megadrive_unstable_20260607_0856_7365a13_db9`, `megadrive_unstable_20260610_2003_7365a13_db9`, `megadrive_unstable_20260612_1949_7365a13_db9`, `megaduck`, `memtest`, `memtest_060mhz`, `memtest_100mhz`, `memtest_110mhz`, `memtest_120mhz`, `memtest_130mhz`, `memtest_140mhz`, `memtest_150mhz`, `memtest_160mhz`, `memtest_167mhz`, `menu`, `menu_unstable_20260605_2043_3c3634c_db9`, `menu_unstable_20260606_2106_3c3634c_db9`, `menu_unstable_20260612_1308_3c3634c_db9`, `mgl`, `minimig`, `minimig_20260611_40bd4e4_db9`, `minimig_unstable_20260607_0856_eb7a26e_db9`, `minimig_unstable_20260610_2005_eb7a26e_db9`, `minimig_unstable_20260612_1949_eb7a26e_db9`, `minimigdb9`, `minimigrgb8`, `minimiguserio2`, `minimiguserio2_20260611_40bd4e4_db9`, `minimiguserio2_unstable_20260607_0856_eb7a26e_db9`, `minimiguserio2_unstable_20260610_2005_eb7a26e_db9`, `minimiguserio2_unstable_20260612_1949_eb7a26e_db9`, `mister`, `mister_example-ini`, `misterfirmware`, `misterlaggy`, `mra`, `msx`, `msx1`, `msx1_20260612_8f6e351_db9`, `msx1_unstable_20260607_0855_d947f4a_db9`, `msx1_unstable_20260610_2003_d947f4a_db9`, `msx1_unstable_20260612_1949_d947f4a_db9`, `msx2`, `msx2_20260616_171db35_db9`, `msx2_unstable_20260616_2038_03ea066_db9`, `msx_20260611_e34acfe_db9`, `msx_unstable_20260606_2107_bb13016_db9`, `msx_unstable_20260610_2004_bb13016_db9`, `msx_unstable_20260612_1959_bb13016_db9`, `multicomp`, `myvision`, `myvision_20260611_45a4cab_db9`, `myvision_unstable_20260606_2107_5fb039e_db9`, `myvision_unstable_20260610_2003_5fb039e_db9`, `myvision_unstable_20260612_1043_5fb039e_db9`, `n64`, `neogeo`, `neogeo-cd`, `neogeo_20260611_0129ae3_db9`, `neogeo_24mhz_cpu_only`, `neogeo_24mhz_cpu_only_20260611_0fd9084_db9`, `neogeo_24mhz_cpu_only_unstable_20260605_2028_227d4f4_db9`, `neogeo_24mhz_cpu_only_unstable_20260607_0856_227d4f4_db9`, `neogeo_24mhz_cpu_only_unstable_20260612_1308_227d4f4_db9`, `neogeo_unstable_20260606_2209_227d4f4_db9`, `neogeo_unstable_20260610_2004_227d4f4_db9`, `neogeo_unstable_20260612_1951_227d4f4_db9`, `neogeopocket`, `nes`, `nes_20260611_1b4ca09_db9`, `nes_unstable_20260608_2015_666ce66_db9`, `nes_unstable_20260610_2004_666ce66_db9`, `nes_unstable_20260612_1225_666ce66_db9`, `nintendo`, `no-mad-entry-mra`, `no-setname-mra`, `odyssey2`, `odyssey2_20260611_21139f5_db9`, `odyssey2_unstable_20260607_0856_83d9819_db9`, `odyssey2_unstable_20260610_2004_83d9819_db9`, `odyssey2_unstable_20260612_1949_83d9819_db9`, `old`, `ondra_spo186`, `ondra_spo186_20260611_2cbf1fe_db9`, `ondra_spo186_unstable_20260606_2200_5df8de8_db9`, `ondra_spo186_unstable_20260610_2005_5df8de8_db9`, `ondra_spo186_unstable_20260612_2002_5df8de8_db9`, `orao`, `oric`, `oric_20260611_fcb7433_db9`, `oric_unstable_20260610_2003_b978883_db9`, `oric_unstable_20260611_0958_c4cf449_db9`, `oric_unstable_20260612_1951_c4cf449_db9`, `other`, `other-cores`, `overlays`, `palettes`, `paprium`, `paprium_20260621_84cc240_db9`, `paprium_unstable_20260621_1908_effb1c9_db9`, `pc88`, `pc8801`, `pc88_20260611_c4361c9_db9`, `pc88_unstable_20260606_2114_77f2bfe_db9`, `pc88_unstable_20260610_2005_77f2bfe_db9`, `pc88_unstable_20260612_1950_77f2bfe_db9`, `pcengine`, `pcenginecd`, `pcfx`, `pcfx_unstable_20260606_2159_45e1759_db9`, `pcfx_unstable_20260610_2003_45e1759_db9`, `pcfx_unstable_20260612_1949_45e1759_db9`, `pcjr`, `pcxt`, `pdp1`, `pet2001`, `pmd85`, `pmd85_20260611_455bdad_db9`, `pocketchallengev2`, `pokemonmini`, `pokemonmini_20260611_03e42e0_db9`, `pokemonmini_unstable_20260606_2102_4c0baf3_db9`, `pokemonmini_unstable_20260610_2032_4c0baf3_db9`, `pokemonmini_unstable_20260612_1949_4c0baf3_db9`, `poly_gamma`, `presets`, `psx`, `psx_20260611_7174895_db9`, `psx_dualsdram`, `psx_dualsdram_20260611_7174895_db9`, `psx_dualsdram_unstable_20260611_2004_d8209d3_db9`, `psx_dualsdram_unstable_20260612_1358_d8209d3_db9`, `psx_dualsdram_unstable_20260618_1003_8b4894d_db9`, `psx_unstable_20260608_2016_665c151_db9`, `psx_unstable_20260610_2005_665c151_db9`, `psx_unstable_20260618_1003_8b4894d_db9`, `psxdualsdram`, `pure_gamma`, `ql`, `ql_20260611_c8bb0e4_db9`, `ql_unstable_20260606_2057_1844a2a_db9`, `ql_unstable_20260610_2005_1844a2a_db9`, `ql_unstable_20260612_1949_1844a2a_db9`, `readme`, `rtc`, `rx78`, `rx78_20260611_bfd324e_db9`, `rx78_unstable_20260601_1133_22d5b00_db9`, `rx78_unstable_20260610_2003_22d5b00_db9`, `rx78_unstable_20260612_1948_22d5b00_db9`, `s32x`, `s32x_20260611_8a0f752_db9`, `s32x_unstable_20260610_2003_f8fa83b_db9`, `s32x_unstable_20260612_1018_f8fa83b_db9`, `s32x_unstable_20260621_0931_116ece9_db9`, `samba_on`, `samcoupe`, `samcoupe_20260611_c9fde8e_db9`, `samcoupe_unstable_20260606_2201_9888045_db9`, `samcoupe_unstable_20260610_2005_9888045_db9`, `samcoupe_unstable_20260612_2009_9888045_db9`, `saturn`, `saturn_20260613_736907e_db9`, `saturn_dualsdram`, `saturn_dualsdram_20260613_736907e_db9`, `saturn_dualsdram_unstable_20260610_2005_87d5f4d_db9`, `saturn_dualsdram_unstable_20260612_1950_87d5f4d_db9`, `saturn_dualsdram_unstable_20260620_2001_218463a_db9`, `saturn_unstable_20260610_2005_87d5f4d_db9`, `saturn_unstable_20260612_1950_87d5f4d_db9`, `saturn_unstable_20260620_2001_218463a_db9`, `saturndualsdram`, `scanlines-adaptive`, `scanlines-brighter`, `scanlines-standard`, `screen_horizontal_scan_rate_15khz`, `screen_horizontal_scan_rate_31khz`, `screen_no_tate`, `screen_rotation_flip`, `screen_rotation_horizontal`, `screen_rotation_vertical_ccw`, `screen_rotation_vertical_ccw_no_flip`, `screen_rotation_vertical_cw`, `screen_rotation_vertical_cw_no_flip`, `screen_tate_ccw`, `screen_tate_ccw_no_flip`, `screen_tate_cw`, `screen_tate_cw_no_flip`, `screen_tate_flip`, `scripts`, `scv`, `scv_20260611_efda72f_db9`, `scv_unstable_20260606_2100_16e5bf7_db9`, `scv_unstable_20260610_2017_16e5bf7_db9`, `scv_unstable_20260612_1949_16e5bf7_db9`, `segacd`, `segamark3`, `service-cores`, `sgb`, `sgb_20260611_f029e0b_db9`, `sgb_unstable_20260607_0856_a5145d5_db9`, `sgb_unstable_20260610_2005_a5145d5_db9`, `sgb_unstable_20260612_1949_a5145d5_db9`, `shadow_masks`, `sharpmz`, `simplemonochrome`, `slugcross`, `slugcross_20260611_caebf00_db9`, `slugcross_unstable_20260601_1134_8e96c86_db9`, `slugcross_unstable_20260610_2016_8e96c86_db9`, `slugcross_unstable_20260612_1959_8e96c86_db9`, `sms`, `sms_20260612_4c9cff4_db9`, `sms_unstable_20260612_1950_4d36478_db9`, `sms_unstable_20260613_0842_8f3bcb2_db9`, `sms_unstable_20260620_1952_1524fe3_db9`, `snes`, `snes_20260611_22baeda_db9`, `snes_unstable_20260610_2004_19d9541_db9`, `snes_unstable_20260612_2011_19d9541_db9`, `snes_unstable_20260621_0931_122bfdd_db9`, `sordm5`, `sordm5_20260611_e642c70_db9`, `sordm5_unstable_20260602_2159_1d12e87_db9`, `sordm5_unstable_20260610_2004_1d12e87_db9`, `sordm5_unstable_20260612_2015_1d12e87_db9`, `specialist`, `spectrum`, `spmx`, `sufami`, `super_vision_8000`, `super_vision_8000_unstable_20260607_0855_0373e73_db9`, `super_vision_8000_unstable_20260610_2017_0373e73_db9`, `super_vision_8000_unstable_20260612_2004_0373e73_db9`, `superfamicom`, `supergameboy`, `supernes`, `supernintendo`, `supervision`, `supervision8000`, `supervision_20260611_f7b64c7_db9`, `supervision_unstable_20260606_2111_1f02b7b_db9`, `supervision_unstable_20260610_2003_1f02b7b_db9`, `supervision_unstable_20260612_1949_1f02b7b_db9`, `svi328`, `svi328_20260611_eb26231_db9`, `svi328_unstable_20260606_2119_cdc4bcf_db9`, `svi328_unstable_20260610_2005_cdc4bcf_db9`, `svi328_unstable_20260612_1950_cdc4bcf_db9`, `tamagotchi`, `tamagotchi_20260611_cf87a59_db9`, `tamagotchi_unstable_20260606_2104_693ba3c_db9`, `tamagotchi_unstable_20260610_2003_693ba3c_db9`, `tamagotchi_unstable_20260612_1020_693ba3c_db9`, `tandy1000`, `tatungeinstein`, `tatungeinstein_20260611_73c1684_db9`, `tatungeinstein_unstable_20260606_2105_7ffb972_db9`, `tatungeinstein_unstable_20260610_2040_7ffb972_db9`, `tatungeinstein_unstable_20260612_1949_7ffb972_db9`, `tgfx16`, `tgfx16-cd`, `tgfx16cd`, `ti-99_4a`, `ti994a`, `ti994a_20260611_e5d18bc_db9`, `ti994a_unstable_20260607_0856_b25e6f4_db9`, `ti994a_unstable_20260610_2003_b25e6f4_db9`, `ti994a_unstable_20260612_2036_b25e6f4_db9`, `timezone`, `tk2000`, `tk2000_20260611_3e03156_db9`, `tk2000_unstable_20260607_0855_d6e3a6e_db9`, `tk2000_unstable_20260610_2004_d6e3a6e_db9`, `tk2000_unstable_20260612_2003_d6e3a6e_db9`, `tomyscramble`, `tomyscramble_20260611_ffabc02_db9`, `tomyscramble_unstable_20260606_2114_9c49044_db9`, `tomyscramble_unstable_20260610_2018_9c49044_db9`, `tomyscramble_unstable_20260612_1948_9c49044_db9`, `tomytutor`, `tomytutor_20260611_b6af830_db9`, `tomytutor_unstable_20260605_2045_62907aa_db9`, `tomytutor_unstable_20260607_0903_62907aa_db9`, `tomytutor_unstable_20260612_1308_62907aa_db9`, `trs-80`, `trs-80_20260611_d9c4f6c_db9`, `trs-80_unstable_20260606_2107_bec5f72_db9`, `trs-80_unstable_20260610_2004_bec5f72_db9`, `trs-80_unstable_20260612_2020_bec5f72_db9`, `tsconf`, `tsconf_20260611_0ccf52d_db9`, `tsconf_unstable_20260606_2154_5c47afa_db9`, `tsconf_unstable_20260610_2006_5c47afa_db9`, `tsconf_unstable_20260612_2000_5c47afa_db9`, `turbografx`, `turbografx16`, `turbografx16_20260611_0f1c2d6_db9`, `turbografx16_unstable_20260610_2004_9e13306_db9`, `turbografx16_unstable_20260612_1949_9e13306_db9`, `turbografx16_unstable_20260615_1138_f857148_db9`, `turbografx16cd`, `turbografxcd`, `uk101`, `unlicensed_games`, `unstable`, `upscaling-lanczosbicubicetc`, `upscaling-recommended`, `upscaling-sharpbilinear`, `utility`, `vc4000`, `vc4000_20260611_e32e4af_db9`, `vc4000_unstable_20260605_2028_2d12fc0_db9`, `vc4000_unstable_20260606_2112_2d12fc0_db9`, `vc4000_unstable_20260612_1020_2d12fc0_db9`, `vector-06c`, `vector-06c_20260611_c57eb60_db9`, `vector-06c_unstable_20260607_0855_e88a52f_db9`, `vector-06c_unstable_20260610_2017_e88a52f_db9`, `vector-06c_unstable_20260612_1949_e88a52f_db9`, `vector06`, `vector06c`, `vectrex`, `vectrex_20260611_cacabfb_db9`, `vectrex_unstable_20260606_2103_945088b_db9`, `vectrex_unstable_20260610_2044_945088b_db9`, `vectrex_unstable_20260612_2025_945088b_db9`, `vic20`, `vic20_20260611_c857560_db9`, `vic20_unstable_20260606_2154_4386b36_db9`, `vic20_unstable_20260610_2005_4386b36_db9`, `vic20_unstable_20260612_2018_4386b36_db9`, `vt52`, `wifi`, `wonderswan`, `wonderswan_20260611_5e28f98_db9`, `wonderswan_unstable_20260606_2127_8f7a4d6_db9`, `wonderswan_unstable_20260610_2034_8f7a4d6_db9`, `wonderswan_unstable_20260612_1959_8f7a4d6_db9`, `wonderswancolor`, `x68000`, `x68000_20260611_7776f23_db9`, `x68000_unstable_20260610_2006_cf9a0c4_db9`, `x68000_unstable_20260612_2003_cf9a0c4_db9`, `x68000_unstable_20260615_1138_4b13c9f_db9`, `x68000userio2`, `x68000userio2_unstable_20260606_2104_cf9a0c4_db9`, `x68000userio2_unstable_20260612_2003_cf9a0c4_db9`, `x68000userio2_unstable_20260615_1138_4b13c9f_db9`, `yctxt`, `zx-spectrum`, `zx-spectrum_20260611_b453b69_db9`, `zx-spectrum_unstable_20260607_0903_effb939_db9`, `zx-spectrum_unstable_20260610_2017_effb939_db9`, `zx-spectrum_unstable_20260612_1949_effb939_db9`, `zx81`, `zx81_20260611_fde51e1_db9`, `zx81_unstable_20260606_2105_9b24af6_db9`, `zx81_unstable_20260610_2014_9b24af6_db9`, `zx81_unstable_20260612_1951_9b24af6_db9`, `zxnext`, `zxnext_20260611_bd63eeb_db9`, `zxnext_unstable_20260601_1134_7e7e6e0_db9`, `zxnext_unstable_20260605_1013_1c7db86_db9`, `zxnext_unstable_20260620_1952_1c7db86_db9`, `zxspectrum`\n\n### Stable builds\n\nFor each fork enrolled in the stable channel, the distribution overlays per-core stable RBFs straight from each fork repo's GitHub Releases page on top of whatever the upstream MiSTer-devel pass placed in the category dir. Stable releases use the canonical GitHub model: **one annotated tag per build commit, one Release per tag** \u2014 not a single rolling tag with a stack of historical assets crammed inside. Tag format is `stable/<MAIN_BRANCH>/<YYYYMMDD>-<sha7>` (e.g. `stable/master/20260512-abc1234`); per-variant prefix means multi-variant forks like GBA (master / GBA2P / accuracy) and X68000 (master / USERIO2) each get an independent latest pointer. The downloader pages through `/repos/<owner>/<repo>/releases?per_page=100`, filters by tag prefix for the section's `MAIN_BRANCH`, picks the newest by `created_at`, and downloads its single RBF asset (`<Core>_<YYYYMMDD>_<sha7>.<ext>`) into the same category dir upstream would have used. Stable files inherit upstream's tag set \u2014 `filter = console` keeps working as expected.\n\nTo browse the history of any stable build for a given core, open the fork repo's Releases page (e.g. `https://github.com/MiSTer-DB9/NES_MiSTer/releases`); stable builds are retained indefinitely unless a workflow explicitly opts back into a positive `RETENTION` cap.\n\n### Unstable builds\n\nAlongside the regular (stable) RBFs, the distribution can ship per-core **unstable** builds compiled from upstream MiSTer-devel HEAD with DB9 / SNAC / Saturn-key-gate patches applied on top. Unstable files land in a separate top-level folder, `_Unstable/`, with one subdir per core variant: `_Unstable/_<Core>/<Core>_unstable_<YYYYMMDD>_<HHMM>_<sha7>.rbf` (e.g. `_Unstable/_NES/NES_unstable_20260512_0211_14ed3d5.rbf`, `_Unstable/_GBA2P/GBA2P_unstable_...rbf`). Up to the last 7 builds per core are mirrored from each fork repo's `unstable-builds` GitHub Release straight onto the SD card, so rollback after a bad build is a one-step local file swap \u2014 no GitHub browsing required.\n\nUnstable files carry **only** two tags: `unstable` (channel) and `unstable-<core_slug>` (per-fork). They deliberately do NOT inherit `console` / `computer` / `<core>` path tags, so a generic `filter = console` does not silently pull them in.\n\nFilter recipes for `/media/fat/downloader.ini`:\n\n```ini\n[mister]\n# default: stable + unstable for every supported core\nfilter =\n\n# stable only (recommended unless you want to test in-development upstream changes)\nfilter = !unstable\n\n# unstable only for specific cores (mix freely):\nfilter = !unstable unstable-saturn unstable-nes\nfilter = !unstable unstable-gba2p              # the GBA 2-player variant\nfilter = !unstable unstable-ataristuserio2     # the AtariST USERIO2 variant\n\n# stable consoles only \u2014 unstable is NOT included because it carries no `console` tag\nfilter = console !unstable\n```\n\n**Rolling back a bad unstable RBF.** Up to the last 7 builds for each core are already on your SD card under `_Unstable/_<Core>/` once that core has accumulated multiple unstable builds \u2014 pick the one you want from the OSD, or delete the newest file in that subdir and load whichever older RBF you prefer. To keep the downloader from re-fetching what you removed on its next run, add `!unstable-<slug>` to your `filter`; the matching subdir will then stop being mirrored. As a deeper-history fallback, each fork's `unstable-builds` GitHub Release (e.g. `https://github.com/MiSTer-DB9/Saturn_MiSTer/releases/tag/unstable-builds`) holds the same retained asset set.\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-DB9/Distribution_MiSTer",
@@ -20068,6 +20672,22 @@
           "sha": "d05be014cf054dd2db1a1d8f4778b5b0640dea2e",
           "url": "https://raw.githubusercontent.com/MiSTer-DB9/Oric_MiSTer/master/releases/Oric_20260603.rbf",
           "type": "RBF"
+        }
+      ]
+    },
+    {
+      "name": "Paprium_MegaDrive_MiSTer",
+      "description": "Mister port of the Everdrive Paprium core - nuked-md, MD+ CDDA",
+      "readme": "Paprium for MiSTer Mega Drive\n\nA MiSTer Mega Drive core fork bringing Everdrive Pro Style Paprium support to Mister FPGA, with working MCU/cart behaviour, streamed graphics, CDDA/MD+ music, \n\nThis project builds on years of community reverse-engineering, preservation, emulator work, and flash-cart development.\n\nBased on prior work by:\nKrikzz / mega-ppm\nProject Little Man\nTheHpman / MAME Paprium research\nMAVProxyUser / Genesis Plus GX Paprium PR\nPaprium preservation community\n\nSpecial thanks:\nMiSTer Mega Drive core developers\nGenesis Plus GX / MAME contributors\nEveryone who helped test, document, and preserve Paprium\n\n\nROM and WAV assets are not included.\nBring your own Paprium dump and audio files.\n\nIf only there were some kind of archive on the internet...\n\n## Required Files\n\nCreate this folder on your MiSTer SD card:\n\n```text\n/media/fat/games/MegaDrive/Paprium/\nPlace the ROM and WAV files there:\n\n\u251c\u2500\u2500 Paprium.md\n\u251c\u2500\u2500 paprium.cue\n\u251c\u2500\u2500 01 Theme of Paprium.wav\n\u251c\u2500\u2500 02 90's Acid Dub Character Select.wav\n\u251c\u2500\u2500 03 Bone Crusher.wav\n\u251c\u2500\u2500 04 Drumbass Boss.wav\n\u251c\u2500\u2500 05 Asian Chill.wav\n\u251c\u2500\u2500 ...\n\u2514\u2500\u2500 52 Waterfront Beat.wav\nLoad Paprium.md from the Mega Drive Paprium core.\n\n**You need to boot the game once and select \"Save back up ram\" in the OSD the first time you play - Then hit reset in the OSD to get the REAL version of paprium to boot** \n\n## A note on AI use (\"vibe coding\")\n\nLet's get this out of the way: it's a **Paprium** project *and* it's **AI\nvibe-coded** \u2014 two of the internet's favourite things to argue about, bundled\ninto one repo. I'm fully expecting some hate for it, and honestly, that's fair.\n\nI'm not an FPGA engineer. Most of the Verilog in here was generated and debugged\nby AI (Claude and Codex) through a lot of back-and-forth \u2014 I'm not going to\npretend I hand-wrote it, because I didn't.\n\nWhat I actually did was the boring half: running every build on a real MiSTer,\nphotographing the garbled graphics, listening to the broken audio, feeding it\nall back, correcting the AI when it was confidently wrong, and deciding what was\ngood enough to call done. The Paprium / EverDrive Pro / firmware / MD+ knowledge\ncame from me and the wider preservation community \u2014 the AI couldn't see the\nscreen or hear the speakers, so that bit was on me.\n\nIt's a hack, not a \"proper\" core, and I've no doubt someone could do it far\nbetter. If it annoys anyone enough to go and build the real thing from scratch,\nwithout AI \u2014 genuinely, brilliant, please do, everyone wins. Until then, I made\nthis so a few people could mess about with Paprium on MiSTer. If that's you,\nenjoy.\n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/MiSTer-DB9/Paprium_MegaDrive_MiSTer",
+      "releases": [
+        {
+          "name": "placeholder",
+          "sha": "b4785957bc986dc39c629de9fac9df46972c00fc",
+          "url": "https://raw.githubusercontent.com/MiSTer-DB9/Paprium_MegaDrive_MiSTer/paprium-mdplus-port/releases/placeholder",
+          "type": "OTHER"
         }
       ]
     },
