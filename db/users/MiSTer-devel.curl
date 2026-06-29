@@ -142,8 +142,8 @@ output = "_Arcade/cores/CanyonBomber_20240525.rbf"
 
 
 # Cave
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cave_MiSTer/main/releases/Arcade-Cave_20260531.rbf"
-output = "_Arcade/cores/Cave_20260531.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cave_MiSTer/main/releases/Arcade-Cave_20260623.rbf"
+output = "_Arcade/cores/Cave_20260623.rbf"
 
 
 # Centipede
@@ -302,8 +302,8 @@ output = "_Arcade/cores/Gyruss_20240526.rbf"
 
 
 # IGSPGM
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/Arcade-IGSPGM_20260621.rbf"
-output = "_Arcade/cores/IGSPGM_20260621.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/Arcade-IGSPGM_20260627.rbf"
+output = "_Arcade/cores/IGSPGM_20260627.rbf"
 
 
 # IkariWarriors
@@ -362,8 +362,8 @@ output = "_Others/JunoFirst_20260531.rbf"
 
 
 # Kangaroo
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Kangaroo_MiSTer/main/releases/Kangaroo_20260621.rbf"
-output = "_Others/Kangaroo_20260621.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Kangaroo_MiSTer/main/releases/Kangaroo_20260622.rbf"
+output = "_Others/Kangaroo_20260622.rbf"
 
 
 # KickAndRun
@@ -447,8 +447,8 @@ output = "_Arcade/cores/NinjaKun_20240530.rbf"
 
 
 # Pacman
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pacman_MiSTer/master/releases/Arcade-Pacman_20260111.rbf"
-output = "_Arcade/cores/Pacman_20260111.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pacman_MiSTer/master/releases/Arcade-Pacman_20260625.rbf"
+output = "_Arcade/cores/Pacman_20260625.rbf"
 
 
 # Pengo
@@ -577,8 +577,8 @@ output = "_Arcade/cores/SpaceFirebird_20260617.rbf"
 
 
 # SpaceInvaders
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SpaceInvaders_MiSTer/master/releases/Arcade-SpaceInvaders_20260331.rbf"
-output = "_Arcade/cores/SpaceInvaders_20260331.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SpaceInvaders_MiSTer/master/releases/Arcade-SpaceInvaders_20260622.rbf"
+output = "_Arcade/cores/SpaceInvaders_20260622.rbf"
 
 
 # SpaceRace
@@ -1551,9 +1551,19 @@ url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cave_MiSTer/main/re
 output = "_Arcade/Gaia Crusaders.mra"
 
 
+# Gogetsuji Legends (US, Ver. 95.06.20).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cave_MiSTer/main/releases/Gogetsuji%20Legends%20(US%2C%20Ver.%2095.06.20).mra"
+output = "_Arcade/Gogetsuji Legends (US, Ver. 95.06.20).mra"
+
+
 # Guwange (Japan, 1999 624 Master Ver 1655).mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cave_MiSTer/main/releases/Guwange%20(Japan%2C%201999%20624%20Master%20Ver%201655).mra"
 output = "_Arcade/Guwange (Japan, 1999 624 Master Ver 1655).mra"
+
+
+# Power Instinct 2 (US, Ver. 94.04.08, set 1).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Cave_MiSTer/main/releases/Power%20Instinct%202%20(US%2C%20Ver.%2094.04.08%2C%20set%201).mra"
+output = "_Arcade/Power Instinct 2 (US, Ver. 94.04.08, set 1).mra"
 
 
 # Puzzle Uo Poko (World).mra
@@ -3284,6 +3294,16 @@ output = "_Arcade/Eggor.mra"
 # Eyes (US, Set 1).mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pacman_MiSTer/master/releases/Eyes%20(US%2C%20Set%201).mra"
 output = "_Arcade/Eyes (US, Set 1).mra"
+
+
+# Jr. Pac-Man (Speedup Hack).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pacman_MiSTer/master/releases/Jr.%20Pac-Man%20(Speedup%20Hack).mra"
+output = "_Arcade/Jr. Pac-Man (Speedup Hack).mra"
+
+
+# Jr. Pac-Man.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pacman_MiSTer/master/releases/Jr.%20Pac-Man.mra"
+output = "_Arcade/Jr. Pac-Man.mra"
 
 
 # Jump Shot.mra
