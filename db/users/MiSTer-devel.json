@@ -2942,6 +2942,87 @@
       ]
     },
     {
+      "name": "Arcade-BoogieWings_MiSTer",
+      "description": null,
+      "readme": "# Arcade-BoogieWings_MiSTer\n\nFPGA core for **Boogie Wings** (also known as **The Great Ragtime Show**,\nData East Corporation, 1992) targeting the\n[MiSTer FPGA](https://github.com/MiSTer-devel) platform (Terasic DE10-Nano).\n\nBoogie Wings runs on the **Data East DE-0297 board** \u2014 a horizontal arcade\nhardware with a 68000 main CPU, HuC6280 sound CPU, two DECO16IC tilemap\nchips (four scrolling playfields), a custom sprite generator, the DECO ACE\nalpha-blend mixer, DECO104 protection, and YM2151 + dual OKI M6295 audio.\n\nThis core reimplements the hardware in SystemVerilog from MAME references\nand hardware observation.\n\n## About the game\n\n**Boogie Wings** (*The Great Ragtime Show* in Japan) is a horizontally\nscrolling shoot-'em-up with a twist: you pilot a WWI-era biplane, but you\ncan bail out at any moment and drop down to fight on foot, grabbing a\ngrappling hook to swing across the stage, hijack enemy vehicles, and hurl\nobjects at your foes. The mix of aerial and ground combat, the destructible\nscenery and the hand-drawn cartoon art make it one of Data East's most\ndistinctive action games. The DE-0297 board pushes four scrolling\nplayfields blended through the DECO ACE mixer, giving the game its layered,\ncolourful look.\n\n## Status\n\n**Current version: 1.0** (July 2026).\n\nThe core runs the full game with audio, inputs and savestates, tested on\nreal MiSTer hardware.\n\n**Milestones reached**\n- Full playthrough with accurate video, audio and controls\n- The DE102 encrypted 68000 opcodes and the DECO56 tile scramble are\n  decrypted on board during ROM download \u2014 no pre-decrypted ROMs needed\n- DECO104 protection (I/O + data scramble) reproduced from MAME\n- MAME-accurate DECO16IC tilemaps (per-row / per-column scroll) and the\n  DECO ACE alpha-blend + fade mixer\n- Savestate (save / restore) ported from the Taito F2 core, including the\n  HuC6280 / YM2151 / OKI internal state\n- Native 57.8 Hz refresh with an optional 60 Hz mode\n\n**Roadmap**\n- Further audio and video accuracy polish\n- Additional savestate hardening across edge cases\n- More regional ROM sets as they are verified\n\n**Features**\n- 68000 main CPU (FX68K core) with DECO104 protection (I/O + scramble)\n- HuC6280 sound CPU @ 8.055 MHz\n- Two DECO16IC tilemap chips: BG0/BG1 (chip 0) + FG0/FG1 (chip 1),\n  16\u00d716 and 8\u00d78 tiles, per-row and per-column scroll \u2014 MAME-accurate\n- DECO ACE alpha-blend / fade mixer for layer composition\n- Sprite renderer with priority, flip, 16\u00d716 4bpp tiles, buffered sprite RAM\n- Audio: YM2151 (OPM, JT51) + two OKI M6295 ADPCM (JT6295)\n- Tile ROM streaming through a 4-bank SDRAM (JTFRAME SDRAM64)\n- Sprite ROM and OKI ADPCM ROM backed by DDR3\n- VBlank-synchronized pause (frame-aligned, no race conditions)\n- **Analog VGA H-Shift / V-Shift** OSD options for fine alignment on CRTs\n- MiSTer OSD with video and DIP options\n- Pause overlay with logo + supporters scroll\n- Savestate (save/restore) infrastructure ported from the Taito F2 core\n\n**ROM sets supported**\n- Boogie Wings (`boogwing`, Euro v1.5, 92.12.07) \u2014 parent\n- Boogie Wings (`boogwinga`, Asia v1.5, 92.12.07)\n- Boogie Wings (`boogwingu`, USA v1.7, 92.12.14)\n- The Great Ragtime Show (`ragtime`, Japan v1.5, 92.12.07)\n- The Great Ragtime Show (`ragtimea`, Japan v1.3, 92.11.26)\n\n## Screenshots\n\n| | |\n|---|---|\n| ![Title](docs/bw_Logo.png) | ![Data East](docs/bw_DE_Logo.png) |\n| Title screen | Data East |\n| ![Gameplay 1](docs/bw_Gameplay_1.png) | ![Gameplay 2](docs/bw_Gameplay_2.png) |\n| Gameplay | Gameplay |\n| ![Tutorial](docs/bw_tutorial_1.png) | ![High scores](docs/bw_Score.png) |\n| Tutorial | High scores |\n\n## Hardware emulated\n\n| Component        | Spec                                                |\n|------------------|-----------------------------------------------------|\n| Main CPU         | M68000 @ 14 MHz (DE102 encrypted opcodes)           |\n| Sound CPU        | HuC6280 @ 8.055 MHz                                  |\n| Sound chip 1     | Yamaha YM2151 OPM (jt51)                             |\n| Sound chip 2     | OKI M6295 (jt6295) \u00d72 \u2014 1 MHz and 2 MHz             |\n| Tilemaps         | DECO16IC \u00d72 (four playfields, 16\u00d716 / 8\u00d78)          |\n| Sprites          | DECO_SPRITE \u00d72 (alpha-blend)                         |\n| Palette / mixer  | DECO ACE (palette + alpha-blend + fade)             |\n| I/O + protection | DECO104                                             |\n\n## Hardware requirements\n\n- Terasic DE10-Nano\n- MiSTer I/O board (recommended)\n- SDRAM module (32 MB or 64 MB)\n- DDR3 memory (built into DE10-Nano, used for sprite ROM and OKI ADPCM ROM)\n- Works on HDMI displays and on CRTs via the analog video output\n\n## Building from source\n\nRequires Quartus Prime 17.0 (free Lite Edition).\n\n```\nOpen BoogieWings.qpf in Quartus \u2192 Processing \u2192 Start Compilation\n```\n\nOutput bitstream is generated in `output_files/BoogieWings.rbf`.\n\n## Running on MiSTer\n\nThe [releases/](releases/) folder contains the parent MRA and a\nprebuilt RBF; regional clone MRAs are in\n[releases/alternatives/](releases/alternatives/):\n\n- `Boogie Wings (Euro v1.5, 92.12.07).mra` \u2014 parent MRA\n- `BoogieWings_YYYYMMDD.rbf` \u2014 prebuilt bitstream\n- `alternatives/Boogie Wings (Asia v1.5, 92.12.07).mra` / `(USA v1.7, 92.12.14).mra` /\n  `The Great Ragtime Show (Japan v1.3 / v1.5).mra` \u2014 regional clones\n\nSteps:\n\n1. Copy the `.rbf` to `_Arcade/cores/` on the MiSTer SD card (rename to\n   `BoogieWings.rbf` or keep the dated name and update the MRA accordingly).\n2. Copy the `.mra` file(s) to `_Arcade/` on the MiSTer SD card.\n3. Provide your legally-owned `boogwing.zip` (or regional variant) where\n   the MRA expects it (usually in `games/mame/`).\n\n**ROMs are NOT included in this repository.** You must provide them yourself.\n\n## Repository layout\n\n```\nArcade-BoogieWings_MiSTer/\n\u251c\u2500\u2500 rtl/\n\u2502   \u251c\u2500\u2500 boogwings/   Boogie Wings-specific core RTL\n\u2502   \u251c\u2500\u2500 common/      shared logic: DECO104, DECO ACE glue, savestate, bridges\n\u2502   \u251c\u2500\u2500 HUC6280/     HuC6280 sound CPU\n\u2502   \u251c\u2500\u2500 fx68k/       FX68K M68000 cycle-accurate core\n\u2502   \u251c\u2500\u2500 jt51/        YM2151 FM synth\n\u2502   \u251c\u2500\u2500 jt6295/      OKI M6295 ADPCM\n\u2502   \u251c\u2500\u2500 jtframe/     JTFRAME framework modules\n\u2502   \u251c\u2500\u2500 pll/         Clock PLL\n\u2502   \u2514\u2500\u2500 sdram.sv     SDRAM controller (Sorgelig)\n\u251c\u2500\u2500 sys/             MiSTer framework (Sorgelig / MiSTer-devel)\n\u251c\u2500\u2500 logo/            Pause overlay assets (font, logo, supporter list)\n\u251c\u2500\u2500 docs/            In-game screenshots\n\u251c\u2500\u2500 releases/        Parent MRA + regional clones + prebuilt RBF\n\u251c\u2500\u2500 BoogieWings.qpf  Quartus project\n\u251c\u2500\u2500 BoogieWings.qsf  Quartus assignments\n\u251c\u2500\u2500 Template.sv      Top-level wrapper\n\u251c\u2500\u2500 Template.sdc     Timing constraints\n\u251c\u2500\u2500 files.qip        HDL file list\n\u251c\u2500\u2500 build_id.v       Build version stamp\n\u2514\u2500\u2500 README.md        This file\n```\n\n## Acknowledgements\n\n- **Jose Tejada** ([@jotego](https://github.com/jotego)) for JT51 (YM2151),\n  JT6295 (OKI M6295) and the JTFRAME framework (including SDRAM64).\n- **Sergey Dvodnenko** ([@srg320](https://github.com/srg320)), with **Sorgelig**\n  and **David Shadoff**, for the HuC6280 core (from the MiSTer TurboGrafx-16 /\n  PC Engine core); original design by **Gregory Estrade** (FPGAPCE).\n- **Jorge Cwik** ([ijor](https://github.com/ijor)) for the **FX68K**\n  cycle-accurate M68000 core.\n- **Martin Donlon** ([wickerwaka](https://github.com/wickerwaka)) for the\n  savestate infrastructure, ported from the Arcade-TaitoF2 core.\n- The **MAMEDev team** for the invaluable reference on the DECO16IC tilemaps,\n  DECO104 protection, DECO ACE mixer, memory maps and timing.\n- **Sorgelig** and the **MiSTer-devel team** for the framework, SDRAM\n  controller and Template.\n\n## Support this project\n\nIf you enjoy this core and want to support its development:\n\n- [Ko-fi](https://ko-fi.com/ibecerivideoludici) \u2014 one-time support\n- [Patreon](https://www.patreon.com/IBeceriVideoludici) \u2014 monthly support\n- [PayPal](https://www.paypal.me/IBeceriVideoludici) \u2014 one-time donation\n\n## Follow\n\n- [GitHub](https://github.com/rmonic79)\n- [Twitch](https://twitch.tv/ibecerivideoludici) \u2014 live streams\n- [YouTube](https://www.youtube.com/c/IBeceriVideoludici) \u2014 playlists and videos\n- [X / Twitter](https://x.com/rmonic79)\n\n## License\n\nThe RTL source code in this repository is provided as-is for educational\nand preservation purposes under **GNU GPL v3 or later**. Original ROM data\nis not included; users must provide their own legally obtained copies.\n\nOriginal *Boogie Wings* / *The Great Ragtime Show* arcade hardware\n\u00a9 Data East Corporation, 1992.\n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/MiSTer-devel/Arcade-BoogieWings_MiSTer",
+      "releases": [
+        {
+          "name": "Boogie Wings (Euro v1.5, 92.12.07).mra",
+          "sha": "93077fffedb0b5d053d95c0914b15ebdf3ac2312",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-BoogieWings_MiSTer/main/releases/Boogie%20Wings%20(Euro%20v1.5%2C%2092.12.07).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Boogie Wings (Euro v1.5, 92.12.07)",
+            "rbf": "BoogieWings",
+            "zips": [
+              "boogwing.zip"
+            ]
+          }
+        },
+        {
+          "name": "BoogieWings_20260704.rbf",
+          "sha": "8946a9db0b9c3ce486955c1031ad51a2bdbc4637",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-BoogieWings_MiSTer/main/releases/BoogieWings_20260704.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Boogie Wings (Asia v1.5, 92.12.07).mra",
+          "sha": "637985d0b3ef718248cca4f94a4d722bcc105b8b",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-BoogieWings_MiSTer/main/releases/alternatives/Boogie%20Wings%20(Asia%20v1.5%2C%2092.12.07).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Boogie Wings (Asia v1.5, 92.12.07)",
+            "rbf": "BoogieWings",
+            "zips": [
+              "boogwing.zip"
+            ]
+          }
+        },
+        {
+          "name": "Boogie Wings (USA v1.7, 92.12.14).mra",
+          "sha": "1983f4234214ee4ad5f74f5bdf07b931e21637d9",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-BoogieWings_MiSTer/main/releases/alternatives/Boogie%20Wings%20(USA%20v1.7%2C%2092.12.14).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Boogie Wings (USA v1.7, 92.12.14)",
+            "rbf": "BoogieWings",
+            "zips": [
+              "boogwing.zip"
+            ]
+          }
+        },
+        {
+          "name": "The Great Ragtime Show (Japan v1.3, 92.11.26).mra",
+          "sha": "4c35f260c1717c2465416201092a8ed0222a52a1",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-BoogieWings_MiSTer/main/releases/alternatives/The%20Great%20Ragtime%20Show%20(Japan%20v1.3%2C%2092.11.26).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "The Great Ragtime Show (Japan v1.3, 92.11.26)",
+            "rbf": "BoogieWings",
+            "zips": [
+              "boogwing.zip"
+            ]
+          }
+        },
+        {
+          "name": "The Great Ragtime Show (Japan v1.5, 92.12.07).mra",
+          "sha": "4caea5244c272194811f7768283f4e53db85c4ad",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-BoogieWings_MiSTer/main/releases/alternatives/The%20Great%20Ragtime%20Show%20(Japan%20v1.5%2C%2092.12.07).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "The Great Ragtime Show (Japan v1.5, 92.12.07)",
+            "rbf": "BoogieWings",
+            "zips": [
+              "boogwing.zip"
+            ]
+          }
+        }
+      ]
+    },
+    {
       "name": "Arcade-Bosconian_MiSTer",
       "description": "Bosconian - Star Destroyer (1981) for MiSTer FPGA",
       "readme": "# Bosconian\r\n\r\nFPGA implementation of the arcade game Bosconian - Star Destroyer, developed in\r\n1981 by Namco and released to Western audiences by Midway.\r\n\r\n\r\n## Credits\r\n\r\n* Nolan Nicholson: FPGA implementation of overall Bosconian system from the\r\n  Midway service schematics - particularly the video board.\r\n* Dar: FPGA implementation of Galaga, from which much of this core was\r\n  adapted - particularly the logic board.\r\n* Wolfgang Scherr: Implementations of several LUTs and Namco customs, including\r\n  the 05xx starfield generator, plus a hint to the operation of the 52xx voice\r\n  chip.\r\n* Mike Johnson: Implementations of several Namco customs, including the 07xx sync\r\n  generator, plus a lot of legwork originally done for the FPGAArcade project.\r\n* Daniel Wallner: T80/T80se, a Z80 compatible CPU.\r\n* MAME: Information on memory mapping, Namco customs, and general information.\r\n* Alexey Melnikov: MiSTer framework.\r\n\r\n\r\n## Game Information\r\n\r\nBosconian is a top-down 8-directional shooter. The goal of the game is to\r\ndestroy all enemy bases in each level while fighting off enemy ships.\r\n\r\nBosconian is the first top-down shooter that allowed diagonal movement, and one\r\nof the earliest arcade games with recorded voice sounds. For comparison, Pole\r\nPosition came out later in 1982, and Sinister came out in 1983.\r\n\r\nPlease note the following about Bosconian's DIP settings:\r\n* The DIP settings differ between the Namco and Midway versions.\r\n* The bonus DIP levels have different meanings based on the lives DIP levels. In\r\n  particular, the bonus DIPs will mean something different for starting with 5\r\n  lives, compared to starting with only 1, 2, or 3.\r\n\r\n\r\n## Required files\r\n\r\nROMs are not included. In order to use this arcade, you need to provide the\r\ncorrect ROMs.\r\n\r\nTo simplify the process .mra files are provided in the releases folder, that\r\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\r\ncorresponding file of the M.A.M.E. project.\r\n\r\nPlease refer to\r\n[Arcade ROMS](https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms)\r\nfor information on how to setup and use the environment.\r\n\r\nQuick reference for folders and file placement:\r\n\r\n * `/_Arcade/<game name>.mra`\r\n * `/_Arcade/cores/<game rbf>.rbf`\r\n * `/games/mame/<mame rom>.zip`\r\n * `/games/hbmame/<hbmame rom>.zip`\r\n\r\n\r\n## Known Issues\r\n\r\n* Pausing at particular moments may cause a crash.\r\n* Shot and explosion sounds are not working perfectly:\r\n    * Base explosion sound is not nearly loud enough.\r\n    * Shot sound changes pitch from shot to shot.\r\n* Continues (insert new coin after dying) may not be working properly.\r\n",
@@ -4796,6 +4877,537 @@
       ]
     },
     {
+      "name": "Arcade-DECOCassette_MiSTer",
+      "description": null,
+      "readme": "<p align=\"center\">\n  <img src=\"Useful Information/DECO.png\" width=\"800\">\n</p>\n\n<h1 align=\"center\">DECO Cassette FPGA Core</h1>\n\n<p align=\"center\">\n  Arcade hardware implementation for MiSTer FPGA\n</p>\n\n---\n\n## Overview\n\nFPGA implementation of **DECO Cassette Hardware (~1981)**, originally developed and released by Data East.\n\nThis core targets MiSTer FPGA and aims for accurate gameplay behavior, video timing, and sound reproduction.\n\n---\n\n## Game Information\n\n| Field        | Value |\n|--------------|--------|\n| Title        | Lock n Chase |\n| Year         | 1982 |\n| Developer    | Data East |\n| Genre        | Maze |\n| Players      | 1\u20132 alternating |\n\n---\n\n## Controls\n\nDefault MiSTer gamepad mapping:\n\n| Input | Action |\n|-------|--------|\n| D-Pad / Joystick | Move |\n| A | Action |\n| Select | Insert Coin |\n| Start | 1 Player Start |\n| Right Shoulder | 2 Player Start |\n| Left Shoulder | Pause |\n\n---\n\n## Features\n\n- Arcade-accurate CPU timing\n- Sprite priority and layer handling\n- High score saving support\n- MiSTer-compatible .mra provided\n- Verified ROM definitions with checksums\n\n---\n\n## ROM Requirements\n\nROM files are **not included**.\n\nTo use this arcade core, you must provide legally obtained ROM files.\n\nTo simplify setup:\n\n- `.mra` files are provided in the **Releases** section.\n- The `.mra` specifies all required ROM files along with checksums.\n- The ROM `.zip` filename corresponds to the naming convention used by the MAME project.\n\nFor setup instructions and environment configuration, refer to:\n\nMiSTer Arcade ROM guide:  \nhttps://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms\n\n---\n\n## Installation\n\n1. Copy the core `.rbf` file to your MiSTer `/_Arcade/cores` folder.\n2. Copy the '.mra' file to your MiSTer '/_Arcade' folder.\n3. Place the appropriate ROM `.zip` files in your `/games/mame` directory.\n4. Launch the core from the MiSTer Arcade menu.\n\n---\n\n## Legal Notice\n\nThis project contains **no copyrighted game data**.\n\nUsers are responsible for obtaining and using ROM files in accordance with applicable laws.\n\nDo not request ROM files in issues or discussions.\n\n---\n\n## Credits\n\nFPGA core development: RodimusFVC \nOriginal arcade game \u00a9 Data East\n\n---\n",
+      "archived": false,
+      "fork": false,
+      "url": "https://github.com/MiSTer-devel/Arcade-DECOCassette_MiSTer",
+      "releases": [
+        {
+          "name": "18 Challenge Pro Golf (DECO).mra",
+          "sha": "9b6af7ed4f118480a3f11b08dc1c6423a1e45422",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-DECOCassette_MiSTer/main/releases/18%20Challenge%20Pro%20Golf%20(DECO).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "18 Challenge Pro Golf",
+            "rbf": "DECOCassette",
+            "zips": [
+              "decocass.zip|cprogolf.zip|cprogolf18.zip",
+              "decocass.zip|cprogolf.zip|cprogolf18.zip"
+            ]
+          }
+        },
+        {
+          "name": "Angler Dangler (DECO).mra",
+          "sha": "7149c0d3d320719d1ca2aa014c35dceb210ff984",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-DECOCassette_MiSTer/main/releases/Angler%20Dangler%20(DECO).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Angler Dangler",
+            "rbf": "DECOCassette",
+            "zips": [
+              "decocass.zip|cadanglr.zip",
+              "decocass.zip|cadanglr.zip"
+            ]
+          }
+        },
+        {
+          "name": "Astro Fantasia (DECO).mra",
+          "sha": "5ba15df7456ee1162369dded551e17977dc955b6",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-DECOCassette_MiSTer/main/releases/Astro%20Fantasia%20(DECO).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Astro Fantasia",
+            "rbf": "DECOCassette",
+            "zips": [
+              "decocass.zip|castfant.zip",
+              "decocass.zip|castfant.zip"
+            ]
+          }
+        },
+        {
+          "name": "Boulder Dash (DECO).mra",
+          "sha": "c35bc44641dee30cde02d20a8b9ffaa8810c1b95",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-DECOCassette_MiSTer/main/releases/Boulder%20Dash%20(DECO).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Boulder Dash",
+            "rbf": "DECOCassette",
+            "zips": [
+              "decocass.zip|cbdash.zip"
+            ]
+          }
+        },
+        {
+          "name": "Bump 'n' Jump (DECO).mra",
+          "sha": "8a9b8bccc8f0e0a51cc6faaf0f0b43d69613698f",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-DECOCassette_MiSTer/main/releases/Bump%20'n'%20Jump%20(DECO).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Bump n Jump",
+            "rbf": "DECOCassette",
+            "zips": [
+              "decocass.zip|cburnrub.zip|cbnj.zip",
+              "decocass.zip|cburnrub.zip|cbnj.zip"
+            ]
+          }
+        },
+        {
+          "name": "Burger Time (DECO).mra",
+          "sha": "2cf15a175f5732f2a3f48370cda7a4809f7f0365",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-DECOCassette_MiSTer/main/releases/Burger%20Time%20(DECO).mra",
+          "type": "MRA",
+          "extra": null
+        },
+        {
+          "name": "Burnin Rubber (DECO).mra",
+          "sha": "c23315d05ed58d51a568eb9f5f76c683271c408f",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-DECOCassette_MiSTer/main/releases/Burnin%20Rubber%20(DECO).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Burnin Rubber (set 1)",
+            "rbf": "DECOCassette",
+            "zips": [
+              "decocass.zip|cburnrub.zip",
+              "decocass.zip|cburnrub.zip"
+            ]
+          }
+        },
+        {
+          "name": "Cluster Buster (DECO).mra",
+          "sha": "6399471278b81f7e35db3fb1dffce6decf182eba",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-DECOCassette_MiSTer/main/releases/Cluster%20Buster%20(DECO).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Cluster Buster",
+            "rbf": "DECOCassette",
+            "zips": [
+              "decocass.zip|cgraplop.zip",
+              "decocass.zip|cgraplop.zip"
+            ]
+          }
+        },
+        {
+          "name": "DECO Darksoft Multigame (DECO).mra",
+          "sha": "77ff1f824a424a121baaaab28d9e60e83c6bde73",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-DECOCassette_MiSTer/main/releases/DECO%20Darksoft%20Multigame%20(DECO).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "DECO Multigame (Darksoft v17)",
+            "rbf": "DECOCassette",
+            "zips": [
+              "decocass.zip|decodark.zip",
+              "decocass.zip|decodark.zip"
+            ]
+          }
+        },
+        {
+          "name": "DECO Test Tape (DECO).mra",
+          "sha": "4d84ccce905761eea1da4dda9a66bae12bd617ea",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-DECOCassette_MiSTer/main/releases/DECO%20Test%20Tape%20(DECO).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Test Tape",
+            "rbf": "DECOCassette",
+            "zips": [
+              "decocass.zip|ctsttape.zip",
+              "decocass.zip|ctsttape.zip"
+            ]
+          }
+        },
+        {
+          "name": "DECOCassette_20260629.rbf",
+          "sha": "b1ef31232e83eab5d4aff3707dd3f80bb7ee31a6",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-DECOCassette_MiSTer/main/releases/DECOCassette_20260629.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "DECOCassette_20260630.rbf",
+          "sha": "9a8a4932a992812dc5604383baf2f6d52ab2da56",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-DECOCassette_MiSTer/main/releases/DECOCassette_20260630.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "DS Telejan (DECO).mra",
+          "sha": "03bbfb5de544b2b2abfbaea51c7bca121fc0b388",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-DECOCassette_MiSTer/main/releases/DS%20Telejan%20(DECO).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "DS Telejan",
+            "rbf": "DECOCassette",
+            "zips": [
+              "decocass.zip|cdsteljn.zip",
+              "decocass.zip|cdsteljn.zip"
+            ]
+          }
+        },
+        {
+          "name": "Fighting Ice Hockey (DECO).mra",
+          "sha": "c8916a96c4a6474c08c7042d547aab15c18d190a",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-DECOCassette_MiSTer/main/releases/Fighting%20Ice%20Hockey%20(DECO).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Fighting Ice Hockey",
+            "rbf": "DECOCassette",
+            "zips": [
+              "decocass.zip|cfghtice.zip",
+              "decocass.zip|cfghtice.zip"
+            ]
+          }
+        },
+        {
+          "name": "Flash Boy (DECO).mra",
+          "sha": "15b6e603dba2d5cb7fa731221bf5dde8ef4e48cf",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-DECOCassette_MiSTer/main/releases/Flash%20Boy%20(DECO).mra",
+          "type": "MRA",
+          "extra": null
+        },
+        {
+          "name": "Flying Ball (DECO).mra",
+          "sha": "eae4c10eaf713dfea0e9571a756a8936b7e69ab0",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-DECOCassette_MiSTer/main/releases/Flying%20Ball%20(DECO).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Flying Ball (DECO)",
+            "rbf": "DECOCassette",
+            "zips": [
+              "decocass.zip|cflyball.zip"
+            ]
+          }
+        },
+        {
+          "name": "Hamburger (Japan) (DECO).mra",
+          "sha": "582e0f0d64653b5727f50a10b382f23b8907138a",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-DECOCassette_MiSTer/main/releases/Hamburger%20(Japan)%20(DECO).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Hamburger (Japan)",
+            "rbf": "DECOCassette",
+            "zips": [
+              "decocass.zip|cbtime.zip|chamburger.zip",
+              "decocass.zip|cbtime.zip|chamburger.zip"
+            ]
+          }
+        },
+        {
+          "name": "Highway Chase (DECO).mra",
+          "sha": "f9b25d3b02d0ef06b0e8de0997d8de850a417930",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-DECOCassette_MiSTer/main/releases/Highway%20Chase%20(DECO).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Highway Chase",
+            "rbf": "DECOCassette",
+            "zips": [
+              "decocass.zip|chwy.zip",
+              "decocass.zip|chwy.zip"
+            ]
+          }
+        },
+        {
+          "name": "Lock'n'Chase (DECO).mra",
+          "sha": "e7958dfbd3bd04c7a61bacb8d0babaf8eb706574",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-DECOCassette_MiSTer/main/releases/Lock'n'Chase%20(DECO).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Lock'n'Chase",
+            "rbf": "DECOCassette",
+            "zips": [
+              "decocass.zip|clocknch.zip",
+              "decocass.zip|clocknch.zip"
+            ]
+          }
+        },
+        {
+          "name": "Lucky Poker (DECO).mra",
+          "sha": "a33bd2e68799e01aa4768a890bd47501db1f384e",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-DECOCassette_MiSTer/main/releases/Lucky%20Poker%20(DECO).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Lucky Poker",
+            "rbf": "DECOCassette",
+            "zips": [
+              "decocass.zip|cluckypo.zip",
+              "decocass.zip|cluckypo.zip"
+            ]
+          }
+        },
+        {
+          "name": "Manhattan (Japan) (DECO).mra",
+          "sha": "a5fe1990928fad3e9217adc666037a99b37b197e",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-DECOCassette_MiSTer/main/releases/Manhattan%20(Japan)%20(DECO).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Manhattan (Japan)",
+            "rbf": "DECOCassette",
+            "zips": [
+              "decocass.zip|cmanhat.zip",
+              "decocass.zip|cmanhat.zip"
+            ]
+          }
+        },
+        {
+          "name": "Mission-X (DECO).mra",
+          "sha": "fbc43df8fb9c93f0eb9251e726fd58e2173ac149",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-DECOCassette_MiSTer/main/releases/Mission-X%20(DECO).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Mission-X",
+            "rbf": "DECOCassette",
+            "zips": [
+              "decocass.zip|cmissnx.zip",
+              "decocass.zip|cmissnx.zip"
+            ]
+          }
+        },
+        {
+          "name": "Nebula (DECO).mra",
+          "sha": "85897a9f0f5795068d4ddc56ab39f9c17a0c1307",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-DECOCassette_MiSTer/main/releases/Nebula%20(DECO).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Nebula",
+            "rbf": "DECOCassette",
+            "zips": [
+              "decocass.zip|cnebula.zip",
+              "decocass.zip|cnebula.zip"
+            ]
+          }
+        },
+        {
+          "name": "Night Star (DECO).mra",
+          "sha": "00a01e09a9c6715e3552924f68ea6772e7bf384f",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-DECOCassette_MiSTer/main/releases/Night%20Star%20(DECO).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Night Star (set 1)",
+            "rbf": "DECOCassette",
+            "zips": [
+              "decocass.zip|cnightst.zip",
+              "decocass.zip|cnightst.zip"
+            ]
+          }
+        },
+        {
+          "name": "Ocean to Ocean (DECO).mra",
+          "sha": "5721bd60c08c413d2f1581de4b349951d99befd5",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-DECOCassette_MiSTer/main/releases/Ocean%20to%20Ocean%20(DECO).mra",
+          "type": "MRA",
+          "extra": null
+        },
+        {
+          "name": "Oozumou - Grand Sumo (DECO).mra",
+          "sha": "6e36257824470eadb5ec932f799129d41b76c32c",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-DECOCassette_MiSTer/main/releases/Oozumou%20-%20Grand%20Sumo%20(DECO).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Oozumou - Grand Sumo",
+            "rbf": "DECOCassette",
+            "zips": [
+              "decocass.zip|coozumou.zip",
+              "decocass.zip|coozumou.zip"
+            ]
+          }
+        },
+        {
+          "name": "Peter Pepper's Ice Cream Factory (DECO).mra",
+          "sha": "1a7fb5d9c0509c3fc26550f37a60525fc945667e",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-DECOCassette_MiSTer/main/releases/Peter%20Pepper's%20Ice%20Cream%20Factory%20(DECO).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Ice Cream Factory (set 1)",
+            "rbf": "DECOCassette",
+            "zips": [
+              "decocass.zip|cppicf.zip",
+              "decocass.zip|cppicf.zip"
+            ]
+          }
+        },
+        {
+          "name": "Pro Bowling (DECO).mra",
+          "sha": "77248da101fd3edabfd9f4d08382aa3afe4000bc",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-DECOCassette_MiSTer/main/releases/Pro%20Bowling%20(DECO).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Pro Bowling",
+            "rbf": "DECOCassette",
+            "zips": [
+              "decocass.zip|cprobowl.zip",
+              "decocass.zip|cprobowl.zip"
+            ]
+          }
+        },
+        {
+          "name": "Pro Golf (DECO).mra",
+          "sha": "bd3b2396abf605abeed45fd8bf1133a220133898",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-DECOCassette_MiSTer/main/releases/Pro%20Golf%20(DECO).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Pro Golf",
+            "rbf": "DECOCassette",
+            "zips": [
+              "decocass.zip|cprogolf.zip",
+              "decocass.zip|cprogolf.zip"
+            ]
+          }
+        },
+        {
+          "name": "Pro Soccer (DECO).mra",
+          "sha": "eabfc27658362d306f2e455db5f068d5e87164be",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-DECOCassette_MiSTer/main/releases/Pro%20Soccer%20(DECO).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Pro Soccer",
+            "rbf": "DECOCassette",
+            "zips": [
+              "decocass.zip|cpsoccer.zip",
+              "decocass.zip|cpsoccer.zip"
+            ]
+          }
+        },
+        {
+          "name": "Pro Tennis (DECO).mra",
+          "sha": "f30fa1488570b7e2bead903d643d3a00e43aa8b1",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-DECOCassette_MiSTer/main/releases/Pro%20Tennis%20(DECO).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Pro Tennis",
+            "rbf": "DECOCassette",
+            "zips": [
+              "decocass.zip|cptennis.zip",
+              "decocass.zip|cptennis.zip"
+            ]
+          }
+        },
+        {
+          "name": "Rootin' Tootin' (DECO).mra",
+          "sha": "d13699d021f0544d55a49bc77b88fa86fa574cd0",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-DECOCassette_MiSTer/main/releases/Rootin'%20Tootin'%20(DECO).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Rootin Tootin",
+            "rbf": "DECOCassette",
+            "zips": [
+              "decocass.zip|clapapa.zip|clapapa2.zip",
+              "decocass.zip|clapapa.zip|clapapa2.zip"
+            ]
+          }
+        },
+        {
+          "name": "Scrum Try (DECO).mra",
+          "sha": "edc22b39672e85424556a943c89a306dda7a7b2f",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-DECOCassette_MiSTer/main/releases/Scrum%20Try%20(DECO).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Scrum Try",
+            "rbf": "DECOCassette",
+            "zips": [
+              "decocass.zip|cscrtry.zip",
+              "decocass.zip|cscrtry.zip"
+            ]
+          }
+        },
+        {
+          "name": "Skater (DECO).mra",
+          "sha": "73fab792cc4ff55687ca85cbb5842437f41d2a4b",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-DECOCassette_MiSTer/main/releases/Skater%20(DECO).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Skater",
+            "rbf": "DECOCassette",
+            "zips": [
+              "decocass.zip|cskater.zip",
+              "decocass.zip|cskater.zip"
+            ]
+          }
+        },
+        {
+          "name": "Super Astro Fighter (DECO).mra",
+          "sha": "c81374fc0985a0d475ae219a8ab91e454499458e",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-DECOCassette_MiSTer/main/releases/Super%20Astro%20Fighter%20(DECO).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Super Astro Fighter",
+            "rbf": "DECOCassette",
+            "zips": [
+              "decocass.zip|csuperas.zip",
+              "decocass.zip|csuperas.zip"
+            ]
+          }
+        },
+        {
+          "name": "Super Doubles Tennis (DECO).mra",
+          "sha": "5aa9476168f99faf6dad5f0cfcdc1972abf83e4e",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-DECOCassette_MiSTer/main/releases/Super%20Doubles%20Tennis%20(DECO).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Super Doubles Tennis",
+            "rbf": "DECOCassette",
+            "zips": [
+              "decocass.zip|csdtenis.zip",
+              "decocass.zip|csdtenis.zip"
+            ]
+          }
+        },
+        {
+          "name": "Sweet Heart (DECO).mra",
+          "sha": "2bc31b2b05ee77c989482214c00387cde0c57ed4",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-DECOCassette_MiSTer/main/releases/Sweet%20Heart%20(DECO).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Sweet Heart",
+            "rbf": "DECOCassette",
+            "zips": [
+              "decocass.zip|cdiscon1.zip|csweetht.zip",
+              "decocass.zip|cdiscon1.zip|csweetht.zip"
+            ]
+          }
+        },
+        {
+          "name": "Terranean (DECO).mra",
+          "sha": "0cf542dcc9a01b8344fab42bf1f8e424c921f404",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-DECOCassette_MiSTer/main/releases/Terranean%20(DECO).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Terranean",
+            "rbf": "DECOCassette",
+            "zips": [
+              "decocass.zip|cterrani.zip",
+              "decocass.zip|cterrani.zip"
+            ]
+          }
+        },
+        {
+          "name": "The Tower (DECO).mra",
+          "sha": "237ed4b461d46c78853938e02007495360923ce1",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-DECOCassette_MiSTer/main/releases/The%20Tower%20(DECO).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "The Tower",
+            "rbf": "DECOCassette",
+            "zips": [
+              "decocass.zip|ctower.zip",
+              "decocass.zip|ctower.zip"
+            ]
+          }
+        },
+        {
+          "name": "Tornado (DECO).mra",
+          "sha": "2521d9da066f7652c4244e5aac6bb2cd736d27d6",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-DECOCassette_MiSTer/main/releases/Tornado%20(DECO).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Tornado",
+            "rbf": "DECOCassette",
+            "zips": [
+              "decocass.zip|ctornado.zip",
+              "decocass.zip|ctornado.zip"
+            ]
+          }
+        }
+      ]
+    },
+    {
       "name": "Arcade-Defender_MiSTer",
       "description": "Arcade: Defender for MiSTer",
       "readme": "---------------------------------------------------------------------------------\n-- Arcade: Defender port to MiSTer by Sorgelig\n-- 22 October 2017\n-- \n---------------------------------------------------------------------------------\n-- Defender by Dar (darfpga@aol.fr) (10 October 2017)\n-- http://darfpga.blogspot.fr\n--\n---------------------------------------------------------------------------------\n-- gen_ram.vhd\n-------------------------------- \n-- Copyright 2005-2008 by Peter Wendrich (pwsoft@syntiac.com)\n-- http://www.syntiac.com/fpga64.html\n---------------------------------------------------------------------------------\n-- cpu09l - Version : 0128\n-- Synthesizable 6809 instruction compatible VHDL CPU core\n-- Copyright (C) 2003 - 2010 John Kent\n---------------------------------------------------------------------------------\n-- cpu68 - Version 9th Jan 2004 0.8\n-- 6800/01 compatible CPU core \n-- GNU public license - December 2002 : John E. Kent\n---------------------------------------------------------------------------------\n-- \n-- \n-- Keyboard players inputs :\n--\n--   F3 : Add coin\n--   F2 : Start 2 players\n--   F1 : Start 1 player\n--   SPACE            : Fire  \n--   RIGHT/LEFT arrow : Thrust\n--   UP    arrow : Move up \n--   DOWN  arrow : Move down\n--   SHIFT       : Reverse ship direction\n--   CTRL        : Smart bomb\n--   W           : Hyperspace\n--\n-- Keyboard Service inputs :\n--\n--   A : advance\n--   U : auto/up (!manual/down)\n--   H : high score reset\n--\n-- Mame Keys\n--  1 : Start 1 Player\n--  2 : Start 2 Player\n-- 5,6: Add coin\n--\n-- Joystick support.\n-- \n-- \n---------------------------------------------------------------------------------\n\n                                *** Attention ***\n\nROMs are not included. In order to use this arcade, you need to provide the\ncorrect ROMs.\n\nTo simplify the process .mra files are provided in the releases folder, that\nspecifies the required ROMs with checksums. The ROMs .zip filename refers to the\ncorresponding file of the M.A.M.E. project.\n\nPlease refer to https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms for\ninformation on how to setup and use the environment.\n\nQuickreference for folders and file placement:\n\n/_Arcade/<game name>.mra\n/_Arcade/cores/<game rbf>.rbf\n/_Arcade/mame/<mame rom>.zip\n/_Arcade/hbmame/<hbmame rom>.zip\n",
@@ -5005,7 +5617,7 @@
         },
         {
           "name": "Dig Dug (Rev 2).mra",
-          "sha": "e4be2dc3fdfea9cbbce9bea30ae58774f46ad97a",
+          "sha": "32d95ede5cfe3fa1ba0d61c2e49f2528ddbff7ac",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-DigDug_MiSTer/master/releases/Dig%20Dug%20(Rev%202).mra",
           "type": "MRA",
           "extra": {
@@ -5802,32 +6414,6 @@
             "rbf": "Finalizer",
             "zips": [
               "finalizr.zip"
-            ]
-          }
-        },
-        {
-          "name": "Finalizer - Super Transformation (Set 2) [bl].mra",
-          "sha": "f48d6013c902f3025567d8f2a3f340f1346493aa",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Finalizer_MiSTer/main/releases/Finalizer%20-%20Super%20Transformation%20(Set%202)%20%5Bbl%5D.mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Finalizer: Super Transformation",
-            "rbf": "Finalizer",
-            "zips": [
-              "finalizr.zip|finalizrb.zip"
-            ]
-          }
-        },
-        {
-          "name": "Finalizer - Super Transformation (Set 2).mra",
-          "sha": "fbbb1f7beeea8888df9bdbec8334067de6a8157e",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Finalizer_MiSTer/main/releases/Finalizer%20-%20Super%20Transformation%20(Set%202).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Finalizer: Super Transformation",
-            "rbf": "Finalizer",
-            "zips": [
-              "finalizr.zip|finalizra.zip"
             ]
           }
         }
@@ -7024,6 +7610,48 @@
       "fork": false,
       "url": "https://github.com/MiSTer-devel/Arcade-GnG_MiSTer",
       "releases": []
+    },
+    {
+      "name": "Arcade-GulfWarII_MiSTer",
+      "description": "MiSTer core for the Korean bootleg game Gulf War 2",
+      "readme": "# Comad's Gulf War II\n\n## Disclosures\n\n**THIS IS A VIBE CODED CORE BASED ON MAME AND ERIN OLAFSON'S\n[EXCELLENT TOAPLAN MiSTer FRAMEWORK](https://github.com/va7deo/). IT HAS BEEN EXTENSIVELY TESTED AND MATCHED TO MAME BEHAVIOR (TO THE BEST OF MY ABILITY)**\n\n## Overview\n\nI think, rather than try to summarize the game for you, it's better to just pull the overview from the [Bootleg Games Wiki](https://bootleggames.fandom.com/wiki/Gulf_War_II)\n\n>The game takes place in the real Gulf War, which happened from 1990-1991. The players fights against Iraq armed forces in 10 stages full of action, but starting from stage 11, the game loops back from stage 1, but on harder difficulties.\n\nNow, before you ask...\n\n>As the title suggests it was a \"sequel\" to the first Gulf War game, there was never a Gulf War I...\n\n## Notes\n\n- Some CRTs might struggle with the weird 54.9hz refresh rate that the core spits out (both my Sony L5s hate it - but the JVCs are fine with it). There is an toggle in the Video Options to force 60hz.\n\n## Project Basis\n\n- Toaplan scaffolding: based on Erin Olafson / va7deo's\n  [`Toaplan Work`](https://github.com/va7deo?tab=repositories) and the wider va7deo Toaplan core family.\n- Behavioral reference: MAME's Toaplan driver behavior for Gulf War II,\n  `toaplan_dsp.cpp`, and shared Toaplan video devices.\n- ROM definitions and MRAs: based on MAME 0.287 set definitions.\n- Code written by Codex\n\n## External Modules\n\n| Local path | Function | Credit / upstream |\n| --- | --- | --- |\n| `rtl/modules/fx68k/` | Motorola 68000 compatible CPU | Jorge Cwik / [jtPerceval/fx68k](https://github.com/jtPerceval/fx68k) |\n| `rtl/modules/T80/` | Z80 compatible sound CPU | Daniel Wallner, MikeJ, Sorgelig, and [T80 contributors](https://github.com/mist-devel/T80) |\n| `rtl/modules/opl2_fpga_MiSTer/` | Active YM3812/OPL2 audio path | [gtaylormb/opl2_fpga_MiSTer](https://github.com/gtaylormb/opl2_fpga_MiSTer), derived from `opl3_fpga`/`opl2_fpga` work |\n| `rtl/modules/IKA32010/` | TMS320C10-class DSP softcore | Sehyeon Kim (Raki) / [ika-musume/IKA32010](https://github.com/ika-musume/IKA32010) |\n",
+      "archived": false,
+      "fork": false,
+      "url": "https://github.com/MiSTer-devel/Arcade-GulfWarII_MiSTer",
+      "releases": [
+        {
+          "name": "Arcade-GulfWarII_20260704.rbf",
+          "sha": "e68ee4b545c60635519fed74330d1a0bd5a3adb6",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-GulfWarII_MiSTer/main/releases/Arcade-GulfWarII_20260704.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Gulf War II (set 1).mra",
+          "sha": "7a9e2379cc7893757e9d8146d207ca53f99f480f",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-GulfWarII_MiSTer/main/releases/Gulf%20War%20II%20(set%201).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Gulf War II (set 1)",
+            "rbf": "GulfWarII",
+            "zips": [
+              "gulfwar2.zip"
+            ]
+          }
+        },
+        {
+          "name": "Gulf War II (set 2).mra",
+          "sha": "0d30109606522768f7583dc7745c89543a3c0af0",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-GulfWarII_MiSTer/main/releases/_alternatives/_Gulf%20War%20II/Gulf%20War%20II%20(set%202).mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Gulf War II (set 2)",
+            "rbf": "GulfWarII",
+            "zips": [
+              "gulfwar2a.zip|gulfwar2.zip"
+            ]
+          }
+        }
+      ]
     },
     {
       "name": "Arcade-GundamSD_MiSTer",
@@ -9928,19 +10556,6 @@
           "type": "RBF"
         },
         {
-          "name": "Jackal (W) [bl].mra",
-          "sha": "64385ef38c0be26f00d66b5573477ae8dd5038fa",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Jackal_MiSTer/main/releases/Jackal%20(W)%20%5Bbl%5D.mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Jackal",
-            "rbf": "Jackal",
-            "zips": [
-              "jackal.zip|jackalbl.zip"
-            ]
-          }
-        },
-        {
           "name": "Jackal (W).mra",
           "sha": "d1f3c1cc958b52054aab896a81dc99befe29848a",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Jackal_MiSTer/main/releases/Jackal%20(W).mra",
@@ -9950,58 +10565,6 @@
             "rbf": "Jackal",
             "zips": [
               "jackal.zip"
-            ]
-          }
-        },
-        {
-          "name": "Jackal (W, Rotary).mra",
-          "sha": "95df35e0eb119767b2165efeb40399c8800a95f4",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Jackal_MiSTer/main/releases/Jackal%20(W%2C%20Rotary).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Jackal",
-            "rbf": "Jackal",
-            "zips": [
-              "jackal.zip|jackalr.zip"
-            ]
-          }
-        },
-        {
-          "name": "Tokushu Butai Jackal (JP).mra",
-          "sha": "b548d269a3d28e0785d4e856f1c435a8351183a9",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Jackal_MiSTer/main/releases/Tokushu%20Butai%20Jackal%20(JP).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Tokushu Butai Jackal",
-            "rbf": "Jackal",
-            "zips": [
-              "jackal.zip|jackalj.zip"
-            ]
-          }
-        },
-        {
-          "name": "Top Gunner (US) [bl].mra",
-          "sha": "eed7b81c0ee0358c9c66624f98d2057c912a6383",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Jackal_MiSTer/main/releases/Top%20Gunner%20(US)%20%5Bbl%5D.mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Top Gunner",
-            "rbf": "Jackal",
-            "zips": [
-              "jackal.zip|topgunbl.zip"
-            ]
-          }
-        },
-        {
-          "name": "Top Gunner (US).mra",
-          "sha": "94f2a24d0238ef393b655508ef912321311f3f05",
-          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Jackal_MiSTer/main/releases/Top%20Gunner%20(US).mra",
-          "type": "MRA",
-          "extra": {
-            "name": "Top Gunner",
-            "rbf": "Jackal",
-            "zips": [
-              "jackal.zip|topgunr.zip"
             ]
           }
         }
@@ -10345,6 +10908,12 @@
           "name": "Kangaroo_20260622.rbf",
           "sha": "3e9a0b38ec8b32785f03b418bd42b4d0ed242e0d",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Kangaroo_MiSTer/main/releases/Kangaroo_20260622.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Kangaroo_20260702.rbf",
+          "sha": "21ae506091f4421b7de4f4f9600c417266719632",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Kangaroo_MiSTer/main/releases/Kangaroo_20260702.rbf",
           "type": "RBF"
         }
       ]
@@ -10864,7 +11433,13 @@
           "sha": "6101e35dc87c33157ae85b0c9a8bf4752078ce05",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MCR2_MiSTer/master/releases/Kozmik%20Krooz'r.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Kozmik Krooz'r",
+            "rbf": "mcr2",
+            "zips": [
+              "kroozr.zip"
+            ]
+          }
         },
         {
           "name": "Satan's Hollow (Set 1).mra",
@@ -12105,7 +12680,13 @@
           "sha": "1d63d270218a783203cc3377433fa98bfa4b652e",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pacman_MiSTer/master/releases/Crush%20Roller%20(Set%202).mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Crush Roller",
+            "rbf": "pacman",
+            "zips": [
+              "crush.zip|crush2.zip"
+            ]
+          }
         },
         {
           "name": "Dream Shopper.mra",
@@ -14712,7 +15293,14 @@
           "sha": "b8fa3a03baacaa6b2e98cc56ec6b0ffae21494e7",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SegaVICZ80_MiSTer/main/releases/Pulsar.mra",
           "type": "MRA",
-          "extra": null
+          "extra": {
+            "name": "Pulsar",
+            "rbf": "SegaVICZ80",
+            "zips": [
+              "pulsar.zip|sspaceat.zip",
+              "/sound/pulsar.zip"
+            ]
+          }
         }
       ]
     },
@@ -20141,7 +20729,7 @@
     {
       "name": "C64_MiSTer",
       "description": null,
-      "readme": "# C64 for [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\nBased on FPGA64 by Peter Wendrich with heavy later modifications by different people.\n\n## Features\n- C64 and C64GS modes\n- C1541 read/write/format support in raw GCR mode (*.D64, *.G64)\n- C1581 read/write support (*.D81)\n- Parallel C1541 port for faster (~20x) loading time using DolphinDOS\n- External IEC through USER_IO port\n- Almost all cartridge formats (*.CRT)\n- Direct file injection (*.PRG)\n- Dual SID with several degrees of mixing 6581/8580 from stereo to mono\n- Similar to 6581 and 8580 SID filters\n- REU 16MB and GeoRAM 4MB memory expanders\n- OPL2 sound expander\n- Pause option when OSD is opened\n- 4 joysticks mode\n- Snac DB9 joysticks support (via UserIO)\n- Autofire with 2 different speed on DB9 Snac joysticks \n- RS232 with VIC-1011 and UP9600 modes either internal or through USER_IO\n- Loadable Kernal/C1541 ROMs\n- Special reduced border mode for 16:9 display\n- C128/Smart Turbo mode up to 4x\n- Real-time clock\n- Drive OSD showing mount status, read/write activity and current track\n\n## Installation\nCopy the *.rbf to the root of the SD card. Copy disks/carts to C64 folder.\n\n## Usage\n\n### Keyboard\nNote: F2, F4, F6, F8, Left/Up keys automatically activate Shift key.\n\n| Key       | Function                                     |\n|:---------:|----------------------------------------------|\n| F9        | Arrow-up key                                 |\n| F10       | = key                                        |\n| F11       | Restore key. Also special key in AR/FC carts |\n| Alt, Tab  | C= key                                       |\n| PgUp      | Tape play/pause                              |\n<br>\n\n![keyboard-mapping](https://github.com/mister-devel/C64_MiSTer/blob/master/keymap.gif)\n\n### Using without keyboard\nIf your controller has more than four buttons then you can map a couple of buttons to **Mod1** and **Mod2** to add twelve frequently used keys; for example, to skip the intros and start the game.\n\n|                       | \u2192           | \u2193           | \u2190           | \u2191           | Fire1    | Fire2   | Fire3   | Paddle                      |\n|:---------------------:|:-----------:|:-----------:|:-----------:|:-----------:|:--------:|:-------:|:-------:|:---------------------------:|\n| **Mod1**              | Cursor<br>\u2192 | Cursor<br>\u2193 | Cursor<br>\u2190 | Cursor<br>\u2191 | Enter    | Space   | Esc     | Alt+ESC (LOAD\"*\" then RUN)  |\n| **Mod2**              | 1           | 2           | 3           | 4           | 5        | 0       | Y       | N                           |\n| **Mod1 + Mod2**       | F1          | F2          | F3          | F4          | F5       | F6      | F7      | F8                          |\n\nWith maps above and using Dolphin DOS you can issue **F7** to list the files on disk, then move cursor to required file, then issue **Alt+ESC** to load it and run.\n\n### Loadable ROM\nAlternative ROM can be loaded from OSD: Hardware->Load System ROM.\nFormat is simple concatenation of BASIC + Kernal.rom + C1541.rom\n\nTo create the ROM in DOS or Windows, gather your files in one place and use the following command from the DOS prompt. \nThe easiest place to acquire the ROM files is from the VICE distribution. BASIC and KERNAL are in the C64 directory,\nand dos1541 is in the Drives directory.\n\n`COPY BASIC + KERNAL + dos1541 MYOWN.ROM /B`\n\nTo use JiffyDOS or another alternative kernel, replace the filenames with the name of your ROM or BIN file. (Note, you must use the 1541-II ROM. The ROM for the original 1541 only covers half the drive ROM and does not work with emulators.)\n\n`COPY /B BASIC.bin +JiffyDOS_C64.bin +JiffyDOS_1541-II.bin MYOWN.ROM`\n\nTo confirm you have the correct image, the BOOT.ROM created must be exactly 32768 or 49152 (in case of 32KB C1541 ROM) bytes long. \n\nTwo loadable ROM sets are provided: **DolphinDOS v2.0** and **SpeedDOS v2.7**. Both ROMs support the parallel Disk Port (more info below). DolphinDOS is the faster of the two.\n\nFor **C1581** you can use separate ROM with size up to 32768 bytes.\n\n### Autoload the cartridge\nIn OSD->Hardware page you can choose Boot Cartridge, so every time a core is loaded, this cartridge will be loaded too.\n\n### Parallel port\nAre you tired of long loading times and fast loaders aren't really fast when comparing to other systems? \n\nIn OSD->Hardware set **System ROM: Loadable**. Then load the provided [DolphinDOS_2.0.rom](releases/DolphinDOS_2.0.rom) via OSD->Hardware->**System ROM: C64+C1541**. Also make sure that OSD-Drives->**Parallel Port: Enabled**. You will get about **20x times faster** loading from disks!\n\nThe C64 User Port is a historical bottleneck because the Parallel Disk cable, RS232 modems, and 4-Player Joystick adapters all require exclusive access to it. The MiSTer tries to be smart about this:\n* If the core detects activity on the disk serial lines, it assumes a fast loader is engaging and instantly grants the User Port to the Parallel Disk drive.\n* Once disk activity stops for exactly 0.5 seconds, the User Port is automatically handed back to the RS232 module or the 4-Player Joystick adapter. \n\nCaution: The parallel port for disk drives is only enabled if you load a C64+Drive ROM where the Drive ROM portion is exactly **32KB** (like with the provided Dolphin DOS or Speed DOS). The standard kernal and e.g. JiffyDOS do not have special Drive ROMs (16KB), and thus the parallel port will be disabled (regardless of setting in drives).\n\nJiffyDOS is a fast-serial replacement for standard kernal and achieves fast loading without the parallel port.\n### Turbo modes\n\n**C128 mode:** this is C128 compatible turbo mode available in C64 mode on Commodore 128 and can be controlled from software, so games written with this turbo mode support will take advantage of this.\n\n**Smart mode:** In this mode any access to disk will disable turbo mode for short time enough to finish disk operations, thus you will have turbo mode without losing disk operations.\n\n### RS232\n\nPrimary function of RS232 is emulated dial-up connection to old-fashioned BBS. **CCGMS Ultimate** is recommended (Don't use CCGMS 2021 - it's buggy version). It supports both standard 2400 VIC-1011 and more advanced UP9600 modes.\n\n**Note:** DolphinDOS and SpeedDOS kernals have no RS232 routines so most RS232 software doesn't work with these kernals!\n\n### GeoRAM\nSupported up to 4MB of memory. GeoRAM is connected if no other cart is loaded. It's automatically disabled when cart is loaded, then enabled when cart unloaded.\n\n### REU\nSupported standard 512KB, expanded 2MB with wrapping inside 512KB blocks (for compatibility) and linear 16MB size with full 16MB counter wrap.\nSupport for REU files.\n\nGeoRAM and REU don't conflict each other and can be both enabled.\n\n### USER_IO pins\n\n| USER_IO | USB 3.0 name | Signal name |\n|:-------:|:-------------|:------------|\n|   0     |    D+        | RS232 RX    |\n|   1     |    D-        | RS232 TX    |\n|   2     |    TX-       | IEC /CLK    |\n|   3     |    GND_d     | IEC /RESET  |\n|   4     |    RX+       | IEC /DATA   |\n|   5     |    RX-       | IEC /ATN    |\n\nAll signals are 3.3V LVTTL and must be properly converted to required levels!\nWith a level converter this allows connecting the MisterFPGA for example to a real 1541 or printer!\n\n### Real-time clock\n\nRTC is PCF8583 connected to tape port.\nTo get real time in GEOS, copy CP-CLOCK64-1.3 from supplied [disk](https://github.com/mister-devel/C64_MiSTer/blob/master/releases/CP-ClockF83_1.3.D64) to GEOS system disk.\n\n### 1541 Drive\n\nThe C64 core supports both C1541 and C1581 drives with D64, T64, G64 and D81 disk images. Up to two drives #8 and #9 can be enabled and used simultaneously. A simulated C1541 drive is auto-enabled for D64, T64 and G64 images, while the C1581 is enabled for D81 images.\n\nAdvanced C1541 features:\n* Accurate low-level read logic based on original schematics\n* Physical disk rotation simulation\n* AGC flux events (weak bits)\n* Drive Overlay: an optional OSD showing current track and read/write activity\n\nImages mounted from inside zip files are strictly read only. For regular files, you can force write protection via the menu or by changing the file's read-only attribute. Caution: Changing the write-protect option for a drive only takes effect the next time you mount an image. Use the supplied empty disks for saving or copying to. Saving to a mounted (and writeable) image is done seamlessly in the background, there is no need to open the F12 Menu to force a save. You can monitor drive activity directly on-screen for both disk drives. The available modes are configurable via the drives menu: **Activity Only** (pops up only on activity), **If Mounted** (always visible if a disk is inserted),  and **Off**. The overlay shows the current track number and uses color coding to indicate reads (yellow), writes (red) and no activity (green).\n\nThe G64 format can accurately represent over 90% of original copy-protected software. However, getting protected software to load can sometimes be tricky. Always mount write protected, as some devious protections try to format your disk if they detect a copy and others even require being write protected to load. If a game fails to load, try the following steps:\n* Use the standard C64 kernal (disable fast loaders).\n* Toggle between PAL and NTSC modes via menu.\n* Try alternate dumps of the disk (alts).\n* Be patient! Some titles take a very long time to load.\n* Try multiple times (some protections are unreliable even on original hardware).\n* If all else fails, experiment with the drive speed and drive wobble settings.\n\nNote: In some cases protected disk will not work yet, or fall outside the scope of what the G64 format can accurately capture.\n",
+      "readme": "# C64 for [MiSTer](https://github.com/MiSTer-devel/Main_MiSTer/wiki)\n\nBased on FPGA64 by Peter Wendrich with heavy later modifications by different people.\n\n## Features\n- C64 and C64GS modes\n- C1541 read/write/format support in raw GCR mode (*.D64, *.G64)\n- C1581 read/write support (*.D81)\n- Parallel C1541 port for faster (~20x) loading time using DolphinDOS\n- External IEC through USER_IO port\n- Almost all cartridge formats (*.CRT)\n- Direct file injection (*.PRG)\n- Dual SID with several degrees of mixing 6581/8580 from stereo to mono\n- Similar to 6581 and 8580 SID filters\n- REU 16MB and GeoRAM 4MB memory expanders\n- OPL2 sound expander\n- Pause option when OSD is opened\n- 4 joysticks mode\n- Snac DB9 joysticks support (via UserIO) \n- RS232 with VIC-1011 and UP9600 modes either internal or through USER_IO\n- Loadable Kernal/C1541 ROMs\n- Special reduced border mode for 16:9 display\n- C128/Smart Turbo mode up to 4x\n- Real-time clock\n- Drive OSD showing mount status, read/write activity and current track\n- Complete C1530 Datasette implementation with on screen Counter and shortcuts keys\n\n## Installation\nCopy the *.rbf to the root of the SD card. Copy disks/carts to C64 folder.\n\n## Usage\n\n### Keyboard\nNote: F2, F4, F6, F8, Left/Up keys automatically activate Shift key.\n\n| Key                   | Function                                     |\n|:---------------------:|----------------------------------------------|\n| F9                    | Arrow-up key                                 |\n| F10                   | = key                                        |\n| F11                   | Restore key. Also special key in AR/FC carts |\n| Alt, Tab              | C= key                                       |\n| WIN + Cursor Up       | Tape Play / Stop                             |\n| WIN + Cursor Down     | Tape Stop                                    |\n| WIN + Cursor Left     | Tape Rewind                                  |\n| WIN + Cursor Right    | Tape Fast Forward                            |\n| WIN + Canc (or Del)   | Tape Counter Reset                           |\n<br>\n\n![keyboard-mapping](https://github.com/mister-devel/C64_MiSTer/blob/master/keymap.gif)\n\n### Using without keyboard\nIf your controller has more than four buttons then you can map a couple of buttons to **Mod1** and **Mod2** to add twelve frequently used keys; for example, to skip the intros and start the game.\n\n|                       | \u2192           | \u2193           | \u2190           | \u2191           | Fire1    | Fire2   | Fire3   | Paddle                      |\n|:---------------------:|:-----------:|:-----------:|:-----------:|:-----------:|:--------:|:-------:|:-------:|:---------------------------:|\n| **Mod1**              | Cursor<br>\u2192 | Cursor<br>\u2193 | Cursor<br>\u2190 | Cursor<br>\u2191 | Enter    | Space   | Esc     | Alt+ESC (LOAD\"*\" then RUN)  |\n| **Mod2**              | 1           | 2           | 3           | 4           | 5        | 0       | Y       | N                           |\n| **Mod1 + Mod2**       | F1          | F2          | F3          | F4          | F5       | F6      | F7      | F8                          |\n\nWith maps above and using Dolphin DOS you can issue **F7** to list the files on disk, then move cursor to required file, then issue **Alt+ESC** to load it and run.\n\n### Loadable ROM\nAlternative ROM can be loaded from OSD: Hardware->Load System ROM.\nFormat is simple concatenation of BASIC + Kernal.rom + C1541.rom\n\nTo create the ROM in DOS or Windows, gather your files in one place and use the following command from the DOS prompt. \nThe easiest place to acquire the ROM files is from the VICE distribution. BASIC and KERNAL are in the C64 directory,\nand dos1541 is in the Drives directory.\n\n`COPY BASIC + KERNAL + dos1541 MYOWN.ROM /B`\n\nTo use JiffyDOS or another alternative kernel, replace the filenames with the name of your ROM or BIN file. (Note, you must use the 1541-II ROM. The ROM for the original 1541 only covers half the drive ROM and does not work with emulators.)\n\n`COPY /B BASIC.bin +JiffyDOS_C64.bin +JiffyDOS_1541-II.bin MYOWN.ROM`\n\nTo confirm you have the correct image, the BOOT.ROM created must be exactly 32768 or 49152 (in case of 32KB C1541 ROM) bytes long. \n\nTwo loadable ROM sets are provided: **DolphinDOS v2.0** and **SpeedDOS v2.7**. Both ROMs support the parallel Disk Port (more info below). DolphinDOS is the faster of the two.\n\nFor **C1581** you can use separate ROM with size up to 32768 bytes.\n\n### Autoload the cartridge\nIn OSD->Hardware page you can choose Boot Cartridge, so every time a core is loaded, this cartridge will be loaded too.\n\n### C1530 and tape support\nIn OSD->Load *.TAP and choose a TAP file. When a TAP is mounted, on OSD all the commands for managing the C1530 will appear and the keyboard shortcuts will also be enabled. For show counter on display (HDMI and CRT), enable Tape Counter on OSD and save settings. \n\n### Parallel port\nAre you tired of long loading times and fast loaders aren't really fast when comparing to other systems? \n\nIn OSD->Hardware set **System ROM: Loadable**. Then load the provided [DolphinDOS_2.0.rom](releases/DolphinDOS_2.0.rom) via OSD->Hardware->**System ROM: C64+C1541**. Also make sure that OSD-Drives->**Parallel Port: Enabled**. You will get about **20x times faster** loading from disks!\n\nThe C64 User Port is a historical bottleneck because the Parallel Disk cable, RS232 modems, and 4-Player Joystick adapters all require exclusive access to it. The MiSTer tries to be smart about this:\n* If the core detects activity on the disk serial lines, it assumes a fast loader is engaging and instantly grants the User Port to the Parallel Disk drive.\n* Once disk activity stops for exactly 0.5 seconds, the User Port is automatically handed back to the RS232 module or the 4-Player Joystick adapter. \n\nCaution: The parallel port for disk drives is only enabled if you load a C64+Drive ROM where the Drive ROM portion is exactly **32KB** (like with the provided Dolphin DOS or Speed DOS). The standard kernal and e.g. JiffyDOS do not have special Drive ROMs (16KB), and thus the parallel port will be disabled (regardless of setting in drives).\n\nJiffyDOS is a fast-serial replacement for standard kernal and achieves fast loading without the parallel port.\n### Turbo modes\n\n**C128 mode:** this is C128 compatible turbo mode available in C64 mode on Commodore 128 and can be controlled from software, so games written with this turbo mode support will take advantage of this.\n\n**Smart mode:** In this mode any access to disk will disable turbo mode for short time enough to finish disk operations, thus you will have turbo mode without losing disk operations.\n\n### RS232\n\nPrimary function of RS232 is emulated dial-up connection to old-fashioned BBS. **CCGMS Ultimate** is recommended (Don't use CCGMS 2021 - it's buggy version). It supports both standard 2400 VIC-1011 and more advanced UP9600 modes.\n\n**Note:** DolphinDOS and SpeedDOS kernals have no RS232 routines so most RS232 software doesn't work with these kernals!\n\n### GeoRAM\nSupported up to 4MB of memory. GeoRAM is connected if no other cart is loaded. It's automatically disabled when cart is loaded, then enabled when cart unloaded.\n\n### REU\nSupported standard 512KB, expanded 2MB with wrapping inside 512KB blocks (for compatibility) and linear 16MB size with full 16MB counter wrap.\nSupport for REU files.\n\nGeoRAM and REU don't conflict each other and can be both enabled.\n\n### USER_IO pins\n\n| USER_IO | USB 3.0 name | Signal name |\n|:-------:|:-------------|:------------|\n|   0     |    D+        | RS232 RX    |\n|   1     |    D-        | RS232 TX    |\n|   2     |    TX-       | IEC /CLK    |\n|   3     |    GND_d     | IEC /RESET  |\n|   4     |    RX+       | IEC /DATA   |\n|   5     |    RX-       | IEC /ATN    |\n\nAll signals are 3.3V LVTTL and must be properly converted to required levels!\nWith a level converter this allows connecting the MisterFPGA for example to a real 1541 or printer!\n\n### Real-time clock\n\nRTC is PCF8583 connected to tape port.\nTo get real time in GEOS, copy CP-CLOCK64-1.3 from supplied [disk](https://github.com/mister-devel/C64_MiSTer/blob/master/releases/CP-ClockF83_1.3.D64) to GEOS system disk.\n\n### 1541 Drive\n\nThe C64 core supports both C1541 and C1581 drives with D64, T64, G64 and D81 disk images. Up to two drives #8 and #9 can be enabled and used simultaneously. A simulated C1541 drive is auto-enabled for D64, T64 and G64 images, while the C1581 is enabled for D81 images.\n\nAdvanced C1541 features:\n* Accurate low-level read logic based on original schematics\n* Physical disk rotation simulation\n* AGC flux events (weak bits)\n* Drive Overlay: an optional OSD showing current track and read/write activity\n\nImages mounted from inside zip files are strictly read only. For regular files, you can force write protection via the menu or by changing the file's read-only attribute. Caution: Changing the write-protect option for a drive only takes effect the next time you mount an image. Use the supplied empty disks for saving or copying to. Saving to a mounted (and writeable) image is done seamlessly in the background, there is no need to open the F12 Menu to force a save. You can monitor drive activity directly on-screen for both disk drives. The available modes are configurable via the drives menu: **Activity Only** (pops up only on activity), **If Mounted** (always visible if a disk is inserted),  and **Off**. The overlay shows the current track number and uses color coding to indicate reads (yellow), writes (red) and no activity (green).\n\nThe G64 format can accurately represent over 90% of original copy-protected software. However, getting protected software to load can sometimes be tricky. Always mount write protected, as some devious protections try to format your disk if they detect a copy and others even require being write protected to load. If a game fails to load, try the following steps:\n* Use the standard C64 kernal (disable fast loaders).\n* Toggle between PAL and NTSC modes via menu.\n* Try alternate dumps of the disk (alts).\n* Be patient! Some titles take a very long time to load.\n* Try multiple times (some protections are unreliable even on original hardware).\n* If all else fails, experiment with the drive speed and drive wobble settings.\n\nNote: In some cases protected disk will not work yet, or fall outside the scope of what the G64 format can accurately capture.\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/C64_MiSTer",
@@ -21308,7 +21896,7 @@
     {
       "name": "Distribution_MiSTer",
       "description": "This repository contains all the files that you'll want in your MiSTer",
-      "readme": "# MiSTer Distribution\n\nThis repository contains all the files that you'll want in your MiSTer.\n\nYou may download all of them at once as a zip through the [following link](https://github.com/MiSTer-devel/Distribution_MiSTer/archive/refs/heads/main.zip). Once you have them, place them as-is in your [properly initialised SD card](https://github.com/MiSTer-devel/mr-fusion), and everything should work out of the box.\n\n### MiSTer Project\n\nIf you want to check more about the MiSTer project, please check [this wiki](https://github.com/MiSTer-devel/Wiki_MiSTer/wiki).\n\n### MiSTer Downloader\n\nFor downloading all of these files directly from your MiSTer, use the [MiSTer Downloader](https://github.com/MiSTer-devel/Downloader_MiSTer).\n\n#### Tags that you may use with 'Download Filters' feature\n\nRead about how to use them [here](https://github.com/MiSTer-devel/Downloader_MiSTer/blob/main/docs/download-filters.md).\n\n##### List:\n\n`acornatom`, `acornelectron`, `adam`, `adctest`, `adventurevision`, `alicemc10`, `all_filters`, `altair8800`, `alternatives`, `amiga`, `amstrad`, `amstrad-pcw`, `amstradpcw`, `ao486`, `apogee`, `apple-i`, `apple-ii`, `aquarius`, `arcade`, `arcade-actfancer`, `arcade-arkanoid`, `arcade-asteroids`, `arcade-asteroidsdeluxe`, `arcade-astrocade`, `arcade-atarisys1`, `arcade-ataritetris`, `arcade-athena`, `arcade-bagman`, `arcade-bankpanic`, `arcade-battlezone`, `arcade-berzerk`, `arcade-blackwidow`, `arcade-blockade`, `arcade-bloodbros`, `arcade-blueprint`, `arcade-bombjack`, `arcade-bosconian`, `arcade-breakout`, `arcade-bubsys`, `arcade-bubsysrom`, `arcade-burgertime`, `arcade-burningrubber`, `arcade-canyonbomber`, `arcade-cave`, `arcade-cavebanpresto`, `arcade-centipede`, `arcade-chameleon`, `arcade-chinagate`, `arcade-cityconnection`, `arcade-computerspace`, `arcade-congobongo`, `arcade-cores`, `arcade-cosmic`, `arcade-cosmicguerilla`, `arcade-crazyballoon`, `arcade-crazyclimber`, `arcade-crazykong`, `arcade-crystalcastles`, `arcade-darius`, `arcade-darius2ninjawarriors`, `arcade-darius2warriorblade`, `arcade-dcon`, `arcade-deco16`, `arcade-defender`, `arcade-digdug`, `arcade-dominos`, `arcade-donkeykong`, `arcade-donkeykong3`, `arcade-donkeykongjunior`, `arcade-dorodon`, `arcade-dottorikun`, `arcade-druaga`, `arcade-exerion`, `arcade-exidy2`, `arcade-expressraider`, `arcade-finalizer`, `arcade-foodfight`, `arcade-freeze`, `arcade-frenzy`, `arcade-galaga`, `arcade-galaxian`, `arcade-galivan`, `arcade-gaplus`, `arcade-gauntlet`, `arcade-gyruss`, `arcade-igspgm`, `arcade-ikariwarriors`, `arcade-inferno`, `arcade-iremm107`, `arcade-iremm62`, `arcade-iremm72`, `arcade-iremm90`, `arcade-iremm92`, `arcade-ironhorse`, `arcade-jackal`, `arcade-jailbreak`, `arcade-joust2`, `arcade-junofirst`, `arcade-kangaroo`, `arcade-kickandrun`, `arcade-ladybug`, `arcade-lunarlander`, `arcade-mariobros`, `arcade-mcr1`, `arcade-mcr2`, `arcade-mcr3`, `arcade-mcr3mono`, `arcade-mcr3scroll`, `arcade-missilecommand`, `arcade-moonpatrol`, `arcade-mrdo`, `arcade-mrjong`, `arcade-mysticmarathon`, `arcade-naughtyboy`, `arcade-ninjakun`, `arcade-pacman`, `arcade-pengo`, `arcade-penguinkunwars`, `arcade-performan`, `arcade-phoenix`, `arcade-pleiads`, `arcade-polyplay`, `arcade-pong`, `arcade-pooyan`, `arcade-popeye`, `arcade-psychic5`, `arcade-qbert`, `arcade-qix`, `arcade-rallyx`, `arcade-rbfs-only`, `arcade-riverpatrol`, `arcade-robotron`, `arcade-rshnatk`, `arcade-salamander`, `arcade-scootershooter`, `arcade-scramble`, `arcade-sdgundamps`, `arcade-segasys1`, `arcade-segavicz80`, `arcade-silverland`, `arcade-skysmasher`, `arcade-slapfight`, `arcade-sms`, `arcade-snk6502`, `arcade-snk_triplez80`, `arcade-solomonskey`, `arcade-sonson`, `arcade-spacefirebird`, `arcade-spaceinvaders`, `arcade-spacerace`, `arcade-sprint1`, `arcade-sprint2`, `arcade-st-v`, `arcade-starforce`, `arcade-starwars`, `arcade-subs`, `arcade-superbreakout`, `arcade-suprloco`, `arcade-taitof2`, `arcade-taitosj`, `arcade-tankbattalion`, `arcade-tecmo`, `arcade-tiamc1`, `arcade-timepilot`, `arcade-timepilot84`, `arcade-tnkiii`, `arcade-traverseusa`, `arcade-tropicalangel`, `arcade-turkeyshoot`, `arcade-tutankham`, `arcade-ultratank`, `arcade-vastar`, `arcade-vball`, `arcade-xevious`, `arcade-xsleena`, `arcade-zaxxon`, `arcade-zigzag`, `arcadelpf`, `arcadia`, `archie`, `arduboy`, `astrocade`, `atari2600`, `atari5200`, `atari7800`, `atari800`, `atarilynx`, `atarist`, `avision`, `ay-3-8500`, `bbcbridgecompanion`, `bbcmicro`, `bios`, `bk0011m`, `c128`, `c16`, `c64`, `cacert`, `casio_pv-1000`, `casio_pv-2000`, `cd-i`, `cdi`, `channelf`, `cheats`, `chess`, `chip8`, `coco2`, `coco3`, `coleco`, `colecoadam`, `colecovision`, `complexmultichromatic`, `computer`, `computer-cores`, `console`, `console-cd`, `console-cores`, `contrast_boost`, `controls_1_button`, `controls_2_buttons`, `controls_2_players`, `controls_3_buttons`, `controls_3_players`, `controls_4_buttons`, `controls_4_players`, `controls_5_buttons`, `controls_6_buttons`, `controls_dial`, `controls_move_2-way`, `controls_move_4-way`, `controls_move_8-way`, `controls_paddle`, `controls_spinner`, `controls_trackball`, `cores`, `corespecific`, `creativision`, `crt-simulation`, `displayspecific`, `docs`, `donut`, `downloader`, `downloader_bin`, `downloader_latest`, `drv`, `edsac`, `eg2000`, `enterprise`, `epochgalaxyii`, `essential`, `extra-utilities`, `famicom`, `fast_usb_polling`, `filters`, `filters_audio`, `filters_video`, `flappy`, `flappybird`, `font`, `galaksija`, `gamate`, `gameandwatch`, `gameboy`, `gameboy2p`, `gameboyadvance`, `gameboycolor`, `gamecontrollerdb`, `gamegear`, `gamegear2p`, `gamenwatch`, `gameoflife`, `games`, `gamma`, `gb`, `gba`, `gba2p`, `gbc`, `gbmidi`, `generalhardware`, `generallpf`, `genesis`, `genmidi`, `gnw`, `handheld2p`, `hbmame`, `homelab`, `ini_settings`, `inputtest`, `intellivision`, `interact`, `iq151`, `jaguar`, `jupiter`, `laser`, `laser310`, `lcd-general`, `lcd-integeronly`, `linux`, `lynx48`, `macplus`, `mame`, `mastersystem`, `megacd`, `megadrive`, `megadrive-core`, `megaduck`, `memtest`, `memtest_060mhz`, `memtest_100mhz`, `memtest_110mhz`, `memtest_120mhz`, `memtest_130mhz`, `memtest_140mhz`, `memtest_150mhz`, `memtest_160mhz`, `memtest_167mhz`, `menu`, `mgl`, `minimig`, `mister_example-ini`, `misterfirmware`, `misterlaggy`, `mra`, `msx`, `msx1`, `multicomp`, `myvision`, `n64`, `neogeo`, `neogeo-cd`, `nes`, `nintendo`, `no-mad-entry-mra`, `no-setname-mra`, `odyssey2`, `old`, `ondra_spo186`, `orao`, `oric`, `other`, `other-cores`, `overlays`, `palettes`, `pc88`, `pc8801`, `pcengine`, `pcenginecd`, `pcjr`, `pcxt`, `pdp1`, `pet2001`, `pmd85`, `pocketchallengev2`, `pokemonmini`, `poly_gamma`, `presets`, `psx`, `pure_gamma`, `ql`, `readme`, `rtc`, `rx78`, `s32x`, `samba_on`, `samcoupe`, `saturn`, `scanlines-adaptive`, `scanlines-brighter`, `scanlines-standard`, `screen_horizontal_scan_rate_15khz`, `screen_horizontal_scan_rate_31khz`, `screen_no_tate`, `screen_rotation_flip`, `screen_rotation_horizontal`, `screen_rotation_vertical_ccw`, `screen_rotation_vertical_ccw_no_flip`, `screen_rotation_vertical_cw`, `screen_rotation_vertical_cw_no_flip`, `screen_tate_ccw`, `screen_tate_ccw_no_flip`, `screen_tate_cw`, `screen_tate_cw_no_flip`, `screen_tate_flip`, `scripts`, `scv`, `segacd`, `segamark3`, `service-cores`, `sgb`, `shadow_masks`, `sharpmz`, `simplemonochrome`, `slugcross`, `sms`, `snes`, `sordm5`, `specialist`, `spectrum`, `spmx`, `sufami`, `super_vision_8000`, `superfamicom`, `supergameboy`, `supernes`, `supernintendo`, `supervision`, `supervision8000`, `svi328`, `tamagotchi`, `tandy1000`, `tatungeinstein`, `tgfx16`, `tgfx16-cd`, `tgfx16cd`, `ti-99_4a`, `ti994a`, `timezone`, `tk2000`, `tomyscramble`, `tomytutor`, `trs-80`, `tsconf`, `turbografx`, `turbografx16`, `turbografx16cd`, `turbografxcd`, `uk101`, `unlicensed_games`, `upscaling-lanczosbicubicetc`, `upscaling-recommended`, `upscaling-sharpbilinear`, `utility`, `vc4000`, `vector-06c`, `vector06`, `vector06c`, `vectrex`, `vic20`, `vt52`, `wifi`, `wonderswan`, `wonderswancolor`, `x68000`, `yctxt`, `zx-spectrum`, `zx81`, `zxnext`, `zxspectrum`\n\n##### Some relevant tag descriptions:\n\n- `arcade-cores` / `arcade`: All arcade cores and related files (MRA files).\n- `computer-cores` / `computer`: All computer cores and related folders.\n- `console-cores` / `console`: All console cores and related folders.\n- `other-cores` / `other`: All cores from the top folder Other with their related folders.\n- `service-cores` / `utility`: All utility cores and related folders.\n- `cores`: All cores (RBF files).\n- `mra`: All MRA files & folders.\n- `arcade-rbfs-only`: All arcade cores (RBF files) without related files.\n- `alternatives`: All MRA Alternatives & MRAs linked to the HBMame collection.\n- `handheld2p`: All 2 Player versions for Handheld cores.\n- `filters_video`: All video filters (`gamma` & `filters` & `shadow_masks`).\n- `all_filters`: All video & audio filters (`filters_video` & `filters_audio`).\n- `essential`: Menu core & MiSTer firmware.\n- `readme`: All README files.\n- `docs`: All documentation files & folders, including README files.\n- `extra-utilities`: All extra utilities that are installed in games folders of some computer cores.\n- `bios`: All bioses that are installed in the games folders for some computer & console cores.\n- `cheats`: All cheat files & folders.\n\n##### Tags based on the Arcade Database:\n\nThe following tags are calculated with the information contained in the [MiSTer Arcade Database](https://github.com/MiSTer-devel/ArcadeDatabase_MiSTer):\n\n- `unlicensed_games`: All arcade bootlegs, hacks or homebrew games\n- `controls_1_button`: All arcade games that use exactly 1 button.\n- `controls_2_buttons`: All arcade games that use exactly 2 buttons.\n- `controls_3_buttons`: All arcade games that use exactly 3 buttons.\n- `controls_4_buttons`: All arcade games that use exactly 4 buttons.\n- `controls_5_buttons`: All arcade games that use exactly 5 buttons.\n- `controls_6_buttons`: All arcade games that use exactly 6 buttons.\n- `controls_spinner`: All arcade games that require a spinner.\n- `controls_paddle`: All arcade games that require a paddle.\n- `controls_dial`: All arcade games that require a dial.\n- `controls_trackball`: All arcade games that require a trackball.\n- `controls_move_2-way`: All arcade games with 2-way directional movement (left-right or up-down).\n- `controls_move_4-way`: All arcade games with 4-way directional movement.\n- `controls_move_8-way`: All arcade games with 8-way omnidirectional movement.\n- `controls_2_players`: All arcade games that support up to two simultaneous players.\n- `controls_3_players`: All arcade games that support up to three simultaneous players.\n- `controls_4_players`: All arcade games that support up to four simultaneous players.\n- `screen_rotation_horizontal` / `screen_no_tate`: All arcade games designed for horizontal screens.\n- `screen_rotation_vertical_cw` / `screen_tate_cw`: All arcade games designed for clock-wise vertical screens. Including counter clock-wise with a flip option.\n- `screen_rotation_vertical_ccw` / `screen_tate_ccw`: All arcade games designed for counter clock-wise vertical screens. Including clock-wise with a flip option.\n- `screen_rotation_vertical_cw_no_flip` / `screen_tate_cw_no_flip`: All arcade games designed for clock-wise vertical screens without a flip option.\n- `screen_rotation_vertical_ccw_no_flip` / `screen_tate_ccw_no_flip`: All arcade games designed for counter clock-wise vertical screens without a flip option.\n- `screen_horizontal_scan_rate_15khz`: All arcade games only supported by 15kHz CRT screens.\n- `screen_horizontal_scan_rate_31khz`: All arcade games only supported by 31kHz CRT screens.\n\nIf there is any mismatch between one of the previous terms and the game, please report it in that Arcade Database repository.\n\n### Contributing\n\nYou are more than welcome to contribute to the [MiSTer-devel Organization](https://github.com/MiSTer-devel). But you can't do it by openening PRs to the main branch of this repository. This repository is only for file distribution. Whatever content shows up here depends on the other repositories of this organization, so you should target your PRs there.\n\nThere is a development branch in this repository for the content collection. Is fine to send PRs there but they should only modify the content collection scripts that are being used by the workflows.\n",
+      "readme": "# MiSTer Distribution\n\nThis repository contains all the files that you'll want in your MiSTer.\n\nYou may download all of them at once as a zip through the [following link](https://github.com/MiSTer-devel/Distribution_MiSTer/archive/refs/heads/main.zip). Once you have them, place them as-is in your [properly initialised SD card](https://github.com/MiSTer-devel/mr-fusion), and everything should work out of the box.\n\n### MiSTer Project\n\nIf you want to check more about the MiSTer project, please check [this wiki](https://github.com/MiSTer-devel/Wiki_MiSTer/wiki).\n\n### MiSTer Downloader\n\nFor downloading all of these files directly from your MiSTer, use the [MiSTer Downloader](https://github.com/MiSTer-devel/Downloader_MiSTer).\n\n#### Tags that you may use with 'Download Filters' feature\n\nRead about how to use them [here](https://github.com/MiSTer-devel/Downloader_MiSTer/blob/main/docs/download-filters.md).\n\n##### List:\n\n`acornatom`, `acornelectron`, `adam`, `adctest`, `adventurevision`, `alicemc10`, `all_filters`, `altair8800`, `alternatives`, `amiga`, `amstrad`, `amstrad-pcw`, `amstradpcw`, `ao486`, `apogee`, `apple-i`, `apple-ii`, `aquarius`, `arcade`, `arcade-actfancer`, `arcade-arkanoid`, `arcade-asteroids`, `arcade-asteroidsdeluxe`, `arcade-astrocade`, `arcade-atarisys1`, `arcade-ataritetris`, `arcade-athena`, `arcade-bagman`, `arcade-bankpanic`, `arcade-battlezone`, `arcade-berzerk`, `arcade-blackwidow`, `arcade-blockade`, `arcade-bloodbros`, `arcade-blueprint`, `arcade-bombjack`, `arcade-boogiewings`, `arcade-bosconian`, `arcade-breakout`, `arcade-bubsys`, `arcade-bubsysrom`, `arcade-burgertime`, `arcade-burningrubber`, `arcade-canyonbomber`, `arcade-cave`, `arcade-cavebanpresto`, `arcade-centipede`, `arcade-chameleon`, `arcade-chinagate`, `arcade-cityconnection`, `arcade-computerspace`, `arcade-congobongo`, `arcade-cores`, `arcade-cosmic`, `arcade-cosmicguerilla`, `arcade-crazyballoon`, `arcade-crazyclimber`, `arcade-crazykong`, `arcade-crystalcastles`, `arcade-darius`, `arcade-darius2ninjawarriors`, `arcade-darius2warriorblade`, `arcade-dcon`, `arcade-deco16`, `arcade-decocassette`, `arcade-defender`, `arcade-digdug`, `arcade-dominos`, `arcade-donkeykong`, `arcade-donkeykong3`, `arcade-donkeykongjunior`, `arcade-dorodon`, `arcade-dottorikun`, `arcade-druaga`, `arcade-exerion`, `arcade-exidy2`, `arcade-expressraider`, `arcade-finalizer`, `arcade-foodfight`, `arcade-freeze`, `arcade-frenzy`, `arcade-galaga`, `arcade-galaxian`, `arcade-galivan`, `arcade-gaplus`, `arcade-gauntlet`, `arcade-gulfwarii`, `arcade-gyruss`, `arcade-igspgm`, `arcade-ikariwarriors`, `arcade-inferno`, `arcade-iremm107`, `arcade-iremm62`, `arcade-iremm72`, `arcade-iremm90`, `arcade-iremm92`, `arcade-ironhorse`, `arcade-jackal`, `arcade-jailbreak`, `arcade-joust2`, `arcade-junofirst`, `arcade-kangaroo`, `arcade-kickandrun`, `arcade-ladybug`, `arcade-lunarlander`, `arcade-mariobros`, `arcade-mcr1`, `arcade-mcr2`, `arcade-mcr3`, `arcade-mcr3mono`, `arcade-mcr3scroll`, `arcade-missilecommand`, `arcade-moonpatrol`, `arcade-mrdo`, `arcade-mrjong`, `arcade-mysticmarathon`, `arcade-naughtyboy`, `arcade-ninjakun`, `arcade-pacman`, `arcade-pengo`, `arcade-penguinkunwars`, `arcade-performan`, `arcade-phoenix`, `arcade-pleiads`, `arcade-polyplay`, `arcade-pong`, `arcade-pooyan`, `arcade-popeye`, `arcade-psychic5`, `arcade-qbert`, `arcade-qix`, `arcade-rallyx`, `arcade-rbfs-only`, `arcade-riverpatrol`, `arcade-robotron`, `arcade-rshnatk`, `arcade-salamander`, `arcade-scootershooter`, `arcade-scramble`, `arcade-sdgundamps`, `arcade-segasys1`, `arcade-segavicz80`, `arcade-silverland`, `arcade-skysmasher`, `arcade-slapfight`, `arcade-sms`, `arcade-snk6502`, `arcade-snk_triplez80`, `arcade-solomonskey`, `arcade-sonson`, `arcade-spacefirebird`, `arcade-spaceinvaders`, `arcade-spacerace`, `arcade-sprint1`, `arcade-sprint2`, `arcade-st-v`, `arcade-starforce`, `arcade-starwars`, `arcade-subs`, `arcade-superbreakout`, `arcade-suprloco`, `arcade-taitof2`, `arcade-taitosj`, `arcade-tankbattalion`, `arcade-tecmo`, `arcade-tiamc1`, `arcade-timepilot`, `arcade-timepilot84`, `arcade-tnkiii`, `arcade-traverseusa`, `arcade-tropicalangel`, `arcade-turkeyshoot`, `arcade-tutankham`, `arcade-ultratank`, `arcade-vastar`, `arcade-vball`, `arcade-xevious`, `arcade-xsleena`, `arcade-zaxxon`, `arcade-zigzag`, `arcadelpf`, `arcadia`, `archie`, `arduboy`, `astrocade`, `atari2600`, `atari5200`, `atari7800`, `atari800`, `atarilynx`, `atarist`, `avision`, `ay-3-8500`, `bbcbridgecompanion`, `bbcmicro`, `bios`, `bk0011m`, `c128`, `c16`, `c64`, `cacert`, `casio_pv-1000`, `casio_pv-2000`, `cd-i`, `cdi`, `channelf`, `cheats`, `chess`, `chip8`, `coco2`, `coco3`, `coleco`, `colecoadam`, `colecovision`, `complexmultichromatic`, `computer`, `computer-cores`, `console`, `console-cd`, `console-cores`, `contrast_boost`, `controls_1_button`, `controls_2_buttons`, `controls_2_players`, `controls_3_buttons`, `controls_3_players`, `controls_4_buttons`, `controls_4_players`, `controls_5_buttons`, `controls_6_buttons`, `controls_dial`, `controls_move_2-way`, `controls_move_4-way`, `controls_move_8-way`, `controls_paddle`, `controls_spinner`, `controls_trackball`, `cores`, `corespecific`, `creativision`, `crt-simulation`, `displayspecific`, `docs`, `donut`, `downloader`, `downloader_bin`, `downloader_latest`, `drv`, `edsac`, `eg2000`, `enterprise`, `epochgalaxyii`, `essential`, `extra-utilities`, `famicom`, `fast_usb_polling`, `filters`, `filters_audio`, `filters_video`, `flappy`, `flappybird`, `font`, `galaksija`, `gamate`, `gameandwatch`, `gameboy`, `gameboy2p`, `gameboyadvance`, `gameboycolor`, `gamecontrollerdb`, `gamegear`, `gamegear2p`, `gamenwatch`, `gameoflife`, `games`, `gamma`, `gb`, `gba`, `gba2p`, `gbc`, `gbmidi`, `generalhardware`, `generallpf`, `genesis`, `genmidi`, `gnw`, `handheld2p`, `hbmame`, `homelab`, `ini_settings`, `inputtest`, `intellivision`, `interact`, `iq151`, `jaguar`, `jupiter`, `laser`, `laser310`, `lcd-general`, `lcd-integeronly`, `linux`, `lynx48`, `macplus`, `mame`, `mastersystem`, `megacd`, `megadrive`, `megadrive-core`, `megaduck`, `memtest`, `memtest_060mhz`, `memtest_100mhz`, `memtest_110mhz`, `memtest_120mhz`, `memtest_130mhz`, `memtest_140mhz`, `memtest_150mhz`, `memtest_160mhz`, `memtest_167mhz`, `menu`, `mgl`, `minimig`, `mister_example-ini`, `misterfirmware`, `misterlaggy`, `mra`, `msx`, `msx1`, `multicomp`, `myvision`, `n64`, `neogeo`, `neogeo-cd`, `nes`, `nintendo`, `no-mad-entry-mra`, `no-setname-mra`, `odyssey2`, `old`, `ondra_spo186`, `orao`, `oric`, `other`, `other-cores`, `overlays`, `palettes`, `pc88`, `pc8801`, `pcengine`, `pcenginecd`, `pcjr`, `pcxt`, `pdp1`, `pet2001`, `pmd85`, `pocketchallengev2`, `pokemonmini`, `poly_gamma`, `presets`, `psx`, `pure_gamma`, `ql`, `readme`, `rtc`, `rx78`, `s32x`, `samba_on`, `samcoupe`, `saturn`, `scanlines-adaptive`, `scanlines-brighter`, `scanlines-standard`, `screen_horizontal_scan_rate_15khz`, `screen_horizontal_scan_rate_31khz`, `screen_no_tate`, `screen_rotation_flip`, `screen_rotation_horizontal`, `screen_rotation_vertical_ccw`, `screen_rotation_vertical_ccw_no_flip`, `screen_rotation_vertical_cw`, `screen_rotation_vertical_cw_no_flip`, `screen_tate_ccw`, `screen_tate_ccw_no_flip`, `screen_tate_cw`, `screen_tate_cw_no_flip`, `screen_tate_flip`, `scripts`, `scv`, `segacd`, `segamark3`, `service-cores`, `sgb`, `shadow_masks`, `sharpmz`, `simplemonochrome`, `slugcross`, `sms`, `snes`, `sordm5`, `specialist`, `spectrum`, `spmx`, `sufami`, `super_vision_8000`, `superfamicom`, `supergameboy`, `supernes`, `supernintendo`, `supervision`, `supervision8000`, `svi328`, `tamagotchi`, `tandy1000`, `tatungeinstein`, `tgfx16`, `tgfx16-cd`, `tgfx16cd`, `ti-99_4a`, `ti994a`, `timezone`, `tk2000`, `tomyscramble`, `tomytutor`, `trs-80`, `tsconf`, `turbografx`, `turbografx16`, `turbografx16cd`, `turbografxcd`, `uk101`, `unlicensed_games`, `upscaling-lanczosbicubicetc`, `upscaling-recommended`, `upscaling-sharpbilinear`, `utility`, `vc4000`, `vector-06c`, `vector06`, `vector06c`, `vectrex`, `vic20`, `vt52`, `wifi`, `wonderswan`, `wonderswancolor`, `x68000`, `yctxt`, `zx-spectrum`, `zx81`, `zxnext`, `zxspectrum`\n\n##### Some relevant tag descriptions:\n\n- `arcade-cores` / `arcade`: All arcade cores and related files (MRA files).\n- `computer-cores` / `computer`: All computer cores and related folders.\n- `console-cores` / `console`: All console cores and related folders.\n- `other-cores` / `other`: All cores from the top folder Other with their related folders.\n- `service-cores` / `utility`: All utility cores and related folders.\n- `cores`: All cores (RBF files).\n- `mra`: All MRA files & folders.\n- `arcade-rbfs-only`: All arcade cores (RBF files) without related files.\n- `alternatives`: All MRA Alternatives & MRAs linked to the HBMame collection.\n- `handheld2p`: All 2 Player versions for Handheld cores.\n- `filters_video`: All video filters (`gamma` & `filters` & `shadow_masks`).\n- `all_filters`: All video & audio filters (`filters_video` & `filters_audio`).\n- `essential`: Menu core & MiSTer firmware.\n- `readme`: All README files.\n- `docs`: All documentation files & folders, including README files.\n- `extra-utilities`: All extra utilities that are installed in games folders of some computer cores.\n- `bios`: All bioses that are installed in the games folders for some computer & console cores.\n- `cheats`: All cheat files & folders.\n\n##### Tags based on the Arcade Database:\n\nThe following tags are calculated with the information contained in the [MiSTer Arcade Database](https://github.com/MiSTer-devel/ArcadeDatabase_MiSTer):\n\n- `unlicensed_games`: All arcade bootlegs, hacks or homebrew games\n- `controls_1_button`: All arcade games that use exactly 1 button.\n- `controls_2_buttons`: All arcade games that use exactly 2 buttons.\n- `controls_3_buttons`: All arcade games that use exactly 3 buttons.\n- `controls_4_buttons`: All arcade games that use exactly 4 buttons.\n- `controls_5_buttons`: All arcade games that use exactly 5 buttons.\n- `controls_6_buttons`: All arcade games that use exactly 6 buttons.\n- `controls_spinner`: All arcade games that require a spinner.\n- `controls_paddle`: All arcade games that require a paddle.\n- `controls_dial`: All arcade games that require a dial.\n- `controls_trackball`: All arcade games that require a trackball.\n- `controls_move_2-way`: All arcade games with 2-way directional movement (left-right or up-down).\n- `controls_move_4-way`: All arcade games with 4-way directional movement.\n- `controls_move_8-way`: All arcade games with 8-way omnidirectional movement.\n- `controls_2_players`: All arcade games that support up to two simultaneous players.\n- `controls_3_players`: All arcade games that support up to three simultaneous players.\n- `controls_4_players`: All arcade games that support up to four simultaneous players.\n- `screen_rotation_horizontal` / `screen_no_tate`: All arcade games designed for horizontal screens.\n- `screen_rotation_vertical_cw` / `screen_tate_cw`: All arcade games designed for clock-wise vertical screens. Including counter clock-wise with a flip option.\n- `screen_rotation_vertical_ccw` / `screen_tate_ccw`: All arcade games designed for counter clock-wise vertical screens. Including clock-wise with a flip option.\n- `screen_rotation_vertical_cw_no_flip` / `screen_tate_cw_no_flip`: All arcade games designed for clock-wise vertical screens without a flip option.\n- `screen_rotation_vertical_ccw_no_flip` / `screen_tate_ccw_no_flip`: All arcade games designed for counter clock-wise vertical screens without a flip option.\n- `screen_horizontal_scan_rate_15khz`: All arcade games only supported by 15kHz CRT screens.\n- `screen_horizontal_scan_rate_31khz`: All arcade games only supported by 31kHz CRT screens.\n\nIf there is any mismatch between one of the previous terms and the game, please report it in that Arcade Database repository.\n\n### Contributing\n\nYou are more than welcome to contribute to the [MiSTer-devel Organization](https://github.com/MiSTer-devel). But you can't do it by openening PRs to the main branch of this repository. This repository is only for file distribution. Whatever content shows up here depends on the other repositories of this organization, so you should target your PRs there.\n\nThere is a development branch in this repository for the content collection. Is fine to send PRs there but they should only modify the content collection scripts that are being used by the workflows.\n",
       "archived": false,
       "fork": false,
       "url": "https://github.com/MiSTer-devel/Distribution_MiSTer",
@@ -23385,6 +23973,12 @@
           "name": "GameOfLife_20200430.rbf",
           "sha": "259f388f82a309a3469da413bc6cd7425a6b1d98",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/Life_MiSTer/master/releases/GameOfLife_20200430.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "GameOfLife_20260702.rbf",
+          "sha": "5aa947e4d350aadfa5cfb391329cdd263b6206c8",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/Life_MiSTer/master/releases/GameOfLife_20260702.rbf",
           "type": "RBF"
         }
       ]
@@ -27056,6 +27650,12 @@
           "name": "PDP1_20190101.rbf",
           "sha": "402e1eb875a0050fbd26a0f3dfa7571db6960017",
           "url": "https://raw.githubusercontent.com/MiSTer-devel/PDP1_MiSTer/master/releases/PDP1_20190101.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "PDP1_20260702.rbf",
+          "sha": "7c4036c546d8f5d6c95df1d66099b26e2e10a67a",
+          "url": "https://raw.githubusercontent.com/MiSTer-devel/PDP1_MiSTer/master/releases/PDP1_20260702.rbf",
           "type": "RBF"
         }
       ]

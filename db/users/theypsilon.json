@@ -850,6 +850,15 @@
       "releases": []
     },
     {
+      "name": "RetroAchievementsDB_MiSTer",
+      "description": "Distribution for RetroAchievements Cores & Firmware in MiSTer",
+      "readme": "# RetroAchievementsDB MiSTer\n\nThis repository publishes a custom MiSTer Downloader database for\n[RetroAchievements](https://retroachievements.org/) enabled\n[MiSTer cores](https://github.com/MiSTer-devel).\n\nThe generated database installs the RetroAchievements MiSTer runtime, the\nachievement sound, and the `_RA_Cores/` folder containing release-backed RA core\nRBFs and matching MGL launchers. It is intended for use with\n[Downloader](https://github.com/MiSTer-devel/Downloader_MiSTer) and\n[Update All](https://github.com/theypsilon/Update_All_MiSTer).\n\nThe RetroAchievements core forks are maintained by\n[odelot](https://github.com/odelot).\n\n## Installation\n\nThe primary installation path is\n[Update All](https://github.com/theypsilon/Update_All_MiSTer). Enable this\ndatabase from the Update All Settings screen, under the Other Cores submenu,\nthen run Update All to fetch the RetroAchievements runtime and cores.\n\nAs an alternative when not using Update All, install the generated Downloader\ndrop-in database from the `db` branch:\n\n```text\nhttps://raw.githubusercontent.com/theypsilon/RetroAchievementsDB_MiSTer/db/downloader_theypsilon_RetroAchievementsDB_MiSTer.zip\n```\n\nExtract the `.ini` file from that ZIP into the root of your MiSTer SD card, next\nto `downloader.ini`, then run Downloader or Update All.\n\nManual configuration is also possible by adding this section to `downloader.ini`:\n\n```ini\n[theypsilon/RetroAchievementsDB_MiSTer]\ndb_url = https://raw.githubusercontent.com/theypsilon/RetroAchievementsDB_MiSTer/db/db.json.zip\n```\n\n## Contents\n\nThe database is generated automatically from the latest releases of\nRetroAchievements core forks under `odelot/*_MiSTer`. Publishing is skipped when\nthe generated database has no real content changes compared with the current\npublished DB.\n",
+      "archived": false,
+      "fork": false,
+      "url": "https://github.com/theypsilon/RetroAchievementsDB_MiSTer",
+      "releases": []
+    },
+    {
       "name": "Scripts_MiSTer",
       "description": "Miscellaneous Bash scripts for MiSTer",
       "readme": "# Scripts_MiSTer\nMiscellaneous Bash scripts for MiSTer\n",
@@ -861,7 +870,7 @@
     {
       "name": "Unofficial_Distribution_MiSTer",
       "description": null,
-      "readme": "# theypsilon Unofficial Distribution\n\nThis repository contains some unofficial MiSTer cores. No new cores will be added.\n\n#### List of Tags that you may use with the Downloader and the 'Custom Download Filters' feature.\n\n`alternatives`, `arcade`, `arcade-cores`, `arcade-nemesis`, `arcade-rbfs-only`, `bios`, `computer`, `computer-cores`, `controls_3_buttons`, `controls_move_8-way`, `cores`, `docs`, `extra-utilities`, `games`, `hbmame`, `maclc`, `mame`, `mra`, `readme`, `screen_horizontal_scan_rate_15khz`, `screen_no_tate`, `screen_rotation_horizontal`",
+      "readme": "# theypsilon Unofficial Distribution\n\nThis repository contains some unofficial MiSTer cores. No new cores will be added.\n\n#### List of Tags that you may use with the Downloader and the 'Custom Download Filters' feature.\n\n`alternatives`, `arcade`, `arcade-cores`, `arcade-nemesis`, `arcade-rbfs-only`, `bios`, `computer`, `computer-cores`, `controls_3_buttons`, `controls_move_8-way`, `cores`, `docs`, `extra-utilities`, `games`, `hbmame`, `maclc`, `maclc_unstable_20260703_a48c5ea`, `mame`, `mra`, `readme`, `screen_horizontal_scan_rate_15khz`, `screen_no_tate`, `screen_rotation_horizontal`",
       "archived": false,
       "fork": false,
       "url": "https://github.com/theypsilon/Unofficial_Distribution_MiSTer",
