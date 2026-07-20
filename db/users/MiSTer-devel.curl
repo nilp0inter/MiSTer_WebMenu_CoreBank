@@ -1,6 +1,11 @@
 insecure
 create-dirs
 
+# 3DO
+url = "https://raw.githubusercontent.com/MiSTer-devel/3DO_MiSTer/main/releases/3DO_20260717.rbf"
+output = "_Others/3DO_20260717.rbf"
+
+
 # AcornAtom
 url = "https://raw.githubusercontent.com/MiSTer-devel/AcornAtom_MiSTer/main/releases/AcornAtom_20251001.rbf"
 output = "_Others/AcornAtom_20251001.rbf"
@@ -41,6 +46,11 @@ url = "https://raw.githubusercontent.com/MiSTer-devel/Apogee_MiSTer/master/relea
 output = "_Computer/Apogee_20260603.rbf"
 
 
+# Apple-IIgs
+url = "https://raw.githubusercontent.com/MiSTer-devel/Apple-IIgs_MiSTer/main/releases/Apple-IIgs_20260712.rbf"
+output = "_Others/Apple-IIgs_20260712.rbf"
+
+
 # Apple-II
 url = "https://raw.githubusercontent.com/MiSTer-devel/Apple-II_MiSTer/master/releases/Apple-II_20260603.rbf"
 output = "_Computer/Apple-II_20260603.rbf"
@@ -49,6 +59,11 @@ output = "_Computer/Apple-II_20260603.rbf"
 # Apple-I
 url = "https://raw.githubusercontent.com/MiSTer-devel/Apple-I_MiSTer/master/releases/Apple-I_20251001.rbf"
 output = "_Computer/Apple-I_20251001.rbf"
+
+
+# Apple-Lisa
+url = "https://raw.githubusercontent.com/MiSTer-devel/Apple-Lisa_MiSTer/main/releases/Apple-Lisa_20260712.rbf"
+output = "_Others/Apple-Lisa_20260712.rbf"
 
 
 # AsteroidsDeluxe
@@ -82,8 +97,8 @@ output = "_Arcade/cores/Athena_20240525.rbf"
 
 
 # Bagman
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Bagman_MiSTer/master/releases/Arcade-Bagman_20240524.rbf"
-output = "_Arcade/cores/Bagman_20240524.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Bagman_MiSTer/master/releases/Arcade-Bagman_20260713.rbf"
+output = "_Arcade/cores/Bagman_20260713.rbf"
 
 
 # BankPanic
@@ -102,8 +117,8 @@ output = "_Arcade/cores/Berzerk_20240714.rbf"
 
 
 # BlackWidow
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-BlackWidow_MiSTer/master/releases/Arcade-BlackWidow_20240525.rbf"
-output = "_Arcade/cores/BlackWidow_20240525.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-BlackWidow_MiSTer/master/releases/Arcade-BlackWidow_20260717.rbf"
+output = "_Arcade/cores/BlackWidow_20260717.rbf"
 
 
 # Blockade
@@ -122,8 +137,8 @@ output = "_Arcade/cores/BombJack_20240804.rbf"
 
 
 # Breakout
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Breakout_MiSTer/master/releases/Arcade-Breakout_20240525.rbf"
-output = "_Arcade/cores/Breakout_20240525.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Breakout_MiSTer/master/releases/Arcade-Breakout_20260714.rbf"
+output = "_Arcade/cores/Breakout_20260714.rbf"
 
 
 # BurgerTime
@@ -132,8 +147,8 @@ output = "_Arcade/cores/BurgerTime_20240525.rbf"
 
 
 # BurningRubber
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-BurningRubber_MiSTer/master/releases/Arcade-BurningRubber_20240525.rbf"
-output = "_Arcade/cores/BurningRubber_20240525.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-BurningRubber_MiSTer/master/releases/Arcade-BurningRubber_20260713.rbf"
+output = "_Arcade/cores/BurningRubber_20260713.rbf"
 
 
 # CanyonBomber
@@ -202,8 +217,8 @@ output = "_Others/DECOCassette_20260630.rbf"
 
 
 # Defender
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Defender_MiSTer/master/releases/Arcade-Defender_20260225.rbf"
-output = "_Arcade/cores/Defender_20260225.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Defender_MiSTer/master/releases/Arcade-Defender_20260714.rbf"
+output = "_Arcade/cores/Defender_20260714.rbf"
 
 
 # DigDug
@@ -292,8 +307,8 @@ output = "_Arcade/cores/Galivan_20240526.rbf"
 
 
 # Gaplus
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Gaplus_MiSTer/master/releases/Arcade-Gaplus_20240526.rbf"
-output = "_Arcade/cores/Gaplus_20240526.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Gaplus_MiSTer/master/releases/Arcade-Gaplus_20260714.rbf"
+output = "_Arcade/cores/Gaplus_20260714.rbf"
 
 
 # Gauntlet
@@ -312,13 +327,13 @@ output = "_Arcade/cores/Gyruss_20240526.rbf"
 
 
 # IGSPGM
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/Arcade-IGSPGM_20260627.rbf"
-output = "_Arcade/cores/IGSPGM_20260627.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/Arcade-IGSPGM_20260707.rbf"
+output = "_Arcade/cores/IGSPGM_20260707.rbf"
 
 
 # IkariWarriors
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IkariWarriors_MiSTer/main/releases/IkariWarriors_20240615.rbf"
-output = "_Others/IkariWarriors_20240615.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IkariWarriors_MiSTer/main/releases/IkariWarriors_20260714.rbf"
+output = "_Others/IkariWarriors_20260714.rbf"
 
 
 # IremM107
@@ -372,8 +387,8 @@ output = "_Others/JunoFirst_20260531.rbf"
 
 
 # Kangaroo
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Kangaroo_MiSTer/main/releases/Kangaroo_20260702.rbf"
-output = "_Others/Kangaroo_20260702.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Kangaroo_MiSTer/main/releases/Kangaroo_20260710.rbf"
+output = "_Others/Kangaroo_20260710.rbf"
 
 
 # KickAndRun
@@ -397,13 +412,13 @@ output = "_Arcade/cores/MarioBros_20240802.rbf"
 
 
 # MCR1
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MCR1_MiSTer/master/releases/Arcade-MCR1_20240525.rbf"
-output = "_Arcade/cores/MCR1_20240525.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MCR1_MiSTer/master/releases/Arcade-MCR1_20260418.rbf"
+output = "_Arcade/cores/MCR1_20260418.rbf"
 
 
 # MCR2
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MCR2_MiSTer/master/releases/Arcade-MCR2_20240525.rbf"
-output = "_Arcade/cores/MCR2_20240525.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MCR2_MiSTer/master/releases/Arcade-MCR2_20260418.rbf"
+output = "_Arcade/cores/MCR2_20260418.rbf"
 
 
 # MCR3Mono
@@ -417,8 +432,8 @@ output = "_Arcade/cores/MCR3Scroll_20240525.rbf"
 
 
 # MCR3
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MCR3_MiSTer/master/releases/Arcade-MCR3_20240525.rbf"
-output = "_Arcade/cores/MCR3_20240525.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MCR3_MiSTer/master/releases/Arcade-MCR3_20260417.rbf"
+output = "_Arcade/cores/MCR3_20260417.rbf"
 
 
 # MissileCommand
@@ -447,8 +462,8 @@ output = "_Arcade/cores/MysticMarathon_20240530.rbf"
 
 
 # NaughtyBoy
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-NaughtyBoy_MiSTer/main/releases/NaughtyBoy_20250428.rbf"
-output = "_Others/NaughtyBoy_20250428.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-NaughtyBoy_MiSTer/main/releases/NaughtyBoy_20260714.rbf"
+output = "_Others/NaughtyBoy_20260714.rbf"
 
 
 # NinjaKun
@@ -472,8 +487,8 @@ output = "_Arcade/cores/PenguinKunWars_20240531.rbf"
 
 
 # Performan
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Performan_MiSTer/main/releases/Arcade-Performan_20240601.rbf"
-output = "_Arcade/cores/Performan_20240601.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Performan_MiSTer/main/releases/Arcade-Performan_20260714.rbf"
+output = "_Arcade/cores/Performan_20260714.rbf"
 
 
 # Phoenix
@@ -497,8 +512,8 @@ output = "_Arcade/cores/Pong_20240601.rbf"
 
 
 # Pooyan
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pooyan_MiSTer/master/releases/Arcade-Pooyan_20240601.rbf"
-output = "_Arcade/cores/Pooyan_20240601.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pooyan_MiSTer/master/releases/Arcade-Pooyan_20260710.rbf"
+output = "_Arcade/cores/Pooyan_20260710.rbf"
 
 
 # Popeye
@@ -507,8 +522,8 @@ output = "_Arcade/cores/Popeye_20240601.rbf"
 
 
 # QBert
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-QBert_MiSTer/master/releases/Arcade-QBert_20260322.rbf"
-output = "_Arcade/cores/QBert_20260322.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-QBert_MiSTer/master/releases/Arcade-QBert_20260715.rbf"
+output = "_Arcade/cores/QBert_20260715.rbf"
 
 
 # Qix
@@ -552,8 +567,8 @@ output = "_Arcade/cores/Scramble_20260408.rbf"
 
 
 # SEGASYS1
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SEGASYS1_MiSTer/main/releases/Arcade-SEGASYS1_20240602.rbf"
-output = "_Arcade/cores/SEGASYS1_20240602.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SEGASYS1_MiSTer/main/releases/Arcade-SEGASYS1_20260714.rbf"
+output = "_Arcade/cores/SEGASYS1_20260714.rbf"
 
 
 # SegaVICZ80
@@ -567,8 +582,8 @@ output = "_Arcade/cores/SilverLand_20240602.rbf"
 
 
 # SlapFight
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SlapFight_MiSTer/main/releases/Arcade-SlapFight_20260127.rbf"
-output = "_Arcade/cores/SlapFight_20260127.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SlapFight_MiSTer/main/releases/Arcade-SlapFight_20260713.rbf"
+output = "_Arcade/cores/SlapFight_20260713.rbf"
 
 
 # SNK6502
@@ -702,8 +717,8 @@ output = "_Arcade/cores/Zaxxon_20240525.rbf"
 
 
 # ZigZag
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-ZigZag_MiSTer/master/releases/Arcade-ZigZag_20240525.rbf"
-output = "_Arcade/cores/ZigZag_20240525.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-ZigZag_MiSTer/master/releases/Arcade-ZigZag_20260710.rbf"
+output = "_Arcade/cores/ZigZag_20260710.rbf"
 
 
 # Arcadia
@@ -807,8 +822,8 @@ output = "_Others/CoCo3_20240514.rbf"
 
 
 # ColecoAdam
-url = "https://raw.githubusercontent.com/MiSTer-devel/ColecoAdam_MiSTer/master/releases/ColecoAdam_20250905.rbf"
-output = "_Others/ColecoAdam_20250905.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/ColecoAdam_MiSTer/master/releases/ColecoAdam_20260714.rbf"
+output = "_Others/ColecoAdam_20260714.rbf"
 
 
 # ColecoVision
@@ -842,8 +857,8 @@ output = "_Others/Enterprise_20251125.rbf"
 
 
 # EpochGalaxyII
-url = "https://raw.githubusercontent.com/MiSTer-devel/EpochGalaxy2_MiSTer/master/releases/EpochGalaxyII_20250717.rbf"
-output = "_Others/EpochGalaxyII_20250717.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/EpochGalaxy2_MiSTer/master/releases/EpochGalaxyII_20260529.rbf"
+output = "_Others/EpochGalaxyII_20260529.rbf"
 
 
 # FlappyBird
@@ -1082,8 +1097,8 @@ output = "_Others/SGB_20241127.rbf"
 
 
 # SharpMZ
-url = "https://raw.githubusercontent.com/MiSTer-devel/SharpMZ_MiSTer/master/releases/SharpMZ_20210709.rbf"
-output = "_Computer/SharpMZ_20210709.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/SharpMZ_MiSTer/master/releases/SharpMZ_20260702.rbf"
+output = "_Computer/SharpMZ_20260702.rbf"
 
 
 # SMS
@@ -2361,6 +2376,21 @@ url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/
 output = "_Arcade/Photo Y2K (ver. 105).mra"
 
 
+# Puzzle Star (ver. 100MG, WORLD).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/Puzzle%20Star%20(ver.%20100MG%2C%20WORLD).mra"
+output = "_Arcade/Puzzle Star (ver. 100MG, WORLD).mra"
+
+
+# Puzzli 2 (ver. 100, WORLD).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/Puzzli%202%20(ver.%20100%2C%20WORLD).mra"
+output = "_Arcade/Puzzli 2 (ver. 100, WORLD).mra"
+
+
+# Puzzli 2 Super (ver. 200, WORLD).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/Puzzli%202%20Super%20(ver.%20200%2C%20WORLD).mra"
+output = "_Arcade/Puzzli 2 Super (ver. 200, WORLD).mra"
+
+
 # S.V.G. - Spectral vs Generation (ver. 200).mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/S.V.G.%20-%20Spectral%20vs%20Generation%20(ver.%20200).mra"
 output = "_Arcade/S.V.G. - Spectral vs Generation (ver. 200).mra"
@@ -2699,6 +2729,16 @@ output = "_Arcade/Photo Y2K (ver. 103, Japanese Board).mra"
 # Photo Y2K (ver. 104).mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Photo%20Y2K/Photo%20Y2K%20(ver.%20104).mra"
 output = "_Arcade/Photo Y2K (ver. 104).mra"
+
+
+# Puzzli 2 Super (ver. 200, TW).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Puzzli%202%20Super/Puzzli%202%20Super%20(ver.%20200%2C%20TW).mra"
+output = "_Arcade/Puzzli 2 Super (ver. 200, TW).mra"
+
+
+# Puzzli 2 (ver. 100, TW).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/_alternatives/_Puzzli%202/Puzzli%202%20(ver.%20100%2C%20TW).mra"
+output = "_Arcade/Puzzli 2 (ver. 100, TW).mra"
 
 
 # S.V.G. - Spectral vs Generation (ver. 101HK).mra
@@ -3226,16 +3266,6 @@ url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Kangaroo_MiSTer/mai
 output = "_Arcade/Funky Fish.mra"
 
 
-# Kangaroo (Atari).mra
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Kangaroo_MiSTer/main/releases/Kangaroo%20(Atari).mra"
-output = "_Arcade/Kangaroo (Atari).mra"
-
-
-# Kangaroo (Bootleg).mra
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Kangaroo_MiSTer/main/releases/Kangaroo%20(Bootleg).mra"
-output = "_Arcade/Kangaroo (Bootleg).mra"
-
-
 # Kangaroo.mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Kangaroo_MiSTer/main/releases/Kangaroo.mra"
 output = "_Arcade/Kangaroo.mra"
@@ -3469,11 +3499,6 @@ output = "_Arcade/Eggor.mra"
 # Eyes (US, Set 1).mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pacman_MiSTer/master/releases/Eyes%20(US%2C%20Set%201).mra"
 output = "_Arcade/Eyes (US, Set 1).mra"
-
-
-# Jr. Pac-Man (Speedup Hack).mra
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Pacman_MiSTer/master/releases/Jr.%20Pac-Man%20(Speedup%20Hack).mra"
-output = "_Arcade/Jr. Pac-Man (Speedup Hack).mra"
 
 
 # Jr. Pac-Man.mra

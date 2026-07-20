@@ -841,6 +841,15 @@
       "releases": []
     },
     {
+      "name": "MultiDatabases_MiSTer",
+      "description": null,
+      "readme": "# MultiDatabases MiSTer\n\nThis repository generates independent custom databases for the\n[MiSTer Downloader](https://github.com/MiSTer-devel/Downloader_MiSTer).\nEach database follows an upstream project and installs only the files published\nby that project. Commercial game data, BIOS files, and `MiSTer.ini` changes are\noutside the databases.\n\n| Folder | Database ID | Upstream |\n| --- | --- | --- |\n| [`dreamster`](dreamster/) | `MultiDatabases/dreamster` | [`skmp/DreamSTer`](https://github.com/skmp/DreamSTer) |\n| [`duke3d`](duke3d/) | `MultiDatabases/duke3d` | [`neofreno/Mister_Duke3d`](https://github.com/neofreno/Mister_Duke3d) |\n| [`mister-quake`](mister-quake/) | `MultiDatabases/mister-quake` | [`neofreno/Mister_Quake`](https://github.com/neofreno/Mister_Quake) |\n| [`sonic-mania`](sonic-mania/) | `MultiDatabases/sonic-mania` | [`kimchiman52/sonic-mania-mister`](https://github.com/kimchiman52/sonic-mania-mister) |\n| [`paprium`](paprium/) | `MultiDatabases/paprium` | [`MisterPezz82/Paprium_MegaDrive_MiSTer`](https://github.com/MisterPezz82/Paprium_MegaDrive_MiSTer) |\n\nOpen a database folder above for its installation instructions.\n",
+      "archived": false,
+      "fork": false,
+      "url": "https://github.com/theypsilon/MultiDatabases_MiSTer",
+      "releases": []
+    },
+    {
       "name": "Names_TXT_Updater_MiSTer",
       "description": "Enjoy better core names in MiSTer thanks to community curated names.txt files",
       "readme": "# Names_TXT_Updater_MiSTer\nEnjoy better core names in MiSTer thanks to community curated names.txt files\n\nThis repository is obsolete, please use [Update All](https://github.com/theypsilon/Update_All_MiSTer) and activate the Names TXT option in the Settings Screen instead.\n",
@@ -848,6 +857,22 @@
       "fork": false,
       "url": "https://github.com/theypsilon/Names_TXT_Updater_MiSTer",
       "releases": []
+    },
+    {
+      "name": "Paprium_MegaDrive_MiSTer",
+      "description": "Mister port of the Everdrive Paprium core - nuked-md, MD+ CDDA",
+      "readme": "Paprium for MiSTer Mega Drive\n\nA MiSTer Mega Drive core fork bringing Everdrive Pro Style Paprium support to Mister FPGA, with working MCU/cart behaviour, streamed graphics, CDDA/MD+ music, \n\nThis project builds on years of community reverse-engineering, preservation, emulator work, and flash-cart development.\n\nBased on prior work by:\nKrikzz / mega-ppm\nProject Little Man\nTheHpman / MAME Paprium research\nMAVProxyUser / Genesis Plus GX Paprium PR\nPaprium preservation community\n\nSpecial thanks:\nMiSTer Mega Drive core developers\nGenesis Plus GX / MAME contributors\nEveryone who helped test, document, and preserve Paprium\n\n\nROM and WAV assets are not included.\nBring your own Paprium dump and audio files.\n\nIf only there were some kind of archive on the internet...\n\n## Required Files\n\nCreate this folder on your MiSTer SD card:\n\n`/media/fat/games/MegaDrive/Paprium/`\n\nPlace the ROM and WAV files there:\n\n```text\n\u251c\u2500\u2500 Paprium.md\n\u251c\u2500\u2500 paprium.cue\n\u251c\u2500\u2500 01 Theme of Paprium.wav\n\u251c\u2500\u2500 02 90's Acid Dub Character Select.wav\n\u251c\u2500\u2500 03 Bone Crusher.wav\n\u251c\u2500\u2500 04 Drumbass Boss.wav\n\u251c\u2500\u2500 05 Asian Chill.wav\n\u251c\u2500\u2500 ...\n\u2514\u2500\u2500 52 Waterfront Beat.wav\n```\nLoad Paprium.md from the Mega Drive Paprium core.\n\n**You need to boot the game once and select \"Save back up ram\" in the OSD the first time you play - Then hit reset in the OSD to get the REAL version of paprium to boot** \n\n## A note on AI use (\"vibe coding\")\n\nLet's get this out of the way: it's a **Paprium** project *and* it's **AI\nvibe-coded** \u2014 two of the internet's favourite things to argue about, bundled\ninto one repo. I'm fully expecting some hate for it, and honestly, that's fair.\n\nI'm not an FPGA engineer. Most of the Verilog in here was generated and debugged\nby AI (Claude and Codex) through a lot of back-and-forth \u2014 I'm not going to\npretend I hand-wrote it, because I didn't.\n\nWhat I actually did was the boring half: running every build on a real MiSTer,\nphotographing the garbled graphics, listening to the broken audio, feeding it\nall back, correcting the AI when it was confidently wrong, and deciding what was\ngood enough to call done. The Paprium / EverDrive Pro / firmware / MD+ knowledge\ncame from me and the wider preservation community \u2014 the AI couldn't see the\nscreen or hear the speakers, so that bit was on me.\n\nIt's a hack, not a \"proper\" core, and I've no doubt someone could do it far\nbetter. If it annoys anyone enough to go and build the real thing from scratch,\nwithout AI \u2014 genuinely, brilliant, please do, everyone wins. Until then, I made\nthis so a few people could mess about with Paprium on MiSTer. If that's you,\nenjoy.\n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/theypsilon/Paprium_MegaDrive_MiSTer",
+      "releases": [
+        {
+          "name": "placeholder",
+          "sha": "b4785957bc986dc39c629de9fac9df46972c00fc",
+          "url": "https://raw.githubusercontent.com/theypsilon/Paprium_MegaDrive_MiSTer/paprium-mdplus-port/releases/placeholder",
+          "type": "OTHER"
+        }
+      ]
     },
     {
       "name": "RetroAchievementsDB_MiSTer",
@@ -870,7 +895,7 @@
     {
       "name": "Unofficial_Distribution_MiSTer",
       "description": null,
-      "readme": "# theypsilon Unofficial Distribution\n\nThis repository contains some unofficial MiSTer cores. No new cores will be added.\n\n#### List of Tags that you may use with the Downloader and the 'Custom Download Filters' feature.\n\n`alternatives`, `arcade`, `arcade-cores`, `arcade-nemesis`, `arcade-rbfs-only`, `bios`, `computer`, `computer-cores`, `controls_3_buttons`, `controls_move_8-way`, `cores`, `docs`, `extra-utilities`, `games`, `hbmame`, `maclc`, `maclc_unstable_20260703_a48c5ea`, `mame`, `mra`, `readme`, `screen_horizontal_scan_rate_15khz`, `screen_no_tate`, `screen_rotation_horizontal`",
+      "readme": "# theypsilon Unofficial Distribution\n\nThis repository contains some unofficial MiSTer cores. No new cores will be added.\n\n#### List of Tags that you may use with the Downloader and the 'Custom Download Filters' feature.\n\n`alternatives`, `arcade`, `arcade-cores`, `arcade-nemesis`, `arcade-rbfs-only`, `bios`, `computer`, `computer-cores`, `controls_3_buttons`, `controls_move_8-way`, `cores`, `docs`, `extra-utilities`, `games`, `hbmame`, `maclc`, `maclc_pramfix_20260716_5cef15ds4`, `maclc_unstable_20260703_a48c5ea`, `maclc_unstable_20260707_e322926s3`, `mame`, `mra`, `readme`, `screen_horizontal_scan_rate_15khz`, `screen_no_tate`, `screen_rotation_horizontal`",
       "archived": false,
       "fork": false,
       "url": "https://github.com/theypsilon/Unofficial_Distribution_MiSTer",
