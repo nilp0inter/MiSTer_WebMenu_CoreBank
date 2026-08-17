@@ -396,6 +396,11 @@ url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-KickAndRun_MiSTer/m
 output = "_Arcade/cores/KickAndRun_20240730.rbf"
 
 
+# Klax
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Klax_MiSTer/main/releases/Klax_20260811.rbf"
+output = "_Others/Klax_20260811.rbf"
+
+
 # Kyugo
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Kyugo_MiSTer/main/releases/Kyugo_20260730.rbf"
 output = "_Others/Kyugo_20260730.rbf"
@@ -571,6 +576,11 @@ url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Scramble_MiSTer/mas
 output = "_Arcade/cores/Scramble_20260408.rbf"
 
 
+# SegaG80V
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SegaG80V_MiSTer/main/releases/Arcade-SegaG80V_20260814.rbf"
+output = "_Arcade/cores/SegaG80V_20260814.rbf"
+
+
 # SEGASYS1
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SEGASYS1_MiSTer/main/releases/Arcade-SEGASYS1_20260714.rbf"
 output = "_Arcade/cores/SEGASYS1_20260714.rbf"
@@ -674,6 +684,11 @@ output = "_Arcade/cores/TimePilot_20240525.rbf"
 # TNKIII
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TNKIII_MiSTer/main/releases/TNKIII_20240615.rbf"
 output = "_Others/TNKIII_20240615.rbf"
+
+
+# Toobin
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Toobin_MiSTer/main/releases/Toobin_20260815.rbf"
+output = "_Others/Toobin_20260815.rbf"
 
 
 # TraverseUSA
@@ -952,8 +967,8 @@ output = "_Others/Lynx48_20250907.rbf"
 
 
 # MacLC
-url = "https://raw.githubusercontent.com/MiSTer-devel/MacLC_MiSTer/master/releases/MacLC_20260808.rbf"
-output = "_Others/MacLC_20260808.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/MacLC_MiSTer/master/releases/MacLC_20260813.rbf"
+output = "_Others/MacLC_20260813.rbf"
 
 
 # MacPlus
@@ -1002,8 +1017,8 @@ output = "_Computer/MSX_20260603.rbf"
 
 
 # MultiComp
-url = "https://raw.githubusercontent.com/MiSTer-devel/MultiComp_MiSTer/master/releases/MultiComp_20250106.rbf"
-output = "_Computer/MultiComp_20250106.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/MultiComp_MiSTer/master/releases/MultiComp_20260809.rbf"
+output = "_Computer/MultiComp_20260809.rbf"
 
 
 # MyVision
@@ -3301,6 +3316,36 @@ url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-KickAndRun_MiSTer/m
 output = "_Arcade/Kick And Run.mra"
 
 
+# Klax.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Klax_MiSTer/main/releases/Klax.mra"
+output = "_Arcade/Klax.mra"
+
+
+# Klax (Germany, version 2).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Klax_MiSTer/main/releases/_alternatives/_Klax/Klax%20(Germany%2C%20version%202).mra"
+output = "_Arcade/Klax (Germany, version 2).mra"
+
+
+# Klax (Japan, version 3).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Klax_MiSTer/main/releases/_alternatives/_Klax/Klax%20(Japan%2C%20version%203).mra"
+output = "_Arcade/Klax (Japan, version 3).mra"
+
+
+# Klax (Japan, version 4).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Klax_MiSTer/main/releases/_alternatives/_Klax/Klax%20(Japan%2C%20version%204).mra"
+output = "_Arcade/Klax (Japan, version 4).mra"
+
+
+# Klax (version 4).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Klax_MiSTer/main/releases/_alternatives/_Klax/Klax%20(version%204).mra"
+output = "_Arcade/Klax (version 4).mra"
+
+
+# Klax (version 5).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Klax_MiSTer/main/releases/_alternatives/_Klax/Klax%20(version%205).mra"
+output = "_Arcade/Klax (version 5).mra"
+
+
 # Airwolf.mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Kyugo_MiSTer/main/releases/Airwolf.mra"
 output = "_Arcade/Airwolf.mra"
@@ -3959,6 +4004,16 @@ output = "_Arcade/The End.mra"
 # Turtles.mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Scramble_MiSTer/master/releases/Turtles.mra"
 output = "_Arcade/Turtles.mra"
+
+
+# Star Trek.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SegaG80V_MiSTer/main/releases/Star%20Trek.mra"
+output = "_Arcade/Star Trek.mra"
+
+
+# Tac-Scan.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SegaG80V_MiSTer/main/releases/Tac-Scan.mra"
+output = "_Arcade/Tac-Scan.mra"
 
 
 # 4D Warriors (315-5162).mra
@@ -4789,6 +4844,36 @@ output = "_Arcade/TNKIII.mra"
 # T.A.N.K_Japan.mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-TNKIII_MiSTer/main/releases/_alternatives/_TNKIII/T.A.N.K_Japan.mra"
 output = "_Arcade/T.A.N.K_Japan.mra"
+
+
+# Toobin.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Toobin_MiSTer/main/releases/Toobin.mra"
+output = "_Arcade/Toobin.mra"
+
+
+# Toobin' (Europe, rev 2).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Toobin_MiSTer/main/releases/_alternatives/_Toobin/Toobin'%20(Europe%2C%20rev%202).mra"
+output = "_Arcade/Toobin' (Europe, rev 2).mra"
+
+
+# Toobin' (Europe, rev 3).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Toobin_MiSTer/main/releases/_alternatives/_Toobin/Toobin'%20(Europe%2C%20rev%203).mra"
+output = "_Arcade/Toobin' (Europe, rev 3).mra"
+
+
+# Toobin' (German, rev 3).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Toobin_MiSTer/main/releases/_alternatives/_Toobin/Toobin'%20(German%2C%20rev%203).mra"
+output = "_Arcade/Toobin' (German, rev 3).mra"
+
+
+# Toobin' (rev 1).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Toobin_MiSTer/main/releases/_alternatives/_Toobin/Toobin'%20(rev%201).mra"
+output = "_Arcade/Toobin' (rev 1).mra"
+
+
+# Toobin' (rev 2).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Toobin_MiSTer/main/releases/_alternatives/_Toobin/Toobin'%20(rev%202).mra"
+output = "_Arcade/Toobin' (rev 2).mra"
 
 
 # Shot Rider (B-Board 89624B-1).mra
