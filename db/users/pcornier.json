@@ -480,6 +480,41 @@
       ]
     },
     {
+      "name": "Arcade-RingKing_MiSTer",
+      "description": null,
+      "readme": "# Ring King for MiSTer FPGA\r\n\r\nThe schematics are saved in `/doc`. I included both the original scans and a conversion guide containing higher-quality versions of the schematics, which are quite easy to read and understand. The board features three custom DECO chips: the VSC30, a simple chip that generates the VPOS signal; the HMC20, which is mainly a clock divider from a 12 MHz clock; and the DSPC10, which generates video signals for the rendering pipeline. Two CPUs use 6 MHz clocks (main/sprite) while the other two (sound/video) use an unknown clock, though it should be 4 MHz.\r\n\r\n## AI\r\n\r\nDevelopment was accelerated by an AI-generated Verilator testbench that provided game-changing custom tooling: a full Z80 debugger with breakpoint support, memory injection, a semantic restoration system, and PCM sound export. This core is not an automatically generated AI core: AI helped significantly with the rendering pipeline, but all architectural ideas and directions are mine, based on the original documentation and schematics.\r\n",
+      "archived": false,
+      "fork": true,
+      "url": "https://github.com/pcornier/Arcade-RingKing_MiSTer",
+      "releases": [
+        {
+          "name": "Arcade-RingKing_20260831.rbf",
+          "sha": "6a14461856ebfc69e782a7310831c55312e888eb",
+          "url": "https://raw.githubusercontent.com/pcornier/Arcade-RingKing_MiSTer/main/releases/Arcade-RingKing_20260831.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "Arcade-RingKing_20260903.rbf",
+          "sha": "bbe4bfc136b1472ae75fd53701a93f76e0326a08",
+          "url": "https://raw.githubusercontent.com/pcornier/Arcade-RingKing_MiSTer/main/releases/Arcade-RingKing_20260903.rbf",
+          "type": "RBF"
+        },
+        {
+          "name": "ringking.mra",
+          "sha": "17f0ebb652d44c2f62ee39e6b7a28ec55ea7d194",
+          "url": "https://raw.githubusercontent.com/pcornier/Arcade-RingKing_MiSTer/main/releases/ringking.mra",
+          "type": "MRA",
+          "extra": {
+            "name": "Ring King",
+            "rbf": "ringking",
+            "zips": [
+              "ringking.zip"
+            ]
+          }
+        }
+      ]
+    },
+    {
       "name": "Arcade-VBall_MiSTer",
       "description": "This is a port of V'Ball for MiSTer FPGA",
       "readme": "# U.S. Championship V'ball\r\n\r\n\r\nThis is the emulation of V'Ball from Technos Japan ported to MiSTerFPGA by Pierre Cornier (Pierco). The core uses SDRAM for background tiles & DDRAM for PCM data, loaded automagically from mra.\r\n\r\nThe default joystick mapping is:\r\n\r\n| Name   | Button |\r\n|--------|--------|\r\n| Coin A | R2     |\r\n| Coin B | L2     |\r\n| Jump   | B      |\r\n| Action | A      |\r\n| Start  | Start  |\r\n\r\n## Games provided\r\n\r\n- U.S. Championship V'ball (US)\r\n- U.S. Championship V'ball (Bootleg of US set)\r\n\r\n## DIP-Switches\r\n\r\n- Difficulty\r\n- Single Player Game Time\r\n- Start Buttons (4-player)\r\n- Rotate Players 1 & 4\r\n- Player Mode (2/4)\r\n- Coin A (coins/credits)\r\n- Coin B (coins/credits)\r\n- Flip Screen\r\n- Demo Sounds\r\n\r\n\r\nI would like to thank Alan Steremberg, ElectronAsh, David Shadoff & Chockichoc for their help and support.",
