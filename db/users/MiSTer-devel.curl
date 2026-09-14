@@ -432,8 +432,8 @@ output = "_Arcade/cores/LadyBug_20240529.rbf"
 
 
 # LaserdiscGames
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-LaserdiscGames_MiSTer/main/releases/LaserdiscGames_20260905.rbf"
-output = "_Others/LaserdiscGames_20260905.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-LaserdiscGames_MiSTer/main/releases/LaserdiscGames_20260913.rbf"
+output = "_Others/LaserdiscGames_20260913.rbf"
 
 
 # LunarLander
@@ -477,8 +477,8 @@ output = "_Arcade/cores/MissileCommand_20240530.rbf"
 
 
 # MoonPatrol
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MoonPatrol_MiSTer/master/releases/Arcade-MoonPatrol_20240530.rbf"
-output = "_Arcade/cores/MoonPatrol_20240530.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-MoonPatrol_MiSTer/master/releases/Arcade-MoonPatrol_20260828.rbf"
+output = "_Arcade/cores/MoonPatrol_20260828.rbf"
 
 
 # MrDo
@@ -612,8 +612,8 @@ output = "_Arcade/cores/Scramble_20260408.rbf"
 
 
 # SegaG80V
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SegaG80V_MiSTer/main/releases/Arcade-SegaG80V_20260823.rbf"
-output = "_Arcade/cores/SegaG80V_20260823.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SegaG80V_MiSTer/main/releases/Arcade-SegaG80V_20260908.rbf"
+output = "_Arcade/cores/SegaG80V_20260908.rbf"
 
 
 # SEGASYS1
@@ -856,6 +856,11 @@ url = "https://raw.githubusercontent.com/MiSTer-devel/C64_MiSTer/master/releases
 output = "_Computer/C64_20260823.rbf"
 
 
+# CBM-II
+url = "https://raw.githubusercontent.com/MiSTer-devel/CBM-II_MiSTer/master/releases/CBM-II_20260906.rbf"
+output = "_Others/CBM-II_20260906.rbf"
+
+
 # CDi
 url = "https://raw.githubusercontent.com/MiSTer-devel/CDi_MiSTer/main/releases/CDi_20260502.rbf"
 output = "_Others/CDi_20260502.rbf"
@@ -987,8 +992,8 @@ output = "_Others/Interact_20251005.rbf"
 
 
 # Intellivision
-url = "https://raw.githubusercontent.com/MiSTer-devel/Intv_MiSTer/master/releases/Intellivision_20250903.rbf"
-output = "_Others/Intellivision_20250903.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Intv_MiSTer/master/releases/Intellivision_20260909.rbf"
+output = "_Others/Intellivision_20260909.rbf"
 
 
 # IQ151
@@ -1014,6 +1019,11 @@ output = "_Others/Laser310_20250907.rbf"
 # GameOfLife
 url = "https://raw.githubusercontent.com/MiSTer-devel/Life_MiSTer/master/releases/GameOfLife_20260702.rbf"
 output = "_Others/GameOfLife_20260702.rbf"
+
+
+# Loopy
+url = "https://raw.githubusercontent.com/MiSTer-devel/Loopy_MiSTer/master/releases/Loopy_20260911.rbf"
+output = "_Others/Loopy_20260911.rbf"
 
 
 # Lynx48
@@ -1047,13 +1057,13 @@ output = "_Utils/memtest_20210130.rbf"
 
 
 # menu
-url = "https://raw.githubusercontent.com/MiSTer-devel/Menu_MiSTer/master/releases/menu_20260603.rbf"
-output = "_Utils/menu_20260603.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Menu_MiSTer/master/releases/menu_20260907.rbf"
+output = "_Utils/menu_20260907.rbf"
 
 
 # Minimig
-url = "https://raw.githubusercontent.com/MiSTer-devel/Minimig-AGA_MiSTer/MiSTer/releases/Minimig_20260823.rbf"
-output = "_Computer/Minimig_20260823.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Minimig-AGA_MiSTer/MiSTer/releases/Minimig_20260907.rbf"
+output = "_Computer/Minimig_20260907.rbf"
 
 
 # MiSTerLaggy
@@ -1096,6 +1106,11 @@ url = "https://raw.githubusercontent.com/MiSTer-devel/NES_MiSTer/master/releases
 output = "_Console/NES_20260823.rbf"
 
 
+# NeXT
+url = "https://raw.githubusercontent.com/MiSTer-devel/NeXT_MiSTer/main/releases/NeXT_20260908.rbf"
+output = "_Others/NeXT_20260908.rbf"
+
+
 # NGPC
 url = "https://raw.githubusercontent.com/MiSTer-devel/NGPC_MiSTer/master/releases/NGPC_20260824.rbf"
 output = "_Others/NGPC_20260824.rbf"
@@ -1122,8 +1137,8 @@ output = "_Others/PC88_20260415.rbf"
 
 
 # PCFX
-url = "https://raw.githubusercontent.com/MiSTer-devel/PCFX_MiSTer/main/releases/PCFX_20260515.rbf"
-output = "_Others/PCFX_20260515.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/PCFX_MiSTer/main/releases/PCFX_20260912.rbf"
+output = "_Others/PCFX_20260912.rbf"
 
 
 # PCXT-EGA
@@ -1222,8 +1237,13 @@ output = "_Computer/Specialist_20260603.rbf"
 
 
 # Studio-II
-url = "https://raw.githubusercontent.com/MiSTer-devel/StudioII_MiSTer/main/releases/Studio-II_20260830.rbf"
-output = "_Others/Studio-II_20260830.rbf"
+url = "https://raw.githubusercontent.com/MiSTer-devel/StudioII_MiSTer/main/releases/Studio-II_20260912.rbf"
+output = "_Others/Studio-II_20260912.rbf"
+
+
+# SuperAcan
+url = "https://raw.githubusercontent.com/MiSTer-devel/SuperACan_MiSTer/master/releases/SuperAcan_20260911.rbf"
+output = "_Others/SuperAcan_20260911.rbf"
 
 
 # SCV
@@ -2776,11 +2796,6 @@ url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/
 output = "_Arcade/Puzzli 2 (ver. 100, WORLD).mra"
 
 
-# Puzzli 2 Super (ver. 200, WORLD).mra
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/Puzzli%202%20Super%20(ver.%20200%2C%20WORLD).mra"
-output = "_Arcade/Puzzli 2 Super (ver. 200, WORLD).mra"
-
-
 # S.V.G. - Spectral vs Generation (ver. 200).mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-IGSPGM_MiSTer/main/releases/S.V.G.%20-%20Spectral%20vs%20Generation%20(ver.%20200).mra"
 output = "_Arcade/S.V.G. - Spectral vs Generation (ver. 200).mra"
@@ -3676,34 +3691,34 @@ url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-KillerInstinct_MiST
 output = "_Arcade/Killer Instinct 2 (v1.4).mra"
 
 
-# Killer Instinct (proto v4.7).mra
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-KillerInstinct_MiSTer/main/releases/_alternatives/Killer%20Instinct%20(proto%20v4.7).mra"
-output = "_Arcade/Killer Instinct (proto v4.7).mra"
-
-
-# Killer Instinct (v1.3).mra
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-KillerInstinct_MiSTer/main/releases/_alternatives/Killer%20Instinct%20(v1.3).mra"
-output = "_Arcade/Killer Instinct (v1.3).mra"
-
-
-# Killer Instinct (v1.4).mra
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-KillerInstinct_MiSTer/main/releases/_alternatives/Killer%20Instinct%20(v1.4).mra"
-output = "_Arcade/Killer Instinct (v1.4).mra"
-
-
 # Killer Instinct 2 (v1.0).mra
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-KillerInstinct_MiSTer/main/releases/_alternatives/Killer%20Instinct%202%20(v1.0).mra"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-KillerInstinct_MiSTer/main/releases/_alternatives/_Killer%20Instinct%202/Killer%20Instinct%202%20(v1.0).mra"
 output = "_Arcade/Killer Instinct 2 (v1.0).mra"
 
 
 # Killer Instinct 2 (v1.1).mra
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-KillerInstinct_MiSTer/main/releases/_alternatives/Killer%20Instinct%202%20(v1.1).mra"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-KillerInstinct_MiSTer/main/releases/_alternatives/_Killer%20Instinct%202/Killer%20Instinct%202%20(v1.1).mra"
 output = "_Arcade/Killer Instinct 2 (v1.1).mra"
 
 
 # Killer Instinct 2 (v1.3).mra
-url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-KillerInstinct_MiSTer/main/releases/_alternatives/Killer%20Instinct%202%20(v1.3).mra"
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-KillerInstinct_MiSTer/main/releases/_alternatives/_Killer%20Instinct%202/Killer%20Instinct%202%20(v1.3).mra"
 output = "_Arcade/Killer Instinct 2 (v1.3).mra"
+
+
+# Killer Instinct (proto v4.7).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-KillerInstinct_MiSTer/main/releases/_alternatives/_Killer%20Instinct/Killer%20Instinct%20(proto%20v4.7).mra"
+output = "_Arcade/Killer Instinct (proto v4.7).mra"
+
+
+# Killer Instinct (v1.3).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-KillerInstinct_MiSTer/main/releases/_alternatives/_Killer%20Instinct/Killer%20Instinct%20(v1.3).mra"
+output = "_Arcade/Killer Instinct (v1.3).mra"
+
+
+# Killer Instinct (v1.4).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-KillerInstinct_MiSTer/main/releases/_alternatives/_Killer%20Instinct/Killer%20Instinct%20(v1.4).mra"
+output = "_Arcade/Killer Instinct (v1.4).mra"
 
 
 # Klax.mra
@@ -3786,14 +3801,49 @@ url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-LadyBug_MiSTer/mast
 output = "_Arcade/Snap Jack.mra"
 
 
+# Cliff Hanger.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-LaserdiscGames_MiSTer/main/releases/Cliff%20Hanger.mra"
+output = "_Arcade/Cliff Hanger.mra"
+
+
 # Dragon's Lair.mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-LaserdiscGames_MiSTer/main/releases/Dragon's%20Lair.mra"
 output = "_Arcade/Dragon's Lair.mra"
 
 
+# Cobra Command (M.A.C.H. 3 hardware).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-LaserdiscGames_MiSTer/main/releases/Not%20Working/Cobra%20Command%20(M.A.C.H.%203%20hardware).mra"
+output = "_Arcade/Cobra Command (M.A.C.H. 3 hardware).mra"
+
+
+# Dragon's Lair II - Time Warp.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-LaserdiscGames_MiSTer/main/releases/Not%20Working/Dragon's%20Lair%20II%20-%20Time%20Warp.mra"
+output = "_Arcade/Dragon's Lair II - Time Warp.mra"
+
+
+# Goal To Go.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-LaserdiscGames_MiSTer/main/releases/Not%20Working/Goal%20To%20Go.mra"
+output = "_Arcade/Goal To Go.mra"
+
+
+# M.A.C.H. 3.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-LaserdiscGames_MiSTer/main/releases/Not%20Working/M.A.C.H.%203.mra"
+output = "_Arcade/M.A.C.H. 3.mra"
+
+
+# Super Don Quix-ote.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-LaserdiscGames_MiSTer/main/releases/Not%20Working/Super%20Don%20Quix-ote.mra"
+output = "_Arcade/Super Don Quix-ote.mra"
+
+
 # Thayer's Quest.mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-LaserdiscGames_MiSTer/main/releases/Not%20Working/Thayer's%20Quest.mra"
 output = "_Arcade/Thayer's Quest.mra"
+
+
+# Us vs Them.mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-LaserdiscGames_MiSTer/main/releases/Not%20Working/Us%20vs%20Them.mra"
+output = "_Arcade/Us vs Them.mra"
 
 
 # Space Ace.mra
@@ -4531,6 +4581,11 @@ url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-Scramble_MiSTer/mas
 output = "_Arcade/Turtles.mra"
 
 
+# Eliminator (2 Players, set 2).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SegaG80V_MiSTer/main/releases/Eliminator%20(2%20Players%2C%20set%202).mra"
+output = "_Arcade/Eliminator (2 Players, set 2).mra"
+
+
 # Star Trek.mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SegaG80V_MiSTer/main/releases/Star%20Trek.mra"
 output = "_Arcade/Star Trek.mra"
@@ -4544,6 +4599,26 @@ output = "_Arcade/Tac-Scan.mra"
 # Zektor (revision B).mra
 url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SegaG80V_MiSTer/main/releases/Zektor%20(revision%20B).mra"
 output = "_Arcade/Zektor (revision B).mra"
+
+
+# Eliminator (2 Players, cocktail).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SegaG80V_MiSTer/main/releases/_alternatives/_Eliminator/Eliminator%20(2%20Players%2C%20cocktail).mra"
+output = "_Arcade/Eliminator (2 Players, cocktail).mra"
+
+
+# Eliminator (2 Players, set 1).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SegaG80V_MiSTer/main/releases/_alternatives/_Eliminator/Eliminator%20(2%20Players%2C%20set%201).mra"
+output = "_Arcade/Eliminator (2 Players, set 1).mra"
+
+
+# Eliminator (4 Players).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SegaG80V_MiSTer/main/releases/_alternatives/_Eliminator/Eliminator%20(4%20Players).mra"
+output = "_Arcade/Eliminator (4 Players).mra"
+
+
+# Eliminator (4 Players, prototype).mra
+url = "https://raw.githubusercontent.com/MiSTer-devel/Arcade-SegaG80V_MiSTer/main/releases/_alternatives/_Eliminator/Eliminator%20(4%20Players%2C%20prototype).mra"
+output = "_Arcade/Eliminator (4 Players, prototype).mra"
 
 
 # 4D Warriors (315-5162).mra
